@@ -21,7 +21,7 @@ Wulf A. Kaal. Tenured Professor of Law, University of St. Thomas School of Law, 
 
 ## Cite
 
-- Canonical index of the 129 works: the SSRN author page above; source of truth for counts and abstract IDs
+- Canonical index of the collected works: the SSRN author page above; source of truth for counts and abstract IDs
 - Structured citation data: https://wulfkaal.github.io/papers.json and https://wulfkaal.github.io/papers.bib
 - Full-text PDFs: https://github.com/wulfkaal/Academic-Papers (use raw.githubusercontent.com URLs for direct PDF bytes)
 
