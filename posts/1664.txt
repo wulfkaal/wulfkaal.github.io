@@ -1,0 +1,145 @@
+On “Open Weights and American AI Leadership,” published July 24, 2026, by Jensen Huang / NVIDIA and on the roster that has grown around it since.
+
+The letter went out with twenty five names. It now carries thirty two. NVIDIA hosted it, Jensen Huang used the first post of his life on X to circulate it, and within hours the most conspicuous absentee at publication, OpenAI, added its signature. Cisco, Cohere, DoorDash, Fireworks AI, GitHub, and Palo Alto Networks arrived alongside it. Anthropic and Google are still not on the list.
+
+That expansion is the most instructive fact of the week, and it is not the fact the letter set out to establish.
+
+The letter is right about the direction. It is incomplete about the mechanism. And the reason a closed frontier lab could sign it in an afternoon without altering a single thing it does is the same reason the letter cannot carry the weight its signatories want to put on it.
+
+The prior
+
+I have spent roughly fifteen years on a single question in four settings, and the finding has not varied: capability distributes faster than accountability, and the residual gap is institutional rather than technical.
+
+The first setting was financial regulation. Rules written at t0 for an industry that redefines itself at t1 do not regulate it, they ossify around it, which is the argument of Evolution of Law: Dynamic Regulation in a New Institutional Economics Framework (2013), Dynamic Regulation of the Financial Services Industry (2013), and Dynamic Regulation for Innovation (2016).
+
+The second was decentralized organizations, where I collected the data myself across a 178-page market meta analysis, its 2024 successor, DAO Fallacies, and Decentralized Autonomous Organizations: Internal Governance and External Legal Design.
+
+The third was AI systems, in AI Governance, AI Governance Via Web3 Reputation System, and How can we Best Monitor AI Agents?.
+
+Open weights is the fourth setting, and it is the first in which the distributed artifact acts on its own behalf. That is not a reason to withhold it. It is a reason to expect the same failure and to build for it in advance.
+
+Where the letter tracks the evidence
+
+Three of the letter’s claims are correct, and I have argued versions of all three in print.
+
+Concentration is the risk and diffusion is the remedy. I wrote in 2021 that centralized algorithmic automation delivers real benefits while carrying risks to humanity that cannot be fully quantified, and that decentralized systems are the structural counterweight (How Decentralized Systems Can Upgrade AI).
+
+Closed models are not inherently safer. They can be breached or misused in ways outsiders cannot detect, and concentration manufactures single points of failure. That is the finding in How can we Best Monitor AI Agents?, which faults centralized, AI-driven supervision for opacity, bias, and systemic vulnerability, and proposes distributed validation in its place. The letter’s timing makes the point better than its text does. It was published in the weeks following a security incident that ran through the largest closed lab and the largest open model host at the same time. Neither posture secured itself. Opacity is not safety. Opacity is unfalsifiability.
+
+Premature restriction would freeze a field that is still moving. That is dynamic regulation, and the case for it never depended on AI. See Evolution of Law (2013), Dynamic Regulation for Innovation (2016), and Regulation Tomorrow: What Happens When Technology is Faster than the Law? (2016), with the empirical method in How to Regulate Disruptive Innovation: From Facts to Data.
+
+On the diagnosis, the letter and the corpus agree. On the treatment, they part.
+
+The new signature changes how the letter reads
+
+At publication the roster was analytically legible. Chipmakers, server vendors, hyperscalers, security vendors, model publishers, foundations, and venture funds: every signatory monetizes diffusion at some layer of the stack, and not one of them sold access to a closed frontier model. The letter read as a coalition of aligned interest, which is the ordinary and unobjectionable condition of policy advocacy.
+
+Then a closed frontier lab signed it, and the coalition logic dissolved without a word of the letter changing.
+
+That should be surprising. It is not, and the reason matters more than the news value. The letter asks policymakers for compute access, shared training assets, a plural frontier, and stronger application layers. It asks its own signatories for nothing. No signer commits to publishing weights, to a disclosure format, to a provenance standard, to a re-evaluation cadence, or to any allocation of liability for downstream use. Signing costs an open publisher nothing. It costs a closed lab nothing either.
+
+A document that binds none of its signers is not a governance instrument. It is a directional forecast with logos attached.
+
+I raise this to characterize the artifact, not to impugn anyone’s motives. The stated position, that the United States should lead in open and proprietary models both, is coherent and probably correct. The structural observation is what counts: openness has become cheap enough to endorse universally, and universal endorsement is the evidence that openness is no longer the contested variable. What remains contested is everything that happens after release, and on that the letter is silent by construction.
+
+The analogy is doing work the argument should do
+
+The letter opens by reaching back to the open source software movement of the 1980s. The parallel is rhetorically strong and structurally weak, and it fails in three specific places.
+
+The artifact acts. Open source distributed things that did not pursue objectives. A compiler does not negotiate. A kernel does not hold a position. The governance problems of open source were licensing, provenance of contribution, and coordination among maintainers, and the movement solved all three. Open weights distribute something else: an agentic substrate that will be fine-tuned toward objectives its publisher never specified, deployed into transactions its publisher will never see, and modified by parties its publisher cannot identify. This is a classification, not an analogy.
+
+“Inspect” does not survive the transfer. The letter defines open-weight models as systems anyone can download, inspect, modify, and run. Three of those four verbs carry over cleanly. The third does not. Source code is written to be read by humans, and that legibility was the entire governance affordance of open source. Weights are not legible in that sense, not to a downstream auditor and not to the laboratory that produced them. Interpretability is an active research program, not a property of the artifact. The verb imports a transparency guarantee the object does not carry.
+
+Many eyes is a property of a maintainer graph, not of openness. Linus’s law held under conditions open source satisfied and open weights do not. Defects in source are deterministic and reproducible, so a bug found by one reader is a bug for every reader. There is a canonical upstream, so a fix propagates. Maintainership is identifiable, so someone is answerable for merging it. Weights fail all three. Behavior is stochastic and context dependent, so a failure surfaced in one deployment may not reproduce in another. A fine-tuned fork has no upstream to patch. And nobody is accountable for the fork that nobody happened to examine.
+
+That last point is not speculative. I studied the economics of volunteer code review directly in How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards, and the finding was that scrutiny does not organize itself. Review is a public good with private cost. It arrives reliably only when reviewers hold stake in the outcome and lose something when they miss. Scale of attention is real, but it is a consequence of incentive design, and open weights ship without any.
+
+The letter concedes the underlying property in its own risk paragraph: once weights are released they are beyond the original developer’s control, and modified versions are difficult to trace or reverse. Open source never had to make that concession, because open source never had that property.
+
+The concession is not a caveat at the end of the argument. It is the argument.
+
+We have already run this experiment
+
+The strongest evidence against openness as a sufficient condition is not theoretical. It is the decentralized organization.
+
+DAOs were the maximal case for the letter’s implicit thesis. The code was public. Participation was permissionless. Forking was trivial and frequently exercised. Anyone could read the rules, propose changes, and exit. If distributed access produced distributed accountability anywhere, it should have produced it there.
+
+It did not. Across the hand-collected population studies in Decentralized Autonomous Organizations: A Market Meta Analysis and DAO Market Meta Analysis 2024, the recurring pattern is re-concentration: effective control narrows, active participation thins, and the formal openness of the structure stops describing how the structure is actually governed. I set out the mechanism in DAO Fallacies and the corrective design in Internal Governance and External Legal Design.
+
+The lesson generalizes, and I have stated it before in Decentralization: Past, Present, and Future and in the De Gruyter volume with Craig Calcaterra (Decentralized Governance, Future of Decentralization). Decentralization is not a state a system is in. It is a condition a system maintains, and it is maintained by mechanism or not at all. A system that is open at release and unmaintained thereafter does not stay open. It concentrates around whoever has the resources to keep operating.
+
+Open weights is that bet again, run at larger scale, with an artifact that acts.
+
+A commons missing every principle that makes commons work
+
+The letter proposes a commons. It omits the design conditions under which commons have ever functioned.
+
+Ostrom’s finding was that durable common-pool regimes share identifiable features: defined boundaries around the resource and its users, monitoring performed by accountable monitors, graduated sanctions against violators, and accessible conflict resolution. I translated those principles to the computational domain in Computative Economics. Score the open weight ecosystem against them. Boundaries: undefined, since any party may fork and no registry records that they did. Monitors: unassigned, unaccountable, and unpaid. Sanctions: none available at any gradation, because there is no identified party to sanction. Conflict resolution: no forum, no standing, no remedy. The letter’s answer to all four is scale of scrutiny, which is Ostrom’s monitoring principle with the accountability removed.
+
+The New Institutional Economics reading is equally direct. Coase requires well-defined entitlements and tractable transaction costs before bargaining can allocate harm efficiently. Untraceable modification does not raise transaction costs at the margin. It removes the counterparty, and a bargain with an unidentifiable party is not an expensive bargain but an impossible one. Williamson requires governance structures matched to transaction attributes, and high-frequency transactions under high uncertainty and high asset specificity call for hybrid or hierarchical governance rather than a spot market. Open weights create a spot market in capability with no governance structure attached to it. North’s point completes the picture: the formal constraint changes at the speed of a model release, and the informal constraint does not move at all.
+
+This is why attribution is prior to everything else. Attribution is not one accountability mechanism among several. It is the input that every other mechanism consumes.
+
+Access is abundant. Consequence is scarce.
+
+The letter’s theory of diffusion is a theory of access: lower the price, widen availability, and more builders will build. Under computational abundance, that theory solves for the wrong scarcity.
+
+I have argued in The Collapse of Scarcity Economics that AI and robotics decouple production from labor and thereby void the scarcity assumption underlying orthodox economics, and in Computative Economics that the binding constraint on production becomes computational rather than physical. Follow that to its conclusion. When models are abundant and compute is abundant, model access stops being the scarce good. What stays scarce is knowing whose output you are relying on, and being able to impose cost on whoever got it wrong.
+
+Open weights increase the supply of the abundant thing. By the letter’s own admission, they reduce the supply of the scarce thing.
+
+That is why “expand compute access” and “invest in shared training assets” are necessary and insufficient as policy asks. They are supply-side interventions in a market where supply is no longer the constraint.
+
+Symmetric capability with asymmetric consequence favors the attacker
+
+The letter’s security argument is that in a world where attackers use advanced AI, defenders need comparable access. Comparable access is not comparable position.
+
+Note who is making the argument. CrowdStrike, Palo Alto Networks, Cisco, and Palantir all put their names to this letter, and their presence is real evidence that defenders want the capability. It is also a demonstration of the asymmetry. Each of those firms is identifiable, incorporated, regulated, insured, and answerable to customers and to courts. The adversary they are arming against is none of those things.
+
+The attacker operates without identity, without a balance sheet, without a supervisor, and without any persistent stake that error can consume. The defender is a hospital, a utility, a bank, or an agency, and carries all four. Give both sides the same weights and you have equalized capability while leaving consequence entirely one-sided. That is not parity. That is a subsidy.
+
+The corrective is not to withhold the weights. The corrective is to build the layer the letter never mentions. In AI’s Mother’s Instinct: Engineered Consequence, Emergent Ethics, and the Institutional Trajectory Toward Agentic Alignment I argue that the limitation is institutional rather than computational: agents bearing no consequence for error cannot develop discernment, and correctly designed incentive structures produce emergent properties functionally equivalent to ethical agency. The mechanism is skin in the game, manufactured. Non-transferable reputation that cannot be sold or shed. Staking against outcomes. Post-action validation pools that price error to the party that produced it. The underlying architecture is specified in Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and Anonymous Systems and Secure Proof of Stake Protocol, both with Craig Calcaterra.
+
+Openness distributes capability. Only consequence distributes responsibility.
+
+Distillation is an attribution question, not a technique question
+
+The letter asks policymakers not to conflate distillation with unlawful misappropriation. Right conclusion, wrong reasoning, and the reasoning is what a statute will inherit.
+
+The line cannot be drawn at the level of technique, because the technique is identical on both sides of it. Training a smaller model on a larger model’s outputs is how a research group closes a capability gap without a pretraining budget, and it is also how appropriation would occur if appropriation occurred. It can only be drawn at the level of provenance: what was used, under what terms, with what disclosure.
+
+This is not hypothetical drafting. The letter arrived days after reports that the administration was reviving a push to restrict Chinese models, and time pressure is exactly the condition under which technique-level rules get written. Such a rule will ban useful methods and still miss actual appropriation, because the method is not the offense. Attribution infrastructure makes the question answerable without banning anything. Provenance, not prohibition.
+
+Five items for the policy list
+
+The letter asks for compute access, shared training assets, a plural frontier, and stronger application layers. Every item is defensible. Five belong beside them, and each of the five is measurable, which is the property the letter’s asks lack.
+
+1. Fund attribution infrastructure with the same seriousness as compute. Provenance is a public good, and no private party will build it alone. A country that subsidizes capability and declines traceability is buying the risk and refusing the instrument. Test: what share of federal AI appropriation goes to provenance and evaluation rather than to capacity.
+
+2. Pair open release with a consequence layer at the deployment tier. Publishers cannot control downstream modification, and the letter is correct that asking them to is futile. Deployers are a different matter. They are identifiable, they are located, and they can be required to stake reputation against outcomes, along the lines set out in How AI Models are Optimized Through Web3 Governance. Test: whether any obligation attaches to a party that can actually discharge it.
+
+3. Make evaluation continuous and adversarial rather than a benchmark snapshot. Governance standards have to be linked to evolving legal and ethical requirements through a structure that updates as they do, which is the design in AI Governance Via Web3 Reputation System and AI Governance. Test: the interval between a fork’s publication and its re-certification.
+
+4. Replace “shared datasets” with governed dataset production. Data quality is the binding constraint on AI progress, and centralized annotation is biased, opaque, and inequitably compensated, as documented in Artificial Intelligence: The Final Frontier, AI Learning: Decentralized Governance to Optimize Human Output Datasets for AI Learning, and, earlier, Decentralized Mechanical Turk Through Verified Reputation. A data commons with no governance of who produced it, on what terms, and for what pay reproduces the concentration the letter opposes, one layer down. Test: whether contributors are identified and compensated, or aggregated and anonymous.
+
+5. Keep the frontier plural at the governance layer, not only at the model layer. Thirty two signatories agreeing on openness is not pluralism if they converge on a single accountability standard, or on none. Test: how many independent validation regimes exist, and whether any of them can bind a signatory.
+
+What would change my mind
+
+The claim here is falsifiable, and it should be stated that way. If a fork ecosystem develops durable provenance voluntarily, without any consequence attaching to deployers, and if incident rates in modified open models track those in canonical releases across a full release cycle, then attribution is emerging from openness alone and the second layer is redundant.
+
+I do not expect that result, and the DAO record is why. Voluntary provenance has failed in every prior setting where marking imposed private cost and conferred collective benefit. Nothing about weight distribution changes that incentive. But the prediction is the honest form of the argument, and the data to test it will exist within a year.
+
+The stakes
+
+I agree with the letter’s bottom line, and I do not think it goes far enough.
+
+Openness is a precondition for the diffusion that decides who leads. Openness by itself decides nothing else. An open ecosystem without attribution is one in which no party can be held to anything. An open ecosystem without consequence is one in which capability compounds and accountability does not.
+
+Read the thirty two signatures for what they are: broad agreement that diffusion is the direction, and no agreement whatsoever about who answers for what happens downstream. Consensus on direction is not governance. It is the condition under which the absence of governance stops being visible.
+
+The 1980s taught us that shared source code beats proprietary control. They did not teach us how to govern systems that rewrite themselves after release, because they never had to.
+
+Distribution is not governance. Access is not accountability. Build the second layer, and the letter’s case becomes unanswerable.
+
+Wulf A. Kaal is Professor of Law at the University of St. Thomas School of Law. His research is collected at SSRN. The letter discussed here is available from NVIDIA.
