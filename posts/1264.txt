@@ -1,0 +1,195 @@
+This article provides an overview of the most popular cryptocurrencies by market capitalization and their associated token incentive designs. The examination of different aspects of these tokens enables an analysis of areas in emerging blockchain technology and their growth, among other trends.
+
+To create the dataset and determine its scope for this study, the author had to mitigate the impact of different tokens moving in and out of the top 100 cryptocurrency daily, which would be nearly impossible to track day-to-day. Accordingly, the author limited the time series dataset to all available data on the top 100 cryptocurrencies until April 2018. The author chose cryptocurrencies for inclusion in the dataset based on the market capitalization of the respective coins before April 2018. Market capitalization allows for a standardization in comparing all coins ever traded and is also readily available.
+
+The author added additional economic indicators to enhance the market and trend analyses. After determining the initial dataset, the author added the ICO start date to create information for a relevant time series. Time series are useful to show patterns that can help in determine market trends. For token issuers in the dataset that did not engage in an ICO, the author used the date of first publicly listed trade as a proxy variable. In determining such additional variable, the author and a team of five research assistants evaluated the entirety of the information provided in the whitepapers of all 100 issuers in the dataset.
+
+The research team normalized differences in whitepapers throughout the coding process. Because the whitepapers in the dataset have been drafted by different issuers for different purposes, each paper had a different level of detail, language, and focus. Many whitepapers do not include all the information that would generally be necessary for a full economic analysis. For instance, the researchers could not find a project that had examined blockchain governance fully.
+
+The researchers coded the token models of each token in the dataset. The token model describes what the token does in practice and what value proposition is associated with its functionality. The token model in the dataset describes whether the token is to be used as a currency which has inherent value or if the token derives its value from giving the holder access to a network. The researchers also coded many nuances to provide a more in-depth analysis. Other minor metrics were coded as well to get a better understanding of the current token market environment, e.g. whether forking is allowed, user facing versus layered, how/if supply is capped, ecosystem breadth, among other categories. By considering all these factors, conclusions can be drawn as to market trends.
+
+It is important to note, coding categories often allowed tokens to fall into more than one category. If the token fell into more than one category, the researchers gave equal weight to each category. For example, if a token was both a utility and asset backed token, each category would be given half the weight of a strictly utility/asset backed token. This allowed for both categories to be given credit and reflect an accurate representation of the function of the token.
+
+By putting together these different metrics, the author created a robust and insightful evaluation into token models. Considering such a wide variety of metrics enables the fullest possible analyses of the cryptocurrency market.
+
+II. Findings
+
+1. Launch Dates of Top 100 Tokens
+
+Figure 1: Top 100 Token Launch Date
+
+Figure 1 was created using data from coinmarketcap.com for the top 100 tokens. Because the top 100 coins are not static, the author chose May 6, 2018 as the cutoff date for data collection, in an effort to ensure the most up-to-date data. Tokens within this sample were launched between January 2009 and March 2018. The launch date of each token was determined by using primarily the ICO start date, or in lieu of an ICO, the first trade date of the token. These dates are used for all-time series graphs as the time variable.
+
+The first token, Bitcoin, was launched in January 2009. Following the bitcoin launch, the data shows less activity in the launching of new coins for many years. In mid-2013, more consistent launching of coins occurred month over month. Much of this stability can be attributed to the launching of the Ethereum platform in late 2011. This stable growth of new coins occurred with the greatest number of the top 100 coins by month launched in November of 2017.
+
+2. Use of ICO
+
+Figure 2: Use of ICO
+
+Figure 2 compares the tokens in the dataset that conducted an ICO with those that did not. Of the top 100 tokens, fifty-six tokens held an ICO and thirty-eight tokens did not. Litecoin, Bitcoin Gold, Nano, ReddCoin, ZCoin, and BnkToTheFuture held ICOs but are not included in Figure 2.
+
+3. Technical Core Type
+
+Figure 3a: Technical Core
+
+The coding category of technical core was used to determine the level of involvement the token has with Ethereum (ERC-20 token). Ethereum is the largest platform for project development and therefore was coded to see what projects are using it. Figure 3a describes the technical core of the top 100 tokens. Fifty-six tokens have a technical core that is implemented on the protocol level of a blockchain (blockchain native). Thirty-five tokens have a technical core that follows the ERC-20 Token Standard. Six tokens are implemented in a crypto economic protocol on top of a blockchain (other non-native protocol). Two tokens are implemented on the application level on top of a blockchain (dapp token).
+
+Figure 3b: Technical Core — Time Series
+
+Figure 3b shows technical core as a function of time. Blockchain native and ERC-20 tokens were launched in greater volume during 2017. This observation aligns with the increased number of tokens launched in mid to late 2017 as depicted in Figure 1. The first top 100 ERC-20 token were launched in August 2015. The first top 100 dapp token were launched in April 2015; the second launched in July 2017.
+
+In implementing coding for creation of Figures 3a and 3b, the technical core types were dummy variables and were coded accordingly with a 1 or 0. One ERC-20 token, EOS, had a secondary characterization of miscellaneous because the protocol can also be layered on other chains.[1] In coding this combination categorization for graphing, EOS counted towards ERC-20 as 0.5 and miscellaneous as 0.5. This method was used for all of the forthcoming figures represented herein.
+
+4. Token Model Type
+
+Figure 4a: Token Model — Pie
+
+The researchers coded the token models of each token in the dataset. The token model describes what the token does in practice and what value proposition is associated with its functionality. The token model in the dataset describes whether the token is to be used as a currency which has inherent value or if the token derives its value from giving the holder access to a network.
+
+Figure 4a represents what token models are being utilized in the top 100 coins. This is a representation in the form of a pie graph. Figure 4a shows a clear majority of the tokens using a utility token model. Additionally, we see very few tokens utilizing the stable and asset backed models.
+
+Figure 4b: Token Models
+
+Figures 4a and 4b depict the frequency of token model types. Of the top 100 tokens, currency and utility tokens were seen most commonly. USDT was the only purely Stablecoin token; two tokens (Steem and Maker) were characterized as both Stablecoin and utility. Bytom, DigiByte, Syscoin, and Salt are asset-backed.
+
+The utility token model dominates the top 100 tokens. The category of utility tokens includes tokens that display the following attributes: tokens offer owners clearly defined utility within a network or application (utility tokens); tokens that behave like a security, although no Howey test was performed in this research; tokens primarily intended to be used within a specific system (network tokens); tokens that are tied to the value and development of a network (network value tokens); tokens that provide access to a digital service (usage tokens); tokens that provide the right to contribute to a system (work tokens); and tokens that are both a usage and a work token. The author intends to expand the utility token analysis when the token models are more clearly defined over time and more tokens can be categorized in the subcategories other than the defined utility token.
+
+Nine tokens have dual-category model types. Five tokens (Cardano, Hshare, IOST, Waltonchain, and Komodo) were characterized as both currency and utility tokens. These tokens’ utility models were subcategorized as either network, network value, usage or work sub-categories. Two tokens (Steem and Maker) were characterized as both Stablecoin and utility tokens with utility sub-categories of work and/or usage. WAN was categorized as both a network token and asset-backed. BTS was categorized as both currency and Stablecoin. Tokens with multiple categorizations were coded as 0.5 and 0.5 for the corresponding dummy variables.
+
+Seven tokens were outliers. NEO is a network enabling creation of asset-backed smart contracts.[2] NEM, VeChain, ICON, Lisk were outliers with no justification. It was not clear in the whitepaper of SUB what token model type best describes the token. Substratum might be best categorized as a usage/work token.[3] Outlier tokens were categorized as a 1 with the dummy variable “Other”.
+
+Figure 4c: Token Model — Time Series
+
+Figure 4c shows that the first top 100 utility token was launched in December 2013. The number of top 100 launched utility tokens increased substantially in 2017. There is no notable trend in asset-backed or Stablecoin tokens due to the small number of tokens in the top 100.
+
+5. Underlying Value
+
+Figure 5a: Underlying Value
+
+Figure 5a shows the underlying value of the tokens in the dataset. Those include: inherent, permission to use, permission to work, physical asset, or a “share” in the enterprise such as revenue or voting rights. Figure 5a categorizes the top 100 according to these characteristics. Thirty-two tokens have inherent value, for example as a currency. The underlying value of thirty-two tokens is that they give token holders permission to use a digital service. Three tokens (OmiseGO, Stratis, and Dentacoin) were determined to have permission to work, or contribute to a system, as their underlying value. Dentacoin writes, “The patients’ well-being has been prioritized here and this smart contract solution will provide proper dental care to the patients, eliminating the need to deposit high premiums to insurance companies. The patients can also earn rewards by writing ‘trusted reviews’” in their Whitepaper.[4]
+
+Figure 5b: Underlying Value — Time Series
+
+Figure 5b mimics those in Figure 4c, token model type. In the token models that were examined, inherent value (e.g. as a currency) is the most consistent underlying value type for the top 100 tokens. The first top 100 token with an underlying value that was a combination of permission to use and inherent value launched in July 2014. The first top 100 tokens whose underlying value is strictly permission to use launched in February 2015. Permission to use (a given service etc. via the token) took over as the dominant type of underlying value in June 2017. The author has seen multiple indicia that this trend towards tokens that grant rights to use services etc. will continue.
+
+6. Valuation Trajectory
+
+Figure 6a: Valuation Trajectory
+
+Figure 6a depicts the valuation trajectory of the top 100 tokens. Seventy-two tokens in the dataset capped the number of tokens that will ever be issued by the respective token issuer, otherwise known as a deflationary model of token issuance. This method is utilized by tokens such as Bitcoin. With a deflationary method, prices are expected to increase due to fundamental scarcity of token supply.
+
+The other twenty-eight tokens in the dataset are using an inflationary token model in various sub-settings. Tokens that utilize an inflationary model often attempt to operate similar to a fiat currency. This means typically that no maximum number of token issuance is contemplated. Rather, inflationary token models consider a continuing token minting process that allows the issuer more flexibility depending on the current state of the token and the general market environment.
+
+Figure 6b: Valuation Trajectory — Time Series
+
+Figure 6b depicts token valuation trajectory methods over time. No significant trend is evident in the twenty-eight inflationary tokens. The peaks in deflationary token models in mid-late 2017 are consistent with the increased number of tokens launched during this time frame. Several indicia seem to suggest that as the cryptocurrency market matures, inflationary token models may continue to become more popular. Unlike deflationary token models, inflationary token models allow the use of stability mechanisms. It is unclear if the cryptocurrency market alone will over time be able to create the level of stability and lack of volatility that is needed for cryptocurrencies to become truly mainstream. Token stability mechanisms associated with inflationary token models may allow more experimentation with volatility mitigation and could therefore become even more popular.
+
+7. User Experience
+
+Figure 7a: Users Experience
+
+Figure 7a categorizes the top 100 tokens according to user experience. Sixty-six tokens allow ecosystem participants to handle the token directly. Thirty-four tokens operate underneath another token, platform, chain, etc.
+
+Figure 7b: User Experience — Time Series
+
+Figure 7b shows user experience of the top 100 tokens over time. Prior to mid-2017 tokens launched were directly utilized by users. The first layered token was Augur, which was launched in August 2015. According to its whitepaper, “Augur is built as an extension to the source code of Bitcoin Core” and their intention is to “use the `pegged sidechain’ mechanism to make Augur fully interoperable with Bitcoin”.[5] Status was launched in December 2013 and interacts with another platform that can act as a stand-alone interface for the token. After mid-2017, there does not appear to be a strong trend toward user-facing tokens over layered tokens. The author expects the layered tokens to remain more popular in the future as the interoperability of tokens generally assures survivability.
+
+8. Ecosystem Breadth
+
+Figure 8a: Ecosystem Breadth
+
+Figure 8a divides the top 100 tokens according to their operation types. Sixty tokens allow or intend inter-system functionality, while thirty-two tokens are fundamentally restricted for use in a given ecosystem. Both operations have advantages and disadvantages. App-specific tokens generally can exert less influence over the value from other projects. App-specific tokens also typically do not allow for a broader user market as the limited use of the token curtails user access. The trends in the data again support that interoperability as a means of survivability dictates token design, e.g. a majority of tokens are looking to have a broader base of individuals by making their token interoperable.
+
+Figure 8b: Ecosystem Breadth — Time Series
+
+Figure 8b shows token operation over time. The first app-specific token was launched in February 2014 and was intended to be a “digital social currency”.[6] Twenty-two tokens, the greatest number of app-specific tokens to be launched, were launched between April 2017 and January 2017. Interoperability again appears to be a major objective of token design.
+
+9. Consensus Protocol
+
+Figure 9a: Consensus Protocol
+
+Figure 9a depicts the tokens in the dataset categorized by their respective underlying consensus protocol. Proof of Work is still the most popular consensus protocol type. Other consensus protocols represented in Figure 9a include Proof of Stake, Delegated Proof of Stake, Proof of Activity, Proof of Capacity, and Proof of Burn. Attempts to increase throughput and scale for consensus protocols often focus on proof of stake attempts. The data is consistent with anecdotal evidence that suggests that proof of stake may be the most dominant attempt at scaling.
+
+Figure 9a shows that the “Other” consensus protocol type, made up of thirty-four tokens. Three of the tokens in the outlier category (Stellar, NEO, and Aion) use Byzantine Fault Tolerant Algorithm (“BFT”)[7] or Delegated Byzantine Fault Tolerant (“dBFT”).[8] Other outlier consensus protocols of the top 100 tokens include Proof of Importance (“POS+”)[9], Proof of Authority[10], loop fault tolerance[11], Egalitarian Proof of Work[12], Proof of Intelligence[13], Trusted Execution Environment[14], Proof of Devotion[15], Proof-of-Stake-Velocity (“PoSV”)[16], Proof of Credit Share[17], and Proof of Process[18]. Tokens experimenting with alternative consensus protocols often change the transfer process in an effort to become more efficient.
+
+Figure 9b: Consensus Protocol — Time Series
+
+Figure 9b highlights and underscores the experimentation in the blockchain community that drives the efforts to find a consensus algorithm that overcomes the trilemma of blockchain, e.g. scale, security and decentralization. To date, no blockchain truly combines these three objectives coherently and comprehensively. Experimentation with different consensus algorithms can, over time, help overcome the blockchain trilemma.
+
+Historically, the attempt to create higher throughput and scale has dominated experimentation with consensus algorithms. The first non-Proof of Work token was Ripple, launched in August 2013. The “Ripple Protocol Consensus Algorithm” is a subnetwork consensus achieved via Unique Node Lists, then aggregated. Nodes only verify their subsection of the network and their trust of other nodes.[19] The first Proof of Stake token to be launched was Nxt in December 2013.[20] The next outlier to be launched was ReddCoin in February 2014 whose consensus algorithm is Proof-of-Stake Velocity, “created specifically to facilitate social interactions in the digital age” where the peer-to-peer network is secured and transactions are confirmed.[21] Stellar launched in August 2014, forking off of Ripple. Its Federated Byzantine Agreement delays transaction approval until a critical mass of nodes approve it, then the Stellar Consensus Protocol completes a nomination and ballot procedure.[22]
+
+10. Governance
+
+Figure 10: Governance — Time Series
+
+Figure 10 depicts token governance types (hard fork, soft fork/every tokenholder votes, masternodes, other) according to token launch date. Tokens launched prior to 2015 were overwhelmingly developed on a hardfork or a combination of hardfork and one of the other governance types depicted.
+
+In August 2013, Ripple launched with a combination of a masternode and outlier governance mechanism — “Ripple’s enterprise solution-based management control. Also: The final round of consensus requires a minimum percentage of 80% of a server’s unique node list agreeing on a transaction. All transactions that meet this requirement are applied to the ledger, and that ledger is closed, becoming the new last-closed ledger.”[23] The first full outlier governance mechanism to be launched was Nxt in December 2013. “Each node on the Nxt network has the ability to process and broadcast both transactions and block information. Blocks are validated as they are received from other nodes, and in cases where block validation fails, nodes may be “blacklisted” temporarily to prevent the propagation of invalid block data”.[24]
+
+During 2015 and 2016, three outlier tokens were launched per year. These tokens were Tether, Factom, and Iota; DigixDAO, Gas, and Ark. During 2017, this figure jumped to eighteen tokens. During the first six months of 2018, five outlier tokens were launched. These tokens were categorized as “other” in coding and graphs.
+
+III. Conclusion
+
+The data analyses in this study present a coherent picture on trends in the token designs of the top 100 coins and their implications for the evolution of the industry. The emergence of inflationary token models and the increasing interoperability of token models, visible in the data analysis, are core developments for the industry.
+
+Inflationary token models appear to be proliferating. Multiple data sources in the dataset of this study suggest that as the cryptocurrency market matures, inflationary token models may continue to become more popular. Unlike deflationary token models, inflationary token models allow the use of stability mechanisms. Token stability mechanisms associated with inflationary token models may allow more experimentation with volatility mitigation and could therefore become even more popular.
+
+Interoperability of tokens is an increasingly important characteristic of token designs. For instance, the data suggests that layered token designs will become even more popular in the future. Layered token designs enable increased interoperability of cryptocurrencies. Similarly, app-specific token designs are increasingly focused on interoperability. Increased interoperability of tokens optimizes survivability. Given these trends, the data seems to suggest that token designs are increasingly focused on longer terms survivability designs. Perhaps future token designs will find a sustainable survivability design. Yet, long-term survivability of token designs may be more tied to infrastructure capabilities and less to temporary fixes in token designs.
+
+[1] EOS.IO Technical White Paper v2, block.one (Mar. 16, 2018),
+
+https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+
+[2] Test Network, Neo Network, http://docs.neo.org/en-us/network/testnet.html (last visited Sept. 11, 2018).
+
+[3] Page 13, “In order to incentivize users to run the Substratum Network client on their machine, Substrate will be used as payment for serving the network. When a business or entity wants to host their site(s) on the decentralized web, they will purchase Substrate using other cryptocurrencies or fiat. When a Substratum Network member runs their node and renders requests they are paid using Substrate from the host. When a shopper checks out using CryptoPay, the payment method they use is converted to the payment method the vendor desires by using Substrate as the conversion currency.” The Substratum Network White Paper Version 3.4, Substratum 13 (Aug. 2017), http://substratum.net/wp-content/uploads/2017/08/substratum_whitepaper.pdf
+
+[4] Dentacoin Whitepaper, Dentacoin (Mar. 15, 2018) (unpublished draft),
+
+https://whitepaperdatabase.com/dentacoin-dcn-whitepaper/.
+
+[5] Auger: A Decentralized, Open-Source Platform for Prediction Markets, Brave NewCoin,
+
+https://bravenewcoin.com/assets/Whitepapers/Augur-A-Decentralized-Open-Source-Platform-for-Prediction-Markets.pdf (last visited Sept. 11, 2018).
+
+[6] Larry Ren, Proof of State Velocity: Building the Social Currency of the Digital Age, Reddcoin 8 (Apr. 2014), https://www.reddcoin.com/papers/PoSV.pdf
+
+[7] Aion: Enabling the Decentrailized Internet, AION 11–12 (Jul. 31, 2017),
+
+https://aion.network/media/en-aion-network-technical-introduction.pdf.
+
+[8] NEO Whitepaper: NEO Design Goals: Smart Economy, NEO, https://github.com/neo-project/docs/blob/master/en-us/whitepaper.md (last visited Sept. 11, 2018).
+
+[9] NEM Whitepaper: Technical Reference, NEM 39–40 (Feb. 23, 2018), https://www.nem.io/wp-content/themes/nem/files/NEM_techRef.pdf.
+
+[10] VeChain: Development Plan and Whitepaper, Vechain 50 (2018),
+
+https://cdn.vechain.com/vechainthor_development_plan_and_whitepaper_en_v1.0.pdf.
+
+[11] ICON: Hyperconnect the World, ICON Foundation 23 (Jan. 31, 2018), https://icon.foundation/resources/whitepaper/ICON-Whitepaper-EN-Draft.pdf.
+
+[12] Nicolas Van Saberhagen, CryptoNote v 2.0, ByteCoin 2 (Oct. 17, 2013), https://bytecoin.org/old/whitepaper.pdf.
+
+[13] AION, supra note 23 at 18.
+
+[14] Mixin (XIN) — Whitepaper, Mixin 4 (Aug. 31, 2018), https://whitepaperdatabase.com/mixin-xin-whitepaper/.
+
+[15] Nebulas: Decentralized Search Framework, Nebulas 20 (Jan. 2018), https://nebulas.io/docs/NebulasWhitepaper.pdf.
+
+[16] Ren, supra note 22 at 5.
+
+[17] GXChain (GXS) — Whitepaper, GXShares 16(Mar. 15, 2018), https://whitepaperdatabase.com/gxchain-gxs-whitepaper/.
+
+[18] Trevor Koverko, Chris Housser, Polymath: The Securities Token Platform, Polymath 10 (Feb. 2018), https://polymath.network/whitepaper.html.
+
+[19] David Schwartz, Noah Youngs & Arthur Britto, The Ripple Protocol Consensus Algorithm, Ripple Labs Inc. 4 (2014), https://ripple.com/files/ripple_consensus_whitepaper.pdf.
+
+[20] Nxt Whitepaper, Nxt 5–6 (Jul. 12, 2014), https://whitepaperdatabase.com/nxt-nxt-whitepaper/.
+
+[21] Ren, supra note 22 at 1.
+
+[22] David Mazieres, The Stellar Consensus Protocol: A Federated Model for Internet-level Consensus, Stellar 18–19, https://www.stellar.org/papers/stellar-consensus-protocol.pdf (last visited Sept. 11, 2018).
+
+[23] Schwartz, supra note 35 at 4.
+
+[24] Nxt, supra note 34 at 7.

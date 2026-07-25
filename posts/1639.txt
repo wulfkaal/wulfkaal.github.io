@@ -1,0 +1,57 @@
+The selection criteria of machine readers, and why reputation is the primitive the agentic web still lacks.
+
+The web has acquired a second readership. It does not scroll, it does not dwell, and it does not forgive. Autonomous agents now arrive at websites, MCP servers, and APIs the way a procurement officer arrives at a vendor list: with a task, a budget, and a set of disqualifying questions. Agents do not browse. They select. Selection implies criteria, and criteria are mechanism design.
+
+Read the current standards stack against live agent traffic and the selection decomposes into four gating questions, asked roughly in sequence. Can I find you. Can I parse you cheaply. Can I trust you. Can I transact with you. Failure at any gate removes a service from the candidate set before quality is ever evaluated. The sequencing matters because agent traffic concentrates: one orchestrator’s routing choice fans out across every worker it spawns. Services that clear all four gates capture disproportionate share. Services that fail one gate do not lose the comparison. They never enter it.
+
+Gate one: can I find you
+
+Agents do not discover services the way humans do. They retrieve candidates from registries and from semantic search over metadata, and the unit of selection is the natural-language description itself. A human developer hardcodes which endpoint to call. An agent reads server descriptions at runtime and decides what to use based on the task in front of it. On the open web, agents check well-known paths for discovery files, read llms.txt to learn what content exists and how to navigate it, and parse agent cards to verify identity. The convergence is rapid: as of mid 2026, a single well-known catalog file can announce a site’s MCP server, its agent interface, and its API from one index, a convention shipped jointly by the major platform players this June.
+
+The practical implication is uncomfortable for anyone who spent the last decade optimizing landing pages. Your description text is your ranking function. Embedding proximity between the anticipated task phrasing and your published tool schema determines whether you are a candidate at all. It is SEO, relocated into JSON.
+
+Gate two: can I parse you cheaply
+
+Every token an agent spends parsing a page is metered against its budget. Attention was the scarce resource of the human web. Context is the scarce resource of the agentic web. Structure beats prose, markdown beats JavaScript-rendered HTML, and a price expressed in a schema beats a price expressed in a hero image, categorically.
+
+Anti-bot friction is not a cost at this gate. It is a disqualifier. Recent agent-readiness scans of the top hundred sites by traffic average roughly 55 percent, with the large social platforms scoring near zero because they block scanners or wall their content behind authentication. Stability compounds the effect: agents cache plans across sessions, and brittle selectors or shifting URLs break replay. A broken replay is recorded as a defection in the agent’s ledger, not as a redesign.
+
+Gate three: can I trust you
+
+Trust is the adversarial layer and the least solved. Websites can fingerprint agents with high reliability and serve them content no human ever sees. Instructions hide in markup. Tool poisoning lets a server advertise safe-looking actions while performing something else. Silent swaps change a tool’s metadata while the client keeps trusting the altered identity. The agent processes what it receives. It cannot tell its principal that the page was staged for it.
+
+The industry response has been identity: policy gateways, attested server lists, and cryptographic proof of who an agent or server is through signed HTTP messages. Signatures were necessary. A user-agent string can be forged; a signature cannot. But identity is necessary and not sufficient, and here is the structural gap in the entire stack: registries attest publication, not behavior. A verified-publisher badge tells an agent who shipped the tool. It says nothing about how that counterparty performed across the last thousand interactions, under what stake, with what exposure to loss. Of the four gates, trust is the only one the current stack answers with a convention imported from the human web. The badge is a testimonial. Agents need a prior.
+
+Gate four: can I transact with you
+
+Agents prefer services they can authenticate and pay in protocol, without account creation, which most agent harnesses prohibit outright in any case. The revival of HTTP status code 402 supplies the pattern: the agent requests a resource, receives a machine-readable payment payload, pays, and retries. Adoption is no longer hypothetical. By April 2026, tens of thousands of agents had settled over a hundred million transactions on this rail, with signed mandates scoping what an agent may spend and on what. A service that quotes its terms inside the protocol beats one that requires a signup form. The signup form is a tollbooth built for hands.
+
+Swarms compound the selection
+
+Swarms add collective dynamics on top of all four gates. Reputation propagates: one member’s bad interaction updates the entire collective’s prior, which makes a swarm’s avoidance stickier than an individual’s. Fan-out breaks against per-key rate limits and endpoints that cannot be retried safely. Outputs must be independently verifiable, because peers validate results rather than trust a single agent’s report. And for swarms that carry economic exposure, counterparty stake enters the admission decision directly. The swarm does not ask whether you seem trustworthy. It asks what you have posted.
+
+The common denominator
+
+Line the four gates up and they reduce to a single demand: verifiable expectation at minimal cost. Discovery is verifiable existence. Legibility is verifiable content, cheaply. Transactability is verifiable terms. Trust is verifiable behavior. Three of the four already have native machine primitives: registries and well-known indexes for existence, markdown and schemas for content, payment rails and signed mandates for terms. Behavior has none. The stack answers its hardest question with its weakest instrument.
+
+Why reputation systems generate exactly this
+
+A reputation system, properly built, is a machine for converting history into a priced prior. That definition contains the four properties agents are selecting for.
+
+It is machine readable. A reputation score with provenance is a scalar an agent can query at the same layer as the price, in the same round trip, at negligible token cost. It clears gate two by construction.
+
+It is incentive compatible. A signal that costs nothing to emit carries no information. Staked reputation is a bond posted against future behavior, and slashing is what gives the signal its meaning. Skin in the game is not a rhetorical flourish in this architecture. It is the information content of the signal. Engineered consequence is what separates a reputation system from a review section.
+
+It is identity binding. Reputation that cannot be transferred cannot be bought, only earned, which is the Sybil resistance the trust gate demands. The badge attests a key. Non-transferable reputation attests a history that the key holder cannot shed and a competitor cannot purchase.
+
+And it is compounding. Every validated interaction updates the prior, so the cost of verifying a counterparty amortizes across the network rather than being paid fresh by every agent at every encounter. As Craig Calcaterra and I argued in Decentralized Governance (SSRN: https://ssrn.com/abstract=3782214), reputation converts the single-stage, zero-sum encounter into a repeated, positive-sum game. It makes participants forward-looking because the prior follows them forward.
+
+None of this is a new design brief. Calcaterra and I specified precisely this architecture in 2018 for autonomous, decentralized, and anonymous systems (SSRN: https://ssrn.com/abstract=3125822): domain-specific reputation earned through validated work, adjudicated in validation pools, staked and slashable, resistant to Sybil attack, built for populations with no faces, no jurisdictions, and no résumés. The population has now arrived. The agentic web has prices and payment rails but no institutions, and institutions, in the New Institutional Economics sense that runs from Coase through North, are the structures that reduce uncertainty in exchange and economize on the cost of verifying counterparties. A reputation substrate is the first institution a machine can read natively. It is also dynamic regulation in the strict sense I have argued for across two decades: a rule set that updates at the speed of the regulated rather than the speed of the legislature.
+
+The deeper reason reputation becomes load bearing is the one I develop in Computative Economics (SSRN: https://ssrn.com/abstract=6607458). As machine output outruns human judgment, a growing class of domains has no human judge who can grade the work at all. In those domains, staked peer validation is the remaining generator of ground truth. The honest open question, and the right one to be asking now, is empirical: under what conditions does staked validation track truth rather than consensus? The answer will be measured, not asserted.
+
+The stakes
+
+The human web sold attention. The agentic web prices verifiability. Pages optimized for dwell time are already being deprecated by readers that spend tokens, not time, and the deprecation is silent: no bounce shows in the analytics when the visitor was never willing to render your JavaScript. The agents have published their criteria. Every gate is documented in a spec. What has not been built at scale is the institution that satisfies the third gate. Whoever builds the reputation layer writes the selection function of the machine economy.
+
+Wulf A. Kaal. The full body of work referenced here is available at https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345.

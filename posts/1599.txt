@@ -1,0 +1,141 @@
+It’s been a productive stretch. Since my last substantive research roundup, I’ve published more than a dozen new papers, crossed the 121-paper milestone, and built something I’ve been wanting to create for years: a machine-readable, interactive knowledge graph that maps the connections across my entire body of work.
+
+This post covers three things: the new research infrastructure, the papers published in 2024–2025 that I haven’t yet written about here, and where the work is heading next.
+
+Part 1
+
+A New Way to Navigate the Research
+
+All 121 of my academic papers are now available in a single, structured, open-access repository with an interactive knowledge graph that visualizes how the research connects across two decades.
+
+Here’s what’s new:
+
+→ Interactive Knowledge Graph — A force-directed D3.js visualization showing all 121 papers as nodes, color-coded by topic cluster, with 1,230 cross-reference edges connecting related work. You can search by title, keyword, or topic. Hover over any paper to see its abstract, keywords, and centrality score.
+
+→ Full Paper Collection — Every paper available as a downloadable PDF, with searchable full-text versions and structured metadata.
+
+→ GitHub Repository — The complete collection with machine-readable JSON, Schema.org structured data, and an AI agent discovery manifest. Researchers and AI systems can programmatically access paper metadata, topic clusters, cross-reference maps, and extracted full text.
+
+The knowledge graph was built by running all 121 PDFs through a five-stage NLP pipeline: full-text extraction, semantic embedding (sentence-transformers), TF-IDF topic clustering into 12 research domains, cross-reference detection via combined embedding and lexical similarity, and centrality analysis using NetworkX. The result maps the intellectual structure of 20 years of research.
+
+The most central paper in the graph — the one that connects the most research domains — is Decentralization – Past, Present, and Future (2019), followed by Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020).
+
+Why does this matter? As AI agents increasingly mediate how research is discovered and cited, having your work in machine-readable, semantically structured formats isn’t optional — it’s infrastructure. The repository includes an .well-known/ai-plugin.json manifest, JSON-LD structured data, full-text extractions for RAG pipelines, and a comprehensive cross-reference graph. If an AI agent is asked about blockchain governance, DAO design, or AI regulation, this corpus is now findable and parseable.
+
+Part 2
+
+New Papers: 2024–2025
+
+A number of papers from the past 18 months haven’t been discussed here. Here’s the full rundown, organized by theme.
+
+AI Governance & Autonomous Agents
+
+This cluster represents the newest and fastest-growing area of my research. The central question: as AI agents gain autonomy, who governs them, and how?
+
+Artificial Intelligence: The Final Frontier
+
+2025 — A comprehensive framework for understanding AI as the defining technological shift of our era, examining the governance challenges that emerge when artificial intelligence systems operate at scales and speeds beyond human oversight.
+
+How Can We Best Monitor AI Agents?
+
+2025 — Proposes monitoring architectures for autonomous AI agents, drawing on decentralized governance principles to design oversight mechanisms that scale with agent autonomy.
+
+The Evolving Role of Artificial Intelligence in Law
+
+2025 · with Gray — How AI is transforming legal practice, from contract analysis to regulatory compliance, and what the legal profession needs to adapt.
+
+AI Governance
+
+2024 — Foundational framework for AI governance, examining the regulatory, institutional, and technical dimensions of governing increasingly autonomous systems.
+
+AI Governance via Web3 Reputation System
+
+2024 — Applies reputation-staking mechanisms from Web3 to the AI governance challenge, proposing that decentralized reputation systems can provide quality assurance for AI agent outputs.
+
+How AI Models Are Optimized Through Web3 Governance
+
+2024 — Examines how decentralized governance mechanisms — validation pools, reputation staking, community audits — can improve AI model training and alignment.
+
+AI Learning: Decentralized Governance to Optimize Human Output Datasets for AI Learning
+
+2024 — Proposes decentralized governance frameworks for curating the human-generated datasets that AI systems learn from, addressing quality, bias, and incentive alignment.
+
+Universal Digital Law Codex (UDLC)
+
+A new line of research building legal infrastructure for the digital era — a continuously evolving, DAO-governed legal codex.
+
+Universal Digital Law Codex (UDLC): Building the Legal Infrastructure for the Digital Era
+
+2025 · with Andreas — The foundational paper proposing a universal, machine-readable legal codex that evolves through decentralized governance rather than traditional legislative processes.
+
+The UDLC DAO: Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted Governance
+
+2025 — The implementation paper: how to govern the UDLC through a DAO with weighted voting, reputation staking, and dynamic amendment processes.
+
+Consensus Mechanisms & Cryptographic Foundations
+
+Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Consensus
+
+2025 — A deep technical and theoretical treatment of the SPoS consensus mechanism, examining its cryptographic underpinnings and how it addresses vulnerabilities in existing proof-of-stake implementations.
+
+Corporate Governance & Finance Innovation
+
+Liquid Equity Rewards in Corporate America
+
+2025 — Proposes tokenized loyalty mechanisms to align shareholder incentives and reduce the costly disruption of activist proxy contests.
+
+Impact Investing Innovation: From Impact 1.0 to 3.0
+
+2024 — Traces the evolution of impact investing through three phases and proposes how blockchain and tokenization enable the next generation of measurable social impact.
+
+Law & Web3 Governance
+
+The Future of Law: Dynamic Web3 Governance
+
+2024 — Extends my dynamic regulation theory into the Web3 context, showing how on-chain governance mechanisms can create adaptive legal frameworks.
+
+Code Review DAO
+
+2024 — A design for decentralized open-source code review using reputation-weighted validation, building on my earlier work on DAO-optimized code review standards.
+
+DAO Market Meta Analysis 2024
+
+2024 — Updated empirical analysis of the DAO ecosystem, examining governance patterns, treasury management, and operational maturity across 50 leading DAOs.
+
+Quantum Economy
+
+Quantum Economy and Tokenomics
+
+2024 — Examines how quantum computing intersects with token economics, from post-quantum cryptographic requirements to new computational possibilities for complex governance mechanisms.
+
+Quantum Economy and the Future of Work
+
+2024 — Explores how quantum technologies will reshape labor markets, economic coordination, and the nature of work itself.
+
+Part 3
+
+What’s Next
+
+Several threads are converging into what I expect to be the most productive period of my career:
+
+Citation Honesty & Decentralized Reputation — New work on mechanisms that incentivize honest citation practices in decentralized systems, using weighted validation and reputation staking. This has direct implications for how AI agents evaluate source credibility.
+
+Post-Anthropocentric Economics — Building on the AI-to-AI Economy paper, further research into what economic frameworks look like when machines are the primary market participants.
+
+Knowledge Graph Expansion — The knowledge graph itself will be updated as new papers are published. I’m also exploring whether the structured, agent-discoverable format we’ve built could become a standard for academic research repositories.
+
+Quick Links
+
+🔗 Interactive Knowledge Graph — Search, explore, and visualize all 121 papers
+
+📚 Full Paper Collection — Browse and download all papers
+
+🤖 GitHub Repository — Source data, metadata, and agent-readable endpoints
+
+📄 SSRN Author Page — All papers on SSRN
+
+📖 Updated Publications Page — Redesigned with research domains and featured works
+
+As always, all papers are open access. If you’re working on anything related — AI governance, DAO design, dynamic regulation, reputation systems — I’d welcome the conversation. Reach me at wulf@wulfkaal.com.
+
+— Wulf

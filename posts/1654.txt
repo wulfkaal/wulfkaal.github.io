@@ -1,0 +1,63 @@
+Something changed quietly over the past two years. An artificial system that rewrites its own scaffolding, tests the rewrite, keeps the version that scores better, and files the result in a growing lineage is no longer speculative. It is a published, replicated, benchmarked engineering pattern. Several laboratories converged on it independently, which is the usual sign that a design has stopped being clever and started being obvious.
+
+That convergence disposes of the wrong question. The interesting problem is not whether machines can improve themselves. They can. The interesting problem is what they are improving toward, and who is entitled to say so.
+
+The hidden dependency
+
+Every system in this class rests on one load-bearing assumption: somewhere outside the system sits a scorer that cannot be argued with. A coding benchmark. A test that passes or fails. A solve rate. The candidate modification is tried against that scorer, and the number decides.
+
+Note the architecture of that arrangement. The fitness function is never inside the search space. The system may rewrite almost anything about itself except the standard by which it is judged. That exclusion is not an oversight. It is the only thing keeping the exercise honest, and every serious designer in this field knows it.
+
+The arrangement works. It also does not travel.
+
+It holds in domains that possess an answer key: code that compiles, a proof that checks, an output that can be mechanically confirmed. Those domains are a shrinking fraction of the work machines are now asked to perform. Judgment about strategy, allocation, risk, negotiation, design, and institutional conduct has no key. No human judge can generate ground truth at the volume and velocity at which agents now generate work. This is not a temporary tooling gap. It is a structural property of precisely the domains where the economic value sits.
+
+Remove the external verifier and the apparatus loses its anchor. What remains is a system optimizing against its own estimate of its own quality. That is not self-improvement. It is self-congratulation with version control.
+
+This is an institutional problem wearing engineering clothes
+
+The verifier is not a piece of software. It is an institution: an external authority whose judgment participants accept because they cannot corrupt it. Machine learning inherited that institution from the benchmark culture of academic computer science and has been spending it down ever since.
+
+What happens when an institution that supplied authoritative judgment can no longer keep pace with the conduct it judges? That question is not new, and it is not confined to machines. It is the pacing problem, and I have argued for more than a decade that the response cannot be a better static rule (Dynamic Regulation for Innovation; Dynamic Regulation of the Financial Services Industry). Static rules degrade at the speed of the thing they govern. Governance that survives contact with rapid change must be designed to adjust rather than to hold.
+
+I put the point in its sharpest form in my work on decentralized systems: any fixed set of rules that can ever be designed will eventually fail to secure a network for all time, which obliges the designer to build with an evolutionary mindset and a dynamic governance process from the outset (A Technical Perspective on Decentralization; Decentralized Governance).
+
+Self-improving agents are the pacing problem in its purest instance. The governed party rewrites itself faster than any external standard can be maintained. This is a classification, not an analogy.
+
+What replaces the verifier
+
+The line of work I have pursued since 2018 supplies the alternative. If no external authority can score the work, the scoring must be produced endogenously, by parties who bear consequence for being wrong. Domain-specific reputation, validated by the network rather than conferred by an authority, was the object of that early architecture (Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and Anonymous Systems), and the consequence mechanics were worked out alongside it (Secure Proof of Stake Protocol). The extension of that architecture to the governance of artificial agents is the subject of more recent work (AI Governance Via Web3 Reputation System).
+
+The innovation my current program tests is narrow and, I think, consequential. It is this: treat a proposed self-modification as work.
+
+Not as a search step. Not as a candidate to be scored by a metric it can eventually learn to game. As work: submitted, attributable, and subject to the same governed validation any other output would face, by validators who hold something at risk in the judgment they render. Approval carries downside. Reputation is earned by being right about quality, not by participating.
+
+Three consequences follow, and I will state them without the mechanics.
+
+First, improvement acquires provenance. Every modification carries its lineage, and credit for a change flows to whoever proposed it when its value becomes apparent, which may be long after the fact. Improvement compounds instead of drifting.
+
+Second, the standard becomes governable. What counts as an improvement is no longer smuggled in as a constant. It is an object the system can revise, but only under a materially higher procedural bar than ordinary changes require, with exit preserved for those who reject the revision. Ordinary modification and constitutional modification cannot cost the same.
+
+Third, and least comfortable, the whole thing becomes falsifiable.
+
+The hazard I will not paper over
+
+A validation market with no external contact is a closed epistemic loop. Agents judging agents judging agents, every judgment settled, every ledger consistent, and nothing anywhere having touched ground. That failure mode is worse than the one it replaces, because it fails later, more expensively, and with every indicator showing green on the way down.
+
+Consensus is not truth. Staked consensus is not truth either. It is merely consensus that costs something to produce, which is an improvement in incentive and no improvement at all in epistemics unless it is demonstrated.
+
+So the claim I am prepared to defend is not that reputation markets discover truth. It is narrower. Where an answer key exists, the divergence between what a governed validation market concludes and what the key says can be measured. That divergence is a number. It can be estimated, bounded, and reported. And a bound established where verification is possible is the only honest thing anyone can carry into domains where verification is not.
+
+That is the contribution. Not the loop, which the field already has. The bound.
+
+Stakes
+
+The systems being built now will decide what improvement means for the artificial agents that follow them, and they will decide it by default if no one decides it deliberately. Design by abdication remains design. Whoever writes the reward writes the species.
+
+The current answer, that improvement means whatever the benchmark says, is durable only while benchmarks exist. They will not exist for most of what matters. What replaces them will be either a governed institution with accountability and measured error, or an unexamined consensus among interested parties, dressed as measurement.
+
+Institutional economics has known for a long time that the quality of outcomes turns on the quality of the rules under which parties transact, and that rules without enforcement is aspiration. The agentic substrate is that proposition tested at machine speed, on machine participants, with the answer key removed on purpose so the cost of its absence can finally be priced.
+
+The empirical results are forthcoming. The architecture is not the interesting part. The measured cost of removing the judge is.
+
+Wulf A. Kaal is Professor of Law at the University of St. Thomas School of Law. His scholarly work is collected at https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345. Correspondence: wulf@wulfkaal.com.

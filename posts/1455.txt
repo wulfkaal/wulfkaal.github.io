@@ -1,0 +1,45 @@
+Craig Calcaterra & Wulf Kaal
+
+The Existing Problem with Decentralized Identity Systems
+
+The basic Web of Trust (WoT) works as follows: Keep track of your network transactions, and ask how well the people who are part of your transactions are satisfied with the interaction. If they also have a big reputation and are satisfied with the transaction then your reputation goes up. If you get a lot of these good transactions then you have a good reputation. Early adopters who are all trustworthy. If someone behaves badly their reputation will drop.
+
+Here’s the problem. If I use a lot of sockpuppet accounts, I can raise my reputation arbitrarily high, by behaving well for a while, then making a lot of transactions with myself and rating myself high.
+
+So the solution that is always offered is to control entry by identity verification. The problem with this is, if the reputation is genuinely valuable, a sockpuppet account can afford to go through whatever hoops you have in place to create false identities (including stealing biometric data if necessary), then increase their reputation arbitrarily, as described above.
+
+If the reputation is not valuable, then you won’t be able to get honest users to go through the hoops required to identify themselves securely, since it’s not worth it.
+
+So the only time WoT works is when the service is not valuable, such as PGP (email which is essentially free). Then it’s not worth it to create sock puppet accounts, so in that case you can trust the WoT network.
+
+If you are trying to create an economic solution that is worth real money, where you need to be able to trust the other people in the network will behave well and follow protocol, you can’t just assume their historical good behavior will prove their future behavior will also be good. Sockpuppet accounts allow us to game the system in an automated manner and falsely create a valuable reputation, so we can leach whatever value there is out of the system.
+
+In summary, the Web of Trust is a traditional attempt to create decentralized reputation which is critically flawed and should not be used when fungible currency is at stake:
+
+It counts the number of transactions that are positive/honest and how much each member supports the other members (web of trust) – many DLT startups use this approach;
+
+However, sockpuppet accounts can grow their value much quicker in the web of trust by validating each other. Honest users are much slower than the sockpuppets validating each other. Hence, the system is flawed.
+
+Proposed Remedy
+
+What is needed is a voting algorithm that is designed to combat the WoT, so that it is not economically feasible to game the system without adding genuinely valuable improvements, as proven with the fees that are added to the system and the fair validation pool that every fee is subject to.
+
+Fixing this web of trust sockpuppet flaw:
+
+Figure 1: Multiple Sockpuppet Accounts with 1 Token Each.
+
+Figure 1 demonstrates that multiple sockpuppet accounts with 1 token each are still equal to a higher token amount of the same DAO member with only one account. In the Persona Protocol, people, e.g., DAO members, can use sockpuppet accounts but they are wasting their efforts. Validation pools make any change in rewards. All power comes from validation pools in relation to what DAO members stake, and all fungible currency rewards are shared fairly with the group in proportion to their individual reputation. The sockpuppet Protocol thus breaks the incentives for Sybil attacks.
+
+Anonymous DAO memberships define the reputation of their members by the amount of tokens the members hold in the respective DAO. The more DAO tokens members own the more the DAO, the system, and the platform respect the DAO member. The token is based exclusively on meritocracy. Physicality, group identification, race, culture language etc., are relatively superficial identifiers and do not play the same role in the future. Reputation verification may be seen as a forum for meritocracy, providing the most honest valuation of individual actions and contributions to a DAO.
+
+Figure 2: Respectively Aggregated DAO Memberships Individuals on the Platform.
+
+Figure 2 illustrates the respectively aggregated DAO memberships individuals on the Platform may have that define their Self Sovereign Identity on the platform and ultimately the Internet. In other words, users are identified by their reputation scores in the respective DAOs they choose to become members of and participate in by staking their respective DAO reputations. Other commonly used identifiers such as social media provides, credit scores in centralized systems, etc., do not matter. The core identifiers are DAO token scores.
+
+Different users may utilize such Persona Protocol Scores in different settings. The use cases for persona protocol scores are very wide ranging. DAO scores are a conversation starter for people to engage with the platform and the individuals on the platform. For example, if person A has a very high reputation score in Solidity Programming template Expertise tag / DAO, certain people will want to engage with person A just because of A’s Score in the respective DAO. Over time, the team will use the reputation scoring to engage with and emulate existing social identity networks.
+
+From a social justice perspective, the Persona Protocol takes power and spreads it out much further to people who have no agency in the centralized systems. In the existing systems very few audits exist that derive from the community itself. In any DAO, community audits are at the core.
+
+Technology Instantiation and Onboarding
+
+To facilitate DAO member onboarding and enable fully verified external wallets, it is possible to develop mobile biometrics technology that allows users to sign in with their biometrics into a particular wallet if they so choose. The platform could use zero knowledge proofs for its biometrics onboarding technology that guarantees continuing anonymity for users, once onboarded. Users who wish to forego biometric identifiers via zero knowledge proofs on their mobile etc., devices can opt to become DAO members in a completely anonymized way.
