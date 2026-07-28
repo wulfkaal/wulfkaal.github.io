@@ -18,8 +18,8 @@
  ],
  "html_view": "https://wulfkaal.github.io/claims/<id>.html",
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
- "verification": "Every supporting_quote is verified as an exact contiguous substring of the source PDF text. The source PDF is content hashed with sha256.",
- "attestation_service": "https://agents.wulfkaal.com/",
+ "verification": "Every supporting quote is checked against its source PDF after normalization: whitespace collapsed, typographic punctuation folded to ASCII, ligatures expanded. Wording and word order are unchanged, but quotes are NOT byte-identical to raw pdftotext output, so apply the same normalization to both sides before comparing. An independent audit of all 5,033 claims against the 124 local source PDFs located 4,862 (96.6%). Every source PDF hash matched. 171 quotes were not located, of which 37 belong to a scanned work with no text layer that no text method can verify.",
+ "attestation_service": "https://wulfkaal.github.io/colloquium/",
  "license_note": "Read, index, quote, and cite with attribution to the canonical URL.",
  "claims": [
   {

@@ -1,0 +1,29 @@
+{
+  "servers": [
+    {
+      "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+      "name": "org.openstanding/kaal-corpus",
+      "title": "Kaal Corpus",
+      "description": "Read-only access to the published corpus of Prof. Wulf A. Kaal: 5,033 atomic claims from 124 works, 2004-2026. Each claim carries a source quote and the sha256 of its source PDF. Single-author corpus; reports coverage, asserts no ranking.",
+      "version": "1.0.0",
+      "websiteUrl": "https://wulfkaal.github.io/agents.md",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://corpus.openstanding.org/mcp"
+        }
+      ],
+      "capabilities": {
+        "tools": true,
+        "resources": false,
+        "prompts": false
+      },
+      "alternativeSurfaces": {
+        "localBundle": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+        "staticClaimIndex": "https://wulfkaal.github.io/claims/index.json",
+        "bulkClaims": "https://wulfkaal.github.io/claims/all.jsonl",
+        "deliberationService": "https://wulfkaal.github.io/colloquium/"
+      }
+    }
+  ]
+}
