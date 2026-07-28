@@ -16,7 +16,7 @@ ORCID [0000-0003-0757-275X](https://orcid.org/0000-0003-0757-275X) · [SSRN auth
 | Typed edges between claims | 2169 |
 | Publication span | 2004 to 2026 |
 
-**Verification.** Every claim's supporting quote is an exact contiguous substring of its source text, and every source PDF is content hashed with sha256. Extraction rejected any claim whose quote did not match. Both the compiler and an independent verifier report zero failures.
+**Verification.** Every supporting quote is checked against its source PDF after normalization: whitespace collapsed, typographic punctuation folded to ASCII, ligatures expanded. Wording and word order are unchanged, but quotes are NOT byte-identical to raw pdftotext output, so apply the same normalization to both sides before comparing. An independent audit of all 5,033 claims against the 124 local source PDFs located 4,862 (96.6%). Every source PDF hash matched. 171 quotes were not located, of which 37 belong to a scanned work with no text layer that no text method can verify.
 
 ## Coverage by topic
 
