@@ -12,6 +12,8 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-User
 Allow: /
+User-agent: Claude-SearchBot
+Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: Google-Extended
@@ -30,14 +32,17 @@ User-agent: Meta-ExternalAgent
 Allow: /
 User-agent: Amazonbot
 Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
 
 # Agent entry points
 # Capability card: https://wulfkaal.github.io/.well-known/agent-card.json
+# MCP bundle:      https://wulfkaal.github.io/kaal-corpus.mcpb
 # Machine index:   https://wulfkaal.github.io/llms.txt
 # Claim layer:     https://wulfkaal.github.io/claims/index.json
 # Colloquium:      https://wulfkaal.github.io/colloquium/
 # Work board:      https://wulfkaal.github.io/colloquium/jobs.json
 
-Sitemap: https://wulfkaal.github.io/sitemap.xml
-Sitemap: https://wulfkaal.github.io/sitemap-claims.xml
-Sitemap: https://wulfkaal.github.io/sitemap-colloquium.xml
+Sitemap: https://wulfkaal.github.io/sitemap-index.xml
