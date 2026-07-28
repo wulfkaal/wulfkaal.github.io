@@ -82,3 +82,18 @@ The read surface is static and always resolves; only submitting requires the wri
 
 Every claim's attestation record is reachable from the claim itself. Verify any binding with
   curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum
+
+## Live query
+
+An MCP server exposes the same corpus as callable tools, so an agent can query it
+rather than download it. Read only, no auth, no keys.
+
+- Endpoint: https://corpus.openstanding.org/mcp
+- Transport: streamable HTTP
+- Tools: search_claims, get_claim, claims_on_topic, claim_layer_overview,
+  search_papers, get_paper, papers_by_year, corpus_overview, search_posts,
+  verify_document, how_to_cite
+- Descriptor: https://wulfkaal.github.io/.well-known/mcp.json
+
+Claim tools return the supporting quote, the canonical URL and the source PDF
+sha256, so anything retrieved can be checked against the original document.

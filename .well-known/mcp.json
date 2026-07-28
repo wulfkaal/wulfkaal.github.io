@@ -1,0 +1,29 @@
+{
+  "name": "wulf-kaal-corpus",
+  "endpoint": "https://corpus.openstanding.org/mcp",
+  "transport": "streamable-http",
+  "authentication": "none",
+  "readOnly": true,
+  "description": "Read-only access to the published corpus of Prof. Wulf A. Kaal: 5,033 atomic claims from 124 works, 2004-2026. Each claim carries a source quote and the sha256 of its source PDF. Single-author corpus; reports coverage, asserts no ranking.",
+  "tools": [
+    "search_claims",
+    "get_claim",
+    "claims_on_topic",
+    "claim_layer_overview",
+    "search_papers",
+    "get_paper",
+    "papers_by_year",
+    "corpus_overview",
+    "search_posts",
+    "verify_document",
+    "how_to_cite"
+  ],
+  "documentation": "https://wulfkaal.github.io/agents.md",
+  "staticMirror": {
+    "claimIndex": "https://wulfkaal.github.io/claims/index.json",
+    "bulkClaims": "https://wulfkaal.github.io/claims/all.jsonl",
+    "coverage": "https://wulfkaal.github.io/authority.json"
+  },
+  "contact": "wulf@wulfkaal.com",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}

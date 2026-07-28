@@ -28,6 +28,7 @@ regulation, securities law.
 | BibTeX | https://wulfkaal.github.io/papers.bib |
 | Knowledge graph | https://wulfkaal.github.io/Academic-Papers/knowledge-graph/knowledge_graph.json |
 | Attestation spec | https://wulfkaal.github.io/book/attest.md |
+| MCP endpoint, live query | https://corpus.openstanding.org/mcp |
 
 ## The claim layer
 
