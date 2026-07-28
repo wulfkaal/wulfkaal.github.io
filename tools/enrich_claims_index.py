@@ -30,21 +30,33 @@ import hashlib
 import json
 import sys
 import urllib.request
+from pathlib import Path
 
 BASE = "https://wulfkaal.github.io"
 UA = {"User-Agent": "kaal-index-enricher/1.0"}
 
 
-def get(url: str) -> bytes:
+def get(src: str) -> bytes:
+    """Read from a URL or a local path.
+
+    CI runs this against the checked-out tree, not the published site — it must
+    enrich the file it is about to commit, not the one already deployed. Reading
+    only URLs made the workflow fail on its first run with
+    `ValueError: unknown url type: 'claims/index.json'`.
+    """
+    if "://" not in src:
+        return Path(src).read_bytes()
     with urllib.request.urlopen(  # noqa: S310
-            urllib.request.Request(url, headers=UA), timeout=300) as r:
+            urllib.request.Request(src, headers=UA), timeout=300) as r:
         return r.read()
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--index-url", default=f"{BASE}/claims/index.json")
-    ap.add_argument("--corpus-url", default=f"{BASE}/claims/all.jsonl")
+    ap.add_argument("--index-url", default=f"{BASE}/claims/index.json",
+                    help="URL or local path to the index to enrich")
+    ap.add_argument("--corpus-url", default=f"{BASE}/claims/all.jsonl",
+                    help="URL or local path to all.jsonl")
     ap.add_argument("--out", default="index.enriched.json")
     ap.add_argument("--with-quote", action="store_true",
                     help="also inline supporting_quote (larger, but makes the "
