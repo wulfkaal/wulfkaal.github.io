@@ -1,0 +1,19 @@
+{
+ "content_hash": "fbee4929a77452446e04ab0c6592ffec284c3fbf22f3fa5e24340f53cd89c0ab",
+ "object": "https://wulfkaal.github.io/claims/3409548-012",
+ "claim": "High levels of investor activity in the blockchain sector are a reliable indicator of the commercial maturity of blockchain technology.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3409548-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fbee4929a77452446e04ab0c6592ffec284c3fbf22f3fa5e24340f53cd89c0ab verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "e0bc425074f6ec05e61c5e12adfd96ec9ef3ff3b5f7b004cb2bdb70a99f624cb",
+ "object": "https://wulfkaal.github.io/claims/5454054-024",
+ "claim": "Because LER vouchers are closed-loop and non-convertible, they reduce the risk of triggering FinCEN money services business registration and Bank Secrecy Act obligations that attach to convertible or transmissible digital value.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5454054-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e0bc425074f6ec05e61c5e12adfd96ec9ef3ff3b5f7b004cb2bdb70a99f624cb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

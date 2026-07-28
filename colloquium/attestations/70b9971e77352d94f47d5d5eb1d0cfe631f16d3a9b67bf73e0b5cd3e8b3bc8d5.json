@@ -1,0 +1,19 @@
+{
+ "content_hash": "70b9971e77352d94f47d5d5eb1d0cfe631f16d3a9b67bf73e0b5cd3e8b3bc8d5",
+ "object": "https://wulfkaal.github.io/claims/5541658-024",
+ "claim": "The EU AI Act classifies AI applications used in judicial proceedings as high risk because of their potential to affect fundamental rights such as due process and non-discrimination, and therefore subjects them to mandatory transparency, bias audits, and human oversight.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5541658-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 70b9971e77352d94f47d5d5eb1d0cfe631f16d3a9b67bf73e0b5cd3e8b3bc8d5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

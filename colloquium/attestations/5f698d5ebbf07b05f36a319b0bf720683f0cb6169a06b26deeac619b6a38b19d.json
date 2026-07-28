@@ -1,0 +1,19 @@
+{
+ "content_hash": "5f698d5ebbf07b05f36a319b0bf720683f0cb6169a06b26deeac619b6a38b19d",
+ "object": "https://wulfkaal.github.io/claims/3067615-023",
+ "claim": "Because the token supply is controlled by ICO promoters who must reserve tokens for future funding needs, token holders can be diluted by later issuance of reserve tokens and their token value can be diminished without any ability to protect themselves against such events.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5f698d5ebbf07b05f36a319b0bf720683f0cb6169a06b26deeac619b6a38b19d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

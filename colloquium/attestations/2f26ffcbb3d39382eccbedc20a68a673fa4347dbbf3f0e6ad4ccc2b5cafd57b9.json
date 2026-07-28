@@ -1,0 +1,19 @@
+{
+ "content_hash": "2f26ffcbb3d39382eccbedc20a68a673fa4347dbbf3f0e6ad4ccc2b5cafd57b9",
+ "object": "https://wulfkaal.github.io/claims/3266953-019",
+ "claim": "Under the Anchor Protocol, staking means anchoring reputation to a block, so a block producer whose block turns out to be invalid or is cancelled out suffers depreciation of their reputation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3266953-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2f26ffcbb3d39382eccbedc20a68a673fa4347dbbf3f0e6ad4ccc2b5cafd57b9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

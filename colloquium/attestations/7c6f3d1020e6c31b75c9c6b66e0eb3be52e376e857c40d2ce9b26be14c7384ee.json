@@ -1,0 +1,19 @@
+{
+ "content_hash": "7c6f3d1020e6c31b75c9c6b66e0eb3be52e376e857c40d2ce9b26be14c7384ee",
+ "object": "https://wulfkaal.github.io/claims/2739479-006",
+ "claim": "Private fund underperformance may be a product of institutionalization: pension funds have increased their private fund holdings and institutions now make up over two thirds of the private fund investor base, up from 20 percent a decade earlier.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-006.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7c6f3d1020e6c31b75c9c6b66e0eb3be52e376e857c40d2ce9b26be14c7384ee verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

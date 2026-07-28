@@ -1,0 +1,19 @@
+{
+ "content_hash": "ede01d3f9debf8222870057e1a011a7cdf5cc81a00bb29c082eb2623ce1ecc93",
+ "object": "https://wulfkaal.github.io/claims/3405660-027",
+ "claim": "The Basel framework serves indirect hedge fund regulation by aligning regulatory capital requirements more closely with underlying risks and by giving banks and supervisors several options for assessing capital adequacy.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3405660-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ede01d3f9debf8222870057e1a011a7cdf5cc81a00bb29c082eb2623ce1ecc93 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

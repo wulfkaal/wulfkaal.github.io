@@ -1,0 +1,19 @@
+{
+ "content_hash": "f773a8386d3809fb90057842a58128a554ad175e251ddb55e3024fb84f3e41a7",
+ "object": "https://wulfkaal.github.io/claims/2998097-036",
+ "claim": "Hedge fund advisers already required to register with the SEC have an incentive to also manage mutual funds or set up retail alternative funds, because the incremental regulatory burden of doing so is only minimally higher than their post registration requirements.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2998097-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f773a8386d3809fb90057842a58128a554ad175e251ddb55e3024fb84f3e41a7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

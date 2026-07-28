@@ -1,0 +1,19 @@
+{
+ "content_hash": "804b05e6bf49d110441fc3cf8641d196fc5e032c3f331d11f3a2f26875af654e",
+ "object": "https://wulfkaal.github.io/claims/3409548-021",
+ "claim": "A fund constituted purely through smart contracts on the Ethereum blockchain may have no domicile, foreign or domestic, which makes jurisdiction over blockchain transactions a genuine problem for the funds that use the technology.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3409548-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 804b05e6bf49d110441fc3cf8641d196fc5e032c3f331d11f3a2f26875af654e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

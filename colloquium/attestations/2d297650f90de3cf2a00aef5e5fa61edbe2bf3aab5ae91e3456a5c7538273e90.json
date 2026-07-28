@@ -1,0 +1,19 @@
+{
+ "content_hash": "2d297650f90de3cf2a00aef5e5fa61edbe2bf3aab5ae91e3456a5c7538273e90",
+ "object": "https://wulfkaal.github.io/claims/3782203-001",
+ "claim": "Any set process or set of rules that can ever be designed will ultimately fail to secure a network for all time, so no static rule set can serve as the permanent foundation of a DAO.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782203-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2d297650f90de3cf2a00aef5e5fa61edbe2bf3aab5ae91e3456a5c7538273e90 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "71453acee0ca65320cf04aeb334f0a00bf87772f867941abfd9d0863bd6ab2cb",
+ "object": "https://wulfkaal.github.io/claims/2389423-004",
+ "claim": "Before Title IV, launching a hedge fund could be accomplished by raising roughly $25 to $50 million, whereas after the Dodd-Frank Act the required initial amount may have risen to around $100 million.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 71453acee0ca65320cf04aeb334f0a00bf87772f867941abfd9d0863bd6ab2cb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

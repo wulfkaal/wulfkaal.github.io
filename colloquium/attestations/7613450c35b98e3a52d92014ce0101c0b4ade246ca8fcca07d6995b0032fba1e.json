@@ -1,0 +1,19 @@
+{
+ "content_hash": "7613450c35b98e3a52d92014ce0101c0b4ade246ca8fcca07d6995b0032fba1e",
+ "object": "https://wulfkaal.github.io/claims/2337268-024",
+ "claim": "Quarterly rather than annual reporting by large private fund advisers is intended to give the FSOC data timely enough to identify emerging systemic risk trends.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7613450c35b98e3a52d92014ce0101c0b4ade246ca8fcca07d6995b0032fba1e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

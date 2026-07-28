@@ -1,0 +1,19 @@
+{
+ "content_hash": "979db110a350c88052b808914faacf74fe37dc902f7e133526899ff3ff5a7157",
+ "object": "https://wulfkaal.github.io/claims/3936876-021",
+ "claim": "Cold wallets typically lack the multisig feature that is common in hot storage, so the single employee acting as agent for a corporation may be the only access point to the corporate digital assets.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3936876-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 979db110a350c88052b808914faacf74fe37dc902f7e133526899ff3ff5a7157 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

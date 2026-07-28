@@ -1,0 +1,19 @@
+{
+ "content_hash": "3cd4b3f23356c9dc7b4b8fad1ee2367948000a907f3c764589a7282194b72ced",
+ "object": "https://wulfkaal.github.io/claims/5583610-021",
+ "claim": "The fourth Howey prong fails because LER accrual is automated by smart contract and driven by the shareholder's own decision to keep holding, leaving the issuer's role ministerial rather than entrepreneurial.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5583610-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3cd4b3f23356c9dc7b4b8fad1ee2367948000a907f3c764589a7282194b72ced verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "a8f43ec03deac4ce47855251e37d13e99d331db2f7945c1cad156e9d5b35d79a",
+ "object": "https://wulfkaal.github.io/claims/6655138-037",
+ "claim": "The reflection operator is implementable at the settlement layer if and only if the architecture supports validation outcomes on at least as many timescales as there are distinguishable reflection acts, which in the six-surface architecture is six.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6655138-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a8f43ec03deac4ce47855251e37d13e99d331db2f7945c1cad156e9d5b35d79a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

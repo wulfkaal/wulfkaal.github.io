@@ -1,0 +1,19 @@
+{
+ "content_hash": "a7d6301e55e211faf1fcfc2f11fbfd3878500361dbb1b3eac26e71e1e8583602",
+ "object": "https://wulfkaal.github.io/claims/4529715-040",
+ "claim": "When only a minority of members, such as Audius node operators, can stake or earn weighted votes, the majority of token holders occupy the same powerless position as an ordinary shareholder in a corporation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4529715-040.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a7d6301e55e211faf1fcfc2f11fbfd3878500361dbb1b3eac26e71e1e8583602 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

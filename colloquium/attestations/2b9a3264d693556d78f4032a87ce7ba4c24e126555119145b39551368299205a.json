@@ -1,0 +1,19 @@
+{
+ "content_hash": "2b9a3264d693556d78f4032a87ce7ba4c24e126555119145b39551368299205a",
+ "object": "https://wulfkaal.github.io/claims/2732915-021",
+ "claim": "Among respondents answering the open ended question on other actions taken, 30.8 percent hired a compliance firm, 15.4 percent said they otherwise wasted time and money reacting to Dodd-Frank requirements, and 15.4 percent implemented new policies and programs.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2732915-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2b9a3264d693556d78f4032a87ce7ba4c24e126555119145b39551368299205a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

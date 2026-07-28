@@ -1,0 +1,19 @@
+{
+ "content_hash": "5649b2c101fb10fbeed5a5e4bfff7c09a83754175a5596ab107dbe15f6a09f62",
+ "object": "https://wulfkaal.github.io/claims/3396542-027",
+ "claim": "Because each underwriter sizes capital against the risk of that underwriter's overall portfolio, and underwriting can be diversifying for a non traditional participant, the sum of the underwriters' incremental Values at Risk may be less than the Value at Risk of a single insurance firm writing the same contracts.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396542-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5649b2c101fb10fbeed5a5e4bfff7c09a83754175a5596ab107dbe15f6a09f62 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

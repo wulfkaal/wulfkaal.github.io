@@ -1,0 +1,19 @@
+{
+ "content_hash": "27f176e2a5be9f6d1956412210e77eb9212eb3fcf26f56160ce23feafaaf4505",
+ "object": "https://wulfkaal.github.io/claims/3782217-014",
+ "claim": "A decentralized oracle is not secure until it has significant momentum and history, and it is not even truly decentralized until it has a large network of active members.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782217-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 27f176e2a5be9f6d1956412210e77eb9212eb3fcf26f56160ce23feafaaf4505 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

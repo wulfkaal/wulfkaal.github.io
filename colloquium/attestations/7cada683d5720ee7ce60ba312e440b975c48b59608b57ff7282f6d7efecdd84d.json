@@ -1,0 +1,19 @@
+{
+ "content_hash": "7cada683d5720ee7ce60ba312e440b975c48b59608b57ff7282f6d7efecdd84d",
+ "object": "https://wulfkaal.github.io/claims/2816408-028",
+ "claim": "To sharpen assignment to treatment and control, actual registration histories were pulled from the SEC's IAPD website and historical Form ADV data and combined with Morningstar variables to build two additional control groups: firms already registered with no status change, and foreign firms completely unaffected by the US legal regime.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2816408-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7cada683d5720ee7ce60ba312e440b975c48b59608b57ff7282f6d7efecdd84d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "c87a392d56def99568d87ef2af536ef8f814ec10a875e5fbd157504ff76e9caa",
+ "object": "https://wulfkaal.github.io/claims/3936876-007",
+ "claim": "The paper certificate system failed at scale: trust companies and intermediaries were overwhelmed by changing ownership records, and from 1967 to 1970 a reported $400 million in securities was lost or stolen.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3936876-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c87a392d56def99568d87ef2af536ef8f814ec10a875e5fbd157504ff76e9caa verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

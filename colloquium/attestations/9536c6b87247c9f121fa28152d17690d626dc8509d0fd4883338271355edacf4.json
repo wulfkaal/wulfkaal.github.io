@@ -1,0 +1,19 @@
+{
+ "content_hash": "9536c6b87247c9f121fa28152d17690d626dc8509d0fd4883338271355edacf4",
+ "object": "https://wulfkaal.github.io/claims/3125822-009",
+ "claim": "The platform's ability to function among anonymous and potentially hostile users is conditional: it holds only if smart contracts that engage experts for off-platform work voluntarily include the recommended protocol choices, which the minimal core itself does not require.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9536c6b87247c9f121fa28152d17690d626dc8509d0fd4883338271355edacf4 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

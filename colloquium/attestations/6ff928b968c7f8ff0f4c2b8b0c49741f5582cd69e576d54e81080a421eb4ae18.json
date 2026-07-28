@@ -1,0 +1,19 @@
+{
+ "content_hash": "6ff928b968c7f8ff0f4c2b8b0c49741f5582cd69e576d54e81080a421eb4ae18",
+ "object": "https://wulfkaal.github.io/claims/3709041-030",
+ "claim": "Regulatory concerns and lack of market confidence were the cited reasons for postponing the token sale of GiftCoin, a charitable donation tracking project that launched in 2017 and shut down in June 2018.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3709041-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6ff928b968c7f8ff0f4c2b8b0c49741f5582cd69e576d54e81080a421eb4ae18 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "afb6d0e8f79a175a4e196dc8529ae6c7ed33a534bd2fc1587047fde997541b19",
+ "object": "https://wulfkaal.github.io/claims/3125827-022",
+ "claim": "Experts who fail to participate in the validation pool are punished stably rather than abruptly: because the system is inflationary and they gain none of the newly minted sem tokens, their holdings become a smaller percentage of the total and earn a smaller share of future reputation weighted salaries.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125827-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest afb6d0e8f79a175a4e196dc8529ae6c7ed33a534bd2fc1587047fde997541b19 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

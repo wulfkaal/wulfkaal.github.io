@@ -1,0 +1,19 @@
+{
+ "content_hash": "a885210a87e1a0ce831c26f19890390a02266f8115fd82e530b14b3e52af7940",
+ "object": "https://wulfkaal.github.io/claims/5254152-027",
+ "claim": "Requiring users to purchase governance tokens in order to vote both centralizes power in majority token holders and leaves the DAO highly vulnerable to 51 percent and sock puppet attacks, as illustrated by Gelato DAO which scored 1 on both decentralization and attack resistance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5254152-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a885210a87e1a0ce831c26f19890390a02266f8115fd82e530b14b3e52af7940 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

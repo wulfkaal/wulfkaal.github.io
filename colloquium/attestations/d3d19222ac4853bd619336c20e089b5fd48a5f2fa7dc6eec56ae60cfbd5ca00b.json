@@ -1,0 +1,19 @@
+{
+ "content_hash": "d3d19222ac4853bd619336c20e089b5fd48a5f2fa7dc6eec56ae60cfbd5ca00b",
+ "object": "https://wulfkaal.github.io/claims/3409548-020",
+ "claim": "Blockchain-based funds can invert the traditional secrecy of hedge funds: the LendingRobot ledger discloses detailed holdings and supplies a hash code signature evidencing that the data is tamper proof.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3409548-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d3d19222ac4853bd619336c20e089b5fd48a5f2fa7dc6eec56ae60cfbd5ca00b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

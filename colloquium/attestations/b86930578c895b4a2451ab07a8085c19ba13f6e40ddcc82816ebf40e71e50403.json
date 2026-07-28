@@ -1,0 +1,19 @@
+{
+ "content_hash": "b86930578c895b4a2451ab07a8085c19ba13f6e40ddcc82816ebf40e71e50403",
+ "object": "https://wulfkaal.github.io/claims/3782205-027",
+ "claim": "An artificially scarce currency such as bitcoin is deflationary as long as its market expands, and like gold its price fluctuation makes it unsuitable for daily commerce.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782205-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b86930578c895b4a2451ab07a8085c19ba13f6e40ddcc82816ebf40e71e50403 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "80568274bafb7a9b94ebb729f86c28cecd8d2cae624444590f7d1f31f0fd2863",
+ "object": "https://wulfkaal.github.io/claims/2150377-003",
+ "claim": "The client counting safe harbor, which let an adviser count a pooled entity rather than each investor as a single client, allowed advisers to manage large amounts of securities indirectly for several hundreds of investors across multiple hedge funds while remaining outside registration and supervision.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2150377-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 80568274bafb7a9b94ebb729f86c28cecd8d2cae624444590f7d1f31f0fd2863 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

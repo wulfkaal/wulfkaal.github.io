@@ -1,0 +1,19 @@
+{
+ "content_hash": "b27f118a30e8b36ca795a81995e1f00e1ca2074dd78799ef5c9a07b78890956b",
+ "object": "https://wulfkaal.github.io/claims/2061166-031",
+ "claim": "A trigger that fires too early wastes the equity injection: conversion occurs without a real need for capital or additional voting shareholders, and the effect of the injection may have dissipated by the time it is actually needed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2061166-031.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b27f118a30e8b36ca795a81995e1f00e1ca2074dd78799ef5c9a07b78890956b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

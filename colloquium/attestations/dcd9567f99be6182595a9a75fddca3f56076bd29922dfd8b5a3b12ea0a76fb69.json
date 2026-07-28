@@ -1,0 +1,19 @@
+{
+ "content_hash": "dcd9567f99be6182595a9a75fddca3f56076bd29922dfd8b5a3b12ea0a76fb69",
+ "object": "https://wulfkaal.github.io/claims/2470008-018",
+ "claim": "Stage one of the FSOC's designation process is a mechanical screen: six quantitative thresholds filter out nonbank financial institutions unlikely to pose significant systemic risk before any institution specific or qualitative analysis begins.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-018.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest dcd9567f99be6182595a9a75fddca3f56076bd29922dfd8b5a3b12ea0a76fb69 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

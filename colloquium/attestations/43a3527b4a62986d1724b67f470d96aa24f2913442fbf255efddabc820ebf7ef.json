@@ -1,0 +1,19 @@
+{
+ "content_hash": "43a3527b4a62986d1724b67f470d96aa24f2913442fbf255efddabc820ebf7ef",
+ "object": "https://wulfkaal.github.io/claims/4685567-016",
+ "claim": "Impact measurement in Impact 2.0 has no settled standard: consensus on measurement methodologies and metrics remains elusive, which produces divergent approaches and hinders comparability across programs and sectors.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4685567-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 43a3527b4a62986d1724b67f470d96aa24f2913442fbf255efddabc820ebf7ef verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

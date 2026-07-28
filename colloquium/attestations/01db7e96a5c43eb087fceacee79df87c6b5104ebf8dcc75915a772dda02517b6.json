@@ -1,0 +1,19 @@
+{
+ "content_hash": "01db7e96a5c43eb087fceacee79df87c6b5104ebf8dcc75915a772dda02517b6",
+ "object": "https://wulfkaal.github.io/claims/3782205-031",
+ "claim": "Banking performs the necessary function of absorbing the risk of less secure but more efficient small transactions, which are then bundled before a more expensive but secure transaction is made with the central bank.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782205-031.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 01db7e96a5c43eb087fceacee79df87c6b5104ebf8dcc75915a772dda02517b6 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

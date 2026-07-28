@@ -1,0 +1,19 @@
+{
+ "content_hash": "de154a62b2f3e59220f22f0392c5408d4f56e717220e213bb2b908f194075ffe",
+ "object": "https://wulfkaal.github.io/claims/3808859-037",
+ "claim": "Future peer-to-peer networks will thrive on dissimilarity rather than redundancy: nodes contributing dissimilar resources and capabilities let the network perform tasks no individual peer could perform, and making those capabilities available to all nodes attracts further nodes.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808859-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest de154a62b2f3e59220f22f0392c5408d4f56e717220e213bb2b908f194075ffe verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

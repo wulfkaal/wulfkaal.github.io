@@ -1,0 +1,19 @@
+{
+ "content_hash": "af74d52e9913f07c38af40fe5512dcf1a466b202b6dcdcbe816e4b9ef2e59b99",
+ "object": "https://wulfkaal.github.io/claims/4685567-033",
+ "claim": "The smart contracts underlying the impact certificate marketplace prohibit and make technically impossible the extension of favors to individual donors, so unlike Impact 1.0 and 2.0 the highest pledging donor cannot obtain special considerations or better terms.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4685567-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest af74d52e9913f07c38af40fe5512dcf1a466b202b6dcdcbe816e4b9ef2e59b99 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

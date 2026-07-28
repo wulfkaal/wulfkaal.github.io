@@ -1,0 +1,19 @@
+{
+ "content_hash": "52bc750629d7c8c30c6fe8b9d6d702fe0986608f0a03d73e8f48028385e875b5",
+ "object": "https://wulfkaal.github.io/claims/3782203-036",
+ "claim": "Paying contributors in reputation tokens rather than fees, and then distributing all fees as a periodic reputation weighted salary, defeats the sockpuppet attack because splitting a holding across many accounts yields exactly the same share of fees.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782203-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 52bc750629d7c8c30c6fe8b9d6d702fe0986608f0a03d73e8f48028385e875b5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

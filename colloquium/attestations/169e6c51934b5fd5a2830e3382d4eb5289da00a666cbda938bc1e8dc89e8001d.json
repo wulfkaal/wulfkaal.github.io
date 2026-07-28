@@ -1,0 +1,19 @@
+{
+ "content_hash": "169e6c51934b5fd5a2830e3382d4eb5289da00a666cbda938bc1e8dc89e8001d",
+ "object": "https://wulfkaal.github.io/claims/2150377-022",
+ "claim": "A majority of surveyed advisers, 72.09%, do not plan any strategic response to the Dodd-Frank Act registration and reporting requirements.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2150377-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 169e6c51934b5fd5a2830e3382d4eb5289da00a666cbda938bc1e8dc89e8001d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "223c3ab059b0ba6ff5344e813d4998254a3da737f7df46253c610c95d99373a5",
+ "object": "https://wulfkaal.github.io/claims/2629451-009",
+ "claim": "The study's hand-selected dataset covers all institutions that executed N/DPAs from 1993 to 2015, a population of 330 agreements, of which 94 involved publicly traded firms usable for stock price tests.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2629451-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 223c3ab059b0ba6ff5344e813d4998254a3da737f7df46253c610c95d99373a5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

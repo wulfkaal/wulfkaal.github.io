@@ -1,0 +1,19 @@
+{
+ "content_hash": "53b55861d95884e589d0b3f86e647820263706b7c49edcdec4e76ece3067a9ea",
+ "object": "https://wulfkaal.github.io/claims/3373393-017",
+ "claim": "Supervisory tasks traditionally performed by principals to control their agents can be delegated to decentralized computer networks that are reliable, secure, immutable, and independent of fallible human input and discretionary human goodwill.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3373393-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 53b55861d95884e589d0b3f86e647820263706b7c49edcdec4e76ece3067a9ea verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

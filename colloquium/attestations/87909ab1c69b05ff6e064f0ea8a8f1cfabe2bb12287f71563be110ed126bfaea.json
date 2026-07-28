@@ -1,0 +1,19 @@
+{
+ "content_hash": "87909ab1c69b05ff6e064f0ea8a8f1cfabe2bb12287f71563be110ed126bfaea",
+ "object": "https://wulfkaal.github.io/claims/3962614-043",
+ "claim": "Reputation as capital has the potential to lower capital requirements for VC businesses significantly and to increase liquidity at unprecedented levels, because VCs can sell their fungible reputation tokens to the market as needed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3962614-043.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 87909ab1c69b05ff6e064f0ea8a8f1cfabe2bb12287f71563be110ed126bfaea verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

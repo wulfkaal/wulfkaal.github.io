@@ -1,0 +1,19 @@
+{
+ "content_hash": "23a4b71b14cf2c7612c388217afff09eb884be93aab2d0482bc5c43626be8cad",
+ "object": "https://wulfkaal.github.io/claims/4941807-023",
+ "claim": "In a federated model transparency and accountability across all participating entities are hard to ensure precisely because there is no centralized control, and Kaal notes that he does not otherwise advocate such centralized control.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4941807-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 23a4b71b14cf2c7612c388217afff09eb884be93aab2d0482bc5c43626be8cad verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

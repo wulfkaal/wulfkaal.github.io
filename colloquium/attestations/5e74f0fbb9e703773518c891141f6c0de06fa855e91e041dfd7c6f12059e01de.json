@@ -1,0 +1,19 @@
+{
+ "content_hash": "5e74f0fbb9e703773518c891141f6c0de06fa855e91e041dfd7c6f12059e01de",
+ "object": "https://wulfkaal.github.io/claims/5225296-013",
+ "claim": "Long-range attacks, in which adversaries rewrite history using old keys, are mitigated in SPoS by requiring verifiable participation of current stakeholders.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5225296-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5e74f0fbb9e703773518c891141f6c0de06fa855e91e041dfd7c6f12059e01de verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

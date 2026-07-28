@@ -1,0 +1,19 @@
+{
+ "content_hash": "6a665bdfef363b9ae9d65070992f541a3d9e7082d56cafa757203b2047c2f204",
+ "object": "https://wulfkaal.github.io/claims/2992962-016",
+ "claim": "Breach of a smart contract is arguably not even possible, because the contract simply will not execute if a parameter is not fulfilled.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2992962-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6a665bdfef363b9ae9d65070992f541a3d9e7082d56cafa757203b2047c2f204 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

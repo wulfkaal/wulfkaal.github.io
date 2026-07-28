@@ -1,0 +1,19 @@
+{
+ "content_hash": "e1a6d0a065df820d79b228d5fa63bac9e332ce2ebb1522ee94af410b9530099e",
+ "object": "https://wulfkaal.github.io/claims/3227933-013",
+ "claim": "Peer-to-peer transactions are possible because a distributed consensus model has network nodes verify, validate and audit transactions before and after execution, and this is often safer than routing transactions through a single trusted third-party intermediary.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3227933-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e1a6d0a065df820d79b228d5fa63bac9e332ce2ebb1522ee94af410b9530099e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

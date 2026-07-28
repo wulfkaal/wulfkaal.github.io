@@ -1,0 +1,19 @@
+{
+ "content_hash": "be5f02ace4f0caf2303046b2afb81bb7061f9dcf55c9e555b9e19fbf8ed835ec",
+ "object": "https://wulfkaal.github.io/claims/2808132-001",
+ "claim": "Regulation is usually reactive because it responds to facts, but the current environment is one of data rather than settled facts; regulation must therefore become proactive and dynamically responsive to data and trends.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2808132-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest be5f02ace4f0caf2303046b2afb81bb7061f9dcf55c9e555b9e19fbf8ed835ec verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

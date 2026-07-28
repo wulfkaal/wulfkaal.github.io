@@ -1,0 +1,19 @@
+{
+ "content_hash": "61df0bd26ea5b1a26081ea0d50ab8de846e58552cb267937048fbfffad56c56e",
+ "object": "https://wulfkaal.github.io/claims/3981021-032",
+ "claim": "Charging an admission or denial of service fee to become a voting associate disincentivizes betrayal and defection, because the sunk cost of joining makes cheating expensive even where associates can remain anonymous.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3981021-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 61df0bd26ea5b1a26081ea0d50ab8de846e58552cb267937048fbfffad56c56e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

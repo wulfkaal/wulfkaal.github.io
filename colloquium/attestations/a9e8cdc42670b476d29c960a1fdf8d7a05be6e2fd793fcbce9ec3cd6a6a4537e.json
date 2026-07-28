@@ -1,0 +1,19 @@
+{
+ "content_hash": "a9e8cdc42670b476d29c960a1fdf8d7a05be6e2fd793fcbce9ec3cd6a6a4537e",
+ "object": "https://wulfkaal.github.io/claims/3808873-008",
+ "claim": "Proof of Work block rewards structurally reintroduce centralization: the economic nature of mining rewards incentivizes degrees of centralization through collective action of nodes that share rewards as a group, that is, mining pools.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808873-008.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a9e8cdc42670b476d29c960a1fdf8d7a05be6e2fd793fcbce9ec3cd6a6a4537e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "8d76574b62a716dcc960ea8f7810fc25a28ddcce27c1bd3de8b404a4ca35dfcc",
+ "object": "https://wulfkaal.github.io/claims/2732915-010",
+ "claim": "Form PF raised regulatory oversight of private funds to unprecedented levels by requiring managers to disclose, for the first time, information about themselves, their funds, their investors, performance, financing, risk metrics, strategies, and credit exposure.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2732915-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8d76574b62a716dcc960ea8f7810fc25a28ddcce27c1bd3de8b404a4ca35dfcc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

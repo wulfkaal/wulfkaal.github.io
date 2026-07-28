@@ -1,0 +1,19 @@
+{
+ "content_hash": "6b12aa153cc58806fb77872cb6ab8ebde84b5673ec5f16417287694114490ca0",
+ "object": "https://wulfkaal.github.io/claims/1908473-020",
+ "claim": "Requiring financial institutions to sell high volumes of contingent capital securities, on the order of four to nineteen percent of risk weighted assets, could raise pricing pressure and increase their cost of funding.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1908473-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6b12aa153cc58806fb77872cb6ab8ebde84b5673ec5f16417287694114490ca0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

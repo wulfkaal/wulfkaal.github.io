@@ -1,0 +1,19 @@
+{
+ "content_hash": "e126ff670025b2349889b5379a1b138d6d7c82b0de0d70b61b9be3bd892368fe",
+ "object": "https://wulfkaal.github.io/claims/2748096-014",
+ "claim": "Hedge fund losses large enough to affect the overall economy did not appear until after the crisis and recession had already been triggered by the mortgage market collapse and sustained stock market losses, which places hedge funds downstream of the crisis rather than at its origin.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2748096-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e126ff670025b2349889b5379a1b138d6d7c82b0de0d70b61b9be3bd892368fe verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

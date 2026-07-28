@@ -1,0 +1,19 @@
+{
+ "content_hash": "32fa9ce285be9f21610329734d9d6fa4f03eea9acf7f1a4c92e9f606f41e093b",
+ "object": "https://wulfkaal.github.io/claims/3808867-040",
+ "claim": "The end of the technological life cycles of legacy payment systems in the early 2020s, together with emerging payment trends, requires central banks to intensify their examination of alternative payment systems.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808867-040.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 32fa9ce285be9f21610329734d9d6fa4f03eea9acf7f1a4c92e9f606f41e093b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

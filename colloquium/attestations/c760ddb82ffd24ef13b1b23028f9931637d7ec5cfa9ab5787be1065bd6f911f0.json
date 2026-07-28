@@ -1,0 +1,19 @@
+{
+ "content_hash": "c760ddb82ffd24ef13b1b23028f9931637d7ec5cfa9ab5787be1065bd6f911f0",
+ "object": "https://wulfkaal.github.io/claims/3782217-013",
+ "claim": "Robust decentralized oracles do not yet exist despite well funded proposals, because decentralized oracles are themselves DAOs and therefore inherit the same missing incentive structure, governance processes, and history that all DAOs suffer from.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782217-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c760ddb82ffd24ef13b1b23028f9931637d7ec5cfa9ab5787be1065bd6f911f0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

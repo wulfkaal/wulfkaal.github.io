@@ -1,0 +1,19 @@
+{
+ "content_hash": "e3e6c97388695d7ee20dbb04b1c1f70ee14321a24f3cc670372ed81d5926ae78",
+ "object": "https://wulfkaal.github.io/claims/2337268-028",
+ "claim": "Investment advisers that provide advice exclusively through the Internet may register with the SEC regardless of how much they have under management, so the delivery channel rather than size determines the forum.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e3e6c97388695d7ee20dbb04b1c1f70ee14321a24f3cc670372ed81d5926ae78 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

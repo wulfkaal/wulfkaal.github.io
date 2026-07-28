@@ -1,0 +1,19 @@
+{
+ "content_hash": "5b4da90552f5800adda0e804d23e58aadab37292d45e52998832d73cfd980ec1",
+ "object": "https://wulfkaal.github.io/claims/2811729-004",
+ "claim": "Unconstrained mutual funds combine the regulatory structure of a mutual fund with the investment strategy of a private fund implementing a credit strategy and principally trading fixed income instruments, which lets them transcend traditional investment and legal distinctions.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811729-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5b4da90552f5800adda0e804d23e58aadab37292d45e52998832d73cfd980ec1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

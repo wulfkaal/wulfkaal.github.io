@@ -1,0 +1,19 @@
+{
+ "content_hash": "890276f408b9b8cf4660e29098f96f7ad9dc04e7cf93c26f8e8d5fe61a2e001c",
+ "object": "https://wulfkaal.github.io/claims/2816408-001",
+ "claim": "Title IV of the Dodd-Frank Act of 2010 is the most significant regulatory change in the history of the private fund industry, ending decades in which the industry operated with little regulatory supervision.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2816408-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 890276f408b9b8cf4660e29098f96f7ad9dc04e7cf93c26f8e8d5fe61a2e001c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

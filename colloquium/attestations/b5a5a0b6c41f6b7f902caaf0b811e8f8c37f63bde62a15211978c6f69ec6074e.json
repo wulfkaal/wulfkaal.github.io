@@ -1,0 +1,19 @@
+{
+ "content_hash": "b5a5a0b6c41f6b7f902caaf0b811e8f8c37f63bde62a15211978c6f69ec6074e",
+ "object": "https://wulfkaal.github.io/claims/3117224-024",
+ "claim": "In Singapore there is no direct regulation of digital tokens under the Securities and Futures Act unless the currency is linked to an ownership or security interest in the issuer's assets or property.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3117224-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b5a5a0b6c41f6b7f902caaf0b811e8f8c37f63bde62a15211978c6f69ec6074e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

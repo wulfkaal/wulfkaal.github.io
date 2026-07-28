@@ -1,0 +1,19 @@
+{
+ "content_hash": "3b0fe2557ea40896029fc4e767670e0c376c3a7c761ae647fd86f037de7a1249",
+ "object": "https://wulfkaal.github.io/claims/3266953-005",
+ "claim": "Today's internet is designed for hierarchical societal structures on an underlying authoritative trust model, and that traditional hierarchical trust model carries many inefficiencies including serious cyber security vulnerabilities.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3266953-005.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3b0fe2557ea40896029fc4e767670e0c376c3a7c761ae647fd86f037de7a1249 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

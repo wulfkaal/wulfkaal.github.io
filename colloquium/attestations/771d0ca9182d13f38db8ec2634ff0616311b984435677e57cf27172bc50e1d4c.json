@@ -1,0 +1,19 @@
+{
+ "content_hash": "771d0ca9182d13f38db8ec2634ff0616311b984435677e57cf27172bc50e1d4c",
+ "object": "https://wulfkaal.github.io/claims/3125822-011",
+ "claim": "Enforcing a protocol in which all work fees are shared with the expertise produces a positive feedback loop: more fees raise the worth of reputation, which makes sem tokens more desirable than one time fees, which makes vested experts police the system carefully, which makes the system more secure.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 771d0ca9182d13f38db8ec2634ff0616311b984435677e57cf27172bc50e1d4c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

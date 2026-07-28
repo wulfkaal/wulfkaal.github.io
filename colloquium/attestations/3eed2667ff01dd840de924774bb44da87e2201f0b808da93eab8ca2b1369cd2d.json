@@ -1,0 +1,19 @@
+{
+ "content_hash": "3eed2667ff01dd840de924774bb44da87e2201f0b808da93eab8ca2b1369cd2d",
+ "object": "https://wulfkaal.github.io/claims/3396542-020",
+ "claim": "The margin m is stipulated as the premium per dollar in excess of the probability of a claim occurring at some point in the policy's life, and this margin is the quantity that must exceed a derived threshold for the design to hold.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396542-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3eed2667ff01dd840de924774bb44da87e2201f0b808da93eab8ca2b1369cd2d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

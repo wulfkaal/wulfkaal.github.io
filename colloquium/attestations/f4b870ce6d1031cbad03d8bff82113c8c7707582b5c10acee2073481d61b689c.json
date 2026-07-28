@@ -1,0 +1,19 @@
+{
+ "content_hash": "f4b870ce6d1031cbad03d8bff82113c8c7707582b5c10acee2073481d61b689c",
+ "object": "https://wulfkaal.github.io/claims/2470008-021",
+ "claim": "Form PF information addresses most of the FSOC's stage one thresholds either directly or indirectly, so the mechanical screen runs largely on adviser reported data.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f4b870ce6d1031cbad03d8bff82113c8c7707582b5c10acee2073481d61b689c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

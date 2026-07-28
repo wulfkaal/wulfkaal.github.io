@@ -1,0 +1,19 @@
+{
+ "content_hash": "aaf160af411570c5c08ed357c7b8eb0916450327d04c889f4aa409e1ef90aad2",
+ "object": "https://wulfkaal.github.io/claims/6655138-049",
+ "claim": "The architecture is infrastructure neutral: it applies to any settlement substrate supporting stake-weighted validation, on-chain identity, and a representation of agent state, so implementations on different substrates are translations of the same primitive rather than different primitives.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6655138-049.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest aaf160af411570c5c08ed357c7b8eb0916450327d04c889f4aa409e1ef90aad2 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

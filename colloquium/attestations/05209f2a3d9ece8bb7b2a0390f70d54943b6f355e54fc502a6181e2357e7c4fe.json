@@ -1,0 +1,19 @@
+{
+ "content_hash": "05209f2a3d9ece8bb7b2a0390f70d54943b6f355e54fc502a6181e2357e7c4fe",
+ "object": "https://wulfkaal.github.io/claims/4529715-007",
+ "claim": "Regulatory compliance is the weakest of all six categories, averaging 3.01 out of 10, and Services DAOs are the only category to outperform that average.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4529715-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 05209f2a3d9ece8bb7b2a0390f70d54943b6f355e54fc502a6181e2357e7c4fe verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

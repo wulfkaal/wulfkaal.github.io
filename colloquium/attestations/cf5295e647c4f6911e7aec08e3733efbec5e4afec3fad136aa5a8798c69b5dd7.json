@@ -1,0 +1,19 @@
+{
+ "content_hash": "cf5295e647c4f6911e7aec08e3733efbec5e4afec3fad136aa5a8798c69b5dd7",
+ "object": "https://wulfkaal.github.io/claims/2732915-024",
+ "claim": "The largest group of respondents, 26.5 percent, estimated annual compliance cost for all federal regulations at between $100,000 and $200,000, while a smaller group of 14.3 percent estimated it at more than $400,000 a year.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2732915-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cf5295e647c4f6911e7aec08e3733efbec5e4afec3fad136aa5a8798c69b5dd7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

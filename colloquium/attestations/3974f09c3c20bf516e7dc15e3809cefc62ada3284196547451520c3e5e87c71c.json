@@ -1,0 +1,19 @@
+{
+ "content_hash": "3974f09c3c20bf516e7dc15e3809cefc62ada3284196547451520c3e5e87c71c",
+ "object": "https://wulfkaal.github.io/claims/2470008-014",
+ "claim": "Form PF data was tailored primarily for the FSOC rather than for the SEC's own purposes, a design choice that shaped the level of reporting required.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3974f09c3c20bf516e7dc15e3809cefc62ada3284196547451520c3e5e87c71c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

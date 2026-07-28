@@ -1,0 +1,19 @@
+{
+ "content_hash": "d69fcb8691185028a619bd71f446218c574a5d38121963165a8a874e30ef583b",
+ "object": "https://wulfkaal.github.io/claims/2715083-017",
+ "claim": "Alternative mutual funds generally cannot deliver the same absolute returns as hedge funds, a shortfall some attribute to the lighter touch regulation and better incentives available to hedge funds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2715083-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d69fcb8691185028a619bd71f446218c574a5d38121963165a8a874e30ef583b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

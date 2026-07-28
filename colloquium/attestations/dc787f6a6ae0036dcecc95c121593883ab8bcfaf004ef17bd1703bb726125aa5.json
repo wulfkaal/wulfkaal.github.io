@@ -1,0 +1,19 @@
+{
+ "content_hash": "dc787f6a6ae0036dcecc95c121593883ab8bcfaf004ef17bd1703bb726125aa5",
+ "object": "https://wulfkaal.github.io/claims/3782210-018",
+ "claim": "Distributing salary equitably, for example equally to all members, is self-defeating: the obvious gaming strategy becomes creating multiple accounts and distributing one's work between them, which is why the salary must be reputation-weighted.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782210-018.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest dc787f6a6ae0036dcecc95c121593883ab8bcfaf004ef17bd1703bb726125aa5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

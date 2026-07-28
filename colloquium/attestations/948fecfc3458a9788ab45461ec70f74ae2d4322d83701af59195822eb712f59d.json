@@ -1,0 +1,19 @@
+{
+ "content_hash": "948fecfc3458a9788ab45461ec70f74ae2d4322d83701af59195822eb712f59d",
+ "object": "https://wulfkaal.github.io/claims/3411110-027",
+ "claim": "Despite an early call for regulatory leadership from Commissioner Stein in 2015, the SEC has not addressed core recognition questions for blockchain in finance, including cryptocurrencies, tokens as securities, and DAOs as investment advisers.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3411110-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 948fecfc3458a9788ab45461ec70f74ae2d4322d83701af59195822eb712f59d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

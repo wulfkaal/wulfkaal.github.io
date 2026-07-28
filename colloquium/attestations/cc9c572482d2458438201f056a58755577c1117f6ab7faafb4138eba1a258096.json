@@ -1,0 +1,19 @@
+{
+ "content_hash": "cc9c572482d2458438201f056a58755577c1117f6ab7faafb4138eba1a258096",
+ "object": "https://wulfkaal.github.io/claims/2739479-009",
+ "claim": "Smaller private funds spend more on compliance than larger ones, both as a share of AUM and relative to operating costs, which means increasing regulatory scrutiny falls disproportionately on smaller funds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cc9c572482d2458438201f056a58755577c1117f6ab7faafb4138eba1a258096 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

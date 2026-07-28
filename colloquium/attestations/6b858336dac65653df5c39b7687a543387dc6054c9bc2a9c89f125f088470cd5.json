@@ -1,0 +1,19 @@
+{
+ "content_hash": "6b858336dac65653df5c39b7687a543387dc6054c9bc2a9c89f125f088470cd5",
+ "object": "https://wulfkaal.github.io/claims/3067615-025",
+ "claim": "ICOs provide the highest possible liquidity for investors at the very beginning of a platform's lifecycle, before the reporting, accounting, and legal infrastructure that gives the investing public assurance of underlying business success, so investors trade on very limited information and volatility of the tokens and the whole cryptocurrency market increases.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6b858336dac65653df5c39b7687a543387dc6054c9bc2a9c89f125f088470cd5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

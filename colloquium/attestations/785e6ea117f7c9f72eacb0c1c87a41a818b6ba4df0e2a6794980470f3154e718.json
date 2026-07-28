@@ -1,0 +1,19 @@
+{
+ "content_hash": "785e6ea117f7c9f72eacb0c1c87a41a818b6ba4df0e2a6794980470f3154e718",
+ "object": "https://wulfkaal.github.io/claims/3808852-027",
+ "claim": "Even though the creator of a DEX plays a limited role in its evolution, the code that provides the exchange's operational rules may still be subject to the centralized control of certain developers, and a completely open source DEX with no ongoing developer involvement remains untested.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808852-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 785e6ea117f7c9f72eacb0c1c87a41a818b6ba4df0e2a6794980470f3154e718 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

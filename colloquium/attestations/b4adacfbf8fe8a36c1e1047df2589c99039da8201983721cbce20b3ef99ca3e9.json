@@ -1,0 +1,19 @@
+{
+ "content_hash": "b4adacfbf8fe8a36c1e1047df2589c99039da8201983721cbce20b3ef99ca3e9",
+ "object": "https://wulfkaal.github.io/claims/3266953-021",
+ "claim": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3266953-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b4adacfbf8fe8a36c1e1047df2589c99039da8201983721cbce20b3ef99ca3e9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

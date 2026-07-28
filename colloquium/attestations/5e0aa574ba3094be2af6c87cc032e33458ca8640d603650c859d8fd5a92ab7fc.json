@@ -1,0 +1,19 @@
+{
+ "content_hash": "5e0aa574ba3094be2af6c87cc032e33458ca8640d603650c859d8fd5a92ab7fc",
+ "object": "https://wulfkaal.github.io/claims/2389423-001",
+ "claim": "This study finds no evidence of an inverse relationship between the size of regulated hedge fund advisers and the per-unit cost of compliance, contrary to the common complaint that financial regulation brings increasing returns to scale.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5e0aa574ba3094be2af6c87cc032e33458ca8640d603650c859d8fd5a92ab7fc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

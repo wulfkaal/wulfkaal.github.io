@@ -1,0 +1,19 @@
+{
+ "content_hash": "cc79b6e9a677defe85effbcf55e7c9d5a9d70aa0edbda88ef52d4cd10dc9b865",
+ "object": "https://wulfkaal.github.io/claims/3606663-026",
+ "claim": "Centralized financial technology does not complete the disintermediation it promises, because users still deal with a technology company as intermediary instead of a financial institution, which leaves room for the decentralized solutions DeFi attempts to provide.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cc79b6e9a677defe85effbcf55e7c9d5a9d70aa0edbda88ef52d4cd10dc9b865 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

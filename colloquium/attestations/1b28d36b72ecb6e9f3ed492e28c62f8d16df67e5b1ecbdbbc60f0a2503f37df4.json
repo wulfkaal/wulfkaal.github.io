@@ -1,0 +1,19 @@
+{
+ "content_hash": "1b28d36b72ecb6e9f3ed492e28c62f8d16df67e5b1ecbdbbc60f0a2503f37df4",
+ "object": "https://wulfkaal.github.io/claims/2337268-004",
+ "claim": "Investment adviser status under the IAA requires that the advice concern a security; without a security in the dealings between adviser and client the statutory definition does not apply.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1b28d36b72ecb6e9f3ed492e28c62f8d16df67e5b1ecbdbbc60f0a2503f37df4 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

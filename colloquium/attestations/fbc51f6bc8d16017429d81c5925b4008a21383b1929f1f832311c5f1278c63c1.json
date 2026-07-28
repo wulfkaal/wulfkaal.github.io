@@ -1,0 +1,19 @@
+{
+ "content_hash": "fbc51f6bc8d16017429d81c5925b4008a21383b1929f1f832311c5f1278c63c1",
+ "object": "https://wulfkaal.github.io/claims/3799320-024",
+ "claim": "The DAO of DAOs uses a duality of internal and external governance: internal governance runs on reputation token staking, while external legal relationships are handled by a legal wrapper that represents the DAO of DAOs in real world legal contexts.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3799320-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fbc51f6bc8d16017429d81c5925b4008a21383b1929f1f832311c5f1278c63c1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "29edb109ecb3ca487c24ff92ff9613334ef91072c946df5f3e48e6ae4153a664",
+ "object": "https://wulfkaal.github.io/claims/2739479-011",
+ "claim": "Because the Dodd-Frank Act discouraged banks from growing too large and made bank lending harder, private funds and other alternative lenders filled the resulting void by financing small and medium sized businesses that traditional banks no longer served.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 29edb109ecb3ca487c24ff92ff9613334ef91072c946df5f3e48e6ae4153a664 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

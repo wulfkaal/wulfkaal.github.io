@@ -1,0 +1,19 @@
+{
+ "content_hash": "bca12e93cc49d421faa2aa709291fccf7da130bf44cc62fbdc21c7ab7369b28f",
+ "object": "https://wulfkaal.github.io/claims/1428387-009",
+ "claim": "Because net asset value drives subscriptions, redemptions, performance calculations, advertising, and fees, managers who both manage and value the portfolio have both an incentive and the ability to inappropriately over-value their portfolios.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1428387-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bca12e93cc49d421faa2aa709291fccf7da130bf44cc62fbdc21c7ab7369b28f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

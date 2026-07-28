@@ -1,0 +1,19 @@
+{
+ "content_hash": "44da699c8c514b184a345666d329080ad82d03b84947ce0993ee9d48633ef014",
+ "object": "https://wulfkaal.github.io/claims/2348463-009",
+ "claim": "Because creditor disclosure obligations in bankruptcy are minimal and a general statement of the type of claim often suffices, hedge funds' penchant for secrecy carries over into the bankruptcy process even when they participate as debt holders.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2348463-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 44da699c8c514b184a345666d329080ad82d03b84947ce0993ee9d48633ef014 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

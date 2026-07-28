@@ -1,0 +1,19 @@
+{
+ "content_hash": "5949f63bff541045ebe81dd0f8dd952ad7c1782489277b1f4f5aa115c969c4f2",
+ "object": "https://wulfkaal.github.io/claims/4021599-027",
+ "claim": "The Howey test operates as the practical sorting device between the two categories: a token that passes the Howey test is deemed a security token, while a token that does not qualify under Howey is often classified as a utility token.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4021599-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5949f63bff541045ebe81dd0f8dd952ad7c1782489277b1f4f5aa115c969c4f2 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

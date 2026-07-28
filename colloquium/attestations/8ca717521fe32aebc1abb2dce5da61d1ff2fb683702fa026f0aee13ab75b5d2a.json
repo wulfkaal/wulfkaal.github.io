@@ -1,0 +1,19 @@
+{
+ "content_hash": "8ca717521fe32aebc1abb2dce5da61d1ff2fb683702fa026f0aee13ab75b5d2a",
+ "object": "https://wulfkaal.github.io/claims/1908473-019",
+ "claim": "Mandatory contingent capital issuance requires the creation of a new market, and market creation takes time: the European hybrid market established in 1997 needed five years to reach critical mass.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1908473-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8ca717521fe32aebc1abb2dce5da61d1ff2fb683702fa026f0aee13ab75b5d2a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

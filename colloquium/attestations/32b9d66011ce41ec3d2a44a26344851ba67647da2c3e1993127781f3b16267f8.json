@@ -1,0 +1,19 @@
+{
+ "content_hash": "32b9d66011ce41ec3d2a44a26344851ba67647da2c3e1993127781f3b16267f8",
+ "object": "https://wulfkaal.github.io/claims/3002908-035",
+ "claim": "Fund type composition diverges across regions: in the United States hedge funds dominate the blockchain using sample, while in Europe venture capital funds clearly predominate.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3002908-035.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 32b9d66011ce41ec3d2a44a26344851ba67647da2c3e1993127781f3b16267f8 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

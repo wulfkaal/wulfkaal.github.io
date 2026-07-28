@@ -1,0 +1,19 @@
+{
+ "content_hash": "2e02624706e1b0bedb912a46bcb078013945dc681382a3e3e3eac5553449bd43",
+ "object": "https://wulfkaal.github.io/claims/3782205-002",
+ "claim": "The electrical revolution took more than a century to mature because uniform standards for production, transmission, storage, and utilization had to be developed first, and decentralization faces the same standards bottleneck.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782205-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2e02624706e1b0bedb912a46bcb078013945dc681382a3e3e3eac5553449bd43 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

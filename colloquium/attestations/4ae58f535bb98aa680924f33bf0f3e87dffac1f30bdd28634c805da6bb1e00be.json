@@ -1,0 +1,19 @@
+{
+ "content_hash": "4ae58f535bb98aa680924f33bf0f3e87dffac1f30bdd28634c805da6bb1e00be",
+ "object": "https://wulfkaal.github.io/claims/3782210-035",
+ "claim": "Reputation-based governance faces a chicken and egg problem: voting becomes more efficient once reputation is valuable, but reputation cannot become valuable without meaningful voting.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782210-035.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4ae58f535bb98aa680924f33bf0f3e87dffac1f30bdd28634c805da6bb1e00be verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

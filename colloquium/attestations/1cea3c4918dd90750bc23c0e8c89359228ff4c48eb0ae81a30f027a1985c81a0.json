@@ -1,0 +1,19 @@
+{
+ "content_hash": "1cea3c4918dd90750bc23c0e8c89359228ff4c48eb0ae81a30f027a1985c81a0",
+ "object": "https://wulfkaal.github.io/claims/3709041-023",
+ "claim": "A blockchain based microdemocracy's key advantage is speed of change: because technology enables incorruptible instantaneous counting and tallying of votes, voting becomes dynamic and incremental and political will is exercised more directly.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3709041-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1cea3c4918dd90750bc23c0e8c89359228ff4c48eb0ae81a30f027a1985c81a0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

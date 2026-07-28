@@ -1,0 +1,19 @@
+{
+ "content_hash": "b2afb385c52836829096a3a127b55809b23da60373f7add8ab4d398f142d3f59",
+ "object": "https://wulfkaal.github.io/claims/3002908-038",
+ "claim": "The Numerai model reduces overhead costs because there is no cost of human capital, and it eliminates barriers to entry because participating users need neither capital nor any special finance or data knowledge.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3002908-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b2afb385c52836829096a3a127b55809b23da60373f7add8ab4d398f142d3f59 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

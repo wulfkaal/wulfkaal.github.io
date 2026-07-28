@@ -1,0 +1,19 @@
+{
+ "content_hash": "d978b83a00beabf384e3877cf071773cb947a02eeaf1bfa7ef274de57c904067",
+ "object": "https://wulfkaal.github.io/claims/2714974-003",
+ "claim": "The SEC's 1985 safe harbor in Rule 203(b)(3) allowed a limited partnership itself, rather than each of its limited partners, to be counted as a single client of the general partner acting as adviser, which is what kept hedge fund advisers below the registration threshold.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2714974-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d978b83a00beabf384e3877cf071773cb947a02eeaf1bfa7ef274de57c904067 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

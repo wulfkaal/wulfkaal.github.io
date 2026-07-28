@@ -1,0 +1,19 @@
+{
+ "content_hash": "c2d8a7eff9d07a2ec45c10e73ca171dc0f6abdbb47c845f5bac839fe86575915",
+ "object": "https://wulfkaal.github.io/claims/3402701-002",
+ "claim": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage attacks of the kind Soros used against the Bank of England.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3402701-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c2d8a7eff9d07a2ec45c10e73ca171dc0f6abdbb47c845f5bac839fe86575915 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "0c916de0795e679d834fc4084661ca29833e0b8e751effc5c68668078b5a8386",
+ "object": "https://wulfkaal.github.io/claims/3652481-029",
+ "claim": "Kaal accepts that the arguments against on chain governance remain strong: in an off chain model miners supply checks and balances over protocol changes, and on chain governance arguably removes those checks and balances.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3652481-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0c916de0795e679d834fc4084661ca29833e0b8e751effc5c68668078b5a8386 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

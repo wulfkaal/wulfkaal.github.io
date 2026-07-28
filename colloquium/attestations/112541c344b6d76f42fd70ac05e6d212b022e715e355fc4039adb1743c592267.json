@@ -1,0 +1,19 @@
+{
+ "content_hash": "112541c344b6d76f42fd70ac05e6d212b022e715e355fc4039adb1743c592267",
+ "object": "https://wulfkaal.github.io/claims/3782214-029",
+ "claim": "If unanimous consensus is strongly incentivized in every validation pool, a DAO will degenerate quickly, because members holding minority opinions will not raise alternatives for fear of losing all their reputation tokens; this is why loosely coupled votes are needed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782214-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 112541c344b6d76f42fd70ac05e6d212b022e715e355fc4039adb1743c592267 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

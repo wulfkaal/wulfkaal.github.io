@@ -1,0 +1,19 @@
+{
+ "content_hash": "ba44ba75855626b744f8c8f9cb1c865cd67be85973e00710be5cc8cfc697bd1f",
+ "object": "https://wulfkaal.github.io/claims/3441904-025",
+ "claim": "If a community cannot agree after a hard fork on which chain is the true chain, the result can be two blockchains competing in perpetuity, and the only viable remedy is abandoning one branch, which causes some miners to lose re-allocated transactions.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3441904-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ba44ba75855626b744f8c8f9cb1c865cd67be85973e00710be5cc8cfc697bd1f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

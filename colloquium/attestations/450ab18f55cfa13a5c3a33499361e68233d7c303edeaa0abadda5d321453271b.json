@@ -1,0 +1,19 @@
+{
+ "content_hash": "450ab18f55cfa13a5c3a33499361e68233d7c303edeaa0abadda5d321453271b",
+ "object": "https://wulfkaal.github.io/claims/5454054-012",
+ "claim": "LER democratizes capital market access because consumers can earn equity-like voucher rewards through ordinary e-commerce participation, creating a new market for tokenized dividends.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5454054-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 450ab18f55cfa13a5c3a33499361e68233d7c303edeaa0abadda5d321453271b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

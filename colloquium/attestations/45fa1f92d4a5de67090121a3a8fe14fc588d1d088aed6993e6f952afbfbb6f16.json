@@ -1,0 +1,19 @@
+{
+ "content_hash": "45fa1f92d4a5de67090121a3a8fe14fc588d1d088aed6993e6f952afbfbb6f16",
+ "object": "https://wulfkaal.github.io/claims/2998097-016",
+ "claim": "The SEC's efforts to clarify and optimize the post Dodd-Frank framework cut both ways: they supported industry compliance with the revised standards while simultaneously creating uncertainty and higher costs for the industry.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2998097-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 45fa1f92d4a5de67090121a3a8fe14fc588d1d088aed6993e6f952afbfbb6f16 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

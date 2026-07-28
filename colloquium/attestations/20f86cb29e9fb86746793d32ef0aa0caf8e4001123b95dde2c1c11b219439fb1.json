@@ -1,0 +1,19 @@
+{
+ "content_hash": "20f86cb29e9fb86746793d32ef0aa0caf8e4001123b95dde2c1c11b219439fb1",
+ "object": "https://wulfkaal.github.io/claims/5454054-026",
+ "claim": "Any drift toward transferability, voucher redemption at par, yield, or marketplace functionality would push LER into MiCA compliance obligations and, equivalently, into the UK EMR and PSR regimes and U.S. securities, money transmission, and market-structure perimeters.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5454054-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 20f86cb29e9fb86746793d32ef0aa0caf8e4001123b95dde2c1c11b219439fb1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

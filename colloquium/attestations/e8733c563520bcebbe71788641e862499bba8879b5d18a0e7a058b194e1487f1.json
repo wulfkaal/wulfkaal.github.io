@@ -1,0 +1,19 @@
+{
+ "content_hash": "e8733c563520bcebbe71788641e862499bba8879b5d18a0e7a058b194e1487f1",
+ "object": "https://wulfkaal.github.io/claims/3411110-032",
+ "claim": "Self regulatory organizations occupy a distinctive position, holding some regulatory authority while remaining beholden to the SEC, which makes them the right actors to educate the SEC toward a more crypto friendly stance by demonstrating successful use cases.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3411110-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e8733c563520bcebbe71788641e862499bba8879b5d18a0e7a058b194e1487f1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

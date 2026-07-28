@@ -1,0 +1,19 @@
+{
+ "content_hash": "afe262c4b249eedbb5fef7b5078efc7a155c732ad57f90a5420fad2770e32c8d",
+ "object": "https://wulfkaal.github.io/claims/4734750-003",
+ "claim": "Losses from smart contract vulnerabilities are large and growing, with 2021 losses alone estimated at 680 million dollars and cumulative global losses estimated at over 6 billion dollars.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4734750-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest afe262c4b249eedbb5fef7b5078efc7a155c732ad57f90a5420fad2770e32c8d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

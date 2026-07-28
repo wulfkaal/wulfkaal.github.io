@@ -1,0 +1,19 @@
+{
+ "content_hash": "dd7166b217d0bad19a55ad020526e95c21465743a85a3cbde0df41b4c4433350",
+ "object": "https://wulfkaal.github.io/claims/3808859-030",
+ "claim": "Tokenization of assets is the issuance of a digital asset that forms the digital representation of an existing real-world asset, analogous to securitization in that it converts liquid or illiquid real-world assets into tradable digital instruments.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808859-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest dd7166b217d0bad19a55ad020526e95c21465743a85a3cbde0df41b4c4433350 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

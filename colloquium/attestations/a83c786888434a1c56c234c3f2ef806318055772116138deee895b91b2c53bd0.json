@@ -1,0 +1,19 @@
+{
+ "content_hash": "a83c786888434a1c56c234c3f2ef806318055772116138deee895b91b2c53bd0",
+ "object": "https://wulfkaal.github.io/claims/5886342-037",
+ "claim": "Every DAO member must have a real possibility to exit the DAO under the rules of the DAO Agreement without incurring unreasonable costs, which makes exit a mandatory feature of a compliant DAO rather than a matter of design choice.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a83c786888434a1c56c234c3f2ef806318055772116138deee895b91b2c53bd0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

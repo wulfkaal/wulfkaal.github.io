@@ -1,0 +1,19 @@
+{
+ "content_hash": "bb3e8f0f0266edee2c972bb08bce00efa53d385a2da36d73d61f1ff9f61751ad",
+ "object": "https://wulfkaal.github.io/claims/3981021-004",
+ "claim": "Survey evidence shows a public trust deficit toward charities: while 70 percent of Americans say trust is essential before making a donation, fewer than 20 percent say they highly trust charities.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3981021-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bb3e8f0f0266edee2c972bb08bce00efa53d385a2da36d73d61f1ff9f61751ad verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

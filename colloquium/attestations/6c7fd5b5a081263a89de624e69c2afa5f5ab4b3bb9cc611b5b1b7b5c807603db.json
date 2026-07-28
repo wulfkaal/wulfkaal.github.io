@@ -1,0 +1,19 @@
+{
+ "content_hash": "6c7fd5b5a081263a89de624e69c2afa5f5ab4b3bb9cc611b5b1b7b5c807603db",
+ "object": "https://wulfkaal.github.io/claims/5886342-039",
+ "claim": "Amendment authority is centralized: the UDLC Governing Council holds the exclusive authority to amend any Book or provision of the Codex, while proposals may originate from the association bodies, registered legal experts, stakeholders or other authorities.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6c7fd5b5a081263a89de624e69c2afa5f5ab4b3bb9cc611b5b1b7b5c807603db verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

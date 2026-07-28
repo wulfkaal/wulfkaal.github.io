@@ -1,0 +1,19 @@
+{
+ "content_hash": "9eedaacb3ae7c4a4047b241ef1d31a9f18379a2ef77d6ddb53186c98f806c74b",
+ "object": "https://wulfkaal.github.io/claims/3782192-007",
+ "claim": "Because information at the edge does not travel up a centralized hierarchy, the central authority makes decisions without full information, and a centralized organization is therefore not well designed to respond to any crisis it has not anticipated.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782192-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9eedaacb3ae7c4a4047b241ef1d31a9f18379a2ef77d6ddb53186c98f806c74b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "a38fba4438d2e1d91506ba631085f2082a3427c54029246fc87ab1e1fdb7be77",
+ "object": "https://wulfkaal.github.io/claims/3931933-015",
+ "claim": "The initial Casper testnet group was hampered by communication shortcomings, with only around 680 validators present in the telegram group that served as the main channel for news and updates.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a38fba4438d2e1d91506ba631085f2082a3427c54029246fc87ab1e1fdb7be77 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "01dcab310af3485c946f0e041434cb9d32b4f1c34c326f49a1db966c4744d97d",
+ "object": "https://wulfkaal.github.io/claims/3017612-023",
+ "claim": "US law gives corporate participants wide latitude to restrict share transfers, and such restrictions are usually upheld unless their terms are unreasonable in the circumstances.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3017612-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 01dcab310af3485c946f0e041434cb9d32b4f1c34c326f49a1db966c4744d97d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

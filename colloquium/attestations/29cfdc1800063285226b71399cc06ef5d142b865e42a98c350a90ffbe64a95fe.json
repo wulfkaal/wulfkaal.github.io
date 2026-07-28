@@ -1,0 +1,19 @@
+{
+ "content_hash": "29cfdc1800063285226b71399cc06ef5d142b865e42a98c350a90ffbe64a95fe",
+ "object": "https://wulfkaal.github.io/claims/3931933-037",
+ "claim": "Reputation in HSPoS is a form of social capital earned by participating in the network's ecosystem, independent of the participant's financial capacity.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 29cfdc1800063285226b71399cc06ef5d142b865e42a98c350a90ffbe64a95fe verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

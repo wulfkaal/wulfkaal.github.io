@@ -1,0 +1,19 @@
+{
+ "content_hash": "ef2f2d2d16449e1082c332d1891dbafed2479a6ddc055d55a1ab209c7c8270ac",
+ "object": "https://wulfkaal.github.io/claims/3125827-021",
+ "claim": "Successful proof of stake experiments running today cannot be used to infer that their protocols are truly secure, because the current participant population is atypically altruistic; confidence must instead come from sound reasoning about incentives.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125827-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ef2f2d2d16449e1082c332d1891dbafed2479a6ddc055d55a1ab209c7c8270ac verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

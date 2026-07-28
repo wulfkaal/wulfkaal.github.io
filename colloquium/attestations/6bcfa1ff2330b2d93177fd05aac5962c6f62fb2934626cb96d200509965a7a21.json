@@ -1,0 +1,19 @@
+{
+ "content_hash": "6bcfa1ff2330b2d93177fd05aac5962c6f62fb2934626cb96d200509965a7a21",
+ "object": "https://wulfkaal.github.io/claims/3406323-019",
+ "claim": "The low transaction throughput of public blockchains is a core limitation that holds back more advanced distributed applications, which is why decentralized commerce in 2019 remains relegated to cryptocurrency trading and basic smart contracting.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3406323-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6bcfa1ff2330b2d93177fd05aac5962c6f62fb2934626cb96d200509965a7a21 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "17ec4d0b201dec84f56ee1cffe028694f7ad9ced1c3970bd8d9f5b515297eb15",
+ "object": "https://wulfkaal.github.io/claims/2739479-036",
+ "claim": "By 2015 a clear majority of respondents, 93 percent, attributed effects on their investment management company's profits to additional expenses associated with the Dodd-Frank Act, and no respondent reported no additional expenses, compared with 19 percent in 2012.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 17ec4d0b201dec84f56ee1cffe028694f7ad9ced1c3970bd8d9f5b515297eb15 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

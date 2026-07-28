@@ -1,0 +1,19 @@
+{
+ "content_hash": "d87de384e1808e0c7a8f40e536bdf4d562765b08a76c7650450e79b6dfaeb51e",
+ "object": "https://wulfkaal.github.io/claims/3981021-029",
+ "claim": "Reputation staking avoids the corruptive effects of fungible token staking because non fungible reputation has to be built organically through merit and time, needs to be earned, and cannot be bought.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3981021-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d87de384e1808e0c7a8f40e536bdf4d562765b08a76c7650450e79b6dfaeb51e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

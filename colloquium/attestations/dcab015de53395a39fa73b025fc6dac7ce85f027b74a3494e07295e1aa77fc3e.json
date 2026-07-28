@@ -1,0 +1,19 @@
+{
+ "content_hash": "dcab015de53395a39fa73b025fc6dac7ce85f027b74a3494e07295e1aa77fc3e",
+ "object": "https://wulfkaal.github.io/claims/2998033-038",
+ "claim": "The predominant uses of blockchain technology in the private investment fund industry originate in holding crypto assets of various kinds, which indicates that the technology plays its primary role in front office and investment functions rather than in back office administration.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2998033-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest dcab015de53395a39fa73b025fc6dac7ce85f027b74a3494e07295e1aa77fc3e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

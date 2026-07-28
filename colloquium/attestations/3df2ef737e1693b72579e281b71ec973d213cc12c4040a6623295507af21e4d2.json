@@ -1,0 +1,19 @@
+{
+ "content_hash": "3df2ef737e1693b72579e281b71ec973d213cc12c4040a6623295507af21e4d2",
+ "object": "https://wulfkaal.github.io/claims/3782214-034",
+ "claim": "Legitimacy requires members to believe the governance process is binding and will persist, which puts legitimacy directly at odds with a dynamic structure whose rules members know will change; in the presence of that tension stability requires the system to be balanced.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782214-034.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3df2ef737e1693b72579e281b71ec973d213cc12c4040a6623295507af21e4d2 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "d0f905709a567d3fffe7dfed000d02c4430cf8f0d258e8cd2024ad638476d3f5",
+ "object": "https://wulfkaal.github.io/claims/3125822-042",
+ "claim": "Reputation on the platform is not truly non transferable: accumulated sem tokens can be sold along with the anonymous identities that hold them, and the only check on this is the continued existence of a good faith majority that votes fairly in validation pools.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-042.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d0f905709a567d3fffe7dfed000d02c4430cf8f0d258e8cd2024ad638476d3f5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

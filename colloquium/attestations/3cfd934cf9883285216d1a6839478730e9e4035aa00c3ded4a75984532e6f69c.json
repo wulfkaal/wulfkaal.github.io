@@ -1,0 +1,19 @@
+{
+ "content_hash": "3cfd934cf9883285216d1a6839478730e9e4035aa00c3ded4a75984532e6f69c",
+ "object": "https://wulfkaal.github.io/claims/3373393-030",
+ "claim": "Fundamental flaws in the DAO code enabled hackers to transfer one third of total funds to a subsidiary account, and that hack combined with additional technological limitations brought down the first DAO initiative.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3373393-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3cfd934cf9883285216d1a6839478730e9e4035aa00c3ded4a75984532e6f69c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

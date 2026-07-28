@@ -1,0 +1,19 @@
+{
+ "content_hash": "cdad709eab557d04b6b580cd2ea6e65942ab40818afa35cb4576dcd34d4752e5",
+ "object": "https://wulfkaal.github.io/claims/5886342-014",
+ "claim": "Representation is built into the framework: one Legal Identity can authorize another as its agent to create or change legal statuses and acts on its behalf by using that identifier, which is how delegated and automated action is attributed to a principal.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cdad709eab557d04b6b580cd2ea6e65942ab40818afa35cb4576dcd34d4752e5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

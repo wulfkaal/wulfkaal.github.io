@@ -1,0 +1,19 @@
+{
+ "content_hash": "df7cfcb42bd5e80424a79ca41cb0c6cceab754f1d829d3d5ebe11b4b5317b36b",
+ "object": "https://wulfkaal.github.io/claims/3409548-019",
+ "claim": "The Northern Trust and IBM blockchain removes a specific inefficiency in private equity deal practice by letting all involved parties in a deal look at a single compiled version of the transaction and all data relating to it, rather than reconciling multiple copies of the deal documents.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3409548-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest df7cfcb42bd5e80424a79ca41cb0c6cceab754f1d829d3d5ebe11b4b5317b36b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

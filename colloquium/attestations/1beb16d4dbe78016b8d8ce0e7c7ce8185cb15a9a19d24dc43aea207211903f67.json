@@ -1,0 +1,19 @@
+{
+ "content_hash": "1beb16d4dbe78016b8d8ce0e7c7ce8185cb15a9a19d24dc43aea207211903f67",
+ "object": "https://wulfkaal.github.io/claims/5886342-035",
+ "claim": "Internal liability among DAO members is capped: members are liable towards each other only up to the amount of their agreed contributions, unless the DAO Agreement stipulates otherwise.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-035.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1beb16d4dbe78016b8d8ce0e7c7ce8185cb15a9a19d24dc43aea207211903f67 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

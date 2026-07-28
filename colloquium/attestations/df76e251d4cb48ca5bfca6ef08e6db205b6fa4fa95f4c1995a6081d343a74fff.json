@@ -1,0 +1,19 @@
+{
+ "content_hash": "df76e251d4cb48ca5bfca6ef08e6db205b6fa4fa95f4c1995a6081d343a74fff",
+ "object": "https://wulfkaal.github.io/claims/3606663-024",
+ "claim": "DeFi platforms grant the unbanked access to the loan market by disintermediating existing banks, connecting borrowers and lenders directly in peer to peer networks and accepting digital assets as collateral with far less documentation than banks require.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest df76e251d4cb48ca5bfca6ef08e6db205b6fa4fa95f4c1995a6081d343a74fff verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

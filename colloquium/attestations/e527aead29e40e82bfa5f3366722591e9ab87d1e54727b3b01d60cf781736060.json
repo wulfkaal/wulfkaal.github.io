@@ -1,0 +1,19 @@
+{
+ "content_hash": "e527aead29e40e82bfa5f3366722591e9ab87d1e54727b3b01d60cf781736060",
+ "object": "https://wulfkaal.github.io/claims/3931933-022",
+ "claim": "Shasper governance is funded in a hardcoded way: each validator that succeeds in propagating a block allocates a fixed percentage of its block reward, denominated in SHAS, into a separate SDAO wallet, in addition to the ordinary Casper PoS allocation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e527aead29e40e82bfa5f3366722591e9ab87d1e54727b3b01d60cf781736060 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

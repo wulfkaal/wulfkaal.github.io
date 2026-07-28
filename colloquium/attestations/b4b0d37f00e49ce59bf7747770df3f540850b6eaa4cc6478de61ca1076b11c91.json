@@ -1,0 +1,19 @@
+{
+ "content_hash": "b4b0d37f00e49ce59bf7747770df3f540850b6eaa4cc6478de61ca1076b11c91",
+ "object": "https://wulfkaal.github.io/claims/3125827-012",
+ "claim": "No consensus protocol can guard against Byzantine faults when a single transaction is worth more than the promise of all future fees for the entire platform, because in that case a party can profitably bribe the whole node set to destroy the chain's own integrity.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125827-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b4b0d37f00e49ce59bf7747770df3f540850b6eaa4cc6478de61ca1076b11c91 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

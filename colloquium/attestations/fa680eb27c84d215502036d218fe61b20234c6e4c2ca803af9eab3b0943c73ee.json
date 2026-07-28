@@ -1,0 +1,19 @@
+{
+ "content_hash": "fa680eb27c84d215502036d218fe61b20234c6e4c2ca803af9eab3b0943c73ee",
+ "object": "https://wulfkaal.github.io/claims/3411110-009",
+ "claim": "Running an alternative trading system on a blockchain cures the ATS system's traditional price discovery latency, because every trade is posted to a public ledger that everyone can access.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3411110-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fa680eb27c84d215502036d218fe61b20234c6e4c2ca803af9eab3b0943c73ee verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

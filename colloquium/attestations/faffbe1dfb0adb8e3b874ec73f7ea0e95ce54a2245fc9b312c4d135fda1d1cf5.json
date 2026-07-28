@@ -1,0 +1,19 @@
+{
+ "content_hash": "faffbe1dfb0adb8e3b874ec73f7ea0e95ce54a2245fc9b312c4d135fda1d1cf5",
+ "object": "https://wulfkaal.github.io/claims/3652481-002",
+ "claim": "A jurisdiction is only truly favorable to DAOs if it grants the DAO limited liability as an entity and accepts its independent status without requiring any representative in that jurisdiction.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3652481-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest faffbe1dfb0adb8e3b874ec73f7ea0e95ce54a2245fc9b312c4d135fda1d1cf5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

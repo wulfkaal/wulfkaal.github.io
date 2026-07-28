@@ -1,0 +1,19 @@
+{
+ "content_hash": "25a2784bac3477721fcc3ea87553b01ddb7e9a8a36f347e5efc3033868e958b5",
+ "object": "https://wulfkaal.github.io/claims/4033886-024",
+ "claim": "The Longstaff model's assumptions are inconsistent with reality on two fronts: investors do not have perfect timing, and its assumed volatility of ten to thirty percent is far below the volatility exceeding fifty percent typical of small stocks.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4033886-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 25a2784bac3477721fcc3ea87553b01ddb7e9a8a36f347e5efc3033868e958b5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

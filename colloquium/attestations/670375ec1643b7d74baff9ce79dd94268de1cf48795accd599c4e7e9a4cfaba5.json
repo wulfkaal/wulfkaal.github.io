@@ -1,0 +1,19 @@
+{
+ "content_hash": "670375ec1643b7d74baff9ce79dd94268de1cf48795accd599c4e7e9a4cfaba5",
+ "object": "https://wulfkaal.github.io/claims/4033886-014",
+ "claim": "Redemption contracts, the traditional price commitment device for privately issued money, lack credibility, whereas pre programmed smart contracts deliver an enforceable and secure quantity commitment instead.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4033886-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 670375ec1643b7d74baff9ce79dd94268de1cf48795accd599c4e7e9a4cfaba5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

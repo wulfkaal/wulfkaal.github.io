@@ -1,0 +1,19 @@
+{
+ "content_hash": "7eb45e8d4e35e6788a7ecc9e5b5674b902e667548176ad02b49160910a0be4f9",
+ "object": "https://wulfkaal.github.io/claims/3128900-028",
+ "claim": "The reputation score mechanism serves a discriminating function, separating malicious actors from simple mistakes and protecting workers and verifiers against fraudulent requesters and badly designed requests.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3128900-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7eb45e8d4e35e6788a7ecc9e5b5674b902e667548176ad02b49160910a0be4f9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

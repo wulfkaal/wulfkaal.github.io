@@ -1,0 +1,19 @@
+{
+ "content_hash": "38b37ee34f5d9bdf4fdc2e0bc9c7c4c0646fa3471c61645f041201080781604e",
+ "object": "https://wulfkaal.github.io/claims/2959730-013",
+ "claim": "The new fee structure also results from fund managers foregoing market rate management fees, larger investors requiring reduced management fees as a condition of investing, and side-by-side co-investment vehicles charging less than 2% management fees.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2959730-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 38b37ee34f5d9bdf4fdc2e0bc9c7c4c0646fa3471c61645f041201080781604e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

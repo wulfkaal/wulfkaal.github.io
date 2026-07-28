@@ -1,0 +1,19 @@
+{
+ "content_hash": "debe05cbc5e57593646f575950ee518dddebe40f52f574ca00de0fe761fd4f4e",
+ "object": "https://wulfkaal.github.io/claims/2150377-028",
+ "claim": "Where the Form PF quarterly reporting threshold does influence behavior, it distorts fund size downward: a majority of the advisers who take the threshold into account plan to stay under $1.5 billion in assets under management, and some would close funds to new investors to do so.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2150377-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest debe05cbc5e57593646f575950ee518dddebe40f52f574ca00de0fe761fd4f4e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

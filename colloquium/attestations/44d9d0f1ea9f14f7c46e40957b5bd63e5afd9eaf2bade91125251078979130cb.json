@@ -1,0 +1,19 @@
+{
+ "content_hash": "44d9d0f1ea9f14f7c46e40957b5bd63e5afd9eaf2bade91125251078979130cb",
+ "object": "https://wulfkaal.github.io/claims/2317580-014",
+ "claim": "As the number of individuals required to certify compliance under CIAs grows, so does the potential for false certifications and the corresponding liability, including False Claims Act and criminal false statement exposure.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2317580-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 44d9d0f1ea9f14f7c46e40957b5bd63e5afd9eaf2bade91125251078979130cb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

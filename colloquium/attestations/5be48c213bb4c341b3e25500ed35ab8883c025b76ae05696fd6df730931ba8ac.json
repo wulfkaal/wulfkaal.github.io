@@ -1,0 +1,19 @@
+{
+ "content_hash": "5be48c213bb4c341b3e25500ed35ab8883c025b76ae05696fd6df730931ba8ac",
+ "object": "https://wulfkaal.github.io/claims/2061166-008",
+ "claim": "The authors identify a drafting defect in the proposed CRD IV Regulation: the distinction drawn by financial institution in Article 51(a) is ambiguous and the cross reference to the institution referred to in point (a) of Article 87 is unclear and indeterminate, so the provision requires clarification or amendment.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2061166-008.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5be48c213bb4c341b3e25500ed35ab8883c025b76ae05696fd6df730931ba8ac verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

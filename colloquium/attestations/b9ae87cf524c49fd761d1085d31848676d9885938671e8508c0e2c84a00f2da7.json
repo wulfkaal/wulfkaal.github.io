@@ -1,0 +1,19 @@
+{
+ "content_hash": "b9ae87cf524c49fd761d1085d31848676d9885938671e8508c0e2c84a00f2da7",
+ "object": "https://wulfkaal.github.io/claims/3782201-024",
+ "claim": "Because voting power in the 2016 DAO could be purchased, the exact cost of destroying it was calculable, and had it lasted longer than a month someone would eventually have amassed the money to arbitrage its trivial governance structure.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782201-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b9ae87cf524c49fd761d1085d31848676d9885938671e8508c0e2c84a00f2da7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "aa1d4f473336c53b841b34b35fb897090b2096501a9b9808146b0e9705e4ef58",
+ "object": "https://wulfkaal.github.io/claims/5225296-009",
+ "claim": "Because governance is embedded in the protocol rather than conducted off-chain, SPoS could enact protocol changes in weeks or days where Bitcoin's miner and developer negotiation process takes years.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5225296-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest aa1d4f473336c53b841b34b35fb897090b2096501a9b9808146b0e9705e4ef58 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

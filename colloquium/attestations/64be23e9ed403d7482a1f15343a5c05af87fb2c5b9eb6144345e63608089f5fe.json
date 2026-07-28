@@ -1,0 +1,19 @@
+{
+ "content_hash": "64be23e9ed403d7482a1f15343a5c05af87fb2c5b9eb6144345e63608089f5fe",
+ "object": "https://wulfkaal.github.io/claims/4855607-026",
+ "claim": "Requiring community members to stake reputation tokens in order to validate data quality is what produces robust and reliable training datasets, and this participatory validation improves annotation accuracy while reducing bias.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4855607-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 64be23e9ed403d7482a1f15343a5c05af87fb2c5b9eb6144345e63608089f5fe verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

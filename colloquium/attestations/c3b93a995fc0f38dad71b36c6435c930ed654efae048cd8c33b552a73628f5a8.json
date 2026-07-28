@@ -1,0 +1,19 @@
+{
+ "content_hash": "c3b93a995fc0f38dad71b36c6435c930ed654efae048cd8c33b552a73628f5a8",
+ "object": "https://wulfkaal.github.io/claims/3117224-014",
+ "claim": "Switzerland leads the world in total ICO funds raised, followed by the United States.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3117224-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c3b93a995fc0f38dad71b36c6435c930ed654efae048cd8c33b552a73628f5a8 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

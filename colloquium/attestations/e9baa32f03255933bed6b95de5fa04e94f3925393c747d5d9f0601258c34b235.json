@@ -1,0 +1,19 @@
+{
+ "content_hash": "e9baa32f03255933bed6b95de5fa04e94f3925393c747d5d9f0601258c34b235",
+ "object": "https://wulfkaal.github.io/claims/3808867-039",
+ "claim": "Transacting in cash costs United States consumers roughly 200 billion dollars annually, about 637 dollars per person, driven by the costs of production, storage, and transportation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808867-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e9baa32f03255933bed6b95de5fa04e94f3925393c747d5d9f0601258c34b235 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

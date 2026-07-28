@@ -1,0 +1,19 @@
+{
+ "content_hash": "d4dc0e7e8f7dd97c31320f794ea8a44f854b8876198cc9148653c3c90edbf310",
+ "object": "https://wulfkaal.github.io/claims/5245185-002",
+ "claim": "Distributing monitoring across federated communication nodes, such as Matrix with its Synapse server, scales oversight of AI agent activity while improving privacy, because sensitive data is processed locally instead of being pooled in one central repository.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5245185-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d4dc0e7e8f7dd97c31320f794ea8a44f854b8876198cc9148653c3c90edbf310 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

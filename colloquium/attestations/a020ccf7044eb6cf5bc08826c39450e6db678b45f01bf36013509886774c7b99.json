@@ -1,0 +1,19 @@
+{
+ "content_hash": "a020ccf7044eb6cf5bc08826c39450e6db678b45f01bf36013509886774c7b99",
+ "object": "https://wulfkaal.github.io/claims/3936876-014",
+ "claim": "Because a wallet provider or exchange that has custody of a digital asset gains full control over transactions, hacking a digital asset exchange is equivalent to robbing a bank: the attacker obtains valuable cryptocurrency that can be cashed out.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3936876-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a020ccf7044eb6cf5bc08826c39450e6db678b45f01bf36013509886774c7b99 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "85dda828ccfd02a0bfcf717d1a70f08515574de30bf0d27de9a79cca7200423e",
+ "object": "https://wulfkaal.github.io/claims/3067615-002",
+ "claim": "Tokens sold in an ICO are structurally different from equity: they do not generally confer ownership rights, no right to dividends, and no claim on company assets in bankruptcy, so the risk and reward profile of a token is not that of a share.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 85dda828ccfd02a0bfcf717d1a70f08515574de30bf0d27de9a79cca7200423e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

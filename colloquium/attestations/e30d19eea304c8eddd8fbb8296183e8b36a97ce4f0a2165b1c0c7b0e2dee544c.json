@@ -1,0 +1,19 @@
+{
+ "content_hash": "e30d19eea304c8eddd8fbb8296183e8b36a97ce4f0a2165b1c0c7b0e2dee544c",
+ "object": "https://wulfkaal.github.io/claims/2811718-010",
+ "claim": "The intensity of due diligence mentioning relative to total Form ADV Part II brochure filings increased substantially, and the due diligence count exceeded the total number of ADV II filings for the first time in 2014.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811718-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e30d19eea304c8eddd8fbb8296183e8b36a97ce4f0a2165b1c0c7b0e2dee544c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

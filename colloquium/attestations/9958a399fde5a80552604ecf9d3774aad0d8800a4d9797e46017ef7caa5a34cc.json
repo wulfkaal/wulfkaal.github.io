@@ -1,0 +1,19 @@
+{
+ "content_hash": "9958a399fde5a80552604ecf9d3774aad0d8800a4d9797e46017ef7caa5a34cc",
+ "object": "https://wulfkaal.github.io/claims/2337268-038",
+ "claim": "The SEC mandated written compliance policies and procedures for investment advisers as a reaction to mutual fund industry scandals and in an effort to curb IAA violations.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9958a399fde5a80552604ecf9d3774aad0d8800a4d9797e46017ef7caa5a34cc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

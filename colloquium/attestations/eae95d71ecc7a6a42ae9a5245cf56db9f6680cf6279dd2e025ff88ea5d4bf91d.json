@@ -1,0 +1,19 @@
+{
+ "content_hash": "eae95d71ecc7a6a42ae9a5245cf56db9f6680cf6279dd2e025ff88ea5d4bf91d",
+ "object": "https://wulfkaal.github.io/claims/2811718-032",
+ "claim": "Expert testimony identifies recurring failures in private fund due diligence, including the absence of any written policy or process to ensure compliance and reliance on individuals with little or no experience, particularly with the particulars of hedge funds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811718-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest eae95d71ecc7a6a42ae9a5245cf56db9f6680cf6279dd2e025ff88ea5d4bf91d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

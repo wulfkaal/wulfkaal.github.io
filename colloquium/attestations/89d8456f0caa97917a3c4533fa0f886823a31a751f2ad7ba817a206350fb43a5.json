@@ -1,0 +1,19 @@
+{
+ "content_hash": "89d8456f0caa97917a3c4533fa0f886823a31a751f2ad7ba817a206350fb43a5",
+ "object": "https://wulfkaal.github.io/claims/3782210-028",
+ "claim": "With the balanced staking and fee-sharing necessities implemented, the cost of faking reputation is at an absolute minimum double the value of that reputation, which is how reputation is made more valuable than money.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782210-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 89d8456f0caa97917a3c4533fa0f886823a31a751f2ad7ba817a206350fb43a5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

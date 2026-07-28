@@ -1,0 +1,19 @@
+{
+ "content_hash": "36b3ba9f82dafac3ce212b4d1bd150f076b9a175a1db805906b7284f43a13365",
+ "object": "https://wulfkaal.github.io/claims/3962614-003",
+ "claim": "Lack of liquidity is one of the biggest problems in the traditional venture capital ecosystem, and the traditional VC model disincentivizes generating early profits because capital is locked in for an extended period of time.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3962614-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 36b3ba9f82dafac3ce212b4d1bd150f076b9a175a1db805906b7284f43a13365 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

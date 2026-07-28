@@ -1,0 +1,19 @@
+{
+ "content_hash": "079d0a3fe1ec5616b20f77cf367046ca7690e37be8f814dd82ae8526d7891b42",
+ "object": "https://wulfkaal.github.io/claims/3406323-020",
+ "claim": "Without a core use case other than the store of value provided by Bitcoin, decentralization technology is less likely to proliferate; banking, money transmission, and triple entry accounting are natural but insufficient as universal use cases for public blockchains.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3406323-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 079d0a3fe1ec5616b20f77cf367046ca7690e37be8f814dd82ae8526d7891b42 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

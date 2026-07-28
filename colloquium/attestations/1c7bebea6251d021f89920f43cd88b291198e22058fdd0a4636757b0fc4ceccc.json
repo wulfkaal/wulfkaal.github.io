@@ -1,0 +1,19 @@
+{
+ "content_hash": "1c7bebea6251d021f89920f43cd88b291198e22058fdd0a4636757b0fc4ceccc",
+ "object": "https://wulfkaal.github.io/claims/4734750-021",
+ "claim": "The Code Review DAO drives review prices down by running a decentralized, community driven review process built on a bidding process, combined with open access for any qualified reviewer rather than membership in a few firms.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4734750-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1c7bebea6251d021f89920f43cd88b291198e22058fdd0a4636757b0fc4ceccc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

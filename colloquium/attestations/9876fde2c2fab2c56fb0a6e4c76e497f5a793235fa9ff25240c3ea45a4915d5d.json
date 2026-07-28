@@ -1,0 +1,19 @@
+{
+ "content_hash": "9876fde2c2fab2c56fb0a6e4c76e497f5a793235fa9ff25240c3ea45a4915d5d",
+ "object": "https://wulfkaal.github.io/claims/2732915-001",
+ "claim": "Five years after the Dodd-Frank Act, the private fund industry is most affected by the uncertainty and the higher costs the Act generates, yet on multiple metrics the industry is coping well with the evolving post Dodd-Frank regulatory landscape.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2732915-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9876fde2c2fab2c56fb0a6e4c76e497f5a793235fa9ff25240c3ea45a4915d5d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

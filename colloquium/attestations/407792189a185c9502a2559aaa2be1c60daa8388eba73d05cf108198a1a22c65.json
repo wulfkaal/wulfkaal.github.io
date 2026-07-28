@@ -1,0 +1,19 @@
+{
+ "content_hash": "407792189a185c9502a2559aaa2be1c60daa8388eba73d05cf108198a1a22c65",
+ "object": "https://wulfkaal.github.io/claims/2811718-021",
+ "claim": "Failing to check publicly available documentation on an investment is irresponsible but insufficient to plead fraudulent intent, and failing to perform due diligence commensurate with industry standards is inadequate to plead scienter.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811718-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 407792189a185c9502a2559aaa2be1c60daa8388eba73d05cf108198a1a22c65 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

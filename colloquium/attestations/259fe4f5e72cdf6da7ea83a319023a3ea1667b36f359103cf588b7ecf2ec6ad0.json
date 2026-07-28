@@ -1,0 +1,19 @@
+{
+ "content_hash": "259fe4f5e72cdf6da7ea83a319023a3ea1667b36f359103cf588b7ecf2ec6ad0",
+ "object": "https://wulfkaal.github.io/claims/2447306-027",
+ "claim": "Where SEC guidance failed, the failure was localized: respondents who found guidance inadequate pointed predominantly to Form PF Section 1c, Item B, which concerns information about the reporting fund.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2447306-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 259fe4f5e72cdf6da7ea83a319023a3ea1667b36f359103cf588b7ecf2ec6ad0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

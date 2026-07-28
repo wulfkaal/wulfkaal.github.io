@@ -1,0 +1,19 @@
+{
+ "content_hash": "731701f4230a19b8d992f80c5e111548acba410c3a473f8f25d734530e757cbb",
+ "object": "https://wulfkaal.github.io/claims/3949098-009",
+ "claim": "The liquidity benefits of reputation underwriting can only materialize if the underlying reputation is meaningful and secure.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3949098-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 731701f4230a19b8d992f80c5e111548acba410c3a473f8f25d734530e757cbb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

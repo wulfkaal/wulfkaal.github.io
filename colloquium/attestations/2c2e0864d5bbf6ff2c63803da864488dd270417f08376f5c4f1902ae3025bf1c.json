@@ -1,0 +1,19 @@
+{
+ "content_hash": "2c2e0864d5bbf6ff2c63803da864488dd270417f08376f5c4f1902ae3025bf1c",
+ "object": "https://wulfkaal.github.io/claims/3782193-033",
+ "claim": "Reputation permits business with any member of a network regardless of personal acquaintance, but only if the network is closed and its size is limited by the ability to police reputation with the available information technology.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782193-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2c2e0864d5bbf6ff2c63803da864488dd270417f08376f5c4f1902ae3025bf1c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

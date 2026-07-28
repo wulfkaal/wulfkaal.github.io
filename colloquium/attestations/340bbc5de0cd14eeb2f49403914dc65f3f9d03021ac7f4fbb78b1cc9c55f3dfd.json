@@ -1,0 +1,19 @@
+{
+ "content_hash": "340bbc5de0cd14eeb2f49403914dc65f3f9d03021ac7f4fbb78b1cc9c55f3dfd",
+ "object": "https://wulfkaal.github.io/claims/3117224-020",
+ "claim": "The United States was excluded from the comparative jurisdictional analysis because its regulatory setup for cryptocurrencies and DLT business was still too uncertain at the time of publication.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3117224-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 340bbc5de0cd14eeb2f49403914dc65f3f9d03021ac7f4fbb78b1cc9c55f3dfd verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

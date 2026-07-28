@@ -1,0 +1,19 @@
+{
+ "content_hash": "076207484e7f66388c67c4dd5a40899e84f141d4f4012f4fd0a1bfee09e7026f",
+ "object": "https://wulfkaal.github.io/claims/3782191-033",
+ "claim": "Centralized organizations are more effective and efficient than decentralized ones at the singular task they were designed for, because an optimally centralized structure has no redundancy while decentralization takes longer to locate the right components within its network.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782191-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 076207484e7f66388c67c4dd5a40899e84f141d4f4012f4fd0a1bfee09e7026f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

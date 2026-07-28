@@ -1,0 +1,19 @@
+{
+ "content_hash": "8db42ba8aba0101f1def5025c878d36e6690ee695ffb7213283659b3d1d2d2b5",
+ "object": "https://wulfkaal.github.io/claims/1908473-011",
+ "claim": "Existing proposals for implementing contingent capital do not explain how they would address the information asymmetries and principal and agent problems that may lie at the core of the credit crisis.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1908473-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8db42ba8aba0101f1def5025c878d36e6690ee695ffb7213283659b3d1d2d2b5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

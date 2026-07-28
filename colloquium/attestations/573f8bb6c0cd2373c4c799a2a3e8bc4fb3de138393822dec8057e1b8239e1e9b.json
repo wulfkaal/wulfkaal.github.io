@@ -1,0 +1,19 @@
+{
+ "content_hash": "573f8bb6c0cd2373c4c799a2a3e8bc4fb3de138393822dec8057e1b8239e1e9b",
+ "object": "https://wulfkaal.github.io/claims/3117224-015",
+ "claim": "Switzerland ranks only fourth in the number of ICOs launched yet first in total funds raised, so the average Swiss ICO project raises a greater than average amount of funds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3117224-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 573f8bb6c0cd2373c4c799a2a3e8bc4fb3de138393822dec8057e1b8239e1e9b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "5a693513ee08cb28974dd8a2f295eecf46cb86bb16497af1dcccadb09f2c837f",
+ "object": "https://wulfkaal.github.io/claims/4734750-040",
+ "claim": "Reputation token staking substitutes for identity verification: because staking makes the network attack resistant, workers can complete micro tasks without verifying identity, which removes the cost, delay, and privacy surrender of centralized approval and enlarges the available labor pool.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4734750-040.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5a693513ee08cb28974dd8a2f295eecf46cb86bb16497af1dcccadb09f2c837f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

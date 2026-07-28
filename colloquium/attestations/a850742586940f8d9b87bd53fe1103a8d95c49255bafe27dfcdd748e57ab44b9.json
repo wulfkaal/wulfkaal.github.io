@@ -1,0 +1,19 @@
+{
+ "content_hash": "a850742586940f8d9b87bd53fe1103a8d95c49255bafe27dfcdd748e57ab44b9",
+ "object": "https://wulfkaal.github.io/claims/3782220-026",
+ "claim": "Governance design choices must be matched to the network's values, because otherwise the reward structure will dictate the true goals and thereby determine what the network actually values.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782220-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a850742586940f8d9b87bd53fe1103a8d95c49255bafe27dfcdd748e57ab44b9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

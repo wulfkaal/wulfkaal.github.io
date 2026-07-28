@@ -1,0 +1,19 @@
+{
+ "content_hash": "7ec0f0ec9ec7b8b91ce0617c62c41e8e1aae93bd13ea1f2d39a33b2ec1ebd8c0",
+ "object": "https://wulfkaal.github.io/claims/5886342-043",
+ "claim": "Every provision of the Codex is subject to a comprehensive review every five years assessing its relevance, effectiveness and alignment with technological and legal developments such as AI, blockchain and quantum computing.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-043.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7ec0f0ec9ec7b8b91ce0617c62c41e8e1aae93bd13ea1f2d39a33b2ec1ebd8c0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "357b9bb5899857960602ba53dbc7b7116599077975d44b1ffad7a058a5a1e552",
+ "object": "https://wulfkaal.github.io/claims/3125822-008",
+ "claim": "A newcomer cannot buy reputation with money because the 50/50 staking of newly minted tokens leaves incumbent experts with complete power to decide whether the newcomer's contribution was positive; a losing applicant forfeits all reputation in the expertise.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-008.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 357b9bb5899857960602ba53dbc7b7116599077975d44b1ffad7a058a5a1e552 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

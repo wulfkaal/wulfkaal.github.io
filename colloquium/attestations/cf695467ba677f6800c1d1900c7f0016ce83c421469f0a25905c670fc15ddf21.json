@@ -1,0 +1,19 @@
+{
+ "content_hash": "cf695467ba677f6800c1d1900c7f0016ce83c421469f0a25905c670fc15ddf21",
+ "object": "https://wulfkaal.github.io/claims/1765901-023",
+ "claim": "On its face Section 929P(b) of the Dodd-Frank Act addresses only the jurisdiction of the district courts and does not expand the geographic scope of the substantive provisions of U.S. securities law.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1765901-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cf695467ba677f6800c1d1900c7f0016ce83c421469f0a25905c670fc15ddf21 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

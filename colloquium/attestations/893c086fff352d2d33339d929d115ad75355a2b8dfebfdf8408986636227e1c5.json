@@ -1,0 +1,19 @@
+{
+ "content_hash": "893c086fff352d2d33339d929d115ad75355a2b8dfebfdf8408986636227e1c5",
+ "object": "https://wulfkaal.github.io/claims/3808859-016",
+ "claim": "Diversity of inputs raises the value of network membership: because contributions increasingly come from the edges of the system, they are less homogenous and more diverse, which increases the utility of membership for every node.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808859-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 893c086fff352d2d33339d929d115ad75355a2b8dfebfdf8408986636227e1c5 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

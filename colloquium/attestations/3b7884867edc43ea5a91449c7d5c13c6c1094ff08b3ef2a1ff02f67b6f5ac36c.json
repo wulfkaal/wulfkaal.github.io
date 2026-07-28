@@ -1,0 +1,19 @@
+{
+ "content_hash": "3b7884867edc43ea5a91449c7d5c13c6c1094ff08b3ef2a1ff02f67b6f5ac36c",
+ "object": "https://wulfkaal.github.io/claims/3125822-046",
+ "claim": "The proposed fix is to value tokens by how the post was received and cited: tokens minted at a node with a large branch of positive references are worth more, while tokens from a post whose betting pool was close to 50-50 are worth less in future salaries than tokens from a post with uniform agreement.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-046.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3b7884867edc43ea5a91449c7d5c13c6c1094ff08b3ef2a1ff02f67b6f5ac36c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

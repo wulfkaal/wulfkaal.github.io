@@ -1,0 +1,19 @@
+{
+ "content_hash": "6241673fc8cdc5ad00f69defd4246d4a73e86aa6fc78e56b179deda0eed939bf",
+ "object": "https://wulfkaal.github.io/claims/3441904-012",
+ "claim": "Barzel's rationale for the firm, the added efficiency of a centralized production monitoring agency, becomes largely irrelevant under efficient smart contracting, because the smart contract performs the production monitoring function and largely removes agents.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3441904-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6241673fc8cdc5ad00f69defd4246d4a73e86aa6fc78e56b179deda0eed939bf verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

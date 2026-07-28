@@ -1,0 +1,19 @@
+{
+ "content_hash": "ce1e3df145db01978d0ec01e790831bee1a282b3642c080dce9fd85990f8c7c4",
+ "object": "https://wulfkaal.github.io/claims/3808873-039",
+ "claim": "One token one vote on chain governance produces plutocracy: it allocates more power to holders of a significant share of supply so that majority token holders have more power than all other holders combined, reintroducing the defects of one share one vote legacy designs.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808873-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ce1e3df145db01978d0ec01e790831bee1a282b3642c080dce9fd85990f8c7c4 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

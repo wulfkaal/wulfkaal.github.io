@@ -1,0 +1,19 @@
+{
+ "content_hash": "eaae2d14f10a2d5aba8ac5e2678cbbea3f64bf273308be86468798678b28faca",
+ "object": "https://wulfkaal.github.io/claims/2714974-011",
+ "claim": "Larger hedge fund advisers, which must file Form PF quarterly rather than annually, faced substantially higher compliance costs for both initial and subsequent reporting than smaller advisers did.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2714974-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest eaae2d14f10a2d5aba8ac5e2678cbbea3f64bf273308be86468798678b28faca verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

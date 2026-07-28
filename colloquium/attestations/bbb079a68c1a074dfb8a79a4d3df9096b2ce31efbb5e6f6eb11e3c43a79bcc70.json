@@ -1,0 +1,19 @@
+{
+ "content_hash": "bbb079a68c1a074dfb8a79a4d3df9096b2ce31efbb5e6f6eb11e3c43a79bcc70",
+ "object": "https://wulfkaal.github.io/claims/2097160-024",
+ "claim": "Before conversion, executives holding securities with long-term maturities and coupon payments have incentives to manage the company with debt-holders' interests in mind.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2097160-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bbb079a68c1a074dfb8a79a4d3df9096b2ce31efbb5e6f6eb11e3c43a79bcc70 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

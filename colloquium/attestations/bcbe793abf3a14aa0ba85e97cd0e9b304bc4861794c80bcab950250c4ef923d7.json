@@ -1,0 +1,19 @@
+{
+ "content_hash": "bcbe793abf3a14aa0ba85e97cd0e9b304bc4861794c80bcab950250c4ef923d7",
+ "object": "https://wulfkaal.github.io/claims/4067783-008",
+ "claim": "A DAO token sale can be drained at the moment of closing: in the Anubis DAO sale 13597 ETH was removed from the token sale pool and sent to another address as the sale was about to close, and because the launch platform had not been compromised the loss was attributed to an inside rug pull.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4067783-008.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bcbe793abf3a14aa0ba85e97cd0e9b304bc4861794c80bcab950250c4ef923d7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

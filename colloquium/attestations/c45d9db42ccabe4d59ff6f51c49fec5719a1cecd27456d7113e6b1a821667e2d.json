@@ -1,0 +1,19 @@
+{
+ "content_hash": "c45d9db42ccabe4d59ff6f51c49fec5719a1cecd27456d7113e6b1a821667e2d",
+ "object": "https://wulfkaal.github.io/claims/2337268-039",
+ "claim": "A chief compliance officer is effective only if he or she combines sufficient knowledge of IAA obligations with adequate authority to develop and enforce policies and procedures; knowledge without authority is insufficient.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c45d9db42ccabe4d59ff6f51c49fec5719a1cecd27456d7113e6b1a821667e2d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

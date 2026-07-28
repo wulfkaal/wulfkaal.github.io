@@ -1,0 +1,19 @@
+{
+ "content_hash": "9b2aeb74eefe4725205c8f7a1c6ae369adf0b8be8111b908e7cea1418a147b4a",
+ "object": "https://wulfkaal.github.io/claims/6192998-010",
+ "claim": "The two times corruption cost bound of the 2018 framework is conditional, not general: subsequent analysis shows it holds only under specific conditions that may not obtain in practice.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6192998-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9b2aeb74eefe4725205c8f7a1c6ae369adf0b8be8111b908e7cea1418a147b4a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "7a39c0cf0e7766291e73d3fcc39bff1010265d0a0c51c6cd7954a063f4efe3d8",
+ "object": "https://wulfkaal.github.io/claims/3396522-038",
+ "claim": "Merchant adoption of stable cryptocurrencies turns on a concrete threshold: merchants pay 2.9 percent to credit card companies on non cash transactions, so any medium of exchange costing less than 2.9 percent benefits merchants, who can pass the saving to consumers as a discount.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396522-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 7a39c0cf0e7766291e73d3fcc39bff1010265d0a0c51c6cd7954a063f4efe3d8 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

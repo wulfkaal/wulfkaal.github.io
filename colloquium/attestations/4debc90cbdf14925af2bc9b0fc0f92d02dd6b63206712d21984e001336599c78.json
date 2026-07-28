@@ -1,0 +1,19 @@
+{
+ "content_hash": "4debc90cbdf14925af2bc9b0fc0f92d02dd6b63206712d21984e001336599c78",
+ "object": "https://wulfkaal.github.io/claims/3606663-015",
+ "claim": "Institutional investors face a distinct barrier beyond volatility: fiduciary responsibility to their clients limits the type of risk they may take on, and the lack of custody solutions recognized by regulators compounds the problem.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4debc90cbdf14925af2bc9b0fc0f92d02dd6b63206712d21984e001336599c78 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

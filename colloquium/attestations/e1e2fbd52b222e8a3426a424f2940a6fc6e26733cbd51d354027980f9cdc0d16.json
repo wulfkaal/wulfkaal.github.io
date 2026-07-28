@@ -1,0 +1,19 @@
+{
+ "content_hash": "e1e2fbd52b222e8a3426a424f2940a6fc6e26733cbd51d354027980f9cdc0d16",
+ "object": "https://wulfkaal.github.io/claims/3249860-023",
+ "claim": "Among the top 100 tokens, currency and utility models are the most common, USDT is the only purely Stablecoin token, Steem and Maker are both Stablecoin and utility, and only four tokens are asset-backed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3249860-023.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e1e2fbd52b222e8a3426a424f2940a6fc6e26733cbd51d354027980f9cdc0d16 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

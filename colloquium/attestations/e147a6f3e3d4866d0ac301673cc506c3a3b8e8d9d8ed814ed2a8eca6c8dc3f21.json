@@ -1,0 +1,19 @@
+{
+ "content_hash": "e147a6f3e3d4866d0ac301673cc506c3a3b8e8d9d8ed814ed2a8eca6c8dc3f21",
+ "object": "https://wulfkaal.github.io/claims/2389423-014",
+ "claim": "The study's core hypothesis, drawn from the industry view and the anecdotal evidence, is that smaller hedge fund advisers pay more relative to their size than larger hedge fund advisers for Title IV compliance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e147a6f3e3d4866d0ac301673cc506c3a3b8e8d9d8ed814ed2a8eca6c8dc3f21 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

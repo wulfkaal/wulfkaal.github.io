@@ -1,0 +1,19 @@
+{
+ "content_hash": "ea102899d5ed9c5c86745a2adb1d82f423947d70a7c6c931051aec3c0a552c0b",
+ "object": "https://wulfkaal.github.io/claims/3117224-021",
+ "claim": "The UK Financial Conduct Authority takes the position that ICOs may be regulated as securities depending on the aspects and rights the coin holder obtains through holding the coin, assessed case by case.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3117224-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ea102899d5ed9c5c86745a2adb1d82f423947d70a7c6c931051aec3c0a552c0b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

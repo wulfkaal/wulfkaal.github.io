@@ -1,0 +1,19 @@
+{
+ "content_hash": "b9a3717372771ed593e74fb59810e0c3bb6ac9e31254faf42d47ebf0efe3475c",
+ "object": "https://wulfkaal.github.io/claims/3249860-016",
+ "claim": "For token issuers in the dataset that did not conduct an ICO, the author used the date of first publicly listed trade as a proxy variable for launch date.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3249860-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b9a3717372771ed593e74fb59810e0c3bb6ac9e31254faf42d47ebf0efe3475c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

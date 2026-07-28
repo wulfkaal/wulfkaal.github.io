@@ -1,0 +1,19 @@
+{
+ "content_hash": "3153bc4c71a78b94183b268ce694589442b971139af8edfa9cd50defa7d5f401",
+ "object": "https://wulfkaal.github.io/claims/3949098-036",
+ "claim": "The DAOIC pools no assets: the smart contract releases each member's deposit directly to the project after validation pool approval, and returns on purchases are likewise not pooled but paid pro rata to members in proportion to their reputation token holdings.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3949098-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3153bc4c71a78b94183b268ce694589442b971139af8edfa9cd50defa7d5f401 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

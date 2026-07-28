@@ -1,0 +1,19 @@
+{
+ "content_hash": "13c0cb24f0ad04f81165839e7e8a497da6c9acdf43709e7416e3d1ef2a2af5ae",
+ "object": "https://wulfkaal.github.io/claims/2808132-038",
+ "claim": "The study's evidence base is a PitchBook dataset of 77,508 United States venture capital deals involving 37,298 companies from 2005 through 2015, covering all venture capital deals and all venture capital stages.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2808132-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 13c0cb24f0ad04f81165839e7e8a497da6c9acdf43709e7416e3d1ef2a2af5ae verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

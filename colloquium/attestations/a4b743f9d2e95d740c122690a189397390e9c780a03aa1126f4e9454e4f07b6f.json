@@ -1,0 +1,19 @@
+{
+ "content_hash": "a4b743f9d2e95d740c122690a189397390e9c780a03aa1126f4e9454e4f07b6f",
+ "object": "https://wulfkaal.github.io/claims/3606663-036",
+ "claim": "Consensus in decentralized systems presents a two sided cost problem: creating consensus raises the costs of prepping, processing, and storing information, while reducing the number of computational checks increases the risk of collusion attacks that could change the record.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a4b743f9d2e95d740c122690a189397390e9c780a03aa1126f4e9454e4f07b6f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

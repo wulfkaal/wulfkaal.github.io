@@ -1,0 +1,19 @@
+{
+ "content_hash": "622e31fa271238af681f05b95d7a6d53d30c5ab9c48f4a2fbb61ab98680ce2dc",
+ "object": "https://wulfkaal.github.io/claims/3962614-005",
+ "claim": "Because traditional fiat VC funds must maintain liquidity to support capital calls from their investors, they are limited in their ability to deploy capital, which affects their return on investment and overall fund performance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3962614-005.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 622e31fa271238af681f05b95d7a6d53d30c5ab9c48f4a2fbb61ab98680ce2dc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

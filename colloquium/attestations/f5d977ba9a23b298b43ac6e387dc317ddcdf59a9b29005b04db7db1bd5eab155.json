@@ -1,0 +1,19 @@
+{
+ "content_hash": "f5d977ba9a23b298b43ac6e387dc317ddcdf59a9b29005b04db7db1bd5eab155",
+ "object": "https://wulfkaal.github.io/claims/3931933-001",
+ "claim": "In conventional Proof of Stake, selection probability for block rewards rises with stake and block rewards are constant regardless of node reputation, whereas in Secure Proof of Stake nodes with higher reputation have a higher probability of being selected for rewards.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f5d977ba9a23b298b43ac6e387dc317ddcdf59a9b29005b04db7db1bd5eab155 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

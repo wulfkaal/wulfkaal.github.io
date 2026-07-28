@@ -1,0 +1,19 @@
+{
+ "content_hash": "b8617bb6511570d3e5189e0c4aacb6abadc83b91c49aab9dc8747c8722b62c5e",
+ "object": "https://wulfkaal.github.io/claims/2998097-003",
+ "claim": "Because banks and brokers had let LTCM borrow the full value of its collateral, LTCM's 4.8 billion dollars in capital dissipated quickly once banks began making margin calls.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2998097-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b8617bb6511570d3e5189e0c4aacb6abadc83b91c49aab9dc8747c8722b62c5e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

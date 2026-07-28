@@ -1,0 +1,19 @@
+{
+ "content_hash": "9b2e4e1e3b9dde49e6aed818af227b3066c5d34a947094ae03be90d666d29599",
+ "object": "https://wulfkaal.github.io/claims/2715083-024",
+ "claim": "The subadvisory route leaves a regulatory gap: none of the mutual fund manager's obligations, such as daily valuation, public and SEC reporting, or independent boards, reach the private fund adviser serving as subadviser.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2715083-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9b2e4e1e3b9dde49e6aed818af227b3066c5d34a947094ae03be90d666d29599 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "0a1fbb1bfa0dce10667564bc89e4f493ae61ac59511fa5c2358d3e5c7bd9f848",
+ "object": "https://wulfkaal.github.io/claims/3125822-012",
+ "claim": "The platform is Sybil attack resistant because all power is weighted by reputation rather than by account: an owner of a single account holding 1000 tokens has the same or more power than an owner of 1000 accounts holding one token each.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0a1fbb1bfa0dce10667564bc89e4f493ae61ac59511fa5c2358d3e5c7bd9f848 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "9d4160ba3fd01dab2905483faeabb2576a3dc790398d7810a095ed4ea0e48d7d",
+ "object": "https://wulfkaal.github.io/claims/5225296-004",
+ "claim": "A direct move from PoS to SPoS would render existing validator communities and stake-optimized infrastructures obsolete or force significant reconfiguration, which is why a hybrid intermediate stage is required.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5225296-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9d4160ba3fd01dab2905483faeabb2576a3dc790398d7810a095ed4ea0e48d7d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

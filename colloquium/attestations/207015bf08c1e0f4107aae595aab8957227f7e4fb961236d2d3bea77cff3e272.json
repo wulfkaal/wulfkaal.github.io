@@ -1,0 +1,19 @@
+{
+ "content_hash": "207015bf08c1e0f4107aae595aab8957227f7e4fb961236d2d3bea77cff3e272",
+ "object": "https://wulfkaal.github.io/claims/4529715-003",
+ "claim": "DAOs in the dataset score well below average on implementing true decentralization, averaging 3.78 out of 10, with the highest score being CRDAO at 8 out of 10 and several DAOs scoring 1 out of 10.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4529715-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 207015bf08c1e0f4107aae595aab8957227f7e4fb961236d2d3bea77cff3e272 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

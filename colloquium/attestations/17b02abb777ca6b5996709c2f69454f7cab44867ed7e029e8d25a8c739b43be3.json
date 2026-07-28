@@ -1,0 +1,19 @@
+{
+ "content_hash": "17b02abb777ca6b5996709c2f69454f7cab44867ed7e029e8d25a8c739b43be3",
+ "object": "https://wulfkaal.github.io/claims/3067615-020",
+ "claim": "The only real control power available to token holders is the decision to hold or sell their tokens, and even that exit right may be unavailable until the token is fully listed on an exchange.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 17b02abb777ca6b5996709c2f69454f7cab44867ed7e029e8d25a8c739b43be3 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

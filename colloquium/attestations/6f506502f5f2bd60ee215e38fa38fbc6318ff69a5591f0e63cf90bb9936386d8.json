@@ -1,0 +1,19 @@
+{
+ "content_hash": "6f506502f5f2bd60ee215e38fa38fbc6318ff69a5591f0e63cf90bb9936386d8",
+ "object": "https://wulfkaal.github.io/claims/2389423-009",
+ "claim": "The new regulatory framework for private funds in the United States requires hedge fund manager registration in combination with enhanced disclosure of sensitive proprietary information, a combination that marks a shift in how private funds are regulated.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6f506502f5f2bd60ee215e38fa38fbc6318ff69a5591f0e63cf90bb9936386d8 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "e9dfd4aedd8ae1c81f5bd86adb1a36331f16df9a1134953d729f80e7a19b3f88",
+ "object": "https://wulfkaal.github.io/claims/3002908-014",
+ "claim": "Crypto gains are being massively underreported: despite Bitcoin rising from under twenty dollars in 2013 to over twelve hundred dollars in 2017, the IRS received only about 900 Forms 8949 indicating crypto gain or loss over four years.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3002908-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e9dfd4aedd8ae1c81f5bd86adb1a36331f16df9a1134953d729f80e7a19b3f88 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "52f53e8dc4dbf583f1113eb2795b3c14c0d4287a1e9096da8bbc21af0ea5a65c",
+ "object": "https://wulfkaal.github.io/claims/2337268-015",
+ "claim": "The pre Dodd-Frank exemption for advisers with fewer than fifteen clients failed as a regulatory boundary because most hedge fund advisers deliberately designed their operations and legal structures to fit within it and thereby escape SEC registration and supervision.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 52f53e8dc4dbf583f1113eb2795b3c14c0d4287a1e9096da8bbc21af0ea5a65c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

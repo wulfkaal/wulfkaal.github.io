@@ -1,0 +1,19 @@
+{
+ "content_hash": "f2cb7ad05a4fd4ac4e3334f1883b2807eafbb7d6e172315364f7ec669442ae01",
+ "object": "https://wulfkaal.github.io/claims/2739479-002",
+ "claim": "The SEC's 2004 attempt to require hedge fund adviser registration failed: after the D.C. Circuit vacated the rule in Goldstein v. SEC, the overwhelming majority of private fund advisers that had registered under the 2004 requirements deregistered.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f2cb7ad05a4fd4ac4e3334f1883b2807eafbb7d6e172315364f7ec669442ae01 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

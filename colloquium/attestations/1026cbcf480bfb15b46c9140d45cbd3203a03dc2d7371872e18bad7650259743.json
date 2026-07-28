@@ -1,0 +1,19 @@
+{
+ "content_hash": "1026cbcf480bfb15b46c9140d45cbd3203a03dc2d7371872e18bad7650259743",
+ "object": "https://wulfkaal.github.io/claims/5454054-016",
+ "claim": "LER scalability is limited by three identified risks: yield compression from rising interest rates, delays in the creation of binding regulatory safe harbors, and divergent national implementations of frameworks such as MiCA.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5454054-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1026cbcf480bfb15b46c9140d45cbd3203a03dc2d7371872e18bad7650259743 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

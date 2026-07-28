@@ -1,0 +1,19 @@
+{
+ "content_hash": "4d64841f823dadc8e4bc39b27f55af0f843e7c5b6e749901d6560bd181628f8b",
+ "object": "https://wulfkaal.github.io/claims/3409548-025",
+ "claim": "Machine learning applied to execution algorithms lets large orders be split into thousands of smaller transactions without moving the market, with the algorithm adjusting its aggressiveness to market conditions.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3409548-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4d64841f823dadc8e4bc39b27f55af0f843e7c5b6e749901d6560bd181628f8b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

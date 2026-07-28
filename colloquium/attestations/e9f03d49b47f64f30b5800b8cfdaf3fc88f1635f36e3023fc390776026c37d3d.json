@@ -1,0 +1,19 @@
+{
+ "content_hash": "e9f03d49b47f64f30b5800b8cfdaf3fc88f1635f36e3023fc390776026c37d3d",
+ "object": "https://wulfkaal.github.io/claims/4529715-022",
+ "claim": "Decentralized organizations carry inherent risks that require establishing a legal entity, and establishing that legal entity inherently contradicts the notion of decentralization.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4529715-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e9f03d49b47f64f30b5800b8cfdaf3fc88f1635f36e3023fc390776026c37d3d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

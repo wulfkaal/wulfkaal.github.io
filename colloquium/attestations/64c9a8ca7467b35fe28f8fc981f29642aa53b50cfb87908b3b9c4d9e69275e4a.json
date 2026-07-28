@@ -1,0 +1,19 @@
+{
+ "content_hash": "64c9a8ca7467b35fe28f8fc981f29642aa53b50cfb87908b3b9c4d9e69275e4a",
+ "object": "https://wulfkaal.github.io/claims/3931933-004",
+ "claim": "Because HSPoS supplements rather than replaces the consensus layer, an existing PoS consensus algorithm can be kept in operation while reputation is introduced through the reward function, permitting a gradual rather than abrupt transition to SPoS.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 64c9a8ca7467b35fe28f8fc981f29642aa53b50cfb87908b3b9c4d9e69275e4a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

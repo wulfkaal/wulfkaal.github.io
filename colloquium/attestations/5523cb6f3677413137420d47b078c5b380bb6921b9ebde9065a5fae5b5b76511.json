@@ -1,0 +1,19 @@
+{
+ "content_hash": "5523cb6f3677413137420d47b078c5b380bb6921b9ebde9065a5fae5b5b76511",
+ "object": "https://wulfkaal.github.io/claims/2992962-032",
+ "claim": "Giving disputants the power to select between notary pools, as OpenBazaar does, is a clear improvement over Aragon's method of completely random selection of judges from the entire group of users posting bonds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2992962-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5523cb6f3677413137420d47b078c5b380bb6921b9ebde9065a5fae5b5b76511 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "a8fbfbd281e146380d9f92d357ea319a03957952e1b0813ae6878516fc88d47f",
+ "object": "https://wulfkaal.github.io/claims/4755632-018",
+ "claim": "Hierarchical review produces an anchoring failure: the first reviewer in the hierarchy gets the highest priority and follow-on reviewers merely add minor upgrades, so adding reviewers does not add the independent scrutiny that would raise code quality.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4755632-018.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a8fbfbd281e146380d9f92d357ea319a03957952e1b0813ae6878516fc88d47f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

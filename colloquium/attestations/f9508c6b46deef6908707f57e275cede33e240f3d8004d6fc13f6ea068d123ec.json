@@ -1,0 +1,19 @@
+{
+ "content_hash": "f9508c6b46deef6908707f57e275cede33e240f3d8004d6fc13f6ea068d123ec",
+ "object": "https://wulfkaal.github.io/claims/3227933-005",
+ "claim": "The paper's central claims are that digital technologies have already disrupted centralized corporate organizations by enabling platforms, that this disruption will continue as blockchain based technologies proliferate, and that regulators must attend to these changes.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3227933-005.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f9508c6b46deef6908707f57e275cede33e240f3d8004d6fc13f6ea068d123ec verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

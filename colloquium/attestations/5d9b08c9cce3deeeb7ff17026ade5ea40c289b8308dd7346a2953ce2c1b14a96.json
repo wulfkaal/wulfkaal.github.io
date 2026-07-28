@@ -1,0 +1,19 @@
+{
+ "content_hash": "5d9b08c9cce3deeeb7ff17026ade5ea40c289b8308dd7346a2953ce2c1b14a96",
+ "object": "https://wulfkaal.github.io/claims/1908473-012",
+ "claim": "Because contingent capital is a hybrid instrument that pays fixed returns while bearing equity like risk, it may receive low or no ratings, attract a much smaller investor base, and carry higher funding costs.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1908473-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5d9b08c9cce3deeeb7ff17026ade5ea40c289b8308dd7346a2953ce2c1b14a96 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

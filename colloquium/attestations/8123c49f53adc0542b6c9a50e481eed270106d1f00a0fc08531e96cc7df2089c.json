@@ -1,0 +1,19 @@
+{
+ "content_hash": "8123c49f53adc0542b6c9a50e481eed270106d1f00a0fc08531e96cc7df2089c",
+ "object": "https://wulfkaal.github.io/claims/3002908-017",
+ "claim": "Complex smart contracts involving several parties can only work if they rest on a verifiable and unhackable system, which is what blockchain technology supplies.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3002908-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8123c49f53adc0542b6c9a50e481eed270106d1f00a0fc08531e96cc7df2089c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

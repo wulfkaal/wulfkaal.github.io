@@ -1,0 +1,19 @@
+{
+ "content_hash": "79d2051349f57517eed1e6ccdb28ea06d16f89da44fc60a0ad62cc8c4ddc224f",
+ "object": "https://wulfkaal.github.io/claims/2732915-035",
+ "claim": "Of those who responded, 75.4 percent indicated that the profits of their investment management company were affected by the new registration and disclosure requirements, consistent with the management company, rather than the fund, bearing most of those costs.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2732915-035.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 79d2051349f57517eed1e6ccdb28ea06d16f89da44fc60a0ad62cc8c4ddc224f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

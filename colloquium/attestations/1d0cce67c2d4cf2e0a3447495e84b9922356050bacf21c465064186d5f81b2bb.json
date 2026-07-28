@@ -1,0 +1,19 @@
+{
+ "content_hash": "1d0cce67c2d4cf2e0a3447495e84b9922356050bacf21c465064186d5f81b2bb",
+ "object": "https://wulfkaal.github.io/claims/3396542-025",
+ "claim": "Aggregate capital under the DAO structure is lower than under a traditional corporate insurer only if the incremental risk that contingent underwriting liabilities add to agents' private portfolios is small enough; the reduction is conditional, not automatic.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396542-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1d0cce67c2d4cf2e0a3447495e84b9922356050bacf21c465064186d5f81b2bb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

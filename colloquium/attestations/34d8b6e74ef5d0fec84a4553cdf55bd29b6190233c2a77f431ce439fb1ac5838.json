@@ -1,0 +1,19 @@
+{
+ "content_hash": "34d8b6e74ef5d0fec84a4553cdf55bd29b6190233c2a77f431ce439fb1ac5838",
+ "object": "https://wulfkaal.github.io/claims/3002908-028",
+ "claim": "The authors undercut their own legacy systems explanation: legacy systems in the EU should theoretically create the same barriers, and there is no reason to believe US legacy systems are more of an obstacle than European ones.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3002908-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 34d8b6e74ef5d0fec84a4553cdf55bd29b6190233c2a77f431ce439fb1ac5838 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

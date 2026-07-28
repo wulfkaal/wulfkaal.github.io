@@ -1,0 +1,19 @@
+{
+ "content_hash": "b92da47a58c46f647594cf84b21d5bc95b8af81dc9dbdd9e7831f12178bb889c",
+ "object": "https://wulfkaal.github.io/claims/4067783-027",
+ "claim": "Anonymity lets information flow from the edges of the system, from individuals who would have no agency in centralized structures, and such inputs are much less likely to materialize if DAO participants know each other.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4067783-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b92da47a58c46f647594cf84b21d5bc95b8af81dc9dbdd9e7831f12178bb889c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

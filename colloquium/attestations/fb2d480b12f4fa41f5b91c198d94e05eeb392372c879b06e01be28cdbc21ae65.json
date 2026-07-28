@@ -1,0 +1,19 @@
+{
+ "content_hash": "fb2d480b12f4fa41f5b91c198d94e05eeb392372c879b06e01be28cdbc21ae65",
+ "object": "https://wulfkaal.github.io/claims/4755632-030",
+ "claim": "Mandatory crowd review and policing votes make code reviewers less likely to submit highly idiosyncratic reviews, because idiosyncratic reviewers face slashing of their reputation token scores and loss of standing in the community.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4755632-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fb2d480b12f4fa41f5b91c198d94e05eeb392372c879b06e01be28cdbc21ae65 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

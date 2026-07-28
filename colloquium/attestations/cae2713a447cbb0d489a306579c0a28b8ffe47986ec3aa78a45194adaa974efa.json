@@ -1,0 +1,19 @@
+{
+ "content_hash": "cae2713a447cbb0d489a306579c0a28b8ffe47986ec3aa78a45194adaa974efa",
+ "object": "https://wulfkaal.github.io/claims/2998033-028",
+ "claim": "The private fund industry contracted sharply in 2016: a total of 1,057 private investment funds closed down, exceeding the 1,023 liquidations of 2009 and falling just short of the record 1,471 closures in 2008.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2998033-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cae2713a447cbb0d489a306579c0a28b8ffe47986ec3aa78a45194adaa974efa verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

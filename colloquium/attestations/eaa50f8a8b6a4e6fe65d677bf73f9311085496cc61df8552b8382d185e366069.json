@@ -1,0 +1,19 @@
+{
+ "content_hash": "eaa50f8a8b6a4e6fe65d677bf73f9311085496cc61df8552b8382d185e366069",
+ "object": "https://wulfkaal.github.io/claims/3125827-009",
+ "claim": "Even though proof of stake mitigates the economy of scale advantage, block production cartels can still arise in PoS systems through lotteries, through built in voting delegations, or because the stakes required to be a block producer can simply be bought.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125827-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest eaa50f8a8b6a4e6fe65d677bf73f9311085496cc61df8552b8382d185e366069 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

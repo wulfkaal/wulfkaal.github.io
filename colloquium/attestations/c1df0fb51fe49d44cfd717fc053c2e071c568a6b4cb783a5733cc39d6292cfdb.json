@@ -1,0 +1,19 @@
+{
+ "content_hash": "c1df0fb51fe49d44cfd717fc053c2e071c568a6b4cb783a5733cc39d6292cfdb",
+ "object": "https://wulfkaal.github.io/claims/2811729-003",
+ "claim": "The authors stipulate that an unconstrained mutual fund strategy is generally not tethered to any benchmark and instead gives the manager operational freedom to pursue risk-adjusted returns using any debt instruments or securities, regardless of issuer, sector, jurisdiction, liquidity, or quality.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811729-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c1df0fb51fe49d44cfd717fc053c2e071c568a6b4cb783a5733cc39d6292cfdb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

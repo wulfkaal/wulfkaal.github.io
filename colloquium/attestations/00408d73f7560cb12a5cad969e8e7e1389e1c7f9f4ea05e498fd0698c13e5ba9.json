@@ -1,0 +1,19 @@
+{
+ "content_hash": "00408d73f7560cb12a5cad969e8e7e1389e1c7f9f4ea05e498fd0698c13e5ba9",
+ "object": "https://wulfkaal.github.io/claims/2470008-002",
+ "claim": "Accuracy and consistency problems in the SEC's private fund data collection can impair the FSOC's ability to evaluate the systemic risk posed by private fund advisers.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 00408d73f7560cb12a5cad969e8e7e1389e1c7f9f4ea05e498fd0698c13e5ba9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

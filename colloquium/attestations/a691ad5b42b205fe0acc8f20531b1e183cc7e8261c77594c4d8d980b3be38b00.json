@@ -1,0 +1,19 @@
+{
+ "content_hash": "a691ad5b42b205fe0acc8f20531b1e183cc7e8261c77594c4d8d980b3be38b00",
+ "object": "https://wulfkaal.github.io/claims/4755632-032",
+ "claim": "Price discovery is a public service function because without public pricing consumers cannot realistically select the service provider offering the highest value, and the resulting lack of transparency enables insider deals to the detriment of clients forced into prices dictated by a group of firms.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4755632-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a691ad5b42b205fe0acc8f20531b1e183cc7e8261c77594c4d8d980b3be38b00 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

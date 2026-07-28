@@ -1,0 +1,19 @@
+{
+ "content_hash": "db24ff7108e5d1bf24a9838f3485cdf137d734ec635f8aeedb91e1eeb6eb756d",
+ "object": "https://wulfkaal.github.io/claims/2389423-019",
+ "claim": "Least squares linear regression is non-robust to outliers: in the presence of outliers its predictions can be dragged toward the outliers and the variance of the estimates can be artificially inflated.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest db24ff7108e5d1bf24a9838f3485cdf137d734ec635f8aeedb91e1eeb6eb756d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

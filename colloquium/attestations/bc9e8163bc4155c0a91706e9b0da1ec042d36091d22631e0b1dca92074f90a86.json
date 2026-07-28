@@ -1,0 +1,19 @@
+{
+ "content_hash": "bc9e8163bc4155c0a91706e9b0da1ec042d36091d22631e0b1dca92074f90a86",
+ "object": "https://wulfkaal.github.io/claims/3405401-028",
+ "claim": "Until blockchain technology was introduced via bitcoin in 2009, decentralized reputation systems mostly relied on the old and corruptible concept of the Web of Trust.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3405401-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bc9e8163bc4155c0a91706e9b0da1ec042d36091d22631e0b1dca92074f90a86 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

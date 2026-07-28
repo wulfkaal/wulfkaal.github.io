@@ -1,0 +1,19 @@
+{
+ "content_hash": "a1ccd7b4c22bdf4621909cc5764c86aefd1dc66964d234ae7e56ebe8c9b9244a",
+ "object": "https://wulfkaal.github.io/claims/5554218-003",
+ "claim": "The absence of standardized protocols for dispute resolution and for compliance with regulations such as export controls hinders the scalability of tokenized real world assets and other blockchain based applications.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5554218-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a1ccd7b4c22bdf4621909cc5764c86aefd1dc66964d234ae7e56ebe8c9b9244a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

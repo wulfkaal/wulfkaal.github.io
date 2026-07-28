@@ -1,0 +1,19 @@
+{
+ "content_hash": "1f72f0087a0362fdfdb5312c6bf9e3e57522c0ff8602a66a8be07dcb81477e1b",
+ "object": "https://wulfkaal.github.io/claims/3782214-010",
+ "claim": "Designing a single consensus algorithm is vastly easier than designing a consensus algorithm that can incorporate all future updates to itself, which explains why immature decentralized systems lack sophisticated governance mechanisms.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782214-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1f72f0087a0362fdfdb5312c6bf9e3e57522c0ff8602a66a8be07dcb81477e1b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

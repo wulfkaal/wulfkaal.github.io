@@ -1,0 +1,19 @@
+{
+ "content_hash": "518d6f0c66c7442d22641d34d916ac6397cc2e2de456a0b4ada8cf5fb19b9c77",
+ "object": "https://wulfkaal.github.io/claims/3782216-011",
+ "claim": "Applying Web3 technology to chit funds replaces the foremen and their commission with smart contracts, which eliminates the risk that a foreman absconds with the fund.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782216-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 518d6f0c66c7442d22641d34d916ac6397cc2e2de456a0b4ada8cf5fb19b9c77 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

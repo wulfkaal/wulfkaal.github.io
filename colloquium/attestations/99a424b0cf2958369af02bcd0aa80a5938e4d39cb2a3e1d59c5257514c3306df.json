@@ -1,0 +1,19 @@
+{
+ "content_hash": "99a424b0cf2958369af02bcd0aa80a5938e4d39cb2a3e1d59c5257514c3306df",
+ "object": "https://wulfkaal.github.io/claims/6269518-011",
+ "claim": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit leaching parameter of one, since every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent, which is a maximally punitive setting.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6269518-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 99a424b0cf2958369af02bcd0aa80a5938e4d39cb2a3e1d59c5257514c3306df verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

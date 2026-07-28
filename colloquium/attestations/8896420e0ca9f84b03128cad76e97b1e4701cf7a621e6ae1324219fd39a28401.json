@@ -1,0 +1,19 @@
+{
+ "content_hash": "8896420e0ca9f84b03128cad76e97b1e4701cf7a621e6ae1324219fd39a28401",
+ "object": "https://wulfkaal.github.io/claims/1558614-001",
+ "claim": "German banks' exposure to CDO risk ran through credit enhancement and liquidity guarantees given to off balance sheet conduits, and because that exposure was often kept out of their accounting the inherent risk only surfaced once the CDO market collapsed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1558614-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8896420e0ca9f84b03128cad76e97b1e4701cf7a621e6ae1324219fd39a28401 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

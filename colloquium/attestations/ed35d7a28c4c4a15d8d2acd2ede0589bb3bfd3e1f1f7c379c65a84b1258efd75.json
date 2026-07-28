@@ -1,0 +1,19 @@
+{
+ "content_hash": "ed35d7a28c4c4a15d8d2acd2ede0589bb3bfd3e1f1f7c379c65a84b1258efd75",
+ "object": "https://wulfkaal.github.io/claims/3808852-029",
+ "claim": "Automation and the absence of a human backstop in compliance, back office, and settlement create new risks to market integrity on decentralized exchanges, including wash trading, frontrunning, and insider trading.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808852-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ed35d7a28c4c4a15d8d2acd2ede0589bb3bfd3e1f1f7c379c65a84b1258efd75 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

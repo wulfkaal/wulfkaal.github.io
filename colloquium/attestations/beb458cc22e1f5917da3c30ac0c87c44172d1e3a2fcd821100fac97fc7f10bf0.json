@@ -1,0 +1,19 @@
+{
+ "content_hash": "beb458cc22e1f5917da3c30ac0c87c44172d1e3a2fcd821100fac97fc7f10bf0",
+ "object": "https://wulfkaal.github.io/claims/2811718-026",
+ "claim": "Funds of funds claimed to select the best managers through skilled due diligence and charged standard 2 and 20 fee structures for that service, while in reality depositing the vast majority of their capital into Madoff's opaque fund.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811718-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest beb458cc22e1f5917da3c30ac0c87c44172d1e3a2fcd821100fac97fc7f10bf0 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

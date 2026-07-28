@@ -1,0 +1,19 @@
+{
+ "content_hash": "553e646194964ed07cae77170652d10f0c6eac1a31b4d9d53ccadeb229a07fe1",
+ "object": "https://wulfkaal.github.io/claims/3396542-017",
+ "claim": "The value of a token is not uniform across tokens: it depends on whether the token is currently encumbered and, for encumbered tokens, the sooner the token is expected to be released from encumbrance the greater its value.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396542-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 553e646194964ed07cae77170652d10f0c6eac1a31b4d9d53ccadeb229a07fe1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "e24efd718bd4ae06a2d3146096a81a6a7f411107ab548a42053634df175f9588",
+ "object": "https://wulfkaal.github.io/claims/3949098-021",
+ "claim": "Traditional underwriting also fails at the agent level, because individual agents within an underwriter may sacrifice the underwriter's overall reputation for personal gain, for example by putting out a fraudulent offering.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3949098-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e24efd718bd4ae06a2d3146096a81a6a7f411107ab548a42053634df175f9588 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

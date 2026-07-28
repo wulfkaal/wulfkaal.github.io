@@ -1,0 +1,19 @@
+{
+ "content_hash": "bf50ede989c5450c4eb908a26b283e7f7fe01b1882e2301243db62b8b9c8e72c",
+ "object": "https://wulfkaal.github.io/claims/3936876-029",
+ "claim": "Custodial service providers spend proportionally less on IT security than non custodial ones: custodians spend between 6 and 10 percent of resources on IT security while non custodial service providers spend between 11 and 20 percent.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3936876-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bf50ede989c5450c4eb908a26b283e7f7fe01b1882e2301243db62b8b9c8e72c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

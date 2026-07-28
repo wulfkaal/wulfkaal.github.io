@@ -1,0 +1,19 @@
+{
+ "content_hash": "468f546ef081a3b3aadecd503ddd1e7784973f59c2a3c475f1d1c4fa4b5cb30a",
+ "object": "https://wulfkaal.github.io/claims/3606663-021",
+ "claim": "Cyber security incidents contribute to the volatility of the digital asset market through a specific channel: consumers instantaneously withdraw their assets from an exchange affected by an incident.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-021.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 468f546ef081a3b3aadecd503ddd1e7784973f59c2a3c475f1d1c4fa4b5cb30a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "3263b3374b3c7e9a5d607704680db2f6d5c718f476083f4c889b456a47356620",
+ "object": "https://wulfkaal.github.io/claims/4033886-033",
+ "claim": "The stablecoin exists as a response to digital asset price volatility: it is pegged to the value of an external asset, frequently a fiat currency.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4033886-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3263b3374b3c7e9a5d607704680db2f6d5c718f476083f4c889b456a47356620 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

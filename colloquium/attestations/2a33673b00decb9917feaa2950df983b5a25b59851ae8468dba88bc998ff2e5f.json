@@ -1,0 +1,19 @@
+{
+ "content_hash": "2a33673b00decb9917feaa2950df983b5a25b59851ae8468dba88bc998ff2e5f",
+ "object": "https://wulfkaal.github.io/claims/5887242-017",
+ "claim": "Staking influence is proportional to a participant's current reputation score, and because REP can be neither bought nor transferred and is earned only through prior successful validations, the system creates a meritocratic barrier to entry.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5887242-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2a33673b00decb9917feaa2950df983b5a25b59851ae8468dba88bc998ff2e5f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

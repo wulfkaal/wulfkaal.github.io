@@ -1,0 +1,19 @@
+{
+ "content_hash": "b3a23a6ca3a641171a30d86ed8a9ffdec31ffbae9ba985157432d600340b9320",
+ "object": "https://wulfkaal.github.io/claims/3411110-026",
+ "claim": "Near instant settlement creates its own regulatory problem: there is no practical ability to correct trade errors when settlement is same day, whereas the T+2 or T+3 structure supplies a correction window even as its delay causes other trading violations.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3411110-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b3a23a6ca3a641171a30d86ed8a9ffdec31ffbae9ba985157432d600340b9320 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

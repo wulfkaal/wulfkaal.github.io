@@ -1,0 +1,19 @@
+{
+ "content_hash": "c35c8aed6cb10a232ef2670a8a68773489f87cfa17ae5a6a6d8a8e96e4b2e933",
+ "object": "https://wulfkaal.github.io/claims/3125822-049",
+ "claim": "Reputation on the platform is domain specific by construction: a separate type of ERC-20 token is minted for each expertise tag, so reputation earned in one domain confers no voting power, salary claim, or selection weight in another.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125822-049.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c35c8aed6cb10a232ef2670a8a68773489f87cfa17ae5a6a6d8a8e96e4b2e933 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "27ac9c4f1917120ea69398a5a15b16443b6dd62631f592c90bd98c6bfc59a778",
+ "object": "https://wulfkaal.github.io/claims/3406323-022",
+ "claim": "People will not enter into long term smart contracts without a stable currency to refer to, since no renter and landlord will gamble future wealth on a lease that may halve or double in value in any given month.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3406323-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 27ac9c4f1917120ea69398a5a15b16443b6dd62631f592c90bd98c6bfc59a778 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

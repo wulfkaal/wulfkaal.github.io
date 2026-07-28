@@ -1,0 +1,19 @@
+{
+ "content_hash": "26bd306fa8e2a0bd5fce1f4e503034aa0588b293c0ccef9e724b15ec6929295d",
+ "object": "https://wulfkaal.github.io/claims/3396542-026",
+ "claim": "The burden of maintaining sufficient liquidity to meet claims does not rest on the DAO but on the individual underwriters that make it up.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396542-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 26bd306fa8e2a0bd5fce1f4e503034aa0588b293c0ccef9e724b15ec6929295d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

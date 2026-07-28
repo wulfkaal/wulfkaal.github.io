@@ -1,0 +1,19 @@
+{
+ "content_hash": "06e5f96be675b3e72c58d39fc0dfb0052d9ea0591c2fe80237ffdc27eb8b196d",
+ "object": "https://wulfkaal.github.io/claims/2389423-017",
+ "claim": "Form PF is structured so that single strategy fund advisers collect and provide only a fraction of the information a multi strategy adviser must make available, which makes reporting burden a function of strategy count rather than of adviser size.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 06e5f96be675b3e72c58d39fc0dfb0052d9ea0591c2fe80237ffdc27eb8b196d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

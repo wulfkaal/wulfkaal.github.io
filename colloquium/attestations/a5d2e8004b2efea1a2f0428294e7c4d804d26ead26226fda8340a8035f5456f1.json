@@ -1,0 +1,19 @@
+{
+ "content_hash": "a5d2e8004b2efea1a2f0428294e7c4d804d26ead26226fda8340a8035f5456f1",
+ "object": "https://wulfkaal.github.io/claims/3709041-019",
+ "claim": "Vote delegation inevitably reintroduces corruption into a microdemocratic system, because representatives may seek to bribe or purchase votes to gain power, so delegation necessitates a policing system.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3709041-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a5d2e8004b2efea1a2f0428294e7c4d804d26ead26226fda8340a8035f5456f1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

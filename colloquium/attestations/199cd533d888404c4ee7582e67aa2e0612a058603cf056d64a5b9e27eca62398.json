@@ -1,0 +1,19 @@
+{
+ "content_hash": "199cd533d888404c4ee7582e67aa2e0612a058603cf056d64a5b9e27eca62398",
+ "object": "https://wulfkaal.github.io/claims/3411110-007",
+ "claim": "Because direct ownership on a blockchain removes the need for the Depository Trust Corporation to hold the certificate and for a broker to record beneficial ownership, agency costs can be cut and ownership clarity increases.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3411110-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 199cd533d888404c4ee7582e67aa2e0612a058603cf056d64a5b9e27eca62398 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

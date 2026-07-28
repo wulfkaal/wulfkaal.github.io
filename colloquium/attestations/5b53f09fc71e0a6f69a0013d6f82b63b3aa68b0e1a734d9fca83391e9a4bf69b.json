@@ -1,0 +1,19 @@
+{
+ "content_hash": "5b53f09fc71e0a6f69a0013d6f82b63b3aa68b0e1a734d9fca83391e9a4bf69b",
+ "object": "https://wulfkaal.github.io/claims/2811729-010",
+ "claim": "The complexity of unconstrained mutual fund trading has grown to the point that even leading professional analysts struggle to assess these funds' portfolios and their performance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2811729-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5b53f09fc71e0a6f69a0013d6f82b63b3aa68b0e1a734d9fca83391e9a4bf69b verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

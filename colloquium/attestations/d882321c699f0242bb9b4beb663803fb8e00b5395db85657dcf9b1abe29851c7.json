@@ -1,0 +1,19 @@
+{
+ "content_hash": "d882321c699f0242bb9b4beb663803fb8e00b5395db85657dcf9b1abe29851c7",
+ "object": "https://wulfkaal.github.io/claims/2470008-001",
+ "claim": "The SEC data collected from private fund advisers feeds every stage of the FSOC's systemic risk assessment, and the FSOC leans most heavily on precisely those disclosure items that are the most problematic.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d882321c699f0242bb9b4beb663803fb8e00b5395db85657dcf9b1abe29851c7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

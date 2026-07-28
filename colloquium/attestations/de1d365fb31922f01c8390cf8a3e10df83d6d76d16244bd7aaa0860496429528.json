@@ -1,0 +1,19 @@
+{
+ "content_hash": "de1d365fb31922f01c8390cf8a3e10df83d6d76d16244bd7aaa0860496429528",
+ "object": "https://wulfkaal.github.io/claims/3067615-006",
+ "claim": "The pre-ICO price of a cryptocurrency is set arbitrarily by the start-up team that structured the offering, while post-ICO price dynamics are left to supply and demand determined by the network of participants rather than any central authority.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-006.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest de1d365fb31922f01c8390cf8a3e10df83d6d76d16244bd7aaa0860496429528 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

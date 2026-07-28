@@ -1,0 +1,19 @@
+{
+ "content_hash": "4aa564a8c4beecb84ed44471b4621a9b2844a9c06922721bef6cd28c3b082b36",
+ "object": "https://wulfkaal.github.io/claims/3995709-018",
+ "claim": "Delays in legacy code reviews, which can be exacerbated by digital asset market conditions, can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the review.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3995709-018.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4aa564a8c4beecb84ed44471b4621a9b2844a9c06922721bef6cd28c3b082b36 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

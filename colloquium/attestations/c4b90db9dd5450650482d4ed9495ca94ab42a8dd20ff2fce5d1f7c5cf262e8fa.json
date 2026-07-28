@@ -1,0 +1,19 @@
+{
+ "content_hash": "c4b90db9dd5450650482d4ed9495ca94ab42a8dd20ff2fce5d1f7c5cf262e8fa",
+ "object": "https://wulfkaal.github.io/claims/3406323-036",
+ "claim": "Decentralized reputation verification is the backstop for smart contracting: it makes mathematically rigid smart contracts more adjustable for business needs and validates smart contract templates, which raises counterparty trust and removes the need for costly back-testing.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3406323-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c4b90db9dd5450650482d4ed9495ca94ab42a8dd20ff2fce5d1f7c5cf262e8fa verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

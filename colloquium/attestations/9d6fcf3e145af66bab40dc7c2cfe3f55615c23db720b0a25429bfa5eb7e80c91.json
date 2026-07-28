@@ -1,0 +1,19 @@
+{
+ "content_hash": "9d6fcf3e145af66bab40dc7c2cfe3f55615c23db720b0a25429bfa5eb7e80c91",
+ "object": "https://wulfkaal.github.io/claims/5886342-020",
+ "claim": "A digital pledge is constructed as a bankruptcy remote preferential right over a digital object, giving the pledgee priority that survives the pledgor's insolvency.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9d6fcf3e145af66bab40dc7c2cfe3f55615c23db720b0a25429bfa5eb7e80c91 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

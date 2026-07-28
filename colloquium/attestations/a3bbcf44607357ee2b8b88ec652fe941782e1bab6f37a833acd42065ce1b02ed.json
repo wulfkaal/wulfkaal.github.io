@@ -1,0 +1,19 @@
+{
+ "content_hash": "a3bbcf44607357ee2b8b88ec652fe941782e1bab6f37a833acd42065ce1b02ed",
+ "object": "https://wulfkaal.github.io/claims/3782210-037",
+ "claim": "Members should not stake reputation tokens to register an opinion on a contentious topic; strict validation pools should be used only after debate has settled, to verify consensus.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782210-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a3bbcf44607357ee2b8b88ec652fe941782e1bab6f37a833acd42065ce1b02ed verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

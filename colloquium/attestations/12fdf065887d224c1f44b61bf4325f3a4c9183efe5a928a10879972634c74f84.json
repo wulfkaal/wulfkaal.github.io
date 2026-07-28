@@ -1,0 +1,19 @@
+{
+ "content_hash": "12fdf065887d224c1f44b61bf4325f3a4c9183efe5a928a10879972634c74f84",
+ "object": "https://wulfkaal.github.io/claims/2389423-015",
+ "claim": "Prior work shows that registration and the increased compliance requirements under the Dodd-Frank Act only marginally increase the cost structure of hedge funds.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2389423-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 12fdf065887d224c1f44b61bf4325f3a4c9183efe5a928a10879972634c74f84 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

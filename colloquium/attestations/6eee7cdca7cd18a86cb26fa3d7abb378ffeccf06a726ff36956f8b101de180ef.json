@@ -1,0 +1,19 @@
+{
+ "content_hash": "6eee7cdca7cd18a86cb26fa3d7abb378ffeccf06a726ff36956f8b101de180ef",
+ "object": "https://wulfkaal.github.io/claims/2739479-024",
+ "claim": "Between 2012 and 2015 the annual cost of Dodd-Frank compliance doubled for many survey respondents, moving from the $50,000 to $100,000 range into the $100,000 to $200,000 range.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2739479-024.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6eee7cdca7cd18a86cb26fa3d7abb378ffeccf06a726ff36956f8b101de180ef verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

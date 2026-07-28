@@ -1,0 +1,19 @@
+{
+ "content_hash": "fc93b6fc207424ab34247b86908a8b6818c455c8797e1c3970bfec31b7cd03cc",
+ "object": "https://wulfkaal.github.io/claims/2715083-025",
+ "claim": "For the first time in the industry's history, the Dodd-Frank Act required most hedge fund advisers to register with the SEC, mandating disclosure of information previously treated as proprietary and private.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2715083-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fc93b6fc207424ab34247b86908a8b6818c455c8797e1c3970bfec31b7cd03cc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

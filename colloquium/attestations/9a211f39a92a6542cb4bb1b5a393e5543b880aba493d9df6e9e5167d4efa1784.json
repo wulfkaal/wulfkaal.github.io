@@ -1,0 +1,19 @@
+{
+ "content_hash": "9a211f39a92a6542cb4bb1b5a393e5543b880aba493d9df6e9e5167d4efa1784",
+ "object": "https://wulfkaal.github.io/claims/5886342-012",
+ "claim": "Legal Identity is the narrower category: it is an Identity to which rights and obligations are attributed on the basis of the applicable law, in particular natural and legal persons, so having an identity in a digital system does not by itself confer legal personality.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9a211f39a92a6542cb4bb1b5a393e5543b880aba493d9df6e9e5167d4efa1784 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

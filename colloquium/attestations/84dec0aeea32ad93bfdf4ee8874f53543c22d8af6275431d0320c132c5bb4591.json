@@ -1,0 +1,19 @@
+{
+ "content_hash": "84dec0aeea32ad93bfdf4ee8874f53543c22d8af6275431d0320c132c5bb4591",
+ "object": "https://wulfkaal.github.io/claims/1765901-016",
+ "claim": "Treating the U.S. location of a broker as making the securities purchase domestic would circumvent most of the Morrison holding, since a foreign buyer of foreign securities could invoke U.S. law simply by routing the order through a U.S. broker.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1765901-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 84dec0aeea32ad93bfdf4ee8874f53543c22d8af6275431d0320c132c5bb4591 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

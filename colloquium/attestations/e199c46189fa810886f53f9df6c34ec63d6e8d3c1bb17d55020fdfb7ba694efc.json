@@ -1,0 +1,19 @@
+{
+ "content_hash": "e199c46189fa810886f53f9df6c34ec63d6e8d3c1bb17d55020fdfb7ba694efc",
+ "object": "https://wulfkaal.github.io/claims/5225296-020",
+ "claim": "Recursive zk-SNARK optimizations compress proof generation from seconds to milliseconds while preserving constant-time verification, which is what makes zero-knowledge voting deployable in a protocol running microsecond-scale reputation updates.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5225296-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e199c46189fa810886f53f9df6c34ec63d6e8d3c1bb17d55020fdfb7ba694efc verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

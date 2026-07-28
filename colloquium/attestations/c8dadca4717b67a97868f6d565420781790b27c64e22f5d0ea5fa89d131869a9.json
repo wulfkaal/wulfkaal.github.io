@@ -1,0 +1,19 @@
+{
+ "content_hash": "c8dadca4717b67a97868f6d565420781790b27c64e22f5d0ea5fa89d131869a9",
+ "object": "https://wulfkaal.github.io/claims/3249860-039",
+ "claim": "Attempts to increase throughput and scale in consensus protocols concentrate on proof of stake, and the data are consistent with anecdotal evidence that proof of stake may be the most dominant attempt at scaling.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3249860-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c8dadca4717b67a97868f6d565420781790b27c64e22f5d0ea5fa89d131869a9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

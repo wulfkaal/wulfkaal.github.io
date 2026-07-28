@@ -1,0 +1,19 @@
+{
+ "content_hash": "4eeab55f47646dbac7d48e6af9e65f5b7a0398768558312d194e44d3b8438e86",
+ "object": "https://wulfkaal.github.io/claims/1806252-010",
+ "claim": "Because hedge fund trading strategies depend on confidentiality, required disclosures that let other market participants trade along or anticipate a fund's transactions can negatively affect the fund's absolute returns.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1806252-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4eeab55f47646dbac7d48e6af9e65f5b7a0398768558312d194e44d3b8438e86 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "3d74fd22e8fd108edf9660a4f3cd26036e9f40728698d580b28461068749f6e9",
+ "object": "https://wulfkaal.github.io/claims/2470008-004",
+ "claim": "Even though the private fund industry broadly accepted Form PF, the form's core problems for the SEC are the ambiguity of several questions, advisers' disagreement with the definition of funds, and correspondingly insufficient SEC guidance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2470008-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3d74fd22e8fd108edf9660a4f3cd26036e9f40728698d580b28461068749f6e9 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

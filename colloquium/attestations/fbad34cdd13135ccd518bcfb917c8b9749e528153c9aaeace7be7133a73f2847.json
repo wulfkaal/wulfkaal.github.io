@@ -1,0 +1,19 @@
+{
+ "content_hash": "fbad34cdd13135ccd518bcfb917c8b9749e528153c9aaeace7be7133a73f2847",
+ "object": "https://wulfkaal.github.io/claims/3782191-015",
+ "claim": "Technology-driven decentralized systems depend on existing infrastructure and follow existing natural network patterns, just as predator populations could not evolve without prey.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782191-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fbad34cdd13135ccd518bcfb917c8b9749e528153c9aaeace7be7133a73f2847 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

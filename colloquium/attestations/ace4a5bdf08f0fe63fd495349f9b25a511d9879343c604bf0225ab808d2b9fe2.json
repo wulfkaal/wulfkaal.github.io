@@ -1,0 +1,19 @@
+{
+ "content_hash": "ace4a5bdf08f0fe63fd495349f9b25a511d9879343c604bf0225ab808d2b9fe2",
+ "object": "https://wulfkaal.github.io/claims/6607458-033",
+ "claim": "Without a verification record accessible to counterparties, generative markets suffer a generative-quality failure analogous to the lemons problem: counterparties price on the distribution of observed qualities, which systematically underprices high-quality generators.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6607458-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ace4a5bdf08f0fe63fd495349f9b25a511d9879343c604bf0225ab808d2b9fe2 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

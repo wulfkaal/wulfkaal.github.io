@@ -1,0 +1,19 @@
+{
+ "content_hash": "4e9f5b5a5bce8e4b673545e0e67f2bab0028e00bf87ab1e90f3bd33eeb05b92f",
+ "object": "https://wulfkaal.github.io/claims/1558614-013",
+ "claim": "Limited liability lets managers and shareholders capture most of the benefits of excessive risk taking while not bearing all of its costs, which is one explanation for why bankers take excessive risk.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1558614-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4e9f5b5a5bce8e4b673545e0e67f2bab0028e00bf87ab1e90f3bd33eeb05b92f verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

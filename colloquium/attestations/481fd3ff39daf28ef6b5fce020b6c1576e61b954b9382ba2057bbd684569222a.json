@@ -1,0 +1,19 @@
+{
+ "content_hash": "481fd3ff39daf28ef6b5fce020b6c1576e61b954b9382ba2057bbd684569222a",
+ "object": "https://wulfkaal.github.io/claims/3709041-001",
+ "claim": "Centralized coordination of behavior for the common good risks undermining individual effort, whereas blockchain technology's autonomous and anonymous decentralized coordination of individual action can deliver common good outcomes without suppressing individualism and its welfare enhancing effects.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3709041-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 481fd3ff39daf28ef6b5fce020b6c1576e61b954b9382ba2057bbd684569222a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "831c3a98429d054615dfa5836c3de7cff8f11f97c705de8f538504541c0d8f65",
+ "object": "https://wulfkaal.github.io/claims/3782203-038",
+ "claim": "The value of reputation is directly related to how well punishment can be distributed in response to cheating, so a more transparent system produces more accurate and efficient policing and therefore more valuable reputation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782203-038.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 831c3a98429d054615dfa5836c3de7cff8f11f97c705de8f538504541c0d8f65 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "1a7c9c49d297681b7a0d9c343a96a1c4e66a45c4410730a035f406f02f53248c",
+ "object": "https://wulfkaal.github.io/claims/2959730-034",
+ "claim": "Increased transparency from blockchain recordkeeping lowers fees by allowing a fund to expend fewer resources on auditing itself.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2959730-034.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1a7c9c49d297681b7a0d9c343a96a1c4e66a45c4410730a035f406f02f53248c verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

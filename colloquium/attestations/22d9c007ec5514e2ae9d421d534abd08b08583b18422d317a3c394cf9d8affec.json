@@ -1,0 +1,19 @@
+{
+ "content_hash": "22d9c007ec5514e2ae9d421d534abd08b08583b18422d317a3c394cf9d8affec",
+ "object": "https://wulfkaal.github.io/claims/3808852-001",
+ "claim": "The six types of decentralization are not independent: each is subject to its own iterative process and affects the others through feedback effects, so proliferation in one type progressively changes the others.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808852-001.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 22d9c007ec5514e2ae9d421d534abd08b08583b18422d317a3c394cf9d8affec verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "0e9949a15f51b2d0fdc13696b5103b2a4798dde950b16adee6103356f02401e7",
+ "object": "https://wulfkaal.github.io/claims/4796714-027",
+ "claim": "Post-deployment monitoring, the standard fallback when ex-ante rules prove inadequate, is typically woefully outdated by the time it is applied because the AI models continue to evolve.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4796714-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0e9949a15f51b2d0fdc13696b5103b2a4798dde950b16adee6103356f02401e7 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

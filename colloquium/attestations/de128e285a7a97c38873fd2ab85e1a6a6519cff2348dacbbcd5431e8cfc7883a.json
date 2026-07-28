@@ -1,0 +1,19 @@
+{
+ "content_hash": "de128e285a7a97c38873fd2ab85e1a6a6519cff2348dacbbcd5431e8cfc7883a",
+ "object": "https://wulfkaal.github.io/claims/2992962-035",
+ "claim": "The economic incentive for Aragon judges to follow the more popular vote, since judges keep their bond only if they voted with the majority, calls into question whether the mechanism delivers effective, non arbitrary, and fair dispute resolution.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2992962-035.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest de128e285a7a97c38873fd2ab85e1a6a6519cff2348dacbbcd5431e8cfc7883a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

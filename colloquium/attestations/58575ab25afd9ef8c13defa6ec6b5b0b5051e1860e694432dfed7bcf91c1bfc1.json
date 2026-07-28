@@ -1,0 +1,19 @@
+{
+ "content_hash": "58575ab25afd9ef8c13defa6ec6b5b0b5051e1860e694432dfed7bcf91c1bfc1",
+ "object": "https://wulfkaal.github.io/claims/4685567-034",
+ "claim": "Greenwashing is curtailed in the impact certificate marketplace because any market participant can instantaneously invalidate nominal but not substantive impact stories published by certificate purchasers and by listed projects.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4685567-034.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 58575ab25afd9ef8c13defa6ec6b5b0b5051e1860e694432dfed7bcf91c1bfc1 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "e51f9908e3efbd82b6af1b97941c138b0246473f900f64f44d677841bb703e98",
+ "object": "https://wulfkaal.github.io/claims/4796714-033",
+ "claim": "In the proposed system the DAO's forum is an on-chain collection of uniquely identified posts that may cite earlier contributions, and this citation structure is what forms the Weighted Directed Acyclic Graph on which the governance model rests.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4796714-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e51f9908e3efbd82b6af1b97941c138b0246473f900f64f44d677841bb703e98 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

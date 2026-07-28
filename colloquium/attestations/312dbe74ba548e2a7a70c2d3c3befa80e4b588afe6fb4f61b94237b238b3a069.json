@@ -1,0 +1,19 @@
+{
+ "content_hash": "312dbe74ba548e2a7a70c2d3c3befa80e4b588afe6fb4f61b94237b238b3a069",
+ "object": "https://wulfkaal.github.io/claims/3067615-036",
+ "claim": "The Gnosis ICO shows how a reverse dutch auction can mitigate the inefficiencies and risks of a capped sale: the offering was capped at $12.5 million and the time needed to complete the sale determined the quantity of tokens distributed to investors, with the rest held by the start-up team.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3067615-036.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 312dbe74ba548e2a7a70c2d3c3befa80e4b588afe6fb4f61b94237b238b3a069 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

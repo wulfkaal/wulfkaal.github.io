@@ -1,0 +1,19 @@
+{
+ "content_hash": "ac009c2c11b48bb7af4d5dcb76e7200a22a9d9a3c457c09e3ec5c59a9bfa9b23",
+ "object": "https://wulfkaal.github.io/claims/3808873-007",
+ "claim": "Decentralized technology systems require interoperability for survivability, yet most platforms attempt to go it alone in an effort to become the next Bitcoin, so decentralized community silos proliferate and the required infrastructure, which no single protocol can build, does not get built.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3808873-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ac009c2c11b48bb7af4d5dcb76e7200a22a9d9a3c457c09e3ec5c59a9bfa9b23 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

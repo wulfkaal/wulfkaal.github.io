@@ -1,0 +1,19 @@
+{
+ "content_hash": "8e1ec44bc6c87b4d08e8ce997c0450c0b11fdda282917ed4af216aff204eeb6a",
+ "object": "https://wulfkaal.github.io/claims/3606663-003",
+ "claim": "The expected growth rate of DeFi, across diverse estimates, is large enough to call into question the long term viability of the existing decentralized technology infrastructure unless core infrastructure improvements are made.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-003.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8e1ec44bc6c87b4d08e8ce997c0450c0b11fdda282917ed4af216aff204eeb6a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "00ef032b0df85600bf638393266f8a3c43e7b11c7c26115fbeb1d57813b4ec2d",
+ "object": "https://wulfkaal.github.io/claims/3396522-015",
+ "claim": "A well established stable cryptocurrency and a universal exchange form a positive feedback loop: the exchange's liquidity is enhanced by the stable cryptocurrency, and the stable currency's stability and adoption are enhanced by the exchange.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396522-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 00ef032b0df85600bf638393266f8a3c43e7b11c7c26115fbeb1d57813b4ec2d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

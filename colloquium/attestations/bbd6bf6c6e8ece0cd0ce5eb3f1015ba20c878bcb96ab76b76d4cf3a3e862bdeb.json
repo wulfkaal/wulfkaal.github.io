@@ -1,0 +1,19 @@
+{
+ "content_hash": "bbd6bf6c6e8ece0cd0ce5eb3f1015ba20c878bcb96ab76b76d4cf3a3e862bdeb",
+ "object": "https://wulfkaal.github.io/claims/2447306-010",
+ "claim": "Despite contacting the entire population of 3669 SEC-registered private fund advisers by fax and e-mail over more than five months, the study obtained only 52 respondents, a response rate of 0.014 percent.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2447306-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest bbd6bf6c6e8ece0cd0ce5eb3f1015ba20c878bcb96ab76b76d4cf3a3e862bdeb verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "5e39b4f838f405447fc711d1c68e344f0ec79e4517962ad8dc45316d9ed36dec",
+ "object": "https://wulfkaal.github.io/claims/3606663-030",
+ "claim": "The digital asset market resulted from a technology push rather than a market pull: developers were driven by technical advancement rather than by usefulness and user friendliness, and market pull may only evolve once the DeFi technology infrastructure is more developed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3606663-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5e39b4f838f405447fc711d1c68e344f0ec79e4517962ad8dc45316d9ed36dec verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

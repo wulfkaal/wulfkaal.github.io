@@ -1,0 +1,19 @@
+{
+ "content_hash": "d72b7aa85130f481b2c11eda9f818efc9edebbedf495d0bb214ccb4227d2045d",
+ "object": "https://wulfkaal.github.io/claims/3128900-017",
+ "claim": "Reputation tokens supply a staking mechanism that incentivizes high quality work and task completion by workers, and that simultaneously lets requesters verify and track worker quality, integrity, and quantity.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3128900-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d72b7aa85130f481b2c11eda9f818efc9edebbedf495d0bb214ccb4227d2045d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

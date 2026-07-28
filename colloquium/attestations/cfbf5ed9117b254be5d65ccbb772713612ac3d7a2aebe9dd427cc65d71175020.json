@@ -1,0 +1,19 @@
+{
+ "content_hash": "cfbf5ed9117b254be5d65ccbb772713612ac3d7a2aebe9dd427cc65d71175020",
+ "object": "https://wulfkaal.github.io/claims/3396522-029",
+ "claim": "The interoperability deficit in cryptocurrency markets is partly intrinsic to blockchain technology itself, because the consensus mechanism that allows block propagation on one chain in some ways negates interoperability with other chains and their consensus.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3396522-029.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest cfbf5ed9117b254be5d65ccbb772713612ac3d7a2aebe9dd427cc65d71175020 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

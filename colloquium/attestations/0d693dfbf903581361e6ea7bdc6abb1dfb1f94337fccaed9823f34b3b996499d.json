@@ -1,0 +1,19 @@
+{
+ "content_hash": "0d693dfbf903581361e6ea7bdc6abb1dfb1f94337fccaed9823f34b3b996499d",
+ "object": "https://wulfkaal.github.io/claims/3782192-039",
+ "claim": "Money and contracts are worthless in business with counterparties who cannot be trusted to keep a bargain, so decentralized commerce requires a system in which reputation means something.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3782192-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0d693dfbf903581361e6ea7bdc6abb1dfb1f94337fccaed9823f34b3b996499d verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

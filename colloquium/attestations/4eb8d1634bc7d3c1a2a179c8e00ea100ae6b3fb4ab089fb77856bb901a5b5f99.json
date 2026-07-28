@@ -1,0 +1,19 @@
+{
+ "content_hash": "4eb8d1634bc7d3c1a2a179c8e00ea100ae6b3fb4ab089fb77856bb901a5b5f99",
+ "object": "https://wulfkaal.github.io/claims/4755632-010",
+ "claim": "Human shortcomings in micro task work such as limited attention span, irrationality, and inaccuracy create verification requirements, but manual verification is performed by humans subject to the same limitations, so verification does not resolve the quality problem it is meant to solve.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4755632-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4eb8d1634bc7d3c1a2a179c8e00ea100ae6b3fb4ab089fb77856bb901a5b5f99 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

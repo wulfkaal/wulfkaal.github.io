@@ -1,0 +1,19 @@
+{
+ "content_hash": "9b254b4fb8ef9d0f2339e9af3b95e752fbbca723faf2b8e9ddb5b2c1198079f6",
+ "object": "https://wulfkaal.github.io/claims/3125827-002",
+ "claim": "A successful proof of stake protocol must be flexible enough to continually police new attack strategies, because changing market forces and network performance keep creating new opportunities to profit at the expense of the majority.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3125827-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9b254b4fb8ef9d0f2339e9af3b95e752fbbca723faf2b8e9ddb5b2c1198079f6 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

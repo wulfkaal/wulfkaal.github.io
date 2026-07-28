@@ -1,0 +1,19 @@
+{
+ "content_hash": "fd5cc225f31c435b89e657dfda05378b754eb5bed2b7f9582837f4599b354837",
+ "object": "https://wulfkaal.github.io/claims/1806252-033",
+ "claim": "Requiring advisers to adopt written policies to prevent and detect securities law violations presumes those violations are foreseeable, yet because Dodd-Frank substantially changed securities law, the foreseeability of potential violations is itself further curtailed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/1806252-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fd5cc225f31c435b89e657dfda05378b754eb5bed2b7f9582837f4599b354837 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

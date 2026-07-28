@@ -1,0 +1,19 @@
+{
+ "content_hash": "c9e8c093104eefd3183c062456c2e0bf7e67b004e16cf59358f783d6e2c4dbb3",
+ "object": "https://wulfkaal.github.io/claims/5886342-033",
+ "claim": "Membership in a DAO follows from consent, explicit or implicit, given on the basis of a sufficiently accessible DAO Agreement, so accessibility of the agreement is a precondition for binding members who joined by interacting with the code.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/5886342-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c9e8c093104eefd3183c062456c2e0bf7e67b004e16cf59358f783d6e2c4dbb3 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

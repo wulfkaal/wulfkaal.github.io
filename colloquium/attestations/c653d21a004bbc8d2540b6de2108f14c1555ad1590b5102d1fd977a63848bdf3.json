@@ -1,0 +1,19 @@
+{
+ "content_hash": "c653d21a004bbc8d2540b6de2108f14c1555ad1590b5102d1fd977a63848bdf3",
+ "object": "https://wulfkaal.github.io/claims/3936876-004",
+ "claim": "The majority of digital asset custody providers and digital asset exchanges require customers to surrender ownership of their digital assets as a precondition for access and trading.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3936876-004.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest c653d21a004bbc8d2540b6de2108f14c1555ad1590b5102d1fd977a63848bdf3 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

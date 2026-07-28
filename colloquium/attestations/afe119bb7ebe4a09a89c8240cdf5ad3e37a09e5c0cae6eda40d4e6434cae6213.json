@@ -1,0 +1,19 @@
+{
+ "content_hash": "afe119bb7ebe4a09a89c8240cdf5ad3e37a09e5c0cae6eda40d4e6434cae6213",
+ "object": "https://wulfkaal.github.io/claims/2959730-020",
+ "claim": "Cryptographic hashing makes blockchain manipulation immediately detectable because the hash incorporates all previous transactions, so that even a single digit change produces a different hash value.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2959730-020.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest afe119bb7ebe4a09a89c8240cdf5ad3e37a09e5c0cae6eda40d4e6434cae6213 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

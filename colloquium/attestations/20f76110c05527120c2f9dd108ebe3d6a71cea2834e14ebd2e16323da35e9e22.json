@@ -1,0 +1,19 @@
+{
+ "content_hash": "20f76110c05527120c2f9dd108ebe3d6a71cea2834e14ebd2e16323da35e9e22",
+ "object": "https://wulfkaal.github.io/claims/6192998-008",
+ "claim": "Current agent platforms are inadequate on both horns: centralized rating systems defeat the purpose of agent autonomy, while primitive token staking mechanisms produce binary outcomes and fail to capture knowledge graphs.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6192998-008.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 20f76110c05527120c2f9dd108ebe3d6a71cea2834e14ebd2e16323da35e9e22 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

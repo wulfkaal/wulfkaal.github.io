@@ -1,0 +1,19 @@
+{
+ "content_hash": "2f80510446686f6dab449deee7f7edf7f8500261444171ef6a34ec5bb8c09629",
+ "object": "https://wulfkaal.github.io/claims/3249860-012",
+ "claim": "Adjusting the commercial benefits of a token issuance lets the issuer avoid more drastic monetary interventions such as emergency sales, building token reserves, or changing the token supply in circulation.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3249860-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 2f80510446686f6dab449deee7f7edf7f8500261444171ef6a34ec5bb8c09629 verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

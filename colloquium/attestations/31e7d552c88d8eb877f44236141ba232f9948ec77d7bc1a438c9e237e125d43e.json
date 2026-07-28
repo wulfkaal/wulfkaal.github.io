@@ -1,0 +1,19 @@
+{
+ "content_hash": "31e7d552c88d8eb877f44236141ba232f9948ec77d7bc1a438c9e237e125d43e",
+ "object": "https://wulfkaal.github.io/claims/3931933-009",
+ "claim": "Early Casper testnet participation was sustained by norms of unpaid mutual support, with participants actively sharing knowledge and supporting other validators without expectation of profit or return favors.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/3931933-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 31e7d552c88d8eb877f44236141ba232f9948ec77d7bc1a438c9e237e125d43e verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

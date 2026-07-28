@@ -1,0 +1,19 @@
+{
+ "content_hash": "f972eb38f8161faf8eac3dcb0b21137102b191d6b7dbee53d8bdbeec004ab14a",
+ "object": "https://wulfkaal.github.io/claims/2337268-030",
+ "claim": "The SEC excludes the value of a primary residence and related debts from the qualified client net-worth test because persons who clear the threshold only by counting their home are less able to bear the risk of performance fee arrangements.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2337268-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f972eb38f8161faf8eac3dcb0b21137102b191d6b7dbee53d8bdbeec004ab14a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

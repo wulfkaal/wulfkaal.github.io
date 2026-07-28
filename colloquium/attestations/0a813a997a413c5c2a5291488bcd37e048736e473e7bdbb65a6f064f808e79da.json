@@ -1,0 +1,19 @@
+{
+ "content_hash": "0a813a997a413c5c2a5291488bcd37e048736e473e7bdbb65a6f064f808e79da",
+ "object": "https://wulfkaal.github.io/claims/4755632-009",
+ "claim": "Existing centralized micro task marketplaces cannot adequately fulfill the growing demand for high quality labeled AI training data, because their cost structure requires intermediation, which produces significant overpricing without any of that price reaching the micro task workers.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/4755632-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0a813a997a413c5c2a5291488bcd37e048736e473e7bdbb65a6f064f808e79da verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "41230281367124f3d0e6139db769e701d7c03f1aa962cac577927d2d5e15f07a",
+ "object": "https://wulfkaal.github.io/claims/2061166-040",
+ "claim": "The Basel Committee rejected European Union Member State requests to allow contingent capital to satisfy the new capital buffer requirements under Basel III, deciding instead that systemically important institutions must meet heightened capital requirements with retained earnings and ordinary shares.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/2061166-040.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 41230281367124f3d0e6139db769e701d7c03f1aa962cac577927d2d5e15f07a verify \"what you checked\"",
+  "submit_to": "https://agents.wulfkaal.com",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}
