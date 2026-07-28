@@ -22,4 +22,4 @@
 
 **Keywords.** top-down-regulation, sarbanes-oxley, dodd-frank, stable-rules, corporate-governance
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-025
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

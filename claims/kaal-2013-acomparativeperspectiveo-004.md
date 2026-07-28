@@ -25,4 +25,4 @@
 
 **Keywords.** director-capacity, duty-of-oversight, board-composition, corporate-complexity
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-004
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

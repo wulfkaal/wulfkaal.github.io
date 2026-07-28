@@ -22,4 +22,11 @@
 
 **Keywords.** dynamic-regulation, regulatory-sine-curve, self-enforcement, regulatory-design
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-033
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2273857-014
+- extends: https://wulfkaal.github.io/claims/2273857-003
+- extends: https://wulfkaal.github.io/claims/2273857-067
+- extends: https://wulfkaal.github.io/claims/2273857-055
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

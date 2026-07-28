@@ -18,4 +18,8 @@
 
 **Keywords.** dynamic-governance, research-agenda, fiduciary-duty, corporate-governance
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-037
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2317580-040
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

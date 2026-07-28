@@ -24,4 +24,4 @@
 
 **Keywords.** top-down-regulation, reform-design, corporate-governance, crisis-response
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-027
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

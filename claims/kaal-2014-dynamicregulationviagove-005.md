@@ -24,4 +24,10 @@
 
 **Keywords.** new-institutional-economics, rule-obsolescence, bounded-rationality, transaction-costs
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-005
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2267560-019
+- extends: https://wulfkaal.github.io/claims/2267560-005
+- specializes: https://wulfkaal.github.io/claims/2267560-033
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

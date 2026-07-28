@@ -54,9 +54,32 @@
   {
    "@type": "PropertyValue",
    "name": "attestations",
-   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-018"
+   "value": "https://agents.wulfkaal.com/v0/attestations?content_hash=e2b468eb6480ebfc760761b6a92aadaa4ef6aeb443380a4338b45456ce27d013"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "edges",
+   "value": [
+    {
+     "rel": "restates",
+     "to": "https://wulfkaal.github.io/claims/2273857-046",
+     "to_id": "kaal:claim:2273857-046",
+     "similarity": 0.394
+    },
+    {
+     "rel": "restated_by",
+     "to": "https://wulfkaal.github.io/claims/2808132-030",
+     "to_id": "kaal:claim:2808132-030",
+     "similarity": 0.312
+    }
+   ]
   }
  ],
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/claims/index.json"
+ },
  "dateModified": "2026-07-27",
- "version": "1.0"
+ "version": "1.0",
+ "sha256": "e2b468eb6480ebfc760761b6a92aadaa4ef6aeb443380a4338b45456ce27d013",
+ "canonicalForm": "https://wulfkaal.github.io/claims/kaal-2014-dynamicregulationviagove-018.md"
 }

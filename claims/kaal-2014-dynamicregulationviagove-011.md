@@ -18,4 +18,13 @@
 
 **Keywords.** private-rulemaking, public-rulemaking, decentralized-information, comparative-advantage
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-011
+**Related claims.**
+
+- restated_by: https://wulfkaal.github.io/claims/2831040-035
+- restated_by: https://wulfkaal.github.io/claims/2740477-031
+- restates: https://wulfkaal.github.io/claims/2267560-027
+- restates: https://wulfkaal.github.io/claims/2267560-018
+- extends: https://wulfkaal.github.io/claims/2267560-025
+- extends: https://wulfkaal.github.io/claims/2267560-032
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

@@ -22,4 +22,10 @@
 
 **Keywords.** preemptive-remedial-measures, deferred-prosecution, empirical-evidence, self-remediation
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-026
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2486570-013
+- supports: https://wulfkaal.github.io/claims/2486570-025
+- supports: https://wulfkaal.github.io/claims/2486570-003
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

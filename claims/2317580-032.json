@@ -55,9 +55,32 @@
   {
    "@type": "PropertyValue",
    "name": "attestations",
-   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:2317580-032"
+   "value": "https://agents.wulfkaal.com/v0/attestations?content_hash=614f7c8d9e5d1b36854709f4330c9ce792ce3794873efc8c6d6ac28dd7fa7dfb"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "edges",
+   "value": [
+    {
+     "rel": "extended_by",
+     "to": "https://wulfkaal.github.io/claims/kaal-2013-acomparativeperspectiveo-036",
+     "to_id": "kaal:claim:kaal-2013-acomparativeperspectiveo-036",
+     "similarity": 0.335
+    },
+    {
+     "rel": "extends",
+     "to": "https://wulfkaal.github.io/claims/2273857-064",
+     "to_id": "kaal:claim:2273857-064",
+     "similarity": 0.31
+    }
+   ]
   }
  ],
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/claims/index.json"
+ },
  "dateModified": "2026-07-27",
- "version": "1.0"
+ "version": "1.0",
+ "sha256": "614f7c8d9e5d1b36854709f4330c9ce792ce3794873efc8c6d6ac28dd7fa7dfb",
+ "canonicalForm": "https://wulfkaal.github.io/claims/2317580-032.md"
 }

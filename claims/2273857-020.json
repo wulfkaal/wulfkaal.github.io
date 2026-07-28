@@ -53,9 +53,44 @@
   {
    "@type": "PropertyValue",
    "name": "attestations",
-   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:2273857-020"
+   "value": "https://agents.wulfkaal.com/v0/attestations?content_hash=8b2ea785c5357c7b3cef4be1b3824f2447052b930da21c7a89a8b913ab1a0513"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "edges",
+   "value": [
+    {
+     "rel": "extended_by",
+     "to": "https://wulfkaal.github.io/claims/kaal-2014-dynamicregulationviagove-004",
+     "to_id": "kaal:claim:kaal-2014-dynamicregulationviagove-004",
+     "similarity": 0.448
+    },
+    {
+     "rel": "extended_by",
+     "to": "https://wulfkaal.github.io/claims/kaal-2014-dynamicregulationviagove-008",
+     "to_id": "kaal:claim:kaal-2014-dynamicregulationviagove-008",
+     "similarity": 0.448
+    },
+    {
+     "rel": "extends",
+     "to": "https://wulfkaal.github.io/claims/1998455-025",
+     "to_id": "kaal:claim:1998455-025",
+     "similarity": 0.41
+    },
+    {
+     "rel": "extended_by",
+     "to": "https://wulfkaal.github.io/claims/2740477-030",
+     "to_id": "kaal:claim:2740477-030",
+     "similarity": 0.302
+    }
+   ]
   }
  ],
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/claims/index.json"
+ },
  "dateModified": "2026-07-27",
- "version": "1.0"
+ "version": "1.0",
+ "sha256": "8b2ea785c5357c7b3cef4be1b3824f2447052b930da21c7a89a8b913ab1a0513",
+ "canonicalForm": "https://wulfkaal.github.io/claims/2273857-020.md"
 }

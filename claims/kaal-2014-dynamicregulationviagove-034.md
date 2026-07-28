@@ -24,4 +24,10 @@
 
 **Keywords.** preemptive-remedial-measures, empirical-evidence, compliance-failure, feedback-effects
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-034
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2486570-013
+- restates: https://wulfkaal.github.io/claims/2486570-025
+- contests: https://wulfkaal.github.io/claims/2486570-026
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

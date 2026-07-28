@@ -25,4 +25,4 @@
 
 **Keywords.** duty-of-oversight, director-liability, delaware-law, signalling, corporate-governance
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-001
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

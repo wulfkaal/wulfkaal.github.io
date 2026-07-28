@@ -20,4 +20,9 @@
 
 **Keywords.** institutional-infrastructure, stable-rules, regulatory-reform, systemic-shortcomings
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-016
+**Related claims.**
+
+- extended_by: https://wulfkaal.github.io/claims/2957645-008
+- supported_by: https://wulfkaal.github.io/claims/2740477-017
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

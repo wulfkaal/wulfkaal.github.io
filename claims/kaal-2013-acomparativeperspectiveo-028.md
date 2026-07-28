@@ -24,4 +24,10 @@
 
 **Keywords.** regulatory-sine-curve, reform-dilution, top-down-regulation, financial-regulation
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-028
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2273857-028
+- restates: https://wulfkaal.github.io/claims/2273857-001
+- restates: https://wulfkaal.github.io/claims/2273857-007
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

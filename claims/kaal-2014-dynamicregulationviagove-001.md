@@ -18,4 +18,19 @@
 
 **Keywords.** dynamic-regulation, feedback-effects, rulemaking, decentralized-information
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-001
+**Related claims.**
+
+- restated_by: https://wulfkaal.github.io/claims/2808132-005
+- extended_by: https://wulfkaal.github.io/claims/2808132-031
+- extended_by: https://wulfkaal.github.io/claims/2740477-004
+- extends: https://wulfkaal.github.io/claims/2486570-029
+- extended_by: https://wulfkaal.github.io/claims/2957645-009
+- restated_by: https://wulfkaal.github.io/claims/2998097-019
+- restates: https://wulfkaal.github.io/claims/2273857-048
+- restates: https://wulfkaal.github.io/claims/2267560-012
+- extended_by: https://wulfkaal.github.io/claims/2831040-032
+- extended_by: https://wulfkaal.github.io/claims/2740477-031
+- extends: https://wulfkaal.github.io/claims/2267560-002
+- extended_by: https://wulfkaal.github.io/claims/2957645-010
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

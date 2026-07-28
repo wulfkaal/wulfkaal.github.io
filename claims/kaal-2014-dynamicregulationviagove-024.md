@@ -22,4 +22,12 @@
 
 **Keywords.** deferred-prosecution, corporate-governance, empirical-evidence, board-changes
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-024
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2486570-016
+- extends: https://wulfkaal.github.io/claims/2486570-011
+- supports: https://wulfkaal.github.io/claims/2486570-017
+- supports: https://wulfkaal.github.io/claims/2486570-003
+- supports: https://wulfkaal.github.io/claims/2486570-040
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

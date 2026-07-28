@@ -24,4 +24,9 @@
 
 **Keywords.** transaction-costs, rule-revision, financial-crises, systemic-risk
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-009
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2267560-035
+- restates: https://wulfkaal.github.io/claims/2273857-010
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

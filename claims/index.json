@@ -4,9 +4,19 @@
  "author": "Wulf A. Kaal",
  "orcid": "0000-0003-0757-275X",
  "canonical_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
- "count": 4961,
- "works_covered": 122,
- "failure_mode_count": 2010,
+ "count": 5033,
+ "works_covered": 124,
+ "failure_mode_count": 2037,
+ "typed_edges": 2169,
+ "edge_relations": [
+  "restates",
+  "extends",
+  "supersedes",
+  "specializes",
+  "supports",
+  "contests"
+ ],
+ "html_view": "https://wulfkaal.github.io/claims/<id>.html",
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "verification": "Every supporting_quote is verified as an exact contiguous substring of the source PDF text. The source PDF is content hashed with sha256.",
  "attestation_service": "https://agents.wulfkaal.com/",
@@ -2195,6 +2205,797 @@
     "contingent-capital"
    ],
    "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-001",
+   "url": "https://wulfkaal.github.io/claims/1806252-001",
+   "claim": "Contrary to critics who blame the Basel Accords, harmonization through Basel II is not what made banks hold similar assets; banks held similar assets because those assets were profitable.",
+   "type": "mechanism",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "economics"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-002",
+   "url": "https://wulfkaal.github.io/claims/1806252-002",
+   "claim": "Because hedge funds play a large role in the credit derivatives market and that market recently failed, an increased regulatory emphasis on banks' lending exposure to hedge funds is justified.",
+   "type": "design",
+   "topics": [
+    "systemic-risk",
+    "defi",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-003",
+   "url": "https://wulfkaal.github.io/claims/1806252-003",
+   "claim": "Building on the increase in capital requirements for counterparty risk already suggested in Basel III, Basel III could add a charge on banks' assets based on their lending exposure to hedge funds.",
+   "type": "design",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-004",
+   "url": "https://wulfkaal.github.io/claims/1806252-004",
+   "claim": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive.",
+   "type": "failure",
+   "topics": [
+    "dynamic-regulation"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-005",
+   "url": "https://wulfkaal.github.io/claims/1806252-005",
+   "claim": "The AIFM Directive could create incentives for regulatory arbitrage and could provoke retaliatory action by countries outside the European Union.",
+   "type": "predictive",
+   "topics": [
+    "regulatory-failure"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-006",
+   "url": "https://wulfkaal.github.io/claims/1806252-006",
+   "claim": "Regulating entities that operate in the same markets under asymmetric rules creates legal uncertainty and significant transaction costs.",
+   "type": "mechanism",
+   "topics": [
+    "law-and-legal-systems",
+    "economics"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-007",
+   "url": "https://wulfkaal.github.io/claims/1806252-007",
+   "claim": "Hedge fund managers subjected to stricter rules in one jurisdiction while competing with funds in less restrictive jurisdictions could be placed at a comparative disadvantage.",
+   "type": "mechanism",
+   "topics": [
+    "regulatory-failure",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-008",
+   "url": "https://wulfkaal.github.io/claims/1806252-008",
+   "claim": "If regulators lack the resources to protect against systemic risk, hedge fund regulation could be futile.",
+   "type": "failure",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "securities-law",
+    "private-funds",
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-009",
+   "url": "https://wulfkaal.github.io/claims/1806252-009",
+   "claim": "Regulators who obtain hedge funds' proprietary information could inadvertently pass it to third parties, and because that information is highly valuable to competitors in the same markets, such leakage could undermine trading strategies and the long-term viability of hedge funds.",
+   "type": "failure",
+   "topics": [
+    "disclosure",
+    "private-funds"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-010",
+   "url": "https://wulfkaal.github.io/claims/1806252-010",
+   "claim": "Because hedge fund trading strategies depend on confidentiality, required disclosures that let other market participants trade along or anticipate a fund's transactions can negatively affect the fund's absolute returns.",
+   "type": "mechanism",
+   "topics": [
+    "disclosure",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-011",
+   "url": "https://wulfkaal.github.io/claims/1806252-011",
+   "claim": "Banks' lending practices and counterparty credit risk management can curtail hedge funds' excessive risk taking because banks can use the threat of cutting off future lending to change a fund's behavior.",
+   "type": "mechanism",
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "compliance"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-012",
+   "url": "https://wulfkaal.github.io/claims/1806252-012",
+   "claim": "Banks are ideally positioned to deal with asymmetric information, moral hazard, and systemic issues pertaining to hedge funds, which is why hedge fund regulation should run through bank regulation.",
+   "type": "design",
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-013",
+   "url": "https://wulfkaal.github.io/claims/1806252-013",
+   "claim": "Because banks expect to be bailed out with taxpayer funds, they may have less incentive to monitor their hedge fund lending activities, even though hedge funds are not themselves counterparties in government bailouts.",
+   "type": "mechanism",
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-014",
+   "url": "https://wulfkaal.github.io/claims/1806252-014",
+   "claim": "Systemic risk and financial market stability are public goods, so individual banks free ride on other banks' hedge fund credit risk management and are not incentivized to adequately monitor or limit their own hedge fund risk exposure.",
+   "type": "failure",
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "economics"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-015",
+   "url": "https://wulfkaal.github.io/claims/1806252-015",
+   "claim": "An institution or a country creates externalities when it manages its own hedge fund generated systemic risk without considering how its actions or inactions affect risk in the system as a whole.",
+   "type": "definitional",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-016",
+   "url": "https://wulfkaal.github.io/claims/1806252-016",
+   "claim": "Even if hedge fund investing does have systemic implications, systemic risk is multifaceted enough that addressing it could require more than one regulator in a single jurisdiction, so the SEC alone may be unable to accomplish the task.",
+   "type": "condition",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "institutional-design",
+    "securities-law"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-017",
+   "url": "https://wulfkaal.github.io/claims/1806252-017",
+   "claim": "The SEC would be better advised to interpret the rulemaking authority it received from Congress than to increase requirements on hedge funds in order to address concerns over potential systemic risk.",
+   "type": "normative",
+   "topics": [
+    "securities-law",
+    "dynamic-regulation",
+    "systemic-risk",
+    "risk-and-incentives",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-018",
+   "url": "https://wulfkaal.github.io/claims/1806252-018",
+   "claim": "A lack of regulatory guidance creates legal uncertainty, and legal uncertainty in turn generates transaction costs.",
+   "type": "mechanism",
+   "topics": [
+    "law-and-legal-systems",
+    "economics",
+    "securities-law"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-019",
+   "url": "https://wulfkaal.github.io/claims/1806252-019",
+   "claim": "Because the AIFM Directive exposes depositaries to strict liability in certain circumstances, depositaries must weigh the risks and benefits of serving EU alternative investment funds, and a negative assessment would harm the depository business and, implicitly, hedge funds.",
+   "type": "mechanism",
+   "topics": [
+    "law-and-legal-systems",
+    "private-funds"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-020",
+   "url": "https://wulfkaal.github.io/claims/1806252-020",
+   "claim": "Discrimination against non-EU jurisdictions under the AIFM Directive could provoke retaliatory action, and retaliation combined with a lack of intra-European cooperation could damage the European financial services industry and the whole European economy.",
+   "type": "predictive",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-021",
+   "url": "https://wulfkaal.github.io/claims/1806252-021",
+   "claim": "Market failure in complex financial instruments, rather than hedge fund activity as such, could have been a contributing factor in the recent credit crisis.",
+   "type": "empirical",
+   "topics": [
+    "economics"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-022",
+   "url": "https://wulfkaal.github.io/claims/1806252-022",
+   "claim": "Although hedge funds manage only a small proportion of the investment universe compared with banks, they do manage a proportionally large part of complex financial instruments such as CDOs and other derivatives.",
+   "type": "empirical",
+   "topics": [
+    "private-funds",
+    "economics"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-023",
+   "url": "https://wulfkaal.github.io/claims/1806252-023",
+   "claim": "British Bankers' Association data show that since 2000 hedge funds steadily increased their share of the credit derivatives market while banks' role in that market progressively declined.",
+   "type": "empirical",
+   "topics": [
+    "private-funds",
+    "economics",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-024",
+   "url": "https://wulfkaal.github.io/claims/1806252-024",
+   "claim": "Legislators had disincentives to impose harsher requirements on the hedge fund industry before the crisis, because harsher regulation could have driven franchise taxes and other business to offshore centers.",
+   "type": "mechanism",
+   "topics": [
+    "regulatory-failure",
+    "law-and-legal-systems",
+    "economics",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-025",
+   "url": "https://wulfkaal.github.io/claims/1806252-025",
+   "claim": "Basel III capital charges based on a bank's lending exposure to hedge funds could help address the threat of regulatory arbitrage.",
+   "type": "design",
+   "topics": [
+    "systemic-risk",
+    "regulatory-failure",
+    "defi"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-026",
+   "url": "https://wulfkaal.github.io/claims/1806252-026",
+   "claim": "Implementing the hedge fund lending charge through Basel III would require no separate national implementation, because compliance falls on banks that have already joined the framework, so transaction costs for national regulators would be avoided.",
+   "type": "design",
+   "topics": [
+    "systemic-risk",
+    "economics",
+    "dynamic-regulation"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-027",
+   "url": "https://wulfkaal.github.io/claims/1806252-027",
+   "claim": "Even combining hedge fund regulation via Basel III rules with the de minimis investment rules in Dodd-Frank could leave some issues open, and calibrating such a regulatory combination requires time and experience.",
+   "type": "condition",
+   "topics": [
+    "systemic-risk"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-028",
+   "url": "https://wulfkaal.github.io/claims/1806252-028",
+   "claim": "A standard objection to indirect regulation is that counterparty credit risk management will not work effectively unless the lending bank has an exclusive relationship with the hedge fund that lets it control the relationship.",
+   "type": "condition",
+   "topics": [
+    "risk-and-incentives",
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-029",
+   "url": "https://wulfkaal.github.io/claims/1806252-029",
+   "claim": "Contesting the exclusivity objection, exclusivity of a banking relationship is not the only effective way to exercise control and manage risk: the intensity, endurance, and quality of the relationship also influence how much control a bank can exercise over a hedge fund.",
+   "type": "condition",
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "compliance"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-030",
+   "url": "https://wulfkaal.github.io/claims/1806252-030",
+   "claim": "Because some hedge fund trading strategies depend on the immediate availability of capital and will not work without sufficient lines of credit, banks may retain enough influence over hedge funds even where funds use multiple lenders.",
+   "type": "mechanism",
+   "topics": [
+    "systemic-risk"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-031",
+   "url": "https://wulfkaal.github.io/claims/1806252-031",
+   "claim": "Banks' role in monitoring hedge funds is not easily comparable to the principal agent problem between securities buyers and credit rating agencies, because banks have more influence over hedge funds than securities buyers have over rating agencies and their ratings.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "corporate-governance",
+    "systemic-risk",
+    "compliance",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-032",
+   "url": "https://wulfkaal.github.io/claims/1806252-032",
+   "claim": "The numerical wealth requirements used to define qualified hedge fund investors fail as a regulatory device, because investors who meet the wealth thresholds do not always have the knowledge, understanding, and sophistication needed to invest in highly complex financial instruments.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-033",
+   "url": "https://wulfkaal.github.io/claims/1806252-033",
+   "claim": "Requiring advisers to adopt written policies to prevent and detect securities law violations presumes those violations are foreseeable, yet because Dodd-Frank substantially changed securities law, the foreseeability of potential violations is itself further curtailed.",
+   "type": "failure",
+   "topics": [
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1806252-034",
+   "url": "https://wulfkaal.github.io/claims/1806252-034",
+   "claim": "Without the threat of systemic risk and without a clear delineation of the social externalities that hedge funds cause, the purpose of direct hedge fund regulation is unclear.",
+   "type": "condition",
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "private-funds"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1806252-035",
+   "url": "https://wulfkaal.github.io/claims/1806252-035",
+   "claim": "Registering hedge funds with regulators and requiring disclosure of pertinent information could help minimize the moral hazard, social externalities, and systemic risk generated by the hedge fund industry.",
+   "type": "design",
+   "topics": [
+    "securities-law",
+    "private-funds",
+    "disclosure",
+    "risk-and-incentives",
+    "systemic-risk"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-001",
+   "url": "https://wulfkaal.github.io/claims/1765901-001",
+   "claim": "Because Morrison ties Section 10(b) to the location of the securities transaction rather than to the place where the deception originated, the logic of the holding implies that the SEC likewise has no enforcement rights over securities transactions occurring outside the United States.",
+   "type": "mechanism",
+   "topics": [
+    "securities-law",
+    "compliance"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-002",
+   "url": "https://wulfkaal.github.io/claims/1765901-002",
+   "claim": "Before Morrison, U.S. courts refused to adopt a bright line rule for the extraterritorial reach of Section 10(b), and the resulting case by case conduct and effects analysis was applied inconsistently.",
+   "type": "failure",
+   "topics": [
+    "law-and-legal-systems",
+    "securities-law"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-003",
+   "url": "https://wulfkaal.github.io/claims/1765901-003",
+   "claim": "The plaintiffs' reading that Section 10(b) covers transactions anywhere in any security of a class listed on a U.S. exchange is inconsistent with Morrison, because the opinion turns on the location of the transaction and on the holding that Section 10(b) has no extraterritorial application.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-004",
+   "url": "https://wulfkaal.github.io/claims/1765901-004",
+   "claim": "Morrison itself refutes a listing based reading of Section 10(b): the Court knew that National Australia Bank had registered and listed shares in New York, yet held that Section 10(b) did not reach trades in those ordinary shares in Australia.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-005",
+   "url": "https://wulfkaal.github.io/claims/1765901-005",
+   "claim": "There is no substantive difference between a foreign issuer listing ADRs on a U.S. exchange and listing its ordinary shares there, so Section 10(b) coverage of foreign transactions should not turn on which arrangement the issuer chose.",
+   "type": "definitional",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-006",
+   "url": "https://wulfkaal.github.io/claims/1765901-006",
+   "claim": "Section 30 of the Exchange Act is Congress's only articulation of the extraterritorial reach of Section 10(b), and Congress did not intend the Exchange Act to have extraterritorial effect beyond that provision.",
+   "type": "condition",
+   "topics": [
+    "defi"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-007",
+   "url": "https://wulfkaal.github.io/claims/1765901-007",
+   "claim": "The Supreme Court should have summarized its Morrison holding in language matching the opinion's logic, namely that Section 10(b) applies only to securities bought or sold in the United States; the Court's summary language instead invited confusion.",
+   "type": "design",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-008",
+   "url": "https://wulfkaal.github.io/claims/1765901-008",
+   "claim": "Permitting Section 10(b) suits over dually listed securities traded outside the United States would undermine Morrison's own policy rationale, because it would interfere with the laws of other countries and turn the United States into a haven for plaintiffs' lawyers suing over foreign exchange purchases.",
+   "type": "failure",
+   "topics": [
+    "securities-law"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-009",
+   "url": "https://wulfkaal.github.io/claims/1765901-009",
+   "claim": "Judge Baer's dismissal of the Porsche complaint reaches the correct result under Morrison, but parts of his reasoning require further refinement.",
+   "type": "normative",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-010",
+   "url": "https://wulfkaal.github.io/claims/1765901-010",
+   "claim": "The Porsche swap transactions were not the functional equivalent of a transaction on a U.S. securities exchange, but neither were they the functional equivalent of a transaction on a German exchange, contrary to the implication of Judge Baer's opinion.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-011",
+   "url": "https://wulfkaal.github.io/claims/1765901-011",
+   "claim": "The economic reality of swap agreements does not justify fixing the location of the transaction in every case solely by reference to the market where the reference security trades, even though Judge Baer was right that the Porsche swaps were not U.S. transactions.",
+   "type": "failure",
+   "topics": [
+    "economics"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-012",
+   "url": "https://wulfkaal.github.io/claims/1765901-012",
+   "claim": "Morrison provides no clear parameters for classifying privately negotiated transactions as domestic or foreign, because the case involved publicly traded securities and never reached the question.",
+   "type": "failure",
+   "topics": [
+    "law-and-legal-systems"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-013",
+   "url": "https://wulfkaal.github.io/claims/1765901-013",
+   "claim": "If the presence of a single U.S. party sufficed to locate a privately negotiated derivative transaction in the United States, U.S. parties could sue in U.S. courts regardless of other factors such as where the counterparties were located.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-014",
+   "url": "https://wulfkaal.github.io/claims/1765901-014",
+   "claim": "Locating a private transaction by the location of the parties is often unworkable, because the parties are frequently institutions simultaneously present in the United States and abroad, and individual parties are often in transit.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-015",
+   "url": "https://wulfkaal.github.io/claims/1765901-015",
+   "claim": "Given the defects of a party location analysis, courts should de-emphasize where the parties are and instead use a totality of the circumstances approach to determine where a privately negotiated derivative transaction took place.",
+   "type": "design",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-016",
+   "url": "https://wulfkaal.github.io/claims/1765901-016",
+   "claim": "Treating the U.S. location of a broker as making the securities purchase domestic would circumvent most of the Morrison holding, since a foreign buyer of foreign securities could invoke U.S. law simply by routing the order through a U.S. broker.",
+   "type": "failure",
+   "topics": [
+    "regulatory-failure"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-017",
+   "url": "https://wulfkaal.github.io/claims/1765901-017",
+   "claim": "Non-U.S. investors have a strong incentive to route foreign trades through U.S. brokers if that preserves a U.S. cause of action, because their home jurisdictions rarely offer the attractive features of the U.S. system such as broad discovery, higher damages, class actions, and no exposure to defendants' costs.",
+   "type": "mechanism",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-018",
+   "url": "https://wulfkaal.github.io/claims/1765901-018",
+   "claim": "For exchange traded securities, the location of the exchange rather than the location of the plaintiff's broker should be the controlling factor under Morrison, although it is uncertain whether all courts will adopt this bright line test.",
+   "type": "design",
+   "topics": [
+    "defi"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-019",
+   "url": "https://wulfkaal.github.io/claims/1765901-019",
+   "claim": "Porsche could be exposed to substantial U.S. sanctions even though neither its own common stock nor Volkswagen's traded in the United States, solely because of swap agreements to which Porsche was not a party.",
+   "type": "failure",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-020",
+   "url": "https://wulfkaal.github.io/claims/1765901-020",
+   "claim": "If Section 10(b) were held to reach swap agreements based on stocks traded outside the United States, plaintiffs' attorneys would use that holding as precedent to limit Morrison broadly, and other courts might create a general exception for U.S. derivative contracts referencing non-U.S. securities.",
+   "type": "predictive",
+   "topics": [
+    "law-and-legal-systems",
+    "securities-law"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-021",
+   "url": "https://wulfkaal.github.io/claims/1765901-021",
+   "claim": "Unless courts can construe Morrison for swap agreements and other derivatives consistently with both the logic and the language of the opinion, Congress will have to enact new clarifying legislation.",
+   "type": "condition",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-022",
+   "url": "https://wulfkaal.github.io/claims/1765901-022",
+   "claim": "The Second Circuit should uphold Judge Baer's ruling on a totality of the circumstances basis and explain more fully how those circumstances determine the location of a swap agreement under Morrison.",
+   "type": "design",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-023",
+   "url": "https://wulfkaal.github.io/claims/1765901-023",
+   "claim": "On its face Section 929P(b) of the Dodd-Frank Act addresses only the jurisdiction of the district courts and does not expand the geographic scope of the substantive provisions of U.S. securities law.",
+   "type": "failure",
+   "topics": [
+    "law-and-legal-systems"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-024",
+   "url": "https://wulfkaal.github.io/claims/1765901-024",
+   "claim": "There is a substantial likelihood that U.S. courts will read the Dodd-Frank Act as giving some extraterritorial effect to SEC and DOJ suits, so Morrison cannot be expected to survive intact in actions brought under Section 929P(b).",
+   "type": "predictive",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-025",
+   "url": "https://wulfkaal.github.io/claims/1765901-025",
+   "claim": "Section 929P(b) may not have been necessary, because Section 10(b) already gives the SEC enforcement authority whenever a single U.S. securities transaction is affected by the alleged fraud.",
+   "type": "condition",
+   "topics": [
+    "securities-law",
+    "compliance"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-026",
+   "url": "https://wulfkaal.github.io/claims/1765901-026",
+   "claim": "Foreign-cubed rulings such as Morrison determined the size of the plaintiff class in private suits, but were irrelevant to the SEC's ability to enforce wherever a U.S. securities transaction is connected to the alleged fraud.",
+   "type": "condition",
+   "topics": [
+    "securities-law",
+    "compliance"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-027",
+   "url": "https://wulfkaal.github.io/claims/1765901-027",
+   "claim": "Read as more than a jurisdictional grant, the Dodd-Frank provision becomes an open-ended statute rather than the targeted authority the SEC already held under Section 10(b) and Section 30, and it is undesirable for the SEC to use such powers unilaterally without consulting foreign regulators and the U.S. foreign policy establishment.",
+   "type": "normative",
+   "topics": [
+    "securities-law",
+    "compliance",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-028",
+   "url": "https://wulfkaal.github.io/claims/1765901-028",
+   "claim": "Section 929P(b) risks complications where the SEC proceeds unilaterally in situations in which coordinated enforcement with foreign regulators would be more effective, for example insider trading cases involving exchanges whose home regimes do not recognize comparable insider trading rules.",
+   "type": "failure",
+   "topics": [
+    "securities-law",
+    "compliance",
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-029",
+   "url": "https://wulfkaal.github.io/claims/1765901-029",
+   "claim": "Expanded SEC enforcement under the Dodd-Frank provision runs a serious risk of being perceived as an encroachment on the corporate governance of foreign companies.",
+   "type": "predictive",
+   "topics": [
+    "governance-design",
+    "corporate-governance",
+    "securities-law",
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-030",
+   "url": "https://wulfkaal.github.io/claims/1765901-030",
+   "claim": "Overuse of the Dodd-Frank extraterritorial enforcement provision by the SEC or the DOJ could deter foreign companies from having U.S. operations.",
+   "type": "predictive",
+   "topics": [
+    "securities-law",
+    "compliance"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:1765901-031",
+   "url": "https://wulfkaal.github.io/claims/1765901-031",
+   "claim": "Extending private rights of action extraterritorially would expose non-U.S. companies to Section 10(b) liability based on any U.S. conduct, including conduct inside U.S. business operations alleged to have produced securities fraud abroad, and much of global securities litigation would migrate to the United States.",
+   "type": "predictive",
+   "topics": [
+    "law-and-legal-systems"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-032",
+   "url": "https://wulfkaal.github.io/claims/1765901-032",
+   "claim": "A private right of action in foreign-cubed cases would compel EU companies to modify U.S. business operations that expose them to Section 10(b) litigation, including operations unrelated to U.S. securities markets or U.S. investors.",
+   "type": "predictive",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-033",
+   "url": "https://wulfkaal.github.io/claims/1765901-033",
+   "claim": "Changing national rules in a spirit of cooperation among states and regulators is more productive for preventing securities fraud than imposing U.S. rules on foreign nations through extraterritorial imperialism.",
+   "type": "normative",
+   "topics": [
+    "securities-law"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-034",
+   "url": "https://wulfkaal.github.io/claims/1765901-034",
+   "claim": "Regardless of what the SEC study concludes, Congress should decline to reinstate private rights of action in foreign-cubed cases.",
+   "type": "normative",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-035",
+   "url": "https://wulfkaal.github.io/claims/1765901-035",
+   "claim": "The SEC study is very unlikely to produce an extraterritorial extension of private rights of action so long as Republicans control the House of Representatives.",
+   "type": "predictive",
+   "topics": [
+    "securities-law",
+    "economics"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-036",
+   "url": "https://wulfkaal.github.io/claims/1765901-036",
+   "claim": "Because of the ambiguities in Morrison and Dodd-Frank and the consequences of a broad reading for persons and companies in European and other jurisdictions, Congress should clarify its intent in Section 929P(b) with respect to SEC and DOJ suits over securities transactions outside the United States.",
+   "type": "design",
+   "topics": [
+    "law-and-legal-systems"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:1765901-037",
+   "url": "https://wulfkaal.github.io/claims/1765901-037",
+   "claim": "A clear and restrained U.S. approach to extraterritoriality will bring predictability to global securities markets and avoid a downturn in international economic cooperation.",
+   "type": "predictive",
+   "topics": [
+    "law-and-legal-systems",
+    "securities-law",
+    "economics"
+   ],
+   "is_failure_mode": false
   },
   {
    "id": "kaal:claim:2061166-001",

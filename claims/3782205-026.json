@@ -55,9 +55,32 @@
   {
    "@type": "PropertyValue",
    "name": "attestations",
-   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3782205-026"
+   "value": "https://agents.wulfkaal.com/v0/attestations?content_hash=a56ecfb97756cd3c88e2839f65873d07f0d5673ebad266770d132b9562c64811"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "edges",
+   "value": [
+    {
+     "rel": "restated_by",
+     "to": "https://wulfkaal.github.io/claims/3782216-001",
+     "to_id": "kaal:claim:3782216-001",
+     "similarity": 0.52
+    },
+    {
+     "rel": "extended_by",
+     "to": "https://wulfkaal.github.io/claims/3782216-040",
+     "to_id": "kaal:claim:3782216-040",
+     "similarity": 0.335
+    }
+   ]
   }
  ],
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/claims/index.json"
+ },
  "dateModified": "2026-07-27",
- "version": "1.0"
+ "version": "1.0",
+ "sha256": "a56ecfb97756cd3c88e2839f65873d07f0d5673ebad266770d132b9562c64811",
+ "canonicalForm": "https://wulfkaal.github.io/claims/3782205-026.md"
 }

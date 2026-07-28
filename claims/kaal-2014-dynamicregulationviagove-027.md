@@ -20,4 +20,9 @@
 
 **Keywords.** preemptive-remedial-measures, governmental-contracts, compliance-failure, enforcement
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-027
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2486570-025
+- supersedes: https://wulfkaal.github.io/claims/2486570-026
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

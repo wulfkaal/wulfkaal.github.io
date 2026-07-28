@@ -25,4 +25,4 @@
 
 **Keywords.** path-dependency, liability-standards, duty-of-oversight, reform-limits
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-023
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

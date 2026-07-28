@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2010,
+ "count": 2037,
  "families": 55,
- "distinct_specific_names": 1978,
+ "distinct_specific_names": 2004,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -287,6 +287,26 @@
    "example": "Arbitration of corporate governance disputes has not emerged in the United States because arbitration is at best the next best alternative to Delaware, and a second place finish does not justify the investment needed to design a workable arbitration framework."
   },
   {
+   "failure_family": "investor-protection-gap",
+   "count": 43,
+   "url": "https://wulfkaal.github.io/failures/by-name/investor-protection-gap.json",
+   "specific_names": [
+    "Both remedies for sales pressure underperform",
+    "Diversification loss from the retreat to venture funding",
+    "False transfer of prior fund experience",
+    "No liquidity preference in insolvency",
+    "No performance premium for added risk",
+    "Nonexistent hedge fund investor remedy",
+    "Private fund risk without private fund reward",
+    "Regulatory halo effect",
+    "Reserve token dilution",
+    "Retail access to private fund risk without suitability gate",
+    "Return replication shortfall",
+    "Revlon tiering defect"
+   ],
+   "example": "Existing international proposals and guidelines on hedge fund valuation fail because they do not adequately distinguish between retail and qualified investors, and as of 2009 no legislature has issued an exhaustive set of rules addressing the factors that cause inaccurate valuation."
+  },
+  {
    "failure_family": "definitional-ambiguity",
    "count": 43,
    "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
@@ -305,26 +325,6 @@
     "RAUM definition requires filer interpretation"
    ],
    "example": "Law generally declines to adopt a general principle barring managers from incurring risk above a defined standard because such a standard is hard to define; corporate law instead insulates managers' risk decisions through the business judgment rule."
-  },
-  {
-   "failure_family": "investor-protection-gap",
-   "count": 42,
-   "url": "https://wulfkaal.github.io/failures/by-name/investor-protection-gap.json",
-   "specific_names": [
-    "Both remedies for sales pressure underperform",
-    "Diversification loss from the retreat to venture funding",
-    "False transfer of prior fund experience",
-    "No liquidity preference in insolvency",
-    "No performance premium for added risk",
-    "Nonexistent hedge fund investor remedy",
-    "Private fund risk without private fund reward",
-    "Regulatory halo effect",
-    "Reserve token dilution",
-    "Retail access to private fund risk without suitability gate",
-    "Return replication shortfall",
-    "Revlon tiering defect"
-   ],
-   "example": "Existing international proposals and guidelines on hedge fund valuation fail because they do not adequately distinguish between retail and qualified investors, and as of 2009 no legislature has issued an exhaustive set of rules addressing the factors that cause inaccurate valuation."
   },
   {
    "failure_family": "scalability-and-throughput-limit",
@@ -665,6 +665,26 @@
     "absent reliability guarantee"
    ],
    "example": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades."
+  },
+  {
+   "failure_family": "other",
+   "count": 29,
+   "url": "https://wulfkaal.github.io/failures/by-name/other.json",
+   "specific_names": [
+    "Developer blindness to business and ethical context",
+    "Ethical collectivism corrupts reason",
+    "asymmetric-regulation",
+    "asymmetric-regulation-costs",
+    "bailout-induced-monitoring-failure",
+    "broker-location-loophole",
+    "ccrm-free-riding",
+    "depositary-withdrawal",
+    "derivatives-exception-to-morrison",
+    "foreign-operations-deterrence",
+    "inconsistent-conduct-and-effects-application",
+    "jurisdiction-only-drafting-error"
+   ],
+   "example": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive."
   },
   {
    "failure_family": "inequality-and-access-divide",
@@ -1077,17 +1097,6 @@
     "proof-of-work-energy-waste"
    ],
    "example": "Proof of work mining carries significant externalities: the authors estimate that the total energy cost of running the global network of computers solving proof of work puzzles was around 700 million US dollars per year before publication."
-  },
-  {
-   "failure_family": "other",
-   "count": 3,
-   "url": "https://wulfkaal.github.io/failures/by-name/other.json",
-   "specific_names": [
-    "Developer blindness to business and ethical context",
-    "Ethical collectivism corrupts reason",
-    "remedy mismatch"
-   ],
-   "example": "Coders and developers do not always understand the industry or business environment they target with their software solutions, nor do they always consider the trust or ethical issues raised by the technology based business solutions they implement."
   }
  ],
  "failures": [
@@ -2346,6 +2355,385 @@
    "topics": [
     "risk-and-incentives",
     "contingent-capital"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-004",
+   "url": "https://wulfkaal.github.io/claims/1806252-004",
+   "family": "other",
+   "name": "asymmetric-regulation",
+   "claim": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive.",
+   "conditions": [
+    "US and EU hedge funds operate in the same markets with similar strategies"
+   ],
+   "topics": [
+    "dynamic-regulation"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-005",
+   "url": "https://wulfkaal.github.io/claims/1806252-005",
+   "family": "other",
+   "name": "protectionist-backlash",
+   "claim": "The AIFM Directive could create incentives for regulatory arbitrage and could provoke retaliatory action by countries outside the European Union.",
+   "conditions": [
+    "non-EU funds and managers face restricted access to EU markets"
+   ],
+   "topics": [
+    "regulatory-failure"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-006",
+   "url": "https://wulfkaal.github.io/claims/1806252-006",
+   "family": "other",
+   "name": "asymmetric-regulation-costs",
+   "claim": "Regulating entities that operate in the same markets under asymmetric rules creates legal uncertainty and significant transaction costs.",
+   "conditions": [
+    "entities compete in the same markets"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-008",
+   "url": "https://wulfkaal.github.io/claims/1806252-008",
+   "family": "other",
+   "name": "regulator-resource-shortfall",
+   "claim": "If regulators lack the resources to protect against systemic risk, hedge fund regulation could be futile.",
+   "conditions": [
+    "regulators are given a systemic risk mandate they lack capacity to execute"
+   ],
+   "topics": [
+    "systemic-risk",
+    "risk-and-incentives",
+    "securities-law",
+    "private-funds",
+    "compliance"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-009",
+   "url": "https://wulfkaal.github.io/claims/1806252-009",
+   "family": "other",
+   "name": "regulator-information-leakage",
+   "claim": "Regulators who obtain hedge funds' proprietary information could inadvertently pass it to third parties, and because that information is highly valuable to competitors in the same markets, such leakage could undermine trading strategies and the long-term viability of hedge funds.",
+   "conditions": [
+    "mandatory disclosure of trading positions and strategies to regulators"
+   ],
+   "topics": [
+    "disclosure",
+    "private-funds"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-013",
+   "url": "https://wulfkaal.github.io/claims/1806252-013",
+   "family": "other",
+   "name": "bailout-induced-monitoring-failure",
+   "claim": "Because banks expect to be bailed out with taxpayer funds, they may have less incentive to monitor their hedge fund lending activities, even though hedge funds are not themselves counterparties in government bailouts.",
+   "conditions": [
+    "governments are presumed willing to bail out banks"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "compliance"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-014",
+   "url": "https://wulfkaal.github.io/claims/1806252-014",
+   "family": "other",
+   "name": "ccrm-free-riding",
+   "claim": "Systemic risk and financial market stability are public goods, so individual banks free ride on other banks' hedge fund credit risk management and are not incentivized to adequately monitor or limit their own hedge fund risk exposure.",
+   "conditions": [],
+   "topics": [
+    "risk-and-incentives",
+    "systemic-risk",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-019",
+   "url": "https://wulfkaal.github.io/claims/1806252-019",
+   "family": "other",
+   "name": "depositary-withdrawal",
+   "claim": "Because the AIFM Directive exposes depositaries to strict liability in certain circumstances, depositaries must weigh the risks and benefits of serving EU alternative investment funds, and a negative assessment would harm the depository business and, implicitly, hedge funds.",
+   "conditions": [
+    "AIFM Directive retains elements of strict depositary liability",
+    "depositaries reassess whether to serve alternative investment funds in the European Union"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "private-funds"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-020",
+   "url": "https://wulfkaal.github.io/claims/1806252-020",
+   "family": "other",
+   "name": "retaliatory-escalation",
+   "claim": "Discrimination against non-EU jurisdictions under the AIFM Directive could provoke retaliatory action, and retaliation combined with a lack of intra-European cooperation could damage the European financial services industry and the whole European economy.",
+   "conditions": [
+    "obstacles to EU market access for non-EU funds and managers persist"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-028",
+   "url": "https://wulfkaal.github.io/claims/1806252-028",
+   "family": "other",
+   "name": "non-exclusive-lending-relationship",
+   "claim": "A standard objection to indirect regulation is that counterparty credit risk management will not work effectively unless the lending bank has an exclusive relationship with the hedge fund that lets it control the relationship.",
+   "conditions": [
+    "a hedge fund borrows from more than one bank, so no single bank sees its overall risk exposure"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "compliance"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-032",
+   "url": "https://wulfkaal.github.io/claims/1806252-032",
+   "family": "investor-protection-gap",
+   "name": "wealth-as-sophistication-proxy",
+   "claim": "The numerical wealth requirements used to define qualified hedge fund investors fail as a regulatory device, because investors who meet the wealth thresholds do not always have the knowledge, understanding, and sophistication needed to invest in highly complex financial instruments.",
+   "conditions": [
+    "accredited investor standards under Regulation D and PFIARA"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1806252-033",
+   "url": "https://wulfkaal.github.io/claims/1806252-033",
+   "family": "other",
+   "name": "unforeseeable-compliance-target",
+   "claim": "Requiring advisers to adopt written policies to prevent and detect securities law violations presumes those violations are foreseeable, yet because Dodd-Frank substantially changed securities law, the foreseeability of potential violations is itself further curtailed.",
+   "conditions": [
+    "PFIARA requires written compliance policies just after Dodd-Frank changed the underlying law"
+   ],
+   "topics": [
+    "compliance"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-002",
+   "url": "https://wulfkaal.github.io/claims/1765901-002",
+   "family": "other",
+   "name": "inconsistent-conduct-and-effects-application",
+   "claim": "Before Morrison, U.S. courts refused to adopt a bright line rule for the extraterritorial reach of Section 10(b), and the resulting case by case conduct and effects analysis was applied inconsistently.",
+   "conditions": [
+    "pre-Morrison case law",
+    "foreign-cubed securities litigation"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "securities-law"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-003",
+   "url": "https://wulfkaal.github.io/claims/1765901-003",
+   "family": "other",
+   "name": "listing-based-reading-of-morrison",
+   "claim": "The plaintiffs' reading that Section 10(b) covers transactions anywhere in any security of a class listed on a U.S. exchange is inconsistent with Morrison, because the opinion turns on the location of the transaction and on the holding that Section 10(b) has no extraterritorial application.",
+   "conditions": [
+    "dually listed securities",
+    "transactions executed on a foreign exchange"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-008",
+   "url": "https://wulfkaal.github.io/claims/1765901-008",
+   "family": "other",
+   "name": "plaintiff-haven-effect",
+   "claim": "Permitting Section 10(b) suits over dually listed securities traded outside the United States would undermine Morrison's own policy rationale, because it would interfere with the laws of other countries and turn the United States into a haven for plaintiffs' lawyers suing over foreign exchange purchases.",
+   "conditions": [
+    "dually listed securities",
+    "purchases on foreign exchanges"
+   ],
+   "topics": [
+    "securities-law"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-010",
+   "url": "https://wulfkaal.github.io/claims/1765901-010",
+   "family": "other",
+   "name": "reference-security-equivalence-fallacy",
+   "claim": "The Porsche swap transactions were not the functional equivalent of a transaction on a U.S. securities exchange, but neither were they the functional equivalent of a transaction on a German exchange, contrary to the implication of Judge Baer's opinion.",
+   "conditions": [
+    "over-the-counter security-based swap agreements"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-011",
+   "url": "https://wulfkaal.github.io/claims/1765901-011",
+   "family": "other",
+   "name": "reference-security-only-location-test",
+   "claim": "The economic reality of swap agreements does not justify fixing the location of the transaction in every case solely by reference to the market where the reference security trades, even though Judge Baer was right that the Porsche swaps were not U.S. transactions.",
+   "conditions": [
+    "privately negotiated swap agreements",
+    "application of Morrison to derivatives"
+   ],
+   "topics": [
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-012",
+   "url": "https://wulfkaal.github.io/claims/1765901-012",
+   "family": "other",
+   "name": "private-transaction-location-gap",
+   "claim": "Morrison provides no clear parameters for classifying privately negotiated transactions as domestic or foreign, because the case involved publicly traded securities and never reached the question.",
+   "conditions": [
+    "privately negotiated securities and derivative transactions"
+   ],
+   "topics": [
+    "law-and-legal-systems"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-013",
+   "url": "https://wulfkaal.github.io/claims/1765901-013",
+   "family": "other",
+   "name": "single-party-presence-test",
+   "claim": "If the presence of a single U.S. party sufficed to locate a privately negotiated derivative transaction in the United States, U.S. parties could sue in U.S. courts regardless of other factors such as where the counterparties were located.",
+   "conditions": [
+    "privately negotiated derivative transactions",
+    "a one party location test"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-014",
+   "url": "https://wulfkaal.github.io/claims/1765901-014",
+   "family": "other",
+   "name": "party-location-indeterminacy",
+   "claim": "Locating a private transaction by the location of the parties is often unworkable, because the parties are frequently institutions simultaneously present in the United States and abroad, and individual parties are often in transit.",
+   "conditions": [
+    "private transactions in conventional securities",
+    "institutional and mobile parties"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-016",
+   "url": "https://wulfkaal.github.io/claims/1765901-016",
+   "family": "other",
+   "name": "broker-location-loophole",
+   "claim": "Treating the U.S. location of a broker as making the securities purchase domestic would circumvent most of the Morrison holding, since a foreign buyer of foreign securities could invoke U.S. law simply by routing the order through a U.S. broker.",
+   "conditions": [
+    "orders placed through U.S. brokers for execution on foreign exchanges"
+   ],
+   "topics": [
+    "regulatory-failure"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-019",
+   "url": "https://wulfkaal.github.io/claims/1765901-019",
+   "family": "other",
+   "name": "third-party-swap-exposure",
+   "claim": "Porsche could be exposed to substantial U.S. sanctions even though neither its own common stock nor Volkswagen's traded in the United States, solely because of swap agreements to which Porsche was not a party.",
+   "conditions": [
+    "derivative contracts referencing foreign traded shares",
+    "foreign issuers with no U.S. listing"
+   ],
+   "topics": [
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-020",
+   "url": "https://wulfkaal.github.io/claims/1765901-020",
+   "family": "other",
+   "name": "derivatives-exception-to-morrison",
+   "claim": "If Section 10(b) were held to reach swap agreements based on stocks traded outside the United States, plaintiffs' attorneys would use that holding as precedent to limit Morrison broadly, and other courts might create a general exception for U.S. derivative contracts referencing non-U.S. securities.",
+   "conditions": [
+    "appellate reversal of the Porsche dismissal",
+    "U.S. derivative contracts referencing foreign securities"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "securities-law"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-023",
+   "url": "https://wulfkaal.github.io/claims/1765901-023",
+   "family": "other",
+   "name": "jurisdiction-only-drafting-error",
+   "claim": "On its face Section 929P(b) of the Dodd-Frank Act addresses only the jurisdiction of the district courts and does not expand the geographic scope of the substantive provisions of U.S. securities law.",
+   "conditions": [
+    "suits brought by the SEC or the Department of Justice",
+    "the enacted text as distinct from legislative history"
+   ],
+   "topics": [
+    "law-and-legal-systems"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-028",
+   "url": "https://wulfkaal.github.io/claims/1765901-028",
+   "family": "other",
+   "name": "unilateral-enforcement-risk",
+   "claim": "Section 929P(b) risks complications where the SEC proceeds unilaterally in situations in which coordinated enforcement with foreign regulators would be more effective, for example insider trading cases involving exchanges whose home regimes do not recognize comparable insider trading rules.",
+   "conditions": [
+    "unilateral SEC enforcement over foreign exchange transactions"
+   ],
+   "topics": [
+    "securities-law",
+    "compliance",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-029",
+   "url": "https://wulfkaal.github.io/claims/1765901-029",
+   "family": "other",
+   "name": "perceived-governance-encroachment",
+   "claim": "Expanded SEC enforcement under the Dodd-Frank provision runs a serious risk of being perceived as an encroachment on the corporate governance of foreign companies.",
+   "conditions": [
+    "expanded extraterritorial enforcement by the SEC or DOJ"
+   ],
+   "topics": [
+    "governance-design",
+    "corporate-governance",
+    "securities-law",
+    "compliance"
+   ]
+  },
+  {
+   "id": "kaal:claim:1765901-030",
+   "url": "https://wulfkaal.github.io/claims/1765901-030",
+   "family": "other",
+   "name": "foreign-operations-deterrence",
+   "claim": "Overuse of the Dodd-Frank extraterritorial enforcement provision by the SEC or the DOJ could deter foreign companies from having U.S. operations.",
+   "conditions": [
+    "frequent extraterritorial enforcement under Section 929P(b)"
+   ],
+   "topics": [
+    "securities-law",
+    "compliance"
    ]
   },
   {

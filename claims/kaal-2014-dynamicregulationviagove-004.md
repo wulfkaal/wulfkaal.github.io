@@ -18,4 +18,10 @@
 
 **Keywords.** regulatory-economics, collective-action, regulatory-cycles, transaction-costs
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-004
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2273857-020
+- extends: https://wulfkaal.github.io/claims/2273857-022
+- extends: https://wulfkaal.github.io/claims/2273857-023
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

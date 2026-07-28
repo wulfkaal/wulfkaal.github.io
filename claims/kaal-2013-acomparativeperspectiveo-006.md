@@ -23,4 +23,4 @@
 
 **Keywords.** director-liability, business-risk, shareholder-value, delaware-law
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-006
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

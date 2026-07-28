@@ -24,4 +24,4 @@
 
 **Keywords.** corporate-governance, backward-looking-governance, rule-failure, regulatory-response
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-021
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

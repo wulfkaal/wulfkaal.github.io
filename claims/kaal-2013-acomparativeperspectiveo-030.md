@@ -22,4 +22,8 @@
 
 **Keywords.** financial-innovation, globalization, bounded-rationality, regulatory-adaptation
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-030
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2273857-040
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

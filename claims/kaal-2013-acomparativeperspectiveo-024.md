@@ -24,4 +24,4 @@
 
 **Keywords.** duty-of-oversight, reform-limits, corporate-governance, oversight-enhancement
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-024
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

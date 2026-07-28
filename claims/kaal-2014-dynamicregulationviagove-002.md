@@ -22,4 +22,11 @@
 
 **Keywords.** anticipatory-rulemaking, trial-and-error, dynamic-regulation, regulatory-cost
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-002
+**Related claims.**
+
+- restated_by: https://wulfkaal.github.io/claims/2957645-012
+- restates: https://wulfkaal.github.io/claims/2267560-051
+- supported_by: https://wulfkaal.github.io/claims/2740477-001
+- supported_by: https://wulfkaal.github.io/claims/2808132-002
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

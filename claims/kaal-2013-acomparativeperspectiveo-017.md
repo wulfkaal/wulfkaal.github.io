@@ -22,4 +22,8 @@
 
 **Keywords.** comparative-corporate-law, judicial-review, director-liability, german-law, delaware-law
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-017
+**Related claims.**
+
+- specializes: https://wulfkaal.github.io/claims/1558614-006
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

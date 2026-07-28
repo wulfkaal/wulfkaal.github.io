@@ -23,4 +23,11 @@
 
 **Keywords.** german-law, business-judgment-rule, excessive-risk, arag-garmenbeck, director-liability
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-012
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/1558614-022
+- supports: https://wulfkaal.github.io/claims/1558614-006
+- contests: https://wulfkaal.github.io/claims/1558614-005
+- extends: https://wulfkaal.github.io/claims/1558614-024
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

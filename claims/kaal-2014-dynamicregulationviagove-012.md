@@ -22,4 +22,12 @@
 
 **Keywords.** feedback-effects, private-rulemaking, public-rulemaking, information-quality
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-012
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/2267560-028
+- restated_by: https://wulfkaal.github.io/claims/2808132-031
+- restates: https://wulfkaal.github.io/claims/2267560-034
+- restates: https://wulfkaal.github.io/claims/2267560-007
+- extends: https://wulfkaal.github.io/claims/2267560-027
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

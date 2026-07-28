@@ -18,4 +18,8 @@
 
 **Keywords.** comparative-corporate-law, risk-taking, legal-culture, liability-allocation
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-018
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/1558614-006
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

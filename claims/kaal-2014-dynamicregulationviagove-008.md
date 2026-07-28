@@ -20,4 +20,15 @@
 
 **Keywords.** regulatory-cycles, collective-action, rulemaking-timing, special-interests
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-008
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2267560-037
+- extends: https://wulfkaal.github.io/claims/2273857-020
+- extended_by: https://wulfkaal.github.io/claims/2808132-028
+- extended_by: https://wulfkaal.github.io/claims/2740477-027
+- extends: https://wulfkaal.github.io/claims/2273857-023
+- extended_by: https://wulfkaal.github.io/claims/2808132-020
+- restates: https://wulfkaal.github.io/claims/2273857-053
+- extended_by: https://wulfkaal.github.io/claims/2740477-030
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

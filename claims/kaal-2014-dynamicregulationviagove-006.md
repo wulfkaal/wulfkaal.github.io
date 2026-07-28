@@ -18,4 +18,10 @@
 
 **Keywords.** incomplete-contracts, learning-process, rulemaking, new-institutional-economics
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-006
+**Related claims.**
+
+- generalizes: https://wulfkaal.github.io/claims/6269518-009
+- extends: https://wulfkaal.github.io/claims/2267560-001
+- extended_by: https://wulfkaal.github.io/claims/5886442-030
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

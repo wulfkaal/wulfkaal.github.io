@@ -22,4 +22,8 @@
 
 **Keywords.** self-reporting, feedback-effects, industry-regulation, institution-specific-information
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2014-dynamicregulationviagove-033
+**Related claims.**
+
+- extends: https://wulfkaal.github.io/claims/2267560-018
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

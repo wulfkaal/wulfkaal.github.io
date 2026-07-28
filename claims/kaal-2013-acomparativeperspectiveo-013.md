@@ -23,4 +23,11 @@
 
 **Keywords.** german-law, business-judgment-rule, systemic-risk, financial-crisis, director-liability
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-013
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/1558614-024
+- specializes: https://wulfkaal.github.io/claims/1558614-006
+- extends: https://wulfkaal.github.io/claims/1558614-022
+- restates: https://wulfkaal.github.io/claims/1558614-026
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.

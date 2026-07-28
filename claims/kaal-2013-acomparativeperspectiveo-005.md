@@ -23,4 +23,9 @@
 
 **Keywords.** caremark, business-judgment-rule, business-risk, director-liability, delaware-law
 
-**Attestations.** https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:kaal-2013-acomparativeperspectiveo-005
+**Related claims.**
+
+- restates: https://wulfkaal.github.io/claims/1558614-027
+- supports: https://wulfkaal.github.io/claims/1558614-023
+
+**Canonical form.** This markdown file is the canonical hashed representation of the claim. Its sha256 is the content hash used for attestation.
