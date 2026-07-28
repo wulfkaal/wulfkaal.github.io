@@ -57,9 +57,13 @@ jobs:
       - name: Regenerate rank.md from rank.json
         run: python3 tools/make_rank_md.py rank.json > rank.md
 
+      # --with-quote is REQUIRED, not optional. Without it this job would strip
+      # the verbatim supporting_quote from all 5,033 entries on the next corpus
+      # change -- a projection job silently undoing a deliberate decision is the
+      # exact failure mode this workflow exists to prevent.
       - name: Re-enrich claims/index.json from claims/all.jsonl
         run: |
-          python3 tools/enrich_claims_index.py \
+          python3 tools/enrich_claims_index.py --with-quote \
             --index-url  claims/index.json \
             --corpus-url claims/all.jsonl \
             --out        claims/index.json
@@ -175,7 +179,13 @@ jobs:
           d = json.load(open("claims/index.json"))
           claims = d.get("claims", [])
           missing = [c["id"] for c in claims if not c.get("citation")][:10]
+          noquote = [c["id"] for c in claims if not c.get("supporting_quote")][:10]
           print(f"{len(claims)} entries")
+          if noquote:
+              sys.exit("entries without a verbatim supporting_quote, e.g. " +
+                       ", ".join(noquote) + "\nAn agent holding only the index could "
+                       "then cite the claim restatement but not the source. Run "
+                       "tools/enrich_claims_index.py --with-quote.")
           if missing:
               sys.exit("entries without a citation string, e.g. " + ", ".join(missing) +
                        "\nAn index of quotable assertions with no attribution attached is "
