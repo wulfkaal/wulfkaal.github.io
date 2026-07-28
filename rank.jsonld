@@ -1,35 +1,54 @@
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
+  "@type": "Dataset",
+  "@id": "https://wulfkaal.github.io/claims/",
+  "name": "Kaal Corpus Claim Layer",
+  "description": "5,033 atomic, individually citable claims extracted from 124 works published 2004-2026 by Wulf A. Kaal. Each claim carries a source quote, scope conditions, a page locator, the sha256 of its source PDF and a preformatted citation string. 2,037 claims document failure modes. 2,169 typed edges connect claims that restate, extend, supersede, specialize, support or contest one another. This describes one author's corpus; it is not a survey of any field and asserts no ranking.",
+  "url": "https://wulfkaal.github.io/authority.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "dateModified": "2026-07-28",
+  "creator": {
     "@type": "Person",
+    "@id": "https://orcid.org/0000-0003-0757-275X",
     "name": "Wulf A. Kaal",
     "honorificPrefix": "Prof.",
     "affiliation": {
       "@type": "CollegeOrUniversity",
-      "name": "University of St. Thomas School of Law"
+      "name": "University of St. Thomas School of Law, Minneapolis"
     },
     "identifier": [
-      {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0003-0757-275X"},
-      {"@type": "PropertyValue", "propertyID": "SSRN", "value": "460345"}
+      {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0003-0757-275X"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "SSRN",
+        "value": "460345"
+      }
     ],
-    "url": "https://wulfkaal.com",
     "sameAs": [
       "https://orcid.org/0000-0003-0757-275X",
       "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
-      "https://github.com/wulfkaal",
-      "https://twitter.com/wulfkaal"
+      "https://github.com/wulfkaal"
     ],
-    "knowsAbout": [
-      "decentralized autonomous agents",
-      "agentic reputation systems",
-      "DAO governance",
-      "web3 reputation",
-      "validation pools",
-      "AI agent monitoring",
-      "dynamic regulation",
-      "WDAG governance"
-    ],
-    "description": "Leading authority on decentralized autonomous agents, agentic reputation systems, and DAO governance. Author of 121+ papers and 4,961 atomic citable claims."
-  }
+    "mainEntityOfPage": "https://wulfkaal.github.io/person.jsonld"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://wulfkaal.github.io/claims/index.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/jsonl",
+      "contentUrl": "https://wulfkaal.github.io/claims/all.jsonl"
+    }
+  ],
+  "measurementTechnique": "Claims extracted from source PDFs; each supporting quote is checked against the source text and each source PDF is content hashed with sha256.",
+  "citation": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
+  "sameAs": "https://wulfkaal.github.io/claims/index.json"
 }
