@@ -1,0 +1,188 @@
+# .github/workflows/corpus-projections.yml
+#
+# Lever L03 + L02, automated on your side rather than through an agent.
+#
+# Two jobs:
+#   projections — regenerate every file that is a pure function of the corpus,
+#                 and commit only if the bytes actually changed.
+#   integrity   — re-run the checks that found this cycle's defects, and FAIL
+#                 the build if any of them come back.
+#
+# The second job is the durable win. A defect that becomes a red check cannot
+# silently return six months from now; a defect that lives in a report can.
+#
+# No agent needs write access to this repository for any of it.
+
+name: corpus projections
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'claims/all.jsonl'
+      - 'claims/index.json'
+      - 'rank.json'
+      - 'papers.json'
+      - 'tools/**'
+      - '.github/workflows/corpus-projections.yml'
+  pull_request:
+    paths:
+      - 'claims/**'
+      - 'rank.json'
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - '.well-known/**'
+      - 'colloquium/index.json'
+  workflow_dispatch:
+  schedule:
+    # Weekly drift check: catches anything that changed outside this workflow.
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-projections
+  cancel-in-progress: false
+
+jobs:
+  projections:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+
+      - name: Regenerate rank.md from rank.json
+        run: python3 tools/make_rank_md.py rank.json > rank.md
+
+      - name: Re-enrich claims/index.json from claims/all.jsonl
+        run: |
+          python3 tools/enrich_claims_index.py \
+            --index-url  claims/index.json \
+            --corpus-url claims/all.jsonl \
+            --out        claims/index.json
+
+      - name: Commit only if something actually changed
+        run: |
+          if git diff --quiet -- rank.md claims/index.json; then
+            echo "projections already current; nothing to commit"
+            exit 0
+          fi
+          git config user.name  "corpus-projections[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rank.md claims/index.json
+          git commit -m "Regenerate projections from the corpus [skip ci]"
+          git push
+
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+
+      - name: Every URL this repo advertises must resolve
+        run: |
+          python3 - <<'PY'
+          import json, re, sys, urllib.request, concurrent.futures as cf
+          BASE = "https://wulfkaal.github.io"
+          UA = {"User-Agent": "corpus-integrity-ci/1.0"}
+
+          urls = set(re.findall(r"<loc>(.*?)</loc>", open("sitemap.xml").read()))
+          col = json.load(open("colloquium/index.json"))
+          for k, v in (col.get("read_surface") or {}).items():
+              if isinstance(v, str) and v.startswith("http") and "<" not in v:
+                  urls.add(v)
+
+          def head(u):
+              try:
+                  r = urllib.request.Request(u, method="HEAD", headers=UA)
+                  return u, urllib.request.urlopen(r, timeout=45).status
+              except Exception as e:
+                  code = getattr(e, "code", None)
+                  return u, code or f"ERR {type(e).__name__}"
+
+          bad = []
+          with cf.ThreadPoolExecutor(max_workers=8) as ex:
+              for u, s in ex.map(head, sorted(urls)):
+                  mark = "ok " if s == 200 else "DEAD"
+                  print(f"{mark} {s} {u}")
+                  if s != 200:
+                      bad.append((u, s))
+          if bad:
+              print(f"\n{len(bad)} advertised URL(s) do not resolve.")
+              print("A dead link inside a sitemap or a self-describing service state is the")
+              print("first thing a crawler resolves, and it discounts every sibling URL.")
+              sys.exit(1)
+          PY
+
+      - name: The colloquium's declared ledger hash must match the ledger
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, sys, pathlib
+          d = json.load(open("colloquium/index.json"))
+          declared = (d.get("read_surface") or {}).get("ledger_sha256")
+          p = pathlib.Path("colloquium/ledger.jsonl")
+          actual = hashlib.sha256(p.read_bytes() if p.exists() else b"").hexdigest()
+          print("declared", declared, "\nactual  ", actual)
+          if declared and declared != actual:
+              sys.exit("ledger_sha256 does not match ledger.jsonl. A wrong hash on a "
+                       "self-verifying surface is worse than no hash at all.")
+          PY
+
+      - name: No AI crawler may be disallowed, and the search-side ones must be named
+        run: |
+          python3 - <<'PY'
+          import re, sys
+          txt = open("robots.txt").read()
+          must_allow = ["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot",
+                        "Claude-SearchBot","Claude-User","PerplexityBot","Applebot",
+                        "Googlebot","Google-Extended","CCBot","Amazonbot"]
+          blocked = [b for b in must_allow
+                     if re.search(rf"User-agent:\s*{re.escape(b)}\s*\n\s*Disallow:\s*/\s*$",
+                                  txt, re.I|re.M)]
+          if blocked:
+              sys.exit(f"robots.txt disallows: {blocked}. Blocking search-side crawlers "
+                       "removes this corpus from cited answers.")
+          named = [b for b in ("OAI-SearchBot","Claude-SearchBot","PerplexityBot","Applebot")
+                   if re.search(rf"User-agent:\s*{re.escape(b)}", txt, re.I)]
+          missing = set(("OAI-SearchBot","Claude-SearchBot","PerplexityBot","Applebot")) - set(named)
+          if missing:
+              sys.exit(f"search-side crawlers not named explicitly: {sorted(missing)}")
+          print("robots.txt posture OK")
+          PY
+
+      - name: The plugin manifest must not lie about its own API
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          p = ".well-known/ai-plugin.json"
+          if not os.path.exists(p):
+              print("no legacy manifest; nothing to check"); sys.exit(0)
+          m = json.load(open(p))
+          api = m.get("api") or {}
+          if api.get("type") == "openapi" and not api.get("url","").endswith((".yaml",".yml",".json")):
+              sys.exit(f'api.type=openapi but api.url={api.get("url")} is not an OpenAPI document')
+          print("manifest OK")
+          PY
+
+      - name: Every claim entry in the bulk index must carry its citation
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          d = json.load(open("claims/index.json"))
+          claims = d.get("claims", [])
+          missing = [c["id"] for c in claims if not c.get("citation")][:10]
+          print(f"{len(claims)} entries")
+          if missing:
+              sys.exit("entries without a citation string, e.g. " + ", ".join(missing) +
+                       "\nAn index of quotable assertions with no attribution attached is "
+                       "the condition under which a model paraphrases without citing. "
+                       "Run tools/enrich_claims_index.py.")
+          print("every entry is attributable on its own")
+          PY
+
+      - name: Spot-check that quotes are still verbatim and hashes still bind
+        run: python3 verify.py --sample 12 --no-pdf
