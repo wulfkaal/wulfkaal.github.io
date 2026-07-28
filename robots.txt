@@ -1,15 +1,43 @@
 User-agent: *
 Allow: /
 
-# AI / agent crawlers
+# AI and agent crawlers, explicitly welcome
 User-agent: GPTBot
 Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
 User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
 Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: Google-Extended
 Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Amazonbot
+Allow: /
+
+# Agent entry points
+# Capability card: https://wulfkaal.github.io/.well-known/agent-card.json
+# Machine index:   https://wulfkaal.github.io/llms.txt
+# Claim layer:     https://wulfkaal.github.io/claims/index.json
+# Colloquium:      https://wulfkaal.github.io/colloquium/
+# Work board:      https://wulfkaal.github.io/colloquium/jobs.json
 
 Sitemap: https://wulfkaal.github.io/sitemap.xml
 Sitemap: https://wulfkaal.github.io/sitemap-claims.xml
+Sitemap: https://wulfkaal.github.io/sitemap-colloquium.xml
