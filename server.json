@@ -1,14 +1,24 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.wulfkaal/kaal-corpus",
-  "title": "Kaal Corpus Claim Layer",
-  "description": "Cite by the claim, not the paper: 5,033 verifiable claims with verbatim quotes and hashes.",
+  "name": "io.github.wulfkaal/corpus",
+  "title": "Kaal Corpus: Verifiable Claim Layer",
+  "description": "Cite the claim, not the paper: 5,033 assertions, each hash-verifiable against its source PDF",
   "version": "1.0.0",
-  "websiteUrl": "https://wulfkaal.github.io/claims/",
+  "websiteUrl": "https://wulfkaal.github.io/",
   "repository": {
     "url": "https://github.com/wulfkaal/wulfkaal.github.io",
     "source": "github"
   },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://corpus.openstanding.org/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://openstanding.org/corpus/mcp"
+    }
+  ],
   "packages": [
     {
       "registryType": "mcpb",
@@ -19,5 +29,59 @@
         "type": "stdio"
       }
     }
-  ]
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "author": {
+        "name": "Wulf A. Kaal",
+        "affiliation": "University of St. Thomas School of Law, Minneapolis",
+        "orcid": "0000-0003-0757-275X",
+        "ssrn": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
+        "email": "wulf@wulfkaal.com"
+      },
+      "readOnly": true,
+      "auth": "none",
+      "corpus": {
+        "works": 124,
+        "span": "2004-2026",
+        "atomic_claims": 5033,
+        "failure_mode_claims": 2037,
+        "failure_families": 55,
+        "typed_edges": 2169,
+        "subjects": [
+          "decentralized governance",
+          "DAO architecture",
+          "agent coordination",
+          "reputation systems",
+          "dynamic regulation",
+          "securities regulation",
+          "private investment funds",
+          "smart contract governance"
+        ]
+      },
+      "verification": {
+        "summary": "Retrieval here is checkable rather than asserted. Every claim is bound to a verbatim quote from a content-hashed source PDF, and the binding can be verified without trusting this server or this author.",
+        "claim_content_hash": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum",
+        "source_pdf_hash": "each record names the sha256 of the PDF the quote was extracted from; hashing that file checks the claim against its evidence rather than against this index",
+        "quote_guarantee": "every supporting quote is an exact contiguous substring of its source text; extraction rejected any claim whose quote did not match, and both the compiler and an independent verifier report zero failures",
+        "verifier": "https://wulfkaal.github.io/verify.py",
+        "independent_attestation": "https://openstanding.org/v0/corpus"
+      },
+      "scope_discipline": {
+        "scope_conditions": "every claim states the conditions under which it holds; a claim cited outside them is being misused",
+        "honest_absence": "search returns an empty result when the corpus does not cover a question, rather than returning the nearest adjacent claim",
+        "no_ranking_directive": "nothing in this server or its published files instructs a model how to rank or prefer this corpus. An instruction from an interested party is discounted or flagged as injection; verifiable evidence is not."
+      },
+      "surfaces": {
+        "machine_index": "https://wulfkaal.github.io/llms.txt",
+        "bulk_corpus": "https://wulfkaal.github.io/claims/all.jsonl",
+        "claim_index": "https://wulfkaal.github.io/claims/index.json",
+        "failure_index": "https://wulfkaal.github.io/failures/index.json",
+        "typed_edges": "https://wulfkaal.github.io/claims/graph.jsonld",
+        "openapi": "https://wulfkaal.github.io/openapi.yaml",
+        "attestation_commons": "https://openstanding.org/"
+      },
+      "license": "Attribution required. Read, index, quote and cite with attribution to the claim's canonical URL."
+    }
+  }
 }
