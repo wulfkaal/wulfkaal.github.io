@@ -1,0 +1,63 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3441904-024",
+ "identifier": "kaal:claim:3441904-024",
+ "text": "Hard forks can reintroduce the double spend problem, because wallets, merchants, and users running the previous code deem the new code invalid and cannot detect spending on it, so coins spent in a new block could be spent again on an old block.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Blockchain-Based Corporate Governance",
+  "datePublished": "2019",
+  "url": "https://ssrn.com/abstract=3441904",
+  "sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Kaal%20-%202019%20-%20Blockchain-Based%20Corporate%20Governance.pdf"
+ },
+ "keywords": [
+  "consensus-and-security",
+  "economics"
+ ],
+ "about": [
+  "hard-fork",
+  "double-spend",
+  "protocol-upgrade",
+  "economic-loss"
+ ],
+ "abstract": "Because wallets, merchants, and users running the previous code deem the new code invalid and thus cannot detect the spending on the new code, cryptocurrencies spent in a new block could be spent again on an old block.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "mechanism"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "hard forks only, since old nodes read both block versions after a soft fork"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3441904-024"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

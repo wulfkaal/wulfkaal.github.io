@@ -1,0 +1,64 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3125827-032",
+ "identifier": "kaal:claim:3125827-032",
+ "text": "SPoS is far more computationally efficient than proof of work implementations because nodes no longer hash mine; the only computation added beyond the block validity checking every blockchain performs is one validation pool per block, in which each node sends a single up or down vote transaction.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Secure Proof of Stake Protocol",
+  "datePublished": "2018",
+  "url": "https://ssrn.com/abstract=3125827",
+  "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Calcaterra%20and%20Kaal%20-%202018%20-%20Secure%20Proof%20of%20Stake%20Protocol.pdf"
+ },
+ "keywords": [
+  "economics",
+  "consensus-and-security"
+ ],
+ "about": [
+  "energy-efficiency",
+  "proof-of-work",
+  "validation-pool",
+  "consensus-cost",
+  "scalability"
+ ],
+ "abstract": "Nodes will no longer hash mine. They will check the validity of the blocks, but they do that under any blockchain. The only added computation is the validation pool which happens once for each block, where nodes send one transaction, an up- or downvote.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "mechanism"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "comparison against PoW chains such as bitcoin and Ethereum"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3125827-032"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

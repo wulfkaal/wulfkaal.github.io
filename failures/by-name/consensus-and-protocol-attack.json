@@ -1,0 +1,402 @@
+{
+ "failure_mode": "consensus-and-protocol-attack",
+ "specific_names": [
+  "51 percent control attack",
+  "Fork Induced Double Spend Reemergence",
+  "Untested security-by-design claim",
+  "attack-surface-expansion",
+  "birthday problem vote equivocation",
+  "block author seed capture",
+  "blockchain-security-overconfidence",
+  "charity-dao-attack-exposure",
+  "classical-cryptography-obsolescence",
+  "cryptographic-obsolescence",
+  "fair exchange impossibility",
+  "false-security-proof",
+  "finite-validation-window-forks",
+  "fixed-protocol-gaming",
+  "fork induced double spend",
+  "fork-induced-double-spend",
+  "long-range-attack",
+  "majority collusion",
+  "no-flawless-consensus",
+  "patient-powerful-player-subversion",
+  "predictable-producer-selection",
+  "pseudorandom-selection-hijack",
+  "self-referential-destabilization",
+  "training-set-blindness",
+  "undetectable-censorship",
+  "unresolved DAO attack vectors",
+  "validator-collusion",
+  "weak-randomness-in-key-generation"
+ ],
+ "count": 28,
+ "claims": [
+  {
+   "id": "kaal:claim:3125822-007",
+   "url": "https://wulfkaal.github.io/claims/3125822-007",
+   "claim": "The hidden voting scheme depends on the choice of symmetric encryption protocol: a poorly chosen protocol exposes the platform to a birthday problem attack in which malicious voters submit an encrypted key that can be decrypted in two different ways, letting them retroactively choose their vote.",
+   "specific_name": "birthday problem vote equivocation",
+   "conditions": [
+    "applies to the hidden vote reveal step of a validation pool"
+   ],
+   "source": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A",
+   "year": "2018",
+   "quote": "This symmetric encryption protocol must be chosen carefully to avoid the birthday problem attack, where malicious voters could send an encrypted key that could be decrypted in two different ways.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822"
+  },
+  {
+   "id": "kaal:claim:3125822-034",
+   "url": "https://wulfkaal.github.io/claims/3125822-034",
+   "claim": "A proof of stake lottery on this architecture is vulnerable because the seed of the pseudorandom generator that names the next block author is partly controlled by the current block author, which lets an attacker capture all block creation by routing authorship to their own Sybil accounts; the proposed remedy is to derive the seed from a hash of the previous block's validation information.",
+   "specific_name": "block author seed capture",
+   "conditions": [
+    "applies to the proof of stake block author lottery"
+   ],
+   "source": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A",
+   "year": "2018",
+   "quote": "The seed for the generator that determines the next block author is partially controlled by the current block author, which opens the possibility of gaming the system by controlling all block creation by sending authorship to your own Sybil accounts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822"
+  },
+  {
+   "id": "kaal:claim:3125822-036",
+   "url": "https://wulfkaal.github.io/claims/3125822-036",
+   "claim": "Under certain restrictive assumptions it has been proven that no protocol can guarantee fair exchange with decentralized arbiters, so no design on this architecture can promise absolute certainty of fair machine arbitration.",
+   "specific_name": "fair exchange impossibility",
+   "conditions": [
+    "holds under the restrictive assumptions of the cited impossibility result"
+   ],
+   "source": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A",
+   "year": "2018",
+   "quote": "Under certain restrictive assumptions, it has been proven that no protocol can be created which will guarantee fair exchange with decentralized arbiters",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822"
+  },
+  {
+   "id": "kaal:claim:3125822-041",
+   "url": "https://wulfkaal.github.io/claims/3125822-041",
+   "claim": "If 51 percent of users collude to enrich themselves maliciously, nothing in the design can prevent them; the only check is the openness of the system, which would quickly detect such an attack.",
+   "specific_name": "majority collusion",
+   "conditions": [
+    "requires a colluding majority of reputation weighted users"
+   ],
+   "source": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A",
+   "year": "2018",
+   "quote": "If 51% of users collude to maliciously enrich themselves, nothing can prevent them, except the open system itself, which would quickly detect such an attack.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822"
+  },
+  {
+   "id": "kaal:claim:3125827-001",
+   "url": "https://wulfkaal.github.io/claims/3125827-001",
+   "claim": "No single, fixed, entirely algorithmic policing solution can completely prevent independent nodes in a distributed system from gaming block production to advantage some parties over others. Any consensus protocol that relies on a permanently fixed rule set will therefore be gamed as conditions change.",
+   "specific_name": "fixed-protocol-gaming",
+   "conditions": [
+    "distributed systems with independent, self interested nodes",
+    "protocols that are fixed rather than continually revisable"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "In fact it is obvious there can be no single, fixed, entirely algorithmic policing solution which completely prevents independent nodes in a distributed system from gaming the system by producing blocks with transactions that advantage some parties over others1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3125827-015",
+   "url": "https://wulfkaal.github.io/claims/3125827-015",
+   "claim": "The long range attack is a fundamental problem every proof of stake protocol must address: because no energetic outlay is required to build blocks, a malicious producer can fabricate a long chain forked from an earlier valid block, and a newly joining node lacking proof of work hashes cannot objectively tell which chain is genuine.",
+   "specific_name": "long-range-attack",
+   "conditions": [
+    "new nodes joining without a trusted checkpoint",
+    "PoS chains with no energy cost to block creation"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "The long-range attack is a fundamental problem PoS protocols must address, where a malicious producer may create a long list of blocks forked from an earlier valid block, because there is no PoW energetic outlay required to prevent this16.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3125827-018",
+   "url": "https://wulfkaal.github.io/claims/3125827-018",
+   "claim": "In a distributed system, which cannot achieve constant perfect communication between nodes, it is never possible to determine with certainty that a block producer was censoring particular transactions rather than simply being unaware of them.",
+   "specific_name": "undetectable-censorship",
+   "conditions": [
+    "imperfect communication between nodes",
+    "block producers with discretion over transaction inclusion"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "In a distributed system--which cannot achieve constant perfect communication between nodes--we can never certainly determine that a block producer was censoring certain transactions, instead of simply not being aware of them.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3125827-026",
+   "url": "https://wulfkaal.github.io/claims/3125827-026",
+   "claim": "Forcing validation pools to close in finite time, which practical demand for swift resolution requires, opens the possibility of network partition and of a lack of genuine consensus, and therefore of forks. Complete finality would require unbounded validation time.",
+   "specific_name": "finite-validation-window-forks",
+   "conditions": [
+    "validation windows bounded to seconds for practical liveness"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "By forcing validation pools to end in finite time, we open the possibility of network partition and lack of genuine consensus which opens the possibility of forks,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3125827-031",
+   "url": "https://wulfkaal.github.io/claims/3125827-031",
+   "claim": "Running the reputation platform on the very blockchain it validates destabilizes the system because it increases the likelihood of forks: every validation pool result is itself a transaction that must be included in a future block requiring its own validation, without end. The authors judge this destabilization non catastrophic for most imagined uses.",
+   "specific_name": "self-referential-destabilization",
+   "conditions": [
+    "platform DApp hosted on the same chain it validates"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "But this self-referential architecture destabilizes the system as it increases the likelihood of forks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3227933-022",
+   "url": "https://wulfkaal.github.io/claims/3227933-022",
+   "claim": "The claim that blockchain is secure by design cannot yet be relied on, because the technology has not been adopted widely enough to be severely tested, and hacking attacks on digital currencies underscore the concern.",
+   "specific_name": "Untested security-by-design claim",
+   "conditions": [
+    "current state of adoption"
+   ],
+   "source": "Why 'Blockchain' Will Disrupt Corporate Organizations",
+   "year": "2018",
+   "quote": "Another important challenge is cybersecurity; supporters of blockchain claim that it is secure by design, but the technology hasn't been adopted widely enough yet for it to be severely tested.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933"
+  },
+  {
+   "id": "kaal:claim:3441904-024",
+   "url": "https://wulfkaal.github.io/claims/3441904-024",
+   "claim": "Hard forks can reintroduce the double spend problem, because wallets, merchants, and users running the previous code deem the new code invalid and cannot detect spending on it, so coins spent in a new block could be spent again on an old block.",
+   "specific_name": "fork-induced-double-spend",
+   "conditions": [
+    "hard forks only, since old nodes read both block versions after a soft fork"
+   ],
+   "source": "Blockchain-Based Corporate Governance",
+   "year": "2019",
+   "quote": "Because wallets, merchants, and users running the previous code deem the new code invalid and thus cannot detect the spending on the new code, cryptocurrencies spent in a new block could be spent again on an old block.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904"
+  },
+  {
+   "id": "kaal:claim:3411110-013",
+   "url": "https://wulfkaal.github.io/claims/3411110-013",
+   "claim": "The double spending problem has not been eradicated in theory: a group or syndicate obtaining 51 percent control of a network could reverse transactions and create a private chain that the market could only limitedly discern as not real.",
+   "specific_name": "51 percent control attack",
+   "conditions": [
+    "a decentralized network where one party can amass majority hashing control"
+   ],
+   "source": "Blockchain-Based Securities Offerings",
+   "year": "2019",
+   "quote": "There is the possibility a group or syndicate could gain 51% control over the network and would therefore be able to reverse transactions and create a private blockchain, which the market could only limitedly discern as not real.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110"
+  },
+  {
+   "id": "kaal:claim:3402701-011",
+   "url": "https://wulfkaal.github.io/claims/3402701-011",
+   "claim": "The Folk Theorems of game theory imply that no matter how complicated a stable coin protocol becomes, a powerful and patient player has strategies to subvert the system and profit at the expense of the group.",
+   "specific_name": "patient-powerful-player-subversion",
+   "conditions": [
+    "any fixed protocol, however complex"
+   ],
+   "source": "Stable Cryptocurrencies - First Order Principles",
+   "year": "2019",
+   "quote": "No matter how complicated the protocols become for creating a stable coin, there are strategies that a powerful and patient player can use to subvert the system to profit at the expense of the group",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701"
+  },
+  {
+   "id": "kaal:claim:3652481-018",
+   "url": "https://wulfkaal.github.io/claims/3652481-018",
+   "claim": "Bifurcation of nodes in a decentralized network through forking can cause significant economic loss, errors, confusion and bugs, including reemergence of the double spend problem that the pre fork network had already solved.",
+   "specific_name": "fork induced double spend",
+   "conditions": [
+    "a chain fork splits nodes across incompatible protocol versions"
+   ],
+   "source": "Decentralized Autonomous Organizations – Internal Governance and External Legal Design",
+   "year": "2020",
+   "quote": "The bifurcation of nodes in a given decentralized network can lead to significant economic loss, errors, confusion, and bugs. For example, the bifurcation of network nodes can result in the reemergence of the double spend problem that the previous network had overcome.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481"
+  },
+  {
+   "id": "kaal:claim:3782203-013",
+   "url": "https://wulfkaal.github.io/claims/3782203-013",
+   "claim": "Across all the alternative polling methods explored in the literature, changes both help and hurt: new approaches solve old problems while creating new opportunities for manipulation, a pattern the authors identify with increasing the attack surface.",
+   "specific_name": "attack-surface-expansion",
+   "conditions": [
+    "alternative voting and polling mechanisms",
+    "continuous or weighted voting technologies"
+   ],
+   "source": "A Technical Perspective on Decentralization",
+   "year": "2021",
+   "quote": "In all the methods dis- cussed the answer has always been that changes both help and hurt. New approaches solve old problems, but they create new opportunities for manipulation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203"
+  },
+  {
+   "id": "kaal:claim:3782203-026",
+   "url": "https://wulfkaal.github.io/claims/3782203-026",
+   "claim": "Marketing a consensus algorithm as correct by construction is false advertising, because such proofs establish resistance only to the attacks the theorists considered reasonable at the time, not to all possible attacks.",
+   "specific_name": "false-security-proof",
+   "conditions": [
+    "correct by construction proof of stake designs",
+    "adversaries able to invent new attacks"
+   ],
+   "source": "A Technical Perspective on Decentralization",
+   "year": "2021",
+   "quote": "In the first place, this is simply false advertising. Most people don't understand that CBC doesn't mean it's mathematically proven to be perfectly resistant to all attacks; it's only resistant to the attacks the theorists consider reasonable at the time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203"
+  },
+  {
+   "id": "kaal:claim:3782203-029",
+   "url": "https://wulfkaal.github.io/claims/3782203-029",
+   "claim": "The authors hold that the Bitcoin proof of work algorithm is ultimately flawed, that every consensus algorithm is flawed, and that it is not possible to create an algorithm that is not flawed.",
+   "specific_name": "no-flawless-consensus",
+   "conditions": [
+    "real world networks with changing markets and anonymous actors"
+   ],
+   "source": "A Technical Perspective on Decentralization",
+   "year": "2021",
+   "quote": "However, we suspect that the Bitcoin PoW algorithm is ultimately flawed. In fact, we believe that every consensus algorithm is flawed. Further we are confident it is not possible to create an algorithm that is not flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203"
+  },
+  {
+   "id": "kaal:claim:3782198-032",
+   "url": "https://wulfkaal.github.io/claims/3782198-032",
+   "claim": "Proof of stake carries an unresolved failure mode: if anyone devises a clever algorithm for hijacking the block producer selection process, the network would fail.",
+   "specific_name": "pseudorandom-selection-hijack",
+   "conditions": [
+    "applies to proof of stake designs that select block producers pseudorandomly"
+   ],
+   "source": "Contemporary Decentralization",
+   "year": "2021",
+   "quote": "The problem is that if someone comes up with a clever algorithm for hijacking the process, then the network would fail.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198"
+  },
+  {
+   "id": "kaal:claim:3808873-036",
+   "url": "https://wulfkaal.github.io/claims/3808873-036",
+   "claim": "Forking bifurcates network nodes and can reintroduce the double spend problem the network had already solved, because users running pre fork code treat post fork code as invalid and cannot detect spending on it, so coins spent in a post fork block can be spent again on a pre fork block.",
+   "specific_name": "Fork Induced Double Spend Reemergence",
+   "conditions": [
+    "hard forks producing parallel chains with incompatible protocol rules"
+   ],
+   "source": "Decentralization Neutralizers",
+   "year": "2021",
+   "quote": "For example, the bifurcation of network nodes can result in the reemergence of the double spend problem that the previous network had overcome. Users running the pre-fork code consider the post-fork code invalid, they cannot detect the spending on the post-fork code.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873"
+  },
+  {
+   "id": "kaal:claim:4529715-006",
+   "url": "https://wulfkaal.github.io/claims/4529715-006",
+   "claim": "Attack resistance across the studied DAOs averages 4.05 out of 10, and Charity DAOs perform worst in this category, with the best of them, VitaDAO, scoring 3 out of 10 and the remainder at 2 or less.",
+   "specific_name": "charity-dao-attack-exposure",
+   "conditions": [],
+   "source": "Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis",
+   "year": "2023",
+   "quote": "Based on the compiled data shown in the graph above, the average score for attack resistance is 4.05 out of 10. Charity DAOs showed the worst performance in this category with the highest, VitaDAO, scoring a 3 out of 10 and the rest at 2 or less.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715"
+  },
+  {
+   "id": "kaal:claim:4796714-021",
+   "url": "https://wulfkaal.github.io/claims/4796714-021",
+   "claim": "Until the known attack vectors on decentralized autonomous organizations are solved, DAO based AI governance solutions remain suboptimal; these include Sybil attacks, tyranny of the majority, Arrow's impossibility theorem, sockpuppet attacks, and tragedy of the commons.",
+   "specific_name": "unresolved DAO attack vectors",
+   "conditions": [
+    "describes DAOs as set up and governed in the majority of cases in 2024",
+    "conditional on the attack vectors remaining unsolved"
+   ],
+   "source": "AI Governance",
+   "year": "2024",
+   "quote": "Without solving these attack vectors, DAO related AI governance solutions remain suboptimal.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714"
+  },
+  {
+   "id": "kaal:claim:4900880-005",
+   "url": "https://wulfkaal.github.io/claims/4900880-005",
+   "claim": "Quantum algorithms such as Shor's algorithm can factor large prime numbers exponentially faster than classical computers, which potentially renders currently deployed cryptographic systems including RSA obsolete.",
+   "specific_name": "cryptographic-obsolescence",
+   "conditions": [
+    "assumes cryptographically relevant quantum computers become available"
+   ],
+   "source": "Quantum Economy and the Future of Work",
+   "year": "2024",
+   "quote": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880"
+  },
+  {
+   "id": "kaal:claim:4900878-003",
+   "url": "https://wulfkaal.github.io/claims/4900878-003",
+   "claim": "Current cryptographic systems such as RSA rest on the classical difficulty of factoring large primes, so quantum algorithms like Shor's algorithm, which factor exponentially faster, can render those cryptographic methods obsolete.",
+   "specific_name": "classical-cryptography-obsolescence",
+   "conditions": [
+    "applies to factoring based cryptography such as RSA",
+    "requires sufficiently capable quantum hardware"
+   ],
+   "source": "Quantum Economy and Tokenomics",
+   "year": "2024",
+   "quote": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878"
+  },
+  {
+   "id": "kaal:claim:5225296-015",
+   "url": "https://wulfkaal.github.io/claims/5225296-015",
+   "claim": "ECDSA introduces a vulnerability into SPoS through its dependence on secure random number generation at key creation, so the authentication guarantee fails when implementation departs from cryptographic best practice.",
+   "specific_name": "weak-randomness-in-key-generation",
+   "conditions": [
+    "when random number generation is improperly implemented"
+   ],
+   "source": "Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse",
+   "year": "2025",
+   "quote": "However, ECDSA's reliance on secure random number generation for key creation introduces a potential vulnerability if improperly implemented, necessitating strict adherence to cryptographic best practices",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296"
+  },
+  {
+   "id": "kaal:claim:5225296-016",
+   "url": "https://wulfkaal.github.io/claims/5225296-016",
+   "claim": "Verifiable randomness is a necessary condition for fair block producer selection: without it, adversaries can precompute favorable outcomes and the selection process loses fairness.",
+   "specific_name": "predictable-producer-selection",
+   "conditions": [],
+   "source": "Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse",
+   "year": "2025",
+   "quote": "The necessity of randomness stems from PoS's vulnerability to predictability; without it, adversaries could precompute favorable outcomes, undermining fairness",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296"
+  },
+  {
+   "id": "kaal:claim:5225296-029",
+   "url": "https://wulfkaal.github.io/claims/5225296-029",
+   "claim": "Collusion, meaning coordinated action among validators to manipulate reputation scores or governance outcomes, threatens the fairness and integrity of SPoS independently of any cryptographic weakness.",
+   "specific_name": "validator-collusion",
+   "conditions": [],
+   "source": "Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse",
+   "year": "2025",
+   "quote": "Collusion risks—coordinated efforts among validators to manipulate reputation scores or governance outcomes—further threaten fairness and integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296"
+  },
+  {
+   "id": "kaal:claim:5245185-009",
+   "url": "https://wulfkaal.github.io/claims/5245185-009",
+   "claim": "Integrating AI with blockchain does not by itself eliminate security exposure: cyberattacks and privacy breaches remain possible absent rigorous monitoring.",
+   "specific_name": "blockchain-security-overconfidence",
+   "conditions": [
+    "blockchain integrated AI systems without rigorous monitoring"
+   ],
+   "source": "How can we Best Monitor AI Agents",
+   "year": "2025",
+   "quote": "Security vulnerabilities persist, as blockchain integration does not wholly preclude cyberattacks or privacy breaches absent rigorous monitoring.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185"
+  },
+  {
+   "id": "kaal:claim:5245185-028",
+   "url": "https://wulfkaal.github.io/claims/5245185-028",
+   "claim": "Anomaly detection and behavioral analysis models trained on agent data may replicate the biases in that data and fail to detect novel deviations absent from the training set.",
+   "specific_name": "training-set-blindness",
+   "conditions": [
+    "machine learning monitors trained on historical agent behavior",
+    "novel agent behaviors outside training distribution"
+   ],
+   "source": "How can we Best Monitor AI Agents",
+   "year": "2025",
+   "quote": "rely on machine learning models trained on agent data, which may replicate biases or fail to detect novel deviations not present in training sets.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185"
+  }
+ ]
+}

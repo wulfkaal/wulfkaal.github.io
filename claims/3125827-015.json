@@ -1,0 +1,64 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3125827-015",
+ "identifier": "kaal:claim:3125827-015",
+ "text": "The long range attack is a fundamental problem every proof of stake protocol must address: because no energetic outlay is required to build blocks, a malicious producer can fabricate a long chain forked from an earlier valid block, and a newly joining node lacking proof of work hashes cannot objectively tell which chain is genuine.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Secure Proof of Stake Protocol",
+  "datePublished": "2018",
+  "url": "https://ssrn.com/abstract=3125827",
+  "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Calcaterra%20and%20Kaal%20-%202018%20-%20Secure%20Proof%20of%20Stake%20Protocol.pdf"
+ },
+ "keywords": [
+  "consensus-and-security"
+ ],
+ "about": [
+  "long-range-attack",
+  "proof-of-stake",
+  "weak-subjectivity",
+  "fork-choice",
+  "bootstrapping"
+ ],
+ "abstract": "The long-range attack is a fundamental problem PoS protocols must address, where a malicious producer may create a long list of blocks forked from an earlier valid block, because there is no PoW energetic outlay required to prevent this16.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "failure"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "new nodes joining without a trusted checkpoint",
+    "PoS chains with no energy cost to block creation"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3125827-015"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

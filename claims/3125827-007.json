@@ -1,0 +1,65 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3125827-007",
+ "identifier": "kaal:claim:3125827-007",
+ "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Secure Proof of Stake Protocol",
+  "datePublished": "2018",
+  "url": "https://ssrn.com/abstract=3125827",
+  "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Calcaterra%20and%20Kaal%20-%202018%20-%20Secure%20Proof%20of%20Stake%20Protocol.pdf"
+ },
+ "keywords": [
+  "consensus-and-security",
+  "tokenomics"
+ ],
+ "about": [
+  "51-percent-attack",
+  "token-minting",
+  "sem-tokens",
+  "griefing-factor",
+  "attack-cost"
+ ],
+ "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "mechanism"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "evidenced"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3125827-007"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

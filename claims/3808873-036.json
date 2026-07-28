@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3808873-036",
+ "identifier": "kaal:claim:3808873-036",
+ "text": "Forking bifurcates network nodes and can reintroduce the double spend problem the network had already solved, because users running pre fork code treat post fork code as invalid and cannot detect spending on it, so coins spent in a post fork block can be spent again on a pre fork block.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Decentralization Neutralizers",
+  "datePublished": "2021",
+  "url": "https://ssrn.com/abstract=3808873",
+  "sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Kaal%20-%202021%20-%20Decentralization%20Neutralizers.pdf"
+ },
+ "keywords": [
+  "consensus-and-security"
+ ],
+ "about": [
+  "hardfork",
+  "double-spend",
+  "node-bifurcation",
+  "protocol-rules"
+ ],
+ "abstract": "For example, the bifurcation of network nodes can result in the reemergence of the double spend problem that the previous network had overcome. Users running the pre-fork code consider the post-fork code invalid, they cannot detect the spending on the post-fork code.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "mechanism"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "hard forks producing parallel chains with incompatible protocol rules"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3808873-036"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

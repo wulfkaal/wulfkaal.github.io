@@ -1,0 +1,602 @@
+{
+ "failure_mode": "scalability-and-throughput-limit",
+ "specific_names": [
+  "Centralized supply shortfall",
+  "Communication cost dominance",
+  "Compute scaling wall",
+  "On-chain voting inefficiency",
+  "Prohibitive manual workload of per transaction fee settlement",
+  "Quadratic attention cost",
+  "Redundancy cost multiplication",
+  "Review Latency Rework",
+  "Review latency obsolescence",
+  "Sampling versus clustering trade off",
+  "Suboptimal layer 1 lock-in",
+  "blockchain throughput bottleneck",
+  "blockchain trilemma constraint",
+  "blockchain-trilemma",
+  "central coordination failure in distributed energy grids",
+  "centralized internet scaling limit",
+  "consensus cost versus attack resistance tradeoff",
+  "experimentation-advantage-erodes-at-scale",
+  "infrastructure cannot absorb projected DeFi growth",
+  "infrastructure shortfall against growth potential",
+  "loss of economies of scale",
+  "minimal on chain coverage",
+  "network congestion under projected DeFi volume",
+  "no-scalable-secure-public-chain",
+  "on-chain-capacity-ceiling",
+  "oral scale limit",
+  "paperwork crisis",
+  "permanent-cost-of-full-verification",
+  "real-time pipeline latency failure",
+  "reputation-update-scalability-strain",
+  "rigid coordination topology",
+  "scarcity-throughput-tradeoff",
+  "speed versus immutability tradeoff",
+  "supermajority-validator-requirement-cost",
+  "throughput-bottleneck",
+  "throughput-ceiling",
+  "token value short termism",
+  "unpopular-file-unavailability",
+  "unresolved scalability, governance, and security constraints",
+  "zero friction breakdown at scale"
+ ],
+ "count": 42,
+ "claims": [
+  {
+   "id": "kaal:claim:2959730-030",
+   "url": "https://wulfkaal.github.io/claims/2959730-030",
+   "claim": "Traditional per transaction fee models failed because settlement and calculation created a prohibitive amount of work that made such operations very difficult to execute; blockchain technology overcomes all of these restrictions.",
+   "specific_name": "Prohibitive manual workload of per transaction fee settlement",
+   "conditions": [
+    "fee models requiring manual reconciliation and settlement"
+   ],
+   "source": "Blockchain Applications and Fee Structure Developments in Private Investment Funds",
+   "year": "2017",
+   "quote": "In contrast to the traditional settlement and calculation of fees in a per-transaction model that created a prohibitive amount of work making such operations very difficult to execute, blockchain technology overcomes all of these restrictions.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730"
+  },
+  {
+   "id": "kaal:claim:3249860-040",
+   "url": "https://wulfkaal.github.io/claims/3249860-040",
+   "claim": "To date no blockchain coherently and comprehensively combines scale, security, and decentralization, the three objectives of the blockchain trilemma, although continued experimentation with consensus algorithms can help overcome it over time.",
+   "specific_name": "blockchain-trilemma",
+   "conditions": [
+    "as of the study's 2018 data"
+   ],
+   "source": "Crypto Economics - The Top 100 Token Models Compared",
+   "year": "2018",
+   "quote": "To date, no blockchain truly combines these three objectives coherently and comprehensively. Experimentation with different consensus algorithms can, over time, help overcome the blockchain trilemma.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860"
+  },
+  {
+   "id": "kaal:claim:3128900-005",
+   "url": "https://wulfkaal.github.io/claims/3128900-005",
+   "claim": "Existing centralized micro task marketplaces cannot adequately meet the rising demand for high quality labelled AI training data.",
+   "specific_name": "Centralized supply shortfall",
+   "conditions": [
+    "existing centralized marketplaces",
+    "demand for high quality AI training datasets"
+   ],
+   "source": "Decentralized Mechanical Turk Through Verified Reputation",
+   "year": "2018",
+   "quote": "The existing centralized marketplaces for micro task work cannot adequately fulfil the increasing demand for high quality micro task work for AI labelled training datasets.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900"
+  },
+  {
+   "id": "kaal:claim:3128900-009",
+   "url": "https://wulfkaal.github.io/claims/3128900-009",
+   "claim": "Consensus by redundancy fails economically: multiplying the same work across many workers significantly increases the cost of micro task work.",
+   "specific_name": "Redundancy cost multiplication",
+   "conditions": [
+    "centralized platforms using redundant task assignment"
+   ],
+   "source": "Decentralized Mechanical Turk Through Verified Reputation",
+   "year": "2018",
+   "quote": "The multiplication of work inherent in this process significantly increases the cost of micro task work.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900"
+  },
+  {
+   "id": "kaal:claim:3266953-006",
+   "url": "https://wulfkaal.github.io/claims/3266953-006",
+   "claim": "The centralized version of the internet cannot scale to the thirty to fifty billion connected devices that experts expect by 2020, which is why decentralized authentication solutions for internet of things devices are needed.",
+   "specific_name": "centralized internet scaling limit",
+   "conditions": [
+    "projected device counts by the year 2020"
+   ],
+   "source": "Reputation Protocol for the Internet of Trust - Conceptual Whitepaper",
+   "year": "2018",
+   "quote": "By the year 2020 the majority of experts estimates that a total of 30 to 50 billion devices will connect to the internet.8 The prevailing opinion of these researchers suggests that the centralized version of the internet cannot scale to that level.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953"
+  },
+  {
+   "id": "kaal:claim:3125827-030",
+   "url": "https://wulfkaal.github.io/claims/3125827-030",
+   "claim": "A 67% active validator requirement would improve finality but is excluded from the initial SPoS implementation because, by the CAP theorem, it limits the availability of the system and arbitrarily punishes randomly selected producers when the network is partitioned.",
+   "specific_name": "supermajority-validator-requirement-cost",
+   "conditions": [
+    "network partitions occur",
+    "consensus recognizes only blocks validated by a supermajority of active validators"
+   ],
+   "source": "Secure Proof of Stake Protocol",
+   "year": "2018",
+   "quote": "More importantly, due to the CAP theorem33, it limits the availability of the system, which is why it is not included in the initial implementation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827"
+  },
+  {
+   "id": "kaal:claim:3373393-036",
+   "url": "https://wulfkaal.github.io/claims/3373393-036",
+   "claim": "The core issues that afflict centralized governance solutions, including information asymmetries, censorship, opportunism of agents, breaches of fiduciary duties, and fraud, can only be truly removed if and when a truly decentralized public blockchain emerges that is scalable and fully secure.",
+   "specific_name": "no-scalable-secure-public-chain",
+   "conditions": [
+    "decentralized rather than centralized blockchain implementations"
+   ],
+   "source": "Blockchain Solutions for Agency Problems in Corporate Governance",
+   "year": "2019",
+   "quote": "and fraud or third-party interference, can only be truly removed to fully reform the agency relationship if and when a truly decentralized public blockchain emerges that is scalable and fully secure.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393"
+  },
+  {
+   "id": "kaal:claim:3406323-019",
+   "url": "https://wulfkaal.github.io/claims/3406323-019",
+   "claim": "The low transaction throughput of public blockchains is a core limitation that holds back more advanced distributed applications, which is why decentralized commerce in 2019 remains relegated to cryptocurrency trading and basic smart contracting.",
+   "specific_name": "throughput-bottleneck",
+   "conditions": [
+    "public blockchains as of 2019"
+   ],
+   "source": "Decentralization - A Primer on the New Economy",
+   "year": "2019",
+   "quote": "The low transaction throughputs of public blockchains is a core limitation that holds back more advanced DApps.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323"
+  },
+  {
+   "id": "kaal:claim:3411897-023",
+   "url": "https://wulfkaal.github.io/claims/3411897-023",
+   "claim": "The low transaction throughput of public blockchains is a core limitation that holds back more advanced distributed applications.",
+   "specific_name": "throughput-ceiling",
+   "conditions": [
+    "public blockchains as of 2019"
+   ],
+   "source": "Decentralization - Past, Present, and Future",
+   "year": "2019",
+   "quote": "The low transaction throughputs of public blockchains is a core limitation that holds back more advanced DApps.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897"
+  },
+  {
+   "id": "kaal:claim:3411897-024",
+   "url": "https://wulfkaal.github.io/claims/3411897-024",
+   "claim": "The data mining that produces scarcity in existing blockchains also slows creation, so high speed transactions cannot be achieved for the foreseeable future without a different consensus design.",
+   "specific_name": "scarcity-throughput-tradeoff",
+   "conditions": [
+    "proof of work style mining that manufactures scarcity"
+   ],
+   "source": "Decentralization - Past, Present, and Future",
+   "year": "2019",
+   "quote": "Currently, the data mining required to provide scarcity also slows creation so that high speed transactions cannot be achieved for the foreseeable future.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897"
+  },
+  {
+   "id": "kaal:claim:3396522-028",
+   "url": "https://wulfkaal.github.io/claims/3396522-028",
+   "claim": "The authors qualify their own case: stable cryptocurrencies can experiment with monetary policy on an unprecedented scale only because they are insulated from real world complexities and political positioning, and that advantage shrinks once real world market factors actually apply to them.",
+   "specific_name": "experimentation-advantage-erodes-at-scale",
+   "conditions": [
+    "applies as stable cryptocurrencies scale into real world use"
+   ],
+   "source": "Stable Cryptocurrencies",
+   "year": "2019",
+   "quote": "This allows them to experiment with monetary policy tools on an unprecedented scale. Such experimentation is limited if and when real-world market factors pertain to such stable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522"
+  },
+  {
+   "id": "kaal:claim:3396522-032",
+   "url": "https://wulfkaal.github.io/claims/3396522-032",
+   "claim": "The low transaction throughput of public blockchains is a core limitation holding back more advanced distributed applications and, with them, decentralized commerce.",
+   "specific_name": "throughput-bottleneck",
+   "conditions": [
+    "as of 2019 throughput levels"
+   ],
+   "source": "Stable Cryptocurrencies",
+   "year": "2019",
+   "quote": "The low transaction throughputs of public blockchains158 is a core limitation that holds back more advanced DApps.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522"
+  },
+  {
+   "id": "kaal:claim:3709041-035",
+   "url": "https://wulfkaal.github.io/claims/3709041-035",
+   "claim": "Coordinating large numbers of decentralized energy resources from a central point of control is slow, inefficient, and resource intensive, a vulnerability demonstrated by the 2001 U.S. Western Energy Crisis and the 2003 Northeast Blackout.",
+   "specific_name": "central coordination failure in distributed energy grids",
+   "conditions": [
+    "applies to centrally managed grids coordinating distributed energy resources"
+   ],
+   "source": "Blockchain Technology for Good",
+   "year": "2020",
+   "quote": "Coordinating larger numbers of decentralized resources from a central point of control is slow, inefficient, and resource-intensive.",
+   "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041"
+  },
+  {
+   "id": "kaal:claim:3652481-033",
+   "url": "https://wulfkaal.github.io/claims/3652481-033",
+   "claim": "Only the most basic common denominator required to operate a fully functional Swiss Association can be run entirely on chain.",
+   "specific_name": "minimal on chain coverage",
+   "conditions": [
+    "Swiss Association legal form"
+   ],
+   "source": "Decentralized Autonomous Organizations – Internal Governance and External Legal Design",
+   "year": "2020",
+   "quote": "Therefore, only the most basic common denominator enabling the operation of a fully functional Swiss Association, runs entirely on- chain.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481"
+  },
+  {
+   "id": "kaal:claim:3606663-003",
+   "url": "https://wulfkaal.github.io/claims/3606663-003",
+   "claim": "The expected growth rate of DeFi, across diverse estimates, is large enough to call into question the long term viability of the existing decentralized technology infrastructure unless core infrastructure improvements are made.",
+   "specific_name": "infrastructure cannot absorb projected DeFi growth",
+   "conditions": [
+    "decentralized finance built on existing public blockchains",
+    "growth continues at estimated rates"
+   ],
+   "source": "Digital Asset Market Evolution",
+   "year": "2020",
+   "quote": "Normatively, the paper points out that the expected growth rate of the DeFi, according to diverse sets of estimates, is substantial enough to call into question the long-term viability of the decentralized technology infrastructure without core infrastructure improvements.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:3606663-034",
+   "url": "https://wulfkaal.github.io/claims/3606663-034",
+   "claim": "In the early 2020s the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential, and fulfilling that potential requires significant tradeoffs between scaling, security, and levels of decentralization.",
+   "specific_name": "infrastructure shortfall against growth potential",
+   "conditions": [
+    "DeFi infrastructure as of the early 2020s",
+    "projected DeFi growth rates"
+   ],
+   "source": "Digital Asset Market Evolution",
+   "year": "2020",
+   "quote": "In the early 2020s, the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:3606663-035",
+   "url": "https://wulfkaal.github.io/claims/3606663-035",
+   "claim": "The tradeoff between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "specific_name": "speed versus immutability tradeoff",
+   "conditions": [
+    "consensus based decentralized ledgers supporting DeFi"
+   ],
+   "source": "Digital Asset Market Evolution",
+   "year": "2020",
+   "quote": "The trade-off between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:3606663-036",
+   "url": "https://wulfkaal.github.io/claims/3606663-036",
+   "claim": "Consensus in decentralized systems presents a two sided cost problem: creating consensus raises the costs of prepping, processing, and storing information, while reducing the number of computational checks increases the risk of collusion attacks that could change the record.",
+   "specific_name": "consensus cost versus attack resistance tradeoff",
+   "conditions": [
+    "public distributed consensus systems",
+    "information distributed to and validated by all parties"
+   ],
+   "source": "Digital Asset Market Evolution",
+   "year": "2020",
+   "quote": "Creating consensus requires increase costs of prepping, processing, and storing information.333 On the other hand, fewer computational checks for consensus increase the risk of collusion attacks that could change the record.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:3606663-037",
+   "url": "https://wulfkaal.github.io/claims/3606663-037",
+   "claim": "Read together with the network capacity failure that CryptoKitties caused on Ethereum in December 2017, the expected DeFi growth rates imply that the Ethereum network will continue to experience network shortages and throughput problems unless its infrastructure is upgraded to handle the expected transaction volume.",
+   "specific_name": "network congestion under projected DeFi volume",
+   "conditions": [
+    "Ethereum network without infrastructure upgrades",
+    "DeFi growth continuing at estimated rates",
+    "author cautions that correlation is not causation"
+   ],
+   "source": "Digital Asset Market Evolution",
+   "year": "2020",
+   "quote": "the expected growth rate illustrated in Figures [__] and [__] could mean that the Ethereum network will continue to experience network shortages and throughput issues unless the Ethereum infrastructure is upgraded to deal with the expected volume of transactions.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:3799320-006",
+   "url": "https://wulfkaal.github.io/claims/3799320-006",
+   "claim": "Working with suboptimal layer 1 blockchain solutions that carry high gas fees and low throughput delays the evolution of DAO infrastructure design, because innovation is inhibited by those layer 1 features.",
+   "specific_name": "Suboptimal layer 1 lock-in",
+   "conditions": [
+    "development anchored to first generation layer 1 networks"
+   ],
+   "source": "A Decentralized Autonomous Organization (DAO) of DAOs",
+   "year": "2021",
+   "quote": "Yet, working with suboptimal layer 1 blockchain solutions with high gas fees and low throughput delay the evolution of DAO infrastructure design as innovation and evolution is inhibited through suboptimal layer 1 features.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320"
+  },
+  {
+   "id": "kaal:claim:3782198-022",
+   "url": "https://wulfkaal.github.io/claims/3782198-022",
+   "claim": "Existing decentralized filesharing networks cannot guarantee the availability of unpopular files such as personal files, whereas centralized cloud services guarantee availability for a fee.",
+   "specific_name": "unpopular-file-unavailability",
+   "conditions": [
+    "applies to filesharing networks without an incentive design for storing unpopular data"
+   ],
+   "source": "Contemporary Decentralization",
+   "year": "2021",
+   "quote": "One problem with most existing decentralized filesharing networks is that unpop- ular files (such as your personal files) are not guaranteed to be available, unlike cen- tralized cloud computing services which guarantee availability for a fee.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198"
+  },
+  {
+   "id": "kaal:claim:3782198-033",
+   "url": "https://wulfkaal.github.io/claims/3782198-033",
+   "claim": "Blockchain transactions will always be expensive whether or not proof of stake is solved, because full participation requires downloading the entire transaction history to verify validity, an extreme redundancy that cannot be removed.",
+   "specific_name": "permanent-cost-of-full-verification",
+   "conditions": [
+    "applies to blockchains that require full history verification"
+   ],
+   "source": "Contemporary Decentralization",
+   "year": "2021",
+   "quote": "If you want to fully participate in the network, you need to download a copy of the entire history of every transaction of every bitcoin in existence. This extreme re- dundancy and inefficiency means transactions will always be expensive.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198"
+  },
+  {
+   "id": "kaal:claim:3782198-039",
+   "url": "https://wulfkaal.github.io/claims/3782198-039",
+   "claim": "Ethereum is Turing complete in theory but cannot practically match even a cheap smartphone, because everything stored on the blockchain must be stored redundantly on thousands of nodes forever, so decentralized smart contract computation is necessarily primitive compared with centralized Web 2.0 services.",
+   "specific_name": "on-chain-capacity-ceiling",
+   "conditions": [
+    "applies to on chain computation and storage on general purpose blockchains"
+   ],
+   "source": "Contemporary Decentralization",
+   "year": "2021",
+   "quote": "However, Ethereum is not practically capable of mimicking the power of even the cheapest smartphone. The storage limit is currently extremely small, because anything stored in the blockchain needs to be stored redundantly on thousands of nodes for all time in the future.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198"
+  },
+  {
+   "id": "kaal:claim:3936876-007",
+   "url": "https://wulfkaal.github.io/claims/3936876-007",
+   "claim": "The paper certificate system failed at scale: trust companies and intermediaries were overwhelmed by changing ownership records, and from 1967 to 1970 a reported $400 million in securities was lost or stolen.",
+   "specific_name": "paperwork crisis",
+   "conditions": [
+    "United States securities markets, 1967 to 1970"
+   ],
+   "source": "Custody of Digital Assets",
+   "year": "2021",
+   "quote": "The trust companies and intermediaries quickly became overwhelmed with changing ownership records, and from 1967 to 1970, a reported $400 million was lost or stolen in securities.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876"
+  },
+  {
+   "id": "kaal:claim:3808852-016",
+   "url": "https://wulfkaal.github.io/claims/3808852-016",
+   "claim": "The DAO focus on enhancing the value of fungible tokens can produce short termism and can cause ethical and governance issues to be ignored, even as it frees non-performance reputational penalties from racial and cultural bias.",
+   "specific_name": "token value short termism",
+   "conditions": [
+    "applies where DAO membership is organized around fungible token value"
+   ],
+   "source": "Decentralization and Feedback Effects",
+   "year": "2021",
+   "quote": "Yet, the focus on the value enhancement of fungible tokens can lead to short termism and may ignore ethical and governance issues.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852"
+  },
+  {
+   "id": "kaal:claim:3808852-033",
+   "url": "https://wulfkaal.github.io/claims/3808852-033",
+   "claim": "Decentralization is not always efficient, because centralized economies of scale can create the near-optimal efficiencies for economic growth and decentralization may therefore result in the loss of economies of scale.",
+   "specific_name": "loss of economies of scale",
+   "conditions": [],
+   "source": "Decentralization and Feedback Effects",
+   "year": "2021",
+   "quote": "In fact, decentralization may not always be efficient as centralized economies of scale create the near-optimal efficiencies for economic growth.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852"
+  },
+  {
+   "id": "kaal:claim:3782214-038",
+   "url": "https://wulfkaal.github.io/claims/3782214-038",
+   "claim": "Direct democracy failed to reflect the will of the group once villages grew into cities, because the information technology of the spoken word imposes a hard limit on how many people can speak and on the patience and endurance of listeners.",
+   "specific_name": "oral scale limit",
+   "conditions": [
+    "governance conducted through oral assembly"
+   ],
+   "source": "Decentralized Governance",
+   "year": "2021",
+   "quote": "As villages grew to cities, direct democracy failed to reflect the will of the group. There is a limit to how many people can speak, even at an am- phitheater, because there is a limit to peoples' patience and endurance.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214"
+  },
+  {
+   "id": "kaal:claim:3782201-027",
+   "url": "https://wulfkaal.github.io/claims/3782201-027",
+   "claim": "Because DAO performance assessment is based on optimizing fungible token value rather than on hierarchical or political processes, the focus on token value enhancement can lead to short termism and may cause ethical and governance issues to be ignored.",
+   "specific_name": "token value short termism",
+   "conditions": [
+    "DAO designs inheriting the path dependencies of the 2016 DAO",
+    "fungible token based membership"
+   ],
+   "source": "Future of Decentralization",
+   "year": "2021",
+   "quote": "Yet, the focus on the value en- hancement of fungible tokens can lead to short-termism and may ignore ethical and governance issues.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Future of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782201"
+  },
+  {
+   "id": "kaal:claim:3782210-034",
+   "url": "https://wulfkaal.github.io/claims/3782210-034",
+   "claim": "Contemporary blockchains cannot support the proposed architecture because the technology is too slow and expensive to poll members on every transaction, and the messages required for all nodes to register all votes on every action multiply into an unmanageable number.",
+   "specific_name": "On-chain voting inefficiency",
+   "conditions": [
+    "blockchains as of writing, including Ethereum",
+    "polling on every member action"
+   ],
+   "source": "The Importance of Reputation for the Evolution of Decentralization",
+   "year": "2021",
+   "quote": "Voting is not efficient on contemporary blockchains.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210"
+  },
+  {
+   "id": "kaal:claim:4796714-013",
+   "url": "https://wulfkaal.github.io/claims/4796714-013",
+   "claim": "Blockchain can only deliver decentralized AI governance if the blockchain trilemma is first overcome, since decentralization, security, and scalability cannot readily be achieved simultaneously within one network.",
+   "specific_name": "blockchain trilemma constraint",
+   "conditions": [
+    "applies to blockchain networks used as governance infrastructure",
+    "necessary condition, not sufficient"
+   ],
+   "source": "AI Governance",
+   "year": "2024",
+   "quote": "The effectiveness of blockchain in achieving the goal of decentralized AI governance is contingent upon overcoming the fundamental blockchain trilemma: the challenge of balancing decentralization, security, and scalability.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714"
+  },
+  {
+   "id": "kaal:claim:4941807-013",
+   "url": "https://wulfkaal.github.io/claims/4941807-013",
+   "claim": "The rigid communication topology of federated learning, which requires constant coordination among numerous nodes, produces inefficiencies and does not adapt easily to dynamic network conditions or node failures.",
+   "specific_name": "rigid coordination topology",
+   "conditions": [
+    "in federated learning architectures requiring constant node coordination",
+    "under fluctuating network conditions or node failure"
+   ],
+   "source": "AI Governance Via Web3 Reputation System",
+   "year": "2024",
+   "quote": "Moreover, the rigid communication topology in FL, which typically requires constant coordination between numerous nodes, can lead to inefficiencies and does not easily adapt to dynamic network conditions or node failures.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807"
+  },
+  {
+   "id": "kaal:claim:4755632-023",
+   "url": "https://wulfkaal.github.io/claims/4755632-023",
+   "claim": "Code reviews in legacy systems can last weeks and months, and these delays can force complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the review period.",
+   "specific_name": "Review Latency Rework",
+   "conditions": [
+    "can be exacerbated by market conditions in the digital asset market"
+   ],
+   "source": "AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning",
+   "year": "2024",
+   "quote": "These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632"
+  },
+  {
+   "id": "kaal:claim:4734750-014",
+   "url": "https://wulfkaal.github.io/claims/4734750-014",
+   "claim": "Legacy code reviews can last weeks or months, and those delays can force complete rewrites of contracts because the underlying protocol may have upgraded core libraries while the review was still running.",
+   "specific_name": "Review latency obsolescence",
+   "conditions": [
+    "digital asset markets where underlying protocols upgrade frequently"
+   ],
+   "source": "Code Review DAO",
+   "year": "2024",
+   "quote": "These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750"
+  },
+  {
+   "id": "kaal:claim:5254152-008",
+   "url": "https://wulfkaal.github.io/claims/5254152-008",
+   "claim": "DAOs still face unresolved challenges of scalability, governance, and the need for robust security measures, which constrain their adoption despite their potential.",
+   "specific_name": "unresolved scalability, governance, and security constraints",
+   "conditions": [],
+   "source": "DAO Market Meta Analysis 2024",
+   "year": "2024",
+   "quote": "Despite their potential, DAOs face challenges such as scalability, governance issues, and the need for robust security measures.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152"
+  },
+  {
+   "id": "kaal:claim:4855607-002",
+   "url": "https://wulfkaal.github.io/claims/4855607-002",
+   "claim": "The computational cost of improving deep learning performance scales so badly that halving the error rate is estimated to require over five hundred times more computational resources, which raises a sustainability problem for the deep learning paradigm itself.",
+   "specific_name": "Compute scaling wall",
+   "conditions": [
+    "scaling driven improvement of deep learning accuracy"
+   ],
+   "source": "How AI Models are Optimized Through Web3 Governance",
+   "year": "2024",
+   "quote": "improving deep learning performance increases drastically, with estimates suggesting that halving the error rate would require over 500 times more computational resources. This raises concerns about the sustainability and efficiency of deep learning approaches.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607"
+  },
+  {
+   "id": "kaal:claim:4855607-005",
+   "url": "https://wulfkaal.github.io/claims/4855607-005",
+   "claim": "In federated learning the communication cost of many edge devices sending model parameters to a central server frequently exceeds the computation cost, and heterogeneity in the participating devices, including varying computational capabilities and resource constraints, compounds the problem.",
+   "specific_name": "Communication cost dominance",
+   "conditions": [
+    "federated learning across numerous heterogeneous edge devices"
+   ],
+   "source": "How AI Models are Optimized Through Web3 Governance",
+   "year": "2024",
+   "quote": "devices sending model parameters to the central server, often exceeding the computation cost. The heterogeneity of participating devices and their data also poses a challenge, categorized into systems heterogeneity (varying computational capabilities and resource constraints)",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607"
+  },
+  {
+   "id": "kaal:claim:4855607-007",
+   "url": "https://wulfkaal.github.io/claims/4855607-007",
+   "claim": "The self attention mechanism in transformers scales quadratically with input sequence length, which makes transformers expensive and slow to train and use on long sequences and disqualifies them where real time processing or limited compute is required.",
+   "specific_name": "Quadratic attention cost",
+   "conditions": [
+    "long input sequences",
+    "real time or compute constrained deployments"
+   ],
+   "source": "How AI Models are Optimized Through Web3 Governance",
+   "year": "2024",
+   "quote": "The self-attention mechanism in Transformers has a quadratic computational complexity with respect to the input sequence length, making them computationally expensive and time-consuming to train and use, especially for long sequences.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607"
+  },
+  {
+   "id": "kaal:claim:4855607-010",
+   "url": "https://wulfkaal.github.io/claims/4855607-010",
+   "claim": "GNN scalability on large real world graphs is a genuine trade off rather than an engineering gap: sampling methods lose influential neighbors while clustering methods lose structural patterns, so each remedy sacrifices part of the signal the model needs.",
+   "specific_name": "Sampling versus clustering trade off",
+   "conditions": [
+    "large real world graphs where full graph processing is infeasible"
+   ],
+   "source": "How AI Models are Optimized Through Web3 Governance",
+   "year": "2024",
+   "quote": "Scalability is a major concern for GNNs on large real-world graphs, as sampling methods may lose influential neighbors while clustering methods may lose structural patterns.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607"
+  },
+  {
+   "id": "kaal:claim:5095633-013",
+   "url": "https://wulfkaal.github.io/claims/5095633-013",
+   "claim": "Latency, throughput limits, and the absence of fully automated continuous training and validation together defeat the timeliness advantage that real-time data is supposed to deliver.",
+   "specific_name": "real-time pipeline latency failure",
+   "conditions": [
+    "AI pipelines ingesting live, high-velocity data streams"
+   ],
+   "source": "Artificial Intelligence The Final Frontier",
+   "year": "2025",
+   "quote": "Latency, data throughput constraints, and the absence of fully automated mechanisms for continuous training and validation can collectively undermine the timeliness of insights derived from AI models.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633"
+  },
+  {
+   "id": "kaal:claim:5095633-028",
+   "url": "https://wulfkaal.github.io/claims/5095633-028",
+   "claim": "Decentralized data annotation at scale is not operationally feasible without advances in consensus algorithms or layer-two scaling, because existing blockchain infrastructures cap transaction speed and network capacity.",
+   "specific_name": "blockchain throughput bottleneck",
+   "conditions": [
+    "real-time or near real-time annotation of large data volumes"
+   ],
+   "source": "Artificial Intelligence The Final Frontier",
+   "year": "2025",
+   "quote": "existing blockchain infrastructures typically grapple with limits on transaction speed and network capacity. Continuous innovation in consensus algorithms, such as Proof of Stake or layer-two scaling solutions, is thus critical.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633"
+  },
+  {
+   "id": "kaal:claim:5225296-039",
+   "url": "https://wulfkaal.github.io/claims/5225296-039",
+   "claim": "The defenses that secure SPoS may not scale: frequent reputation updates and zk-SNARK verifications may strain resources under high transaction loads, potentially requiring sharding or layer-2 solutions.",
+   "specific_name": "reputation-update-scalability-strain",
+   "conditions": [
+    "under high transaction loads"
+   ],
+   "source": "Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse",
+   "year": "2025",
+   "quote": "frequent updates and zk-SNARK verifications may strain resources; sharding or layer-2 solutions could optimize performance",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296"
+  },
+  {
+   "id": "kaal:claim:5886442-033",
+   "url": "https://wulfkaal.github.io/claims/5886442-033",
+   "claim": "Network congestion externalities and Sybil attack vulnerabilities require the deliberate reintroduction of micro frictions, such as tokenized tolls or proof of personhood protocols, in order to preserve credible signaling in hyper scale agent populations.",
+   "specific_name": "zero friction breakdown at scale",
+   "conditions": [
+    "applies at hyper scale agent populations where congestion and Sybil attacks are feasible"
+   ],
+   "source": "The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory",
+   "year": "2025",
+   "quote": "Network congestion externalities and Sybil-attack vulnerabilities necessitate the deliberate reintroduction of micro-frictions—such as tokenized tolls or proof-of-personhood protocols—to preserve credible signaling in hyper-scale agent populations",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442"
+  }
+ ]
+}

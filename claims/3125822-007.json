@@ -1,0 +1,63 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3125822-007",
+ "identifier": "kaal:claim:3125822-007",
+ "text": "The hidden voting scheme depends on the choice of symmetric encryption protocol: a poorly chosen protocol exposes the platform to a birthday problem attack in which malicious voters submit an encrypted key that can be decrypted in two different ways, letting them retroactively choose their vote.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A",
+  "datePublished": "2018",
+  "url": "https://ssrn.com/abstract=3125822",
+  "sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Calcaterra%20et%20al.%20-%202018%20-%20Blockchain%20Infrastructure%20for%20Measuring%20Domain%20Specific%20Reputation%20in%20Autonomous%20Decentralized%20and%20A.pdf"
+ },
+ "keywords": [
+  "consensus-and-security",
+  "citation-and-knowledge"
+ ],
+ "about": [
+  "vote-hiding",
+  "cryptography",
+  "birthday-attack",
+  "validation-pool"
+ ],
+ "abstract": "This symmetric encryption protocol must be chosen carefully to avoid the birthday problem attack, where malicious voters could send an encrypted key that could be decrypted in two different ways.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "failure"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "asserted"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "applies to the hidden vote reveal step of a validation pool"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3125822-007"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

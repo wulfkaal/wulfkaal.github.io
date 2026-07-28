@@ -1,0 +1,66 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/3125827-040",
+ "identifier": "kaal:claim:3125827-040",
+ "text": "A malicious party using Sybil accounts cannot be prevented from cloning the structure of a successful proof of stake blockchain at far lower cost than cloning a proof of work chain, leaving a new user unable to distinguish the truly decentralized chain from a clone that has manufactured even more tokens. The authors answer that this is resolved off chain, by a trusted user interface, as with cloned web pages.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Secure Proof of Stake Protocol",
+  "datePublished": "2018",
+  "url": "https://ssrn.com/abstract=3125827",
+  "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Calcaterra%20and%20Kaal%20-%202018%20-%20Secure%20Proof%20of%20Stake%20Protocol.pdf"
+ },
+ "keywords": [
+  "blockchain",
+  "consensus-and-security",
+  "reputation"
+ ],
+ "about": [
+  "blockchain-clones",
+  "sybil-attack",
+  "trusted-ui",
+  "bootstrapping",
+  "proof-of-stake"
+ ],
+ "abstract": "Then, when a new user joins the network, how will they be able to distinguish a truly decentralized blockchain from a cloned blockchain that has manufactured an even larger number of tokens?",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "failure"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "new users joining without prior knowledge of the genuine chain",
+    "PoS chains where clone creation costs only new public keys"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:3125827-040"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}

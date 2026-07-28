@@ -1,0 +1,63 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/6269518-006",
+ "identifier": "kaal:claim:6269518-006",
+ "text": "The PageRank calculation used for citation-weighted payment is a zero-sum redistribution mechanism with respect to citation weights: any increase in the credit agent i attributes to agent j necessarily decreases agent i's own value.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=6269518",
+  "sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+  "encoding": "https://raw.githubusercontent.com/wulfkaal/Academic-Papers/main/papers/pdf/Kaal%20-%202026%20-%20Citation%20Honesty%20Mechanisms%20in%20Weighted%20Directed%20Acyclic%20Graph%20Governance.pdf"
+ },
+ "keywords": [
+  "citation-and-knowledge"
+ ],
+ "about": [
+  "pagerank",
+  "zero-sum",
+  "citation-matrix",
+  "payment-allocation"
+ ],
+ "abstract": "The critical observation is that the PageRank calculation is a zero-sum redistribution mechanism with respect to citation weights: any increase in cx (credit attributed by i to j) necessarily decreases vi",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "mechanism"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "argued"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "column-stochastic citation matrix with weights summing to one per agent",
+    "PageRank-derived value vector determines payment"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "attestations",
+   "value": "https://agents.wulfkaal.com/v0/attestations?claim=kaal:claim:6269518-006"
+  }
+ ],
+ "dateModified": "2026-07-27",
+ "version": "1.0"
+}
