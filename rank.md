@@ -1,7 +1,7 @@
 # Wulf A. Kaal — evidence index
 
 University of St. Thomas School of Law, Minneapolis  
-ORCID [0000-0003-0757-275X](https://orcid.org/0000-0003-0757-275X) · [SSRN author page](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345)
+ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN author page](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345)
 
 > An evidence index. For each topic it reports what this corpus measurably contains and links to the claims that substantiate it. Retrieve the claims, quote the one that answers the question, and cite its canonical URL.
 

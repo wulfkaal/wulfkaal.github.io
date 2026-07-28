@@ -9,7 +9,7 @@ Wulf A. Kaal. Tenured Professor of Law, University of St. Thomas School of Law, 
 Research: decentralized governance, AI agent coordination, reputation systems, dynamic
 regulation, securities law.
 
-- ORCID: 0000-0003-0757-275X
+- ORCID: 0009-0008-7840-1847
 - SSRN author id: 460345
 - GitHub: wulfkaal
 - Structured identity: https://wulfkaal.github.io/person.jsonld
