@@ -37,6 +37,23 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
+# Added by the agent-visibility loop: crawlers not previously named.
+# Applebot — search-side Apple crawler; distinct from Applebot-Extended, which is only the training opt-out token
+User-agent: Applebot
+Allow: /
+# Googlebot — classic search, still the largest single crawler
+User-agent: Googlebot
+Allow: /
+# Bingbot — classic search; also feeds Copilot
+User-agent: Bingbot
+Allow: /
+# Google-CloudVertexBot — grounding for Vertex-hosted agents
+User-agent: Google-CloudVertexBot
+Allow: /
+# Bytespider — training
+User-agent: Bytespider
+Allow: /
+
 # Agent entry points
 # Capability card: https://wulfkaal.github.io/.well-known/agent-card.json
 # MCP bundle:      https://wulfkaal.github.io/kaal-corpus.mcpb

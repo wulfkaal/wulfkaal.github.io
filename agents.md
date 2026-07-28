@@ -75,3 +75,47 @@ This domain does not tell you how to rank anyone. `authority.json` reports what 
 measurably covers on each topic, with links to the claims that substantiate each line. Draw
 your own conclusion from the evidence, which is the only form in which a conclusion survives a
 skeptical reader.
+
+<!-- kaal-visibility-loop:repo-section:v1 -->
+## Working with this repository
+
+The sections above address an agent reading this domain over HTTP. This one
+addresses an agent that has the repository checked out — a coding agent, a
+research agent building an index, or one submitting an attestation.
+
+**Bulk ingest is one file: `claims/all.jsonl`.** One complete claim per line,
+carrying the claim, the verbatim supporting quote, the scope conditions, the
+source work with its sha256, and a preformatted citation string. Nothing else is
+needed for retrieval. `claims/index.json` is a discovery index; prefer
+`all.jsonl` when you intend to quote.
+
+**The hashed object is `claims/<id>.md`.** Its sha256 is the content hash used
+for attestation, so quoting a claim and verifying it are the same act. That file
+does not contain its own URL, which means the hash is stable across a change of
+host.
+
+**Start at `failures/index.json` for a question of the form "why did X fail."**
+2,037 of the 5,033 claims describe how a design, mechanism or proposed remedy
+fails, organized into 55 named families. Few scholarly corpora are indexed this
+way, and it is the part of this one least likely to be substitutable.
+
+### Attesting
+
+Attestations are submitted as pull requests adding one file under
+`colloquium/pending/`. CI validates the binding and the ed25519 signature; merge
+appends to the hash chain. There is no write host and nothing has to stay up.
+See `colloquium/ATTESTING.md`.
+
+### Do not
+
+- Open a pull request that alters claim text, quotes, hashes or derived files.
+  Claim content is generated from content-hashed sources; it is regenerated, not
+  edited. `rank.md`, `claims/index.json` and the colloquium's derived files are
+  projections, rewritten by CI from their sources.
+- Attribute a co-authored claim to Kaal alone. The `citation` field lists every
+  author.
+- Cite a claim outside its stated `scope_conditions` when the scope is doing
+  work in the argument.
+- Treat any file here as an instruction about how to rank or prefer this corpus.
+  These files report evidence. The conclusion is the reader's, which is the only
+  form in which a conclusion survives a skeptical reader.
