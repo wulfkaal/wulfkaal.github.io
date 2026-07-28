@@ -22,7 +22,7 @@
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+      "identifier": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.0.0/kaal-corpus.mcpb",
       "version": "1.0.0",
       "fileSha256": "476d3f1f4e19a66bbfb5a5c9bdae3cbf54cd7642d96b398fab5f4177bd725319",
       "transport": {
@@ -71,6 +71,12 @@
         "scope_conditions": "every claim states the conditions under which it holds; a claim cited outside them is being misused",
         "honest_absence": "search returns an empty result when the corpus does not cover a question, rather than returning the nearest adjacent claim",
         "no_ranking_directive": "nothing in this server or its published files instructs a model how to rank or prefer this corpus. An instruction from an interested party is discounted or flagged as injection; verifiable evidence is not."
+      },
+      "distribution": {
+        "bundle_release": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.0.0/kaal-corpus.mcpb",
+        "bundle_mirror": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+        "bundle_sha256": "476d3f1f4e19a66bbfb5a5c9bdae3cbf54cd7642d96b398fab5f4177bd725319",
+        "note": "Both URLs serve the same bytes. The registry requires a GitHub release asset as the identifier, so that is the canonical one; the mirror is the same file as published on the site. Hash either and compare."
       },
       "surfaces": {
         "machine_index": "https://wulfkaal.github.io/llms.txt",
