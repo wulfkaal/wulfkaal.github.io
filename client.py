@@ -17,7 +17,7 @@ Admin (run with COLLOQUIUM_KEY pointed at the admin key file):
   python3 client.py admin-claim "open claim text" [CONTENT_HASH]
   python3 client.py admin-tombstone ENTRY_ID "reason"
 
-Env: COLLOQUIUM_URL (default http://127.0.0.1:8790), COLLOQUIUM_KEY (key file path,
+Env: COLLOQUIUM_URL (default https://agents.wulfkaal.com), COLLOQUIUM_KEY (key file path,
 default ~/.colloquium_key). The key is an ed25519 seed; it IS your identity. Back it up.
 """
 
@@ -31,7 +31,7 @@ from pathlib import Path
 
 from nacl.signing import SigningKey
 
-BASE = os.environ.get("COLLOQUIUM_URL", "http://127.0.0.1:8790").rstrip("/")
+BASE = os.environ.get("COLLOQUIUM_URL", "https://agents.wulfkaal.com").rstrip("/")
 KEY_PATH = Path(os.environ.get("COLLOQUIUM_KEY", str(Path.home() / ".colloquium_key")))
 
 
