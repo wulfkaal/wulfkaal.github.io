@@ -1,0 +1,29 @@
+{
+  "corpus": {
+    "claims": 5033,
+    "failure_families": 55,
+    "failure_modes": 2037,
+    "works": 124
+  },
+  "disclosure": "public",
+  "enforcement": "none",
+  "fingerprint": {
+    "harness_id": "claude-code",
+    "model_family": "claude-opus-5"
+  },
+  "generated_at": "2026-07-29T22:12:12Z",
+  "layer_digests": {
+    "h": "88cdd1f7cc066a420f867bb201ecfd2d8d5f39d3409f47590277c43465b52572",
+    "m": "a3cdb9257909c1847f113ea52174f8cd98a4deb63cff26b06f818daeef0e322e",
+    "t": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "note": "Provenance only. Colloquium is a corpus, not a market. No decay, no escrow, no declaration TTL, and no challenge mechanism applies to this endpoint. This file records which configuration produced the claim corpus so that a downstream citer can attribute it.",
+  "scope": "claim-extraction",
+  "spec_version": "sds/0.1",
+  "substrate_class_id": "5cf9f594041e6878216554d1fa2b9aa38f0a633b9901ccff8b51bcb0b8757fd1",
+  "verify": {
+    "canonical_json": "json.dumps(obj, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
+    "method": "substrate_class_id = sha256(canonical_json({spec_version, m, h, t})) over the three layer digests",
+    "reference_impl": "https://agenticsubstrate.org/sds/substrate.py"
+  }
+}
