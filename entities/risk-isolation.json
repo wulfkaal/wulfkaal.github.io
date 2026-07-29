@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/risk-isolation",
+ "identifier": "kaal:entity:risk-isolation",
+ "name": "Risk isolation",
+ "termCode": "risk-isolation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/risk-isolation.md",
+ "sha256": "3a96fd27c3fd2139d6fca8a203e39d4e0f90448e06d46214290e04701a154cae",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-031",
+   "identifier": "kaal:claim:3396542-031",
+   "text": "In the proposed design, bad business decisions by one underwriter need not impact other underwriters or the DAO, because losses from underestimating the insured risk fall purely on that underwriter so long as the staked tokens cover the claim.",
+   "abstract": "If a certain underwriter makes the mistake of underestimating the risk of the insured event, the losses will be suffered purely by the underwriter as long as the value of the staked or encumbered tokens covers the claim.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "value of staked or encumbered tokens covers the claim"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-038",
+   "identifier": "kaal:claim:3396542-038",
+   "text": "What the authors call a breach on a particular insurance contract does not necessarily imply any losses for the consumer, so underwriter breach and consumer harm are decoupled in this design.",
+   "abstract": "Thus, what we are referring to as a breach on a particular insurance contract does not necessarily imply any losses for the consumer.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'risk-isolation'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,99 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/claims-coverage",
+ "identifier": "kaal:entity:claims-coverage",
+ "name": "Claims coverage",
+ "termCode": "claims-coverage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/claims-coverage.md",
+ "sha256": "0f8acea5ee29c66143609f6f007b1774990b27bdad3e74b4a330f36ead792e05",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-010",
+   "identifier": "kaal:claim:3396542-010",
+   "text": "The number of tokens an underwriter must encumber is set by a preset formula whose objective is to make the value of the encumbered tokens sufficient to meet any claim arising at any point in the policy's life.",
+   "abstract": "The number of tokens to be encumbered is based on a preset formula with the objective of ensuring that the value of the encumbered tokens is sufficient to meet any claims that may arise at any point in the life of the policy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-011",
+   "identifier": "kaal:claim:3396542-011",
+   "text": "If underwriters decline to reclaim their encumbered tokens, that breach is resolved by selling the encumbered tokens, plus additional freshly minted tokens as needed, in an auction open to current DAO participants and to outsiders wishing to join.",
+   "abstract": "In such a case, the encumbered tokens, along with additional freshly minted tokens as needed, would be sold in an auction. All current DAO participants as well as outsiders interested in joining the DAO may bid for the tokens in this auction.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "breach by underwriters on a specific policy"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-032",
+   "identifier": "kaal:claim:3396542-032",
+   "text": "Even where the underwriters of a policy breach the contract, the auction of the encumbered tokens together with the sale of additional tokens as needed ensures the policy holder's claim is fully met.",
+   "abstract": "Even if the underwriters of a particular policy were to breach the contract, the auction of the encumbered tokens and the sale of additional tokens as needed ensures that the policy holder's claim is fully met.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'claims-coverage'. Derived node: a roster, not an adjudicated definition."
+}

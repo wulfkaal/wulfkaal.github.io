@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/breach",
+ "identifier": "kaal:entity:breach",
+ "name": "Breach",
+ "termCode": "breach",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/breach.md",
+ "sha256": "bad2aa17e9227bc5da3ad27908df2c3f3741db351931910b26eeb64eab9afb51",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2992962-016",
+   "identifier": "kaal:claim:2992962-016",
+   "text": "Breach of a smart contract is arguably not even possible, because the contract simply will not execute if a parameter is not fulfilled.",
+   "abstract": "Arguably, breach of a smart contract is not even possible, the contract simply will not execute if a parameter is not fulfilled.",
+   "citation": "Wulf A. Kaal, Craig Calcaterra, Crypto Transaction Dispute Resolution (2017). SSRN: https://ssrn.com/abstract=2992962",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fully self executing smart contracts on Ethereum"
+   ],
+   "source_pdf_sha256": "80b92e67594394e38af41b769327936833de8e25d6cf3def966a6ba13bc83d17",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-017",
+   "identifier": "kaal:claim:3782216-017",
+   "text": "In the Underwriting DAO a breach occurs only when the market values the encumbered reputation tokens at less than the payout, which requires minting additional tokens to meet the claim.",
+   "abstract": "We would consider the need to mint more reputation tokens to meet a policy claim to be a breach. Under what circumstances would a breach occur? It would occur only if the market values the encumbered reputation tokens as less than the payout.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Underwriting DAO with encumbered reputation tokens"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-006",
+   "identifier": "kaal:claim:5554218-006",
+   "text": "Physical goods cannot be fully governed by code, so contracts requiring tangible performance need external mechanisms to verify compliance, and smart contracts may therefore fail to satisfy the consideration requirement in such contexts.",
+   "abstract": "Unlike digital assets, physical goods cannot be fully governed by code, requiring external mechanisms to verify compliance with contractual terms. This limitation suggests that smart contracts may struggle to fulfill the consideration requirement in contexts requiring tangible performance,",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sales contracts requiring transfer of physical possession",
+    "contracts involving tangible rather than purely digital assets"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-007",
+   "identifier": "kaal:claim:5554218-007",
+   "text": "Because blockchain based contracts are immutable, they cannot be altered by judicial order, which creates enforceability problems whenever a dispute arises outside the scope of the code, such as defective performance or unforeseen circumstances.",
+   "abstract": "The immutability of blockchain-based contracts means they cannot be altered by judicial order, creating enforceability challenges when disputes arise outside the code's scope, such as defective performance or unforeseen circumstances.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "disputes falling outside the coded parameters",
+    "post-deployment execution on an immutable ledger"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'breach'. Derived node: a roster, not an adjudicated definition."
+}

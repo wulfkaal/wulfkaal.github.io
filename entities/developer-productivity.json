@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/developer-productivity",
+ "identifier": "kaal:entity:developer-productivity",
+ "name": "Developer productivity",
+ "termCode": "developer-productivity",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/developer-productivity.md",
+ "sha256": "f07046b3a5342e2cdcf98ba4bf418a00dcd583116d8fd464e586fc20b8306dd4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-001",
+   "identifier": "kaal:claim:3995709-001",
+   "text": "Modern code review imposes substantial hidden costs because developers spend an average of six hours per week reviewing others' changes and are forced to switch away from their own work, creating an opportunity cost on project development.",
+   "abstract": "Developers spend a significant amount of time reviewing the changes of others – an average of 6 hours per week.11 Not only is this a significant amount of time, it also requires an opportunity cost on project development as developers are forced to switch away from their current work.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "modern code review in industry and open source settings"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-001",
+   "identifier": "kaal:claim:4734750-001",
+   "text": "Modern code review is expensive not only in direct reviewer time but in opportunity cost, because developers spend an average of six hours per week reviewing other people's changes and must switch away from their own work to do so.",
+   "abstract": "Developers spend a significant amount of time reviewing the changes of others",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "modern code review practice in industry and open source projects"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'developer-productivity'. Derived node: a roster, not an adjudicated definition."
+}

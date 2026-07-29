@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/griefing-factor",
+ "identifier": "kaal:entity:griefing-factor",
+ "name": "Griefing factor",
+ "termCode": "griefing-factor",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/griefing-factor.md",
+ "sha256": "bb176649634023dfcd1900f2c268a1389c0fa42c192bc8b4853cf397e450073b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-007",
+   "identifier": "kaal:claim:3125827-007",
+   "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+   "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-036",
+   "identifier": "kaal:claim:3125827-036",
+   "text": "An attacker who buys sem tokens directly from the platform by sending fees must spend at least twice, and more likely six times, the entire historical value of the platform, so the griefing factor is a minimum of 2 with an average of 6.",
+   "abstract": "attacker would lose a significant amount of money to achieve their goal, at least twice the entire historical value of the platform--more likely the factor would be 6 times the total value (see Appendix A.1 for a proof). So the griefing factor is a minimum of 2 with an average of 6,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker buys in by paying fees rather than on an exchange",
+    "good faith experts continue investing alongside the attacker"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'griefing-factor'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/risk-monitoring",
+ "identifier": "kaal:entity:risk-monitoring",
+ "name": "Risk monitoring",
+ "termCode": "risk-monitoring",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/risk-monitoring.md",
+ "sha256": "9f13637f4f3348054233e6e735b9837244d20a9a36659e6bf1035ecbf8c4e0bf",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2010",
+    "2010"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1558614-020",
+   "identifier": "kaal:claim:1558614-020",
+   "text": "Director independence does not produce effective risk monitoring: as the failure of independent director oversight at Lehman Brothers and other large U.S. financial firms shows, independent directors cannot monitor risk when managers, accountants and lawyers keep them in the dark.",
+   "abstract": "independent directors cannot effectively monitor for risk if they are kept in the dark by the firm's managers, accountants, lawyers, and other persons familiar with its business",
+   "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614",
+   "datePublished": "2010",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "U.S. style independence defined by lack of financial ties to the company",
+    "information flow to the board controlled by insiders"
+   ],
+   "source_pdf_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1558614-021",
+   "identifier": "kaal:claim:1558614-021",
+   "text": "Because U.S. companies historically financed themselves through markets rather than through each other, U.S. managers are less attuned to risks accumulating at other firms, a blind spot that mattered once swaps and other complex instruments made firms directly vulnerable to each other's conditions.",
+   "abstract": "Historically, U.S. companies have relied on markets for financing more than they have relied on each other, meaning U.S. managers are perhaps less aware than they should be of the risks that are being incurred by companies other than their own.",
+   "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614",
+   "datePublished": "2010",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies once counterparty exposure through swaps and complex instruments becomes significant"
+   ],
+   "source_pdf_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'risk-monitoring'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/private-keys",
+ "identifier": "kaal:entity:private-keys",
+ "name": "Private keys",
+ "termCode": "private-keys",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/private-keys.md",
+ "sha256": "379024697376984a2893170a37e31b679b56733f0f02bc9f9e1a7adece2feae4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-005",
+   "identifier": "kaal:claim:3936876-005",
+   "text": "Custody of a digital asset is not physical possession but ownership and control over a digital asset wallet, which in practice means holding the private keys and bearing responsibility for keeping the funds safe.",
+   "abstract": "Custody of digital assets is typically associated with ownership and control over a digital asset wallet and its assets. Such ownership and control over a digital asset wallet typically means holding the private keys and the responsibility of keeping funds safe.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to intangible digital assets rather than tangible chattel or real estate"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-010",
+   "identifier": "kaal:claim:3936876-010",
+   "text": "A private key differs from a password in that it is immutable and cannot be reset, so if the key is lost or stolen access to the digital asset may be permanently lost.",
+   "abstract": "However, private keys are distinguishable from a password in that a private key is immutable – it cannot be reset.82 If a user loses their private key or if the private key is stolen, access to the digital asset may be lost.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to key based digital asset ownership on public blockchains"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-011",
+   "identifier": "kaal:claim:3936876-011",
+   "text": "Hot storage buys easy access and quick transferability of digital assets at the cost of exposure to cyber attacks and to the difficulty of keeping private keys safe.",
+   "abstract": "Hot storage ensures the easy access and quick transferability of digital assets but is also subject to possible asset security issues in the form of cyber attacks or issues with keeping private keys safe.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "wallets stored and accessible online"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-016",
+   "identifier": "kaal:claim:3936876-016",
+   "text": "As of 2017, 73 percent of digital asset exchanges took custody of their users' private keys while only 23 percent let users maintain control over their own keys.",
+   "abstract": "As of 2017, 73 percent of digital asset exchanges took custody of private keys while 23 percent let users maintain control over their keys.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "global exchange survey data as of 2017"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-037",
+   "identifier": "kaal:claim:3936876-037",
+   "text": "While the majority of cryptocurrency spot exchanges require ownership to be surrendered in order to transact, decentralized exchanges introduce the ability for users to transact without exposing their private keys to vulnerability.",
+   "abstract": "While the majority of cryptocurrency spot exchanges require ownership to be surrendered in order to transact, DEXs are introducing the ability for users to transact without exposing private keys to vulnerability.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of centralized spot exchanges with DEXs"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'private-keys'. Derived node: a roster, not an adjudicated definition."
+}

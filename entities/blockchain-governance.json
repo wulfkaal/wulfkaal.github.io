@@ -1,0 +1,174 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/blockchain-governance",
+ "identifier": "kaal:entity:blockchain-governance",
+ "name": "Blockchain governance",
+ "termCode": "blockchain-governance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/blockchain-governance.md",
+ "sha256": "cd51a4765fdc322e41e8b380a0b335c0c6f8938817d0702d272e096a0781bf6a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-001",
+   "identifier": "kaal:claim:3125827-001",
+   "text": "No single, fixed, entirely algorithmic policing solution can completely prevent independent nodes in a distributed system from gaming block production to advantage some parties over others. Any consensus protocol that relies on a permanently fixed rule set will therefore be gamed as conditions change.",
+   "abstract": "In fact it is obvious there can be no single, fixed, entirely algorithmic policing solution which completely prevents independent nodes in a distributed system from gaming the system by producing blocks with transactions that advantage some parties over others1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "distributed systems with independent, self interested nodes",
+    "protocols that are fixed rather than continually revisable"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-019",
+   "identifier": "kaal:claim:3125827-019",
+   "text": "Any blockchain whose soft forks are decided through private communication between famous token holding whales is ultimately less secure than legacy centralized systems, which at least address centralized security risks deliberately.",
+   "abstract": "Any blockchain subject to such governance is ultimately less secure than legacy centralized systems which pointedly address centralized security risks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "off chain governance conducted privately among large holders and developers"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-005",
+   "identifier": "kaal:claim:3441904-005",
+   "text": "Forking a chain is an insufficient governance mechanism, and even attempts to create socially optimal chain forking rules cannot suffice as a substitute for evolutionary blockchain governance protocols.",
+   "abstract": "Existing blockchain governance still mainly consist of forking a given chain. Even attempts to create socially optimal chain forking rules cannot suffice.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "existing blockchain governance that relies on forks"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-025",
+   "identifier": "kaal:claim:3441904-025",
+   "text": "If a community cannot agree after a hard fork on which chain is the true chain, the result can be two blockchains competing in perpetuity, and the only viable remedy is abandoning one branch, which causes some miners to lose re-allocated transactions.",
+   "abstract": "If after a hard fork, the respective community cannot agree on which chain is the true chain, e.g. the chain that provides the most likely survivable protocol, it may result in two blockchains that compete in perpetuity.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contentious hard forks",
+    "example of the fork that created Bitcoin Cash"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-025",
+   "identifier": "kaal:claim:3782198-025",
+   "text": "Bitcoin and Ethereum have no formal binding governance framework declaring how consensus protocols may be changed in the future, which the authors identify as a deep flaw that weakens the networks and will lead to instability.",
+   "abstract": "In Bitcoin and Ethereum, there is no formal binding governance framework de- claring how the protocols for consensus might be changed in the future. This is a deep flaw which weakens these networks and will lead to instability.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to major blockchains lacking on chain governance"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-010",
+   "identifier": "kaal:claim:3782203-010",
+   "text": "Because a group sometimes genuinely has no consensus to be discovered, network forking is at times inevitable rather than a governance failure that better rules could prevent.",
+   "abstract": "First, that is a major problem for democracy. Sometimes there is no consensus to be had. This leads to the second conclusion that sometimes network forking is inevitable.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "cyclic or irreconcilable group preferences",
+    "decentralized networks whose members can exit"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-033",
+   "identifier": "kaal:claim:3808873-033",
+   "text": "Decentralized networks depend on dynamic governance because evolving blockchain protocols require updates, and the practice of hardforking that remained prevalent in the early 2020s created significant economic loss for such blockchains.",
+   "abstract": "As blockchains protocols evolve in a given market, they require updates. The practice of hardforking, that was still prevalent in the early 2020s, created significant economic loss for such blockchains.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain protocols requiring upgrades in the early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'blockchain-governance'. Derived node: a roster, not an adjudicated definition."
+}

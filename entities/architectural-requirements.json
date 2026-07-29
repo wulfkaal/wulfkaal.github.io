@@ -1,0 +1,99 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/architectural-requirements",
+ "identifier": "kaal:entity:architectural-requirements",
+ "name": "Architectural requirements",
+ "termCode": "architectural-requirements",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/architectural-requirements.md",
+ "sha256": "00da59e3c7cd3f48768799e3b6fa6358a5149a6220f30103aa3870523a12f765",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-006",
+   "identifier": "kaal:claim:6655138-006",
+   "text": "Any architecture instantiating Computative Economics must give the generative function two operational expressions: an action surface through which the agent posts generative output to the protocol's public state, and a reward channel that accrues to the agent conditional on the validated quality of that output.",
+   "abstract": "In any architecture instantiating Computative Economics, G must have two operational expressions. The first is an action surface, a contract or settlement-layer interface through which the agent can post its generative output to the protocol's public state.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "architectures intended to instantiate Computative Economics"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-012",
+   "identifier": "kaal:claim:6655138-012",
+   "text": "An architecture with generative surfaces and reward channels but only single-timescale resolution implements generation without being able to improve it, and an architecture with multi-timescale resolution but no quality-metric representation can reward generation but cannot reward good generation.",
+   "abstract": "An architecture with G surfaces and reward channels but only single-timescale resolution implements generation but cannot improve generation. An architecture with multi-timescale resolution but no quality-metric representation can reward generation but cannot reward good generation.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-013",
+   "identifier": "kaal:claim:6655138-013",
+   "text": "An architecture with per-surface reflection but no cross-surface reflection improves each surface in isolation yet cannot improve the agent's allocation of compute across surfaces.",
+   "abstract": "An architecture with per-surface but no cross-surface reflection improves each surface in isolation but cannot improve the agent's allocation across surfaces.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'architectural-requirements'. Derived node: a roster, not an adjudicated definition."
+}

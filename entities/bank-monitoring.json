@@ -1,0 +1,119 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bank-monitoring",
+ "identifier": "kaal:entity:bank-monitoring",
+ "name": "Bank monitoring",
+ "termCode": "bank-monitoring",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bank-monitoring.md",
+ "sha256": "cbce694f5b3a01e77c1d428aa6edff9812d6209e76f17f20f6cf5a3e3a8ed494",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-011",
+   "identifier": "kaal:claim:1806252-011",
+   "text": "Banks' lending practices and counterparty credit risk management can curtail hedge funds' excessive risk taking because banks can use the threat of cutting off future lending to change a fund's behavior.",
+   "abstract": "counterparty credit risk management (CCRM) may allow them to curtail excessive risk taking, because they are in a position to use the threat of cutting off future lending to improve a hedge fund's behavior.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the bank has an ongoing lending relationship with the fund"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-013",
+   "identifier": "kaal:claim:1806252-013",
+   "text": "Because banks expect to be bailed out with taxpayer funds, they may have less incentive to monitor their hedge fund lending activities, even though hedge funds are not themselves counterparties in government bailouts.",
+   "abstract": "Hedge funds are not counterparties in government bailouts, but if banks get bailed out, they may have less incentive to monitor their hedge fund lending activities or other hedge fund-related business.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governments are presumed willing to bail out banks"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-031",
+   "identifier": "kaal:claim:1806252-031",
+   "text": "Banks' role in monitoring hedge funds is not easily comparable to the principal agent problem between securities buyers and credit rating agencies, because banks have more influence over hedge funds than securities buyers have over rating agencies and their ratings.",
+   "abstract": "Banks have perhaps more influence over hedge funds than buyers of securities over credit rating agencies and their ratings.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2748096-007",
+   "identifier": "kaal:claim:2748096-007",
+   "text": "Post-LTCM counterparty credit risk management, in which regulators pressed banks to monitor and limit the leverage of their hedge fund clients, appears to have worked: the Amaranth failure produced no financial market repercussions.",
+   "abstract": "The lack of financial market repercussions after the Amaranth failure seems to suggest that this approach has been successful.",
+   "citation": "Wulf A. Kaal, Timothy A. Krause, Hedge Funds and Systemic Risk (2016). SSRN: https://ssrn.com/abstract=2748096",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post-1998 regulatory environment",
+    "inference drawn from a single episode, the Amaranth failure"
+   ],
+   "source_pdf_sha256": "8f30260f2c1db728b45c4f3b9b7c64358cf9d3217277bc3c63a910c32f87b508",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'bank-monitoring'. Derived node: a roster, not an adjudicated definition."
+}

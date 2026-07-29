@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/chit-funds",
+ "identifier": "kaal:entity:chit-funds",
+ "name": "Chit funds",
+ "termCode": "chit-funds",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/chit-funds.md",
+ "sha256": "c35566eaa46147140998be22d19b52cf2567c276238655ea1c70c55501ec8071",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-011",
+   "identifier": "kaal:claim:3782216-011",
+   "text": "Applying Web3 technology to chit funds replaces the foremen and their commission with smart contracts, which eliminates the risk that a foreman absconds with the fund.",
+   "abstract": "First, smart contracts replace the foremen and their d% commission, eliminating the risk of a foreman absconding with the fund.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chit fund style rotating savings and lending schemes"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-012",
+   "identifier": "kaal:claim:3782216-012",
+   "text": "Member default on premia is a major inefficiency in chit funds, with estimates that a large share of subscribers have defaulted at least once recently and a substantial share have defaulted after winning an auction.",
+   "abstract": "It's been estimated that Td% of chit fund sub- scribers have defaulted at least once recently and 9e% have defaulted after winning an auction.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "chit fund participants, per the cited study"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-013",
+   "identifier": "kaal:claim:3782216-013",
+   "text": "A decentralized chit fund can let people bootstrap financial security with no initial reserve backing, but only if the reputation system is strong enough to hold defaults to a low percentage.",
+   "abstract": "With no initial reserve backing, this allows people to bootstrap their way to greater financial security and stability, assuming the reputation system is sufficiently strong to guarantee a low percentage of defaults.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a sufficiently strong reputation system"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'chit-funds'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,190 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fungibility",
+ "identifier": "kaal:entity:fungibility",
+ "name": "Fungibility",
+ "termCode": "fungibility",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fungibility.md",
+ "sha256": "b2f9f7d938e1b459ab7bf81c25292f2ee8cc6e6f74b7c6baa1785cdae804c2e9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-005",
+   "identifier": "kaal:claim:3125827-005",
+   "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+   "abstract": "In particular, the stakes (sem tokens) are naturally far less fungible than cryptocurrency stakes, so long-term probity is incentivized, eliminating many short- term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stakes denominated in non fungible reputation tokens rather than currency"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-014",
+   "identifier": "kaal:claim:3125827-014",
+   "text": "Because almost all other blockchains distribute perfectly fungible currency tokens through initial sales or mining, there is a clear, computable answer to how much it would cost to corrupt or destroy a chain running a proof of stake protocol on cryptocurrency stakes.",
+   "abstract": "Either way, these tokens are almost always perfectly fungible currencies, so there is a clear answer to how much it would cost to corrupt or destroy blockchain running a PoS protocol based on cryptocurrency stakes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS chains whose stakes are perfectly fungible currency tokens"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-035",
+   "identifier": "kaal:claim:3125827-035",
+   "text": "Because each sem token carries a different value depending on the post that minted it and on its position in the reference graph, the total value is difficult to determine, which makes it almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "abstract": "their value is difficult to determine since each token has a different value depending on the post in which it was minted. So it is almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token value derived from position in the forum WDAG",
+    "most tokens constantly in use and continually created"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-020",
+   "identifier": "kaal:claim:3266953-020",
+   "text": "The fungibility of the staked currency is the main point of attack against proof of stake and leads inevitably to centralization.",
+   "abstract": "The fungibility of currency is the main point of attacks on PoS and leads inevitably to centralization.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proof of stake consensus using fungible currency"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-016",
+   "identifier": "kaal:claim:3441904-016",
+   "text": "Fungible cryptocurrencies are by their nature a corruptive element because decision makers can be influenced by power that grows with the size of fungible holdings; decentralized decision making therefore requires non fungible payout metrics combined with an indirect fungible payout structure.",
+   "abstract": "Decentralized decision making necessitates non-fungible payouts metrics combined with an indirect fungible payout structure.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized decision making structures",
+    "DAO payment and voting designs"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-017",
+   "identifier": "kaal:claim:3441904-017",
+   "text": "If curators and contractors are paid from a fungible currency source without a direct or indirect penalty for underperformance, such as lower token scores, DAO contractors and workers may be corrupted by external sources.",
+   "abstract": "If curators' and contractors' payment come from a fungible currency source without a direct or indirect penalty for underperformance, such as lower token scores, DAO contractors and workers may be corrupted by external sources.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fungible payment without an underperformance penalty"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-013",
+   "identifier": "kaal:claim:3949098-013",
+   "text": "Exit by selling reputation tokens is more problematic for reputation than for other cryptocurrency tokens, because reputation is less fungible: a token's value is tied to the specific post in which the reputation was created and is subject to separate review.",
+   "abstract": "This is more problematic for reputation than for most other cryptocurrency tokens, since reputation is less fungible because a token's value is tied to the post in which the reputation was created and subject to separate review. But in principle it could be algorithmically valued.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a member wants to exit by selling reputation tokens at fair market value"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-038",
+   "identifier": "kaal:claim:4685567-038",
+   "text": "Impact certificates are an incomplete measure of expertise: they capture impact success in fungible economic terms without referring to the expertise actually developed by individual project community members or by the project as a collective, which is why WEB3 community software is needed for expertise tracking.",
+   "abstract": "impact certificates are mostly a fungible measure of impact success in economic terms without a direct reference to the inherent expertise developed by the individual project community members and the project as a collective.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "expertise tracking for donors, secondary market participants and follow on funders"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'fungibility'. Derived node: a roster, not an adjudicated definition."
+}

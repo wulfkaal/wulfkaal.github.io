@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fiat-collateralization",
+ "identifier": "kaal:entity:fiat-collateralization",
+ "name": "Fiat collateralization",
+ "termCode": "fiat-collateralization",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fiat-collateralization.md",
+ "sha256": "1eb235b65300a88a50a4adfee53af2fe4744673f9cd4752a33396d807ae06747",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-002",
+   "identifier": "kaal:claim:3402701-002",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage attacks of the kind Soros used against the Bank of England.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat-backed pegs claiming full collateralization"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-003",
+   "identifier": "kaal:claim:3402701-003",
+   "text": "The minimum cost of a fiat-backed token equals the interest rate of the pegged fiat currency, because the backing capital must sit idle and liquid.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'fiat-collateralization'. Derived node: a roster, not an adjudicated definition."
+}

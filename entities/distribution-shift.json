@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/distribution-shift",
+ "identifier": "kaal:entity:distribution-shift",
+ "name": "Distribution shift",
+ "termCode": "distribution-shift",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/distribution-shift.md",
+ "sha256": "8f143b311e0bbe393e63472a26327085b7ce80c3c9206132146b4c79357164e0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-004",
+   "identifier": "kaal:claim:4855607-004",
+   "text": "Deep learning models adapt to changes in data distribution far less readily than human learning does, which limits their reliability once the operating environment diverges from the training data.",
+   "abstract": "Furthermore, deep learning models are not as adaptable to changes in data distribution as human learning, which can adapt more quickly to new situations and contexts.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "settings where the data distribution shifts after training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-010",
+   "identifier": "kaal:claim:5095633-010",
+   "text": "When a training dataset disproportionately represents one region or demographic group, the resulting model produces skewed and sometimes inappropriate outputs once deployed in unfamiliar settings.",
+   "abstract": "For instance, if a dataset disproportionately represents a particular region or demographic group, the model may offer skewed performance, demonstrating suboptimal or inappropriate outputs when deployed in unfamiliar settings.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "deployment context differs from the demographic composition of the training data"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'distribution-shift'. Derived node: a roster, not an adjudicated definition."
+}

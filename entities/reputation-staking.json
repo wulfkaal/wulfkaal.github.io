@@ -1,0 +1,1683 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-staking",
+ "identifier": "kaal:entity:reputation-staking",
+ "name": "Reputation staking",
+ "termCode": "reputation-staking",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-staking.md",
+ "sha256": "d2b284a4a06cf3bd3a6590cbf26c2657d9971dccaa5ae0422b747202b95dc3dc",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "adjudicated"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 62
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 25
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-005",
+   "identifier": "kaal:claim:3125822-005",
+   "text": "When a fee bearing evidence of work post enters the platform, half the newly minted sem tokens are staked in the poster's name as an upvote bet and the other half are staked against the post and left unassigned, so the poster's only direct reward for off-platform work is a contested stake.",
+   "abstract": "Half the new sem tokens are staked in the poster's name as a bet that the work done is accurate and improves the expertise (this stake is their only direct reward for the off-platform work). The other half of the newly minted sem tokens are staked against the post, and left unassigned.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post must be linked to a previous post in the forum",
+    "minting is proportional to the fee at a preset conversion ratio"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-008",
+   "identifier": "kaal:claim:3125822-008",
+   "text": "A newcomer cannot buy reputation with money because the 50/50 staking of newly minted tokens leaves incumbent experts with complete power to decide whether the newcomer's contribution was positive; a losing applicant forfeits all reputation in the expertise.",
+   "abstract": "The 50/50 stake guarantees a new expert cannot simply buy expertise, as the previous experts have complete power to decide whether the new expert has contributed positively to the platform.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies at entry into an existing expertise tag",
+    "assumes incumbent experts vote in their own interest"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-005",
+   "identifier": "kaal:claim:3125827-005",
+   "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+   "abstract": "In particular, the stakes (sem tokens) are naturally far less fungible than cryptocurrency stakes, so long-term probity is incentivized, eliminating many short- term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stakes denominated in non fungible reputation tokens rather than currency"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-006",
+   "identifier": "kaal:claim:3125827-006",
+   "text": "Staking tokens with the potential for slashing is necessary to avoid the tragedy of the commons in a validation pool. Voting without something at risk does not produce honest evaluation of contributions.",
+   "abstract": "The staking of tokens, with its potential for slashing, is necessary to avoid the tragedy of the commons.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "community voting on the value of contributions",
+    "anonymous or pseudonymous participants"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-017",
+   "identifier": "kaal:claim:3128900-017",
+   "text": "Reputation tokens supply a staking mechanism that incentivizes high quality work and task completion by workers, and that simultaneously lets requesters verify and track worker quality, integrity, and quantity.",
+   "abstract": "Through the reputation tokens, the Semada Protocol provides a micro task worker reputation staking mechanism that incentivizes high quality work and task completion by workers.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "participants staking reputation tokens on the platform"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-024",
+   "identifier": "kaal:claim:3128900-024",
+   "text": "Staking creates disincentives for malicious actors, and it is this disincentive structure that makes the network both more efficient and attack resistant.",
+   "abstract": "Semada staking mechanism creates disincentives for malicious actors, enhancing the efficiency of the Semada Network and making it attack resistant.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "workers and verifiers who have reputation tokens at stake"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-025",
+   "identifier": "kaal:claim:3128900-025",
+   "text": "Verifiers stake proportionally smaller amounts of reputation tokens than workers, because their higher reputation scores make them less likely to be malicious actors.",
+   "abstract": "Similarly, verifiers stake (a proportionally smaller) amount of reputation tokens because verifiers have a higher reputation score and are therefore less likely to be malicious actors.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "verifiers with higher reputation scores than the workers they verify"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-046",
+   "identifier": "kaal:claim:3128900-046",
+   "text": "Because the reputation token staking mechanism supplies attack resistance directly, users need not verify their identity to complete micro tasks, which circumvents the costs, delays, and privacy surrender attached to centralized identity verification and thereby enlarges the willing labor pool.",
+   "abstract": "By contrast, on the Semada Platform, users do not need to verify their identity to complete micro tasks. The Semada Protocol architecture, and specifically its reputation token staking mechanism, make the Semada Platform attack resistant.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "workers staking reputation tokens rather than proving identity"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-016",
+   "identifier": "kaal:claim:3266953-016",
+   "text": "Putting the counterparties' reputation at stake reverses smart contracting's degeneration, because the opportunity to earn new valuable reputation tokens makes members act in ways that improve the platform over the long term rather than exploit short term arbitrage.",
+   "abstract": "This effect changes if reputation of the counterparties is at stake. With the opportunity to create new valuable reputation tokens, members strive to act in ways which improve the platform for the long term instead of exploiting short-term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation tokens that can be earned and lost"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-018",
+   "identifier": "kaal:claim:3266953-018",
+   "text": "Semada replaces fungible currency staking with reputation staking for block propagation, a consensus algorithm the authors call Semada Proof of Reputation.",
+   "abstract": "Block propagation in the Semada platform is facilitated by staking reputation, not a fungible currency as in PoS. Accordingly, the consensus algorithm is called Semada Proof of Reputation (PoR).",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada platform block propagation"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-019",
+   "identifier": "kaal:claim:3266953-019",
+   "text": "Under the Anchor Protocol, staking means anchoring reputation to a block, so a block producer whose block turns out to be invalid or is cancelled out suffers depreciation of their reputation.",
+   "abstract": "Moreover, staking in the Anchor Protocol means anchoring your reputation to a block. In other words, Semada block producers anchor their reputation to a block, and if the block is invalid or cancelled out, their reputation depreciates.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada block production"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-021",
+   "identifier": "kaal:claim:3266953-021",
+   "text": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+   "abstract": "Unlike traditional PoS, PoR, e.g. Semada's Anchor Protocol, uses reputation scores as a non-fungible currency to qualify for block propagation. As such, the Anchor protocol (PoR) is attack resistant, fully decentralized, scalable and allows evolutionary protocol upgrades.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation scores that cannot be transferred"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-022",
+   "identifier": "kaal:claim:3266953-022",
+   "text": "Block producers are selected pseudo randomly with weight proportional to their Anchor token holdings, so a participant with more reputation is more likely to be selected to produce a block.",
+   "abstract": "Semada Core (pseudo) randomly selects the block producers weighted by their holdings, meaning if you have more reputation, as evidenced by the Anchor holdings, you are more likely to be selected.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada Core block producer selection"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-009",
+   "identifier": "kaal:claim:3396542-009",
+   "text": "The design requires underwriters to stake or encumber tokens against each policy they underwrite, and those encumbered tokens serve to secure the underwriters' promises.",
+   "abstract": "Fourth, the design requires the underwriters to \"stake\" or \"encumber\" an appropriate number of tokens against each policy they underwrite. These tokens in effect serve to secure the promises of the underwriters.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-041",
+   "identifier": "kaal:claim:3441904-041",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens from voting because third parties are less likely to be able to take over a non fungible asset that is organically grown and maintained through actual expertise in the DAO subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible assets, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "voting by staking non fungible reputation tokens"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-031",
+   "identifier": "kaal:claim:3652481-031",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens because a third party is less likely to be able to take over a non fungible asset such as reputation that was organically grown and maintained through actual expertise in the DAO's subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible asset, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is non fungible and expertise based"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-036",
+   "identifier": "kaal:claim:3652481-036",
+   "text": "Paying DevDAO salaries in fungible stable tokens in proportion to members' non fungible reputation scores makes the economic benefit indirect, which removes corruptive elements and makes the governance design more attack resistant and stable over the long run.",
+   "abstract": "The salary payments in fungible stable tokens are in proportion to DevDAO members' respective non-fungible reputation token scores. The indirect economic effects remove corruptive elements and make the governance design more attack resistant and stable in the long run.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a bifurcated token design with non fungible reputation tokens and fungible salary tokens"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-037",
+   "identifier": "kaal:claim:3782210-037",
+   "text": "Members should not stake reputation tokens to register an opinion on a contentious topic; strict validation pools should be used only after debate has settled, to verify consensus.",
+   "abstract": "Such con- tentious debate should not use strict validation pools anyway. You should not stake your reputation tokens in order to register your opinion on a contentious topic. Only once the debate has settled, should members risk their reputation to verify consensus with validation pools.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "protocol development debates where votes will not be near unanimous"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-011",
+   "identifier": "kaal:claim:3782217-011",
+   "text": "In the SchellingCoin approach to oracle design, members stake reputation tokens on their answer to the question a DApp is asking and are rewarded according to how close they came to the resulting median value, which functions as the game theoretic Schelling point.",
+   "abstract": "The idea is to have your Oracle DAO members stake their reputation tokens on their answer to a question a DApp is asking. Then you reward those closer to the resulting median value",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "questions with a verifiable focal answer"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-024",
+   "identifier": "kaal:claim:3799320-024",
+   "text": "The DAO of DAOs uses a duality of internal and external governance: internal governance runs on reputation token staking, while external legal relationships are handled by a legal wrapper that represents the DAO of DAOs in real world legal contexts.",
+   "abstract": "For the external legal relationships and governance, the DAO of DAOs is represented in real-world legal contexts by a legal wrapper.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO of DAOs architecture"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-028",
+   "identifier": "kaal:claim:3799320-028",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens because third parties are less likely able to take over a non fungible asset such as reputation that is organically grown and maintained through actual expertise in the relevant subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible asset, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation staked as a non fungible asset",
+    "reputation earned through subject matter expertise"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-029",
+   "identifier": "kaal:claim:3799320-029",
+   "text": "Reputation voting has two advantages over one token one vote: it is non fungible, which avoids corruptive elements, and it aligns incentives for members individually and for the institution as a whole at the same time.",
+   "abstract": "1) it is non-fungible which avoids corruptive elements, and 2) it optimally aligns incentives for DAO of DAOs members individually and at the same time aligns their incentives for the totality of the DAO of DAOs as an institution.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO of DAOs internal governance"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-003",
+   "identifier": "kaal:claim:3931933-003",
+   "text": "Under HSPoS a node's probability of being selected remains driven by its fungible stake, while the size of the block reward it receives is scaled by a non-fungible reputation multiplier derived from the node's reputation.",
+   "abstract": "Thus, while the node probability of being selected is based on the fungible stake, the rewards for the block is adjusted by the non-fungible reputation multiplier which is a function of the node's reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward layer applied on top of an existing PoS consensus layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-024",
+   "identifier": "kaal:claim:3931933-024",
+   "text": "Tokens accumulated in the SDAO wallet are distributed to voting associates in proportion to their SDAO reputation score, so payout tracks reputation rather than stake.",
+   "abstract": "Accordingly, the SHAS in the SDAO wallet are distributed to the SDAO VAs in proportion to their SDAO reputation score.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO members holding voting associate status"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-028",
+   "identifier": "kaal:claim:3931933-028",
+   "text": "The SDAO performance based onboarding metric deliberately goes well beyond validator node uptime, adding criteria such as node performance, running a dApp on the network, response time to upgrades, technical background, adherence to instructions and hardware specifications, and community behavior.",
+   "abstract": "This performance based onboarding process and metric goes way beyond the criterion of validator node uptime. In the SDAO preregistration workflow, validator candidates apply for a position in the",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO preregistration workflow for validator candidates"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-035",
+   "identifier": "kaal:claim:3931933-035",
+   "text": "By balancing validator stakes against reputation, HSPoS reaches an equilibrium of incentives in which validators are motivated both to succeed economically as validators and to participate actively in decentralized governance.",
+   "abstract": "Through this balancing of validator SHAS stakes and reputation, HSPoS attains an equilibrium of incentives for validators to: a. attain economic success as validators, and",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators holding both SHAS stake and SDAO reputation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-003",
+   "identifier": "kaal:claim:3949098-003",
+   "text": "Locking a user's reputation tokens instead of fungible assets would be a leap in efficiency and a powerful economic advantage over traditional finance, but this advantage is conditional on a coherent system that securely tracks the value of a reputation token.",
+   "abstract": "For example, locking users reputation tokens instead of your fungible assets would be a strong leap in efficiency, giving a powerful economic advantage over traditional finance. This requires a coherent system which securely tracks the value of a reputation token.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a system exists that securely tracks reputation token value"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-005",
+   "identifier": "kaal:claim:3949098-005",
+   "text": "In the proposed DAO investment club, members substitute reputation non fungible token staking for capital commitments on incoming deals, the public market supplies the funding for approved deals, and members are compensated through 20 percent of the public return on purchases minted into a fungible reputation token.",
+   "abstract": "Instead of capital commitments, DAOIC members stake RNFTs on newly proposed incoming deals. The public market funds the DAOIC approved deals and the DAOIC members get paid via the 20% public ROP minting to fungible reputation token.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOIC operating model",
+    "a public market willing to co purchase approved deals"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-010",
+   "identifier": "kaal:claim:3949098-010",
+   "text": "Replacing capital with reputation gives DAOIC members a permanent option and a right of first refusal on deals, because a member can stake reputation non fungible tokens on a deal without joining the purchase commitment.",
+   "abstract": "The replacement of capital with reputation gives the DAOIC members a permanent option and right of first refusal on deals. DAOIC members can merely stake RNFT on a deal without participating in the purchase commitment for such a deal.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOIC operating model with RNFT staking separated from capital commitment"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-012",
+   "identifier": "kaal:claim:3949098-012",
+   "text": "Because reputation staking carries no ex post capital commitment, the removal of capital makes capital calls and other liquidity limiting measures less relevant for DAOIC members.",
+   "abstract": "The removal of capital through RNFT staking also makes capital calls and other liquidity-limiting measures less relevant. There are no ex post capital commitments associated with an RNFT staking participation.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "best efforts style RNFT staking participations, not firm commitment deals"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-019",
+   "identifier": "kaal:claim:3949098-019",
+   "text": "Reputation non fungible token staking removes counterparty risk because the desire to preserve and increase reputation scores dominates DAOIC decision making, making bad actors less likely to appear since their reputation would inevitably suffer.",
+   "abstract": "Similarly, RNFT staking by DAOIC members removes counterparty risk. The desire to preserve and increase RNFT scores predominates the DAOIC decision making. Therefore, bad actors are less likely to occur in the system as their reputation would inevitably suffer.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation scores are durable and visible to the group"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-023",
+   "identifier": "kaal:claim:3949098-023",
+   "text": "Best efforts underwriting in the DAOIC is implemented as a smart contract accountability system: a member's capital commitment is encumbered as a deposit and released to the token opportunity only after the reputation staking pool decides, and funding occurs only on a majority upvote.",
+   "abstract": "Such deposit will only be released and directly transferred to the token opportunity when the RNFT staking pool has made a decision on the token opportunity. Funding only happens in the case of a majority upvote.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "best efforts underwriting via RNFT staking"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-024",
+   "identifier": "kaal:claim:3949098-024",
+   "text": "In a firm commitment reputation staking engagement the DAOIC commits no capital at all except for the portion of the token opportunity that does not sell out to the public.",
+   "abstract": "In a firm commitment RNFT staking engagement, the DAOIC does not commit any capital at all, except for the portion of the token opportunity that does not sell out to the public.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "firm commitment underwriting via RNFT staking"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-023",
+   "identifier": "kaal:claim:3962614-023",
+   "text": "A VC's proportional holdings of reputation tokens are likely to increase over time if the VC follows sound and successful practices by staking reputation tokens on investment proposals and succeeding in the selection of portfolio companies.",
+   "abstract": "The VC's proportional holdings of these reputation tokens is likely to increase over time if the VC follows sound and successful practices by way of staking the VC's reputation tokens on investment proposals and succeeding in the selection of portfolio companies",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a VC DAO where members stake reputation for or against proposals"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-025",
+   "identifier": "kaal:claim:3962614-025",
+   "text": "Only reputation token holders are allowed to participate in the portfolio selection process, which materializes through reputation staking on investment proposals.",
+   "abstract": "First and foremost, only reputation token holders are allowed to participate in the portfolio selection process which materializes by way of reputation staking on investment proposals.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the reputation as capital DAO design"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-030",
+   "identifier": "kaal:claim:3962614-030",
+   "text": "The basic VC DAO model mixes fungible cryptocurrency investment with minted non fungible reputation, and this duality prevents the full benefits that are generated when non fungible reputation is staked alone on deals.",
+   "abstract": "Rather, the VC DAO GP invests both fungible cryptocurrency from a pool as well as non-fungible and minted reputation on the portfolio companies. This duality does not allow for the full benefits that are generated if non-fungible reputation is staked alone on the deals.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "early phase VC DAO models that combine capital and reputation staking"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-036",
+   "identifier": "kaal:claim:3962614-036",
+   "text": "The incentives that undermine long term success of the hybrid model can be mitigated by mandating that staking on deals requires capital commitments, while allowing VCs to lower their capital commitments and increase their staking over time.",
+   "abstract": "It is possible to mitigate these incentives that undermine the long-term success of the system. For example, it is conceivable that staking on deals by VCs mandates capital commitments to the deals but that VCs can over time lower their capital commitments and increase their staking.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hybrid VC DAO models transitioning away from capital"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-040",
+   "identifier": "kaal:claim:3962614-040",
+   "text": "Over time the members of a DAO investment club do not need capital any longer, because the public market funds the deals and members get paid through the twenty percent public return on purchase that is minted into fungible reputation tokens.",
+   "abstract": "Over time, the members of the DAOIC do not need capital any longer. All they need is the ability to stake RNFTs on newly proposed incoming deals. The public market funds the deals and the DAO members get paid via the 20% public ROP minting to fungible reputation token.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "mature phases of a DAO investment club with public co purchase"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-026",
+   "identifier": "kaal:claim:3981021-026",
+   "text": "Every CHARITYxDAO decision runs through a two vote model: a loosely coupled sentiment vote with no reputation at stake, followed by a tightly coupled final vote with reputation at stake.",
+   "abstract": "i. Two vote model a) loosely coupled (sentiment) vote (no reputation at stake), b) tightly coupled (final) vote (reputation at stake):",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "all CHARITYxDAO governance decisions"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-027",
+   "identifier": "kaal:claim:3981021-027",
+   "text": "Because voting associates can see the sentiment vote outcomes and who staked what reputation before the binding vote, it is reasonable to expect that the overwhelming majority of final tightly coupled votes will end in unanimity on the issue at hand.",
+   "abstract": "Accordingly, it is reasonable to expect that the overwhelming majority of CHARITYxDAO's final tightly coupled votes will end in unanimity on the issue at hand.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "two vote designs where sentiment results are visible before the binding vote"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-028",
+   "identifier": "kaal:claim:3981021-028",
+   "text": "Reputation staking overcomes the polarizing effects and suboptimal vote outcomes produced by one token one vote voting mechanisms.",
+   "abstract": "First, it overcomes the all too common polarizing effects and suboptimal vote outcomes of one- token-one-vote voting mechanisms.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance systems choosing between token weighted and reputation weighted voting"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-029",
+   "identifier": "kaal:claim:3981021-029",
+   "text": "Reputation staking avoids the corruptive effects of fungible token staking because non fungible reputation has to be built organically through merit and time, needs to be earned, and cannot be bought.",
+   "abstract": "Second, the reputation staking design avoid the corruptive effects of fungible token staking because non-fungible reputation has to be built organically through merit and time, it needs to be earned and cannot be bought.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance systems using non transferable reputation"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-030",
+   "identifier": "kaal:claim:3981021-030",
+   "text": "Reputation staking serves the common good because the more the aggregated individual reputation of all voting associates increases, the more the overall value of the DAO increases and the more the DAO creates value enhancing outcomes for sponsors and the associate community at large.",
+   "abstract": "gets served through this design in particular because the more the aggregated individual reputation of all CHARITYxDAO VAs increases the more the overall CHARITYxDAO value increases and the more the CHARITYxDAO creates value enhancing outcomes for the sponsors and VA",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation weighted DAO governance tied to common good objectives"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-018",
+   "identifier": "kaal:claim:4067783-018",
+   "text": "DAO governance should use a two vote model that distinguishes a loosely coupled vote, where no reputation is at stake, from a tightly coupled vote, where the voter's reputation is at stake.",
+   "abstract": "2. Two vote model a) loosely coupled vote (no reputation at stake), b) tightly coupled vote (reputation at stake)",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-037",
+   "identifier": "kaal:claim:4529715-037",
+   "text": "A DAO built on reputation rather than a fungible token, as CRDAO is, makes the 51 percent attack nearly impossible and renders sock puppet attacks technically possible but of little influence.",
+   "abstract": "CRDAO is fairly attack resistant because of its use of reputation. As a result, sock puppet attacks are technically possible, but would have little influence. CRDAO does not appear to have a fungible token, so the 51 percent attack is nearly impossible.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation based governance",
+    "no fungible governance token"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-038",
+   "identifier": "kaal:claim:4529715-038",
+   "text": "Kleros has weak attack resistance because juror selection is proportional to staked fungible tokens; staking reputation rather than tokens to select jurors would remedy this.",
+   "abstract": "As such, Kleros has weak attack resistance. This could be changed by utilizing a reputation system to stake rather than tokens in order to select the jurors.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "token staked juror selection"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-020",
+   "identifier": "kaal:claim:4685567-020",
+   "text": "The two stage vote is the mechanism that produces consensus: a non binding test vote reveals how every donor assesses a project, after which donors can change their minds in the formal vote where their reputation tokens are at stake, and in practice decisions are made with unanimity.",
+   "abstract": "Once every donor sees how all other donors assess the given project, they can jointly change their minds during the \"formal vote\" in which their respective reputation tokens are at stake. Typically, in this form of decentralized governance, all decisions are made with unanimity.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation tokens are staked in the formal vote",
+    "the chosen WEB3 decentralized governance design"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-029",
+   "identifier": "kaal:claim:4734750-029",
+   "text": "The community audit should proceed in two stages: an informal vote that reveals collective wisdom to all members, followed by a formal vote in which staked reputation tokens are at risk, and this sequence gives job posters significant quality assurances.",
+   "abstract": "Once the entire community knows how each member feels about the code review examined, the CRDAO now votes in a formal vote in which the reputation tokens staked are at risk.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-040",
+   "identifier": "kaal:claim:4734750-040",
+   "text": "Reputation token staking substitutes for identity verification: because staking makes the network attack resistant, workers can complete micro tasks without verifying identity, which removes the cost, delay, and privacy surrender of centralized approval and enlarges the available labor pool.",
+   "abstract": "The CRDAO architecture, and specifically its reputation token staking mechanism, make the CRDAO attack resistant.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-030",
+   "identifier": "kaal:claim:4755632-030",
+   "text": "Mandatory crowd review and policing votes make code reviewers less likely to submit highly idiosyncratic reviews, because idiosyncratic reviewers face slashing of their reputation token scores and loss of standing in the community.",
+   "abstract": "code reviewers are less likely to engage in highly idiosyncratic reviews as they would need to fear slashing of rep token scores and loss of standing in the community.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to reviews subject to CRDAO collective policing votes"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-034",
+   "identifier": "kaal:claim:4755632-034",
+   "text": "A sequenced two-stage vote, an informal community vote that reveals collective wisdom followed by a formal vote in which staked reputation tokens are at risk, gives job posters significant assurance that the reviewed code and the platform report meet the highest available quality standards.",
+   "abstract": "the CRDAO now votes in a formal vote in which the reputation tokens30 staked are at risk. This sequence of votes provides job posters with significant assurances that the code examined and the Code Review Platform report on the code adheres to the highest standards of quality",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to code reviews audited by the CRDAO community"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-001",
+   "identifier": "kaal:claim:4855607-001",
+   "text": "Web3 community governance built on Weighted Directed Acyclic Graphs, validation pools with reputation staking, and a federated communications protocol provides an evolutionary approach to optimizing AI models rather than a static compliance layer over them.",
+   "abstract": "The integration of web3 community governance, using Weighted Directed Acyclic Graphs (WDAGs) and validation pools with reputation staking in combination with a federated communications protocol, offers an evolutionary approach to AI model optimization.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the six AI model families the author examines: deep learning, federated learning, transformer, GNN, RL, and RLHF"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-026",
+   "identifier": "kaal:claim:4855607-026",
+   "text": "Requiring community members to stake reputation tokens in order to validate data quality is what produces robust and reliable training datasets, and this participatory validation improves annotation accuracy while reducing bias.",
+   "abstract": "Community members stake reputation tokens to validate data quality, ensuring robust and reliable datasets for training AI models. This participatory approach can improve data annotation accuracy and reduce biases.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "training data validation carried out by a reputation staking community"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-031",
+   "identifier": "kaal:claim:4957318-031",
+   "text": "Validation pools are the consensus mechanism of the proposed system: author stakes are pooled to evaluate specific forum posts, and the outcome can mint new reputation tokens that record the community's consensus on a contribution.",
+   "abstract": "Validation Pool (VP) form a crucial mechanism where author stakes are pooled to evaluate specific posts within the forum. The outcome of a VP can lead to the minting of new REP tokens, reflecting the consensus on a given issue or contribution.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where participants stake reputation on the evaluation of specific posts"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-001",
+   "identifier": "kaal:claim:5225296-001",
+   "text": "An abrupt transition from Proof of Stake to Secure Proof of Stake would destabilize networks built on stake-based incentives, because stake is a fungible economic asset and reputation is non-fungible social capital, and the two operate on fundamentally different principles.",
+   "abstract": "An abrupt transition could destabilize networks reliant on stake-based incentives, as stake (a fungible economic asset) and reputation (a non-fungible social capital) operate on fundamentally different principles, potentially disrupting validator participation and network integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "networks whose validator participation depends on stake-based incentives"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-014",
+   "identifier": "kaal:claim:5225296-014",
+   "text": "Stake-grinding, where validators manipulate randomness to favor their own selection, is countered in SPoS by reputation staking combined with community oversight.",
+   "abstract": "Stake-grinding, where validators manipulate randomness to favor themselves, is countered by reputation staking and community oversight, ensuring consensus integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-036",
+   "identifier": "kaal:claim:5245185-036",
+   "text": "Validation Pools are stipulated as mechanisms in which members stake non transferable reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities, and this staking mechanism carries the paper's decentralized quality control function.",
+   "abstract": "Validation Pools are mechanisms in which members stake their reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "web3 governance with non transferable reputation tokens"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-009",
+   "identifier": "kaal:claim:5887242-009",
+   "text": "A reputation-based staking system sits at the core of the UDLC DAO's internal governance precisely because it eliminates the corruptive influence of fungible tokens and plutocratic one-token-one-vote mechanics.",
+   "abstract": "At the core of the UDLC DAO's internal governance lies a reputation-based staking system that eliminates the corruptive influence of fungible tokens and plutocratic one-token-one-vote mechanics.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-010",
+   "identifier": "kaal:claim:5887242-010",
+   "text": "In the UDLC DAO, REP holders stake non-fungible reputation on predicted outcomes in Validation Pools; correct predictions mint fractional REP and integrate the new vertex with its weighted citation edges into the canonical Codex, while incorrect predictions trigger partial slashing and redistribution.",
+   "abstract": "REP token holders stake their non-fungible reputation on predicted outcomes in Validation Pools. Correct predictions mint fractional REP and integrate the new vertex and its weighted citation edges into the canonical Codex. Incorrect predictions result in partial slashing and redistribution.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-017",
+   "identifier": "kaal:claim:5887242-017",
+   "text": "Staking influence is proportional to a participant's current reputation score, and because REP can be neither bought nor transferred and is earned only through prior successful validations, the system creates a meritocratic barrier to entry.",
+   "abstract": "participant's stake is proportional to their current reputation score. Unlike fungible token systems, reputation cannot be bought or transferred. REP is earned exclusively through prior successful validations, creating a meritocratic barrier to entry.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-020",
+   "identifier": "kaal:claim:5887242-020",
+   "text": "Tight coupling creates an exponential penalty for contrarian positions, since a participant staking ten percent of reputation against consensus risks total loss of that stake while correct majority stakers receive newly minted fractional REP proportional to their contribution.",
+   "abstract": "This creates an exponential penalty for contrarian positions: a participant staking 10% of their reputation against consensus risks total loss of that stake, while correct majority stakers receive newly minted fractional REP proportional to their contribution to the winning side.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-029",
+   "identifier": "kaal:claim:6192998-029",
+   "text": "Validators who align with the stake weighted consensus ranking gain reputation and those who deviate lose it, which carries the winner takes losers' stakes property of the original framework over to ranked voting.",
+   "abstract": "Validators who align with consensus gain reputation. Those who deviate lose it. Thus, preserving the winner-takes-losers'-stakes property from the original framework (Calcaterra, Kaal, and Andrei 2018, 7) while extending it to ranked voting.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validator agreement measured by normalized Kendall tau distance from consensus"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "Reputation staking is a governance and consensus primitive in which a participant places a quantity of non-transferable, non-purchasable reputation, earned only through prior validated contribution in a specific domain, at risk on the outcome of a specific decision, where that quantity both weights the participant's influence over the decision and is subject to forfeiture if the decision resolves against the participant's position.",
+ "disambiguatingDescription": "Placing earned, non-transferable reputation at risk on a decision, where the amount staked both weights influence and can be lost.",
+ "alternateName": [
+  "reputation-staking",
+  "rnft-staking",
+  "reputation-based staking",
+  "reputation token staking",
+  "staked reputation",
+  "reputation at stake",
+  "proof-of-reputation",
+  "staked-voting",
+  "weighted-staking",
+  "fifty-fifty-staking"
+ ],
+ "adjudication": {
+  "adjudicated_on": "2026-07-29",
+  "adjudicated_by": "Wulf A. Kaal",
+  "definition": "Reputation staking is a governance and consensus primitive in which a participant places a quantity of non-transferable, non-purchasable reputation, earned only through prior validated contribution in a specific domain, at risk on the outcome of a specific decision, where that quantity both weights the participant's influence over the decision and is subject to forfeiture if the decision resolves against the participant's position.",
+  "necessary_conditions": [
+   {
+    "id": "non-fungibility",
+    "label": "Non-fungibility of the staked asset",
+    "condition": "The staked asset is non-fungible and non-purchasable. Reputation cannot be bought, sold, or transferred; it is built organically through merit and time in a specific subject matter.",
+    "rests_on": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3125822-008",
+      "identifier": "kaal:claim:3125822-008",
+      "text": "A newcomer cannot buy reputation with money because the 50/50 staking of newly minted tokens leaves incumbent experts with complete power to decide whether the newcomer's contribution was positive; a losing applicant forfeits all reputation in the expertise.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3125827-005",
+      "identifier": "kaal:claim:3125827-005",
+      "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-021",
+      "identifier": "kaal:claim:3266953-021",
+      "text": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3981021-029",
+      "identifier": "kaal:claim:3981021-029",
+      "text": "Reputation staking avoids the corruptive effects of fungible token staking because non fungible reputation has to be built organically through merit and time, needs to be earned, and cannot be bought.",
+      "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-017",
+      "identifier": "kaal:claim:5887242-017",
+      "text": "Staking influence is proportional to a participant's current reputation score, and because REP can be neither bought nor transferred and is earned only through prior successful validations, the system creates a meritocratic barrier to entry.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     }
+    ]
+   },
+   {
+    "id": "proportional-influence",
+    "label": "Proportional influence",
+    "condition": "The quantity staked determines the weight of the participant's influence on the decision.",
+    "rests_on": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3128900-025",
+      "identifier": "kaal:claim:3128900-025",
+      "text": "Verifiers stake proportionally smaller amounts of reputation tokens than workers, because their higher reputation scores make them less likely to be malicious actors.",
+      "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-022",
+      "identifier": "kaal:claim:3266953-022",
+      "text": "Block producers are selected pseudo randomly with weight proportional to their Anchor token holdings, so a participant with more reputation is more likely to be selected to produce a block.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-017",
+      "identifier": "kaal:claim:5887242-017",
+      "text": "Staking influence is proportional to a participant's current reputation score, and because REP can be neither bought nor transferred and is earned only through prior successful validations, the system creates a meritocratic barrier to entry.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     }
+    ]
+   },
+   {
+    "id": "downside-at-risk",
+    "label": "Downside at risk",
+    "condition": "The stake can be lost. Voting without something at risk does not produce honest evaluation of contributions.",
+    "rests_on": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3125827-006",
+      "identifier": "kaal:claim:3125827-006",
+      "text": "Staking tokens with the potential for slashing is necessary to avoid the tragedy of the commons in a validation pool. Voting without something at risk does not produce honest evaluation of contributions.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-019",
+      "identifier": "kaal:claim:3266953-019",
+      "text": "Under the Anchor Protocol, staking means anchoring reputation to a block, so a block producer whose block turns out to be invalid or is cancelled out suffers depreciation of their reputation.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-019",
+      "identifier": "kaal:claim:3949098-019",
+      "text": "Reputation non fungible token staking removes counterparty risk because the desire to preserve and increase reputation scores dominates DAOIC decision making, making bad actors less likely to appear since their reputation would inevitably suffer.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4755632-030",
+      "identifier": "kaal:claim:4755632-030",
+      "text": "Mandatory crowd review and policing votes make code reviewers less likely to submit highly idiosyncratic reviews, because idiosyncratic reviewers face slashing of their reputation token scores and loss of standing in the community.",
+      "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+      "datePublished": "2024"
+     }
+    ]
+   }
+  ],
+  "through_line": "The four registers are the same primitive applied to four different objects of adjudication: a block, a governance proposal, a deal, and a knowledge artifact. They differ in what is being decided, not in the mechanism deciding it. Any statement in one register that appears to conflict with another should be read as a difference in the object, not a revision of the definition.",
+  "not_this": [
+   "Fungible token staking, including delegated and liquid staking, where the staked asset can be bought on an open exchange.",
+   "Collateralization or encumbrance of transferable assets against a promise.",
+   "Reputation scores that weight influence but cannot be lost, which fail the downside-at-risk condition.",
+   "Off-chain or platform-controlled reputation that the participant did not earn through validated contribution."
+  ],
+  "site_of_application": {
+   "note": "The canonical venue in which reputation is staked is the validation pool: a pooled, time-bounded adjudication of one object, whose outcome mints new reputation to the correct side and slashes the incorrect side.",
+   "rests_on": [
+    {
+     "@id": "https://wulfkaal.github.io/claims/3125822-005",
+     "identifier": "kaal:claim:3125822-005",
+     "text": "When a fee bearing evidence of work post enters the platform, half the newly minted sem tokens are staked in the poster's name as an upvote bet and the other half are staked against the post and left unassigned, so the poster's only direct reward for off-platform work is a contested stake.",
+     "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+     "datePublished": "2018"
+    },
+    {
+     "@id": "https://wulfkaal.github.io/claims/4957318-031",
+     "identifier": "kaal:claim:4957318-031",
+     "text": "Validation pools are the consensus mechanism of the proposed system: author stakes are pooled to evaluate specific forum posts, and the outcome can mint new reputation tokens that record the community's consensus on a contribution.",
+     "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+     "datePublished": "2024"
+    },
+    {
+     "@id": "https://wulfkaal.github.io/claims/5245185-036",
+     "identifier": "kaal:claim:5245185-036",
+     "text": "Validation Pools are stipulated as mechanisms in which members stake non transferable reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities, and this staking mechanism carries the paper's decentralized quality control function.",
+     "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+     "datePublished": "2025"
+    },
+    {
+     "@id": "https://wulfkaal.github.io/claims/5887242-010",
+     "identifier": "kaal:claim:5887242-010",
+     "text": "In the UDLC DAO, REP holders stake non-fungible reputation on predicted outcomes in Validation Pools; correct predictions mint fractional REP and integrate the new vertex with its weighted citation edges into the canonical Codex, while incorrect predictions trigger partial slashing and redistribution.",
+     "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+     "datePublished": "2025"
+    }
+   ]
+  },
+  "first_appearance": {
+   "claim_id": "3125822-005",
+   "work": "Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and Anonymous Systems",
+   "authors": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei",
+   "year": "2018",
+   "ssrn": "https://ssrn.com/abstract=3125822",
+   "pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "mechanism_as_first_stated": "Half the newly minted sem tokens are staked in the poster's name as a bet that the work is accurate; the other half are staked against the post and left unassigned. The poster's only direct reward for off-platform work is a contested stake.",
+   "basis": "Two independent grounds. (1) Deposit order: four works in this corpus state the mechanism in 2018, and SSRN abstract identifiers are assigned sequentially on deposit, so 3125822 precedes 3125827, 3128900, and 3266953. (2) Internal citation: the corpus itself, in Kaal (2026), names 'Calcaterra, Kaal, and Andrei 2018' as the original framework whose winner-takes-losers'-stakes property later work extends.",
+   "corroborating_claim": "6192998-029",
+   "claim_url": "https://wulfkaal.github.io/claims/3125822-005"
+  },
+  "term_first_used": {
+   "claim_id": "3128900-017",
+   "work": "Decentralized Mechanical Turk Through Verified Reputation",
+   "authors": "Wulf A. Kaal",
+   "year": "2018",
+   "ssrn": "https://ssrn.com/abstract=3128900",
+   "note": "First verbatim use of the compound term 'reputation staking' in the corpus: 'the Semada Protocol provides a micro task worker reputation staking mechanism.' The mechanism (3125822-005) precedes the name.",
+   "claim_url": "https://wulfkaal.github.io/claims/3128900-017"
+  },
+  "first_named_as_consensus_rule": {
+   "claim_id": "3266953-018",
+   "name_given": "Semada Proof of Reputation (PoR)",
+   "year": "2018",
+   "note": "First point at which staking reputation rather than fungible currency is elevated from a platform mechanism to a named consensus algorithm.",
+   "claim_url": "https://wulfkaal.github.io/claims/3266953-018"
+  },
+  "first_stated_as_necessity": {
+   "claim_id": "3125827-006",
+   "year": "2018",
+   "note": "First statement that staking with the potential for slashing is necessary, not merely useful: without something at risk, community voting degenerates into a tragedy of the commons.",
+   "claim_url": "https://wulfkaal.github.io/claims/3125827-006"
+  },
+  "registers": [
+   {
+    "key": "consensus",
+    "label": "Consensus register",
+    "span": "2018-2025",
+    "thesis": "Reputation replaces fungible currency as the staked asset in block production. Because the stake is non-fungible, short-horizon arbitrage and stake-grinding attacks that are profitable under fungible proof of stake stop paying.",
+    "claims": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3125827-005",
+      "identifier": "kaal:claim:3125827-005",
+      "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3125827-006",
+      "identifier": "kaal:claim:3125827-006",
+      "text": "Staking tokens with the potential for slashing is necessary to avoid the tragedy of the commons in a validation pool. Voting without something at risk does not produce honest evaluation of contributions.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-018",
+      "identifier": "kaal:claim:3266953-018",
+      "text": "Semada replaces fungible currency staking with reputation staking for block propagation, a consensus algorithm the authors call Semada Proof of Reputation.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-019",
+      "identifier": "kaal:claim:3266953-019",
+      "text": "Under the Anchor Protocol, staking means anchoring reputation to a block, so a block producer whose block turns out to be invalid or is cancelled out suffers depreciation of their reputation.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-021",
+      "identifier": "kaal:claim:3266953-021",
+      "text": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3266953-022",
+      "identifier": "kaal:claim:3266953-022",
+      "text": "Block producers are selected pseudo randomly with weight proportional to their Anchor token holdings, so a participant with more reputation is more likely to be selected to produce a block.",
+      "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+      "datePublished": "2018"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5225296-014",
+      "identifier": "kaal:claim:5225296-014",
+      "text": "Stake-grinding, where validators manipulate randomness to favor their own selection, is countered in SPoS by reputation staking combined with community oversight.",
+      "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+      "datePublished": "2025"
+     }
+    ]
+   },
+   {
+    "key": "governance",
+    "label": "Corporate and DAO governance register",
+    "span": "2019-2025",
+    "thesis": "Reputation staking is a takeover-resistance property. Because governance weight is a non-fungible asset grown through subject-matter expertise, it cannot be accumulated on an open exchange, which removes the corruptive element of one-token-one-vote.",
+    "claims": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3441904-041",
+      "identifier": "kaal:claim:3441904-041",
+      "text": "Reputation based staking removes the corruptive elements of fungible tokens from voting because third parties are less likely to be able to take over a non fungible asset that is organically grown and maintained through actual expertise in the DAO subject matter.",
+      "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+      "datePublished": "2019"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3652481-031",
+      "identifier": "kaal:claim:3652481-031",
+      "text": "Reputation based staking removes the corruptive elements of fungible tokens because a third party is less likely to be able to take over a non fungible asset such as reputation that was organically grown and maintained through actual expertise in the DAO's subject matter.",
+      "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+      "datePublished": "2020"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3652481-036",
+      "identifier": "kaal:claim:3652481-036",
+      "text": "Paying DevDAO salaries in fungible stable tokens in proportion to members' non fungible reputation scores makes the economic benefit indirect, which removes corruptive elements and makes the governance design more attack resistant and stable over the long run.",
+      "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+      "datePublished": "2020"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3799320-024",
+      "identifier": "kaal:claim:3799320-024",
+      "text": "The DAO of DAOs uses a duality of internal and external governance: internal governance runs on reputation token staking, while external legal relationships are handled by a legal wrapper that represents the DAO of DAOs in real world legal contexts.",
+      "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3799320-028",
+      "identifier": "kaal:claim:3799320-028",
+      "text": "Reputation based staking removes the corruptive elements of fungible tokens because third parties are less likely able to take over a non fungible asset such as reputation that is organically grown and maintained through actual expertise in the relevant subject matter.",
+      "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3799320-029",
+      "identifier": "kaal:claim:3799320-029",
+      "text": "Reputation voting has two advantages over one token one vote: it is non fungible, which avoids corruptive elements, and it aligns incentives for members individually and for the institution as a whole at the same time.",
+      "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3981021-026",
+      "identifier": "kaal:claim:3981021-026",
+      "text": "Every CHARITYxDAO decision runs through a two vote model: a loosely coupled sentiment vote with no reputation at stake, followed by a tightly coupled final vote with reputation at stake.",
+      "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3981021-028",
+      "identifier": "kaal:claim:3981021-028",
+      "text": "Reputation staking overcomes the polarizing effects and suboptimal vote outcomes produced by one token one vote voting mechanisms.",
+      "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3981021-029",
+      "identifier": "kaal:claim:3981021-029",
+      "text": "Reputation staking avoids the corruptive effects of fungible token staking because non fungible reputation has to be built organically through merit and time, needs to be earned, and cannot be bought.",
+      "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3981021-030",
+      "identifier": "kaal:claim:3981021-030",
+      "text": "Reputation staking serves the common good because the more the aggregated individual reputation of all voting associates increases, the more the overall value of the DAO increases and the more the DAO creates value enhancing outcomes for sponsors and the associate community at large.",
+      "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4067783-018",
+      "identifier": "kaal:claim:4067783-018",
+      "text": "DAO governance should use a two vote model that distinguishes a loosely coupled vote, where no reputation is at stake, from a tightly coupled vote, where the voter's reputation is at stake.",
+      "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+      "datePublished": "2022"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4529715-037",
+      "identifier": "kaal:claim:4529715-037",
+      "text": "A DAO built on reputation rather than a fungible token, as CRDAO is, makes the 51 percent attack nearly impossible and renders sock puppet attacks technically possible but of little influence.",
+      "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+      "datePublished": "2023"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4529715-038",
+      "identifier": "kaal:claim:4529715-038",
+      "text": "Kleros has weak attack resistance because juror selection is proportional to staked fungible tokens; staking reputation rather than tokens to select jurors would remedy this.",
+      "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+      "datePublished": "2023"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-009",
+      "identifier": "kaal:claim:5887242-009",
+      "text": "A reputation-based staking system sits at the core of the UDLC DAO's internal governance precisely because it eliminates the corruptive influence of fungible tokens and plutocratic one-token-one-vote mechanics.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     }
+    ]
+   },
+   {
+    "key": "capital-substitution",
+    "label": "Capital-substitution register",
+    "span": "2021",
+    "thesis": "Reputation staking substitutes for capital commitment. A member stakes reputation on a deal without committing funds, which removes counterparty risk, eliminates ex post capital calls, and converts a capital constraint into a merit constraint.",
+    "claims": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-003",
+      "identifier": "kaal:claim:3949098-003",
+      "text": "Locking a user's reputation tokens instead of fungible assets would be a leap in efficiency and a powerful economic advantage over traditional finance, but this advantage is conditional on a coherent system that securely tracks the value of a reputation token.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-005",
+      "identifier": "kaal:claim:3949098-005",
+      "text": "In the proposed DAO investment club, members substitute reputation non fungible token staking for capital commitments on incoming deals, the public market supplies the funding for approved deals, and members are compensated through 20 percent of the public return on purchases minted into a fungible reputation token.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-010",
+      "identifier": "kaal:claim:3949098-010",
+      "text": "Replacing capital with reputation gives DAOIC members a permanent option and a right of first refusal on deals, because a member can stake reputation non fungible tokens on a deal without joining the purchase commitment.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-012",
+      "identifier": "kaal:claim:3949098-012",
+      "text": "Because reputation staking carries no ex post capital commitment, the removal of capital makes capital calls and other liquidity limiting measures less relevant for DAOIC members.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-019",
+      "identifier": "kaal:claim:3949098-019",
+      "text": "Reputation non fungible token staking removes counterparty risk because the desire to preserve and increase reputation scores dominates DAOIC decision making, making bad actors less likely to appear since their reputation would inevitably suffer.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-023",
+      "identifier": "kaal:claim:3949098-023",
+      "text": "Best efforts underwriting in the DAOIC is implemented as a smart contract accountability system: a member's capital commitment is encumbered as a deposit and released to the token opportunity only after the reputation staking pool decides, and funding occurs only on a majority upvote.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3949098-024",
+      "identifier": "kaal:claim:3949098-024",
+      "text": "In a firm commitment reputation staking engagement the DAOIC commits no capital at all except for the portion of the token opportunity that does not sell out to the public.",
+      "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3962614-023",
+      "identifier": "kaal:claim:3962614-023",
+      "text": "A VC's proportional holdings of reputation tokens are likely to increase over time if the VC follows sound and successful practices by staking reputation tokens on investment proposals and succeeding in the selection of portfolio companies.",
+      "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3962614-025",
+      "identifier": "kaal:claim:3962614-025",
+      "text": "Only reputation token holders are allowed to participate in the portfolio selection process, which materializes through reputation staking on investment proposals.",
+      "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+      "datePublished": "2021"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/3962614-040",
+      "identifier": "kaal:claim:3962614-040",
+      "text": "Over time the members of a DAO investment club do not need capital any longer, because the public market funds the deals and members get paid through the twenty percent public return on purchase that is minted into fungible reputation tokens.",
+      "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+      "datePublished": "2021"
+     }
+    ]
+   },
+   {
+    "key": "quality-control",
+    "label": "Quality-control and AI-oversight register",
+    "span": "2024-2026",
+    "thesis": "Reputation staking is the decentralized quality-control function. Validation pools adjudicate a knowledge artifact, a code review, a training dataset, or a legal norm; correct stakers mint reputation, incorrect stakers are slashed, and the resulting record is the artifact's warrant.",
+    "claims": [
+     {
+      "@id": "https://wulfkaal.github.io/claims/4685567-020",
+      "identifier": "kaal:claim:4685567-020",
+      "text": "The two stage vote is the mechanism that produces consensus: a non binding test vote reveals how every donor assesses a project, after which donors can change their minds in the formal vote where their reputation tokens are at stake, and in practice decisions are made with unanimity.",
+      "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4734750-029",
+      "identifier": "kaal:claim:4734750-029",
+      "text": "The community audit should proceed in two stages: an informal vote that reveals collective wisdom to all members, followed by a formal vote in which staked reputation tokens are at risk, and this sequence gives job posters significant quality assurances.",
+      "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4734750-040",
+      "identifier": "kaal:claim:4734750-040",
+      "text": "Reputation token staking substitutes for identity verification: because staking makes the network attack resistant, workers can complete micro tasks without verifying identity, which removes the cost, delay, and privacy surrender of centralized approval and enlarges the available labor pool.",
+      "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4755632-030",
+      "identifier": "kaal:claim:4755632-030",
+      "text": "Mandatory crowd review and policing votes make code reviewers less likely to submit highly idiosyncratic reviews, because idiosyncratic reviewers face slashing of their reputation token scores and loss of standing in the community.",
+      "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4755632-034",
+      "identifier": "kaal:claim:4755632-034",
+      "text": "A sequenced two-stage vote, an informal community vote that reveals collective wisdom followed by a formal vote in which staked reputation tokens are at risk, gives job posters significant assurance that the reviewed code and the platform report meet the highest available quality standards.",
+      "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4855607-001",
+      "identifier": "kaal:claim:4855607-001",
+      "text": "Web3 community governance built on Weighted Directed Acyclic Graphs, validation pools with reputation staking, and a federated communications protocol provides an evolutionary approach to optimizing AI models rather than a static compliance layer over them.",
+      "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4855607-026",
+      "identifier": "kaal:claim:4855607-026",
+      "text": "Requiring community members to stake reputation tokens in order to validate data quality is what produces robust and reliable training datasets, and this participatory validation improves annotation accuracy while reducing bias.",
+      "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/4957318-031",
+      "identifier": "kaal:claim:4957318-031",
+      "text": "Validation pools are the consensus mechanism of the proposed system: author stakes are pooled to evaluate specific forum posts, and the outcome can mint new reputation tokens that record the community's consensus on a contribution.",
+      "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+      "datePublished": "2024"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5245185-036",
+      "identifier": "kaal:claim:5245185-036",
+      "text": "Validation Pools are stipulated as mechanisms in which members stake non transferable reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities, and this staking mechanism carries the paper's decentralized quality control function.",
+      "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+      "datePublished": "2025"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-010",
+      "identifier": "kaal:claim:5887242-010",
+      "text": "In the UDLC DAO, REP holders stake non-fungible reputation on predicted outcomes in Validation Pools; correct predictions mint fractional REP and integrate the new vertex with its weighted citation edges into the canonical Codex, while incorrect predictions trigger partial slashing and redistribution.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-017",
+      "identifier": "kaal:claim:5887242-017",
+      "text": "Staking influence is proportional to a participant's current reputation score, and because REP can be neither bought nor transferred and is earned only through prior successful validations, the system creates a meritocratic barrier to entry.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/5887242-020",
+      "identifier": "kaal:claim:5887242-020",
+      "text": "Tight coupling creates an exponential penalty for contrarian positions, since a participant staking ten percent of reputation against consensus risks total loss of that stake while correct majority stakers receive newly minted fractional REP proportional to their contribution.",
+      "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+      "datePublished": "2025"
+     },
+     {
+      "@id": "https://wulfkaal.github.io/claims/6192998-029",
+      "identifier": "kaal:claim:6192998-029",
+      "text": "Validators who align with the stake weighted consensus ranking gain reputation and those who deviate lose it, which carries the winner takes losers' stakes property of the original framework over to ranked voting.",
+      "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+      "datePublished": "2026"
+     }
+    ]
+   }
+  ],
+  "boundary_cases": [
+   {
+    "label": "Hybrid Secure Proof of Stake is a partial instance, not a counterexample",
+    "claim": "https://wulfkaal.github.io/claims/3931933-003",
+    "note": "Under HSPoS, selection probability is driven by the fungible stake and only the reward is scaled by a non-fungible reputation multiplier. The selection step therefore fails the non-fungibility condition. HSPoS is a transition architecture, not a revision of the definition: 5225296-001 states the reason, that an abrupt move from fungible stake to reputation stake would destabilize networks whose validator participation already depends on stake-based incentives.",
+    "related": [
+     "https://wulfkaal.github.io/claims/3931933-024",
+     "https://wulfkaal.github.io/claims/3931933-028",
+     "https://wulfkaal.github.io/claims/3931933-035",
+     "https://wulfkaal.github.io/claims/5225296-001"
+    ]
+   },
+   {
+    "label": "Mixed capital-and-reputation staking is identified as a failure mode",
+    "claim": "https://wulfkaal.github.io/claims/3962614-030",
+    "note": "The corpus treats the duality of fungible capital plus minted reputation as suppressing the benefits that non-fungible reputation staking produces on its own. 3962614-036 nonetheless proposes mandated capital commitments alongside staking as a transitional mitigation. Both are scope-limited to early-phase VC DAO models.",
+    "related": [
+     "https://wulfkaal.github.io/claims/3962614-036"
+    ]
+   },
+   {
+    "label": "Not every vote should be a stake",
+    "claim": "https://wulfkaal.github.io/claims/3782210-037",
+    "note": "Contentious opinion-registering should not run through strict validation pools; reputation should not be staked merely to record an opinion. This is the basis of the two-vote model: a loosely coupled vote with no reputation at stake, followed by a tightly coupled vote with reputation at stake.",
+    "related": [
+     "https://wulfkaal.github.io/claims/3981021-026",
+     "https://wulfkaal.github.io/claims/4067783-018",
+     "https://wulfkaal.github.io/claims/4685567-020"
+    ]
+   },
+   {
+    "label": "Encumbrance of fungible tokens is a distinct primitive",
+    "claim": "https://wulfkaal.github.io/claims/3396542-009",
+    "note": "Decentralized underwriting encumbers fungible tokens against a policy. This is collateralization, not reputation staking, because the encumbered asset is transferable and purchasable. Listed here to mark the boundary, not as an instance.",
+    "related": []
+   }
+  ]
+ },
+ "relatedLink": [
+  "https://wulfkaal.github.io/entities/validation-pool",
+  "https://wulfkaal.github.io/entities/reputation-tokens",
+  "https://wulfkaal.github.io/entities/slashing",
+  "https://wulfkaal.github.io/entities/non-fungibility",
+  "https://wulfkaal.github.io/entities/proof-of-stake",
+  "https://wulfkaal.github.io/entities/secure-proof-of-stake",
+  "https://wulfkaal.github.io/entities/reputation-minting",
+  "https://wulfkaal.github.io/entities/tight-coupling"
+ ]
+}

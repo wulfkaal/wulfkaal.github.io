@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/lending",
+ "identifier": "kaal:entity:lending",
+ "name": "Lending",
+ "termCode": "lending",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/lending.md",
+ "sha256": "3776dfcf1a308f6120bf1a07b093fade30d21b1ad4c088effdbab2507902e653",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2020",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-024",
+   "identifier": "kaal:claim:3606663-024",
+   "text": "DeFi platforms grant the unbanked access to the loan market by disintermediating existing banks, connecting borrowers and lenders directly in peer to peer networks and accepting digital assets as collateral with far less documentation than banks require.",
+   "abstract": "DeFi platforms grant the unbanked access to the loan market by disintermediating existing banks. DeFi Dapps connect borrowers and lenders in peer-to-peer networks directly.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "borrowers excluded from centralized banking for lack of documentation",
+    "DeFi lending protocols"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782205-033",
+   "identifier": "kaal:claim:3782205-033",
+   "text": "Every type of economic action becomes more efficient when decisions are hedged, because hedging lets participants confidently change investments and keeps the market liquid, and lending and insurance therefore require someone to underwrite the risk.",
+   "abstract": "Every type of economic action is made more efficient when decisions are hedged, so we can confidently change our investments, keeping the market liquid. Lending and insurance are essential catalysts for business, that require someone to underwrite the risk.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Eight Institutions for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782205",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "5ba52c63e81019b6867fb29c4a50821ff574e510d79b31b8ce9f4c726a0ebc71",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-012",
+   "identifier": "kaal:claim:3782216-012",
+   "text": "Member default on premia is a major inefficiency in chit funds, with estimates that a large share of subscribers have defaulted at least once recently and a substantial share have defaulted after winning an auction.",
+   "abstract": "It's been estimated that Td% of chit fund sub- scribers have defaulted at least once recently and 9e% have defaulted after winning an auction.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "chit fund participants, per the cited study"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'lending'. Derived node: a roster, not an adjudicated definition."
+}

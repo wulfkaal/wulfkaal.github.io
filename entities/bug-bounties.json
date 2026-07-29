@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bug-bounties",
+ "identifier": "kaal:entity:bug-bounties",
+ "name": "Bug bounties",
+ "termCode": "bug-bounties",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bug-bounties.md",
+ "sha256": "0bb6d961fc81424b99d239a17abb7075d0b671f74d018a23559bb1a45f5eec45",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-004",
+   "identifier": "kaal:claim:4734750-004",
+   "text": "Bug bounty programs fail at their own premise because the hackers they pay to demonstrate exploitability frequently sell or exploit the bugs they find instead of disclosing them.",
+   "abstract": "Alas, hackers often sell the bug or exploit them when they discover them.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "community audit and bug bounty programs for smart contracts"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-005",
+   "identifier": "kaal:claim:4734750-005",
+   "text": "Bug bounty programs are structurally compromised by their reliance on a trusted intermediary that extracts high commission fees and may hold interests that conflict with the software vendor.",
+   "abstract": "they use a trusted intermediary that charges hefty commission fees and may have a conflict of interest with the software vendor",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "intermediated bug bounty platforms"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'bug-bounties'. Derived node: a roster, not an adjudicated definition."
+}

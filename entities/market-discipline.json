@@ -1,0 +1,151 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/market-discipline",
+ "identifier": "kaal:entity:market-discipline",
+ "name": "Market discipline",
+ "termCode": "market-discipline",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/market-discipline.md",
+ "sha256": "3f60f49b78826a41982828354efd659fcff4b25e7fa273cf6a7c070569e387e3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-025",
+   "identifier": "kaal:claim:2714974-025",
+   "text": "There are no legal limits on hedge fund leverage; the only constraint comes from market discipline supplied by creditors and counterparties through interest rates, credit availability, credit limits, initial margin, and credit spreads.",
+   "abstract": "Any limits on a hedge fund's use of leverage come from the market discipline provided by creditors and counterparties.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contrasts with registered investment companies, which face direct statutory limits"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-028",
+   "identifier": "kaal:claim:2714974-028",
+   "text": "Direct regulation of hedge fund leverage increases moral hazard costs, because lenders and counterparties relax their own vigilance once they rely on government rules to constrain fund risk taking.",
+   "abstract": "Direct regulation could also increase moral hazard costs as lenders and counterparties may relax their vigilance in reliance on the government rules.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies where government rules substitute for private monitoring"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-031",
+   "identifier": "kaal:claim:2714974-031",
+   "text": "Banks are uniquely positioned to discipline hedge fund behavior because their role as lenders, market makers, and product creators lets them use the threat of cutting off future lending as leverage over a fund.",
+   "abstract": "Because of their interaction with hedge funds, banks are uniquely positioned to use the threat of cutting off future lending to improve a hedge fund's behavior.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on banks' ongoing lending and counterparty relationships with the fund"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-026",
+   "identifier": "kaal:claim:2998097-026",
+   "text": "The mere threat that hedge funds' Form PF systemic risk filings could become public, or be shared between the SEC and the federal bankruptcy bench, could impose some discipline on distressed debt investors' conduct in the bankruptcy process.",
+   "abstract": "The mere threat of public access or sharing of hedge funds' systemic risk data filings in Form PF filings between the SEC and the federal bankruptcy bench could help facilitate some level of discipline for distressed debt investors' engagements in the bankruptcy process.",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "distressed debt investing by hedge funds",
+    "overlap between Title IV disclosures and Revised Bankruptcy Rule 2019"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-034",
+   "identifier": "kaal:claim:3405660-034",
+   "text": "Market discipline, internal ratings and supervisory review under the Basel Framework change bank lending practice and disclosure, which in turn lowers hedge fund leverage and mitigates moral hazard of the kind seen at LTCM.",
+   "abstract": "Moral hazard problems are addressed because the Basel Framework guarantees, by introducing market discipline, internal ratings and supervisory review, a change in lending practice and disclosure. This, in turn, will further decrease the capital – leverage ratio of hedge funds.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-037",
+   "identifier": "kaal:claim:4734750-037",
+   "text": "Two sided reputation scores discipline both sides of the micro task market: workers become less likely to accept offers from low reputation requesters, and low reputation workers are less likely to be retained.",
+   "abstract": "If requesters have a lower reputation score, workers become less likely to accept requesters",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'market-discipline'. Derived node: a roster, not an adjudicated definition."
+}

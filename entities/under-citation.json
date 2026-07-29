@@ -1,0 +1,217 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/under-citation",
+ "identifier": "kaal:entity:under-citation",
+ "name": "Under citation",
+ "termCode": "under-citation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/under-citation.md",
+ "sha256": "e733e08adf0d0999e48df888522cd8f9fa291ab4b11165732aebfa422776f247",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 10
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-001",
+   "identifier": "kaal:claim:6269518-001",
+   "text": "Under existing citation-weighted reputation formulations, rational agents face a direct financial disincentive to cite prior contributions, because PageRank-derived value allocation transfers economic reward from the citing agent to the cited agent.",
+   "abstract": "Under existing formulations, rational agents face a direct financial disincentive to cite prior contributions, as citation-weighted value allocation through PageRank-derived mechanisms transfers economic reward from the citing agent to the cited agent.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "citation-weighted value allocation through PageRank-derived mechanisms",
+    "agents are rational and self interested"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-003",
+   "identifier": "kaal:claim:6269518-003",
+   "text": "Citation-weighted payment mechanisms as currently formulated will systematically erode the quality of knowledge attribution in any decentralized reputation system if the incentive misalignment is left unaddressed.",
+   "abstract": "This paper demonstrates, however, that citation-weighted payment mechanisms as currently formulated contain a fundamental incentive misalignment that, if left unaddressed, will systematically erode the quality of knowledge attribution in any decentralized reputation system.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the incentive misalignment remains unaddressed"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-004",
+   "identifier": "kaal:claim:6269518-004",
+   "text": "The under-citation incentive is a structural flaw in the mechanism design, not a parameter calibration issue that could be corrected by retuning existing settings.",
+   "abstract": "First, it formalizes the under-citation incentive problem and demonstrates that it constitutes a structural flaw rather than a mere parameter calibration issue (§II).",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-007",
+   "identifier": "kaal:claim:6269518-007",
+   "text": "Under the standard citation-weighted payment formulation the dominant strategy for a self-interested agent is to cite no one and maximize self-attribution, which is the precise negation of honest knowledge attribution.",
+   "abstract": "The rational strategy for any self-interested agent is therefore transparent: set cx = 0 for all j ≠ i (cite no one) to maximize personal payment. Under the standard formulation, the dominant strategy is maximal self-citation, which is the precise negation of honest knowledge attribution.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "standard PageRank-derived payment formulation",
+    "self-interested agents",
+    "no verification or penalty layer"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-011",
+   "identifier": "kaal:claim:6269518-011",
+   "text": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit leaching parameter of one, since every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent, which is a maximally punitive setting.",
+   "abstract": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit q4 = 1: every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent. This is a maximally punitive leaching parameter,",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multi-agent citation-weighted payment settings"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-014",
+   "identifier": "kaal:claim:6269518-014",
+   "text": "The existing citation-weighted framework provides no mechanism for verifying citation accuracy, no separate incentive for honest attribution, and no penalty for strategic under-citation, so the gap is a structural absence in the mechanism design rather than an oversight in presentation.",
+   "abstract": "This gap is not merely an oversight in presentation. It reflects a structural absence in the mechanism design. The existing framework provides no mechanism for verifying citation accuracy, no separate incentive for honest attribution, and no penalty for strategic under-citation.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-015",
+   "identifier": "kaal:claim:6269518-015",
+   "text": "A PageRank-derived value distribution is only as honest as its inputs, and those inputs are generated by agents with a direct incentive to distort them, so relying entirely on the calculation to distribute value correctly fails.",
+   "abstract": "The framework relies entirely on the PageRank calculation to \"correctly\" distribute value, but the PageRank calculation is only as honest as its inputs. And the inputs are generated by agents with a direct incentive to distort them.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-035",
+   "identifier": "kaal:claim:6269518-035",
+   "text": "A system that permits strategic under-citation effectively transfers value from genuine contributors to free-riders and thereby violates the equity norm of DAO governance.",
+   "abstract": "A system that permits strategic under-citation effectively transfers value from genuine contributors to free-riders, violating the equity norm.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance operating under an equity distributive norm"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-036",
+   "identifier": "kaal:claim:6269518-036",
+   "text": "The power norm creates a tension in citation governance because actors with more authority or status may be able to under-cite without detection, since their established reputation shields them from scrutiny.",
+   "abstract": "The power norm presents a potential tension: actors with more authority or status may have greater ability to under-cite without detection, since their established reputation may shield them from scrutiny.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation disparities among agents"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-037",
+   "identifier": "kaal:claim:6269518-037",
+   "text": "Strategic under-citation is a form of commons degradation in which each individual act of under-citation slightly erodes the informational value of the reputation system for all users.",
+   "abstract": "Strategic under-citation is a form of commons degradation: each act of under-citation slightly erodes the informational value of the reputation system for all users.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "10 claims in the published works of Wulf A. Kaal carry the concept tag 'under-citation'. Derived node: a roster, not an adjudicated definition."
+}

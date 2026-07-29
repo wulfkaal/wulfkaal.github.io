@@ -1,0 +1,467 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/proof-of-stake",
+ "identifier": "kaal:entity:proof-of-stake",
+ "name": "Proof of stake",
+ "termCode": "proof-of-stake",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/proof-of-stake.md",
+ "sha256": "154dd154d13b95448afb6a664c0ce416d81092a2819ec67b546f5e9562cd9621",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 24
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2992962-007",
+   "identifier": "kaal:claim:2992962-007",
+   "text": "Proof of work mining carries significant externalities: the authors estimate that the total energy cost of running the global network of computers solving proof of work puzzles was around 700 million US dollars per year before publication.",
+   "abstract": "One problem with proof-of-work mining is that there are significant externalities. Before the publication of this article, the total energy costs for running the global network of computers devoted to solving the proof-of-work puzzles was estimated at around $700 million USD per year.",
+   "citation": "Wulf A. Kaal, Craig Calcaterra, Crypto Transaction Dispute Resolution (2017). SSRN: https://ssrn.com/abstract=2992962",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proof of work consensus, before publication of the article in 2017"
+   ],
+   "source_pdf_sha256": "80b92e67594394e38af41b769327936833de8e25d6cf3def966a6ba13bc83d17",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-013",
+   "identifier": "kaal:claim:3125822-013",
+   "text": "The tragedy of the commons arises in any system lacking a well designed incentive structure; in blockchain proof of stake design this is the nothing at stake problem, where unregulated systems lead pseudonymous users to abuse the system.",
+   "abstract": "Similarly, the tragedy of the commons occurs in any system which does not have well designed incentive structure. This is called the \"nothing at stake\" problem in blockchain proof of stake design, where unregulated systems lead pseudonymous users to abuse the system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "systems without well designed incentive structures",
+    "pseudonymous participation"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-033",
+   "identifier": "kaal:claim:3125822-033",
+   "text": "In the proof of stake application, a block is accepted by the network only if it carries proof of success in a betting pool, and that stamp constitutes the entire cryptographic security of the chain at far lower energy cost than proof of work mining.",
+   "abstract": "Blocks will only be accepted by the network if they have proof of success in a betting pool. This stamp is the entire cryptographic security, which costs far less energy to achieve than proof-of- work token mining.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the proof of stake use case built on the platform"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-034",
+   "identifier": "kaal:claim:3125822-034",
+   "text": "A proof of stake lottery on this architecture is vulnerable because the seed of the pseudorandom generator that names the next block author is partly controlled by the current block author, which lets an attacker capture all block creation by routing authorship to their own Sybil accounts; the proposed remedy is to derive the seed from a hash of the previous block's validation information.",
+   "abstract": "The seed for the generator that determines the next block author is partially controlled by the current block author, which opens the possibility of gaming the system by controlling all block creation by sending authorship to your own Sybil accounts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to the proof of stake block author lottery"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-035",
+   "identifier": "kaal:claim:3125822-035",
+   "text": "The author contests Houy's claim that killing a proof of stake currency costs nothing: on this platform the token's value is calculably predictable rather than merely a function of public opinion, and signaling an intention to buy tokens usually raises the price rather than triggering a race to the bottom.",
+   "abstract": "However, in the current example, the value of the token is not merely tied to public opinion. The value of the token is calculably predictable. And when someone signals their intention to buy tokens—for whatever reason—the price usually goes up, not down.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies where token value is computable from observable fee flows"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-001",
+   "identifier": "kaal:claim:3125827-001",
+   "text": "No single, fixed, entirely algorithmic policing solution can completely prevent independent nodes in a distributed system from gaming block production to advantage some parties over others. Any consensus protocol that relies on a permanently fixed rule set will therefore be gamed as conditions change.",
+   "abstract": "In fact it is obvious there can be no single, fixed, entirely algorithmic policing solution which completely prevents independent nodes in a distributed system from gaming the system by producing blocks with transactions that advantage some parties over others1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "distributed systems with independent, self interested nodes",
+    "protocols that are fixed rather than continually revisable"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-002",
+   "identifier": "kaal:claim:3125827-002",
+   "text": "A successful proof of stake protocol must be flexible enough to continually police new attack strategies, because changing market forces and network performance keep creating new opportunities to profit at the expense of the majority.",
+   "abstract": "Therefore a successful PoS protocol must be flexible enough to continually police new attack strategies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "changing market and network conditions",
+    "adversaries who adapt their strategies over time"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-003",
+   "identifier": "kaal:claim:3125827-003",
+   "text": "A secure proof of stake protocol requires an incentive structure that perpetually motivates users to do three things at once: produce valuable blocks, police blocks that violate protocol, and improve the production protocols in response to gaming. Incentivizing only block production is insufficient.",
+   "abstract": "A secure PoS protocol requires a proper incentive structure which perpetually motivates users to produce valuable blocks, to police the production of blocks which violate protocols, and to improve block production protocols in response to gaming.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized systems without a central enforcement authority"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-005",
+   "identifier": "kaal:claim:3125827-005",
+   "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+   "abstract": "In particular, the stakes (sem tokens) are naturally far less fungible than cryptocurrency stakes, so long-term probity is incentivized, eliminating many short- term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stakes denominated in non fungible reputation tokens rather than currency"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-009",
+   "identifier": "kaal:claim:3125827-009",
+   "text": "Even though proof of stake mitigates the economy of scale advantage, block production cartels can still arise in PoS systems through lotteries, through built in voting delegations, or because the stakes required to be a block producer can simply be bought.",
+   "abstract": "However, block production cartels may still arise due to lotteries, or the fact that voting delegations are built into the system, or the fact that the stakes needed to be a block producer may be bought",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS systems that use lotteries, delegation, or purchasable stakes"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-014",
+   "identifier": "kaal:claim:3125827-014",
+   "text": "Because almost all other blockchains distribute perfectly fungible currency tokens through initial sales or mining, there is a clear, computable answer to how much it would cost to corrupt or destroy a chain running a proof of stake protocol on cryptocurrency stakes.",
+   "abstract": "Either way, these tokens are almost always perfectly fungible currencies, so there is a clear answer to how much it would cost to corrupt or destroy blockchain running a PoS protocol based on cryptocurrency stakes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS chains whose stakes are perfectly fungible currency tokens"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-015",
+   "identifier": "kaal:claim:3125827-015",
+   "text": "The long range attack is a fundamental problem every proof of stake protocol must address: because no energetic outlay is required to build blocks, a malicious producer can fabricate a long chain forked from an earlier valid block, and a newly joining node lacking proof of work hashes cannot objectively tell which chain is genuine.",
+   "abstract": "The long-range attack is a fundamental problem PoS protocols must address, where a malicious producer may create a long list of blocks forked from an earlier valid block, because there is no PoW energetic outlay required to prevent this16.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new nodes joining without a trusted checkpoint",
+    "PoS chains with no energy cost to block creation"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-040",
+   "identifier": "kaal:claim:3125827-040",
+   "text": "A malicious party using Sybil accounts cannot be prevented from cloning the structure of a successful proof of stake blockchain at far lower cost than cloning a proof of work chain, leaving a new user unable to distinguish the truly decentralized chain from a clone that has manufactured even more tokens. The authors answer that this is resolved off chain, by a trusted user interface, as with cloned web pages.",
+   "abstract": "Then, when a new user joins the network, how will they be able to distinguish a truly decentralized blockchain from a cloned blockchain that has manufactured an even larger number of tokens?",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new users joining without prior knowledge of the genuine chain",
+    "PoS chains where clone creation costs only new public keys"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227967-036",
+   "identifier": "kaal:claim:3227967-036",
+   "text": "The real design challenge for consensus protocols is to find a proof of stake protocol that offers both trust and security without unintentionally creating just another centralized validation system.",
+   "abstract": "The students understood that the real challenge is to find a \"proof of stake\" protocol that offers both trust and security (without unintentionally creating just another centralized validation system).",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Legal Education in a Digital Age Why 'Coding for Lawyers' Matters (2018). SSRN: https://ssrn.com/abstract=3227967",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain consensus protocol design"
+   ],
+   "source_pdf_sha256": "f6e13b956f864ab32ec3305d095a35a127770327d75b3688f785cefc437d369f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-039",
+   "identifier": "kaal:claim:3249860-039",
+   "text": "Attempts to increase throughput and scale in consensus protocols concentrate on proof of stake, and the data are consistent with anecdotal evidence that proof of stake may be the most dominant attempt at scaling.",
+   "abstract": "Attempts to increase throughput and scale for consensus protocols often focus on proof of stake attempts. The data is consistent with anecdotal evidence that suggests that proof of stake may be the most dominant attempt at scaling.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "top 100 tokens by market capitalization"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-020",
+   "identifier": "kaal:claim:3266953-020",
+   "text": "The fungibility of the staked currency is the main point of attack against proof of stake and leads inevitably to centralization.",
+   "abstract": "The fungibility of currency is the main point of attacks on PoS and leads inevitably to centralization.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proof of stake consensus using fungible currency"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-032",
+   "identifier": "kaal:claim:3782198-032",
+   "text": "Proof of stake carries an unresolved failure mode: if anyone devises a clever algorithm for hijacking the block producer selection process, the network would fail.",
+   "abstract": "The problem is that if someone comes up with a clever algorithm for hijacking the process, then the network would fail.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to proof of stake designs that select block producers pseudorandomly"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-033",
+   "identifier": "kaal:claim:3782198-033",
+   "text": "Blockchain transactions will always be expensive whether or not proof of stake is solved, because full participation requires downloading the entire transaction history to verify validity, an extreme redundancy that cannot be removed.",
+   "abstract": "If you want to fully participate in the network, you need to download a copy of the entire history of every transaction of every bitcoin in existence. This extreme re- dundancy and inefficiency means transactions will always be expensive.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchains that require full history verification"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-026",
+   "identifier": "kaal:claim:3782203-026",
+   "text": "Marketing a consensus algorithm as correct by construction is false advertising, because such proofs establish resistance only to the attacks the theorists considered reasonable at the time, not to all possible attacks.",
+   "abstract": "In the first place, this is simply false advertising. Most people don't understand that CBC doesn't mean it's mathematically proven to be perfectly resistant to all attacks; it's only resistant to the attacks the theorists consider reasonable at the time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "correct by construction proof of stake designs",
+    "adversaries able to invent new attacks"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-028",
+   "identifier": "kaal:claim:3782203-028",
+   "text": "Since no algorithm can be perfectly secure in all circumstances, protocol developers should redirect effort from proving algorithms correct to building a governance process that updates the algorithm as network circumstances change, rewarding protocol improvement with meaningful reputation instead of leaving attack as the profitable option.",
+   "abstract": "Given the impossibility of creating an algorithm that will be perfectly secure in all circumstances, we should instead focus on developing a governance process that al- lows us to update our algorithm to adapt to the changing network circumstances to the security level required",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "proof of stake and other consensus protocols",
+    "networks facing evolving adversaries"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-036",
+   "identifier": "kaal:claim:3782210-036",
+   "text": "A meaningful reputational system with the potential for retrospective review would let a network rely on fewer nodes, since randomly selected nodes staking their reputation can do the polling work and be reviewed and punished later, which is one reason proof of stake is more efficient than proof of work.",
+   "abstract": "But if we had a meaningful reputa- tional system with the potential for review, we could rely on fewer nodes. This mech- anism is one reason proof of stake is more efficient than proof of work.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "consensus is near unanimous nearly all the time",
+    "Byzantine behavior is detectable on later review"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-001",
+   "identifier": "kaal:claim:3931933-001",
+   "text": "In conventional Proof of Stake, selection probability for block rewards rises with stake and block rewards are constant regardless of node reputation, whereas in Secure Proof of Stake nodes with higher reputation have a higher probability of being selected for rewards.",
+   "abstract": "In conventional PoS, the nodes with higher stake would have a higher probability of being selected for the block rewards. Block rewards are constant regardless of the node reputation. In SPoS, the nodes with higher reputation have a higher probability of being selected for the rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of conventional PoS and SPoS reward selection"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-014",
+   "identifier": "kaal:claim:4796714-014",
+   "text": "Proof of Stake consensus centralizes control in proportion to the quantity of tokens held, so governance built on such chains is skewed in favor of the wealthy rather than distributed.",
+   "abstract": "Similarly, Proof of Stake (PoS) consensus mechanisms, as implemented in Ethereum and other blockchains, centralize control based on the quantity of tokens held, potentially skewing governance in favor of the wealthy.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Proof of Stake chains such as Ethereum",
+    "concerns token weighted governance power"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-013",
+   "identifier": "kaal:claim:5225296-013",
+   "text": "Long-range attacks, in which adversaries rewrite history using old keys, are mitigated in SPoS by requiring verifiable participation of current stakeholders.",
+   "abstract": "Long-range attacks, where adversaries rewrite history using old keys, are mitigated by requiring verifiable participation of current stakeholders, a defense articulated in PoS security literature",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "24 claims in the published works of Wulf A. Kaal carry the concept tag 'proof-of-stake'. Derived node: a roster, not an adjudicated definition."
+}

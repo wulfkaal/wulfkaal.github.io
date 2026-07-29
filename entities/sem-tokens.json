@@ -1,0 +1,282 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sem-tokens",
+ "identifier": "kaal:entity:sem-tokens",
+ "name": "Sem tokens",
+ "termCode": "sem-tokens",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sem-tokens.md",
+ "sha256": "042565211a780b06bc6406866339d7db0a89784608a951053d8756cba534d44c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 13
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-005",
+   "identifier": "kaal:claim:3125827-005",
+   "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+   "abstract": "In particular, the stakes (sem tokens) are naturally far less fungible than cryptocurrency stakes, so long-term probity is incentivized, eliminating many short- term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stakes denominated in non fungible reputation tokens rather than currency"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-007",
+   "identifier": "kaal:claim:3125827-007",
+   "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+   "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-016",
+   "identifier": "kaal:claim:3125827-016",
+   "text": "SPoS prevents the long range attack without token locking, because a false chain cannot be manufactured with more total validation than the real chain: votes are transactions moving validators' sem tokens under their public keys, so upvotes cannot be forged from existing tokens.",
+   "abstract": "SPoS naturally prevents this attack without such locking, since a false chain cannot be manufactured with more total validation than the real chain.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "votes recorded as sem token transactions signed by validator public keys"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-022",
+   "identifier": "kaal:claim:3125827-022",
+   "text": "Experts who fail to participate in the validation pool are punished stably rather than abruptly: because the system is inflationary and they gain none of the newly minted sem tokens, their holdings become a smaller percentage of the total and earn a smaller share of future reputation weighted salaries.",
+   "abstract": "will be stably punished because the system is inflationary: if they don't participate they will not gain any portion of the newly minted sem tokens, so their own unused sem token holdings will represent a smaller percentage of the total",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new sem tokens minted with every fee",
+    "salary distributed in proportion to token holdings"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-023",
+   "identifier": "kaal:claim:3125827-023",
+   "text": "The reference system lets each validated new post change the relative value of sem tokens created in the graph of connected earlier posts, so the value of a past contribution depends on how important later users judge it to be. This gives the forum the structure of a weighted directed acyclic citation graph.",
+   "abstract": "Each new post has the opportunity to reference older posts. If the new post is validated, the reference will change the relative value of sem tokens created in the graph of connected posts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new post is itself validated",
+    "references weighted according to the goals of the particular DAO"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-034",
+   "identifier": "kaal:claim:3125827-034",
+   "text": "Finality in SPoS is measurable because forking away from a given block would cost the community all sem tokens created on the chain after it, and that quantity equals half of all fees sent since the block was produced.",
+   "abstract": "the sem that members gain from policing block production is equal to half of all fees sent since the production of the block. In order to fork a chain from that particular block, the community will lose all sem tokens created subsequently",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sem minted in proportion to fees on every validated block"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-035",
+   "identifier": "kaal:claim:3125827-035",
+   "text": "Because each sem token carries a different value depending on the post that minted it and on its position in the reference graph, the total value is difficult to determine, which makes it almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "abstract": "their value is difficult to determine since each token has a different value depending on the post in which it was minted. So it is almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token value derived from position in the forum WDAG",
+    "most tokens constantly in use and continually created"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-036",
+   "identifier": "kaal:claim:3125827-036",
+   "text": "An attacker who buys sem tokens directly from the platform by sending fees must spend at least twice, and more likely six times, the entire historical value of the platform, so the griefing factor is a minimum of 2 with an average of 6.",
+   "abstract": "attacker would lose a significant amount of money to achieve their goal, at least twice the entire historical value of the platform--more likely the factor would be 6 times the total value (see Appendix A.1 for a proof). So the griefing factor is a minimum of 2 with an average of 6,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker buys in by paying fees rather than on an exchange",
+    "good faith experts continue investing alongside the attacker"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-037",
+   "identifier": "kaal:claim:3125827-037",
+   "text": "Under the worst case model with no admission safeguards and no other users paying fees, a malicious group must invest at minimum twice the total sem tokens of the system to reach 50% voting power in the validation pool, because half of every fee it pays mints tokens for the existing good faith experts.",
+   "abstract": "Consequently the malicious group would need to invest an absolute minimum of 2g8 , that is, double the total sem tokens of the system to gain 50% power in the system in order to outvote the rest of the good-faith experts in the validation pool.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no safeguards on joining as an expert",
+    "no other users adding fees",
+    "continuous micro payment strategy, which is the attacker's optimum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-038",
+   "identifier": "kaal:claim:3125827-038",
+   "text": "The sem token economy is inflationary at equilibrium, and the authors argue this is a feature: inflation improves security and discourages rent seeking by penalizing holders who do not use their tokens to evaluate posts.",
+   "abstract": "The conclusion is that the economy is inflationary at equilibrium, which improves its security and discourages rent-seeking.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fees paid in at a constant or linearly growing rate",
+    "new tokens minted with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-039",
+   "identifier": "kaal:claim:3125827-039",
+   "text": "Because earlier sem tokens represent a larger percentage of the total and therefore pay out more, later experts have less motivation to join when fees are at a steady state; the authors propose that the bench may need to change the fee to token exchange rate to recruit new members.",
+   "abstract": "This may mean later experts have less motivation to join if fees paid into the system are at a steady state. To combat this, the bench may choose to change the exchange rate between fees and sem tokens to encourage new recruits.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "steady state rate of fees paid into the expertise",
+    "tokens created with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-006",
+   "identifier": "kaal:claim:5225296-006",
+   "text": "SPoS shifts the burden of consensus from energy expenditure to validator reputation, measured against a baseline of over 140 terawatt-hours consumed annually by Bitcoin as of 2023.",
+   "abstract": "140 terawatt-hours annually for Bitcoin alone as of 2023—SPoS shifts the burden of consensus to validator reputation",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison against PoW chains such as Bitcoin"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-031",
+   "identifier": "kaal:claim:5225296-031",
+   "text": "Weighted voting defeats Sybil attacks because ECDSA signatures and zk-SNARKs authenticate every platform action, so reputation cannot be artificially inflated by identities that lack genuine contribution.",
+   "abstract": "This approach utilizes cryptographic verification—via ECDSA signatures and zk-SNARKs—to authenticate actions, ensuring that reputation cannot be artificially inflated by Sybil identities lacking genuine effort",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that all platform actions be cryptographically authenticated and reputation be recorded on chain"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "13 claims in the published works of Wulf A. Kaal carry the concept tag 'sem-tokens'. Derived node: a roster, not an adjudicated definition."
+}

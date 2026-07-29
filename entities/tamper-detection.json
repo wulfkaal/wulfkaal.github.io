@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/tamper-detection",
+ "identifier": "kaal:entity:tamper-detection",
+ "name": "Tamper detection",
+ "termCode": "tamper-detection",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/tamper-detection.md",
+ "sha256": "6c2e17714f74a27116081b355a134144d101199db82ca96827b8112a421c1cd4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-020",
+   "identifier": "kaal:claim:2959730-020",
+   "text": "Cryptographic hashing makes blockchain manipulation immediately detectable because the hash incorporates all previous transactions, so that even a single digit change produces a different hash value.",
+   "abstract": "The smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained hashing that incorporates all prior transactions"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3071378-005",
+   "identifier": "kaal:claim:3071378-005",
+   "text": "Because each new block's hash value is generated from all previous transactions, the smallest change to the blockchain produces a different hash value, which makes any form of manipulation immediately detectable.",
+   "abstract": "smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.37",
+   "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained cryptographic hashing of prior transactions"
+   ],
+   "source_pdf_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-015",
+   "identifier": "kaal:claim:3227933-015",
+   "text": "Cryptographic hashing makes tampering detectable because even a minuscule change to the blockchain produces a different hash value, which other participants can observe instantly.",
+   "abstract": "The result of this combination of technologies is that even a minuscule change to the blockchain will result in a different hash value, making manipulation instantly and readily detectable by other participants.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'tamper-detection'. Derived node: a roster, not an adjudicated definition."
+}

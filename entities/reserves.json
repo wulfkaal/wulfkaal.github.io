@@ -1,0 +1,239 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reserves",
+ "identifier": "kaal:entity:reserves",
+ "name": "Reserves",
+ "termCode": "reserves",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reserves.md",
+ "sha256": "93967d4c460616f49fae21017c045d5bfa166525938b72fa442764a277730fb1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 11
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-039",
+   "identifier": "kaal:claim:3067615-039",
+   "text": "ICO disclosures should be as clear as possible: promoters should avoid an unclear or uncertain use of proceeds pie chart and should be very clear on plans for converting cryptocurrency into actual company reserves.",
+   "abstract": "Moreover, the ICO disclosures have to be as clear as possible and should avoid an unclear or uncertain use of proceeds pie chart and should be very clear on cryptocurrency conversion plans into actual company reserves.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "ICO issuers seeking to meet emerging good practice standards"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-017",
+   "identifier": "kaal:claim:3402701-017",
+   "text": "Reserves, not bonds, are the necessary mechanism for currency instability caused by hot money, that is money frequently moved between institutions or currencies to maximize gain.",
+   "abstract": "Reserves are necessary to address the instability of a currency due to hot money",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "instability driven by hot money flows"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-018",
+   "identifier": "kaal:claim:3402701-018",
+   "text": "Because most of the value of contemporary cryptocurrencies comes from speculation on future uses that do not yet exist, the vast majority of cryptocurrency is technically hot money, and reserves are the best defense against the resulting price fluctuations.",
+   "abstract": "Therefore the vast majority of cryptocurrencies are technically hot money. The best way to prevent price fluctuations due to hot money is to use reserves",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contemporary cryptocurrency markets dominated by speculation"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-019",
+   "identifier": "kaal:claim:3402701-019",
+   "text": "Selling currency into a reserve when price is above the peg and buying it back with the reserve when price is below the peg yields an arbitrage profit, so a reserve can fund its own defense of the peg.",
+   "abstract": "In the next paragraph we demonstrate the obvious result that selling the currency when the price is high to build a reserve, then buying the currency back with the reserve when the price is low will yield an arbitrage profit",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the reserve currency is more stable than the base currency",
+    "the cost to implement and maintain the reserve is ignored"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-020",
+   "identifier": "kaal:claim:3402701-020",
+   "text": "The reserve argument depends on two requirements, and failing either one grounds a criticism of an existing protocol: the stable-value requirement criticizes MakerDAO and the maintenance-cost requirement criticizes the Reserve protocol.",
+   "abstract": "The first requirement leads to a criticism of the MakerDAO protocol (e.g.), the second requirement leads to a criticism of the Reserve protocol (e.g",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reserve held in a volatile asset",
+    "reserve maintenance cost exceeds arbitrage profit"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-023",
+   "identifier": "kaal:claim:3402701-023",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficient defense of its stability, because the reserve requirement follows from that ratio rather than from a blanket full-backing rule.",
+   "abstract": "Therefore determining the fraction of a currency that is hot money is necessary for efficient defense of its stability",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-024",
+   "identifier": "kaal:claim:3402701-024",
+   "text": "Misestimating the hot money ratio fails in both directions: overestimation makes the currency more costly to use, and underestimation leaves it insecure, so efficiency and security are in direct tension.",
+   "abstract": "A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-030",
+   "identifier": "kaal:claim:3402701-030",
+   "text": "For any long-lived currency, a major shift in perceived value is eventually inevitable, and such a shift is not covered by reserves defending against hot money or by bonds defending against temporary economic instability.",
+   "abstract": "For any long-lived currency a major shift in the perception of the value of a currency is at some point inevitable; a shift that is not accounted for by a reserve defending against hot money fluctuations or bonds defending against temporary instability in the larger economy",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "long-lived currencies",
+    "black swan events"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-035",
+   "identifier": "kaal:claim:3402701-035",
+   "text": "Transparency is not an unqualified good for monetary policy: a currency only partially backed by reserves can be arbitraged by a Soros-style shorting strategy much more easily when the quantity of reserves is public.",
+   "abstract": "For instance, a currency partially backed by reserves can be successfully arbitraged by Soros' shorting strategy much easier if the quantity of reserves is known",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "partial reserve backing",
+    "reserve quantities publicly known"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-029",
+   "identifier": "kaal:claim:3782216-029",
+   "text": "Maintaining a full reserve is too expensive to be efficient, because every unit of reserve value backing the currency must be held liquid or arbitrage attacks become possible, and liquidity forgoes investment returns.",
+   "abstract": "The maintenance of a c::% reserve is too expensive to be efficient, and signals the need for more sophisticated mechanisms. All of the value in the reserve which backs the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat collateralized and algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-031",
+   "identifier": "kaal:claim:3782216-031",
+   "text": "Contrary to the industry practice of full backing, a full reserve is not always necessary, because a currency also has intrinsic worth derived from the authentic economic activity it represents.",
+   "abstract": "On the contrary, we argue that a c::% reserve is not always necessary, as is the case with any currency which has an intrinsic worth.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "currencies with intrinsic worth from authentic transactions"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "11 claims in the published works of Wulf A. Kaal carry the concept tag 'reserves'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,119 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/llm-training-data",
+ "identifier": "kaal:entity:llm-training-data",
+ "name": "Llm training data",
+ "termCode": "llm-training-data",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/llm-training-data.md",
+ "sha256": "56e30f7dab1e9167a843f52f8c742f87359c0a91b426efabce0b1981f5bc0c78",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-001",
+   "identifier": "kaal:claim:5095633-001",
+   "text": "The accessible reserves of publicly available human-created text usable for training large language models could be exhausted by 2028 at current usage trajectories.",
+   "abstract": "the accessible reserves of publicly available human-created text could be exhausted by 2028, given current usage trajectories.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "predictive",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "current growth trajectories in training set size continue",
+    "restricted to publicly available human-created text"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-002",
+   "identifier": "kaal:claim:5095633-002",
+   "text": "Data exhaustion is caused primarily by the exponential growth in the size of datasets needed to build increasingly sophisticated AI models, not by any sudden loss of existing text.",
+   "abstract": "The phenomenon—often referred to as \"data exhaustion\"—arises largely from the exponential increase in the size of datasets required to develop increasingly sophisticated AI models.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-003",
+   "identifier": "kaal:claim:5095633-003",
+   "text": "The total effective stock of human-generated text is estimated at roughly 300 trillion tokens, with a plausible range from 100 trillion to 1 quadrillion tokens.",
+   "abstract": "Researchers estimate that the total effective stock of human-generated text may currently stand at approximately 300 trillion tokens, with the range varying from 100 trillion to 1 quadrillion tokens.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "estimate of effective stock, not raw internet volume"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-004",
+   "identifier": "kaal:claim:5095633-004",
+   "text": "The apparent abundance of internet text overstates the usable supply, because much of it fails quality thresholds for model training due to redundancy, noise, or irrelevance.",
+   "abstract": "while the internet contains a vast corpus of textual material, not all content meets quality thresholds suitable for model training, given issues such as redundancy, noise, or irrelevance.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to internet-sourced text used for model training"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'llm-training-data'. Derived node: a roster, not an adjudicated definition."
+}

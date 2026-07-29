@@ -1,0 +1,141 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/treatment-effect",
+ "identifier": "kaal:entity:treatment-effect",
+ "name": "Treatment effect",
+ "termCode": "treatment-effect",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/treatment-effect.md",
+ "sha256": "82ad449dcccd4f816c4bf54d79af74eb8980ef35169500e942ff6e2548e22db1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2014"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-017",
+   "identifier": "kaal:claim:2150377-017",
+   "text": "A treatment and control design is unavailable for studying registration effects, because managers who did not have to register have no exposure to the treatment and therefore cannot generate informative responses about its effects.",
+   "abstract": "Interviewing the treatment group, hedge fund managers who had to register, and a control group, hedge fund managers who did not have to register, would not have yielded appropriate responses because the control group would have had no exposure to the effect of the treatment, registration.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "survey research on the effects of mandatory registration",
+    "where the treatment is exposure to the registration requirement itself"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-020",
+   "identifier": "kaal:claim:2389416-020",
+   "text": "Under the sharp regression discontinuity design, the estimated treatment coefficient exceeds one only in March 2012, at 1.104 with a p-value of 0.015, and is close to zero and insignificant in every other month.",
+   "abstract": "Only in March 2012, i.e. the registration effective date for hedge fund advisers, the estimated coefficient has value larger than one, while it is always close to zero in the other periods.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp RD on the entire sample of 2145 funds",
+    "optimal bandwidth selection",
+    "January to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-033",
+   "identifier": "kaal:claim:2389416-033",
+   "text": "Difference-in-differences analysis confirms the regression discontinuity results, showing a positive and highly significant treatment coefficient for funds above the $150 million AUM threshold.",
+   "abstract": "Our DiD analysis confirms the results of our RD design. Table 9 shows the dummy variable that identifies the treatment with a positive coefficient that is highly significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "4290 observations",
+    "treatment defined as AUM above $150 million after March 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-034",
+   "identifier": "kaal:claim:2389416-034",
+   "text": "The difference-in-differences interaction term identifying treated funds in 2012 is positive and statistically significant in March, April, and May 2012.",
+   "abstract": "Table 9 also shows that the dummy variable that identifies the treatment group univocally (year 2012 and AUM>150M) is positive and statistically significant in March, April and May 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post reform dummy interacted with the AUM above $150 million dummy"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-035",
+   "identifier": "kaal:claim:2389416-035",
+   "text": "The difference-in-differences treatment effect is unstable over time: it loses significance in June and July 2012, then becomes significant again in August and September 2012 with negative coefficients and in October 2012 with a positive coefficient.",
+   "abstract": "It loses significance in June and July, but it becomes significant again in August, September (with a negative coefficient) and October (with a positive coefficient).",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "monthly DiD regressions March to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'treatment-effect'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,171 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bankruptcy",
+ "identifier": "kaal:entity:bankruptcy",
+ "name": "Bankruptcy",
+ "termCode": "bankruptcy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bankruptcy.md",
+ "sha256": "195c9a5ad7ebd98a7f418417ed332d1967ce0e9fe835e8e1ddb18e4605d73fef",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2013",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-002",
+   "identifier": "kaal:claim:2348463-002",
+   "text": "Under the regulatory framework in place at the time of writing, the threat that hedge funds' systemic risk filings could be publicly disclosed through the bankruptcy process will affect hedge funds' tactics and their role in distressed investing only marginally.",
+   "abstract": "In the current regulatory framework, the threat of public disclosure of systemic risk filings by hedge funds via the bankruptcy process may only marginally affect hedge funds' tactics and their role in distressed investing.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current regulatory framework as of 2013 to 2014",
+    "Form PF disclosures not yet standardized by the SEC"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-034",
+   "identifier": "kaal:claim:2348463-034",
+   "text": "Systemic risk disclosures in the bankruptcy process would also not significantly change or limit hedge funds' influence in that process, nor would they protect against the misuse of confidential information.",
+   "abstract": "Systemic risk disclosures in the bankruptcy process also may not significantly change or limit the influence of hedge funds in the bankruptcy process or protect against misuse of confidential information.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Form PF disclosures in their current form"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-037",
+   "identifier": "kaal:claim:2348463-037",
+   "text": "Bankruptcy judges and the parties to a bankruptcy case may be unable to adequately evaluate Form PF data pertaining to a creditor, which limits the usefulness of that data in bankruptcy.",
+   "abstract": "Bankruptcy judges and/or the respective parties in a bankruptcy case may be unable to adequately evaluate Form PF data pertaining to a creditor in a bankruptcy case.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Form PF data as currently structured",
+    "SEC and FSOC themselves have not established how to evaluate the data"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3017612-027",
+   "identifier": "kaal:claim:3017612-027",
+   "text": "A buy-sell agreement survives bankruptcy more reliably when it is not merely executory: because bankruptcy trustees may void executory agreements, an agreement that obliges both the shareholders and the entity to buy and sell is more likely to be enforced.",
+   "abstract": "Under US Law, bankruptcy trustees may void any agreement that is \"executory,\" so to the extent a buy-sell agreement requires shareholders and the entity to buy and sell, it is more likely to survive bankruptcy.",
+   "citation": "Wulf A. Kaal, Shareholder Agreements - National Report of the United States of America (2017). SSRN: https://ssrn.com/abstract=3017612",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "shareholder becomes insolvent or enters bankruptcy"
+   ],
+   "source_pdf_sha256": "33821db406f92efbe1698fbaed37687595c13b7ce5463b4a879df679fd4af1ac",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-002",
+   "identifier": "kaal:claim:3067615-002",
+   "text": "Tokens sold in an ICO are structurally different from equity: they do not generally confer ownership rights, no right to dividends, and no claim on company assets in bankruptcy, so the risk and reward profile of a token is not that of a share.",
+   "abstract": "Risks and rewards of tokens differ from those of equity. Unlike token ownership, equity typically conveys a right to dividends. In the case of bankruptcy, equity owners have some claims on the assets of the company.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of ICOs to initial public offerings"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-028",
+   "identifier": "kaal:claim:3067615-028",
+   "text": "On bankruptcy or termination of the platform, token holders typically have no liquidity preference and no recourse at all once debt holders and outside creditors are satisfied, so unlike a venture capital seed investor with at least a simple liquidity preference, they typically lose everything they invested.",
+   "abstract": "Again, by contrast, token holders typically lose everything they invested as they have no liquidity preference at all.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "bankruptcy or termination of the promoter's business or platform"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3117224-012",
+   "identifier": "kaal:claim:3117224-012",
+   "text": "Token holders typically receive no liquidity preference protecting them if the platform they invested in goes bankrupt or terminates.",
+   "abstract": "Token holders typically do not receive a liquidity preference that would protect them in the case of bankruptcy or termination of the platform they invested in.",
+   "citation": "Wulf A. Kaal, Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses (2018). SSRN: https://ssrn.com/abstract=3117224",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "83e9ccb9219a217d9fcfc5c098b897229ee7cf85623bee3ae22d2e986548466b",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'bankruptcy'. Derived node: a roster, not an adjudicated definition."
+}

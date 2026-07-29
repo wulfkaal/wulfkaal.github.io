@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/doj-press-release",
+ "identifier": "kaal:entity:doj-press-release",
+ "name": "Doj press release",
+ "termCode": "doj-press-release",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/doj-press-release.md",
+ "sha256": "8940c39548b6ceac40a8c65cb80f0c8da2b121bdb0dbb9f9099e8809b947f4fb",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2015",
+    "2015"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-013",
+   "identifier": "kaal:claim:2629451-013",
+   "text": "The date of the DOJ press release announcing execution is the only reliable announcement date for an N/DPA, so it is the defensible event date for measuring market reaction.",
+   "abstract": "The only reliable N/DPA announcement date is the date of the DOJ press release pertaining to the execution of the respective NDPA - ANDPAE.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "press release generally issued on the day the agreement is signed for NPAs or filed with the court for DPAs"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-014",
+   "identifier": "kaal:claim:2629451-014",
+   "text": "The DOJ announcement is the only ascertainable point at which the market can assess the impact of the governance changes an N/DPA mandates, because the announcement typically accompanies release of the agreement document itself.",
+   "abstract": "Hence, the ANDPAE is the only ascertainable way for the market to assess the impact of the governance changes mandated in the NDPA.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "judicial approval may follow later without adding public information"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'doj-press-release'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,82 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hot-money-ratio",
+ "identifier": "kaal:entity:hot-money-ratio",
+ "name": "Hot money ratio",
+ "termCode": "hot-money-ratio",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hot-money-ratio.md",
+ "sha256": "2e0a7a8fc759a782283d54eda1e8904e6ce28096641a7e0dbd6ececa7947837a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-023",
+   "identifier": "kaal:claim:3402701-023",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficient defense of its stability, because the reserve requirement follows from that ratio rather than from a blanket full-backing rule.",
+   "abstract": "Therefore determining the fraction of a currency that is hot money is necessary for efficient defense of its stability",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-024",
+   "identifier": "kaal:claim:3402701-024",
+   "text": "Misestimating the hot money ratio fails in both directions: overestimation makes the currency more costly to use, and underestimation leaves it insecure, so efficiency and security are in direct tension.",
+   "abstract": "A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'hot-money-ratio'. Derived node: a roster, not an adjudicated definition."
+}

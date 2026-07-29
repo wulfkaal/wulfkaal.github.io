@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/smart-contract",
+ "identifier": "kaal:entity:smart-contract",
+ "name": "Smart contract",
+ "termCode": "smart-contract",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/smart-contract.md",
+ "sha256": "34a385bcceb5530fbaba78a494421d463bff6b850db113225e7f6d8f2daddf37",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-028",
+   "identifier": "kaal:claim:3125822-028",
+   "text": "For decentralized dispute resolution to deliver certainty of outcomes, the arbiter's power to disburse the assets of a contract, once triggered, must be preeminent over the parties.",
+   "abstract": "s power to disburse the assets of the contract between the other parties, once triggered, must be preeminent in order to ensure certainty of outcomes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to smart contracts with a break clause and a third party arbiter"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-010",
+   "identifier": "kaal:claim:4067783-010",
+   "text": "Insider knowledge of contract internals is itself an attack surface: at Snowdog DAO an insider who knew a challenge key embedded in the DAO contract backran the anticipated buyback and sold tokens ahead of it.",
+   "abstract": "For example, Snowdog DAO suffered an alleged rug-pull when an insider who knew a \"challenge key\" (a part of the DAOs contract), backran the anticipated buyback and began selling tokens.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Snowdog DAO on the Avalanche protocol",
+    "insider holding a contract challenge key"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'smart-contract'. Derived node: a roster, not an adjudicated definition."
+}

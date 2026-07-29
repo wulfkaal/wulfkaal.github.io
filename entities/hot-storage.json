@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hot-storage",
+ "identifier": "kaal:entity:hot-storage",
+ "name": "Hot storage",
+ "termCode": "hot-storage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hot-storage.md",
+ "sha256": "c2f35ba93219d265fe8fecd8a85d660a9bb6b6e9c42168153a63737456a58770",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-011",
+   "identifier": "kaal:claim:3936876-011",
+   "text": "Hot storage buys easy access and quick transferability of digital assets at the cost of exposure to cyber attacks and to the difficulty of keeping private keys safe.",
+   "abstract": "Hot storage ensures the easy access and quick transferability of digital assets but is also subject to possible asset security issues in the form of cyber attacks or issues with keeping private keys safe.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "wallets stored and accessible online"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-012",
+   "identifier": "kaal:claim:3936876-012",
+   "text": "Cryptocurrency exchanges store digital assets or private keys in internet connected hot storage because their main function is to provide liquidity rather than custody, unlike registered legacy stock exchanges which facilitate trading without taking custody.",
+   "abstract": "Because the main function of digital asset exchanges is to provide liquidity – not to provide custody - cryptocurrency exchanges typically store digital assets or private keys in hot storage, that is in wallets that are connected to the Internet.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "centralized cryptocurrency exchanges"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-036",
+   "identifier": "kaal:claim:3936876-036",
+   "text": "Multi-signature wallets and a combination of hot and cold storage solutions are the advisable custody design for digital assets.",
+   "abstract": "Multi-signature wallets and a combination of hot and cold storage solutions are advisable.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'hot-storage'. Derived node: a roster, not an adjudicated definition."
+}

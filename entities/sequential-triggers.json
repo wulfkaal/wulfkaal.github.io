@@ -1,0 +1,201 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sequential-triggers",
+ "identifier": "kaal:entity:sequential-triggers",
+ "name": "Sequential triggers",
+ "termCode": "sequential-triggers",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sequential-triggers.md",
+ "sha256": "2d19f22c5121cd1849178ba72f97541960b55159c1f433496c4d65e47f33c5f1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-005",
+   "identifier": "kaal:claim:1908473-005",
+   "text": "Because policymakers may adopt a suboptimal single trigger design, and because contingent capital has uses at several points in a firm's life cycle, contingent capital securities should be built with sequential triggers rather than one.",
+   "abstract": "Given the risk that policymakers could structure contingent capital rules with a suboptimal trigger design combined with the multiple benefits of using contingent capital in different phases of a company's life cycle, this Article suggests a sequential trigger design for CCS.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Assumes mandatory issuance of contingent capital securities"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-006",
+   "identifier": "kaal:claim:1908473-006",
+   "text": "The second trigger, which increases voting rights before resolution, should fire on evidence that conversion into equity was unsuccessful, that conversion came too early or too late, or that the firm's financial performance keeps trending downward.",
+   "abstract": "Increasing the voting rights pre-resolution could be triggered by evidence that the conversion into equity was not successful, that conversion was triggered too early or too late, or that there is an overall continuing downward trend in the financial performance of the company.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Applies after the first trigger has already converted debt into equity",
+    "Applies before authorities initiate resolution"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-007",
+   "identifier": "kaal:claim:1908473-007",
+   "text": "Beyond super-voting rights and dilution, the second trigger functions as a reorganization tool that operates independently of management decisions and of corrective action by regulators.",
+   "abstract": "Besides providing for super-voting rights and increasing dilution, the second trigger would also be a reorganization tool independent of management decisions or corrective action by regulators.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-024",
+   "identifier": "kaal:claim:1908473-024",
+   "text": "Departing from Coffee's design, super-voting rights should be allocated to contingent capital holders only if the first trigger failed to improve the institution's financial health; at the first trigger the new shareholder gets one vote per share.",
+   "abstract": "Although we agree with the need for increased voting rights, the proposal in this Article would allocate super-voting rights to CCS holders only if the first trigger did not result in an improvement of the financial institution's financial health.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Voting rights escalate only on a continuing downward trend after the first conversion"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-027",
+   "identifier": "kaal:claim:1908473-027",
+   "text": "Conversion at the first trigger under this proposal lacks the finality of Coffee's design, because it does not necessarily hand the institution to creditors unless the firm deteriorates further.",
+   "abstract": "The conversion following the first trigger does not have the same finality as that in Coffee's proposal; it does not necessarily mean that creditors will take over the institution, unless it further deteriorates.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-028",
+   "identifier": "kaal:claim:1908473-028",
+   "text": "The second trigger should be an objective, automatic, institution specific trigger, with improvement measured through a combination of debt to equity ratio improvement and credit default swap spread narrowing after conversion.",
+   "abstract": "the approach of this Article favors an objective automatic institution-specific second trigger for the voting rights increase. The improvement of the financial institution could be measured objectively through a combination of debt-equity ratio improvement and CDS spread narrowing after conversion.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The precise arithmetic must be institution specific"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-030",
+   "identifier": "kaal:claim:1908473-030",
+   "text": "The second trigger voting rights increase should never actually be triggered; its function is to level the playing field between constituents, incentivize negotiation, and provide an alternative to reorganization.",
+   "abstract": "The second trigger voting rights increase should never actually be triggered. Rather, it should help level the playing field between constituents and incentivize negotiation and provide an alternative to reorganization.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-040",
+   "identifier": "kaal:claim:1908473-040",
+   "text": "Strategic maneuvering by creditors before a bankruptcy filing or during plan negotiations could distort the incentive structure the sequential trigger proposal depends on.",
+   "abstract": "Strategic maneuvering of creditors prior to filing for bankruptcy protection or during the negotiations leading up to plan confirmation could distort the herein-proposed incentives for constituents.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Strategic behavior can arise equally at the conversion stage and at the voting rights increase"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-034",
+   "identifier": "kaal:claim:2061166-034",
+   "text": "A second, sequential trigger placed before reorganization or resolution cushions the risk that policy makers misstructure the first trigger, absorbing the negative effects of inadequate or untimely conversion at the moment the institution needs capital.",
+   "abstract": "Given the risk that policy makers may not structure the trigger appropriately, the negative effects of inadequate or untimely conversion of debt into equity at a time when the company requires a capital injection could be cushioned with a second trigger",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent capital with sequential triggers spanning going and gone concern",
+    "where the first trigger proves unsuccessful"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'sequential-triggers'. Derived node: a roster, not an adjudicated definition."
+}

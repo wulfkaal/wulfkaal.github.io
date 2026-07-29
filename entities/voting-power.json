@@ -1,0 +1,154 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/voting-power",
+ "identifier": "kaal:entity:voting-power",
+ "name": "Voting power",
+ "termCode": "voting-power",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/voting-power.md",
+ "sha256": "d77bedf5daac40b4ed0e40ef9ff0c761d04fc5c3e3fadc02d08d69afbccb7587",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-022",
+   "identifier": "kaal:claim:3441904-022",
+   "text": "Token concentration in existing decentralized protocols is extreme: on and around September 12, 2017, 4.11 percent of bitcoin addresses controlled 96.53 percent of the total bitcoin supply.",
+   "abstract": "For instance, on and around September 12, 2017, 4.11% of the bitcoin addresses controlled 96.53% of the total bitcoin supply.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bitcoin addresses as of September 2017"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-027",
+   "identifier": "kaal:claim:3799320-027",
+   "text": "Suboptimal voting outcomes in existing decentralized protocols trace to one token one vote mechanisms, which allocate more power to holders of a significant share of total token supply.",
+   "abstract": "Suboptimal voting outcomes in existing decentralized protocols were associated with the then-popular one-token-one-vote voting mechanisms. A one-token-one-vote design allocates more power to token holders who have a significant share of the total supply of a given token.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "one token one vote governance designs"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-005",
+   "identifier": "kaal:claim:4067783-005",
+   "text": "Governance by fungible tokens lets whales control a fundraiser DAO, which is antithetical to decentralized governance, and selling purchasable voting power via fungible tokens creates the risk of hostile takeover or looting.",
+   "abstract": "Governance through fungible tokens in fundraiser DAOs allows whales to control the DAO, which is antithetical to the idea of DAOs overall and decentralized governance of DAOs specifically. More specifically, selling purchasable voting power via fungible tokens risks hostile takeovers or looting.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance rights attached to fungible, purchasable tokens"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-011",
+   "identifier": "kaal:claim:4067783-011",
+   "text": "Insider rug pulls are not the only exploit path: a DAO can also be attacked from the outside whenever its governance grants voting power through fungible tokens.",
+   "abstract": "But these inside rug pulls are not the only exploitative mechanism within DAOs. DAOs can also be exploited from the outside if the DAO's governance allows fungible voting power.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance voting power is denominated in fungible tokens"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-040",
+   "identifier": "kaal:claim:4529715-040",
+   "text": "When only a minority of members, such as Audius node operators, can stake or earn weighted votes, the majority of token holders occupy the same powerless position as an ordinary shareholder in a corporation.",
+   "abstract": "The downside of their structure is that only a minority of users are able to use staking or weighted tokens for voting. Thus, a majority of token holders remain in the same position as any general shareholder of a corporation relative to their power.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "tiered voting where staking is restricted to node operators"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-026",
+   "identifier": "kaal:claim:4900878-026",
+   "text": "Tokens solve the quantification problem in quantum economics by serving as measurable units of value and governance: token denominated voting power in a DAO makes social influence and decision making power countable, supplying the consistent set of units the framework lacked.",
+   "abstract": "Tokenomics offers a practical solution through the use of tokens as quantifiable units of value and governance.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token based systems with on chain governance such as DAOs"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'voting-power'. Derived node: a roster, not an adjudicated definition."
+}

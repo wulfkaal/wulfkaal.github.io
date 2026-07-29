@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/competitor-matching",
+ "identifier": "kaal:entity:competitor-matching",
+ "name": "Competitor matching",
+ "termCode": "competitor-matching",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/competitor-matching.md",
+ "sha256": "96abc39972f485c772e71f1fdb86796dd78172219a26a5640f58b177162cc74b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2015",
+    "2015"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-017",
+   "identifier": "kaal:claim:2629451-017",
+   "text": "Around the DOJ announcement, N/DPA firms show a significant positive cumulative abnormal return trend before day minus five, a significant drop at day minus five, and negative CARs relative to matched competitors from day minus four to day minus one.",
+   "abstract": "the CARs for N/DPA firms show a significant positive trend before t=-5, followed by a significant drop at -5 before the event date t=0 ANDPAE and negative CARs in comparison with the competitors from t=-4 to t=-1.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "94 N/DPA firms matched to 94 direct competitors by market capitalization",
+    "window t=-25 to t=25 around ANDPAE"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-018",
+   "identifier": "kaal:claim:2629451-018",
+   "text": "After the DOJ announcement, competitor firms' cumulative abnormal returns trend negative from day zero to day twenty five while N/DPA firms' CARs continue on a neutral to positive trend.",
+   "abstract": "Figure 2a demonstrates that while the competitor CARs show a negative trend from t=0 to t=25, the neutral/positive trend in N/DPA firms' CARs continues from t=0 to t=25.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "matched competitor sample of 94 firms",
+    "post-announcement window t=0 to t=25"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'competitor-matching'. Derived node: a roster, not an adjudicated definition."
+}

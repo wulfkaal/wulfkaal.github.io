@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-trading",
+ "identifier": "kaal:entity:token-trading",
+ "name": "Token trading",
+ "termCode": "token-trading",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-trading.md",
+ "sha256": "1ad639adb272b03201ab31bb788029b4a92170da7a8efa59620066863a40d9bc",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-037",
+   "identifier": "kaal:claim:3067615-037",
+   "text": "ICO promoters should not allow tokens to be traded before the underlying protocol network or application is live, and should not use a landing page that focuses almost exclusively on the ICO while providing less content on the product, project, technology, and team.",
+   "abstract": "Such practices include allowing tokens to be traded before underlying protocol network or application is live, using a landing page that focuses almost exclusively on the ICO with project timeline etc. but provides less content on product, project, technology, and team.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "emerging bad ICO practices identified in 2017"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-004",
+   "identifier": "kaal:claim:4015908-004",
+   "text": "ICOs that allowed their token to trade before the underlying product existed, at least in beta, created significant risk for investors because the product might never go live and the token could lose its value entirely.",
+   "abstract": "ICOs that allowed their token to trade before the underlying product was built, at least in a beta version, create significant risk factors for the investors as the product may not go live at all and the token may lose its value entirely.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "token trading opens before a working or beta product exists"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'token-trading'. Derived node: a roster, not an adjudicated definition."
+}

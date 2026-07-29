@@ -1,0 +1,152 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/consensus-algorithms",
+ "identifier": "kaal:entity:consensus-algorithms",
+ "name": "Consensus algorithms",
+ "termCode": "consensus-algorithms",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/consensus-algorithms.md",
+ "sha256": "8654e9f378bf3a15d4fb8016c5a2653f5ba7f856c4c8765a8a2ca298cdad5d8d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405401-002",
+   "identifier": "kaal:claim:3405401-002",
+   "text": "Narrowly construed, a digital asset is instantiated through computer code and depends on consensus computer algorithms to trigger and validate any transaction in that asset; broadly construed, digital assets extend to items such as video game goods that have no validating consensus algorithm and no comparable security.",
+   "abstract": "Narrowly construed, digital assets are instantiated through computer code and depend on so-called \"consensus computer algorithms\" to trigger and validate a transaction in a given digital asset.",
+   "citation": "Wulf A. Kaal, Decentralized Commerce – A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "narrow versus broad construction of the term digital asset"
+   ],
+   "source_pdf_sha256": "bc2d6f0ddc0852fb4085c4543c7c1dec19aaf8745eb67e3acc637e552bd7fb7d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-027",
+   "identifier": "kaal:claim:3782203-027",
+   "text": "Finding a correct by construction algorithm that incorporates all possible or even all practical assumptions about network status is not possible, because for any set of assumptions about network behavior an actor can break those assumptions by valuing some other result.",
+   "abstract": "Finding a correct by construction algorithm that incorporates all possible, or even practical, assumptions of possible network statuses, is not possible. Given any set of assumptions about how the network will behave, you can always break those assump- tions by valuing some other result.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "consensus algorithms for open anonymous networks"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-029",
+   "identifier": "kaal:claim:3782203-029",
+   "text": "The authors hold that the Bitcoin proof of work algorithm is ultimately flawed, that every consensus algorithm is flawed, and that it is not possible to create an algorithm that is not flawed.",
+   "abstract": "However, we suspect that the Bitcoin PoW algorithm is ultimately flawed. In fact, we believe that every consensus algorithm is flawed. Further we are confident it is not possible to create an algorithm that is not flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real world networks with changing markets and anonymous actors"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-010",
+   "identifier": "kaal:claim:3782214-010",
+   "text": "Designing a single consensus algorithm is vastly easier than designing a consensus algorithm that can incorporate all future updates to itself, which explains why immature decentralized systems lack sophisticated governance mechanisms.",
+   "abstract": "Designing a single consensus algorithm is infinitely easier than designing a consensus algorithm that will incorporate all future updates to the consensus algorithm.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-009",
+   "identifier": "kaal:claim:3808873-009",
+   "text": "Early stage consensus designs such as PoW, PoS and DPoS create a community belief system in certain foundational technology features that in effect inhibits higher degrees of decentralization, so suboptimal early decentralization becomes self perpetuating.",
+   "abstract": "For example, PoW, PoS, and DPoS, among others, create a community believe system in certain foundational technology features that in effect inhibit higher degrees of decentralization in technology.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "early stage decentralized technologies such as PoW, PoS and DPoS"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-028",
+   "identifier": "kaal:claim:5095633-028",
+   "text": "Decentralized data annotation at scale is not operationally feasible without advances in consensus algorithms or layer-two scaling, because existing blockchain infrastructures cap transaction speed and network capacity.",
+   "abstract": "existing blockchain infrastructures typically grapple with limits on transaction speed and network capacity. Continuous innovation in consensus algorithms, such as Proof of Stake or layer-two scaling solutions, is thus critical.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real-time or near real-time annotation of large data volumes"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'consensus-algorithms'. Derived node: a roster, not an adjudicated definition."
+}

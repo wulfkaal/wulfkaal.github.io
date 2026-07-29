@@ -1,0 +1,525 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/assets-under-management",
+ "identifier": "kaal:entity:assets-under-management",
+ "name": "Assets under management",
+ "termCode": "assets-under-management",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/assets-under-management.md",
+ "sha256": "ce837e9ee1243370a63b11c3874e14c93b39174aecc8840b57c964da1f04d9a2",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 27
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 10
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-007",
+   "identifier": "kaal:claim:2150377-007",
+   "text": "Under the Private Fund Investment Advisers Registration Act, hedge funds with more than $150 million in assets under management must register as investment advisers and disclose information about their trades and portfolios to the SEC, making assets under management the operative trigger for the regime.",
+   "abstract": "Under the PFIARA, hedge funds with more than $150 million assets under management (AUM) are required to register as investment advisers and have to disclose information about their trades and portfolios to the SEC.81",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers acting solely as advisers to private funds",
+    "assets under management measured in the United States"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-009",
+   "identifier": "kaal:claim:2150377-009",
+   "text": "Revised Form ADV requires advisers to report gross rather than net regulatory assets under management and narrows their discretion to include or exclude assets, so the registration threshold becomes harder to manage down through reporting choices.",
+   "abstract": "To increase consistency, revised Form ADV also gives investment advisers less room to exercise discretion in counting or excluding assets from RAUM.115",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers filing the November 2011 revised Form ADV"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-010",
+   "identifier": "kaal:claim:2150377-010",
+   "text": "Form PF reporting achieves broad coverage of systemic exposure with narrow coverage of firms: the SEC expects the small set of large filers to account for eighty percent of total hedge fund assets under management in the United States.",
+   "abstract": "The SEC expects this relatively small number of advisers to account for 80% of total hedge fund assets under management in the United States.145",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers with at least $1.5 billion in RAUM attributable to hedge funds",
+    "SEC estimates at the time of Form PF adoption"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-025",
+   "identifier": "kaal:claim:2150377-025",
+   "text": "The regulatory regime does not drive fund sizing for most advisers: 82.02% of respondents would not take the current regulatory regime into account in determining the assets under management size of their funds.",
+   "abstract": "Of those who responded, 82.02% would not have taken the current regulatory regime into account in determining the AUM size of their funds.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "respondents to survey Questions 7.a and 7.b"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-026",
+   "identifier": "kaal:claim:2150377-026",
+   "text": "Among the minority of advisers who do factor regulation into fund sizing, the pressure runs in both directions: about 25% would go smaller to avoid regulatory hassle while about 50% would grow or need a certain size to cover the increased expenses.",
+   "abstract": "A significant number (25%) would go smaller to avoid the regulatory hassle. A larger percentage (50%) expressed either increasing current AUM size to cover expenses or mentioned the need for a certain size in order to account for the increase in expenses.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "respondents who answered yes to survey Question 7.b"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-027",
+   "identifier": "kaal:claim:2150377-027",
+   "text": "The Form PF quarterly reporting threshold of $1.5 billion in assets under management is not a binding sizing constraint for most advisers: 80.46% would not take it into account in determining fund size, while 19.54% would.",
+   "abstract": "Of those who responded, 80.46% would not take the Form PF threshold for quarterly reporting of $1.5 billion AUM into account in determining the appropriate size of AUM for the fund(s) they manage, whereas 19.54% would take it into account.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "respondents to survey Question 10",
+    "measured shortly after the registration effective date"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2337268-010",
+   "identifier": "kaal:claim:2337268-010",
+   "text": "Title IV and the SEC forms use assets under management as a proxy for systemic threat, so that disclosure obligations scale upward with the size of the hedge fund adviser.",
+   "abstract": "forms suggest that the larger the hedge fund advisers, as measured by their assets under management (AUM), the higher the possible systemic threat the respective fund poses. Accordingly, the disclosure requirements increase with the AUM size of hedge fund advisers.",
+   "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268",
+   "datePublished": "2013",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge fund advisers categorized by AUM under Title IV"
+   ],
+   "source_pdf_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-002",
+   "identifier": "kaal:claim:2389423-002",
+   "text": "The cost of Title IV compliance, and the other independent variables used as proxies for compliance cost, are associated with the size of hedge fund advisers as measured by assets under management.",
+   "abstract": "The cost of Title IV compliance and other independent variables as proxies for cost are associated with the size of hedge fund advisers as measured by assets under management (AUM).",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "survey respondents registered before the SEC registration effective date of March 30, 2012"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-002",
+   "identifier": "kaal:claim:2447306-002",
+   "text": "The Form PF filing obligation is triggered by a bright line asset threshold: every registered investment adviser with more than $150 million in assets under management attributable to private funds at the end of its most recently completed fiscal year must file.",
+   "abstract": "All registered investment advisers holding more than $150 million in assets under management (AUM) attributable to private funds at the end of their most recently completed fiscal year, are required to file Form PF with the SEC.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SEC-registered investment advisers",
+    "assets under management attributable to private funds"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-025",
+   "identifier": "kaal:claim:2447306-025",
+   "text": "Regulatory assets under management is an unstable reporting concept: commenters split evenly on whether Form PF's RAUM questions required them to interpret the term in order to answer.",
+   "abstract": "Commenters were equally split on whether Form PF questions pertaining to calculating RAUM required filers to interpret RAUM for purposes of completing Form PF.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "responses to survey Question 19"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-005",
+   "identifier": "kaal:claim:2715083-005",
+   "text": "The private fund industry grew 26 percent between 2013 and 2015, rising from just over 2 trillion dollars of assets under management to 2.7 trillion dollars.",
+   "abstract": "Between 2013 and 2015, the private fund industry grew by 26%, increasing from just over 2 trillion dollars AUM in 2013 to 2.7 trillion dollars AUM through 2015",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "BarclayHedge industry data, 2013 to 2015"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-009",
+   "identifier": "kaal:claim:2732915-009",
+   "text": "Title IV requires private fund advisers with more than $150 million in assets under management to register with the SEC as investment advisers.",
+   "abstract": "Title IV requires private fund advisers with more than $150 million assets under management (AUM) to register with the SEC as investment advisers.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers acting solely as advisers to private funds",
+    "assets under management in the United States"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-027",
+   "identifier": "kaal:claim:2732915-027",
+   "text": "Of the advisers who responded, 70.60 percent would not take the current regulatory regime into account in determining the assets under management size of their funds.",
+   "abstract": "Of those who responded, 70.60% would not take the current regulatory regime into account in determining the AUM size of their funds.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "responses to survey question 7"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-028",
+   "identifier": "kaal:claim:2732915-028",
+   "text": "The majority of private fund advisers in the United States are not considering changing their assets under management in order to lower Dodd-Frank compliance costs, notwithstanding the $150 million registration threshold and the $1.5 billion Form PF quarterly reporting threshold.",
+   "abstract": "the majority response to Survey Question 7 implies that the majority of private fund advisers in the United States are not considering changing their AUM in order to lower their Dodd-Frank Act compliance costs.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "inference from responses to survey question 7",
+    "$150 million registration threshold and $1.5 billion Form PF threshold in force"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-029",
+   "identifier": "kaal:claim:2732915-029",
+   "text": "Among advisers who factor the regulatory regime into fund sizing, the direction of adjustment is split: 18.2 percent would lower assets under management to avoid the regulatory hassle, while 27.3 percent would still increase AUM and another 27.3 percent seek the right size to cover expenses.",
+   "abstract": "While 18.2% would lower their AUM to avoid the regulatory hassle, 27.3% would actually still want to increase their AUM. Another 27.3% indicated a desire to attain the right size to cover expenses.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "respondents who answered yes to survey question 7"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-030",
+   "identifier": "kaal:claim:2732915-030",
+   "text": "A majority of respondents already took the regulatory regime into account in sizing assets under management before the Dodd-Frank Act was enacted, which implies that Dodd-Frank did not make much difference in how they run their business.",
+   "abstract": "It shows that a majority of respondents did in fact take the regulatory regime into account before Dodd- Frank, implying that Dodd-Frank did not make much difference in the way respondents run their business.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "responses to survey question 7.b.ii",
+    "a significant minority of 47.1 percent did not consider the regime before enactment"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-031",
+   "identifier": "kaal:claim:2732915-031",
+   "text": "The largest group of respondents prefers an assets under management size between $500 million and $1 billion, and no clear majority preference emerges around the $1.5 billion Form PF quarterly reporting threshold.",
+   "abstract": "Figure 13 illustrates that the largest number of respondents (33.3%) prefer an AUM size of between $500 million and $1 billion. No clear majority emerges as to the preference pertaining to the $1.5 billion Form PF quarterly reporting threshold for larger funds.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "responses to survey question 8 on desired AUM after Dodd-Frank"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2732915-032",
+   "identifier": "kaal:claim:2732915-032",
+   "text": "A majority of adviser respondents, 66.7 percent, did not take the $1.5 billion Form PF quarterly reporting threshold into account when determining the appropriate assets under management for the funds they manage.",
+   "abstract": "Figure 15 illustrates that the majority of adviser respondents (66.7%) did not take the $1.5 billion AUM threshold under Form PF for quarterly reporting into account in determining the appropriate size of AUM for the fund(s) they manage.",
+   "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act – A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "responses to survey question 10"
+   ],
+   "source_pdf_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-005",
+   "identifier": "kaal:claim:2739479-005",
+   "text": "Growth in the private fund industry has been concentrated among the largest advisers: assets managed by advisers with more than $5 billion in AUM grew 141 percent, compared with 53 percent for firms below $5 billion.",
+   "abstract": "The larger private fund advisers have generated most of the private fund industry's growth. Assets managed by private fund ad- visers with more than $5 billion AUM have grown 141%, compared to 53% for firms with less than $5 billion.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private fund advisers",
+    "growth measured through 2015"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-027",
+   "identifier": "kaal:claim:2739479-027",
+   "text": "Private fund advisers increasingly factor the regulatory structure into decisions about the size of their assets under management, a shift partly explained by the higher post-Dodd-Frank cost structure, since higher AUM and the corresponding fee revenue can offset higher compliance costs.",
+   "abstract": "Private fund advisers are increasingly taking the regulatory structure into account in determining their AUM. This can par- tially be explained with the higher overall post-Dodd-Frank-Act cost structure for the industry, which is shown in Figures 6, 8, and 9.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of 2012 and 2015 survey respondents",
+    "AUM sizing decisions"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-028",
+   "identifier": "kaal:claim:2739479-028",
+   "text": "The finding that advisers size AUM around regulatory cost is in tension with anecdotal evidence, since only a minority of private investment funds pay expenses out of the management fee at all.",
+   "abstract": "However, this finding is inconsistent with anecdotal evidence sug- gesting that only in a minority of private investment funds would expenses be paid using either all or a portion of the management fee.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "private fund expense allocation practice",
+    "survey inference about the AUM decision"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-030",
+   "identifier": "kaal:claim:2739479-030",
+   "text": "Sensitivity to the Form PF quarterly reporting threshold rose sharply: only 19 percent of 2012 respondents took the $1.5 billion threshold into account, compared with 33 percent in 2015.",
+   "abstract": "In 2012, only 19% of respondents took the Form PF quar- terly threshold into account, whereas 33% of respondents in 2015 found the threshold relevant.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "survey respondents in 2012 and 2015",
+    "the $1.5 billion Form PF quarterly reporting threshold"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-031",
+   "identifier": "kaal:claim:2739479-031",
+   "text": "Because quarterly Form PF filing costs roughly $10,000 per reporting fund, the $1.5 billion threshold that triggers quarterly filing gives advisers a direct cost reason to factor that threshold into the AUM decision.",
+   "abstract": "At an average quarterly cost of around $10,000 for each reporting fund, the Form PF190 costs may make participants more likely to consider the Form PF reporting threshold in the AUM decision.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers approaching $1.5 billion in AUM",
+    "per reporting fund cost basis"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2748096-004",
+   "identifier": "kaal:claim:2748096-004",
+   "text": "Hedge fund assets under management grew from $118 billion at the end of 1997 to more than $2.7 trillion by the end of 2014, a compound annual growth rate of 19 percent.",
+   "abstract": "assets under management (AUM) at hedge funds grew from $118 billion at the end of 1997 to more than $2.7 trillion by the end of 2014 (BarclayHedge 2016). This change represents a compound annual growth of 19 percent.",
+   "citation": "Wulf A. Kaal, Timothy A. Krause, Hedge Funds and Systemic Risk (2016). SSRN: https://ssrn.com/abstract=2748096",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "global hedge fund industry, 1997 to 2014",
+    "BarclayHedge data"
+   ],
+   "source_pdf_sha256": "8f30260f2c1db728b45c4f3b9b7c64358cf9d3217277bc3c63a910c32f87b508",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811718-002",
+   "identifier": "kaal:claim:2811718-002",
+   "text": "The private fund industry grew by 26 percent between 2013 and 2015, rising from just above 2 trillion dollars in assets under management to 2.7 trillion dollars.",
+   "abstract": "Between 2013 and 2015, the private fund industry grew by 26%, increasing from just above $2 trillion AUM in 2013 to $2.7 trillion AUM through 2015.",
+   "citation": "Wulf A. Kaal, Private Fund Investor Due Diligence – Evidence from 1995 to 2015 (2016). SSRN: https://ssrn.com/abstract=2811718",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "2013 to 2015",
+    "hedge fund industry assets under management as reported by BarclayHedge"
+   ],
+   "source_pdf_sha256": "b52152af561288173840a1cabbcf8f4b337e73507c856ee01600799073f4156f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-026",
+   "identifier": "kaal:claim:3002908-026",
+   "text": "The size distribution of blockchain using funds differs sharply across regions: in the United States most such funds hold between one and fifty million dollars in AUM, while in Europe funds with more than two hundred million dollars in AUM are the majority.",
+   "abstract": "majority of the private funds have AUM varying in a range comprised between $1 to #50 million AUM with only 2 funds whose AUM are between $101-150 AUM and above to $ 200 million AUM, in Europe the situation is rather different: private funds with an AUM higher than $200 million are the majority",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "AUM data available for 59 of the sampled funds"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-027",
+   "identifier": "kaal:claim:3002908-027",
+   "text": "The authors interpret the AUM difference as suggesting that larger European advisers are more willing to fund blockchain infrastructure, while in the United States legacy systems used by larger advisers create a barrier to entry.",
+   "abstract": "This could suggest that in Europe larger private investment fund advisers are more willing to make the required investments into a blockchain infrastructure whereas in the US the legacy systems utilized by larger private investment fund advisers creates a barrier to entry",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "an interpretation of the AUM distribution, not a tested result"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  }
+ ],
+ "description": "27 claims in the published works of Wulf A. Kaal carry the concept tag 'assets-under-management'. Derived node: a roster, not an adjudicated definition."
+}

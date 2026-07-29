@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/outliers",
+ "identifier": "kaal:entity:outliers",
+ "name": "Outliers",
+ "termCode": "outliers",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/outliers.md",
+ "sha256": "9ffb34b19e9842b585413b83422c8d9b38b1ba6cb3860e784086f931eaaa99c5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-019",
+   "identifier": "kaal:claim:2389423-019",
+   "text": "Least squares linear regression is non-robust to outliers: in the presence of outliers its predictions can be dragged toward the outliers and the variance of the estimates can be artificially inflated.",
+   "abstract": "In the presence of outliers, LSLR predictions can be dragged towards the outliers and the variance of the LSLR estimates can be artificially inflated.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "least squares linear regression applied to samples containing outliers"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-025",
+   "identifier": "kaal:claim:3249860-025",
+   "text": "Seven of the top 100 tokens could not be classified into any token model, with NEM, VeChain, ICON, and Lisk qualifying as outliers with no justification and SUB's whitepaper failing to disclose which model best describes the token.",
+   "abstract": "Seven tokens were outliers. NEO is a network enabling creation of asset-backed smart contracts.18 NEM, VeChain, ICON, Lisk were outliers with no justification. It was not clear in the whitepaper of SUB what token model type best describes the token.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "N=100 dataset",
+    "classification based on issuer whitepapers"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-043",
+   "identifier": "kaal:claim:3249860-043",
+   "text": "Outlier governance mechanisms rose sharply in the dataset: three per year in 2015 and 2016, then eighteen in 2017, and five in the first six months of 2018.",
+   "abstract": "During 2015 and 2016, three outlier tokens were launched per year. These tokens were Tether, Factom, and Iota; DigixDAO, Gas, and Ark. During 2017, this figure jumped to eighteen tokens.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance types coded as other"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-010",
+   "identifier": "kaal:claim:5554218-010",
+   "text": "The most damaging effect of legal harmonization is that it eradicates outliers, meaning the unconventional approaches that actually drive technological and legal innovation.",
+   "abstract": "Harmonization's most pernicious effect lies in its eradication of outliers—those unconventional approaches that drive technological and legal innovation.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "harmonization of conflict of laws and substantive rules for digital assets"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'outliers'. Derived node: a roster, not an adjudicated definition."
+}

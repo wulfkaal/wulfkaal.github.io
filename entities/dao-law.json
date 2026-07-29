@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dao-law",
+ "identifier": "kaal:entity:dao-law",
+ "name": "Dao law",
+ "termCode": "dao-law",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dao-law.md",
+ "sha256": "83eb657468a1926ee6477576846b1ad8a1b560dbbe668375e896892bc5a466ef",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-015",
+   "identifier": "kaal:claim:5254152-015",
+   "text": "Higher regulatory compliance depends on a DAO adopting an appropriate legal wrapper, such as an LLC or a foundation structure, and complying with the regulations of its jurisdiction.",
+   "abstract": "Higher scores indicate the use of appropriate legal wrappers, such as LLC or foundation structures",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs that need to interact with real world legal entities"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-034",
+   "identifier": "kaal:claim:5254152-034",
+   "text": "Adopting a conventional corporate form in a jurisdiction that does not recognize DAOs yields only partial legal protection; Silo Finance is registered as an LLC in Texas, but Texas does not recognize DAOs.",
+   "abstract": "Registered as an LLC in Texas, it offers some legal protection, but Texas does not recognize DAOs (R: 5)",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs incorporated in jurisdictions lacking DAO specific recognition"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'dao-law'. Derived node: a roster, not an adjudicated definition."
+}

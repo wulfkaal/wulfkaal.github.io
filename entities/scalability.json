@@ -1,0 +1,669 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/scalability",
+ "identifier": "kaal:entity:scalability",
+ "name": "Scalability",
+ "termCode": "scalability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/scalability.md",
+ "sha256": "ae80e6f48487dd388aa826eae5f5be49c9e7f2c65f5f55db12c078a4cde00eaf",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 36
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 22
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-032",
+   "identifier": "kaal:claim:3125827-032",
+   "text": "SPoS is far more computationally efficient than proof of work implementations because nodes no longer hash mine; the only computation added beyond the block validity checking every blockchain performs is one validation pool per block, in which each node sends a single up or down vote transaction.",
+   "abstract": "Nodes will no longer hash mine. They will check the validity of the blocks, but they do that under any blockchain. The only added computation is the validation pool which happens once for each block, where nodes send one transaction, an up- or downvote.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison against PoW chains such as bitcoin and Ethereum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-039",
+   "identifier": "kaal:claim:3249860-039",
+   "text": "Attempts to increase throughput and scale in consensus protocols concentrate on proof of stake, and the data are consistent with anecdotal evidence that proof of stake may be the most dominant attempt at scaling.",
+   "abstract": "Attempts to increase throughput and scale for consensus protocols often focus on proof of stake attempts. The data is consistent with anecdotal evidence that suggests that proof of stake may be the most dominant attempt at scaling.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "top 100 tokens by market capitalization"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-040",
+   "identifier": "kaal:claim:3249860-040",
+   "text": "To date no blockchain coherently and comprehensively combines scale, security, and decentralization, the three objectives of the blockchain trilemma, although continued experimentation with consensus algorithms can help overcome it over time.",
+   "abstract": "To date, no blockchain truly combines these three objectives coherently and comprehensively. Experimentation with different consensus algorithms can, over time, help overcome the blockchain trilemma.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of the study's 2018 data"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-006",
+   "identifier": "kaal:claim:3266953-006",
+   "text": "The centralized version of the internet cannot scale to the thirty to fifty billion connected devices that experts expect by 2020, which is why decentralized authentication solutions for internet of things devices are needed.",
+   "abstract": "By the year 2020 the majority of experts estimates that a total of 30 to 50 billion devices will connect to the internet.8 The prevailing opinion of these researchers suggests that the centralized version of the internet cannot scale to that level.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "predictive",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "projected device counts by the year 2020"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-021",
+   "identifier": "kaal:claim:3266953-021",
+   "text": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+   "abstract": "Unlike traditional PoS, PoR, e.g. Semada's Anchor Protocol, uses reputation scores as a non-fungible currency to qualify for block propagation. As such, the Anchor protocol (PoR) is attack resistant, fully decentralized, scalable and allows evolutionary protocol upgrades.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation scores that cannot be transferred"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-036",
+   "identifier": "kaal:claim:3373393-036",
+   "text": "The core issues that afflict centralized governance solutions, including information asymmetries, censorship, opportunism of agents, breaches of fiduciary duties, and fraud, can only be truly removed if and when a truly decentralized public blockchain emerges that is scalable and fully secure.",
+   "abstract": "and fraud or third-party interference, can only be truly removed to fully reform the agency relationship if and when a truly decentralized public blockchain emerges that is scalable and fully secure.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized rather than centralized blockchain implementations"
+   ],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-032",
+   "identifier": "kaal:claim:3396522-032",
+   "text": "The low transaction throughput of public blockchains is a core limitation holding back more advanced distributed applications and, with them, decentralized commerce.",
+   "abstract": "The low transaction throughputs of public blockchains158 is a core limitation that holds back more advanced DApps.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of 2019 throughput levels"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405401-032",
+   "identifier": "kaal:claim:3405401-032",
+   "text": "By removing the need for costly back testing, template validation facilitates decentralized business transactions at unprecedented scale.",
+   "abstract": "The validation removes the need for costly back- testing and facilitates decentralized business transactions at unprecedented scale.",
+   "citation": "Wulf A. Kaal, Decentralized Commerce – A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bc2d6f0ddc0852fb4085c4543c7c1dec19aaf8745eb67e3acc637e552bd7fb7d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-019",
+   "identifier": "kaal:claim:3406323-019",
+   "text": "The low transaction throughput of public blockchains is a core limitation that holds back more advanced distributed applications, which is why decentralized commerce in 2019 remains relegated to cryptocurrency trading and basic smart contracting.",
+   "abstract": "The low transaction throughputs of public blockchains is a core limitation that holds back more advanced DApps.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "public blockchains as of 2019"
+   ],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-017",
+   "identifier": "kaal:claim:3411110-017",
+   "text": "The net and compress model used by post trade service providers exists because not every trade must be processed; on some estimates, processing every trade would require an additional 2.9 million orders per day.",
+   "abstract": "According to some estimates, if every trade needs to be processed, providers would need to process an additional 2.9 million orders a day.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post trade service providers serving large investors"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411897-023",
+   "identifier": "kaal:claim:3411897-023",
+   "text": "The low transaction throughput of public blockchains is a core limitation that holds back more advanced distributed applications.",
+   "abstract": "The low transaction throughputs of public blockchains is a core limitation that holds back more advanced DApps.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "public blockchains as of 2019"
+   ],
+   "source_pdf_sha256": "82f0aea026b3e3a526ec51bc073b3b864dc06cd9083ff9c54c550037045edaa9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411897-024",
+   "identifier": "kaal:claim:3411897-024",
+   "text": "The data mining that produces scarcity in existing blockchains also slows creation, so high speed transactions cannot be achieved for the foreseeable future without a different consensus design.",
+   "abstract": "Currently, the data mining required to provide scarcity also slows creation so that high speed transactions cannot be achieved for the foreseeable future.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proof of work style mining that manufactures scarcity"
+   ],
+   "source_pdf_sha256": "82f0aea026b3e3a526ec51bc073b3b864dc06cd9083ff9c54c550037045edaa9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-027",
+   "identifier": "kaal:claim:3441904-027",
+   "text": "Reform of agency relationships in decentralized systems is possible only if and when a truly decentralized public blockchain emerges that is scalable and fully secure; without it, information asymmetries, censorship, agent opportunism, and system corruption may persist.",
+   "abstract": "In decentralized systems, reform of the agency relationships is possible if and when a truly decentralized public blockchain emerges that is scalable and fully secure.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "absence of a scalable and fully secure decentralized public blockchain"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-003",
+   "identifier": "kaal:claim:3606663-003",
+   "text": "The expected growth rate of DeFi, across diverse estimates, is large enough to call into question the long term viability of the existing decentralized technology infrastructure unless core infrastructure improvements are made.",
+   "abstract": "Normatively, the paper points out that the expected growth rate of the DeFi, according to diverse sets of estimates, is substantial enough to call into question the long-term viability of the decentralized technology infrastructure without core infrastructure improvements.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized finance built on existing public blockchains",
+    "growth continues at estimated rates"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-034",
+   "identifier": "kaal:claim:3606663-034",
+   "text": "In the early 2020s the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential, and fulfilling that potential requires significant tradeoffs between scaling, security, and levels of decentralization.",
+   "abstract": "In the early 2020s, the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi infrastructure as of the early 2020s",
+    "projected DeFi growth rates"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-037",
+   "identifier": "kaal:claim:3606663-037",
+   "text": "Read together with the network capacity failure that CryptoKitties caused on Ethereum in December 2017, the expected DeFi growth rates imply that the Ethereum network will continue to experience network shortages and throughput problems unless its infrastructure is upgraded to handle the expected transaction volume.",
+   "abstract": "the expected growth rate illustrated in Figures [__] and [__] could mean that the Ethereum network will continue to experience network shortages and throughput issues unless the Ethereum infrastructure is upgraded to deal with the expected volume of transactions.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Ethereum network without infrastructure upgrades",
+    "DeFi growth continuing at estimated rates",
+    "author cautions that correlation is not causation"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782193-033",
+   "identifier": "kaal:claim:3782193-033",
+   "text": "Reputation permits business with any member of a network regardless of personal acquaintance, but only if the network is closed and its size is limited by the ability to police reputation with the available information technology.",
+   "abstract": "First, reputation allows business dealings with any member of the network, regard- less of personal acquaintance. This requires the network to be closed, however, with a size limited by the ability to police reputation using the information technology available.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Historical Sketches of Centralization vs. Decentralization (2021). SSRN: https://ssrn.com/abstract=3782193",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation-based networks",
+    "network must be closed",
+    "size bounded by available information technology"
+   ],
+   "source_pdf_sha256": "74df9cc9a19a098bdacd0424a4174795f6e184f7a31c8ee7541195186701ebd2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-033",
+   "identifier": "kaal:claim:3782198-033",
+   "text": "Blockchain transactions will always be expensive whether or not proof of stake is solved, because full participation requires downloading the entire transaction history to verify validity, an extreme redundancy that cannot be removed.",
+   "abstract": "If you want to fully participate in the network, you need to download a copy of the entire history of every transaction of every bitcoin in existence. This extreme re- dundancy and inefficiency means transactions will always be expensive.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchains that require full history verification"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-039",
+   "identifier": "kaal:claim:3782198-039",
+   "text": "Ethereum is Turing complete in theory but cannot practically match even a cheap smartphone, because everything stored on the blockchain must be stored redundantly on thousands of nodes forever, so decentralized smart contract computation is necessarily primitive compared with centralized Web 2.0 services.",
+   "abstract": "However, Ethereum is not practically capable of mimicking the power of even the cheapest smartphone. The storage limit is currently extremely small, because anything stored in the blockchain needs to be stored redundantly on thousands of nodes for all time in the future.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to on chain computation and storage on general purpose blockchains"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-024",
+   "identifier": "kaal:claim:4529715-024",
+   "text": "The full potential of DAOs can be realized only if the challenges of standardized governance mechanisms, scalability, and legal frameworks are resolved.",
+   "abstract": "However, the full potential of DAOs can only be realized through the resolution of challenges such as standardized governance mechanisms, scalability, and legal frameworks.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-013",
+   "identifier": "kaal:claim:4796714-013",
+   "text": "Blockchain can only deliver decentralized AI governance if the blockchain trilemma is first overcome, since decentralization, security, and scalability cannot readily be achieved simultaneously within one network.",
+   "abstract": "The effectiveness of blockchain in achieving the goal of decentralized AI governance is contingent upon overcoming the fundamental blockchain trilemma: the challenge of balancing decentralization, security, and scalability.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchain networks used as governance infrastructure",
+    "necessary condition, not sufficient"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-005",
+   "identifier": "kaal:claim:4855607-005",
+   "text": "In federated learning the communication cost of many edge devices sending model parameters to a central server frequently exceeds the computation cost, and heterogeneity in the participating devices, including varying computational capabilities and resource constraints, compounds the problem.",
+   "abstract": "devices sending model parameters to the central server, often exceeding the computation cost. The heterogeneity of participating devices and their data also poses a challenge, categorized into systems heterogeneity (varying computational capabilities and resource constraints)",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "federated learning across numerous heterogeneous edge devices"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-010",
+   "identifier": "kaal:claim:4855607-010",
+   "text": "GNN scalability on large real world graphs is a genuine trade off rather than an engineering gap: sampling methods lose influential neighbors while clustering methods lose structural patterns, so each remedy sacrifices part of the signal the model needs.",
+   "abstract": "Scalability is a major concern for GNNs on large real-world graphs, as sampling methods may lose influential neighbors while clustering methods may lose structural patterns.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "large real world graphs where full graph processing is infeasible"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-013",
+   "identifier": "kaal:claim:4941807-013",
+   "text": "The rigid communication topology of federated learning, which requires constant coordination among numerous nodes, produces inefficiencies and does not adapt easily to dynamic network conditions or node failures.",
+   "abstract": "Moreover, the rigid communication topology in FL, which typically requires constant coordination between numerous nodes, can lead to inefficiencies and does not easily adapt to dynamic network conditions or node failures.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated learning architectures requiring constant node coordination",
+    "under fluctuating network conditions or node failure"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-032",
+   "identifier": "kaal:claim:4941807-032",
+   "text": "Because on chain operations are costly, the proposed system should consolidate off chain activity into on chain posts through roll ups, which is what makes the design efficient.",
+   "abstract": "Given the cost of on-chain operations, a strategy involving off-chain activities consolidated into on- chain posts (roll-ups) creates efficiency.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "given the cost of on chain operations"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-039",
+   "identifier": "kaal:claim:4941807-039",
+   "text": "New legal precedents, regulations, and ethical considerations can be integrated into an existing WDAG governance structure without a complete overhaul of the framework, which is what keeps the governance system current as AI technology and societal expectations move.",
+   "abstract": "As new legal precedents, regulations, or ethical considerations arise, they can be seamlessly integrated into the existing WDAG structure without necessitating a complete overhaul of the governance framework.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where new governance elements can be added as vertices and edges to the existing graph"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-008",
+   "identifier": "kaal:claim:5254152-008",
+   "text": "DAOs still face unresolved challenges of scalability, governance, and the need for robust security measures, which constrain their adoption despite their potential.",
+   "abstract": "Despite their potential, DAOs face challenges such as scalability, governance issues, and the need for robust security measures.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-028",
+   "identifier": "kaal:claim:5095633-028",
+   "text": "Decentralized data annotation at scale is not operationally feasible without advances in consensus algorithms or layer-two scaling, because existing blockchain infrastructures cap transaction speed and network capacity.",
+   "abstract": "existing blockchain infrastructures typically grapple with limits on transaction speed and network capacity. Continuous innovation in consensus algorithms, such as Proof of Stake or layer-two scaling solutions, is thus critical.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real-time or near real-time annotation of large data volumes"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-012",
+   "identifier": "kaal:claim:5225296-012",
+   "text": "Efficiency gains in PoS variants do not inherently compromise resilience, but only on the condition that the underlying cryptographic safeguards are robust.",
+   "abstract": "Comparative analyses of PoS variants highlight that such efficiency gains do not inherently compromise resilience, provided cryptographic safeguards are robust, as they are in SPoS",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires robust cryptographic safeguards"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-039",
+   "identifier": "kaal:claim:5225296-039",
+   "text": "The defenses that secure SPoS may not scale: frequent reputation updates and zk-SNARK verifications may strain resources under high transaction loads, potentially requiring sharding or layer-2 solutions.",
+   "abstract": "frequent updates and zk-SNARK verifications may strain resources; sharding or layer-2 solutions could optimize performance",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "speculative",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under high transaction loads"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-002",
+   "identifier": "kaal:claim:5245185-002",
+   "text": "Distributing monitoring across federated communication nodes, such as Matrix with its Synapse server, scales oversight of AI agent activity while improving privacy, because sensitive data is processed locally instead of being pooled in one central repository.",
+   "abstract": "federated model not only scales the monitoring process efficiently but also enhances data privacy by processing sensitive information locally rather than in a single centralized repository.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "federated node architecture",
+    "sensitive transaction data"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-011",
+   "identifier": "kaal:claim:5245185-011",
+   "text": "The existing framework for monitoring AI agents on cryptocurrency payment rails identifies the key actors but fails to deliver viable solutions, because it does not specify scalability and adaptability challenges and omits critical risks.",
+   "abstract": "while identifying key actors, falls short of delivering viable solutions. In particular, it fails to identify specifically scalability and adaptability challenges, and omits critical risks.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current monitoring ecosystem across exchanges, infrastructure providers, compliance services, developers and owners"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-017",
+   "identifier": "kaal:claim:5245185-017",
+   "text": "Reliance on compliance analytics providers overlooks their scalability limits in monitoring vast decentralized transaction volumes and their inability to adapt to jurisdictional regulatory disparities.",
+   "abstract": "The reliance on compliance tools, such as those from Chainalysis, overlooks their scalability challenges in monitoring vast, decentralized transaction volumes and adaptability to jurisdictional regulatory disparities.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain analytics firms applied to AI agent transactions",
+    "multi jurisdictional regulation"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-023",
+   "identifier": "kaal:claim:5245185-023",
+   "text": "Treating DAOs as monitoring entities assumes a static governance model that cannot keep pace with the rapid proliferation and sophistication of AI agents.",
+   "abstract": "The evolution of DAOs as monitoring entities assumes a static governance model117 incapable of keeping pace with the rapid proliferation and sophistication of AI agents.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "conventional DAO governance applied to AI agent oversight"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-025",
+   "identifier": "kaal:claim:5245185-025",
+   "text": "IoT based oversight does not account for the pace at which AI agents will outgrow static IoT to blockchain linkages, and it leaves unexplained how the convergence handles latency or secures data as agent ubiquity drives exponential transaction complexity.",
+   "abstract": "pace at which AI agents will outgrow static IoT-blockchain linkages. The text omits how this convergence will handle latency or secure data as AI ubiquity drives exponential transaction complexity.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "IoT and blockchain integrated monitoring architectures"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-003",
+   "identifier": "kaal:claim:5554218-003",
+   "text": "The absence of standardized protocols for dispute resolution and for compliance with regulations such as export controls hinders the scalability of tokenized real world assets and other blockchain based applications.",
+   "abstract": "the absence of standardized protocols for dispute resolution and compliance with regulations, such as export controls, hinders the scalability of tokenized real-world assets (RWAs) and other blockchain-based applications.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "tokenized real world assets",
+    "cross-border blockchain applications subject to export controls"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  }
+ ],
+ "description": "36 claims in the published works of Wulf A. Kaal carry the concept tag 'scalability'. Derived node: a roster, not an adjudicated definition."
+}

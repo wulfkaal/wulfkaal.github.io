@@ -1,0 +1,296 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/51-percent-attack",
+ "identifier": "kaal:entity:51-percent-attack",
+ "name": "51 percent attack",
+ "termCode": "51-percent-attack",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/51-percent-attack.md",
+ "sha256": "1468288a83ba7486f4a468eeb6a1afe233ac44ff830f4b264857ab6a6bbc480d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 14
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-004",
+   "identifier": "kaal:claim:3125827-004",
+   "text": "Because all block creation fees are shared with the whole group as a reputation weighted salary, SPoS removes the direct monetary reward for forming mining pools or block production cartels, which the authors identify as a decentralization threat that raises the likelihood of 51% attacks.",
+   "abstract": "Therefore, unlike every other implemented platform, there is no direct monetary reward incentive for creating mining pools or block production cartels, which are a threat to decentralization which increases the likelihood of 51% attacks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fees distributed as a reputation weighted salary rather than paid to the producer"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-007",
+   "identifier": "kaal:claim:3125827-007",
+   "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+   "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-014",
+   "identifier": "kaal:claim:3125827-014",
+   "text": "Because almost all other blockchains distribute perfectly fungible currency tokens through initial sales or mining, there is a clear, computable answer to how much it would cost to corrupt or destroy a chain running a proof of stake protocol on cryptocurrency stakes.",
+   "abstract": "Either way, these tokens are almost always perfectly fungible currencies, so there is a clear answer to how much it would cost to corrupt or destroy blockchain running a PoS protocol based on cryptocurrency stakes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS chains whose stakes are perfectly fungible currency tokens"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-035",
+   "identifier": "kaal:claim:3125827-035",
+   "text": "Because each sem token carries a different value depending on the post that minted it and on its position in the reference graph, the total value is difficult to determine, which makes it almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "abstract": "their value is difficult to determine since each token has a different value depending on the post in which it was minted. So it is almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token value derived from position in the forum WDAG",
+    "most tokens constantly in use and continually created"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-036",
+   "identifier": "kaal:claim:3125827-036",
+   "text": "An attacker who buys sem tokens directly from the platform by sending fees must spend at least twice, and more likely six times, the entire historical value of the platform, so the griefing factor is a minimum of 2 with an average of 6.",
+   "abstract": "attacker would lose a significant amount of money to achieve their goal, at least twice the entire historical value of the platform--more likely the factor would be 6 times the total value (see Appendix A.1 for a proof). So the griefing factor is a minimum of 2 with an average of 6,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker buys in by paying fees rather than on an exchange",
+    "good faith experts continue investing alongside the attacker"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-037",
+   "identifier": "kaal:claim:3125827-037",
+   "text": "Under the worst case model with no admission safeguards and no other users paying fees, a malicious group must invest at minimum twice the total sem tokens of the system to reach 50% voting power in the validation pool, because half of every fee it pays mints tokens for the existing good faith experts.",
+   "abstract": "Consequently the malicious group would need to invest an absolute minimum of 2g8 , that is, double the total sem tokens of the system to gain 50% power in the system in order to outvote the rest of the good-faith experts in the validation pool.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no safeguards on joining as an expert",
+    "no other users adding fees",
+    "continuous micro payment strategy, which is the attacker's optimum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-020",
+   "identifier": "kaal:claim:3227933-020",
+   "text": "Anonymity in blockchain organizations makes them prone to Sybil attacks and 51 percent attacks, and anonymity combined with autonomy has already produced hacks.",
+   "abstract": "Also, the anonymity in blockchain organizations means that they are prone to \"Sybil attacks\" or \"51% attacks.\"",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous, permissionless blockchain organizations"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-030",
+   "identifier": "kaal:claim:4529715-030",
+   "text": "VitaDAO's one token one vote structure leaves it susceptible to the 51 percent or whale attack, a vulnerability made worse because the VITA token is primarily purchasable.",
+   "abstract": "Because Vita uses a one token one vote, they are susceptible to the 51% problem, or \"Whale Attack.\" This problem is further exacerbated because the Vita token is primarily a purchasable token.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "one token one vote with a purchasable token"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-036",
+   "identifier": "kaal:claim:4529715-036",
+   "text": "Requiring governance tokens to be earned through contribution rather than purchased, as GDN DAO does, leaves only minimal risk of 51 percent and sock puppet attacks even under a one token one vote structure.",
+   "abstract": "While the voting structure of the DAO is a 1 token = 1 vote, tokens are not available for purchase. All governance tokens must be earned through contributions to the community.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "one token one vote with non purchasable tokens"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-013",
+   "identifier": "kaal:claim:5254152-013",
+   "text": "Low attack resistance in DAOs is typically caused by the use of easily purchasable or transferable governance tokens, which leave the organization vulnerable to attacks such as 51 percent and Sybil attacks.",
+   "abstract": "Lower scores indicate vulnerability to attacks, often due to the use of easily purchasable or transferable governance tokens.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs whose voting power is embodied in freely purchasable or transferable tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-027",
+   "identifier": "kaal:claim:5254152-027",
+   "text": "Requiring users to purchase governance tokens in order to vote both centralizes power in majority token holders and leaves the DAO highly vulnerable to 51 percent and sock puppet attacks, as illustrated by Gelato DAO which scored 1 on both decentralization and attack resistance.",
+   "abstract": "It is highly centralized as users must purchase governance tokens to vote, limiting power to majority token holders (D: 1). The platform is highly vulnerable to 51% and sock puppet attacks due to the purchasable governance tokens (A: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs where voting requires purchasing fungible governance tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-030",
+   "identifier": "kaal:claim:5254152-030",
+   "text": "A one person, one vote structure raises a DAO's resistance to 51 percent and sock puppet attacks, as reflected in TomiDAO's attack resistance score of 6 against a sample average of 3.65.",
+   "abstract": "The one-person, one-vote model increases resistance to 51% and sock puppet attacks (A: 6).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs implementing one person, one vote rather than token weighted voting"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-038",
+   "identifier": "kaal:claim:5254152-038",
+   "text": "Reliance on fungible, publicly tradable governance tokens undermines a protocol's resilience by exposing it to risks such as 51 percent attacks, as scored for Push Protocol.",
+   "abstract": "Its resilience is undermined by the fungible, publicly tradable $PUSH tokens, which expose it to risks such as 51% attacks (A: 2).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs whose governance tokens trade on open markets"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-009",
+   "identifier": "kaal:claim:6192998-009",
+   "text": "Under the 2018 validation pool design, the cost of corrupting the system to reach fifty one percent control is at minimum twice the total reputation value of the system.",
+   "abstract": "This is the fundamental security bound: corrupting the system costs at minimum 2× the total reputation value.34",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker acquires reputation through repeated fee payments",
+    "attacker always wins the validation pool, the worst case"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "14 claims in the published works of Wulf A. Kaal carry the concept tag '51-percent-attack'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/accredited-investors",
+ "identifier": "kaal:entity:accredited-investors",
+ "name": "Accredited investors",
+ "termCode": "accredited-investors",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/accredited-investors.md",
+ "sha256": "3cf62e277c062a64dff7b48bc0cd83625d9ee60d505aa6b6c2c9a1ba08f70a64",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-031",
+   "identifier": "kaal:claim:2715083-031",
+   "text": "By tightening the accredited investor net worth standard, the Dodd-Frank Act pushes investors who lose eligibility for hedge fund investments toward hybrid and retail alternative funds, even if the number of affected investors is small.",
+   "abstract": "While the number of such investors may be negligible, investors who no longer qualify for retail alternative fund investments under Dodd-Frank qualified investor standards are likely to seek out hybrid funds.",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "individuals near the accredited investor net worth threshold after Dodd-Frank section 413"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-029",
+   "identifier": "kaal:claim:3411110-029",
+   "text": "The SEC's reasoning against the Bitcoin ETF does not transfer to blockchain based private investment funds such as those built on Melonport, because such funds trade a diverse array of cryptocurrencies and reach a much more limited and accredited audience, which curtails investor risk.",
+   "abstract": "Moreover, the audience of a Melonport-type fund is much more limited and curtails the risk to investors.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private investment funds limited to accredited investors",
+    "funds trading diversified crypto portfolios rather than Bitcoin alone"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'accredited-investors'. Derived node: a roster, not an adjudicated definition."
+}

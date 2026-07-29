@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/byzantine-fault-tolerance",
+ "identifier": "kaal:entity:byzantine-fault-tolerance",
+ "name": "Byzantine fault tolerance",
+ "termCode": "byzantine-fault-tolerance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/byzantine-fault-tolerance.md",
+ "sha256": "8e000a2bdf2c258eae7724ba85a1fa79ba6ad690fd71165f441d0f60ed817450",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-008",
+   "identifier": "kaal:claim:3125827-008",
+   "text": "Given that Byzantine faults are inevitable in a distributed system, the known impossibility results force any consensus protocol to hedge: it can promise only a probability of finality and security, and that probability is inversely proportional to liveness and speed.",
+   "abstract": "Given the inevitable possibility of Byzantine faults in a distributed system, such results require any protocol to hedge, promising only a probability of finality and security inversely proportional to liveness and speed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "asynchronous distributed networks",
+    "presence of Byzantine faults"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-012",
+   "identifier": "kaal:claim:3125827-012",
+   "text": "No consensus protocol can guard against Byzantine faults when a single transaction is worth more than the promise of all future fees for the entire platform, because in that case a party can profitably bribe the whole node set to destroy the chain's own integrity.",
+   "abstract": "No protocol can guard against Byzantine faults if a transaction is more valuable than the promise of all future fees for the entire platform; in this case a party could bribe the entire set of nodes (or 51%)",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a single transaction whose value exceeds the present value of all future platform fees"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-029",
+   "identifier": "kaal:claim:3125827-029",
+   "text": "If a Byzantine producer equivocates during a network partition and wins validation pools in separate subnets, the fork is not permanent: once connectivity is restored the next honest producer points to a previous block, and with 51% honest producers the Byzantine fork is eventually orphaned because honest producers outproduce it.",
+   "abstract": "The next honest producer would point to a previous block and all Byzantine forks would be invalidated. If there are 51% honest producers the Byzantine fork would eventually be orphaned, since honest producers will outproduce the Byzantine producers",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "at least 51% honest producers",
+    "network connectivity is eventually restored"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-019",
+   "identifier": "kaal:claim:5225296-019",
+   "text": "SPoS inherits PBFT's stability threshold: the three-phase pre-prepare, prepare, and commit protocol secures agreement despite Byzantine behavior, but formal analysis proves stability only while fewer than one third of nodes are faulty.",
+   "abstract": "PBFT's three-phase protocol—pre-prepare, prepare, and commit—ensures agreement despite Byzantine behavior, with formal threshold analysis proving stability when fewer than n/3 of n nodes are faulty",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fewer than n/3 of n nodes faulty"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'byzantine-fault-tolerance'. Derived node: a roster, not an adjudicated definition."
+}

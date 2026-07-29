@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/energy-efficiency",
+ "identifier": "kaal:entity:energy-efficiency",
+ "name": "Energy efficiency",
+ "termCode": "energy-efficiency",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/energy-efficiency.md",
+ "sha256": "395f29d9532e48320f83928898aec2bb92d527b84dab9c58aaf698515bb340b3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-032",
+   "identifier": "kaal:claim:3125827-032",
+   "text": "SPoS is far more computationally efficient than proof of work implementations because nodes no longer hash mine; the only computation added beyond the block validity checking every blockchain performs is one validation pool per block, in which each node sends a single up or down vote transaction.",
+   "abstract": "Nodes will no longer hash mine. They will check the validity of the blocks, but they do that under any blockchain. The only added computation is the validation pool which happens once for each block, where nodes send one transaction, an up- or downvote.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison against PoW chains such as bitcoin and Ethereum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-017",
+   "identifier": "kaal:claim:3266953-017",
+   "text": "Meaningful and secure reputation tokens supply the incentives needed for secure proof of stake consensus in block production, which eliminates the unsustainable inefficiencies of proof of work based blockchains.",
+   "abstract": "giving the proper incentives for guaranteeing secure proof-of- stake consensus protocols for block production. This eliminates the unsustainable inefficiencies of proof-of-work based blockchains.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "tokens that represent reputation per type of expertise"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-006",
+   "identifier": "kaal:claim:5225296-006",
+   "text": "SPoS shifts the burden of consensus from energy expenditure to validator reputation, measured against a baseline of over 140 terawatt-hours consumed annually by Bitcoin as of 2023.",
+   "abstract": "140 terawatt-hours annually for Bitcoin alone as of 2023—SPoS shifts the burden of consensus to validator reputation",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison against PoW chains such as Bitcoin"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'energy-efficiency'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,152 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bank-lending",
+ "identifier": "kaal:entity:bank-lending",
+ "name": "Bank lending",
+ "termCode": "bank-lending",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bank-lending.md",
+ "sha256": "71b4f7722c2bd005fb93ecddc9ac3081eddb7aa0c3bd0d8a8cf97fa8bf5d6d3d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-031",
+   "identifier": "kaal:claim:2714974-031",
+   "text": "Banks are uniquely positioned to discipline hedge fund behavior because their role as lenders, market makers, and product creators lets them use the threat of cutting off future lending as leverage over a fund.",
+   "abstract": "Because of their interaction with hedge funds, banks are uniquely positioned to use the threat of cutting off future lending to improve a hedge fund's behavior.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on banks' ongoing lending and counterparty relationships with the fund"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-004",
+   "identifier": "kaal:claim:2998097-004",
+   "text": "Banks overexposed themselves to private investment fund lending, which allowed LTCM and similar funds to grow significantly and led banks as counterparties to put their own existence at risk.",
+   "abstract": "However, banks overexposed themselves to private investment fund lending, allowing LTCM and other private investment funds to grow significantly. As counterparties to private investment funds, such as LTCM, banks put their own existence at risk with their lending practices.",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "banks lending to private investment funds",
+    "pre 1998 lending practices"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-008",
+   "identifier": "kaal:claim:2998097-008",
+   "text": "Fund managers are unlikely to escape bank based indirect supervision by terminating a lending relationship, because their dynamic trading strategies depend on the immediate availability of capital and lending relationships now face increased scrutiny.",
+   "abstract": "However, because private investment funds' dynamic trading strategies often depend on the immediate availability of capital, and given today's banking environment with increased scrutiny over lending and lending relationships, managers are unlikely to terminate a lending relationship.45",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contemporary banking environment with heightened lending scrutiny",
+    "funds running dynamic trading strategies"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-022",
+   "identifier": "kaal:claim:3002908-022",
+   "text": "Post crisis regulation that restrained bank lending, particularly to SMEs, opened a new market that private investment funds moved into, accelerating their involvement in banking functions.",
+   "abstract": "After the crisis, newly issued regulation restrained banks from lending, in particular to SMEs. This opened up a new market for private investment funds that stepped into the void left by the new regulatory regime.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "after the financial crisis of 2008"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-011",
+   "identifier": "kaal:claim:3405660-011",
+   "text": "LTCM reached systemically dangerous size because banks lent to it without regard to repayment capacity, and in doing so the banks endangered their own existence.",
+   "abstract": "LTCM grew as large as it did because banks lent it money without regard for whether this money could be paid back. Banks put their own existence at risk with their lending practices during this time.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-012",
+   "identifier": "kaal:claim:3405660-012",
+   "text": "Banks continue to find hedge fund business desirable because hedge funds take risks other participants will not, borrow heavily and pay a premium for borrowing, which sustains the lending relationship despite its dangers.",
+   "abstract": "Hedge funds are significant clients and counterparties to banks, particularly because they take on risks that other financial participants would not, borrow massive amounts and are willing to pay a premium for borrowing. Therefore, banks management still view business from hedge funds as desirable.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'bank-lending'. Derived node: a roster, not an adjudicated definition."
+}

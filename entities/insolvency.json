@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/insolvency",
+ "identifier": "kaal:entity:insolvency",
+ "name": "Insolvency",
+ "termCode": "insolvency",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/insolvency.md",
+ "sha256": "4cbe630a60907e464d98fdda7bdfad39bca3696658858f61be0c68b3bfc17136",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-021",
+   "identifier": "kaal:claim:3396542-021",
+   "text": "The DAO is insolvent when the present value of expected cash flows from new policies falls below the expected cash outflow on currently outstanding policies, and in that state the value of a token is negative.",
+   "abstract": "The DAO will be insolvent if the value of the DAO becomes negative - in other words, if the Present Value (PV) of expected cash flows from new policies is less than the expected cash outflow from currently outstanding (old) policies. If the DAO is insolvent, the value of a token will be negative.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-022",
+   "identifier": "kaal:claim:3396542-022",
+   "text": "A sufficiently large negative shock to the number of policies issued per period drives the value of the DAO negative and renders the DAO insolvent, so falling new business volume is a principal insolvency channel.",
+   "abstract": "Thus, if ε0 is sufficiently negative and large in magnitude (i.e., if there is a sufficiently large decrease in M), then the value of DAO will become negative and the DAO will become insolvent.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Mt follows a random walk",
+    "one time large decrease in M"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-023",
+   "identifier": "kaal:claim:3396542-023",
+   "text": "Raising the margin is the available remedy for an insolvency shock, but it is not a clean fix because the effect of a higher margin on future demand must itself be considered.",
+   "abstract": "Of course, a remedial course of action that could perhaps be taken in period 0 is to increase the margin m if that is possible. However, we would need to consider the impact of an increase in the margin on future demand.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "insolvency triggered by a negative shock to policy issuance"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'insolvency'. Derived node: a roster, not an adjudicated definition."
+}

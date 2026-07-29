@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/architecture",
+ "identifier": "kaal:entity:architecture",
+ "name": "Architecture",
+ "termCode": "architecture",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/architecture.md",
+ "sha256": "2558df0e6fc68feeb106210c8f537e324ea263502076415558eb7191226c8a6a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-021",
+   "identifier": "kaal:claim:3128900-021",
+   "text": "A key design goal is a minimal and robust architecture, because minimality is what permits later construction of more complex automated validation logic and machine expert validators.",
+   "abstract": "A key design goal of Semada is to create a minimal and robust architecture that allows for creating much more complex and automated validation logic, as well as machine expert validators.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "architecture of the validation platform"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-023",
+   "identifier": "kaal:claim:3128900-023",
+   "text": "Rather than repeating the same task across many workers to reach quality, the architecture verifies quality directly by examining and validating individual worker task performance through reputation verification.",
+   "abstract": "Instead of repeating work on given tasks to attain high quality work products for micro tasks, Semada uses an architecture of reputation verification that examines micro worker task performance and verifies the validity and quality of the work.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "micro tasks routed through the reputation verification architecture"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6421319-023",
+   "identifier": "kaal:claim:6421319-023",
+   "text": "Probabilistic language models hallucinate because they are trained to predict statistically likely token sequences rather than to verify propositional truth, so the error is intrinsic to the substrate: plausibility and truth are orthogonal properties in high dimensional token space.",
+   "abstract": "Probabilistic large language models hallucinate because they are trained to predict statistically likely token sequences, not to verify propositional truth.",
+   "citation": "Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to purely probabilistic architectures"
+   ],
+   "source_pdf_sha256": "0f4f68e56ee48bb8b2d73d3ab7fd96fa572e76c195694ffa740360704c1b172d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6421319-024",
+   "identifier": "kaal:claim:6421319-024",
+   "text": "Hybrid neuro symbolic architectures structurally shrink the hallucination surface because the probabilistic layer generates candidate outputs while a symbolic layer filters, validates, and rejects any output violating formally specified rules, known ontological relations, or deductively verifiable constraints.",
+   "abstract": "The probabilistic layer generates candidate outputs; the symbolic layer filters, validates, and rejects any output that violates formally specified rules, known ontological relations, or deductively verifiable constraints.",
+   "citation": "Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "demonstrated in retrieval augmented generation and formal verification pipelines for code generation"
+   ],
+   "source_pdf_sha256": "0f4f68e56ee48bb8b2d73d3ab7fd96fa572e76c195694ffa740360704c1b172d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-017",
+   "identifier": "kaal:claim:6655138-017",
+   "text": "The possibility loop is generatively open: each completed cycle leaves the system with a strictly enlarged action space, because a successful proposal adds a job specification, tag, or template that did not previously exist.",
+   "abstract": "The possibility loop, in contrast, is generatively open in the sense that each completed cycle leaves the system with a strictly enlarged action space.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "cycles that complete with a validated proposal"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'architecture'. Derived node: a roster, not an adjudicated definition."
+}

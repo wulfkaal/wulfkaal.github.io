@@ -1,0 +1,138 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/consensus-by-redundancy",
+ "identifier": "kaal:entity:consensus-by-redundancy",
+ "name": "Consensus by redundancy",
+ "termCode": "consensus-by-redundancy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/consensus-by-redundancy.md",
+ "sha256": "7260eb7bd4f22e73171bdc53896c7bba7cbe0e8b06c2ac1a85bd1fb9af122cfa",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-008",
+   "identifier": "kaal:claim:3128900-008",
+   "text": "To offset human limitations, requesters in centralized micro task structures assign the same task to teams of up to fifteen workers to form a consensus.",
+   "abstract": "In an attempt to ensure quality of results and minimize the impact of the human limitations of their workers, requesters in centralized micro task structures set up teams of up to 15 workers to perform the same task in an effort to form a consensus.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "centralized micro task structures",
+    "quality sensitive tasks"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-009",
+   "identifier": "kaal:claim:3128900-009",
+   "text": "Consensus by redundancy fails economically: multiplying the same work across many workers significantly increases the cost of micro task work.",
+   "abstract": "The multiplication of work inherent in this process significantly increases the cost of micro task work.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized platforms using redundant task assignment"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-010",
+   "identifier": "kaal:claim:3128900-010",
+   "text": "Paying proportionally, up to fifteen times, for the same project output is waste, and the necessity of multiplying work also pushes micro task workers into lower rates with no pay increases.",
+   "abstract": "Requiring requesters to pay proportionally (e.g. up to 15 times) for work per project result in waste. The necessity of multiplication of work also subjects micro task workers to lower rates and lack of payment increases.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized platforms using redundant task assignment"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-023",
+   "identifier": "kaal:claim:3128900-023",
+   "text": "Rather than repeating the same task across many workers to reach quality, the architecture verifies quality directly by examining and validating individual worker task performance through reputation verification.",
+   "abstract": "Instead of repeating work on given tasks to attain high quality work products for micro tasks, Semada uses an architecture of reputation verification that examines micro worker task performance and verifies the validity and quality of the work.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "micro tasks routed through the reputation verification architecture"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-011",
+   "identifier": "kaal:claim:4755632-011",
+   "text": "To form consensus and offset worker error, requesters in centralized micro task structures assign teams of up to fifteen workers to the same task, and the resulting multiplication of work significantly increases the cost of micro task work and produces waste when requesters pay proportionally for redundant output.",
+   "abstract": "set up teams of up to 15 workers to perform the same task in an effort to form a consensus. The multiplication of work inherent in this process significantly increases the cost of micro task work.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to centralized micro task platforms using redundancy for consensus"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'consensus-by-redundancy'. Derived node: a roster, not an adjudicated definition."
+}

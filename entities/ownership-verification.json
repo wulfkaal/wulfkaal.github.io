@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ownership-verification",
+ "identifier": "kaal:entity:ownership-verification",
+ "name": "Ownership verification",
+ "termCode": "ownership-verification",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ownership-verification.md",
+ "sha256": "e8eec781cda75f3e2752bd9f2286327b60d98767c97d4ba83389e1c8d08c5b0b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-018",
+   "identifier": "kaal:claim:5454054-018",
+   "text": "Bringing NASDAQ-listed stocks on-chain removes the need to mint intermediary virtual representations of off-chain equities, because tokenized stocks are natively verifiable on blockchain ledgers, which reduces legal and operational friction.",
+   "abstract": "By bringing NASDAQ-listed stocks on-chain, the need to mint intermediary virtual representations of off-chain equities as an accounting measure is eliminated. NASDAQ tokenized stocks are natively verifiable on blockchain ledgers. This is key as it reduces legal and operational friction.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "NASDAQ tokenized stock framework in operation"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-020",
+   "identifier": "kaal:claim:5454054-020",
+   "text": "For tokenized stocks, smart contracts can verify ownership and holding periods directly from blockchain ledgers and trigger voucher airdrops without intermediaries, which lowers operational costs and increases LER scalability.",
+   "abstract": "For tokenized NASDAQ stocks, smart contracts can query blockchain ledgers to verify ownership and holding periods. This triggers voucher reward airdrops without intermediaries. Whic, in turn, reduces operational costs and enhances LER scalability.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stocks represented on a blockchain ledger"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'ownership-verification'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,433 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/robustness",
+ "identifier": "kaal:entity:robustness",
+ "name": "Robustness",
+ "termCode": "robustness",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/robustness.md",
+ "sha256": "8fc2997260ecd073f4e05ea5e056043f24cbb5c1f242c7b5206c64778985b0ae",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 22
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-024",
+   "identifier": "kaal:claim:2389416-024",
+   "text": "Because the compliance probability denominator is very close to one, fuzzy regression discontinuity estimates differ only trivially from the sharp design estimates on the entire sample.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample",
+    "compliance with mandatory disclosure near certain above the threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-025",
+   "identifier": "kaal:claim:2389416-025",
+   "text": "A McCrary density test of the assignment variable independently supports the presence of a discontinuity at the $150 million threshold in March 2012.",
+   "abstract": "The results reported in Figure 9 further support and underscore the presence of a discontinuity in March 2012 at the threshold of 150 million.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "March 2012",
+    "$150 million AUM threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-026",
+   "identifier": "kaal:claim:2389416-026",
+   "text": "The March 2012 discontinuity estimates remain statistically significant and stable at larger bandwidths, while very small bandwidths yield confidence intervals containing zero and would not detect any discontinuity.",
+   "abstract": "As Figure 10 shows, the estimates are statistically significant and rather stable also for larger bandwidths.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bandwidth robustness checks around the optimal bandwidth"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-027",
+   "identifier": "kaal:claim:2389416-027",
+   "text": "Conventional, bias-corrected, and robust regression discontinuity estimators all produce coefficients of similar magnitude, between 1.13 and 1.33, each with a p-value below 5 percent, affirming the March 2012 discontinuity.",
+   "abstract": "As Table 7 below shows, all the estimates are very close to each other in magnitude and all of them have a p-value smaller than 5%, affirming the presence of a discontinuity in March 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Calonico, Cattaneo and Titiunik bias correction procedure",
+    "March 30, 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-033",
+   "identifier": "kaal:claim:2389416-033",
+   "text": "Difference-in-differences analysis confirms the regression discontinuity results, showing a positive and highly significant treatment coefficient for funds above the $150 million AUM threshold.",
+   "abstract": "Our DiD analysis confirms the results of our RD design. Table 9 shows the dummy variable that identifies the treatment with a positive coefficient that is highly significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "4290 observations",
+    "treatment defined as AUM above $150 million after March 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-037",
+   "identifier": "kaal:claim:2389416-037",
+   "text": "Despite the great volatility of hedge fund adviser returns over the observation period, the empirical evidence for a discontinuity at the $150 million AUM threshold is robust, but the discontinuity does not persist beyond the registration effective date.",
+   "abstract": "Despite the great volatility of hedge fund adviser returns displayed over the period under examination, the empirical evidence is robust. The discontinuity is not persistent and dissipates in the subsequent months after the registration effective date for hedge fund advisers.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "January to October 2012 observation window"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-019",
+   "identifier": "kaal:claim:2389423-019",
+   "text": "Least squares linear regression is non-robust to outliers: in the presence of outliers its predictions can be dragged toward the outliers and the variance of the estimates can be artificially inflated.",
+   "abstract": "In the presence of outliers, LSLR predictions can be dragged towards the outliers and the variance of the LSLR estimates can be artificially inflated.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "least squares linear regression applied to samples containing outliers"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-034",
+   "identifier": "kaal:claim:2389423-034",
+   "text": "The results suggest that the private fund industry may be more robust and less affected by financial regulation than other financial services providers.",
+   "abstract": "The results suggest that the private fund industry may be more robust and less affected by financial regulation than other financial services providers.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private fund advisers subject to Title IV"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-017",
+   "identifier": "kaal:claim:2816408-017",
+   "text": "A fuzzy regression discontinuity design was run to test whether the discontinuity occurred at a date other than March 30, 2012, on the theory that advisers may have anticipated compliance costs in the preceding months.",
+   "abstract": "The reason for implementing FRD is that hedge fund advisers may have anticipated the costs of compliance with mandatory disclosure in the months preceding the enactment of the Dodd Frank Act.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample",
+    "anticipation of compliance costs before the effective date"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-018",
+   "identifier": "kaal:claim:2816408-018",
+   "text": "The sharp and fuzzy regression discontinuity approaches yield results of only minor difference in this setting because the denominator of the fuzzy estimator is very close to one, meaning treatment take up at the threshold is nearly deterministic.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "this sample and threshold",
+    "denominator close to 1"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-019",
+   "identifier": "kaal:claim:2816408-019",
+   "text": "Across an array of robustness tests, the requirements introduced by the Dodd-Frank Act create no significant effect on private fund performance, with all reported RD p-values above the 5% level.",
+   "abstract": "Using an array of robustness tests validating our RD results, Figures 3-7 suggest that the requirements introduced by the Dodd-Frank Act create no significant effect on private fund performance. The P-values for all RD results in Table 6 are above the 5% level and confirm our finding of no effect.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "RD results reported in Table 6",
+    "entire sample and March 2012 estimates"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-029",
+   "identifier": "kaal:claim:2816408-029",
+   "text": "Tighter RD designs using varying window lengths and hand selected control groups confirm the finding of no effect obtained in the broader design.",
+   "abstract": "Appendix A contains the descriptive statistics and RD results of our tighter RD designs analysis. The tighter RD designs analysis confirm our finding of no effect in the broader design in Part IV above.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "varying pre and post windows",
+    "hand selected control groups reported in Appendix A"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-030",
+   "identifier": "kaal:claim:2816408-030",
+   "text": "The discontinuity in the data is evident regardless of the number of bins chosen, even though increasing the number of bins smooths the estimated regression function.",
+   "abstract": "However, the presence of discontinuity is evident, no matter what number of bins we consider.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "optimal bin choice increased by factors of 20 and 100",
+    "Calonico et al. 2013 evenly spaced bin procedure"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-032",
+   "identifier": "kaal:claim:3782191-032",
+   "text": "Concentration produces instability and dispersion produces stability: the more concentrated a structure is, the more unstable it is, because little changes can cause major structural change, while a spread out pattern remains spread out when disturbed.",
+   "abstract": "The more concentrated a structure is, the more unstable it is. The more spread out a pattern is, the more stable it is",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "any structure characterized by concentration or dispersion"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-010",
+   "identifier": "kaal:claim:4796714-010",
+   "text": "Federated learning lacks theoretical guarantees of reliability and robustness, which makes its behavior unpredictable in practical applications.",
+   "abstract": "Additionally, FL lacks theoretical guarantees that ensure reliability and robustness, making it less predictable for practical applications.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to federated learning as practiced"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-004",
+   "identifier": "kaal:claim:4855607-004",
+   "text": "Deep learning models adapt to changes in data distribution far less readily than human learning does, which limits their reliability once the operating environment diverges from the training data.",
+   "abstract": "Furthermore, deep learning models are not as adaptable to changes in data distribution as human learning, which can adapt more quickly to new situations and contexts.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "settings where the data distribution shifts after training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-011",
+   "identifier": "kaal:claim:4855607-011",
+   "text": "GNNs are vulnerable to adversarial attacks that target both node features and graph structure, and their lack of interpretability remains a major obstacle to applying them to real world problems.",
+   "abstract": "GNNs can be vulnerable to adversarial attacks on both node features and graph structure, and interpretability remains a major obstacle for applying GNNs to real-world problems.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real world GNN deployments where adversaries can influence the graph"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-024",
+   "identifier": "kaal:claim:6244278-024",
+   "text": "Institutional alignment through engineered consequence is architecturally superior to exogenous constraint, and the superiority derives from three structural features: scalability, robustness to gaming, and capability complementarity.",
+   "abstract": "institutional alignment through engineered consequence is architecturally superior to exogenous constraint as an alignment strategy. The superiority derives from three structural features.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "superiority is architectural, resting on scalability, robustness, and complementarity"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-025",
+   "identifier": "kaal:claim:6244278-025",
+   "text": "Institutional alignment resists gaming because the mechanisms that produce alignment are identical to the mechanisms that produce economic success: an agent cannot game its way to high reputation without actually performing competently and honestly.",
+   "abstract": "An agent cannot \"game\" its way to high reputation without actually performing competently and honestly, because competence and honesty are the criteria by which reputation is earned.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that competence and honesty be the sole criteria by which reputation is earned"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-010",
+   "identifier": "kaal:claim:6269518-010",
+   "text": "Citation weights should be treated as approximate signals of attribution rather than precise measurements, and the governance system must be designed to function robustly under that inherent imprecision.",
+   "abstract": "Citation weights, similarly, should be understood as approximate signals of attribution rather than precise measurements, and the governance system must be designed to function robustly under this inherent imprecision.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation weights cannot be specified precisely ex ante"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-034",
+   "identifier": "kaal:claim:6269518-034",
+   "text": "The citation honesty equilibrium is robust because it does not require agents to quantify precise citation weights; it requires only that citation patterns be directionally honest, which is what the validator assessment evaluates, thereby addressing the quantification impossibility.",
+   "abstract": "It requires only that agents' citation patterns be directionally honest. That is, citation patterns demonstrate that agents do not systematically under-cite contributors whose work they relied upon.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators assess directional honesty rather than point estimates of attribution fractions"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6607458-013",
+   "identifier": "kaal:claim:6607458-013",
+   "text": "Possibility-space quality is captured by four functionals, coverage, precision, robustness, and calibration, and value in Computative Economics derives from their composite rather than from any single dimension.",
+   "abstract": "Calibration measures the alignment between the generation function's internal quality estimates and verified external performance. Value in Computative Economics derives from the composite of these dimensions rather than from any single one.",
+   "citation": "Wulf A. Kaal, Computative Economics A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=6607458",
+   "datePublished": "2026",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "75cca35350378eb8904866d068b5d2f3e1504629e6031457ce6c12152a88e3e8",
+   "status": "current"
+  }
+ ],
+ "description": "22 claims in the published works of Wulf A. Kaal carry the concept tag 'robustness'. Derived node: a roster, not an adjudicated definition."
+}

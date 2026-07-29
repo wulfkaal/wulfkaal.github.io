@@ -1,0 +1,100 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/decoupling",
+ "identifier": "kaal:entity:decoupling",
+ "name": "Decoupling",
+ "termCode": "decoupling",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/decoupling.md",
+ "sha256": "1ff4c8618c86a94134d5df0ab40673b39df275152ce537ad50f93bbba90dbbee",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-019",
+   "identifier": "kaal:claim:6269518-019",
+   "text": "The structural solution to the under-citation incentive is to decouple citation accuracy from quality-based payment, which eliminates the zero-sum dynamic that creates the incentive to under-cite.",
+   "abstract": "The structural solution is to decouple citation accuracy from quality-based payment, thereby eliminating the zero-sum dynamic that creates the under-citation incentive.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-020",
+   "identifier": "kaal:claim:6269518-020",
+   "text": "Under a decoupled payment formula in which validators rank quality and citation accuracy as separate dimensions, an agent who produces medium-quality work but cites meticulously can still earn substantial payment through the citation honesty component.",
+   "abstract": "Validators rank both quality and citation accuracy as separate dimensions. An agent who produces medium-quality work but cites meticulously can still earn substantial payment through the ηi component.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators rank quality and citation accuracy separately",
+    "payment weight parameter theta strictly below one"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-027",
+   "identifier": "kaal:claim:6269518-027",
+   "text": "Under the integrated mechanism payment is computed with a weighting parameter of 0.6, so sixty percent of payment derives from citation-weighted quality and forty percent from citation honesty scores.",
+   "abstract": "Payment is computed using the decoupled formula with θ = 0.6, meaning 60% of payment derives from citation-weighted quality and 40% from citation honesty scores.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'decoupling'. Derived node: a roster, not an adjudicated definition."
+}

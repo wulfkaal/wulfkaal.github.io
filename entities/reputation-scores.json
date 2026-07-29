@@ -1,0 +1,152 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-scores",
+ "identifier": "kaal:entity:reputation-scores",
+ "name": "Reputation scores",
+ "termCode": "reputation-scores",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-scores.md",
+ "sha256": "c028d5bcff113ee4637ad95e41726890804de516a2c1eded1b3d42514e832ea3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-036",
+   "identifier": "kaal:claim:4755632-036",
+   "text": "Reputation scores on the ALE Platform balance supply and demand through a two-sided incentive: requesters with lower reputation scores find workers less likely to accept their offers, and workers with low reputation scores are less likely to be retained for micro task work.",
+   "abstract": "If requesters have a lower reputation score, workers become less likely to accept requesters' offers. In turn, low reputation scores for micro task workers result in a lower likelihood of retention",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the ALE Platform reputation scoring system"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-037",
+   "identifier": "kaal:claim:4755632-037",
+   "text": "The reputation score mechanism helps discern malicious actors from simple mistakes and protects workers and verifiers from fraudulent requesters and suboptimally designed requests, so reputation serves as a bidirectional screening device rather than only a worker rating.",
+   "abstract": "The reputation score mechanism helps discern malicious actors and simple mistakes. It also protects workers and verifiers from fraudulent requesters and suboptimally designed requests.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the ALE Platform"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-038",
+   "identifier": "kaal:claim:4755632-038",
+   "text": "Reputation based market dynamics lower the cost of duplication relative to centralized micro task work: where a reliable high reputation worker completes the task, duplication can fall from fifteen to five or fewer in a decentralized setup, which is what enables scaling of micro task work.",
+   "abstract": "If a reliable and high reputation score worker completes the tasks, the duplication may be brought from 15 to 5 or less in the",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conditioned on a reliable and high reputation score worker completing the tasks"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-040",
+   "identifier": "kaal:claim:4755632-040",
+   "text": "Paying workers a share of incoming compensation pro rata to their reputation scores makes rigor self-enforcing, because workers who do not engage with the required care lose their spot in the reputation rankings and thereby lose their share of the job fee distribution.",
+   "abstract": "they sacrifice their spot in the rankings of reputation scores which affects their participation in the job fee distribution, which is paid out pro rata to the respective reputation scores.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the ALE Platform fee distribution design"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-029",
+   "identifier": "kaal:claim:4855607-029",
+   "text": "In federated learning, validation pools coordinated by smart contracts should dispense rewards pro rata to the reputation a node has accumulated through productive work, so that incentives track a node's actual contribution to the model's learning rather than mere participation.",
+   "abstract": "with validation pools that are smart contract coordinated to dispense rewards pro rata to the reputation scores a node may have accumulated through productive work. This mechanism ensures that nodes are incentivized based on their actual input to the AI model's learning.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "federated learning where node contribution quality varies and must be motivated"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-029",
+   "identifier": "kaal:claim:5225296-029",
+   "text": "Collusion, meaning coordinated action among validators to manipulate reputation scores or governance outcomes, threatens the fairness and integrity of SPoS independently of any cryptographic weakness.",
+   "abstract": "Collusion risks—coordinated efforts among validators to manipulate reputation scores or governance outcomes—further threaten fairness and integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-scores'. Derived node: a roster, not an adjudicated definition."
+}

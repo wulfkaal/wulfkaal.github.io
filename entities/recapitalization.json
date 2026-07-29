@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/recapitalization",
+ "identifier": "kaal:entity:recapitalization",
+ "name": "Recapitalization",
+ "termCode": "recapitalization",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/recapitalization.md",
+ "sha256": "370522320aa5046a2ba9b2bf854b625bb12ff4c82c6adb2aacd2aef56d2e2f73",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-009",
+   "identifier": "kaal:claim:1998455-009",
+   "text": "Installing contingent capital can be more efficient than raising capital requirements, because the capital injection becomes available only when it is needed and only enough securities convert to recapitalize the firm.",
+   "abstract": "Installing contingent capital could be more efficient than raising capital requirements because the capital injection is available only when it is needed.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes a functioning trigger that fires at the right time",
+    "assumes incremental or calibrated conversion"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-012",
+   "identifier": "kaal:claim:1998455-012",
+   "text": "Converting contingent capital securities prematurely, while the institution can still operate without an equity injection, dissipates the benefit: the injection is no longer available at the later moment when the institution cannot obtain other funding.",
+   "abstract": "Converting CCS into equity prematurely at a time when the financial institutions can still operate without an equity capi- tal injection could mean that the CCS capital injection would no longer be available when the financial institution will be unable to obtain other funding.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the trigger fires before the institution has exhausted other funding sources"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-031",
+   "identifier": "kaal:claim:2061166-031",
+   "text": "A trigger that fires too early wastes the equity injection: conversion occurs without a real need for capital or additional voting shareholders, and the effect of the injection may have dissipated by the time it is actually needed.",
+   "abstract": "If conversion is triggered too early without a real need for an equity capital injection (and additional voting shareholders), the impact of the equity capital injection may have dissipated and may no longer be available when actually needed.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital converting on a trigger set too far from distress"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-020",
+   "identifier": "kaal:claim:2957645-020",
+   "text": "Contingent capital may be more efficient than simply raising capital requirements, because the capital injection is available only when it is needed and, when triggered, only as much of the contingent capital converts as is necessary to recapitalize the firm.",
+   "abstract": "Further, contingent capital may be more efficient than raising capital requirements, because the capital injection is available only when it is needed45 and, when triggered, only enough CCS converts as is necessary to recapitalize the firm.46",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the trigger design causes conversion only in the amount necessary for recapitalization"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'recapitalization'. Derived node: a roster, not an adjudicated definition."
+}

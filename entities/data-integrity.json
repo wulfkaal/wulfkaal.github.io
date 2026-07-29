@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/data-integrity",
+ "identifier": "kaal:entity:data-integrity",
+ "name": "Data integrity",
+ "termCode": "data-integrity",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/data-integrity.md",
+ "sha256": "f097bc5f8740710ba8d6f86e270749a25758c2e2511090ce74da217f355478b5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-018",
+   "identifier": "kaal:claim:2959730-018",
+   "text": "The decentralized, fully distributed nature of the blockchain makes it practically impossible to reverse, alter, or erase information recorded in it.",
+   "abstract": "The decentralized, fully-distributed nature of the blockchain makes it practically impossible to reverse, alter, or erase information in the blockchain.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fully distributed networks where multiple copies are held by all participants"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-017",
+   "identifier": "kaal:claim:3782191-017",
+   "text": "No guarantee exists in a decentralized system that the randomly generated information filtering in at the edges is accurate, as on Amazon and the internet generally where there is no real attempt to clean the data.",
+   "abstract": "No guarantee exists in a decentralized system that the randomly-generated information is accurate. That is the case on Amazon and on the internet in general where there is no real attempt to clean the data.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized systems lacking verification infrastructure"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-035",
+   "identifier": "kaal:claim:4855607-035",
+   "text": "Applying decentralized voting and consensus to RLHF permits human feedback to be verified before it is used to calibrate the Reward Model, which raises the integrity and reliability of the feedback data entering the model.",
+   "abstract": "Applying these mechanisms to RLHF allows for the decentralized verification of human feedback before it's used to calibrate the RM, enhancing the integrity and reliability of the feedback data.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "RLHF pipelines where feedback can be verified prior to reward model training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'data-integrity'. Derived node: a roster, not an adjudicated definition."
+}

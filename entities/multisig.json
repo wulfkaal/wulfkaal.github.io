@@ -1,0 +1,118 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/multisig",
+ "identifier": "kaal:entity:multisig",
+ "name": "Multisig",
+ "termCode": "multisig",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/multisig.md",
+ "sha256": "9ee4ddc2260dd8043a4202728ed205f4f4b10ab0f25e6ddf980af496c1680027",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-021",
+   "identifier": "kaal:claim:3936876-021",
+   "text": "Cold wallets typically lack the multisig feature that is common in hot storage, so the single employee acting as agent for a corporation may be the only access point to the corporate digital assets.",
+   "abstract": "Accordingly, the person who acts as an agent to a corporation who holds the assets on behalf of the company may be the only access point to the corporate assets.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "corporate or treasury holdings in cold storage without multisig"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-036",
+   "identifier": "kaal:claim:3936876-036",
+   "text": "Multi-signature wallets and a combination of hot and cold storage solutions are the advisable custody design for digital assets.",
+   "abstract": "Multi-signature wallets and a combination of hot and cold storage solutions are advisable.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-022",
+   "identifier": "kaal:claim:3981021-022",
+   "text": "Any exercise of the multisig endowment wallet keys ultimately depends on a vote in the assembly of the DAO association that serves as legal wrapper, so a donor holding one key among many is involved in endowment payment decisions without controlling them.",
+   "abstract": "The exercise of the multisig wallet keys will ultimately always depend on a CHARITYxDAO vote in the assembly of the CHARITYxDAO association (the legal wrapper – if chosen to be a Swiss Association). As a multisig key holder, the donor will be involved in multisig endowment payment",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "endowment wallets held in a DAO legal wrapper such as a Swiss Association"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-026",
+   "identifier": "kaal:claim:4015908-026",
+   "text": "DAO governance over token launch wallets can assure that no single individual exercises rights over the token launch wallet and becomes a single point of failure or abuse.",
+   "abstract": "DAO governance over token launch wallets can assure that no single individual exercises rights over the token launch wallet and becomes a single point of failure/abuse.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token launch wallet is governed by the DAO"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'multisig'. Derived node: a roster, not an adjudicated definition."
+}

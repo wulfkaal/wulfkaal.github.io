@@ -1,0 +1,136 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/soros-attack",
+ "identifier": "kaal:entity:soros-attack",
+ "name": "Soros attack",
+ "termCode": "soros-attack",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/soros-attack.md",
+ "sha256": "d27349d941b8e483582647e81869801866e10256dd6cb208e7a286f0d85a61d1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-009",
+   "identifier": "kaal:claim:3396522-009",
+   "text": "A fiat backed stable cryptocurrency that is not fully collateralized is exposed to arbitrage trade attacks of the kind George Soros used against the pound sterling; full collateralization is therefore a necessary defense.",
+   "abstract": "Without a 100% fiat collateralization, such projects would run the risk of arbitrage trade attacks similar to what Financier George Soros used to \"break the bank of England",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to stable cryptocurrencies claiming a fiat peg"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-002",
+   "identifier": "kaal:claim:3402701-002",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage attacks of the kind Soros used against the Bank of England.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat-backed pegs claiming full collateralization"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-022",
+   "identifier": "kaal:claim:3402701-022",
+   "text": "Contesting the standard reading, the authors argue Soros broke the Bank of England not because the pound lacked full foreign reserve backing but because the pound was pegged at an inauthentic value.",
+   "abstract": "Soros was not able to break the Bank of England because it wasn't fully backed with foreign reserves, but because the British pound was being pegged at a value that was inauthentic",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-035",
+   "identifier": "kaal:claim:3402701-035",
+   "text": "Transparency is not an unqualified good for monetary policy: a currency only partially backed by reserves can be arbitraged by a Soros-style shorting strategy much more easily when the quantity of reserves is public.",
+   "abstract": "For instance, a currency partially backed by reserves can be successfully arbitraged by Soros' shorting strategy much easier if the quantity of reserves is known",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "partial reserve backing",
+    "reserve quantities publicly known"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-028",
+   "identifier": "kaal:claim:3782216-028",
+   "text": "The lesson of the Soros attack is that when a cryptocurrency is pegged above its true market value, the difference must be fully backed by a foreign reserve of collateral, or financiers can profit by breaking the peg.",
+   "abstract": "The lesson of the Soros attack, is that if the value of a cryptocurrency is pegged at a value higher than its true market value, the difference must be backed c::% by a foreign reserve of collateral holdings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pegged currencies, including algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'soros-attack'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/regeneracy",
+ "identifier": "kaal:entity:regeneracy",
+ "name": "Regeneracy",
+ "termCode": "regeneracy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/regeneracy.md",
+ "sha256": "80119250595484c08dc7471d808a7f78fd3735725f89453d1f84935283e5a868",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-010",
+   "identifier": "kaal:claim:3125827-010",
+   "text": "If a blockchain cannot restart or regenerate autonomously after going offline or losing most active nodes, it needs social coordination between nodes; that requirement threatens anonymity and forces reliance on famous nodes.",
+   "abstract": "can the blockchain restart or regenerate autonomously13? Or is there a need for social coordination between the nodes? If so, anonymity is threatened and famous nodes are required.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain goes offline for a long period or has too few active nodes"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-027",
+   "identifier": "kaal:claim:3125827-027",
+   "text": "Because producer selection falls back to the seed from the last block whose validation pool concluded, any network outage shorter than the history of the blockchain will not permanently disrupt chain production, and block production continues even if the network loses all but one node.",
+   "abstract": "This ensures any network outage shorter than the history of the blockchain will not eternally disrupt chain production. This addresses the availability/regeneracy problem: even if the network loses all but one node, block production will continue",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "availability stake smart contracts persist through the outage",
+    "outage shorter than the chain history"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'regeneracy'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,342 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/single-point-of-failure",
+ "identifier": "kaal:entity:single-point-of-failure",
+ "name": "Single point of failure",
+ "termCode": "single-point-of-failure",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/single-point-of-failure.md",
+ "sha256": "5463a1e0e109d05b17d862ede7937721fc6c470e53eee63bf5f0d5e6f509d01c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 17
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 13
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-022",
+   "identifier": "kaal:claim:3782191-022",
+   "text": "Centralized coordination enables attack coordination because the hierarchical structure allows attackers to identify a single point of failure, whereas the constantly morphing information flow of decentralized systems increases their attack resistance.",
+   "abstract": "Centralized coordination enables attack coordination because the hierarchical struc- ture allows the identification of a single point of failure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "comparison of centralized and decentralized system security"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-026",
+   "identifier": "kaal:claim:3782191-026",
+   "text": "Centralization has two major flaws that inevitably lead to its downfall; the first is that every centralized organization has a single point of failure, binding the organization to a leader's poor decisions when that leader lacks information, skill, wisdom, or charisma.",
+   "abstract": "Centralization comes with two major flaws that inevi- tably lead to its downfall. First, every centralized organization has a single point of failure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "all centralized organizations",
+    "aggravated when circumstances change faster than a leader can decide"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782192-027",
+   "identifier": "kaal:claim:3782192-027",
+   "text": "Centralization is a natural state that evolves out of decentralization under competition unless it is consciously prevented by guarding members' power, while a centralized organization can always be conquered through its single point of failure at the top.",
+   "abstract": "Centralization is a natural state that evolves from decentralization under competition if it is not consciously pre- vented by guarding members' power. It is clear how a centralized organization can be conquered—the single point of failure at the top.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Introduction to Decentralization (2021). SSRN: https://ssrn.com/abstract=3782192",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized organizations exposed to competition"
+   ],
+   "source_pdf_sha256": "e7eafd56cb8a8bd15b64cf58216bb655f939bdcc296387e362fd9191976d67ae",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-004",
+   "identifier": "kaal:claim:3782217-004",
+   "text": "Any reliance by a DAO on a centralized feature creates a centralized point of failure that threatens the survival of the organization and renders the system technically centralized despite its decentralized appearance.",
+   "abstract": "Any time your DAO relies on a centralized feature, that is a centralized point of failure that is a threat to the survival of the organization. That means the system is technically centralized.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with any centralized dependency, including oracles"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-005",
+   "identifier": "kaal:claim:3782217-005",
+   "text": "Where a DAO is automated around a single centralized point of failure, the work of decentralizing and giving members redundant power is wasted, because the point of failure functions as a supreme leader and full centralization would be more efficient.",
+   "abstract": "In that case it would be more efficient to completely centralize around the single point of failure the DAO is automated around. The effort you're making to decentralize and give each member redundant power is wasted, because the point of failure might as well be the supreme leader.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAO automated around one centralized component"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-039",
+   "identifier": "kaal:claim:3936876-039",
+   "text": "Where owners do not rely on the cryptography of the wallet and of each transaction to avoid trusted third parties, single points of failure, rent seeking behaviors and other suboptimal outcomes of legacy systems inevitably seep back into decentralized solutions.",
+   "abstract": "Without it, single points of failure, rent- seeking behaviors and other suboptimal outcomes of legacy systems are inevitably seeping back into decentralized solutions.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized systems that reintroduce trusted third parties"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-026",
+   "identifier": "kaal:claim:4015908-026",
+   "text": "DAO governance over token launch wallets can assure that no single individual exercises rights over the token launch wallet and becomes a single point of failure or abuse.",
+   "abstract": "DAO governance over token launch wallets can assure that no single individual exercises rights over the token launch wallet and becomes a single point of failure/abuse.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token launch wallet is governed by the DAO"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-017",
+   "identifier": "kaal:claim:4685567-017",
+   "text": "The impact measurement consulting business follows a distinctly centralized approach, and without the crowd wisdom and community audit that WEB3 Impact 3.0 supplies, such consulting practices are subject to single points of failure.",
+   "abstract": "Without crowd wisdom and community audit that are part of WEB3 Impact 3.0, such consulting practices can often be subject to single points of failure.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized consulting model for impact measurement"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-011",
+   "identifier": "kaal:claim:4734750-011",
+   "text": "Without crowd control, a code reviewer can impose their own logic on the author, forcing repeated rewrites of code whose core functionality is already sound and whose dangerous issues are already controlled for.",
+   "abstract": "Because the code reviewer may wish to impose their logic on the code author, the code author may be required to rewrite code over and over even though the core functionality of the code is sound and dangerous issues were controlled for.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review with a single authoritative reviewer"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-013",
+   "identifier": "kaal:claim:4734750-013",
+   "text": "When the first reviewer misses a defect and follow-on reviewers anchor entirely on the first reviewer's concerns, the review carries a higher risk of inaccuracy; crowd wisdom is one way to correct this myopia and single point of failure.",
+   "abstract": "If the single author of a code review has missed something and the follow-on reviewer focused entirely on the first reviewer's concerns, the code review has a higher risk of lack of accuracy.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sequential review processes anchored on an initial reviewer"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-021",
+   "identifier": "kaal:claim:4755632-021",
+   "text": "Legacy code review carries a single point of failure risk: if the single author of a review misses something and the follow-on reviewer focuses entirely on the first reviewer's concerns, the review has a higher risk of inaccuracy, and crowd wisdom is the corrective for that myopia.",
+   "abstract": "If the single author of a code review has missed something and the follow-on reviewer focused entirely on the first reviewer's concerns, the code review has a higher risk of lack of accuracy. Crowd wisdom is one way to correct possible myopia",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to standard legacy code review with sequential reviewers"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-028",
+   "identifier": "kaal:claim:4796714-028",
+   "text": "Privacy preserving frameworks such as federated learning do not fully remove centralization, because they still typically depend on a central client to collect and distribute model information, which reintroduces high communication loads and centralized vulnerabilities.",
+   "abstract": "In response, privacy-preserving frameworks like federated learning have been developed, yet these often still depend on a central client to collect and distribute model information, resulting in high communication loads and centralized vulnerabilities.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to standard federated learning architectures with a central aggregator"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-020",
+   "identifier": "kaal:claim:4855607-020",
+   "text": "Decentralized collective governance without a central authority reduces both single points of failure and the biases that attach to traditional centralized systems, which is the core structural argument for governing AI through web3 rather than through a central body.",
+   "abstract": "This model enables a decentralized decision-making process, where stakeholders collectively govern without a centralized authority, thereby reducing single points of failure and potential biases associated with traditional centralized systems.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance arrangements where stakeholders collectively govern"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-033",
+   "identifier": "kaal:claim:4900878-033",
+   "text": "Distributing validation and execution across many nodes mitigates central point of failure risk and makes the network more resilient to attacks and disruptions, which is the security payoff of decentralization.",
+   "abstract": "By distributing the validation and execution processes across numerous nodes, blockchain technology mitigates the risks associated with central points of failure and enhances the resilience of the network against attacks and disruptions.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized networks where no single node controls the system"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-014",
+   "identifier": "kaal:claim:4941807-014",
+   "text": "Centralizing data in a single repository, while it permits powerful computation and advanced algorithms, poses significant privacy risks and creates a single point of failure.",
+   "abstract": "However, this centralization can pose significant privacy risks and create a single point of failure.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in centralized AI architectures that pool data into one repository"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-001",
+   "identifier": "kaal:claim:5245185-001",
+   "text": "Traditional centralized AI driven supervision of AI agent transactions is deficient because it delivers only limited transparency, is susceptible to bias, and concentrates risk in single points of failure.",
+   "abstract": "Traditional, centralized AI-driven supervision methods are often hindered by limited transparency, susceptibility to bias, and the risk of single points of failure.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized supervision of autonomous AI agent transaction execution"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-034",
+   "identifier": "kaal:claim:5245185-034",
+   "text": "Making governance decisions collectively through web3 consensus minimizes bias and single points of failure, because oversight is no longer subject to the limitations or errors of a solitary AI system.",
+   "abstract": "decentralized approach minimizes the risk of bias and single points of failure, as governance decisions are made collectively rather than being subject to the limitations or potential errors of a solitary AI system.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "consensus driven decision making among diverse stakeholders"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  }
+ ],
+ "description": "17 claims in the published works of Wulf A. Kaal carry the concept tag 'single-point-of-failure'. Derived node: a roster, not an adjudicated definition."
+}

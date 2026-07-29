@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/liveness-faults",
+ "identifier": "kaal:entity:liveness-faults",
+ "name": "Liveness faults",
+ "termCode": "liveness-faults",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/liveness-faults.md",
+ "sha256": "89266d319cd03b27d5b73a8aa3258fc1f82985c5af67d07562d4b6ae1da4ab74",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-022",
+   "identifier": "kaal:claim:3125827-022",
+   "text": "Experts who fail to participate in the validation pool are punished stably rather than abruptly: because the system is inflationary and they gain none of the newly minted sem tokens, their holdings become a smaller percentage of the total and earn a smaller share of future reputation weighted salaries.",
+   "abstract": "will be stably punished because the system is inflationary: if they don't participate they will not gain any portion of the newly minted sem tokens, so their own unused sem token holdings will represent a smaller percentage of the total",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new sem tokens minted with every fee",
+    "salary distributed in proportion to token holdings"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-038",
+   "identifier": "kaal:claim:3652481-038",
+   "text": "DevDAO member reputation is inflationary by design, so that non use, meaning failure to stake reputation tokens or to vote, causes value depreciation, which incentivizes action and makes liveness faults less likely.",
+   "abstract": "The DevDAO member reputation is inflationary in the DevDAO design. As such, non-use, e.g. non-staking of reputation tokens or non-voting, would lead to value depreciation, which incentivizes action and thus value enhancement. Liveness faults become less likely.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-033",
+   "identifier": "kaal:claim:3799320-033",
+   "text": "Member reputation is inflationary by design, so non staking of reputation tokens or non voting leads to value depreciation, which incentivizes action and makes liveness faults less likely.",
+   "abstract": "reputation is inflationary in the DAO of DAOs design. As such, non-use, i.e., non-staking of reputation tokens or non-voting, would lead to value depreciation, which incentivizes action and thus value enhancement. Liveness faults become less likely.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation that depreciates with non-use"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'liveness-faults'. Derived node: a roster, not an adjudicated definition."
+}

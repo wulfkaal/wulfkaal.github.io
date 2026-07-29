@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/protocol-change",
+ "identifier": "kaal:entity:protocol-change",
+ "name": "Protocol change",
+ "termCode": "protocol-change",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/protocol-change.md",
+ "sha256": "a0e9481b976a1ea0d9c1ec4afeac5345d4c88c2cb0ded523d1684e71b3923f17",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-025",
+   "identifier": "kaal:claim:3782198-025",
+   "text": "Bitcoin and Ethereum have no formal binding governance framework declaring how consensus protocols may be changed in the future, which the authors identify as a deep flaw that weakens the networks and will lead to instability.",
+   "abstract": "In Bitcoin and Ethereum, there is no formal binding governance framework de- claring how the protocols for consensus might be changed in the future. This is a deep flaw which weakens these networks and will lead to instability.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to major blockchains lacking on chain governance"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-031",
+   "identifier": "kaal:claim:3931933-031",
+   "text": "Changes to the Shasper Network codebase require Shasper Network governance votes.",
+   "abstract": "Shasper Network governance votes are required to make changes to the codebase. To further",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network codebase changes"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'protocol-change'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,152 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/redundancy",
+ "identifier": "kaal:entity:redundancy",
+ "name": "Redundancy",
+ "termCode": "redundancy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/redundancy.md",
+ "sha256": "11f67b4d0d485a47679d451855bf090ee348622cb097d09d5e93a2e70fd62e83",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-033",
+   "identifier": "kaal:claim:3782191-033",
+   "text": "Centralized organizations are more effective and efficient than decentralized ones at the singular task they were designed for, because an optimally centralized structure has no redundancy while decentralization takes longer to locate the right components within its network.",
+   "abstract": "Given a specific task, centralized organizations are more effective at the task they are designed for than decentralized organizations.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a specific, predefined task"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782192-024",
+   "identifier": "kaal:claim:3782192-024",
+   "text": "Decentralization, though it may look wastefully redundant, gives every member greater autonomous power, whereas centralization limits members' powers and reduces them to cogs in the machine.",
+   "abstract": "Decentralization, while it may be seen as wastefully redundant, gives every member greater autonomous power. Centralization limits its members' powers, reducing them to mere cogs in the machine.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Introduction to Decentralization (2021). SSRN: https://ssrn.com/abstract=3782192",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "e7eafd56cb8a8bd15b64cf58216bb655f939bdcc296387e362fd9191976d67ae",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-033",
+   "identifier": "kaal:claim:3782198-033",
+   "text": "Blockchain transactions will always be expensive whether or not proof of stake is solved, because full participation requires downloading the entire transaction history to verify validity, an extreme redundancy that cannot be removed.",
+   "abstract": "If you want to fully participate in the network, you need to download a copy of the entire history of every transaction of every bitcoin in existence. This extreme re- dundancy and inefficiency means transactions will always be expensive.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchains that require full history verification"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-039",
+   "identifier": "kaal:claim:3782198-039",
+   "text": "Ethereum is Turing complete in theory but cannot practically match even a cheap smartphone, because everything stored on the blockchain must be stored redundantly on thousands of nodes forever, so decentralized smart contract computation is necessarily primitive compared with centralized Web 2.0 services.",
+   "abstract": "However, Ethereum is not practically capable of mimicking the power of even the cheapest smartphone. The storage limit is currently extremely small, because anything stored in the blockchain needs to be stored redundantly on thousands of nodes for all time in the future.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to on chain computation and storage on general purpose blockchains"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-005",
+   "identifier": "kaal:claim:3782217-005",
+   "text": "Where a DAO is automated around a single centralized point of failure, the work of decentralizing and giving members redundant power is wasted, because the point of failure functions as a supreme leader and full centralization would be more efficient.",
+   "abstract": "In that case it would be more efficient to completely centralize around the single point of failure the DAO is automated around. The effort you're making to decentralize and give each member redundant power is wasted, because the point of failure might as well be the supreme leader.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAO automated around one centralized component"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-034",
+   "identifier": "kaal:claim:4734750-034",
+   "text": "Centralized requesters buy quality through redundancy, assigning up to fifteen workers to the same task to form consensus, which multiplies cost, produces waste, and pushes micro task worker rates down.",
+   "abstract": "Requiring requesters to pay proportionally (e.g. up to 15 times) for work per project results in waste. The necessity of multiplication of work also subjects micro task workers to lower rates and lack of payment increases.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized micro task platforms that lack reliable worker quality signals"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'redundancy'. Derived node: a roster, not an adjudicated definition."
+}

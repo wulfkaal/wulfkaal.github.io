@@ -1,0 +1,123 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/morningstar",
+ "identifier": "kaal:entity:morningstar",
+ "name": "Morningstar",
+ "termCode": "morningstar",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/morningstar.md",
+ "sha256": "d48fe28db492cbd1d0ab4975afe5c7950a49307f1b0b3d8008194e0b22208021",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-012",
+   "identifier": "kaal:claim:2389416-012",
+   "text": "The working sample consists of 2,145 hedge funds drawn from Morningstar data on roughly 7,000 hedge funds and more than 3,700 advisers, retaining only funds reporting complete monthly earnings and AUM from January to October 2012.",
+   "abstract": "Due to missing data and the presence of outliers, we extract a sample of 2,145 hedge funds that report all the monthly earnings data and monthly AUM in each period from January to October 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar Hedge Fund Database",
+    "funds with complete monthly data"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-008",
+   "identifier": "kaal:claim:2811729-008",
+   "text": "Unconstrained mutual funds have not delivered superior performance: Morningstar data for funds with three years of investing history offer no evidence that they outperform mutual funds in comparable asset classifications.",
+   "abstract": "The Morningstar data available for UMFs with three years of investing history offer no evidence that UMFs have a superior performance to mutual funds in comparable asset classifications.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "unconstrained mutual funds with at least three years of investing history"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-017",
+   "identifier": "kaal:claim:2811729-017",
+   "text": "The authors operationalize unconstrained status by binary coding eleven prospectus characteristics and treating a score of nine or better as unconstrained, producing a final study sample of 84 funds out of 114 funds identified in the Morningstar Nontraditional Bond index.",
+   "abstract": "of purely unconstrained mutual funds (i.e., those which were the focus of this study) (N=84) included only those UMFs that scored a \"9\" or better out of a total of 114 funds identified in the Morningstar Nontraditional Bond index.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar Nontraditional Bond index constituents",
+    "most recent fund-level prospectuses as of the study"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-023",
+   "identifier": "kaal:claim:2811729-023",
+   "text": "Average unconstrained mutual fund portfolio turnover exceeds the turnover of other fixed income mutual funds by over 150 percent.",
+   "abstract": "In particular, UMF turnover on average exceeds the turnover for other fixed income mutual funds by over 150 percent.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar turnover data as of March 2016",
+    "comparison against all taxable bond funds, N equals 5543"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'morningstar'. Derived node: a roster, not an adjudicated definition."
+}

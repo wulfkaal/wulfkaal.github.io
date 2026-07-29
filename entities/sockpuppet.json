@@ -1,0 +1,154 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sockpuppet",
+ "identifier": "kaal:entity:sockpuppet",
+ "name": "Sockpuppet",
+ "termCode": "sockpuppet",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sockpuppet.md",
+ "sha256": "e86c383189e8a1a4174b0f24aa68c47383b54296626a5a4a2dcbab55609ce9c7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-008",
+   "identifier": "kaal:claim:3266953-008",
+   "text": "Every centralized reputation score can be sybil attacked, because fake internet accounts or fictitious ratings disrupt true reputation scoring.",
+   "abstract": "All centralized reputation scores can be sybil attacked, e.g. fake internet accounts (sockpuppets) or fictitious ratings disrupt true reputation scoring",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized reputation scoring systems"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-028",
+   "identifier": "kaal:claim:3266953-028",
+   "text": "A Web of Trust reputation system can be gamed with sockpuppet accounts, because an attacker can behave well for a while and then transact with himself repeatedly and rate himself high to raise his reputation arbitrarily.",
+   "abstract": "If I use a lot of sockpuppet accounts, I can raise my reputation arbitrarily high, by behaving well for a while, then making a lot of transactions with myself and rating myself high.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation systems based on counting positive peer rated transactions"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-029",
+   "identifier": "kaal:claim:3266953-029",
+   "text": "Identity verification does not fix the sockpuppet problem, because whenever the reputation is genuinely valuable a sockpuppet operator can afford to clear whatever verification hoops are in place, including stealing biometric data, and then inflate reputation as before.",
+   "abstract": "The problem with this is, if the reputation is genuinely valuable, a sockpuppet account can afford to go through whatever hoops you have in place to create false identities (including stealing biometric data if necessary), then increase their reputation arbitrarily, as described above.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation that carries real economic value"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-031",
+   "identifier": "kaal:claim:3266953-031",
+   "text": "The Web of Trust is only trustworthy where the service is not valuable, such as essentially free PGP email, because only then is it not worth creating sockpuppet accounts.",
+   "abstract": "So the only time WoT works is when the service is not valuable, such as PGP (email which is essentially free). Then it's not worth it to create sock puppet accounts, so in that case you can trust the WoT network.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "services with negligible economic value at stake"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-032",
+   "identifier": "kaal:claim:3266953-032",
+   "text": "In an economic network where real money is at stake, historical good behavior cannot be assumed to prove future good behavior, because sockpuppet accounts allow participants to game the system automatedly, create valuable reputation falsely, and leach value out of the system.",
+   "abstract": "you can't just assume their historical good behavior will prove their future behavior will also be good. Sockpuppet accounts allow us to automatedly game the system and falsely create valuable reputation, so we can leach whatever value there is out of the system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "networks where trust must support real monetary value"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-033",
+   "identifier": "kaal:claim:3266953-033",
+   "text": "Sockpuppet accounts grow their reputation value much faster than honest users can in a Web of Trust, because sockpuppets validate each other, and the system is therefore flawed and should not be used where fungible currency is at stake.",
+   "abstract": "However, sockpuppet accounts can grow their value much quicker in the web of trust by validating each other. Honest users are much slower than the sockpuppets validating each other. Hence, the system is flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "web of trust style reputation used by many distributed ledger startups"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'sockpuppet'. Derived node: a roster, not an adjudicated definition."
+}

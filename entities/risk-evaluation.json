@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/risk-evaluation",
+ "identifier": "kaal:entity:risk-evaluation",
+ "name": "Risk evaluation",
+ "termCode": "risk-evaluation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/risk-evaluation.md",
+ "sha256": "358bf4747dea2842953ad0291082899a139b0f61b6aff5099ce2c6328ad08367",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2009",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1428387-039",
+   "identifier": "kaal:claim:1428387-039",
+   "text": "Investor suitability standards would address the sophistication problem by requiring independent verification that investors in highly complex financial products can evaluate investment risk independently and are capable of making independent investment decisions.",
+   "abstract": "Investor suitability standards would address these concerns by requiring independent verification that investors in highly complex financial products have the capability to evaluate investment risk independently and are capable of making independent investment decisions.",
+   "citation": "Kaal, Hedge Fund Valuation Retailization, Regulation, and Investor Suitability (2009). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1428387",
+   "datePublished": "2009",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "for investments in highly complex financial products"
+   ],
+   "source_pdf_sha256": "6aa3a280dc6750723be2389f3af2aabf3a16c4ce20e49fcdaddd7f2ea95a67aa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-012",
+   "identifier": "kaal:claim:2811729-012",
+   "text": "Three features make it uniquely challenging for retail investors to evaluate the risks of unconstrained mutual funds: the lack of standard benchmarks, the recent emergence of the fund type, and the diversity and complexity of the strategies and risk exposures involved.",
+   "abstract": "the lack of standard benchmarks for UMFs, the recent emergence of UMFs as an investment asset type, and the diversity among and complexity of UMFs' strategies and risk exposures make it uniquely challenging for retail investors to evaluate the risks of investing in UMF securities.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "retail investors evaluating unconstrained mutual fund securities"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'risk-evaluation'. Derived node: a roster, not an adjudicated definition."
+}

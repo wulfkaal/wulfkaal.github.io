@@ -1,0 +1,135 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/participation-incentives",
+ "identifier": "kaal:entity:participation-incentives",
+ "name": "Participation incentives",
+ "termCode": "participation-incentives",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/participation-incentives.md",
+ "sha256": "e3726f8d5816d007b5f81a84e9c6b71a468dab3a27ca328deea90a232f01f6aa",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-025",
+   "identifier": "kaal:claim:3266953-025",
+   "text": "New reputation tokens are minted in every validation pool for every block, so block production is strongly encouraged through a larger share for the successful producer while policing is only gently encouraged through a shared allocation to all active members.",
+   "abstract": "Active participation is encouraged because new reputation tokens are minted in every validation pool for every block. So block production is strongly encouraged (because a greater percentage of the new tokens are given to a successful producer) and policing is gently encouraged",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "every block and its validation pool"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-038",
+   "identifier": "kaal:claim:3652481-038",
+   "text": "DevDAO member reputation is inflationary by design, so that non use, meaning failure to stake reputation tokens or to vote, causes value depreciation, which incentivizes action and makes liveness faults less likely.",
+   "abstract": "The DevDAO member reputation is inflationary in the DevDAO design. As such, non-use, e.g. non-staking of reputation tokens or non-voting, would lead to value depreciation, which incentivizes action and thus value enhancement. Liveness faults become less likely.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-031",
+   "identifier": "kaal:claim:3981021-031",
+   "text": "The design decreases the likelihood of individual and, in turn, community liveness fault, because non use of existing reputation at the individual level leads to inflationary devaluation of that reputation.",
+   "abstract": "The design decreases the likelihood of individual and, in turn, community liveness fault because non-use of existing reputation on the individual level leads to inflationary devaluation.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation systems with built in inflationary decay"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-016",
+   "identifier": "kaal:claim:5254152-016",
+   "text": "DAOs that rely on third party communication platforms and offer no incentives for engagement suffer impaired coordination and efficiency across the organization.",
+   "abstract": "Lower scores suggest reliance on third-party platforms and a lack of incentives for engagement, which can impair the organization's overall coordination and efficiency.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs without dedicated communication platforms or participation incentives"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-020",
+   "identifier": "kaal:claim:6192998-020",
+   "text": "The real barrier to multi agent competition is not cost but the absence of an attribution mechanism: if only the best of several competing agents is paid, the others have no incentive to participate, so competition requires rewards proportional to each contributor's contribution.",
+   "abstract": "The real barrier is the lack of attribution mechanism. If 5 agents compete but only the best gets paid, the other 4 have no incentive to participate. We need a framework where all contributors can be rewarded proportional to their contribution.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multiple agents competing on the same job"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'participation-incentives'. Derived node: a roster, not an adjudicated definition."
+}

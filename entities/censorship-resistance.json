@@ -1,0 +1,139 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/censorship-resistance",
+ "identifier": "kaal:entity:censorship-resistance",
+ "name": "Censorship resistance",
+ "termCode": "censorship-resistance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/censorship-resistance.md",
+ "sha256": "18ab202ebb6bbc932b2e48624899be5f829a6d5d4f9da356eed9d997173617ce",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-029",
+   "identifier": "kaal:claim:3067615-029",
+   "text": "The lack of a regulatory framework creates significant legal uncertainty in the ICO market, and because cryptocurrencies are censorship-resistant and arguably regulation-resistant by design, that uncertainty may sooner or later lead the Securities and Exchange Commission to declare ICOs illegal.",
+   "abstract": "The lack of a regulatory framework creates significant legal uncertainty in the ICO market. Moreover, cryptocurrencies are censorship-resistant and arguably regulation-resistant by design,56",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "ICO market as of November 2017",
+    "United States securities regulation"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-030",
+   "identifier": "kaal:claim:3782198-030",
+   "text": "The GDPR's removal remedy cannot be enforced against a public blockchain: scrubbing private information would require more than half of the network's nodes to change their entire protocol and restart the chain, and would have to be repeated for every violating entry.",
+   "abstract": "More than half of the network's nodes would be required to change their entire protocol to scrub the data and restart the blockchain. This would need to happen every time information was found on the blockchain which violated the GDPR.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to open, uncensorable blockchains such as Bitcoin holding personal data"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808859-011",
+   "identifier": "kaal:claim:3808859-011",
+   "text": "Distributed routing makes a peer-to-peer network resistant to shutdown: BitTorrent could not be taken down even when authorities shut down specific servers, because nodes could update their own routing tables indefinitely.",
+   "abstract": "Even if government authorities shut down specific servers, the BitTorrent network could not be shut down because nodes could update their own routing tables indefinitely.",
+   "citation": "Wulf A. Kaal, Decentralization – Why We Need Technology Infrastructure Upgrades (2021). SSRN: https://ssrn.com/abstract=3808859",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to networks that removed central indexing servers"
+   ],
+   "source_pdf_sha256": "304ad25d43b5ecea3158e3a2ca04e6e1e3bd2958e2134e2dcefbfedf3b6f3ab7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-024",
+   "identifier": "kaal:claim:3808873-024",
+   "text": "Because decentralized technology at its core negates external control, censorship and oversight, regulatory approaches premised on government control undermined the technology's evolution, and without the ability to experiment in a legally protected environment decentralized products could not evolve.",
+   "abstract": "Accordingly, the then-proposed approaches largely undermined the decentralized technology evolution. Without the ability to experiment in a legally protected environment, decentralized products and technology could not evolve.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "regulatory regimes that treat government control as indispensable",
+    "early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-026",
+   "identifier": "kaal:claim:3808873-026",
+   "text": "Regulatory solutions tracked the characteristics of issuers, so the more decentralized, censorship resistant and autonomous products that regulators could not control were left in a regulatory vacuum that limited their expansion, reach and evolution.",
+   "abstract": "As a result, the more decentralized products that were more censorship resistant, autonomous, and could not be controlled by regulatory agencies, were largely left in a regulatory vacuum that limited their expansion, reach, and evolution.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "jurisdiction specific regulatory frameworks of the early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'censorship-resistance'. Derived node: a roster, not an adjudicated definition."
+}

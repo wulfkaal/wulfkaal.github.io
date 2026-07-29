@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/quality-efficiency-tradeoff",
+ "identifier": "kaal:entity:quality-efficiency-tradeoff",
+ "name": "Quality efficiency tradeoff",
+ "termCode": "quality-efficiency-tradeoff",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/quality-efficiency-tradeoff.md",
+ "sha256": "46d9d15ff9ac20c09dcda3334f40efd6e664380729b067fd3aa93a51cbaad58f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-012",
+   "identifier": "kaal:claim:6192998-012",
+   "text": "Selecting a single agent per job by weighted random draw sacrifices quality assurance for efficiency, reflecting a broader pattern in DAO governance where efficiency optimization crowds out quality.",
+   "abstract": "Problem 2: Single agent selection. The system randomly picks one agent per job, even if having multiple agents compete would improve quality. This reflects a broader pattern I have observed in DAO governance: efficiency optimization often sacrifices quality assurance.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-018",
+   "identifier": "kaal:claim:6192998-018",
+   "text": "Selecting one agent per job by weighted random selection appears efficient but is mathematically suboptimal for quality assurance, since expected quality equals only the reputation weighted average rather than the best available output.",
+   "abstract": "The Calcaterra-Kaal-Andrei framework selects a single agent per job through weighted random selection.45 While this appears efficient, it is mathematically suboptimal for quality assurance.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation correlates with true quality only imperfectly"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'quality-efficiency-tradeoff'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,129 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/parameter-calibration",
+ "identifier": "kaal:entity:parameter-calibration",
+ "name": "Parameter calibration",
+ "termCode": "parameter-calibration",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/parameter-calibration.md",
+ "sha256": "c1c3b99ea9ca15d67af242aa70da65c700212eaab87501df8996a77fc3072585",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-026",
+   "identifier": "kaal:claim:6269518-026",
+   "text": "Under the recommended integrated mechanism agents may allocate no more than half of their citation weight to themselves, which is the mandatory citation minimum.",
+   "abstract": "Agents must allocate self-citation weight cii ≤ 0.5 (mandatory citation minimum).",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-027",
+   "identifier": "kaal:claim:6269518-027",
+   "text": "Under the integrated mechanism payment is computed with a weighting parameter of 0.6, so sixty percent of payment derives from citation-weighted quality and forty percent from citation honesty scores.",
+   "abstract": "Payment is computed using the decoupled formula with θ = 0.6, meaning 60% of payment derives from citation-weighted quality and 40% from citation honesty scores.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-029",
+   "identifier": "kaal:claim:6269518-029",
+   "text": "The limit to revaluation for citation-related references should be set at a moderate level so that under-cited posts can be meaningfully corrected without enabling destabilizing cascades.",
+   "abstract": "The limit to revaluation q2 for citation-related references should be moderate, allowing meaningful correction of under-cited posts without enabling destabilizing cascades.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-033",
+   "identifier": "kaal:claim:6269518-033",
+   "text": "The equilibrium depends on a design requirement rather than an assumption: mechanism parameters must be chosen so that the negative effect of increased self-citation on the honesty score outweighs its positive effect on the value score, at which point increasing self-citation strictly decreases utility.",
+   "abstract": "the mechanism parameters (θ = 0.6, reputation coefficient = 2) are chosen such that the negative effect of increased self-citation on the honesty score outweighs the positive effect on the value score.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators rate citation honesty lower when self-citation is inflated"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-039",
+   "identifier": "kaal:claim:6269518-039",
+   "text": "The mechanism parameters are presented as design choices rather than derived from first principles, so empirical calibration through simulation and field experimentation is necessary to identify values that produce robust equilibria across diverse domains.",
+   "abstract": "penalty magnitudes) are presented as design choices rather than derived from first principles. Empirical calibration through simulation and field experimentation will be necessary to identify parameter values that produce robust equilibria across diverse domain contexts.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'parameter-calibration'. Derived node: a roster, not an adjudicated definition."
+}

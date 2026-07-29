@@ -1,0 +1,34 @@
+# Partnership default
+
+`kaal:entity:partnership-default`
+
+**Status.** derived
+
+This node is assembled mechanically from the 3 claims that carry the concept tag `partnership-default`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+
+## Every claim under this term
+
+3 claims across 2 works, 2020 to 2021.
+
+**2020**
+
+- [3652481-013](https://wulfkaal.github.io/claims/3652481-013) [failure/evidenced] *(failure mode)* -- If DAO members do not formalize a structure for their human created entity, courts are very likely to impose one on them, which is a serious risk of DAO membership.
+  > However, a very serious risk is associated with DAO membership in the sense that if the DAO members do not formalize a structure for their human-created entity, courts are very likely to impose one for the members of the DAO.
+  Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481
+- [3652481-014](https://wulfkaal.github.io/claims/3652481-014) [condition/evidenced] *(failure mode)* -- Where no legal entity is involved, partnership rules operate as the default rules that apply to all interactions between parties trying to achieve a common goal.
+  > If no legal entity is involved, partnership rules are default rule that apply to all interactions between parties trying to achieve a common goal.
+  Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481
+
+**2021**
+
+- [3799320-009](https://wulfkaal.github.io/claims/3799320-009) [failure/evidenced] *(failure mode)* -- Default general partnership treatment would hold every stakeholder of a DAO liable for any debts or legal actions the DAO faces, exposing known participants to regulatory enforcement and civil actions.
+  > Many courts and lawyers would describe the relationship between members of a DAO and their investors as the default general partnership which holds every stakeholder of a DAO liable for any debts or legal actions that the DAO may face.
+  Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320
+
+## Verify
+
+Every claim above resolves to a record carrying a verbatim source quote, the sha256 of the source PDF, and a preformatted citation. Nothing here asks to be taken on trust.
+
+    curl -s https://wulfkaal.github.io/entities/partnership-default.md | sha256sum
+
+**Canonical form.** This markdown file is the canonical hashed representation of this entity node. Its sha256 is the content hash.

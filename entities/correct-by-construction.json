@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/correct-by-construction",
+ "identifier": "kaal:entity:correct-by-construction",
+ "name": "Correct by construction",
+ "termCode": "correct-by-construction",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/correct-by-construction.md",
+ "sha256": "75edbaea9e2d2d2959b703e7fd016755c359e149be3163068ebf0a43d23d7f0c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-026",
+   "identifier": "kaal:claim:3782203-026",
+   "text": "Marketing a consensus algorithm as correct by construction is false advertising, because such proofs establish resistance only to the attacks the theorists considered reasonable at the time, not to all possible attacks.",
+   "abstract": "In the first place, this is simply false advertising. Most people don't understand that CBC doesn't mean it's mathematically proven to be perfectly resistant to all attacks; it's only resistant to the attacks the theorists consider reasonable at the time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "correct by construction proof of stake designs",
+    "adversaries able to invent new attacks"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-027",
+   "identifier": "kaal:claim:3782203-027",
+   "text": "Finding a correct by construction algorithm that incorporates all possible or even all practical assumptions about network status is not possible, because for any set of assumptions about network behavior an actor can break those assumptions by valuing some other result.",
+   "abstract": "Finding a correct by construction algorithm that incorporates all possible, or even practical, assumptions of possible network statuses, is not possible. Given any set of assumptions about how the network will behave, you can always break those assump- tions by valuing some other result.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "consensus algorithms for open anonymous networks"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'correct-by-construction'. Derived node: a roster, not an adjudicated definition."
+}

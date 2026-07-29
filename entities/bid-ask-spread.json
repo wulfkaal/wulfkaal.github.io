@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bid-ask-spread",
+ "identifier": "kaal:entity:bid-ask-spread",
+ "name": "Bid ask spread",
+ "termCode": "bid-ask-spread",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bid-ask-spread.md",
+ "sha256": "2885a0a7aa47f7f3aaf491e7df7da105ec7ca98e963c1ed0bc77553a588e11d2",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-005",
+   "identifier": "kaal:claim:4033886-005",
+   "text": "Dual listing narrows bid ask spreads in traditional markets by injecting liquidity, but crypto markets behave differently: price differences between two exchanges can reach upwards of five percent during peak trading times.",
+   "abstract": "For traditional markets, when a security is dual- listed, we see the bid-ask spread decrease because additional liquidity is being injected into the market. This differs from the crypto market where the difference between the two exchanges can reach upwards of 5% during peak trading times.5",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "peak trading times",
+    "assets listed on multiple crypto exchanges"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-022",
+   "identifier": "kaal:claim:4033886-022",
+   "text": "When the bid ask spread grows too wide while trades occur at high volume, the market begins to lose liquidity and the asset's value starts to fall, forcing investors who unload positions to surrender unrealized gains.",
+   "abstract": "Historically, in an exchange context, if the spread between bid and ask price becomes too large and trades are occurring at high volumes, the market will start to lose liquidity and the value of the asset will start to fall.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "exchange traded context",
+    "wide spreads combined with high trading volume"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'bid-ask-spread'. Derived node: a roster, not an adjudicated definition."
+}

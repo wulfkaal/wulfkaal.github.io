@@ -1,0 +1,210 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fifty-one-percent-attack",
+ "identifier": "kaal:entity:fifty-one-percent-attack",
+ "name": "Fifty one percent attack",
+ "termCode": "fifty-one-percent-attack",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fifty-one-percent-attack.md",
+ "sha256": "77b3c4b24c23bdf7565fd7fef7e4128e523890df6840961fc7e201520d67a234",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-016",
+   "identifier": "kaal:claim:3125822-016",
+   "text": "A 51 percent collusion that votes against common sense is visible in an open system, which erodes trust, reduces use and fees, and lowers the value of the attackers' own reputational salary, so the tactic can destroy an expertise tag but cannot enrich the attackers.",
+   "abstract": "This would erode trust in the platform, and therefore use and fees would diminish, making the 51% holding of reputational salary less valuable. Therefore this tactic generally has the potential to destroy the expertise tag, but not enrich the attackers.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires an open and observable system",
+    "assumes attacker value is held in the attacked tag"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-017",
+   "identifier": "kaal:claim:3125822-017",
+   "text": "The author concedes an arbitrage attack is feasible when experts fail to police their expertise and a significant share of the technically fungible tokens is offered on an exchange, since a malicious actor can then buy 51 percent of the tokens, vote against common sense, and sell before the tokens lose value.",
+   "abstract": "However, it is feasible that an arbitrage opportunity could evolve if the experts do not police their expertise. If a significant percentage of the (technically fungible) tokens were put on sale in a token exchange, a malicious actor would have the opportunity to 1) buy 51% of tokens",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "requires expert policing to be absent",
+    "requires a liquid exchange holding a large share of tokens"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-019",
+   "identifier": "kaal:claim:3125822-019",
+   "text": "In the absolute worst case, with no safeguards at all, the price of corrupting the platform from within is a minimum of twice the total historical fees added to the system, and instituting any obvious protection raises that price steeply.",
+   "abstract": "in the absolute worst- case scenario, the price to corrupt the system from within is a minimum of twice the total historical fees added to the system. If any obvious protections are instituted, the price to corrupt grows steeply.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "worst case assumes any fee is accepted automatically and resolved instantly",
+    "assumes no other users are adding fees"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-020",
+   "identifier": "kaal:claim:3125822-020",
+   "text": "Even a successful takeover yields the attacker only a fraction of one transaction's fee before the expertise tag topples, so as long as any single fee is smaller than the total reputation there is no incentive to game the system for fees.",
+   "abstract": "The malicious group would merely gain the (fraction) of the fee from one transaction. As long as any single fee is smaller than the total reputation, there is no incentive to game the system for fees.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds while single fees remain small relative to total reputation"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-021",
+   "identifier": "kaal:claim:3125822-021",
+   "text": "Acquiring 51 percent of the tokens by paying fees and winning betting pools costs roughly six times the value of the entire quantity of sem tokens in a healthy expertise, even when the bench makes no effort at all to police the incoming fees.",
+   "abstract": "a reasonable estimate for the price of this attack (even when the bench makes absolutely no effort to police this action) is 6 times the value of the entire quantity of sem tokens in existence in the expertise, when the expertise is healthy, i.e., earning fees.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "expertise is healthy, meaning it is earning fees",
+    "assumes no policing by the bench"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-022",
+   "identifier": "kaal:claim:3125822-022",
+   "text": "If good faith experts counter invest at least as fast as the malicious group, that is at a constant fraction c greater than or equal to one of the malicious investment, the malicious group can never gain more than 50 percent of the power.",
+   "abstract": "assume the good-faith experts invest some constant fraction c of the malicious groups' investment ∆x at each time. If c ≥ 1then the malicious group will never gain more than 50% power.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that good faith experts respond to incoming malicious fees",
+    "requires a time delay in resolving betting pools"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-035",
+   "identifier": "kaal:claim:3125822-035",
+   "text": "The author contests Houy's claim that killing a proof of stake currency costs nothing: on this platform the token's value is calculably predictable rather than merely a function of public opinion, and signaling an intention to buy tokens usually raises the price rather than triggering a race to the bottom.",
+   "abstract": "However, in the current example, the value of the token is not merely tied to public opinion. The value of the token is calculably predictable. And when someone signals their intention to buy tokens—for whatever reason—the price usually goes up, not down.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies where token value is computable from observable fee flows"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-041",
+   "identifier": "kaal:claim:3125822-041",
+   "text": "If 51 percent of users collude to enrich themselves maliciously, nothing in the design can prevent them; the only check is the openness of the system, which would quickly detect such an attack.",
+   "abstract": "If 51% of users collude to maliciously enrich themselves, nothing can prevent them, except the open system itself, which would quickly detect such an attack.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "requires a colluding majority of reputation weighted users"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-013",
+   "identifier": "kaal:claim:3411110-013",
+   "text": "The double spending problem has not been eradicated in theory: a group or syndicate obtaining 51 percent control of a network could reverse transactions and create a private chain that the market could only limitedly discern as not real.",
+   "abstract": "There is the possibility a group or syndicate could gain 51% control over the network and would therefore be able to reverse transactions and create a private blockchain, which the market could only limitedly discern as not real.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a decentralized network where one party can amass majority hashing control"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'fifty-one-percent-attack'. Derived node: a roster, not an adjudicated definition."
+}

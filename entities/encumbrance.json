@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/encumbrance",
+ "identifier": "kaal:entity:encumbrance",
+ "name": "Encumbrance",
+ "termCode": "encumbrance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/encumbrance.md",
+ "sha256": "cdf1d2e49ee6fb7995ac400727f9052152838b894bf8b3b0d03a5dfce1224085",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-017",
+   "identifier": "kaal:claim:3396542-017",
+   "text": "The value of a token is not uniform across tokens: it depends on whether the token is currently encumbered and, for encumbered tokens, the sooner the token is expected to be released from encumbrance the greater its value.",
+   "abstract": "In general, the sooner a token is expected to be released from encumbrance (by the policy on which it is staked terminating due to either a payout or reaching maturity), the greater its value.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state DAO"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-029",
+   "identifier": "kaal:claim:3396542-029",
+   "text": "From the viewpoint of consumers and regulators, encumbered tokens, whose value derives from the DAO's future cash flows, serve as a substitute for regulatory capital.",
+   "abstract": "The key point is this: from the viewpoint of consumers and regulators, the encumbered tokens (which as we know derive their value from the DAO's future cash flows) essentially serve as a substitute for capital.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-007",
+   "identifier": "kaal:claim:3949098-007",
+   "text": "The more reputation replaces capital, the less capital must be allocated, tied and encumbered, which raises the ratio of unencumbered capital available to be newly deployed.",
+   "abstract": "The more reputation replaces capital the less capital has to be allocated, tied, and encumbered. In turn, the ratio of capital becoming unencumbered through reputation increases the deployment of capital ratio, e.g. a higher proportion of unencumbered capital can be newly encumbered.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is encumbered and tied to an asset in place of capital"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'encumbrance'. Derived node: a roster, not an adjudicated definition."
+}

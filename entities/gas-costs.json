@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/gas-costs",
+ "identifier": "kaal:entity:gas-costs",
+ "name": "Gas costs",
+ "termCode": "gas-costs",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/gas-costs.md",
+ "sha256": "a5537dd0ea42ceec22afb893096aa27412de2a0c40eeb721747e657110a29569",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-031",
+   "identifier": "kaal:claim:3128900-031",
+   "text": "The payment design allows secure off chain payments without gas consumption, with settlement transferred onto the Ethereum blockchain at a later date, which the author claims is superior to the payment channel approach used by decentralized competitors.",
+   "abstract": "It allows for secure off chain payments without using gas before transferring those payments on the ETHEREUM blockchain at a later date.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "payments among requesters, workers, and verifiers"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-039",
+   "identifier": "kaal:claim:3128900-039",
+   "text": "Removing centralized fees produces a more efficient marketplace for workers, verifiers, and requesters alike by eliminating rent seeking intermediaries, leaving gas for posters as the only cost.",
+   "abstract": "The lack of fees on the Semada platform creates a more efficient marketplace for workers, verifiers, and requesters alike through the removal of the rent seeking intermediators.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "posters pay gas on the Ethereum blockchain, viewers do not"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-035",
+   "identifier": "kaal:claim:6192998-035",
+   "text": "Fully on chain computation of citation weighted PageRank allocation is economically feasible at realistic competition sizes, and is far more tractable in gas terms than the validation pool mechanism of the 2018 framework.",
+   "abstract": "Conclusion: Fully on-chain computation is economically feasible for —far more tractable than the gas costs for the validation pool mechanism in Calcaterra, Kaal, and Andrei (2018).",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "small competition sizes",
+    "sparse citation matrices with roughly two to four citations per agent"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'gas-costs'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bank-supervision",
+ "identifier": "kaal:entity:bank-supervision",
+ "name": "Bank supervision",
+ "termCode": "bank-supervision",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bank-supervision.md",
+ "sha256": "183c9868c5f56103c975eedb05d88ec132a2408a8aa4e941bc271655f4c34364",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2010",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1558614-001",
+   "identifier": "kaal:claim:1558614-001",
+   "text": "German banks' exposure to CDO risk ran through credit enhancement and liquidity guarantees given to off balance sheet conduits, and because that exposure was often kept out of their accounting the inherent risk only surfaced once the CDO market collapsed.",
+   "abstract": "was often hidden and not included in their accounting. The in- herent risk of the guarantees to the banks, however, became appar- 10 ent when the market for CDOs collapsed.",
+   "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614",
+   "datePublished": "2010",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "banks guaranteeing conduits located outside German banking supervision",
+    "guarantee exposure not consolidated into bank accounts"
+   ],
+   "source_pdf_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-023",
+   "identifier": "kaal:claim:3405660-023",
+   "text": "Indirect regulation asks banks to fully assess the risk they incur from hedge fund counterparties, but that assessment is often dubious at best because of the opacity of hedge fund activity.",
+   "abstract": "Regulators who regulate banks' risk management processes are in essence asking banks to fully assess the risks they incur in engaging with hedge funds as their counterparties. That assessment is often dubious at best.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "banks face opaque hedge fund counterparties"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'bank-supervision'. Derived node: a roster, not an adjudicated definition."
+}

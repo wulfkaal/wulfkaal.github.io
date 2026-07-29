@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/founder-control",
+ "identifier": "kaal:entity:founder-control",
+ "name": "Founder control",
+ "termCode": "founder-control",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/founder-control.md",
+ "sha256": "b0d85c2e130b1195165514cdf861e8f4164b47ad17f43cc49bdc982858e5fb28",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2023"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-027",
+   "identifier": "kaal:claim:4015908-027",
+   "text": "Founders may hold significant influence over DAO votes initially depending on the DAO design, but higher levels of governance decentralization mitigate these centralization effects quickly through the onboarding of new DAO members.",
+   "abstract": "Depending on the DAO design, the founders may have significant influence over the DAO votes initially. However, higher levels of DAO governance decentralization mitigate these centralization effects quickly via the onboarding of new DAO members.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "early stage of DAO formation",
+    "DAO design permits ongoing member onboarding"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-021",
+   "identifier": "kaal:claim:4529715-021",
+   "text": "True decentralization requires the absence of a primary decision-maker, which is very difficult for a decentralized insurance organization to achieve while it is still in its infancy.",
+   "abstract": "Despite the potential benefits, decentralized insurance organizations face several challenges. First, true decentralization requires the absence of a primary decision-maker, which is difficult to achieve in an organization's infancy.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "early stage decentralized insurance organizations"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-029",
+   "identifier": "kaal:claim:4529715-029",
+   "text": "Lobby3 was effectively attacked from within: founders maintained heavy control and slowly diverted funds to themselves, producing a very slow rug pull.",
+   "abstract": "Because the founders maintained heavy control and slowly diverted funds to themselves, the DAO suffered from a very slow rug pull.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "founder controlled DAO with wallet size voting"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'founder-control'. Derived node: a roster, not an adjudicated definition."
+}

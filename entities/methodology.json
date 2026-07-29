@@ -1,0 +1,628 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/methodology",
+ "identifier": "kaal:entity:methodology",
+ "name": "Methodology",
+ "termCode": "methodology",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/methodology.md",
+ "sha256": "693f79ec9aa98b0c894ae262b8e33d9db5290e890fa98218c0d758c4a31999df",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 34
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 20
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-002",
+   "identifier": "kaal:claim:2097160-002",
+   "text": "The methodological assumptions of incomplete contract theory improve the analysis of executive compensation arrangements relative to the classical and spot contract models normally used.",
+   "abstract": "The methodological assumptions of incomplete contract theory can improve the analysis of executive compensation arrangements.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-024",
+   "identifier": "kaal:claim:2389416-024",
+   "text": "Because the compliance probability denominator is very close to one, fuzzy regression discontinuity estimates differ only trivially from the sharp design estimates on the entire sample.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample",
+    "compliance with mandatory disclosure near certain above the threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-019",
+   "identifier": "kaal:claim:2389423-019",
+   "text": "Least squares linear regression is non-robust to outliers: in the presence of outliers its predictions can be dragged toward the outliers and the variance of the estimates can be artificially inflated.",
+   "abstract": "In the presence of outliers, LSLR predictions can be dragged towards the outliers and the variance of the LSLR estimates can be artificially inflated.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "least squares linear regression applied to samples containing outliers"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-020",
+   "identifier": "kaal:claim:2389423-020",
+   "text": "Because the distribution in this sample is heteroscedastic, treating each data point equally would allocate inappropriate weight to data points in the distribution, which is why the author used robust and weighted regression specifications.",
+   "abstract": "The heteroscedasticity of the distribution in the sample of this study suggests that it would be unreasonable to assume that each data point should be treated equally. Treating each data point equally would allocate inappropriate weight to the data points in the distribution.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "survey samples with heteroscedastic distributions",
+    "small datasets with data points of varying importance"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-021",
+   "identifier": "kaal:claim:2389423-021",
+   "text": "Weighted least squares regression depends on estimated weights, and contrary to the theory behind the method the exact weights are almost never determinable in real applications such as this study.",
+   "abstract": "A downside of weighted LSLR methodology is its dependence on estimated weights. Contrary to the theory behind weighted LSLR methodology, in real applications, such as the application in this study, the exact weights are almost never exactly determinable.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real world applications of weighted least squares regression"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2470008-039",
+   "identifier": "kaal:claim:2470008-039",
+   "text": "Matching the identified Form PF defects against the FSOC's specific uses of that data suggests possible inaccuracies in the FSOC's systemic risk assessment process, although the author disclaims scientific or empirical precision for the analysis.",
+   "abstract": "The matching of identified Form PF issues with FSOC's respective use of such suboptimal Form PF data suggests that possible inaccuracies may exist in FSOC's systemic risk assessment process. The author does not claim scientific and/or empirical precision in the analysis.",
+   "citation": "Wulf A. Kaal, The Systemic Risk of Private Funds after the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2470008",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "method of matching known data defects to documented FSOC uses",
+    "no claim of empirical precision"
+   ],
+   "source_pdf_sha256": "5f68a401c935527d89658171e9b48a4d186710459aaf2bdbead755507394e8c9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-012",
+   "identifier": "kaal:claim:2629451-012",
+   "text": "The event study design is appropriate for N/DPAs because the wrongdoing event is identifiable through the execution of a reasonably standardized agreement and because information about the firm's wrongdoing can change the distribution of stock returns.",
+   "abstract": "(1) the event of corporate wrongdoing is identifiable through N/DPAs execution and N/DPA executions are reasonably similar in format, (2) the information pertaining to N/DPA firm wrongdoing has the potential to change the distribution of stock returns,",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "N/DPA executions are reasonably similar in format",
+    "events are evenly distributed and cross-sectionally independent"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-013",
+   "identifier": "kaal:claim:2629451-013",
+   "text": "The date of the DOJ press release announcing execution is the only reliable announcement date for an N/DPA, so it is the defensible event date for measuring market reaction.",
+   "abstract": "The only reliable N/DPA announcement date is the date of the DOJ press release pertaining to the execution of the respective NDPA - ANDPAE.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "press release generally issued on the day the agreement is signed for NPAs or filed with the court for DPAs"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-016",
+   "identifier": "kaal:claim:2629451-016",
+   "text": "Unlike legislative mandates, N/DPA governance changes are preceded by no public debate or publicity, so their effect on firm value is not gradually incorporated into prices and is therefore testable by event study.",
+   "abstract": "congressional mandates, prior to the ANDPAE there is no public debate or other publicity pertaining to the anticipated governance changes in the NDPA or possible fines. Accordingly, the effect of NDPA governance changes on firm value is not gradual and therefore testable.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contrast with congressional regulatory changes whose effects are anticipated gradually"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-027",
+   "identifier": "kaal:claim:2715083-027",
+   "text": "The confluence trends identified are correlational, not causal: the author expressly disclaims any claim of cause and effect and presents the peripheral effects as long term possibilities warranting monitoring.",
+   "abstract": "The emerging process of confluence of mutual and hedge funds can have unexpected peripheral effects that may themselves reinforce confluence of the two asset classes. I do not claim cause and effect in this context.",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scope limitation stated by the author for the entire implications analysis"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2808132-037",
+   "identifier": "kaal:claim:2808132-037",
+   "text": "Venture capital deal flow, meaning the totality of potential deals and business plans screened by venture capitalists, would provide the optimal assessment of innovation trends, but that data is not available, so realized investment allocations must be used as a second-best proxy.",
+   "abstract": "innovation trends. While deal flow, that is, the totality of potential deals and business plans screened by venture capitalists, would provide an optimal assessment of innovation trends, deal flow data is not available. We therefore use venture capital investment",
+   "citation": "Wulf A. Kaal, Erik P.M. Vermeulen, How to Regulate Disruptive Innovation - From Facts to Data (2016). SSRN: https://ssrn.com/abstract=2808132",
+   "datePublished": "2016",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current data availability from commercial venture capital databases"
+   ],
+   "source_pdf_sha256": "3515f2317ed9c1d33ae55d70467cdf1f6c4e350065ea6a887d5d7619599ad7d2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811718-014",
+   "identifier": "kaal:claim:2811718-014",
+   "text": "Litigation research on private fund due diligence requires in depth evaluation of case dockets rather than only published judicial decisions, because opinions are snapshots that do not tell the whole story of a case.",
+   "abstract": "Litigation research requires an in-depth evaluation of case dockets rather than published judicial decisions.",
+   "citation": "Wulf A. Kaal, Private Fund Investor Due Diligence – Evidence from 1995 to 2015 (2016). SSRN: https://ssrn.com/abstract=2811718",
+   "datePublished": "2016",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "empirical legal research on litigation records"
+   ],
+   "source_pdf_sha256": "b52152af561288173840a1cabbcf8f4b337e73507c856ee01600799073f4156f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-017",
+   "identifier": "kaal:claim:2811729-017",
+   "text": "The authors operationalize unconstrained status by binary coding eleven prospectus characteristics and treating a score of nine or better as unconstrained, producing a final study sample of 84 funds out of 114 funds identified in the Morningstar Nontraditional Bond index.",
+   "abstract": "of purely unconstrained mutual funds (i.e., those which were the focus of this study) (N=84) included only those UMFs that scored a \"9\" or better out of a total of 114 funds identified in the Morningstar Nontraditional Bond index.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar Nontraditional Bond index constituents",
+    "most recent fund-level prospectuses as of the study"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-018",
+   "identifier": "kaal:claim:2816408-018",
+   "text": "The sharp and fuzzy regression discontinuity approaches yield results of only minor difference in this setting because the denominator of the fuzzy estimator is very close to one, meaning treatment take up at the threshold is nearly deterministic.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "this sample and threshold",
+    "denominator close to 1"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-030",
+   "identifier": "kaal:claim:2816408-030",
+   "text": "The discontinuity in the data is evident regardless of the number of bins chosen, even though increasing the number of bins smooths the estimated regression function.",
+   "abstract": "However, the presence of discontinuity is evident, no matter what number of bins we consider.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "optimal bin choice increased by factors of 20 and 100",
+    "Calonico et al. 2013 evenly spaced bin procedure"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-035",
+   "identifier": "kaal:claim:2998033-035",
+   "text": "The study rests on a hand coded dataset of 120 private investment funds that use blockchain technology in either their strategy or their operations, compiled by the author and research assistants from web searches and multiple databases.",
+   "abstract": "The dataset comprises a representative sample of private investment funds that utilize blockchain technology in either their strategy or operations (N=120). The author and a team of two research assistants hand-coded individual use of blockchain technology for each fund in the dataset.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-034",
+   "identifier": "kaal:claim:3002908-034",
+   "text": "The dataset is incomplete by construction: the 120 fund advisers sampled did not answer all questions and the authors were often unable to obtain information on all questions.",
+   "abstract": "The 120 fund advisers in our sample did not answer all questions and often we were unable to obtain available information on all questions.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to the article's hand coded sample of 120 private investment fund advisers"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3117224-013",
+   "identifier": "kaal:claim:3117224-013",
+   "text": "The top 25 ICO jurisdictions in this study are identified from ICO WatchList data, which ranks countries by the number of ICOs launched and reports how much was raised through those ICO projects.",
+   "abstract": "To determine the ICO's used for this project, the author used data generated by ICO WatchList.1 ICO WatchList ranks countries by the number of ICO's launched and provides information as to how much was raised through these ICO projects.",
+   "citation": "Wulf A. Kaal, Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses (2018). SSRN: https://ssrn.com/abstract=3117224",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "top 25 ICO countries",
+    "ICO WatchList as the underlying data source"
+   ],
+   "source_pdf_sha256": "83e9ccb9219a217d9fcfc5c098b897229ee7cf85623bee3ae22d2e986548466b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3117224-019",
+   "identifier": "kaal:claim:3117224-019",
+   "text": "The comparative summaries of national regulatory responses are necessarily incomplete and require much more analysis before they can be determinative for jurisdictional choice.",
+   "abstract": "The summaries provided below on the regulatory responses are naturally incomplete and require much more analysis to be determinative for jurisdictional choices.",
+   "citation": "Wulf A. Kaal, Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses (2018). SSRN: https://ssrn.com/abstract=3117224",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scope of this study"
+   ],
+   "source_pdf_sha256": "83e9ccb9219a217d9fcfc5c098b897229ee7cf85623bee3ae22d2e986548466b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3117224-020",
+   "identifier": "kaal:claim:3117224-020",
+   "text": "The United States was excluded from the comparative jurisdictional analysis because its regulatory setup for cryptocurrencies and DLT business was still too uncertain at the time of publication.",
+   "abstract": "The regulatory setup for cryptocurrencies and DLT business was still too uncertain in the United States to be included in the below discussion at the time of publication of this article.",
+   "citation": "Wulf A. Kaal, Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses (2018). SSRN: https://ssrn.com/abstract=3117224",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "as of publication in 2018"
+   ],
+   "source_pdf_sha256": "83e9ccb9219a217d9fcfc5c098b897229ee7cf85623bee3ae22d2e986548466b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-021",
+   "identifier": "kaal:claim:3125827-021",
+   "text": "Successful proof of stake experiments running today cannot be used to infer that their protocols are truly secure, because the current participant population is atypically altruistic; confidence must instead come from sound reasoning about incentives.",
+   "abstract": "Therefore we cannot use any successful experiments at this time to infer protocols are truly secure. We must rely on sound reasoning in order to obtain any confidence that our projects will continue to succeed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "nascent crypto economy dominated by altruists"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-015",
+   "identifier": "kaal:claim:3249860-015",
+   "text": "Because tokens move in and out of the top 100 daily, the study limits its time series dataset to all available data on the top 100 cryptocurrencies until April 2018, selecting coins by market capitalization before April 2018.",
+   "abstract": "Accordingly, the author limited the time series dataset to all available data on the top 100 cryptocurrencies until April 2018. The author chose cryptocurrencies for inclusion in the dataset based on the market capitalization of the respective coins before April 2018.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "dataset of N=100 cryptocurrencies",
+    "data cutoff May 6, 2018"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-016",
+   "identifier": "kaal:claim:3249860-016",
+   "text": "For token issuers in the dataset that did not conduct an ICO, the author used the date of first publicly listed trade as a proxy variable for launch date.",
+   "abstract": "For token issuers in the dataset that did not engage in an ICO, the author used the date of first publicly listed trade as a proxy variable.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "issuers in the dataset without an ICO"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-018",
+   "identifier": "kaal:claim:3249860-018",
+   "text": "Coding categories frequently allowed a token to fall into more than one category, and where that occurred each category was given equal weight, coded as 0.5 and 0.5 for the corresponding dummy variables.",
+   "abstract": "It is important to note, coding categories often allowed tokens to fall into more than one category. If the token fell into more than one category, the researchers gave equal weight to each category.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "all figures in the study"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-007",
+   "identifier": "kaal:claim:4033886-007",
+   "text": "Because digital asset valuation methodologies vary significantly, the tradeoffs among them leave digital asset managers with meaningful valuation discretion.",
+   "abstract": "Digital asset valuation methodologies vary significantly. Tradeoffs between such methodologies allow for some valuation discretion between digital asset managers.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "absence of uniform valuation standards"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-013",
+   "identifier": "kaal:claim:4900878-013",
+   "text": "A central methodological obstacle for quantum economics is that complex social phenomena such as social power and mental energy resist reduction to exact equations, which leaves the framework without a consistent set of units for subjective forces.",
+   "abstract": "Another challenge is the difficulty in quantifying and reducing complex social phenomena, such as social power or mental energy, to exact equations.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-019",
+   "identifier": "kaal:claim:4900878-019",
+   "text": "Quantum economics models must be subjected to empirical testing and to rigorous head to head comparison with classical models across different economic contexts and datasets before their validity and generalizability can be established.",
+   "abstract": "Another important implication of the debates surrounding quantum economics is the need for more empirical testing and validation of quantum economics models.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-012",
+   "identifier": "kaal:claim:4900880-012",
+   "text": "Existing quantum economic models carry unresolved defects that the field must address: some lack a realistic connection with financial markets, and others strip out the features that make the formalism quantum in the first place.",
+   "abstract": "Another challenge is to address the criticisms and limitations of existing quantum models and approaches, such as the lack of a realistic connection with financial markets or the removal of quantum-specific features in some models.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-026",
+   "identifier": "kaal:claim:4900880-026",
+   "text": "Many existing studies of automation and job loss rest on flawed assumptions and weak data, and their seemingly precise figures conceal those defects, so their headline numbers should not be taken at face value.",
+   "abstract": "Many existing studies on automation and job loss are criticized for their flawed assumptions and data weaknesses, often hidden by seemingly precise figures.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-010",
+   "identifier": "kaal:claim:5254152-010",
+   "text": "The study evaluates each DAO on six factors: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "abstract": "provides an analysis of six major factors of each individual DAO and scores them on their performance in each category. The six factors considered are: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the paper's dataset of 50 DAOs selected by treasury asset size"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-011",
+   "identifier": "kaal:claim:5254152-011",
+   "text": "Each DAO in the dataset was scored from zero to ten on each factor by analyzing teams, using only publicly available information and the organization's whitepaper where one existed.",
+   "abstract": "Each DAO was given a score between zero (0) and ten (10) by the analyzing teams based on publicly available information and the organization's whitepaper, if it has one.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scores derived from public sources only",
+    "no access to internal DAO data"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-012",
+   "identifier": "kaal:claim:5254152-012",
+   "text": "A decentralization score of 10 is stipulated to mean a fully decentralized organization with anonymous participation, minimal barriers to entry, and well distributed power; lower scores indicate concentration of power.",
+   "abstract": "A score of 10 suggests a fully decentralized organization with anonymous participation, minimal barriers to entry, and well-distributed power.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the paper's six factor scoring metric"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-017",
+   "identifier": "kaal:claim:5254152-017",
+   "text": "The author concedes that the scoring metric is imperfect and that some scored attributes may have changed by the time of publication, presenting it instead as a structured approach to evaluating what drives DAO success or failure.",
+   "abstract": "scoring system is perfect, and that some attributes may have changed by the time of publication, this metric aims to provide a structured approach to evaluating the key characteristics that contribute to the success or failure of decentralized organizations.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the scores are point in time assessments"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-008",
+   "identifier": "kaal:claim:5541658-008",
+   "text": "Prediction on a test set of existing judgments is not the same task as predicting outcomes for a party mid-litigation, because the precise formulation of facts used by such models emerges only once the judgment has been issued.",
+   "abstract": "for instance, a lawyer advising a client on the probable outcome of a court hearing—does not have access to the precise formulation of facts presented in a judgment, as this formulation emerges only once the judgment has been issued.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legal judgment prediction systems trained and evaluated on published judgments"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "34 claims in the published works of Wulf A. Kaal carry the concept tag 'methodology'. Derived node: a roster, not an adjudicated definition."
+}

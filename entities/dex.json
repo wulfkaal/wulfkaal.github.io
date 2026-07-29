@@ -1,0 +1,227 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dex",
+ "identifier": "kaal:entity:dex",
+ "name": "Dex",
+ "termCode": "dex",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dex.md",
+ "sha256": "7f1ce695d00c8f1a1ba8be2343ee07dd2d87f0284d6ebfde21d9507cfe674943",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 11
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-005",
+   "identifier": "kaal:claim:3782216-005",
+   "text": "Bundling transactions with zero knowledge proofs makes the scheme trustless, so users need not trust the bundlers: a malicious bundler cannot steal their data.",
+   "abstract": "This makes the scheme trustless, meaning it doesn't matter whether you trust the bundlers or not, they can't steal your data.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "ZK based bundling schemes such as Loopring's"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-008",
+   "identifier": "kaal:claim:3782216-008",
+   "text": "Liquidity has always been a problem on decentralized exchanges because meaningful history and reputation cannot form where there is little or no governance structure, no insurance, no appeals process and no reputable decentralized news service.",
+   "abstract": "But liquidity has always been a problem in decentralized exchanges, as meaning- ful history and reputation are difficult to achieve when there is little to no governance structure, no insurance, no appeals process, and no reputable decentralized news ser- vice",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-022",
+   "identifier": "kaal:claim:3782216-022",
+   "text": "The code that constitutes a decentralized exchange can create new risks to market integrity, because automation removes the human backstop in compliance, back office and settlement.",
+   "abstract": "The code may also create new risks to market integrity because of its automation and lack of a human backstop in compliance, back office, and settlement.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized exchanges"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-023",
+   "identifier": "kaal:claim:3808852-023",
+   "text": "Decentralized cryptocurrency exchanges epitomize market decentralization because they let users interact and trade anonymously in a secure environment without third party intermediation.",
+   "abstract": "DEX epitomize market decentralization because they allow users to interact and trade anonymously in a secure environment without the need for third party intermediation.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-024",
+   "identifier": "kaal:claim:3808852-024",
+   "text": "Conflicts of interest and counterparty risks are absent on a decentralized exchange because proprietary trading intermediaries such as market makers and centralized third-party operators cannot inject themselves into a transaction.",
+   "abstract": "Proprietary trading intermediaries, such as market makers and centralized third-party operators, cannot inject themselves in a transaction. As a result, conflicts and counterparty risks are absent in a DEX.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to DEX where settlement is delivery versus payment directly between trading parties"
+   ],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-025",
+   "identifier": "kaal:claim:3808852-025",
+   "text": "Most decentralized exchanges have struggled with liquidity and price discovery.",
+   "abstract": "Most DEX have been struggling with liquidity and price discovery.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-026",
+   "identifier": "kaal:claim:3808852-026",
+   "text": "A decentralized exchange can be seen as architecturally centralized, because the DEX code and its operational rules in effect create the exchange and provide a central order exchange and price discovery function rather than a peer-to-peer exchange.",
+   "abstract": "Architecturally, DEX can be seen as centralized because the DEX code and the operational rules of the DEX code in effect create the exchange and facilitate a central order exchange function and price discovery, not a peer-to-peer exchange.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to DEX whose operational rules are set by code"
+   ],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-027",
+   "identifier": "kaal:claim:3808852-027",
+   "text": "Even though the creator of a DEX plays a limited role in its evolution, the code that provides the exchange's operational rules may still be subject to the centralized control of certain developers, and a completely open source DEX with no ongoing developer involvement remains untested.",
+   "abstract": "the code that provides the operational rules of the exchange may still be subject to the centralized control of certain developers. The idea of a completely open source DEX without any ongoing developer involvement remains untested.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-028",
+   "identifier": "kaal:claim:3808852-028",
+   "text": "Decentralized exchanges may fail to ensure market integrity, because the code that creates a DEX can allow asymmetric distribution of trading information based on user status.",
+   "abstract": "the code that creates a DEX may also allow the asymmetric distribution of trading information based on user status.19",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-029",
+   "identifier": "kaal:claim:3808852-029",
+   "text": "Automation and the absence of a human backstop in compliance, back office, and settlement create new risks to market integrity on decentralized exchanges, including wash trading, frontrunning, and insider trading.",
+   "abstract": "The code may also create new risks to market integrity because of its automation and lack of a human backstop in compliance, back office, and settlement.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-036",
+   "identifier": "kaal:claim:4015908-036",
+   "text": "No more than 40% of total token supply should be auctioned in a fair launch, with 10% serving as a buffer paired with raised funds as permanently locked DEX liquidity and the other 50% allocated to a DEX pair with the raise proceeds to provide long-term locked liquidity.",
+   "abstract": "it is ill advised to auction more than 40% of the total token supply. 10% of token supply should serve as a buffer. paired with the funds raised to form permanently locked liquidity on a DEX. The other 50% should be allocated to a DEX in a pair with the funds from the token raise.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public auction of tokens in a fair launch context"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "11 claims in the published works of Wulf A. Kaal carry the concept tag 'dex'. Derived node: a roster, not an adjudicated definition."
+}

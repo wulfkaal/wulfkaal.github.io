@@ -1,0 +1,673 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ai-governance",
+ "identifier": "kaal:entity:ai-governance",
+ "name": "Ai governance",
+ "termCode": "ai-governance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ai-governance.md",
+ "sha256": "dd0184625c64139fbc27270fb47c84ba141ef8ab738bbf70203f87e29ba45901",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 36
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-023",
+   "identifier": "kaal:claim:3808867-023",
+   "text": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats.",
+   "abstract": "At the same time, the conveniences and benefits that derive from centralized algorithmic automation bring with them risks to humanity that cannot be fully quantified. Decentralized systems can counteract the downsides and threats of algorithmic automation",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-001",
+   "identifier": "kaal:claim:4796714-001",
+   "text": "Traditional AI governance frameworks fail because they rely on static, predefined rules that cannot adapt quickly enough to the pace of AI development or to the nuanced challenges AI presents.",
+   "abstract": "Traditional governance approaches often rely on static, predefined rules that may not adapt quickly enough to the pace of AI development or the nuanced challenges it presents.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to conventional rule based governance regimes",
+    "holds where AI capability changes faster than the rule revision cycle"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-002",
+   "identifier": "kaal:claim:4796714-002",
+   "text": "Conventional governance methods that are reactive or fixed to ex-post solutions are insufficient for governing technologies whose behavior changes continuously after deployment.",
+   "abstract": "These conventional methods, largely reactive or fixed to ex-post solutions, are proving insufficient for the dynamic nature of AI technologies.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to ex-post regulatory regimes",
+    "holds for AI systems that continue to learn after release"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-003",
+   "identifier": "kaal:claim:4796714-003",
+   "text": "At the time of publication no legacy governance system exists that can supply the dynamic governance toolsets required to govern evolving AI models ex-ante and manage deployed solutions ex-post.",
+   "abstract": "No legacy systems exist at the time of publication that could provide such dynamic governance toolsets.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of the paper's publication in 2024",
+    "refers to legacy, non web3 governance infrastructure"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-012",
+   "identifier": "kaal:claim:4796714-012",
+   "text": "Recentralization is the central obstacle to using blockchain and distributed ledger technology to govern AI: the recentralizing tendency of these networks interferes with their capacity to deliver effective AI governance.",
+   "abstract": "Alas, recentralization may interfere with blockchain and DLT technologies' ability to effectively govern AI.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchain and DLT based AI governance proposals",
+    "observed in Layer 1 networks as of 2024"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-013",
+   "identifier": "kaal:claim:4796714-013",
+   "text": "Blockchain can only deliver decentralized AI governance if the blockchain trilemma is first overcome, since decentralization, security, and scalability cannot readily be achieved simultaneously within one network.",
+   "abstract": "The effectiveness of blockchain in achieving the goal of decentralized AI governance is contingent upon overcoming the fundamental blockchain trilemma: the challenge of balancing decentralization, security, and scalability.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to blockchain networks used as governance infrastructure",
+    "necessary condition, not sufficient"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-015",
+   "identifier": "kaal:claim:4796714-015",
+   "text": "When decentralization at the Layer 1 level is compromised, the autonomy of the smart contracts deployed on that chain is compromised by affiliation, so smart contracts are corruptible in the current design and cannot reliably serve as neutral instruments of ethical AI governance.",
+   "abstract": "When the decentralization of Layer 1 blockchains is compromised, the autonomy of smart contracts is inherently jeopardized, undermining their effectiveness as tools for ethical AI governance.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies where a few dominant parties influence the underlying Layer 1",
+    "holds under current blockchain design as of 2024"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-021",
+   "identifier": "kaal:claim:4796714-021",
+   "text": "Until the known attack vectors on decentralized autonomous organizations are solved, DAO based AI governance solutions remain suboptimal; these include Sybil attacks, tyranny of the majority, Arrow's impossibility theorem, sockpuppet attacks, and tragedy of the commons.",
+   "abstract": "Without solving these attack vectors, DAO related AI governance solutions remain suboptimal.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "describes DAOs as set up and governed in the majority of cases in 2024",
+    "conditional on the attack vectors remaining unsolved"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-022",
+   "identifier": "kaal:claim:4796714-022",
+   "text": "AI powered DAOs that autonomously generate revenue are especially hard to regulate or dismantle, because the same blockchain security features that protect the organization also make it difficult to intervene once it is operational.",
+   "abstract": "Furthermore, AI-powered DAOs that autonomously generate revenue pose unique challenges in regulation and potential dismantling, as the inherent security features of blockchain technology make it difficult to intervene or alter these entities once they are operational.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to autonomously revenue generating AI DAOs",
+    "arises from blockchain immutability and security guarantees"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-024",
+   "identifier": "kaal:claim:4796714-024",
+   "text": "Ex-ante regulation is preferable in principle but is neither practical nor sufficient inside legacy systems, precisely because legacy systems, unlike the web3 system proposed here, are not equipped to create dynamic feedback effects.",
+   "abstract": "while ex ante regulation is preferable, it is not always practical or sufficient in legacy ssytems to address the dynamic challenges that AI technologies present because legacy systems, unlike web3 systems as proposed herein, are not typically equipped to create dynamic feedback effects.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "comparison is between legacy regulatory infrastructure and web3 based governance",
+    "turns on the presence or absence of dynamic feedback effects"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-027",
+   "identifier": "kaal:claim:4796714-027",
+   "text": "Post-deployment monitoring, the standard fallback when ex-ante rules prove inadequate, is typically woefully outdated by the time it is applied because the AI models continue to evolve.",
+   "abstract": "Yet, post-deployment monitoring is typically woefully outdated as the AI models evolve.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to monitoring regimes applied after deployment",
+    "holds for continuously learning models"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-039",
+   "identifier": "kaal:claim:4796714-039",
+   "text": "Model 3, web3 community governance combined with decentralized data and the AI model, is the superior of the three governance models compared, because it addresses shortcomings the other two leave in place.",
+   "abstract": "Yet, Model 3: \"Web 3 Community Governance - Decentralized Data - AI Model\" stands out for several reasons, potentially offering a superior approach when compared to the other two models.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison is against Model 1 post-hoc governance and Model 2 data validation layers",
+    "assumes a functioning web3 community governance layer"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-020",
+   "identifier": "kaal:claim:4855607-020",
+   "text": "Decentralized collective governance without a central authority reduces both single points of failure and the biases that attach to traditional centralized systems, which is the core structural argument for governing AI through web3 rather than through a central body.",
+   "abstract": "This model enables a decentralized decision-making process, where stakeholders collectively govern without a centralized authority, thereby reducing single points of failure and potential biases associated with traditional centralized systems.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance arrangements where stakeholders collectively govern"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-001",
+   "identifier": "kaal:claim:4941807-001",
+   "text": "Ex-post AI governance, in which regulation is applied only after AI systems have been developed and deployed or after large language models have already been pretrained on existing proprietary datasets, falls short of preemptively addressing the risks and biases those systems carry.",
+   "abstract": "The traditional ex-post governance methods, where regulations are applied after AI systems are developed and deployed, or were pretrained LLMs models were trained on existing proprietary datasets, often fall short in preemptively addressing risks and biases.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "when regulatory intervention occurs after development and deployment",
+    "when pretrained models were trained on existing proprietary datasets"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-002",
+   "identifier": "kaal:claim:4941807-002",
+   "text": "Governing AI requires toolsets that simultaneously handle ex-ante governance of models still evolving and ex-post management of deployed solutions, and Kaal asserts that as of publication no legacy system supplies such dynamic governance toolsets.",
+   "abstract": "Such systems are crucial to address the dual needs when governing evolving AI models ex-ante and managing existing solutions ex-post. No legacy systems exist at the time of publication that could provide such dynamic governance toolsets.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of the time of publication"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-005",
+   "identifier": "kaal:claim:4941807-005",
+   "text": "Integrating feedback directly into governance processes allows stakeholders to iteratively adjust AI models as new information, operational experience, and changed environments arrive, which mitigates risks and biases more effectively than static ex-post regulatory frameworks.",
+   "abstract": "stakeholders can iteratively improve and adjust AI models in response to new information, operational experiences, and changing environments. This ongoing process helps mitigate risks and biases more effectively than static, ex-post regulatory frameworks.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where feedback is embedded in the governance process itself",
+    "where models can still be adjusted after deployment"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-011",
+   "identifier": "kaal:claim:4941807-011",
+   "text": "Although the move toward more explainable, private, and transparent AI is desirable, Kaal argues these regulations paradoxically consolidate power within large technology companies, because only they hold the data resources and infrastructure needed to comply and still ship effective AI.",
+   "abstract": "Furthermore, while the move towards more explainable, private, and transparent AI is commendable, these regulations can paradoxically consolidate power within large tech companies.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where compliance requires vast data resources and sophisticated infrastructure",
+    "where smaller developers cannot absorb compliance cost"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-015",
+   "identifier": "kaal:claim:4941807-015",
+   "text": "A critical unsolved challenge for AI governance is bias mitigation, because biases enter inadvertently when algorithms incorporate discriminatory practices carried in the data used for training.",
+   "abstract": "AI governance does encounter a critical challenge in mitigating biases within AI systems, where biases can inadvertently arise through algorithms incorporating discriminatory practices due to data used in training.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where training data embeds discriminatory practices"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-017",
+   "identifier": "kaal:claim:4941807-017",
+   "text": "As AI systems come to depend on vast data, personal information is converted from a resource the individual could control and deploy at discretion into a fundamental operational input for AI systems, which increases the potential for misuse and makes it harder for individuals to manage how their data is used.",
+   "abstract": "As AI technologies evolve, they rely heavily on vast amounts of data, transforming personal information from a resource that individuals could control and use at their discretion into a fundamental operational tool for AI systems.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where AI operation requires large volumes of personal data"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-018",
+   "identifier": "kaal:claim:4941807-018",
+   "text": "An immutable blockchain log of transactions and modifications inside AI systems lets stakeholders trace the lineage of an AI decision back to its original data inputs, which makes errors easier to identify and correct.",
+   "abstract": "This feature allows stakeholders to track the lineage of AI decisions back to their original data inputs, enabling easier identification and correction of errors.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where AI data inputs and modifications are recorded on an immutable ledger"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-019",
+   "identifier": "kaal:claim:4941807-019",
+   "text": "Smart contracts can automate compliance with regulatory requirements and ethical guidelines: for example, a smart contract can enforce privacy law directly by controlling an AI system's access to personal data according to predefined rules.",
+   "abstract": "They can be used to automate compliance with regulatory requirements and ethical guidelines. For instance, smart contracts can automatically enforce privacy laws by controlling AI's access to personal data based on predefined rules.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where compliance rules can be expressed as predefined, codified conditions"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-021",
+   "identifier": "kaal:claim:4941807-021",
+   "text": "In the federated model of AI governance many challenges cannot easily be decentralized, because distinct entities maintain their own AI systems and datasets, producing variation in standards, protocols, and formats that obstructs a unified governance framework.",
+   "abstract": "In the federated model of AI governance, many challenges cannot be easily decentralized. For example, different entities or organizations maintain their own AI systems and datasets. This can lead to variations in standards, protocols, and formats used",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where separate organizations maintain independent AI systems and datasets"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-022",
+   "identifier": "kaal:claim:4941807-022",
+   "text": "When decision making power is distributed across multiple entities in a federated model, consensus and cooperation become harder to reach, which makes cohesive AI governance mechanisms difficult to establish.",
+   "abstract": "In a federated model, where decision-making power is distributed across multiple entities, it becomes harder to achieve consensus and cooperation, making it challenging to establish cohesive AI governance mechanisms.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where governance authority is distributed across multiple independent entities"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-023",
+   "identifier": "kaal:claim:4941807-023",
+   "text": "In a federated model transparency and accountability across all participating entities are hard to ensure precisely because there is no centralized control, and Kaal notes that he does not otherwise advocate such centralized control.",
+   "abstract": "In a federated model, it can be challenging to ensure transparency and accountability across all participating entities due to the lack of centralized control, which this author does not otherwise advocate.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated models lacking centralized control"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-025",
+   "identifier": "kaal:claim:4941807-025",
+   "text": "Kaal proposes that a more decentralized Web3 model of AI governance can address the failures of the federated model by distributing governance more equitably across network participants, so that no single entity dominates decision making.",
+   "abstract": "A more decentralized web3 model of AI governance as proposed here could ostensibly address these challenges in a federated AI governance model by distributing governance more equitably across network participants.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where governance rights are distributed across network participants"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-028",
+   "identifier": "kaal:claim:4941807-028",
+   "text": "Kaal's proposed answer to the decentralized governance needs of AI is to implement Decentralized Autonomous Organizations that govern AI through expert community consensus.",
+   "abstract": "One promising way to address the decentralized governance needs of AI pertains to the implementation of Decentralized Autonomous Organizations (DAOs) for the governance of AI through expert community consensus.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where an expert community can be assembled and its consensus recorded on chain"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-034",
+   "identifier": "kaal:claim:4941807-034",
+   "text": "A Weighted Directed Acyclic Graph whose vertices are legal precedents or governance rules and whose directed edges are citations or logical dependencies is the appropriate structure for organizing and navigating the many governance considerations that bear on AI.",
+   "abstract": "The structure of WDAGs, with their vertices representing legal precedents or governance rules and directed edges signifying citations or logical dependencies, creates an ideal model for organizing and navigating the multitude of governance considerations pertinent to AI.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where governance elements stand in directional precedence relations"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-035",
+   "identifier": "kaal:claim:4941807-035",
+   "text": "Edge weights in the governance graph quantify the relevance, authority, or impact of each precedent or citation, and it is this weighting that steers decision making by surfacing the most pertinent governance pathways.",
+   "abstract": "system, the weights on the edges could quantify the relevance, authority, or impact of each precedent or citation, guiding the decision-making processes",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where weights are assigned by factors such as recency, jurisdictional relevance, or citation frequency"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-037",
+   "identifier": "kaal:claim:4941807-037",
+   "text": "Because the WDAG continuously monitors and adjusts to evolving ethical and legal standards, it delivers preventive AI governance, in contrast to reactive models that address problems only after they have already arisen.",
+   "abstract": "By continuously monitoring and adjusting to evolving ethical and legal standards, WDAG provides a preventive approach to AI governance. This contrasts with reactive models that address issues only after they have arisen.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where monitoring and adjustment of standards is continuous rather than periodic"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-038",
+   "identifier": "kaal:claim:4941807-038",
+   "text": "The acyclic property of the WDAG guarantees that the governance framework contains no loops, which yields an unambiguous progression from foundational principles to specific governance outcomes and preserves the integrity and coherence of the governance process.",
+   "abstract": "The acyclic nature of WDAGs ensures there are no loops within the governance framework, facilitating a clear, unambiguous progression from foundational principles to specific governance outcomes. This characteristic is vital for maintaining the integrity and coherence of the AI governance process.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where governance elements are linked as a directed acyclic structure"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-039",
+   "identifier": "kaal:claim:4941807-039",
+   "text": "New legal precedents, regulations, and ethical considerations can be integrated into an existing WDAG governance structure without a complete overhaul of the framework, which is what keeps the governance system current as AI technology and societal expectations move.",
+   "abstract": "As new legal precedents, regulations, or ethical considerations arise, they can be seamlessly integrated into the existing WDAG structure without necessitating a complete overhaul of the governance framework.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where new governance elements can be added as vertices and edges to the existing graph"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-037",
+   "identifier": "kaal:claim:5095633-037",
+   "text": "Numeraire's staking and prediction-based reputation mechanism, tuned to predictive accuracy, overlooks the ethical and contextual concerns that characterize AI dataset governance.",
+   "abstract": "The narrow focus on predictive accuracy overlooks the broader ethical and contextual concerns that characterize AI governance.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "diverse dataset tasks such as medical annotation and content moderation"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-028",
+   "identifier": "kaal:claim:5541658-028",
+   "text": "Web3 systems offer significant improvements over conventional regulatory approaches to the challenges of governing AI in legal settings.",
+   "abstract": "Web3 systems offer significant improvements in this context.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance of AI where jurisdictional variability and implementation gaps defeat conventional regulation"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-041",
+   "identifier": "kaal:claim:5886342-041",
+   "text": "The Codex builds in an automated maintenance loop: each year an AI language model reviews the Codex and recommends outdated or unused rules for removal, subject to a vote of the Governing Council.",
+   "abstract": "(1) Each year, an AI language model reviews the Co-",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "annual review",
+    "removal requires a vote of the Governing Council"
+   ],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-042",
+   "identifier": "kaal:claim:5886342-042",
+   "text": "Retention of rules is governed by a dynamic system of precedent in which a legal principle counts as live only when it is cited in future cases, implemented through a weighted graph based logic structure.",
+   "abstract": "(2) Rule retention is guided by a dynamic system of precedent that applies legal principles only when",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886442-031",
+   "identifier": "kaal:claim:5886442-031",
+   "text": "The AI-to-AI economy amplifies and potentially fulfills dynamic regulation by embedding its principles endogenously within system architecture, which renders many NIE inspired restraints against human opportunism and informational gaps obsolete.",
+   "abstract": "The AI2AI economy amplifies and potentially fulfills my earlier vision of dynamic regulation by embedding its principles endogenously within the system's architecture, rendering many NIE-inspired restraints (like those for human opportunism or informational gaps) obsolete.",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
+   "status": "current"
+  }
+ ],
+ "description": "36 claims in the published works of Wulf A. Kaal carry the concept tag 'ai-governance'. Derived node: a roster, not an adjudicated definition."
+}

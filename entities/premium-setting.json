@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/premium-setting",
+ "identifier": "kaal:entity:premium-setting",
+ "name": "Premium setting",
+ "termCode": "premium-setting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/premium-setting.md",
+ "sha256": "05719aa0cf789db114dd487eff82274908fe12fb40c6d7aaac11b8fe992a4c26",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-018",
+   "identifier": "kaal:claim:3396542-018",
+   "text": "The DAO design requires that the value of the tokens staked on a set of policies be large enough to cover the maximum possible liability on those policies, which in turn imposes a minimum condition on the premium charged.",
+   "abstract": "The design of the DAO requires that v1 should be large enough to cover the maximum possible liability on the M policies against which these tokens are to be encumbered. We will later derive a condition on the premium",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state model with constant M and p"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-020",
+   "identifier": "kaal:claim:3396542-020",
+   "text": "The margin m is stipulated as the premium per dollar in excess of the probability of a claim occurring at some point in the policy's life, and this margin is the quantity that must exceed a derived threshold for the design to hold.",
+   "abstract": "Thus, m is the amount of premium per dollar in excess of the probability of a claim on the policy sometime during its life.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'premium-setting'. Derived node: a roster, not an adjudicated definition."
+}

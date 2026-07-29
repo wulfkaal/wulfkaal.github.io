@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/citation-matrix",
+ "identifier": "kaal:entity:citation-matrix",
+ "name": "Citation matrix",
+ "termCode": "citation-matrix",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/citation-matrix.md",
+ "sha256": "dcff88e78adc41c8efdaeea5989f405a940033cf98d4489870a93020e816d7c0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-006",
+   "identifier": "kaal:claim:6269518-006",
+   "text": "The PageRank calculation used for citation-weighted payment is a zero-sum redistribution mechanism with respect to citation weights: any increase in the credit agent i attributes to agent j necessarily decreases agent i's own value.",
+   "abstract": "The critical observation is that the PageRank calculation is a zero-sum redistribution mechanism with respect to citation weights: any increase in cx (credit attributed by i to j) necessarily decreases vi",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "column-stochastic citation matrix with weights summing to one per agent",
+    "PageRank-derived value vector determines payment"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-009",
+   "identifier": "kaal:claim:6269518-009",
+   "text": "The citation matrix functions as an implicit contract specifying value distribution whose precise terms cannot be determined with the precision the mathematical framework demands, which is an instance of the incomplete contract problem identified by New Institutional Economics.",
+   "abstract": "The citation matrix C functions as an implicit contract specifying value distribution, yet the precise terms of this contract—the exact citation weights—cannot be determined with the precision the mathematical framework demands",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bounded rationality and incomplete information among contracting parties"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'citation-matrix'. Derived node: a roster, not an adjudicated definition."
+}

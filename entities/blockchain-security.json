@@ -1,0 +1,154 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/blockchain-security",
+ "identifier": "kaal:entity:blockchain-security",
+ "name": "Blockchain security",
+ "termCode": "blockchain-security",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/blockchain-security.md",
+ "sha256": "e43244073d0f47a76c9976377f6745af9e8eaae9d2c00221022fef630e372fcd",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-020",
+   "identifier": "kaal:claim:2959730-020",
+   "text": "Cryptographic hashing makes blockchain manipulation immediately detectable because the hash incorporates all previous transactions, so that even a single digit change produces a different hash value.",
+   "abstract": "The smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained hashing that incorporates all prior transactions"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3071378-005",
+   "identifier": "kaal:claim:3071378-005",
+   "text": "Because each new block's hash value is generated from all previous transactions, the smallest change to the blockchain produces a different hash value, which makes any form of manipulation immediately detectable.",
+   "abstract": "smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.37",
+   "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained cryptographic hashing of prior transactions"
+   ],
+   "source_pdf_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-019",
+   "identifier": "kaal:claim:3128900-019",
+   "text": "The protocol architecture together with its incentive structure is what produces enhanced 51 percent attack resistance, which the author claims exceeds prior reputation verification attempts in both decentralized and centralized networks.",
+   "abstract": "The Semada Protocol architecture and its incentive structure facilitates enhanced 51% attack resistance unlike any previous reputation verification attempts in decentralized and centralized networks.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation verification networks"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-020",
+   "identifier": "kaal:claim:3227933-020",
+   "text": "Anonymity in blockchain organizations makes them prone to Sybil attacks and 51 percent attacks, and anonymity combined with autonomy has already produced hacks.",
+   "abstract": "Also, the anonymity in blockchain organizations means that they are prone to \"Sybil attacks\" or \"51% attacks.\"",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous, permissionless blockchain organizations"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-032",
+   "identifier": "kaal:claim:3782198-032",
+   "text": "Proof of stake carries an unresolved failure mode: if anyone devises a clever algorithm for hijacking the block producer selection process, the network would fail.",
+   "abstract": "The problem is that if someone comes up with a clever algorithm for hijacking the process, then the network would fail.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to proof of stake designs that select block producers pseudorandomly"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-034",
+   "identifier": "kaal:claim:4900878-034",
+   "text": "Quantum computing cuts both ways for blockchain: it can raise the efficiency and security of blockchain networks, but safeguarding those systems against the threats it also creates depends on research into quantum resistant cryptographic algorithms.",
+   "abstract": "Research into quantum-resistant cryptographic algorithms will be crucial to safeguard blockchain systems against potential threats posed by quantum computing.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "as quantum computing capability advances"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'blockchain-security'. Derived node: a roster, not an adjudicated definition."
+}

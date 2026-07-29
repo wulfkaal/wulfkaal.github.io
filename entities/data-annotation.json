@@ -1,0 +1,118 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/data-annotation",
+ "identifier": "kaal:entity:data-annotation",
+ "name": "Data annotation",
+ "termCode": "data-annotation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/data-annotation.md",
+ "sha256": "cb23ecd737dc3d08015c17760f638ac2b6dd0c53d9794450e860a6a77e841c01",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-027",
+   "identifier": "kaal:claim:4855607-027",
+   "text": "Because annotating large datasets is labor intensive and expensive, smart contracts that reward community members with tokens for annotation are needed to sustain a steady flow of high quality labeled data for deep learning.",
+   "abstract": "Annotating large datasets is labor-intensive and expensive. Using smart contracts, web3 can incentivize community members to annotate data by rewarding them with tokens. This system ensures a steady flow of high-quality labeled data, crucial for training deep learning models.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "supervised deep learning that depends on large labeled datasets"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-007",
+   "identifier": "kaal:claim:5095633-007",
+   "text": "The author proposes a decentralized, Mechanical Turk style data production model in which individual contributors are directly compensated for generating, refining, or annotating text data.",
+   "abstract": "A decentralized data production model, akin to a \"Mechanical Turk\" design, proposes a system in which individual contributors are compensated for generating, refining, or annotating text data.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-019",
+   "identifier": "kaal:claim:5095633-019",
+   "text": "Biases held by human annotators or embedded in automated annotation systems are propagated into the models trained on their output, producing AI that performs inequitably across demographic groups.",
+   "abstract": "there's a theoretical risk that biases inherent in data annotators or automated systems might be propagated into AI models. This can lead to AI that does not perform equitably across different demographic groups or scenarios.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies even to providers that emphasize high-quality data such as Scale AI and Appen"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-024",
+   "identifier": "kaal:claim:5095633-024",
+   "text": "Smart contracts that release payment automatically once preset quality thresholds are met reduce human error, cut administrative overhead, and accelerate data-labeling cycles relative to intermediated payment processes.",
+   "abstract": "smart contracts automatically release payments to contributors once preset quality thresholds are met, thereby decreasing the risk of human error, reducing administrative overhead, and accelerating data-labeling cycles.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "quality thresholds can be specified in advance and verified on-chain"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'data-annotation'. Derived node: a roster, not an adjudicated definition."
+}

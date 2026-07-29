@@ -1,0 +1,139 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/overcollateralization",
+ "identifier": "kaal:entity:overcollateralization",
+ "name": "Overcollateralization",
+ "termCode": "overcollateralization",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/overcollateralization.md",
+ "sha256": "fc850d281450c30b3f9a00b4b3744956968a8930ae67aee23ab83e6595ebcda3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-004",
+   "identifier": "kaal:claim:3402701-004",
+   "text": "Cryptocurrency-backed tokens must be overcollateralized well beyond 100 percent of current value because the backing basket can fall, which makes them even more expensive than fiat-backed tokens.",
+   "abstract": "Any cryptocurrency-backed token must be backed with much more than 100% of the current value of the cryptocurrency in case the basket of other crypto currencies' value drops",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "backing assets are volatile cryptocurrencies"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-023",
+   "identifier": "kaal:claim:3782216-023",
+   "text": "Decentralized derivatives must be capitalized at least fully because the platform and its anonymous users cannot be trusted, a requirement that would be impossibly onerous in traditional markets and that leaves the market for decentralized options extremely shallow.",
+   "abstract": "the inability to trust the platform or the anonymous users requires these decentralized derivatives to be capitalized at least c::%, which would be impossibly onerous in traditional markets.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized options and derivatives markets at the time of writing"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-030",
+   "identifier": "kaal:claim:3782216-030",
+   "text": "Cryptocurrency backed stablecoins are even more expensive than fiat backed ones, because stability is being sought with far more unstable collateral.",
+   "abstract": "Cryptocurrency-backed tokens are even more expensive than fiat backed tokens, because the stability is achieved with much more unstable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "crypto collateralized designs such as MakerDAO"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-036",
+   "identifier": "kaal:claim:3782216-036",
+   "text": "The inability of anonymous participants to trust one another is crippling the DeFi market and forces decentralized markets into overcollateralization, giving traditional markets a fundamental advantage.",
+   "abstract": "the inability to trust each other due to the requirements of anonymity is crippling the deFi market. So traditional markets have a fundamental advantage. Decentralized markets are overcollateralized.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current decentralized markets, before decentralized reputation exists"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-001",
+   "identifier": "kaal:claim:3949098-001",
+   "text": "Decentralized finance is structurally disadvantaged against traditional finance because decentralized products must be backed with full collateral, typically 100 percent and 200 percent on secondary layers such as MakerDAO, a collateralization burden that would be unthinkable in traditional markets.",
+   "abstract": "Decentralized markets are overcollateralized, giving traditional markets a fundamental advantage. To enable a decentralized financial transaction, such as a loan or insurance policy, decentralized products typically need to be backed with 100% collateral.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "digital asset markets as of 2021",
+    "decentralized loans, insurance and similar products",
+    "absence of alternatives to collateral"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'overcollateralization'. Derived node: a roster, not an adjudicated definition."
+}

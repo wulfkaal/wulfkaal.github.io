@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/shared-ledger",
+ "identifier": "kaal:entity:shared-ledger",
+ "name": "Shared ledger",
+ "termCode": "shared-ledger",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/shared-ledger.md",
+ "sha256": "a3c86e1c7d7618d0794b3934432a8f039f6e41404cffdb1a2d094f300dd07314",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-024",
+   "identifier": "kaal:claim:2959730-024",
+   "text": "A blockchain program for private equity administration allows all involved parties in an equity deal to look at a single compiled version of the transaction and all other data relating to the deal, replacing the reconciliation of multiple document copies.",
+   "abstract": "the blockchain program announced by Northern Trust and IBM allows all involved parties in an equity deal to look at a single compiled version of the transaction and all other data relating to the deal.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private equity transactions administered on a shared ledger"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-003",
+   "identifier": "kaal:claim:3411110-003",
+   "text": "Blockchain reduces counterparty credit risk through a specific mechanism: a single shared ledger compresses the settlement cycle so that cash or securities are verifiably in the account within seconds of the trade, leaving almost no window for counterparty default.",
+   "abstract": "credit risk is reduced because cash (if selling) or the securities (if purchasing) are in the account for verification shortly after the trade (which could be seconds, if not fractions of a second), because the settlement cycle is substantially reduced.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a single shared ledger used across trading firms",
+    "near instantaneous settlement"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'shared-ledger'. Derived node: a roster, not an adjudicated definition."
+}

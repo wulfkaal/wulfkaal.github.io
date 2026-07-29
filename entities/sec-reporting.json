@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sec-reporting",
+ "identifier": "kaal:entity:sec-reporting",
+ "name": "Sec reporting",
+ "termCode": "sec-reporting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sec-reporting.md",
+ "sha256": "81293f0e4c67fe753b156d326d4235409727fec514c6ceaf178eae396737a76d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2013",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-016",
+   "identifier": "kaal:claim:2348463-016",
+   "text": "Systemic risk reports filed by registered investment advisers are confidential and are not publicly available, so any effect of these filings on bankruptcy practice depends on the prospect of disclosure rather than on actual public access.",
+   "abstract": "These reports are confidential and not publicly available.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reports filed with the SEC under Title IV",
+    "framework as of the time of writing"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-036",
+   "identifier": "kaal:claim:3409548-036",
+   "text": "Recording all transactions in the public blockchain is what lets LendingRobot comply with its best execution obligations, making the public ledger a compliance instrument and not only an investment record.",
+   "abstract": "Moreover, by recording all transactions in the public blockchain, LendingRobot is able to comply with its best execution",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "funds writing executed trades to a public ledger"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'sec-reporting'. Derived node: a roster, not an adjudicated definition."
+}

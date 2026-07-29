@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/stock-options",
+ "identifier": "kaal:entity:stock-options",
+ "name": "Stock options",
+ "termCode": "stock-options",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/stock-options.md",
+ "sha256": "3adff1641ed419364aaa8b7d4f88e5ce68dfc7aeee4027bf3611fa17ea595351",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-025",
+   "identifier": "kaal:claim:2097160-025",
+   "text": "Replacing stock options with contingent convertible bonds both lowers total executive compensation and disincentivizes short-termism and the executive focus on quarterly stock price performance.",
+   "abstract": "If stock options are replaced with CCBs, not only would the total compensation for executives be lowered; short-termism and executives' focus on quarterly stock price performance would also be disincentivized.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent convertible bonds substitute for equity-based compensation rather than adding to it"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-023",
+   "identifier": "kaal:claim:2957645-023",
+   "text": "Where conversion has a negative effect on stock price, management is further incentivized to maintain and manage risk in order to avoid reputational loss and the income reduction caused by losses in stock options.",
+   "abstract": "In situations where conversion had a negative effect on stock price,49 management could be incentivized further to maintain and manage risk to avoid reputational loss and income reduction due to losses in stock",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion depresses the issuer's stock price",
+    "management compensation includes stock options"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'stock-options'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/producer-selection",
+ "identifier": "kaal:entity:producer-selection",
+ "name": "Producer selection",
+ "termCode": "producer-selection",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/producer-selection.md",
+ "sha256": "2d3957d43c3642c351e58f0ce10c647fd36bfccfc2aef4baeaa754d27a2e6fb1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-017",
+   "identifier": "kaal:claim:3125827-017",
+   "text": "SPoS makes stake grinding impossible by deriving the pseudo random seed from a hash of the alphabetized join of the symmetric keys all validators submit during vote revealing; the protocol holds even if only a single validator is not colluding.",
+   "abstract": "in SPoS the seed used is a hash of the joined alphabetized symmetric keys that were submitted by all validators during the vote revealing process. This protocol completely prevents stake grinding even if only one validator is not colluding.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "commit and reveal voting where symmetric keys are published after the window closes",
+    "at least one non colluding validator"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-027",
+   "identifier": "kaal:claim:3125827-027",
+   "text": "Because producer selection falls back to the seed from the last block whose validation pool concluded, any network outage shorter than the history of the blockchain will not permanently disrupt chain production, and block production continues even if the network loses all but one node.",
+   "abstract": "This ensures any network outage shorter than the history of the blockchain will not eternally disrupt chain production. This addresses the availability/regeneracy problem: even if the network loses all but one node, block production will continue",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "availability stake smart contracts persist through the outage",
+    "outage shorter than the chain history"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'producer-selection'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-concentration",
+ "identifier": "kaal:entity:token-concentration",
+ "name": "Token concentration",
+ "termCode": "token-concentration",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-concentration.md",
+ "sha256": "3f1c7899adba00e9a42ee60b9abe993e89c54d2bbd3ffb901081666dec34639a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-022",
+   "identifier": "kaal:claim:3441904-022",
+   "text": "Token concentration in existing decentralized protocols is extreme: on and around September 12, 2017, 4.11 percent of bitcoin addresses controlled 96.53 percent of the total bitcoin supply.",
+   "abstract": "For instance, on and around September 12, 2017, 4.11% of the bitcoin addresses controlled 96.53% of the total bitcoin supply.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bitcoin addresses as of September 2017"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-033",
+   "identifier": "kaal:claim:4015908-033",
+   "text": "If the top 10 addresses own a disproportionally large supply of a token, the project or community becomes more centralized, an outcome fair launches seek to avoid.",
+   "abstract": "If the top 10 addresses own a disproportionally large supply of a token, then the project or community becomes more centralized; an outcome which fair launches seek to avoid.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token supply concentration measured across top holder addresses"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'token-concentration'. Derived node: a roster, not an adjudicated definition."
+}

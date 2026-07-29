@@ -1,0 +1,82 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/efficiency-security-tradeoff",
+ "identifier": "kaal:entity:efficiency-security-tradeoff",
+ "name": "Efficiency security tradeoff",
+ "termCode": "efficiency-security-tradeoff",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/efficiency-security-tradeoff.md",
+ "sha256": "9a4d88eeacd2fd738bba0677e37d82ec39ac430e29e58bd52566a24154391b96",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-024",
+   "identifier": "kaal:claim:3402701-024",
+   "text": "Misestimating the hot money ratio fails in both directions: overestimation makes the currency more costly to use, and underestimation leaves it insecure, so efficiency and security are in direct tension.",
+   "abstract": "A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-032",
+   "identifier": "kaal:claim:3782216-032",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficiently defending its stability: overestimating the hot money ratio makes the currency costlier to use, and underestimating it makes the currency insecure.",
+   "abstract": "Therefore, determining the fraction of a currency that is hot money is necessary for efficient defense of its stability. A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'efficiency-security-tradeoff'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/network-security",
+ "identifier": "kaal:entity:network-security",
+ "name": "Network security",
+ "termCode": "network-security",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/network-security.md",
+ "sha256": "f4d1f7490800b8ba5ec3bb331140562b09cfbcbeafbfb21d2b982395969f067f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-017",
+   "identifier": "kaal:claim:2959730-017",
+   "text": "Blockchain removes fraudulent transactions primarily through completely decentralized network connectivity via the Internet, rather than through digital signatures alone, which only establish the identity and authenticity of the parties.",
+   "abstract": "While blockchain's use of digital signatures helps establish the identity and authenticity of the parties involved in the transaction, it is the completely decentralized network connectivity via the Internet that allows the most protection against fraud.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized peer to peer networks with Internet connectivity"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-018",
+   "identifier": "kaal:claim:3652481-018",
+   "text": "Bifurcation of nodes in a decentralized network through forking can cause significant economic loss, errors, confusion and bugs, including reemergence of the double spend problem that the pre fork network had already solved.",
+   "abstract": "The bifurcation of nodes in a given decentralized network can lead to significant economic loss, errors, confusion, and bugs. For example, the bifurcation of network nodes can result in the reemergence of the double spend problem that the previous network had overcome.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a chain fork splits nodes across incompatible protocol versions"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-001",
+   "identifier": "kaal:claim:3782203-001",
+   "text": "Any set process or set of rules that can ever be designed will ultimately fail to secure a network for all time, so no static rule set can serve as the permanent foundation of a DAO.",
+   "abstract": "A core precept for the creation of DAOs is the recognition that any set process or set of rules that can ever be designed will ultimately fail to secure a network for all time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized networks",
+    "open global membership",
+    "anonymous participation"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-033",
+   "identifier": "kaal:claim:4900878-033",
+   "text": "Distributing validation and execution across many nodes mitigates central point of failure risk and makes the network more resilient to attacks and disruptions, which is the security payoff of decentralization.",
+   "abstract": "By distributing the validation and execution processes across numerous nodes, blockchain technology mitigates the risks associated with central points of failure and enhances the resilience of the network against attacks and disruptions.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized networks where no single node controls the system"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'network-security'. Derived node: a roster, not an adjudicated definition."
+}

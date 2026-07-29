@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/data-validation",
+ "identifier": "kaal:entity:data-validation",
+ "name": "Data validation",
+ "termCode": "data-validation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/data-validation.md",
+ "sha256": "a5a2811a577a9ce06dcfe19d94644e0df6f0a5e8ce3333c56057a2703444fa68",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-037",
+   "identifier": "kaal:claim:4796714-037",
+   "text": "A decentralized data validation layer applied to pretrained models is efficient but structurally limited: because it cannot drive significant changes to the model's core design or training approach, it leaves the model more attack prone.",
+   "abstract": "The validation layer approach, while efficient for refining pretrained models, may not facilitate significant changes in the model's core design or training approach which could make it more attack prone.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Model 2, the decentralized data validation layer approach",
+    "concerns pretrained models whose parameters are already fixed"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-038",
+   "identifier": "kaal:claim:4796714-038",
+   "text": "Broad community governance of AI training identifies and mitigates bias more effectively than data validation alone, because validation focused approaches can overlook systemic biases already embedded in the pretrained model.",
+   "abstract": "Moreover, involving a broad community in the governance of AI training can help identify and mitigate biases more effectively than a focus on data validation alone, which might overlook systemic biases embedded in the pretrained models.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "compares community governance of training against post hoc data validation",
+    "concerns systemic bias baked in during pretraining"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-026",
+   "identifier": "kaal:claim:4855607-026",
+   "text": "Requiring community members to stake reputation tokens in order to validate data quality is what produces robust and reliable training datasets, and this participatory validation improves annotation accuracy while reducing bias.",
+   "abstract": "Community members stake reputation tokens to validate data quality, ensuring robust and reliable datasets for training AI models. This participatory approach can improve data annotation accuracy and reduce biases.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "training data validation carried out by a reputation staking community"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'data-validation'. Derived node: a roster, not an adjudicated definition."
+}

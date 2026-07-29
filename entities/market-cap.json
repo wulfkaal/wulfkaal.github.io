@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/market-cap",
+ "identifier": "kaal:entity:market-cap",
+ "name": "Market cap",
+ "termCode": "market-cap",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/market-cap.md",
+ "sha256": "88cafe1b3dae91dae46d851d4c6fa4ccb09cd2fc169bc7833544fe4c68770658",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-013",
+   "identifier": "kaal:claim:4015908-013",
+   "text": "Small market cap launches at very cheap initial prices carry the potential for team and whale purchase abuses, which is why equitable treatment of the public requires significant project-controlled liquidity.",
+   "abstract": "Small market cap launches at very cheap initial prices bring with them the potential abuses of team and whale purchases.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "small market capitalization",
+    "very low initial token price"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-014",
+   "identifier": "kaal:claim:4015908-014",
+   "text": "The larger the market capitalization controlled by the DAO, the less likely it becomes that whales and insiders can purchase inexpensive tokens on the market.",
+   "abstract": "The larger the market capitalization that is controlled by the DAO, the less likely it becomes that whales and insiders can purchase inexpensive tokens on the market.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO governance over project liquidity"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'market-cap'. Derived node: a roster, not an adjudicated definition."
+}

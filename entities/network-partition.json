@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/network-partition",
+ "identifier": "kaal:entity:network-partition",
+ "name": "Network partition",
+ "termCode": "network-partition",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/network-partition.md",
+ "sha256": "b74598acf4ce6eb010d831de152b6184d47e2dd91d24998048a5e976fba97cd9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-026",
+   "identifier": "kaal:claim:3125827-026",
+   "text": "Forcing validation pools to close in finite time, which practical demand for swift resolution requires, opens the possibility of network partition and of a lack of genuine consensus, and therefore of forks. Complete finality would require unbounded validation time.",
+   "abstract": "By forcing validation pools to end in finite time, we open the possibility of network partition and lack of genuine consensus which opens the possibility of forks,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "validation windows bounded to seconds for practical liveness"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-029",
+   "identifier": "kaal:claim:3125827-029",
+   "text": "If a Byzantine producer equivocates during a network partition and wins validation pools in separate subnets, the fork is not permanent: once connectivity is restored the next honest producer points to a previous block, and with 51% honest producers the Byzantine fork is eventually orphaned because honest producers outproduce it.",
+   "abstract": "The next honest producer would point to a previous block and all Byzantine forks would be invalidated. If there are 51% honest producers the Byzantine fork would eventually be orphaned, since honest producers will outproduce the Byzantine producers",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "at least 51% honest producers",
+    "network connectivity is eventually restored"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-030",
+   "identifier": "kaal:claim:3125827-030",
+   "text": "A 67% active validator requirement would improve finality but is excluded from the initial SPoS implementation because, by the CAP theorem, it limits the availability of the system and arbitrarily punishes randomly selected producers when the network is partitioned.",
+   "abstract": "More importantly, due to the CAP theorem33, it limits the availability of the system, which is why it is not included in the initial implementation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "network partitions occur",
+    "consensus recognizes only blocks validated by a supermajority of active validators"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'network-partition'. Derived node: a roster, not an adjudicated definition."
+}

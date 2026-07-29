@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dao-security",
+ "identifier": "kaal:entity:dao-security",
+ "name": "Dao security",
+ "termCode": "dao-security",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dao-security.md",
+ "sha256": "ff51ed0bc993dfa26e46672783626fd4327d0a9aa80d95ea6245394cafe34160",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-035",
+   "identifier": "kaal:claim:3782203-035",
+   "text": "A DAO permitting anonymous membership is exposed to a sockpuppet attack in which one account behaves honestly while another cheats, and if the cheating account can funnel its gains to the honest account without detection or punishment the system is set up for failure.",
+   "abstract": "One strategy is to have one account which acts honestly and one which cheats. If the cheating account can funnel the gains to the honest account, without detection or punishment, this sets the system up for failure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous DAOs allowing multiple accounts per person"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-021",
+   "identifier": "kaal:claim:5254152-021",
+   "text": "The average attack resistance score across the sampled DAOs is 3.65 on a scale of 0 to 10, the lowest of the measured attributes alongside regulatory compliance.",
+   "abstract": "This graph shows the attack resistance scores of various DAOs, with scores ranging from 0 to 10. The average score is 3.65",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "dataset of 50 DAOs",
+    "attack resistance scored on a 0 to 10 scale"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'dao-security'. Derived node: a roster, not an adjudicated definition."
+}

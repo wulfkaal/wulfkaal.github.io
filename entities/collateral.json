@@ -1,0 +1,258 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/collateral",
+ "identifier": "kaal:entity:collateral",
+ "name": "Collateral",
+ "termCode": "collateral",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/collateral.md",
+ "sha256": "56c78905e35f819bac7bf188f5911243c9c4104401750873996fade819020470",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2470008-005",
+   "identifier": "kaal:claim:2470008-005",
+   "text": "The systemic risk of hedge funds arises principally from the combination of aggressive investment strategies and high leverage with adverse price movements that can dry up credit and depress the market price of collateral.",
+   "abstract": "Hedge funds' systemic risk is mainly the result of their pursuit of aggressive investment strategies and a significant level of leverage in combination with adverse fluctuations in market prices that can dry up credit and negatively affect the market price of collateral.",
+   "citation": "Wulf A. Kaal, The Systemic Risk of Private Funds after the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2470008",
+   "datePublished": "2014",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge funds employing leverage",
+    "periods of adverse market price fluctuations"
+   ],
+   "source_pdf_sha256": "5f68a401c935527d89658171e9b48a4d186710459aaf2bdbead755507394e8c9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-023",
+   "identifier": "kaal:claim:3411110-023",
+   "text": "Digital securities are not recognized under any state's current commercial law, which matters because that recognition governs margining and the pledging of securities as collateral.",
+   "abstract": "The lack of recognition of \"digital\" securities under any state's current commercial law,51 which is relevant for margin / pledging securities as collateral",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "state commercial law as codified in the UCC"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3709041-028",
+   "identifier": "kaal:claim:3709041-028",
+   "text": "Blockchain based land title records can serve as collateral for credit or as identity verification, removing a requirement that is often challenging and prohibitive for accessing both financial and non-financial services.",
+   "abstract": "Such blockchain title data can serve as collateral for accessing credit or verifying identities which is often a challenging and prohibitive requirement for accessing both financial and non-financial services.",
+   "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies where identity or title verification is a prerequisite to service access"
+   ],
+   "source_pdf_sha256": "5216a7bca45a48e3bef11ec524936e66af737c0fd66271e9f6866dc20a4482cc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-013",
+   "identifier": "kaal:claim:3782216-013",
+   "text": "A decentralized chit fund can let people bootstrap financial security with no initial reserve backing, but only if the reputation system is strong enough to hold defaults to a low percentage.",
+   "abstract": "With no initial reserve backing, this allows people to bootstrap their way to greater financial security and stability, assuming the reputation system is sufficiently strong to guarantee a low percentage of defaults.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a sufficiently strong reputation system"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-016",
+   "identifier": "kaal:claim:3782216-016",
+   "text": "Underwriters encumber reputation tokens against each policy under a preset formula, and if the insured event occurs they lose control of those tokens, which are auctioned to meet the claim, with new tokens minted and sold if the auction falls short.",
+   "abstract": "In case the insured event were to occur during the life of the policy, the agents who underwrote the policy would lose control of their encumbered tokens, which would be sold at auction to meet the claim.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Underwriting DAO design"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-017",
+   "identifier": "kaal:claim:3782216-017",
+   "text": "In the Underwriting DAO a breach occurs only when the market values the encumbered reputation tokens at less than the payout, which requires minting additional tokens to meet the claim.",
+   "abstract": "We would consider the need to mint more reputation tokens to meet a policy claim to be a breach. Under what circumstances would a breach occur? It would occur only if the market values the encumbered reputation tokens as less than the payout.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Underwriting DAO with encumbered reputation tokens"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-028",
+   "identifier": "kaal:claim:3782216-028",
+   "text": "The lesson of the Soros attack is that when a cryptocurrency is pegged above its true market value, the difference must be fully backed by a foreign reserve of collateral, or financiers can profit by breaking the peg.",
+   "abstract": "The lesson of the Soros attack, is that if the value of a cryptocurrency is pegged at a value higher than its true market value, the difference must be backed c::% by a foreign reserve of collateral holdings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pegged currencies, including algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-029",
+   "identifier": "kaal:claim:3782216-029",
+   "text": "Maintaining a full reserve is too expensive to be efficient, because every unit of reserve value backing the currency must be held liquid or arbitrage attacks become possible, and liquidity forgoes investment returns.",
+   "abstract": "The maintenance of a c::% reserve is too expensive to be efficient, and signals the need for more sophisticated mechanisms. All of the value in the reserve which backs the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat collateralized and algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-037",
+   "identifier": "kaal:claim:3782216-037",
+   "text": "Once secure and meaningful reputation is incorporated into Web3, the collateral imbalance will reverse, and because reputation tokens are more meaningful than identity and easier to value, less collateralization will be required than in traditional protocols.",
+   "abstract": "However, once secure and meaningful reputation is incorporated into the WebT environment, this imbalance will be reversed. Since reputation tokens are more mean- ingful than identity, and much easier to valuate, even less collateralization will be re- quired than traditional protocols",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a coherent system that securely tracks the value of a reputation token"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-001",
+   "identifier": "kaal:claim:3949098-001",
+   "text": "Decentralized finance is structurally disadvantaged against traditional finance because decentralized products must be backed with full collateral, typically 100 percent and 200 percent on secondary layers such as MakerDAO, a collateralization burden that would be unthinkable in traditional markets.",
+   "abstract": "Decentralized markets are overcollateralized, giving traditional markets a fundamental advantage. To enable a decentralized financial transaction, such as a loan or insurance policy, decentralized products typically need to be backed with 100% collateral.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "digital asset markets as of 2021",
+    "decentralized loans, insurance and similar products",
+    "absence of alternatives to collateral"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-008",
+   "identifier": "kaal:claim:5554218-008",
+   "text": "The adaptability of common law to smart contracts is strained when the coded mechanism itself violates a legal norm, as with smart contracts that enable automatic collateral repossession contrary to the Uniform Commercial Code's restrictions on strict foreclosure.",
+   "abstract": "However, this adaptability is strained when smart contracts, such as those enabling automatic collateral repossession, violate legal norms like the UCC's restrictions on strict foreclosure.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "smart contracts automating self help remedies",
+    "United States secured transactions law under the UCC"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-020",
+   "identifier": "kaal:claim:5886342-020",
+   "text": "A digital pledge is constructed as a bankruptcy remote preferential right over a digital object, giving the pledgee priority that survives the pledgor's insolvency.",
+   "abstract": "(1) A Digital Pledge is a bankruptcy-remote prefer- ential right on a Digital Object.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  }
+ ],
+ "description": "12 claims in the published works of Wulf A. Kaal carry the concept tag 'collateral'. Derived node: a roster, not an adjudicated definition."
+}

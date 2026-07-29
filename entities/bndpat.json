@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bndpat",
+ "identifier": "kaal:entity:bndpat",
+ "name": "Bndpat",
+ "termCode": "bndpat",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bndpat.md",
+ "sha256": "ca266fb3d901176987cda3301203a54673797c1f4f7e21ead0270f49c1cba993",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2015",
+    "2015"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-021",
+   "identifier": "kaal:claim:2629451-021",
+   "text": "Immediately before the N/DPA term becomes effective, from day minus three to day minus one, the market prices the onset of the term as a negative event.",
+   "abstract": "suggests that the market assesses the impact of the beginning of the N/DPA term as a negative event immediately before the N/DPAs become effective from t=-3 to t=-1.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "window immediately preceding BNDPAT"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-022",
+   "identifier": "kaal:claim:2629451-022",
+   "text": "From the first day of the N/DPA term through day twenty five, the period in which mandated governance improvements are in force, the market prices the N/DPA as a positive event for the firm.",
+   "abstract": "BNDPAT t=0 and from t=0 to t=25, when N/DPA governance improvements are in effect, Figures 3 and 3a show that the market assesses such N/DPAs as a positive event for the respective entity.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "window t=0 to t=25 after BNDPAT",
+    "period during which N/DPA governance improvements are in effect"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'bndpat'. Derived node: a roster, not an adjudicated definition."
+}

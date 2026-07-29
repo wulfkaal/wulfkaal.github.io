@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/judicial-ai",
+ "identifier": "kaal:entity:judicial-ai",
+ "name": "Judicial ai",
+ "termCode": "judicial-ai",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/judicial-ai.md",
+ "sha256": "9297c102668f2c3b3c79f3a902cab11223e20745bfadb8ed911c0edf0dcaf44c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-011",
+   "identifier": "kaal:claim:5541658-011",
+   "text": "Accuracy alone is insufficient for legal AI: a model must also be explainable before its outputs can be trusted in judicial settings.",
+   "abstract": "Accuracy alone is insufficient without explainability.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "predictive AI used in legal and judicial applications"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-016",
+   "identifier": "kaal:claim:5541658-016",
+   "text": "Keeping judges ultimately accountable through a human-in-the-loop review of AI generated reasoning, as practiced in Shenzhen, does not fully resolve the accountability problem in AI assisted adjudication.",
+   "abstract": "Shenzhen case study illustrates that judges retain ultimate accountability, revising AI-generated reasoning to ensure accurate judgments, but this human-in-the-loop approach does not fully resolve the issue.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "judicial settings where AI drafts or supports reasoning that a human judge then reviews"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-038",
+   "identifier": "kaal:claim:5541658-038",
+   "text": "A Dutch court's AI system for traffic violation appeals improved consistency yet altered legal experts' decisions, which shows that consistency gains from judicial AI can come at the cost of influencing expert judgment and therefore require human oversight.",
+   "abstract": "For example, a study of an AI system for traffic violation appeals in a Dutch court found that while AI improved consistency, it altered legal experts' decisions, highlighting the need for human oversight.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a Dutch court",
+    "traffic violation appeals",
+    "high volume standardized decisions"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'judicial-ai'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,99 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/solvency",
+ "identifier": "kaal:entity:solvency",
+ "name": "Solvency",
+ "termCode": "solvency",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/solvency.md",
+ "sha256": "1eafc28d70db0e81fd1bee1b861060d72bb4bae9446121255be89725f0d892a7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-032",
+   "identifier": "kaal:claim:2097160-032",
+   "text": "The governance benefits of traditional inside debt, incentive optimization and reduced agency costs, all depend on the entity remaining solvent, and inside debt supplies no mechanism of its own to ensure that solvency.",
+   "abstract": "value and the associated governance benefits215 incentive optimization216 and reduction of agency costs217 depend on the solvency of the respective entity. Inside debt without a conversion feature provides no mechanism to ensure the solvency of the entity.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "inside debt without a conversion feature, such as pensions and deferred compensation"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-020",
+   "identifier": "kaal:claim:3396542-020",
+   "text": "The margin m is stipulated as the premium per dollar in excess of the probability of a claim occurring at some point in the policy's life, and this margin is the quantity that must exceed a derived threshold for the design to hold.",
+   "abstract": "Thus, m is the amount of premium per dollar in excess of the probability of a claim on the policy sometime during its life.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-021",
+   "identifier": "kaal:claim:3396542-021",
+   "text": "The DAO is insolvent when the present value of expected cash flows from new policies falls below the expected cash outflow on currently outstanding policies, and in that state the value of a token is negative.",
+   "abstract": "The DAO will be insolvent if the value of the DAO becomes negative - in other words, if the Present Value (PV) of expected cash flows from new policies is less than the expected cash outflow from currently outstanding (old) policies. If the DAO is insolvent, the value of a token will be negative.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'solvency'. Derived node: a roster, not an adjudicated definition."
+}

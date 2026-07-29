@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reliability",
+ "identifier": "kaal:entity:reliability",
+ "name": "Reliability",
+ "termCode": "reliability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reliability.md",
+ "sha256": "d499b3a73aafaec7be76bd85f7116087287c42f3609beddcab060838917efba7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-008",
+   "identifier": "kaal:claim:3782217-008",
+   "text": "A robust decentralized oracle finds better information because averaging across a crowd is typically better for complex situations, being less subject to the prejudices of individuals who hold more limited information, so overestimates and underestimates offset each other.",
+   "abstract": "A robust decentralized oracle would find better information. The wisdom of the crowd can be employed to discover the truth. Averaging information is typically better for any complex situation, since they're less subject to the prejudices of the individual, who has more limited information.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "all things being equal",
+    "complex situations"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-010",
+   "identifier": "kaal:claim:4796714-010",
+   "text": "Federated learning lacks theoretical guarantees of reliability and robustness, which makes its behavior unpredictable in practical applications.",
+   "abstract": "Additionally, FL lacks theoretical guarantees that ensure reliability and robustness, making it less predictable for practical applications.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to federated learning as practiced"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-007",
+   "identifier": "kaal:claim:5541658-007",
+   "text": "Retrieval-augmented generation reduces but does not eliminate hallucination: leading legal research tools including Lexis+AI and Westlaw AI-Assisted Research still generate false citations or facts in 17 to 33 percent of cases.",
+   "abstract": "the risk of \"hallucinations,\" where AI generates false legal citations or facts, as observed in tools like Lexis+AI and Westlaw AI-Assisted Research, which hallucinate in 17–33% of cases.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "RAG-based commercial legal research platforms",
+    "as measured at the time of the cited study; the authors note rates are progressively improving"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'reliability'. Derived node: a roster, not an adjudicated definition."
+}

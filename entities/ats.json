@@ -1,0 +1,106 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ats",
+ "identifier": "kaal:entity:ats",
+ "name": "Ats",
+ "termCode": "ats",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ats.md",
+ "sha256": "97be005d9689a9e12ca27f5d8856b9eace66ac7115cbe879f064032ecde5425f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-008",
+   "identifier": "kaal:claim:3411110-008",
+   "text": "The compliance burden attached to operating an alternative trading system, including fees, consumer protection, examination, and books and records requirements, is typically cost prohibitive for startups.",
+   "abstract": "ATS compliance costs are typically cost prohibitive for startups.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "startup firms seeking to operate an ATS",
+    "SEC and FINRA compliance regime"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-009",
+   "identifier": "kaal:claim:3411110-009",
+   "text": "Running an alternative trading system on a blockchain cures the ATS system's traditional price discovery latency, because every trade is posted to a public ledger that everyone can access.",
+   "abstract": "By creating an ATS that trades securities over blockchain, there is no latency in price discovery, which has traditionally been a criticism of the ATS system. This is because every trade is posted to a public ledger to which everyone has access.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "ATS operating on a public blockchain ledger"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-034",
+   "identifier": "kaal:claim:3411110-034",
+   "text": "Validating blockchain as a cost effective means of supporting securities offerings does not by itself increase capital raising for private companies, because outside of unicorns there is unlikely to be broad retail interest in privately placed digital securities or in securities trading on a single non-scalable ATS.",
+   "abstract": "Hence, capital-raising opportunities for private companies likely would not be materially increased despite the validation of blockchain technology as a means of cost-effectively supporting securities offerings.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "privately placed digital securities",
+    "securities trading on a single non-scalable ATS",
+    "issuers other than unicorns"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'ats'. Derived node: a roster, not an adjudicated definition."
+}

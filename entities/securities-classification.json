@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/securities-classification",
+ "identifier": "kaal:entity:securities-classification",
+ "name": "Securities classification",
+ "termCode": "securities-classification",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/securities-classification.md",
+ "sha256": "50ed97535434e8692de795cdff4112e5a1ca8e217c7a82c38624e197b2f51b91",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4021599-022",
+   "identifier": "kaal:claim:4021599-022",
+   "text": "Under SEC guidance a token sold for use or consumption by purchasers may fall outside classification as a security, and the SEC lists characteristics whose stronger presence makes a token less likely to be considered a security.",
+   "abstract": "According to SEC guidance, if a token is sold for use or consumption by purchasers it may not be classified as a security for regulatory purposes. The SEC provided a list of characteristics where, the stronger their presence,35 the less likely a token is to be considered a security.",
+   "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SEC framework for investment contract analysis of digital assets"
+   ],
+   "source_pdf_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-022",
+   "identifier": "kaal:claim:5454054-022",
+   "text": "The absence of fiat par-redemption combined with limited acceptance inside merchant ecosystems makes LER rewards closed-loop utilities, which is what removes their classification as electronic money tokens or securities.",
+   "abstract": "Third, the absence of fiat par-redemption and limited acceptance within merchant ecosystems positions LER voucher loyalty rewards as closed-loop utilities. This removes their classification as electronic money tokens (EMTs) or securities, which, in turn, simplifys compliance.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no redemption at par in fiat",
+    "acceptance confined to qualifying merchants"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-031",
+   "identifier": "kaal:claim:5454054-031",
+   "text": "LER must maintain a visible separation between equity tenure verification and reward attribution, so that vouchers operate as loyalty entitlements and do not represent equities, dividends, or profit shares.",
+   "abstract": "A key legal compliance strategy for LER is maintaining an obvious separation between equity tenure verification and reward attribution. This separation ensures voucher loyalty rewards function as loyalty entitlements without representing equities, dividends, or profit shares.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holding period used only as a trigger, not as a claim on returns"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-032",
+   "identifier": "kaal:claim:5454054-032",
+   "text": "Because Landreth holds that instruments carrying equity attributes such as dividends or voting rights are securities, LER rewards cannot include any such features and must function as independent loyalty perks.",
+   "abstract": "This is reinforced by SEC v. Landreth Timber Co. (1985), where the court held that stock sales are securities if they carry equity attributes like dividends or voting rights. Therefore, LER rewards cannot include such features.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States securities law"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'securities-classification'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/margin",
+ "identifier": "kaal:entity:margin",
+ "name": "Margin",
+ "termCode": "margin",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/margin.md",
+ "sha256": "5565b94b6fee1748b0cc6a4d3bcacd8430473e0c997ef65c803153afd78cb148",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-020",
+   "identifier": "kaal:claim:3396542-020",
+   "text": "The margin m is stipulated as the premium per dollar in excess of the probability of a claim occurring at some point in the policy's life, and this margin is the quantity that must exceed a derived threshold for the design to hold.",
+   "abstract": "Thus, m is the amount of premium per dollar in excess of the probability of a claim on the policy sometime during its life.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-023",
+   "identifier": "kaal:claim:3396542-023",
+   "text": "Raising the margin is the available remedy for an insolvency shock, but it is not a clean fix because the effect of a higher margin on future demand must itself be considered.",
+   "abstract": "Of course, a remedial course of action that could perhaps be taken in period 0 is to increase the margin m if that is possible. However, we would need to consider the impact of an increase in the margin on future demand.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "insolvency triggered by a negative shock to policy issuance"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-023",
+   "identifier": "kaal:claim:3411110-023",
+   "text": "Digital securities are not recognized under any state's current commercial law, which matters because that recognition governs margining and the pledging of securities as collateral.",
+   "abstract": "The lack of recognition of \"digital\" securities under any state's current commercial law,51 which is relevant for margin / pledging securities as collateral",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "state commercial law as codified in the UCC"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'margin'. Derived node: a roster, not an adjudicated definition."
+}

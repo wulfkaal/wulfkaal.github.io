@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/compute-allocation",
+ "identifier": "kaal:entity:compute-allocation",
+ "name": "Compute allocation",
+ "termCode": "compute-allocation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/compute-allocation.md",
+ "sha256": "b32df5067b9f6370c42e9745dfeb09df48759c55ff7e3938b5e3e1c0a89bba9e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-007",
+   "identifier": "kaal:claim:6655138-007",
+   "text": "An architecture with an action surface but no reward channel implements generation as an unrewarded act, so rational agents will not allocate compute to generation beyond the level their own selection-side activity requires.",
+   "abstract": "An architecture that has the action surface but no reward channel implements G as an unrewarded act, and rational agents will not allocate compute to G beyond the level required for their own selection-side activity.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "agents that are economically rational over reputation and utility flows"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-010",
+   "identifier": "kaal:claim:6655138-010",
+   "text": "Per-surface reflection and cross-surface reflection are not reducible to each other: an agent whose execution reputation rises while its template reputation falls has no basis in per-surface reflection alone for reallocating compute between those surfaces, which is exactly the question cross-surface reflection answers.",
+   "abstract": "An agent whose execution reputation is rising and whose template reputation is falling has no reason, on per-surface reflection alone, to reallocate compute from Σ_E to Σ_K; the reallocation is precisely the question that cross-surface reflection answers.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "agents active on more than one generative surface"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-013",
+   "identifier": "kaal:claim:6655138-013",
+   "text": "An architecture with per-surface reflection but no cross-surface reflection improves each surface in isolation yet cannot improve the agent's allocation of compute across surfaces.",
+   "abstract": "An architecture with per-surface but no cross-surface reflection improves each surface in isolation but cannot improve the agent's allocation across surfaces.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'compute-allocation'. Derived node: a roster, not an adjudicated definition."
+}

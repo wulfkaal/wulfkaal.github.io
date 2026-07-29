@@ -1,0 +1,325 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sybil-attack",
+ "identifier": "kaal:entity:sybil-attack",
+ "name": "Sybil attack",
+ "termCode": "sybil-attack",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sybil-attack.md",
+ "sha256": "9b495b6047e548afb7462d563303d67a5419b26830a9e633774cf076f878d84b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 16
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-002",
+   "identifier": "kaal:claim:3125822-002",
+   "text": "Reputation value in any decentralized reputational system can be corrupted through three channels: direct purchase of reputation, automated worthless work, and degeneration of the system into a majority of inexpert opinions.",
+   "abstract": "In any such decentralized reputational system there is always the potential to corrupt the value of reputation by purchasing it directly, or through automated worthless work, or through the degeneration of a majority of inexpert opinions.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized reputation systems",
+    "anonymous participants"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-003",
+   "identifier": "kaal:claim:3125822-003",
+   "text": "The problems of corruption, Sybil attacks, and tyranny of the majority have plagued every previous autonomous decentralized reputation platform, so they are the design constraints any new architecture must meet.",
+   "abstract": "These are the respective problems of corruption, Sybil attacks, and tyranny of the majority that have plagued all previous autonomous, decentralized reputation platforms.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "prior autonomous decentralized reputation platforms"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-034",
+   "identifier": "kaal:claim:3125822-034",
+   "text": "A proof of stake lottery on this architecture is vulnerable because the seed of the pseudorandom generator that names the next block author is partly controlled by the current block author, which lets an attacker capture all block creation by routing authorship to their own Sybil accounts; the proposed remedy is to derive the seed from a hash of the previous block's validation information.",
+   "abstract": "The seed for the generator that determines the next block author is partially controlled by the current block author, which opens the possibility of gaming the system by controlling all block creation by sending authorship to your own Sybil accounts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to the proof of stake block author lottery"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-040",
+   "identifier": "kaal:claim:3125827-040",
+   "text": "A malicious party using Sybil accounts cannot be prevented from cloning the structure of a successful proof of stake blockchain at far lower cost than cloning a proof of work chain, leaving a new user unable to distinguish the truly decentralized chain from a clone that has manufactured even more tokens. The authors answer that this is resolved off chain, by a trusted user interface, as with cloned web pages.",
+   "abstract": "Then, when a new user joins the network, how will they be able to distinguish a truly decentralized blockchain from a cloned blockchain that has manufactured an even larger number of tokens?",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new users joining without prior knowledge of the genuine chain",
+    "PoS chains where clone creation costs only new public keys"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-018",
+   "identifier": "kaal:claim:3128900-018",
+   "text": "Unlike its decentralized competitors, the Semada Protocol is claimed to be resistant to both Sybil attacks and Tyranny of the Majority attacks.",
+   "abstract": "However, unlike its decentralized competitors, the Semada Protocol ensures Sybil Attack and Tyranny of the Majority attack resistance.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison with existing decentralized mechanical turk protocols"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-020",
+   "identifier": "kaal:claim:3227933-020",
+   "text": "Anonymity in blockchain organizations makes them prone to Sybil attacks and 51 percent attacks, and anonymity combined with autonomy has already produced hacks.",
+   "abstract": "Also, the anonymity in blockchain organizations means that they are prone to \"Sybil attacks\" or \"51% attacks.\"",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous, permissionless blockchain organizations"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-008",
+   "identifier": "kaal:claim:3266953-008",
+   "text": "Every centralized reputation score can be sybil attacked, because fake internet accounts or fictitious ratings disrupt true reputation scoring.",
+   "abstract": "All centralized reputation scores can be sybil attacked, e.g. fake internet accounts (sockpuppets) or fictitious ratings disrupt true reputation scoring",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized reputation scoring systems"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-028",
+   "identifier": "kaal:claim:3266953-028",
+   "text": "A Web of Trust reputation system can be gamed with sockpuppet accounts, because an attacker can behave well for a while and then transact with himself repeatedly and rate himself high to raise his reputation arbitrarily.",
+   "abstract": "If I use a lot of sockpuppet accounts, I can raise my reputation arbitrarily high, by behaving well for a while, then making a lot of transactions with myself and rating myself high.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation systems based on counting positive peer rated transactions"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-035",
+   "identifier": "kaal:claim:3782203-035",
+   "text": "A DAO permitting anonymous membership is exposed to a sockpuppet attack in which one account behaves honestly while another cheats, and if the cheating account can funnel its gains to the honest account without detection or punishment the system is set up for failure.",
+   "abstract": "One strategy is to have one account which acts honestly and one which cheats. If the cheating account can funnel the gains to the honest account, without detection or punishment, this sets the system up for failure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous DAOs allowing multiple accounts per person"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-016",
+   "identifier": "kaal:claim:3931933-016",
+   "text": "Uptime based reward policies invite Sybil style abuse: on the original Casper testnet single persons ran fifteen or more validator nodes to exploit cloud provider promotions and the DEVxDAO rewards policy, extracting rewards without contributing to the validator group.",
+   "abstract": "The original Casper Testnet was also afflicted by cases of single persons running 15+ validator nodes in an effort to abuse the welcome promotions of certain cloud providers and the rewards policy of the DEVxDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "original Casper testnet under a uptime only rewards policy"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-035",
+   "identifier": "kaal:claim:4067783-035",
+   "text": "Proof of personhood projects such as Proof of Humanity and UBI DAO fail because they rest on web-of-trust theory, which has been proven not to work long-term given the sockpuppet attacks that are inevitable in that design.",
+   "abstract": "Of course, these attempts are all falling victim to web-of-trust theory that has been proven to not work long-term because the sockpuppet attacks that are inevitable in this design.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "identity systems built on web-of-trust vouching"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-032",
+   "identifier": "kaal:claim:4529715-032",
+   "text": "A reputation system that rewards voting with the majority, as Bridge Mutual uses, can be manipulated by users who create multiple wallets and always vote with the majority.",
+   "abstract": "reliance solely on voting outcomes may present some vulnerability, as it could potentially be manipulated by users creating multiple wallets and voting with the majority.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation derived solely from voting outcomes"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-021",
+   "identifier": "kaal:claim:4796714-021",
+   "text": "Until the known attack vectors on decentralized autonomous organizations are solved, DAO based AI governance solutions remain suboptimal; these include Sybil attacks, tyranny of the majority, Arrow's impossibility theorem, sockpuppet attacks, and tragedy of the commons.",
+   "abstract": "Without solving these attack vectors, DAO related AI governance solutions remain suboptimal.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "describes DAOs as set up and governed in the majority of cases in 2024",
+    "conditional on the attack vectors remaining unsolved"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-013",
+   "identifier": "kaal:claim:5254152-013",
+   "text": "Low attack resistance in DAOs is typically caused by the use of easily purchasable or transferable governance tokens, which leave the organization vulnerable to attacks such as 51 percent and Sybil attacks.",
+   "abstract": "Lower scores indicate vulnerability to attacks, often due to the use of easily purchasable or transferable governance tokens.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs whose voting power is embodied in freely purchasable or transferable tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-027",
+   "identifier": "kaal:claim:5225296-027",
+   "text": "SPoS's reliance on a reputation-based system introduces vulnerabilities absent from PoW and traditional PoS, most notably Sybil attacks, collusion risks, and reputation manipulation, which could undermine its decentralized governance and consensus if not robustly addressed.",
+   "abstract": "However, its innovative reliance on a reputation-based system introduces vulnerabilities—most notably Sybil attacks, collusion risks, and reputation manipulation—that could undermine the integrity of its decentralized governance and consensus processes",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-028",
+   "identifier": "kaal:claim:5225296-028",
+   "text": "Sybil attack risk is amplified in reputation-driven systems relative to stake-based ones, because influence derives from behavioral metrics that an attacker can mimic across many pseudonymous identities.",
+   "abstract": "In reputation-driven systems, this threat is amplified as influence stems from behavioral metrics rather than stake, enabling attackers to mimic legitimate activity across numerous identities",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation-driven consensus systems where influence stems from behavioral metrics"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "16 claims in the published works of Wulf A. Kaal carry the concept tag 'sybil-attack'. Derived node: a roster, not an adjudicated definition."
+}

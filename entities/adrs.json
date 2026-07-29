@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/adrs",
+ "identifier": "kaal:entity:adrs",
+ "name": "Adrs",
+ "termCode": "adrs",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/adrs.md",
+ "sha256": "68788f885f2809c864a573a825662e6f778b987eb804c0f82340392107e5c3f6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2011"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1765901-004",
+   "identifier": "kaal:claim:1765901-004",
+   "text": "Morrison itself refutes a listing based reading of Section 10(b): the Court knew that National Australia Bank had registered and listed shares in New York, yet held that Section 10(b) did not reach trades in those ordinary shares in Australia.",
+   "abstract": "The entire point of the Morrison opinion, however, is that Section 10(b) did not apply to trades in NAB's ordinary shares in Australia. This is inconsistent with a theory that the Court would apply Section 10(b) to any security listed on a U.S. exchange",
+   "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "foreign issuers with U.S. registered ADRs or listed shares"
+   ],
+   "source_pdf_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1765901-005",
+   "identifier": "kaal:claim:1765901-005",
+   "text": "There is no substantive difference between a foreign issuer listing ADRs on a U.S. exchange and listing its ordinary shares there, so Section 10(b) coverage of foreign transactions should not turn on which arrangement the issuer chose.",
+   "abstract": "It also makes little sense to argue that the result would be different, and Section 10(b) would apply to transactions in NAB's ordinary shares outside the United States, if NAB had listed its ordinary shares for trading on the NYSE instead of listing the ADRs.",
+   "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901",
+   "datePublished": "2011",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "foreign issuers accessing U.S. markets through ADRs"
+   ],
+   "source_pdf_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'adrs'. Derived node: a roster, not an adjudicated definition."
+}

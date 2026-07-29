@@ -1,0 +1,156 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/pagerank",
+ "identifier": "kaal:entity:pagerank",
+ "name": "Pagerank",
+ "termCode": "pagerank",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/pagerank.md",
+ "sha256": "9a51e4ae620004cbcc4f3c3f2c82077a4a7861d3b960bda115112d8cf9a564c7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-006",
+   "identifier": "kaal:claim:3782198-006",
+   "text": "Centralized platforms are locked into an arms race in which developers infer the rules of the ranking algorithm and exploit them, forcing the owner to keep the algorithm opaque and under constant revision.",
+   "abstract": "The Google search engine algorithm is constantly be- ing improved, because website developers infer the rules of the algorithm and exploit its properties to raise their site",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to centrally owned information filtering algorithms such as search ranking"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-027",
+   "identifier": "kaal:claim:6192998-027",
+   "text": "Constraining the citation weight parameter below one and enforcing row stochasticity through normalization guarantees that the citation weighted value vector exists, is unique, and converges, which resolves the instability of the original recursive valuation formula.",
+   "abstract": "This theorem addresses the instability concern with the recursive formula in Calcaterra, Kaal, and Andrei (2018, 41). By constraining and ensuring row-stochasticity through normalization, we guarantee convergence, a crucial property for autonomous operation.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation weight parameter strictly less than one",
+    "contribution matrix normalized to be row stochastic"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-035",
+   "identifier": "kaal:claim:6192998-035",
+   "text": "Fully on chain computation of citation weighted PageRank allocation is economically feasible at realistic competition sizes, and is far more tractable in gas terms than the validation pool mechanism of the 2018 framework.",
+   "abstract": "Conclusion: Fully on-chain computation is economically feasible for —far more tractable than the gas costs for the validation pool mechanism in Calcaterra, Kaal, and Andrei (2018).",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "small competition sizes",
+    "sparse citation matrices with roughly two to four citations per agent"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-001",
+   "identifier": "kaal:claim:6269518-001",
+   "text": "Under existing citation-weighted reputation formulations, rational agents face a direct financial disincentive to cite prior contributions, because PageRank-derived value allocation transfers economic reward from the citing agent to the cited agent.",
+   "abstract": "Under existing formulations, rational agents face a direct financial disincentive to cite prior contributions, as citation-weighted value allocation through PageRank-derived mechanisms transfers economic reward from the citing agent to the cited agent.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "citation-weighted value allocation through PageRank-derived mechanisms",
+    "agents are rational and self interested"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-006",
+   "identifier": "kaal:claim:6269518-006",
+   "text": "The PageRank calculation used for citation-weighted payment is a zero-sum redistribution mechanism with respect to citation weights: any increase in the credit agent i attributes to agent j necessarily decreases agent i's own value.",
+   "abstract": "The critical observation is that the PageRank calculation is a zero-sum redistribution mechanism with respect to citation weights: any increase in cx (credit attributed by i to j) necessarily decreases vi",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "column-stochastic citation matrix with weights summing to one per agent",
+    "PageRank-derived value vector determines payment"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-015",
+   "identifier": "kaal:claim:6269518-015",
+   "text": "A PageRank-derived value distribution is only as honest as its inputs, and those inputs are generated by agents with a direct incentive to distort them, so relying entirely on the calculation to distribute value correctly fails.",
+   "abstract": "The framework relies entirely on the PageRank calculation to \"correctly\" distribute value, but the PageRank calculation is only as honest as its inputs. And the inputs are generated by agents with a direct incentive to distort them.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'pagerank'. Derived node: a roster, not an adjudicated definition."
+}

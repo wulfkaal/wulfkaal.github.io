@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/broker-location",
+ "identifier": "kaal:entity:broker-location",
+ "name": "Broker location",
+ "termCode": "broker-location",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/broker-location.md",
+ "sha256": "c3db75d805696add8593a1af9b0bb1621c31eb67d6a0011fa392181cb2583bdc",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2011"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1765901-016",
+   "identifier": "kaal:claim:1765901-016",
+   "text": "Treating the U.S. location of a broker as making the securities purchase domestic would circumvent most of the Morrison holding, since a foreign buyer of foreign securities could invoke U.S. law simply by routing the order through a U.S. broker.",
+   "abstract": "The U.S. broker places the order based on an order from a foreign client, and U.S. securities law arguably would apply to the securities purchase, even if executed on a non-US. exchange. This line of argument would circum- vent most of the holding in Morrison.",
+   "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "orders placed through U.S. brokers for execution on foreign exchanges"
+   ],
+   "source_pdf_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1765901-017",
+   "identifier": "kaal:claim:1765901-017",
+   "text": "Non-U.S. investors have a strong incentive to route foreign trades through U.S. brokers if that preserves a U.S. cause of action, because their home jurisdictions rarely offer the attractive features of the U.S. system such as broad discovery, higher damages, class actions, and no exposure to defendants' costs.",
+   "abstract": "Indeed, the home jurisdiction of non-U.S. clients of U.S. brokers is not likely to provide many of the attractive features of the U.S. legal system, such as unparalleled discovery, a tendency towards higher damages and settle- ment amounts, the availability of securities class actions",
+   "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a broker location theory accepted by U.S. courts",
+    "non-U.S. clients trading non-U.S. securities"
+   ],
+   "source_pdf_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1765901-018",
+   "identifier": "kaal:claim:1765901-018",
+   "text": "For exchange traded securities, the location of the exchange rather than the location of the plaintiff's broker should be the controlling factor under Morrison, although it is uncertain whether all courts will adopt this bright line test.",
+   "abstract": "location of the exchange, not the location of the plaintiff's broker, should be the controlling factor, but it remains to be seen whether this bright line test will in fact be the rule adopted by all courts.",
+   "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "exchange traded securities",
+    "claims analyzed under Morrison"
+   ],
+   "source_pdf_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'broker-location'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/collective-review",
+ "identifier": "kaal:entity:collective-review",
+ "name": "Collective review",
+ "termCode": "collective-review",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/collective-review.md",
+ "sha256": "960eccf3b31dbb6ee82e70869bd8f561c2d41802f702043efeee21d77afdc5d6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-013",
+   "identifier": "kaal:claim:3995709-013",
+   "text": "In hierarchical legacy review processes the first reviewer's output gets the highest priority and follow on reviewers add only minor upgrades, so the collective of reviewers is not incentivized to find flaws and optimize the code as a collective work product.",
+   "abstract": "often gets the highest priority and is often merely followed with minor upgrades by follow-on reviewers. The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review firms",
+    "hierarchical ordering of reviewers"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-008",
+   "identifier": "kaal:claim:4734750-008",
+   "text": "In hierarchical review, the first reviewer's output receives the highest priority and later reviewers add only minor upgrades, so the review becomes the initial reviewer's work product rather than the collective's.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective. Rather, it is often seen as the work product of the initial reviewer with minor input from follow-up reviewers.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy hierarchical code review processes"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-019",
+   "identifier": "kaal:claim:4755632-019",
+   "text": "The collective of reviewers in legacy code review is not incentivized to find flaws in the code, because the review is treated as the work product of the initial reviewer with minor input from follow-up reviewers rather than as a product of the collective.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy hierarchical code review firms"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'collective-review'. Derived node: a roster, not an adjudicated definition."
+}

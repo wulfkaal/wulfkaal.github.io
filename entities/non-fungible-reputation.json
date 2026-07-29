@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/non-fungible-reputation",
+ "identifier": "kaal:entity:non-fungible-reputation",
+ "name": "Non fungible reputation",
+ "termCode": "non-fungible-reputation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/non-fungible-reputation.md",
+ "sha256": "46dcadd7eeb57d83b9474bb7cdeff7a1efabb739f0c918673a8f86caadcc59a0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2023"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-003",
+   "identifier": "kaal:claim:3931933-003",
+   "text": "Under HSPoS a node's probability of being selected remains driven by its fungible stake, while the size of the block reward it receives is scaled by a non-fungible reputation multiplier derived from the node's reputation.",
+   "abstract": "Thus, while the node probability of being selected is based on the fungible stake, the rewards for the block is adjusted by the non-fungible reputation multiplier which is a function of the node's reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward layer applied on top of an existing PoS consensus layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-037",
+   "identifier": "kaal:claim:4529715-037",
+   "text": "A DAO built on reputation rather than a fungible token, as CRDAO is, makes the 51 percent attack nearly impossible and renders sock puppet attacks technically possible but of little influence.",
+   "abstract": "CRDAO is fairly attack resistant because of its use of reputation. As a result, sock puppet attacks are technically possible, but would have little influence. CRDAO does not appear to have a fungible token, so the 51 percent attack is nearly impossible.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation based governance",
+    "no fungible governance token"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'non-fungible-reputation'. Derived node: a roster, not an adjudicated definition."
+}

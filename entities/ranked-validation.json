@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ranked-validation",
+ "identifier": "kaal:entity:ranked-validation",
+ "name": "Ranked validation",
+ "termCode": "ranked-validation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ranked-validation.md",
+ "sha256": "f4bfcc36eab9d832cd2bcb57390e0d4abd19f42557a575a18787fd5ac5d20112",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-025",
+   "identifier": "kaal:claim:6192998-025",
+   "text": "Replacing binary upvote and downvote with validator rankings over competing submissions preserves the full information content of validator assessments.",
+   "abstract": "This replaces the binary upvote/downvote from Calcaterra, Kaal, and Andrei (2018, 7-9) with ranked preferences, preserving the full information content of validator assessments.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "multiple competing submissions per job"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-026",
+   "identifier": "kaal:claim:6192998-026",
+   "text": "The weighted Borda count consensus mechanism preserves the 2018 framework's security property that fifty one percent good faith participation ensures correct outcomes, while extending it to richer quality assessment.",
+   "abstract": "This theorem establishes that the revised framework preserves the security property from Calcaterra, Kaal, and Andrei (2018) that 51% good-faith participation ensures correct outcomes, while extending it to richer quality assessment.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validator votes weighted by reputation stake",
+    "a stake weighted majority of validators is honest"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'ranked-validation'. Derived node: a roster, not an adjudicated definition."
+}

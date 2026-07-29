@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/citation-weights",
+ "identifier": "kaal:entity:citation-weights",
+ "name": "Citation weights",
+ "termCode": "citation-weights",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/citation-weights.md",
+ "sha256": "bde496a818825b5dc1deeaa6488374ef50fcb2e4046ca70dd276020ea8c067a1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-011",
+   "identifier": "kaal:claim:5887242-011",
+   "text": "The WDAG itself constitutes an evolutionary precedent system: each rule is an immutable vertex, new rules must cite existing vertices to create weighted directed edges reflecting citation frequency, recency and expert consensus strength, and rarely cited rules decay organically.",
+   "abstract": "Each UDLC article or rule exists as an immutable vertex. New rules must cite existing vertices, creating weighted, directed edges that reflect citation frequency, recency, and expert consensus strength. Rarely cited rules experience organic weight decay",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-008",
+   "identifier": "kaal:claim:6269518-008",
+   "text": "Requiring agents to assign continuous-valued citation weights presupposes a quantification of the relative contribution of prior work that is epistemically unknowable, because knowledge production is not a linear combination of inputs amenable to precise fractional decomposition.",
+   "abstract": "In practice, this quantification is epistemically unknowable. Was a prior collaborator's insight worth 0.37 or 0.62 of the current agent's work? The question has no determinate answer. Knowledge production is not a linear combination of inputs amenable to precise fractional decomposition.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "citation weights required to be continuous values summing to one"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-010",
+   "identifier": "kaal:claim:6269518-010",
+   "text": "Citation weights should be treated as approximate signals of attribution rather than precise measurements, and the governance system must be designed to function robustly under that inherent imprecision.",
+   "abstract": "Citation weights, similarly, should be understood as approximate signals of attribution rather than precise measurements, and the governance system must be designed to function robustly under this inherent imprecision.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation weights cannot be specified precisely ex ante"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'citation-weights'. Derived node: a roster, not an adjudicated definition."
+}

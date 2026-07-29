@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/discounted-cash-flow",
+ "identifier": "kaal:entity:discounted-cash-flow",
+ "name": "Discounted cash flow",
+ "termCode": "discounted-cash-flow",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/discounted-cash-flow.md",
+ "sha256": "afa2830e8a22cd188bb204dee759e46c90b2aff4985ba8be0c8c1f88f9c825ea",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-020",
+   "identifier": "kaal:claim:4033886-020",
+   "text": "DCF currency translation breaks down for digital assets: no set discount rate or currency exchange forward curve exists for them, because they are not traded in exchange markets where closing prices are readily available and representative of fair value.",
+   "abstract": "However, no such set discount rate or currency exchange forward curve is available for digital assets, as they are not traded in exchange markets where closing prices are readily available and representative of fair value.79",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DCF analysis where the projection currency is a digital asset rather than fiat"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-036",
+   "identifier": "kaal:claim:4033886-036",
+   "text": "DCF appears at first glance unsuited to digital asset valuation because valuation is framed as pricing a token at a point in time, but it becomes applicable where networks return cash flows to token holders or to those who contribute work.",
+   "abstract": "However, some digital asset networks do return cash flows to token holders or those who contribute work to the network. In such a case, DCF can shed light on the role of these structures in digital asset valuation.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "networks that distribute cash flows to token holders or workers"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'discounted-cash-flow'. Derived node: a roster, not an adjudicated definition."
+}

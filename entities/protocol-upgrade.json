@@ -1,0 +1,189 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/protocol-upgrade",
+ "identifier": "kaal:entity:protocol-upgrade",
+ "name": "Protocol upgrade",
+ "termCode": "protocol-upgrade",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/protocol-upgrade.md",
+ "sha256": "c8ae0781b0fad2b808ca4f7101308e57d2393664bc2ef7eb9269b1d59f6462b7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-005",
+   "identifier": "kaal:claim:3441904-005",
+   "text": "Forking a chain is an insufficient governance mechanism, and even attempts to create socially optimal chain forking rules cannot suffice as a substitute for evolutionary blockchain governance protocols.",
+   "abstract": "Existing blockchain governance still mainly consist of forking a given chain. Even attempts to create socially optimal chain forking rules cannot suffice.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "existing blockchain governance that relies on forks"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-006",
+   "identifier": "kaal:claim:3441904-006",
+   "text": "Without evolutionary governance upgrades to blockchain protocols, the cost reduction that blockchain brings to the agency relationship cannot be maintained.",
+   "abstract": "Without evolutionary governance upgrades the cost reduction for the agency relationship cannot be maintained.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a changing environment for blockchain based coded guarantees"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-014",
+   "identifier": "kaal:claim:3441904-014",
+   "text": "The core governance failure of the original 2016 DAO was its inability to create dynamic governance protocol upgrades in real time through dynamic feedback loops, because its voting structure was built for investment proposals rather than governance design.",
+   "abstract": "The core governance failure illustrated by the 2016 DAO is its failure to create dynamic governance protocol upgrades in real-time through dynamic feedback loops.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the original 2016 DAO",
+    "flaws materializing in already deployed code"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-024",
+   "identifier": "kaal:claim:3441904-024",
+   "text": "Hard forks can reintroduce the double spend problem, because wallets, merchants, and users running the previous code deem the new code invalid and cannot detect spending on it, so coins spent in a new block could be spent again on an old block.",
+   "abstract": "Because wallets, merchants, and users running the previous code deem the new code invalid and thus cannot detect the spending on the new code, cryptocurrencies spent in a new block could be spent again on an old block.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "hard forks only, since old nodes read both block versions after a soft fork"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-033",
+   "identifier": "kaal:claim:3441904-033",
+   "text": "Rulemaking via code is not itself a cure for static regulation, because coded solutions are subject to natural flaws such as bugs and cannot evolutionarily change protocols, making them another stable and presumptively optimal attempt.",
+   "abstract": "On the other hand, coded solutions are subject to natural flaws (bugs) and cannot evolutionarily change protocols.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized rulemaking via code without dynamic elements"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-040",
+   "identifier": "kaal:claim:3441904-040",
+   "text": "On chain governance is a necessity for most public blockchains because all existing blockchains need to calibrate soft forks for protocol upgrades.",
+   "abstract": "On-chain governance is a necessity for most public blockchains. Because all existing blockchains need to calibrate soft forks for protocol upgrades, most public blockchain communities that value decentralization have considered on-chain governance for their protocol.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public blockchain communities that value decentralization"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-034",
+   "identifier": "kaal:claim:3799320-034",
+   "text": "Precedent in the DAO of DAOs is replaced dynamically: if a newer template is referenced more often it becomes the prevailing precedent, while the old precedent dissipates over time through non use.",
+   "abstract": "If the new post/template gets more often referenced by the DAO of DAOs members and other users, it becomes over time the new prevailing precedent. The old precedent dissipates over time with non-use.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized on chain precedent system"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-033",
+   "identifier": "kaal:claim:3808873-033",
+   "text": "Decentralized networks depend on dynamic governance because evolving blockchain protocols require updates, and the practice of hardforking that remained prevalent in the early 2020s created significant economic loss for such blockchains.",
+   "abstract": "As blockchains protocols evolve in a given market, they require updates. The practice of hardforking, that was still prevalent in the early 2020s, created significant economic loss for such blockchains.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain protocols requiring upgrades in the early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'protocol-upgrade'. Derived node: a roster, not an adjudicated definition."
+}

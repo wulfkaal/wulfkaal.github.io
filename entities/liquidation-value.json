@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/liquidation-value",
+ "identifier": "kaal:entity:liquidation-value",
+ "name": "Liquidation value",
+ "termCode": "liquidation-value",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/liquidation-value.md",
+ "sha256": "7319c3017c4cb6eaea166529896884ce52d01d0e5eab9e18db9b8deed14d83f3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-010",
+   "identifier": "kaal:claim:2097160-010",
+   "text": "Because the Barclays award falls away rather than converting, it does not create a fixed claim giving managers a stake in the firm's liquidation value, and therefore it does not lower agency cost.",
+   "abstract": "it does not create a fixed claim for managers with a stake in the firm's liquidation value because it falls away when converted.141 Barclays's CCA, therefore, also does not lower agency cost.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital awards that lapse instead of converting"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-034",
+   "identifier": "kaal:claim:2097160-034",
+   "text": "Unlike the liquidation value backing traditional inside debt, equity received by executives on early conversion can still appreciate, because the early trigger creates a substantial buffer before insolvency.",
+   "abstract": "Unlike the liquidation value of traditional inside debt, the equity in executives' portfolios after the conversion of the contingent convertible bonds can still be increased because the early trigger creates a substantial buffer before insolvency.222",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion occurs early, before bankruptcy"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'liquidation-value'. Derived node: a roster, not an adjudicated definition."
+}

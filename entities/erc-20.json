@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/erc-20",
+ "identifier": "kaal:entity:erc-20",
+ "name": "Erc 20",
+ "termCode": "erc-20",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/erc-20.md",
+ "sha256": "199a80ba622a76cec33ffb2f6be45030000c3ccb801a7515c8018277028d5bc1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-049",
+   "identifier": "kaal:claim:3125822-049",
+   "text": "Reputation on the platform is domain specific by construction: a separate type of ERC-20 token is minted for each expertise tag, so reputation earned in one domain confers no voting power, salary claim, or selection weight in another.",
+   "abstract": "Separate types of ERC-20 tokens are minted for each expertise tag.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "one token type per expertise tag"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-022",
+   "identifier": "kaal:claim:3249860-022",
+   "text": "Fifty-six of the top 100 tokens are implemented at the protocol level of a blockchain, thirty-five follow the ERC-20 Token Standard, six are implemented in a crypto economic protocol on top of a blockchain, and two are application level dapp tokens.",
+   "abstract": "Fifty-six tokens have a technical core that is implemented on the protocol level of a blockchain (blockchain native). Thirty-five tokens have a technical core that follows the ERC-20 Token Standard.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "N=100 dataset as of the May 6, 2018 cutoff"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'erc-20'. Derived node: a roster, not an adjudicated definition."
+}

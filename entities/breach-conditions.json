@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/breach-conditions",
+ "identifier": "kaal:entity:breach-conditions",
+ "name": "Breach conditions",
+ "termCode": "breach-conditions",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/breach-conditions.md",
+ "sha256": "3c54cefb02e2dc0454046757b2e7064c37017ed2ca7922ffe0effcd5d14ec47b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-013",
+   "identifier": "kaal:claim:3396542-013",
+   "text": "A breach occurs only when the underwriters concerned believe that the value of their encumbered tokens is less than the payment they would have to make in order to reclaim those tokens.",
+   "abstract": "Under what circumstances would a breach occur? It would occur only if the underwriters concerned believed that the value of these tokens is less than the payment they need to make in order to reclaim the tokens.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-014",
+   "identifier": "kaal:claim:3396542-014",
+   "text": "Breach by underwriters will in general happen only after a dramatic shift in the DAO's future prospects, such as a sharp decrease in expected future revenues or a sharp increase in expected payments on outstanding policies.",
+   "abstract": "In general, this will happen only if there is a dramatic shift in the future prospects of the DAO, such as a sharp decrease in expected future revenues or a sharp increase in expected payments on outstanding policies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dramatic shift in the DAO's future prospects"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'breach-conditions'. Derived node: a roster, not an adjudicated definition."
+}

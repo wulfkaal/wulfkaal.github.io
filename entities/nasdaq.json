@@ -1,0 +1,120 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/nasdaq",
+ "identifier": "kaal:entity:nasdaq",
+ "name": "Nasdaq",
+ "termCode": "nasdaq",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/nasdaq.md",
+ "sha256": "591bd7757648b1b1f6c3135ad2dbb88e19a9520b308ab3c758cc311dceafd3af",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-032",
+   "identifier": "kaal:claim:3411110-032",
+   "text": "Self regulatory organizations occupy a distinctive position, holding some regulatory authority while remaining beholden to the SEC, which makes them the right actors to educate the SEC toward a more crypto friendly stance by demonstrating successful use cases.",
+   "abstract": "SROs are also in a unique position to help educate the SEC to becoming more crypto friendly.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SROs such as FINRA, Nasdaq, and NYSE that remain subject to SEC oversight"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-018",
+   "identifier": "kaal:claim:5454054-018",
+   "text": "Bringing NASDAQ-listed stocks on-chain removes the need to mint intermediary virtual representations of off-chain equities, because tokenized stocks are natively verifiable on blockchain ledgers, which reduces legal and operational friction.",
+   "abstract": "By bringing NASDAQ-listed stocks on-chain, the need to mint intermediary virtual representations of off-chain equities as an accounting measure is eliminated. NASDAQ tokenized stocks are natively verifiable on blockchain ledgers. This is key as it reduces legal and operational friction.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "NASDAQ tokenized stock framework in operation"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-019",
+   "identifier": "kaal:claim:5454054-019",
+   "text": "The NASDAQ tokenized stock framework materially expands the addressable market for LER, because every NASDAQ-listed stock becomes potentially eligible for time-weighted voucher reward accruals.",
+   "abstract": "Second, it significantly increases the addressable market for LER because all of NASDAQ-listed stocks are now potentially eligible for LER's time-weighted voucher loyalty reward accruals.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conditional on SEC approval of the NASDAQ framework"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-037",
+   "identifier": "kaal:claim:5454054-037",
+   "text": "Regulatory uncertainty, in particular the timeline for SEC approval of the NASDAQ and Dinari tokenization frameworks, could delay LER implementation.",
+   "abstract": "Regulatory uncertainties, such as the timeline for SEC approval for NASDAQ and Dinari frameworks could delay LER implementation.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pending SEC approval of tokenized securities trading"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'nasdaq'. Derived node: a roster, not an adjudicated definition."
+}

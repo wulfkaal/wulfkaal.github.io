@@ -1,0 +1,429 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/voting-design",
+ "identifier": "kaal:entity:voting-design",
+ "name": "Voting design",
+ "termCode": "voting-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/voting-design.md",
+ "sha256": "035da283adaad81b52afc7cb28b638f6a80a5667cb1cf312229caaaf9dc7d1e4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 22
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-014",
+   "identifier": "kaal:claim:3441904-014",
+   "text": "The core governance failure of the original 2016 DAO was its inability to create dynamic governance protocol upgrades in real time through dynamic feedback loops, because its voting structure was built for investment proposals rather than governance design.",
+   "abstract": "The core governance failure illustrated by the 2016 DAO is its failure to create dynamic governance protocol upgrades in real-time through dynamic feedback loops.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the original 2016 DAO",
+    "flaws materializing in already deployed code"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-015",
+   "identifier": "kaal:claim:3441904-015",
+   "text": "Curators were the core point of centralization in the original 2016 DAO because the smart contract could not on its own distinguish real from fake proposals, leaving curators with approval and vote prioritization power before any community vote.",
+   "abstract": "Because the smart contract on its own could not distinguish real from fake proposals, the curators had approval power and vote prioritization power over contractor proposals before the proposals were put up to a DAO community vote.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the original 2016 DAO curator whitelist design"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-021",
+   "identifier": "kaal:claim:3441904-021",
+   "text": "A one token one vote mechanism in existing decentralized protocols with on chain governance resembles a plutocracy, because holders of a significant share of total token supply hold more power than the rest of the members.",
+   "abstract": "A one-token-one-vote voting mechanism in existing decentralized protocols with on-chain governance resembles a plutocracy.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized protocols with on chain governance as of the end of 2019"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-023",
+   "identifier": "kaal:claim:3441904-023",
+   "text": "In delegated proof of stake protocols the significant block validation power of elected nodes leads to corruption, because those nodes are incentivized to bribe voters to be elected as delegates in exchange for some of the newly inflated tokens.",
+   "abstract": "That power leads to corruption. Block validation nodes in delegated proof of stake protocols are incentivized to bribe voters to be elected as delegates in exchange for some of the newly inflated tokens.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "delegated proof of stake protocols such as EOS, Lisk, and Ark"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-041",
+   "identifier": "kaal:claim:3441904-041",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens from voting because third parties are less likely to be able to take over a non fungible asset that is organically grown and maintained through actual expertise in the DAO subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible assets, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "voting by staking non fungible reputation tokens"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-044",
+   "identifier": "kaal:claim:3441904-044",
+   "text": "DAO member reputation should be designed as inflationary rather than as a permanent stock, so that non use such as non staking or non voting leads to value depreciation.",
+   "abstract": "The DAO member reputation should be inflationary in the DAO design.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation based DAO governance designs"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-030",
+   "identifier": "kaal:claim:3652481-030",
+   "text": "The one token one vote designs popular in the early 2020s produced suboptimal voting outcomes because they allocate more power to holders of a large share of total token supply, leaving majority holders more powerful than all remaining holders combined.",
+   "abstract": "Suboptimal voting outcomes in existing decentralized protocols were associated with the then popular one-token-one-vote voting mechanisms. A one- token-one-vote design allocates more power to token holders who have a significant share of the total supply of a given token.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "one token one vote voting mechanisms"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-031",
+   "identifier": "kaal:claim:3652481-031",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens because a third party is less likely to be able to take over a non fungible asset such as reputation that was organically grown and maintained through actual expertise in the DAO's subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible asset, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is non fungible and expertise based"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-034",
+   "identifier": "kaal:claim:3652481-034",
+   "text": "Where a DAO's internal voting mechanism is centralized and burdened with legacy voting problems, any higher degree of decentralization achieved in its external legal design will typically be cancelled out over the long run.",
+   "abstract": "For many attempts to create legal solutions, if the internal voting mechanism of a DAO is more centralized and afflicted with existing legacy voting issues, a higher degree of decentralization in the external legal design will typically be cancelled out in the long run.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the internal voting mechanism is centralized or uses legacy voting designs"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3709041-017",
+   "identifier": "kaal:claim:3709041-017",
+   "text": "Under a quadratic style microdemocratic allocation, each voter receives a capped number of votes to distribute by priority, so voters concentrate votes on the issues most relevant to them and outcomes track actual preference intensity.",
+   "abstract": "Each voter in a given microdemocratic voting scenario may be allocated a maximum number of votes. Such votes may be allocated by priority to any issues the respective voter wants to engage with.",
+   "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041",
+   "datePublished": "2020",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires an electronic voting system with a capped per voter vote allocation"
+   ],
+   "source_pdf_sha256": "5216a7bca45a48e3bef11ec524936e66af737c0fd66271e9f6866dc20a4482cc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-030",
+   "identifier": "kaal:claim:3782214-030",
+   "text": "Loosely coupled voting, in which staked reputation cannot be lost, encourages dissenting opinions, while tightly coupled voting, in which losing stakes are redistributed, guarantees consensus; a DAO steers deliberation by moving between the two.",
+   "abstract": "Loosely-coupled voting encourages dissenting opinions. Tightly-coupled voting guarantees consensus.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation weighted validation pools"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-015",
+   "identifier": "kaal:claim:3808867-015",
+   "text": "Microdemocratic vote allocation improves voting outcomes because the proportion of votes a voter allocates to an issue evidences that voter's higher level of knowledge on the issue, and voters are unlikely to give top priority to issues they know little about.",
+   "abstract": "Moreover, part of the power of this microdemocratic approach derives from the higher levels of knowledge a given voter has on a particular issue that is evidenced by the voters' proportional allocation of votes on such issue.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "voting systems that allocate a maximum number of votes per voter across issues",
+    "quadratic voting style designs"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-016",
+   "identifier": "kaal:claim:3808867-016",
+   "text": "Microdemocratic systems must solve the tragedy of the commons, because without controls self interested voters acting independently of the totality of voters may deplete or spoil shared resources such as the environment and public goods.",
+   "abstract": "Without controls, some self-interested voters may be depleting or spoiling resources they share with the rest of society, such as the environment, public goods, among others.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "microdemocratic shared-resource systems",
+    "absence of controls"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-017",
+   "identifier": "kaal:claim:3808867-017",
+   "text": "Majority rule in microdemocratic systems can produce discrimination against minorities, because a majority that is itself unaffected by a rule it instantiates can impose a discriminatory impact on a minority that is disproportionately affected.",
+   "abstract": "Similarly, majority rule may mean discrimination of the minority. A majority that is unaffected by a rule they instantiate may have a discriminatory impact on a minority that is disproportionately affected by the change in the rules.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "majority rule voting systems"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-024",
+   "identifier": "kaal:claim:3981021-024",
+   "text": "Merit in the CHARITYxDAO is expressed by a non fungible reputation token that cannot be bought or sold, and voting is designed around staking those non fungible reputation tokens.",
+   "abstract": "c. decisions in the CHARITYxDAO are made with a voting design that revolves around staking of non-fungible reputation tokens; d. non-fungibility of CHARITYxDAO reputation tokens; e.g. merit of a CHARITYxDAO VA is expressed by a non-fungible reputation token that cannot be bought or sold;",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO voting design"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-026",
+   "identifier": "kaal:claim:3981021-026",
+   "text": "Every CHARITYxDAO decision runs through a two vote model: a loosely coupled sentiment vote with no reputation at stake, followed by a tightly coupled final vote with reputation at stake.",
+   "abstract": "i. Two vote model a) loosely coupled (sentiment) vote (no reputation at stake), b) tightly coupled (final) vote (reputation at stake):",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "all CHARITYxDAO governance decisions"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-027",
+   "identifier": "kaal:claim:3981021-027",
+   "text": "Because voting associates can see the sentiment vote outcomes and who staked what reputation before the binding vote, it is reasonable to expect that the overwhelming majority of final tightly coupled votes will end in unanimity on the issue at hand.",
+   "abstract": "Accordingly, it is reasonable to expect that the overwhelming majority of CHARITYxDAO's final tightly coupled votes will end in unanimity on the issue at hand.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "two vote designs where sentiment results are visible before the binding vote"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-028",
+   "identifier": "kaal:claim:3981021-028",
+   "text": "Reputation staking overcomes the polarizing effects and suboptimal vote outcomes produced by one token one vote voting mechanisms.",
+   "abstract": "First, it overcomes the all too common polarizing effects and suboptimal vote outcomes of one- token-one-vote voting mechanisms.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance systems choosing between token weighted and reputation weighted voting"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-025",
+   "identifier": "kaal:claim:4685567-025",
+   "text": "Weighted reputation voting has key advantages over WEB2 and WEB3 one token one vote mechanisms because it aligns each donor community member's individual incentives while simultaneously calibrating those incentives with the interests of the overall community.",
+   "abstract": "The use of weighted reputation voting has key advantages over other WEB2 and WEB3 one-token-one-vote voting mechanisms. It aligns incentives for donor community members individually and at the same time calibrates their incentives with the overall community.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation tokens are non fungible and chain agnostic"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-014",
+   "identifier": "kaal:claim:5254152-014",
+   "text": "High governance scores require explicit mechanisms that prevent common governance failures, specifically the tyranny of the majority and the tragedy of the commons, such as reputation based voting, multi round voting, or incentive alignment.",
+   "abstract": "High scores, such as 9 or 10, indicate the presence of mechanisms to prevent common governance failures, such as the tyranny of the majority or the tragedy of the commons.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the paper's governance scoring criterion"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-031",
+   "identifier": "kaal:claim:5254152-031",
+   "text": "Procedural governance safeguards such as two step voting with temperature checks do not produce genuine decentralization when the governance token remains purchasable; in MakerDAO's case the purchasable token renders true decentralization nominal.",
+   "abstract": "The governance process includes 2-step voting with temperature checks, but the purchasable governance token makes true decentralization nominal (G: 4).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs combining multi stage voting with freely purchasable governance tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-039",
+   "identifier": "kaal:claim:5254152-039",
+   "text": "A tiered voting system that combines temperature checks with token holder percentage thresholds robustly defends a DAO against common attacks, as reflected in Arbitrum's attack resistance score of 8.",
+   "abstract": "The tiered voting system incorporating temperature checks and token holder percentages robustly defends against common DAO attacks",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs implementing multi stage voting with participation thresholds"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "22 claims in the published works of Wulf A. Kaal carry the concept tag 'voting-design'. Derived node: a roster, not an adjudicated definition."
+}

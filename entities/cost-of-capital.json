@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cost-of-capital",
+ "identifier": "kaal:entity:cost-of-capital",
+ "name": "Cost of capital",
+ "termCode": "cost-of-capital",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cost-of-capital.md",
+ "sha256": "b89a097864222e522770242e5ba683805f57cd5cd1c688e8c49f53086e23d380",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2020"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-011",
+   "identifier": "kaal:claim:3396522-011",
+   "text": "The minimum price of a fiat backed stable cryptocurrency is the interest rate of the fiat currency it is pegged to, because the collateral must sit liquid rather than earn a return.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to fully collateralized fiat backed tokens"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-003",
+   "identifier": "kaal:claim:3402701-003",
+   "text": "The minimum cost of a fiat-backed token equals the interest rate of the pegged fiat currency, because the backing capital must sit idle and liquid.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-007",
+   "identifier": "kaal:claim:3606663-007",
+   "text": "Once the staggered private sale discounts of up to fifty percent are counted as a cost of capital, the cost structure of an ICO is arguably significantly higher than that of an IPO, notwithstanding the ICO's lower legal and offering expenses.",
+   "abstract": "Considering these steep discounts to incentivize earliest possible investments, the cost structure of ICOs is arguably significantly higher than the cost structure of an IPO.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "ICOs conducted in 2017 and 2018 with staggered discount structures",
+    "comparison against average IPO underwriting fees of four to seven percent"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'cost-of-capital'. Derived node: a roster, not an adjudicated definition."
+}

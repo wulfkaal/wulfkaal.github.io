@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sock-puppet-attack",
+ "identifier": "kaal:entity:sock-puppet-attack",
+ "name": "Sock puppet attack",
+ "termCode": "sock-puppet-attack",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sock-puppet-attack.md",
+ "sha256": "695e11d0eb665d103d0214301e55ca5867a37318eff611b86b8734457339cc0b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2023",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-036",
+   "identifier": "kaal:claim:4529715-036",
+   "text": "Requiring governance tokens to be earned through contribution rather than purchased, as GDN DAO does, leaves only minimal risk of 51 percent and sock puppet attacks even under a one token one vote structure.",
+   "abstract": "While the voting structure of the DAO is a 1 token = 1 vote, tokens are not available for purchase. All governance tokens must be earned through contributions to the community.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "one token one vote with non purchasable tokens"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-027",
+   "identifier": "kaal:claim:5254152-027",
+   "text": "Requiring users to purchase governance tokens in order to vote both centralizes power in majority token holders and leaves the DAO highly vulnerable to 51 percent and sock puppet attacks, as illustrated by Gelato DAO which scored 1 on both decentralization and attack resistance.",
+   "abstract": "It is highly centralized as users must purchase governance tokens to vote, limiting power to majority token holders (D: 1). The platform is highly vulnerable to 51% and sock puppet attacks due to the purchasable governance tokens (A: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs where voting requires purchasing fungible governance tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-030",
+   "identifier": "kaal:claim:5254152-030",
+   "text": "A one person, one vote structure raises a DAO's resistance to 51 percent and sock puppet attacks, as reflected in TomiDAO's attack resistance score of 6 against a sample average of 3.65.",
+   "abstract": "The one-person, one-vote model increases resistance to 51% and sock puppet attacks (A: 6).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs implementing one person, one vote rather than token weighted voting"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'sock-puppet-attack'. Derived node: a roster, not an adjudicated definition."
+}

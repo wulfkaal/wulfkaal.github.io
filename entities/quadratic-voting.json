@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/quadratic-voting",
+ "identifier": "kaal:entity:quadratic-voting",
+ "name": "Quadratic voting",
+ "termCode": "quadratic-voting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/quadratic-voting.md",
+ "sha256": "84f1e5c4ac979a48d0781bd48201767521fc8d7525231c9ee989057a9b6eb1df",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2020",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3709041-017",
+   "identifier": "kaal:claim:3709041-017",
+   "text": "Under a quadratic style microdemocratic allocation, each voter receives a capped number of votes to distribute by priority, so voters concentrate votes on the issues most relevant to them and outcomes track actual preference intensity.",
+   "abstract": "Each voter in a given microdemocratic voting scenario may be allocated a maximum number of votes. Such votes may be allocated by priority to any issues the respective voter wants to engage with.",
+   "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041",
+   "datePublished": "2020",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires an electronic voting system with a capped per voter vote allocation"
+   ],
+   "source_pdf_sha256": "5216a7bca45a48e3bef11ec524936e66af737c0fd66271e9f6866dc20a4482cc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-015",
+   "identifier": "kaal:claim:3808867-015",
+   "text": "Microdemocratic vote allocation improves voting outcomes because the proportion of votes a voter allocates to an issue evidences that voter's higher level of knowledge on the issue, and voters are unlikely to give top priority to issues they know little about.",
+   "abstract": "Moreover, part of the power of this microdemocratic approach derives from the higher levels of knowledge a given voter has on a particular issue that is evidenced by the voters' proportional allocation of votes on such issue.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "voting systems that allocate a maximum number of votes per voter across issues",
+    "quadratic voting style designs"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-019",
+   "identifier": "kaal:claim:4529715-019",
+   "text": "Quadratic voting remains open to manipulation and strategic voting, and it depends on a robust and transparent voting system to count votes accurately.",
+   "abstract": "However, quadratic voting also has some limitations and challenges, such as the potential for manipulation or strategic voting, and the need for a robust and transparent voting system to ensure that all votes are counted accurately.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "quadratic voting model"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-002",
+   "identifier": "kaal:claim:5254152-002",
+   "text": "Quadratic voting suppresses domination by any single participant because the cost of each additional vote rises quadratically, making concentrated control prohibitively expensive.",
+   "abstract": "The cost of additional votes increases quadratically, making it prohibitively expensive for any one individual to dominate the voting process.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs that implement quadratic vote pricing"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'quadratic-voting'. Derived node: a roster, not an adjudicated definition."
+}

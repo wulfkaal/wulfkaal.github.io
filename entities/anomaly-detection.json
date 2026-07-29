@@ -1,0 +1,85 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/anomaly-detection",
+ "identifier": "kaal:entity:anomaly-detection",
+ "name": "Anomaly detection",
+ "termCode": "anomaly-detection",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/anomaly-detection.md",
+ "sha256": "d9277370c3637f61ba457b1c959b246dcc38a3661847ce59c249eb9045169a3a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-037",
+   "identifier": "kaal:claim:5225296-037",
+   "text": "Collusion calls for a different remedy than Sybil attacks: adaptive slashing that detects coordinated deviations through statistical anomaly detection is what deters group manipulation.",
+   "abstract": "For collusion, adaptive slashing—detecting coordinated deviations via statistical anomaly detection—deters group manipulation, drawing on game-theoretic deterrence",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-028",
+   "identifier": "kaal:claim:5245185-028",
+   "text": "Anomaly detection and behavioral analysis models trained on agent data may replicate the biases in that data and fail to detect novel deviations absent from the training set.",
+   "abstract": "rely on machine learning models trained on agent data, which may replicate biases or fail to detect novel deviations not present in training sets.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "machine learning monitors trained on historical agent behavior",
+    "novel agent behaviors outside training distribution"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'anomaly-detection'. Derived node: a roster, not an adjudicated definition."
+}

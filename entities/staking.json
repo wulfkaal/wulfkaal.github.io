@@ -1,0 +1,308 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/staking",
+ "identifier": "kaal:entity:staking",
+ "name": "Staking",
+ "termCode": "staking",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/staking.md",
+ "sha256": "a30720fa5c0673c7bef09e5ca8c01b3ee731fe5ead857513bf7d05486ed41329",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 15
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-022",
+   "identifier": "kaal:claim:2998033-022",
+   "text": "Requiring data scientists to stake a cryptocurrency on their own predictions converts private confidence into a public signal, which enables the fund to select the optimal model and improve fund performance.",
+   "abstract": "The staking process, in turn, enables Numerai to choose the optimal model and in the process improve the performance of its hedge fund.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "describes Numerai's use of the Numeraire token as a staking mechanism"
+   ],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-006",
+   "identifier": "kaal:claim:3125822-006",
+   "text": "Every validation request opens a betting pool in which experts stake expertise specific sem tokens for or against the post, the winning side splits the losing side's stakes, and upvotes win ties.",
+   "abstract": "Every validation request creates a validation pool, where experts stake expertise-specific sem tokens to approve or disapprove the post. The winners split the losers' stakes. (Figure 4.) Upvotes win ties.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "staking is limited to the expertise specific token"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-043",
+   "identifier": "kaal:claim:3125822-043",
+   "text": "As the system matures the power of experienced experts far outstrips that of new experts, which creates an entry problem in a platform where adjudicating disputes requires staking reputation one does not yet have.",
+   "abstract": "Secondly, as the system reaches a semblance of maturity, the power of experienced experts will far outstrip that of new experts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "mature expertise tags",
+    "systems that require staking reputation to participate"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-010",
+   "identifier": "kaal:claim:3409548-010",
+   "text": "Requiring data scientists to stake a cryptocurrency on their own predictions is a workable remedy for overfitting, because the stake expresses confidence in live performance and lets the fund select the optimal model.",
+   "abstract": "The staking process, in turn, enables Numerai to choose the optimal model and in the process improve the performance of its hedge fund.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "crowdsourced modeling competition with a stakeable token"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-014",
+   "identifier": "kaal:claim:3782210-014",
+   "text": "Reputation must be staked and risked on votes over work evidence, because otherwise the system suffers the Tragedy of the Commons nothing-at-stake problem; staking ensures every expert is motivated to police every reputation-staked action in order to protect the value of their own investment.",
+   "abstract": "To avoid the Tragedy of the Commons (the nothing-at- stake problem, \"skin in the game\"), reputation must be staked and risked with votes on work evidence. This ensures all experts are motivated to police every reputation- staked action, to protect the value of their investment.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation pool voting on work evidence"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-003",
+   "identifier": "kaal:claim:3931933-003",
+   "text": "Under HSPoS a node's probability of being selected remains driven by its fungible stake, while the size of the block reward it receives is scaled by a non-fungible reputation multiplier derived from the node's reputation.",
+   "abstract": "Thus, while the node probability of being selected is based on the fungible stake, the rewards for the block is adjusted by the non-fungible reputation multiplier which is a function of the node's reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward layer applied on top of an existing PoS consensus layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-032",
+   "identifier": "kaal:claim:3931933-032",
+   "text": "Under HSPoS two nodes holding the same stake retain the same probability of being selected for rewards, but the node with the higher reputation receives the larger reward.",
+   "abstract": "In HSPoS, two nodes with the same stake would have the same probability of being selected for the rewards. However, the node with the higher reputation would get higher rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation with equal stakes"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-034",
+   "identifier": "kaal:claim:3931933-034",
+   "text": "Because reputation scales the reward, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "abstract": "Furthermore, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-024",
+   "identifier": "kaal:claim:3981021-024",
+   "text": "Merit in the CHARITYxDAO is expressed by a non fungible reputation token that cannot be bought or sold, and voting is designed around staking those non fungible reputation tokens.",
+   "abstract": "c. decisions in the CHARITYxDAO are made with a voting design that revolves around staking of non-fungible reputation tokens; d. non-fungibility of CHARITYxDAO reputation tokens; e.g. merit of a CHARITYxDAO VA is expressed by a non-fungible reputation token that cannot be bought or sold;",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO voting design"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-021",
+   "identifier": "kaal:claim:4855607-021",
+   "text": "Validation pools evaluate contributions democratically on the basis of staked tokens, and the outcome of that evaluation governs the minting of new reputation tokens, so community consensus on AI decisions is what determines standing in the system.",
+   "abstract": "Validation Pools allow for the democratic evaluation of contributions based on staked tokens, with outcomes influencing the minting of new REP tokens that reflect community consensus on AI-related decisions.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the proposed web3 community governance architecture"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-022",
+   "identifier": "kaal:claim:4900878-022",
+   "text": "Supply side mechanisms such as token burns, which permanently remove tokens from circulation, and staking, which locks tokens up in exchange for rewards, let a token economy balance supply and demand and thereby sustain stable growth.",
+   "abstract": "By carefully designing these incentives, token economies can balance supply and demand, ensuring stable and sustainable growth.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires deliberate calibration of the incentive parameters"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-030",
+   "identifier": "kaal:claim:4941807-030",
+   "text": "Validation Pools are the consensus mechanism of the proposed system: an author's stakes are pooled to evaluate a specific forum post, and the outcome of the pool can mint new reputation tokens that reflect community consensus on that contribution.",
+   "abstract": "Validation Pool (VP) form a crucial mechanism where an author's stakes are pooled to evaluate specific posts within the forum. The outcome of a VP can lead to the minting of new REP tokens, reflecting the consensus on a given issue or contribution.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where participants stake against specific forum posts"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-037",
+   "identifier": "kaal:claim:5095633-037",
+   "text": "Numeraire's staking and prediction-based reputation mechanism, tuned to predictive accuracy, overlooks the ethical and contextual concerns that characterize AI dataset governance.",
+   "abstract": "The narrow focus on predictive accuracy overlooks the broader ethical and contextual concerns that characterize AI governance.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "diverse dataset tasks such as medical annotation and content moderation"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-036",
+   "identifier": "kaal:claim:5245185-036",
+   "text": "Validation Pools are stipulated as mechanisms in which members stake non transferable reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities, and this staking mechanism carries the paper's decentralized quality control function.",
+   "abstract": "Validation Pools are mechanisms in which members stake their reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "web3 governance with non transferable reputation tokens"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-005",
+   "identifier": "kaal:claim:6192998-005",
+   "text": "Token curated registries create economic security against spam through staking and challenge, but they produce only binary accept or reject outcomes and therefore supply no mechanism for nuanced quality assessment or for attributing collaborative contributions.",
+   "abstract": "While this creates economic security against spam, it produces only binary outcomes as in accept or reject heuristics and provides no mechanism for nuanced quality assessment or attribution of collaborative contributions.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "stake and challenge registry designs"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "15 claims in the published works of Wulf A. Kaal carry the concept tag 'staking'. Derived node: a roster, not an adjudicated definition."
+}

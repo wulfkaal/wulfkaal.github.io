@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/explainable-ai",
+ "identifier": "kaal:entity:explainable-ai",
+ "name": "Explainable ai",
+ "termCode": "explainable-ai",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/explainable-ai.md",
+ "sha256": "6144755250794bd679ccd356d3760d638d0db424696763e8fdeb463a330175e4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-013",
+   "identifier": "kaal:claim:4855607-013",
+   "text": "Explainable reinforcement learning research has not yet produced usable explanations: the field relies on toy examples, omits user testing, produces explanations that are themselves complex, uses basic visualizations, and rarely open sources its code.",
+   "abstract": "Current research in explainable RL, which aims to make RL models more transparent and interpretable, also has limitations. These include the use of \"toy examples\", lack of user testing, complexity of explanations, basic visualizations, and lack of open-sourced code.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current explainable RL research as surveyed in the text"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-012",
+   "identifier": "kaal:claim:5541658-012",
+   "text": "Post hoc explainability techniques do not by themselves establish trustworthiness; the explanations they produce must additionally be verified against human knowledge.",
+   "abstract": "However, post-hoc explainers still need to be verified for trustworthiness, in that the explanations comport with human knowledge.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "post hoc explainable AI methods such as the SHAP family of explainers"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-015",
+   "identifier": "kaal:claim:5541658-015",
+   "text": "Transparent, explainable models such as those built for the European Court of Human Rights, which paired 97% accuracy with digestible explanations, provide the design template for addressing legal AI's transparency problem.",
+   "abstract": "Transparent, explainable AI models, such as those developed for the ECHR, which achieved 97% accuracy with digestible explanations, offer a model for addressing these concerns.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "systems using computational models of argument to generate legally grounded explanations"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'explainable-ai'. Derived node: a roster, not an adjudicated definition."
+}

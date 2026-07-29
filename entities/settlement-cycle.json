@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/settlement-cycle",
+ "identifier": "kaal:entity:settlement-cycle",
+ "name": "Settlement cycle",
+ "termCode": "settlement-cycle",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/settlement-cycle.md",
+ "sha256": "2a3a40b43bc26858c33ea3b29beb3b238d5c5799d0e63ef2472454ca03664fcd",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-003",
+   "identifier": "kaal:claim:3411110-003",
+   "text": "Blockchain reduces counterparty credit risk through a specific mechanism: a single shared ledger compresses the settlement cycle so that cash or securities are verifiably in the account within seconds of the trade, leaving almost no window for counterparty default.",
+   "abstract": "credit risk is reduced because cash (if selling) or the securities (if purchasing) are in the account for verification shortly after the trade (which could be seconds, if not fractions of a second), because the settlement cycle is substantially reduced.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a single shared ledger used across trading firms",
+    "near instantaneous settlement"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-010",
+   "identifier": "kaal:claim:3411110-010",
+   "text": "Naked or out of the box short selling is possible only because settlement takes three days, so eliminating the window between trade and settlement on a blockchain eliminates that abuse.",
+   "abstract": "This tactic is only possible because it takes three days to settle a trade. By eliminating the window between trade and settlement, the blockchain eliminates out-of- the-box shorting.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "multi-day settlement regimes such as T+3"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'settlement-cycle'. Derived node: a roster, not an adjudicated definition."
+}

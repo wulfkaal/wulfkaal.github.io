@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/advisory-contracts",
+ "identifier": "kaal:entity:advisory-contracts",
+ "name": "Advisory contracts",
+ "termCode": "advisory-contracts",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/advisory-contracts.md",
+ "sha256": "efb292221f3b6906e7aa61e7567447f68c274557ef28a184cccc11bb7aebcec1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2013",
+    "2013"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2337268-001",
+   "identifier": "kaal:claim:2337268-001",
+   "text": "The Investment Advisers Act prohibits contingent fee arrangements between investment advisers and their clients because such arrangements could induce inappropriate risk taking by the adviser.",
+   "abstract": "Because contingent fee arrangements could lead to inappropriate risk taking by investment advisers, contingent fee arrangements between investment advisers and their clients are prohibited.7",
+   "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisory contracts governed by the IAA",
+    "outside the post 1985 exemption for certain qualifying large advisory contracts"
+   ],
+   "source_pdf_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2337268-002",
+   "identifier": "kaal:claim:2337268-002",
+   "text": "The IAA restricts the assignment of advisory contracts without client consent in order to protect investors against changes in the character or quality of the advisory services they contracted for.",
+   "abstract": "Moreover, to protect investors against changes in the character or quality of advisory services, the IAA prohibits the assignment of contracts with clients unless the",
+   "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268",
+   "datePublished": "2013",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contracts between investment advisers and their clients"
+   ],
+   "source_pdf_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'advisory-contracts'. Derived node: a roster, not an adjudicated definition."
+}

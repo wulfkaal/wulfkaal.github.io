@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/citation-weighting",
+ "identifier": "kaal:entity:citation-weighting",
+ "name": "Citation weighting",
+ "termCode": "citation-weighting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/citation-weighting.md",
+ "sha256": "4c59943200f98feea8a163ed1e2c037c0d4bed63d8d7f09dc00588a199a91532",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-027",
+   "identifier": "kaal:claim:6192998-027",
+   "text": "Constraining the citation weight parameter below one and enforcing row stochasticity through normalization guarantees that the citation weighted value vector exists, is unique, and converges, which resolves the instability of the original recursive valuation formula.",
+   "abstract": "This theorem addresses the instability concern with the recursive formula in Calcaterra, Kaal, and Andrei (2018, 41). By constraining and ensuring row-stochasticity through normalization, we guarantee convergence, a crucial property for autonomous operation.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation weight parameter strictly less than one",
+    "contribution matrix normalized to be row stochastic"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-037",
+   "identifier": "kaal:claim:6192998-037",
+   "text": "Citation weighted systems become more secure over time at a faster rate than binary systems, because time to corruption scales superlinearly with accumulated transaction volume.",
+   "abstract": "This extends the security analysis from Calcaterra, Kaal, and Andrei (2018, 15-18) to demonstrate that citation-weighted systems become more secure over time at a faster rate than binary systems.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "measured against accumulated historical transaction volume",
+    "tested via simulated attacks on testnet"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-038",
+   "identifier": "kaal:claim:6192998-038",
+   "text": "Citation weighted reputation solves the problem that when one agent fine tunes a base model and another specializes it, current platforms give the first agent no mechanism for ongoing credit, and thereby enables sustainable open development.",
+   "abstract": "When Agent A fine-tunes a base model creating capabilities that Agent B then specializes, current platforms provide no mechanism for A to receive ongoing credit. Citation-weighted reputation solves this, enabling sustainable open development.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "AI agent ecosystems building on each other's model contributions"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'citation-weighting'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/self-reference",
+ "identifier": "kaal:entity:self-reference",
+ "name": "Self reference",
+ "termCode": "self-reference",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/self-reference.md",
+ "sha256": "19c24723aff03ddcac98fe44c16c86d7a2e70a0a53b06a2908ce0e1f2ea5e75e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-031",
+   "identifier": "kaal:claim:3125827-031",
+   "text": "Running the reputation platform on the very blockchain it validates destabilizes the system because it increases the likelihood of forks: every validation pool result is itself a transaction that must be included in a future block requiring its own validation, without end. The authors judge this destabilization non catastrophic for most imagined uses.",
+   "abstract": "But this self-referential architecture destabilizes the system as it increases the likelihood of forks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "platform DApp hosted on the same chain it validates"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-021",
+   "identifier": "kaal:claim:6655138-021",
+   "text": "The cross-surface reflection surface must not self-refer: its proposals range over the prior five surfaces and not over itself, because allowing it to propose reallocations of compute toward itself would create recursive instability.",
+   "abstract": "Second, Σ_R cannot self-refer in the strong sense: Σ_R proposals are over the prior five surfaces, not over Σ_R itself, since allowing Σ_R to propose reallocations of compute toward Σ_R would create the recursive instability that OP5 in Part XI investigates as a separate research question.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the six-surface architecture as specified, excluding any meta-meta surface"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'self-reference'. Derived node: a roster, not an adjudicated definition."
+}

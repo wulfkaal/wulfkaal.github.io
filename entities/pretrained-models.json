@@ -1,0 +1,106 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/pretrained-models",
+ "identifier": "kaal:entity:pretrained-models",
+ "name": "Pretrained models",
+ "termCode": "pretrained-models",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/pretrained-models.md",
+ "sha256": "0da95eaafce2064b02c83deb21c2f3433887dea1b6288a77c08dafa421d6228d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-004",
+   "identifier": "kaal:claim:4796714-004",
+   "text": "Ex-post governance, which applies regulation only after AI systems are developed and deployed or after large language models have been pretrained on existing proprietary datasets, fails to address risks and biases preemptively.",
+   "abstract": "The traditional ex-post governance methods, where regulations are applied after AI systems are developed and deployed, or were pretrained LLMs models were trained on existing proprietary datasets, often fall short in preemptively addressing risks and biases.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to regulation imposed after model development or pretraining",
+    "concerns risk and bias formation during development"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-037",
+   "identifier": "kaal:claim:4796714-037",
+   "text": "A decentralized data validation layer applied to pretrained models is efficient but structurally limited: because it cannot drive significant changes to the model's core design or training approach, it leaves the model more attack prone.",
+   "abstract": "The validation layer approach, while efficient for refining pretrained models, may not facilitate significant changes in the model's core design or training approach which could make it more attack prone.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Model 2, the decentralized data validation layer approach",
+    "concerns pretrained models whose parameters are already fixed"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-038",
+   "identifier": "kaal:claim:4796714-038",
+   "text": "Broad community governance of AI training identifies and mitigates bias more effectively than data validation alone, because validation focused approaches can overlook systemic biases already embedded in the pretrained model.",
+   "abstract": "Moreover, involving a broad community in the governance of AI training can help identify and mitigate biases more effectively than a focus on data validation alone, which might overlook systemic biases embedded in the pretrained models.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "compares community governance of training against post hoc data validation",
+    "concerns systemic bias baked in during pretraining"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'pretrained-models'. Derived node: a roster, not an adjudicated definition."
+}

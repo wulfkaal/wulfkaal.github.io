@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/creditors",
+ "identifier": "kaal:entity:creditors",
+ "name": "Creditors",
+ "termCode": "creditors",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/creditors.md",
+ "sha256": "0a049934942438b8042029d84113fdcccef0c5f62df9726f045c7ea750f3e872",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2013",
+    "2013"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-008",
+   "identifier": "kaal:claim:2348463-008",
+   "text": "Creditors and shareholders in bankruptcy, unlike debtors, are typically not required to disclose their interests until they participate in the case by filing a proof of interest or claim and seeking to be heard by a judge.",
+   "abstract": "Unlike debtors, creditors and shareholders are typically not required to disclose their interests until they participate in a bankruptcy case by filing a proof of interest or claim and seek to be heard by a judge.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States bankruptcy cases",
+    "parties other than the debtor"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2348463-009",
+   "identifier": "kaal:claim:2348463-009",
+   "text": "Because creditor disclosure obligations in bankruptcy are minimal and a general statement of the type of claim often suffices, hedge funds' penchant for secrecy carries over into the bankruptcy process even when they participate as debt holders.",
+   "abstract": "As a result, hedge funds' penchant for secrecy outside the bankruptcy context continues even when they participate as debt holders in bankruptcy cases.",
+   "citation": "Wulf A. Kaal, Hedge Funds’ Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge funds participating as debt holders rather than as debtors"
+   ],
+   "source_pdf_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'creditors'. Derived node: a roster, not an adjudicated definition."
+}

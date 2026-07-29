@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reviewer-discretion",
+ "identifier": "kaal:entity:reviewer-discretion",
+ "name": "Reviewer discretion",
+ "termCode": "reviewer-discretion",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reviewer-discretion.md",
+ "sha256": "474a86cd3893c043ea22ba7bf192a8bbb158cd136b42e5e9f6fadd74f8711992",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-016",
+   "identifier": "kaal:claim:3995709-016",
+   "text": "Without crowd controls, the reviewer's views and the author's intent are at odds and the reviewer can impose their own logic, forcing the author to rewrite functionally sound code repeatedly, which is highly time consuming and inefficient.",
+   "abstract": "Because the code reviewer may wish to impose their own logic on the code author, the code author may be required to rewrite code over and over even though the core functionality of the code is sound and dangerous issues were controlled for. This can be highly time consuming and inefficient.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review processes lacking crowd control"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-011",
+   "identifier": "kaal:claim:4734750-011",
+   "text": "Without crowd control, a code reviewer can impose their own logic on the author, forcing repeated rewrites of code whose core functionality is already sound and whose dangerous issues are already controlled for.",
+   "abstract": "Because the code reviewer may wish to impose their logic on the code author, the code author may be required to rewrite code over and over even though the core functionality of the code is sound and dangerous issues were controlled for.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review with a single authoritative reviewer"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-022",
+   "identifier": "kaal:claim:4755632-022",
+   "text": "Without crowd control the reviewer's views and the code author's intent are at odds, so a reviewer imposing their own logic can force repeated rewrites of code whose core functionality is already sound; a code review should instead focus on functionality and on keeping mistaken, badly constructed, and dangerous code out.",
+   "abstract": "Instead, a code review should focus on the functionality of the code and on keeping mistaken, badly constructed, and dangerous code out.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy code review processes lacking crowd control"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'reviewer-discretion'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/value-at-risk",
+ "identifier": "kaal:entity:value-at-risk",
+ "name": "Value at risk",
+ "termCode": "value-at-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/value-at-risk.md",
+ "sha256": "454ca264092cf604dd30958503089d03dbcffabcdae42e871e0317ae8e024c33",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-027",
+   "identifier": "kaal:claim:2714974-027",
+   "text": "Alternative risk measures such as value at risk have severe measurement problems, so any direct regulation of leverage would be set conservatively and would substantially limit hedge funds' ability to provide market liquidity.",
+   "abstract": "Any attempt to directly regulate leverage would likely be conservative, due to measurement problems, and put major limits on hedge funds' ability to provide market liquidity.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to direct regulation of hedge fund leverage"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-006",
+   "identifier": "kaal:claim:2998097-006",
+   "text": "Stress tests, Value at Risk, and Monte Carlo scenarios imposed on financial intermediaries that lend to private investment funds necessarily rely on historical data, so they are of limited value as indicators of high risk sensitivity to future events.",
+   "abstract": "Increased stress tests, Value at Risk, and Monte Carlo scenarios for financial intermediaries to private investments funds necessarily use historical data and are less valuable as an indicator of high risk sensitivity for future events.39",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "risk models used by intermediaries exposed to private funds"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-027",
+   "identifier": "kaal:claim:3396542-027",
+   "text": "Because each underwriter sizes capital against the risk of that underwriter's overall portfolio, and underwriting can be diversifying for a non traditional participant, the sum of the underwriters' incremental Values at Risk may be less than the Value at Risk of a single insurance firm writing the same contracts.",
+   "abstract": "As a result, the sum of the incremental VaRs (Value at Risk amounts) of the individual underwriters may be less than the VaR of an insurance firm that has underwritten the same contracts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "underwriter capital set by overall portfolio risk",
+    "especially for non traditional underwriters"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'value-at-risk'. Derived node: a roster, not an adjudicated definition."
+}

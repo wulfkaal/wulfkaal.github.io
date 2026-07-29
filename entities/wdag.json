@@ -1,0 +1,731 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/wdag",
+ "identifier": "kaal:entity:wdag",
+ "name": "Wdag",
+ "termCode": "wdag",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/wdag.md",
+ "sha256": "26f27c5bfcf9ab1dadeb3ef446f933c91dc4901529041afc9135d926c6a7652c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 40
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-023",
+   "identifier": "kaal:claim:3125827-023",
+   "text": "The reference system lets each validated new post change the relative value of sem tokens created in the graph of connected earlier posts, so the value of a past contribution depends on how important later users judge it to be. This gives the forum the structure of a weighted directed acyclic citation graph.",
+   "abstract": "Each new post has the opportunity to reference older posts. If the new post is validated, the reference will change the relative value of sem tokens created in the graph of connected posts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new post is itself validated",
+    "references weighted according to the goals of the particular DAO"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-035",
+   "identifier": "kaal:claim:3125827-035",
+   "text": "Because each sem token carries a different value depending on the post that minted it and on its position in the reference graph, the total value is difficult to determine, which makes it almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "abstract": "their value is difficult to determine since each token has a different value depending on the post in which it was minted. So it is almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token value derived from position in the forum WDAG",
+    "most tokens constantly in use and continually created"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-033",
+   "identifier": "kaal:claim:4796714-033",
+   "text": "In the proposed system the DAO's forum is an on-chain collection of uniquely identified posts that may cite earlier contributions, and this citation structure is what forms the Weighted Directed Acyclic Graph on which the governance model rests.",
+   "abstract": "The DAO operates a forum as an on-chain collection of posts, each uniquely identified and possibly citing previous contributions. This forum forms a Weighted Directed Acyclic Graph (WDAG), facilitating organized discussion and citation among participants.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stipulated for the proposed DAO based governance system",
+    "posts are on-chain and citations are directional"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-036",
+   "identifier": "kaal:claim:4796714-036",
+   "text": "Vetting AI learning materials through a consensus driven process and validation pools recorded in the WDAG prevents unchecked biases and flawed logic from entering the AI's ethical framework, which substantially reduces the risk that an AI system concludes humanity is inherently harmful.",
+   "abstract": "By ensuring that AI's learning materials are vetted through a consensus-driven process and validation pools that are accounted for in the WDAG that includes ethical considerations and a broad spectrum of human experiences, WDAG prevents the incorporation of unchecked biases and flawed logic",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires consensus driven vetting and validation pools inside the WDAG",
+    "requires participation spanning a broad spectrum of human experience"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-001",
+   "identifier": "kaal:claim:4855607-001",
+   "text": "Web3 community governance built on Weighted Directed Acyclic Graphs, validation pools with reputation staking, and a federated communications protocol provides an evolutionary approach to optimizing AI models rather than a static compliance layer over them.",
+   "abstract": "The integration of web3 community governance, using Weighted Directed Acyclic Graphs (WDAGs) and validation pools with reputation staking in combination with a federated communications protocol, offers an evolutionary approach to AI model optimization.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the six AI model families the author examines: deep learning, federated learning, transformer, GNN, RL, and RLHF"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-022",
+   "identifier": "kaal:claim:4855607-022",
+   "text": "The acyclic property of WDAGs is load bearing for governance rather than incidental: because loops and cycles are impossible, the progression of governance rules stays unambiguous and the framework cannot accumulate redundancies and contradictions.",
+   "abstract": "Their acyclic nature means that they do not allow for loops or cycles, which ensures that the progression of governance rules remains unambiguous, eliminating potential redundancies and contradictions within the governance framework.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance rule systems represented as directed acyclic graphs"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-023",
+   "identifier": "kaal:claim:4855607-023",
+   "text": "Assigning weights to the edges of a governance WDAG lets the system prioritize some governance elements over others, which is how stakeholders are guided to the most relevant and impactful information when making decisions.",
+   "abstract": "By assigning weights to edges, WDAGs can prioritize certain aspects of governance, helping stakeholders make informed decisions by highlighting the most relevant and impactful information.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "WDAG based governance where edge weights encode priority"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-024",
+   "identifier": "kaal:claim:4855607-024",
+   "text": "WDAGs allow new regulatory and ethical standards to be integrated into existing AI systems without overhauling the entire model architecture, which is what makes rapid legal adaptation feasible in sectors such as public safety and healthcare.",
+   "abstract": "In the case of federal AI learning models, for instance, WDAGs facilitate the integration of new regulatory and ethical standards into existing AI systems without the need to overhaul the entire model architecture.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sectors where AI applications must rapidly adapt to new laws and ethical considerations"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-025",
+   "identifier": "kaal:claim:4855607-025",
+   "text": "Traditional governance models lack the real time responsiveness to community sentiment that a decentralized WDAG system supplies, and this latency, not an absence of rules, is what leaves conventional AI governance out of step with community values.",
+   "abstract": "The WDAG system's decentralized nature, which captures and integrates community sentiment and ethical considerations, provides a real-time responsiveness that is often lacking in traditional governance models.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "comparison of centralized governance models against decentralized, continuously updated ones"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-031",
+   "identifier": "kaal:claim:4855607-031",
+   "text": "A precedent and citation WDAG accounting system documents and traces every adjustment to a federated learning model, and that full accounting is what enables dynamic feedback effects and the rapid integration of new techniques.",
+   "abstract": "This setup enables fully accounted dynamic feedback effects for rapid integration of new techniques and approaches to FL. This, in turn, ensures that the models remain cutting-edge and are quickly adaptable to new challenges and opportunities in AI development.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance of iteratively updated federated learning models"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-029",
+   "identifier": "kaal:claim:4941807-029",
+   "text": "In the proposed system the DAO forum is an on chain collection of uniquely identified posts that may cite prior contributions, and because citation is directional and non circular the forum itself forms a Weighted Directed Acyclic Graph.",
+   "abstract": "The DAO operates a forum as an on-chain collection of posts, each uniquely identified and possibly citing previous contributions. This forum forms a Weighted Directed Acyclic Graph (WDAG), facilitating organized discussion and citation among participants.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where forum posts are stored on chain with citation links"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-034",
+   "identifier": "kaal:claim:4941807-034",
+   "text": "A Weighted Directed Acyclic Graph whose vertices are legal precedents or governance rules and whose directed edges are citations or logical dependencies is the appropriate structure for organizing and navigating the many governance considerations that bear on AI.",
+   "abstract": "The structure of WDAGs, with their vertices representing legal precedents or governance rules and directed edges signifying citations or logical dependencies, creates an ideal model for organizing and navigating the multitude of governance considerations pertinent to AI.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where governance elements stand in directional precedence relations"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-035",
+   "identifier": "kaal:claim:4941807-035",
+   "text": "Edge weights in the governance graph quantify the relevance, authority, or impact of each precedent or citation, and it is this weighting that steers decision making by surfacing the most pertinent governance pathways.",
+   "abstract": "system, the weights on the edges could quantify the relevance, authority, or impact of each precedent or citation, guiding the decision-making processes",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where weights are assigned by factors such as recency, jurisdictional relevance, or citation frequency"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-036",
+   "identifier": "kaal:claim:4941807-036",
+   "text": "Unlike traditional governance models that depend on periodic reviews and updates, the proposed WDAG system draws on a continuous stream of data from a wide range of stakeholders, which is what makes its ethical frameworks track current societal values in real time.",
+   "abstract": "Unlike traditional governance models that rely on periodic reviews and updates, WDAG can tap into a continuous stream of data from a wide range of stakeholders.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where a decentralized network continuously supplies stakeholder sentiment data"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-037",
+   "identifier": "kaal:claim:4941807-037",
+   "text": "Because the WDAG continuously monitors and adjusts to evolving ethical and legal standards, it delivers preventive AI governance, in contrast to reactive models that address problems only after they have already arisen.",
+   "abstract": "By continuously monitoring and adjusting to evolving ethical and legal standards, WDAG provides a preventive approach to AI governance. This contrasts with reactive models that address issues only after they have arisen.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where monitoring and adjustment of standards is continuous rather than periodic"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-038",
+   "identifier": "kaal:claim:4941807-038",
+   "text": "The acyclic property of the WDAG guarantees that the governance framework contains no loops, which yields an unambiguous progression from foundational principles to specific governance outcomes and preserves the integrity and coherence of the governance process.",
+   "abstract": "The acyclic nature of WDAGs ensures there are no loops within the governance framework, facilitating a clear, unambiguous progression from foundational principles to specific governance outcomes. This characteristic is vital for maintaining the integrity and coherence of the AI governance process.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where governance elements are linked as a directed acyclic structure"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-039",
+   "identifier": "kaal:claim:4941807-039",
+   "text": "New legal precedents, regulations, and ethical considerations can be integrated into an existing WDAG governance structure without a complete overhaul of the framework, which is what keeps the governance system current as AI technology and societal expectations move.",
+   "abstract": "As new legal precedents, regulations, or ethical considerations arise, they can be seamlessly integrated into the existing WDAG structure without necessitating a complete overhaul of the governance framework.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where new governance elements can be added as vertices and edges to the existing graph"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-040",
+   "identifier": "kaal:claim:4941807-040",
+   "text": "Treating each AI model as a post within the WDAG framework lets stakeholders build a comprehensive and visually intuitive map of how well that model aligns with the governance frameworks it is required to meet.",
+   "abstract": "By treating each AI model as a post within a WDAG framework, stakeholders can create a comprehensive, visually intuitive map of how well the AI aligns with required governance frameworks.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where each AI model or development milestone is documented as a post with edges to relevant precedents"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-030",
+   "identifier": "kaal:claim:4957318-030",
+   "text": "The proposed system stipulates a forum as an on chain collection of uniquely identified posts that may cite prior contributions, and this citation structure is what constitutes the Weighted Directed Acyclic Graph.",
+   "abstract": "The web3 community as proposed herein operates a forum as an on-chain collection of posts, each uniquely identified and possibly citing previous contributions. This forum forms a Weighted Directed Acyclic Graph (WDAG), facilitating organized discussion and citation among participants.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "on chain forums where posts and citations are recorded immutably"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-032",
+   "identifier": "kaal:claim:4957318-032",
+   "text": "Unlike traditional governance that relies on periodic reviews and updates, the WDAG system taps a continuous stream of data from a wide range of stakeholders, which is what makes real time rather than cyclical legal adjustment possible.",
+   "abstract": "Unlike traditional governance models that rely on periodic reviews and updates, WDAG can tap into a continuous stream of data from a wide range of stakeholders.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where a decentralized network can supply continuous stakeholder sentiment data"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-033",
+   "identifier": "kaal:claim:4957318-033",
+   "text": "In the WDAG system a legal precedent or rule that gains favor because it is effective automatically receives a higher weight, and that weight is set by user preferences and citations rather than by any legislative act.",
+   "abstract": "In the WDAG system, when a new legal precedent or rule gains favor due to its effectiveness, it automatically receives a higher weight in the system based on user preferences and citations.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where citation and user preference data are recorded on chain",
+    "where effectiveness is revealed through use"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-034",
+   "identifier": "kaal:claim:4957318-034",
+   "text": "Because weights adjust continuously with use, the WDAG system eliminates the need for periodic external review altogether; the system evolves toward the most relevant and effective legal norms without a scheduled reassessment step.",
+   "abstract": "This dynamic adjustment process eliminates the need for periodic external reviews, as the system continuously evolves and adapts to the most relevant and effective legal norms.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where citation activity is sufficient to reveal relative relevance"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-035",
+   "identifier": "kaal:claim:4957318-035",
+   "text": "The WDAG system suppresses rent seeking by internalizing advocacy: there are no external costs or lobbying pressures because any advocacy occurs transparently within the system's forums, where all user actions and preferences are recorded.",
+   "abstract": "The WDAG system prevents such behavior by integrating all stakeholders into the decision-making process. There are no external costs or lobbying pressures, as any advocacy or lobbying occurs transparently within the system's forums, where all user actions and preferences are accounted for.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where all stakeholder action occurs inside the on chain forum",
+    "where user actions and preferences are fully observable"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-036",
+   "identifier": "kaal:claim:4957318-036",
+   "text": "The WDAG system never repeals: all precedents and rules are retained on the blockchain, so no legal principle is ever permanently discarded even when it ceases to be applied.",
+   "abstract": "contrast, the WDAG system allows for the retention of all precedents and rules on the blockchain, ensuring that no legal principle is permanently discarded.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain based retention of all precedents"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-037",
+   "identifier": "kaal:claim:4957318-037",
+   "text": "Obsolescence in the WDAG system is expressed as gradual loss of weight rather than deletion, which keeps rules revisitable if circumstances change and avoids hasty or ill considered removal decisions.",
+   "abstract": "Instead, less relevant rules gradually lose weight, allowing them to be revisited if circumstances change, thus maintaining institutional relevance while avoiding hasty or ill-considered decisions.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where relevance is a continuous weight rather than a binary in force status"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-038",
+   "identifier": "kaal:claim:4957318-038",
+   "text": "Political resistance to repeal dissolves under the WDAG model because a rule that loses substantial backing simply diminishes in relevance through the citation mechanism, with no external legislative act of repeal to contest.",
+   "abstract": "dynamically reflecting evolving support or opposition to legal precedents through a citation mechanism. If a legal rule loses substantial backing, its relevance diminishes organically within the WDAG framework, without the need for external legislative intervention.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where support and opposition are expressed through citation behavior"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-039",
+   "identifier": "kaal:claim:4957318-039",
+   "text": "The WDAG system preserves legal history as a byproduct of its architecture: all legal precedents are retained within a blockchain based framework in a transparent and immutable format, so historical access does not trade off against current relevance.",
+   "abstract": "The WDAG system retains all legal precedents within its blockchain-based framework, preserving the history of legal developments in a transparent and immutable format.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain based immutable record keeping"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-040",
+   "identifier": "kaal:claim:4957318-040",
+   "text": "A shift toward WDAG based dynamic solutions is not merely attractive but necessary for a legal system that is both efficient and equitable in addressing the complexities of contemporary governance.",
+   "abstract": "As such, a shift toward WDAG-based dynamic solutions is desirable and necessary for creating a legal system that is both efficient and equitable in addressing the complexities of contemporary governance.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contemporary governance under rapid technological and societal change"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-032",
+   "identifier": "kaal:claim:5095633-032",
+   "text": "Linking every contributor action and every piece of data to on-chain governance elements within a structured graph is what enables real-time community oversight, iterative updates, and granular reputation tracking in the WDAG model.",
+   "abstract": "By enabling every contributor action and piece of data to be linked to on-chain governance elements in a structured graph, the WDAG model supports real-time community oversight, iterative updates, and granular reputation tracking.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contributions and governance elements are recorded on chain"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-033",
+   "identifier": "kaal:claim:5095633-033",
+   "text": "Reputation for AI dataset governance must be multi-dimensional rather than a single numeric score, which the author operationalizes as weighted nodes and directed edges in a WDAG.",
+   "abstract": "By establishing a forum of weighted nodes and directed edges, WDAG provides a multi-dimensional view of contributors' work, ensuring that reputation is not limited to a single numeric score.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "AI dataset governance requiring traceability and flexibility"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-039",
+   "identifier": "kaal:claim:5095633-039",
+   "text": "Validation pools combined with on-chain governance let reputational adjustments occur in real time, so the system can recalibrate as societal, regulatory, or domain-specific requirements shift, unlike static feedback systems.",
+   "abstract": "The proposed model's reliance on validation pools and on-chain governance ensures that reputational adjustments can occur in real time, accommodating rapid shifts in societal, regulatory, or domain-specific requirements.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation pools and on-chain governance are operative"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-037",
+   "identifier": "kaal:claim:5245185-037",
+   "text": "Mapping governance rules as nodes and their relationships as weighted directed edges yields a dynamic, traceable, and adaptable governance structure whose acyclic form prevents governance deadlocks by admitting no circular dependencies.",
+   "abstract": "create a dynamic, traceable, and adaptable governance structure.142 The acyclic nature ensures no circular dependencies exist, preventing governance deadlocks",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance rules represented as nodes and weighted directed edges"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-038",
+   "identifier": "kaal:claim:5245185-038",
+   "text": "A WDAG based on chain forum combined with validation pools enables continuous updates to governance rules through expert community consensus that incorporates real time AI behavior data, which is what allows oversight to track self optimizing algorithms.",
+   "abstract": "The WDAG structure, with its on-chain forum and validation pools, enables continuous updates to governance rules through expert community consensus, incorporating real-time AI behavior data.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO centric web3 governance with on chain forum and validation pools"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-007",
+   "identifier": "kaal:claim:5887242-007",
+   "text": "The WDAG-based governance system maps one-to-one onto the UDLC's constitutional requirements, so the architecture is not an add-on but a structural isomorph of the Codex's own mandates.",
+   "abstract": "The WDAG-based governance system maps one-to-one onto the UDLC",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-011",
+   "identifier": "kaal:claim:5887242-011",
+   "text": "The WDAG itself constitutes an evolutionary precedent system: each rule is an immutable vertex, new rules must cite existing vertices to create weighted directed edges reflecting citation frequency, recency and expert consensus strength, and rarely cited rules decay organically.",
+   "abstract": "Each UDLC article or rule exists as an immutable vertex. New rules must cite existing vertices, creating weighted, directed edges that reflect citation frequency, recency, and expert consensus strength. Rarely cited rules experience organic weight decay",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-016",
+   "identifier": "kaal:claim:5887242-016",
+   "text": "Edge weights in the Codex graph reflect citation frequency, recency, jurisdictional relevance and expert validation strength, and the acyclic property prevents circular reasoning while still permitting unlimited forward growth of the Codex.",
+   "abstract": "Edge weights reflect citation frequency, recency, jurisdictional relevance, and expert validation strength. The acyclic property prevents circular reasoning while permitting unlimited forward growth.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-011",
+   "identifier": "kaal:claim:6269518-011",
+   "text": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit leaching parameter of one, since every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent, which is a maximally punitive setting.",
+   "abstract": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit q4 = 1: every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent. This is a maximally punitive leaching parameter,",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multi-agent citation-weighted payment settings"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-012",
+   "identifier": "kaal:claim:6269518-012",
+   "text": "Leaching parameters can and should be calibrated to balance competing incentives, rewarding honest attribution while retaining enough skin in the game to deter frivolous or strategic references.",
+   "abstract": "The insight from the WDAG framework is that leaching parameters can and should be calibrated to balance competing incentives. Thus, rewarding honest attribution while maintaining sufficient skin-in-the-game to prevent frivolous or strategic references.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-017",
+   "identifier": "kaal:claim:6269518-017",
+   "text": "Any solution to the citation honesty problem must incorporate dynamic enforcement mechanisms that can evolve in response to gaming strategies, which is the type of evolutionary governance the WDAG framework was designed to support.",
+   "abstract": "Any solution to the citation honesty problem must therefore incorporate dynamic enforcement mechanisms that can evolve in response to gaming strategies.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "gaming strategies evolve over time"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-028",
+   "identifier": "kaal:claim:6269518-028",
+   "text": "Because a negative reference challenging under-attribution propagates through the graph, exposing one agent's uncited reliance devalues later posts that cited that agent, so revaluation cascades through the WDAG as the framework intends.",
+   "abstract": "The chain of references can propagate: if agent A's uncited reliance on agent B's work is exposed, and agent C's later work cited agent A's contribution, the revaluation cascades through the WDAG precisely as the framework intends.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "challenge post upheld in its validation pool",
+    "chains of references exist to the challenged post"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "40 claims in the published works of Wulf A. Kaal carry the concept tag 'wdag'. Derived node: a roster, not an adjudicated definition."
+}

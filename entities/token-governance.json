@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-governance",
+ "identifier": "kaal:entity:token-governance",
+ "name": "Token governance",
+ "termCode": "token-governance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-governance.md",
+ "sha256": "2b38c996a8fedc43621844fe7540453bd566fd851cc81de495ef9c170fc63ee8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2020",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-030",
+   "identifier": "kaal:claim:3652481-030",
+   "text": "The one token one vote designs popular in the early 2020s produced suboptimal voting outcomes because they allocate more power to holders of a large share of total token supply, leaving majority holders more powerful than all remaining holders combined.",
+   "abstract": "Suboptimal voting outcomes in existing decentralized protocols were associated with the then popular one-token-one-vote voting mechanisms. A one- token-one-vote design allocates more power to token holders who have a significant share of the total supply of a given token.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "one token one vote voting mechanisms"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-030",
+   "identifier": "kaal:claim:4755632-030",
+   "text": "Mandatory crowd review and policing votes make code reviewers less likely to submit highly idiosyncratic reviews, because idiosyncratic reviewers face slashing of their reputation token scores and loss of standing in the community.",
+   "abstract": "code reviewers are less likely to engage in highly idiosyncratic reviews as they would need to fear slashing of rep token scores and loss of standing in the community.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to reviews subject to CRDAO collective policing votes"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-014",
+   "identifier": "kaal:claim:4796714-014",
+   "text": "Proof of Stake consensus centralizes control in proportion to the quantity of tokens held, so governance built on such chains is skewed in favor of the wealthy rather than distributed.",
+   "abstract": "Similarly, Proof of Stake (PoS) consensus mechanisms, as implemented in Ethereum and other blockchains, centralize control based on the quantity of tokens held, potentially skewing governance in favor of the wealthy.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Proof of Stake chains such as Ethereum",
+    "concerns token weighted governance power"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'token-governance'. Derived node: a roster, not an adjudicated definition."
+}

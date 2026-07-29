@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ai-risk",
+ "identifier": "kaal:entity:ai-risk",
+ "name": "Ai risk",
+ "termCode": "ai-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ai-risk.md",
+ "sha256": "c522481be035da4e613ae211258d4e1a13dd46d359939e9835f142d2e8bd3d09",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-004",
+   "identifier": "kaal:claim:4796714-004",
+   "text": "Ex-post governance, which applies regulation only after AI systems are developed and deployed or after large language models have been pretrained on existing proprietary datasets, fails to address risks and biases preemptively.",
+   "abstract": "The traditional ex-post governance methods, where regulations are applied after AI systems are developed and deployed, or were pretrained LLMs models were trained on existing proprietary datasets, often fall short in preemptively addressing risks and biases.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to regulation imposed after model development or pretraining",
+    "concerns risk and bias formation during development"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-023",
+   "identifier": "kaal:claim:4796714-023",
+   "text": "Purely preemptive regulation cannot succeed on its own, because it is not possible to anticipate every issue or bias an AI system will exhibit before it is operational and interacting with real world variables.",
+   "abstract": "It is challenging to anticipate all potential issues or biases that may arise with an AI system before it is fully operational and interacting with real-world variables. Regulations that insist on preemptive controls may fail to address unforeseen problems that only become evident after deployment.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to ex-ante controls imposed at the model and data levels",
+    "concerns emergent behavior that appears only in deployment"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'ai-risk'. Derived node: a roster, not an adjudicated definition."
+}

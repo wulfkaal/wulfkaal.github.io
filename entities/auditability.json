@@ -1,0 +1,224 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/auditability",
+ "identifier": "kaal:entity:auditability",
+ "name": "Auditability",
+ "termCode": "auditability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/auditability.md",
+ "sha256": "bb15827917462e3822c54bb2a3ef4abb35576d26c7b371a063e30a444b55ddec",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 10
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-020",
+   "identifier": "kaal:claim:3409548-020",
+   "text": "Blockchain-based funds can invert the traditional secrecy of hedge funds: the LendingRobot ledger discloses detailed holdings and supplies a hash code signature evidencing that the data is tamper proof.",
+   "abstract": "Unlike traditional hedge funds that are rather secretive, the LendingRobot ledger shows detailed holdings and provides a \"hash code\" signature as evidence that the data is tamper- proof in the blockchain.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "funds recording trades to a public blockchain ledger"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-013",
+   "identifier": "kaal:claim:3782210-013",
+   "text": "Because members of a decentralized network are assumed relatively equal, evidence of all bureaucratic work must be posted in a universally accessible location for eternal review, and every reputation token needs an openly verifiable history just as digital currency creation does without a central verifying authority.",
+   "abstract": "To remain decentralized, all members are assumed to be relatively equal. Therefore, evidence of all bureaucratic work needs to be posted in a universally accessible loca- tion for eternal review.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized organizations without a central verifying authority"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-031",
+   "identifier": "kaal:claim:3782217-031",
+   "text": "Transparency in a decentralized network is not optional: every function needs to be publicly auditable for people to trust it, because without a central authority to approve code, unexpected malicious behavior can be built into any opaque code.",
+   "abstract": "Transparency is crucial in a decentralized net- work. Every function needs to be publicly auditable for people to trust it. Without a central authority to approve it, unexpected malicious behavior can be built into any opaque code.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized networks without a central approving authority"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-015",
+   "identifier": "kaal:claim:3981021-015",
+   "text": "Because the CHARITYxDAO records governance on distributed ledger technology, all governance votes and endowment allocation decisions are fully publicly visible, auditable by the public at will, and immutable once on chain.",
+   "abstract": "Through the use of DLT technology, all governance votes and endowment allocation decisions are fully publicly visible and can be audited by the public at will. Moreover, all onchain data is immutable and can be accessed by the public.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO using DLT and layer 2 solutions"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-032",
+   "identifier": "kaal:claim:4796714-032",
+   "text": "Managing machine learning assets and complying with laws such as GDPR and CCPA becomes significantly harder under decentralized governance, because distributed data and operations complicate tracking data flows, enforcing privacy controls, and demonstrating compliance during audits.",
+   "abstract": "Managing ML assets and adhering to laws such as GDPR and CCPA is significantly more challenging under decentralized governance, raising concerns over privacy and data management.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to decentralized ML governance spanning multiple stakeholders and locations",
+    "concerns stringent privacy regimes such as GDPR and CCPA"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-018",
+   "identifier": "kaal:claim:4941807-018",
+   "text": "An immutable blockchain log of transactions and modifications inside AI systems lets stakeholders trace the lineage of an AI decision back to its original data inputs, which makes errors easier to identify and correct.",
+   "abstract": "This feature allows stakeholders to track the lineage of AI decisions back to their original data inputs, enabling easier identification and correction of errors.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where AI data inputs and modifications are recorded on an immutable ledger"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-027",
+   "identifier": "kaal:claim:4941807-027",
+   "text": "Decentralized governance makes privacy compliance harder to demonstrate, because the distributed nature of these systems complicates tracking data flows and enforcing privacy controls, which in turn makes it difficult to prove compliance during audits.",
+   "abstract": "The distributed nature of these systems complicates the tracking of data flows and the enforcement of privacy controls, making it difficult to demonstrate compliance during audits.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under regimes such as the GDPR and CCPA",
+    "where data and operations are spread across multiple stakeholders and locations"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-040",
+   "identifier": "kaal:claim:4941807-040",
+   "text": "Treating each AI model as a post within the WDAG framework lets stakeholders build a comprehensive and visually intuitive map of how well that model aligns with the governance frameworks it is required to meet.",
+   "abstract": "By treating each AI model as a post within a WDAG framework, stakeholders can create a comprehensive, visually intuitive map of how well the AI aligns with required governance frameworks.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where each AI model or development milestone is documented as a post with edges to relevant precedents"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-033",
+   "identifier": "kaal:claim:5225296-033",
+   "text": "Weighted voting reduces Sybil attack success rates by over eighty-five percent, but only where reputation is openly auditable.",
+   "abstract": "Simulations of reputation-based systems suggest that weighted voting reduces Sybil attack success rates by over 85% when reputation is openly auditable",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation must be openly auditable"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886442-018",
+   "identifier": "kaal:claim:5886442-018",
+   "text": "The premise of asymmetric information is architecturally invalidated in the AI-to-AI economy because every inference, parameter update, decision trace and model weight is by design cryptographically attested, version controlled and auditable in real time across federated networks.",
+   "abstract": "In the AI2AI economy, this foundational premise is architecturally invalidated. Every inference, every parameter update, every decision trace, and every model weight in an autonomous agent is, by design, cryptographically attested, version-controlled, and auditable in real time",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes agents operate on attested, federated or otherwise verifiable substrates"
+   ],
+   "source_pdf_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
+   "status": "current"
+  }
+ ],
+ "description": "10 claims in the published works of Wulf A. Kaal carry the concept tag 'auditability'. Derived node: a roster, not an adjudicated definition."
+}

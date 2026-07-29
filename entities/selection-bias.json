@@ -1,0 +1,208 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/selection-bias",
+ "identifier": "kaal:entity:selection-bias",
+ "name": "Selection bias",
+ "termCode": "selection-bias",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/selection-bias.md",
+ "sha256": "163b08eae1c98871d0d34901ea343fc922a1ff028b873d0feef2e8f8cc7137ea",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-016",
+   "identifier": "kaal:claim:2150377-016",
+   "text": "The standard remedies for selection bias are not reliably corrective: simulation studies show that many techniques used to prevent selection bias problems have mixed success rates, can worsen rather than improve estimates, and may skew results under ordinary circumstances.",
+   "abstract": "Simulation studies have shown that many of the techniques used to prevent selection bias problems have mixed success rates, can worsen rather than improve estimates, and may skew results under ordinary circumstances.187",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "statistical corrections for sample selection bias in social research"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-017",
+   "identifier": "kaal:claim:2150377-017",
+   "text": "A treatment and control design is unavailable for studying registration effects, because managers who did not have to register have no exposure to the treatment and therefore cannot generate informative responses about its effects.",
+   "abstract": "Interviewing the treatment group, hedge fund managers who had to register, and a control group, hedge fund managers who did not have to register, would not have yielded appropriate responses because the control group would have had no exposure to the effect of the treatment, registration.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "survey research on the effects of mandatory registration",
+    "where the treatment is exposure to the registration requirement itself"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-018",
+   "identifier": "kaal:claim:2150377-018",
+   "text": "Managers who avoided registration by restructuring, for example by changing organizational form or assets under management, are practically and administratively very difficult to identify, so the population that adapted away from the rule remains largely unobservable to researchers.",
+   "abstract": "Identifying hedge fund managers who had been exposed to the treatment and decided to avoid the treatment, by changing their organizational structure, AUM, et cetera, proved practically and administratively very difficult and would have resulted in a very small sample size for the control group.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "identification of advisers who altered structure or AUM to avoid registration"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2150377-019",
+   "identifier": "kaal:claim:2150377-019",
+   "text": "Comparison of the responding sample against the full registered population on Form ADV parameters shows the sample is not biased toward any particular subgroup of hedge fund advisers, and gives no indication that respondents differ from nonrespondents.",
+   "abstract": "The descriptive statistics demonstrate that the sample is not biased and does not favor a particular subgroup of hedge fund advisers.189 There is no indication that respondents who did respond to the survey were different from individuals who did not respond.",
+   "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "parameters reported on Form ADV such as organizational form, client numbers, adviser type, region, AUM, and advisory services"
+   ],
+   "source_pdf_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-022",
+   "identifier": "kaal:claim:2389423-022",
+   "text": "Selection bias is a valid concern in this study because of the lower sample sizes available for Models 1 through 5.",
+   "abstract": "While selection bias is generic problem in social sciences, concerns over selection bias in this study due to the lower sample sizes for Model 1-5 is a valid concern",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "regression models 1 through 5 in this study",
+    "survey based samples"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-007",
+   "identifier": "kaal:claim:2447306-007",
+   "text": "Enlarging the sample does not cure selection bias in non-statistical sampling: a bigger sample neither compensates for the bias of non-statistical techniques nor guarantees that the sample is representative.",
+   "abstract": "Increasing the sample size does not necessarily compensate for the potential selection bias of non-statistical techniques or guarantee the representativeness of the sample.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "non-statistical or haphazard sampling techniques"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-008",
+   "identifier": "kaal:claim:2447306-008",
+   "text": "Further randomization of the sample was not available as a remedy, because respondents drawn from outside the private fund adviser population would never have been exposed to the new disclosure requirements and so could say nothing about them.",
+   "abstract": "It would not have been feasible to further randomize the sample by including respondents from outside of the private fund industry or respondents other than private fund advisers because those non-adviser respondents would not have been exposed to the new disclosure requirements.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "surveys measuring the experience of complying with a new disclosure regime"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2486570-037",
+   "identifier": "kaal:claim:2486570-037",
+   "text": "The governance trends reported in this study apply only to corporations that actually executed an agreement, so because a disproportionately large number of corporations self correct or self report instead, the findings may capture only the tip of the iceberg.",
+   "abstract": "The corporate governance trends identified in this study only pertain to corporations that have executed N/DPAs.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, The Effect of Deferred and Non-Prosecution Agreements on Corporate Governance Evidence from 1993-20 (2014). SSRN: https://ssrn.com/abstract=2486570",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sample restricted to corporations that executed an N/DPA"
+   ],
+   "source_pdf_sha256": "8c3981c9a55d8a3fe59a01660584eebc3feb3fb9109ca65344095bebe4ae49a4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2739479-018",
+   "identifier": "kaal:claim:2739479-018",
+   "text": "Neither the 2012 nor the 2015 sample is biased, and the comparison across the two populations is consistent because respondents in both surveys were equally subject to Title IV compliance obligations.",
+   "abstract": "Neither the population sample for the 2012 survey188 nor the 2015 follow-up study189 sample are biased. The comparison of the two populations is consistent and unbiased because respondents in both surveys are equally required to com- ply with Title IV.",
+   "citation": "Wulf A. Kaal, The Post Dodd-Frank Act Evolution of the Private Fund Industry Comparative Evidence from 2012 and 2 (2016). SSRN: https://ssrn.com/abstract=2739479",
+   "datePublished": "2016",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of the 2012 and 2015 survey samples",
+    "both drawn from the same 1267 adviser population"
+   ],
+   "source_pdf_sha256": "b2e7b81a16ab01c73478b62e85068f9dadc5cdd18427241e8bc5e8216a967730",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'selection-bias'. Derived node: a roster, not an adjudicated definition."
+}

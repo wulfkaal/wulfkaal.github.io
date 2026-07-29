@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hash-functions",
+ "identifier": "kaal:entity:hash-functions",
+ "name": "Hash functions",
+ "termCode": "hash-functions",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hash-functions.md",
+ "sha256": "83ad42ec7a684658575763f9db988faa5796676c482303ee9818da2adad265ba",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-028",
+   "identifier": "kaal:claim:3782198-028",
+   "text": "Hash functions let a leaderless network reach consensus on identity and ordering, because every node independently hashes a transaction's data and deterministically arrives at the same unique identifier that everyone recognizes.",
+   "abstract": "Thanks to the hash function, every node in the network hashes the transaction's data and independently arrives at the same an- swer, giving the transaction a unique ID that everyone recognizes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires all nodes to run the same deterministic hash protocol"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-029",
+   "identifier": "kaal:claim:3782198-029",
+   "text": "A blockchain is immutable because any attempt to edit an old block changes the hash of that information and is immediately rejected by the network that follows the protocol.",
+   "abstract": "The blockchain is immutable, because any attempt to edit the old blocks will be immediately rejected by the network. A single number or letter changed anywhere in its entire history will result in a different hash of the information.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds as long as the network keeps following the blockchain protocol"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'hash-functions'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,682 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/defi",
+ "identifier": "kaal:entity:defi",
+ "name": "Defi",
+ "termCode": "defi",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/defi.md",
+ "sha256": "5f02e6f535c8fed37ca8d25db48cf5464caaf5389a8161ed5f6728e69c7192c5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 37
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2020",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-003",
+   "identifier": "kaal:claim:3606663-003",
+   "text": "The expected growth rate of DeFi, across diverse estimates, is large enough to call into question the long term viability of the existing decentralized technology infrastructure unless core infrastructure improvements are made.",
+   "abstract": "Normatively, the paper points out that the expected growth rate of the DeFi, according to diverse sets of estimates, is substantial enough to call into question the long-term viability of the decentralized technology infrastructure without core infrastructure improvements.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized finance built on existing public blockchains",
+    "growth continues at estimated rates"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-023",
+   "identifier": "kaal:claim:3606663-023",
+   "text": "The evolution of the DeFi market and its new monetary system depends on the stability of DeFi products and digital assets, and both stability and adoption of DeFi are undermined by the instability of most cryptocurrencies.",
+   "abstract": "The evolution of the DeFi market and its new monetary system depends on the stability of DeFi products and digital assets. Stability and adoption of DeFi is undermined by the instability of most cryptocurrencies.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi platforms denominated in volatile cryptocurrencies"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-024",
+   "identifier": "kaal:claim:3606663-024",
+   "text": "DeFi platforms grant the unbanked access to the loan market by disintermediating existing banks, connecting borrowers and lenders directly in peer to peer networks and accepting digital assets as collateral with far less documentation than banks require.",
+   "abstract": "DeFi platforms grant the unbanked access to the loan market by disintermediating existing banks. DeFi Dapps connect borrowers and lenders in peer-to-peer networks directly.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "borrowers excluded from centralized banking for lack of documentation",
+    "DeFi lending protocols"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-025",
+   "identifier": "kaal:claim:3606663-025",
+   "text": "The DeFi lending market is highly concentrated: MakerDAO alone accounts for almost ninety percent of the total USD value locked in DeFi projects.",
+   "abstract": "MakerDAO accounts for almost ninety percent of total USD value locked in DeFi projects.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DeFi projects measured by total USD value locked",
+    "period covered by DeFi Pulse data"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-026",
+   "identifier": "kaal:claim:3606663-026",
+   "text": "Centralized financial technology does not complete the disintermediation it promises, because users still deal with a technology company as intermediary instead of a financial institution, which leaves room for the decentralized solutions DeFi attempts to provide.",
+   "abstract": "In existing centralized forms of financial technology disintermediation users are still dealing with a technology company as intermediary instead of a financial institution.286 Accordingly, centralized financial technology disintermediation is incomplete and allows for further improvements.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized FinTech platforms",
+    "peer to peer transaction settings"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-027",
+   "identifier": "kaal:claim:3606663-027",
+   "text": "DeFi is more efficient than existing financial intermediation including FinTech, and that superior efficiency traces to its extensive reliance on code and automation, which removes large parts of the human element and the errors and inefficiencies that come with it.",
+   "abstract": "DeFi is more efficient than existing financial intermediation, including FinTech. Its superior efficiency can be traced to its extensive reliance on code and automation that remove large parts of the human element and the associated errors and inefficiencies.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of DeFi with legacy financial intermediation and FinTech"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-028",
+   "identifier": "kaal:claim:3606663-028",
+   "text": "DeFi's decentralization remains theoretical in one important respect: as of the early 2020s DeFi is still largely relegated to one dominant platform, with 87 percent of all publicly funded DeFi projects built on Ethereum.",
+   "abstract": "At the beginning of the 2020s, DeFi is still largely relegated to the use of one dominant platform. 87% of all publicly funded DeFi projects have been built on Ethereum.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "publicly funded DeFi projects",
+    "beginning of the 2020s"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-029",
+   "identifier": "kaal:claim:3606663-029",
+   "text": "At the beginning of the 2020s DeFi was not sufficiently user friendly, because core interfaces such as metamask, myetherwallet, and scatter require levels of technical know how in handling public and private keys that most lay users do not possess.",
+   "abstract": "At the beginning of the 2020s, DeFi was not sufficiently user friendly.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "lay retail users of DeFi interfaces",
+    "beginning of the 2020s"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-030",
+   "identifier": "kaal:claim:3606663-030",
+   "text": "The digital asset market resulted from a technology push rather than a market pull: developers were driven by technical advancement rather than by usefulness and user friendliness, and market pull may only evolve once the DeFi technology infrastructure is more developed.",
+   "abstract": "As with most innovative technologies, the digital asset market also resulted from a technology push rather than a market pull.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "digital asset and DeFi platform development",
+    "immature technology infrastructure"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-031",
+   "identifier": "kaal:claim:3606663-031",
+   "text": "DeFi platform technologies often have limited product market fit because the reliance on code over human judgment produces products built around automation that ignore the human element in financial transactions.",
+   "abstract": "DeFi platform technologies often have a limited product market fit. The reliance on code in the market for digital assets over human judgments resulted in a focus on products that predominantly rely on automation, ignoring the human element in financial transactions.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi products built primarily on automated code execution",
+    "transactions involving subjective or non codifiable inputs"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-032",
+   "identifier": "kaal:claim:3606663-032",
+   "text": "Because human interactions in business are often too complex to be fully codified objectively, DeFi systems that exclude all non objective information from their analysis do not fully utilize available information, which limits their efficiency and usefulness.",
+   "abstract": "However, human interaction in business are often too complex to be fully codified objectively. By excluding all non- objective information from the product analysis, all available information may not be fully utilized which limits efficiency and potential usefulness of DeFi",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi products analyzing only objectively recordable and verifiable inputs",
+    "complex commercial interactions"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-033",
+   "identifier": "kaal:claim:3606663-033",
+   "text": "Accountability is a structural concern in DeFi: without a central entity it can become unclear who is responsible for wrongdoing, and when problems arise no central party can freeze transactions, fix problems, or restore normal operations.",
+   "abstract": "\"Without central entity involvement, who should be held accountable for potential wrongdoing can become unclear. Who do you resort to for help? When problems arise, no central party can take actions to freeze transactions, fix problems and restore normal operations.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fully decentralized finance systems without a central operator"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-034",
+   "identifier": "kaal:claim:3606663-034",
+   "text": "In the early 2020s the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential, and fulfilling that potential requires significant tradeoffs between scaling, security, and levels of decentralization.",
+   "abstract": "In the early 2020s, the DeFi technology infrastructure was insufficiently developed to support DeFi growth estimates and growth potential.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi infrastructure as of the early 2020s",
+    "projected DeFi growth rates"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-035",
+   "identifier": "kaal:claim:3606663-035",
+   "text": "The tradeoff between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "abstract": "The trade-off between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "consensus based decentralized ledgers supporting DeFi"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-037",
+   "identifier": "kaal:claim:3606663-037",
+   "text": "Read together with the network capacity failure that CryptoKitties caused on Ethereum in December 2017, the expected DeFi growth rates imply that the Ethereum network will continue to experience network shortages and throughput problems unless its infrastructure is upgraded to handle the expected transaction volume.",
+   "abstract": "the expected growth rate illustrated in Figures [__] and [__] could mean that the Ethereum network will continue to experience network shortages and throughput issues unless the Ethereum infrastructure is upgraded to deal with the expected volume of transactions.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Ethereum network without infrastructure upgrades",
+    "DeFi growth continuing at estimated rates",
+    "author cautions that correlation is not causation"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-001",
+   "identifier": "kaal:claim:3782216-001",
+   "text": "The decentralized economy cannot fully proliferate until it acquires the institutions ordinary commerce depends on, above all a secure and meaningful reputation system for anonymous supranational partners and an effective, dynamic governance system.",
+   "abstract": "the decentralized economy is missing the major institutions that our society relies on to conduct profitable business, especially a secure and meaningful system for evaluating reputation for anonymous supranational partners, and an effective and dynamic governance system",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the decentralized economy as of the early 2020s"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-002",
+   "identifier": "kaal:claim:3782216-002",
+   "text": "Because the decentralized economy currently lacks many of the civil institutions available in the larger economy, the average person should not invest anything in the crypto economy.",
+   "abstract": "Since the de- centralized economy is currently lacking in many of the civil institutions that we enjoy in the larger economy, the average person should not invest anything in the crypto economy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "before decentralized consumer protection institutions exist"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-009",
+   "identifier": "kaal:claim:3782216-009",
+   "text": "Decentralized insurance requires networks of policy writers carrying individual reputations, since efficient underwriting of every type of transaction depends on those reputations.",
+   "abstract": "Decentralized insurance requires networks of policy writers with individual rep- utations for efficient underwriting of every type of transaction.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-024",
+   "identifier": "kaal:claim:3782216-024",
+   "text": "The antiregulation fervor that follows from the anarchist and libertarian philosophy of most Web3 developers is damaging the potential for widespread adoption of decentralized peer to peer tools.",
+   "abstract": "The anarchist and libertarian philosophy that informs most WebT developers' public pronouncements has led to an antiregulation fervor that is damaging the po- tential for widespread adoption of decentralized P9P tools.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-036",
+   "identifier": "kaal:claim:3782216-036",
+   "text": "The inability of anonymous participants to trust one another is crippling the DeFi market and forces decentralized markets into overcollateralization, giving traditional markets a fundamental advantage.",
+   "abstract": "the inability to trust each other due to the requirements of anonymity is crippling the deFi market. So traditional markets have a fundamental advantage. Decentralized markets are overcollateralized.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current decentralized markets, before decentralized reputation exists"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-037",
+   "identifier": "kaal:claim:3782216-037",
+   "text": "Once secure and meaningful reputation is incorporated into Web3, the collateral imbalance will reverse, and because reputation tokens are more meaningful than identity and easier to value, less collateralization will be required than in traditional protocols.",
+   "abstract": "However, once secure and meaningful reputation is incorporated into the WebT environment, this imbalance will be reversed. Since reputation tokens are more mean- ingful than identity, and much easier to valuate, even less collateralization will be re- quired than traditional protocols",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a coherent system that securely tracks the value of a reputation token"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-039",
+   "identifier": "kaal:claim:3782216-039",
+   "text": "DeFi will take off only when cryptocurrency is used in authentic transactions such as insurance and equities across broad segments of industry and tokenization of commodities and properties is instituted.",
+   "abstract": "When will deFi take off? When the economy becomes viable—when cryptocur- rency is used in authentic transactions such as insurance and equities in broad seg- ments of industry and tokenization of commodities and properties is instituted.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-016",
+   "identifier": "kaal:claim:3782217-016",
+   "text": "Oracle DAOs and decentralized finance DAOs face a bootstrapping deadlock because each relies on the other for its very existence, a chicken and egg problem the authors address by having participants prove their worth in a development period before they can charge other DAOs fees.",
+   "abstract": "Unfortunately, oracle DAOs and deFi DAOs rely on each other for their very existence. Which will come first, the chicken or the egg?",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "early stage decentralized finance ecosystems"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808859-028",
+   "identifier": "kaal:claim:3808859-028",
+   "text": "DeFi's distinctive disruption is that it attempts to make financial transactions permissionless, completely open to anybody, and borderless, promising reduced transaction costs, broader financial inclusion, and open access across borders.",
+   "abstract": "The particular form of disruption in DeFi comes from its attempts to make financial transactions permissionless, completely open to anybody, and borderless.",
+   "citation": "Wulf A. Kaal, Decentralization – Why We Need Technology Infrastructure Upgrades (2021). SSRN: https://ssrn.com/abstract=3808859",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "describes DeFi as an emerging movement from 2019"
+   ],
+   "source_pdf_sha256": "304ad25d43b5ecea3158e3a2ca04e6e1e3bd2958e2134e2dcefbfedf3b6f3ab7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808859-029",
+   "identifier": "kaal:claim:3808859-029",
+   "text": "DeFi's disruptive potential may be blunted by incumbents: existing financial institutions can adopt decentralized technologies inside a controlled environment, capturing benefits such as transparency and interoperability while preserving centralized oversight.",
+   "abstract": "The disruption through DeFi may be mitigated by existing financial institutions' attempts to leverage decentralized technologies in a controlled environment that allows the utilization of its benefits, such as transparency and interoperability, while also facilitating centralized oversight.",
+   "citation": "Wulf A. Kaal, Decentralization – Why We Need Technology Infrastructure Upgrades (2021). SSRN: https://ssrn.com/abstract=3808859",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "304ad25d43b5ecea3158e3a2ca04e6e1e3bd2958e2134e2dcefbfedf3b6f3ab7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-034",
+   "identifier": "kaal:claim:3808873-034",
+   "text": "Because basic standards for the governance of digital assets were still missing at the beginning of the 2020s, the digital asset market stagnated and decentralized finance remained in its infancy; without standards and governance, certainty and market confidence cannot develop.",
+   "abstract": "At the beginning of the 2020s, basic standards for the governance of digital assets were still missing. As a result, the digital asset market stagnated and DeFi (decentralized finance) remained in its infancy.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "digital asset markets at the beginning of the 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-043",
+   "identifier": "kaal:claim:3936876-043",
+   "text": "Centralized custody solutions and decentralized non custodial deal platforms will run in parallel until both are more established, and existing DeFi trends suggest the decentralized non custodial deal platforms will produce more innovation and better deals.",
+   "abstract": "The existing trends in DeFi seem to suggest that the decentralized non-custodial deal platforms will have more innovation and better deals.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "based on trends in DeFi as of 2021",
+    "author explicitly marks the outcome as uncertain"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-002",
+   "identifier": "kaal:claim:3949098-002",
+   "text": "Reputation tokens used in decentralized finance are more meaningful and easier to value than traditional identity verification metrics, so decentralized protocols that use reputation metrics will require less collateralization than traditional protocols.",
+   "abstract": "Reputation tokens that are utilized in decentralized finance are more meaningful than traditional identity verification metrics, and much easier to value. Accordingly, decentralized protocols that use reputation metrics will require less collateralization than in traditional protocols.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is incorporated securely into the Web3 environment"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-003",
+   "identifier": "kaal:claim:3949098-003",
+   "text": "Locking a user's reputation tokens instead of fungible assets would be a leap in efficiency and a powerful economic advantage over traditional finance, but this advantage is conditional on a coherent system that securely tracks the value of a reputation token.",
+   "abstract": "For example, locking users reputation tokens instead of your fungible assets would be a strong leap in efficiency, giving a powerful economic advantage over traditional finance. This requires a coherent system which securely tracks the value of a reputation token.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a system exists that securely tracks reputation token value"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-044",
+   "identifier": "kaal:claim:3962614-044",
+   "text": "The industry is still experimenting with different forms of DeFi capital replacement schemes, and it will take time to filter out those designs that have unanticipated side effects.",
+   "abstract": "The industry is still experimenting with different forms of DeFi capital replacement schemes. It will take time to filter out those designs that have unanticipated side effects",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DeFi experimentation that started in 2020"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-032",
+   "identifier": "kaal:claim:4015908-032",
+   "text": "Liquidity mining, one of the dominant mechanisms used for fair launches, undermines fairness because it leads those who already have more liquidity or assets to benefit disproportionally from the protocol.",
+   "abstract": "However, liquidity mining leads those who have more liquidity/assets to disproportionally benefit from the fair launch liquidity mining protocol.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fair launch distributes rewards through liquidity mining"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-029",
+   "identifier": "kaal:claim:4900878-029",
+   "text": "DeFi protocols automate financial transactions through smart contracts, cutting out intermediaries and increasing transparency, and those same features let quantum economics build models that are self executing and adaptable to real time data, overcoming implementation problems that defeat traditional economic models.",
+   "abstract": "These features can be utilized in quantum economics to develop models that are both self-executing and adaptable to real-time data",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DeFi platforms operating on smart contract infrastructure"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-035",
+   "identifier": "kaal:claim:4900878-035",
+   "text": "Integrating stablecoins pegged to fiat currencies gives a token ecosystem a stable transactional medium and mitigates the volatility that otherwise attaches to cryptocurrencies, alongside DeFi services that let users earn returns and access credit outside the banking system.",
+   "abstract": "The integration of stablecoins pegged to fiat currencies provides a stable medium for transactions, mitigating the volatility often associated with cryptocurrencies.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the VOW ecosystem as a case study"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-017",
+   "identifier": "kaal:claim:4900880-017",
+   "text": "The integration of tokenomics with quantum economics turns the abstract concepts of the framework into working mechanisms, supplying practical instruments for decentralized finance and participatory governance.",
+   "abstract": "The integration of tokenomics with quantum economics operationalizes these abstract concepts, offering practical mechanisms for decentralized finance (DeFi) and participatory governance models.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-040",
+   "identifier": "kaal:claim:4900880-040",
+   "text": "Decentralized finance and participatory governance models create their own problems, specifically unresolved regulatory frameworks and ethical considerations, so decentralization is not a costless substitute for existing institutional arrangements.",
+   "abstract": "The rise of decentralized finance and participatory governance models also presents challenges in terms of regulatory frameworks and ethical considerations.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-007",
+   "identifier": "kaal:claim:5454054-007",
+   "text": "LER adapts DeFi liquid staking to e-commerce by paying consumptive utilities instead of speculative yields, and it is this substitution of consumption for yield that mitigates volatility risk.",
+   "abstract": "This LER mechanism derives in part from DeFi liquid staking, where users earn yields without sacrificing tradability of the underlying asset, but LER adapts it to e-commerce ecosystems by focusing on consumptive utilities rather than speculative yields, thus mitigating volatility risks.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "rewards redeemable only within merchant ecosystems"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-013",
+   "identifier": "kaal:claim:5454054-013",
+   "text": "The total addressable market for LER exceeds $1 trillion, driven by the great reallocation of capital out of underperforming fixed income into equities and DeFi.",
+   "abstract": "Based on available market analyses, the TAM for LER exceeds $1 trillion, because of the \"great reallocation\" of capital from underperforming fixed-income assets to higher-yielding alternatives like equities and DeFi.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "based on available market analyses as of 2025"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "37 claims in the published works of Wulf A. Kaal carry the concept tag 'defi'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,157 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bias-mitigation",
+ "identifier": "kaal:entity:bias-mitigation",
+ "name": "Bias mitigation",
+ "termCode": "bias-mitigation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bias-mitigation.md",
+ "sha256": "d85f78bf88791a50c0c2cddb05415d1d4e0bf5d354bd43a9757ca55b64fefae9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-017",
+   "identifier": "kaal:claim:4796714-017",
+   "text": "Using human judgment to uncover unconscious bias in AI can perpetuate the very biases it is meant to remove, because human reviewers carry their own implicit biases and may lack the expertise to identify bias in complex AI systems.",
+   "abstract": "While human judgment is integral to risk management and bias mitigation, it inherently carries its own biases. Relying on human judgment to uncover unconscious biases in AI may inadvertently perpetuate these biases rather than eliminate them.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to human in the loop bias mitigation programs",
+    "holds where reviewers lack technical expertise or bias awareness"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-038",
+   "identifier": "kaal:claim:4796714-038",
+   "text": "Broad community governance of AI training identifies and mitigates bias more effectively than data validation alone, because validation focused approaches can overlook systemic biases already embedded in the pretrained model.",
+   "abstract": "Moreover, involving a broad community in the governance of AI training can help identify and mitigate biases more effectively than a focus on data validation alone, which might overlook systemic biases embedded in the pretrained models.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "compares community governance of training against post hoc data validation",
+    "concerns systemic bias baked in during pretraining"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-026",
+   "identifier": "kaal:claim:4855607-026",
+   "text": "Requiring community members to stake reputation tokens in order to validate data quality is what produces robust and reliable training datasets, and this participatory validation improves annotation accuracy while reducing bias.",
+   "abstract": "Community members stake reputation tokens to validate data quality, ensuring robust and reliable datasets for training AI models. This participatory approach can improve data annotation accuracy and reduce biases.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "training data validation carried out by a reputation staking community"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-038",
+   "identifier": "kaal:claim:4855607-038",
+   "text": "Gathering a wide range of human feedback makes the Reward Model reflect a comprehensive spectrum of human preferences and values, and it is this inclusivity that mitigates bias and captures a richer understanding of what counts as a desirable outcome.",
+   "abstract": "By leveraging this model, RLHF can gather a wide range of human feedback, ensuring the Reward Model (RM) reflects a comprehensive spectrum of human preferences and values. This inclusivity helps mitigate biases and captures a richer understanding of what is considered a desirable outcome.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reward models trained on feedback drawn from a broad participant base"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-005",
+   "identifier": "kaal:claim:4941807-005",
+   "text": "Integrating feedback directly into governance processes allows stakeholders to iteratively adjust AI models as new information, operational experience, and changed environments arrive, which mitigates risks and biases more effectively than static ex-post regulatory frameworks.",
+   "abstract": "stakeholders can iteratively improve and adjust AI models in response to new information, operational experiences, and changing environments. This ongoing process helps mitigate risks and biases more effectively than static, ex-post regulatory frameworks.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where feedback is embedded in the governance process itself",
+    "where models can still be adjusted after deployment"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-034",
+   "identifier": "kaal:claim:5245185-034",
+   "text": "Making governance decisions collectively through web3 consensus minimizes bias and single points of failure, because oversight is no longer subject to the limitations or errors of a solitary AI system.",
+   "abstract": "decentralized approach minimizes the risk of bias and single points of failure, as governance decisions are made collectively rather than being subject to the limitations or potential errors of a solitary AI system.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "consensus driven decision making among diverse stakeholders"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'bias-mitigation'. Derived node: a roster, not an adjudicated definition."
+}

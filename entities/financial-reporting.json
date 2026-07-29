@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/financial-reporting",
+ "identifier": "kaal:entity:financial-reporting",
+ "name": "Financial reporting",
+ "termCode": "financial-reporting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/financial-reporting.md",
+ "sha256": "ffa17d53ed64dc9006d4ed67f97f07d2ddd5250f81c1f42221c6fd93526a34c0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-003",
+   "identifier": "kaal:claim:4033886-003",
+   "text": "Although many traditional assets also resist full assessment, the absence of established pricing standards for digital assets makes the loss of valuation accuracy for financial reporting worse than in traditional markets.",
+   "abstract": "While many traditional assets also cannot be fully assessed, the lack of valuation accuracy for financial reporting is exacerbated by the lack of established pricing standards for digital assets.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "financial reporting context"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-004",
+   "identifier": "kaal:claim:4033886-004",
+   "text": "The accounting definition of fair value may not apply to digital assets, with the consequence that correct valuation of digital assets for financial reporting purposes may be impossible.",
+   "abstract": "The definition of fair value under existing accounting terminology may not apply to digital assets.2 As a result, the correct valuation of digital assets may not be possible for financial reporting issues.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under existing accounting terminology such as FASB 157 and IFRS 13"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'financial-reporting'. Derived node: a roster, not an adjudicated definition."
+}

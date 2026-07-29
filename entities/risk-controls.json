@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/risk-controls",
+ "identifier": "kaal:entity:risk-controls",
+ "name": "Risk controls",
+ "termCode": "risk-controls",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/risk-controls.md",
+ "sha256": "51a1a31897e9a9dfccf13aeff87256e570fe9ddd2eb727db0e8d5c4b7ccda4cb",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-028",
+   "identifier": "kaal:claim:3936876-028",
+   "text": "Information security infrastructure and controls to mitigate hacking, theft, and fraud must be enhanced when maintaining custody of digital assets, because digital assets have unique technical characteristics.",
+   "abstract": "Information security infrastructure and controls to mitigate hacking, theft, and fraud need to be enhanced when maintaining custody of digital assets due to their unique technical characteristics.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "banks and custodians holding digital assets"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-030",
+   "identifier": "kaal:claim:3936876-030",
+   "text": "Every risk in a digital custody operation should carry both a preventative and a detective control, layered so that if some controls fail others remain to reduce the risk.",
+   "abstract": "Every risk should have a preventative and detective control and there should be appropriate layers of controls so that if some fail, others will still be there to reduce the risk.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "digital asset custody risk management programs"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'risk-controls'. Derived node: a roster, not an adjudicated definition."
+}

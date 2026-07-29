@@ -1,0 +1,174 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bootstrapping",
+ "identifier": "kaal:entity:bootstrapping",
+ "name": "Bootstrapping",
+ "termCode": "bootstrapping",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bootstrapping.md",
+ "sha256": "56c7912b7791286349142234c76ec6ddc2c1eff379f8878126f3d47859f6bcd0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-015",
+   "identifier": "kaal:claim:3125827-015",
+   "text": "The long range attack is a fundamental problem every proof of stake protocol must address: because no energetic outlay is required to build blocks, a malicious producer can fabricate a long chain forked from an earlier valid block, and a newly joining node lacking proof of work hashes cannot objectively tell which chain is genuine.",
+   "abstract": "The long-range attack is a fundamental problem PoS protocols must address, where a malicious producer may create a long list of blocks forked from an earlier valid block, because there is no PoW energetic outlay required to prevent this16.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new nodes joining without a trusted checkpoint",
+    "PoS chains with no energy cost to block creation"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-040",
+   "identifier": "kaal:claim:3125827-040",
+   "text": "A malicious party using Sybil accounts cannot be prevented from cloning the structure of a successful proof of stake blockchain at far lower cost than cloning a proof of work chain, leaving a new user unable to distinguish the truly decentralized chain from a clone that has manufactured even more tokens. The authors answer that this is resolved off chain, by a trusted user interface, as with cloned web pages.",
+   "abstract": "Then, when a new user joins the network, how will they be able to distinguish a truly decentralized blockchain from a cloned blockchain that has manufactured an even larger number of tokens?",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new users joining without prior knowledge of the genuine chain",
+    "PoS chains where clone creation costs only new public keys"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-035",
+   "identifier": "kaal:claim:3782210-035",
+   "text": "Reputation-based governance faces a chicken and egg problem: voting becomes more efficient once reputation is valuable, but reputation cannot become valuable without meaningful voting.",
+   "abstract": "This is another chicken and egg problem. Voting will be more efficient with valu- able reputation. Reputation can't be valuable without meaningful voting.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "bootstrapping a reputation system on existing infrastructure"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-013",
+   "identifier": "kaal:claim:3782216-013",
+   "text": "A decentralized chit fund can let people bootstrap financial security with no initial reserve backing, but only if the reputation system is strong enough to hold defaults to a low percentage.",
+   "abstract": "With no initial reserve backing, this allows people to bootstrap their way to greater financial security and stability, assuming the reputation system is sufficiently strong to guarantee a low percentage of defaults.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a sufficiently strong reputation system"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-034",
+   "identifier": "kaal:claim:3782216-034",
+   "text": "Stablecoin collateralization and a robust decentralized economy form a chicken and egg problem: a stablecoin cannot reduce its backing until a robust decentralized economy exists, and that economy cannot be built without an efficient stablecoin.",
+   "abstract": "We need a robust decen- tralized economy before a stablecoin can reduce its collateralization. We need an ef- ficient and useful stablecoin before we can build a robust decentralized economy. This is another of the many chicken-and-egg problems that hamper the adoption of new systems.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "while most cryptocurrency use is speculative hot money"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-016",
+   "identifier": "kaal:claim:3782217-016",
+   "text": "Oracle DAOs and decentralized finance DAOs face a bootstrapping deadlock because each relies on the other for its very existence, a chicken and egg problem the authors address by having participants prove their worth in a development period before they can charge other DAOs fees.",
+   "abstract": "Unfortunately, oracle DAOs and deFi DAOs rely on each other for their very existence. Which will come first, the chicken or the egg?",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "early stage decentralized finance ecosystems"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-013",
+   "identifier": "kaal:claim:6244278-013",
+   "text": "Agent entry into the ecosystem should be permissionless, requiring only evidence, stake, and consequence, through an 'economic apprenticeship' in which an agent stakes small amounts, observes outcomes, and progressively builds reputational capital.",
+   "abstract": "This is what I term \"economic apprenticeship\": learning the system by staking small amounts, observing outcomes, and progressively building reputational capital.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no centralized approval or institutional affiliation is required",
+    "barriers are economic rather than social, and temporary rather than permanent"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'bootstrapping'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,347 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-valuation",
+ "identifier": "kaal:entity:token-valuation",
+ "name": "Token valuation",
+ "termCode": "token-valuation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-valuation.md",
+ "sha256": "2daf20e97994c3b129775a09cb83f6818715238308cfaac9c573d6a4f75f771f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 18
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-035",
+   "identifier": "kaal:claim:3125822-035",
+   "text": "The author contests Houy's claim that killing a proof of stake currency costs nothing: on this platform the token's value is calculably predictable rather than merely a function of public opinion, and signaling an intention to buy tokens usually raises the price rather than triggering a race to the bottom.",
+   "abstract": "However, in the current example, the value of the token is not merely tied to public opinion. The value of the token is calculably predictable. And when someone signals their intention to buy tokens—for whatever reason—the price usually goes up, not down.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies where token value is computable from observable fee flows"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-046",
+   "identifier": "kaal:claim:3125822-046",
+   "text": "The proposed fix is to value tokens by how the post was received and cited: tokens minted at a node with a large branch of positive references are worth more, while tokens from a post whose betting pool was close to 50-50 are worth less in future salaries than tokens from a post with uniform agreement.",
+   "abstract": "For instance if there is a large branch of positive references based at a node, the tokens minted at that node should be worth more. If the post was contentious, and its betting pool was close to 50-50, the tokens will be worth less in future salaries than uniform agreement.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires the forum to be treated as a weighted citation graph"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-035",
+   "identifier": "kaal:claim:3125827-035",
+   "text": "Because each sem token carries a different value depending on the post that minted it and on its position in the reference graph, the total value is difficult to determine, which makes it almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "abstract": "their value is difficult to determine since each token has a different value depending on the post in which it was minted. So it is almost impossible to execute a 51% attack by purchasing tokens on an exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token value derived from position in the forum WDAG",
+    "most tokens constantly in use and continually created"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-038",
+   "identifier": "kaal:claim:3125827-038",
+   "text": "The sem token economy is inflationary at equilibrium, and the authors argue this is a feature: inflation improves security and discourages rent seeking by penalizing holders who do not use their tokens to evaluate posts.",
+   "abstract": "The conclusion is that the economy is inflationary at equilibrium, which improves its security and discourages rent-seeking.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fees paid in at a constant or linearly growing rate",
+    "new tokens minted with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-011",
+   "identifier": "kaal:claim:3249860-011",
+   "text": "Commercial benefits attached to a token issuance can offset depreciated supply scarcity, meaning the dilutive effects of a large supply of the token in circulation.",
+   "abstract": "Second, commercial benefits associated with a token issuance can help offset depreciated supply scarcity, e.g. the effects of a large issuance / supply of a given token in circulation.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "issuances with large token supply in circulation"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-007",
+   "identifier": "kaal:claim:3396542-007",
+   "text": "Insurance premia are treated as revenue of the entire DAO rather than of the underwriters who wrote the policy, and are shared among DAO participants; consequently the value of a token is a function of the DAO's expected future cash flows.",
+   "abstract": "Instead, the premia are treated as the revenue of the entire DAO and shared among the DAO participants. Thus, the value of the tokens is a function of the expected future cash flows of the DAO.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-013",
+   "identifier": "kaal:claim:3396542-013",
+   "text": "A breach occurs only when the underwriters concerned believe that the value of their encumbered tokens is less than the payment they would have to make in order to reclaim those tokens.",
+   "abstract": "Under what circumstances would a breach occur? It would occur only if the underwriters concerned believed that the value of these tokens is less than the payment they need to make in order to reclaim the tokens.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-017",
+   "identifier": "kaal:claim:3396542-017",
+   "text": "The value of a token is not uniform across tokens: it depends on whether the token is currently encumbered and, for encumbered tokens, the sooner the token is expected to be released from encumbrance the greater its value.",
+   "abstract": "In general, the sooner a token is expected to be released from encumbrance (by the policy on which it is staked terminating due to either a payout or reaching maturity), the greater its value.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state DAO"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-018",
+   "identifier": "kaal:claim:3396542-018",
+   "text": "The DAO design requires that the value of the tokens staked on a set of policies be large enough to cover the maximum possible liability on those policies, which in turn imposes a minimum condition on the premium charged.",
+   "abstract": "The design of the DAO requires that v1 should be large enough to cover the maximum possible liability on the M policies against which these tokens are to be encumbered. We will later derive a condition on the premium",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state model with constant M and p"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-019",
+   "identifier": "kaal:claim:3396542-019",
+   "text": "Because the total supply of tokens grows at a constant rate each period, the value of individual tokens depreciates over time.",
+   "abstract": "Note that as the total number of tokens is growing at a rate of ρ per period, the value of individual tokens will depreciate over time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token supply growing at rate rho per period"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-021",
+   "identifier": "kaal:claim:3396542-021",
+   "text": "The DAO is insolvent when the present value of expected cash flows from new policies falls below the expected cash outflow on currently outstanding policies, and in that state the value of a token is negative.",
+   "abstract": "The DAO will be insolvent if the value of the DAO becomes negative - in other words, if the Present Value (PV) of expected cash flows from new policies is less than the expected cash outflow from currently outstanding (old) policies. If the DAO is insolvent, the value of a token will be negative.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-029",
+   "identifier": "kaal:claim:3396542-029",
+   "text": "From the viewpoint of consumers and regulators, encumbered tokens, whose value derives from the DAO's future cash flows, serve as a substitute for regulatory capital.",
+   "abstract": "The key point is this: from the viewpoint of consumers and regulators, the encumbered tokens (which as we know derive their value from the DAO's future cash flows) essentially serve as a substitute for capital.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-003",
+   "identifier": "kaal:claim:3949098-003",
+   "text": "Locking a user's reputation tokens instead of fungible assets would be a leap in efficiency and a powerful economic advantage over traditional finance, but this advantage is conditional on a coherent system that securely tracks the value of a reputation token.",
+   "abstract": "For example, locking users reputation tokens instead of your fungible assets would be a strong leap in efficiency, giving a powerful economic advantage over traditional finance. This requires a coherent system which securely tracks the value of a reputation token.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a system exists that securely tracks reputation token value"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-027",
+   "identifier": "kaal:claim:3962614-027",
+   "text": "The value of the reputation tokens is a function of the return on investment of the DAO.",
+   "abstract": "Accordingly, the value of the reputation tokens is a function of the ROI of the DAO.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a DAO that treats ROI as DAO revenue shared as reputation salary"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4021599-010",
+   "identifier": "kaal:claim:4021599-010",
+   "text": "A key commonality that permits delineating securities tokens from other token designs is that securities tokens derive their value from an external tradeable asset.",
+   "abstract": "Key commonalities of securities tokens characteristics enable the delineation of securities tokens from other token designs. A key commonality of securities tokens includes its ability to derive their value from an external tradeable asset.12 The underlying assets for",
+   "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4021599-024",
+   "identifier": "kaal:claim:4021599-024",
+   "text": "A utility token's value depends on its functions and therefore correlates with actual demand for the token, so a scaled up project with a high number of users usually yields increased utility token value, whereas a securities token's value correlates with the value of the issuing company.",
+   "abstract": "That is, a scaled-up project with a high number of users usually result in increased utility token value. By contrast, the value of securities tokens is often correlated to the value of the token issuing company.40",
+   "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4021599-025",
+   "identifier": "kaal:claim:4021599-025",
+   "text": "Securities token users typically expect the value of the issuing company to be directly tied to token value, while utility token users typically expect no relation between the issuer's current valuation and the value of the utility token.",
+   "abstract": "Users of securities tokens typically expect that the value of the issuing company is directly tied to the value of the securities token. By contrast, users of utility tokens typically expect no relation between the current valuation of the issuing company and the value of the utility token.42",
+   "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599",
+   "datePublished": "2022",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-035",
+   "identifier": "kaal:claim:4033886-035",
+   "text": "Secondary trade pricing from exchanges is a legitimate market approach input for digital assets only when liquidity is high enough to rely on those prices; where liquidity is lacking or unreliable, a discount for lack of liquidity is required.",
+   "abstract": "Secondary trade pricing (as seen in exchanges) are relevant when liquidity is high enough to rely on these prices.131",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "market approach applied to tokens",
+    "liquidity and depth differ between token to token and token to fiat trades"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "18 claims in the published works of Wulf A. Kaal carry the concept tag 'token-valuation'. Derived node: a roster, not an adjudicated definition."
+}

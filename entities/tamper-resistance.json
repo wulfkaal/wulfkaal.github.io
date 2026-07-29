@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/tamper-resistance",
+ "identifier": "kaal:entity:tamper-resistance",
+ "name": "Tamper resistance",
+ "termCode": "tamper-resistance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/tamper-resistance.md",
+ "sha256": "38f998428352c5ec685be154af881d04ab48e7eb052f1ece9538ad281343b014",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-014",
+   "identifier": "kaal:claim:3227933-014",
+   "text": "Network connectivity is what makes blockchain records practically immutable, because it allows multiple identical copies of the ledger to exist simultaneously across the network.",
+   "abstract": "Network connectivity is vital because it allows for multiple identical copies of the blockchain to be available simultaneously across the network. This makes it practically impossible to alter or erase information in the blockchain.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires broad network connectivity"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227967-019",
+   "identifier": "kaal:claim:3227967-019",
+   "text": "Cryptographic hashing makes tampering with blockchain records extremely difficult because even a minuscule change produces a different hash value, rendering manipulation instantly and readily detectable.",
+   "abstract": "The use of cryptographic hashes makes tampering with blockchain records even more difficult, if not impossible. 52 Cryptographic hashes comprise complex algorithms. Even a minuscule change to the blockchain will result in a different hash value, making manipulation instantly and readily detectable.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Legal Education in a Digital Age Why 'Coding for Lawyers' Matters (2018). SSRN: https://ssrn.com/abstract=3227967",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "records secured by cryptographic hash functions"
+   ],
+   "source_pdf_sha256": "f6e13b956f864ab32ec3305d095a35a127770327d75b3688f785cefc437d369f",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'tamper-resistance'. Derived node: a roster, not an adjudicated definition."
+}

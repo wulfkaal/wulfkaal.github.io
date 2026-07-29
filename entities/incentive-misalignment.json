@@ -1,0 +1,222 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/incentive-misalignment",
+ "identifier": "kaal:entity:incentive-misalignment",
+ "name": "Incentive misalignment",
+ "termCode": "incentive-misalignment",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/incentive-misalignment.md",
+ "sha256": "40526a9bcf206eeb7421de5ec9d93e251a316cf3275361cc8faaf4112abca2d1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 10
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2010",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1558614-013",
+   "identifier": "kaal:claim:1558614-013",
+   "text": "Limited liability lets managers and shareholders capture most of the benefits of excessive risk taking while not bearing all of its costs, which is one explanation for why bankers take excessive risk.",
+   "abstract": "Accordingly, both managers and shareholders of a corporation enjoy most of the benefits of excessive 62 risk taking but do not bear all of the costs.",
+   "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614",
+   "datePublished": "2010",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "corporation protected by limited liability",
+    "corporation may lack assets sufficient to pay creditors"
+   ],
+   "source_pdf_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-019",
+   "identifier": "kaal:claim:3962614-019",
+   "text": "The typical VC fee based compensation structure can lead to serious shortcomings, including excessive fundraising, suboptimal investments, misevaluation, and overfunding of portfolio companies during a fund's holding period.",
+   "abstract": "The typical VC fee-based compensation structure can lead to serious shortcomings, including excessive fundraising, suboptimal investments, misevaluation, and overfunding of the portfolio companies during a fund's holding period.",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fee based VC compensation arrangements"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3962614-035",
+   "identifier": "kaal:claim:3962614-035",
+   "text": "The hybrid smart contracting model is defective because VCs are partially incentivized to fund and stake only the best deals while staking on less optimal deals that the market mostly funds, which undermines their long term reputation accumulation.",
+   "abstract": "The problem with this model is that VCs are incentivized partially to fund and stake only on the best deals and stake on the less optimal deals that are mostly funded by the market. This undermines their long-term reputation accumulation",
+   "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "models where VCs can stake reputation without proportionate capital commitment"
+   ],
+   "source_pdf_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-004",
+   "identifier": "kaal:claim:4734750-004",
+   "text": "Bug bounty programs fail at their own premise because the hackers they pay to demonstrate exploitability frequently sell or exploit the bugs they find instead of disclosing them.",
+   "abstract": "Alas, hackers often sell the bug or exploit them when they discover them.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "community audit and bug bounty programs for smart contracts"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-019",
+   "identifier": "kaal:claim:4755632-019",
+   "text": "The collective of reviewers in legacy code review is not incentivized to find flaws in the code, because the review is treated as the work product of the initial reviewer with minor input from follow-up reviewers rather than as a product of the collective.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy hierarchical code review firms"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-033",
+   "identifier": "kaal:claim:4855607-033",
+   "text": "The RLHF process is exposed to failure because participants may hold potentially adversarial and misaligned interests, so the vulnerability lies in the incentive structure of feedback provision rather than in the learning algorithm.",
+   "abstract": "Currently, the RLHF process, which involves training AI models based on human preferences and feedback, can face challenges due to the potentially adversarial and misaligned interests of participants.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "RLHF systems where feedback providers have divergent stakes"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-001",
+   "identifier": "kaal:claim:6269518-001",
+   "text": "Under existing citation-weighted reputation formulations, rational agents face a direct financial disincentive to cite prior contributions, because PageRank-derived value allocation transfers economic reward from the citing agent to the cited agent.",
+   "abstract": "Under existing formulations, rational agents face a direct financial disincentive to cite prior contributions, as citation-weighted value allocation through PageRank-derived mechanisms transfers economic reward from the citing agent to the cited agent.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "citation-weighted value allocation through PageRank-derived mechanisms",
+    "agents are rational and self interested"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-003",
+   "identifier": "kaal:claim:6269518-003",
+   "text": "Citation-weighted payment mechanisms as currently formulated will systematically erode the quality of knowledge attribution in any decentralized reputation system if the incentive misalignment is left unaddressed.",
+   "abstract": "This paper demonstrates, however, that citation-weighted payment mechanisms as currently formulated contain a fundamental incentive misalignment that, if left unaddressed, will systematically erode the quality of knowledge attribution in any decentralized reputation system.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the incentive misalignment remains unaddressed"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-011",
+   "identifier": "kaal:claim:6269518-011",
+   "text": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit leaching parameter of one, since every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent, which is a maximally punitive setting.",
+   "abstract": "The citation-weighted payment mechanism in multi-agent settings effectively operates with an implicit q4 = 1: every unit of citation-weighted value conferred on another agent is a unit lost to the citing agent. This is a maximally punitive leaching parameter,",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multi-agent citation-weighted payment settings"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-015",
+   "identifier": "kaal:claim:6269518-015",
+   "text": "A PageRank-derived value distribution is only as honest as its inputs, and those inputs are generated by agents with a direct incentive to distort them, so relying entirely on the calculation to distribute value correctly fails.",
+   "abstract": "The framework relies entirely on the PageRank calculation to \"correctly\" distribute value, but the PageRank calculation is only as honest as its inputs. And the inputs are generated by agents with a direct incentive to distort them.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "10 claims in the published works of Wulf A. Kaal carry the concept tag 'incentive-misalignment'. Derived node: a roster, not an adjudicated definition."
+}

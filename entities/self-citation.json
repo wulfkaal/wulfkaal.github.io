@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/self-citation",
+ "identifier": "kaal:entity:self-citation",
+ "name": "Self citation",
+ "termCode": "self-citation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/self-citation.md",
+ "sha256": "3bb898024b4a802308a35ba99c4ff407d97a53730eb22232803da3e515b3b4b0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-007",
+   "identifier": "kaal:claim:6269518-007",
+   "text": "Under the standard citation-weighted payment formulation the dominant strategy for a self-interested agent is to cite no one and maximize self-attribution, which is the precise negation of honest knowledge attribution.",
+   "abstract": "The rational strategy for any self-interested agent is therefore transparent: set cx = 0 for all j ≠ i (cite no one) to maximize personal payment. Under the standard formulation, the dominant strategy is maximal self-citation, which is the precise negation of honest knowledge attribution.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "standard PageRank-derived payment formulation",
+    "self-interested agents",
+    "no verification or penalty layer"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-033",
+   "identifier": "kaal:claim:6269518-033",
+   "text": "The equilibrium depends on a design requirement rather than an assumption: mechanism parameters must be chosen so that the negative effect of increased self-citation on the honesty score outweighs its positive effect on the value score, at which point increasing self-citation strictly decreases utility.",
+   "abstract": "the mechanism parameters (θ = 0.6, reputation coefficient = 2) are chosen such that the negative effect of increased self-citation on the honesty score outweighs the positive effect on the value score.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators rate citation honesty lower when self-citation is inflated"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'self-citation'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/personal-liability",
+ "identifier": "kaal:entity:personal-liability",
+ "name": "Personal liability",
+ "termCode": "personal-liability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/personal-liability.md",
+ "sha256": "a899302d1e7a9b5166c059b57ec47be14caa3976caa2e036f90c9cd150c071ef",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2010",
+    "2020"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1558614-036",
+   "identifier": "kaal:claim:1558614-036",
+   "text": "The German legislature enacted the VorstAG on the premise that managers who emphasize short term parameters lose sight of the corporation's long term benefit and are thereby incentivized to take irresponsible risks, and it accordingly required compensation reduction in a corporate crisis, a D&O deductible, and deferred payout of performance based pay.",
+   "abstract": "\"managers who emphasize short-term parameters in manage- ment lose sight of the long-term benefit of the corporation and are 185 incentivized to take irresponsible risks,\"",
+   "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614",
+   "datePublished": "2010",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "German stock corporations subject to the VorstAG of August 2009"
+   ],
+   "source_pdf_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-013",
+   "identifier": "kaal:claim:3652481-013",
+   "text": "If DAO members do not formalize a structure for their human created entity, courts are very likely to impose one on them, which is a serious risk of DAO membership.",
+   "abstract": "However, a very serious risk is associated with DAO membership in the sense that if the DAO members do not formalize a structure for their human-created entity, courts are very likely to impose one for the members of the DAO.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the DAO has no off chain legal entity",
+    "a dispute reaches a court"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-040",
+   "identifier": "kaal:claim:3652481-040",
+   "text": "Without a legal wrapper, DAOs face potential regulatory enforcement actions and civil liability not only at the organization level but against individual participants.",
+   "abstract": "Without a legal wrapper, DAOs face potential regulatory enforcement actions and civil liability, not only at the organization level but against individual participants.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "no off chain legal entity has been formed"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'personal-liability'. Derived node: a roster, not an adjudicated definition."
+}

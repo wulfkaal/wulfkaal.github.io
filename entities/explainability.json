@@ -1,0 +1,156 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/explainability",
+ "identifier": "kaal:entity:explainability",
+ "name": "Explainability",
+ "termCode": "explainability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/explainability.md",
+ "sha256": "acfbf92a4efe928a3b914476b1e894c41d947e97e705b873ad3852000f1bd786",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-007",
+   "identifier": "kaal:claim:4796714-007",
+   "text": "The black box character of deep learning models is a governance failure and not merely a technical inconvenience: opacity obstructs debugging, obscures bias detection and mitigation, and prevents comprehension of how inputs become outputs.",
+   "abstract": "This opacity can obstruct the debugging process, obscure bias detection and mitigation, and hinder comprehension of AI decision-making.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "most pronounced in deep learning models",
+    "matters where decisions must be explained or audited"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-008",
+   "identifier": "kaal:claim:4941807-008",
+   "text": "The opacity of deep learning models obstructs debugging, obscures the detection and mitigation of bias, and prevents comprehension of how AI decisions are reached.",
+   "abstract": "This opacity can obstruct the debugging process, obscure bias detection and mitigation, and hinder comprehension of AI decision-making.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "particularly in deep learning models whose internal decision mechanisms are not transparent"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-009",
+   "identifier": "kaal:claim:4941807-009",
+   "text": "Concrete cases show the cost of AI opacity: Nvidia self driving cars that learn from human behavior might confuse the moon for a traffic light, and the DeepPatient project predicted disease onset accurately from medical records while offering no explanation for its predictions.",
+   "abstract": "For example, Nvidia's self-driving cars learn from human behavior but might confuse the moon for a traffic light, and the DeepPatient project accurately predicted disease onset from medical records without providing explanations for its predictions",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in deep learning systems deployed in driving and medical prediction"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-016",
+   "identifier": "kaal:claim:4941807-016",
+   "text": "Legal and ethical challenges intensify when AI is deployed in critical decision making roles that significantly affect human lives and the reasoning behind the AI decision is opaque.",
+   "abstract": "Legal and ethical challenges are heightened when AI is deployed in critical decision-making roles that significantly impact human lives, particularly when the reasoning behind AI's decisions is opaque.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in determinative decisions such as parole eligibility, employment, and medical strategy",
+    "where the reasoning behind the decision is not visible"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-003",
+   "identifier": "kaal:claim:5541658-003",
+   "text": "The distinctive strength of case-based reasoning systems, exemplified by HYPO, is that they model legal argumentation in a detailed and realistic manner rather than merely producing an outcome.",
+   "abstract": "A clear strength of the HYPO program was to model legal argumentation in a detailed and realistic manner. This reflects the strength of case-based reasoning systems.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "case-based reasoning systems that compare a problem case with precedent cases"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-011",
+   "identifier": "kaal:claim:5541658-011",
+   "text": "Accuracy alone is insufficient for legal AI: a model must also be explainable before its outputs can be trusted in judicial settings.",
+   "abstract": "Accuracy alone is insufficient without explainability.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "predictive AI used in legal and judicial applications"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'explainability'. Derived node: a roster, not an adjudicated definition."
+}

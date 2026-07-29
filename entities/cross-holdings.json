@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cross-holdings",
+ "identifier": "kaal:entity:cross-holdings",
+ "name": "Cross holdings",
+ "termCode": "cross-holdings",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cross-holdings.md",
+ "sha256": "5f56abef4df931e9116dffa48b6cecdde9d679ca7e98dd46d2e19a1e631dc4cc",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-020",
+   "identifier": "kaal:claim:1998455-020",
+   "text": "A mandatory contingent capital issuance regime induces institutions to buy their competitors' securities to satisfy regulatory obligations rather than for economic reasons, and the resulting cross holdings among systemically important institutions undermine the ability of contingent capital to limit systemic risk and contagion.",
+   "abstract": "A detrimental result of such a practice could be CCS cross holdings among SIFIs. Cross holdings of CCS by SIFIs could undermine the effectiveness of CCS and its ability to limit systemic risk and contagion.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under a regime requiring mandatory CCS issuance",
+    "where SIFIs are permitted to purchase each other's CCS"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-021",
+   "identifier": "kaal:claim:1998455-021",
+   "text": "Where institutions hold each other's contingent capital and share similar risk profiles, they will be hesitant after conversion to vote for necessary organizational changes at a competitor or otherwise exercise their voting rights, because they are similarly exposed and may face reciprocal voting power.",
+   "abstract": "With sim- ilar risk profiles and CCS positions in similarly exposed entities, SIFIs could be hesitant to vote for necessary organizational changes or otherwise exercise their voting rights on a competitor after conversion of CCS into equity.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where SIFIs hold similar risk profiles and CCS positions in similarly exposed entities",
+    "especially where cross holdings are reciprocal"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-038",
+   "identifier": "kaal:claim:1998455-038",
+   "text": "Rather than banning purchases by systemically important institutions of each other's contingent capital, which could be detrimental to market evolution, the design should require disclosure of the purchaser's identity and approval by the issuer.",
+   "abstract": "An outright ban of SIFI CCS purchases, or at least purchases in other SIFI CCS issuances, could be detrimental for CCS mar- ket evolution. Perhaps a mechanism that requires disclosure of the identity of the purchaser for SIFIs and approval by the issuer could address these concerns.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where the concern is competitors acquiring voting rights as equity holders upon conversion"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'cross-holdings'. Derived node: a roster, not an adjudicated definition."
+}

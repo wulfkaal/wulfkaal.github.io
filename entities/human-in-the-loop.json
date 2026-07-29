@@ -1,0 +1,138 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/human-in-the-loop",
+ "identifier": "kaal:entity:human-in-the-loop",
+ "name": "Human in the loop",
+ "termCode": "human-in-the-loop",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/human-in-the-loop.md",
+ "sha256": "a39ee6ecd1d7a360465c0e3d0bc8d66b903c61dd809241fcdce16f65b6b73283",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-017",
+   "identifier": "kaal:claim:4796714-017",
+   "text": "Using human judgment to uncover unconscious bias in AI can perpetuate the very biases it is meant to remove, because human reviewers carry their own implicit biases and may lack the expertise to identify bias in complex AI systems.",
+   "abstract": "While human judgment is integral to risk management and bias mitigation, it inherently carries its own biases. Relying on human judgment to uncover unconscious biases in AI may inadvertently perpetuate these biases rather than eliminate them.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to human in the loop bias mitigation programs",
+    "holds where reviewers lack technical expertise or bias awareness"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-016",
+   "identifier": "kaal:claim:4855607-016",
+   "text": "There is a trade off in RLHF between the agent imitating human advice and learning autonomously, and human guidance that is too specific will prevent the agent from discovering novel optimal strategies.",
+   "abstract": "there is a trade-off between the extent to which the agent should imitate human advice versus learning autonomously. Overspecific human guidance can hinder the agent's ability to discover novel optimal strategies.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "human in the loop RL where the extent of human involvement is a design choice"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-021",
+   "identifier": "kaal:claim:5095633-021",
+   "text": "Human-in-the-loop annotation, including under ethical labor models, imposes financial and time costs large enough to slow the pace at which AI models can be upgraded.",
+   "abstract": "The reliance on human annotators, even with companies striving for ethical labor practices like CloudFactory, involves significant costs, both financial and in terms of time, which can slow down the pace of AI model upgrades.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pipelines that depend on human annotators"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-010",
+   "identifier": "kaal:claim:5541658-010",
+   "text": "The Shenzhen courts illustrate a workable three step human-in-the-loop design for generative judicial AI: the judge decides first, the LLM generates the supporting reasoning, and the judge then revises that output to finalize the judgment.",
+   "abstract": "A notable case study from Shenzhen, China, illustrates a three-step interaction pattern: judges make initial decisions, LLMs generate reasoning based on these decisions, and judges revise the output to finalize judgments.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Chinese courts using LLMs to draft judicial opinions"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-016",
+   "identifier": "kaal:claim:5541658-016",
+   "text": "Keeping judges ultimately accountable through a human-in-the-loop review of AI generated reasoning, as practiced in Shenzhen, does not fully resolve the accountability problem in AI assisted adjudication.",
+   "abstract": "Shenzhen case study illustrates that judges retain ultimate accountability, revising AI-generated reasoning to ensure accurate judgments, but this human-in-the-loop approach does not fully resolve the issue.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "judicial settings where AI drafts or supports reasoning that a human judge then reviews"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'human-in-the-loop'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,198 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/quantum-computing",
+ "identifier": "kaal:entity:quantum-computing",
+ "name": "Quantum computing",
+ "termCode": "quantum-computing",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/quantum-computing.md",
+ "sha256": "f30d54556de28ffb8567d0b2e37008276e2760e1545da74c3837155f0ecd1521",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-002",
+   "identifier": "kaal:claim:4900878-002",
+   "text": "Because qubits hold multiple states simultaneously, quantum computers can perform complex calculations far faster than classical machines, and in a quantum economy this computational power can be used to solve intricate economic models, optimize resource allocation, and improve decision making across sectors.",
+   "abstract": "In the context of the quantum economy, this increased computational power can be harnessed to solve intricate economic models, optimize resource allocation, and enhance decision-making processes across various sectors.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes continued advance of quantum computing hardware"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-003",
+   "identifier": "kaal:claim:4900878-003",
+   "text": "Current cryptographic systems such as RSA rest on the classical difficulty of factoring large primes, so quantum algorithms like Shor's algorithm, which factor exponentially faster, can render those cryptographic methods obsolete.",
+   "abstract": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to factoring based cryptography such as RSA",
+    "requires sufficiently capable quantum hardware"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-034",
+   "identifier": "kaal:claim:4900878-034",
+   "text": "Quantum computing cuts both ways for blockchain: it can raise the efficiency and security of blockchain networks, but safeguarding those systems against the threats it also creates depends on research into quantum resistant cryptographic algorithms.",
+   "abstract": "Research into quantum-resistant cryptographic algorithms will be crucial to safeguard blockchain systems against potential threats posed by quantum computing.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "as quantum computing capability advances"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-004",
+   "identifier": "kaal:claim:4900880-004",
+   "text": "Quantum computers gain their advantage over classical computers because qubits can hold multiple states simultaneously through superposition, which lets complex calculations run at exponentially faster rates than binary bit processing allows.",
+   "abstract": "In contrast, quantum computers use qubits, which can exist in multiple states simultaneously due to superposition. This capability allows quantum computers to perform complex calculations at exponentially faster rates than classical computers.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-005",
+   "identifier": "kaal:claim:4900880-005",
+   "text": "Quantum algorithms such as Shor's algorithm can factor large prime numbers exponentially faster than classical computers, which potentially renders currently deployed cryptographic systems including RSA obsolete.",
+   "abstract": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes cryptographically relevant quantum computers become available"
+   ],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-007",
+   "identifier": "kaal:claim:4900880-007",
+   "text": "Disparities in access to quantum computing resources and expertise are likely to widen existing inequalities both between nations and within societies, so the distributional effect of quantum technology is a predictable consequence of unequal access rather than an incidental risk.",
+   "abstract": "The disparities in access to quantum computing resources and expertise could exacerbate existing inequalities between nations and within societies.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-031",
+   "identifier": "kaal:claim:4900880-031",
+   "text": "Quantum computing will displace job roles built on repetitive and manual tasks, but that displacement is offset by new roles in quantum programming, algorithm design, and quantum cryptography that did not previously exist.",
+   "abstract": "However, this displacement is counterbalanced by the creation of new opportunities in emerging fields such as quantum programming, algorithm design, and quantum cryptography.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-039",
+   "identifier": "kaal:claim:4900880-039",
+   "text": "Combining quantum computing with blockchain and DAO frameworks makes a governance model possible that is simultaneously transparent, decentralized, and adaptive, supporting efficient and fair resource distribution and continuous innovation.",
+   "abstract": "By integrating quantum computing with blockchain and DAO frameworks, a new era of transparent, decentralized, and adaptive governance is possible.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-003",
+   "identifier": "kaal:claim:5886342-003",
+   "text": "The Codex is positioned as a private universal standard rather than state legislation: it supplies legal certainty and enforceability for digital systems ranging from blockchain and AI to quantum computing, so that platforms, businesses and users can operate across borders and technologies.",
+   "abstract": "The UDLC is intended to serve as a private universal standard for legal certainty and enforceability in digital systems — from blockchain and AI to quantum computing — providing digital platforms, businesses and users with the tools they need to operate securely and legally across borders and technologies.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private standard adopted by digital systems, not enacted by a legislature"
+   ],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'quantum-computing'. Derived node: a roster, not an adjudicated definition."
+}

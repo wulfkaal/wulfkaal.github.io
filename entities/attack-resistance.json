@@ -1,0 +1,663 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/attack-resistance",
+ "identifier": "kaal:entity:attack-resistance",
+ "name": "Attack resistance",
+ "termCode": "attack-resistance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/attack-resistance.md",
+ "sha256": "814adcbeb14f5c7a6efc62a5c99aec022dc3c09af0288291e9b4f12c31d21356",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 36
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 15
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-012",
+   "identifier": "kaal:claim:3125822-012",
+   "text": "The platform is Sybil attack resistant because all power is weighted by reputation rather than by account: an owner of a single account holding 1000 tokens has the same or more power than an owner of 1000 accounts holding one token each.",
+   "abstract": "The platform is Sybil attack resistant because all power in the platform is weighted by reputation. An owner of a single account with 1000 tokens has the same or more power than an owner of 1000 accounts with one token.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes every power in the system is reputation weighted"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-016",
+   "identifier": "kaal:claim:3125822-016",
+   "text": "A 51 percent collusion that votes against common sense is visible in an open system, which erodes trust, reduces use and fees, and lowers the value of the attackers' own reputational salary, so the tactic can destroy an expertise tag but cannot enrich the attackers.",
+   "abstract": "This would erode trust in the platform, and therefore use and fees would diminish, making the 51% holding of reputational salary less valuable. Therefore this tactic generally has the potential to destroy the expertise tag, but not enrich the attackers.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires an open and observable system",
+    "assumes attacker value is held in the attacked tag"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-018",
+   "identifier": "kaal:claim:3128900-018",
+   "text": "Unlike its decentralized competitors, the Semada Protocol is claimed to be resistant to both Sybil attacks and Tyranny of the Majority attacks.",
+   "abstract": "However, unlike its decentralized competitors, the Semada Protocol ensures Sybil Attack and Tyranny of the Majority attack resistance.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison with existing decentralized mechanical turk protocols"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-019",
+   "identifier": "kaal:claim:3128900-019",
+   "text": "The protocol architecture together with its incentive structure is what produces enhanced 51 percent attack resistance, which the author claims exceeds prior reputation verification attempts in both decentralized and centralized networks.",
+   "abstract": "The Semada Protocol architecture and its incentive structure facilitates enhanced 51% attack resistance unlike any previous reputation verification attempts in decentralized and centralized networks.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation verification networks"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-024",
+   "identifier": "kaal:claim:3128900-024",
+   "text": "Staking creates disincentives for malicious actors, and it is this disincentive structure that makes the network both more efficient and attack resistant.",
+   "abstract": "Semada staking mechanism creates disincentives for malicious actors, enhancing the efficiency of the Semada Network and making it attack resistant.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "workers and verifiers who have reputation tokens at stake"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-037",
+   "identifier": "kaal:claim:3128900-037",
+   "text": "Attack resistance should be designed to increase as the platform grows, in contrast to designs like GEMS that detect and ban malicious actors, because a self enforcement mechanism lets the incentive system steer users away from bad actors once the system matures.",
+   "abstract": "Unlike GEMS, which bans malicious actors detected through the GEMS trust mechanism from the platform, the Semada platform has a self-enforcement mechanism.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "after the system reaches maturity"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-021",
+   "identifier": "kaal:claim:3266953-021",
+   "text": "Because Semada's Anchor Protocol uses reputation scores as a non fungible currency to qualify for block propagation, the resulting proof of reputation consensus is attack resistant, fully decentralized, scalable, and open to evolutionary protocol upgrades.",
+   "abstract": "Unlike traditional PoS, PoR, e.g. Semada's Anchor Protocol, uses reputation scores as a non-fungible currency to qualify for block propagation. As such, the Anchor protocol (PoR) is attack resistant, fully decentralized, scalable and allows evolutionary protocol upgrades.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation scores that cannot be transferred"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-002",
+   "identifier": "kaal:claim:3406323-002",
+   "text": "Because information flow in decentralized systems is optimized through dynamic feedback effects, such systems mutate and change easily, which makes them more attack resistant and allows them to grow very quickly.",
+   "abstract": "Decentralized systems can also very easily mutate and change because the information flow is optimized through dynamic feedback effects. As a result, such systems become more attack resistant on multiple levels.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411897-003",
+   "identifier": "kaal:claim:3411897-003",
+   "text": "Decentralized systems mutate and change easily because their information flow is optimized through dynamic feedback effects, and this capacity to mutate is what makes them more attack resistant on multiple levels.",
+   "abstract": "Decentralized systems can also very easily mutate and change because the information flow is optimized through dynamic feedback effects. As a result, such systems become more attack resistant on multiple levels.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds for systems whose information flow is genuinely distributed"
+   ],
+   "source_pdf_sha256": "82f0aea026b3e3a526ec51bc073b3b864dc06cd9083ff9c54c550037045edaa9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-008",
+   "identifier": "kaal:claim:3441904-008",
+   "text": "Decentralized systems become more attack resistant and grow quickly because their information flow is optimized through dynamic feedback effects, which lets them mutate and change very easily.",
+   "abstract": "Decentralized systems can also very easily mutate and change because the information flow is optimized through dynamic feedback effects. As a result, such systems become more attack resistant on multiple levels.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "systems without a central intelligence or hierarchical leadership"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-038",
+   "identifier": "kaal:claim:3441904-038",
+   "text": "Optimized DAO governance should pay members only indirectly, through fungible salary tokens issued in proportion to non fungible merit tokens, because the indirect economic effects remove corruptive elements and make the design more attack resistant and stable in the long run.",
+   "abstract": "The indirect economic effects remove corruptive elements and make the governance design more attack resistant and stable in the long run.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bifurcated DAO designs with two disparate token types"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-036",
+   "identifier": "kaal:claim:3652481-036",
+   "text": "Paying DevDAO salaries in fungible stable tokens in proportion to members' non fungible reputation scores makes the economic benefit indirect, which removes corruptive elements and makes the governance design more attack resistant and stable over the long run.",
+   "abstract": "The salary payments in fungible stable tokens are in proportion to DevDAO members' respective non-fungible reputation token scores. The indirect economic effects remove corruptive elements and make the governance design more attack resistant and stable in the long run.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a bifurcated token design with non fungible reputation tokens and fungible salary tokens"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782191-022",
+   "identifier": "kaal:claim:3782191-022",
+   "text": "Centralized coordination enables attack coordination because the hierarchical structure allows attackers to identify a single point of failure, whereas the constantly morphing information flow of decentralized systems increases their attack resistance.",
+   "abstract": "Centralized coordination enables attack coordination because the hierarchical struc- ture allows the identification of a single point of failure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Preface to (2021). SSRN: https://ssrn.com/abstract=3782191",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "comparison of centralized and decentralized system security"
+   ],
+   "source_pdf_sha256": "b0bf0529c3cf69839879bc4da476714efee2717a4beb768bd5c859b810e6174e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-028",
+   "identifier": "kaal:claim:3799320-028",
+   "text": "Reputation based staking removes the corruptive elements of fungible tokens because third parties are less likely able to take over a non fungible asset such as reputation that is organically grown and maintained through actual expertise in the relevant subject matter.",
+   "abstract": "The corruptive elements of fungible assets/tokens are removed because third parties are less likely able to take over a non-fungible asset, such as reputation, that is organically grown and maintained through actual expertise in a given DAO subject matter.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation staked as a non fungible asset",
+    "reputation earned through subject matter expertise"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-031",
+   "identifier": "kaal:claim:3799320-031",
+   "text": "Paying members indirectly, through a fungible stable salary proportional to non fungible reputation, removes corruptive elements and makes the governance design more attack resistant and more stable over the long run.",
+   "abstract": "The indirect economic effects remove corruptive elements and make the governance design more attack-resistant and stable in the long run.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "salary paid in proportion to non fungible reputation scores"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-033",
+   "identifier": "kaal:claim:3799320-033",
+   "text": "Member reputation is inflationary by design, so non staking of reputation tokens or non voting leads to value depreciation, which incentivizes action and makes liveness faults less likely.",
+   "abstract": "reputation is inflationary in the DAO of DAOs design. As such, non-use, i.e., non-staking of reputation tokens or non-voting, would lead to value depreciation, which incentivizes action and thus value enhancement. Liveness faults become less likely.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation that depreciates with non-use"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-039",
+   "identifier": "kaal:claim:3799320-039",
+   "text": "Reputation weighted salary distribution solves the sockpuppet attack, because a member who creates ten accounts holding one reputation token each ends up in the same position as one account holding ten reputation tokens.",
+   "abstract": "This solves the sockpuppet attack because if a DAO of DAOs member creates 10 accounts with 1 reputation token each, it is the same as 1 account with 10 reputation tokens.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "salary pool distributed in proportion to reputation holdings"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-014",
+   "identifier": "kaal:claim:4067783-014",
+   "text": "Defending a DAO against attackers and looters, and punishing self-dealing, requires sustainable decentralized governance built on non-fungible tokens rather than tradable voting power.",
+   "abstract": "The takeover of the Build Finance DAO highlights the need for sustainable decentralized governance solutions with non-fungible tokens to defend the DAO from attackers/looters and punish self- dealing.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-002",
+   "identifier": "kaal:claim:4529715-002",
+   "text": "Each DAO in the dataset was given a score between zero and ten by the analyzing teams on each of six factors: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "abstract": "The six factors considered are: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication. Each DAO was given a score between zero (0) and ten (10) by the analyzing teams",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scores assigned by the analyzing teams"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-006",
+   "identifier": "kaal:claim:4529715-006",
+   "text": "Attack resistance across the studied DAOs averages 4.05 out of 10, and Charity DAOs perform worst in this category, with the best of them, VitaDAO, scoring 3 out of 10 and the remainder at 2 or less.",
+   "abstract": "Based on the compiled data shown in the graph above, the average score for attack resistance is 4.05 out of 10. Charity DAOs showed the worst performance in this category with the highest, VitaDAO, scoring a 3 out of 10 and the rest at 2 or less.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-028",
+   "identifier": "kaal:claim:4529715-028",
+   "text": "Where a founder retains access to the smart contract behind the governance token, as with 3OH DAO, an internal attack by that founder would be remarkably easy.",
+   "abstract": "If a DAO could have negative attack resistance, 3OH would be the DAO. With the founder having access to the smart contract, an internal attack by the founder would be remarkably easy.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "founder has not renounced ownership of the token smart contract"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-035",
+   "identifier": "kaal:claim:4529715-035",
+   "text": "Chainlink's white-list response to the 2020 gas fee attack was only a temporary fix: had the attack impacted 50 percent of Chainlink node operators, the price feed would not have updated until enough nodes returned.",
+   "abstract": "Temporary solution known as \"white-list\", but if the attack had impacted 50% of Chainlink node operators, that feed wouldn't have updated until enough came back up and nodes would not be able to feed information.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "2020 attack on Chainlink nodes",
+    "oracle networks with limited node counts"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-037",
+   "identifier": "kaal:claim:4529715-037",
+   "text": "A DAO built on reputation rather than a fungible token, as CRDAO is, makes the 51 percent attack nearly impossible and renders sock puppet attacks technically possible but of little influence.",
+   "abstract": "CRDAO is fairly attack resistant because of its use of reputation. As a result, sock puppet attacks are technically possible, but would have little influence. CRDAO does not appear to have a fungible token, so the 51 percent attack is nearly impossible.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation based governance",
+    "no fungible governance token"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-021",
+   "identifier": "kaal:claim:4685567-021",
+   "text": "Retroactive public goods funding via results oracles in DAO format fails at the governance layer: even where the core resource distribution concept works, the project remains exposed to decentralized governance attack vectors because the governance design lacks attack resistance.",
+   "abstract": "The key downside of these types of oracles in DAO format are decentralized governance attack vectors. In other wods, even if the core concept of resource distribution works well enough, the overall projet is typically subject to the downsides that derive from lack of attack resistance",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "results oracle operating as a DAO",
+    "retroactive public goods funding designs"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-022",
+   "identifier": "kaal:claim:4685567-022",
+   "text": "Hypercerts, like other WEB3 optimization attempts for impact certificates, lack the required verification of impact inputs inside decentralized governance settings that are attack proof.",
+   "abstract": "Like other optimization attempts, Hypercerts often lack the require verification of impact inputs in decentralized governance settings that are attack proof.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "hypercerts as implemented at the time of writing"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-039",
+   "identifier": "kaal:claim:4685567-039",
+   "text": "Because reputation merit scores are calculated in an immutable and attack resistant manner, they can be aggregated across the many communities an individual belongs to, producing a constantly evolving WEB3 identity score comparable to a credit score.",
+   "abstract": "scores are calculated in an immutable and attack-resistant manner. Therefore, the scores can be aggregated for an individual who is a member of many different communities. The aggregated score creates a constantly evolving identity score in WEB3 systems that can be compared with a credit score.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "WEB3 governance identity, distinguished from biometric or KYC proof of physical existence"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-040",
+   "identifier": "kaal:claim:4734750-040",
+   "text": "Reputation token staking substitutes for identity verification: because staking makes the network attack resistant, workers can complete micro tasks without verifying identity, which removes the cost, delay, and privacy surrender of centralized approval and enlarges the available labor pool.",
+   "abstract": "The CRDAO architecture, and specifically its reputation token staking mechanism, make the CRDAO attack resistant.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-013",
+   "identifier": "kaal:claim:5254152-013",
+   "text": "Low attack resistance in DAOs is typically caused by the use of easily purchasable or transferable governance tokens, which leave the organization vulnerable to attacks such as 51 percent and Sybil attacks.",
+   "abstract": "Lower scores indicate vulnerability to attacks, often due to the use of easily purchasable or transferable governance tokens.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs whose voting power is embodied in freely purchasable or transferable tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-021",
+   "identifier": "kaal:claim:5254152-021",
+   "text": "The average attack resistance score across the sampled DAOs is 3.65 on a scale of 0 to 10, the lowest of the measured attributes alongside regulatory compliance.",
+   "abstract": "This graph shows the attack resistance scores of various DAOs, with scores ranging from 0 to 10. The average score is 3.65",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "dataset of 50 DAOs",
+    "attack resistance scored on a 0 to 10 scale"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-030",
+   "identifier": "kaal:claim:5254152-030",
+   "text": "A one person, one vote structure raises a DAO's resistance to 51 percent and sock puppet attacks, as reflected in TomiDAO's attack resistance score of 6 against a sample average of 3.65.",
+   "abstract": "The one-person, one-vote model increases resistance to 51% and sock puppet attacks (A: 6).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs implementing one person, one vote rather than token weighted voting"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-038",
+   "identifier": "kaal:claim:5254152-038",
+   "text": "Reliance on fungible, publicly tradable governance tokens undermines a protocol's resilience by exposing it to risks such as 51 percent attacks, as scored for Push Protocol.",
+   "abstract": "Its resilience is undermined by the fungible, publicly tradable $PUSH tokens, which expose it to risks such as 51% attacks (A: 2).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs whose governance tokens trade on open markets"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-039",
+   "identifier": "kaal:claim:5254152-039",
+   "text": "A tiered voting system that combines temperature checks with token holder percentage thresholds robustly defends a DAO against common attacks, as reflected in Arbitrum's attack resistance score of 8.",
+   "abstract": "The tiered voting system incorporating temperature checks and token holder percentages robustly defends against common DAO attacks",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs implementing multi stage voting with participation thresholds"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-009",
+   "identifier": "kaal:claim:6192998-009",
+   "text": "Under the 2018 validation pool design, the cost of corrupting the system to reach fifty one percent control is at minimum twice the total reputation value of the system.",
+   "abstract": "This is the fundamental security bound: corrupting the system costs at minimum 2× the total reputation value.34",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker acquires reputation through repeated fee payments",
+    "attacker always wins the validation pool, the worst case"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-010",
+   "identifier": "kaal:claim:6192998-010",
+   "text": "The two times corruption cost bound of the 2018 framework is conditional, not general: subsequent analysis shows it holds only under specific conditions that may not obtain in practice.",
+   "abstract": "However, subsequent analysis reveals this bound applies only under specific conditions that may not hold in practice. This is a limitation we address in Section IV.F.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-032",
+   "identifier": "kaal:claim:6192998-032",
+   "text": "Multi agent competition improves attack resistance because it creates multiple attack surfaces that must all succeed simultaneously, and citation transparency makes collusion detectable; with a fifty percent quality penalty for detected collusion the corruption cost doubles relative to the original framework.",
+   "abstract": "This improved security stems from multi-agent competition creating multiple attack surfaces that must all succeed simultaneously, combined with citation transparency enabling collusion detection.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators actively penalize detected collusion",
+    "honest agents compete on quality in the same jobs"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-037",
+   "identifier": "kaal:claim:6192998-037",
+   "text": "Citation weighted systems become more secure over time at a faster rate than binary systems, because time to corruption scales superlinearly with accumulated transaction volume.",
+   "abstract": "This extends the security analysis from Calcaterra, Kaal, and Andrei (2018, 15-18) to demonstrate that citation-weighted systems become more secure over time at a faster rate than binary systems.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "measured against accumulated historical transaction volume",
+    "tested via simulated attacks on testnet"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "36 claims in the published works of Wulf A. Kaal carry the concept tag 'attack-resistance'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dag-governance",
+ "identifier": "kaal:entity:dag-governance",
+ "name": "Dag governance",
+ "termCode": "dag-governance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dag-governance.md",
+ "sha256": "60b9a001e5aa82a6db180fc9c41c3d5178ca8f109e8365900b37beaf21085d11",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-038",
+   "identifier": "kaal:claim:3266953-038",
+   "text": "In the weighted directed acyclic graph precedent system, more reputation weight and salary flow to forum posts that other posts continuously reference, and as a precedent dissipates over time new precedent emerges naturally to replace the older one.",
+   "abstract": "more reputation weight and salaries are allocated to posts on the Semada Forum that get continuously referenced by other posts. As a precedent dissipates over time, new precedence in the Semada Forum emerge naturally to replace older precedent.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada Forum governance posts and citations"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-021",
+   "identifier": "kaal:claim:6244278-021",
+   "text": "Rational agents face a direct financial disincentive to cite prior contributions, because citation transfers economic value away from the citing agent; the mechanism design challenge is therefore to make honest citation the economically rational strategy.",
+   "abstract": "rational agents face a direct financial disincentive to cite prior contributions.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to weighted directed acyclic graph citation governance where citation transfers value"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'dag-governance'. Derived node: a roster, not an adjudicated definition."
+}

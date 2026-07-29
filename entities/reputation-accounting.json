@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-accounting",
+ "identifier": "kaal:entity:reputation-accounting",
+ "name": "Reputation accounting",
+ "termCode": "reputation-accounting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-accounting.md",
+ "sha256": "0433086bc9d8ca20d2837561f8cc0cd73e4efb4ae8f215b4b5aa71acc427e0a8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-040",
+   "identifier": "kaal:claim:3799320-040",
+   "text": "Weighted keys are preferable to NFTs for reputation accounting because the smart contract itself holds the weights and each smart contract may require a different weight for the same key.",
+   "abstract": "Weighted keys are preferable to NFTs because the smart contract itself holds the weights and each smart contract may require a different weight for a given key",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "third generation blockchains that provide weighted keys",
+    "the same key used across multiple DAO smart contracts"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-019",
+   "identifier": "kaal:claim:4067783-019",
+   "text": "Reputation in a DAO should be generated only for long term valuable work and for the policing of work, and never for business development work.",
+   "abstract": "3. Reputation generated ONLY for long term valuable work and policing of work NOT for business development work",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-029",
+   "identifier": "kaal:claim:4067783-029",
+   "text": "A meaningful reputation governance and accounting mechanism for motivating business and governance participation is what encourages mutually beneficial contributions to a DAO community.",
+   "abstract": "A meaningful reputation governance and accounting mechanism for motivating business and governance participation encourages mutually beneficial contributions to the community.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a meaningful reputation governance and accounting mechanism is in place"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-accounting'. Derived node: a roster, not an adjudicated definition."
+}

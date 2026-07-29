@@ -1,0 +1,422 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/immutability",
+ "identifier": "kaal:entity:immutability",
+ "name": "Immutability",
+ "termCode": "immutability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/immutability.md",
+ "sha256": "1ff2d1ac69f01a658aff120f00552727ce5ef442f91fc81198f35822ca969ca4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 22
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 16
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2939127-014",
+   "identifier": "kaal:claim:2939127-014",
+   "text": "Because a public blockchain is genuinely public and immutable, it increases transparency while simultaneously and significantly reducing transaction costs.",
+   "abstract": "Because the blockchain (at the least the public blockchain) is in fact public and immutable, the technology increases transparency, while at the same time significantly reducing transaction costs.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P. M. Vermeulen, Legal Education in the Blockchain Revolution (2017). SSRN: https://ssrn.com/abstract=2939127",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public blockchains rather than consortium or fully private blockchains"
+   ],
+   "source_pdf_sha256": "abcef529c7200261c59eec43018375b3b26e3186239fb9d002bacc298dba26ff",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-018",
+   "identifier": "kaal:claim:2959730-018",
+   "text": "The decentralized, fully distributed nature of the blockchain makes it practically impossible to reverse, alter, or erase information recorded in it.",
+   "abstract": "The decentralized, fully-distributed nature of the blockchain makes it practically impossible to reverse, alter, or erase information in the blockchain.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fully distributed networks where multiple copies are held by all participants"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-020",
+   "identifier": "kaal:claim:2959730-020",
+   "text": "Cryptographic hashing makes blockchain manipulation immediately detectable because the hash incorporates all previous transactions, so that even a single digit change produces a different hash value.",
+   "abstract": "The smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained hashing that incorporates all prior transactions"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2992962-008",
+   "identifier": "kaal:claim:2992962-008",
+   "text": "Anonymity survives the blockchain's permanent public record because a new private key can be created for each transaction, so although public key addresses are stored eternally, each transaction allows an entirely new cryptographically secured private identity.",
+   "abstract": "So, while we can track the public key of the addresses of each transaction, and that information is stored eternally in the blockchain, each transaction allows for an entirely new private identity which is cryptographically secured.",
+   "citation": "Wulf A. Kaal, Craig Calcaterra, Crypto Transaction Dispute Resolution (2017). SSRN: https://ssrn.com/abstract=2992962",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public-key cryptography as implemented in bitcoin and Ethereum"
+   ],
+   "source_pdf_sha256": "80b92e67594394e38af41b769327936833de8e25d6cf3def966a6ba13bc83d17",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2992962-018",
+   "identifier": "kaal:claim:2992962-018",
+   "text": "To institute traditional remedies where a smart contract transaction disadvantages one of the parties, courts would have to change the blockchain, and that is computationally and practically impossible.",
+   "abstract": "courts would have to change the blockchain in order to institute remedies in the traditional sense that could pertain to the smart contract in question. However, that scenario is computationally and practically impossible.",
+   "citation": "Wulf A. Kaal, Craig Calcaterra, Crypto Transaction Dispute Resolution (2017). SSRN: https://ssrn.com/abstract=2992962",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "transactions already executed and added to an immutable blockchain"
+   ],
+   "source_pdf_sha256": "80b92e67594394e38af41b769327936833de8e25d6cf3def966a6ba13bc83d17",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-001",
+   "identifier": "kaal:claim:2998033-001",
+   "text": "Blockchain technology lowers transaction costs by eliminating intermediaries, and it substitutes immutability and cryptography for the trust that intermediaries previously supplied.",
+   "abstract": "Blockchain technology's elimination of intermediaries removes transaction costs and creates a platform for trust through truth and transparency for parties through its immutability and use of cryptography.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-009",
+   "identifier": "kaal:claim:3002908-009",
+   "text": "The immutability and permanent recording built into blockchain technology may be the root of legal difficulties in European countries that recognize a right to be forgotten or comparable privacy rights.",
+   "abstract": "The immutability and eternal recording of blockchain technology may be the root of legal difficulties in European countries that recognize the \"right to be forgotten\" or certain other privacy rights.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies in jurisdictions recognizing a right to erasure, notably the EU under the General Data Protection Regulation"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3071378-003",
+   "identifier": "kaal:claim:3071378-003",
+   "text": "Because the public blockchain is public and immutable, the technology increases transparency while significantly reducing transaction costs, and intermediaries including lawyers are replaced by code, connectivity, crowd, and collaboration.",
+   "abstract": "Because the blockchain (at the least the public blockchain) is in fact public and immutable, the technology increases transparency, while at the same time significantly reducing transaction costs. Intermediaries, including lawyers, are replaced by code, connectivity, crowd, and collaboration.24",
+   "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public blockchains rather than private ones"
+   ],
+   "source_pdf_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3071378-005",
+   "identifier": "kaal:claim:3071378-005",
+   "text": "Because each new block's hash value is generated from all previous transactions, the smallest change to the blockchain produces a different hash value, which makes any form of manipulation immediately detectable.",
+   "abstract": "smallest change to the blockchain, even a single digit/value, results in a different hash value. A different hash value makes any form of manipulation immediately detectable.37",
+   "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "chained cryptographic hashing of prior transactions"
+   ],
+   "source_pdf_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-014",
+   "identifier": "kaal:claim:3227933-014",
+   "text": "Network connectivity is what makes blockchain records practically immutable, because it allows multiple identical copies of the ledger to exist simultaneously across the network.",
+   "abstract": "Network connectivity is vital because it allows for multiple identical copies of the blockchain to be available simultaneously across the network. This makes it practically impossible to alter or erase information in the blockchain.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires broad network connectivity"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-019",
+   "identifier": "kaal:claim:3373393-019",
+   "text": "The immutability of the blockchain and its cryptographic security systems provide transactional guarantees that create trust between principals and agents in the integrity of their contractual relationship, and ensure that no participant can circumvent the rules embedded in blockchain code.",
+   "abstract": "The immutability of the blockchain and its cryptographic security systems provide transactional guarantees and create trust between principals and agents in the integrity of their contractual relationship.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-038",
+   "identifier": "kaal:claim:3373393-038",
+   "text": "Without a decentralized human backstop to code, the immutability of the blockchain and its cryptographic security systems may not be able to create truly transactional guarantees and trust between principals and agents.",
+   "abstract": "Similarly, without a decentralized human backstop to code, the immutability of the blockchain and its cryptographic security systems may not be able to create truly transactional guarantees and trust between principals and agents in the integrity of their contractual relationship.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "complex agency relationships"
+   ],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-035",
+   "identifier": "kaal:claim:3606663-035",
+   "text": "The tradeoff between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "abstract": "The trade-off between transaction approval speed and immutability has the potential to undermine the DeFi infrastructure in the long run.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "consensus based decentralized ledgers supporting DeFi"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-009",
+   "identifier": "kaal:claim:3652481-009",
+   "text": "The immutability of blockchain ledgers is itself a vulnerability, because once a DAO is in operation its essential construction is very difficult to alter should a bug in the code appear.",
+   "abstract": "The immutable nature of blockchain ledgers could also make the DAO vulnerable to attacks because it is so difficult to alter the essential construction of the DAO once the system is in operation, should a bug in the code arise.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a bug exists in deployed DAO code"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3709041-003",
+   "identifier": "kaal:claim:3709041-003",
+   "text": "Blockchain's formal immutable guarantees, improved data ownership, transparency, network integrity, and data privacy together generate a form of trust that helps optimize both business and society.",
+   "abstract": "Through its formal immutable guarantees, improved data ownership, transparency, network integrity, and data privacy, blockchain technology facilitates unprecedented trust that helps to optimize business and society.",
+   "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041",
+   "datePublished": "2020",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "5216a7bca45a48e3bef11ec524936e66af737c0fd66271e9f6866dc20a4482cc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-029",
+   "identifier": "kaal:claim:3782198-029",
+   "text": "A blockchain is immutable because any attempt to edit an old block changes the hash of that information and is immediately rejected by the network that follows the protocol.",
+   "abstract": "The blockchain is immutable, because any attempt to edit the old blocks will be immediately rejected by the network. A single number or letter changed anywhere in its entire history will result in a different hash of the information.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds as long as the network keeps following the blockchain protocol"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-030",
+   "identifier": "kaal:claim:3782198-030",
+   "text": "The GDPR's removal remedy cannot be enforced against a public blockchain: scrubbing private information would require more than half of the network's nodes to change their entire protocol and restart the chain, and would have to be repeated for every violating entry.",
+   "abstract": "More than half of the network's nodes would be required to change their entire protocol to scrub the data and restart the blockchain. This would need to happen every time information was found on the blockchain which violated the GDPR.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to open, uncensorable blockchains such as Bitcoin holding personal data"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-042",
+   "identifier": "kaal:claim:3808873-042",
+   "text": "A decentralized human backstop to code is a core and often overlooked infrastructure requirement, because without it the immutability of the blockchain and its cryptographic security may not create genuine transactional guarantees or trust between principals and agents in the integrity of their contractual relationship.",
+   "abstract": "Without a decentralized human backstop to code, the immutability of the blockchain and its cryptographic security systems may not be able to create truly transactional guarantees and trust between principals and agents in the integrity of their contractual relationship.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "decentralized algorithmic systems mediating principal agent contractual relationships"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-015",
+   "identifier": "kaal:claim:3981021-015",
+   "text": "Because the CHARITYxDAO records governance on distributed ledger technology, all governance votes and endowment allocation decisions are fully publicly visible, auditable by the public at will, and immutable once on chain.",
+   "abstract": "Through the use of DLT technology, all governance votes and endowment allocation decisions are fully publicly visible and can be audited by the public at will. Moreover, all onchain data is immutable and can be accessed by the public.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO using DLT and layer 2 solutions"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-039",
+   "identifier": "kaal:claim:4957318-039",
+   "text": "The WDAG system preserves legal history as a byproduct of its architecture: all legal precedents are retained within a blockchain based framework in a transparent and immutable format, so historical access does not trade off against current relevance.",
+   "abstract": "The WDAG system retains all legal precedents within its blockchain-based framework, preserving the history of legal developments in a transparent and immutable format.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain based immutable record keeping"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-001",
+   "identifier": "kaal:claim:5554218-001",
+   "text": "Smart contracts disrupt the foundational principles of contract formation in both common and civil law jurisdictions, specifically offer and acceptance, consideration, and enforceability, because their automated and immutable execution lacks the flexibility that law derives from human negotiation and judicial oversight.",
+   "abstract": "smart contracts disrupt foundational principles of contract formation, such as offer and acceptance, consideration, and enforceability, due to their automated, immutable execution, which lacks the flexibility of law, which is based on human negotiation and judicial oversight.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "common law and civil law jurisdictions",
+    "self-executing smart contracts deployed on blockchain"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-007",
+   "identifier": "kaal:claim:5554218-007",
+   "text": "Because blockchain based contracts are immutable, they cannot be altered by judicial order, which creates enforceability problems whenever a dispute arises outside the scope of the code, such as defective performance or unforeseen circumstances.",
+   "abstract": "The immutability of blockchain-based contracts means they cannot be altered by judicial order, creating enforceability challenges when disputes arise outside the code's scope, such as defective performance or unforeseen circumstances.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "disputes falling outside the coded parameters",
+    "post-deployment execution on an immutable ledger"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  }
+ ],
+ "description": "22 claims in the published works of Wulf A. Kaal carry the concept tag 'immutability'. Derived node: a roster, not an adjudicated definition."
+}

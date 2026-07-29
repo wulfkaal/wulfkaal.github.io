@@ -1,0 +1,290 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/custody",
+ "identifier": "kaal:entity:custody",
+ "name": "Custody",
+ "termCode": "custody",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/custody.md",
+ "sha256": "6f768f7415ad3a97a4d5f7f3740a4a475e68ad1f3fb9d169c241214b74cd0fa9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 14
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2013",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2337268-032",
+   "identifier": "kaal:claim:2337268-032",
+   "text": "The Dodd-Frank Act tightened custodial practice by requiring safeguards for client assets and verification by independent accountants, a response to concerns over theft and client exposure to Ponzi schemes.",
+   "abstract": "In 2010, in an effort to address concerns over theft and to lower clients' exposure to the risks of Ponzi schemes, the Dodd-Frank Act amended the IAA, heightening custodial practices by requiring safeguards for client assets and the use of independent accountants to verify assets.96",
+   "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268",
+   "datePublished": "2013",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "investment advisers with custody of client assets after 2010"
+   ],
+   "source_pdf_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2337268-033",
+   "identifier": "kaal:claim:2337268-033",
+   "text": "The custodian requirements work by cutting off the operational mechanics of Ponzi finance: they curtail an adviser's ability to pay existing investors with money invested by new investors, and custodians may execute client trades but cannot remit sales proceeds to the adviser or to third parties.",
+   "abstract": "The custodian requirements under the Dodd-Frank Act curtail investment advisers' ability to pay existing investors with the funds invested by new investors.",
+   "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "client assets held through qualified custodians under the Dodd-Frank custody rules"
+   ],
+   "source_pdf_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-006",
+   "identifier": "kaal:claim:3411110-006",
+   "text": "The defining legal difference between the Overstock offering and a traditional offering is that the purchaser had to hold the record directly as beneficial owner and could not delegate custody to the broker, so the securities were not held in street name.",
+   "abstract": "The core difference between the OSTK offering and a traditional securities offering is that the purchaser of OSTK must hold the record directly and as beneficial owner of the securities could not delegate the authority to hold the securities to the broker",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Overstock Series A digital securities traded on the PRO ATS"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-007",
+   "identifier": "kaal:claim:3411110-007",
+   "text": "Because direct ownership on a blockchain removes the need for the Depository Trust Corporation to hold the certificate and for a broker to record beneficial ownership, agency costs can be cut and ownership clarity increases.",
+   "abstract": "By establishing a system that makes the DTC obsolete, agency costs have the potential to be cut and clarity surrounding ownership will increase.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "direct registration of ownership on the ledger",
+    "no third party custodian"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-015",
+   "identifier": "kaal:claim:3606663-015",
+   "text": "Institutional investors face a distinct barrier beyond volatility: fiduciary responsibility to their clients limits the type of risk they may take on, and the lack of custody solutions recognized by regulators compounds the problem.",
+   "abstract": "While larger institutional players face the same issues, they are also limited by their fiduciary responsibility to their clients, which limits the type of risk they can be exposed to. Compounding these challenges is the lack of stable custody solution(s) that are recognized by the regulators.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "institutional investors subject to fiduciary duties",
+    "early 2020s absence of regulator recognized custody solutions"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-001",
+   "identifier": "kaal:claim:3936876-001",
+   "text": "Fully compliant legal custody solutions for digital assets increase legal certainty and mainstream investor confidence, and that increased confidence in turn builds markets in digital assets.",
+   "abstract": "Fully compliant legal custody solutions for digital assets increase legal certainty and mainstream investor confidence which, in turn, helps build markets in digital assets.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to digital asset markets in their formative stage"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-003",
+   "identifier": "kaal:claim:3936876-003",
+   "text": "Without the ability to rely on proven custody providers, mainstream and legacy institutional investors are restrained from making digital asset investments for legal or business reasons.",
+   "abstract": "Without the ability to rely on proven custody providers, mainstream and legacy institutional investors are restrained from making digital asset investments for legal and / or business reasons.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to mainstream and legacy institutional investors"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-004",
+   "identifier": "kaal:claim:3936876-004",
+   "text": "The majority of digital asset custody providers and digital asset exchanges require customers to surrender ownership of their digital assets as a precondition for access and trading.",
+   "abstract": "The majority of digital asset custody providers and digital asset exchanges are requiring customers to surrender digital asset ownership in order to get access and trade.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-013",
+   "identifier": "kaal:claim:3936876-013",
+   "text": "Centralized cryptocurrency exchanges require users to hand over their assets and then act as custodian, issuing what are essentially IOUs for users to trade with on the platform.",
+   "abstract": "These centralized cryptocurrency exchanges require users to hand over their assets to the exchange, who then acts as a custodian and essentially issues IOUs for users to trade with on the platform.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized exchanges, as distinct from decentralized exchanges"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-014",
+   "identifier": "kaal:claim:3936876-014",
+   "text": "Because a wallet provider or exchange that has custody of a digital asset gains full control over transactions, hacking a digital asset exchange is equivalent to robbing a bank: the attacker obtains valuable cryptocurrency that can be cashed out.",
+   "abstract": "As such, a hack of a digital asset exchange is akin to robbing a bank-- getting hold of valuable cryptocurrencies that they can cash out of.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "exchanges holding pooled customer assets in hot storage"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-022",
+   "identifier": "kaal:claim:3936876-022",
+   "text": "Institutional investors are less likely to engage in digital asset investments where custody solutions for digital assets are underdeveloped, and they find it difficult to commit fully until a reliable and respected custody solution exists.",
+   "abstract": "Institutional investors are less likely to engage in digital asset investments if the custody solutions for digital assets are underdeveloped.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "institutional investors with client safety obligations"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-027",
+   "identifier": "kaal:claim:3936876-027",
+   "text": "Operational risk is inherently high in custody services because of the high volume of transactions processed daily, and those risks are magnified in a global custody operation running around the clock across different markets.",
+   "abstract": "Operational risk is inherently high in custody services because of the high volume of transactions processed daily.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "custody services generally, and global custody in particular"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-031",
+   "identifier": "kaal:claim:4033886-031",
+   "text": "Because digital asset exchanges perform both the traditional broker dealer function and the custody function, they face uncertainties and increased liability that traditional exchanges, which never touch custody, do not bear.",
+   "abstract": "By having the crypto exchange perform the services of a traditional broker/dealer and custody holder, digital asset exchanges face uncertainties and increased liability that do not impact traditional exchanges.124",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized digital asset exchanges holding customer assets"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-031",
+   "identifier": "kaal:claim:4900878-031",
+   "text": "In blockchain transactions the signing function, performed by wallets holding cryptographic keys, is separate from execution, which occurs inside the smart contract, so tokens are never physically held in the same locality as the keys and the smart contract acts as the intermediary executing predefined rules.",
+   "abstract": "This separation ensures that the tokens themselves are not physically held in the same locality as the keys.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "smart contract based blockchain transactions"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  }
+ ],
+ "description": "14 claims in the published works of Wulf A. Kaal carry the concept tag 'custody'. Derived node: a roster, not an adjudicated definition."
+}

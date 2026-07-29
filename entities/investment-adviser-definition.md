@@ -1,0 +1,31 @@
+# Investment adviser definition
+
+`kaal:entity:investment-adviser-definition`
+
+**Status.** derived
+
+This node is assembled mechanically from the 3 claims that carry the concept tag `investment-adviser-definition`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+
+## Every claim under this term
+
+3 claims across 1 works, 2013 to 2013.
+
+**2013**
+
+- [2337268-004](https://wulfkaal.github.io/claims/2337268-004) [condition/argued] -- Investment adviser status under the IAA requires that the advice concern a security; without a security in the dealings between adviser and client the statutory definition does not apply.
+  > Providing investment advice and being considered an investment adviser under the IAA requires that a person renders advice with regard to a security.
+  Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268
+- [2337268-005](https://wulfkaal.github.io/claims/2337268-005) [condition/argued] -- Providing investment advice without compensation makes a person less likely to fall within the IAA definition of investment adviser, but the SEC construes compensation for advisory services broadly, which narrows the practical value of that limit.
+  > While providing investment advice without compensation makes the person less likely to provide investment advice as an investment adviser under the IAA's definition, the SEC is broadly construing the meaning of compensation for advisory services.
+  Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268
+- [2337268-006](https://wulfkaal.github.io/claims/2337268-006) [condition/argued] -- The frequency of advice helps determine adviser status: advice rendered occasionally, rarely, and in a non-periodic fashion makes classification as an investment adviser less likely.
+  > Finally, the frequency of rendering investment advice helps define whether a person is an investment adviser. Providing investment advice occasionally or rarely and in a non-periodic fashion makes it less likely for a person to be considered an investment adviser.
+  Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268
+
+## Verify
+
+Every claim above resolves to a record carrying a verbatim source quote, the sha256 of the source PDF, and a preformatted citation. Nothing here asks to be taken on trust.
+
+    curl -s https://wulfkaal.github.io/entities/investment-adviser-definition.md | sha256sum
+
+**Canonical form.** This markdown file is the canonical hashed representation of this entity node. Its sha256 is the content hash.

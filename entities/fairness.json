@@ -1,0 +1,234 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fairness",
+ "identifier": "kaal:entity:fairness",
+ "name": "Fairness",
+ "termCode": "fairness",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fairness.md",
+ "sha256": "6d06730bff47816c58569c64c4f04e1c89c9b278f0dfddd8820bbc1ea39cf8fb",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 11
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782193-040",
+   "identifier": "kaal:claim:3782193-040",
+   "text": "In designing governance for large global networks, protocol centralization is necessary in order to display objective fairness, yet that same protocol centralization leads to instability, which is the core design tension the chapter's historical cases are meant to resolve.",
+   "abstract": "Protocol centralization is necessary to display objective fairness, but this leads to instability.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Historical Sketches of Centralization vs. Decentralization (2021). SSRN: https://ssrn.com/abstract=3782193",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "large global networks open to members with diverse values"
+   ],
+   "source_pdf_sha256": "74df9cc9a19a098bdacd0424a4174795f6e184f7a31c8ee7541195186701ebd2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-016",
+   "identifier": "kaal:claim:3782210-016",
+   "text": "Newly minted reputation tokens should enter the system neutral, staked half in favor and half against the post that generated the fee, so that existing token holders can judge the action fairly and are not swayed by an unbalanced validation pool created by a large new fee.",
+   "abstract": "For security, when a reputation token enters the system, it should be neutral, so that one faction is not favored over another. Validation pools should begin fairly. Newly minted reputation tokens should be staked half in favor, half against.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation pools triggered by fee-generating work"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-033",
+   "identifier": "kaal:claim:4685567-033",
+   "text": "The smart contracts underlying the impact certificate marketplace prohibit and make technically impossible the extension of favors to individual donors, so unlike Impact 1.0 and 2.0 the highest pledging donor cannot obtain special considerations or better terms.",
+   "abstract": "The smart WEB3 contracts that power the operations of the impact certificate marketplace prohibit and make impossible the extension of favors to individual donors.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "tamper proof smart contract fully transparent on the blockchain"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-003",
+   "identifier": "kaal:claim:4855607-003",
+   "text": "Deep learning models inadvertently learn and amplify whatever biases exist in their training data, so the composition of the training corpus, not the architecture, is the source of unfair or discriminatory outcomes.",
+   "abstract": "Depending on the data used for training, deep learning models can inadvertently learn and amplify biases present in the training data, potentially leading to unfair or discriminatory outcomes.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "depends on the data used for training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-016",
+   "identifier": "kaal:claim:4941807-016",
+   "text": "Legal and ethical challenges intensify when AI is deployed in critical decision making roles that significantly affect human lives and the reasoning behind the AI decision is opaque.",
+   "abstract": "Legal and ethical challenges are heightened when AI is deployed in critical decision-making roles that significantly impact human lives, particularly when the reasoning behind AI's decisions is opaque.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in determinative decisions such as parole eligibility, employment, and medical strategy",
+    "where the reasoning behind the decision is not visible"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-010",
+   "identifier": "kaal:claim:5095633-010",
+   "text": "When a training dataset disproportionately represents one region or demographic group, the resulting model produces skewed and sometimes inappropriate outputs once deployed in unfamiliar settings.",
+   "abstract": "For instance, if a dataset disproportionately represents a particular region or demographic group, the model may offer skewed performance, demonstrating suboptimal or inappropriate outputs when deployed in unfamiliar settings.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "deployment context differs from the demographic composition of the training data"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-019",
+   "identifier": "kaal:claim:5095633-019",
+   "text": "Biases held by human annotators or embedded in automated annotation systems are propagated into the models trained on their output, producing AI that performs inequitably across demographic groups.",
+   "abstract": "there's a theoretical risk that biases inherent in data annotators or automated systems might be propagated into AI models. This can lead to AI that does not perform equitably across different demographic groups or scenarios.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies even to providers that emphasize high-quality data such as Scale AI and Appen"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-016",
+   "identifier": "kaal:claim:5225296-016",
+   "text": "Verifiable randomness is a necessary condition for fair block producer selection: without it, adversaries can precompute favorable outcomes and the selection process loses fairness.",
+   "abstract": "The necessity of randomness stems from PoS's vulnerability to predictability; without it, adversaries could precompute favorable outcomes, undermining fairness",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-029",
+   "identifier": "kaal:claim:5225296-029",
+   "text": "Collusion, meaning coordinated action among validators to manipulate reputation scores or governance outcomes, threatens the fairness and integrity of SPoS independently of any cryptographic weakness.",
+   "abstract": "Collusion risks—coordinated efforts among validators to manipulate reputation scores or governance outcomes—further threaten fairness and integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-017",
+   "identifier": "kaal:claim:5541658-017",
+   "text": "Predictive and generative AI systems threaten fairness by reducing complex judicial processes to statistical correlations, which neglects the emotive and cognitive dimensions of justice and the contextual nuances human judges consider.",
+   "abstract": "Predictive and generative AI systems often reduce complex judicial processes to statistical correlations, neglecting the emotive-cognitive dimensions of justice.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "AI used for judicial decision-making rather than administrative tasks"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-029",
+   "identifier": "kaal:claim:5886342-029",
+   "text": "Limitations or exclusions of guarantees and warranties that are judged unfair or unreasonable may be rendered void by the Codex authorities, so private drafting freedom over warranties is capped by a fairness review.",
+   "abstract": "(2) Limitations or exclusions that are deemed unfair or unreasonable may be rendered void by UDLC au-",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  }
+ ],
+ "description": "11 claims in the published works of Wulf A. Kaal carry the concept tag 'fairness'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-weighted-salary",
+ "identifier": "kaal:entity:reputation-weighted-salary",
+ "name": "Reputation weighted salary",
+ "termCode": "reputation-weighted-salary",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-weighted-salary.md",
+ "sha256": "266aba45b632b5b6ca45d5edd96be45166ab137b1fa6a10baf3a1c08012f1aac",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-004",
+   "identifier": "kaal:claim:3125827-004",
+   "text": "Because all block creation fees are shared with the whole group as a reputation weighted salary, SPoS removes the direct monetary reward for forming mining pools or block production cartels, which the authors identify as a decentralization threat that raises the likelihood of 51% attacks.",
+   "abstract": "Therefore, unlike every other implemented platform, there is no direct monetary reward incentive for creating mining pools or block production cartels, which are a threat to decentralization which increases the likelihood of 51% attacks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fees distributed as a reputation weighted salary rather than paid to the producer"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-022",
+   "identifier": "kaal:claim:3125827-022",
+   "text": "Experts who fail to participate in the validation pool are punished stably rather than abruptly: because the system is inflationary and they gain none of the newly minted sem tokens, their holdings become a smaller percentage of the total and earn a smaller share of future reputation weighted salaries.",
+   "abstract": "will be stably punished because the system is inflationary: if they don't participate they will not gain any portion of the newly minted sem tokens, so their own unused sem token holdings will represent a smaller percentage of the total",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new sem tokens minted with every fee",
+    "salary distributed in proportion to token holdings"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-034",
+   "identifier": "kaal:claim:3125827-034",
+   "text": "Finality in SPoS is measurable because forking away from a given block would cost the community all sem tokens created on the chain after it, and that quantity equals half of all fees sent since the block was produced.",
+   "abstract": "the sem that members gain from policing block production is equal to half of all fees sent since the production of the block. In order to fork a chain from that particular block, the community will lose all sem tokens created subsequently",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sem minted in proportion to fees on every validated block"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-036",
+   "identifier": "kaal:claim:3782203-036",
+   "text": "Paying contributors in reputation tokens rather than fees, and then distributing all fees as a periodic reputation weighted salary, defeats the sockpuppet attack because splitting a holding across many accounts yields exactly the same share of fees.",
+   "abstract": "A periodic reputation-weighted salary will distribute all fees the DAO earns to all members. Individuals who perform tasks that bring fees to the DAO will be rewarded with reputation tokens, not the fees. Members who own more reputation tokens share in a larger percentage of the fees.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "anonymous DAOs with multiple accounts per member",
+    "all DAO fees pooled and shared"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-022",
+   "identifier": "kaal:claim:5887242-022",
+   "text": "Paying treasury distributions in fungible tokens or stablecoins in direct proportion to reputation holdings creates a reputation-weighted salary that monetizes expertise without commodifying governance influence.",
+   "abstract": "treasury distributions (grants, licensing fees, ecosystem payments) are paid out as fungible tokens or stablecoins in direct proportion to reputation holdings, creating a \"reputation-weighted salary\" that monetizes expertise without commodifying influence.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-weighted-salary'. Derived node: a roster, not an adjudicated definition."
+}

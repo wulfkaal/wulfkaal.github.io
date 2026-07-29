@@ -1,0 +1,226 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/compliance-burden",
+ "identifier": "kaal:entity:compliance-burden",
+ "name": "Compliance burden",
+ "termCode": "compliance-burden",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/compliance-burden.md",
+ "sha256": "0dc672c0d3c41c5b6af1ce4198c82c1c9c6ad4e02078110009213cee3013bb6d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 10
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-018",
+   "identifier": "kaal:claim:2447306-018",
+   "text": "The SEC's time burden estimates for Form PF are miscalibrated in the same direction as its cost estimates for large filers: the study's data suggest the agency overestimates the hours larger private fund advisers need.",
+   "abstract": "However, the relatively small sample of quarterly filing larger private fund advisers in this study suggest that the SEC may be overestimating the time requirements of Form PF filings for larger private fund advisers.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "relatively small sample of quarterly filing larger private fund advisers"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-019",
+   "identifier": "kaal:claim:2447306-019",
+   "text": "Form PF compliance is not staff intensive for most filers: 67.35 percent of respondents used only one to three individuals and 69.39 percent reported the work took staff less than 50 hours.",
+   "abstract": "A majority of respondents (67.35%) used only one to three individuals to complete Form PF. Similarly, a majority of respondents (69.39%) indicated that it took staff less than 50 hours to complete Form PF.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "n=52 survey respondents",
+    "first-time Form PF completion"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-021",
+   "identifier": "kaal:claim:2447306-021",
+   "text": "The dominant driver of Form PF time consumption is data gathering rather than form completion: 36 percent of respondents named data gathering as the task consuming most of their time, followed by delta options and ambiguous questions or unclear instructions.",
+   "abstract": "The majority of respondents (36%) identified \"Data Gathering\" as the task on which they spent the majority of their time, followed by references to \"Delta Options\" and \"Ambiguous questions / unclear instructions\".",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "open-ended responses to survey Question 14b"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-032",
+   "identifier": "kaal:claim:2447306-032",
+   "text": "For a substantial minority, existing systems fail Form PF for a specific reason: 34.78 percent of respondents said their internal reporting systems were insufficient because the required answers demand further analysis and calculation beyond what the systems already produce.",
+   "abstract": "Several respondents (34.78%) opined that their existing internal reporting systems were insufficient to respond to questions on Form PF because they require further analysis and calculations.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "responses to survey Question 15 and follow-up 15b"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-033",
+   "identifier": "kaal:claim:2447306-033",
+   "text": "Form PF's counterparty disclosure proved far less burdensome in practice than anticipated: 93.75 percent of respondents encountered no difficulty identifying counterparties for the counterparty credit exposure questions.",
+   "abstract": "Figure 35 shows that the overwhelming majority of respondents (93.75%) did not encounter difficulties in identifying counterparties to answer Form PF questions about counterparty credit exposure.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "responses to survey Question 16b",
+    "predominantly smaller, annually filing advisers"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2447306-035",
+   "identifier": "kaal:claim:2447306-035",
+   "text": "Working with a service provider imposes its own costs: filers reported that the arrangement requires investing time and money to develop interaction processes and bearing the burden of supplying the provider with the underlying information.",
+   "abstract": "Commenters identified several challenges in working with a service-provider, including the investment of time and expenses to develop processes, and the burden of providing service-providers with the required information.",
+   "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306",
+   "datePublished": "2014",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "respondents who used a service provider",
+    "responses to survey Question 11b(ii)"
+   ],
+   "source_pdf_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-008",
+   "identifier": "kaal:claim:2714974-008",
+   "text": "Some of the most sensitive Form PF disclosures are not readily obtainable by the funds themselves: counterparty credit exposure often cannot be determined by individual fund managers, which makes the reporting requirement burdensome in practice.",
+   "abstract": "For example, the disclosure of counterparty credit exposure is sensitive information that often cannot readily be determined by the individual fund managers.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Form PF counterparty credit exposure reporting"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-014",
+   "identifier": "kaal:claim:2715083-014",
+   "text": "Identical rules diverge in practice because the two vehicle types are structured, operated, and run as businesses differently; the Investment Advisers Act applies to both, yet its obligations are far more onerous for mutual fund managers.",
+   "abstract": "While the applicable statutes and regulations may appear to apply nominally to both mutual and hedge fund managers, the nature of how the investment vehicles are structured, operated, and how they conduct business can make their application materially different in practice",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Investment Advisers Act obligations",
+    "registered mutual fund advisers compared with hedge fund advisers"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-015",
+   "identifier": "kaal:claim:2715083-015",
+   "text": "Best execution is a leading instance of nominal confluence: the obligation is nominally the same, but it is far more complicated and burdensome for the mutual fund manager than for the hedge fund adviser.",
+   "abstract": "Best execution obligations are similar but practically different for private and mutual fund advisers. In practice, best execution requirements are far more complicated and burdensome for the mutual fund manager than for the hedge fund adviser.",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "best execution obligations for trades directed to brokers"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-012",
+   "identifier": "kaal:claim:5095633-012",
+   "text": "The governance protocols required for GDPR and AI Act compliance, including anonymization, data minimization, and explicit consent, themselves complicate the assembly of robust AI training datasets.",
+   "abstract": "which may include anonymization, data minimization, and explicit consent where applicable. These measures can, however, complicate the collection and curation of robust datasets for AI training.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "jurisdictions with GDPR-style data protection mandates"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "10 claims in the published works of Wulf A. Kaal carry the concept tag 'compliance-burden'. Derived node: a roster, not an adjudicated definition."
+}

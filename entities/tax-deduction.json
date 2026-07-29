@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/tax-deduction",
+ "identifier": "kaal:entity:tax-deduction",
+ "name": "Tax deduction",
+ "termCode": "tax-deduction",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/tax-deduction.md",
+ "sha256": "a6e47a3e34aa01a27878fa18a47092fc319c9adbd8f10ad665147a2392bda794",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-007",
+   "identifier": "kaal:claim:3981021-007",
+   "text": "Because boards and donors seek to preserve endowments rather than spend them, funds accrue tax free long after the donor has taken the deduction, which runs counter to the spirit of the rules governing charitable deductions and may contribute to harmful inefficiency.",
+   "abstract": "Rather than funds being employed immediately, the funds are allowed to accrue tax free. 49 This may run counter to the spirit of the rules governing charitable deductions and may contribute to harmful inefficiency.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "jurisdictions granting an immediate deduction with deferred payout obligations"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-005",
+   "identifier": "kaal:claim:4685567-005",
+   "text": "Impact 3.0 shortens the lag between donors taking their tax deductions and the donated funds actually reaching impact projects, which is a capital allocation timing failure of Impact 1.0 and 2.0.",
+   "abstract": "Impact 3.0 improves on Impact 1.0 and 2.0 capital allocation timeframes, lowering the time between donors receiving their tax deductions and deploying the donated funds to the impact projects.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "donors receiving tax deductions in advance of deployment"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'tax-deduction'. Derived node: a roster, not an adjudicated definition."
+}

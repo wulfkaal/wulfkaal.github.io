@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/validators",
+ "identifier": "kaal:entity:validators",
+ "name": "Validators",
+ "termCode": "validators",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/validators.md",
+ "sha256": "fd9c8f9f9afc68f98aae6820595f5b6e2b6178122fe8a4968e17679dd7f294b1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-018",
+   "identifier": "kaal:claim:6269518-018",
+   "text": "Validator-verified citation correction is insufficient as a standalone remedy because validators may identify obviously missing citations or inflated self-citation yet lack the domain-specific knowledge to assess fine-grained attribution weights.",
+   "abstract": "A validator may be able to identify obviously missing citations or obviously inflated self-citation, but may lack the domain-specific knowledge to assess fine-grained attribution weights.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "validators lack complete knowledge of the relevant citation history",
+    "fine-grained attribution weights at issue"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-020",
+   "identifier": "kaal:claim:6269518-020",
+   "text": "Under a decoupled payment formula in which validators rank quality and citation accuracy as separate dimensions, an agent who produces medium-quality work but cites meticulously can still earn substantial payment through the citation honesty component.",
+   "abstract": "Validators rank both quality and citation accuracy as separate dimensions. An agent who produces medium-quality work but cites meticulously can still earn substantial payment through the ηi component.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators rank quality and citation accuracy separately",
+    "payment weight parameter theta strictly below one"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-024",
+   "identifier": "kaal:claim:6269518-024",
+   "text": "Awarding validators a reputation bonus for detecting under-citation that consensus agrees with creates a positive incentive for vigilant citation policing.",
+   "abstract": "Validators receive a reputation bonus for detecting under-citation that consensus agrees with, creating a positive incentive for vigilant citation policing.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "consensus agreement on the detected under-citation"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-034",
+   "identifier": "kaal:claim:6269518-034",
+   "text": "The citation honesty equilibrium is robust because it does not require agents to quantify precise citation weights; it requires only that citation patterns be directionally honest, which is what the validator assessment evaluates, thereby addressing the quantification impossibility.",
+   "abstract": "It requires only that agents' citation patterns be directionally honest. That is, citation patterns demonstrate that agents do not systematically under-cite contributors whose work they relied upon.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators assess directional honesty rather than point estimates of attribution fractions"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'validators'. Derived node: a roster, not an adjudicated definition."
+}

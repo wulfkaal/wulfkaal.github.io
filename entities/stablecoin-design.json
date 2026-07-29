@@ -1,0 +1,131 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/stablecoin-design",
+ "identifier": "kaal:entity:stablecoin-design",
+ "name": "Stablecoin design",
+ "termCode": "stablecoin-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/stablecoin-design.md",
+ "sha256": "ff2902dfbe48b50f1bf7a36533499be07a47dfafce0689dbc432c9086b45af4e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-003",
+   "identifier": "kaal:claim:3402701-003",
+   "text": "The minimum cost of a fiat-backed token equals the interest rate of the pegged fiat currency, because the backing capital must sit idle and liquid.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-013",
+   "identifier": "kaal:claim:3402701-013",
+   "text": "Bonds are the appropriate burning mechanism for a temporary drop in currency price caused by larger economic instability such as an act of God or war, since bonds can be redeemed above their sale price once the economy rebounds.",
+   "abstract": "Bonds should be used to address a temporary larger economic instability which lowers a currency's price--due to an act of God, for instance, or war",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "price decline caused by temporary economy-wide shock, not hot money"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-016",
+   "identifier": "kaal:claim:3402701-016",
+   "text": "Stable cryptocurrency bonds should be minted with a fixed expiration, following the practice of historical central banks, because fixed expiration makes price discovery more efficient.",
+   "abstract": "We also recommend following the example of historical central banks, in minting bonds with fixed expiration so price discovery is more efficient",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-024",
+   "identifier": "kaal:claim:3402701-024",
+   "text": "Misestimating the hot money ratio fails in both directions: overestimation makes the currency more costly to use, and underestimation leaves it insecure, so efficiency and security are in direct tension.",
+   "abstract": "A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-026",
+   "identifier": "kaal:claim:3402701-026",
+   "text": "In a blockchain cryptocurrency, transaction taxes should be set to match the cost of running the network, meaning the cost of incentivizing enough nodes for the desired level of decentralization plus the cost of maintaining the coin's stability.",
+   "abstract": "In a blockchain cryptocurrency, transaction taxes should match the cost of running the network, i.e., the cost required to incentivize a sufficient number of nodes to operate in order to maintain the level of decentralization desired",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain cryptocurrencies with node incentive costs"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'stablecoin-design'. Derived node: a roster, not an adjudicated definition."
+}

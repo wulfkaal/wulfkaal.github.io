@@ -1,0 +1,31 @@
+# Explanatory limits
+
+`kaal:entity:explanatory-limits`
+
+**Status.** derived
+
+This node is assembled mechanically from the 2 claims that carry the concept tag `explanatory-limits`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+
+## Every claim under this term
+
+2 claims across 2 works, 2009 to 2017.
+
+**2009**
+
+- [1428387-019](https://wulfkaal.github.io/claims/1428387-019) [failure/argued] *(failure mode)* -- State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds.
+  > Investment adviser registration exemptions under state Blue Sky laws would probably not suffice to explain the phenomenon of retailization or justify any data insufficiencies.
+  Kaal, Hedge Fund Valuation Retailization, Regulation, and Investor Suitability (2009). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1428387
+
+**2017**
+
+- [3002908-028](https://wulfkaal.github.io/claims/3002908-028) [failure/argued] *(failure mode)* -- The authors undercut their own legacy systems explanation: legacy systems in the EU should theoretically create the same barriers, and there is no reason to believe US legacy systems are more of an obstacle than European ones.
+  > Theoretically, however, legacy systems in the EU should create the same barriers for larger private investment fund advisers. There is no reason to believe that legacy systems in the United States would constitute more of an obstacle than legacy systems in the EU.
+  Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908
+
+## Verify
+
+Every claim above resolves to a record carrying a verbatim source quote, the sha256 of the source PDF, and a preformatted citation. Nothing here asks to be taken on trust.
+
+    curl -s https://wulfkaal.github.io/entities/explanatory-limits.md | sha256sum
+
+**Canonical form.** This markdown file is the canonical hashed representation of this entity node. Its sha256 is the content hash.

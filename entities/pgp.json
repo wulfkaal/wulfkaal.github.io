@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/pgp",
+ "identifier": "kaal:entity:pgp",
+ "name": "Pgp",
+ "termCode": "pgp",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/pgp.md",
+ "sha256": "3d506a9608add602826a6a2a7cdb7df659d1f42018680f0a3ae555742701541b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-031",
+   "identifier": "kaal:claim:3266953-031",
+   "text": "The Web of Trust is only trustworthy where the service is not valuable, such as essentially free PGP email, because only then is it not worth creating sockpuppet accounts.",
+   "abstract": "So the only time WoT works is when the service is not valuable, such as PGP (email which is essentially free). Then it's not worth it to create sock puppet accounts, so in that case you can trust the WoT network.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "services with negligible economic value at stake"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-011",
+   "identifier": "kaal:claim:3782210-011",
+   "text": "The Web of Trust works acceptably for low-value information transmission but should not be used for transactions involving larger wealth in the general economy, which is part of why the scheme it originated in is called pretty good privacy rather than good privacy.",
+   "abstract": "It works well for low-value infor- mation transmission, but it should not be used for transactions involving larger wealth in the general economy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "high value economic transactions"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'pgp'. Derived node: a roster, not an adjudicated definition."
+}

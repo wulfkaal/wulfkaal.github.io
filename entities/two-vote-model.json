@@ -1,0 +1,101 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/two-vote-model",
+ "identifier": "kaal:entity:two-vote-model",
+ "name": "Two vote model",
+ "termCode": "two-vote-model",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/two-vote-model.md",
+ "sha256": "1430e56b497c45f2c813d4fa5c76e93ab06119ea8fb76aa0106aa7397b831481",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-026",
+   "identifier": "kaal:claim:3981021-026",
+   "text": "Every CHARITYxDAO decision runs through a two vote model: a loosely coupled sentiment vote with no reputation at stake, followed by a tightly coupled final vote with reputation at stake.",
+   "abstract": "i. Two vote model a) loosely coupled (sentiment) vote (no reputation at stake), b) tightly coupled (final) vote (reputation at stake):",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "all CHARITYxDAO governance decisions"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-027",
+   "identifier": "kaal:claim:3981021-027",
+   "text": "Because voting associates can see the sentiment vote outcomes and who staked what reputation before the binding vote, it is reasonable to expect that the overwhelming majority of final tightly coupled votes will end in unanimity on the issue at hand.",
+   "abstract": "Accordingly, it is reasonable to expect that the overwhelming majority of CHARITYxDAO's final tightly coupled votes will end in unanimity on the issue at hand.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "two vote designs where sentiment results are visible before the binding vote"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-018",
+   "identifier": "kaal:claim:4067783-018",
+   "text": "DAO governance should use a two vote model that distinguishes a loosely coupled vote, where no reputation is at stake, from a tightly coupled vote, where the voter's reputation is at stake.",
+   "abstract": "2. Two vote model a) loosely coupled vote (no reputation at stake), b) tightly coupled vote (reputation at stake)",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'two-vote-model'. Derived node: a roster, not an adjudicated definition."
+}

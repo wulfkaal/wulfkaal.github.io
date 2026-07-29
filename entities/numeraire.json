@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/numeraire",
+ "identifier": "kaal:entity:numeraire",
+ "name": "Numeraire",
+ "termCode": "numeraire",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/numeraire.md",
+ "sha256": "b5a821ea9837496eb71949631dd2fdd7bcbae81db8ff15eb562a6628d9aee623",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-022",
+   "identifier": "kaal:claim:2998033-022",
+   "text": "Requiring data scientists to stake a cryptocurrency on their own predictions converts private confidence into a public signal, which enables the fund to select the optimal model and improve fund performance.",
+   "abstract": "The staking process, in turn, enables Numerai to choose the optimal model and in the process improve the performance of its hedge fund.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "describes Numerai's use of the Numeraire token as a staking mechanism"
+   ],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-010",
+   "identifier": "kaal:claim:3409548-010",
+   "text": "Requiring data scientists to stake a cryptocurrency on their own predictions is a workable remedy for overfitting, because the stake expresses confidence in live performance and lets the fund select the optimal model.",
+   "abstract": "The staking process, in turn, enables Numerai to choose the optimal model and in the process improve the performance of its hedge fund.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "crowdsourced modeling competition with a stakeable token"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-037",
+   "identifier": "kaal:claim:5095633-037",
+   "text": "Numeraire's staking and prediction-based reputation mechanism, tuned to predictive accuracy, overlooks the ethical and contextual concerns that characterize AI dataset governance.",
+   "abstract": "The narrow focus on predictive accuracy overlooks the broader ethical and contextual concerns that characterize AI governance.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "diverse dataset tasks such as medical annotation and content moderation"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'numeraire'. Derived node: a roster, not an adjudicated definition."
+}

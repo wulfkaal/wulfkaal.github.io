@@ -1,0 +1,155 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/rnft-staking",
+ "identifier": "kaal:entity:rnft-staking",
+ "name": "Rnft staking",
+ "termCode": "rnft-staking",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/rnft-staking.md",
+ "sha256": "5a9e029287616df63fed8da2e533238035b7a3155639f91b4b36e6d73f3281ed",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-005",
+   "identifier": "kaal:claim:3949098-005",
+   "text": "In the proposed DAO investment club, members substitute reputation non fungible token staking for capital commitments on incoming deals, the public market supplies the funding for approved deals, and members are compensated through 20 percent of the public return on purchases minted into a fungible reputation token.",
+   "abstract": "Instead of capital commitments, DAOIC members stake RNFTs on newly proposed incoming deals. The public market funds the DAOIC approved deals and the DAOIC members get paid via the 20% public ROP minting to fungible reputation token.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOIC operating model",
+    "a public market willing to co purchase approved deals"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-010",
+   "identifier": "kaal:claim:3949098-010",
+   "text": "Replacing capital with reputation gives DAOIC members a permanent option and a right of first refusal on deals, because a member can stake reputation non fungible tokens on a deal without joining the purchase commitment.",
+   "abstract": "The replacement of capital with reputation gives the DAOIC members a permanent option and right of first refusal on deals. DAOIC members can merely stake RNFT on a deal without participating in the purchase commitment for such a deal.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOIC operating model with RNFT staking separated from capital commitment"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-012",
+   "identifier": "kaal:claim:3949098-012",
+   "text": "Because reputation staking carries no ex post capital commitment, the removal of capital makes capital calls and other liquidity limiting measures less relevant for DAOIC members.",
+   "abstract": "The removal of capital through RNFT staking also makes capital calls and other liquidity-limiting measures less relevant. There are no ex post capital commitments associated with an RNFT staking participation.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "best efforts style RNFT staking participations, not firm commitment deals"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-019",
+   "identifier": "kaal:claim:3949098-019",
+   "text": "Reputation non fungible token staking removes counterparty risk because the desire to preserve and increase reputation scores dominates DAOIC decision making, making bad actors less likely to appear since their reputation would inevitably suffer.",
+   "abstract": "Similarly, RNFT staking by DAOIC members removes counterparty risk. The desire to preserve and increase RNFT scores predominates the DAOIC decision making. Therefore, bad actors are less likely to occur in the system as their reputation would inevitably suffer.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation scores are durable and visible to the group"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-023",
+   "identifier": "kaal:claim:3949098-023",
+   "text": "Best efforts underwriting in the DAOIC is implemented as a smart contract accountability system: a member's capital commitment is encumbered as a deposit and released to the token opportunity only after the reputation staking pool decides, and funding occurs only on a majority upvote.",
+   "abstract": "Such deposit will only be released and directly transferred to the token opportunity when the RNFT staking pool has made a decision on the token opportunity. Funding only happens in the case of a majority upvote.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "best efforts underwriting via RNFT staking"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-024",
+   "identifier": "kaal:claim:3949098-024",
+   "text": "In a firm commitment reputation staking engagement the DAOIC commits no capital at all except for the portion of the token opportunity that does not sell out to the public.",
+   "abstract": "In a firm commitment RNFT staking engagement, the DAOIC does not commit any capital at all, except for the portion of the token opportunity that does not sell out to the public.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "firm commitment underwriting via RNFT staking"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'rnft-staking'. Derived node: a roster, not an adjudicated definition."
+}

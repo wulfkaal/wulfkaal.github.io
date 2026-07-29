@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/labor-pool",
+ "identifier": "kaal:entity:labor-pool",
+ "name": "Labor pool",
+ "termCode": "labor-pool",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/labor-pool.md",
+ "sha256": "e757e38f0beecfe0721905eeea56555794f4e41eb6031269cef24f6068de1f74",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-011",
+   "identifier": "kaal:claim:3128900-011",
+   "text": "Roughly 38 percent of the labor pool is unbanked but skilled, and this group has no access to centralized micro task marketplaces.",
+   "abstract": "Most importantly, the circa 38% of the labor pool that is unbanked but skilled does not currently have access to the centralized micro task marketplaces.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "global labor pool",
+    "centralized micro task marketplaces"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-020",
+   "identifier": "kaal:claim:3128900-020",
+   "text": "Because platform access requires only an internet connection rather than a bank account, the decentralized design expands the micro task labor pool by up to 40 percent, including the unbanked.",
+   "abstract": "The Semada Platform GUI gives access to anyone with an internet connection, including the unbanked. Thus, expanding the micro task labor pool by up to 40%.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "workers with internet access",
+    "including unbanked workers"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-046",
+   "identifier": "kaal:claim:3128900-046",
+   "text": "Because the reputation token staking mechanism supplies attack resistance directly, users need not verify their identity to complete micro tasks, which circumvents the costs, delays, and privacy surrender attached to centralized identity verification and thereby enlarges the willing labor pool.",
+   "abstract": "By contrast, on the Semada Platform, users do not need to verify their identity to complete micro tasks. The Semada Protocol architecture, and specifically its reputation token staking mechanism, make the Semada Platform attack resistant.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "workers staking reputation tokens rather than proving identity"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'labor-pool'. Derived node: a roster, not an adjudicated definition."
+}

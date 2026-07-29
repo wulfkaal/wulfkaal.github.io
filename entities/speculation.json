@@ -1,0 +1,171 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/speculation",
+ "identifier": "kaal:entity:speculation",
+ "name": "Speculation",
+ "termCode": "speculation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/speculation.md",
+ "sha256": "ce2ef9bea83852b4f30cf7fb160a385fb59bc9aa21cf1d2f0ead8802e7f30769",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-020",
+   "identifier": "kaal:claim:3396522-020",
+   "text": "Leverage offered by cryptocurrency exchanges worsens rather than cures the market's illiquidity, because borrowed money rather than genuine demand is driving the price.",
+   "abstract": "Cryptocurrency exchanges such as Bitmax, Kraken, among others, offer 5-10x leverage for cryptocurrency trades. This exacerbates the problem of illiquidity as borrowed money is driving the price.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to exchanges offering five to ten times leverage on crypto trades"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-021",
+   "identifier": "kaal:claim:3396522-021",
+   "text": "Extreme illiquidity combined with the herd mentality of crypto investors systematically benefits speculators, because it lets apparent scarcity materialize out of nowhere precisely when investors are about to decide, prompting misinformed buy and sell decisions.",
+   "abstract": "The very high illiquidity of the cryptocurrency market in combination with the herd mentality of crypto investors benefits speculators because it allows scarcity to appear out of nowhere including for investors who are about to make an investment decision.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "holds in deeply illiquid markets where speculators control supply"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-022",
+   "identifier": "kaal:claim:3396522-022",
+   "text": "Capping token supply, the dominant design choice in early cryptocurrency projects, is self defeating: fixing supply removes the core policy tool, minting additional tokens, that would otherwise address overvaluation, excessive speculation, market frenzy, and irrational exuberance.",
+   "abstract": "In fact, fixing token supply removes the core policy tool, minting of additional tokens to increase supply, intended to address overvaluation, speculation, market frenzy and irrational exuberance.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to hardcoded fixed supply token designs"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-017",
+   "identifier": "kaal:claim:3402701-017",
+   "text": "Reserves, not bonds, are the necessary mechanism for currency instability caused by hot money, that is money frequently moved between institutions or currencies to maximize gain.",
+   "abstract": "Reserves are necessary to address the instability of a currency due to hot money",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "instability driven by hot money flows"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-018",
+   "identifier": "kaal:claim:3402701-018",
+   "text": "Because most of the value of contemporary cryptocurrencies comes from speculation on future uses that do not yet exist, the vast majority of cryptocurrency is technically hot money, and reserves are the best defense against the resulting price fluctuations.",
+   "abstract": "Therefore the vast majority of cryptocurrencies are technically hot money. The best way to prevent price fluctuations due to hot money is to use reserves",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contemporary cryptocurrency markets dominated by speculation"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782192-036",
+   "identifier": "kaal:claim:3782192-036",
+   "text": "Bitcoin and Ethereum are worth hundreds of billions of dollars not because people are using them but almost entirely because of speculation on their future value, which is the expectation that people will use them to build decentralized autonomous organizations.",
+   "abstract": "These networks are worth hundreds of billions of dollars, not because people are using them, but almost entirely because of speculation. People see the future value of these tools. Their future value is the dream that people will use them to build DAOs.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Introduction to Decentralization (2021). SSRN: https://ssrn.com/abstract=3782192",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "cryptocurrency network valuations as of the time of writing"
+   ],
+   "source_pdf_sha256": "e7eafd56cb8a8bd15b64cf58216bb655f939bdcc296387e362fd9191976d67ae",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5583610-007",
+   "identifier": "kaal:claim:5583610-007",
+   "text": "Traditional corporate loyalty programs fail because they saddle issuers with delayed obligations and cannot hold participants without pushing them toward speculation; LER is designed to avoid both defects.",
+   "abstract": "It addresses the drawbacks of traditional loyalty programs, which frequently cause businesses to incur delayed obligations and find it difficult to hold onto assets without engaging in hazardous speculation.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards in Corporate America (2025). SSRN: https://ssrn.com/abstract=5583610",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "conventional deferred-liability loyalty programs"
+   ],
+   "source_pdf_sha256": "2d73609d95ddb1573acc2a9e7af617fbe6283d6e591deb6317f6d5d804517c62",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'speculation'. Derived node: a roster, not an adjudicated definition."
+}

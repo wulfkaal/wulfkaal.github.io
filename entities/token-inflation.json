@@ -1,0 +1,123 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-inflation",
+ "identifier": "kaal:entity:token-inflation",
+ "name": "Token inflation",
+ "termCode": "token-inflation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-inflation.md",
+ "sha256": "d9e8d2a176d666f9d31ee251d1057c17bc76b765d1e5898187aa6ec0c9c20299",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-022",
+   "identifier": "kaal:claim:3125827-022",
+   "text": "Experts who fail to participate in the validation pool are punished stably rather than abruptly: because the system is inflationary and they gain none of the newly minted sem tokens, their holdings become a smaller percentage of the total and earn a smaller share of future reputation weighted salaries.",
+   "abstract": "will be stably punished because the system is inflationary: if they don't participate they will not gain any portion of the newly minted sem tokens, so their own unused sem token holdings will represent a smaller percentage of the total",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new sem tokens minted with every fee",
+    "salary distributed in proportion to token holdings"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-038",
+   "identifier": "kaal:claim:3125827-038",
+   "text": "The sem token economy is inflationary at equilibrium, and the authors argue this is a feature: inflation improves security and discourages rent seeking by penalizing holders who do not use their tokens to evaluate posts.",
+   "abstract": "The conclusion is that the economy is inflationary at equilibrium, which improves its security and discourages rent-seeking.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fees paid in at a constant or linearly growing rate",
+    "new tokens minted with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-039",
+   "identifier": "kaal:claim:3125827-039",
+   "text": "Because earlier sem tokens represent a larger percentage of the total and therefore pay out more, later experts have less motivation to join when fees are at a steady state; the authors propose that the bench may need to change the fee to token exchange rate to recruit new members.",
+   "abstract": "This may mean later experts have less motivation to join if fees paid into the system are at a steady state. To combat this, the bench may choose to change the exchange rate between fees and sem tokens to encourage new recruits.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "steady state rate of fees paid into the expertise",
+    "tokens created with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-027",
+   "identifier": "kaal:claim:3266953-027",
+   "text": "Anchor tokens are highly inflationary because new ones are minted in proportion to the SEM denominated transaction fees collected in each block, so a member must keep participating simply to maintain their relative power.",
+   "abstract": "New Anchor tokens are created in proportion to the number of SEM denominated transaction fees collected by the system in each block. Therefore, Anchor tokens are highly inflationary. To maintain his relative power, Bob must continue to participate.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Anchor token holders in the block production DAO"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'token-inflation'. Derived node: a roster, not an adjudicated definition."
+}

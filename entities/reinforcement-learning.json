@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reinforcement-learning",
+ "identifier": "kaal:entity:reinforcement-learning",
+ "name": "Reinforcement learning",
+ "termCode": "reinforcement-learning",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reinforcement-learning.md",
+ "sha256": "31c30c1a5beca2179ea2d55b2cf5ad95d05db7942484523d16d4b6d788c5245c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-013",
+   "identifier": "kaal:claim:4855607-013",
+   "text": "Explainable reinforcement learning research has not yet produced usable explanations: the field relies on toy examples, omits user testing, produces explanations that are themselves complex, uses basic visualizations, and rarely open sources its code.",
+   "abstract": "Current research in explainable RL, which aims to make RL models more transparent and interpretable, also has limitations. These include the use of \"toy examples\", lack of user testing, complexity of explanations, basic visualizations, and lack of open-sourced code.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current explainable RL research as surveyed in the text"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-014",
+   "identifier": "kaal:claim:4855607-014",
+   "text": "Deep reinforcement learning demands large amounts of training data, which suggests its algorithms differ fundamentally from human learning, and learning without supervision becomes particularly hard when rewards are sparse, as they typically are in sequence generation tasks.",
+   "abstract": "Deep RL methods often demand large amounts of training data, suggesting that the algorithms may differ fundamentally from those underlying human learning. Moreover, learning without supervision is particularly hard when the reward is sparse, which is likely to happen for sequence generation tasks.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sparse reward settings",
+    "sequence generation tasks"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'reinforcement-learning'. Derived node: a roster, not an adjudicated definition."
+}

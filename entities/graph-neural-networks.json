@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/graph-neural-networks",
+ "identifier": "kaal:entity:graph-neural-networks",
+ "name": "Graph neural networks",
+ "termCode": "graph-neural-networks",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/graph-neural-networks.md",
+ "sha256": "87577c0b0e312c020ec244167b0ea95480bf8afed0ca7087023cad808d479b2a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-010",
+   "identifier": "kaal:claim:4855607-010",
+   "text": "GNN scalability on large real world graphs is a genuine trade off rather than an engineering gap: sampling methods lose influential neighbors while clustering methods lose structural patterns, so each remedy sacrifices part of the signal the model needs.",
+   "abstract": "Scalability is a major concern for GNNs on large real-world graphs, as sampling methods may lose influential neighbors while clustering methods may lose structural patterns.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "large real world graphs where full graph processing is infeasible"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-011",
+   "identifier": "kaal:claim:4855607-011",
+   "text": "GNNs are vulnerable to adversarial attacks that target both node features and graph structure, and their lack of interpretability remains a major obstacle to applying them to real world problems.",
+   "abstract": "GNNs can be vulnerable to adversarial attacks on both node features and graph structure, and interpretability remains a major obstacle for applying GNNs to real-world problems.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real world GNN deployments where adversaries can influence the graph"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-012",
+   "identifier": "kaal:claim:4855607-012",
+   "text": "Most GNN architectures assume homogeneous graph structures, so adapting them to heterogeneous graphs with diverse node and edge types remains an unsolved research challenge, and full batch training on large graphs suffers memory overflow.",
+   "abstract": "Training GNNs on large graphs can be resource-intensive, and full-batch training methods suffer from memory overflow issues. Many GNNs assume homogeneous graph structures, and adapting these models to heterogeneous graphs with diverse node and edge types remains a significant research challenge.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "graphs with diverse node and edge types",
+    "large graphs trained full batch"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-032",
+   "identifier": "kaal:claim:4855607-032",
+   "text": "GNNs and web3 systems optimize each other through mutual feedback effects, and it is this bidirectional learning, rather than one system merely serving the other, that produces an evolutionary dynamic optimization process.",
+   "abstract": "The integration and optimization of AI models such as GNNs and web3 systems happens in feedback effects between the two systems. Through these feedback effects both systems learn constantly from and with each other which results in an evolutionary dynamic optimization process.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "GNNs deployed inside the web3 systems they analyze"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'graph-neural-networks'. Derived node: a roster, not an adjudicated definition."
+}

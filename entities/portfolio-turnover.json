@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/portfolio-turnover",
+ "identifier": "kaal:entity:portfolio-turnover",
+ "name": "Portfolio turnover",
+ "termCode": "portfolio-turnover",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/portfolio-turnover.md",
+ "sha256": "aabdb2ba8c11138eb0f1190bfb086b4c9dcc99e2f3d633ea0ad6a138229a26da",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-023",
+   "identifier": "kaal:claim:2811729-023",
+   "text": "Average unconstrained mutual fund portfolio turnover exceeds the turnover of other fixed income mutual funds by over 150 percent.",
+   "abstract": "In particular, UMF turnover on average exceeds the turnover for other fixed income mutual funds by over 150 percent.",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar turnover data as of March 2016",
+    "comparison against all taxable bond funds, N equals 5543"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2811729-024",
+   "identifier": "kaal:claim:2811729-024",
+   "text": "The high turnover rate of unconstrained mutual funds distinguishes them from other mutual funds and makes them directly comparable to private funds, which typically trade at high levels.",
+   "abstract": "The high UMF turnover rate is a characteristic that distinguishes these funds from other mutual funds, and makes them directly comparable to private funds, which typically engage in high trading levels",
+   "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of unconstrained mutual funds with private funds on trading intensity"
+   ],
+   "source_pdf_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'portfolio-turnover'. Derived node: a roster, not an adjudicated definition."
+}

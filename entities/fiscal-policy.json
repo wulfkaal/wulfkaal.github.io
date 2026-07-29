@@ -1,0 +1,133 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fiscal-policy",
+ "identifier": "kaal:entity:fiscal-policy",
+ "name": "Fiscal policy",
+ "termCode": "fiscal-policy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fiscal-policy.md",
+ "sha256": "76636e305cadb6ea66a83140297e9295b8d044b1815152764ebfccbdba2ad75e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-010",
+   "identifier": "kaal:claim:3249860-010",
+   "text": "Increasing the commercial benefits attached to a token heightens the aggregate demand for that token's given supply, which is why benefit adjustment functions as a quasi-fiscal policy tool.",
+   "abstract": "First, the increase in commercial benefits associated with a token heightens the aggregate demand of the given token supply.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-011",
+   "identifier": "kaal:claim:3249860-011",
+   "text": "Commercial benefits attached to a token issuance can offset depreciated supply scarcity, meaning the dilutive effects of a large supply of the token in circulation.",
+   "abstract": "Second, commercial benefits associated with a token issuance can help offset depreciated supply scarcity, e.g. the effects of a large issuance / supply of a given token in circulation.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "issuances with large token supply in circulation"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-012",
+   "identifier": "kaal:claim:3249860-012",
+   "text": "Adjusting the commercial benefits of a token issuance lets the issuer avoid more drastic monetary interventions such as emergency sales, building token reserves, or changing the token supply in circulation.",
+   "abstract": "Fourth, adjusting the commercial benefits associated with a given token issuance avoids more drastic monetary policy intervention by way of emergency sales, building token reserves, or a decrease or increase of token supply in circulation.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-013",
+   "identifier": "kaal:claim:3249860-013",
+   "text": "Combining quasi-fiscal policy, increasing benefits attached to tokens, with monetary policy, increasing supply in circulation, may or may not have an effect on the market price of the tokens.",
+   "abstract": "The combined effect of quasi-fiscal policy (increasing benefits associated with the tokens) and monetary policy (increasing the token supply in circulation) may or may not have an effect on the market price of the respective tokens.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "when benefit increases and supply increases are applied simultaneously"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6421319-032",
+   "identifier": "kaal:claim:6421319-032",
+   "text": "Fiscal stimulus cannot restore employment that has been structurally eliminated by autonomous agents able to perform the same tasks at zero marginal cost, so the Keynesian transmission mechanism from aggregate demand to employment dissolves.",
+   "abstract": "Fiscal stimulus designed to increase aggregate demand cannot restore employment that has been structurally eliminated by autonomous agents capable of performing the same tasks at zero marginal cost.",
+   "citation": "Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies where AI substitutes for labor across cognitive and physical domains"
+   ],
+   "source_pdf_sha256": "0f4f68e56ee48bb8b2d73d3ab7fd96fa572e76c195694ffa740360704c1b172d",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'fiscal-policy'. Derived node: a roster, not an adjudicated definition."
+}

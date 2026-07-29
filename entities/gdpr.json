@@ -1,0 +1,262 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/gdpr",
+ "identifier": "kaal:entity:gdpr",
+ "name": "Gdpr",
+ "termCode": "gdpr",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/gdpr.md",
+ "sha256": "d4c851d8d955b1b4f3ee9825e87b71f830fcd60598a135d85519ac0eec548b09",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3002908-009",
+   "identifier": "kaal:claim:3002908-009",
+   "text": "The immutability and permanent recording built into blockchain technology may be the root of legal difficulties in European countries that recognize a right to be forgotten or comparable privacy rights.",
+   "abstract": "The immutability and eternal recording of blockchain technology may be the root of legal difficulties in European countries that recognize the \"right to be forgotten\" or certain other privacy rights.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Blockchain Innovation in Private Investment Funds - A Comparative Analysis of the United States and (2017). SSRN: https://ssrn.com/abstract=3002908",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies in jurisdictions recognizing a right to erasure, notably the EU under the General Data Protection Regulation"
+   ],
+   "source_pdf_sha256": "06a7b61e75f905ee07e422e875d83a65c5033a248a6e05a213523b034e5db534",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-030",
+   "identifier": "kaal:claim:3782198-030",
+   "text": "The GDPR's removal remedy cannot be enforced against a public blockchain: scrubbing private information would require more than half of the network's nodes to change their entire protocol and restart the chain, and would have to be repeated for every violating entry.",
+   "abstract": "More than half of the network's nodes would be required to change their entire protocol to scrub the data and restart the blockchain. This would need to happen every time information was found on the blockchain which violated the GDPR.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to open, uncensorable blockchains such as Bitcoin holding personal data"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-008",
+   "identifier": "kaal:claim:4796714-008",
+   "text": "Strict privacy and transparency regulation produces a perverse result: because only large technology companies hold the data resources and infrastructure needed to comply and still build effective AI, such regulation consolidates rather than disperses their power.",
+   "abstract": "Furthermore, while the move towards more explainable, private, and transparent AI is commendable, these regulations can paradoxically consolidate power within large tech companies.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to stringent data privacy regimes such as GDPR",
+    "holds where compliance cost scales with organizational resources"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-032",
+   "identifier": "kaal:claim:4796714-032",
+   "text": "Managing machine learning assets and complying with laws such as GDPR and CCPA becomes significantly harder under decentralized governance, because distributed data and operations complicate tracking data flows, enforcing privacy controls, and demonstrating compliance during audits.",
+   "abstract": "Managing ML assets and adhering to laws such as GDPR and CCPA is significantly more challenging under decentralized governance, raising concerns over privacy and data management.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to decentralized ML governance spanning multiple stakeholders and locations",
+    "concerns stringent privacy regimes such as GDPR and CCPA"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-010",
+   "identifier": "kaal:claim:4941807-010",
+   "text": "Strict data privacy regulation such as the GDPR imposes stringent conditions on data sharing that limit the amount and variety of data available to AI systems, which can reduce model performance and exacerbate bias because the training dataset is restricted.",
+   "abstract": "GDPR imposes stringent conditions on data sharing, which can limit the amount and variety of data AI systems use, potentially reducing their performance and exacerbating biases due to the restricted dataset.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under stringent data sharing regimes such as the GDPR"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-011",
+   "identifier": "kaal:claim:4941807-011",
+   "text": "Although the move toward more explainable, private, and transparent AI is desirable, Kaal argues these regulations paradoxically consolidate power within large technology companies, because only they hold the data resources and infrastructure needed to comply and still ship effective AI.",
+   "abstract": "Furthermore, while the move towards more explainable, private, and transparent AI is commendable, these regulations can paradoxically consolidate power within large tech companies.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where compliance requires vast data resources and sophisticated infrastructure",
+    "where smaller developers cannot absorb compliance cost"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-027",
+   "identifier": "kaal:claim:4941807-027",
+   "text": "Decentralized governance makes privacy compliance harder to demonstrate, because the distributed nature of these systems complicates tracking data flows and enforcing privacy controls, which in turn makes it difficult to prove compliance during audits.",
+   "abstract": "The distributed nature of these systems complicates the tracking of data flows and the enforcement of privacy controls, making it difficult to demonstrate compliance during audits.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "under regimes such as the GDPR and CCPA",
+    "where data and operations are spread across multiple stakeholders and locations"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-012",
+   "identifier": "kaal:claim:5095633-012",
+   "text": "The governance protocols required for GDPR and AI Act compliance, including anonymization, data minimization, and explicit consent, themselves complicate the assembly of robust AI training datasets.",
+   "abstract": "which may include anonymization, data minimization, and explicit consent where applicable. These measures can, however, complicate the collection and curation of robust datasets for AI training.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "jurisdictions with GDPR-style data protection mandates"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-016",
+   "identifier": "kaal:claim:5095633-016",
+   "text": "Data protection compliance carried out in a way that overly constrains researcher access converts a privacy gain into a net social loss, because the societal benefits of AI are offset by a stunted innovation ecosystem.",
+   "abstract": "If compliance with data protection frameworks is conducted in a manner that overly constrains researchers' access to relevant data, the broader societal gains of AI risk being offset by a stunted innovation ecosystem.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where compliance is implemented without counterbalancing privacy-preserving techniques"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-022",
+   "identifier": "kaal:claim:5095633-022",
+   "text": "Centralizing annotation data inside a small number of vendor firms creates a standing risk of breach or misuse that can produce legal liability and loss of trust in AI technologies.",
+   "abstract": "As data is centralized in these companies, there's always a risk of data breaches or misuse, which could lead to legal issues or loss of trust in AI technologies.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "data aggregated and held by centralized annotation vendors"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-029",
+   "identifier": "kaal:claim:5095633-029",
+   "text": "DAO-based governance introduces unresolved uncertainty about liability and legal accountability when personal data crosses international boundaries, and a mismatch between platform governance and regulatory mandates produces legal liability that erodes user trust.",
+   "abstract": "decentralized governance models, such as DAOs, introduce uncertainties regarding liability and legal accountability when personal data is exchanged across international boundaries. A mismatch between platform governance and regulatory mandates can result in legal liabilities, undermining user trust",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "cross-border exchange of personal data",
+    "GDPR-style regulatory regimes"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-033",
+   "identifier": "kaal:claim:5454054-033",
+   "text": "AML obligations for LER should be right-sized: zero-knowledge proofs or anonymized attestations should minimize identity collection for non-transferable rewards, with VASP-grade measures applied only where transferability exists.",
+   "abstract": "LER should employ ZKPs or anonymized attestations to minimize identity collection for non-transferable rewards, applying VASP-grade measures only where transferability exists, balancing compliance with GDPR privacy obligations.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "non-transferable rewards versus transferable rewards",
+    "GDPR privacy obligations apply"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "12 claims in the published works of Wulf A. Kaal carry the concept tag 'gdpr'. Derived node: a roster, not an adjudicated definition."
+}

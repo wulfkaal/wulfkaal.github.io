@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/valuation-discretion",
+ "identifier": "kaal:entity:valuation-discretion",
+ "name": "Valuation discretion",
+ "termCode": "valuation-discretion",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/valuation-discretion.md",
+ "sha256": "818c8582f22da27aefaf12a1306d358e2b43b9a3fdde50574fadd1ba53ee2b7a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-007",
+   "identifier": "kaal:claim:4033886-007",
+   "text": "Because digital asset valuation methodologies vary significantly, the tradeoffs among them leave digital asset managers with meaningful valuation discretion.",
+   "abstract": "Digital asset valuation methodologies vary significantly. Tradeoffs between such methodologies allow for some valuation discretion between digital asset managers.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "absence of uniform valuation standards"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-008",
+   "identifier": "kaal:claim:4033886-008",
+   "text": "Even for the most liquid level one digital assets, managers may choose between the price on a favored exchange and an aggregate across exchanges, so the same asset can be reported at different values by different managers.",
+   "abstract": "For instance, when quoting level 1 securities, while some managers may use the price on their favored cryptocurrency exchange, others might take an aggregate the price from multiple exchanges.7",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "quoting level 1 digital assets"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'valuation-discretion'. Derived node: a roster, not an adjudicated definition."
+}

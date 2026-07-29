@@ -1,0 +1,135 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/peg-design",
+ "identifier": "kaal:entity:peg-design",
+ "name": "Peg design",
+ "termCode": "peg-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/peg-design.md",
+ "sha256": "8a2ae6db9e4b9210424b71a3d47e6fbb990b59b4a3c96ccdefcec714f7dd4162",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-008",
+   "identifier": "kaal:claim:3396522-008",
+   "text": "Both collateralization strategies carry significant downsides: fiat collateralized pegs bear the brunt of expensive capital requirements, while cryptocurrency pegs face heavy volatility pressures and swings.",
+   "abstract": "Collateralized fiat currency pegs bear the brunt of expensive capital requirements and uncollateralized cryptocurrency pegs face heavy volatility pressures and swings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-009",
+   "identifier": "kaal:claim:3396522-009",
+   "text": "A fiat backed stable cryptocurrency that is not fully collateralized is exposed to arbitrage trade attacks of the kind George Soros used against the pound sterling; full collateralization is therefore a necessary defense.",
+   "abstract": "Without a 100% fiat collateralization, such projects would run the risk of arbitrage trade attacks similar to what Financier George Soros used to \"break the bank of England",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to stable cryptocurrencies claiming a fiat peg"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-010",
+   "identifier": "kaal:claim:3396522-010",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage opportunities of the Soros type.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes the backing must remain fully liquid to prevent arbitrage"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-011",
+   "identifier": "kaal:claim:3396522-011",
+   "text": "The minimum price of a fiat backed stable cryptocurrency is the interest rate of the fiat currency it is pegged to, because the collateral must sit liquid rather than earn a return.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to fully collateralized fiat backed tokens"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-031",
+   "identifier": "kaal:claim:3402701-031",
+   "text": "When a fundamental shift in value occurs, repegging the currency at its more accurate value is more efficient than soldiering on with tax mechanisms to restabilize at the old peg.",
+   "abstract": "but it is more efficient to repeg the currency after discovering its more accurate value",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fundamental change in the economy, black swan event"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'peg-design'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/operational-risk",
+ "identifier": "kaal:entity:operational-risk",
+ "name": "Operational risk",
+ "termCode": "operational-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/operational-risk.md",
+ "sha256": "c260dcd58319bf22b801c259aee1f4908829fdd760c613ad483b627f3e8f6942",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-001",
+   "identifier": "kaal:claim:3411110-001",
+   "text": "Existing ledger structures for securities offerings are defective: because individual firms rely on batch processing, the model generates dependencies, multi-day settlement times, distinctive operational risks, and duplicative costs.",
+   "abstract": "ledger structures applicable to securities offerings are subject to significant shortcomings: While for individual firms, batch-processing is the norm, this model creates numerous dependencies, multi-day settlement times, unique operational risks, and duplicative costs.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy, non blockchain securities settlement infrastructure"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-002",
+   "identifier": "kaal:claim:3411110-002",
+   "text": "When multiple firms trade the same securities in legacy systems, each maintains its own ledger, and that duplication is itself the source of increased operational risk and cost.",
+   "abstract": "Legacy systems in which multiple firms are trading the same securities utilize multiple ledgers which increases operational risks and increases costs.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multiple firms trading the same security",
+    "legacy multi ledger systems"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-026",
+   "identifier": "kaal:claim:3411110-026",
+   "text": "Near instant settlement creates its own regulatory problem: there is no practical ability to correct trade errors when settlement is same day, whereas the T+2 or T+3 structure supplies a correction window even as its delay causes other trading violations.",
+   "abstract": "Settlement-related issues (e.g., no practical ability to correct trade errors because of same-day / near-instant settlement versus T+3 / T+2 structure).",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "same day or near instant settlement compared with T+2 and T+3"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-027",
+   "identifier": "kaal:claim:3936876-027",
+   "text": "Operational risk is inherently high in custody services because of the high volume of transactions processed daily, and those risks are magnified in a global custody operation running around the clock across different markets.",
+   "abstract": "Operational risk is inherently high in custody services because of the high volume of transactions processed daily.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "custody services generally, and global custody in particular"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'operational-risk'. Derived node: a roster, not an adjudicated definition."
+}

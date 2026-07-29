@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/decentralized-ai",
+ "identifier": "kaal:entity:decentralized-ai",
+ "name": "Decentralized ai",
+ "termCode": "decentralized-ai",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/decentralized-ai.md",
+ "sha256": "4200cb8933121a3f93b6edba3a08ec49da50c70f727a687de2d291511f601865",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-012",
+   "identifier": "kaal:claim:4941807-012",
+   "text": "Federated learning does not eliminate privacy risk, because although the data stays decentralized the protocol still exchanges model parameters, and those parameters can expose sensitive information if intercepted or improperly handled.",
+   "abstract": "These challenges arise because, while FL keeps data decentralized, it still involves the exchange of model parameters, which could potentially expose sensitive information if intercepted or improperly handled.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated learning deployments that exchange model parameters",
+    "where parameters can be intercepted or mishandled"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-013",
+   "identifier": "kaal:claim:4941807-013",
+   "text": "The rigid communication topology of federated learning, which requires constant coordination among numerous nodes, produces inefficiencies and does not adapt easily to dynamic network conditions or node failures.",
+   "abstract": "Moreover, the rigid communication topology in FL, which typically requires constant coordination between numerous nodes, can lead to inefficiencies and does not easily adapt to dynamic network conditions or node failures.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated learning architectures requiring constant node coordination",
+    "under fluctuating network conditions or node failure"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-020",
+   "identifier": "kaal:claim:4941807-020",
+   "text": "Privacy preserving frameworks such as federated learning do not fully solve centralization, because they typically still depend on a central client to collect and distribute model information, which produces high communication loads and reintroduces centralized vulnerabilities.",
+   "abstract": "In response, privacy-preserving frameworks like federated learning have been developed, yet these often still depend on a central client to collect and distribute model information, resulting in high communication loads and centralized vulnerabilities.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated learning designs that retain a central aggregating client"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-026",
+   "identifier": "kaal:claim:4941807-026",
+   "text": "Decentralized Federated Learning lets every client reach the global minimum with zero performance gap and at the same convergence rate as centralized methods, but only when the loss function is smooth and strongly convex.",
+   "abstract": "The DeceFL approach ensures that every client can reach the global minimum with zero performance gap and achieve the same convergence rate as centralized methods when the loss function is smooth and strongly convex.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "when the loss function is smooth and strongly convex"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'decentralized-ai'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-loss",
+ "identifier": "kaal:entity:reputation-loss",
+ "name": "Reputation loss",
+ "termCode": "reputation-loss",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-loss.md",
+ "sha256": "df8363bb58c5a5f027b744eac57229096e77802e9a3d1a6556aaac2ca2499485",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-038",
+   "identifier": "kaal:claim:3931933-038",
+   "text": "Governance decisions such as network upgrades follow a simple vote that mints no reputation, yet reputation in the SDAO can still be lost through a governance vote because each vote follows the DEVxDAO MVPR logic moving from loosely coupled to tightly coupled voting.",
+   "abstract": "Governance decisions, such as network upgrades, among others, follow a simple vote process in which no reputation is minted. However, reputation in the SDAO can be lost as a result of a governance vote as each vote follows the DEVxDAO MVPR logic via loosely coupled to tightly coupled voting.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO governance votes on network upgrades"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-022",
+   "identifier": "kaal:claim:5225296-022",
+   "text": "SPoS imposes a dual penalty that reduces financial stake and reputation at the same time, amplifying accountability by combining immediate tangible cost with long-term social consequence inside the validator community.",
+   "abstract": "When combined with slashing, which simultaneously reduces both financial stake and reputation—a dual penalty unique to SPoS—this mechanism amplifies accountability by imposing immediate tangible costs and long-term social consequences within the validator community",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-loss'. Derived node: a roster, not an adjudicated definition."
+}

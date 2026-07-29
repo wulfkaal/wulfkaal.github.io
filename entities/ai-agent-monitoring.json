@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/ai-agent-monitoring",
+ "identifier": "kaal:entity:ai-agent-monitoring",
+ "name": "Ai agent monitoring",
+ "termCode": "ai-agent-monitoring",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/ai-agent-monitoring.md",
+ "sha256": "97c10d5b02201bf6f477d00ad50bff01ab5bd09d491c360a1a0c200ee8f123cc",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-001",
+   "identifier": "kaal:claim:5245185-001",
+   "text": "Traditional centralized AI driven supervision of AI agent transactions is deficient because it delivers only limited transparency, is susceptible to bias, and concentrates risk in single points of failure.",
+   "abstract": "Traditional, centralized AI-driven supervision methods are often hindered by limited transparency, susceptibility to bias, and the risk of single points of failure.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized supervision of autonomous AI agent transaction execution"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-002",
+   "identifier": "kaal:claim:5245185-002",
+   "text": "Distributing monitoring across federated communication nodes, such as Matrix with its Synapse server, scales oversight of AI agent activity while improving privacy, because sensitive data is processed locally instead of being pooled in one central repository.",
+   "abstract": "federated model not only scales the monitoring process efficiently but also enhances data privacy by processing sensitive information locally rather than in a single centralized repository.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "federated node architecture",
+    "sensitive transaction data"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-039",
+   "identifier": "kaal:claim:5245185-039",
+   "text": "Taken together, the transparency, decentralized decision making, and automated real time response properties of the proposed model make decentralized governance superior to AI driven supervision for secure, compliant, and efficient execution of AI agent transactions.",
+   "abstract": "demonstrate that a decentralized governance model is superior to AI-driven supervision for ensuring the secure, compliant, and efficient execution of AI agent transactions in modern digital infrastructures.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "monitoring of AI agent transaction execution in modern digital infrastructures"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'ai-agent-monitoring'. Derived node: a roster, not an adjudicated definition."
+}

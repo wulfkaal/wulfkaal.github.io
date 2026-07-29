@@ -1,0 +1,173 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/impossibility-results",
+ "identifier": "kaal:entity:impossibility-results",
+ "name": "Impossibility results",
+ "termCode": "impossibility-results",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/impossibility-results.md",
+ "sha256": "6f19e2641ac578e0c38a6897d6079a5cbe468c70f0ed705ca4bfbde65395be8a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-001",
+   "identifier": "kaal:claim:3125827-001",
+   "text": "No single, fixed, entirely algorithmic policing solution can completely prevent independent nodes in a distributed system from gaming block production to advantage some parties over others. Any consensus protocol that relies on a permanently fixed rule set will therefore be gamed as conditions change.",
+   "abstract": "In fact it is obvious there can be no single, fixed, entirely algorithmic policing solution which completely prevents independent nodes in a distributed system from gaming the system by producing blocks with transactions that advantage some parties over others1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "distributed systems with independent, self interested nodes",
+    "protocols that are fixed rather than continually revisable"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-008",
+   "identifier": "kaal:claim:3782203-008",
+   "text": "Impossibility results establish that no static set of rules can eternally sustain a DAO, which is why DAOs must be set up to run with a dynamic set of rules from the very beginning.",
+   "abstract": "The impossibility results show we can never design a static set of rules which will eternally sustain a DAO. But that just means we need to set up DAOs to run from the beginning with a dynamic set of rules.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fixed toolsets and fixed rule sets"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-009",
+   "identifier": "kaal:claim:3782203-009",
+   "text": "Condorcet's paradox demonstrates that it is impossible to construct any democratic voting method that will faithfully discover the will of a group, because cyclic preferences can leave no clear winner.",
+   "abstract": "Condorcet's paradox5 demonstrates it is impossible to construct any method that will faithfully discover the will of a group, with any type of democratic voting system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "three or more candidates",
+    "any democratic voting system"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-027",
+   "identifier": "kaal:claim:3782203-027",
+   "text": "Finding a correct by construction algorithm that incorporates all possible or even all practical assumptions about network status is not possible, because for any set of assumptions about network behavior an actor can break those assumptions by valuing some other result.",
+   "abstract": "Finding a correct by construction algorithm that incorporates all possible, or even practical, assumptions of possible network statuses, is not possible. Given any set of assumptions about how the network will behave, you can always break those assump- tions by valuing some other result.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "consensus algorithms for open anonymous networks"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-029",
+   "identifier": "kaal:claim:3782203-029",
+   "text": "The authors hold that the Bitcoin proof of work algorithm is ultimately flawed, that every consensus algorithm is flawed, and that it is not possible to create an algorithm that is not flawed.",
+   "abstract": "However, we suspect that the Bitcoin PoW algorithm is ultimately flawed. In fact, we believe that every consensus algorithm is flawed. Further we are confident it is not possible to create an algorithm that is not flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "real world networks with changing markets and anonymous actors"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-003",
+   "identifier": "kaal:claim:3782214-003",
+   "text": "Every governance process ever implemented is flawed, and no perfect governance system is possible even under very minimal assumptions such as non dictatorship; the goal must therefore be practical and effective structures rather than perfect ones.",
+   "abstract": "There are flaws with every governance process that has ever been implemented. In fact, it seems clear no perfect governance system is possible under very minimal assumptions, such as non-dictatorship (cf., Chapter a).",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumptions as minimal as non dictatorship"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782220-028",
+   "identifier": "kaal:claim:3782220-028",
+   "text": "The drift into static power relationships is a universal temptation because centralization is efficient, yet centralized governance is provably flawed.",
+   "abstract": "we must protect the group from falling into static power rela- tionships. The temptation is universal, because of the efficiency of centralization, but it is provably flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Transcendental Unifying Values for Decentralization (2021). SSRN: https://ssrn.com/abstract=3782220",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "organizations facing the choice between centralized and decentralized governance"
+   ],
+   "source_pdf_sha256": "f0bf1e80c6da60a6f8ba20630562bdf1dab171ccb5267f497dc0b815113cde99",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'impossibility-results'. Derived node: a roster, not an adjudicated definition."
+}

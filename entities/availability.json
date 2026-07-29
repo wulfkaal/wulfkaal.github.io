@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/availability",
+ "identifier": "kaal:entity:availability",
+ "name": "Availability",
+ "termCode": "availability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/availability.md",
+ "sha256": "ce0fb95a7c91070b727d247c4b518318cc13c48cde064de9774a6e7f9947fb3a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-027",
+   "identifier": "kaal:claim:3125827-027",
+   "text": "Because producer selection falls back to the seed from the last block whose validation pool concluded, any network outage shorter than the history of the blockchain will not permanently disrupt chain production, and block production continues even if the network loses all but one node.",
+   "abstract": "This ensures any network outage shorter than the history of the blockchain will not eternally disrupt chain production. This addresses the availability/regeneracy problem: even if the network loses all but one node, block production will continue",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "availability stake smart contracts persist through the outage",
+    "outage shorter than the chain history"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-030",
+   "identifier": "kaal:claim:3125827-030",
+   "text": "A 67% active validator requirement would improve finality but is excluded from the initial SPoS implementation because, by the CAP theorem, it limits the availability of the system and arbitrarily punishes randomly selected producers when the network is partitioned.",
+   "abstract": "More importantly, due to the CAP theorem33, it limits the availability of the system, which is why it is not included in the initial implementation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "network partitions occur",
+    "consensus recognizes only blocks validated by a supermajority of active validators"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-022",
+   "identifier": "kaal:claim:3782198-022",
+   "text": "Existing decentralized filesharing networks cannot guarantee the availability of unpopular files such as personal files, whereas centralized cloud services guarantee availability for a fee.",
+   "abstract": "One problem with most existing decentralized filesharing networks is that unpop- ular files (such as your personal files) are not guaranteed to be available, unlike cen- tralized cloud computing services which guarantee availability for a fee.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to filesharing networks without an incentive design for storing unpopular data"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'availability'. Derived node: a roster, not an adjudicated definition."
+}

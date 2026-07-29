@@ -1,0 +1,156 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/makerdao",
+ "identifier": "kaal:entity:makerdao",
+ "name": "Makerdao",
+ "termCode": "makerdao",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/makerdao.md",
+ "sha256": "ed26b8aaac63088608a50ca267f9282119a2e9fdceeab2adb81cae0c2a207497",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-012",
+   "identifier": "kaal:claim:3396522-012",
+   "text": "Cryptocurrency backed tokens are more expensive than fiat backed tokens because stability is sourced from far more volatile assets, so such tokens must be backed by substantially more than 100 percent of the collateral's current value to survive a drop in the collateral basket.",
+   "abstract": "Any cryptocurrency-backed token must be backed with much more than 100% of the current value of the cryptocurrency in case the basket of other crypto currencies' value drops.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "holds while the backing cryptocurrencies remain more volatile than fiat"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-004",
+   "identifier": "kaal:claim:3402701-004",
+   "text": "Cryptocurrency-backed tokens must be overcollateralized well beyond 100 percent of current value because the backing basket can fall, which makes them even more expensive than fiat-backed tokens.",
+   "abstract": "Any cryptocurrency-backed token must be backed with much more than 100% of the current value of the cryptocurrency in case the basket of other crypto currencies' value drops",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "backing assets are volatile cryptocurrencies"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-020",
+   "identifier": "kaal:claim:3402701-020",
+   "text": "The reserve argument depends on two requirements, and failing either one grounds a criticism of an existing protocol: the stable-value requirement criticizes MakerDAO and the maintenance-cost requirement criticizes the Reserve protocol.",
+   "abstract": "The first requirement leads to a criticism of the MakerDAO protocol (e.g.), the second requirement leads to a criticism of the Reserve protocol (e.g",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reserve held in a volatile asset",
+    "reserve maintenance cost exceeds arbitrage profit"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-025",
+   "identifier": "kaal:claim:3606663-025",
+   "text": "The DeFi lending market is highly concentrated: MakerDAO alone accounts for almost ninety percent of the total USD value locked in DeFi projects.",
+   "abstract": "MakerDAO accounts for almost ninety percent of total USD value locked in DeFi projects.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DeFi projects measured by total USD value locked",
+    "period covered by DeFi Pulse data"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-030",
+   "identifier": "kaal:claim:3782216-030",
+   "text": "Cryptocurrency backed stablecoins are even more expensive than fiat backed ones, because stability is being sought with far more unstable collateral.",
+   "abstract": "Cryptocurrency-backed tokens are even more expensive than fiat backed tokens, because the stability is achieved with much more unstable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "crypto collateralized designs such as MakerDAO"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-031",
+   "identifier": "kaal:claim:5254152-031",
+   "text": "Procedural governance safeguards such as two step voting with temperature checks do not produce genuine decentralization when the governance token remains purchasable; in MakerDAO's case the purchasable token renders true decentralization nominal.",
+   "abstract": "The governance process includes 2-step voting with temperature checks, but the purchasable governance token makes true decentralization nominal (G: 4).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs combining multi stage voting with freely purchasable governance tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'makerdao'. Derived node: a roster, not an adjudicated definition."
+}

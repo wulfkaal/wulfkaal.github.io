@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/settlement-finality",
+ "identifier": "kaal:entity:settlement-finality",
+ "name": "Settlement finality",
+ "termCode": "settlement-finality",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/settlement-finality.md",
+ "sha256": "e6a5c141b58924555c59fd118369a73c64185a37cea34fbfb4d7866234786349",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-014",
+   "identifier": "kaal:claim:3411110-014",
+   "text": "Any settlement completed in less than ten seconds removes counterparty risk and with it systemic risk entirely, which makes settlement speed, not disclosure, the operative variable for systemic risk.",
+   "abstract": "Most importantly, any settlement that takes less than 10 seconds, if ever achieved in any setting, removes counterparty risk and with it systemic risk entirely.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "settlement finality achieved in under ten seconds",
+    "if such speed is ever achieved in any setting"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-015",
+   "identifier": "kaal:claim:3411110-015",
+   "text": "If blockchain pushes settlement finality into the seconds range, the entire regulatory infrastructure built to address counterparty and systemic risk would have to be reformed, and most systemic risk and counterparty risk regulation would become unnecessary.",
+   "abstract": "Arguably the entire regulatory infrastructure that has been tailored to address counterparty- and systemic risk would need to be reformed if settlement finality can be increased to the seconds range with blockchain technology.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "settlement finality in the seconds range",
+    "blockchain based settlement adopted at scale"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'settlement-finality'. Derived node: a roster, not an adjudicated definition."
+}

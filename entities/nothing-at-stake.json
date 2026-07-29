@@ -1,0 +1,139 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/nothing-at-stake",
+ "identifier": "kaal:entity:nothing-at-stake",
+ "name": "Nothing at stake",
+ "termCode": "nothing-at-stake",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/nothing-at-stake.md",
+ "sha256": "efe4dd2c0a4d010d8142e0c7b1878472621cbb813e1a79a0bb0ed874530eb0cb",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-013",
+   "identifier": "kaal:claim:3125822-013",
+   "text": "The tragedy of the commons arises in any system lacking a well designed incentive structure; in blockchain proof of stake design this is the nothing at stake problem, where unregulated systems lead pseudonymous users to abuse the system.",
+   "abstract": "Similarly, the tragedy of the commons occurs in any system which does not have well designed incentive structure. This is called the \"nothing at stake\" problem in blockchain proof of stake design, where unregulated systems lead pseudonymous users to abuse the system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "systems without well designed incentive structures",
+    "pseudonymous participation"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-014",
+   "identifier": "kaal:claim:3125822-014",
+   "text": "Reddit's upvote system imposes insignificant punishment for voting randomly, and this lack of cost compromises the informational value of an upvote, which is the failure mode a staked validation pool is designed to avoid.",
+   "abstract": "As a second example, Reddit's upvote system currently has insignificant punishment for voting randomly, which compromises the value of the meaning of an upvote",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to unstaked voting systems"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-006",
+   "identifier": "kaal:claim:3125827-006",
+   "text": "Staking tokens with the potential for slashing is necessary to avoid the tragedy of the commons in a validation pool. Voting without something at risk does not produce honest evaluation of contributions.",
+   "abstract": "The staking of tokens, with its potential for slashing, is necessary to avoid the tragedy of the commons.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "community voting on the value of contributions",
+    "anonymous or pseudonymous participants"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-014",
+   "identifier": "kaal:claim:3782210-014",
+   "text": "Reputation must be staked and risked on votes over work evidence, because otherwise the system suffers the Tragedy of the Commons nothing-at-stake problem; staking ensures every expert is motivated to police every reputation-staked action in order to protect the value of their own investment.",
+   "abstract": "To avoid the Tragedy of the Commons (the nothing-at- stake problem, \"skin in the game\"), reputation must be staked and risked with votes on work evidence. This ensures all experts are motivated to police every reputation- staked action, to protect the value of their investment.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation pool voting on work evidence"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-028",
+   "identifier": "kaal:claim:4685567-028",
+   "text": "The existing fund allocation model is afflicted by uninformed voters, sockpuppets and other gamesmanship, by voting with nothing at stake, and by voting with other people's money, and the crowd wisdom of WEB3 communities in the impact certificate model upgrades that model.",
+   "abstract": "the wisdom of the crowd in the respective WEB3 communities of the impact certificate model upgrades the existing fund allocation model which was afflicted by uninformed voters, sockpuppets, and other gamesmanship, voting with nothing at stake, voting with other people's money.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy fund allocation and voting models"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'nothing-at-stake'. Derived node: a roster, not an adjudicated definition."
+}

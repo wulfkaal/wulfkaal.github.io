@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/brokerage",
+ "identifier": "kaal:entity:brokerage",
+ "name": "Brokerage",
+ "termCode": "brokerage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/brokerage.md",
+ "sha256": "75a3101dc25848c8b2a20ec199e9780ba0d948e240bb9f219727d9c2b3b6b872",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-015",
+   "identifier": "kaal:claim:2715083-015",
+   "text": "Best execution is a leading instance of nominal confluence: the obligation is nominally the same, but it is far more complicated and burdensome for the mutual fund manager than for the hedge fund adviser.",
+   "abstract": "Best execution obligations are similar but practically different for private and mutual fund advisers. In practice, best execution requirements are far more complicated and burdensome for the mutual fund manager than for the hedge fund adviser.",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "best execution obligations for trades directed to brokers"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-002",
+   "identifier": "kaal:claim:5454054-002",
+   "text": "LER should be built as a bifurcated architecture: voucher-based rewards for equities held in brokerage accounts, and programmable on-chain reward units for tokenized equities.",
+   "abstract": "LER employs a bifurcated architecture: voucher-based rewards for brokerage-held equities and programmable, on-chain reward units for tokenized equities.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "issuer serves both off-chain brokerage holders and on-chain token holders"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'brokerage'. Derived node: a roster, not an adjudicated definition."
+}

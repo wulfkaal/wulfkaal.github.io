@@ -1,0 +1,203 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/collusion",
+ "identifier": "kaal:entity:collusion",
+ "name": "Collusion",
+ "termCode": "collusion",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/collusion.md",
+ "sha256": "b4f7de12a4f2e8f269288115f05e3eb621124915018a762832ad8b00695e1bc0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-016",
+   "identifier": "kaal:claim:3125822-016",
+   "text": "A 51 percent collusion that votes against common sense is visible in an open system, which erodes trust, reduces use and fees, and lowers the value of the attackers' own reputational salary, so the tactic can destroy an expertise tag but cannot enrich the attackers.",
+   "abstract": "This would erode trust in the platform, and therefore use and fees would diminish, making the 51% holding of reputational salary less valuable. Therefore this tactic generally has the potential to destroy the expertise tag, but not enrich the attackers.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires an open and observable system",
+    "assumes attacker value is held in the attacked tag"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-041",
+   "identifier": "kaal:claim:3125822-041",
+   "text": "If 51 percent of users collude to enrich themselves maliciously, nothing in the design can prevent them; the only check is the openness of the system, which would quickly detect such an attack.",
+   "abstract": "If 51% of users collude to maliciously enrich themselves, nothing can prevent them, except the open system itself, which would quickly detect such an attack.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "requires a colluding majority of reputation weighted users"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-042",
+   "identifier": "kaal:claim:3125822-042",
+   "text": "Reputation on the platform is not truly non transferable: accumulated sem tokens can be sold along with the anonymous identities that hold them, and the only check on this is the continued existence of a good faith majority that votes fairly in validation pools.",
+   "abstract": "The inevitable accumulation of sem tokens by anonymous users is another potential source of corruption. Reputational power can be sold via the sale of anonymous identities. Such corruption is checked by the existence of 51% good-faith users, who will vote fairly in the validation pools.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "anonymous accounts can be transferred wholesale",
+    "check depends on 51 percent of users acting in good faith"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-010",
+   "identifier": "kaal:claim:3402701-010",
+   "text": "Distributing newly minted coins to shareholders, as Basis planned, is exploitable: shareholders can collude to hold their new money and drive the price up, which triggers further minting that benefits the colluders.",
+   "abstract": "However, it is possible the shareholders would collude to drive the price up by holding their new money",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new supply distributed to an identifiable shareholder group"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-027",
+   "identifier": "kaal:claim:5225296-027",
+   "text": "SPoS's reliance on a reputation-based system introduces vulnerabilities absent from PoW and traditional PoS, most notably Sybil attacks, collusion risks, and reputation manipulation, which could undermine its decentralized governance and consensus if not robustly addressed.",
+   "abstract": "However, its innovative reliance on a reputation-based system introduces vulnerabilities—most notably Sybil attacks, collusion risks, and reputation manipulation—that could undermine the integrity of its decentralized governance and consensus processes",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-029",
+   "identifier": "kaal:claim:5225296-029",
+   "text": "Collusion, meaning coordinated action among validators to manipulate reputation scores or governance outcomes, threatens the fairness and integrity of SPoS independently of any cryptographic weakness.",
+   "abstract": "Collusion risks—coordinated efforts among validators to manipulate reputation scores or governance outcomes—further threaten fairness and integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-010",
+   "identifier": "kaal:claim:5245185-010",
+   "text": "AI self monitoring requires robust cryptographic safeguards and anti collusion algorithms; without them, agents overseeing one another can devolve into self serving behavior and coordinated manipulation.",
+   "abstract": "and anti-collusion algorithms—to prevent coordinated manipulation or exploitation of vulnerabilities, ensuring that self-monitoring does not devolve into self-serving behavior.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "networks of interdependent agents auditing each other"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-024",
+   "identifier": "kaal:claim:5245185-024",
+   "text": "Proposals for AI self monitoring rely on unspecified security measures and therefore overlook the risk that adaptive AI agents collude or evade oversight, a risk amplified by pervasive deployment.",
+   "abstract": "reliance on unspecified security measures overlooks the risk of adaptive AI agents colluding or evading oversight, a concern amplified by their pervasive deployment.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "peer to peer agent auditing at scale"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-040",
+   "identifier": "kaal:claim:6269518-040",
+   "text": "Because the analysis rests on the Nash equilibrium concept, it does not rule out coordinated under-citation among colluding groups; coalition-proof equilibrium analysis is needed to address that possibility.",
+   "abstract": "Fourth, the analysis has focused on the Nash equilibrium concept. Coalition-proof equilibrium analysis would address the possibility of coordinated under-citation among groups of colluding agents.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "groups of agents able to coordinate citation strategies"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'collusion'. Derived node: a roster, not an adjudicated definition."
+}

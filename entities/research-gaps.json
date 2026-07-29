@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/research-gaps",
+ "identifier": "kaal:entity:research-gaps",
+ "name": "Research gaps",
+ "termCode": "research-gaps",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/research-gaps.md",
+ "sha256": "bacbb025fbfd43ead55c1c6a5154b3f484bbce6934a3882769c678a73a417078",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-012",
+   "identifier": "kaal:claim:4855607-012",
+   "text": "Most GNN architectures assume homogeneous graph structures, so adapting them to heterogeneous graphs with diverse node and edge types remains an unsolved research challenge, and full batch training on large graphs suffers memory overflow.",
+   "abstract": "Training GNNs on large graphs can be resource-intensive, and full-batch training methods suffer from memory overflow issues. Many GNNs assume homogeneous graph structures, and adapting these models to heterogeneous graphs with diverse node and edge types remains a significant research challenge.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "graphs with diverse node and edge types",
+    "large graphs trained full batch"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-029",
+   "identifier": "kaal:claim:5541658-029",
+   "text": "The literature offers high short term accuracy figures for judicial AI but almost no evidence on how these tools affect decision quality, case backlogs, or public trust over extended periods, which is a fundamental research gap.",
+   "abstract": "while AI tools have demonstrated high accuracy in predicting case outcomes (e.g., 96.9% in the CAIL dataset), there is little evidence on how these tools affect judicial decision-making quality, case backlogs, or public trust over extended periods.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the existing empirical literature on AI in judicial systems"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-030",
+   "identifier": "kaal:claim:5541658-030",
+   "text": "Because AI systems are predominantly developed in the West and trained mostly on Western data, their outputs are liable to carry cultural biases that inadequately represent non-Western cultures and the values inherent in them.",
+   "abstract": "Such western AI system domination can be further exacerbated through mostly western training data for AI systems. This may lead to cultural biases in AI outputs as non-western cultures and non-western values inherent in such cultures are inadequately represented.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "AI systems deployed in non-Western legal systems",
+    "training corpora dominated by Western sources"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-031",
+   "identifier": "kaal:claim:5541658-031",
+   "text": "Experimental studies suggest risks such as bias amplification from judicial AI, but there is little empirical data on how those risks actually manifest in operational courtrooms, which leaves practical integration guidelines undeveloped.",
+   "abstract": "While experimental studies suggest risks like bias amplification, there is little empirical data on how these risks manifest in operational judicial settings.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the gap between experimental and deployed judicial AI systems"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'research-gaps'. Derived node: a roster, not an adjudicated definition."
+}

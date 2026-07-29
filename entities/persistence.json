@@ -1,0 +1,155 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/persistence",
+ "identifier": "kaal:entity:persistence",
+ "name": "Persistence",
+ "termCode": "persistence",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/persistence.md",
+ "sha256": "212f3d4d6f79d4cb5fe7e8acf8835d664b2142e39dc0a3eca2f15d6a1a96f7b0",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-007",
+   "identifier": "kaal:claim:2389416-007",
+   "text": "Hedge fund adviser registration under the Dodd-Frank Act positively affects adviser returns in March 2012, but the effect does not persist in the months after the registration effective date.",
+   "abstract": "We find evidence that hedge fund adviser registration under the Dodd-Frank Act positively affects hedge fund adviser returns in March 2012, but this effect is not persistent in the subsequent months after the registration effective date for hedge fund advisers under the Dodd-Frank Act.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sample of 2145 US hedge fund advisers",
+    "monthly data January to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-021",
+   "identifier": "kaal:claim:2389416-021",
+   "text": "The March 2012 discontinuity coefficient is the only estimate with a p-value below 5 percent; all subsequent monthly estimates are statistically insignificant.",
+   "abstract": "Moreover, the coefficient in March 2012 is the only one with p-value smaller than 5%, while all the estimates in the following months are not significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp RD estimates April to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-023",
+   "identifier": "kaal:claim:2389416-023",
+   "text": "The March 2012 discontinuity effect is not persistent and is completely absorbed in the months following the registration effective date for private fund advisers.",
+   "abstract": "However, this discontinuity effect we observe in March 2012 is not persistent and is completely absorbed in the months following the registration effective date for private fund advisers under the Dodd-Frank Act.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "months after March 2012 in the sample window"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-035",
+   "identifier": "kaal:claim:2389416-035",
+   "text": "The difference-in-differences treatment effect is unstable over time: it loses significance in June and July 2012, then becomes significant again in August and September 2012 with negative coefficients and in October 2012 with a positive coefficient.",
+   "abstract": "It loses significance in June and July, but it becomes significant again in August, September (with a negative coefficient) and October (with a positive coefficient).",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "monthly DiD regressions March to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-037",
+   "identifier": "kaal:claim:2389416-037",
+   "text": "Despite the great volatility of hedge fund adviser returns over the observation period, the empirical evidence for a discontinuity at the $150 million AUM threshold is robust, but the discontinuity does not persist beyond the registration effective date.",
+   "abstract": "Despite the great volatility of hedge fund adviser returns displayed over the period under examination, the empirical evidence is robust. The discontinuity is not persistent and dissipates in the subsequent months after the registration effective date for hedge fund advisers.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "January to October 2012 observation window"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405401-036",
+   "identifier": "kaal:claim:3405401-036",
+   "text": "A functioning decentralized reputation system requires that counterparties' actions in decentralized commerce endure and become part of a public record: their actions must stick and become part of a meaningful precedence system.",
+   "abstract": "This necessitates that counterparties' actions in decentralized commerce endure and become part of a public record. In other words, counterparties' actions need to stick. Their actions have to become part of a precedence system that is meaningful.",
+   "citation": "Wulf A. Kaal, Decentralized Commerce – A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized commerce"
+   ],
+   "source_pdf_sha256": "bc2d6f0ddc0852fb4085c4543c7c1dec19aaf8745eb67e3acc637e552bd7fb7d",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'persistence'. Derived node: a roster, not an adjudicated definition."
+}

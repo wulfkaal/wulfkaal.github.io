@@ -1,0 +1,175 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/token-minting",
+ "identifier": "kaal:entity:token-minting",
+ "name": "Token minting",
+ "termCode": "token-minting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/token-minting.md",
+ "sha256": "7f289042ae654f0b7bb69e580a933fbb2a5bf75665405c85edec9111d23762b4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-007",
+   "identifier": "kaal:claim:3125827-007",
+   "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+   "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-036",
+   "identifier": "kaal:claim:3125827-036",
+   "text": "An attacker who buys sem tokens directly from the platform by sending fees must spend at least twice, and more likely six times, the entire historical value of the platform, so the griefing factor is a minimum of 2 with an average of 6.",
+   "abstract": "attacker would lose a significant amount of money to achieve their goal, at least twice the entire historical value of the platform--more likely the factor would be 6 times the total value (see Appendix A.1 for a proof). So the griefing factor is a minimum of 2 with an average of 6,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker buys in by paying fees rather than on an exchange",
+    "good faith experts continue investing alongside the attacker"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-037",
+   "identifier": "kaal:claim:3125827-037",
+   "text": "Under the worst case model with no admission safeguards and no other users paying fees, a malicious group must invest at minimum twice the total sem tokens of the system to reach 50% voting power in the validation pool, because half of every fee it pays mints tokens for the existing good faith experts.",
+   "abstract": "Consequently the malicious group would need to invest an absolute minimum of 2g8 , that is, double the total sem tokens of the system to gain 50% power in the system in order to outvote the rest of the good-faith experts in the validation pool.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no safeguards on joining as an expert",
+    "no other users adding fees",
+    "continuous micro payment strategy, which is the attacker's optimum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-025",
+   "identifier": "kaal:claim:3266953-025",
+   "text": "New reputation tokens are minted in every validation pool for every block, so block production is strongly encouraged through a larger share for the successful producer while policing is only gently encouraged through a shared allocation to all active members.",
+   "abstract": "Active participation is encouraged because new reputation tokens are minted in every validation pool for every block. So block production is strongly encouraged (because a greater percentage of the new tokens are given to a successful producer) and policing is gently encouraged",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "every block and its validation pool"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-030",
+   "identifier": "kaal:claim:3396542-030",
+   "text": "Barring highly adverse market conditions, the DAO's ability to mint and sell tokens on demand functions as capital on tap and protects the DAO from default and bankruptcy.",
+   "abstract": "Barring highly adverse market conditions, the availability of \"capital on tap\" protects the DAO from default and bankruptcy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "not highly adverse market conditions"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-015",
+   "identifier": "kaal:claim:3782210-015",
+   "text": "Reputation tokens are meaningful only if grounded in something real, so in a profit-seeking DAO all new reputation tokens must be minted in proportion to the fees the DAO earns.",
+   "abstract": "Whenever a new reputation token is minted, to be meaningful it must be grounded in something real. In any DAO devoted to profit, the foundational object is money. So all reputation tokens need to be tied to the fees the DAO earns.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs devoted to profit"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-016",
+   "identifier": "kaal:claim:3782210-016",
+   "text": "Newly minted reputation tokens should enter the system neutral, staked half in favor and half against the post that generated the fee, so that existing token holders can judge the action fairly and are not swayed by an unbalanced validation pool created by a large new fee.",
+   "abstract": "For security, when a reputation token enters the system, it should be neutral, so that one faction is not favored over another. Validation pools should begin fairly. Newly minted reputation tokens should be staked half in favor, half against.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation pools triggered by fee-generating work"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'token-minting'. Derived node: a roster, not an adjudicated definition."
+}

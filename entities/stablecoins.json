@@ -1,0 +1,636 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/stablecoins",
+ "identifier": "kaal:entity:stablecoins",
+ "name": "Stablecoins",
+ "termCode": "stablecoins",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/stablecoins.md",
+ "sha256": "ffc29d69e68871aeae843e7332fe049778333d29b7b456a513ffd3fa4bd83b40",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 35
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-004",
+   "identifier": "kaal:claim:3396522-004",
+   "text": "Tether's growth in market capitalization, its stability around one dollar, and investors' use of it as a temporary safe haven provide some empirical support for the proposition that stable cryptocurrencies can create market stability.",
+   "abstract": "The rise of an early stable cryptocurrency design, Tether, in terms of its total market capitalization,169 its stability around $1 value, and investors' uses of Tether as a temporary safe haven, provide some support for stable cryptocurrencies' ability to create market stability.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "support is partial and, on the authors' own framing, possibly only temporary"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-005",
+   "identifier": "kaal:claim:3396522-005",
+   "text": "Every stable cryptocurrency project, Tether included, remains afflicted with significant design challenges; no existing design has solved the stability problem.",
+   "abstract": "Like all other stable cryptocurrency projects, Tether is still afflicted with significant design challenges.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of the 2019 state of the market"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-007",
+   "identifier": "kaal:claim:3396522-007",
+   "text": "JPM Coin's closed structure, restricting the token to existing J.P. Morgan clients, is an anachronism, because closed ecosystems are unsustainable in emerging decentralized commerce.",
+   "abstract": "The close structure of the JPM coin, e.g. JPM makes it only available to existing clients, appears to be an anachronism.95 Closed ecosystems are unsustainable in the emerging decentralized commerce.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to permissioned stable cryptocurrencies limited to a single institution's clients"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-008",
+   "identifier": "kaal:claim:3396522-008",
+   "text": "Both collateralization strategies carry significant downsides: fiat collateralized pegs bear the brunt of expensive capital requirements, while cryptocurrency pegs face heavy volatility pressures and swings.",
+   "abstract": "Collateralized fiat currency pegs bear the brunt of expensive capital requirements and uncollateralized cryptocurrency pegs face heavy volatility pressures and swings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-009",
+   "identifier": "kaal:claim:3396522-009",
+   "text": "A fiat backed stable cryptocurrency that is not fully collateralized is exposed to arbitrage trade attacks of the kind George Soros used against the pound sterling; full collateralization is therefore a necessary defense.",
+   "abstract": "Without a 100% fiat collateralization, such projects would run the risk of arbitrage trade attacks similar to what Financier George Soros used to \"break the bank of England",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to stable cryptocurrencies claiming a fiat peg"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-010",
+   "identifier": "kaal:claim:3396522-010",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage opportunities of the Soros type.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes the backing must remain fully liquid to prevent arbitrage"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-011",
+   "identifier": "kaal:claim:3396522-011",
+   "text": "The minimum price of a fiat backed stable cryptocurrency is the interest rate of the fiat currency it is pegged to, because the collateral must sit liquid rather than earn a return.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to fully collateralized fiat backed tokens"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-012",
+   "identifier": "kaal:claim:3396522-012",
+   "text": "Cryptocurrency backed tokens are more expensive than fiat backed tokens because stability is sourced from far more volatile assets, so such tokens must be backed by substantially more than 100 percent of the collateral's current value to survive a drop in the collateral basket.",
+   "abstract": "Any cryptocurrency-backed token must be backed with much more than 100% of the current value of the cryptocurrency in case the basket of other crypto currencies' value drops.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "holds while the backing cryptocurrencies remain more volatile than fiat"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-014",
+   "identifier": "kaal:claim:3396522-014",
+   "text": "Trading a token directly against a well established stable cryptocurrency removes several layers of conversion fees and eliminates the risk that the bridge currency depreciates during the sequence of trades.",
+   "abstract": "The use of stable cryptocurrencies, if traded in pairs with the cryptocurrency in question, allows investors to remove several levels of conversion fees and removes the risk of depreciation of the bridge currency during the trades.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires the stable cryptocurrency to be traded in pairs with the token in question"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-015",
+   "identifier": "kaal:claim:3396522-015",
+   "text": "A well established stable cryptocurrency and a universal exchange form a positive feedback loop: the exchange's liquidity is enhanced by the stable cryptocurrency, and the stable currency's stability and adoption are enhanced by the exchange.",
+   "abstract": "In essence, the combination of a well- established stable cryptocurrency with a universal exchange create a positive feedback loop. The exchange liquidity is enhanced by the stable cryptocurrency and the stability and adoption of the stable currency is enhanced through the exchange.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a universal exchange bridging traditional and crypto assets"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-016",
+   "identifier": "kaal:claim:3396522-016",
+   "text": "Because cryptocurrency transactions are possible without a banking relationship, stable cryptocurrencies can remedy the disproportionate burden that cash economies impose on the poor and the unbanked by equalizing access to the payment system.",
+   "abstract": "Access to cryptocurrency transactions is possible without a banking relationship. With equality of payment system access, the poor and unbanked are no longer disadvantaged through the use of cash.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes the poor and unbanked can access the technology itself"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-024",
+   "identifier": "kaal:claim:3396522-024",
+   "text": "Stable cryptocurrencies escape part of the lobbying problem by hardcoding their policy rationales and outcomes into the protocol, which limits the amount of lobbying that can influence policy decisions.",
+   "abstract": "By making part of their policy rationales and outcomes hardcoded solutions, stable cryptocurrencies limit the amount of lobbying that can affect policy decisions.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds to the extent policy is genuinely hardcoded rather than discretionary"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-028",
+   "identifier": "kaal:claim:3396522-028",
+   "text": "The authors qualify their own case: stable cryptocurrencies can experiment with monetary policy on an unprecedented scale only because they are insulated from real world complexities and political positioning, and that advantage shrinks once real world market factors actually apply to them.",
+   "abstract": "This allows them to experiment with monetary policy tools on an unprecedented scale. Such experimentation is limited if and when real-world market factors pertain to such stable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies as stable cryptocurrencies scale into real world use"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-031",
+   "identifier": "kaal:claim:3396522-031",
+   "text": "Currency stability should be used as the consumer facing proxy for interoperability, because teaching the public to value stability is easier than educating it about the blockchain technology that produces technical interoperability.",
+   "abstract": "Rather than using technological solutions and educating the public on the blockchain technology that helps create interoperability, currency stability, and the public's recognition of the desirability of currency stability, serves as a proxy for interoperability.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-035",
+   "identifier": "kaal:claim:3396522-035",
+   "text": "Because stable cryptocurrencies are free of the real world pressures that constrain emerging market currencies, they may be able to experiment with solutions that overcome the currency trilemma, attaining a fixed exchange rate, free capital movement, and an independent monetary policy at once.",
+   "abstract": "lack of real-world pressures that afflict emerging market currencies may enable stable cryptocurrency projects to experiment with solutions that can help overcome the trilemma.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hinges on DAO governance protocols that deliver full decentralization and independence"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-037",
+   "identifier": "kaal:claim:3396522-037",
+   "text": "Non speculator lay people will not use cryptocurrencies for daily consumption, groceries, or banking transactions unless the value of the currency is stable; stability is a precondition of ordinary consumer use, not merely a convenience.",
+   "abstract": "In other words, non- speculator lay people are not going to use cryptocurrencies for their daily consumption tasks, payment of groceries, banking transactions, among other examples, if the value of their cryptocurrency is not stable.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-039",
+   "identifier": "kaal:claim:3396522-039",
+   "text": "Near instant settlement with stable cryptocurrencies removes counterparty risk, and the resulting reduction in counterparty risk boosts consumer confidence and increases transactional certainty relative to systems like Visa that take five to seven business days to pay merchants.",
+   "abstract": "Such speed in settlement takes away the counterparty risk and with less counterparty risk, speed of settlement with cryptocurrencies boosts consumer confidence and increases certainty for transactions.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-018",
+   "identifier": "kaal:claim:3406323-018",
+   "text": "Growth in stable cryptocurrencies traces back to attempts to combine the benefits of cryptocurrencies and blockchain with remedies for market volatility, and the growth data suggests demand for volatility management products will keep increasing.",
+   "abstract": "demand for products that help manage the volatility inherent in other crypto assets is likely to continue to increase.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "cryptocurrency markets as of 2019"
+   ],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-022",
+   "identifier": "kaal:claim:3406323-022",
+   "text": "People will not enter into long term smart contracts without a stable currency to refer to, since no renter and landlord will gamble future wealth on a lease that may halve or double in value in any given month.",
+   "abstract": "Finally, people will not enter into a long-term smart contract unless they have a stable currency to refer to.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "long term smart contracts denominated in volatile cryptocurrencies"
+   ],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-024",
+   "identifier": "kaal:claim:3406323-024",
+   "text": "Because of their disciplining and market stability enhancing effects, stable cryptocurrencies form the backbone of the financial technology infrastructure required for any distributed app economy and decentralized commerce to emerge.",
+   "abstract": "Because of their disciplining and market stability enhancing effects, stable cryptocurrencies are part of the financial technology infrastructure that will form the backbone of any emergence of the distributed app economy and decentralized commerce.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "emergence of a distributed app economy and decentralized commerce"
+   ],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-023",
+   "identifier": "kaal:claim:3606663-023",
+   "text": "The evolution of the DeFi market and its new monetary system depends on the stability of DeFi products and digital assets, and both stability and adoption of DeFi are undermined by the instability of most cryptocurrencies.",
+   "abstract": "The evolution of the DeFi market and its new monetary system depends on the stability of DeFi products and digital assets. Stability and adoption of DeFi is undermined by the instability of most cryptocurrencies.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DeFi platforms denominated in volatile cryptocurrencies"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-027",
+   "identifier": "kaal:claim:3782216-027",
+   "text": "A decentralized economy requires stable cryptocurrencies, because renegotiating contracts every time a currency's value changes is inefficient and continually punishes one of the parties.",
+   "abstract": "Renegotiating contracts each time the value of a currency changes is inefficient, and continually punishes one of the parties. The economy should not be founded on gambling, so any future decentralized economy requires stable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "absent stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-028",
+   "identifier": "kaal:claim:3782216-028",
+   "text": "The lesson of the Soros attack is that when a cryptocurrency is pegged above its true market value, the difference must be fully backed by a foreign reserve of collateral, or financiers can profit by breaking the peg.",
+   "abstract": "The lesson of the Soros attack, is that if the value of a cryptocurrency is pegged at a value higher than its true market value, the difference must be backed c::% by a foreign reserve of collateral holdings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pegged currencies, including algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-029",
+   "identifier": "kaal:claim:3782216-029",
+   "text": "Maintaining a full reserve is too expensive to be efficient, because every unit of reserve value backing the currency must be held liquid or arbitrage attacks become possible, and liquidity forgoes investment returns.",
+   "abstract": "The maintenance of a c::% reserve is too expensive to be efficient, and signals the need for more sophisticated mechanisms. All of the value in the reserve which backs the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat collateralized and algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-030",
+   "identifier": "kaal:claim:3782216-030",
+   "text": "Cryptocurrency backed stablecoins are even more expensive than fiat backed ones, because stability is being sought with far more unstable collateral.",
+   "abstract": "Cryptocurrency-backed tokens are even more expensive than fiat backed tokens, because the stability is achieved with much more unstable cryptocurrencies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "crypto collateralized designs such as MakerDAO"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-031",
+   "identifier": "kaal:claim:3782216-031",
+   "text": "Contrary to the industry practice of full backing, a full reserve is not always necessary, because a currency also has intrinsic worth derived from the authentic economic activity it represents.",
+   "abstract": "On the contrary, we argue that a c::% reserve is not always necessary, as is the case with any currency which has an intrinsic worth.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "currencies with intrinsic worth from authentic transactions"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-032",
+   "identifier": "kaal:claim:3782216-032",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficiently defending its stability: overestimating the hot money ratio makes the currency costlier to use, and underestimating it makes the currency insecure.",
+   "abstract": "Therefore, determining the fraction of a currency that is hot money is necessary for efficient defense of its stability. A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-033",
+   "identifier": "kaal:claim:3782216-033",
+   "text": "Because the tension between efficiency and security demands a careful estimate of the hot money ratio, a sophisticated decentralized governance system is crucial for any efficient stablecoin.",
+   "abstract": "The tension between these two values of efficiency and security motivates a careful esti- mate of the hot money ratio. This means a sophisticated decentralized governance system is crucial for any efficient stablecoin.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-034",
+   "identifier": "kaal:claim:3782216-034",
+   "text": "Stablecoin collateralization and a robust decentralized economy form a chicken and egg problem: a stablecoin cannot reduce its backing until a robust decentralized economy exists, and that economy cannot be built without an efficient stablecoin.",
+   "abstract": "We need a robust decen- tralized economy before a stablecoin can reduce its collateralization. We need an ef- ficient and useful stablecoin before we can build a robust decentralized economy. This is another of the many chicken-and-egg problems that hamper the adoption of new systems.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "while most cryptocurrency use is speculative hot money"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-035",
+   "identifier": "kaal:claim:3782216-035",
+   "text": "Trying to hold a peg at an artificial level deters new adopters and punishes existing members, and is the most likely way to induce a death spiral that collapses a currency; after a fundamental change in the economy the currency should be repegged instead.",
+   "abstract": "Trying to maintain a peg at an artificial level prevents new members from adopting the currency and punishes members as they need to pay to maintain the artificial valuation. Maintaining the artificial valuation is the most likely way to induce a death spiral which collapses a currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "after a fundamental change such as a black swan event"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-033",
+   "identifier": "kaal:claim:4033886-033",
+   "text": "The stablecoin exists as a response to digital asset price volatility: it is pegged to the value of an external asset, frequently a fiat currency.",
+   "abstract": "To reduce price volatility in digital assets, the stablecoin was born. A stablecoin is pegged to the value of an external asset (frequently fiat currency).126",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stablecoins pegged to external assets"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-035",
+   "identifier": "kaal:claim:4900878-035",
+   "text": "Integrating stablecoins pegged to fiat currencies gives a token ecosystem a stable transactional medium and mitigates the volatility that otherwise attaches to cryptocurrencies, alongside DeFi services that let users earn returns and access credit outside the banking system.",
+   "abstract": "The integration of stablecoins pegged to fiat currencies provides a stable medium for transactions, mitigating the volatility often associated with cryptocurrencies.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the VOW ecosystem as a case study"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-003",
+   "identifier": "kaal:claim:5454054-003",
+   "text": "Retailer-issued stablecoins operate as an onchain Eurodollar play: they decentralize the creation of dollar-denominated liquidity, which reduces transaction costs and disintermediates traditional banks and their fees.",
+   "abstract": "Retailer-issued stablecoins function as an onchain Eurodollar play that enables the decentralized creation of dollar-denominated liquidity, thus reducing transaction costs, and disintermediating traditional banking systems and their fees.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "merchant issues a dollar-pegged token backed by reserves"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-004",
+   "identifier": "kaal:claim:5454054-004",
+   "text": "The GENIUS Act of 2025 is what makes merchant-issued stablecoins viable, because it supplies the enabling conditions of 1:1 reserve backing, audits, and AML compliance.",
+   "abstract": "the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS) Act of 2025, signed into law in July 2025, enables merchant-issued stablecoins by mandating 1:1 reserve backing, audits, and AML compliance.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States",
+    "after July 2025"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-005",
+   "identifier": "kaal:claim:5454054-005",
+   "text": "The collapse of the metaverse boom forced Silicon Valley firms with metaverse exposure to pivot toward stablecoins and crypto-based rewards, replacing speculative virtual worlds with regulated, utility-centric fintech rails.",
+   "abstract": "Following the 2021–2022 metaverse boom and bust in 2023, those Silicon Valley firms that had a presence in attempts to create the metaverse had to pivot. That pivot for many of those firms involved a move toward stablecoins and crypto-based rewards.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "firms that had invested in metaverse ventures during 2021 to 2022"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "35 claims in the published works of Wulf A. Kaal carry the concept tag 'stablecoins'. Derived node: a roster, not an adjudicated definition."
+}

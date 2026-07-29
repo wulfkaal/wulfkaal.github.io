@@ -1,0 +1,188 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/nash-equilibrium",
+ "identifier": "kaal:entity:nash-equilibrium",
+ "name": "Nash equilibrium",
+ "termCode": "nash-equilibrium",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/nash-equilibrium.md",
+ "sha256": "65dd7204bfe329e0a454897f25ebbd04c3c9ddcf7dd67a22ea400e62271f64fe",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-021",
+   "identifier": "kaal:claim:5225296-021",
+   "text": "Slashing establishes a Nash equilibrium in which rational validators adhere to honest behavior, because the expected cost of penalties exceeds any short-term gain available from misconduct.",
+   "abstract": "game-theoretic models, which demonstrate that slashing establishes a Nash equilibrium wherein rational validators are incentivized to adhere to honest behavior, as the expected cost of penalties outweighs any potential short-term gains from misconduct",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes rational validators who value long-term participation rewards"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-032",
+   "identifier": "kaal:claim:5225296-032",
+   "text": "Weighted voting creates a Nash equilibrium favoring honest participation, because creating additional Sybil identities yields no extra voting power absent corresponding contributions.",
+   "abstract": "Game-theoretic analysis indicates that this creates a Nash equilibrium where honest participation is incentivized, as creating Sybil identities yields no additional voting power without corresponding contributions",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "constrained by cryptographic and temporal verification mechanisms"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886442-024",
+   "identifier": "kaal:claim:5886442-024",
+   "text": "Nash's model, by presuming homo economicus unbound, overestimates human computational capacity and perpetuates a normative ideal that distorts policy and institutional design by justifying frictionless markets that never materialize in human systems.",
+   "abstract": "Nash's model, by presuming homo economicus unbound, not only overestimates human computational capacity but perpetuates a normative ideal that distorts policy and institutional design, justifying frictionless markets that never materialize in human systems.",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to human, non agentic strategic settings"
+   ],
+   "source_pdf_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886442-025",
+   "identifier": "kaal:claim:5886442-025",
+   "text": "Policymakers who cling to Nashian ideals risk obsolescence, because the future demands governance that orchestrates agentic plenitude rather than governance that mitigates human imperfection.",
+   "abstract": "Policymakers clinging to Nashian ideals risk obsolescence. The future demands governance that orchestrates agentic plenitude, not mitigates human imperfection.",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442",
+   "datePublished": "2025",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-028",
+   "identifier": "kaal:claim:6244278-028",
+   "text": "Under persistent reputation and multiplicative updates in the repeated game, honest evaluation is stronger than a one-shot focal point: it is the strategy that minimizes long-run regret for each validator and is the Nash equilibrium of the repeated expert aggregation game.",
+   "abstract": "Honesty is the Nash equilibrium of the repeated expert aggregation game under multiplicative updates.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires repeated play with persistent reputation and other validators also minimizing regret"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-032",
+   "identifier": "kaal:claim:6269518-032",
+   "text": "Theorem 3b holds that under the integrated solution honest citation is a Nash equilibrium when validators assess citation accuracy and the marginal effect of citation accuracy on the honesty score exceeds the marginal gain from self-citation.",
+   "abstract": "honest citation is a Nash equilibrium when validators assess citation accuracy and the marginal effect of citation accuracy on the honesty score exceeds the marginal gain from self-citation:",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation accuracy component contributes forty percent of payment",
+    "reputation bonus applies above a citation accuracy of one half",
+    "validators actually assess citation accuracy"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-033",
+   "identifier": "kaal:claim:6269518-033",
+   "text": "The equilibrium depends on a design requirement rather than an assumption: mechanism parameters must be chosen so that the negative effect of increased self-citation on the honesty score outweighs its positive effect on the value score, at which point increasing self-citation strictly decreases utility.",
+   "abstract": "the mechanism parameters (θ = 0.6, reputation coefficient = 2) are chosen such that the negative effect of increased self-citation on the honesty score outweighs the positive effect on the value score.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators rate citation honesty lower when self-citation is inflated"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6421319-028",
+   "identifier": "kaal:claim:6421319-028",
+   "text": "Contrary to the author's own prior version of this argument, Nash equilibrium does not become irrelevant in the AI2AI economy; it becomes simultaneously more accurate as a description of individual agent behavior and more dangerous as a predictor of market outcomes.",
+   "abstract": "Nash equilibrium does not become irrelevant in the AI2AI economy. It becomes simultaneously more accurate as a description of individual agent behavior and more dangerous as a predictor of market outcomes.",
+   "citation": "Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "supported by algorithmic collusion research in pricing games, Bertrand duopoly experiments, and financial trading"
+   ],
+   "source_pdf_sha256": "0f4f68e56ee48bb8b2d73d3ab7fd96fa572e76c195694ffa740360704c1b172d",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'nash-equilibrium'. Derived node: a roster, not an adjudicated definition."
+}

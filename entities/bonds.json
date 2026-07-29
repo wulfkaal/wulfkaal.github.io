@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bonds",
+ "identifier": "kaal:entity:bonds",
+ "name": "Bonds",
+ "termCode": "bonds",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bonds.md",
+ "sha256": "aee15ad718b1f4061e7fc3ed3311bf7b08a942ef86eae1dc8aeb5656a64976c4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-013",
+   "identifier": "kaal:claim:3402701-013",
+   "text": "Bonds are the appropriate burning mechanism for a temporary drop in currency price caused by larger economic instability such as an act of God or war, since bonds can be redeemed above their sale price once the economy rebounds.",
+   "abstract": "Bonds should be used to address a temporary larger economic instability which lowers a currency's price--due to an act of God, for instance, or war",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "price decline caused by temporary economy-wide shock, not hot money"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-014",
+   "identifier": "kaal:claim:3402701-014",
+   "text": "A Basis-style bond scheme succeeds only while demand for the currency grows at a sufficient rate; the authors' simulations show it fails when demand is stagnant at equilibrium.",
+   "abstract": "According to our simulations, this scheme will succeed as long as demand for the currency is growing at a sufficient rate, but it will fail if the demand is stagnant at equilibrium",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "demand stagnant at equilibrium"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-015",
+   "identifier": "kaal:claim:3402701-015",
+   "text": "Because bonds sell below their redemption value, an open-ended bond queue grows without bound, depressing bond prices and creating a positive feedback loop that ends in a death spiral and failure of the peg.",
+   "abstract": "More generally, since the bonds would sell at a price lower than they were redeemed, the bond queue would grow without bound, leading to lower prices for the bonds and a positive feedback loop which would lead to a death spiral and the failure of the peg",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "bond redemption contingent on future price recovery",
+    "no expiration on bonds"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-016",
+   "identifier": "kaal:claim:3402701-016",
+   "text": "Stable cryptocurrency bonds should be minted with a fixed expiration, following the practice of historical central banks, because fixed expiration makes price discovery more efficient.",
+   "abstract": "We also recommend following the example of historical central banks, in minting bonds with fixed expiration so price discovery is more efficient",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-030",
+   "identifier": "kaal:claim:3402701-030",
+   "text": "For any long-lived currency, a major shift in perceived value is eventually inevitable, and such a shift is not covered by reserves defending against hot money or by bonds defending against temporary economic instability.",
+   "abstract": "For any long-lived currency a major shift in the perception of the value of a currency is at some point inevitable; a shift that is not accounted for by a reserve defending against hot money fluctuations or bonds defending against temporary instability in the larger economy",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "long-lived currencies",
+    "black swan events"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'bonds'. Derived node: a roster, not an adjudicated definition."
+}

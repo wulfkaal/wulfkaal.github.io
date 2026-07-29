@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bias-amplification",
+ "identifier": "kaal:entity:bias-amplification",
+ "name": "Bias amplification",
+ "termCode": "bias-amplification",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bias-amplification.md",
+ "sha256": "d87dc24ea25fbb7c98f469dc12a33106e39577898976b76b0f24248f24b03a34",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-003",
+   "identifier": "kaal:claim:4855607-003",
+   "text": "Deep learning models inadvertently learn and amplify whatever biases exist in their training data, so the composition of the training corpus, not the architecture, is the source of unfair or discriminatory outcomes.",
+   "abstract": "Depending on the data used for training, deep learning models can inadvertently learn and amplify biases present in the training data, potentially leading to unfair or discriminatory outcomes.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "depends on the data used for training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-031",
+   "identifier": "kaal:claim:5541658-031",
+   "text": "Experimental studies suggest risks such as bias amplification from judicial AI, but there is little empirical data on how those risks actually manifest in operational courtrooms, which leaves practical integration guidelines undeveloped.",
+   "abstract": "While experimental studies suggest risks like bias amplification, there is little empirical data on how these risks manifest in operational judicial settings.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the gap between experimental and deployed judicial AI systems"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'bias-amplification'. Derived node: a roster, not an adjudicated definition."
+}

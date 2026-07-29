@@ -1,0 +1,140 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/bank-resolution",
+ "identifier": "kaal:entity:bank-resolution",
+ "name": "Bank resolution",
+ "termCode": "bank-resolution",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/bank-resolution.md",
+ "sha256": "5337949d97c7f9c1b62c2451d2ebedb2484374df16ace8839f1ae0c4844ecaa1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-002",
+   "identifier": "kaal:claim:1908473-002",
+   "text": "Contrary to proposals that would replace Chapter 11 with contingent capital, the authors argue Chapter 11 needs no replacement; contingent capital should instead stabilize large financial firms for which Chapter 11 reorganization is not ideal or not legally available.",
+   "abstract": "we do not suggest that Chapter 11 needs replacement. Rather, contingent capital can help stabilize large financial firms for which a Chapter 11 reorganization is not the ideal solution or not an option.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Applies to banks and other financial institutions ineligible for or poorly served by Chapter 11",
+    "Particularly relevant from the European perspective"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-004",
+   "identifier": "kaal:claim:1908473-004",
+   "text": "If conversion from debt to equity is triggered too late, the institution may already be in the resolution stage, and conversion at that point may not supply enough equity to produce the intended financial improvement.",
+   "abstract": "On the other hand, if conversion from debt to equity is triggered too late, the financial institution may already be in the resolution stage, and conversion at that stage may not supply the company with sufficient equity to facilitate the desired financial improvement.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Institution has already entered the resolution stage when conversion occurs"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-006",
+   "identifier": "kaal:claim:1908473-006",
+   "text": "The second trigger, which increases voting rights before resolution, should fire on evidence that conversion into equity was unsuccessful, that conversion came too early or too late, or that the firm's financial performance keeps trending downward.",
+   "abstract": "Increasing the voting rights pre-resolution could be triggered by evidence that the conversion into equity was not successful, that conversion was triggered too early or too late, or that there is an overall continuing downward trend in the financial performance of the company.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Applies after the first trigger has already converted debt into equity",
+    "Applies before authorities initiate resolution"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-001",
+   "identifier": "kaal:claim:2061166-001",
+   "text": "Where bank resolution regimes are not coordinated across jurisdictions, the same systemically important financial institution can be handled in opposite ways: it might petition for reorganization under German law and emerge leaner and more competitive, while its United States operations are liquidated under the Boxer Amendment of the Dodd-Frank Act.",
+   "abstract": "it is possible that a SIFI with operations in multiple countries could petition for reorganization under German law, for instance, and emerge as a more competitive and leaner business while the same SIFI in the United States may be liquidated under the Boxer Amendment of the Dodd-Frank Act.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "SIFIs with operations in multiple countries",
+    "absent coordination and convergence of resolution regimes"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-035",
+   "identifier": "kaal:claim:2061166-035",
+   "text": "Conversion of contingent capital securities from debt to equity should be timed to occur once problems are first detected but before the early intervention powers of regulatory authorities are triggered.",
+   "abstract": "Conversion of CCS from debt to equity should take place when problems are first detected but before early intervention powers of regulatory authorities are triggered.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "European Union bank resolution framework with early intervention powers"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'bank-resolution'. Derived node: a roster, not an adjudicated definition."
+}

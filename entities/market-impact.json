@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/market-impact",
+ "identifier": "kaal:entity:market-impact",
+ "name": "Market impact",
+ "termCode": "market-impact",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/market-impact.md",
+ "sha256": "9000cc8f4359935fba0bb29a4066abc7c18f21d58979bd28910d7332f62b3669",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-025",
+   "identifier": "kaal:claim:3409548-025",
+   "text": "Machine learning applied to execution algorithms lets large orders be split into thousands of smaller transactions without moving the market, with the algorithm adjusting its aggressiveness to market conditions.",
+   "abstract": "ML can be applied in execution algorithms that help execute large orders by dividing them into thousands of smaller transactions without influencing the market, while adjusting their aggressiveness to the market situation.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "large order execution"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-030",
+   "identifier": "kaal:claim:3949098-030",
+   "text": "Incomplete transparency is deliberately required in phase 2, where the interface discloses only reputation staking outcomes and not the deliberation, so that the DAOIC can experiment with policy adjustments without fear of public market impact.",
+   "abstract": "This incomplete transparency is needed during phase 2 to ensure the DAOIC can experiment with policy adjustments without fear of public market impact.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "phase 2, before full transparency is enabled in phase 3"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-027",
+   "identifier": "kaal:claim:4033886-027",
+   "text": "Digital assets become less liquid precisely when large amounts are moved at once, because a large sell order floods the exchange and drives the price down.",
+   "abstract": "Digital assets are less liquid when individuals try to move large amounts at once. If an individual wants to sell a large number of tokens through an exchange, they have to ensure they do not flood the market with token, causing price to drop on the exchange.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "large block sales through a single exchange"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'market-impact'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,470 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/code-review",
+ "identifier": "kaal:entity:code-review",
+ "name": "Code review",
+ "termCode": "code-review",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/code-review.md",
+ "sha256": "83340c1b73c7768006611f528f91f0058052ce88997299a206bb74d143f46608",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 25
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-001",
+   "identifier": "kaal:claim:3995709-001",
+   "text": "Modern code review imposes substantial hidden costs because developers spend an average of six hours per week reviewing others' changes and are forced to switch away from their own work, creating an opportunity cost on project development.",
+   "abstract": "Developers spend a significant amount of time reviewing the changes of others – an average of 6 hours per week.11 Not only is this a significant amount of time, it also requires an opportunity cost on project development as developers are forced to switch away from their current work.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "modern code review in industry and open source settings"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-002",
+   "identifier": "kaal:claim:3995709-002",
+   "text": "The benefit of a code review is negatively correlated with the size of the code under review: the larger the number of files in a single review, the lower the rate of beneficial feedback from reviewers.",
+   "abstract": "Therefore, the benefit of attaining a code review is negatively correlated with the size of the code under review. In particular, the larger the amount of files in a single review, the lower the rate of beneficial feedback from the reviewers.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "single review submissions of increasing size"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-005",
+   "identifier": "kaal:claim:3995709-005",
+   "text": "Proposed remedies for patch size, namely distributing the workload across a broader set of reviewers and providing better transparency on developer review queues, have not solved the problem; patch size remains an issue affecting the quality, speed, and effectiveness of modern code review.",
+   "abstract": "However, despite the proposed solutions, many commentators recognize that patch size remains to be an issue for modern code review affecting the quality, speed, and effectiveness of the process.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "existing remedies deployed within legacy review processes"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-006",
+   "identifier": "kaal:claim:3995709-006",
+   "text": "Confusion during code review lengthens reviews through a message escalation mechanism: more confusion produces more messages exchanged during discussion, so the review takes longer than it should.",
+   "abstract": "that more confusion leads to an increase in the number of messages exchanged during the discussion, therefore reviews take longer.34 If there is confusion between the reviewer and the code, the code review will take longer than it should.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reviewers encountering unfamiliar code"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-011",
+   "identifier": "kaal:claim:3995709-011",
+   "text": "Organizational identity and structure affect the time and effectiveness of the code review process, as shown by a statistically significant difference in how quickly Apple accepts its own patches versus Google patches.",
+   "abstract": "treats their own patches differently from external patches.\"48 Therefore, organizational identity and structure may have impacts on the time and effectiveness of the code review process.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "cross organization patch submission"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-017",
+   "identifier": "kaal:claim:3995709-017",
+   "text": "A code review should focus on the functionality of the code and on keeping mistaken, badly constructed, and dangerous code out, rather than on the reviewer imposing their own stylistic logic.",
+   "abstract": "Instead, a code review should focus on functionality of the code and on keeping mistaken, badly constructed, and dangerous code out.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "normative",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-029",
+   "identifier": "kaal:claim:3995709-029",
+   "text": "The CRDAO governance model enables a community policing and audit methodology for code reviews, and those governance and policing functions ensure less duplication of code reviews.",
+   "abstract": "The CRDAO also uses a community policing and audit methodology for code reviews. This is enabled by the CRDAO governance model. Moreover, the CRDAO governance and policing functions ensure less duplication of code reviews.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO based governance over a reviewer community"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-031",
+   "identifier": "kaal:claim:3995709-031",
+   "text": "By creating a compendium of reviews, the CRDAO generates common code review standards that legacy code review environments lack, and reviewing under a shared set of standards aligns reviewers and the collective on expectations for functionality and quality outcomes.",
+   "abstract": "The CRDAO also fills the void left in legacy reviews without common standards. The CRDAO creates a compendium of reviews and through it a common standards for code reviews that are otherwise lacking in legacy code review environments.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a collective reviewing code reviews under a common set of standards"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-037",
+   "identifier": "kaal:claim:3995709-037",
+   "text": "In future iterations the CRDAO will offer the customer a form of insurance where the code review does not correspond with the contractual obligations of the parties.",
+   "abstract": "In future iterations, the CRDAO offers the customer a form of insurance if the code review does not correspond with the contractual obligations of the parties.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "future iterations of the CRDAO",
+    "code review failing to meet contractual obligations"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-039",
+   "identifier": "kaal:claim:3995709-039",
+   "text": "CRDAO community engagement is the mechanism that minimizes issues of lacking crowd controls, lowers the time requirements and prices of code reviews, increases developer participation, and increases overall feedback.",
+   "abstract": "The code review process of the CRDAO revolves around CRDAO community engagement which minimizes issues of lack of crowd controls, lowers time requirements for code reviews, lowers prices of code reviews, increases developer participation, and increases overall feedback.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "an operating CRDAO community"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-001",
+   "identifier": "kaal:claim:4734750-001",
+   "text": "Modern code review is expensive not only in direct reviewer time but in opportunity cost, because developers spend an average of six hours per week reviewing other people's changes and must switch away from their own work to do so.",
+   "abstract": "Developers spend a significant amount of time reviewing the changes of others",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "modern code review practice in industry and open source projects"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-007",
+   "identifier": "kaal:claim:4734750-007",
+   "text": "The more hierarchical the code review process, the lower the quality of the reviewed code; hierarchy in review is inversely related to output quality.",
+   "abstract": "The more hierarchical the code review process is, the lower is the quality of the reviewed code.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review firms with hierarchical reviewer structures"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-008",
+   "identifier": "kaal:claim:4734750-008",
+   "text": "In hierarchical review, the first reviewer's output receives the highest priority and later reviewers add only minor upgrades, so the review becomes the initial reviewer's work product rather than the collective's.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective. Rather, it is often seen as the work product of the initial reviewer with minor input from follow-up reviewers.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy hierarchical code review processes"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-012",
+   "identifier": "kaal:claim:4734750-012",
+   "text": "A code review should focus on the functionality of the code and on keeping mistaken, badly constructed, and dangerous code out, rather than on conforming code to a reviewer's stylistic logic.",
+   "abstract": "Instead, a code review should focus on the functionality of the code and on keeping mistaken, badly constructed, and dangerous code out.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-027",
+   "identifier": "kaal:claim:4734750-027",
+   "text": "Aggregating reviews into a public compendium generates a common standard for code reviews that legacy review environments lack, and a shared standard aligns reviewer and collective expectations about functionality and quality outcomes.",
+   "abstract": "The CRDAO creates a compendium of reviews and through it a common standard for code reviews that are otherwise lacking in legacy code review environments.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-017",
+   "identifier": "kaal:claim:4755632-017",
+   "text": "The more hierarchical the code review process, the lower the quality of the reviewed code, and the same holds for barriers to entry: hierarchy and entry barriers together degrade code quality.",
+   "abstract": "The more hierarchical the code review process is, the lower is the quality of the reviewed code.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy code review firms with hierarchical review structures"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-018",
+   "identifier": "kaal:claim:4755632-018",
+   "text": "Hierarchical review produces an anchoring failure: the first reviewer in the hierarchy gets the highest priority and follow-on reviewers merely add minor upgrades, so adding reviewers does not add the independent scrutiny that would raise code quality.",
+   "abstract": "in the legacy review process, the first reviewer within the hierarchical structure of the code review process often gets the highest priority and is often merely followed with minor upgrades by follow-on reviewers.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy hierarchical code review processes"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-019",
+   "identifier": "kaal:claim:4755632-019",
+   "text": "The collective of reviewers in legacy code review is not incentivized to find flaws in the code, because the review is treated as the work product of the initial reviewer with minor input from follow-up reviewers rather than as a product of the collective.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy hierarchical code review firms"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-020",
+   "identifier": "kaal:claim:4755632-020",
+   "text": "More reviewers asking clarifying questions makes code simpler and clearer, which typically increases code quality, but hierarchical review processes foreclose this mechanism and also exclude opinions from the edges of the reviewer spectrum.",
+   "abstract": "the more people review the code with comments that ask for clarification, the more likely it becomes that the code becomes simpler and clearer, which in turn typically increases code quality. However, that is not possible in hierarchical review processes.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to hierarchical code review processes"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-021",
+   "identifier": "kaal:claim:4755632-021",
+   "text": "Legacy code review carries a single point of failure risk: if the single author of a review misses something and the follow-on reviewer focuses entirely on the first reviewer's concerns, the review has a higher risk of inaccuracy, and crowd wisdom is the corrective for that myopia.",
+   "abstract": "If the single author of a code review has missed something and the follow-on reviewer focused entirely on the first reviewer's concerns, the code review has a higher risk of lack of accuracy. Crowd wisdom is one way to correct possible myopia",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to standard legacy code review with sequential reviewers"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-022",
+   "identifier": "kaal:claim:4755632-022",
+   "text": "Without crowd control the reviewer's views and the code author's intent are at odds, so a reviewer imposing their own logic can force repeated rewrites of code whose core functionality is already sound; a code review should instead focus on functionality and on keeping mistaken, badly constructed, and dangerous code out.",
+   "abstract": "Instead, a code review should focus on the functionality of the code and on keeping mistaken, badly constructed, and dangerous code out.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to legacy code review processes lacking crowd control"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-023",
+   "identifier": "kaal:claim:4755632-023",
+   "text": "Code reviews in legacy systems can last weeks and months, and these delays can force complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the review period.",
+   "abstract": "These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "can be exacerbated by market conditions in the digital asset market"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-025",
+   "identifier": "kaal:claim:4755632-025",
+   "text": "Concentrated market power in code review undermines internal and external quality controls, leaving the public with no or very weak control over the quality of code review services, and it eliminates downward price pressure because job posters cannot afford to shop for better-priced reviews.",
+   "abstract": "The centralized power also undermines attempts by other industry players to create internal or external controls on the quality of code reviews. As a result, the public has no or very weak control over the quality of code review services it receives.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to the centralized code review market"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-026",
+   "identifier": "kaal:claim:4755632-026",
+   "text": "Because a limited number of players control the code review market and its outputs, the quality of code review is often suboptimal, and clients have little or no recourse when code proves flawed even after functionality and quality review.",
+   "abstract": "Moreover, there is little or no recourse for clients in cases in which the code proved to be flawed even after functionality and quality review.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to the centralized code review market"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-027",
+   "identifier": "kaal:claim:4755632-027",
+   "text": "The code review market is self-undermining: one of the strongest forms of exploitation and centralized economies of scale is being created in a market whose purpose is to support the decentralization of other industries.",
+   "abstract": "it is a bit ironic that one of the strongest forms of exploitation and centralized economies of scale are being created in a market that is, from the outset, supposed to help support the decentralization of disparate industries.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "25 claims in the published works of Wulf A. Kaal carry the concept tag 'code-review'. Derived node: a roster, not an adjudicated definition."
+}

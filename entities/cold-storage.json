@@ -1,0 +1,119 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cold-storage",
+ "identifier": "kaal:entity:cold-storage",
+ "name": "Cold storage",
+ "termCode": "cold-storage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cold-storage.md",
+ "sha256": "e0ac2454e24ad1314e9011b8a1a9f7cccca948650155a9f3573609eb9aa7f165",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-019",
+   "identifier": "kaal:claim:3936876-019",
+   "text": "Cold storage custody solutions are much more secure and resistant to cyber attacks than hot storage because the digital assets and associated private keys are held in wallets that are not connected to the Internet.",
+   "abstract": "Because of these distinguishing features, cold storage has several key benefits. For one, cold storage custody solutions are much more secure and resistant to cyber attacks.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "wallets kept offline"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-020",
+   "identifier": "kaal:claim:3936876-020",
+   "text": "Cold storage trades security for accessibility: retrieving digital assets from cold storage can take many hours or even days, which makes cold storage especially ill suited to dynamic trading strategies.",
+   "abstract": "In some cases, it can take many hours or even days for investors to obtain control of digital assets that are stored in cold storage devices. The timing makes it especially difficult to use cold storage security for dynamic trading strategies.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assets held in cold storage devices",
+    "matters most for actively traded positions"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-021",
+   "identifier": "kaal:claim:3936876-021",
+   "text": "Cold wallets typically lack the multisig feature that is common in hot storage, so the single employee acting as agent for a corporation may be the only access point to the corporate digital assets.",
+   "abstract": "Accordingly, the person who acts as an agent to a corporation who holds the assets on behalf of the company may be the only access point to the corporate assets.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "corporate or treasury holdings in cold storage without multisig"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-036",
+   "identifier": "kaal:claim:3936876-036",
+   "text": "Multi-signature wallets and a combination of hot and cold storage solutions are the advisable custody design for digital assets.",
+   "abstract": "Multi-signature wallets and a combination of hot and cold storage solutions are advisable.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'cold-storage'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/model-risk",
+ "identifier": "kaal:entity:model-risk",
+ "name": "Model risk",
+ "termCode": "model-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/model-risk.md",
+ "sha256": "fec4cba2dffdfe53420549a71eea3ec876189fa30c75c29d95e8407003cbbd62",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-021",
+   "identifier": "kaal:claim:2998033-021",
+   "text": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades.",
+   "abstract": "When data scientists use the same data set repetitively a risk exists that the training model will overfit the test set of data which can limit the performance of the applied model on a different dataset.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to adaptive data analysis where the same data set is used repetitively"
+   ],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-009",
+   "identifier": "kaal:claim:3409548-009",
+   "text": "Repeated use of the same data set by data scientists creates an overfitting risk: the training model overfits the test set, which limits the performance of the applied model on a different dataset.",
+   "abstract": "When data scientists use the same data set repetitively a risk exists that the training model will overfit the test set of data, which can limit the performance of the applied model on a different dataset.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "data scientists reusing a single data set repetitively"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'model-risk'. Derived node: a roster, not an adjudicated definition."
+}

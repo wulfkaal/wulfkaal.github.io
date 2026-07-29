@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/delegated-proof-of-stake",
+ "identifier": "kaal:entity:delegated-proof-of-stake",
+ "name": "Delegated proof of stake",
+ "termCode": "delegated-proof-of-stake",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/delegated-proof-of-stake.md",
+ "sha256": "8a751c9c9edcef8f3b49421d2e28643fdd4ecc0f6b73f4d8a0986b01ae403303",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-011",
+   "identifier": "kaal:claim:3125827-011",
+   "text": "If block producers' identities are revealed, the supranational independence and security of the blockchain are threatened, because local jurisdictions can then exert legal power over block production. This threat is most acute in delegated proof of stake, where delegates must win popularity contests.",
+   "abstract": "identities are revealed, the supranational independence of the blockchain is threatened as is its security. In this case local jurisdictions could exert legal power over block production",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "protocols where producers must identify themselves to be chosen",
+    "especially delegated proof of stake"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-023",
+   "identifier": "kaal:claim:3441904-023",
+   "text": "In delegated proof of stake protocols the significant block validation power of elected nodes leads to corruption, because those nodes are incentivized to bribe voters to be elected as delegates in exchange for some of the newly inflated tokens.",
+   "abstract": "That power leads to corruption. Block validation nodes in delegated proof of stake protocols are incentivized to bribe voters to be elected as delegates in exchange for some of the newly inflated tokens.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "delegated proof of stake protocols such as EOS, Lisk, and Ark"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'delegated-proof-of-stake'. Derived node: a roster, not an adjudicated definition."
+}

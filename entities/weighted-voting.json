@@ -1,0 +1,136 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/weighted-voting",
+ "identifier": "kaal:entity:weighted-voting",
+ "name": "Weighted voting",
+ "termCode": "weighted-voting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/weighted-voting.md",
+ "sha256": "ed2ba0dc3aba64e8d9a4b97209ffa0a01dc29a7d84d195de85b9b408cf0e72a6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-031",
+   "identifier": "kaal:claim:5225296-031",
+   "text": "Weighted voting defeats Sybil attacks because ECDSA signatures and zk-SNARKs authenticate every platform action, so reputation cannot be artificially inflated by identities that lack genuine contribution.",
+   "abstract": "This approach utilizes cryptographic verification—via ECDSA signatures and zk-SNARKs—to authenticate actions, ensuring that reputation cannot be artificially inflated by Sybil identities lacking genuine effort",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that all platform actions be cryptographically authenticated and reputation be recorded on chain"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-032",
+   "identifier": "kaal:claim:5225296-032",
+   "text": "Weighted voting creates a Nash equilibrium favoring honest participation, because creating additional Sybil identities yields no extra voting power absent corresponding contributions.",
+   "abstract": "Game-theoretic analysis indicates that this creates a Nash equilibrium where honest participation is incentivized, as creating Sybil identities yields no additional voting power without corresponding contributions",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "constrained by cryptographic and temporal verification mechanisms"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-033",
+   "identifier": "kaal:claim:5225296-033",
+   "text": "Weighted voting reduces Sybil attack success rates by over eighty-five percent, but only where reputation is openly auditable.",
+   "abstract": "Simulations of reputation-based systems suggest that weighted voting reduces Sybil attack success rates by over 85% when reputation is openly auditable",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation must be openly auditable"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-034",
+   "identifier": "kaal:claim:5225296-034",
+   "text": "Weighted voting works as a Sybil defense only under two conditions: reputation metrics must capture meaningful effort such as block production quality and depth of governance participation, and the system must maintain continuous transparency backed by community oversight and formal verification.",
+   "abstract": "This defense requires robust metric design—e.g., ensuring reputation reflects meaningful effort (block production quality, governance participation depth)—and continuous transparency, supported by community oversight and formal verification to prevent manipulation",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "metrics must reflect meaningful effort",
+    "continuous transparency and formal verification must be maintained"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-038",
+   "identifier": "kaal:claim:5225296-038",
+   "text": "Neither weighted voting nor microsecond updates suffices alone; together they form a dual-layered defense because weighted voting addresses static identity proliferation while microsecond updates address dynamic behavioral exploitation.",
+   "abstract": "Together, weighted voting and microsecond updates form a dual-layered defense, addressing both static identity proliferation and dynamic behavioral exploitation",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'weighted-voting'. Derived node: a roster, not an adjudicated definition."
+}

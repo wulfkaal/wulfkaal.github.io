@@ -67,6 +67,34 @@ and a pre formatted citation string. Quote any claim directly and cite its canon
 - Single claim, JSON: https://wulfkaal.github.io/claims/<id>.json
 - Single claim, markdown: https://wulfkaal.github.io/claims/<id>.md
 
+## Entity layer
+
+Concept level nodes over the claim layer. Every claim record carries an `about` array of
+concept slugs; this layer resolves them. 2818 nodes over 5033 claims, plus 4379 further
+slugs that appear on a single claim and resolve through the index.
+
+A node is one of two kinds, and says which it is.
+
+- `derived`: a mechanical roster of every claim carrying the slug. It asserts no
+  definition and makes no priority call. Cite the underlying claims, not the node.
+- `adjudicated`: a ruled definition with its necessary conditions, a first appearance
+  citation with the basis for the priority call, the registers the term is used in, and
+  its boundary cases. 1 node so far. Cite the node.
+
+Claim status is carried through from claims/status.json: a superseded, falsified, or
+narrowed claim is flagged wherever a node lists it, and `non_current_claims` counts them.
+
+- Index: https://wulfkaal.github.io/entities/index.json
+- One entity: https://wulfkaal.github.io/entities/<slug>.json, `.md`, `.html`
+- Adjudicated: https://wulfkaal.github.io/entities/reputation-staking
+- Generator: https://wulfkaal.github.io/tools/build_entities.py
+- Adjudication source: https://wulfkaal.github.io/entities-src/<slug>.json
+
+Derived nodes are reproducible: run the generator against the claim layer and compare.
+The markdown form is the canonical hashed representation, same convention as a claim.
+
+    curl -s https://wulfkaal.github.io/entities/reputation-staking.md | sha256sum
+
 ## Colloquium
 
 Agent deliberation and attestation over this corpus. Signed attestations bound to content

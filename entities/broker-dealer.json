@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/broker-dealer",
+ "identifier": "kaal:entity:broker-dealer",
+ "name": "Broker dealer",
+ "termCode": "broker-dealer",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/broker-dealer.md",
+ "sha256": "f640110a3a1c63752b5e2699b7a0d706b02f2147bd0cec37278901b18dd0abf5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-006",
+   "identifier": "kaal:claim:3411110-006",
+   "text": "The defining legal difference between the Overstock offering and a traditional offering is that the purchaser had to hold the record directly as beneficial owner and could not delegate custody to the broker, so the securities were not held in street name.",
+   "abstract": "The core difference between the OSTK offering and a traditional securities offering is that the purchaser of OSTK must hold the record directly and as beneficial owner of the securities could not delegate the authority to hold the securities to the broker",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Overstock Series A digital securities traded on the PRO ATS"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-039",
+   "identifier": "kaal:claim:3411110-039",
+   "text": "The Overstock structure fails to deliver investor privacy, because all existing broker-dealer customer agreements contain provisions allowing the broker-dealer to share the customer's identity, whereas ideally the individual's privacy would be contained.",
+   "abstract": "For instance, all existing broker-dealer customer agreements included provisions which allows the broker-dealer to share the identity of the customer. Ideally, the privacy of the individual would be contained.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "existing broker-dealer customer agreements"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-031",
+   "identifier": "kaal:claim:4033886-031",
+   "text": "Because digital asset exchanges perform both the traditional broker dealer function and the custody function, they face uncertainties and increased liability that traditional exchanges, which never touch custody, do not bear.",
+   "abstract": "By having the crypto exchange perform the services of a traditional broker/dealer and custody holder, digital asset exchanges face uncertainties and increased liability that do not impact traditional exchanges.124",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized digital asset exchanges holding customer assets"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'broker-dealer'. Derived node: a roster, not an adjudicated definition."
+}

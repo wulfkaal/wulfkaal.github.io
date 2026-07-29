@@ -1,0 +1,492 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/trigger-design",
+ "identifier": "kaal:entity:trigger-design",
+ "name": "Trigger design",
+ "termCode": "trigger-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/trigger-design.md",
+ "sha256": "f91f81ec27809af0f195cd985de23e8d826c228ddc89fd5c8546be9e7eb0e051",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 26
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-003",
+   "identifier": "kaal:claim:1908473-003",
+   "text": "If conversion of contingent capital securities is triggered too early, before a real financial need for an equity injection exists, the expected financial impact of that injection may dissipate.",
+   "abstract": "If conversion of CCS from debt into equity is triggered too early without a real financial need for an equity capital injection and additional voting shareholders, the expected financial impact of the equity capital injection may dissipate.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Trigger fires absent genuine need for equity capital and additional voting shareholders"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-004",
+   "identifier": "kaal:claim:1908473-004",
+   "text": "If conversion from debt to equity is triggered too late, the institution may already be in the resolution stage, and conversion at that point may not supply enough equity to produce the intended financial improvement.",
+   "abstract": "On the other hand, if conversion from debt to equity is triggered too late, the financial institution may already be in the resolution stage, and conversion at that stage may not supply the company with sufficient equity to facilitate the desired financial improvement.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Institution has already entered the resolution stage when conversion occurs"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-005",
+   "identifier": "kaal:claim:1908473-005",
+   "text": "Because policymakers may adopt a suboptimal single trigger design, and because contingent capital has uses at several points in a firm's life cycle, contingent capital securities should be built with sequential triggers rather than one.",
+   "abstract": "Given the risk that policymakers could structure contingent capital rules with a suboptimal trigger design combined with the multiple benefits of using contingent capital in different phases of a company's life cycle, this Article suggests a sequential trigger design for CCS.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Assumes mandatory issuance of contingent capital securities"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-006",
+   "identifier": "kaal:claim:1908473-006",
+   "text": "The second trigger, which increases voting rights before resolution, should fire on evidence that conversion into equity was unsuccessful, that conversion came too early or too late, or that the firm's financial performance keeps trending downward.",
+   "abstract": "Increasing the voting rights pre-resolution could be triggered by evidence that the conversion into equity was not successful, that conversion was triggered too early or too late, or that there is an overall continuing downward trend in the financial performance of the company.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Applies after the first trigger has already converted debt into equity",
+    "Applies before authorities initiate resolution"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-008",
+   "identifier": "kaal:claim:1908473-008",
+   "text": "The first trigger should be based on a threshold in market value rather than accounting measures, because a market value trigger avoids total reliance on accounting methods that are open to manipulation.",
+   "abstract": "The core argument for this design feature is that it helps avoid total reliance on accounting methods that could otherwise be subject to manipulation.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The authors decline to take a general position in the first trigger debate"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-009",
+   "identifier": "kaal:claim:1908473-009",
+   "text": "The volume of contingent capital issuance should be large enough that conversion produces sufficient dilution, and the trigger timeframe should be roughly ninety days.",
+   "abstract": "The volume of CCS issuance should probably be large enough to result in sufficient dilution upon conversion,47 and the timeframe for the trigger should probably be around ninety days.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Stated as a probable rather than settled design choice"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-023",
+   "identifier": "kaal:claim:1908473-023",
+   "text": "A dual trigger that relies on a financial institution index gains from its use of market prices but is vulnerable to index manipulation and to bondholders attempting to force the institution into bankruptcy.",
+   "abstract": "Although the strength of this proposal is its reliance on market prices, a disadvantage could be the index trigger, which could result in index manipulation or an attempt to force the entity into bankruptcy.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Applies to dual price trigger designs that include a sector or system index component"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-028",
+   "identifier": "kaal:claim:1908473-028",
+   "text": "The second trigger should be an objective, automatic, institution specific trigger, with improvement measured through a combination of debt to equity ratio improvement and credit default swap spread narrowing after conversion.",
+   "abstract": "the approach of this Article favors an objective automatic institution-specific second trigger for the voting rights increase. The improvement of the financial institution could be measured objectively through a combination of debt-equity ratio improvement and CDS spread narrowing after conversion.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The precise arithmetic must be institution specific"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-011",
+   "identifier": "kaal:claim:1998455-011",
+   "text": "Trigger designs can be ranked by the certainty they give market participants: institution specific triggers presumably grant the most certainty, while regulatory trigger designs provide lower levels of certainty.",
+   "abstract": "While institution-specific triggers would presum- ably grant most certainty to market participants, regulatory trig- ger designs could provide lower levels of certainty.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparing institution specific triggers against regulatory or systemic triggers"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-012",
+   "identifier": "kaal:claim:1998455-012",
+   "text": "Converting contingent capital securities prematurely, while the institution can still operate without an equity injection, dissipates the benefit: the injection is no longer available at the later moment when the institution cannot obtain other funding.",
+   "abstract": "Converting CCS into equity prematurely at a time when the financial institutions can still operate without an equity capi- tal injection could mean that the CCS capital injection would no longer be available when the financial institution will be unable to obtain other funding.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the trigger fires before the institution has exhausted other funding sources"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-013",
+   "identifier": "kaal:claim:1998455-013",
+   "text": "Converting contingent capital securities too late makes the capital injection superfluous, because by that stage the institution may face unresolvable difficulties that a capital injection can only marginally soften, and conversion may not suffice once the institution has entered resolution.",
+   "abstract": "On the other hand, converting CCS too late could make the capital injection superfluous. At that stage, the financial institu- tion may have experienced unresolvable financial difficulties that may only marginally be softened with a capital injection.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the trigger fires after the institution's difficulties have become unresolvable",
+    "especially once the institution has entered the resolution stage"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-008",
+   "identifier": "kaal:claim:2061166-008",
+   "text": "The authors identify a drafting defect in the proposed CRD IV Regulation: the distinction drawn by financial institution in Article 51(a) is ambiguous and the cross reference to the institution referred to in point (a) of Article 87 is unclear and indeterminate, so the provision requires clarification or amendment.",
+   "abstract": "the distinction is ambiguous and requires further clarification or amendment. Specifically, the statutory reference in § 51, ¶ (a) (\"of the institution referred to in point (a) of Article 87\") is unclear and indeterminate.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Article 51 of the proposed CRD IV Regulation as drafted"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-027",
+   "identifier": "kaal:claim:2061166-027",
+   "text": "Efficient calibration of the triggering event is the central design problem for contingent capital, and the optimal design of a trigger that converts debt into equity remains unclear.",
+   "abstract": "The efficient calibration of triggering events is central to the design of contingent capital. The optimal design for a trigger event that converts debt into equity is unclear.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-030",
+   "identifier": "kaal:claim:2061166-030",
+   "text": "The authors posit an inverse relationship between trigger uncertainty and market development: as the uncertainty generated by trigger designs increases, issuance volume of contingent capital securities falls, while the risk and the pre-conversion interest rate on those securities rises.",
+   "abstract": "Line 1 shows that, as the uncertainty generated by the trigger designs increases, the volume of CCS could decrease. Line 2 suggests that risk and the interest rates of CCS (before conversion) will increase with the level of uncertainty in the trigger design",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the interplay of trigger structure, uncertainty and market development has not been systematically studied"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-033",
+   "identifier": "kaal:claim:2061166-033",
+   "text": "Dual trigger proposals draw their central strength from reliance on market prices, but the index leg is a major disadvantage because it can create incentives to manipulate the index or to force an entity into bankruptcy before conversion occurs.",
+   "abstract": "A central strength of the dual trigger proposals is their reliance on market prices. A major disadvantage is the index trigger, which could potentially create incentives to manipulate the index or to try to force an entity into bankruptcy.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dual trigger designs combining a firm stock price trigger with a financial institutions index trigger"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-034",
+   "identifier": "kaal:claim:2061166-034",
+   "text": "A second, sequential trigger placed before reorganization or resolution cushions the risk that policy makers misstructure the first trigger, absorbing the negative effects of inadequate or untimely conversion at the moment the institution needs capital.",
+   "abstract": "Given the risk that policy makers may not structure the trigger appropriately, the negative effects of inadequate or untimely conversion of debt into equity at a time when the company requires a capital injection could be cushioned with a second trigger",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent capital with sequential triggers spanning going and gone concern",
+    "where the first trigger proves unsuccessful"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-013",
+   "identifier": "kaal:claim:2097160-013",
+   "text": "The early trigger converts only the executives' portion of debt into equity, ahead of investors' contingent convertible bonds and while the entity is still sound on a micro-prudential basis, which is what makes it an early warning system rather than a recapitalization device.",
+   "abstract": "The early trigger converts only the portion of executives' debt to equity, before investors' contingent convertible bonds are converted, when the entity is still sound on a micro-prudential basis.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entity still sound on a micro-prudential basis at the time of conversion"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-014",
+   "identifier": "kaal:claim:2097160-014",
+   "text": "Regulatory triggers generate the highest level of uncertainty and can produce ad hoc regulatory decisions and adverse market responses, so they are not the best option for contingent convertible bonds in executive compensation.",
+   "abstract": "Regulatory triggers may lead to market uncertainty and ad hoc decisions by regulators and result in adverse market responses. Because regulatory triggers generate the highest level of uncertainty,152 they may not be the best option",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "triggers left to regulatory discretion"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-016",
+   "identifier": "kaal:claim:2097160-016",
+   "text": "Market-based trigger measures are vulnerable to market manipulation and bank runs, while accounting-based measures are updated too infrequently to respond adequately in a financial crisis.",
+   "abstract": "However, market-based measures may be susceptible to market manipulation and banking runs.156 Accounting-based measures in institution- specific automatic triggers are arguably too infrequently updated to respond adequately in a financial crisis.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "institution-specific automatic triggers keyed to market or accounting metrics"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-017",
+   "identifier": "kaal:claim:2097160-017",
+   "text": "Institution-specific automatic triggers are the preferred basis for early trigger designs because they are flexible and independent of regulatory discretion.",
+   "abstract": "Because institution-specific automatic triggers are flexible and independent from regulatory discretion, they constitute a good option for early trigger designs.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-030",
+   "identifier": "kaal:claim:2097160-030",
+   "text": "If executives influence the drafting of their own trigger, opportunism within the bounds of fiduciary duty will produce suboptimal early triggers and increase the potential for abuse, because executives can use the trigger to obtain cheap stock during a crisis.",
+   "abstract": "Executives' opportunism and involvement in drafting the trigger could result in suboptimal early triggers in contingent convertible bonds issued to executives. If the trigger design allows executives to influence the early trigger, the suboptimal early trigger could increase the potential for abuse",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "executives involved in the executive compensation and trigger design process"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-038",
+   "identifier": "kaal:claim:2097160-038",
+   "text": "Trigger designs that work well in institutions with the traditional mix of debt-holders and shareholders may be suboptimal once executives themselves hold contingent convertible bonds.",
+   "abstract": "Trigger designs that may work well in financial institutions with the traditional mix of debt- holders and shareholders may be suboptimal if executives also hold debt instruments in the form of contingent convertible bonds.275",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "executives hold debt instruments in the form of contingent convertible bonds"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-039",
+   "identifier": "kaal:claim:2097160-039",
+   "text": "Who owns the contingent convertible bonds affects the efficiency, effectiveness, and corporate governance results of a trigger design, so ownership characteristics belong in the design analysis.",
+   "abstract": "The nature of ownership of contingent convertible bonds may create different demands on the design features. Who owns the contingent convertible bonds can impact the efficiency, effectiveness, and corporate governance results of trigger designs.276",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-060",
+   "identifier": "kaal:claim:2273857-060",
+   "text": "Contingent capital triggers have significant design limitations: accounting based triggers may not respond adequately in financial crises because they are updated too infrequently, while market based triggers are susceptible to market manipulation and bank runs.",
+   "abstract": "accounting-based measures in institution-specific automatic triggers may not be able to respond adequately in financial crises because they are arguably too infrequently updated. Market-based measures, on the other hand, could be susceptible to market manipulation and banking runs.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "accounting based institution specific triggers",
+    "market based institution specific triggers"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-021",
+   "identifier": "kaal:claim:2957645-021",
+   "text": "Appropriate use of contingent capital triggers can further lower the default risk of the contingent capital securities themselves, on top of the moral hazard reduction that comes from internalizing bank failure costs.",
+   "abstract": "contingent capital can minimize moral hazard,43 and appropriate use of contingent capital triggers can further lower default risk of CCS.44",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "triggers are designed and evaluated appropriately"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-031",
+   "identifier": "kaal:claim:2957645-031",
+   "text": "Most of the design features of contingent capital securities and their triggering events remain underdeveloped, yet despite these shortcomings such securities could still help regulators anticipate regulatory needs in real time through feedback effects and improved information.",
+   "abstract": "While most of the design features of CCS and their triggering events are underdeveloped, despite these shortcomings, CCS could help allows regulators to anticipate regulatory needs in real-time, supported by feedback effects and improved information for regulation.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "state of contingent capital design as of the time of writing"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  }
+ ],
+ "description": "26 claims in the published works of Wulf A. Kaal carry the concept tag 'trigger-design'. Derived node: a roster, not an adjudicated definition."
+}

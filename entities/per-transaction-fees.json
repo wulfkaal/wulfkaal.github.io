@@ -1,0 +1,168 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/per-transaction-fees",
+ "identifier": "kaal:entity:per-transaction-fees",
+ "name": "Per transaction fees",
+ "termCode": "per-transaction-fees",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/per-transaction-fees.md",
+ "sha256": "53046106877cca2999c77ef049722fdb065037c829005ba417bcae279953c923",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-029",
+   "identifier": "kaal:claim:2959730-029",
+   "text": "Blockchain technology enables managers to charge per transaction fees, which undermines the existing 2/20 fee model, because it facilitates seamless and efficient calculation of management fees per transaction.",
+   "abstract": "Blockchain technology enables managers to charge per- transaction fees which undermines the existing 2/20 fee model. Blockchain technology facilitates a seamless and efficient calculation of management fees per transaction.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "managers operating fee calculation and settlement on a blockchain"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-030",
+   "identifier": "kaal:claim:2959730-030",
+   "text": "Traditional per transaction fee models failed because settlement and calculation created a prohibitive amount of work that made such operations very difficult to execute; blockchain technology overcomes all of these restrictions.",
+   "abstract": "In contrast to the traditional settlement and calculation of fees in a per-transaction model that created a prohibitive amount of work making such operations very difficult to execute, blockchain technology overcomes all of these restrictions.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fee models requiring manual reconciliation and settlement"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-032",
+   "identifier": "kaal:claim:2959730-032",
+   "text": "Making the blockchain enabled per transaction fee publicly available lets a private fund adviser set the applicable fee against a competitive market, so that investors in transaction heavy strategies agree upfront to higher fees.",
+   "abstract": "It also can be publicly available which allows the private fund adviser to determine the applicable fee in a competitive market.65 Accordingly, clients who invest in a more transaction-prone strategy will be able to agree upfront to higher fees",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "per transaction fee is published or agreed with clients upfront",
+    "fee varies with strategy transaction intensity"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-032",
+   "identifier": "kaal:claim:2998033-032",
+   "text": "Blockchain enables managers to charge per transaction fees, and that capability undermines the existing two and twenty fee model.",
+   "abstract": "Blockchain technology enables managers to charge per- transaction fees which undermines the existing 2/20 fee model.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-033",
+   "identifier": "kaal:claim:2998033-033",
+   "text": "Per transaction fee models were previously impractical because settlement and calculation created a prohibitive amount of manual work; blockchain removes that barrier by automatically allocating the correct fee to the correct executed trade and client account without manual reconciliation.",
+   "abstract": "It enables the fully automated allocation of the appropriate fee to the correct executed trade and associated client account without any manual reconciliation or settlement.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-034",
+   "identifier": "kaal:claim:2998033-034",
+   "text": "Blockchain enabled per transaction fees align fees with strategy turnover: clients in transaction intensive strategies agree upfront to higher fees while clients in less transaction rich strategies pay lower overall fees.",
+   "abstract": "Accordingly, clients who invest in a more transaction-prone strategy will be able to agree upfront to higher fees whereas clients who invest in a less transaction-rich strategy will pay overall lower fees.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes the per transaction fee is predetermined with clients and can be made publicly available"
+   ],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-040",
+   "identifier": "kaal:claim:2998097-040",
+   "text": "Blockchain technology enables managers to charge per-transaction fees, which undermines the existing 2 and 20 fee model, because it allows fully automated allocation of the correct fee to each executed trade without manual reconciliation or settlement.",
+   "abstract": "Blockchain technology enables managers to charge per- transaction fees which undermines the existing 2/20 fee model.",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain enabled private investment funds"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'per-transaction-fees'. Derived node: a roster, not an adjudicated definition."
+}

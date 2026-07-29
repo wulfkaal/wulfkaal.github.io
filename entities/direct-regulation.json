@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/direct-regulation",
+ "identifier": "kaal:entity:direct-regulation",
+ "name": "Direct regulation",
+ "termCode": "direct-regulation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/direct-regulation.md",
+ "sha256": "b7da94a4a65e511e74fd73d87e8e2258ee85e698c8ced3c737fd766728acde28",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-034",
+   "identifier": "kaal:claim:1806252-034",
+   "text": "Without the threat of systemic risk and without a clear delineation of the social externalities that hedge funds cause, the purpose of direct hedge fund regulation is unclear.",
+   "abstract": "Without the threat of systemic risk and without a clear delineation of social externalities caused by hedge funds, the purpose of direct hedge fund regulation is unclear.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge funds have fewer assets and less leverage than banks",
+    "collapses such as Amaranth in 2006 and large redemptions did not cause systemic problems"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-001",
+   "identifier": "kaal:claim:3405660-001",
+   "text": "Direct hedge fund regulation faces a two sided trap: strong direct rules push hedge funds offshore where they escape regulation altogether, while weak rules leave investors without adequate protection.",
+   "abstract": "Yet, regulators are faced with the problem of jurisdictional arbitrage, i.e. if they regulate directly, hedge funds may relocate offshore and escape from regulation altogether. If regulators impose weak regulations, investors may not be afforded adequate protection.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "regulators rely on national direct regulatory tools",
+    "hedge funds retain the option to relocate offshore"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'direct-regulation'. Derived node: a roster, not an adjudicated definition."
+}

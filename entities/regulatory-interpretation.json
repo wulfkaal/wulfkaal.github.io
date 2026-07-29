@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/regulatory-interpretation",
+ "identifier": "kaal:entity:regulatory-interpretation",
+ "name": "Regulatory interpretation",
+ "termCode": "regulatory-interpretation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/regulatory-interpretation.md",
+ "sha256": "e346fb78cb6d5d58b9f90ae4140a8d85487a2360b0469d1f487a22263d392ff5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-024",
+   "identifier": "kaal:claim:4941807-024",
+   "text": "Enforcing AI regulation in a federated model is complex because different entities may interpret the same regulations differently and may show differing levels of commitment to compliance.",
+   "abstract": "In a federated model, enforcing regulations and policies related to AI can be complex. In a decentralized setting, different entities may have varying interpretations of regulations or differing levels of commitment to compliance.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in decentralized settings with multiple independent compliance actors"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5245185-029",
+   "identifier": "kaal:claim:5245185-029",
+   "text": "Claims that centralized AI ensures KYC and AML compliance are circular, because they rely on AI to interpret the very regulations that AI may itself violate.",
+   "abstract": "the assertion that centralized AI ensures compliance with KYC and AML standards overlooks the circularity of relying on AI to interpret regulations it may itself violate.",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "AI driven compliance interpretation for KYC and AML"
+   ],
+   "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'regulatory-interpretation'. Derived node: a roster, not an adjudicated definition."
+}

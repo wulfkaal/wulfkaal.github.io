@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cryptographic-verification",
+ "identifier": "kaal:entity:cryptographic-verification",
+ "name": "Cryptographic verification",
+ "termCode": "cryptographic-verification",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cryptographic-verification.md",
+ "sha256": "bc9f63b207c98440392a45942a39e70824c2c39e3378b1feb22fb2800aa8821c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4021599-002",
+   "identifier": "kaal:claim:4021599-002",
+   "text": "No truly uniform definition of blockchain technology exists; commentators variously describe it as a giant distributed immutable spreadsheet for transactions or by enumerating central elements such as decentralization, immutability, and cryptographic verification.",
+   "abstract": "No truly uniform definition exists for blockchain technology. Some refer to it as a giant worldwide, distributed, immutable \"google spreadsheet\" for transactions.1",
+   "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599",
+   "datePublished": "2022",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-031",
+   "identifier": "kaal:claim:5225296-031",
+   "text": "Weighted voting defeats Sybil attacks because ECDSA signatures and zk-SNARKs authenticate every platform action, so reputation cannot be artificially inflated by identities that lack genuine contribution.",
+   "abstract": "This approach utilizes cryptographic verification—via ECDSA signatures and zk-SNARKs—to authenticate actions, ensuring that reputation cannot be artificially inflated by Sybil identities lacking genuine effort",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that all platform actions be cryptographically authenticated and reputation be recorded on chain"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'cryptographic-verification'. Derived node: a roster, not an adjudicated definition."
+}

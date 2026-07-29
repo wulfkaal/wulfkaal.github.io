@@ -1,0 +1,526 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/indirect-regulation",
+ "identifier": "kaal:entity:indirect-regulation",
+ "name": "Indirect regulation",
+ "termCode": "indirect-regulation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/indirect-regulation.md",
+ "sha256": "f4376e22fedad92bebf1d9a20d073cc595362137657399cebef0b644fc54ce7d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 29
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-003",
+   "identifier": "kaal:claim:1806252-003",
+   "text": "Building on the increase in capital requirements for counterparty risk already suggested in Basel III, Basel III could add a charge on banks' assets based on their lending exposure to hedge funds.",
+   "abstract": "Basel III could also include a charge for banks' assets based on their lending exposure to hedge funds.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Basel Committee adopts the proposal"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-011",
+   "identifier": "kaal:claim:1806252-011",
+   "text": "Banks' lending practices and counterparty credit risk management can curtail hedge funds' excessive risk taking because banks can use the threat of cutting off future lending to change a fund's behavior.",
+   "abstract": "counterparty credit risk management (CCRM) may allow them to curtail excessive risk taking, because they are in a position to use the threat of cutting off future lending to improve a hedge fund's behavior.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the bank has an ongoing lending relationship with the fund"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-012",
+   "identifier": "kaal:claim:1806252-012",
+   "text": "Banks are ideally positioned to deal with asymmetric information, moral hazard, and systemic issues pertaining to hedge funds, which is why hedge fund regulation should run through bank regulation.",
+   "abstract": "Banks are ideally positioned to deal with asymmetric information, moral hazard, and systemic issues pertaining to hedge funds.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-025",
+   "identifier": "kaal:claim:1806252-025",
+   "text": "Basel III capital charges based on a bank's lending exposure to hedge funds could help address the threat of regulatory arbitrage.",
+   "abstract": "Basel III capital charges based on a bank's lending exposure to hedge funds could help to address the threat of regulatory arbitrage.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "banks participating in the Basel framework lend to the funds"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-028",
+   "identifier": "kaal:claim:1806252-028",
+   "text": "A standard objection to indirect regulation is that counterparty credit risk management will not work effectively unless the lending bank has an exclusive relationship with the hedge fund that lets it control the relationship.",
+   "abstract": "CCRM will not work effectively unless the bank has an exclusive relationship with the hedge fund that allows it to control the relationship.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a hedge fund borrows from more than one bank, so no single bank sees its overall risk exposure"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-029",
+   "identifier": "kaal:claim:1806252-029",
+   "text": "Contesting the exclusivity objection, exclusivity of a banking relationship is not the only effective way to exercise control and manage risk: the intensity, endurance, and quality of the relationship also influence how much control a bank can exercise over a hedge fund.",
+   "abstract": "The exclusivity of a banking relationship is perhaps not the only effective way to exercise control and manage risk. The intensity, endurance, and quality of the relationship also influence the level of control a bank may exercise over a hedge fund.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "most hedge funds maintain more than one banking relationship"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1806252-030",
+   "identifier": "kaal:claim:1806252-030",
+   "text": "Because some hedge fund trading strategies depend on the immediate availability of capital and will not work without sufficient lines of credit, banks may retain enough influence over hedge funds even where funds use multiple lenders.",
+   "abstract": "Without sufficient lines of credit to supply required additional capital, these trading strategies may not work. Perhaps banks will have enough influence over hedge funds even if hedge funds have multiple lending relationships.",
+   "citation": "Kaal, Hedge Fund Regulation Via Basel III (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1806252",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fund uses dynamic trading strategies requiring additional capital on short notice"
+   ],
+   "source_pdf_sha256": "3343ebfe05a925c3d1a75625c4b351ccff515c50819a48d155804daacf01429d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2470008-013",
+   "identifier": "kaal:claim:2470008-013",
+   "text": "The absence of financial market repercussions from the Amaranth failure suggests that indirect regulation of private funds, achieved by having regulators press banks to limit leverage extended to their fund clients, worked.",
+   "abstract": "The lack of financial market repercussion after the Amaranth failure seems to suggest that this approach was successful.",
+   "citation": "Wulf A. Kaal, The Systemic Risk of Private Funds after the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2470008",
+   "datePublished": "2014",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post LTCM supervisory practice of monitoring fund clients through bank leverage limits",
+    "the Amaranth failure in 2006"
+   ],
+   "source_pdf_sha256": "5f68a401c935527d89658171e9b48a4d186710459aaf2bdbead755507394e8c9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-030",
+   "identifier": "kaal:claim:2714974-030",
+   "text": "Proposals for indirect regulation of hedge funds through the regulation of the financial institutions that interact with them are unlikely to become legally binding.",
+   "abstract": "Such proposals are unlikely to become legally binding.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "predictive",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-031",
+   "identifier": "kaal:claim:2714974-031",
+   "text": "Banks are uniquely positioned to discipline hedge fund behavior because their role as lenders, market makers, and product creators lets them use the threat of cutting off future lending as leverage over a fund.",
+   "abstract": "Because of their interaction with hedge funds, banks are uniquely positioned to use the threat of cutting off future lending to improve a hedge fund's behavior.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on banks' ongoing lending and counterparty relationships with the fund"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2714974-032",
+   "identifier": "kaal:claim:2714974-032",
+   "text": "Indirect regulation through bank capital adequacy standards can reach systemic risk because those standards alter not only banks' credit standards but also counterparty credit risk and therefore hedge funds' level of leverage.",
+   "abstract": "Indirect regulation through capital adequacy standards could also address issues of systemic risk because capital adequacy standards will not only regulate and alter credit standards of banks, but also counterparty credit risk and, thus, hedge funds' level of leverage.",
+   "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to banks and counterparties subject to capital adequacy standards"
+   ],
+   "source_pdf_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-008",
+   "identifier": "kaal:claim:2998097-008",
+   "text": "Fund managers are unlikely to escape bank based indirect supervision by terminating a lending relationship, because their dynamic trading strategies depend on the immediate availability of capital and lending relationships now face increased scrutiny.",
+   "abstract": "However, because private investment funds' dynamic trading strategies often depend on the immediate availability of capital, and given today's banking environment with increased scrutiny over lending and lending relationships, managers are unlikely to terminate a lending relationship.45",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contemporary banking environment with heightened lending scrutiny",
+    "funds running dynamic trading strategies"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-009",
+   "identifier": "kaal:claim:2998097-009",
+   "text": "Data on the credit derivatives market show that since 2000 private investment funds steadily increased their share of that market while banks' role declined, which supports shifting regulatory emphasis onto banks' lending exposure to those funds.",
+   "abstract": "The data suggest that since 2000 private investment funds have steadily increased their share in the credit derivatives market while banks' role in the market for credit derivatives has declined.49 The increasing role of private",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "credit derivatives market since 2000"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-005",
+   "identifier": "kaal:claim:3405660-005",
+   "text": "Indirect regulation of hedge funds attains most regulatory objectives while still leaving the industry the operating freedom it needs, which makes it preferable to the direct alternatives.",
+   "abstract": "The chapter shows that indirect regulation of the hedge fund industry attains most regulatory objectives while providing the industry with the needed freedoms.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-019",
+   "identifier": "kaal:claim:3405660-019",
+   "text": "Indirect regulation is defined as a regulatory approach that regulates the counterparties and intermediaries of hedge funds rather than the hedge funds themselves, addressing the critical regulatory issues without acting on the funds directly.",
+   "abstract": "Indirect regulation of hedge funds is a regulatory approach that emphasizes the regulation of counterparties to hedge funds and intermediaries rather than hedge funds themselves.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-020",
+   "identifier": "kaal:claim:3405660-020",
+   "text": "Indirect regulation is often the only feasible tool available, because in many jurisdictions regulators lack full direct regulatory authority over hedge funds and can act only through the regulated entities they do control.",
+   "abstract": "Indirect regulation if often the only feasible regulatory tool for regulators seeking to lower risks associated with the hedge fund industry and protect investors and markets. In many jurisdictions, regulators do not have (full) direct regulatory authority over hedge funds.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "jurisdictions where regulators lack full direct authority over hedge funds",
+    "regulators have authority over broker dealers, prime brokers and affiliates"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-021",
+   "identifier": "kaal:claim:3405660-021",
+   "text": "Indirect regulation minimizes regulatory expense by relying on the private sector risk practices of counterparties and creditors, producing an equilibrium between regulatory cost and regulatory attainment.",
+   "abstract": "Relying on private sector practices by counterparties and creditors minimizes regulatory expenses significantly. Indirect regulation enables a state of equilibrium between costs and attainments of regulatory initiatives.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "counterparties and creditors actually maintain disciplined private sector practices"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-022",
+   "identifier": "kaal:claim:3405660-022",
+   "text": "Indirect regulation lets hedge funds preserve the opacity their strategies require, on the condition that their counterparties rather than the funds become the primary regulatory targets.",
+   "abstract": "Indirect regulation allows the hedge fund industry to preserve the necessary opaqueness of the activities of hedge funds if hedge fund's counterparties become the primary regulatory targets.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge fund counterparties are made the primary regulatory targets"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-023",
+   "identifier": "kaal:claim:3405660-023",
+   "text": "Indirect regulation asks banks to fully assess the risk they incur from hedge fund counterparties, but that assessment is often dubious at best because of the opacity of hedge fund activity.",
+   "abstract": "Regulators who regulate banks' risk management processes are in essence asking banks to fully assess the risks they incur in engaging with hedge funds as their counterparties. That assessment is often dubious at best.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "banks face opaque hedge fund counterparties"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-024",
+   "identifier": "kaal:claim:3405660-024",
+   "text": "Any risk assessment of hedge funds as counterparties is necessarily incomplete, because there is no common measure for calculating leverage and exposure and because fund trading strategies are dynamic.",
+   "abstract": "The absence of a common measure with which to calculate leverage and exposure and the dynamic nature of hedge funds ́ trading strategies is just one example that shows the incomplete nature of any risk assessment of hedge funds as counterparties.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-025",
+   "identifier": "kaal:claim:3405660-025",
+   "text": "Competition among creditor banks undermines indirect regulation, because competing banks compromise on important elements of the risk management process and agree to overly generous credit conditions.",
+   "abstract": "Competition among creditor banks can also lead to compromising on important elements of the risk management process and agreeing to overly generous credit conditions.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multiple banks competing to lend to the same hedge funds"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-027",
+   "identifier": "kaal:claim:3405660-027",
+   "text": "The Basel framework serves indirect hedge fund regulation by aligning regulatory capital requirements more closely with underlying risks and by giving banks and supervisors several options for assessing capital adequacy.",
+   "abstract": "The Basel framework aligns regulatory capital requirements more closely with underlying risks, and provides banks and their supervisors with several options for the assessment of capital adequacy.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-029",
+   "identifier": "kaal:claim:3405660-029",
+   "text": "The three pillars of Basel II and its successors are rules addressed to banks that thereby indirectly regulate hedge funds.",
+   "abstract": "The three pillars of Basle II and its successors, constitute a set of rules applicable to financial intermediaries i.e. banks which indirectly regulate hedge funds.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-030",
+   "identifier": "kaal:claim:3405660-030",
+   "text": "Applying the Basel Framework to hedge fund regulation conforms to the requirements of incomplete contract theory, which supplies the theoretical justification for the indirect approach.",
+   "abstract": "Applying the Basel Framework to hedge fund regulation is in conformity with the requirements of incomplete contract theory.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-031",
+   "identifier": "kaal:claim:3405660-031",
+   "text": "Indirect regulation removes the problem of missing jurisdictional authority and therefore of jurisdictional arbitrage, because the Basel Framework applies to banks worldwide rather than to funds in any one jurisdiction.",
+   "abstract": "Indirect regulation of hedge funds removes the problem of lacking jurisdictional authority and, thus, jurisdictional arbitrage. The Basel Framework is a framework for banks worldwide.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Basel Framework is broadly adopted across banking jurisdictions"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-032",
+   "identifier": "kaal:claim:3405660-032",
+   "text": "By letting funds implement their own risk monitoring systems, indirect regulation avoids compliance costs that would otherwise threaten the profitability needed to justify the 2 and 20 fee structure to clients.",
+   "abstract": "Indirect regulation enables the hedge fund industry to avoid costs by implementing their own risk monitoring systems and measurements. Accordingly, indirect regulation helps address the danger that hedge funds might not be sufficiently profitable to justify their 2/20 fee structure to clients.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-035",
+   "identifier": "kaal:claim:3405660-035",
+   "text": "Indirect regulation makes ex post opportunism by hedge funds less likely because the financial intermediaries, not just the funds, stand to lose reputation and market position if their counterparty risk evaluation proves insufficient.",
+   "abstract": "ex post opportunism of hedge funds is less likely considering that not only hedge funds but also their financial intermediaries are endangered to lose their reputation and market position in case it transpired that their risk evaluation of a counterparty hedge fund is insufficient",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "intermediaries face reputational exposure in the market"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-038",
+   "identifier": "kaal:claim:3405660-038",
+   "text": "Under an indirect approach hedge funds can remain exempt from disclosure and transparency requirements because only the financial intermediaries are required to reveal the relevant information, which is why the approach reconciles secrecy with reduced information asymmetry.",
+   "abstract": "At the same time, under an indirect regulatory approach, hedge funds can remain exempt from disclosure and transparency requirements. Only financial intermediaries are required to unveil that information.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-040",
+   "identifier": "kaal:claim:3405660-040",
+   "text": "Indirect regulation through Basel banking supervision removes the need for joint regulatory action and avoids each national regulator's transaction and implementation costs, because an international framework requires only one implementation and compliance then falls to participating banks.",
+   "abstract": "Indirect regulation of hedge funds via the banking supervision in the Basel Framework also removes the need for joint regulatory action and individual regulators' transaction costs and implementation costs.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "29 claims in the published works of Wulf A. Kaal carry the concept tag 'indirect-regulation'. Derived node: a roster, not an adjudicated definition."
+}

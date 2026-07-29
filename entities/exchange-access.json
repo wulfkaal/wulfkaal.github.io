@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/exchange-access",
+ "identifier": "kaal:entity:exchange-access",
+ "name": "Exchange access",
+ "termCode": "exchange-access",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/exchange-access.md",
+ "sha256": "296e6232986a93fe7bd917a7cea5184145ffc5766b765cdd95a027d55d900b7c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411110-018",
+   "identifier": "kaal:claim:3411110-018",
+   "text": "Neither the Overstock offering nor the Linq based offerings were structured to support widespread ownership or trading through blockchain, and no major exchange or inter-dealer market permits or will foreseeably permit trading of blockchain issued securities.",
+   "abstract": "no major exchange or inter- dealer market permits, or will permit in the foreseeable future, trading of securities issued through blockchain.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "U.S. exchanges and inter-dealer markets as of the time of writing"
+   ],
+   "source_pdf_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-032",
+   "identifier": "kaal:claim:4033886-032",
+   "text": "When exchanges apply different standards about who may trade on their platform, the market ends up showing different prices for the same asset across exchanges, which is one reason trading arbitrage has become common in crypto.",
+   "abstract": "When different exchanges apply different standards as to who can trade on their platform, the market sees different prices for the same asset across exchanges.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "exchanges excluding participants by residence or other status"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'exchange-access'. Derived node: a roster, not an adjudicated definition."
+}

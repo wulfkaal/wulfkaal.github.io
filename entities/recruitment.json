@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/recruitment",
+ "identifier": "kaal:entity:recruitment",
+ "name": "Recruitment",
+ "termCode": "recruitment",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/recruitment.md",
+ "sha256": "cbea320e6bb875dcd4208f238e67a18d6ebb7ee8d903dbecfdfb27f09c1ca3a3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-027",
+   "identifier": "kaal:claim:3125822-027",
+   "text": "Because earlier minted tokens pay out more than later ones at a steady fee rate, later experts have less motivation to join, and the remedy available to the bench is to change the exchange rate between fees and sem tokens to attract new recruits.",
+   "abstract": "This may mean later experts have less motivation to join if fees paid into the system are at a steady state. To combat this, the bench may choose to change the exchange rate between fees and sem tokens to encourage new recruits.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes a steady state rate of incoming fees",
+    "tokens are never destroyed"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-039",
+   "identifier": "kaal:claim:3125827-039",
+   "text": "Because earlier sem tokens represent a larger percentage of the total and therefore pay out more, later experts have less motivation to join when fees are at a steady state; the authors propose that the bench may need to change the fee to token exchange rate to recruit new members.",
+   "abstract": "This may mean later experts have less motivation to join if fees paid into the system are at a steady state. To combat this, the bench may choose to change the exchange rate between fees and sem tokens to encourage new recruits.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "steady state rate of fees paid into the expertise",
+    "tokens created with every fee and never destroyed"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'recruitment'. Derived node: a roster, not an adjudicated definition."
+}

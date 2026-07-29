@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/alignment",
+ "identifier": "kaal:entity:alignment",
+ "name": "Alignment",
+ "termCode": "alignment",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/alignment.md",
+ "sha256": "19287b8223c402451057ec9013f20a3cb7a03cc2e7cbc13643292241194c85b1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-017",
+   "identifier": "kaal:claim:4855607-017",
+   "text": "Balancing helpfulness against harmlessness is an inherent tension in Safe RLHF rather than a tuning problem that can be resolved once.",
+   "abstract": "Balancing the dual objectives of helpfulness and harmlessness remains an inherent tension in Safe RLHF.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Safe RLHF designs that optimize helpfulness and harmlessness jointly"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-018",
+   "identifier": "kaal:claim:4855607-018",
+   "text": "RLHF fails on several fronts at once: humans can pursue harmful goals either innocently or maliciously, human feedback degrades when examples are hard to evaluate and especially when RLHF is applied to superhuman models, and reward models diverge from humans through misspecification and misgeneralization.",
+   "abstract": "Moreover, humans can pursue harmful goals, either innocently or maliciously, and can provide poor feedback when examples are hard to evaluate, especially when applying RLHF to superhuman models. Reward models can differ from humans due to misspecification and misgeneralization",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "especially acute when RLHF is applied to models more capable than their human evaluators"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-001",
+   "identifier": "kaal:claim:6244278-001",
+   "text": "Contemporary AI's incapacity for authentic judgment under irreducible uncertainty is an institutional deficit rather than a computational one: an agent that bears no consequence for its errors cannot develop genuine discernment, no matter how capable it becomes.",
+   "abstract": "This Article argues the limitation is institutional, not computational: agents bearing no consequence for error cannot develop genuine discernment.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to judgment under irreducible uncertainty, not to defined, verifiable tasks"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-015",
+   "identifier": "kaal:claim:6244278-015",
+   "text": "An agent sophisticated enough to satisfy the letter of a constraint while violating its spirit is an agent whose alignment is illusory.",
+   "abstract": "An agent sophisticated enough to satisfy the letter of a constraint while violating its spirit is an agent whose alignment is illusory.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to rule-based exogenous constraints on highly capable agents"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-029",
+   "identifier": "kaal:claim:6244278-029",
+   "text": "The complementarity of capability and alignment is a structural property of the reputation mechanism rather than an assumption about agent preferences, because the cross-partial derivative of agent utility with respect to capability and alignment is positive.",
+   "abstract": "This supermodularity is the formal condition under which capability and alignment are complements, and it is a structural property of the reputation mechanism, not an assumption about agent preferences or values.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "holds within the institutional architecture described, where reputation tracks trustworthiness"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'alignment'. Derived node: a roster, not an adjudicated definition."
+}

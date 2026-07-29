@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/salaries",
+ "identifier": "kaal:entity:salaries",
+ "name": "Salaries",
+ "termCode": "salaries",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/salaries.md",
+ "sha256": "5946359bafd40a7b19f3d13f2a5b4b6b5859de46354145dee4704ab0f9aff34b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-025",
+   "identifier": "kaal:claim:3981021-025",
+   "text": "Voting associate salaries are paid in fungible tokens pro rata to each associate's non fungible reputation score at the point of payment, which creates second order economic effects and indirect economic incentives in the DAO.",
+   "abstract": "In other words, the reputation salary is paid out in fungible tokens pro rata to reputation score of each VA at the point of payment. This design ensures second order economic effects and indirect economic incentives in the",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO salary design"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-033",
+   "identifier": "kaal:claim:3981021-033",
+   "text": "The loss of opportunity from slashing a voting associate's reputation grows as the size of the network increases, because a larger network intensifies competition among associates for the reputation tokens that determine fungible salary payouts.",
+   "abstract": "reputation tokens to receive fungible token salaries that are paid in proportion to reputation tokens. Accordingly, in the CHARITYxDAO design, the loss of opportunity from slashing CHARITYxDAO VA reputation grows as the size of the network increases.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation weighted networks where salary tracks reputation"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'salaries'. Derived node: a roster, not an adjudicated definition."
+}

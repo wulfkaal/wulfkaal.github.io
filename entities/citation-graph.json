@@ -1,0 +1,138 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/citation-graph",
+ "identifier": "kaal:entity:citation-graph",
+ "name": "Citation graph",
+ "termCode": "citation-graph",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/citation-graph.md",
+ "sha256": "9b8186d44d535fb0556ee7703e8a36d448c5a023f5e5f4b749fd6720561689d7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-046",
+   "identifier": "kaal:claim:3125822-046",
+   "text": "The proposed fix is to value tokens by how the post was received and cited: tokens minted at a node with a large branch of positive references are worth more, while tokens from a post whose betting pool was close to 50-50 are worth less in future salaries than tokens from a post with uniform agreement.",
+   "abstract": "For instance if there is a large branch of positive references based at a node, the tokens minted at that node should be worth more. If the post was contentious, and its betting pool was close to 50-50, the tokens will be worth less in future salaries than uniform agreement.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires the forum to be treated as a weighted citation graph"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-023",
+   "identifier": "kaal:claim:3125827-023",
+   "text": "The reference system lets each validated new post change the relative value of sem tokens created in the graph of connected earlier posts, so the value of a past contribution depends on how important later users judge it to be. This gives the forum the structure of a weighted directed acyclic citation graph.",
+   "abstract": "Each new post has the opportunity to reference older posts. If the new post is validated, the reference will change the relative value of sem tokens created in the graph of connected posts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "new post is itself validated",
+    "references weighted according to the goals of the particular DAO"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-035",
+   "identifier": "kaal:claim:3782217-035",
+   "text": "Weighting references so that more value is shared with older posts promotes long term contributions and innovation and increases stability, while less value sharing encourages new contributions and immediate work, so the weighting parameters encode whether the DAO values long term or short term contribution.",
+   "abstract": "More value-sharing with older posts will promote long-term con- tributions and innovations and increases stability; less value-sharing encourages new contributions and immediate work. How you design the calculation tells us whether you give more value to long-term or short-term contributions.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation graph based reputation systems"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-036",
+   "identifier": "kaal:claim:3782217-036",
+   "text": "Reviewing through references enables punishment and reward in DAOs, which shifts members' motivation away from immediate rewards toward the future and encourages delayed gratification and sacrifice for the good of the group.",
+   "abstract": "reviewing through references enables punishment and rewards in DAOs which changes the motivations of members from a focus on immediate rewards to the future, encouraging delayed gratification and sacrifice for the good of the group.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs with a functioning citation and review system"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4957318-030",
+   "identifier": "kaal:claim:4957318-030",
+   "text": "The proposed system stipulates a forum as an on chain collection of uniquely identified posts that may cite prior contributions, and this citation structure is what constitutes the Weighted Directed Acyclic Graph.",
+   "abstract": "The web3 community as proposed herein operates a forum as an on-chain collection of posts, each uniquely identified and possibly citing previous contributions. This forum forms a Weighted Directed Acyclic Graph (WDAG), facilitating organized discussion and citation among participants.",
+   "citation": "Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "on chain forums where posts and citations are recorded immutably"
+   ],
+   "source_pdf_sha256": "137fb77eb82111a85f0ab5581926f762a7414ae84aaf3d56e8299db670e0e0c1",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'citation-graph'. Derived node: a roster, not an adjudicated definition."
+}

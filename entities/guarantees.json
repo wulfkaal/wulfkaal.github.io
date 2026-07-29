@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/guarantees",
+ "identifier": "kaal:entity:guarantees",
+ "name": "Guarantees",
+ "termCode": "guarantees",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/guarantees.md",
+ "sha256": "765ca4c0c9c4e017dae7e837532f3e1148215bee85be36b6e2e6c3543932a29f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-020",
+   "identifier": "kaal:claim:3373393-020",
+   "text": "A blockchain guarantee means that a contract between principal and agent executes only if and when all contract parameters have been fulfilled by both parties and verified by a majority of miners or nodes in the system.",
+   "abstract": "Blockchain guarantees include contract execution between principal and agent only if and when all contract parameters were fulfilled by both parties and verified by a majority of miners/nodes in the system.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-038",
+   "identifier": "kaal:claim:3373393-038",
+   "text": "Without a decentralized human backstop to code, the immutability of the blockchain and its cryptographic security systems may not be able to create truly transactional guarantees and trust between principals and agents.",
+   "abstract": "Similarly, without a decentralized human backstop to code, the immutability of the blockchain and its cryptographic security systems may not be able to create truly transactional guarantees and trust between principals and agents in the integrity of their contractual relationship.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "complex agency relationships"
+   ],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-008",
+   "identifier": "kaal:claim:3949098-008",
+   "text": "Reputation can underwrite tokenized assets and provide immutable guarantees for them, and with reputation staked guarantees tokenized assets can over time function like real assets.",
+   "abstract": "Reputation can be used to underwrite tokenized assets and provide immutable guarantees for tokenized assets. With reputation staked guarantees on tokenized assets such tokenized assets can, over time, exist like real assets.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is meaningful and secure",
+    "guarantors stake reputation and associated cashflow streams"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'guarantees'. Derived node: a roster, not an adjudicated definition."
+}

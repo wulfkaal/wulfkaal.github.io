@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/transaction-taxes",
+ "identifier": "kaal:entity:transaction-taxes",
+ "name": "Transaction taxes",
+ "termCode": "transaction-taxes",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/transaction-taxes.md",
+ "sha256": "46da0129c9992cfc61acacd72787882e2fd84e4cf80cb070163515d6e97d40f8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-026",
+   "identifier": "kaal:claim:3402701-026",
+   "text": "In a blockchain cryptocurrency, transaction taxes should be set to match the cost of running the network, meaning the cost of incentivizing enough nodes for the desired level of decentralization plus the cost of maintaining the coin's stability.",
+   "abstract": "In a blockchain cryptocurrency, transaction taxes should match the cost of running the network, i.e., the cost required to incentivize a sufficient number of nodes to operate in order to maintain the level of decentralization desired",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain cryptocurrencies with node incentive costs"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-028",
+   "identifier": "kaal:claim:3402701-028",
+   "text": "In the contemporary climate these taxes and fees are unlikely to be implemented appropriately, because internet culture has trained users to expect free service from nodes and to hide the costs of running them.",
+   "abstract": "In the contemporary climate, however, these taxes or fees are not likely to be implemented appropriately",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "prevailing internet culture of free node service"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-029",
+   "identifier": "kaal:claim:3402701-029",
+   "text": "Blockchain users are likely to demand zero transaction fees while failing to notice holding fees below about 3 percent annually, which a USD peg institutes implicitly through a comparable inflation target.",
+   "abstract": "Most likely this culture will continue to the decentralized economy, where blockchain users will expect 0 transaction fees but will probably not notice holding fees below 3% annual",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized economy inheriting internet fee culture",
+    "peg to USD"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'transaction-taxes'. Derived node: a roster, not an adjudicated definition."
+}

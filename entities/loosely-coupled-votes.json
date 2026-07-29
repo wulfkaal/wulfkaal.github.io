@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/loosely-coupled-votes",
+ "identifier": "kaal:entity:loosely-coupled-votes",
+ "name": "Loosely coupled votes",
+ "termCode": "loosely-coupled-votes",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/loosely-coupled-votes.md",
+ "sha256": "8e0d2b5fa07a7888309f2ff420e1b8244b0d66a2d32e7286358dab822c0e93b6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-029",
+   "identifier": "kaal:claim:3782214-029",
+   "text": "If unanimous consensus is strongly incentivized in every validation pool, a DAO will degenerate quickly, because members holding minority opinions will not raise alternatives for fear of losing all their reputation tokens; this is why loosely coupled votes are needed.",
+   "abstract": "If unanimous consen- sus is strongly incentivized by every validation pool, our DAOs will degenerate quickly, as alternative options will not be raised by members with minority opinions for fear they will lose all reputation tokens.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contentious protocol development",
+    "validation pools that penalize minority positions"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-030",
+   "identifier": "kaal:claim:3782214-030",
+   "text": "Loosely coupled voting, in which staked reputation cannot be lost, encourages dissenting opinions, while tightly coupled voting, in which losing stakes are redistributed, guarantees consensus; a DAO steers deliberation by moving between the two.",
+   "abstract": "Loosely-coupled voting encourages dissenting opinions. Tightly-coupled voting guarantees consensus.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation weighted validation pools"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'loosely-coupled-votes'. Derived node: a roster, not an adjudicated definition."
+}

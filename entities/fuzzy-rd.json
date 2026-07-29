@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fuzzy-rd",
+ "identifier": "kaal:entity:fuzzy-rd",
+ "name": "Fuzzy rd",
+ "termCode": "fuzzy-rd",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fuzzy-rd.md",
+ "sha256": "628b4ee348a632ad3f532e35c64d5c5acccd2f40f5e87b8c82c97961ec81a088",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2014"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-024",
+   "identifier": "kaal:claim:2389416-024",
+   "text": "Because the compliance probability denominator is very close to one, fuzzy regression discontinuity estimates differ only trivially from the sharp design estimates on the entire sample.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample",
+    "compliance with mandatory disclosure near certain above the threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-030",
+   "identifier": "kaal:claim:2389416-030",
+   "text": "Unlike the entire sample, whose discontinuity coefficient is near zero except in March 2012, the strategic subsample shows a discontinuity coefficient that is always above zero across the sample months.",
+   "abstract": "While the entire sample has a value always very close to zero, except for March 2012, the strategic subsample has a value always above zero.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fuzzy RD on the 87 fund strategic subsample",
+    "March to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'fuzzy-rd'. Derived node: a roster, not an adjudicated definition."
+}

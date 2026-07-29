@@ -1,0 +1,375 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/regression-discontinuity",
+ "identifier": "kaal:entity:regression-discontinuity",
+ "name": "Regression discontinuity",
+ "termCode": "regression-discontinuity",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/regression-discontinuity.md",
+ "sha256": "1f00c84eb44075a5c197baa852c8b3097a20b3cbc3f8e4213adb384989f90e3e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 18
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-003",
+   "identifier": "kaal:claim:2389416-003",
+   "text": "The hedge fund adviser registration requirement under the Dodd-Frank Act creates a discontinuity in hedge fund returns at the registration effective date of March 30, 2012.",
+   "abstract": "The registration requirement for hedge fund advisers under the Dodd-Frank Act creates a discontinuity in hedge fund returns at the registration effective date, March 30, 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "threshold of $150 million assets under management",
+    "registration effective date March 30, 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-004",
+   "identifier": "kaal:claim:2389416-004",
+   "text": "Strategic behavior by fund advisers around the assets under management registration threshold produces a strong increase in the measured discontinuity at that threshold.",
+   "abstract": "Strategic actions by fund advisers lead to a strong increase in the discontinuity around the AUM registration threshold.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers whose AUM floats above and below $150 million",
+    "months May through August 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-020",
+   "identifier": "kaal:claim:2389416-020",
+   "text": "Under the sharp regression discontinuity design, the estimated treatment coefficient exceeds one only in March 2012, at 1.104 with a p-value of 0.015, and is close to zero and insignificant in every other month.",
+   "abstract": "Only in March 2012, i.e. the registration effective date for hedge fund advisers, the estimated coefficient has value larger than one, while it is always close to zero in the other periods.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp RD on the entire sample of 2145 funds",
+    "optimal bandwidth selection",
+    "January to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-021",
+   "identifier": "kaal:claim:2389416-021",
+   "text": "The March 2012 discontinuity coefficient is the only estimate with a p-value below 5 percent; all subsequent monthly estimates are statistically insignificant.",
+   "abstract": "Moreover, the coefficient in March 2012 is the only one with p-value smaller than 5%, while all the estimates in the following months are not significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp RD estimates April to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-022",
+   "identifier": "kaal:claim:2389416-022",
+   "text": "The discontinuity in hedge fund earnings at the registration effective date is positive, which is the opposite of what the hedge fund industry expected the Dodd-Frank Act to produce.",
+   "abstract": "Figure 8 suggests that the requirements introduced by the Dodd-Frank Act create a positive effect on hedge fund performance. By contrast, the hedge fund industry expected the introduction of the Dodd-Frank Act to result in negative effects on hedge fund returns.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "March 30, 2012 registration effective date",
+    "$150 million AUM threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-023",
+   "identifier": "kaal:claim:2389416-023",
+   "text": "The March 2012 discontinuity effect is not persistent and is completely absorbed in the months following the registration effective date for private fund advisers.",
+   "abstract": "However, this discontinuity effect we observe in March 2012 is not persistent and is completely absorbed in the months following the registration effective date for private fund advisers under the Dodd-Frank Act.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "months after March 2012 in the sample window"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-025",
+   "identifier": "kaal:claim:2389416-025",
+   "text": "A McCrary density test of the assignment variable independently supports the presence of a discontinuity at the $150 million threshold in March 2012.",
+   "abstract": "The results reported in Figure 9 further support and underscore the presence of a discontinuity in March 2012 at the threshold of 150 million.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "March 2012",
+    "$150 million AUM threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-026",
+   "identifier": "kaal:claim:2389416-026",
+   "text": "The March 2012 discontinuity estimates remain statistically significant and stable at larger bandwidths, while very small bandwidths yield confidence intervals containing zero and would not detect any discontinuity.",
+   "abstract": "As Figure 10 shows, the estimates are statistically significant and rather stable also for larger bandwidths.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bandwidth robustness checks around the optimal bandwidth"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-027",
+   "identifier": "kaal:claim:2389416-027",
+   "text": "Conventional, bias-corrected, and robust regression discontinuity estimators all produce coefficients of similar magnitude, between 1.13 and 1.33, each with a p-value below 5 percent, affirming the March 2012 discontinuity.",
+   "abstract": "As Table 7 below shows, all the estimates are very close to each other in magnitude and all of them have a p-value smaller than 5%, affirming the presence of a discontinuity in March 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Calonico, Cattaneo and Titiunik bias correction procedure",
+    "March 30, 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-003",
+   "identifier": "kaal:claim:2816408-003",
+   "text": "Using self-reported Morningstar earnings data for 3,424 US private fund advisers covering 2010 to 2015 in multiple regression discontinuity designs with robustness checks, private fund adviser registration and disclosure under the Dodd-Frank Act had no significant effect on private fund adviser returns.",
+   "abstract": "Based on the evidence in multiple RD designs including robustness checks, we conclude that private fund adviser registration and disclosure under the Dodd-Frank Act had no significant effect on private fund adviser returns.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "US based private fund advisers subject to Title IV",
+    "2010 to 2015 monthly earnings data",
+    "registration effective date March 30, 2012 as the discontinuity"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-016",
+   "identifier": "kaal:claim:2816408-016",
+   "text": "The study identifies the causal effect of Title IV by treating the March 30, 2012 registration effective date combined with the $150 million AUM threshold as an exogenous regulatory shock, so that any discontinuity in returns at the cutoff is evidence of a causal treatment effect.",
+   "abstract": "The basic idea behind the RD design is that any discontinuity in the conditional distribution of Yi as a function of Xi at the cutoff value c is interpreted as evidence of a causal effect of the treatment.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp regression discontinuity design",
+    "forcing variable is log AUM with threshold at $150 million",
+    "treatment date March 30, 2012"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-018",
+   "identifier": "kaal:claim:2816408-018",
+   "text": "The sharp and fuzzy regression discontinuity approaches yield results of only minor difference in this setting because the denominator of the fuzzy estimator is very close to one, meaning treatment take up at the threshold is nearly deterministic.",
+   "abstract": "However, because the denominator is very close to 1 in our investigation, empirical results show that the differences between the SRD and the FRD approach are of minor importance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "this sample and threshold",
+    "denominator close to 1"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-019",
+   "identifier": "kaal:claim:2816408-019",
+   "text": "Across an array of robustness tests, the requirements introduced by the Dodd-Frank Act create no significant effect on private fund performance, with all reported RD p-values above the 5% level.",
+   "abstract": "Using an array of robustness tests validating our RD results, Figures 3-7 suggest that the requirements introduced by the Dodd-Frank Act create no significant effect on private fund performance. The P-values for all RD results in Table 6 are above the 5% level and confirm our finding of no effect.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "RD results reported in Table 6",
+    "entire sample and March 2012 estimates"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-027",
+   "identifier": "kaal:claim:2816408-027",
+   "text": "A single point in time RD design anchored to March 30, 2012 is inadequate on its own because advisers could and did register before the deadline, funds near the $150 million threshold could choose between registered adviser and exempt reporting adviser status, and self-reported Morningstar AUM is not calculated the same way as the SEC's RAUM.",
+   "abstract": "Fourth, the self-reported assets under management numbers in Morningstar are not calculated the same way as the RAUM calculation required by the SEC.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "broad RD design in Part IV",
+    "Morningstar self-reported AUM"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-029",
+   "identifier": "kaal:claim:2816408-029",
+   "text": "Tighter RD designs using varying window lengths and hand selected control groups confirm the finding of no effect obtained in the broader design.",
+   "abstract": "Appendix A contains the descriptive statistics and RD results of our tighter RD designs analysis. The tighter RD designs analysis confirm our finding of no effect in the broader design in Part IV above.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "varying pre and post windows",
+    "hand selected control groups reported in Appendix A"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-030",
+   "identifier": "kaal:claim:2816408-030",
+   "text": "The discontinuity in the data is evident regardless of the number of bins chosen, even though increasing the number of bins smooths the estimated regression function.",
+   "abstract": "However, the presence of discontinuity is evident, no matter what number of bins we consider.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "optimal bin choice increased by factors of 20 and 100",
+    "Calonico et al. 2013 evenly spaced bin procedure"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-033",
+   "identifier": "kaal:claim:2816408-033",
+   "text": "Relative to existing work, this study uses a much larger dataset and a more sophisticated empirical approach, regression discontinuity, and finds no statistical evidence for an effect of Dodd-Frank Act requirements on private fund advisers' performance.",
+   "abstract": "Compared with the existing prior work, in this study, we use a much larger dataset and a more sophisticated empirical approach such as regression discontinuity. We find no statistical evidence for an effect of the requirements introduced by the Dodd-Frank Act on private fund advisers' performance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison to prior studies of Dodd-Frank effects on private funds"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998097-020",
+   "identifier": "kaal:claim:2998097-020",
+   "text": "Using a regression discontinuity design around the 150 million dollar registration threshold with five years of performance data on more than 3500 reporting private funds, the study finds no significant effect of Dodd-Frank requirements on private fund performance, with all p-values above the 5 percent level.",
+   "abstract": "Using an array of robustness tests validating the RD results, the paper shows that the requirements introduced by the Dodd-Frank Act create no significant effect on private fund performance. The P-values for all RD results are above the 5% level and confirm the finding of no affect.",
+   "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "private funds reporting performance data, 2010 to 2015",
+    "regression discontinuity around the $150 million AUM registration threshold"
+   ],
+   "source_pdf_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
+   "status": "current"
+  }
+ ],
+ "description": "18 claims in the published works of Wulf A. Kaal carry the concept tag 'regression-discontinuity'. Derived node: a roster, not an adjudicated definition."
+}

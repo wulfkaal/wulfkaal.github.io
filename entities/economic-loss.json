@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/economic-loss",
+ "identifier": "kaal:entity:economic-loss",
+ "name": "Economic loss",
+ "termCode": "economic-loss",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/economic-loss.md",
+ "sha256": "154923328892bfec7dab25806ee7b9128ca03e74fd724ef60b273ec92ece33f1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3071378-025",
+   "identifier": "kaal:claim:3071378-025",
+   "text": "By some estimates the lack of inclusion of minorities in corporate America costs the U.S. economy one trillion dollars per year once the pay gap between whites and minorities is taken into account.",
+   "abstract": "According to some estimates, the lack of inclusion of minorities in corporate America costs the U.S. economy $1 trillion per year, taking into account the pay gap between whites and minorities. 85",
+   "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "estimates accounting for the white-minority pay gap"
+   ],
+   "source_pdf_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-024",
+   "identifier": "kaal:claim:3441904-024",
+   "text": "Hard forks can reintroduce the double spend problem, because wallets, merchants, and users running the previous code deem the new code invalid and cannot detect spending on it, so coins spent in a new block could be spent again on an old block.",
+   "abstract": "Because wallets, merchants, and users running the previous code deem the new code invalid and thus cannot detect the spending on the new code, cryptocurrencies spent in a new block could be spent again on an old block.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "hard forks only, since old nodes read both block versions after a soft fork"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-033",
+   "identifier": "kaal:claim:3808873-033",
+   "text": "Decentralized networks depend on dynamic governance because evolving blockchain protocols require updates, and the practice of hardforking that remained prevalent in the early 2020s created significant economic loss for such blockchains.",
+   "abstract": "As blockchains protocols evolve in a given market, they require updates. The practice of hardforking, that was still prevalent in the early 2020s, created significant economic loss for such blockchains.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "blockchain protocols requiring upgrades in the early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'economic-loss'. Derived node: a roster, not an adjudicated definition."
+}

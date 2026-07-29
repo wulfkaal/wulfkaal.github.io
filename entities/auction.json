@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/auction",
+ "identifier": "kaal:entity:auction",
+ "name": "Auction",
+ "termCode": "auction",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/auction.md",
+ "sha256": "6a6bb1bcd299a61c7508a2ce42858385ba75d8033d4eef948525ef5b9e1844af",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-029",
+   "identifier": "kaal:claim:4015908-029",
+   "text": "Technology platforms can make launch abuses less likely by mandating fair auctions in which tokens are released only in tranches, offering a limited number of tokens for a limited number of days, which makes rug pulls overall less likely.",
+   "abstract": "During such fair auctions, the tokens that are listed on the fair launch platforms may only be released in tranches, which makes rug pulls overall less likely. Such token tranche listings may offer a limited number of tokens for a limited number of days.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "fair launch platform mandates auction format with tranche release"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-030",
+   "identifier": "kaal:claim:4015908-030",
+   "text": "After half of each auction tranche is deposited into an AMM pair, the other half is allocated to open market purchasers and the remaining liquidity on the AMM is burned to ensure that any incentives for rug pulls are removed.",
+   "abstract": "Thereafter, the other half of the tokens from the respective tranche may be allocated to open market purchasers. The remaining liquidity on the AMM may be burned to ensure that any incentives for rug pulls are removed.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "auction based fair launch platform",
+    "Uniswap V2 compatible AMM"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-035",
+   "identifier": "kaal:claim:4015908-035",
+   "text": "An auction mechanism for fair launch tokens avoids pricing tokens below their underlying market value, which in turn helps remedy the problems that derive from large whale token holders who can later manipulate the market.",
+   "abstract": "An auction mechanism for fair launch tokens ensures avoids that tokens are priced cheaper than the underlying market value of the token. This, in turn, helps remedy the problems that derive from large whales token holders that can manipulate the market in the",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public auction of tokens at launch"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-036",
+   "identifier": "kaal:claim:4015908-036",
+   "text": "No more than 40% of total token supply should be auctioned in a fair launch, with 10% serving as a buffer paired with raised funds as permanently locked DEX liquidity and the other 50% allocated to a DEX pair with the raise proceeds to provide long-term locked liquidity.",
+   "abstract": "it is ill advised to auction more than 40% of the total token supply. 10% of token supply should serve as a buffer. paired with the funds raised to form permanently locked liquidity on a DEX. The other 50% should be allocated to a DEX in a pair with the funds from the token raise.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "public auction of tokens in a fair launch context"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'auction'. Derived node: a roster, not an adjudicated definition."
+}

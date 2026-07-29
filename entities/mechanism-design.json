@@ -1,0 +1,300 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/mechanism-design",
+ "identifier": "kaal:entity:mechanism-design",
+ "name": "Mechanism design",
+ "termCode": "mechanism-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/mechanism-design.md",
+ "sha256": "979b16ab2d1d565b786804b179d4b22c2643e2bc8d3a61dfe54009f06306770a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 15
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-013",
+   "identifier": "kaal:claim:3782203-013",
+   "text": "Across all the alternative polling methods explored in the literature, changes both help and hurt: new approaches solve old problems while creating new opportunities for manipulation, a pattern the authors identify with increasing the attack surface.",
+   "abstract": "In all the methods dis- cussed the answer has always been that changes both help and hurt. New approaches solve old problems, but they create new opportunities for manipulation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "alternative voting and polling mechanisms",
+    "continuous or weighted voting technologies"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-035",
+   "identifier": "kaal:claim:3782214-035",
+   "text": "It does not matter what a DAO architect intends, because the resulting rules of the game are what tell players what to value; governance parameters therefore determine the organization's actual values regardless of stated intent.",
+   "abstract": "it doesn't matter what the architects' intentions are, the resulting rules of the game tell the players what to value.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "systems observed at steady state"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-011",
+   "identifier": "kaal:claim:3782217-011",
+   "text": "In the SchellingCoin approach to oracle design, members stake reputation tokens on their answer to the question a DApp is asking and are rewarded according to how close they came to the resulting median value, which functions as the game theoretic Schelling point.",
+   "abstract": "The idea is to have your Oracle DAO members stake their reputation tokens on their answer to a question a DApp is asking. Then you reward those closer to the resulting median value",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "questions with a verifiable focal answer"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886442-033",
+   "identifier": "kaal:claim:5886442-033",
+   "text": "Network congestion externalities and Sybil attack vulnerabilities require the deliberate reintroduction of micro frictions, such as tokenized tolls or proof of personhood protocols, in order to preserve credible signaling in hyper scale agent populations.",
+   "abstract": "Network congestion externalities and Sybil-attack vulnerabilities necessitate the deliberate reintroduction of micro-frictions—such as tokenized tolls or proof-of-personhood protocols—to preserve credible signaling in hyper-scale agent populations",
+   "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies at hyper scale agent populations where congestion and Sybil attacks are feasible"
+   ],
+   "source_pdf_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-024",
+   "identifier": "kaal:claim:6192998-024",
+   "text": "Citations should be mandatory and constrained to sum to one, which prevents arbitrary weighting, and citation honesty should be established as a game theoretic equilibrium rather than assumed.",
+   "abstract": "but with critical additions: (1) citations are mandatory and constrained to sum to 1, preventing arbitrary weighting, and (2) we provide game-theoretic analysis establishing citation honesty as an equilibrium (see Section IV.E).",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-031",
+   "identifier": "kaal:claim:6192998-031",
+   "text": "Formal mechanism design alone is insufficient for decentralized systems; the security analysis depends on honest agents also detecting citation rings, downranking colluding submissions, and applying penalties, so formal mechanisms must be combined with emergent social enforcement.",
+   "abstract": "decentralized systems must combine formal mechanisms with emergent social enforcement.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Sybil attackers controlling several competing agents per job"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-011",
+   "identifier": "kaal:claim:6244278-011",
+   "text": "Honest evaluation is the focal equilibrium strategy in validation pools because validators who evaluate honestly have the highest probability of aligning with other honest validators, with staking and slashing supplying economic enforcement.",
+   "abstract": "honest evaluation is the focal equilibrium strategy because validators who evaluate honestly have the highest probability of aligning with other honest validators.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires a Schelling-style coordination setting with staking and slashing"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-021",
+   "identifier": "kaal:claim:6244278-021",
+   "text": "Rational agents face a direct financial disincentive to cite prior contributions, because citation transfers economic value away from the citing agent; the mechanism design challenge is therefore to make honest citation the economically rational strategy.",
+   "abstract": "rational agents face a direct financial disincentive to cite prior contributions.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to weighted directed acyclic graph citation governance where citation transfers value"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-004",
+   "identifier": "kaal:claim:6269518-004",
+   "text": "The under-citation incentive is a structural flaw in the mechanism design, not a parameter calibration issue that could be corrected by retuning existing settings.",
+   "abstract": "First, it formalizes the under-citation incentive problem and demonstrates that it constitutes a structural flaw rather than a mere parameter calibration issue (§II).",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-013",
+   "identifier": "kaal:claim:6269518-013",
+   "text": "Existing proofs that validators have a truth-telling equilibrium for quality ranking do not establish that job-performing agents have incentive-compatible strategies for honest citation, because these are distinct strategic actors facing distinct choices within distinct mechanism structures; conflating them is a genuine error.",
+   "abstract": "It does not establish that job-performing agents have incentive-compatible strategies for honest citation. These are distinct strategic actors facing distinct strategic choices within distinct mechanism structures. Conflating the two is a genuine error.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "validator truth-telling results proved for quality ranking mechanisms"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-014",
+   "identifier": "kaal:claim:6269518-014",
+   "text": "The existing citation-weighted framework provides no mechanism for verifying citation accuracy, no separate incentive for honest attribution, and no penalty for strategic under-citation, so the gap is a structural absence in the mechanism design rather than an oversight in presentation.",
+   "abstract": "This gap is not merely an oversight in presentation. It reflects a structural absence in the mechanism design. The existing framework provides no mechanism for verifying citation accuracy, no separate incentive for honest attribution, and no penalty for strategic under-citation.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-023",
+   "identifier": "kaal:claim:6269518-023",
+   "text": "Validators correcting citations should be permitted only to increase outward citations and never to decrease them, because a power to decrease would enable collusion to help allies under-cite competitors.",
+   "abstract": "In the second phase, validators can increase citations to others if they detect under-citation. Critically, validators can only increase outward citations. They cannot decrease them. Thus, preventing collusion to help allies under-cite competitors.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "two phase citation submission with validator correction authority"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-025",
+   "identifier": "kaal:claim:6269518-025",
+   "text": "The recommended integrated mechanism combines decoupled citation rewards and mandatory citation minimums as the primary mechanism, with validator-verified citations and retroactive penalties as supporting enforcement layers.",
+   "abstract": "The recommended integrated solution combines Solutions 2 and 4 as the primary mechanism, with Solutions 1 and 3 as supporting enforcement layers.",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-026",
+   "identifier": "kaal:claim:6269518-026",
+   "text": "Under the recommended integrated mechanism agents may allocate no more than half of their citation weight to themselves, which is the mandatory citation minimum.",
+   "abstract": "Agents must allocate self-citation weight cii ≤ 0.5 (mandatory citation minimum).",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6269518-032",
+   "identifier": "kaal:claim:6269518-032",
+   "text": "Theorem 3b holds that under the integrated solution honest citation is a Nash equilibrium when validators assess citation accuracy and the marginal effect of citation accuracy on the honesty score exceeds the marginal gain from self-citation.",
+   "abstract": "honest citation is a Nash equilibrium when validators assess citation accuracy and the marginal effect of citation accuracy on the honesty score exceeds the marginal gain from self-citation:",
+   "citation": "Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "citation accuracy component contributes forty percent of payment",
+    "reputation bonus applies above a citation accuracy of one half",
+    "validators actually assess citation accuracy"
+   ],
+   "source_pdf_sha256": "f096ecf5b41bb9ae8642facd54b9149c7b594de53a1cc32718a4d806b772f88f",
+   "status": "current"
+  }
+ ],
+ "description": "15 claims in the published works of Wulf A. Kaal carry the concept tag 'mechanism-design'. Derived node: a roster, not an adjudicated definition."
+}

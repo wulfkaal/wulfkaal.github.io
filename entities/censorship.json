@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/censorship",
+ "identifier": "kaal:entity:censorship",
+ "name": "Censorship",
+ "termCode": "censorship",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/censorship.md",
+ "sha256": "ccb3af88eeefef56fc0cce3fef4e34dd062b32aeabf8a645fa15ec39e8f64d50",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-011",
+   "identifier": "kaal:claim:3125827-011",
+   "text": "If block producers' identities are revealed, the supranational independence and security of the blockchain are threatened, because local jurisdictions can then exert legal power over block production. This threat is most acute in delegated proof of stake, where delegates must win popularity contests.",
+   "abstract": "identities are revealed, the supranational independence of the blockchain is threatened as is its security. In this case local jurisdictions could exert legal power over block production",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "protocols where producers must identify themselves to be chosen",
+    "especially delegated proof of stake"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-018",
+   "identifier": "kaal:claim:3125827-018",
+   "text": "In a distributed system, which cannot achieve constant perfect communication between nodes, it is never possible to determine with certainty that a block producer was censoring particular transactions rather than simply being unaware of them.",
+   "abstract": "In a distributed system--which cannot achieve constant perfect communication between nodes--we can never certainly determine that a block producer was censoring certain transactions, instead of simply not being aware of them.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "imperfect communication between nodes",
+    "block producers with discretion over transaction inclusion"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-040",
+   "identifier": "kaal:claim:3606663-040",
+   "text": "Although the public realm of coins could not exist without prior private experimentation, it is possible that the public realm will impact or even pre empt private coin development, for example if central banks attempt to censor the use of digital currencies they did not issue.",
+   "abstract": "it is possible that the public realm of the coin evolution could attempt to impact or even pre- empt the private coin development and use. For example, some central banks may attempt to censor the use of non-centrally-issued digital currencies.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "coexistence of central bank digital currencies and privately issued coins"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-002",
+   "identifier": "kaal:claim:6192998-002",
+   "text": "Solving the identity problem through centralized control fails on its own terms: it reintroduces rent seeking intermediaries who extract value, censor participants, and create single points of failure, which is precisely what decentralized systems exist to eliminate.",
+   "abstract": "Second, the centralization problem: Platforms that solve the identity problem through centralized control8 introduce rent-seeking intermediaries who extract value, censor participants, and create single points of failure.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "platforms that impose centralized identity or rating control"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'censorship'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dual-trigger",
+ "identifier": "kaal:entity:dual-trigger",
+ "name": "Dual trigger",
+ "termCode": "dual-trigger",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dual-trigger.md",
+ "sha256": "eea67b280de51cae613e9b5d76eff1039748a3eae0d9920efe0f5fcf3eba6472",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-023",
+   "identifier": "kaal:claim:1908473-023",
+   "text": "A dual trigger that relies on a financial institution index gains from its use of market prices but is vulnerable to index manipulation and to bondholders attempting to force the institution into bankruptcy.",
+   "abstract": "Although the strength of this proposal is its reliance on market prices, a disadvantage could be the index trigger, which could result in index manipulation or an attempt to force the entity into bankruptcy.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Applies to dual price trigger designs that include a sector or system index component"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-033",
+   "identifier": "kaal:claim:2061166-033",
+   "text": "Dual trigger proposals draw their central strength from reliance on market prices, but the index leg is a major disadvantage because it can create incentives to manipulate the index or to force an entity into bankruptcy before conversion occurs.",
+   "abstract": "A central strength of the dual trigger proposals is their reliance on market prices. A major disadvantage is the index trigger, which could potentially create incentives to manipulate the index or to try to force an entity into bankruptcy.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dual trigger designs combining a firm stock price trigger with a financial institutions index trigger"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'dual-trigger'. Derived node: a roster, not an adjudicated definition."
+}

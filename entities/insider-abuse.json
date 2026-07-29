@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/insider-abuse",
+ "identifier": "kaal:entity:insider-abuse",
+ "name": "Insider abuse",
+ "termCode": "insider-abuse",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/insider-abuse.md",
+ "sha256": "40bf138089baea74ec65824a2e4629340fac1d54b5fb3ceb0293bc6f94b7e750",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-008",
+   "identifier": "kaal:claim:4067783-008",
+   "text": "A DAO token sale can be drained at the moment of closing: in the Anubis DAO sale 13597 ETH was removed from the token sale pool and sent to another address as the sale was about to close, and because the launch platform had not been compromised the loss was attributed to an inside rug pull.",
+   "abstract": "As the sale was about to close, 13597 ETH was removed from the token sale pool and sent to another address. Allegations of a rug pull ensued because the launch platform Copper had not been compromised.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Anubis DAO token sale on the Copper platform, October 2021"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-009",
+   "identifier": "kaal:claim:4067783-009",
+   "text": "Most DAOs that suffer unethical behavior and rug pulls are abused by insiders, and this is possible because insiders are not properly governed and hold too much control over the DAO; true decentralized community governance removes insider and council control over keys and code.",
+   "abstract": "Most DAOs that fall victim to unethical behavior and rug pulls are subject to abuses from insiders. Typically these insider abuses are possible because the insiders are not governed properly and have too much control over the DAO.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs where councils or privileged insiders retain key and code control"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-010",
+   "identifier": "kaal:claim:4067783-010",
+   "text": "Insider knowledge of contract internals is itself an attack surface: at Snowdog DAO an insider who knew a challenge key embedded in the DAO contract backran the anticipated buyback and sold tokens ahead of it.",
+   "abstract": "For example, Snowdog DAO suffered an alleged rug-pull when an insider who knew a \"challenge key\" (a part of the DAOs contract), backran the anticipated buyback and began selling tokens.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Snowdog DAO on the Avalanche protocol",
+    "insider holding a contract challenge key"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'insider-abuse'. Derived node: a roster, not an adjudicated definition."
+}

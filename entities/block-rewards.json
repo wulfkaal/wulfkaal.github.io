@@ -1,0 +1,169 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/block-rewards",
+ "identifier": "kaal:entity:block-rewards",
+ "name": "Block rewards",
+ "termCode": "block-rewards",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/block-rewards.md",
+ "sha256": "9e70872db003a302ef61dfa4a84d1fb3feb22be901aab959496eb239b7eaffb8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-023",
+   "identifier": "kaal:claim:3266953-023",
+   "text": "A successful Semada block producer wins half of the newly minted reputation tokens for a block while the remaining members share the other half for policing the block in the validation pool.",
+   "abstract": "they win the lottery of half of a great deal of new reputation tokens if they are chosen while the rest of the members share the other half of newly minted reputation tokens for policing the block in the validation pool.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "each produced and validated block"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-001",
+   "identifier": "kaal:claim:3931933-001",
+   "text": "In conventional Proof of Stake, selection probability for block rewards rises with stake and block rewards are constant regardless of node reputation, whereas in Secure Proof of Stake nodes with higher reputation have a higher probability of being selected for rewards.",
+   "abstract": "In conventional PoS, the nodes with higher stake would have a higher probability of being selected for the block rewards. Block rewards are constant regardless of the node reputation. In SPoS, the nodes with higher reputation have a higher probability of being selected for the rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison of conventional PoS and SPoS reward selection"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-002",
+   "identifier": "kaal:claim:3931933-002",
+   "text": "The core proposal of Hybrid Secure Proof of Stake is to separate block consensus from block rewards, making the reward a function of the node's reputation rather than of stake alone.",
+   "abstract": "The main concept in Hybrid Secure Proof of Stake (HSPoS) is to separate the block consensus from the block rewards. HSPoS proposes that the rewards become a function in the reputation of the node.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-003",
+   "identifier": "kaal:claim:3931933-003",
+   "text": "Under HSPoS a node's probability of being selected remains driven by its fungible stake, while the size of the block reward it receives is scaled by a non-fungible reputation multiplier derived from the node's reputation.",
+   "abstract": "Thus, while the node probability of being selected is based on the fungible stake, the rewards for the block is adjusted by the non-fungible reputation multiplier which is a function of the node's reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward layer applied on top of an existing PoS consensus layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-022",
+   "identifier": "kaal:claim:3931933-022",
+   "text": "Shasper governance is funded in a hardcoded way: each validator that succeeds in propagating a block allocates a fixed percentage of its block reward, denominated in SHAS, into a separate SDAO wallet, in addition to the ordinary Casper PoS allocation.",
+   "abstract": "However, in addition to the Casper PoS Consensus algorithm allocation, each validator who succeeds in propagating a block allocates [__]% of the block reward, denominated in SHAS, into a separate SDAO wallet.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network validators producing blocks under the Casper PoS consensus algorithm"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-032",
+   "identifier": "kaal:claim:3931933-032",
+   "text": "Under HSPoS two nodes holding the same stake retain the same probability of being selected for rewards, but the node with the higher reputation receives the larger reward.",
+   "abstract": "In HSPoS, two nodes with the same stake would have the same probability of being selected for the rewards. However, the node with the higher reputation would get higher rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation with equal stakes"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-034",
+   "identifier": "kaal:claim:3931933-034",
+   "text": "Because reputation scales the reward, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "abstract": "Furthermore, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'block-rewards'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/anchor-protocol",
+ "identifier": "kaal:entity:anchor-protocol",
+ "name": "Anchor protocol",
+ "termCode": "anchor-protocol",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/anchor-protocol.md",
+ "sha256": "740a0f2e5d941ae96de831831c50b735a6c94a1c4b064f7ed40e774a6f10357f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-018",
+   "identifier": "kaal:claim:3266953-018",
+   "text": "Semada replaces fungible currency staking with reputation staking for block propagation, a consensus algorithm the authors call Semada Proof of Reputation.",
+   "abstract": "Block propagation in the Semada platform is facilitated by staking reputation, not a fungible currency as in PoS. Accordingly, the consensus algorithm is called Semada Proof of Reputation (PoR).",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada platform block propagation"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-019",
+   "identifier": "kaal:claim:3266953-019",
+   "text": "Under the Anchor Protocol, staking means anchoring reputation to a block, so a block producer whose block turns out to be invalid or is cancelled out suffers depreciation of their reputation.",
+   "abstract": "Moreover, staking in the Anchor Protocol means anchoring your reputation to a block. In other words, Semada block producers anchor their reputation to a block, and if the block is invalid or cancelled out, their reputation depreciates.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Semada block production"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'anchor-protocol'. Derived node: a roster, not an adjudicated definition."
+}

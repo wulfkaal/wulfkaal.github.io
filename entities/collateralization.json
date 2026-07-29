@@ -1,0 +1,233 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/collateralization",
+ "identifier": "kaal:entity:collateralization",
+ "name": "Collateralization",
+ "termCode": "collateralization",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/collateralization.md",
+ "sha256": "67b2e01da52abe9beead81f90ad0a3eb4831dedb707cab4630827658f7ef2898",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 11
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-008",
+   "identifier": "kaal:claim:3396522-008",
+   "text": "Both collateralization strategies carry significant downsides: fiat collateralized pegs bear the brunt of expensive capital requirements, while cryptocurrency pegs face heavy volatility pressures and swings.",
+   "abstract": "Collateralized fiat currency pegs bear the brunt of expensive capital requirements and uncollateralized cryptocurrency pegs face heavy volatility pressures and swings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-009",
+   "identifier": "kaal:claim:3396522-009",
+   "text": "A fiat backed stable cryptocurrency that is not fully collateralized is exposed to arbitrage trade attacks of the kind George Soros used against the pound sterling; full collateralization is therefore a necessary defense.",
+   "abstract": "Without a 100% fiat collateralization, such projects would run the risk of arbitrage trade attacks similar to what Financier George Soros used to \"break the bank of England",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to stable cryptocurrencies claiming a fiat peg"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-010",
+   "identifier": "kaal:claim:3396522-010",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage opportunities of the Soros type.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes the backing must remain fully liquid to prevent arbitrage"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-011",
+   "identifier": "kaal:claim:3396522-011",
+   "text": "The minimum price of a fiat backed stable cryptocurrency is the interest rate of the fiat currency it is pegged to, because the collateral must sit liquid rather than earn a return.",
+   "abstract": "Therefore, the price tag of fiat-backed tokens is, at a minimum, the interest rate of the pegged fiat currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to fully collateralized fiat backed tokens"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-009",
+   "identifier": "kaal:claim:3396542-009",
+   "text": "The design requires underwriters to stake or encumber tokens against each policy they underwrite, and those encumbered tokens serve to secure the underwriters' promises.",
+   "abstract": "Fourth, the design requires the underwriters to \"stake\" or \"encumber\" an appropriate number of tokens against each policy they underwrite. These tokens in effect serve to secure the promises of the underwriters.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-010",
+   "identifier": "kaal:claim:3396542-010",
+   "text": "The number of tokens an underwriter must encumber is set by a preset formula whose objective is to make the value of the encumbered tokens sufficient to meet any claim arising at any point in the policy's life.",
+   "abstract": "The number of tokens to be encumbered is based on a preset formula with the objective of ensuring that the value of the encumbered tokens is sufficient to meet any claims that may arise at any point in the life of the policy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-018",
+   "identifier": "kaal:claim:3396542-018",
+   "text": "The DAO design requires that the value of the tokens staked on a set of policies be large enough to cover the maximum possible liability on those policies, which in turn imposes a minimum condition on the premium charged.",
+   "abstract": "The design of the DAO requires that v1 should be large enough to cover the maximum possible liability on the M policies against which these tokens are to be encumbered. We will later derive a condition on the premium",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state model with constant M and p"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-024",
+   "identifier": "kaal:claim:3396542-024",
+   "text": "In the DAO structure, provided an adequate token encumbrance system is in place, each agent is individually responsible for the payouts on the policies that agent underwrote, so the burden of holding adequate capital shifts from the entity to each individual agent.",
+   "abstract": "each agent is responsible for meeting the payouts on the policies they have underwritten. Consequently, the burden of maintaining adequate capital falls on each individual agent",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a good system ensures adequate tokens are encumbered per policy"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-031",
+   "identifier": "kaal:claim:3396542-031",
+   "text": "In the proposed design, bad business decisions by one underwriter need not impact other underwriters or the DAO, because losses from underestimating the insured risk fall purely on that underwriter so long as the staked tokens cover the claim.",
+   "abstract": "If a certain underwriter makes the mistake of underestimating the risk of the insured event, the losses will be suffered purely by the underwriter as long as the value of the staked or encumbered tokens covers the claim.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "value of staked or encumbered tokens covers the claim"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-034",
+   "identifier": "kaal:claim:3782216-034",
+   "text": "Stablecoin collateralization and a robust decentralized economy form a chicken and egg problem: a stablecoin cannot reduce its backing until a robust decentralized economy exists, and that economy cannot be built without an efficient stablecoin.",
+   "abstract": "We need a robust decen- tralized economy before a stablecoin can reduce its collateralization. We need an ef- ficient and useful stablecoin before we can build a robust decentralized economy. This is another of the many chicken-and-egg problems that hamper the adoption of new systems.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "while most cryptocurrency use is speculative hot money"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3949098-002",
+   "identifier": "kaal:claim:3949098-002",
+   "text": "Reputation tokens used in decentralized finance are more meaningful and easier to value than traditional identity verification metrics, so decentralized protocols that use reputation metrics will require less collateralization than traditional protocols.",
+   "abstract": "Reputation tokens that are utilized in decentralized finance are more meaningful than traditional identity verification metrics, and much easier to value. Accordingly, decentralized protocols that use reputation metrics will require less collateralization than in traditional protocols.",
+   "citation": "Wulf A. Kaal, Reputation as Capital – How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation is incorporated securely into the Web3 environment"
+   ],
+   "source_pdf_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
+   "status": "current"
+  }
+ ],
+ "description": "11 claims in the published works of Wulf A. Kaal carry the concept tag 'collateralization'. Derived node: a roster, not an adjudicated definition."
+}

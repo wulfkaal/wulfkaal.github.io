@@ -1,0 +1,118 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/custody-design",
+ "identifier": "kaal:entity:custody-design",
+ "name": "Custody design",
+ "termCode": "custody-design",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/custody-design.md",
+ "sha256": "9b406b70575a410594f55328bfc20a6d7880148df7e52122fe31eb4c34994989",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-019",
+   "identifier": "kaal:claim:3936876-019",
+   "text": "Cold storage custody solutions are much more secure and resistant to cyber attacks than hot storage because the digital assets and associated private keys are held in wallets that are not connected to the Internet.",
+   "abstract": "Because of these distinguishing features, cold storage has several key benefits. For one, cold storage custody solutions are much more secure and resistant to cyber attacks.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "wallets kept offline"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-030",
+   "identifier": "kaal:claim:3936876-030",
+   "text": "Every risk in a digital custody operation should carry both a preventative and a detective control, layered so that if some controls fail others remain to reduce the risk.",
+   "abstract": "Every risk should have a preventative and detective control and there should be appropriate layers of controls so that if some fail, others will still be there to reduce the risk.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "digital asset custody risk management programs"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-031",
+   "identifier": "kaal:claim:3936876-031",
+   "text": "Specialized digital custody audit procedures for verifying that a bank maintains access controls over a cryptographic key differ from the audit procedures used for physical assets, so some risk management processes must be tailored for digital custody.",
+   "abstract": "Specialized digital custody audit procedures for verifying the bank maintains access controls for a cryptographic key will differ from the procedures used for physical assets.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "national banks providing cryptocurrency custody"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-036",
+   "identifier": "kaal:claim:3936876-036",
+   "text": "Multi-signature wallets and a combination of hot and cold storage solutions are the advisable custody design for digital assets.",
+   "abstract": "Multi-signature wallets and a combination of hot and cold storage solutions are advisable.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'custody-design'. Derived node: a roster, not an adjudicated definition."
+}

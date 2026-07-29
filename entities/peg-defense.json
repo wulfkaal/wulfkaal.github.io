@@ -1,0 +1,150 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/peg-defense",
+ "identifier": "kaal:entity:peg-defense",
+ "name": "Peg defense",
+ "termCode": "peg-defense",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/peg-defense.md",
+ "sha256": "d77bd669960657b11b6e88ad0ed73653912f62c40c94c29629a9ad337150b711",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-019",
+   "identifier": "kaal:claim:3402701-019",
+   "text": "Selling currency into a reserve when price is above the peg and buying it back with the reserve when price is below the peg yields an arbitrage profit, so a reserve can fund its own defense of the peg.",
+   "abstract": "In the next paragraph we demonstrate the obvious result that selling the currency when the price is high to build a reserve, then buying the currency back with the reserve when the price is low will yield an arbitrage profit",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the reserve currency is more stable than the base currency",
+    "the cost to implement and maintain the reserve is ignored"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-020",
+   "identifier": "kaal:claim:3402701-020",
+   "text": "The reserve argument depends on two requirements, and failing either one grounds a criticism of an existing protocol: the stable-value requirement criticizes MakerDAO and the maintenance-cost requirement criticizes the Reserve protocol.",
+   "abstract": "The first requirement leads to a criticism of the MakerDAO protocol (e.g.), the second requirement leads to a criticism of the Reserve protocol (e.g",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reserve held in a volatile asset",
+    "reserve maintenance cost exceeds arbitrage profit"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-021",
+   "identifier": "kaal:claim:3402701-021",
+   "text": "Contesting the common assumption that a 100 percent reserve is required to guarantee a peg, the authors argue full reserves are not always necessary for any currency that has intrinsic worth.",
+   "abstract": "On the contrary, we argue that a 100% reserve is not always necessary, as is the case with any currency which has an intrinsic worth",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "currency possesses intrinsic worth, for example genuine transactional use"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-022",
+   "identifier": "kaal:claim:3402701-022",
+   "text": "Contesting the standard reading, the authors argue Soros broke the Bank of England not because the pound lacked full foreign reserve backing but because the pound was pegged at an inauthentic value.",
+   "abstract": "Soros was not able to break the Bank of England because it wasn't fully backed with foreign reserves, but because the British pound was being pegged at a value that was inauthentic",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-023",
+   "identifier": "kaal:claim:3402701-023",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficient defense of its stability, because the reserve requirement follows from that ratio rather than from a blanket full-backing rule.",
+   "abstract": "Therefore determining the fraction of a currency that is hot money is necessary for efficient defense of its stability",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-032",
+   "identifier": "kaal:claim:3782216-032",
+   "text": "Determining what fraction of a currency is hot money is necessary for efficiently defending its stability: overestimating the hot money ratio makes the currency costlier to use, and underestimating it makes the currency insecure.",
+   "abstract": "Therefore, determining the fraction of a currency that is hot money is necessary for efficient defense of its stability. A currency that overestimates this hot money ratio will cost more to use. A currency that underestimates the ratio will be insecure.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'peg-defense'. Derived node: a roster, not an adjudicated definition."
+}

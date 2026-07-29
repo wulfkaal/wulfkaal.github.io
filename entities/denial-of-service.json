@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/denial-of-service",
+ "identifier": "kaal:entity:denial-of-service",
+ "name": "Denial of service",
+ "termCode": "denial-of-service",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/denial-of-service.md",
+ "sha256": "95f9ab013f540c5ffc7ebabc5d1f40b797071448fadd624338e6386da54ce9b9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2023"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-031",
+   "identifier": "kaal:claim:3782203-031",
+   "text": "Charging admission to a DAO disincentivizes defection because the sunk cost of joining makes cheating expensive when rejoining would require paying again, a mechanism the authors identify as costly signaling that works better the more cheaters the surrounding environment contains.",
+   "abstract": "First, we can disincentivize defection/betrayal by charging admission to the DAO. With the sunk cost of joining, it is more expensive to cheat, since then it would be expensive to rejoin even if members could be anonymous. This is described as costly signaling.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "anonymous membership",
+    "environments with many bad actors"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-035",
+   "identifier": "kaal:claim:4529715-035",
+   "text": "Chainlink's white-list response to the 2020 gas fee attack was only a temporary fix: had the attack impacted 50 percent of Chainlink node operators, the price feed would not have updated until enough nodes returned.",
+   "abstract": "Temporary solution known as \"white-list\", but if the attack had impacted 50% of Chainlink node operators, that feed wouldn't have updated until enough came back up and nodes would not be able to feed information.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "2020 attack on Chainlink nodes",
+    "oracle networks with limited node counts"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'denial-of-service'. Derived node: a roster, not an adjudicated definition."
+}

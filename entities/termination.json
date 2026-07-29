@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/termination",
+ "identifier": "kaal:entity:termination",
+ "name": "Termination",
+ "termCode": "termination",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/termination.md",
+ "sha256": "7ab78ff8e28baefd0156dd44c756a097df82e3613ce64ee4fbe2727979c0142e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3017612-008",
+   "identifier": "kaal:claim:3017612-008",
+   "text": "A shareholder agreement authorized under MBCA Section 7.32 ceases to be effective once the corporation's stock is listed on a national securities exchange or regularly traded in a dealer maintained market, so the going public event terminates the arrangement.",
+   "abstract": "agreement ceases to be effective when the stock of the corporation is listed on a national securities exchange or regularly traded in a market maintained by one or more members of a national or affiliated securities association.",
+   "citation": "Wulf A. Kaal, Shareholder Agreements - National Report of the United States of America (2017). SSRN: https://ssrn.com/abstract=3017612",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "MBCA jurisdictions",
+    "corporation becomes publicly traded"
+   ],
+   "source_pdf_sha256": "33821db406f92efbe1698fbaed37687595c13b7ce5463b4a879df679fd4af1ac",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-037",
+   "identifier": "kaal:claim:5886342-037",
+   "text": "Every DAO member must have a real possibility to exit the DAO under the rules of the DAO Agreement without incurring unreasonable costs, which makes exit a mandatory feature of a compliant DAO rather than a matter of design choice.",
+   "abstract": "(1) A DAO Member must have the possibility to exit",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "exit follows the rules of the DAO Agreement"
+   ],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'termination'. Derived node: a roster, not an adjudicated definition."
+}

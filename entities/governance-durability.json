@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/governance-durability",
+ "identifier": "kaal:entity:governance-durability",
+ "name": "Governance durability",
+ "termCode": "governance-durability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/governance-durability.md",
+ "sha256": "8ed4f02a037c0563c897674483c7048532b491bdeb4a0f590f42754d936660db",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2015",
+    "2015"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-006",
+   "identifier": "kaal:claim:2629451-006",
+   "text": "Investors treat the expiration of an N/DPA term as a negative event for the firm.",
+   "abstract": "Inversely, our results suggest that investors see the expiry of applicable N/DPA terms as a negative event.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "end of N/DPA term date, ENDPAT",
+    "reduced sample of 59 firms where the end date fell on a trading day"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2629451-024",
+   "identifier": "kaal:claim:2629451-024",
+   "text": "Negative returns after the end of the N/DPA term are evidence that investors regard the expiration of the term, and the consequent unenforceability of the associated governance improvements, as bad news for the firm.",
+   "abstract": "We interpret the negative N/DPA firms' CARs from t=1 to t=15 in Figures 4 and 4a as evidence that investors see the expiration of the N/DPA term and the expiration and following unenforceability of associated governance improvements as a negative event for the respective entity.",
+   "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451",
+   "datePublished": "2015",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "days t=1 to t=15 after ENDPAT"
+   ],
+   "source_pdf_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'governance-durability'. Derived node: a roster, not an adjudicated definition."
+}

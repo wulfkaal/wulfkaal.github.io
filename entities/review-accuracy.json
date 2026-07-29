@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/review-accuracy",
+ "identifier": "kaal:entity:review-accuracy",
+ "name": "Review accuracy",
+ "termCode": "review-accuracy",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/review-accuracy.md",
+ "sha256": "ec24c3b6b0f89bb0d2f88136247660a7e5fa2a110c9b287458fb4bb5005fc914",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-013",
+   "identifier": "kaal:claim:4734750-013",
+   "text": "When the first reviewer misses a defect and follow-on reviewers anchor entirely on the first reviewer's concerns, the review carries a higher risk of inaccuracy; crowd wisdom is one way to correct this myopia and single point of failure.",
+   "abstract": "If the single author of a code review has missed something and the follow-on reviewer focused entirely on the first reviewer's concerns, the code review has a higher risk of lack of accuracy.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sequential review processes anchored on an initial reviewer"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-021",
+   "identifier": "kaal:claim:4755632-021",
+   "text": "Legacy code review carries a single point of failure risk: if the single author of a review misses something and the follow-on reviewer focuses entirely on the first reviewer's concerns, the review has a higher risk of inaccuracy, and crowd wisdom is the corrective for that myopia.",
+   "abstract": "If the single author of a code review has missed something and the follow-on reviewer focused entirely on the first reviewer's concerns, the code review has a higher risk of lack of accuracy. Crowd wisdom is one way to correct possible myopia",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to standard legacy code review with sequential reviewers"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'review-accuracy'. Derived node: a roster, not an adjudicated definition."
+}

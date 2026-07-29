@@ -1,0 +1,131 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/insurance-underwriting",
+ "identifier": "kaal:entity:insurance-underwriting",
+ "name": "Insurance underwriting",
+ "termCode": "insurance-underwriting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/insurance-underwriting.md",
+ "sha256": "1244941feecd1c1c8bbd7f157a46eb3ddc4d8ff5d58f19eb2d7e856265acc2cf",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-001",
+   "identifier": "kaal:claim:3396542-001",
+   "text": "Insurance underwriting as currently organized imposes significant costs and inefficiencies and erects high barriers to entry, and it provides no democratized access to the underwriting process or collective decision making on risk.",
+   "abstract": "The insurance market is dominated by a few core players and subject to high barriers to entry for new market entrants. In the current system, democratized access to the underwriting process and collective decision making on risk does not exist.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-002",
+   "identifier": "kaal:claim:3396542-002",
+   "text": "In the traditional insurance structure, financial distress or bankruptcy of an individual underwriter harms consumers, who lose the protection of their insurance contract and must seek new coverage.",
+   "abstract": "Financial distress or bankruptcy of an individual underwriter affects consumers who may no longer be protected by the insurance contract and have to look for new coverage.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "traditional centralized insurance structure"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-003",
+   "identifier": "kaal:claim:3396542-003",
+   "text": "The authors propose that insurance underwriting be operated by a Decentralized Autonomous Organization in which cryptocurrency tokens function as claims on the future cash flows of the underwriting business.",
+   "abstract": "Insurance products can be optimized with emerging decentralized technology. We propose the use of cryptocurrencies as claims on future cash flows of an underwriting business operated by a Decentralized Autonomous Organization (DAO).",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-009",
+   "identifier": "kaal:claim:3396542-009",
+   "text": "The design requires underwriters to stake or encumber tokens against each policy they underwrite, and those encumbered tokens serve to secure the underwriters' promises.",
+   "abstract": "Fourth, the design requires the underwriters to \"stake\" or \"encumber\" an appropriate number of tokens against each policy they underwrite. These tokens in effect serve to secure the promises of the underwriters.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-025",
+   "identifier": "kaal:claim:3995709-025",
+   "text": "Even if code review and audit firms did engage in thorough insurance underwriting and guarantees for their clients, the remedy would still fail because those firms would remain subject to the flawed and centralized legacy insurance market, which is itself dominated by a cartel of a few core players.",
+   "abstract": "Even if code review and audit firms were to engage in a more thorough insurance underwriting and guarantee process for their clients, they would still be subject to the flawed and centralized legacy insurance market.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "code review firms relying on legacy insurance markets"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'insurance-underwriting'. Derived node: a roster, not an adjudicated definition."
+}

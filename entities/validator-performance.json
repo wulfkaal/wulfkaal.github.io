@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/validator-performance",
+ "identifier": "kaal:entity:validator-performance",
+ "name": "Validator performance",
+ "termCode": "validator-performance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/validator-performance.md",
+ "sha256": "6e303280abd55ed5fcf216a1df5b9dc055ea310bd464a4c70429af06ece86adf",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-028",
+   "identifier": "kaal:claim:3931933-028",
+   "text": "The SDAO performance based onboarding metric deliberately goes well beyond validator node uptime, adding criteria such as node performance, running a dApp on the network, response time to upgrades, technical background, adherence to instructions and hardware specifications, and community behavior.",
+   "abstract": "This performance based onboarding process and metric goes way beyond the criterion of validator node uptime. In the SDAO preregistration workflow, validator candidates apply for a position in the",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO preregistration workflow for validator candidates"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-033",
+   "identifier": "kaal:claim:3931933-033",
+   "text": "Nodes accumulate reputation in two ways: by being onboarded into the SDAO and performing well as node validators, and by participating regularly in SDAO governance votes.",
+   "abstract": "1. being onboarded into the SDAO and performing well as node validators, and 2. by participating regularly in the governance votes of SDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reputation accrual on the Shasper Network"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'validator-performance'. Derived node: a roster, not an adjudicated definition."
+}

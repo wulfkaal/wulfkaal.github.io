@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/uptime-metric",
+ "identifier": "kaal:entity:uptime-metric",
+ "name": "Uptime metric",
+ "termCode": "uptime-metric",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/uptime-metric.md",
+ "sha256": "4c18971ca360de2d910734ab0c06004d264f97629b21dd29b651be68bf5ec8e1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-008",
+   "identifier": "kaal:claim:3931933-008",
+   "text": "The final 2021 Casper testnet used perceived validator node uptime as its single rewarding requirement.",
+   "abstract": "The latest incentivized testnet ended in September 2021. The last Casper tesnet in September 2021 entailed as its single rewarding requirement the perceived uptime of the participating testnet validator node.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Casper testnet incentivization phase ending September 2021"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-028",
+   "identifier": "kaal:claim:3931933-028",
+   "text": "The SDAO performance based onboarding metric deliberately goes well beyond validator node uptime, adding criteria such as node performance, running a dApp on the network, response time to upgrades, technical background, adherence to instructions and hardware specifications, and community behavior.",
+   "abstract": "This performance based onboarding process and metric goes way beyond the criterion of validator node uptime. In the SDAO preregistration workflow, validator candidates apply for a position in the",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO preregistration workflow for validator candidates"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'uptime-metric'. Derived node: a roster, not an adjudicated definition."
+}

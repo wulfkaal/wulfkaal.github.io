@@ -1,0 +1,269 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/sdao",
+ "identifier": "kaal:entity:sdao",
+ "name": "Sdao",
+ "termCode": "sdao",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/sdao.md",
+ "sha256": "28264f7391a1829a3891baf2fcee34f894920f555a94eb385008ac817e73acf1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 13
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-033",
+   "identifier": "kaal:claim:3402701-033",
+   "text": "Parameter and policy choices for a stable cryptocurrency should be made by a decentralized autonomous organization, the Stability DAO or SDAO, which functions as a transparent, decentralized, open analog of the US Federal Reserve.",
+   "abstract": "Such choices need to be made by a decentralized autonomous organization, which we call the Stability DAO or SDAO",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-040",
+   "identifier": "kaal:claim:3402701-040",
+   "text": "The authors recommend an SDAO governance design coordinated through reputation-weighted democratic governance, whose core objective is to create incentives that lead independent and selfish actors to collaborate productively toward a common goal.",
+   "abstract": "In that paper we recommend an SDAO design coordinated through reputation-weighted democratic governance",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-022",
+   "identifier": "kaal:claim:3931933-022",
+   "text": "Shasper governance is funded in a hardcoded way: each validator that succeeds in propagating a block allocates a fixed percentage of its block reward, denominated in SHAS, into a separate SDAO wallet, in addition to the ordinary Casper PoS allocation.",
+   "abstract": "However, in addition to the Casper PoS Consensus algorithm allocation, each validator who succeeds in propagating a block allocates [__]% of the block reward, denominated in SHAS, into a separate SDAO wallet.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network validators producing blocks under the Casper PoS consensus algorithm"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-023",
+   "identifier": "kaal:claim:3931933-023",
+   "text": "The same percentage of the block reward that funds the SDAO wallet also mints reputation in the SDAO for the propagating validator, with both the minting and the sharing of the pooled tokens following the DEVxDAO MVPR protocol.",
+   "abstract": "That [__]% of the block reward in SHAS token also mints reputation in the SDAO for said validator. The reputation minting process follows the DEVxDAO MVPR protocol and the SHAS token that are allocated to the SDAO are shared among the SDAO members following the DEVxDAO MVPR protocol.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network block production"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-024",
+   "identifier": "kaal:claim:3931933-024",
+   "text": "Tokens accumulated in the SDAO wallet are distributed to voting associates in proportion to their SDAO reputation score, so payout tracks reputation rather than stake.",
+   "abstract": "Accordingly, the SHAS in the SDAO wallet are distributed to the SDAO VAs in proportion to their SDAO reputation score.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO members holding voting associate status"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-025",
+   "identifier": "kaal:claim:3931933-025",
+   "text": "A voting associate's SDAO reputation score is determined by that associate's merit, level of activity, and engagement in the SDAO.",
+   "abstract": "The respective SDAO reputation score of each VA, in turn, is determined by their respective merit, level of activity, and engagement in the SDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO reputation accounting"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-026",
+   "identifier": "kaal:claim:3931933-026",
+   "text": "SDAO membership is gated by a vote combined with evidence of NFT ownership and a posted performance record as a Shasper Network validator.",
+   "abstract": "NFTs owners are onboarded via vote into SDAO. Shasper Testnet validators who, in addition to evidence of the NFT ownership, post evidence of their performance record as Shasper Network validators will be considered as candidates for the SDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO onboarding of Shasper testnet validators"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-027",
+   "identifier": "kaal:claim:3931933-027",
+   "text": "Although the Shasper Network itself is permissionless, the SDAO deliberately imposes a prior registration requirement in order to push validator candidates to educate themselves about network requirements and to attend to the documentation.",
+   "abstract": "While the Shasper Network is permissionless, in an effort to encourage validator participants to educate themselves about network requirements etc. and to pay more attention to the network and the documentation, the SDAO runs the program with a prior registration requirement.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO reward program on a permissionless network"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-028",
+   "identifier": "kaal:claim:3931933-028",
+   "text": "The SDAO performance based onboarding metric deliberately goes well beyond validator node uptime, adding criteria such as node performance, running a dApp on the network, response time to upgrades, technical background, adherence to instructions and hardware specifications, and community behavior.",
+   "abstract": "This performance based onboarding process and metric goes way beyond the criterion of validator node uptime. In the SDAO preregistration workflow, validator candidates apply for a position in the",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO preregistration workflow for validator candidates"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-029",
+   "identifier": "kaal:claim:3931933-029",
+   "text": "Using the SDAO, the Shasper Network lets its developer community determine by community consensus which technology upgrades to the testnet should be created.",
+   "abstract": "Through the use of the SDAO, the Shasper Network enables its developer community to determine via community consensus what technology upgrades to the Shasper testnet should be created.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network technology upgrade process"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-030",
+   "identifier": "kaal:claim:3931933-030",
+   "text": "Peer governance substitutes for platform gatekeeping: rather than convincing legacy technology leaders and their platforms, developer teams engage their own peers in the Shasper DAO to discuss and vote on proposed upgrades and testnet projects.",
+   "abstract": "Rather than convincing legacy technology leaders and their respective platforms, teams of developers can engage directly with their own peers in the Shasper DAO to discuss and vote on proposed technology upgrades and Shasper testnet projects.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper DAO technology upgrade voting"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-033",
+   "identifier": "kaal:claim:3931933-033",
+   "text": "Nodes accumulate reputation in two ways: by being onboarded into the SDAO and performing well as node validators, and by participating regularly in SDAO governance votes.",
+   "abstract": "1. being onboarded into the SDAO and performing well as node validators, and 2. by participating regularly in the governance votes of SDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reputation accrual on the Shasper Network"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-038",
+   "identifier": "kaal:claim:3931933-038",
+   "text": "Governance decisions such as network upgrades follow a simple vote that mints no reputation, yet reputation in the SDAO can still be lost through a governance vote because each vote follows the DEVxDAO MVPR logic moving from loosely coupled to tightly coupled voting.",
+   "abstract": "Governance decisions, such as network upgrades, among others, follow a simple vote process in which no reputation is minted. However, reputation in the SDAO can be lost as a result of a governance vote as each vote follows the DEVxDAO MVPR logic via loosely coupled to tightly coupled voting.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO governance votes on network upgrades"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "13 claims in the published works of Wulf A. Kaal carry the concept tag 'sdao'. Derived node: a roster, not an adjudicated definition."
+}

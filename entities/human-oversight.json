@@ -1,0 +1,174 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/human-oversight",
+ "identifier": "kaal:entity:human-oversight",
+ "name": "Human oversight",
+ "termCode": "human-oversight",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/human-oversight.md",
+ "sha256": "095335da5f7c15a0e4861d258316ef5a60f68ab7a42dc27738b13682d02356f7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-017",
+   "identifier": "kaal:claim:4796714-017",
+   "text": "Using human judgment to uncover unconscious bias in AI can perpetuate the very biases it is meant to remove, because human reviewers carry their own implicit biases and may lack the expertise to identify bias in complex AI systems.",
+   "abstract": "While human judgment is integral to risk management and bias mitigation, it inherently carries its own biases. Relying on human judgment to uncover unconscious biases in AI may inadvertently perpetuate these biases rather than eliminate them.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to human in the loop bias mitigation programs",
+    "holds where reviewers lack technical expertise or bias awareness"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-023",
+   "identifier": "kaal:claim:5541658-023",
+   "text": "AI's role in legal practice must remain that of a supportive tool rather than a replacement for human judgment, because AI augments legal practice but cannot replicate the empathy and discretion that responsive judging requires.",
+   "abstract": "AI's role as a supportive tool, rather than a replacement for human judgment, is critical. As emphasized in multiple studies, AI augments legal practice but cannot replicate the empathy and discretion required for responsive judging.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "judicial and adjudicative functions, as distinct from transactional or administrative legal tasks"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-036",
+   "identifier": "kaal:claim:5541658-036",
+   "text": "AI's limitations in replicating human empathy together with the persistent risk of bias make a hybrid approach necessary, in which AI efficiency complements rather than substitutes for human discretion.",
+   "abstract": "However, AI's limitations in replicating human empathy and the persistent risk of bias necessitate a hybrid approach, where AI's efficiency complements human discretion.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "integration of AI into legal systems generally"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-038",
+   "identifier": "kaal:claim:5541658-038",
+   "text": "A Dutch court's AI system for traffic violation appeals improved consistency yet altered legal experts' decisions, which shows that consistency gains from judicial AI can come at the cost of influencing expert judgment and therefore require human oversight.",
+   "abstract": "For example, a study of an AI system for traffic violation appeals in a Dutch court found that while AI improved consistency, it altered legal experts' decisions, highlighting the need for human oversight.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a Dutch court",
+    "traffic violation appeals",
+    "high volume standardized decisions"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5554218-033",
+   "identifier": "kaal:claim:5554218-033",
+   "text": "The Universal Digital Law Codex should route disputes to decentralized arbitration platforms such as arbitration DAOs, providing a forum for human oversight precisely when immutable code fails to resolve a conflict, for example defective performance or unforeseen circumstances.",
+   "abstract": "arbitration platforms, such as the Decentralized Autonomous Organizations for Arbitration of digital disputes, UDLC provides a forum for human oversight when immutable code fails to resolve conflicts, such as defective performance or unforeseen circumstances.",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conflicts that fall outside the scope of the coded terms"
+   ],
+   "source_pdf_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5886342-009",
+   "identifier": "kaal:claim:5886342-009",
+   "text": "Where the Codex or the applicable law is applied largely automatically, the human understanding of the rule prevails over the outcome produced by that automated application, so automated execution never becomes the final authority on meaning.",
+   "abstract": "In interpreting UDLC and Applicable Laws, the hu- man understanding shall prevail over the outcome",
+   "citation": "Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "largely automated application of the Codex or applicable law"
+   ],
+   "source_pdf_sha256": "dc456a1ce2ea4a356dbcb35dc900ec36be94b8c9b6da4a2c8c268d6301f66359",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-039",
+   "identifier": "kaal:claim:6244278-039",
+   "text": "The evolutionary arc from consequence to care is not guaranteed: it depends on correct institutional design at each phase, including appropriate slashing parameters, robust Sybil resistance, calibrated reputation portability, and maintained human oversight.",
+   "abstract": "This arc is not guaranteed. It depends on correct institutional design at each phase—appropriate slashing parameters, robust Sybil resistance, calibrated reputation portability, and maintained human oversight.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "requires empirical validation through longitudinal observation of agent behavior under deepening stake"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'human-oversight'. Derived node: a roster, not an adjudicated definition."
+}

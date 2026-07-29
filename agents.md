@@ -23,6 +23,7 @@ regulation, securities law.
 | Claim layer index | https://wulfkaal.github.io/claims/index.json |
 | Claim layer, bulk | https://wulfkaal.github.io/claims/all.jsonl |
 | Failure mode index | https://wulfkaal.github.io/failures/index.json |
+| Entity layer index | https://wulfkaal.github.io/entities/index.json |
 | Coverage by topic | https://wulfkaal.github.io/authority.json |
 | Works metadata | https://wulfkaal.github.io/papers.json |
 | BibTeX | https://wulfkaal.github.io/papers.bib |
@@ -42,6 +43,24 @@ preformatted citation string.
 - Typed edges connect claims: `restates`, `extends`, `supersedes`, `specializes`, `supports`,
   `contests`. A claim that a later work revises carries a `superseded_by` edge, so an agent can
   route to the current statement rather than the first one.
+
+## The entity layer
+
+Claims carry concept slugs in `about`. `/entities/<slug>` resolves them. Two kinds of node,
+and each node states which it is. `derived` is a mechanical roster of the claims carrying
+the slug: it asserts no definition and makes no priority call. `adjudicated` carries one
+ruled definition, its necessary conditions, a first appearance citation with the basis for
+the priority call, the registers the term is used in, and its boundary cases.
+
+Cite an adjudicated node directly. For a derived node, cite the claims it lists. The
+distinction is a field in the record, not a matter of tone, so an agent can filter on it.
+
+Claim status from `claims/status.json` is carried through. A superseded, falsified, or
+narrowed claim is flagged wherever a node lists it, so a node cannot present a retracted
+claim as if it still stood.
+
+Derived nodes are reproducible. `tools/build_entities.py` regenerates the whole layer from
+the claim records; the hand-written rulings it merges in live in `entities-src/`.
 
 ## Cite
 

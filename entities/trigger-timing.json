@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/trigger-timing",
+ "identifier": "kaal:entity:trigger-timing",
+ "name": "Trigger timing",
+ "termCode": "trigger-timing",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/trigger-timing.md",
+ "sha256": "1f5e06a0d5652519503b7ac57ce0232a9fa0c10f53e0d84960d478f4177b6ee1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2012"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-031",
+   "identifier": "kaal:claim:2061166-031",
+   "text": "A trigger that fires too early wastes the equity injection: conversion occurs without a real need for capital or additional voting shareholders, and the effect of the injection may have dissipated by the time it is actually needed.",
+   "abstract": "If conversion is triggered too early without a real need for an equity capital injection (and additional voting shareholders), the impact of the equity capital injection may have dissipated and may no longer be available when actually needed.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital converting on a trigger set too far from distress"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-032",
+   "identifier": "kaal:claim:2061166-032",
+   "text": "A trigger that fires too late is equally useless: by then the financial institution may already be in the resolution stage, and conversion at that point will not supply enough equity to turn the company around.",
+   "abstract": "If conversion from debt to equity is triggered too late, the financial institution may already be in the resolution stage and conversion at that stage would not supply the company with sufficient equity to turn the company around.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital converting only at or near the point of non-viability"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-035",
+   "identifier": "kaal:claim:2061166-035",
+   "text": "Conversion of contingent capital securities from debt to equity should be timed to occur once problems are first detected but before the early intervention powers of regulatory authorities are triggered.",
+   "abstract": "Conversion of CCS from debt to equity should take place when problems are first detected but before early intervention powers of regulatory authorities are triggered.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "European Union bank resolution framework with early intervention powers"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'trigger-timing'. Derived node: a roster, not an adjudicated definition."
+}

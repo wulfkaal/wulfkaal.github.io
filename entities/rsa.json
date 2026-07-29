@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/rsa",
+ "identifier": "kaal:entity:rsa",
+ "name": "Rsa",
+ "termCode": "rsa",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/rsa.md",
+ "sha256": "5243c0e11b9817c0b6a86ae01416bb479f20c44fbbc81ca34afd6c61272f09c6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-003",
+   "identifier": "kaal:claim:4900878-003",
+   "text": "Current cryptographic systems such as RSA rest on the classical difficulty of factoring large primes, so quantum algorithms like Shor's algorithm, which factor exponentially faster, can render those cryptographic methods obsolete.",
+   "abstract": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to factoring based cryptography such as RSA",
+    "requires sufficiently capable quantum hardware"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900880-005",
+   "identifier": "kaal:claim:4900880-005",
+   "text": "Quantum algorithms such as Shor's algorithm can factor large prime numbers exponentially faster than classical computers, which potentially renders currently deployed cryptographic systems including RSA obsolete.",
+   "abstract": "Quantum algorithms, such as Shor's algorithm, can factor these numbers exponentially faster, potentially rendering existing cryptographic methods obsolete.",
+   "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "assumes cryptographically relevant quantum computers become available"
+   ],
+   "source_pdf_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'rsa'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,106 @@
+# Fair launch
+
+`kaal:entity:fair-launch`
+
+**Status.** derived
+
+This node is assembled mechanically from the 28 claims that carry the concept tag `fair-launch`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+
+## Every claim under this term
+
+28 claims across 1 works, 2022 to 2022.
+
+**2022**
+
+- [4015908-002](https://wulfkaal.github.io/claims/4015908-002) [definitional/asserted] -- A fair launch is a token distribution in which the launched token is held entirely by the community and founders and their affiliates participate only on equal terms as members of that community.
+  > In a fair launch the launched token is held entirely by the community and all founders and their affiliates are equally part of the community.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-005](https://wulfkaal.github.io/claims/4015908-005) [empirical/evidenced] -- Fair launch tokens outperformed centrally distributed projects during the late 2020 and early 2021 rally: the collective crypto average token launch gained 112.41% over 90 days while fair launch projects gained over 296%.
+  > During the digital asset market rally in late 2020 and early 2021, the collective crypto average token launch over 90 days increased 112.41%, while Fair Launch projects gained over 296%.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-006](https://wulfkaal.github.io/claims/4015908-006) [mechanism/argued] -- Fair launches shift capital formation from venture capitalism toward altruistic capitalism, because a digital asset startup that can successfully raise capital through a fair launch becomes less reliant on venture capital.
+  > In essence, if a digital asset startup can successfully raise capital from a fair launch, the startup will be less inclined/reliant on venture capital.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-007](https://wulfkaal.github.io/claims/4015908-007) [condition/argued] -- Fair token launches offer equal opportunity for market participants to acquire tokens over longer periods of time at a comparatively equal price.
+  > fair token launches offer equal opportunity for market participants to acquire tokens over longer periods of time at a comparatively equal price.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-008](https://wulfkaal.github.io/claims/4015908-008) [condition/argued] -- Price equality in a fair launch means that no insider group or person can purchase the token at a significant discount.
+  > Additionally, price equality in fair launch means that no insider group or person can purchase the token at a significant discount.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-009](https://wulfkaal.github.io/claims/4015908-009) [definitional/asserted] -- The fairness of a launch can be measured by how many individuals have access to the token at launch, assessed through the number of wallets holding the asset combined with the active participation of the wallet owners.
+  > To determine the fairness of a launch for a traditional medium of exchange it is possible to consider the number of wallets holding the token asset. Moreover, it is possible to consider the combination of distribution of the asset in wallets plus the active participation of the wallet owner.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-010](https://wulfkaal.github.io/claims/4015908-010) [condition/argued] -- Under the fairness to the public definition, a fair token launch requires that the token was launched without a founding team, a foundation, or a founding dev team.
+  > Under this definition, a fair token launch requires that the token was launched without a founding team, foundation, or founding dev team.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-011](https://wulfkaal.github.io/claims/4015908-011) [condition/argued] -- Under the fairness to the public definition of fair launch, no early investor may hold a pre-allocation of project tokens or a pre-mining program, and any individual claim to a percentage of token supply before public sale falls outside the definition of fair launch.
+  > under this definition of fair launch, no early investors would be permitted with a pre-allocation of project tokens or with a pre-mining program.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-012](https://wulfkaal.github.io/claims/4015908-012) [empirical/evidenced] -- Bitcoin is one of the best examples of a fair launch because there was no ICO, no founders reward, no pre-mine, and no block reward for dev teams.
+  > Bitcoin is one of the best examples of a fair launch because there was no ICO, founders' reward, pre- mine, or block reward for dev teams.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-013](https://wulfkaal.github.io/claims/4015908-013) [failure/argued] *(failure mode)* -- Small market cap launches at very cheap initial prices carry the potential for team and whale purchase abuses, which is why equitable treatment of the public requires significant project-controlled liquidity.
+  > Small market cap launches at very cheap initial prices bring with them the potential abuses of team and whale purchases.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-015](https://wulfkaal.github.io/claims/4015908-015) [normative/argued] -- The rule that no tokens may be distributed to insiders such as team, founders, associated whales, core investors, advisors, and marketing teams before or after the token sale is the most important staple of fair launch doctrine and cannot be subject to exceptions; any exception should cost the project the fair token launch designation.
+  > This rule is perhaps the most important key staple of the fair launch doctrine and cannot be subject to exceptions. Any exceptions to this rule should result in the loss of the designation fair token launch.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-016](https://wulfkaal.github.io/claims/4015908-016) [design/argued] -- Because the main mandate of a fair launch is equitable treatment of the public, fair launches typically involve a mandate to distribute any and all revenue and profits of the project to community investors.
+  > Since the main mandate of the fair launch is equitable treatment of the public, fair launches typically involve a mandate to distribute any and all revenue and profits of the project to their community investors.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-018](https://wulfkaal.github.io/claims/4015908-018) [condition/argued] -- A carve-out for start-up expenses is economically unavoidable in most fair launches because it is not feasible to expect founders operating without funding to keep spending time and resources on the project without payback assurances.
+  > As a matter of fact, it may not be feasible to get founders who operate without funding to keep spending time and resources on the project without payback assurances.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-019](https://wulfkaal.github.io/claims/4015908-019) [design/argued] -- Because pre-public token allocations to cover start-up costs run against the majority view on fair launches, preserving the spirit of fair launch requires that such allocations be fully transparent, announced to the community, and open to a community audit of the books.
+  > However, in order to maintain the spirit of fair launch, such token allocations before the public launch should be fully transparent and announced to the community with a community audit of the books, as desired.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-020](https://wulfkaal.github.io/claims/4015908-020) [mechanism/argued] *(failure mode)* -- Without significant marketing a fair launch token is less likely to reach a diverse set of market participants, and projects reaching only a few hundred investors with small million dollar market caps are much more prone to abuse and manipulation.
+  > Without significant marketing of the project, it is less likely the token will reach a diverse set of market participants. Projects that only reach a few hundred investors and only small million-dollar market caps are much more prone to abuse and manipulation.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-021](https://wulfkaal.github.io/claims/4015908-021) [design/argued] *(failure mode)* -- Equal opportunity access points for public marketing incentives cannot be guaranteed and require constant reevaluation, so the public marketing permission for any fair token launch should be restricted to a limited percentage of total token supply.
+  > These equal opportunity access points cannot be guaranteed and the process is subject to constant reevaluation. The public marketing permission for any fair token launch should be restricted to a limited percentage of total token supply.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-022](https://wulfkaal.github.io/claims/4015908-022) [mechanism/argued] -- The more decentralized the governance of a fair launch protocol, the less likely the project will be seen as treating public users unfairly, which makes a decentralized autonomous organization design advisable for fair launch projects.
+  > The more decentralized the governance of a fair launch protocol, the less likely the project will be seen as not treating the public users unfairly. In this context, it may be advisable for fair launch projects to be launched in a decentralized autonomous organization (DAO) design.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-023](https://wulfkaal.github.io/claims/4015908-023) [failure/argued] *(failure mode)* -- If the DAO governing a fair launch is controlled by a handful of people in a foundation setting, decentralized governance metrics are less likely to take hold and the public is correspondingly less likely to benefit from decentralized community governance over the launch.
+  > controlled by a handful of people in a foundation setting, it is less likely that decentralized governance metrics take hold in the DAO. Accordingly, it is less likely that the public can benefit from the decentralized community governance over the fair launch.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-028](https://wulfkaal.github.io/claims/4015908-028) [failure/argued] *(failure mode)* -- Whale purchases that soak up token supply at the earliest possible time in a launch are the key problem fair launch platforms address, because they can be the origin of significant centralization that harms the project for the entirety of its active market engagement.
+  > of whale token purchases that soak up supply at the earliest possible time in the token launch. Such whale purchases can be the origin of significant centralization of a token launch that may harm the project for the entirely of its active market engagement.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-029](https://wulfkaal.github.io/claims/4015908-029) [design/argued] -- Technology platforms can make launch abuses less likely by mandating fair auctions in which tokens are released only in tranches, offering a limited number of tokens for a limited number of days, which makes rug pulls overall less likely.
+  > During such fair auctions, the tokens that are listed on the fair launch platforms may only be released in tranches, which makes rug pulls overall less likely. Such token tranche listings may offer a limited number of tokens for a limited number of days.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-031](https://wulfkaal.github.io/claims/4015908-031) [empirical/evidenced] -- Grin avoided privileging miners who could develop ASICs before launch by gradually scaling up the portion of coins allocated to the ASIC-friendly algorithm over two years, which allowed hobbyist miners to participate.
+  > However, Grin did not privilege miners who could develop ASICs prior to launch, rather they gradually scaled up the portion of coins allocated to the ASIC-friendly algorithm over 2 years, allowing hobbyist miners to participate.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-032](https://wulfkaal.github.io/claims/4015908-032) [failure/argued] *(failure mode)* -- Liquidity mining, one of the dominant mechanisms used for fair launches, undermines fairness because it leads those who already have more liquidity or assets to benefit disproportionally from the protocol.
+  > However, liquidity mining leads those who have more liquidity/assets to disproportionally benefit from the fair launch liquidity mining protocol.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-033](https://wulfkaal.github.io/claims/4015908-033) [condition/argued] -- If the top 10 addresses own a disproportionally large supply of a token, the project or community becomes more centralized, an outcome fair launches seek to avoid.
+  > If the top 10 addresses own a disproportionally large supply of a token, then the project or community becomes more centralized; an outcome which fair launches seek to avoid.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-034](https://wulfkaal.github.io/claims/4015908-034) [design/evidenced] -- Binance implemented a subscription mechanism that gives everyone an equal opportunity to purchase newly released NFTs, responding to drops that sell out in seconds and leave interested users waiting for initial owners to flip.
+  > In response, Binance implemented a subscription mechanism that lets everyone have an equal opportunity to purchase newly released NFTs on its marketplace.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-035](https://wulfkaal.github.io/claims/4015908-035) [mechanism/argued] -- An auction mechanism for fair launch tokens avoids pricing tokens below their underlying market value, which in turn helps remedy the problems that derive from large whale token holders who can later manipulate the market.
+  > An auction mechanism for fair launch tokens ensures avoids that tokens are priced cheaper than the underlying market value of the token. This, in turn, helps remedy the problems that derive from large whales token holders that can manipulate the market in the
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-037](https://wulfkaal.github.io/claims/4015908-037) [mechanism/argued] -- In a lottery fair launch protocol, a user who bids low for a ticket increases the potential secondary market return but decreases the chance of winning the lottery, because more users can afford to participate at a low price.
+  > user bids low, they increase the potential for secondary market return but decrease their chances of winning the lottery since more users can afford to participate.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-040](https://wulfkaal.github.io/claims/4015908-040) [predictive/argued] -- Through fair launch evolution and continuous practice improvements, the fair launch industry and the underlying digital asset businesses can become the foundation of the emerging decentralized digital asset economy.
+  > Through fair launch evolution and continuous practice improvements, the fair launch industry and underlying digital asset businesses can become the foundation of the emerging decentralized digital asset economy.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+- [4015908-042](https://wulfkaal.github.io/claims/4015908-042) [mechanism/argued] -- In lottery fair launch protocols the ticket price is determined as the median of all tickets purchased, and users then decide whether to accept that price, paying the difference if it exceeds their bid or withdrawing for a refund.
+  > price of a ticket is determined as the median of all tickets purchased – users then decide whether they accept the price.
+  Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908
+
+## Verify
+
+Every claim above resolves to a record carrying a verbatim source quote, the sha256 of the source PDF, and a preformatted citation. Nothing here asks to be taken on trust.
+
+    curl -s https://wulfkaal.github.io/entities/fair-launch.md | sha256sum
+
+**Canonical form.** This markdown file is the canonical hashed representation of this entity node. Its sha256 is the content hash.

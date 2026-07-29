@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/proposal-quality",
+ "identifier": "kaal:entity:proposal-quality",
+ "name": "Proposal quality",
+ "termCode": "proposal-quality",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/proposal-quality.md",
+ "sha256": "1b31c9f4d7f6f8c077c1d89bff4cec33c25f41085ee304052a58159e8bac82ec",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4067783-015",
+   "identifier": "kaal:claim:4067783-015",
+   "text": "Governance in most DAOs is severely underdeveloped, which leaves a minority of stakeholders defining governance, and that minority control in turn produces mediocre and poorly developed proposals.",
+   "abstract": "Governance is severely underdeveloped in most DAOs which results typically in a minority of stakeholders that define governance. This, in turn, often result in mediocre and poorly-developed proposals.",
+   "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs still in early governance experimentation"
+   ],
+   "source_pdf_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-038",
+   "identifier": "kaal:claim:6655138-038",
+   "text": "Per-job resolution alone cannot distinguish a poor proposal that drew funding from a good proposal that drew unlucky validators, because the single resolution event conflates proposal quality with execution quality.",
+   "abstract": "Per-job resolution alone cannot distinguish a poor proposal that drew funding from a good proposal that drew unlucky validators, because the resolution event conflates proposal quality and execution quality.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "architectures with a single job-level resolution event"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'proposal-quality'. Derived node: a roster, not an adjudicated definition."
+}

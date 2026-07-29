@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/lockups",
+ "identifier": "kaal:entity:lockups",
+ "name": "Lockups",
+ "termCode": "lockups",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/lockups.md",
+ "sha256": "ec7374e0f9361794002429b13be31e5aa81bf54ce4f2a9ac8b666c06282a886a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2020"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-009",
+   "identifier": "kaal:claim:3249860-009",
+   "text": "To avoid a token price crash, escrow accounts holding unissued tokens should carry usage and access controls assuring investors that escrowed tokens will not be issued at a discount, with lockups or phased releases minimizing crash risk.",
+   "abstract": "To avoid a token price crash, token escrow accounts should provide usage and access controls that assure investors that escrowed tokens will not be issued at a discount. Lockups of escrowed tokens for a specified time period or phased releases can also help minimize the risks of token price crashes.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "issuers that retain unissued tokens in escrow after an ICO"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-006",
+   "identifier": "kaal:claim:3606663-006",
+   "text": "By 2019 the ICO market had lost its defining advantage over venture capital: because most ICOs between 2018 and 2019 imposed one to three year lockups, neither market offered early liquidity to investors or issuers, making the two substantively similar.",
+   "abstract": "Most ICOs during that period required one to three-year lockup period for their investors. Accordingly, the ICO market in 2019 is very similar to the venture market in the sense that neither of these markets offers early liquidity to investors and issuers.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "ICOs conducted between 2018 and 2019",
+    "lockup periods of one to three years"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'lockups'. Derived node: a roster, not an adjudicated definition."
+}

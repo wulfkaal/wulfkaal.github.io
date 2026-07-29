@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dao-membership",
+ "identifier": "kaal:entity:dao-membership",
+ "name": "Dao membership",
+ "termCode": "dao-membership",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dao-membership.md",
+ "sha256": "6651883a8972da31f69fb9786456a80e76ff96542e0239c0fe6c3b730a83fdc4",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-014",
+   "identifier": "kaal:claim:3981021-014",
+   "text": "Only applicants who demonstrate both successful fundraising and successful fulfillment of donative intent are eligible for CHARITYxDAO voting associate status.",
+   "abstract": "Only those who demonstrate both 1. Successful fundraising, and 2. Fulfilling the donative intent are eligible for CHARITYxDAO voting associate (VA) status.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CHARITYxDAO onboarding of voting associates"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-032",
+   "identifier": "kaal:claim:3981021-032",
+   "text": "Charging an admission or denial of service fee to become a voting associate disincentivizes betrayal and defection, because the sunk cost of joining makes cheating expensive even where associates can remain anonymous.",
+   "abstract": "- The CHARITYxDAO disincentivize betrayal and defection by charging an admission fee, ie. DoS fee to become a CHARITYxDAO VA. Given the sunk cost of joining the CHARITYxDAO, it is more expensive for prospective VAs to cheat because it would be expensive to rejoin even if VAs could be anonymous.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO membership with paid admission and blacklisting"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-031",
+   "identifier": "kaal:claim:4941807-031",
+   "text": "Membership in the proposed DAO is constituted by holding REP tokens, which carry voting rights and a share of DAO revenue, and because validation pools revalue REP dynamically the governance model adapts to the collective decisions of members.",
+   "abstract": "Membership in the DAO is signified by holding REP tokens, which grant voting rights and a share in DAO revenues. The dynamic valuation of REP tokens through validation pools allows for a flexible and responsive governance model that adapts to the collective decisions of the DAO members.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where REP is minted and revalued through validation pools"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'dao-membership'. Derived node: a roster, not an adjudicated definition."
+}

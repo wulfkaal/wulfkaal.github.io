@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/implementation-risk",
+ "identifier": "kaal:entity:implementation-risk",
+ "name": "Implementation risk",
+ "termCode": "implementation-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/implementation-risk.md",
+ "sha256": "1daa274a783aacc353d6495a9b508bee41f06850c2892fe4f6d74d91d58e4181",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3017612-013",
+   "identifier": "kaal:claim:3017612-013",
+   "text": "Voting arrangements are not self executing: their existence does not relieve the corporation of observing the legal formalities of director and shareholder action.",
+   "abstract": "Voting arrangements are not self-executing, and the mere existence of a voting arrangement does not mean that the corporation should dispense with the legal formalities of director and shareholder actions.",
+   "citation": "Wulf A. Kaal, Shareholder Agreements - National Report of the United States of America (2017). SSRN: https://ssrn.com/abstract=3017612",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "voting trusts, pooling agreements, and irrevocable proxies"
+   ],
+   "source_pdf_sha256": "33821db406f92efbe1698fbaed37687595c13b7ce5463b4a879df679fd4af1ac",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-015",
+   "identifier": "kaal:claim:5225296-015",
+   "text": "ECDSA introduces a vulnerability into SPoS through its dependence on secure random number generation at key creation, so the authentication guarantee fails when implementation departs from cryptographic best practice.",
+   "abstract": "However, ECDSA's reliance on secure random number generation for key creation introduces a potential vulnerability if improperly implemented, necessitating strict adherence to cryptographic best practices",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "when random number generation is improperly implemented"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5454054-037",
+   "identifier": "kaal:claim:5454054-037",
+   "text": "Regulatory uncertainty, in particular the timeline for SEC approval of the NASDAQ and Dinari tokenization frameworks, could delay LER implementation.",
+   "abstract": "Regulatory uncertainties, such as the timeline for SEC approval for NASDAQ and Dinari frameworks could delay LER implementation.",
+   "citation": "Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pending SEC approval of tokenized securities trading"
+   ],
+   "source_pdf_sha256": "9f53a865e6f0e5424640779df8f9b50923cd7d05649301dd4cc727144749b6e6",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'implementation-risk'. Derived node: a roster, not an adjudicated definition."
+}

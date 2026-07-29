@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/legal-entity",
+ "identifier": "kaal:entity:legal-entity",
+ "name": "Legal entity",
+ "termCode": "legal-entity",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/legal-entity.md",
+ "sha256": "12fd312ce51d0df91bdcfb8a029ebb36a61ac096e106bc1e44e5d87bae54383e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-008",
+   "identifier": "kaal:claim:3799320-008",
+   "text": "If DAO members do not formalize a legal structure for their entity, courts are very likely to impose one on them, which is a serious risk of DAO membership.",
+   "abstract": "However, a very serious risk is associated with DAO membership in the sense that if the DAO members do not formalize a structure for their human-created entity, courts are very likely to impose one for the members of the DAO.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no off-chain legal entity",
+    "litigation reaching a court"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-018",
+   "identifier": "kaal:claim:3799320-018",
+   "text": "A DAO needs a legal wrapper to represent it, because a DAO cannot by itself rent an office or sign a contract that can only happen on paper.",
+   "abstract": "A DAO needs a legal wrapper representing the DAO in the sense that a DAO cannot rent an office or sign a contract that can only happen on paper.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO operations that touch the real world"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'legal-entity'. Derived node: a roster, not an adjudicated definition."
+}

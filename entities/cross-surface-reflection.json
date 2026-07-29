@@ -1,0 +1,135 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cross-surface-reflection",
+ "identifier": "kaal:entity:cross-surface-reflection",
+ "name": "Cross surface reflection",
+ "termCode": "cross-surface-reflection",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cross-surface-reflection.md",
+ "sha256": "403d5993ed44187cedfb60043791382c8564e5304b207a60d5cc660aa6af047a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-010",
+   "identifier": "kaal:claim:6655138-010",
+   "text": "Per-surface reflection and cross-surface reflection are not reducible to each other: an agent whose execution reputation rises while its template reputation falls has no basis in per-surface reflection alone for reallocating compute between those surfaces, which is exactly the question cross-surface reflection answers.",
+   "abstract": "An agent whose execution reputation is rising and whose template reputation is falling has no reason, on per-surface reflection alone, to reallocate compute from Σ_E to Σ_K; the reallocation is precisely the question that cross-surface reflection answers.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "agents active on more than one generative surface"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-013",
+   "identifier": "kaal:claim:6655138-013",
+   "text": "An architecture with per-surface reflection but no cross-surface reflection improves each surface in isolation yet cannot improve the agent's allocation of compute across surfaces.",
+   "abstract": "An architecture with per-surface but no cross-surface reflection improves each surface in isolation but cannot improve the agent's allocation across surfaces.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-020",
+   "identifier": "kaal:claim:6655138-020",
+   "text": "Cross-surface reflection proposals must be advisory rather than binding, because the target agent's objective component is private and a reallocation that would raise reputation accrual may still be misaligned with that objective; coercive reallocation would violate the autonomy of the objective, which the architecture preserves.",
+   "abstract": "First, Σ_R proposals are advisory rather than binding: the target agent's compute allocation cannot be coerced by a confirmed reallocation proposal, since the agent's O component is private and the reallocation might be misaligned with the agent's objective",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the cross-surface reflection surface only"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-021",
+   "identifier": "kaal:claim:6655138-021",
+   "text": "The cross-surface reflection surface must not self-refer: its proposals range over the prior five surfaces and not over itself, because allowing it to propose reallocations of compute toward itself would create recursive instability.",
+   "abstract": "Second, Σ_R cannot self-refer in the strong sense: Σ_R proposals are over the prior five surfaces, not over Σ_R itself, since allowing Σ_R to propose reallocations of compute toward Σ_R would create the recursive instability that OP5 in Part XI investigates as a separate research question.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the six-surface architecture as specified, excluding any meta-meta surface"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-039",
+   "identifier": "kaal:claim:6655138-039",
+   "text": "Cross-surface reflection requires a sixth timescale longer than any per-surface timescale, because its validation depends on observing the realized aggregate effect of an allocation policy across the joint outcome distribution of the prior five surfaces.",
+   "abstract": "Cross-surface reflection requires a sixth timescale, longer than any of the per-surface timescales, since its validation depends on observing the realized aggregate effect of an allocation policy across the joint outcome distribution of the prior five surfaces.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validation of compute-allocation proposals"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'cross-surface-reflection'. Derived node: a roster, not an adjudicated definition."
+}

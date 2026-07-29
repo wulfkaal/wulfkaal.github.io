@@ -1,0 +1,286 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hspos",
+ "identifier": "kaal:entity:hspos",
+ "name": "Hspos",
+ "termCode": "hspos",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hspos.md",
+ "sha256": "2b156c1a5232c1084ac8810486e5178c1b25d89bc76dd63e6dd27d6f15452ecb",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 14
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-002",
+   "identifier": "kaal:claim:3931933-002",
+   "text": "The core proposal of Hybrid Secure Proof of Stake is to separate block consensus from block rewards, making the reward a function of the node's reputation rather than of stake alone.",
+   "abstract": "The main concept in Hybrid Secure Proof of Stake (HSPoS) is to separate the block consensus from the block rewards. HSPoS proposes that the rewards become a function in the reputation of the node.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-003",
+   "identifier": "kaal:claim:3931933-003",
+   "text": "Under HSPoS a node's probability of being selected remains driven by its fungible stake, while the size of the block reward it receives is scaled by a non-fungible reputation multiplier derived from the node's reputation.",
+   "abstract": "Thus, while the node probability of being selected is based on the fungible stake, the rewards for the block is adjusted by the non-fungible reputation multiplier which is a function of the node's reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward layer applied on top of an existing PoS consensus layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-004",
+   "identifier": "kaal:claim:3931933-004",
+   "text": "Because HSPoS supplements rather than replaces the consensus layer, an existing PoS consensus algorithm can be kept in operation while reputation is introduced through the reward function, permitting a gradual rather than abrupt transition to SPoS.",
+   "abstract": "HSPoS enables a transitioning process in which traditional PoS consensus algorithms, can be used and maintained while being supplemented with SPoS characteristics and node reputation. This enables enhanced experimentation and allows a slow transitioning from PoS to SPoS.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "networks already running a traditional PoS consensus algorithm"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-005",
+   "identifier": "kaal:claim:3931933-005",
+   "text": "Moving a network from PoS to SPoS should proceed by evolving the rewards mechanism in two steps through HSPoS, rather than by switching the consensus mechanism directly.",
+   "abstract": "In order to move PoS towards SPoS (Secure Proof of Stake),2 this paper suggests evolving the rewards mechanism in two steps via HSPoS (Hybride Secure Proof of Stake).",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "networks seeking to adopt Secure Proof of Stake"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-032",
+   "identifier": "kaal:claim:3931933-032",
+   "text": "Under HSPoS two nodes holding the same stake retain the same probability of being selected for rewards, but the node with the higher reputation receives the larger reward.",
+   "abstract": "In HSPoS, two nodes with the same stake would have the same probability of being selected for the rewards. However, the node with the higher reputation would get higher rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation with equal stakes"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-033",
+   "identifier": "kaal:claim:3931933-033",
+   "text": "Nodes accumulate reputation in two ways: by being onboarded into the SDAO and performing well as node validators, and by participating regularly in SDAO governance votes.",
+   "abstract": "1. being onboarded into the SDAO and performing well as node validators, and 2. by participating regularly in the governance votes of SDAO.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reputation accrual on the Shasper Network"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-034",
+   "identifier": "kaal:claim:3931933-034",
+   "text": "Because reputation scales the reward, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "abstract": "Furthermore, a node with less stake but high reputation may end up with more rewards than a node with more stake but less reputation.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reward computation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-035",
+   "identifier": "kaal:claim:3931933-035",
+   "text": "By balancing validator stakes against reputation, HSPoS reaches an equilibrium of incentives in which validators are motivated both to succeed economically as validators and to participate actively in decentralized governance.",
+   "abstract": "Through this balancing of validator SHAS stakes and reputation, HSPoS attains an equilibrium of incentives for validators to: a. attain economic success as validators, and",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators holding both SHAS stake and SDAO reputation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-036",
+   "identifier": "kaal:claim:3931933-036",
+   "text": "HSPoS earns validator node reputation through a mechanism that is decoupled from the ordinary monetary system of incentive rewards.",
+   "abstract": "HSPoS emphasizes validator node reputation, which is earned via a reputation-based mechanism that decouples the normal monetary system of incentive rewards.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS reputation layer"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-037",
+   "identifier": "kaal:claim:3931933-037",
+   "text": "Reputation in HSPoS is a form of social capital earned by participating in the network's ecosystem, independent of the participant's financial capacity.",
+   "abstract": "Reputation represents a type of social capital that is earned by participating in the network's ecosystem regardless of the amount of financial capacity.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "HSPoS and SDAO reputation"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-001",
+   "identifier": "kaal:claim:5225296-001",
+   "text": "An abrupt transition from Proof of Stake to Secure Proof of Stake would destabilize networks built on stake-based incentives, because stake is a fungible economic asset and reputation is non-fungible social capital, and the two operate on fundamentally different principles.",
+   "abstract": "An abrupt transition could destabilize networks reliant on stake-based incentives, as stake (a fungible economic asset) and reputation (a non-fungible social capital) operate on fundamentally different principles, potentially disrupting validator participation and network integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "networks whose validator participation depends on stake-based incentives"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-002",
+   "identifier": "kaal:claim:5225296-002",
+   "text": "Hybrid Secure Proof of Stake bridges PoS and SPoS by separating block consensus from reward distribution: stake continues to determine selection probability while a reputation multiplier adjusts the rewards paid out.",
+   "abstract": "HSPoS bridges these frameworks by separating block consensus from reward distribution: stake determines selection probability, consistent with PoS, while a reputation multiplier adjusts rewards, introducing SPoS's reputation-centric features",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-003",
+   "identifier": "kaal:claim:5225296-003",
+   "text": "Using reputation as a reward modifier rather than as the determinant of block propagation lets a network evaluate reputation metrics such as validator uptime, validation accuracy, and governance participation without committing to the full SPoS framework.",
+   "abstract": "By employing reputation as a reward modifier rather than the sole determinant of block propagation, HSPoS enables networks to evaluate reputation metrics—such as validator uptime, transaction validation accuracy, or governance participation—without fully committing to SPoS's framework",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "during the transitional HSPoS phase"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-004",
+   "identifier": "kaal:claim:5225296-004",
+   "text": "A direct move from PoS to SPoS would render existing validator communities and stake-optimized infrastructures obsolete or force significant reconfiguration, which is why a hybrid intermediate stage is required.",
+   "abstract": "PoS networks have developed validator communities and infrastructures optimized for stake-based operations; a direct move to SPoS could render these obsolete or necessitate significant reconfiguration",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS networks with established validator communities and stake-based infrastructure"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "14 claims in the published works of Wulf A. Kaal carry the concept tag 'hspos'. Derived node: a roster, not an adjudicated definition."
+}

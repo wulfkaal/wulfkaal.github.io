@@ -1,0 +1,177 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/linear-regression",
+ "identifier": "kaal:entity:linear-regression",
+ "name": "Linear regression",
+ "termCode": "linear-regression",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/linear-regression.md",
+ "sha256": "a0f55efa95fef06c3e282dfa246849614f22072a6292fe575a5ea4d70ec20fd7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-016",
+   "identifier": "kaal:claim:2389416-016",
+   "text": "In simple linear regressions of monthly returns on log AUM across the full sample, the AUM coefficient is statistically significant at the 5 percent level only during March through August 2012.",
+   "abstract": "When considering the entire sample and no dummy variable, the estimated beta for the logarithm of the AUM are statistically significant at 5% level only in the period March-August 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample of 2145 funds",
+    "no dummy variable specification"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-017",
+   "identifier": "kaal:claim:2389416-017",
+   "text": "In the period close to and following the registration effective date, fund size has a positive relationship with fund performance, with positive beta coefficients in March through May and July 2012.",
+   "abstract": "In the period close to and following the registration effective date for hedge fund advisers under the Dodd-Frank Act, the size of funds seems to have a positive relationship with the fund performance.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "March to May 2012 and July 2012",
+    "coefficients negative in June and August 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-018",
+   "identifier": "kaal:claim:2389416-018",
+   "text": "Adding a dummy for AUM above $150 million to the linear regressions leaves no variable significant at the 5 percent level in March 2012, and the dummy is significant only in April 2012.",
+   "abstract": "We notice that in March 2012, no variable is statistically significant at 5% significance level while in April 2012, the dummy variable is statistically significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample of 2145 funds",
+    "linear model with AUM threshold dummy"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-019",
+   "identifier": "kaal:claim:2389416-019",
+   "text": "The linear regression models are jointly valid on the F-statistic but their explanatory power measured by R-squared remains very limited, with R-squared values of roughly 0.003 to 0.014.",
+   "abstract": "The F-statistics support the validity of the models, while the explanatory power, measured by the R-squared is still very limited.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "linear models with and without the AUM dummy"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-021",
+   "identifier": "kaal:claim:2816408-021",
+   "text": "In simple linear regressions of monthly returns on log AUM across December 2011 to December 2012, fund size does not appear to matter for fund returns because only a few coefficients are statistically significant and those remain close to zero.",
+   "abstract": "We conclude that size of the funds in our sample does not appear to matter for fund returns as only a few coefficients are statistically significant but are still close to zero.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample of 3,424 funds",
+    "monthly cross sections December 2011 to December 2012"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-022",
+   "identifier": "kaal:claim:2816408-022",
+   "text": "Fund size shows a negative relationship with performance in the months before the March 2012 registration effective date and a positive relationship afterward, with beta coefficients negative in January to March 2012 and July 2012 and positive in April and May 2012.",
+   "abstract": "Examining the beta coefficients, we notice that in the period January - March 2012 and July 2012, beta coefficients are negative, while immediately after the registration effective date, e.g. April-May 2012 the beta coefficient is positive.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "monthly linear regressions, December 2011 to December 2012",
+    "entire sample"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-023",
+   "identifier": "kaal:claim:2816408-023",
+   "text": "In regressions including a dummy for AUM above $150 million, the dummy is statistically significant and positive only in April and September 2012, and the explanatory power of the models measured by R-squared remains very limited.",
+   "abstract": "The dummy variables are statistically significant and positive in April and September 2012. The F-statistics support the validity of the models, while the explanatory power, measured by the R- squared is still very limited.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "linear models with dummy, December 2011 to December 2012",
+    "Table 5 results"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'linear-regression'. Derived node: a roster, not an adjudicated definition."
+}

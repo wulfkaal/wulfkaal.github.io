@@ -1,0 +1,136 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/inflation",
+ "identifier": "kaal:entity:inflation",
+ "name": "Inflation",
+ "termCode": "inflation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/inflation.md",
+ "sha256": "7b723d77d1b639bc44893f22ce90a0a3cf2e7c9e26ba4724f3c96578a0e9c90d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-026",
+   "identifier": "kaal:claim:3125822-026",
+   "text": "The token economy is inflationary at equilibrium, and this inflation is a feature rather than a defect because it improves security and discourages rent seeking holding of reputation.",
+   "abstract": "The conclusion is that the economy is inflationary at equilibrium, which improves its security and discourages rent-seeking.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes fees keep entering the system and new tokens are minted with each fee"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396542-019",
+   "identifier": "kaal:claim:3396542-019",
+   "text": "Because the total supply of tokens grows at a constant rate each period, the value of individual tokens depreciates over time.",
+   "abstract": "Note that as the total number of tokens is growing at a rate of ρ per period, the value of individual tokens will depreciate over time.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token supply growing at rate rho per period"
+   ],
+   "source_pdf_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-027",
+   "identifier": "kaal:claim:3402701-027",
+   "text": "Holding taxes are the implicit result of inflation borne by coin holders, and they should be set to account for the inefficiencies of the economy rather than the inefficiencies of maintaining the currency.",
+   "abstract": "Holding taxes should account for the inefficiencies of the economy, instead of the inefficiencies of the maintenance of the currency",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-044",
+   "identifier": "kaal:claim:3441904-044",
+   "text": "DAO member reputation should be designed as inflationary rather than as a permanent stock, so that non use such as non staking or non voting leads to value depreciation.",
+   "abstract": "The DAO member reputation should be inflationary in the DAO design.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation based DAO governance designs"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-032",
+   "identifier": "kaal:claim:3782210-032",
+   "text": "Because reputation tokens are constantly created, the reputation economy is inflationary, and a member with very high reputation must do proportionally more work merely to maintain the disparity, which makes reputation less likely to concentrate and acts as a natural counterbalance to accumulation of individual power.",
+   "abstract": "If one member happens to have a very high reputation, they need to do proportionally more work to maintain the disparity, making reputation less likely to concentrate when people have comparable talent.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "steady state growth, not exponential growth of customers",
+    "members of comparable talent"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'inflation'. Derived node: a roster, not an adjudicated definition."
+}

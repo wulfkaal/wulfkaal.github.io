@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/voting-models",
+ "identifier": "kaal:entity:voting-models",
+ "name": "Voting models",
+ "termCode": "voting-models",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/voting-models.md",
+ "sha256": "4874a702b46ae334eef1f3512b3b9af66cfce2678e2f638a8bdcef87525f0e41",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2023",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-018",
+   "identifier": "kaal:claim:4529715-018",
+   "text": "One person one vote governance carries the risk of majority tyranny, in which the majority imposes its will on minority groups, and it is unsuited to decisions requiring specialized knowledge.",
+   "abstract": "However, one person one vote governance also has some limitations and challenges, such as the potential for majority tyranny, where the majority can impose their will on minority groups.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "one person one vote model"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-019",
+   "identifier": "kaal:claim:4529715-019",
+   "text": "Quadratic voting remains open to manipulation and strategic voting, and it depends on a robust and transparent voting system to count votes accurately.",
+   "abstract": "However, quadratic voting also has some limitations and challenges, such as the potential for manipulation or strategic voting, and the need for a robust and transparent voting system to ensure that all votes are counted accurately.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "quadratic voting model"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-001",
+   "identifier": "kaal:claim:5254152-001",
+   "text": "One-person-one-vote in DAOs equalizes voting power across participants regardless of financial stake, but it creates the risk of majority tyranny.",
+   "abstract": "This model ensures equal voting power for all participants, promoting democratic decision-making but potentially leading to majority tyranny.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs using a one-person-one-vote governance model"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-002",
+   "identifier": "kaal:claim:5254152-002",
+   "text": "Quadratic voting suppresses domination by any single participant because the cost of each additional vote rises quadratically, making concentrated control prohibitively expensive.",
+   "abstract": "The cost of additional votes increases quadratically, making it prohibitively expensive for any one individual to dominate the voting process.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs that implement quadratic vote pricing"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-004",
+   "identifier": "kaal:claim:5254152-004",
+   "text": "Reputation based governance allocates decision power by past contribution and community standing, which promotes transparency and trust, but reputation is difficult to measure objectively.",
+   "abstract": "This model allocates decision-making power based on participants' past contributions and reputation within the community, promoting transparency and trust but challenging to measure objectively.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs allocating voting power by contribution history, community feedback, or peer review"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'voting-models'. Derived node: a roster, not an adjudicated definition."
+}

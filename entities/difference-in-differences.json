@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/difference-in-differences",
+ "identifier": "kaal:entity:difference-in-differences",
+ "name": "Difference in differences",
+ "termCode": "difference-in-differences",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/difference-in-differences.md",
+ "sha256": "94f51708df6662aa6694f2d8a915f337763337702e949a6cedf0aa92335879b8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2014"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-033",
+   "identifier": "kaal:claim:2389416-033",
+   "text": "Difference-in-differences analysis confirms the regression discontinuity results, showing a positive and highly significant treatment coefficient for funds above the $150 million AUM threshold.",
+   "abstract": "Our DiD analysis confirms the results of our RD design. Table 9 shows the dummy variable that identifies the treatment with a positive coefficient that is highly significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "4290 observations",
+    "treatment defined as AUM above $150 million after March 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-034",
+   "identifier": "kaal:claim:2389416-034",
+   "text": "The difference-in-differences interaction term identifying treated funds in 2012 is positive and statistically significant in March, April, and May 2012.",
+   "abstract": "Table 9 also shows that the dummy variable that identifies the treatment group univocally (year 2012 and AUM>150M) is positive and statistically significant in March, April and May 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "post reform dummy interacted with the AUM above $150 million dummy"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-035",
+   "identifier": "kaal:claim:2389416-035",
+   "text": "The difference-in-differences treatment effect is unstable over time: it loses significance in June and July 2012, then becomes significant again in August and September 2012 with negative coefficients and in October 2012 with a positive coefficient.",
+   "abstract": "It loses significance in June and July, but it becomes significant again in August, September (with a negative coefficient) and October (with a positive coefficient).",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "monthly DiD regressions March to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-036",
+   "identifier": "kaal:claim:2389416-036",
+   "text": "The parallel trends assumption required for the difference-in-differences design is satisfied, because pre-treatment performance data show the same time trends for treatment and control groups.",
+   "abstract": "Using additional pre-treatment performance data, Figure 13 suggests that the trends in our dataset are the same for the treatment and control group.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "pre-treatment data from January 2011",
+    "treatment and control defined by the $150 million AUM threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'difference-in-differences'. Derived node: a roster, not an adjudicated definition."
+}

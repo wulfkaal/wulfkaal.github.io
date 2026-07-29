@@ -1,0 +1,31 @@
+# Funding sources
+
+`kaal:entity:funding-sources`
+
+**Status.** derived
+
+This node is assembled mechanically from the 3 claims that carry the concept tag `funding-sources`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+
+## Every claim under this term
+
+3 claims across 1 works, 2020 to 2020.
+
+**2020**
+
+- [3606663-001](https://wulfkaal.github.io/claims/3606663-001) [mechanism/argued] -- Equity funding and token funding are substitutes: because equity investment in a blockchain startup makes issuing a digital currency both less likely and less necessary as a funding source, a market shift back toward equity funding should shrink the total volume of digital currencies issued.
+  > Because equity investments in blockchain startups make it less likely and less necessary for the respective startups to issue digital currencies, at least as a funding source, the market for digital currencies and the total volume of issued digital currencies is likely to recede
+  Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663
+- [3606663-002](https://wulfkaal.github.io/claims/3606663-002) [empirical/evidenced] -- The funding sources for digital asset and blockchain startups cycled through four stages since 2016 and 2017: equity funding, then initial coin offerings, then equity offerings, then initial exchange offerings, and back to equity funding by the early 2020s.
+  > Since 2016/17, the funding sources for digital asset startups and blockchain startups moved from equity funding to initial coin offerings (ICOs), to equity offerings, and initial exchange offerings (IEOs), just to return back to equity funding in the early 2020s.
+  Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663
+- [3606663-009](https://wulfkaal.github.io/claims/3606663-009) [mechanism/argued] -- Initial exchange offerings emerged as a market response to the near disappearance of the ICO market in January 2019, driven by the cryptocurrency exchanges that were most affected by the collapse.
+  > Initial exchange offers ("IEO") 66 evolved as a response to the near disappearance of the ICO market in January 2019.
+  Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663
+
+## Verify
+
+Every claim above resolves to a record carrying a verbatim source quote, the sha256 of the source PDF, and a preformatted citation. Nothing here asks to be taken on trust.
+
+    curl -s https://wulfkaal.github.io/entities/funding-sources.md | sha256sum
+
+**Canonical form.** This markdown file is the canonical hashed representation of this entity node. Its sha256 is the content hash.

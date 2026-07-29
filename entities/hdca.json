@@ -1,0 +1,167 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hdca",
+ "identifier": "kaal:entity:hdca",
+ "name": "Hdca",
+ "termCode": "hdca",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hdca.md",
+ "sha256": "05a26918f2daef849c4271ebb7f199ad942fce45c41fe66ca5622869b0c17ff1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-002",
+   "identifier": "kaal:claim:6655138-002",
+   "text": "The Human-Derived Coordination Architecture implements only the consumption side of the computative labor market: job specifications, expertise taxonomies, and contract templates are exogenous parameters set by clients or governance, so the generation side is absent from the protocol.",
+   "abstract": "HDCA implements the consumption side of the computative labor market and does not implement the generation side. Job specifications, expertise taxonomies, and contract templates are exogenous parameters set by clients or by governance.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "current agent coordination protocols inherited from human freelance markets"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-003",
+   "identifier": "kaal:claim:6655138-003",
+   "text": "Because the agent action space in HDCA is closed and workers only select among existing postings, the architecture collapses to the Neoclassical labor market with reputation weighting, the very framework whose expiration the author's companion paper demonstrates.",
+   "abstract": "The agent action space is closed: workers select among existing postings. This collapses to the Neoclassical labor market with reputation weighting, which is to say, to the framework whose expiration The Collapse of Scarcity Economics (Kaal 2026b) demonstrates.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "architectures where postings are the only action-set elements"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-005",
+   "identifier": "kaal:claim:6655138-005",
+   "text": "HDCA is a successful translation of repeated-game cooperative equilibria into smart-contract form, so its defect lies not in the execution layer but in the absence of a generation layer.",
+   "abstract": "The architecture is, in this sense, a successful translation of repeated-game cooperative equilibria into smart-contract form (Calcaterra and Kaal 2018). Its limitation is not in the execution layer but in the absence of a generation layer, which Part IV develops formally.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "repeated-game settings with stake-weighted validation"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-009",
+   "identifier": "kaal:claim:6655138-009",
+   "text": "HDCA supplies neither an action surface nor a reward channel for generation, and this is the architectural reason HDCA cannot host Computative Economics rather than a small implementation gap.",
+   "abstract": "HDCA has neither: agents who generate jobs, tags, or templates do so off-protocol, and the protocol does not validate or reward the generation. This is not a small gap. It is the architectural reason HDCA cannot host Computative Economics.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-011",
+   "identifier": "kaal:claim:6655138-011",
+   "text": "Without a representation of the possibility space distinct from the current mempool of pending instances, no quality metric can be computed, and without quality metrics generation can be rewarded only for quantity and not for quality.",
+   "abstract": "Without that representation, no quality metric can be computed, and without quality metrics, generation cannot be rewarded for quality, only for quantity.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "architectures whose only action-space representation is pending or executing instances"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-016",
+   "identifier": "kaal:claim:6655138-016",
+   "text": "The HDCA settlement loop is closed in the topological sense: every job exits as resolved-validated or resolved-rejected and the system returns to a structurally identical state with only reputation scalars updated, so the set of possible actions never changes.",
+   "abstract": "This is its central distinguishing feature relative to the HDCA settlement loop, which is closed in the topological sense: every job that enters the HDCA loop exits as either resolved-validated or resolved-rejected, and the system returns to a state structurally identical to where it began",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the HDCA job lifecycle"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-048",
+   "identifier": "kaal:claim:6655138-048",
+   "text": "The transition from HDCA to an operational implementation of Computative Economics is architectural rather than parametric: it cannot be achieved by adjusting reputation curves or fee schedules, and requires generative surfaces with their own validation, reward, and reflection mechanisms plus a distinct surface for compute allocation across surfaces.",
+   "abstract": "The transition from Human-Derived Coordination Architecture to operational implementations of Computative Economics is architectural, not parametric. It is not achieved by adjusting reputation curves or fee schedules.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'hdca'. Derived node: a roster, not an adjudicated definition."
+}

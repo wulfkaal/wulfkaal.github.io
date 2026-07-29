@@ -1,0 +1,91 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/social-credit",
+ "identifier": "kaal:entity:social-credit",
+ "name": "Social credit",
+ "termCode": "social-credit",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/social-credit.md",
+ "sha256": "297e8b6a7275e95ecb210dde6001c36b47f9546ff8a48e407aef13560630a7a3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 1
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782201-011",
+   "identifier": "kaal:claim:3782201-011",
+   "text": "Centralized and opaque reputation systems such as China's Social Credit System are unstable in the long run and particularly dangerous, because their computerized bureaucracy makes them inherently rigid and their early successes make them progressively more brittle.",
+   "abstract": "Centralized and opaque systems like the SCS are unstable in the long run. They are particularly dangerous, because their computerized bureaucracy makes them in- herently rigid. Their early successes will make them more and more brittle.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Future of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782201",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "centralized and opaque systems administered by computerized bureaucracy"
+   ],
+   "source_pdf_sha256": "bedf7bcfbb7a9b0112b5848cb0d941b1d41f330dafeee0143a30ff5e8aa53700",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782201-012",
+   "identifier": "kaal:claim:3782201-012",
+   "text": "Suggestions that artificial intelligence will solve the rigidity of centralized reputation systems are misguided and will fail for the same reason, because neural networks are merely a complex mathematical architecture for statistical regression, which is always extremely unreliable when applied to novel situations.",
+   "abstract": "Suggestions that AI will solve these problems are misguided, and will fail for the same reason. Neural networks are merely a complex mathematical ar- chitecture for performing statistical regression, which is always extremely unreliable when applied to novel situations.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Future of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782201",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where new social situations continually arise that lie outside the training distribution"
+   ],
+   "source_pdf_sha256": "bedf7bcfbb7a9b0112b5848cb0d941b1d41f330dafeee0143a30ff5e8aa53700",
+   "status": "falsified",
+   "status_reason": "The claim holds that neural networks are 'always extremely unreliable when applied to novel situations.' Frontier model performance on held-out and adversarially novel tasks between 2023 and 2026 contradicts the unqualified form of this claim. The underlying institutional argument may survive; the empirical premise as stated does not.",
+   "status_evidence": [
+    "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
+    "https://arcprize.org/media/ARC_AGI_3_Technical_Report.pdf"
+   ]
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'social-credit'. Derived node: a roster, not an adjudicated definition."
+}

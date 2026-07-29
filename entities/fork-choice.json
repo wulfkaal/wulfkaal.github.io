@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/fork-choice",
+ "identifier": "kaal:entity:fork-choice",
+ "name": "Fork choice",
+ "termCode": "fork-choice",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/fork-choice.md",
+ "sha256": "064203c28ccff3615587b87ff1bc2be8f1f7dbdbbfa51e3557a05b29b23239a8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-015",
+   "identifier": "kaal:claim:3125827-015",
+   "text": "The long range attack is a fundamental problem every proof of stake protocol must address: because no energetic outlay is required to build blocks, a malicious producer can fabricate a long chain forked from an earlier valid block, and a newly joining node lacking proof of work hashes cannot objectively tell which chain is genuine.",
+   "abstract": "The long-range attack is a fundamental problem PoS protocols must address, where a malicious producer may create a long list of blocks forked from an earlier valid block, because there is no PoW energetic outlay required to prevent this16.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new nodes joining without a trusted checkpoint",
+    "PoS chains with no energy cost to block creation"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-016",
+   "identifier": "kaal:claim:3125827-016",
+   "text": "SPoS prevents the long range attack without token locking, because a false chain cannot be manufactured with more total validation than the real chain: votes are transactions moving validators' sem tokens under their public keys, so upvotes cannot be forged from existing tokens.",
+   "abstract": "SPoS naturally prevents this attack without such locking, since a false chain cannot be manufactured with more total validation than the real chain.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "votes recorded as sem token transactions signed by validator public keys"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-029",
+   "identifier": "kaal:claim:3125827-029",
+   "text": "If a Byzantine producer equivocates during a network partition and wins validation pools in separate subnets, the fork is not permanent: once connectivity is restored the next honest producer points to a previous block, and with 51% honest producers the Byzantine fork is eventually orphaned because honest producers outproduce it.",
+   "abstract": "The next honest producer would point to a previous block and all Byzantine forks would be invalidated. If there are 51% honest producers the Byzantine fork would eventually be orphaned, since honest producers will outproduce the Byzantine producers",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "at least 51% honest producers",
+    "network connectivity is eventually restored"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'fork-choice'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/communication-overhead",
+ "identifier": "kaal:entity:communication-overhead",
+ "name": "Communication overhead",
+ "termCode": "communication-overhead",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/communication-overhead.md",
+ "sha256": "73637e4861ac3d66c9642f3d3e2b3c151aac248d0817862f17cb89116da6ba44",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-028",
+   "identifier": "kaal:claim:4796714-028",
+   "text": "Privacy preserving frameworks such as federated learning do not fully remove centralization, because they still typically depend on a central client to collect and distribute model information, which reintroduces high communication loads and centralized vulnerabilities.",
+   "abstract": "In response, privacy-preserving frameworks like federated learning have been developed, yet these often still depend on a central client to collect and distribute model information, resulting in high communication loads and centralized vulnerabilities.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to standard federated learning architectures with a central aggregator"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4941807-020",
+   "identifier": "kaal:claim:4941807-020",
+   "text": "Privacy preserving frameworks such as federated learning do not fully solve centralization, because they typically still depend on a central client to collect and distribute model information, which produces high communication loads and reintroduces centralized vulnerabilities.",
+   "abstract": "In response, privacy-preserving frameworks like federated learning have been developed, yet these often still depend on a central client to collect and distribute model information, resulting in high communication loads and centralized vulnerabilities.",
+   "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in federated learning designs that retain a central aggregating client"
+   ],
+   "source_pdf_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'communication-overhead'. Derived node: a roster, not an adjudicated definition."
+}

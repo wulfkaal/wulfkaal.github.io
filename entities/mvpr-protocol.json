@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/mvpr-protocol",
+ "identifier": "kaal:entity:mvpr-protocol",
+ "name": "Mvpr protocol",
+ "termCode": "mvpr-protocol",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/mvpr-protocol.md",
+ "sha256": "3bc51b165eefbb579e64b41da3bdd05f38d2b1499b591cc83b75245124648b05",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-023",
+   "identifier": "kaal:claim:3931933-023",
+   "text": "The same percentage of the block reward that funds the SDAO wallet also mints reputation in the SDAO for the propagating validator, with both the minting and the sharing of the pooled tokens following the DEVxDAO MVPR protocol.",
+   "abstract": "That [__]% of the block reward in SHAS token also mints reputation in the SDAO for said validator. The reputation minting process follows the DEVxDAO MVPR protocol and the SHAS token that are allocated to the SDAO are shared among the SDAO members following the DEVxDAO MVPR protocol.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Shasper Network block production"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-038",
+   "identifier": "kaal:claim:3931933-038",
+   "text": "Governance decisions such as network upgrades follow a simple vote that mints no reputation, yet reputation in the SDAO can still be lost through a governance vote because each vote follows the DEVxDAO MVPR logic moving from loosely coupled to tightly coupled voting.",
+   "abstract": "Governance decisions, such as network upgrades, among others, follow a simple vote process in which no reputation is minted. However, reputation in the SDAO can be lost as a result of a governance vote as each vote follows the DEVxDAO MVPR logic via loosely coupled to tightly coupled voting.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "SDAO governance votes on network upgrades"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'mvpr-protocol'. Derived node: a roster, not an adjudicated definition."
+}

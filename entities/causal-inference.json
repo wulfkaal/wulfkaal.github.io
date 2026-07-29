@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/causal-inference",
+ "identifier": "kaal:entity:causal-inference",
+ "name": "Causal inference",
+ "termCode": "causal-inference",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/causal-inference.md",
+ "sha256": "9cb441266df6575b872970dcd994dce015fddec8adb6587ff58fe468f283b040",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-009",
+   "identifier": "kaal:claim:2389416-009",
+   "text": "No prior study had analyzed the performance implications of hedge fund adviser regulation, making this the first estimate of the causal effect of the Dodd-Frank Act registration requirement on hedge fund returns.",
+   "abstract": "To our knowledge, no other study has analyzed the implications of hedge fund adviser regulation.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "as of the paper's 2014 version"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2715083-027",
+   "identifier": "kaal:claim:2715083-027",
+   "text": "The confluence trends identified are correlational, not causal: the author expressly disclaims any claim of cause and effect and presents the peripheral effects as long term possibilities warranting monitoring.",
+   "abstract": "The emerging process of confluence of mutual and hedge funds can have unexpected peripheral effects that may themselves reinforce confluence of the two asset classes. I do not claim cause and effect in this context.",
+   "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scope limitation stated by the author for the entire implications analysis"
+   ],
+   "source_pdf_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-016",
+   "identifier": "kaal:claim:2816408-016",
+   "text": "The study identifies the causal effect of Title IV by treating the March 30, 2012 registration effective date combined with the $150 million AUM threshold as an exogenous regulatory shock, so that any discontinuity in returns at the cutoff is evidence of a causal treatment effect.",
+   "abstract": "The basic idea behind the RD design is that any discontinuity in the conditional distribution of Yi as a function of Xi at the cutoff value c is interpreted as evidence of a causal effect of the treatment.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sharp regression discontinuity design",
+    "forcing variable is log AUM with threshold at $150 million",
+    "treatment date March 30, 2012"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'causal-inference'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,155 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/cbdc",
+ "identifier": "kaal:entity:cbdc",
+ "name": "Cbdc",
+ "termCode": "cbdc",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/cbdc.md",
+ "sha256": "77ba1efb743a3b581f6547c458c11cc85c9f43f60fd9e2f8ecd972072758d11c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-006",
+   "identifier": "kaal:claim:3396522-006",
+   "text": "Central bank operated wholesale payment systems are at the end of their technological life cycle, running on largely obsolete database designs and computing languages that are very expensive to maintain, which is one reason central banks are experimenting with token designs.",
+   "abstract": "Central bank- operated wholesale payment systems are already at the end of their technological life cycle, using database designs and computing languages that are largely obsolete and very expensive to maintain.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-038",
+   "identifier": "kaal:claim:3606663-038",
+   "text": "Conducting monetary policy through a central bank digital currency imposes a requirement on the technology layer: the underlying network protocol must enable the central bank to adjust the money supply at will and to act as lender of last resort with access to unlimited supply.",
+   "abstract": "Moreover, in order to be able to conduct monetary policy with CBDC, the underlying network protocol would have to enable the central bank to adjust the money supply at will.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CBDC built on a blockchain style protocol",
+    "central bank intends to conduct monetary policy through the CBDC"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-039",
+   "identifier": "kaal:claim:3606663-039",
+   "text": "The Bank of Canada's year long Jasper trial revealed a tradeoff rather than a solution: Ethereum would make the wholesale payment system more resilient but was costly and raised privacy issues, while Corda addressed cost and privacy but made the system less resilient, and the Bank concluded in May 2017 that blockchain was not mature enough to run a national interbank payment system.",
+   "abstract": "While Ethereum would make the wholesale payment system more resilient but would be costly and raised privacy issues, Corda was able to address the cost and privacy concerns but made the system less resilient.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Bank of Canada Jasper trial",
+    "national interbank payment system use case",
+    "as of May 2017"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3606663-040",
+   "identifier": "kaal:claim:3606663-040",
+   "text": "Although the public realm of coins could not exist without prior private experimentation, it is possible that the public realm will impact or even pre empt private coin development, for example if central banks attempt to censor the use of digital currencies they did not issue.",
+   "abstract": "it is possible that the public realm of the coin evolution could attempt to impact or even pre- empt the private coin development and use. For example, some central banks may attempt to censor the use of non-centrally-issued digital currencies.",
+   "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663",
+   "datePublished": "2020",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "coexistence of central bank digital currencies and privately issued coins"
+   ],
+   "source_pdf_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-040",
+   "identifier": "kaal:claim:3808867-040",
+   "text": "The end of the technological life cycles of legacy payment systems in the early 2020s, together with emerging payment trends, requires central banks to intensify their examination of alternative payment systems.",
+   "abstract": "The end of technological life cycles of legacy systems in the early 2020s and associated emerging trends in payment systems necessitate central banks' enhanced examination of alternative payment systems.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "central banks and governments experimenting with digital and cryptocurrencies since 2015"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808873-005",
+   "identifier": "kaal:claim:3808873-005",
+   "text": "Decentralized issuers treated central bank issued digital currencies as a threat rather than as a pathway to mainstream acceptance of more decentralized cryptocurrencies, and that misreading forfeited a route to broader adoption.",
+   "abstract": "Rather than seeing the central bank issued digital currencies as a pathway to mainstream acceptance of more decentralized cryptocurrencies, the decentralized issuers of digital assets and their community perceived their centralized counterparts as a threat.",
+   "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "central bank digital currency debate of the early 2020s"
+   ],
+   "source_pdf_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'cbdc'. Derived node: a roster, not an adjudicated definition."
+}

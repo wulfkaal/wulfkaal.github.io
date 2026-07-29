@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/protocol-migration",
+ "identifier": "kaal:entity:protocol-migration",
+ "name": "Protocol migration",
+ "termCode": "protocol-migration",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/protocol-migration.md",
+ "sha256": "7fe0b83df8f4642614f1624071ee408306d3f40242f2b879bafa10f78209ddf9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-004",
+   "identifier": "kaal:claim:3931933-004",
+   "text": "Because HSPoS supplements rather than replaces the consensus layer, an existing PoS consensus algorithm can be kept in operation while reputation is introduced through the reward function, permitting a gradual rather than abrupt transition to SPoS.",
+   "abstract": "HSPoS enables a transitioning process in which traditional PoS consensus algorithms, can be used and maintained while being supplemented with SPoS characteristics and node reputation. This enables enhanced experimentation and allows a slow transitioning from PoS to SPoS.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "networks already running a traditional PoS consensus algorithm"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-005",
+   "identifier": "kaal:claim:3931933-005",
+   "text": "Moving a network from PoS to SPoS should proceed by evolving the rewards mechanism in two steps through HSPoS, rather than by switching the consensus mechanism directly.",
+   "abstract": "In order to move PoS towards SPoS (Secure Proof of Stake),2 this paper suggests evolving the rewards mechanism in two steps via HSPoS (Hybride Secure Proof of Stake).",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "networks seeking to adopt Secure Proof of Stake"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'protocol-migration'. Derived node: a roster, not an adjudicated definition."
+}

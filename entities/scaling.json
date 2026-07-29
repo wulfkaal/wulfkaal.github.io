@@ -1,0 +1,306 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/scaling",
+ "identifier": "kaal:entity:scaling",
+ "name": "Scaling",
+ "termCode": "scaling",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/scaling.md",
+ "sha256": "f7d81301cd5ff1dc8527500b90b5e5e744c19137faca33d05470a17bfc7e8fa6",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 15
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 11
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-023",
+   "identifier": "kaal:claim:3782198-023",
+   "text": "Peer to peer networks scale more favorably than client server architectures because client server costs increase linearly per unit while peer to peer network costs can decrease with each added node, depending on topology.",
+   "abstract": "Network effects proliferate in peer-to-peer networks because, unlike the traditional client- server architecture which is subject to the linearly increasing per-unit costs, the peer- to-peer network costs can decrease with each added node (depending on topology).",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on network topology"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-007",
+   "identifier": "kaal:claim:3782210-007",
+   "text": "As a network grows its members become more anonymous and individually less important, which makes cheating more locally enticing and less globally noticeable, so the system eventually collapses once cheating is obviously the best individual strategy.",
+   "abstract": "As the network grows, however, the members become more anonymous. Individually they become less im- portant, so cheating is more locally enticing and less noticeable globally. Eventually (or immediately) the system will collapse when it becomes obvious cheating is the best individual strategy.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "networks that grow large",
+    "networks lacking a secure reputation mechanism"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-038",
+   "identifier": "kaal:claim:3782214-038",
+   "text": "Direct democracy failed to reflect the will of the group once villages grew into cities, because the information technology of the spoken word imposes a hard limit on how many people can speak and on the patience and endurance of listeners.",
+   "abstract": "As villages grew to cities, direct democracy failed to reflect the will of the group. There is a limit to how many people can speak, even at an am- phitheater, because there is a limit to peoples' patience and endurance.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "governance conducted through oral assembly"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782214-040",
+   "identifier": "kaal:claim:3782214-040",
+   "text": "Against Eric Raymond's argument that love does not scale, the authors hold that reputation does: weighted democracy, properly measured and aggregated, can scale from valuing local expertise to valuing expertise on global issues.",
+   "abstract": "Love doesn't scale, but reputation does. Weighted democracy, properly meas- ured and aggregated, can scale from valuating expertise on a local level to expertise on global issues.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Governance (2021). SSRN: https://ssrn.com/abstract=3782214",
+   "datePublished": "2021",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation valuations across DAOs reach equilibrium through market freedom"
+   ],
+   "source_pdf_sha256": "ba892bb200c1455447c0014f5067a501a93ea9ec413c31942d95952eb3bdfd9d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-004",
+   "identifier": "kaal:claim:3782216-004",
+   "text": "Decentralized banking addresses blockchain scaling, because the linear structure of a blockchain means that doubling the number of participants and transactions halves its speed.",
+   "abstract": "Decentralized banking helps solve a major problem with blockchains called scaling. If you double the number of participants and transactions, the linear nature of the blockchain makes it slow down by half.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808852-008",
+   "identifier": "kaal:claim:3808852-008",
+   "text": "Network effects proliferate in peer-to-peer networks because, unlike client-server architecture with linearly increasing per-unit costs, peer-to-peer network costs decrease with each added node.",
+   "abstract": "Network effects proliferate in peer-to-peer networks because, unlike the traditional client-server architecture which is subject to the linearly increasing per-unit costs, the peer-to-peer network costs decrease with each added node.",
+   "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-027",
+   "identifier": "kaal:claim:4685567-027",
+   "text": "Because Impact 3.0 growth depends on donor realization, willingness to run parallel tracks, standardization, critical mass of listings, funding sources and credential tracking, only a smaller subset of the philanthropy market will be attracted to impact certificate markets, and full establishment may take five to ten years.",
+   "abstract": "Given these dependencies, a smaller subset of the philanthropy market will be attracted to impact certificate markets. It may take five to ten years for the impact certificate marketplace to fully establish itself and scale in impact donor circles.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "predictive",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "multiple listed dependencies must be satisfied"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-036",
+   "identifier": "kaal:claim:4734750-036",
+   "text": "A reliable reputation score substitutes for redundant labor: if a high reputation worker completes a task, required duplication can fall from fifteen workers to five or fewer, which is what allows micro task work to scale.",
+   "abstract": "If a reliable and high reputation score worker completes the tasks, the duplication may be brought from 15 to 5 or less in the decentralized CRDAO setup. This enables unprecedented scaling of micro task work.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized platforms with portable, wallet linked reputation scores"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-038",
+   "identifier": "kaal:claim:4755632-038",
+   "text": "Reputation based market dynamics lower the cost of duplication relative to centralized micro task work: where a reliable high reputation worker completes the task, duplication can fall from fifteen to five or fewer in a decentralized setup, which is what enables scaling of micro task work.",
+   "abstract": "If a reliable and high reputation score worker completes the tasks, the duplication may be brought from 15 to 5 or less in the",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conditioned on a reliable and high reputation score worker completing the tasks"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-041",
+   "identifier": "kaal:claim:4755632-041",
+   "text": "Combining decentralized governance with gamification of micro task work is the condition under which gamification does not compromise dataset quality and accuracy, and this combination is what allows gamified micro task work to scale high-quality diverse datasets for AI learning.",
+   "abstract": "combination of decentralized governance and gamification of micro task work, ALE Platform ensures that gamification techniques do not compromise the quality and accuracy",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the ALE Platform design"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4900878-027",
+   "identifier": "kaal:claim:4900878-027",
+   "text": "Decentralized governance models such as DAOs answer the criticism that micro level quantum properties do not scale to the macro level, because DAOs demonstrate participatory governance structures that operate effectively in large, complex economies.",
+   "abstract": "Additionally, the use of decentralized governance models in tokenomics, such as DAOs, can address the criticism that quantum properties observed at the micro level do not scale up to the macro level.",
+   "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "large scale decentralized economies with DAO governance"
+   ],
+   "source_pdf_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-037",
+   "identifier": "kaal:claim:6192998-037",
+   "text": "Citation weighted systems become more secure over time at a faster rate than binary systems, because time to corruption scales superlinearly with accumulated transaction volume.",
+   "abstract": "This extends the security analysis from Calcaterra, Kaal, and Andrei (2018, 15-18) to demonstrate that citation-weighted systems become more secure over time at a faster rate than binary systems.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "measured against accumulated historical transaction volume",
+    "tested via simulated attacks on testnet"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-003",
+   "identifier": "kaal:claim:6244278-003",
+   "text": "Because institutional alignment emerges from architecture rather than from exogenous constraint, it scales with capability rather than against it: more capable agents accumulate deeper stakes, which strengthens rather than strains alignment.",
+   "abstract": "Because this alignment emerges from institutional architecture rather than exogenous constraint, it scales with capability rather than against it. More capable agents accumulate deeper stakes, strengthening rather than straining alignment.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "alignment must be generated endogenously by institutional architecture",
+    "reputation must be accumulable by capability"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-016",
+   "identifier": "kaal:claim:6244278-016",
+   "text": "Exogenous constraints scale against capability, since more powerful agents require more resources to constrain, producing an ever-increasing alignment tax.",
+   "abstract": "Exogenous constraints scale against capability: the more powerful the agent, the greater the resources required to constrain it, producing an ever-increasing \"alignment tax.\"",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to alignment strategies based on external control"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-017",
+   "identifier": "kaal:claim:6244278-017",
+   "text": "Institutional alignment scales with capability, because a more capable agent accumulates more reputation, holds a deeper stake in the system's integrity, and therefore has stronger alignment with the system's goals.",
+   "abstract": "Institutional alignment scales with capability: the more capable the agent, the more reputation it can accumulate, the deeper its stake in the system's integrity, and the stronger its alignment with the system's goals.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires reputation that is accumulable, persistent, and non-transferable"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "15 claims in the published works of Wulf A. Kaal carry the concept tag 'scaling'. Derived node: a roster, not an adjudicated definition."
+}

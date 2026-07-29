@@ -1,0 +1,183 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/minting",
+ "identifier": "kaal:entity:minting",
+ "name": "Minting",
+ "termCode": "minting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/minting.md",
+ "sha256": "0dc79989cce556c663eaeb89a0e9722060a32c8d3c4aaac184a4e0015547fff7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-022",
+   "identifier": "kaal:claim:3396522-022",
+   "text": "Capping token supply, the dominant design choice in early cryptocurrency projects, is self defeating: fixing supply removes the core policy tool, minting additional tokens, that would otherwise address overvaluation, excessive speculation, market frenzy, and irrational exuberance.",
+   "abstract": "In fact, fixing token supply removes the core policy tool, minting of additional tokens to increase supply, intended to address overvaluation, speculation, market frenzy and irrational exuberance.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to hardcoded fixed supply token designs"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-008",
+   "identifier": "kaal:claim:3402701-008",
+   "text": "Under the quantity theory of money, minting twice as much currency halves its price and burning half of the existing currency doubles it, which is the mechanism by which a supply rule can theoretically stabilize price.",
+   "abstract": "QTM dictates that minting twice as much currency will halve its price, and burning half of the existing currency will double its price",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "quantity theory of money holds",
+    "price measured as an average across exchanges"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-009",
+   "identifier": "kaal:claim:3402701-009",
+   "text": "The quantity theory calculations behind minting and burning hold only in the ideal case; in practice the success of a stabilization scheme depends on how the money is actually printed, distributed or burned.",
+   "abstract": "Such calculations are only valid in the ideal. In practice, the scheme's success depends on how the money is printed and distributed or burned",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-010",
+   "identifier": "kaal:claim:3402701-010",
+   "text": "Distributing newly minted coins to shareholders, as Basis planned, is exploitable: shareholders can collude to hold their new money and drive the price up, which triggers further minting that benefits the colluders.",
+   "abstract": "However, it is possible the shareholders would collude to drive the price up by holding their new money",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "new supply distributed to an identifiable shareholder group"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-028",
+   "identifier": "kaal:claim:3782217-028",
+   "text": "Reputation in a news DAO must be anchored in fungible currency: new reputation should be minted only when articles connect to profitable endeavors such as advertising, paid analyses, or protocols relied upon for decentralized business contracts.",
+   "abstract": "articles must have a foun- dational meaning in fungible currency. New reputation should only be minted when the articles are connected to profitable endeavors—advertising, paid analyses, new protocols that are relied upon for decentralized business contracts.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "news DAOs building meaningful reputation"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4685567-011",
+   "identifier": "kaal:claim:4685567-011",
+   "text": "In an impact certificate system the rules of the game are set by demand: altruists define what counts by deciding which minted certificates they are willing to pay for.",
+   "abstract": "By deciding which certificates they are willing to pay for, altruists using the system define the rules of the 37 game.",
+   "citation": "Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "impact teams can mint and publicly declare ownership of certificates"
+   ],
+   "source_pdf_sha256": "87fb1be89d2661967ed2b0b673fe26448ded3bc3119b122177a4fc13ae5c085c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-010",
+   "identifier": "kaal:claim:5887242-010",
+   "text": "In the UDLC DAO, REP holders stake non-fungible reputation on predicted outcomes in Validation Pools; correct predictions mint fractional REP and integrate the new vertex with its weighted citation edges into the canonical Codex, while incorrect predictions trigger partial slashing and redistribution.",
+   "abstract": "REP token holders stake their non-fungible reputation on predicted outcomes in Validation Pools. Correct predictions mint fractional REP and integrate the new vertex and its weighted citation edges into the canonical Codex. Incorrect predictions result in partial slashing and redistribution.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5887242-020",
+   "identifier": "kaal:claim:5887242-020",
+   "text": "Tight coupling creates an exponential penalty for contrarian positions, since a participant staking ten percent of reputation against consensus risks total loss of that stake while correct majority stakers receive newly minted fractional REP proportional to their contribution.",
+   "abstract": "This creates an exponential penalty for contrarian positions: a participant staking 10% of their reputation against consensus risks total loss of that stake, while correct majority stakers receive newly minted fractional REP proportional to their contribution to the winning side.",
+   "citation": "Wulf A. Kaal, The UDLC DAO Operationalizing a Continuously Evolving Universal Digital Law Codex Through Weighted (2025). SSRN: https://ssrn.com/abstract=5887242",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4e5c2e2b4304af6d22e0b0939b1fddeabcf091e19a1b00b7bfccf77cbd6280c5",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'minting'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,88 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/uniswap",
+ "identifier": "kaal:entity:uniswap",
+ "name": "Uniswap",
+ "termCode": "uniswap",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/uniswap.md",
+ "sha256": "752a0f597cfa6fe241eb5b458c02cc4ab3835bd4039cdd053b6448831bfda68a",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2022",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-017",
+   "identifier": "kaal:claim:4015908-017",
+   "text": "Open-source code combined with protocol fee flowback to users, as with the Uniswap V2 0.3% swap fee that is automatically distributed to liquidity providers, guarantees transparency, accountability, market confidence in the product, and associated protections for the community.",
+   "abstract": "Open-source code and protocol fee flowback to users guarantee transparency, accountability, market confidence in the products, and the associated protections for the community.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "protocol has a viable product that produces revenue",
+    "code is open source"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4015908-030",
+   "identifier": "kaal:claim:4015908-030",
+   "text": "After half of each auction tranche is deposited into an AMM pair, the other half is allocated to open market purchasers and the remaining liquidity on the AMM is burned to ensure that any incentives for rug pulls are removed.",
+   "abstract": "Thereafter, the other half of the tokens from the respective tranche may be allocated to open market purchasers. The remaining liquidity on the AMM may be burned to ensure that any incentives for rug pulls are removed.",
+   "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908",
+   "datePublished": "2022",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "auction based fair launch platform",
+    "Uniswap V2 compatible AMM"
+   ],
+   "source_pdf_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'uniswap'. Derived node: a roster, not an adjudicated definition."
+}

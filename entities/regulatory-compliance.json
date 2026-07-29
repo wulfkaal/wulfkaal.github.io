@@ -1,0 +1,187 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/regulatory-compliance",
+ "identifier": "kaal:entity:regulatory-compliance",
+ "name": "Regulatory compliance",
+ "termCode": "regulatory-compliance",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/regulatory-compliance.md",
+ "sha256": "0d34f00d74d7e5d05c777d29e0d5317c42f4b7bb796a0f6953b0b43144fa0289",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2023",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-002",
+   "identifier": "kaal:claim:4529715-002",
+   "text": "Each DAO in the dataset was given a score between zero and ten by the analyzing teams on each of six factors: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "abstract": "The six factors considered are: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication. Each DAO was given a score between zero (0) and ten (10) by the analyzing teams",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "definitional",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scores assigned by the analyzing teams"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-007",
+   "identifier": "kaal:claim:4529715-007",
+   "text": "Regulatory compliance is the weakest of all six categories, averaging 3.01 out of 10, and Services DAOs are the only category to outperform that average.",
+   "abstract": "The average score for DAOs in this category is the lowest of any category at 3.01 out of 10. Services DAOs was the sole category of DAOs that outperformed this average score with 4 out of 5 DAOs scoring 5 or greater.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-015",
+   "identifier": "kaal:claim:5254152-015",
+   "text": "Higher regulatory compliance depends on a DAO adopting an appropriate legal wrapper, such as an LLC or a foundation structure, and complying with the regulations of its jurisdiction.",
+   "abstract": "Higher scores indicate the use of appropriate legal wrappers, such as LLC or foundation structures",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAOs that need to interact with real world legal entities"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-022",
+   "identifier": "kaal:claim:5254152-022",
+   "text": "The average regulatory compliance score across the sampled DAOs is 3.22, ranging from 1 to 9, and the distribution shows that many DAOs struggle with regulatory compliance while only a few achieve higher scores.",
+   "abstract": "The average score is 3.22, with the highest score being 9 and the lowest score being 1. The distribution of scores suggests that many DAOs struggle with regulatory compliance, with only a few achieving higher scores.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dataset of 50 DAOs",
+    "regulatory compliance scored on a 1 to 10 scale"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-028",
+   "identifier": "kaal:claim:5254152-028",
+   "text": "A DAO operating without a legal wrapper risks being deemed a partnership by estoppel in legal disputes, exposing its members to liability, as scored for Hop DAO with a regulatory compliance score of 1.",
+   "abstract": "Lacking a legal wrapper, it is at risk of being deemed a partnership by estoppel in legal disputes (R: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no legal entity or legal wrapper"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-033",
+   "identifier": "kaal:claim:5254152-033",
+   "text": "Some DAOs substitute anonymity for legal structure: without any legal registration, Olympus DAO relies on anonymity to avoid legal action, which the author scores as the weakest possible regulatory compliance posture.",
+   "abstract": "Without legal registration, Olympus DAO relies on anonymity to avoid legal action (R: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no legal registration in any jurisdiction"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-034",
+   "identifier": "kaal:claim:5254152-034",
+   "text": "Adopting a conventional corporate form in a jurisdiction that does not recognize DAOs yields only partial legal protection; Silo Finance is registered as an LLC in Texas, but Texas does not recognize DAOs.",
+   "abstract": "Registered as an LLC in Texas, it offers some legal protection, but Texas does not recognize DAOs (R: 5)",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs incorporated in jurisdictions lacking DAO specific recognition"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-035",
+   "identifier": "kaal:claim:5254152-035",
+   "text": "A DAO registered in a jurisdiction without DAO legislation risks default treatment as a partnership under existing law, as recorded for Klima DAO in California.",
+   "abstract": "Registered in California, it faces potential treatment as a partnership under existing laws (R: 5)",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs organized in jurisdictions with no DAO statute"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'regulatory-compliance'. Derived node: a roster, not an adjudicated definition."
+}

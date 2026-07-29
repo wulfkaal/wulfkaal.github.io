@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/death-spiral",
+ "identifier": "kaal:entity:death-spiral",
+ "name": "Death spiral",
+ "termCode": "death-spiral",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/death-spiral.md",
+ "sha256": "74664b8376a32f05ce74878d9b10e834f1f6e0bcf1931aa962077cf099b9db7b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-015",
+   "identifier": "kaal:claim:3402701-015",
+   "text": "Because bonds sell below their redemption value, an open-ended bond queue grows without bound, depressing bond prices and creating a positive feedback loop that ends in a death spiral and failure of the peg.",
+   "abstract": "More generally, since the bonds would sell at a price lower than they were redeemed, the bond queue would grow without bound, leading to lower prices for the bonds and a positive feedback loop which would lead to a death spiral and the failure of the peg",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "bond redemption contingent on future price recovery",
+    "no expiration on bonds"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-035",
+   "identifier": "kaal:claim:3782216-035",
+   "text": "Trying to hold a peg at an artificial level deters new adopters and punishes existing members, and is the most likely way to induce a death spiral that collapses a currency; after a fundamental change in the economy the currency should be repegged instead.",
+   "abstract": "Trying to maintain a peg at an artificial level prevents new members from adopting the currency and punishes members as they need to pay to maintain the artificial valuation. Maintaining the artificial valuation is the most likely way to induce a death spiral which collapses a currency.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "after a fundamental change such as a black swan event"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'death-spiral'. Derived node: a roster, not an adjudicated definition."
+}

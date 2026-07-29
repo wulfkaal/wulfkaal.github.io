@@ -1,0 +1,188 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/rlhf",
+ "identifier": "kaal:entity:rlhf",
+ "name": "Rlhf",
+ "termCode": "rlhf",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/rlhf.md",
+ "sha256": "28e13973c2617267f0d095933fde705be584aeaf79affa5e2ee6617eb545eef5",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-016",
+   "identifier": "kaal:claim:4855607-016",
+   "text": "There is a trade off in RLHF between the agent imitating human advice and learning autonomously, and human guidance that is too specific will prevent the agent from discovering novel optimal strategies.",
+   "abstract": "there is a trade-off between the extent to which the agent should imitate human advice versus learning autonomously. Overspecific human guidance can hinder the agent's ability to discover novel optimal strategies.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "human in the loop RL where the extent of human involvement is a design choice"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-018",
+   "identifier": "kaal:claim:4855607-018",
+   "text": "RLHF fails on several fronts at once: humans can pursue harmful goals either innocently or maliciously, human feedback degrades when examples are hard to evaluate and especially when RLHF is applied to superhuman models, and reward models diverge from humans through misspecification and misgeneralization.",
+   "abstract": "Moreover, humans can pursue harmful goals, either innocently or maliciously, and can provide poor feedback when examples are hard to evaluate, especially when applying RLHF to superhuman models. Reward models can differ from humans due to misspecification and misgeneralization",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "especially acute when RLHF is applied to models more capable than their human evaluators"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-033",
+   "identifier": "kaal:claim:4855607-033",
+   "text": "The RLHF process is exposed to failure because participants may hold potentially adversarial and misaligned interests, so the vulnerability lies in the incentive structure of feedback provision rather than in the learning algorithm.",
+   "abstract": "Currently, the RLHF process, which involves training AI models based on human preferences and feedback, can face challenges due to the potentially adversarial and misaligned interests of participants.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "RLHF systems where feedback providers have divergent stakes"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-034",
+   "identifier": "kaal:claim:4855607-034",
+   "text": "Distributing governance across all participants prevents any single entity from dominating decision making, and because model or training changes then require consensus, the resulting decisions reflect collective rather than individual interest.",
+   "abstract": "By distributing governance across all participants, the proposed web3 community governance system ensures that no single entity can dominate the decision-making process. This structure promotes the alignment of incentives since changes to the model or the training process require consensus",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "governance systems where change requires consensus among distributed participants"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-035",
+   "identifier": "kaal:claim:4855607-035",
+   "text": "Applying decentralized voting and consensus to RLHF permits human feedback to be verified before it is used to calibrate the Reward Model, which raises the integrity and reliability of the feedback data entering the model.",
+   "abstract": "Applying these mechanisms to RLHF allows for the decentralized verification of human feedback before it's used to calibrate the RM, enhancing the integrity and reliability of the feedback data.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "RLHF pipelines where feedback can be verified prior to reward model training"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-037",
+   "identifier": "kaal:claim:4855607-037",
+   "text": "Issuing non fungible reputation tokens that represent voting power, access rights, or entitlement to a share of the project's success creates an economic structure in which participants are directly invested in the success of the RLHF process.",
+   "abstract": "The web3 system as proposed herein can issue non-fungible reputation tokens that represent voting power, access rights, or entitlement to a share of the project's success. This creates an economic structure where participants are directly invested in the success of the RLHF process",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "RLHF communities where retention and sustained participation matter"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4855607-038",
+   "identifier": "kaal:claim:4855607-038",
+   "text": "Gathering a wide range of human feedback makes the Reward Model reflect a comprehensive spectrum of human preferences and values, and it is this inclusivity that mitigates bias and captures a richer understanding of what counts as a desirable outcome.",
+   "abstract": "By leveraging this model, RLHF can gather a wide range of human feedback, ensuring the Reward Model (RM) reflects a comprehensive spectrum of human preferences and values. This inclusivity helps mitigate biases and captures a richer understanding of what is considered a desirable outcome.",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reward models trained on feedback drawn from a broad participant base"
+   ],
+   "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6244278-014",
+   "identifier": "kaal:claim:6244278-014",
+   "text": "Exogenous alignment controls such as reinforcement learning from human feedback, constitutional AI, guardrails, and shutdown switches are fragile because they can be gamed, circumvented, or rendered obsolete by capability improvements.",
+   "abstract": "The approach has an obvious fragility: exogenous constraints can be gamed, circumvented, or rendered obsolete by capability improvements.",
+   "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to constraints imposed on agents with no intrinsic reason to comply"
+   ],
+   "source_pdf_sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'rlhf'. Derived node: a roster, not an adjudicated definition."
+}

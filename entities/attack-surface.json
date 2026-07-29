@@ -1,0 +1,191 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/attack-surface",
+ "identifier": "kaal:entity:attack-surface",
+ "name": "Attack surface",
+ "termCode": "attack-surface",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/attack-surface.md",
+ "sha256": "d63bff571fa88f97a5c55855ee1632de323882237a2186eb4ca1b0179221dd86",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 8
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-002",
+   "identifier": "kaal:claim:3125827-002",
+   "text": "A successful proof of stake protocol must be flexible enough to continually police new attack strategies, because changing market forces and network performance keep creating new opportunities to profit at the expense of the majority.",
+   "abstract": "Therefore a successful PoS protocol must be flexible enough to continually police new attack strategies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "changing market and network conditions",
+    "adversaries who adapt their strategies over time"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-020",
+   "identifier": "kaal:claim:3266953-020",
+   "text": "The fungibility of the staked currency is the main point of attack against proof of stake and leads inevitably to centralization.",
+   "abstract": "The fungibility of currency is the main point of attacks on PoS and leads inevitably to centralization.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proof of stake consensus using fungible currency"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405401-022",
+   "identifier": "kaal:claim:3405401-022",
+   "text": "The transferability of the stores of value entailed in cryptocurrencies creates core points of attack and undermines the very nature of decentralization.",
+   "abstract": "The transferability of stores of value entailed in cryptocurrencies creates core points of attack and undermines the very nature of decentralization.",
+   "citation": "Wulf A. Kaal, Decentralized Commerce – A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "cryptocurrencies and other transferable stores of value"
+   ],
+   "source_pdf_sha256": "bc2d6f0ddc0852fb4085c4543c7c1dec19aaf8745eb67e3acc637e552bd7fb7d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3406323-023",
+   "identifier": "kaal:claim:3406323-023",
+   "text": "Because cryptocurrencies embody a transferable store of value, the exercise of power over that value inevitably leads back to centralization through economies of scale, creating core points of attack that undermine the very nature of decentralization.",
+   "abstract": "Because of the store of value entailed in cryptocurrencies (and really any currencies or store of value), exercise of power over such value inevitably leads to centralization due to economies of scale.",
+   "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "any currency or transferable store of value, not only cryptocurrencies"
+   ],
+   "source_pdf_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411897-028",
+   "identifier": "kaal:claim:3411897-028",
+   "text": "Because cryptocurrencies embody a transferable store of value, the exercise of power over that value inevitably leads to centralization through economies of scale, which creates core points of attack and undermines the very nature of decentralization.",
+   "abstract": "Because of the store of value entailed in cryptocurrencies (and really any currencies or store of value), exercise of power over such value inevitably leads to centralization due to economies of scale.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to any currency or transferable store of value, not only cryptocurrencies"
+   ],
+   "source_pdf_sha256": "82f0aea026b3e3a526ec51bc073b3b864dc06cd9083ff9c54c550037045edaa9",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-032",
+   "identifier": "kaal:claim:3782198-032",
+   "text": "Proof of stake carries an unresolved failure mode: if anyone devises a clever algorithm for hijacking the block producer selection process, the network would fail.",
+   "abstract": "The problem is that if someone comes up with a clever algorithm for hijacking the process, then the network would fail.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to proof of stake designs that select block producers pseudorandomly"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-013",
+   "identifier": "kaal:claim:3782203-013",
+   "text": "Across all the alternative polling methods explored in the literature, changes both help and hurt: new approaches solve old problems while creating new opportunities for manipulation, a pattern the authors identify with increasing the attack surface.",
+   "abstract": "In all the methods dis- cussed the answer has always been that changes both help and hurt. New approaches solve old problems, but they create new opportunities for manipulation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "alternative voting and polling mechanisms",
+    "continuous or weighted voting technologies"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4796714-037",
+   "identifier": "kaal:claim:4796714-037",
+   "text": "A decentralized data validation layer applied to pretrained models is efficient but structurally limited: because it cannot drive significant changes to the model's core design or training approach, it leaves the model more attack prone.",
+   "abstract": "The validation layer approach, while efficient for refining pretrained models, may not facilitate significant changes in the model's core design or training approach which could make it more attack prone.",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to Model 2, the decentralized data validation layer approach",
+    "concerns pretrained models whose parameters are already fixed"
+   ],
+   "source_pdf_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
+   "status": "current"
+  }
+ ],
+ "description": "8 claims in the published works of Wulf A. Kaal carry the concept tag 'attack-surface'. Derived node: a roster, not an adjudicated definition."
+}

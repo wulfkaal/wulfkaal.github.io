@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/operational-burden",
+ "identifier": "kaal:entity:operational-burden",
+ "name": "Operational burden",
+ "termCode": "operational-burden",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/operational-burden.md",
+ "sha256": "50e1ca8b99849ebeae8ae8d70ac0bb288e7743281b4e5635621da72cd3ea5f49",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-030",
+   "identifier": "kaal:claim:2959730-030",
+   "text": "Traditional per transaction fee models failed because settlement and calculation created a prohibitive amount of work that made such operations very difficult to execute; blockchain technology overcomes all of these restrictions.",
+   "abstract": "In contrast to the traditional settlement and calculation of fees in a per-transaction model that created a prohibitive amount of work making such operations very difficult to execute, blockchain technology overcomes all of these restrictions.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fee models requiring manual reconciliation and settlement"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-023",
+   "identifier": "kaal:claim:3936876-023",
+   "text": "Self management of private keys or passphrases for individual digital assets is too cumbersome for institutional investors, so institutional custody solutions must be as robust as those provided for traditional assets.",
+   "abstract": "Private keys or maintaining passphrases for individual digital assets is too cumbersome for institutional investors.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "institutional scale holdings"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'operational-burden'. Derived node: a roster, not an adjudicated definition."
+}

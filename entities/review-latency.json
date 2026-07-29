@@ -1,0 +1,138 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/review-latency",
+ "identifier": "kaal:entity:review-latency",
+ "name": "Review latency",
+ "termCode": "review-latency",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/review-latency.md",
+ "sha256": "47d547f92dea48e13e01547b651313f20b2a182846191675719d4b06099cdb21",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 5
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-006",
+   "identifier": "kaal:claim:3995709-006",
+   "text": "Confusion during code review lengthens reviews through a message escalation mechanism: more confusion produces more messages exchanged during discussion, so the review takes longer than it should.",
+   "abstract": "that more confusion leads to an increase in the number of messages exchanged during the discussion, therefore reviews take longer.34 If there is confusion between the reviewer and the code, the code review will take longer than it should.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reviewers encountering unfamiliar code"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-011",
+   "identifier": "kaal:claim:3995709-011",
+   "text": "Organizational identity and structure affect the time and effectiveness of the code review process, as shown by a statistically significant difference in how quickly Apple accepts its own patches versus Google patches.",
+   "abstract": "treats their own patches differently from external patches.\"48 Therefore, organizational identity and structure may have impacts on the time and effectiveness of the code review process.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "cross organization patch submission"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-018",
+   "identifier": "kaal:claim:3995709-018",
+   "text": "Delays in legacy code reviews, which can be exacerbated by digital asset market conditions, can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the review.",
+   "abstract": "This can get exacerbated by market conditions in the digital asset market. These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review settings",
+    "fast moving protocol environments in digital asset markets"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-014",
+   "identifier": "kaal:claim:4734750-014",
+   "text": "Legacy code reviews can last weeks or months, and those delays can force complete rewrites of contracts because the underlying protocol may have upgraded core libraries while the review was still running.",
+   "abstract": "These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "digital asset markets where underlying protocols upgrade frequently"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-023",
+   "identifier": "kaal:claim:4755632-023",
+   "text": "Code reviews in legacy systems can last weeks and months, and these delays can force complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the review period.",
+   "abstract": "These significant delays can impact development and may require complete rewriting of contracts because the underlying protocol may have upgraded core libraries during the code review.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "can be exacerbated by market conditions in the digital asset market"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'review-latency'. Derived node: a roster, not an adjudicated definition."
+}

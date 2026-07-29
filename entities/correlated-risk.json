@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/correlated-risk",
+ "identifier": "kaal:entity:correlated-risk",
+ "name": "Correlated risk",
+ "termCode": "correlated-risk",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/correlated-risk.md",
+ "sha256": "346bbb4cba8e9d75f2c4f7462893d7a4ab34c23a60f427561351824f74113f08",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2012",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-003",
+   "identifier": "kaal:claim:1998455-003",
+   "text": "Because governments prioritize the rescue of systemically important financial institutions over other entities, those institutions are incentivized to adopt similar risk profiles and to correlate their risks.",
+   "abstract": "Government prioritization of SIFI bailouts could incentivize SIFIs to adopt similar risk profiles and correlate risks.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where governments visibly prioritize SIFI bailouts because of systemic implications"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-037",
+   "identifier": "kaal:claim:1998455-037",
+   "text": "Combining the existing prioritization of bailouts for systemically important institutions with central bank purchases of their contingent capital in a given jurisdiction would further incentivize those institutions to adopt similar risk profiles and correlate their risks.",
+   "abstract": "Combining bailout prioritization with central bank CCS purchases in a given jurisdiction could further incentivize SIFIs to adopt similar risk profiles and corre- late risks.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "in a jurisdiction where both bailout prioritization and central bank CCS purchases occur"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-006",
+   "identifier": "kaal:claim:3405660-006",
+   "text": "LTCM was diversified across markets but not across strategy, so its positions failed together; market level diversification does not imply strategy level diversification.",
+   "abstract": "It became obvious that while the fund was diversified in terms of markets, its overall strategy was not diversified.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "stress conditions in which risk spreads widen across markets simultaneously"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'correlated-risk'. Derived node: a roster, not an adjudicated definition."
+}

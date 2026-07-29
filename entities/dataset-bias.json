@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dataset-bias",
+ "identifier": "kaal:entity:dataset-bias",
+ "name": "Dataset bias",
+ "termCode": "dataset-bias",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dataset-bias.md",
+ "sha256": "2407cb361c05f325b8eacb4e995216c47d6a7fd5d849a970ef0e395267d5059c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-010",
+   "identifier": "kaal:claim:5095633-010",
+   "text": "When a training dataset disproportionately represents one region or demographic group, the resulting model produces skewed and sometimes inappropriate outputs once deployed in unfamiliar settings.",
+   "abstract": "For instance, if a dataset disproportionately represents a particular region or demographic group, the model may offer skewed performance, demonstrating suboptimal or inappropriate outputs when deployed in unfamiliar settings.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "deployment context differs from the demographic composition of the training data"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-015",
+   "identifier": "kaal:claim:5095633-015",
+   "text": "In healthcare, biased or stale training data produces algorithms that misdiagnose underrepresented populations and thereby reinforce existing health disparities instead of reducing them.",
+   "abstract": "In healthcare, for instance, biased or stale training data could lead to algorithms that misdiagnose underrepresented populations, reinforcing existing health disparities rather than alleviating them.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "clinical deployment on populations underrepresented in training data"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'dataset-bias'. Derived node: a roster, not an adjudicated definition."
+}

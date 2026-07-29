@@ -1,0 +1,85 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/holding-taxes",
+ "identifier": "kaal:entity:holding-taxes",
+ "name": "Holding taxes",
+ "termCode": "holding-taxes",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/holding-taxes.md",
+ "sha256": "599b3a03bdb60b683137703fa7ab6c26fe296b20e35df2ac33b4c8033ae87e68",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-027",
+   "identifier": "kaal:claim:3402701-027",
+   "text": "Holding taxes are the implicit result of inflation borne by coin holders, and they should be set to account for the inefficiencies of the economy rather than the inefficiencies of maintaining the currency.",
+   "abstract": "Holding taxes should account for the inefficiencies of the economy, instead of the inefficiencies of the maintenance of the currency",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-029",
+   "identifier": "kaal:claim:3402701-029",
+   "text": "Blockchain users are likely to demand zero transaction fees while failing to notice holding fees below about 3 percent annually, which a USD peg institutes implicitly through a comparable inflation target.",
+   "abstract": "Most likely this culture will continue to the decentralized economy, where blockchain users will expect 0 transaction fees but will probably not notice holding fees below 3% annual",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "decentralized economy inheriting internet fee culture",
+    "peg to USD"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'holding-taxes'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/price-crash",
+ "identifier": "kaal:entity:price-crash",
+ "name": "Price crash",
+ "termCode": "price-crash",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/price-crash.md",
+ "sha256": "c3a01a88bc64c1f436a732a5aa975b65bc5ffa7fb748873ddf3fdbe5cf03af7d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3067615-010",
+   "identifier": "kaal:claim:3067615-010",
+   "text": "To avoid a token price crash, token escrow accounts should provide usage and access controls that assure investors escrowed tokens will not be issued at a discount, and lockups or phased releases of escrowed tokens further minimize crash risk.",
+   "abstract": "To avoid a token price crash, token escrow accounts should provide usage and access controls that assure investors that escrowed tokens will not be issued at a discount.",
+   "citation": "Wulf A. Kaal, Marco Dell'Erba, Initial Coin Offerings Emerging Practices, Risk Factors, and Red Flags (2017). SSRN: https://ssrn.com/abstract=3067615",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "issuers holding unissued tokens in escrow for future funding"
+   ],
+   "source_pdf_sha256": "164ce15b9eb1e8847ebcb073f5b23a96b4974ad0308d77469a9455d4a1ebeb38",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-009",
+   "identifier": "kaal:claim:3249860-009",
+   "text": "To avoid a token price crash, escrow accounts holding unissued tokens should carry usage and access controls assuring investors that escrowed tokens will not be issued at a discount, with lockups or phased releases minimizing crash risk.",
+   "abstract": "To avoid a token price crash, token escrow accounts should provide usage and access controls that assure investors that escrowed tokens will not be issued at a discount. Lockups of escrowed tokens for a specified time period or phased releases can also help minimize the risks of token price crashes.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "issuers that retain unissued tokens in escrow after an ICO"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'price-crash'. Derived node: a roster, not an adjudicated definition."
+}

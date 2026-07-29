@@ -1,0 +1,106 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/strategic-voting",
+ "identifier": "kaal:entity:strategic-voting",
+ "name": "Strategic voting",
+ "termCode": "strategic-voting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/strategic-voting.md",
+ "sha256": "570fd18b39b01c71a5fbe4573e54101e097b4f24f8053bd486f88170225fb10b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2023"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-011",
+   "identifier": "kaal:claim:3782203-011",
+   "text": "Plurality voting predictably produces a system that swings between two polarized parties who are less acceptable to the majority but strongly preferred by interested minorities, because voters are incentivized to vote for their preferred one of the perceived top two rather than waste their vote.",
+   "abstract": "So plurality voting predictably leads to a system which swings between two polarized parties who are less acceptable to the majority, but strongly preferred by interested minorities—Duverger's Law.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "plurality voting rules",
+    "voters who want their vote to matter"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782203-012",
+   "identifier": "kaal:claim:3782203-012",
+   "text": "Given a process with static rules and finite, discrete execution, a sufficiently patient and clever minority can always corrupt the process and profit at the majority's expense while following the rules, so no perfect voting system exists.",
+   "abstract": "A sufficiently patient and clever minority power can always corrupt the process and profit at the expense of the majority, assuming your process has static rules and finite, discrete execution. There is no perfect voting system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, A Technical Perspective on Decentralization (2021). SSRN: https://ssrn.com/abstract=3782203",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "static rules",
+    "finite discrete execution",
+    "three or more options"
+   ],
+   "source_pdf_sha256": "ab8a22d0dbb026a09212a4c85963f3c05787cf80775e8613ae3724e3883e7a56",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4529715-019",
+   "identifier": "kaal:claim:4529715-019",
+   "text": "Quadratic voting remains open to manipulation and strategic voting, and it depends on a robust and transparent voting system to count votes accurately.",
+   "abstract": "However, quadratic voting also has some limitations and challenges, such as the potential for manipulation or strategic voting, and the need for a robust and transparent voting system to ensure that all votes are counted accurately.",
+   "citation": "Wulf A. Kaal, Josh Bykowski, Decentralized Autonomous Organizations (DAO) – A Market Meta Analysis (2023). SSRN: https://ssrn.com/abstract=4529715",
+   "datePublished": "2023",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "quadratic voting model"
+   ],
+   "source_pdf_sha256": "2d71961e8c449afbeaf45ca4f53de8a575d45c77d6960b767d3d1d0874f296b5",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'strategic-voting'. Derived node: a roster, not an adjudicated definition."
+}

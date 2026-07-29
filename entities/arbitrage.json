@@ -1,0 +1,260 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/arbitrage",
+ "identifier": "kaal:entity:arbitrage",
+ "name": "Arbitrage",
+ "termCode": "arbitrage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/arbitrage.md",
+ "sha256": "6c743590fd564e468addc2ea1bc788c581f97dcdd0f03ab93a7caa50d3276bf7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 12
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2016",
+    "2022"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2748096-018",
+   "identifier": "kaal:claim:2748096-018",
+   "text": "Market-neutral arbitrage strategies implicitly minimize systemic risk, because funds using them construct returns that do not depend on the direction of the market.",
+   "abstract": "However, because many hedge funds engage in some form of market-neutral arbitrage to ensure that returns do not depend on the direction of the market, they may implicitly minimize systemic risk.",
+   "citation": "Wulf A. Kaal, Timothy A. Krause, Hedge Funds and Systemic Risk (2016). SSRN: https://ssrn.com/abstract=2748096",
+   "datePublished": "2016",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies only to funds running some form of market-neutral arbitrage"
+   ],
+   "source_pdf_sha256": "8f30260f2c1db728b45c4f3b9b7c64358cf9d3217277bc3c63a910c32f87b508",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-017",
+   "identifier": "kaal:claim:3125822-017",
+   "text": "The author concedes an arbitrage attack is feasible when experts fail to police their expertise and a significant share of the technically fungible tokens is offered on an exchange, since a malicious actor can then buy 51 percent of the tokens, vote against common sense, and sell before the tokens lose value.",
+   "abstract": "However, it is feasible that an arbitrage opportunity could evolve if the experts do not police their expertise. If a significant percentage of the (technically fungible) tokens were put on sale in a token exchange, a malicious actor would have the opportunity to 1) buy 51% of tokens",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "requires expert policing to be absent",
+    "requires a liquid exchange holding a large share of tokens"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-005",
+   "identifier": "kaal:claim:3125827-005",
+   "text": "Because the stakes in SPoS are reputation tokens that are far less fungible than cryptocurrency stakes, long term probity is incentivized and many short term arbitrage opportunities are eliminated. Fungibility of the staked asset is what makes short horizon attacks profitable in other proof of stake systems.",
+   "abstract": "In particular, the stakes (sem tokens) are naturally far less fungible than cryptocurrency stakes, so long-term probity is incentivized, eliminating many short- term arbitrage opportunities.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stakes denominated in non fungible reputation tokens rather than currency"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-002",
+   "identifier": "kaal:claim:3402701-002",
+   "text": "Fiat currency collateralization is expensive and inefficient because the entire backing value must be held liquid; anything less opens arbitrage attacks of the kind Soros used against the Bank of England.",
+   "abstract": "Fiat currency collateralization is expensive and inefficient because all of the value that is backing the cryptocurrency needs to be liquid, otherwise arbitrage opportunities, such as the Soros attack, are possible",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "fiat-backed pegs claiming full collateralization"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3402701-019",
+   "identifier": "kaal:claim:3402701-019",
+   "text": "Selling currency into a reserve when price is above the peg and buying it back with the reserve when price is below the peg yields an arbitrage profit, so a reserve can fund its own defense of the peg.",
+   "abstract": "In the next paragraph we demonstrate the obvious result that selling the currency when the price is high to build a reserve, then buying the currency back with the reserve when the price is low will yield an arbitrage profit",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the reserve currency is more stable than the base currency",
+    "the cost to implement and maintain the reserve is ignored"
+   ],
+   "source_pdf_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-035",
+   "identifier": "kaal:claim:3441904-035",
+   "text": "Static complex sets of DAO rules inevitably produce corruptive opportunistic gaming and arbitrage behavior, so effective DAO governance designs should be focused on dynamic elements.",
+   "abstract": "With static complex sets of DAO rules comes inevitable corruptive opportunistic gaming and arbitrage behavior.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "open and democratic systems with complex static rule sets"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-026",
+   "identifier": "kaal:claim:3652481-026",
+   "text": "Stable and presumptively optimal static or constitutional rules for DAO governance typically enable gaming and arbitrage opportunities, because rational opportunistic parties will circumvent complex static rules to increase their share of power and profit.",
+   "abstract": "Stable and presumptively optimal static and/or constitutional rules for DAO governance therefore typically enable gaming and arbitrage opportunities.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "the system is open and democratic",
+    "the rule set is static and complex"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-028",
+   "identifier": "kaal:claim:3782216-028",
+   "text": "The lesson of the Soros attack is that when a cryptocurrency is pegged above its true market value, the difference must be fully backed by a foreign reserve of collateral, or financiers can profit by breaking the peg.",
+   "abstract": "The lesson of the Soros attack, is that if the value of a cryptocurrency is pegged at a value higher than its true market value, the difference must be backed c::% by a foreign reserve of collateral holdings.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "pegged currencies, including algorithmic stablecoins"
+   ],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782217-007",
+   "identifier": "kaal:claim:3782217-007",
+   "text": "Legislation is the wrong remedy for oracle exploitation, because the existence of an arbitrage opportunity means systems will evolve around whatever rules exist in order to exploit the advantage; the proper response is to engineer a better system.",
+   "abstract": "But the very existence of this opportunity for arbitrage means systems will evolve around whatever rules exist to exploit the advantage. Instead of legislating, the proper response is to engineer a better system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of History In Decentralization (2021). SSRN: https://ssrn.com/abstract=3782217",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "insider information and arbitrage opportunities"
+   ],
+   "source_pdf_sha256": "358779557d8e7dcd101720ca0fad90b9146d24f1c7c03909eb431fcf1fb7e103",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-010",
+   "identifier": "kaal:claim:4033886-010",
+   "text": "Arbitrage trading emerges in crypto markets because of information asymmetries across exchanges, which arise from imperfect disclosure, and the resulting decline in market efficiency is a key indicator of an inefficient market.",
+   "abstract": "The reason arbitrage trading starts to happen is because of asymmetries of information across the different exchanges. These asymmetries can happen as a result of imperfect disclosures or incite on whether a company has a willingness to take on debt.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "multiple exchanges trading the same asset"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-011",
+   "identifier": "kaal:claim:4033886-011",
+   "text": "Cross exchange price gaps in crypto do not self correct because of frictions on the arbitrageur side: South Korean investors faced foreign exchange conversion costs and regulatory capital controls that made exploiting the Bithumb premium impractical.",
+   "abstract": "It is unlikely any South Korean investor was able to take advantage of this opportunity because of the hurdles they would have to go through before being able to access the US exchange Coinbase.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "South Korean investors seeking access to US exchanges",
+    "capital controls and foreign exchange frictions in place"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4033886-032",
+   "identifier": "kaal:claim:4033886-032",
+   "text": "When exchanges apply different standards about who may trade on their platform, the market ends up showing different prices for the same asset across exchanges, which is one reason trading arbitrage has become common in crypto.",
+   "abstract": "When different exchanges apply different standards as to who can trade on their platform, the market sees different prices for the same asset across exchanges.",
+   "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886",
+   "datePublished": "2022",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "exchanges excluding participants by residence or other status"
+   ],
+   "source_pdf_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
+   "status": "current"
+  }
+ ],
+ "description": "12 claims in the published works of Wulf A. Kaal carry the concept tag 'arbitrage'. Derived node: a roster, not an adjudicated definition."
+}

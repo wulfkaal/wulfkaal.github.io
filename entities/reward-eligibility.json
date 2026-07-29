@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reward-eligibility",
+ "identifier": "kaal:entity:reward-eligibility",
+ "name": "Reward eligibility",
+ "termCode": "reward-eligibility",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reward-eligibility.md",
+ "sha256": "80c4f8ff8cc9db1ee4aa3f0e715c8d685a8607e68c78451d9b337d243430b642",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-011",
+   "identifier": "kaal:claim:3931933-011",
+   "text": "Publishing each validator's uptime and rewarding status to the community on a weekly basis coincided with active Casper testnet nodes falling below 800, in a period of already volatile validator participation.",
+   "abstract": "In the early testnet days, validator participation was volatile with validators joining and others leaving regularly. At some point during 2021, the active Caser testnet nodes fell under 800 after the uptimes/rewarding-status of each validator node was reported to the community on a weekly basis.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "2021 Casper testnet incentivized phases"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-012",
+   "identifier": "kaal:claim:3931933-012",
+   "text": "Validators who learned they would receive no reward shut down their nodes rather than waiting for the incentivization phase to end, so a reward scheme that visibly excludes participants loses their contribution immediately.",
+   "abstract": "Other validators shut down their nodes instead of waiting for the end of the incentivization phase when they realized that there was no reward for them.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "2021 Casper testnet incentivization phase"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3931933-014",
+   "identifier": "kaal:claim:3931933-014",
+   "text": "Opacity about reward eligibility is itself a source of dysfunction: during the first phase of the 2021 Casper testnet it was unclear which validators would be rewarded in each week, which caused friction and non-productive discussions among the validators.",
+   "abstract": "During the first phase of the 2021 Casper Testnet, it was unclear which validators would get rewarded in each week, causing friction and non-productive discussions among the validators.",
+   "citation": "Wulf A. Kaal, Hybrid Secure Proof of Stake (2021). SSRN: https://ssrn.com/abstract=3931933",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "first phase of the 2021 Casper testnet",
+    "weekly publication of uptime scores improved the situation only marginally"
+   ],
+   "source_pdf_sha256": "55a71cdfceb96fadefba1f2fed9563b588825378c91aff644ee7faaccdf31204",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'reward-eligibility'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,212 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/attack-cost",
+ "identifier": "kaal:entity:attack-cost",
+ "name": "Attack cost",
+ "termCode": "attack-cost",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/attack-cost.md",
+ "sha256": "6d35a55eef9d7ec78d99cb23857b8eccf5b2d51e39e8dcc411df117b5a2b5309",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 9
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-019",
+   "identifier": "kaal:claim:3125822-019",
+   "text": "In the absolute worst case, with no safeguards at all, the price of corrupting the platform from within is a minimum of twice the total historical fees added to the system, and instituting any obvious protection raises that price steeply.",
+   "abstract": "in the absolute worst- case scenario, the price to corrupt the system from within is a minimum of twice the total historical fees added to the system. If any obvious protections are instituted, the price to corrupt grows steeply.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "worst case assumes any fee is accepted automatically and resolved instantly",
+    "assumes no other users are adding fees"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-021",
+   "identifier": "kaal:claim:3125822-021",
+   "text": "Acquiring 51 percent of the tokens by paying fees and winning betting pools costs roughly six times the value of the entire quantity of sem tokens in a healthy expertise, even when the bench makes no effort at all to police the incoming fees.",
+   "abstract": "a reasonable estimate for the price of this attack (even when the bench makes absolutely no effort to police this action) is 6 times the value of the entire quantity of sem tokens in existence in the expertise, when the expertise is healthy, i.e., earning fees.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "expertise is healthy, meaning it is earning fees",
+    "assumes no policing by the bench"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-022",
+   "identifier": "kaal:claim:3125822-022",
+   "text": "If good faith experts counter invest at least as fast as the malicious group, that is at a constant fraction c greater than or equal to one of the malicious investment, the malicious group can never gain more than 50 percent of the power.",
+   "abstract": "assume the good-faith experts invest some constant fraction c of the malicious groups' investment ∆x at each time. If c ≥ 1then the malicious group will never gain more than 50% power.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires that good faith experts respond to incoming malicious fees",
+    "requires a time delay in resolving betting pools"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-040",
+   "identifier": "kaal:claim:3125822-040",
+   "text": "Faking a reputable expertise tag is nearly costless: a successful tag's open record can be copied and reposted under a new name for the price of the anti denial of service fees, and the capital used to mimic fees paid into the sham tag is mostly recovered by the sham owners through the salaries they control.",
+   "abstract": "easily be copied and reposted under a new tag name for the low cost of the anti-DoS fees. The capital used to mimic fees paid to the sham expertise tag is mostly recovered by the sham owners through the salaries they control.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "sham owners hold the majority of the sham tag's tokens"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-007",
+   "identifier": "kaal:claim:3125827-007",
+   "text": "Because at least half of the sem tokens minted when a user buys in with a fee are shared with the community that polices the application, the ability to purchase tokens does not open a profitable 51% attack; the authors claim a mathematical proof that this feature alone eliminates the incentive.",
+   "abstract": "at least half of the tokens minted are shared with the community who polices the application. We provide a mathematical proof that shows this alone completely eliminates all incentives to perform the 51% attack in Appendix A.1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "token purchase mints tokens split with the existing community",
+    "proof holds under the worst case assumptions of Appendix A.1"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-014",
+   "identifier": "kaal:claim:3125827-014",
+   "text": "Because almost all other blockchains distribute perfectly fungible currency tokens through initial sales or mining, there is a clear, computable answer to how much it would cost to corrupt or destroy a chain running a proof of stake protocol on cryptocurrency stakes.",
+   "abstract": "Either way, these tokens are almost always perfectly fungible currencies, so there is a clear answer to how much it would cost to corrupt or destroy blockchain running a PoS protocol based on cryptocurrency stakes.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "PoS chains whose stakes are perfectly fungible currency tokens"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-036",
+   "identifier": "kaal:claim:3125827-036",
+   "text": "An attacker who buys sem tokens directly from the platform by sending fees must spend at least twice, and more likely six times, the entire historical value of the platform, so the griefing factor is a minimum of 2 with an average of 6.",
+   "abstract": "attacker would lose a significant amount of money to achieve their goal, at least twice the entire historical value of the platform--more likely the factor would be 6 times the total value (see Appendix A.1 for a proof). So the griefing factor is a minimum of 2 with an average of 6,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker buys in by paying fees rather than on an exchange",
+    "good faith experts continue investing alongside the attacker"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-037",
+   "identifier": "kaal:claim:3125827-037",
+   "text": "Under the worst case model with no admission safeguards and no other users paying fees, a malicious group must invest at minimum twice the total sem tokens of the system to reach 50% voting power in the validation pool, because half of every fee it pays mints tokens for the existing good faith experts.",
+   "abstract": "Consequently the malicious group would need to invest an absolute minimum of 2g8 , that is, double the total sem tokens of the system to gain 50% power in the system in order to outvote the rest of the good-faith experts in the validation pool.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "no safeguards on joining as an expert",
+    "no other users adding fees",
+    "continuous micro payment strategy, which is the attacker's optimum"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-028",
+   "identifier": "kaal:claim:3782210-028",
+   "text": "With the balanced staking and fee-sharing necessities implemented, the cost of faking reputation is at an absolute minimum double the value of that reputation, which is how reputation is made more valuable than money.",
+   "abstract": "With #e and #j implemented, the cost of faking your reputation is (at an absolute minimum) double the value of the reputation.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "both the balanced staking necessity and the shared salary necessity are implemented"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  }
+ ],
+ "description": "9 claims in the published works of Wulf A. Kaal carry the concept tag 'attack-cost'. Derived node: a roster, not an adjudicated definition."
+}

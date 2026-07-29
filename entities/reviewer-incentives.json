@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reviewer-incentives",
+ "identifier": "kaal:entity:reviewer-incentives",
+ "name": "Reviewer incentives",
+ "termCode": "reviewer-incentives",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reviewer-incentives.md",
+ "sha256": "959e2e2fa2e1b1b74341b7011f551a1856e1f45553025313a85612f4aa4e92b7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-013",
+   "identifier": "kaal:claim:3995709-013",
+   "text": "In hierarchical legacy review processes the first reviewer's output gets the highest priority and follow on reviewers add only minor upgrades, so the collective of reviewers is not incentivized to find flaws and optimize the code as a collective work product.",
+   "abstract": "often gets the highest priority and is often merely followed with minor upgrades by follow-on reviewers. The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy code review firms",
+    "hierarchical ordering of reviewers"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-030",
+   "identifier": "kaal:claim:3995709-030",
+   "text": "Crowd review and policing votes by the CRDAO collective filter out idiosyncratic reviewer preferences, because reviewers who submit highly idiosyncratic reviews would have to fear slashing and loss of standing in the community.",
+   "abstract": "Instead, the CRDAO mandates that reviews are subject to crowd review and policing votes by the CRDAO collective. Accordingly, code reviewers are less likely to engage in highly idiosyncratic reviews as they would need to fear slashing and loss of standing in the community.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "mandatory crowd review of each code review",
+    "slashing and reputation stakes in place"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-008",
+   "identifier": "kaal:claim:4734750-008",
+   "text": "In hierarchical review, the first reviewer's output receives the highest priority and later reviewers add only minor upgrades, so the review becomes the initial reviewer's work product rather than the collective's.",
+   "abstract": "The collective of reviewers is also not incentivized to find flaws in the code to optimize code as a work product of the collective. Rather, it is often seen as the work product of the initial reviewer with minor input from follow-up reviewers.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "legacy hierarchical code review processes"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4734750-024",
+   "identifier": "kaal:claim:4734750-024",
+   "text": "Subjecting every review to crowd review and policing votes makes reviewers less likely to produce idiosyncratic reviews, because they would face slashing and loss of standing in the community.",
+   "abstract": "Accordingly, code reviewers are less likely to engage in highly idiosyncratic reviews as they would need to fear slashing and loss of standing in the community.",
+   "citation": "Wulf A. Kaal, Code Review DAO (2024). SSRN: https://ssrn.com/abstract=4734750",
+   "datePublished": "2024",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reviewers holding stakeable reputation within the DAO"
+   ],
+   "source_pdf_sha256": "60eadf91c0913468505afc664c8d8d1e1673d6c5326d031ca7060addb8ab2eda",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'reviewer-incentives'. Derived node: a roster, not an adjudicated definition."
+}

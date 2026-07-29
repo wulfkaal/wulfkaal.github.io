@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/network-connectivity",
+ "identifier": "kaal:entity:network-connectivity",
+ "name": "Network connectivity",
+ "termCode": "network-connectivity",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/network-connectivity.md",
+ "sha256": "6202dd567bf5b7c155b063e6f1801a0e6b1666ee06481ec9e2ae6afcd10dfb9e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227933-014",
+   "identifier": "kaal:claim:3227933-014",
+   "text": "Network connectivity is what makes blockchain records practically immutable, because it allows multiple identical copies of the ledger to exist simultaneously across the network.",
+   "abstract": "Network connectivity is vital because it allows for multiple identical copies of the blockchain to be available simultaneously across the network. This makes it practically impossible to alter or erase information in the blockchain.",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Why 'Blockchain' Will Disrupt Corporate Organizations (2018). SSRN: https://ssrn.com/abstract=3227933",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires broad network connectivity"
+   ],
+   "source_pdf_sha256": "a9e9660c4dc25a2202f1da4e762f5885256e05f68c53ca51942f5833a7a4c108",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3411897-018",
+   "identifier": "kaal:claim:3411897-018",
+   "text": "It is the completely decentralized network connectivity via the internet, not blockchain's digital signatures, that provides the greatest protection against fraud, because connectivity puts multiple copies of the chain in the hands of all participants.",
+   "abstract": "While blockchain's use of digital signatures helps establish the identity and authenticity of the parties involved in the transaction, it is the completely decentralized network connectivity via the internet that allows the most protection against fraud.",
+   "citation": "Wulf A. Kaal, Decentralization - Past, Present, and Future (2019). SSRN: https://ssrn.com/abstract=3411897",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to fully distributed public blockchains"
+   ],
+   "source_pdf_sha256": "82f0aea026b3e3a526ec51bc073b3b864dc06cd9083ff9c54c550037045edaa9",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'network-connectivity'. Derived node: a roster, not an adjudicated definition."
+}

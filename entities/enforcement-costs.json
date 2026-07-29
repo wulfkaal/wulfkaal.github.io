@@ -1,0 +1,85 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/enforcement-costs",
+ "identifier": "kaal:entity:enforcement-costs",
+ "name": "Enforcement costs",
+ "termCode": "enforcement-costs",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/enforcement-costs.md",
+ "sha256": "0edf129045cfd3062026535c3729bbc98ceb5f2f42589bef8ed59767ab0f194e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-010",
+   "identifier": "kaal:claim:3373393-010",
+   "text": "Residual loss arises because the cost of enforcing suboptimal contracts between principals and agents always exceeds the benefits of performing the contractual obligations.",
+   "abstract": "Residual loss arises because the cost of enforcing suboptimal contracts between principals and agents always exceed the benefits of performing the contractual obligations.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3405660-002",
+   "identifier": "kaal:claim:3405660-002",
+   "text": "Moral hazard in hedge fund lending persists even when the lender is fully informed, because high enforcement costs can make prevention too costly for the lender.",
+   "abstract": "Moral hazard can also occur because high enforcement costs might make it too costly for the lenders to hedge funds to prevent moral hazard even when the lender is fully informed about the hedge fund's activities.",
+   "citation": "Kaal, Indirect Regulation of Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3405660",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "lender to hedge fund relationship",
+    "enforcement costs are high relative to expected loss"
+   ],
+   "source_pdf_sha256": "cf507b1833071765bc13a5605f38c2591582eca85f40869e38b6ff075c04d29d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'enforcement-costs'. Derived node: a roster, not an adjudicated definition."
+}

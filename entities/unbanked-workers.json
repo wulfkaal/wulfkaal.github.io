@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/unbanked-workers",
+ "identifier": "kaal:entity:unbanked-workers",
+ "name": "Unbanked workers",
+ "termCode": "unbanked-workers",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/unbanked-workers.md",
+ "sha256": "587ed3d6222072f693ae25396ec2f064bc54cb46bfcfebf733f9e85b8fd116dd",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-014",
+   "identifier": "kaal:claim:4755632-014",
+   "text": "Approximately thirty eight percent of the labor pool is unbanked but skilled and therefore excluded from centralized micro task marketplaces, because without a bank account these workers cannot contribute to or profit from the existing marketplace.",
+   "abstract": "the circa 38% of the labor pool that is unbanked but skilled does not currently have access to the centralized micro task marketplaces.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to centralized micro task marketplaces requiring banking relationships"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-039",
+   "identifier": "kaal:claim:4755632-039",
+   "text": "Operating entirely through crypto transactions removes the transaction costs of micro task work, because centralized mechanical turk platforms require an existing banking relationship to transfer payment to workers who are otherwise unbanked.",
+   "abstract": "Unlike centralized mechanical turk platforms that require an existing banking relationship to receive account transfers for otherwise unbanked micro task workers, the ALE Platform operates entirely through crypto transactions.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the ALE Platform relative to centralized micro task platforms"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'unbanked-workers'. Derived node: a roster, not an adjudicated definition."
+}

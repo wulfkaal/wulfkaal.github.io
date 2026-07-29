@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/hard-fork",
+ "identifier": "kaal:entity:hard-fork",
+ "name": "Hard fork",
+ "termCode": "hard-fork",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/hard-fork.md",
+ "sha256": "88b4bd7440c84957a6d2f43d08d342c9b047560999c5d2ffbcf15136cf6e1e30",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2019"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-042",
+   "identifier": "kaal:claim:3249860-042",
+   "text": "Tokens launched before 2015 were overwhelmingly developed on a hardfork governance mechanism or a combination of hardfork and one other governance type.",
+   "abstract": "Tokens launched prior to 2015 were overwhelmingly developed on a hardfork or a combination of hardfork and one of the other governance types depicted.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "top 100 tokens, governance types coded as hard fork, soft fork with tokenholder voting, masternodes, or other"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3373393-039",
+   "identifier": "kaal:claim:3373393-039",
+   "text": "Blockchain-based corporate governance solutions in DAOs require evolutionary blockchain governance protocols, and socially optimal hard-forking rules cannot suffice.",
+   "abstract": "Blockchain-based corporate governance solutions in DAOs require evolutionary blockchain governance protocols. Socially optimal hard- forking rules cannot suffice.",
+   "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAO-based governance"
+   ],
+   "source_pdf_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-024",
+   "identifier": "kaal:claim:3441904-024",
+   "text": "Hard forks can reintroduce the double spend problem, because wallets, merchants, and users running the previous code deem the new code invalid and cannot detect spending on it, so coins spent in a new block could be spent again on an old block.",
+   "abstract": "Because wallets, merchants, and users running the previous code deem the new code invalid and thus cannot detect the spending on the new code, cryptocurrencies spent in a new block could be spent again on an old block.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "hard forks only, since old nodes read both block versions after a soft fork"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3441904-025",
+   "identifier": "kaal:claim:3441904-025",
+   "text": "If a community cannot agree after a hard fork on which chain is the true chain, the result can be two blockchains competing in perpetuity, and the only viable remedy is abandoning one branch, which causes some miners to lose re-allocated transactions.",
+   "abstract": "If after a hard fork, the respective community cannot agree on which chain is the true chain, e.g. the chain that provides the most likely survivable protocol, it may result in two blockchains that compete in perpetuity.",
+   "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contentious hard forks",
+    "example of the fork that created Bitcoin Cash"
+   ],
+   "source_pdf_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'hard-fork'. Derived node: a roster, not an adjudicated definition."
+}

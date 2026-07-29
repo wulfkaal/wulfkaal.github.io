@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/human-code-issues",
+ "identifier": "kaal:entity:human-code-issues",
+ "name": "Human code issues",
+ "termCode": "human-code-issues",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/human-code-issues.md",
+ "sha256": "e33d4e433fb51fb3407b199dac03d722f2649973314c0a51613c074c5a3720ff",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-002",
+   "identifier": "kaal:claim:3995709-002",
+   "text": "The benefit of a code review is negatively correlated with the size of the code under review: the larger the number of files in a single review, the lower the rate of beneficial feedback from reviewers.",
+   "abstract": "Therefore, the benefit of attaining a code review is negatively correlated with the size of the code under review. In particular, the larger the amount of files in a single review, the lower the rate of beneficial feedback from the reviewers.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "single review submissions of increasing size"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-006",
+   "identifier": "kaal:claim:3995709-006",
+   "text": "Confusion during code review lengthens reviews through a message escalation mechanism: more confusion produces more messages exchanged during discussion, so the review takes longer than it should.",
+   "abstract": "that more confusion leads to an increase in the number of messages exchanged during the discussion, therefore reviews take longer.34 If there is confusion between the reviewer and the code, the code review will take longer than it should.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reviewers encountering unfamiliar code"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'human-code-issues'. Derived node: a roster, not an adjudicated definition."
+}

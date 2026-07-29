@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/member-liability",
+ "identifier": "kaal:entity:member-liability",
+ "name": "Member liability",
+ "termCode": "member-liability",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/member-liability.md",
+ "sha256": "f8fbac83daf9b16dd149fd123ee0807edeac60ed27c799aae70df4e9c9053d5f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-008",
+   "identifier": "kaal:claim:3799320-008",
+   "text": "If DAO members do not formalize a legal structure for their entity, courts are very likely to impose one on them, which is a serious risk of DAO membership.",
+   "abstract": "However, a very serious risk is associated with DAO membership in the sense that if the DAO members do not formalize a structure for their human-created entity, courts are very likely to impose one for the members of the DAO.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no off-chain legal entity",
+    "litigation reaching a court"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-019",
+   "identifier": "kaal:claim:3799320-019",
+   "text": "Under the legal wrapper concept individual DAO members are not liable and the third party knows exactly with whom she is interacting and where liabilities arise.",
+   "abstract": "Using the legal wrapper concept, the individual DAO members would not be liable and the third party knows exactly with whom she is interacting and where liabilities arise.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "DAO represented by a legal wrapper entity"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-028",
+   "identifier": "kaal:claim:5254152-028",
+   "text": "A DAO operating without a legal wrapper risks being deemed a partnership by estoppel in legal disputes, exposing its members to liability, as scored for Hop DAO with a regulatory compliance score of 1.",
+   "abstract": "Lacking a legal wrapper, it is at risk of being deemed a partnership by estoppel in legal disputes (R: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no legal entity or legal wrapper"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'member-liability'. Derived node: a roster, not an adjudicated definition."
+}

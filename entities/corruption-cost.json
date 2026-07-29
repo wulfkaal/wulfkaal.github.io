@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/corruption-cost",
+ "identifier": "kaal:entity:corruption-cost",
+ "name": "Corruption cost",
+ "termCode": "corruption-cost",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/corruption-cost.md",
+ "sha256": "9453f60dffc54e39d91f1d7a2a6f6570b72bda2ae98b4adb75e9f0c87dc06a35",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-009",
+   "identifier": "kaal:claim:6192998-009",
+   "text": "Under the 2018 validation pool design, the cost of corrupting the system to reach fifty one percent control is at minimum twice the total reputation value of the system.",
+   "abstract": "This is the fundamental security bound: corrupting the system costs at minimum 2× the total reputation value.34",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "attacker acquires reputation through repeated fee payments",
+    "attacker always wins the validation pool, the worst case"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-010",
+   "identifier": "kaal:claim:6192998-010",
+   "text": "The two times corruption cost bound of the 2018 framework is conditional, not general: subsequent analysis shows it holds only under specific conditions that may not obtain in practice.",
+   "abstract": "However, subsequent analysis reveals this bound applies only under specific conditions that may not hold in practice. This is a limitation we address in Section IV.F.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-032",
+   "identifier": "kaal:claim:6192998-032",
+   "text": "Multi agent competition improves attack resistance because it creates multiple attack surfaces that must all succeed simultaneously, and citation transparency makes collusion detectable; with a fifty percent quality penalty for detected collusion the corruption cost doubles relative to the original framework.",
+   "abstract": "This improved security stems from multi-agent competition creating multiple attack surfaces that must all succeed simultaneously, combined with citation transparency enabling collusion detection.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "validators actively penalize detected collusion",
+    "honest agents compete on quality in the same jobs"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-037",
+   "identifier": "kaal:claim:6192998-037",
+   "text": "Citation weighted systems become more secure over time at a faster rate than binary systems, because time to corruption scales superlinearly with accumulated transaction volume.",
+   "abstract": "This extends the security analysis from Calcaterra, Kaal, and Andrei (2018, 15-18) to demonstrate that citation-weighted systems become more secure over time at a faster rate than binary systems.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "measured against accumulated historical transaction volume",
+    "tested via simulated attacks on testnet"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'corruption-cost'. Derived node: a roster, not an adjudicated definition."
+}

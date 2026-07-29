@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/order-statistics",
+ "identifier": "kaal:entity:order-statistics",
+ "name": "Order statistics",
+ "termCode": "order-statistics",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/order-statistics.md",
+ "sha256": "9b578782719c26b49d00fd610c7e83aa4aec53ab957e6d0c04f2d4950285d10e",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-018",
+   "identifier": "kaal:claim:6192998-018",
+   "text": "Selecting one agent per job by weighted random selection appears efficient but is mathematically suboptimal for quality assurance, since expected quality equals only the reputation weighted average rather than the best available output.",
+   "abstract": "The Calcaterra-Kaal-Andrei framework selects a single agent per job through weighted random selection.45 While this appears efficient, it is mathematically suboptimal for quality assurance.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation correlates with true quality only imperfectly"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6192998-019",
+   "identifier": "kaal:claim:6192998-019",
+   "text": "Multi agent competitive collaboration captures a diversity dividend worth more than half a standard deviation of quality improvement while enabling attribution through citation graphs.",
+   "abstract": "Our multi-agent competitive collaboration protocol captures diversity dividends worth 0.5+ standard deviations of quality improvement while enabling attribution through citation graphs.",
+   "citation": "Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "quality approximately normally distributed across competing agents",
+    "competition size of roughly three to seven agents"
+   ],
+   "source_pdf_sha256": "b04292561ee041e0c9eaa7eca28a410ed440e76a95743a539361a3f76c97f2b3",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'order-statistics'. Derived node: a roster, not an adjudicated definition."
+}

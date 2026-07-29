@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/statutory-authorization",
+ "identifier": "kaal:entity:statutory-authorization",
+ "name": "Statutory authorization",
+ "termCode": "statutory-authorization",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/statutory-authorization.md",
+ "sha256": "d374ea1146e3370cd7be235cadcb603d2e8b3c6e6a035840651f5a8809a50524",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3017612-003",
+   "identifier": "kaal:claim:3017612-003",
+   "text": "Although shareholder agreements are authorized and shaped by corporation code provisions, their construction is governed by ordinary contract interpretation rules, so statutory authorization does not displace contract doctrine.",
+   "abstract": "While the agreements are governed by legislation, general rules applicable to contract interpretation govern the construction of shareholder agreements.",
+   "citation": "Wulf A. Kaal, Shareholder Agreements - National Report of the United States of America (2017). SSRN: https://ssrn.com/abstract=3017612",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States, Delaware law illustrated by Salamone v. Gorman"
+   ],
+   "source_pdf_sha256": "33821db406f92efbe1698fbaed37687595c13b7ce5463b4a879df679fd4af1ac",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3017612-009",
+   "identifier": "kaal:claim:3017612-009",
+   "text": "MBCA Section 7.32 requires unanimity, so agreements that bind only a block of shareholders rather than all of them cannot rely on that section and must find authorization elsewhere.",
+   "abstract": "Most importantly the agreement must be unanimous, so that agreements that do not involve all shareholders, such as agreements designed to keep control within a block, must look elsewhere for their authorization.",
+   "citation": "Wulf A. Kaal, Shareholder Agreements - National Report of the United States of America (2017). SSRN: https://ssrn.com/abstract=3017612",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "agreements seeking MBCA Section 7.32 protection"
+   ],
+   "source_pdf_sha256": "33821db406f92efbe1698fbaed37687595c13b7ce5463b4a879df679fd4af1ac",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'statutory-authorization'. Derived node: a roster, not an adjudicated definition."
+}

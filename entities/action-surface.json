@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/action-surface",
+ "identifier": "kaal:entity:action-surface",
+ "name": "Action surface",
+ "termCode": "action-surface",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/action-surface.md",
+ "sha256": "4f2f4ceea9c67b680979501f76c710bbd9dd4165cdd38c7b754d223157bfc768",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-006",
+   "identifier": "kaal:claim:6655138-006",
+   "text": "Any architecture instantiating Computative Economics must give the generative function two operational expressions: an action surface through which the agent posts generative output to the protocol's public state, and a reward channel that accrues to the agent conditional on the validated quality of that output.",
+   "abstract": "In any architecture instantiating Computative Economics, G must have two operational expressions. The first is an action surface, a contract or settlement-layer interface through which the agent can post its generative output to the protocol's public state.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "architectures intended to instantiate Computative Economics"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-008",
+   "identifier": "kaal:claim:6655138-008",
+   "text": "An architecture with a reward channel but no action surface implements generation as an off-protocol act whose outputs cannot enter the protocol's action set, so the protocol's possibility space remains exogenous no matter how generatively active the agent population is.",
+   "abstract": "An architecture that has the reward channel but no action surface implements G as an off-protocol act whose outputs cannot enter the protocol's action set, and the protocol's possibility space remains exogenous regardless of how active G is in the agent population.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "protocols lacking a settlement-layer interface for posting generative output"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'action-surface'. Derived node: a roster, not an adjudicated definition."
+}

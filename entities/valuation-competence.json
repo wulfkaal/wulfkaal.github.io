@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/valuation-competence",
+ "identifier": "kaal:entity:valuation-competence",
+ "name": "Valuation competence",
+ "termCode": "valuation-competence",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/valuation-competence.md",
+ "sha256": "3fcec326e6e41c04bb57f70a2b22c70363d91a133b1bc98be3b776649029029d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2009",
+    "2009"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1428387-008",
+   "identifier": "kaal:claim:1428387-008",
+   "text": "Because structured debt instruments and over-the-counter derivatives used by hedge funds can be highly complex, the hedge fund manager may be the only person competent to assess their value.",
+   "abstract": "As structured debt instruments and over-the-counter derivatives used by hedge funds can be highly complex, the hedge fund manager may be the only person who is in a position to competently assess the value. This unique competency is particularly",
+   "citation": "Kaal, Hedge Fund Valuation Retailization, Regulation, and Investor Suitability (2009). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1428387",
+   "datePublished": "2009",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "for highly complex structured debt and OTC derivatives"
+   ],
+   "source_pdf_sha256": "6aa3a280dc6750723be2389f3af2aabf3a16c4ce20e49fcdaddd7f2ea95a67aa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1428387-011",
+   "identifier": "kaal:claim:1428387-011",
+   "text": "Outsourcing valuation to an independent administrator can be nominal rather than real: the administrator may lack the understanding of complex securities products needed to value the positions, so the manager remains in charge of valuation even though the function has formally been externalized.",
+   "abstract": "The administrator may not have the understanding of complex securities products required to appropriately value the positions, and the manager may remain the person in charge of valuation even though formally that position has",
+   "citation": "Kaal, Hedge Fund Valuation Retailization, Regulation, and Investor Suitability (2009). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1428387",
+   "datePublished": "2009",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where positions involve complex securities products",
+    "where the administrator is paid by the hedge fund manager"
+   ],
+   "source_pdf_sha256": "6aa3a280dc6750723be2389f3af2aabf3a16c4ce20e49fcdaddd7f2ea95a67aa",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'valuation-competence'. Derived node: a roster, not an adjudicated definition."
+}

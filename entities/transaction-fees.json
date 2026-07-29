@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/transaction-fees",
+ "identifier": "kaal:entity:transaction-fees",
+ "name": "Transaction fees",
+ "termCode": "transaction-fees",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/transaction-fees.md",
+ "sha256": "d3846c302f60ba23dfb596ae75b3004a1059fd498f6307501ee9ce41099d4a6f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-036",
+   "identifier": "kaal:claim:3128900-036",
+   "text": "Centralized industry leaders in the freelancer market, including Upwork, Amazon, and Fiverr, charge up to 40 percent in transaction fees.",
+   "abstract": "Centralized industry leaders in the freelancer market, including Upwork, Amazon, and Fiverr charge up to 40% in transaction fees.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "centralized freelance marketplaces as of 2018"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782210-009",
+   "identifier": "kaal:claim:3782210-009",
+   "text": "Charging transaction fees or imposing KYC identity protocols does not solve the sockpuppet problem: such defenses push the cost of defending the network onto users, and the defense cost equals what it is worth to break the defense while being multiplied across every transaction with every member.",
+   "abstract": "This doesn't help. Such defenses push the cost of defending the network onto the users. The cost to defend it is exactly as much as it is worth to break the defense, except it's multiplied on every transaction with every member in the system.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, The Importance of Reputation for the Evolution of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782210",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "defenses that tax ordinary transactions",
+    "attacker gain from faked reputation exceeds the cost of faking it"
+   ],
+   "source_pdf_sha256": "9cc531ab239f6266c8aeddcc8e54f4c06029c44e825444bee137bbcc0c9d0a8e",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'transaction-fees'. Derived node: a roster, not an adjudicated definition."
+}

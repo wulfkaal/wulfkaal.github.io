@@ -1,0 +1,120 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-inflation",
+ "identifier": "kaal:entity:reputation-inflation",
+ "name": "Reputation inflation",
+ "termCode": "reputation-inflation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-inflation.md",
+ "sha256": "fa00e88ec457d4f623f251a5586bc3b3c289e80efb1255d45c7f1af4e55d73b9",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3266953-033",
+   "identifier": "kaal:claim:3266953-033",
+   "text": "Sockpuppet accounts grow their reputation value much faster than honest users can in a Web of Trust, because sockpuppets validate each other, and the system is therefore flawed and should not be used where fungible currency is at stake.",
+   "abstract": "However, sockpuppet accounts can grow their value much quicker in the web of trust by validating each other. Honest users are much slower than the sockpuppets validating each other. Hence, the system is flawed.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Gopinath Sivalingam, Reputation Protocol for the Internet of Trust - Conceptual Whitepaper (2018). SSRN: https://ssrn.com/abstract=3266953",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "web of trust style reputation used by many distributed ledger startups"
+   ],
+   "source_pdf_sha256": "781758dea356e55d79c73ad7f1debe7c83de398bd1cd9e0a9a6c2802f276b4c0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3799320-033",
+   "identifier": "kaal:claim:3799320-033",
+   "text": "Member reputation is inflationary by design, so non staking of reputation tokens or non voting leads to value depreciation, which incentivizes action and makes liveness faults less likely.",
+   "abstract": "reputation is inflationary in the DAO of DAOs design. As such, non-use, i.e., non-staking of reputation tokens or non-voting, would lead to value depreciation, which incentivizes action and thus value enhancement. Liveness faults become less likely.",
+   "citation": "Wulf A. Kaal, A Decentralized Autonomous Organization (DAO) of DAOs (2021). SSRN: https://ssrn.com/abstract=3799320",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation that depreciates with non-use"
+   ],
+   "source_pdf_sha256": "c3dff852f2d3f04718c829a24189309a7db4d92d84f6045d3d4f562d87c03e63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3981021-031",
+   "identifier": "kaal:claim:3981021-031",
+   "text": "The design decreases the likelihood of individual and, in turn, community liveness fault, because non use of existing reputation at the individual level leads to inflationary devaluation of that reputation.",
+   "abstract": "The design decreases the likelihood of individual and, in turn, community liveness fault because non-use of existing reputation on the individual level leads to inflationary devaluation.",
+   "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation systems with built in inflationary decay"
+   ],
+   "source_pdf_sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-028",
+   "identifier": "kaal:claim:5225296-028",
+   "text": "Sybil attack risk is amplified in reputation-driven systems relative to stake-based ones, because influence derives from behavioral metrics that an attacker can mimic across many pseudonymous identities.",
+   "abstract": "In reputation-driven systems, this threat is amplified as influence stems from behavioral metrics rather than stake, enabling attackers to mimic legitimate activity across numerous identities",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "reputation-driven consensus systems where influence stems from behavioral metrics"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-inflation'. Derived node: a roster, not an adjudicated definition."
+}

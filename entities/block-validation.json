@@ -1,0 +1,87 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/block-validation",
+ "identifier": "kaal:entity:block-validation",
+ "name": "Block validation",
+ "termCode": "block-validation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/block-validation.md",
+ "sha256": "867ee56bed0589d6158cc11acf4b0cc5f7a5c0da90234368587883c05e514b42",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125822-033",
+   "identifier": "kaal:claim:3125822-033",
+   "text": "In the proof of stake application, a block is accepted by the network only if it carries proof of success in a betting pool, and that stamp constitutes the entire cryptographic security of the chain at far lower energy cost than proof of work mining.",
+   "abstract": "Blocks will only be accepted by the network if they have proof of success in a betting pool. This stamp is the entire cryptographic security, which costs far less energy to achieve than proof-of- work token mining.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vlad Andrei, Blockchain Infrastructure for Measuring Domain Specific Reputation in Autonomous Decentralized and A (2018). SSRN: https://ssrn.com/abstract=3125822",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "applies to the proof of stake use case built on the platform"
+   ],
+   "source_pdf_sha256": "d4d0bbaa3260968226186131d60e6d64a53e904d94e4295c61fd17042f1191ef",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-025",
+   "identifier": "kaal:claim:3125827-025",
+   "text": "In SPoS, validators download the most recently upvoted validation algorithm and faithfully running it unedited automatically produces the winning vote, so honest validators are rewarded; this holds on the assumption that users controlling 51% of sem token power act honestly.",
+   "abstract": "Faithfully running this algorithm on the block will automatically choose the correct vote to win the validation pool, rewarding honest validators, assuming users with 51% of sem token power act honestly. Honesty is defined as faithfully running the algorithm, unedited.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "users holding 51% of sem token power act honestly",
+    "honesty defined as running the forum approved algorithm unedited"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'block-validation'. Derived node: a roster, not an adjudicated definition."
+}

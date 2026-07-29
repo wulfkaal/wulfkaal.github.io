@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/overfitting",
+ "identifier": "kaal:entity:overfitting",
+ "name": "Overfitting",
+ "termCode": "overfitting",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/overfitting.md",
+ "sha256": "727ca9347217063c19b89feb4feeb4d252149db5a75637442019b7e77e35f87d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2998033-021",
+   "identifier": "kaal:claim:2998033-021",
+   "text": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades.",
+   "abstract": "When data scientists use the same data set repetitively a risk exists that the training model will overfit the test set of data which can limit the performance of the applied model on a different dataset.",
+   "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to adaptive data analysis where the same data set is used repetitively"
+   ],
+   "source_pdf_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-009",
+   "identifier": "kaal:claim:3409548-009",
+   "text": "Repeated use of the same data set by data scientists creates an overfitting risk: the training model overfits the test set, which limits the performance of the applied model on a different dataset.",
+   "abstract": "When data scientists use the same data set repetitively a risk exists that the training model will overfit the test set of data, which can limit the performance of the applied model on a different dataset.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "data scientists reusing a single data set repetitively"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-010",
+   "identifier": "kaal:claim:3409548-010",
+   "text": "Requiring data scientists to stake a cryptocurrency on their own predictions is a workable remedy for overfitting, because the stake expresses confidence in live performance and lets the fund select the optimal model.",
+   "abstract": "The staking process, in turn, enables Numerai to choose the optimal model and in the process improve the performance of its hedge fund.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "crowdsourced modeling competition with a stakeable token"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/4755632-003",
+   "identifier": "kaal:claim:4755632-003",
+   "text": "The move by AI developers toward smaller training datasets raises the risk of overfitting, especially with complex models, which forces LLM developers to rely on regularization to counteract overfitting of the model to the training data.",
+   "abstract": "However, with small datasets in LLMs, the risk of overfitting also rises, especially with complex models. Therefore, LLM developers have to turn to regularization in an effort to address overfitting of the model with the training data.",
+   "citation": "Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "holds for smaller datasets used in LLM development",
+    "risk increases with model complexity"
+   ],
+   "source_pdf_sha256": "972ccebf0c06ac1767a9e443bb95942b7670e806a63c25ee817c368a64c8eca8",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'overfitting'. Derived node: a roster, not an adjudicated definition."
+}

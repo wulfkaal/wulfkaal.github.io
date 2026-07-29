@@ -1,0 +1,84 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/storage",
+ "identifier": "kaal:entity:storage",
+ "name": "Storage",
+ "termCode": "storage",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/storage.md",
+ "sha256": "12863c448b46f7ecf39cff37059d72e71b5637c7546698d68c6a87a733f1f0c1",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782198-022",
+   "identifier": "kaal:claim:3782198-022",
+   "text": "Existing decentralized filesharing networks cannot guarantee the availability of unpopular files such as personal files, whereas centralized cloud services guarantee availability for a fee.",
+   "abstract": "One problem with most existing decentralized filesharing networks is that unpop- ular files (such as your personal files) are not guaranteed to be available, unlike cen- tralized cloud computing services which guarantee availability for a fee.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to filesharing networks without an incentive design for storing unpopular data"
+   ],
+   "source_pdf_sha256": "e7e1378e3eed06cace6534e7792a7307d607d18bc6beb4ac45896476280728e4",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3782216-003",
+   "identifier": "kaal:claim:3782216-003",
+   "text": "Blockchain transactions will always be expensive compared with other peer to peer transactions, because blockchain data must be stored eternally and redundantly on as many machines as possible to support decentralization.",
+   "abstract": "Blockchain transactions will always be expensive compared with other P9P trans- actions. Blockchain transactions are required to be stored eternally and redundantly on as many machines as possible to aid decentralization.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Decentralized Finance (DeFi) (2021). SSRN: https://ssrn.com/abstract=3782216",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "f1739743aa06bbc1641cd65da790d531b69d8628ea3f5cc3fcad1bf5a1242373",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'storage'. Derived node: a roster, not an adjudicated definition."
+}

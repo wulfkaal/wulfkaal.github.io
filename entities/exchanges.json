@@ -1,0 +1,152 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/exchanges",
+ "identifier": "kaal:entity:exchanges",
+ "name": "Exchanges",
+ "termCode": "exchanges",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/exchanges.md",
+ "sha256": "d740ed1d0a7be950cf83119fdd364272214443215f548768555be3a584365087",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3396522-014",
+   "identifier": "kaal:claim:3396522-014",
+   "text": "Trading a token directly against a well established stable cryptocurrency removes several layers of conversion fees and eliminates the risk that the bridge currency depreciates during the sequence of trades.",
+   "abstract": "The use of stable cryptocurrencies, if traded in pairs with the cryptocurrency in question, allows investors to remove several levels of conversion fees and removes the risk of depreciation of the bridge currency during the trades.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522",
+   "datePublished": "2019",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "requires the stable cryptocurrency to be traded in pairs with the token in question"
+   ],
+   "source_pdf_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-004",
+   "identifier": "kaal:claim:3936876-004",
+   "text": "The majority of digital asset custody providers and digital asset exchanges require customers to surrender ownership of their digital assets as a precondition for access and trading.",
+   "abstract": "The majority of digital asset custody providers and digital asset exchanges are requiring customers to surrender digital asset ownership in order to get access and trade.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-012",
+   "identifier": "kaal:claim:3936876-012",
+   "text": "Cryptocurrency exchanges store digital assets or private keys in internet connected hot storage because their main function is to provide liquidity rather than custody, unlike registered legacy stock exchanges which facilitate trading without taking custody.",
+   "abstract": "Because the main function of digital asset exchanges is to provide liquidity – not to provide custody - cryptocurrency exchanges typically store digital assets or private keys in hot storage, that is in wallets that are connected to the Internet.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "centralized cryptocurrency exchanges"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-016",
+   "identifier": "kaal:claim:3936876-016",
+   "text": "As of 2017, 73 percent of digital asset exchanges took custody of their users' private keys while only 23 percent let users maintain control over their own keys.",
+   "abstract": "As of 2017, 73 percent of digital asset exchanges took custody of private keys while 23 percent let users maintain control over their keys.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "global exchange survey data as of 2017"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-017",
+   "identifier": "kaal:claim:3936876-017",
+   "text": "Custodial exchanges are largely unprepared for breach: only 53 percent of small custodial exchanges and 78 percent of large custodial exchanges have a written policy setting out what happens to customer funds if a security breach causes loss.",
+   "abstract": "Just 53% of small custodial exchanges and 78% of large custodial exchanges have a written policy outlining what happens to customer funds in the event of a security breach resulting in the loss of customer funds.",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "custodial cryptocurrency exchanges surveyed in the 2017 benchmarking study"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3936876-035",
+   "identifier": "kaal:claim:3936876-035",
+   "text": "Becoming an OCC regulated trust is one route by which crypto exchanges can operate nationwide without securing state level licenses in each of the 49 states that require one.",
+   "abstract": "Becoming an OCC-regulated trust is one way crypto exchanges can operate nationwide without needing to secure state-level licenses in each of the 49 different U.S. states (Montana doesn't have a licensing requirement).",
+   "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States, national trust charter route"
+   ],
+   "source_pdf_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
+   "status": "current"
+  }
+ ],
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'exchanges'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,85 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/stake-grinding",
+ "identifier": "kaal:entity:stake-grinding",
+ "name": "Stake grinding",
+ "termCode": "stake-grinding",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/stake-grinding.md",
+ "sha256": "c8ad3d057d5c29b7619c82239722b182b6ec324e10671715e761adeb50b312a3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2025"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-017",
+   "identifier": "kaal:claim:3125827-017",
+   "text": "SPoS makes stake grinding impossible by deriving the pseudo random seed from a hash of the alphabetized join of the symmetric keys all validators submit during vote revealing; the protocol holds even if only a single validator is not colluding.",
+   "abstract": "in SPoS the seed used is a hash of the joined alphabetized symmetric keys that were submitted by all validators during the vote revealing process. This protocol completely prevents stake grinding even if only one validator is not colluding.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "commit and reveal voting where symmetric keys are published after the window closes",
+    "at least one non colluding validator"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-014",
+   "identifier": "kaal:claim:5225296-014",
+   "text": "Stake-grinding, where validators manipulate randomness to favor their own selection, is countered in SPoS by reputation staking combined with community oversight.",
+   "abstract": "Stake-grinding, where validators manipulate randomness to favor themselves, is countered by reputation staking and community oversight, ensuring consensus integrity",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'stake-grinding'. Derived node: a roster, not an adjudicated definition."
+}

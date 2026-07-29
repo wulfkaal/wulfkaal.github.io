@@ -1,0 +1,300 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/aum-threshold",
+ "identifier": "kaal:entity:aum-threshold",
+ "name": "Aum threshold",
+ "termCode": "aum-threshold",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/aum-threshold.md",
+ "sha256": "79f13800da9bcf4aa73c7c6542dc339f7c7680289c53d8bfa2d7f0abaa4bee7c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 14
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2014",
+    "2016"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-003",
+   "identifier": "kaal:claim:2389416-003",
+   "text": "The hedge fund adviser registration requirement under the Dodd-Frank Act creates a discontinuity in hedge fund returns at the registration effective date of March 30, 2012.",
+   "abstract": "The registration requirement for hedge fund advisers under the Dodd-Frank Act creates a discontinuity in hedge fund returns at the registration effective date, March 30, 2012.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "threshold of $150 million assets under management",
+    "registration effective date March 30, 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-004",
+   "identifier": "kaal:claim:2389416-004",
+   "text": "Strategic behavior by fund advisers around the assets under management registration threshold produces a strong increase in the measured discontinuity at that threshold.",
+   "abstract": "Strategic actions by fund advisers lead to a strong increase in the discontinuity around the AUM registration threshold.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers whose AUM floats above and below $150 million",
+    "months May through August 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-013",
+   "identifier": "kaal:claim:2389416-013",
+   "text": "Only about a fifth of the sample funds exceed the $150 million AUM registration threshold: roughly 79 percent of the 2,145 funds are below it, 17 percent are consistently above it, and 4 percent float across it.",
+   "abstract": "About 79% of the entire sample of 2145 hedge funds consists of funds with AUM smaller than $150 million. Only 17% represents the \"Large\" subsample and 4% the \"Strategic\" subsample.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sample period January to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-014",
+   "identifier": "kaal:claim:2389416-014",
+   "text": "Most of the 87 strategic funds keep their AUM very close to the $150 million disclosure threshold, oscillating around it rather than moving decisively above or below it.",
+   "abstract": "We notice that only few hedge funds sensibly decrease or increase their AUM under or above the threshold and then keep such position. Most funds in the sample have AUM very close to the threshold, with oscillations around it.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "strategic subsample of 87 funds",
+    "January to October 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-018",
+   "identifier": "kaal:claim:2389416-018",
+   "text": "Adding a dummy for AUM above $150 million to the linear regressions leaves no variable significant at the 5 percent level in March 2012, and the dummy is significant only in April 2012.",
+   "abstract": "We notice that in March 2012, no variable is statistically significant at 5% significance level while in April 2012, the dummy variable is statistically significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample of 2145 funds",
+    "linear model with AUM threshold dummy"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-033",
+   "identifier": "kaal:claim:2389416-033",
+   "text": "Difference-in-differences analysis confirms the regression discontinuity results, showing a positive and highly significant treatment coefficient for funds above the $150 million AUM threshold.",
+   "abstract": "Our DiD analysis confirms the results of our RD design. Table 9 shows the dummy variable that identifies the treatment with a positive coefficient that is highly significant.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "4290 observations",
+    "treatment defined as AUM above $150 million after March 2012"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389416-039",
+   "identifier": "kaal:claim:2389416-039",
+   "text": "The mandatory registration requirement of the Dodd-Frank Act affects the hedge fund industry asymmetrically, with advisers whose AUM floats around the $150 million threshold showing evidence of strategic AUM reduction.",
+   "abstract": "Our regression analysis also suggests that the mandatory registration requirement imposed by the Dodd-Frank Act affects the hedge fund industry asymmetrically.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "advisers with AUM near the $150 million threshold"
+   ],
+   "source_pdf_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-004",
+   "identifier": "kaal:claim:2389423-004",
+   "text": "Before Title IV, launching a hedge fund could be accomplished by raising roughly $25 to $50 million, whereas after the Dodd-Frank Act the required initial amount may have risen to around $100 million.",
+   "abstract": "Setting up a hedge fund before the enactment of Title IV could be accomplished by raising around $25-50 million. After the enactment of the Dodd-Frank Act, this number may have increased to around $100 million.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "hedge fund startups",
+    "comparison of pre and post Dodd-Frank Act market entry"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-005",
+   "identifier": "kaal:claim:2389423-005",
+   "text": "Below $100 million in initial assets under management, the administrative cost of running a hedge fund in a post Dodd-Frank environment could be prohibitive.",
+   "abstract": "Below $100 million in initial assets under management (AUM), the administrative cost of running a hedge fund in a post Dodd-Frank environment could be prohibitive (Kaal [2013]).",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "condition",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "hedge fund advisers with initial AUM below $100 million",
+    "post Dodd-Frank regulatory environment"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2389423-028",
+   "identifier": "kaal:claim:2389423-028",
+   "text": "The clear majority of respondents prefer an asset size above the $150 million AUM registration threshold after the enactment of Title IV, indicating that advisers respond to the threshold by growing past it rather than staying below it.",
+   "abstract": "The clear majority of respondents prefer an assets size above the registration threshold of $150 million AUM.",
+   "citation": "Wulf A. Kaal, The Impact of Dodd-Frank Act Compliance Cost on the Hedge Fund Industry (2014). SSRN: https://ssrn.com/abstract=2389423",
+   "datePublished": "2014",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "survey responses on preferred asset size after Title IV enactment"
+   ],
+   "source_pdf_sha256": "6b95323abbaffd00a012589531859f2938ab8b372d0243171059ff82e55a0838",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-012",
+   "identifier": "kaal:claim:2816408-012",
+   "text": "Title IV exempts private fund advisers with less than $150 million assets under management from registration, and requires the SEC to weigh investment strategy, size, and governance in determining the systemic risk of private funds.",
+   "abstract": "Title IV of the Dodd-Frank Act exempts private fund advisers with less than $150 million AUM from registration (Dodd-Frank Act § 408) and requires the SEC to examine factors including the investment strategy, size, and governance of an investment adviser",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States",
+    "Dodd-Frank Act section 408"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-023",
+   "identifier": "kaal:claim:2816408-023",
+   "text": "In regressions including a dummy for AUM above $150 million, the dummy is statistically significant and positive only in April and September 2012, and the explanatory power of the models measured by R-squared remains very limited.",
+   "abstract": "The dummy variables are statistically significant and positive in April and September 2012. The F-statistics support the validity of the models, while the explanatory power, measured by the R- squared is still very limited.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "linear models with dummy, December 2011 to December 2012",
+    "Table 5 results"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-024",
+   "identifier": "kaal:claim:2816408-024",
+   "text": "Around the registration effective date, whether a fund's AUM sits above or below the $150 million regulatory threshold does not play a significant role in explaining hedge fund returns for the entire sample.",
+   "abstract": "close to the registration effective date for hedge fund advisers under the Dodd-Frank Act, the size of AUM, above or below the regulatory threshold of $150 million, does not play a significant role in explaining hedge fund returns of the entire sample.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "entire sample of 3,424 funds",
+    "months surrounding March 30, 2012"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2816408-025",
+   "identifier": "kaal:claim:2816408-025",
+   "text": "About 73% of the sample of 3,424 hedge funds consists of funds with AUM larger than $150 million, and only 26% falls into the smaller subsample.",
+   "abstract": "About 73% of the entire sample of 3,424 hedge funds consists of funds with AUM larger than $150 million. Only 26% represents the smaller subsample.",
+   "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  – Evidence from 2010 – 2015 (2016). SSRN: https://ssrn.com/abstract=2816408",
+   "datePublished": "2016",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Morningstar sample, January to December 2012"
+   ],
+   "source_pdf_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
+   "status": "current"
+  }
+ ],
+ "description": "14 claims in the published works of Wulf A. Kaal carry the concept tag 'aum-threshold'. Derived node: a roster, not an adjudicated definition."
+}

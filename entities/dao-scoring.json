@@ -1,0 +1,172 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/dao-scoring",
+ "identifier": "kaal:entity:dao-scoring",
+ "name": "Dao scoring",
+ "termCode": "dao-scoring",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/dao-scoring.md",
+ "sha256": "1101a8529029a943d7dad42f6087da9abdfb0f04233785b70f8c299e9c5908fa",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2024",
+    "2024"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-010",
+   "identifier": "kaal:claim:5254152-010",
+   "text": "The study evaluates each DAO on six factors: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "abstract": "provides an analysis of six major factors of each individual DAO and scores them on their performance in each category. The six factors considered are: Decentralization, Work to Earn, Attack Resistance, Regulatory Compliance, Governance, and Organizational Communication.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the paper's dataset of 50 DAOs selected by treasury asset size"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-011",
+   "identifier": "kaal:claim:5254152-011",
+   "text": "Each DAO in the dataset was scored from zero to ten on each factor by analyzing teams, using only publicly available information and the organization's whitepaper where one existed.",
+   "abstract": "Each DAO was given a score between zero (0) and ten (10) by the analyzing teams based on publicly available information and the organization's whitepaper, if it has one.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "scores derived from public sources only",
+    "no access to internal DAO data"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-012",
+   "identifier": "kaal:claim:5254152-012",
+   "text": "A decentralization score of 10 is stipulated to mean a fully decentralized organization with anonymous participation, minimal barriers to entry, and well distributed power; lower scores indicate concentration of power.",
+   "abstract": "A score of 10 suggests a fully decentralized organization with anonymous participation, minimal barriers to entry, and well-distributed power.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the paper's six factor scoring metric"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-017",
+   "identifier": "kaal:claim:5254152-017",
+   "text": "The author concedes that the scoring metric is imperfect and that some scored attributes may have changed by the time of publication, presenting it instead as a structured approach to evaluating what drives DAO success or failure.",
+   "abstract": "scoring system is perfect, and that some attributes may have changed by the time of publication, this metric aims to provide a structured approach to evaluating the key characteristics that contribute to the success or failure of decentralized organizations.",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the scores are point in time assessments"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-027",
+   "identifier": "kaal:claim:5254152-027",
+   "text": "Requiring users to purchase governance tokens in order to vote both centralizes power in majority token holders and leaves the DAO highly vulnerable to 51 percent and sock puppet attacks, as illustrated by Gelato DAO which scored 1 on both decentralization and attack resistance.",
+   "abstract": "It is highly centralized as users must purchase governance tokens to vote, limiting power to majority token holders (D: 1). The platform is highly vulnerable to 51% and sock puppet attacks due to the purchasable governance tokens (A: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs where voting requires purchasing fungible governance tokens"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-029",
+   "identifier": "kaal:claim:5254152-029",
+   "text": "A DAO that offers no paid work opportunities for participants stifles engagement, as scored for Hop DAO with a Work to Earn score of 1.",
+   "abstract": "The DAO does not offer paid work opportunities for participants, stifling engagement (W: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs with no compensated contribution channel"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5254152-040",
+   "identifier": "kaal:claim:5254152-040",
+   "text": "The absence of a dedicated discussion platform, combined with poor engagement on third party accounts, hinders meaningful discussion and collaboration within a DAO, as scored for BrainDAO with an organizational communication score of 1 despite high decentralization and attack resistance scores.",
+   "abstract": "The absence of a dedicated discussion platform and poor engagement on third-party accounts hinder meaningful discussions and collaboration (O: 1).",
+   "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152",
+   "datePublished": "2024",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "DAOs communicating only through external social platforms"
+   ],
+   "source_pdf_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'dao-scoring'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,173 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/consensus-protocols",
+ "identifier": "kaal:entity:consensus-protocols",
+ "name": "Consensus protocols",
+ "termCode": "consensus-protocols",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/consensus-protocols.md",
+ "sha256": "2ee5cb3cf8e4fcc1bedf7d666f6461b3e2f0c71a1557874a7b58937b48be309c",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2018"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-001",
+   "identifier": "kaal:claim:3125827-001",
+   "text": "No single, fixed, entirely algorithmic policing solution can completely prevent independent nodes in a distributed system from gaming block production to advantage some parties over others. Any consensus protocol that relies on a permanently fixed rule set will therefore be gamed as conditions change.",
+   "abstract": "In fact it is obvious there can be no single, fixed, entirely algorithmic policing solution which completely prevents independent nodes in a distributed system from gaming the system by producing blocks with transactions that advantage some parties over others1.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "distributed systems with independent, self interested nodes",
+    "protocols that are fixed rather than continually revisable"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-002",
+   "identifier": "kaal:claim:3125827-002",
+   "text": "A successful proof of stake protocol must be flexible enough to continually police new attack strategies, because changing market forces and network performance keep creating new opportunities to profit at the expense of the majority.",
+   "abstract": "Therefore a successful PoS protocol must be flexible enough to continually police new attack strategies.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "changing market and network conditions",
+    "adversaries who adapt their strategies over time"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3227967-036",
+   "identifier": "kaal:claim:3227967-036",
+   "text": "The real design challenge for consensus protocols is to find a proof of stake protocol that offers both trust and security without unintentionally creating just another centralized validation system.",
+   "abstract": "The students understood that the real challenge is to find a \"proof of stake\" protocol that offers both trust and security (without unintentionally creating just another centralized validation system).",
+   "citation": "Mark Fenwick, Wulf A. Kaal, Erik P.M. Vermeulen, Legal Education in a Digital Age Why 'Coding for Lawyers' Matters (2018). SSRN: https://ssrn.com/abstract=3227967",
+   "datePublished": "2018",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "blockchain consensus protocol design"
+   ],
+   "source_pdf_sha256": "f6e13b956f864ab32ec3305d095a35a127770327d75b3688f785cefc437d369f",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-038",
+   "identifier": "kaal:claim:3249860-038",
+   "text": "Proof of Work remains the most popular consensus protocol type among the top 100 tokens, and the Other category alone comprises thirty-four tokens.",
+   "abstract": "Figure 9a shows that the \"Other\" consensus protocol type, made up of thirty-four tokens.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "N=100 dataset; consensus time series n=97"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-039",
+   "identifier": "kaal:claim:3249860-039",
+   "text": "Attempts to increase throughput and scale in consensus protocols concentrate on proof of stake, and the data are consistent with anecdotal evidence that proof of stake may be the most dominant attempt at scaling.",
+   "abstract": "Attempts to increase throughput and scale for consensus protocols often focus on proof of stake attempts. The data is consistent with anecdotal evidence that suggests that proof of stake may be the most dominant attempt at scaling.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "top 100 tokens by market capitalization"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-040",
+   "identifier": "kaal:claim:3249860-040",
+   "text": "To date no blockchain coherently and comprehensively combines scale, security, and decentralization, the three objectives of the blockchain trilemma, although continued experimentation with consensus algorithms can help overcome it over time.",
+   "abstract": "To date, no blockchain truly combines these three objectives coherently and comprehensively. Experimentation with different consensus algorithms can, over time, help overcome the blockchain trilemma.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "as of the study's 2018 data"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3249860-041",
+   "identifier": "kaal:claim:3249860-041",
+   "text": "Tokens experimenting with alternative consensus protocols typically change the transfer process in an effort to become more efficient.",
+   "abstract": "Tokens experimenting with alternative consensus protocols often change the transfer process in an effort to become more efficient.",
+   "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "outlier consensus protocols among the top 100 tokens"
+   ],
+   "source_pdf_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'consensus-protocols'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,103 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/patch-size",
+ "identifier": "kaal:entity:patch-size",
+ "name": "Patch size",
+ "termCode": "patch-size",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/patch-size.md",
+ "sha256": "f5f92bc99f84decd2204b8491d93fd090a40fa975e28a83d899e380a2ffc889d",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 1
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2021"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-002",
+   "identifier": "kaal:claim:3995709-002",
+   "text": "The benefit of a code review is negatively correlated with the size of the code under review: the larger the number of files in a single review, the lower the rate of beneficial feedback from reviewers.",
+   "abstract": "Therefore, the benefit of attaining a code review is negatively correlated with the size of the code under review. In particular, the larger the amount of files in a single review, the lower the rate of beneficial feedback from the reviewers.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "single review submissions of increasing size"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-003",
+   "identifier": "kaal:claim:3995709-003",
+   "text": "Patch size degrades multiple dimensions of code review performance at once: comment density per reviewer falls as patches grow, the quality and amount of contribution is affected, and the time required to provide significant contributions increases.",
+   "abstract": "found that comment density by reviewer decreases as patches increased. 18 Accordingly, the quality and amount of contribution is affected by patch size.19 And, patch size increases the time required to provide significant contributions.20",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "studies measuring comment density against lines of code"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3995709-005",
+   "identifier": "kaal:claim:3995709-005",
+   "text": "Proposed remedies for patch size, namely distributing the workload across a broader set of reviewers and providing better transparency on developer review queues, have not solved the problem; patch size remains an issue affecting the quality, speed, and effectiveness of modern code review.",
+   "abstract": "However, despite the proposed solutions, many commentators recognize that patch size remains to be an issue for modern code review affecting the quality, speed, and effectiveness of the process.",
+   "citation": "Wulf A. Kaal, How DAOs Optimize Open-Source Code Reviews and Create Open-Source Standards (2021). SSRN: https://ssrn.com/abstract=3995709",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "existing remedies deployed within legacy review processes"
+   ],
+   "source_pdf_sha256": "6d77dbfb15ee86080bfde0b98089180cabafeb6defdf0f05eaaeb3cb99871e89",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'patch-size'. Derived node: a roster, not an adjudicated definition."
+}

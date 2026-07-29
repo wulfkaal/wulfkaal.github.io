@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/forks",
+ "identifier": "kaal:entity:forks",
+ "name": "Forks",
+ "termCode": "forks",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/forks.md",
+ "sha256": "381747ce2a685234c48f220737f1646f1002f5d32b1a16ab84cfdc061267181b",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2020"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-026",
+   "identifier": "kaal:claim:3125827-026",
+   "text": "Forcing validation pools to close in finite time, which practical demand for swift resolution requires, opens the possibility of network partition and of a lack of genuine consensus, and therefore of forks. Complete finality would require unbounded validation time.",
+   "abstract": "By forcing validation pools to end in finite time, we open the possibility of network partition and lack of genuine consensus which opens the possibility of forks,",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "validation windows bounded to seconds for practical liveness"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-028",
+   "identifier": "kaal:claim:3125827-028",
+   "text": "When a fork skips valid blocks, fees previously distributed to the bench from those blocks lose their valid histories and ownership reverts to the transaction authors, which creates a direct disincentive for validators to endorse such forks.",
+   "abstract": "skipped blocks will no longer have valid histories in those skipped blocks, and so the fees' ownership will automatically revert to the authors of the transactions contained in the skipped blocks. This creates a disincentive for validating such forks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a producer points to a block earlier than the previous time slot",
+    "skipped blocks become orphans"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3125827-031",
+   "identifier": "kaal:claim:3125827-031",
+   "text": "Running the reputation platform on the very blockchain it validates destabilizes the system because it increases the likelihood of forks: every validation pool result is itself a transaction that must be included in a future block requiring its own validation, without end. The authors judge this destabilization non catastrophic for most imagined uses.",
+   "abstract": "But this self-referential architecture destabilizes the system as it increases the likelihood of forks.",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "datePublished": "2018",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "platform DApp hosted on the same chain it validates"
+   ],
+   "source_pdf_sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3652481-018",
+   "identifier": "kaal:claim:3652481-018",
+   "text": "Bifurcation of nodes in a decentralized network through forking can cause significant economic loss, errors, confusion and bugs, including reemergence of the double spend problem that the pre fork network had already solved.",
+   "abstract": "The bifurcation of nodes in a given decentralized network can lead to significant economic loss, errors, confusion, and bugs. For example, the bifurcation of network nodes can result in the reemergence of the double spend problem that the previous network had overcome.",
+   "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations – Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481",
+   "datePublished": "2020",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "a chain fork splits nodes across incompatible protocol versions"
+   ],
+   "source_pdf_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'forks'. Derived node: a roster, not an adjudicated definition."
+}

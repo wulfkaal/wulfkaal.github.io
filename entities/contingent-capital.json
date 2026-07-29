@@ -1,0 +1,1600 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/contingent-capital",
+ "identifier": "kaal:entity:contingent-capital",
+ "name": "Contingent capital",
+ "termCode": "contingent-capital",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0000-0003-0757-275X"
+ },
+ "dateModified": "2026-07-29",
+ "canonicalForm": "https://wulfkaal.github.io/entities/contingent-capital.md",
+ "sha256": "4e1dec14e23d83ede6bdc99725828c54ad1111225516a7ea1ec213d531462022",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 91
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 6
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2011",
+    "2017"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-001",
+   "identifier": "kaal:claim:1908473-001",
+   "text": "Contingent capital is defined as the predefined conversion of a financial institution's debt securities into equity securities upon a triggering event, and this stipulated definition governs the whole analysis.",
+   "abstract": "Contingent capital is the predefined conversion of financial institutions' debt securities upon a triggering event into equity securities.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-002",
+   "identifier": "kaal:claim:1908473-002",
+   "text": "Contrary to proposals that would replace Chapter 11 with contingent capital, the authors argue Chapter 11 needs no replacement; contingent capital should instead stabilize large financial firms for which Chapter 11 reorganization is not ideal or not legally available.",
+   "abstract": "we do not suggest that Chapter 11 needs replacement. Rather, contingent capital can help stabilize large financial firms for which a Chapter 11 reorganization is not the ideal solution or not an option.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Applies to banks and other financial institutions ineligible for or poorly served by Chapter 11",
+    "Particularly relevant from the European perspective"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-003",
+   "identifier": "kaal:claim:1908473-003",
+   "text": "If conversion of contingent capital securities is triggered too early, before a real financial need for an equity injection exists, the expected financial impact of that injection may dissipate.",
+   "abstract": "If conversion of CCS from debt into equity is triggered too early without a real financial need for an equity capital injection and additional voting shareholders, the expected financial impact of the equity capital injection may dissipate.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Trigger fires absent genuine need for equity capital and additional voting shareholders"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-004",
+   "identifier": "kaal:claim:1908473-004",
+   "text": "If conversion from debt to equity is triggered too late, the institution may already be in the resolution stage, and conversion at that point may not supply enough equity to produce the intended financial improvement.",
+   "abstract": "On the other hand, if conversion from debt to equity is triggered too late, the financial institution may already be in the resolution stage, and conversion at that stage may not supply the company with sufficient equity to facilitate the desired financial improvement.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Institution has already entered the resolution stage when conversion occurs"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-005",
+   "identifier": "kaal:claim:1908473-005",
+   "text": "Because policymakers may adopt a suboptimal single trigger design, and because contingent capital has uses at several points in a firm's life cycle, contingent capital securities should be built with sequential triggers rather than one.",
+   "abstract": "Given the risk that policymakers could structure contingent capital rules with a suboptimal trigger design combined with the multiple benefits of using contingent capital in different phases of a company's life cycle, this Article suggests a sequential trigger design for CCS.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Assumes mandatory issuance of contingent capital securities"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-008",
+   "identifier": "kaal:claim:1908473-008",
+   "text": "The first trigger should be based on a threshold in market value rather than accounting measures, because a market value trigger avoids total reliance on accounting methods that are open to manipulation.",
+   "abstract": "The core argument for this design feature is that it helps avoid total reliance on accounting methods that could otherwise be subject to manipulation.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The authors decline to take a general position in the first trigger debate"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-009",
+   "identifier": "kaal:claim:1908473-009",
+   "text": "The volume of contingent capital issuance should be large enough that conversion produces sufficient dilution, and the trigger timeframe should be roughly ninety days.",
+   "abstract": "The volume of CCS issuance should probably be large enough to result in sufficient dilution upon conversion,47 and the timeframe for the trigger should probably be around ninety days.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Stated as a probable rather than settled design choice"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-016",
+   "identifier": "kaal:claim:1908473-016",
+   "text": "By internalizing the costs of bank failure, contingent capital can reduce moral hazard, and because a contingent debt security with a conversion trigger would presumably not default, it helps avoid contagion and systemic spillovers.",
+   "abstract": "By internalizing bank failure costs, contingent capital may contribute to minimizing moral hazard. A contingent debt security with a conversion trigger would presumably not default and could thus help avoid contagion and systemic spillover effects, which in turn may limit systemic risk.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Assumes the conversion trigger operates as designed"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-017",
+   "identifier": "kaal:claim:1908473-017",
+   "text": "Contingent capital securities are likely to be more efficient than raising capital requirements, because the capital arrives only when it is needed.",
+   "abstract": "CCS will likely be more efficient than raising capital requirements because the capital arrives only when it is needed.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-018",
+   "identifier": "kaal:claim:1908473-018",
+   "text": "The threat of loss on conversion and the implicit dilution of existing stock holdings reduce shareholders' incentive to press management for higher risk in pursuit of higher returns.",
+   "abstract": "The threat of loss due to conversion of CCS and the implicit dilution of stock holdings could reduce incentives for shareholders to encourage management to take higher risks for higher returns.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1908473-021",
+   "identifier": "kaal:claim:1908473-021",
+   "text": "Without a degree of international convergence in contingent capital rules, regulatory arbitrage could undermine the establishment of contingent capital as an integral part of financial markets.",
+   "abstract": "Without a certain level of convergence in contingent capital rules,105 regulatory arbitrage could have an adverse effect on establishing contingent capital as an integral part of financial markets.",
+   "citation": "Wulf A. Kaal, Christoph Henkel, Contingent Capital with Sequential Triggers (2011). SSRN: https://ssrn.com/abstract=1908473",
+   "datePublished": "2011",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Assumes jurisdictions legislate contingent capital independently of one another"
+   ],
+   "source_pdf_sha256": "9d578dac663357529edd1f6453fcfe69bdc59ac882408d9edfde5a4c2916befa",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-004",
+   "identifier": "kaal:claim:1998455-004",
+   "text": "Because both European regulatory initiatives and the United States academic debate concentrate on the technical design features of contingent capital securities, the possible corporate governance applications of those securities are mostly ignored.",
+   "abstract": "Regulatory initiatives in Europe and the academic debate in the United States focus on improving the technical design fea- tures of contingent capital securities. Given the importance of technical design features, possible applications of CCS for corpo- rate governance are mostly ignored.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "state of the debate as of 2012 in Europe and the United States"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-005",
+   "identifier": "kaal:claim:1998455-005",
+   "text": "Combined with other corporate governance mechanisms, contingent capital securities function as an internal, institution specific mechanism that could fill the void left by regulators' apparent inability to supervise financial institutions effectively.",
+   "abstract": "Com- bined with other corporate governance mechanisms, CCSs, as an internal institution-specific mechanism, could help fill a void left by regulators' seeming inability to supervise financial institutions effectively.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where CCS are used alongside, not instead of, other corporate governance mechanisms"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-007",
+   "identifier": "kaal:claim:1998455-007",
+   "text": "For purposes of this Article contingent capital is stipulated to be the predefined conversion of a certain percentage of a financial institution's debt securities into equity securities.",
+   "abstract": "For purposes of this Article, contingent capi- tal is the predefined conversion of a certain percentage of finan- cial institutions' debt securities into equity securities.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "stipulated definition used throughout the Article"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-008",
+   "identifier": "kaal:claim:1998455-008",
+   "text": "Contingent capital contributes to minimizing moral hazard by internalizing bank failure costs, that is, by placing those costs on the institution's own security holders rather than on the public.",
+   "abstract": "By inter- nalizing bank failure costs, contingent capital could contribute to minimizing moral hazard.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where the conversion feature actually shifts failure costs to CCS holders and shareholders"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-009",
+   "identifier": "kaal:claim:1998455-009",
+   "text": "Installing contingent capital can be more efficient than raising capital requirements, because the capital injection becomes available only when it is needed and only enough securities convert to recapitalize the firm.",
+   "abstract": "Installing contingent capital could be more efficient than raising capital requirements because the capital injection is available only when it is needed.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "assumes a functioning trigger that fires at the right time",
+    "assumes incremental or calibrated conversion"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-010",
+   "identifier": "kaal:claim:1998455-010",
+   "text": "The threat of dilution of stock holdings, combined with the threat of loss on conversion, reduces the pressure shareholders place on the management of systemically important financial institutions to take higher risks.",
+   "abstract": "The threat of dilution of stock holdings in combination with a threat of loss due to conversion could help reduce shareholder pressure on SIFI management to take higher risks.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where conversion dilutes existing common shareholders"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-011",
+   "identifier": "kaal:claim:1998455-011",
+   "text": "Trigger designs can be ranked by the certainty they give market participants: institution specific triggers presumably grant the most certainty, while regulatory trigger designs provide lower levels of certainty.",
+   "abstract": "While institution-specific triggers would presum- ably grant most certainty to market participants, regulatory trig- ger designs could provide lower levels of certainty.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparing institution specific triggers against regulatory or systemic triggers"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-012",
+   "identifier": "kaal:claim:1998455-012",
+   "text": "Converting contingent capital securities prematurely, while the institution can still operate without an equity injection, dissipates the benefit: the injection is no longer available at the later moment when the institution cannot obtain other funding.",
+   "abstract": "Converting CCS into equity prematurely at a time when the financial institutions can still operate without an equity capi- tal injection could mean that the CCS capital injection would no longer be available when the financial institution will be unable to obtain other funding.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the trigger fires before the institution has exhausted other funding sources"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-013",
+   "identifier": "kaal:claim:1998455-013",
+   "text": "Converting contingent capital securities too late makes the capital injection superfluous, because by that stage the institution may face unresolvable difficulties that a capital injection can only marginally soften, and conversion may not suffice once the institution has entered resolution.",
+   "abstract": "On the other hand, converting CCS too late could make the capital injection superfluous. At that stage, the financial institu- tion may have experienced unresolvable financial difficulties that may only marginally be softened with a capital injection.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the trigger fires after the institution's difficulties have become unresolvable",
+    "especially once the institution has entered the resolution stage"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-014",
+   "identifier": "kaal:claim:1998455-014",
+   "text": "Contingent capital by itself, without additional measures and supplemental corporate governance improvements, may not prevent firm failure; its real potential unfolds only when it supplements other corporate governance improvements.",
+   "abstract": "In sum, contingent capital without additional measures and supplemental corporate governance improvements may not pre- vent firm failure.115 The real potential of contingent capital could unfold if it would be used to supplement other corporate govern- ance improvements.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where contingent capital is deployed as a standalone regulatory tool"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-015",
+   "identifier": "kaal:claim:1998455-015",
+   "text": "Divergent national definitions of Tier 1 capital produce a distortion: financial institutions in countries with stricter definitions that exclude contingent capital appear to hold less capital and thinner capital cushions than institutions in countries with broader definitions, and investors may read that appearance as a negative attribute.",
+   "abstract": "Financial institutions in countries that use stricter definitions on Tier 1 capital and do not recognize contin- gent capital as Tier 1 capital could appear to have less capital and thinner capital cushions than financial institutions in countries with broader definitions for Tier 1 capital.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "absent harmonized EU wide or international standards for Tier 1 capital"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-016",
+   "identifier": "kaal:claim:1998455-016",
+   "text": "If a market evolves in which contingent capital designs appear to provide sufficient protection against systemic risk and contagion, decision makers may come to rely on the design of those securities and neglect their own role as monitors.",
+   "abstract": "it seems theoretically possible that decision makers could rely on the design of CCS and neglect their role as monitors.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "speculative",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "theoretical possibility flagged by the author",
+    "presupposes CCS designs that appear protective"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-017",
+   "identifier": "kaal:claim:1998455-017",
+   "text": "Contingent capital rules could contribute to overriding the moral reasoning of decision makers, in which case contingent capital would actually increase, not reduce, risk incentives for institutions that are too big to fail.",
+   "abstract": "This could mean that contingent capital rules could actually contribute to overriding decision maker's moral reasoning. In that case, contingent capital could actually increase risk incentives for SI- FIs that are too big to fail.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where decision makers operate under an illusion of heightened protection",
+    "where the underlying contingent capital design is flawed"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-019",
+   "identifier": "kaal:claim:1998455-019",
+   "text": "Switching to contingent capital financing could reinforce rather than dampen risk incentives, and these distorted risk incentives are a drawback of contingent capital issuances.",
+   "abstract": "In effect, switching to CCS financing could reinforce risk in- centives and these distorted risk incentives could create draw- backs for CCS issuances.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where the issuing institution is already treated as too big to fail",
+    "the author notes these drawbacks are unlikely to materialize in the near term given the nascent market"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-022",
+   "identifier": "kaal:claim:1998455-022",
+   "text": "Absent cross holdings, the opposite conflict arises: institutions holding a competitor's converted contingent capital could be tempted to exercise their voting rights against the interests of that competitor.",
+   "abstract": "Without CCS cross holdings, SIFIs could be tempted to exercise their voting rights against the interests of the competitor if a con- version to equity should have been triggered.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where a SIFI holds a competitor's CCS without a reciprocal position",
+    "after a conversion to equity has been triggered"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-024",
+   "identifier": "kaal:claim:1998455-024",
+   "text": "The combination of demonstrated investor interest and an underdeveloped regulatory structure in the United States presents a unique opportunity to experiment with contingent capital designs and with their application to the corporate governance of systemically important financial institutions.",
+   "abstract": "The combination of investor interest and an underdeveloped regulatory structure in the United States, pertaining to this market segment, could present a unique opportunity to experiment with contingent capital designs and their possible application in corpo- rate governance of SIFIs.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States market conditions as of 2012",
+    "structurally different debt and equity markets from Europe"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-028",
+   "identifier": "kaal:claim:1998455-028",
+   "text": "Contingent capital securities approximate the characteristics of a quasi-public good: just as ships cannot readily be excluded from a lighthouse, systemically important institutions benefit from the issuance of contingent capital by other such institutions whenever the design minimizes systemic risk and contagion.",
+   "abstract": "CCS could have the potential to approximate quasi-public good characteristics. Similar to the difficulty of excluding ships from using the services of a lighthouse,219 SIFIs may benefit from the issuance of CCS by other SIFIs if the CCS design min- imizes systemic risk and contagion.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "only if the CCS design actually minimizes systemic risk and contagion"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-029",
+   "identifier": "kaal:claim:1998455-029",
+   "text": "The social welfare maximization potential of contingent capital securities is lower if their design features are left entirely to private ordering, because private parties do not necessarily structure those features with a view toward the common good, the avoidance of future bailouts, or the limitation of systemic risk and contagion.",
+   "abstract": "The social welfare maximization potential of CCS could be lower if the design features are entirely left to private ordering.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where regulators leave CCS design features entirely to industry groups and private parties"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-031",
+   "identifier": "kaal:claim:1998455-031",
+   "text": "Issuing contingent capital securities with a conversion feature is a way for a banking entity to signal to its market that it will adhere to stricter standards, ethical or otherwise.",
+   "abstract": "The issuance of contingent capital securities with a conver- sion feature could signal adherence to stricter standards.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where the market can observe and interpret the issuance as a commitment",
+    "the author notes the signaling effect of any particular issuance is difficult to ascertain"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-032",
+   "identifier": "kaal:claim:1998455-032",
+   "text": "A contingent capital design that increases voting rights on conversion allows systemically important institutions to lower risk taking implicitly and to achieve an indirect, institution specific form of corporate governance reform through increased checks and balances.",
+   "abstract": "With a design that increases voting rights, SI- FIs could implicitly lower risk-taking and allow for a form of in- direct and institution- specific corporate governance reform, i.e., increased checks and balances.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where CCS are issued with a voting rights increase upon conversion",
+    "issuance may be voluntary or mandatory"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-034",
+   "identifier": "kaal:claim:1998455-034",
+   "text": "Management incentives for risk control are heightened upon conversion, especially where management knows that holders of converted contingent capital would command a majority vote, with or without institutional shareholders.",
+   "abstract": "More importantly, management incen- tives for risk control could be heightened upon conversion, espe- cially if management knows that CCS holders would have a ma- jority vote upon conversion (with or without institutional shareholders).",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on the volume of CCS issuance, which determines the influence of CCS holders"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-036",
+   "identifier": "kaal:claim:1998455-036",
+   "text": "If central banks were to purchase contingent capital securities issued by systemically important institutions in the primary or secondary market as part of monetary policy, the prospect of internalizing bank failure costs would be undermined, and primary market purchases could also undermine market participants' confidence in these instruments.",
+   "abstract": "If the U.S. Federal Reserve Bank, the European Central Bank, and other central banks, as part of their monetary policy, were to purchase CCS issued by SIFIs in the primary or second- ary market, the prospect of internalizing bank failure costs could be undermined.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where central banks are permitted to purchase CCS issued by SIFIs"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/1998455-040",
+   "identifier": "kaal:claim:1998455-040",
+   "text": "Contingent capital can facilitate an incentive structure that lets regulators rely partially on private party contracting for the design of these securities while still accounting for systemic risk.",
+   "abstract": "Contingent capital could help fa- cilitate an incentive structure that allows regulators to rely par- tially on private party contracting for the design of CCS to ac- count for systemic risk.",
+   "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "where a general regulatory framework enables rather than displaces private ordering"
+   ],
+   "source_pdf_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-002",
+   "identifier": "kaal:claim:2061166-002",
+   "text": "The authors contend that the European Commission's goal of maximum harmonization through a global single rule book may not be achievable, and that a legal framework for private ordering of contingent capital is the more realistic route to an adequate level of convergence.",
+   "abstract": "The European Commission's objective of creating maximum harmonization through a global \"single rule book\"22 may not be feasible. However, setting up a legal framework for private ordering in the context of contingent capital23 could provide an adequate level of convergence",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "European Union bank resolution and restructuring regimes"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-003",
+   "identifier": "kaal:claim:2061166-003",
+   "text": "Contingent capital is stipulated as the predefined conversion of a financial institution's debt securities into equity securities, and on that definition it supplies an option for the efficient restructuring and resolution of failing financial institutions.",
+   "abstract": "Contingent capital is the predefined conversion of a financial institution's debt securities into equity securities.24 Contingent capital provides an option for the efficient restructuring and resolution of failing financial institutions.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-021",
+   "identifier": "kaal:claim:2061166-021",
+   "text": "Contingent capital supports general risk control and reduces moral hazard by holding shareholders responsible and internalizing the costs of bank failure rather than externalizing them onto taxpayers.",
+   "abstract": "Contingent capital may also support general risk control in financial institutions454 and may contribute to minimizing moral hazard by holding shareholders responsible and internalizing bank failure costs.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-022",
+   "identifier": "kaal:claim:2061166-022",
+   "text": "Because conversion carries a threat of loss and implicit dilution of stock holdings, contingent capital reduces shareholders' incentive to push management toward higher risk in pursuit of higher returns.",
+   "abstract": "Moreover, given the threat of loss due to conversion and the implicit dilution of stock holdings, contingent capital has the potential to reduce incentives for shareholders to encourage management to take higher risks for higher returns.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion terms that dilute existing equity holders"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-025",
+   "identifier": "kaal:claim:2061166-025",
+   "text": "Article 13 of the Swiss Banking Act, which authorizes boards of systemically important banks to issue mandatory convertible bonds subject to disclosure of the conversion triggering event and permits tranches with multiple triggers, could serve as a model for other European legislators and for the United States legislator.",
+   "abstract": "The Swiss approach in Article 13 could perhaps become a model for other European legislators and perhaps even the U.S. legislator.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "systemically important banks",
+    "issuance within the scope of the articles of incorporation with disclosed trigger events"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-026",
+   "identifier": "kaal:claim:2061166-026",
+   "text": "Enacting the proposed German Corporation Act amendments that would give contingent capital securities a statutory basis would require substantial changes across other areas of German law, and is unlikely to be achieved unless European Union law requires it and the standards are internationally recognized.",
+   "abstract": "Implementing the amendments would require substantial changes in other areas of German law.519 This may not be easily achieved unless required under European Union law and internationally recognized.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "proposed amendments to Sections 192, 194 and 221 of the German Corporation Act"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-027",
+   "identifier": "kaal:claim:2061166-027",
+   "text": "Efficient calibration of the triggering event is the central design problem for contingent capital, and the optimal design of a trigger that converts debt into equity remains unclear.",
+   "abstract": "The efficient calibration of triggering events is central to the design of contingent capital. The optimal design for a trigger event that converts debt into equity is unclear.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-028",
+   "identifier": "kaal:claim:2061166-028",
+   "text": "Mandating the issuance of contingent capital does not guarantee that a viable market in contingent capital securities will develop.",
+   "abstract": "Mandatory issuance of contingent capital does not guarantee that a viable market in contingent capital securities will develop.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "mandatory minimum issuance requirements imposed by regulators"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-029",
+   "identifier": "kaal:claim:2061166-029",
+   "text": "Building critical mass in the contingent capital securities market could require banks and other financial institutions to buy their competitors' contingent capital securities, which would raise ethical, antitrust and incentive concerns.",
+   "abstract": "Developing a critical mass for the market in contingent capital securities could require banks and other financial institutions to purchase their competitors' contingent capital securities.533 That could raise ethical, antitrust, and incentive concerns.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "where non-bank demand is insufficient to absorb issuance volumes"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-030",
+   "identifier": "kaal:claim:2061166-030",
+   "text": "The authors posit an inverse relationship between trigger uncertainty and market development: as the uncertainty generated by trigger designs increases, issuance volume of contingent capital securities falls, while the risk and the pre-conversion interest rate on those securities rises.",
+   "abstract": "Line 1 shows that, as the uncertainty generated by the trigger designs increases, the volume of CCS could decrease. Line 2 suggests that risk and the interest rates of CCS (before conversion) will increase with the level of uncertainty in the trigger design",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "speculative",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the interplay of trigger structure, uncertainty and market development has not been systematically studied"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-031",
+   "identifier": "kaal:claim:2061166-031",
+   "text": "A trigger that fires too early wastes the equity injection: conversion occurs without a real need for capital or additional voting shareholders, and the effect of the injection may have dissipated by the time it is actually needed.",
+   "abstract": "If conversion is triggered too early without a real need for an equity capital injection (and additional voting shareholders), the impact of the equity capital injection may have dissipated and may no longer be available when actually needed.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital converting on a trigger set too far from distress"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-032",
+   "identifier": "kaal:claim:2061166-032",
+   "text": "A trigger that fires too late is equally useless: by then the financial institution may already be in the resolution stage, and conversion at that point will not supply enough equity to turn the company around.",
+   "abstract": "If conversion from debt to equity is triggered too late, the financial institution may already be in the resolution stage and conversion at that stage would not supply the company with sufficient equity to turn the company around.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent capital converting only at or near the point of non-viability"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-033",
+   "identifier": "kaal:claim:2061166-033",
+   "text": "Dual trigger proposals draw their central strength from reliance on market prices, but the index leg is a major disadvantage because it can create incentives to manipulate the index or to force an entity into bankruptcy before conversion occurs.",
+   "abstract": "A central strength of the dual trigger proposals is their reliance on market prices. A major disadvantage is the index trigger, which could potentially create incentives to manipulate the index or to try to force an entity into bankruptcy.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dual trigger designs combining a firm stock price trigger with a financial institutions index trigger"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-034",
+   "identifier": "kaal:claim:2061166-034",
+   "text": "A second, sequential trigger placed before reorganization or resolution cushions the risk that policy makers misstructure the first trigger, absorbing the negative effects of inadequate or untimely conversion at the moment the institution needs capital.",
+   "abstract": "Given the risk that policy makers may not structure the trigger appropriately, the negative effects of inadequate or untimely conversion of debt into equity at a time when the company requires a capital injection could be cushioned with a second trigger",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent capital with sequential triggers spanning going and gone concern",
+    "where the first trigger proves unsuccessful"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-035",
+   "identifier": "kaal:claim:2061166-035",
+   "text": "Conversion of contingent capital securities from debt to equity should be timed to occur once problems are first detected but before the early intervention powers of regulatory authorities are triggered.",
+   "abstract": "Conversion of CCS from debt to equity should take place when problems are first detected but before early intervention powers of regulatory authorities are triggered.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "European Union bank resolution framework with early intervention powers"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-036",
+   "identifier": "kaal:claim:2061166-036",
+   "text": "Using contingent capital as a preventative tool does not foreclose the statutory core power or the debt write-down tool within resolution; if early contractual write-down and conversion fail, authorities remain free to intervene and impose a haircut on shareholders, debt investors and other private parties.",
+   "abstract": "Contingent capital as a preventative tool would not impede the statutory core power or debt write-down tool of bail-inables within resolution.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contractual conversion at an early stage that does not achieve the desired result"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-037",
+   "identifier": "kaal:claim:2061166-037",
+   "text": "Convergence of contingent capital standards is impeded by a first mover problem: single jurisdictions hesitate to impose contingent capital requirements before they know how competing jurisdictions and their financial institutions will structure their own rules.",
+   "abstract": "This could partially be due to a first mover problem. Single jurisdictions could be hesitant to implement contingent capital requirements without first knowing how other jurisdictions and financial institutions that compete with their home institutions may structure their contingent capital rules.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "jurisdictions whose banks compete internationally"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-038",
+   "identifier": "kaal:claim:2061166-038",
+   "text": "Without a degree of similarity and convergence in bank resolution and contingent capital rules, regulatory arbitrage will work against establishing contingent capital as an integral part of financial markets.",
+   "abstract": "Without a degree of similarity and convergence in bank resolution and contingent capital rules, regulatory arbitrage could have an adverse effect on establishing contingent capital as an integral part of financial markets.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "absent international convergence of resolution and contingent capital rules"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-039",
+   "identifier": "kaal:claim:2061166-039",
+   "text": "Given the European initiatives on contingent capital and the nascent European market in contingent capital securities, the Board of Governors of the United States Federal Reserve would be well advised to consider implementing contingent capital standards.",
+   "abstract": "Given the European initiatives on contingent capital and the nascent market in European contingent capital securities, the Board of Governors of the United States Federal Reserve would be well advised to consider implementing contingent capital standards.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States regulators acting under Dodd-Frank authority contingent on the mandated feasibility study"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2061166-040",
+   "identifier": "kaal:claim:2061166-040",
+   "text": "The Basel Committee rejected European Union Member State requests to allow contingent capital to satisfy the new capital buffer requirements under Basel III, deciding instead that systemically important institutions must meet heightened capital requirements with retained earnings and ordinary shares.",
+   "abstract": "The Basel Committee rejected requests from EU Member States to use contingent capital to satisfy the new capital buffer requirements under Basel III.",
+   "citation": "Christoph K. Henkel, Wulf A. Kaal, Contingent Capital in European Union Bank Restructuring (2012). SSRN: https://ssrn.com/abstract=2061166",
+   "datePublished": "2012",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Basel III capital buffer requirements for systemically important financial institutions"
+   ],
+   "source_pdf_sha256": "43625ea260d0fc045e86d3435df50c9d0ca4abf8542e6085a6165be6653b4a7b",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-001",
+   "identifier": "kaal:claim:2097160-001",
+   "text": "Early European initiatives to put contingent convertible bonds into executive pay lack governance-improving designs; contingent convertible bonds with an early conversion trigger should be used in executive compensation instead.",
+   "abstract": "Early initiatives by European SIFIs to include contingent convertible bonds in executive compensation packages lack governance-improving designs. This Article suggests the use of contingent convertible bonds with an early conversion trigger in executive compensation.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "systemically important financial institutions",
+    "executive compensation packages"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-003",
+   "identifier": "kaal:claim:2097160-003",
+   "text": "Contingent convertible bonds placed in executive compensation serve a different purpose than those sold to investors: the point is not capital infusion during a crisis but governance-improving design that optimizes management incentives.",
+   "abstract": "bonds issued to investors, the emphasis for contingent convertible bonds in executive compensation is not on a capital infusion when the Systematically Important Financial Institution (SIFI) is in a crisis,13 but rather on governance-improving designs to help optimize management's incentives.14",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "definitional",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent convertible bonds held by executives rather than outside investors"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-004",
+   "identifier": "kaal:claim:2097160-004",
+   "text": "The conversion feature of contingent convertible bonds affects corporate governance in a SIFI only if issuance volumes are sufficient and design features are adequate, because the governance effect runs through the threat of dilution of existing equity positions.",
+   "abstract": "If sufficient volumes of contingent convertible bond issuances are combined with adequate design features, the conversion feature of contingent convertible bonds and the threat of dilution of equity positions in SIFIs could affect corporate governance in SIFIs.108",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "sufficient volume of contingent convertible bond issuance",
+    "adequate design features"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-005",
+   "identifier": "kaal:claim:2097160-005",
+   "text": "Market solutions and private ordering alone are unlikely to produce contingent capital designs that improve corporate governance in SIFIs, because privately negotiated sales so far have not produced governance-sensitive designs.",
+   "abstract": "It is doubtful if market solutions and private ordering alone will produce contingent capital designs that help improve corporate governance in SIFIs.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "market for contingent convertible bonds still in its infancy"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-008",
+   "identifier": "kaal:claim:2097160-008",
+   "text": "Adding contingent convertible bonds with an early trigger to executive compensation packages creates a corporate governance mechanism that addresses the inability of contractual control rights to constrain executive opportunism.",
+   "abstract": "Adding contingent convertible bonds with an early trigger to executive compensation packages can create a corporate governance mechanism that helps address these shortcomings.128",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-012",
+   "identifier": "kaal:claim:2097160-012",
+   "text": "Contingent convertible bonds issued to executives are typically too small in volume to dilute investors' equity holdings or to supply a meaningful equity infusion during a crisis, so copying investor CoCo designs for executive pay produces suboptimal outcomes.",
+   "abstract": "contingent convertible bonds may be issued to executives in volumes that may not suffice to dilute investors' equity holdings. The lower volume of contingent convertible bonds issued to executives may not provide a sufficiently strong equity infusion during a crisis.",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "contingent convertible bonds issued only to executives",
+    "volumes smaller than investor issuances"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-031",
+   "identifier": "kaal:claim:2097160-031",
+   "text": "Regulatory guidance on contingent capital design and issuance may be needed to curtail executive involvement in designing these instruments and to produce socially optimal designs.",
+   "abstract": "Regulatory guidance on contingent capital designs and issuances may be needed to curtail the involvement of executives in the design of contingent convertible bonds and create socially optimal designs.200",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "normative",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "regulators unlikely to supply rules or best practice guidance in the near term"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-033",
+   "identifier": "kaal:claim:2097160-033",
+   "text": "Contingent convertible bonds with a conversion feature add what plain inside debt lacks: an early warning system and a buffer before insolvency that can help the entity avoid default.",
+   "abstract": "Contingent convertible bonds with a conversion feature offer the additional benefit of creating an early warning system and a buffer before insolvency that can help an entity avoid default.218",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion feature rather than write-down",
+    "trigger set before insolvency"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-038",
+   "identifier": "kaal:claim:2097160-038",
+   "text": "Trigger designs that work well in institutions with the traditional mix of debt-holders and shareholders may be suboptimal once executives themselves hold contingent convertible bonds.",
+   "abstract": "Trigger designs that may work well in financial institutions with the traditional mix of debt- holders and shareholders may be suboptimal if executives also hold debt instruments in the form of contingent convertible bonds.275",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "executives hold debt instruments in the form of contingent convertible bonds"
+   ],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2097160-039",
+   "identifier": "kaal:claim:2097160-039",
+   "text": "Who owns the contingent convertible bonds affects the efficiency, effectiveness, and corporate governance results of a trigger design, so ownership characteristics belong in the design analysis.",
+   "abstract": "The nature of ownership of contingent convertible bonds may create different demands on the design features. Who owns the contingent convertible bonds can impact the efficiency, effectiveness, and corporate governance results of trigger designs.276",
+   "citation": "Wulf A. Kaal, Contingent Capital in Executive Compensation (2012). SSRN: https://ssrn.com/abstract=2097160",
+   "datePublished": "2012",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "1e1f8aa246bce19f4658dbceb455c7c2a272aa5d63a9e9bdaa46a3a5a87680fc",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-013",
+   "identifier": "kaal:claim:2273857-013",
+   "text": "Although implementing dynamic elements in regulatory structures remains uncertain, promising regulatory tools with dynamic elements already exist, including contingent capital securities, corporate integrity agreements, and deferred prosecution agreements.",
+   "abstract": "Although the implementation of dynamic elements in regulatory structures is uncertain, some promising regulatory tools with dynamic elements already exist, including contingent capital securities, corporate integrity agreements, and deferred prosecution agreements.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "existing instruments serve as building blocks rather than new institutions"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-056",
+   "identifier": "kaal:claim:2273857-056",
+   "text": "Depending on their design, contingent capital securities can function as an early warning system that helps preempt financial crises.",
+   "abstract": "Depending on the respective CoCo designs, CoCos can function as an early warning system to preempt financial crises.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CoCo trigger design is institution specific and automatic"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-057",
+   "identifier": "kaal:claim:2273857-057",
+   "text": "Institution specific automatic triggers in contingent capital securities are flexible and can be tailored to the parties' needs precisely because they operate independently of regulatory discretion.",
+   "abstract": "Because institution-specific automatic triggers are independent from regulatory discretion, they have the advantage of being flexible and can be tailored to the parties' respective needs.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "triggers are privately negotiated and automatic"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-058",
+   "identifier": "kaal:claim:2273857-058",
+   "text": "Managers are incentivized to manage their institutions so as to avoid contingent capital triggers, and that incentive itself can optimize the governance of financial institutions.",
+   "abstract": "Managers are incentivized to manage their respective entities to avoid CoCo triggers, which can help optimize governance of financial institutions.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "CoCos are outstanding with credible trigger terms"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-059",
+   "identifier": "kaal:claim:2273857-059",
+   "text": "A contingent capital triggering event signals that management was unable to manage the entity so as to avoid the trigger, and therefore signals to rulemakers that regulatory action may be needed, information regulators cannot obtain by monitoring debt to equity and capital adequacy ratios alone.",
+   "abstract": "While regulators have other means of monitoring debt/equity ratios and capital adequacy ratios, a CoCo triggering event signals that management was unable to manage the entity to avoid the triggering event, suggesting that regulatory action may be needed.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "a CoCo trigger is actually reached in a specific institution"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2273857-060",
+   "identifier": "kaal:claim:2273857-060",
+   "text": "Contingent capital triggers have significant design limitations: accounting based triggers may not respond adequately in financial crises because they are updated too infrequently, while market based triggers are susceptible to market manipulation and bank runs.",
+   "abstract": "accounting-based measures in institution-specific automatic triggers may not be able to respond adequately in financial crises because they are arguably too infrequently updated. Market-based measures, on the other hand, could be susceptible to market manipulation and banking runs.",
+   "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857",
+   "datePublished": "2013",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "accounting based institution specific triggers",
+    "market based institution specific triggers"
+   ],
+   "source_pdf_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-001",
+   "identifier": "kaal:claim:2957645-001",
+   "text": "Contingent capital securities are a largely overlooked dynamic regulatory mechanism, and their regulatory value lies in their capacity to generate feedback effects, optimized timing, and improved information for regulation.",
+   "abstract": "Contingent capital securities are a largely overlooked dynamic regulatory mechanism.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-006",
+   "identifier": "kaal:claim:2957645-006",
+   "text": "The issuance of contingent capital securities is a promising dynamic regulatory mechanism that can help address the suboptimal regulatory outcomes associated with disruptive innovation.",
+   "abstract": "The issuance of contingent capital securities (CCS) is a promising dynamic regulatory mechanism that can help address the aforementioned suboptimal regulatory outcomes associated with disruptive innovation.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "financial institutions capable of issuing contingent capital securities"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-007",
+   "identifier": "kaal:claim:2957645-007",
+   "text": "By internalizing the costs of bank failure, contingent capital may be able to minimize moral hazard, avoid financial contagion, and limit systemic risk.",
+   "abstract": "By internalizing bank failure costs, contingent capital may be able to minimize moral hazard,14 avoid financial contagion,15 and limit systemic risk.16",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "bank failure costs are actually borne by the institution's own capital structure"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-014",
+   "identifier": "kaal:claim:2957645-014",
+   "text": "Section 165(b) of the Dodd-Frank Act already authorizes the Board of Governors of the Federal Reserve to utilize contingent capital, so the mechanism has a statutory foundation in United States law.",
+   "abstract": "Section 165(b) of the Dodd-Frank Act authorizes the Board of Governors of the Federal Reserve to utilize contingent capital.28",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "empirical",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "United States law after the Dodd-Frank Act"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-015",
+   "identifier": "kaal:claim:2957645-015",
+   "text": "Contingent capital is an automatic mechanism for increasing capital while reducing debt, and its long term benefit is lowering leverage.",
+   "abstract": "Contingent capital is an automatic mechanism for increasing capital while reducing debt with the long-term benefit of lowering leverage.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-016",
+   "identifier": "kaal:claim:2957645-016",
+   "text": "For purposes of this article, contingent capital is stipulated to mean the predefined conversion of a certain percentage of a financial institution's debt securities into equity securities.",
+   "abstract": "For purposes of this article, contingent capital is the predefined conversion of a certain percentage of financial institutions' debt securities into equity securities.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "definitional",
+   "confidence": "asserted",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the definition is stipulated for this article and other labels exist for the same concept"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-017",
+   "identifier": "kaal:claim:2957645-017",
+   "text": "Strained financial institutions may find the automatic conversion of debt into equity through contingent capital securities an attractive alternative to being forced into restructuring or liquidation.",
+   "abstract": "Strained financial institutions may find the automatic conversion of debt into equity via contingent capital securities an attractive alternative to being forced into restructuring or liquidation.31",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the institution is already financially strained",
+    "restructuring or liquidation is the realistic alternative"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-018",
+   "identifier": "kaal:claim:2957645-018",
+   "text": "The conversion feature of contingent capital securities has the potential to change the control dynamic, the distribution of power, and the dependencies within systemically important financial institutions.",
+   "abstract": "The conversion feature of CCS has the potential to change the control dynamic, power, and dependencies within systemically important financial institutions (SIFIs).",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "systemically important financial institutions with outstanding contingent capital securities",
+    "conversion is actually triggered"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-019",
+   "identifier": "kaal:claim:2957645-019",
+   "text": "Regulators are often unable to supervise financial institutions effectively because of insufficient public funding, and contingent capital securities could help fill the void that this supervisory incapacity leaves.",
+   "abstract": "Given this potential, CCSs could help fill a void left by regulators' inability to supervise financial institutions effectively, often the result of insufficient public funding.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "supervisory agencies operating under funding constraints"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-020",
+   "identifier": "kaal:claim:2957645-020",
+   "text": "Contingent capital may be more efficient than simply raising capital requirements, because the capital injection is available only when it is needed and, when triggered, only as much of the contingent capital converts as is necessary to recapitalize the firm.",
+   "abstract": "Further, contingent capital may be more efficient than raising capital requirements, because the capital injection is available only when it is needed45 and, when triggered, only enough CCS converts as is necessary to recapitalize the firm.46",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the trigger design causes conversion only in the amount necessary for recapitalization"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-021",
+   "identifier": "kaal:claim:2957645-021",
+   "text": "Appropriate use of contingent capital triggers can further lower the default risk of the contingent capital securities themselves, on top of the moral hazard reduction that comes from internalizing bank failure costs.",
+   "abstract": "contingent capital can minimize moral hazard,43 and appropriate use of contingent capital triggers can further lower default risk of CCS.44",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "triggers are designed and evaluated appropriately"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-022",
+   "identifier": "kaal:claim:2957645-022",
+   "text": "The threat of dilution of stock holdings, combined with the threat of loss upon conversion, could help reduce the pressure shareholders place on management of systemically important financial institutions to take increasing risks.",
+   "abstract": "The threat of dilution of stock holdings, in combination with a threat of loss due to conversion could help reduce shareholder pressure on SIFI management to take increasing risks.48",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion dilutes existing common shareholders",
+    "shareholders anticipate the dilution ex ante"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-023",
+   "identifier": "kaal:claim:2957645-023",
+   "text": "Where conversion has a negative effect on stock price, management is further incentivized to maintain and manage risk in order to avoid reputational loss and the income reduction caused by losses in stock options.",
+   "abstract": "In situations where conversion had a negative effect on stock price,49 management could be incentivized further to maintain and manage risk to avoid reputational loss and income reduction due to losses in stock",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "conversion depresses the issuer's stock price",
+    "management compensation includes stock options"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-024",
+   "identifier": "kaal:claim:2957645-024",
+   "text": "Contingent capital could create a regime for providing countercyclical regulatory capital that further enhances the regulatory capital requirements of the Federal Reserve and those under Basel III.",
+   "abstract": "Accordingly, contingent capital could create a regime for providing countercyclical regulatory capital51 that further enhances regulatory capital requirements of the Federal Reserve52 and under Basel III.53",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "design",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent capital is used alongside, not instead of, existing minimum capital requirements"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-025",
+   "identifier": "kaal:claim:2957645-025",
+   "text": "Contingent capital qualifies as a dynamic regulatory mechanism because capital injection is available only if and when needed and because the conversion of contingent capital securities into near worthless equity signals impending regulatory issues to regulators, which creates feedback effects.",
+   "abstract": "Contingent capital is a dynamic regulatory mechanism because (1) capital injection is available only if and when needed; (2) signaling to regulators of impending regulatory issues via conversion of CCS to near worthless equity creates feedback effects;",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "contingent capital securities are outstanding and their conversion is observable by regulators"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-026",
+   "identifier": "kaal:claim:2957645-026",
+   "text": "Contingent capital securities optimize information for rulemaking because, when issued and triggered, they produce highly valuable, real time, decentralized information on the financial wellbeing of a given regulated entity.",
+   "abstract": "First, contingent capital has the potential to optimize information for rulemaking.55 CCS, when issued and triggered, produce highly valuable, real time, decentralized information on the financial wellbeing of a given regulated entity.56",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the securities have been issued and the trigger has occurred"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-027",
+   "identifier": "kaal:claim:2957645-027",
+   "text": "Contingent capital creates feedback effects because the conversion of debt to equity signals to regulators that the entity's management was unable to avoid the trigger, which is itself a call for increased regulatory scrutiny.",
+   "abstract": "Second, contingent capital creates feedback effects because the conversion of debt to equity signals to regulators that the respective entity's management that was unable to avoid the trigger from debt to equity, which calls for increased regulatory scrutiny.57",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "regulators observe conversion events"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-028",
+   "identifier": "kaal:claim:2957645-028",
+   "text": "The occurrence of the debt to equity trigger creates real time regulatory information that a centralized system would require months or years to generate, and it enables regulators to open a regulatory investigation if and when one is needed.",
+   "abstract": "In essence, the occurrence of the trigger from debt to equity creates real-time regulatory information that would require months or years to generate in centralized system, and enables regulators to start a regulatory investigation if and when it is needed.58",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "comparison is to centralized information gathering by regulators"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-029",
+   "identifier": "kaal:claim:2957645-029",
+   "text": "Contingent capital enables anticipatory regulation because regulators may observe and react in real time to triggering events, before the regulated entities encounter financial calamity.",
+   "abstract": "Finally, contingent capital enables anticipatory regulation because regulators may observe and react in real time to triggering events, before entities encounter financial calamity.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "triggering events occur before, not after, financial distress becomes terminal"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-030",
+   "identifier": "kaal:claim:2957645-030",
+   "text": "Information generated by contingent capital securities may allow regulators to adjust their regulatory requirements and the intensity of regulatory investigations anticipatorily rather than after the fact.",
+   "abstract": "Such information may allow regulators to anticipatorily adjust their regulatory requirements and the intensity of regulatory investigations.60",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "predictive",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "depends on the disclosure regime applicable to the respective contingent capital securities"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2957645-031",
+   "identifier": "kaal:claim:2957645-031",
+   "text": "Most of the design features of contingent capital securities and their triggering events remain underdeveloped, yet despite these shortcomings such securities could still help regulators anticipate regulatory needs in real time through feedback effects and improved information.",
+   "abstract": "While most of the design features of CCS and their triggering events are underdeveloped, despite these shortcomings, CCS could help allows regulators to anticipate regulatory needs in real-time, supported by feedback effects and improved information for regulation.",
+   "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645",
+   "datePublished": "2017",
+   "claim_type": "failure",
+   "confidence": "asserted",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "state of contingent capital design as of the time of writing"
+   ],
+   "source_pdf_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
+   "status": "current"
+  }
+ ],
+ "description": "91 claims in the published works of Wulf A. Kaal carry the concept tag 'contingent-capital'. Derived node: a roster, not an adjudicated definition."
+}
