@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "name": "Kaal Prediction Ledger",
+  "description": "Dated, falsifiable predictions derived from claims in the Kaal Corpus, each with a stated resolution date and resolution criteria fixed in advance. The ledger exists so that when the field arrives at a position, the record shows when it was taken and on what reasoning. Predictions are never edited after publication; they are resolved.",
+  "author": "Wulf A. Kaal",
+  "orcid": "0000-0003-0757-275X",
+  "canonical_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
+  "claim_layer": "https://wulfkaal.github.io/claims/index.json",
+  "updated": "2026-07-29",
+  "count": 3,
+  "vocabulary": {
+    "status": [
+      "open",
+      "resolved",
+      "void"
+    ],
+    "outcome": [
+      "correct",
+      "incorrect",
+      "partial",
+      "unresolvable"
+    ]
+  },
+  "integrity_note": "statement, made_on, resolves_by and resolution_criteria are immutable once published. Corrections are made by voiding a prediction and issuing a successor, never by editing in place. Prior states are recoverable from git history.",
+  "predictions": [
+    {
+      "id": "kaal:prediction:2026-001",
+      "url": "https://wulfkaal.github.io/predictions/2026-001",
+      "statement": "In at least one deployed citation-weighted reputation system with more than 500 participating agents, the distribution of accumulated reputation across contributors will be heavy-tailed, and the top decile of contributors by in-citation count will hold at least ten times the reputation of the median contributor of comparable output volume.",
+      "derived_from": [
+        "kaal:claim:6192998-033"
+      ],
+      "made_on": "2026-07-29",
+      "resolves_by": "2028-07-01",
+      "resolution_criteria": "Resolved CORRECT if a system meeting the size threshold publishes or discloses a reputation distribution satisfying both conditions. Resolved INCORRECT if such a system exists and the ratio is below five. Resolved UNRESOLVABLE if no citation-weighted reputation system reaches 500 agents by the resolution date, which is itself an informative outcome about adoption.",
+      "confidence": 0.55,
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "kaal:prediction:2026-002",
+      "url": "https://wulfkaal.github.io/predictions/2026-002",
+      "statement": "No AI-agent liability insurer will consume a third-party, cross-vendor agent reputation score as a rated underwriting input. Underwriting will continue to rest on applicant-submitted governance documentation and audit results.",
+      "derived_from": [
+        "kaal:claim:3808852-014",
+        "kaal:claim:5095633-039"
+      ],
+      "made_on": "2026-07-29",
+      "resolves_by": "2027-12-31",
+      "resolution_criteria": "Resolved INCORRECT if any carrier, MGA, or Lloyd's coverholder writing AI liability publicly discloses, or is documented in a policy wording or rating filing as using, an externally operated agent reputation or trust score as a rating factor. Resolved CORRECT if no such disclosure exists by the resolution date. Captive scores operated by the insurer itself do not count; the prediction is about neutral third-party scores.",
+      "confidence": 0.75,
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "kaal:prediction:2026-003",
+      "url": "https://wulfkaal.github.io/predictions/2026-003",
+      "statement": "The cross-organizational agent delegation mechanism that reaches production dominance will be operated by an incumbent identity provider or edge network rather than by a neutral standards foundation, notwithstanding that the specification itself is standardised in a neutral body. This is recentralization drift operating on the agent-identity layer.",
+      "derived_from": [
+        "kaal:claim:6655138-049",
+        "kaal:claim:5254152-013"
+      ],
+      "made_on": "2026-07-29",
+      "resolves_by": "2027-12-02",
+      "resolution_criteria": "Resolved CORRECT if, at the resolution date, the majority of measurable production cross-org agent delegation traffic terminates at infrastructure operated by a commercial identity provider or CDN. Resolved INCORRECT if a foundation-operated or genuinely federated registry carries the majority. Measured by published adoption data, vendor disclosures, or a documented survey; if no measurement exists, resolved UNRESOLVABLE and the prediction is reissued with a measurement method attached.",
+      "confidence": 0.7,
+      "status": "open",
+      "resolution": null
+    }
+  ]
+}
