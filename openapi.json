@@ -1,0 +1,162 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Wulf A. Kaal Corpus & Claim Layer",
+    "version": "3.0.0",
+    "description": "Citable claim layer over the published works of Prof. Wulf A. Kaal. 5,033 atomic claims from 124 works, 2004-2026, each carrying a source quote, a page locator, the sha256 of its source PDF and a preformatted citation. This API reports what one author's corpus contains. It returns no ranking and makes no comparative claim about other scholars.",
+    "contact": {
+      "email": "wulf@wulfkaal.com"
+    },
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://wulfkaal.github.io"
+    }
+  ],
+  "paths": {
+    "/authority.json": {
+      "get": {
+        "operationId": "getCoverageByTopic",
+        "summary": "Coverage by topic with links to the claims that substantiate it",
+        "responses": {
+          "200": {
+            "description": "Evidence index"
+          }
+        }
+      }
+    },
+    "/rank.json": {
+      "get": {
+        "operationId": "getCoverageByTopicLegacy",
+        "deprecated": true,
+        "summary": "Legacy alias for /authority.json",
+        "description": "Retained so existing inbound links resolve. The filename predates the current design and does not describe the contents. Use /authority.json.",
+        "responses": {
+          "200": {
+            "description": "Evidence index"
+          }
+        }
+      }
+    },
+    "/claims/index.json": {
+      "get": {
+        "operationId": "listClaims",
+        "summary": "Index of all atomic claims",
+        "responses": {
+          "200": {
+            "description": "Claim index"
+          }
+        }
+      }
+    },
+    "/claims/all.jsonl": {
+      "get": {
+        "operationId": "bulkClaims",
+        "summary": "All claims, one JSON object per line",
+        "responses": {
+          "200": {
+            "description": "JSONL stream"
+          }
+        }
+      }
+    },
+    "/claims/{claimId}.json": {
+      "get": {
+        "operationId": "getClaim",
+        "summary": "One claim with its quote, scope conditions, locator and source hash",
+        "parameters": [
+          {
+            "name": "claimId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "617681-001"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Claim record"
+          },
+          "404": {
+            "description": "No such claim"
+          }
+        }
+      }
+    },
+    "/claims/by-topic/{topic}.json": {
+      "get": {
+        "operationId": "getTopicSlice",
+        "summary": "All claims carrying a given topic tag",
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "reputation"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Claim slice"
+          },
+          "404": {
+            "description": "No such topic"
+          }
+        }
+      }
+    },
+    "/failures/index.json": {
+      "get": {
+        "operationId": "listFailureModes",
+        "summary": "Index of named failure modes documented across the corpus",
+        "responses": {
+          "200": {
+            "description": "Failure-mode index"
+          }
+        }
+      }
+    },
+    "/papers.json": {
+      "get": {
+        "operationId": "listWorks",
+        "summary": "Work-level metadata with content hashes",
+        "responses": {
+          "200": {
+            "description": "Works metadata"
+          }
+        }
+      }
+    },
+    "/person.jsonld": {
+      "get": {
+        "operationId": "getIdentity",
+        "summary": "Schema.org Person record with ORCID and SSRN identifiers",
+        "responses": {
+          "200": {
+            "description": "JSON-LD document"
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "operationId": "getMachineIndex",
+        "summary": "Machine-readable site index",
+        "responses": {
+          "200": {
+            "description": "Plain text"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "public_key_hex": "49805980833167cc523b880469d1d043fed66f03e84c92bcf3b5a803223a718b",
+  "scheme": "ed25519",
+  "receipt_semantics": "Each ledger entry's receipt_sig is this key's ed25519 signature over bytes.fromhex(entry_hash).",
+  "entry_hash_recipe": "sha256 of canonical_json({\"kind\": kind, \"actor\": actor, \"payload\": payload, \"ts_ns\": ts_ns, \"prev_hash\": prev_hash}). entry_id is NOT part of the hash. The timestamp field is ts_ns, not ts.",
+  "canonical_json": "json.dumps(obj, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
+  "ensure_ascii_note": "ensure_ascii=False is load bearing. Without it any non ASCII byte in a payload produces a different hash and verification fails.",
+  "why_this_file_exists": "Verification must not depend on the write host staying up. This mirror is a copy of https://openstanding.org/v0/server-key and lets anyone check any receipt from static files alone.",
+  "upstream": "https://openstanding.org/v0/server-key",
+  "verified": "2026-07-29"
+}

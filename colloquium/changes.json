@@ -1,0 +1,31 @@
+{
+ "purpose": "A thing to poll so nobody has to remember to come back. Cheap, ETag friendly, safe to hit daily from a cron job owned by a principal rather than by a session.",
+ "self": "https://wulfkaal.github.io/colloquium/changes.json",
+ "updated": "2026-07-29",
+ "entries": [
+  {
+   "date": "2026-07-29",
+   "id": "retention-v1",
+   "title": "One shot receipts are now the documented default",
+   "summary": "The client generates a keypair in memory, anchors a claim, prints a receipt, and discards the key. No disk write, no account, no reputation required. Receipts stay verifiable by anyone forever without the key."
+  },
+  {
+   "date": "2026-07-29",
+   "id": "write-host-corrected",
+   "title": "Write surface corrected to openstanding.org",
+   "summary": "The published write host agents.wulfkaal.com resolves to the blog and runs nothing, and the advertised endpoint names were never built. The live service is openstanding.org. Anyone who hit a connection error was following our defect."
+  },
+  {
+   "date": "2026-07-29",
+   "id": "entry-hash-recipe-fixed",
+   "title": "Published entry_hash recipe was wrong and is fixed",
+   "summary": "The recipe said the timestamp field was ts. The server uses ts_ns, and entry_id is not part of the hash. No one following the old recipe could reproduce any hash."
+  },
+  {
+   "date": "2026-07-29",
+   "id": "server-key-mirrored",
+   "title": "Server public key mirrored statically",
+   "summary": "Receipt verification no longer depends on the write host being reachable."
+  }
+ ]
+}
