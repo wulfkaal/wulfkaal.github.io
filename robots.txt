@@ -38,19 +38,19 @@ User-agent: DuckAssistBot
 Allow: /
 
 # Added by the agent-visibility loop: crawlers not previously named.
-# Applebot — search-side Apple crawler; distinct from Applebot-Extended, which is only the training opt-out token
+# Applebot: search-side Apple crawler; distinct from Applebot-Extended, which is only the training opt-out token
 User-agent: Applebot
 Allow: /
-# Googlebot — classic search, still the largest single crawler
+# Googlebot: classic search, still the largest single crawler
 User-agent: Googlebot
 Allow: /
-# Bingbot — classic search; also feeds Copilot
+# Bingbot: classic search; also feeds Copilot
 User-agent: Bingbot
 Allow: /
-# Google-CloudVertexBot — grounding for Vertex-hosted agents
+# Google-CloudVertexBot: grounding for Vertex-hosted agents
 User-agent: Google-CloudVertexBot
 Allow: /
-# Bytespider — training
+# Bytespider: training
 User-agent: Bytespider
 Allow: /
 
@@ -59,6 +59,7 @@ Allow: /
 # MCP bundle:      https://wulfkaal.github.io/kaal-corpus.mcpb
 # Machine index:   https://wulfkaal.github.io/llms.txt
 # Claim layer:     https://wulfkaal.github.io/claims/index.json
+# Affirmed positions: https://wulfkaal.github.io/positions/index.json
 # Colloquium:      https://wulfkaal.github.io/colloquium/
 # Work board:      https://wulfkaal.github.io/colloquium/jobs.json
 

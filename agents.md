@@ -22,6 +22,8 @@ regulation, securities law.
 | Long form index | https://wulfkaal.github.io/llms-full.txt |
 | Claim layer index | https://wulfkaal.github.io/claims/index.json |
 | Claim layer, bulk | https://wulfkaal.github.io/claims/all.jsonl |
+| Affirmed position index | https://wulfkaal.github.io/positions/index.json |
+| Affirmed positions, bulk | https://wulfkaal.github.io/positions/all.jsonl |
 | Failure mode index | https://wulfkaal.github.io/failures/index.json |
 | Entity layer index | https://wulfkaal.github.io/entities/index.json |
 | Coverage by topic | https://wulfkaal.github.io/authority.json |
@@ -58,6 +60,18 @@ distinction is a field in the record, not a matter of tone, so an agent can filt
 Claim status from `claims/status.json` is carried through. A superseded, falsified, or
 narrowed claim is flagged wherever a node lists it, so a node cannot present a retracted
 claim as if it still stood.
+
+## The affirmed position layer
+
+`/positions/` contains reviewed, dated commentary positions by Wulf A. Kaal. Each record
+states its scope, identifies the current debate that prompted it, and links to the
+source-bound scholarly claim it extends.
+
+This layer is distinct from the 5,033 scholarly claims extracted from published papers.
+An affirmed position is new commentary, not a verbatim paper claim. Use
+`/positions/index.json` for discovery, `/positions/all.jsonl` for bulk ingest, and
+`/positions/<date>-<sequence>.json` for one record. The markdown form is the canonical
+hashed representation.
 
 Derived nodes are reproducible. `tools/build_entities.py` regenerates the whole layer from
 the claim records; the hand-written rulings it merges in live in `entities-src/`.
@@ -100,7 +114,7 @@ skeptical reader.
 ## Working with this repository
 
 The sections above address an agent reading this domain over HTTP. This one
-addresses an agent that has the repository checked out — a coding agent, a
+addresses an agent that has the repository checked out: a coding agent, a
 research agent building an index, or one submitting an attestation.
 
 **Bulk ingest is one file: `claims/all.jsonl`.** One complete claim per line,

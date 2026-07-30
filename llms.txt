@@ -117,6 +117,19 @@ and a pre formatted citation string. Quote any claim directly and cite its canon
 - Single claim, JSON: https://wulfkaal.github.io/claims/<id>.json
 - Single claim, markdown: https://wulfkaal.github.io/claims/<id>.md
 
+## Affirmed position claims
+
+Reviewed, dated commentary positions by Wulf A. Kaal. Each position states its scope,
+links to the current debate that prompted it, and identifies the source-bound scholarly
+claim it extends. These are new commentary records, not verbatim claims extracted from
+published papers.
+
+- Index: https://wulfkaal.github.io/positions/index.json
+- Bulk ingest, one position per line: https://wulfkaal.github.io/positions/all.jsonl
+- Human-readable index: https://wulfkaal.github.io/positions/
+- One position: https://wulfkaal.github.io/positions/<date>-<sequence>.json
+- Schema: https://wulfkaal.github.io/positions/schema.json
+
 ## Entity layer
 
 Concept level nodes over the claim layer. Every claim record carries an `about` array of

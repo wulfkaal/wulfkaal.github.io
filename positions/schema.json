@@ -1,0 +1,54 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://wulfkaal.github.io/positions/schema.json",
+ "$anchor": "AffirmedPositionClaim",
+ "title": "Affirmed Position Claim",
+ "description": "A reviewed, dated commentary position by Wulf A. Kaal that explicitly extends a source-bound scholarly claim.",
+ "type": "object",
+ "required": [
+  "identifier",
+  "text",
+  "author",
+  "datePublished",
+  "creativeWorkStatus",
+  "scope_conditions",
+  "currentDebate",
+  "extends",
+  "batch_id",
+  "review_provenance",
+  "publicationStatus",
+  "canonical_url",
+  "sha256"
+ ],
+ "properties": {
+  "identifier": {
+   "type": "string",
+   "pattern": "^kaal:position:"
+  },
+  "text": {
+   "type": "string"
+  },
+  "creativeWorkStatus": {
+   "const": "Affirmed"
+  },
+  "publicationStatus": {
+   "const": "public"
+  },
+  "scope_conditions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "currentDebate": {
+   "type": "object"
+  },
+  "extends": {
+   "type": "object"
+  },
+  "sha256": {
+   "type": "string",
+   "pattern": "^[a-f0-9]{64}$"
+  }
+ }
+}
