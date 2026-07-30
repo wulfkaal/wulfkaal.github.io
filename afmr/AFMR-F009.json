@@ -1,0 +1,62 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F009",
+  "class": "C",
+  "class_name": "Objective and Specification",
+  "name": "Specification Incompleteness",
+  "definition": "The principal cannot enumerate every action and inaction in advance, so the agent's mandate is necessarily underspecified.",
+  "status": "stable",
+  "trigger_conditions": [
+    "The action space is open ended or tool mediated",
+    "The agent operates without per-action approval",
+    "The instruction set is stated as goals rather than as permitted operations"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:3373393-008",
+    "url": "https://wulfkaal.github.io/claims/3373393-008",
+    "year": "2019",
+    "mechanism": "bounded rationality and incomplete foresight make complete contracting over agent action impossible"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "definitional-ambiguity",
+      "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json"
+    },
+    {
+      "slug": "agency-cost-and-managerial-opportunism",
+      "url": "https://wulfkaal.github.io/failures/by-name/agency-cost-and-managerial-opportunism.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F009",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F009 Specification Incompleteness. https://wulfkaal.github.io/afmr/AFMR-F009",
+  "cite_as": "AFMR-F009 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

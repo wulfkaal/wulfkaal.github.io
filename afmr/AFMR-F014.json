@@ -1,0 +1,66 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F014",
+  "class": "D",
+  "class_name": "Oversight and Adjudication",
+  "name": "Oversight Latency",
+  "definition": "Review is slower than action, so by the time a judgment lands the state it judged is gone.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Agent action rate exceeds adjudication rate",
+    "Actions are not reversible after the review window",
+    "Review is batched or scheduled rather than gating"
+  ],
+  "grounding_claims": [
+    {
+      "id": "kaal:claim:5245185-025",
+      "url": "https://wulfkaal.github.io/claims/5245185-025"
+    },
+    {
+      "id": "kaal:claim:4755632-023",
+      "url": "https://wulfkaal.github.io/claims/4755632-023"
+    }
+  ],
+  "institutional_antecedent": null,
+  "corpus_failure_families": [
+    {
+      "slug": "ai-oversight-and-alignment-gap",
+      "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+    },
+    {
+      "slug": "enforcement-gap",
+      "url": "https://wulfkaal.github.io/failures/by-name/enforcement-gap.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F014",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F014 Oversight Latency. https://wulfkaal.github.io/afmr/AFMR-F014",
+  "cite_as": "AFMR-F014 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

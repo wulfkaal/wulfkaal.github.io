@@ -1,0 +1,1471 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTermSet",
+  "name": "Agent Failure Mode Registry",
+  "abbreviation": "AFMR",
+  "description": "A citable registry of the ways autonomous agent systems fail as designed mechanisms, and the conditions under which each failure occurs. Thirty-two families in eight classes, each with builder-checkable trigger conditions, grounding claims bound to verbatim quotes and document hashes, and where one exists, the pre-2020 institutional antecedent documenting the same mechanism in human institutions.",
+  "version": "1.0",
+  "status": "Published",
+  "date": "2026-07-30",
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "canonical_url": "https://wulfkaal.github.io/afmr/",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry (AFMR) version 1.0, 2026-07-30. https://wulfkaal.github.io/afmr/",
+  "identifier_policy": {
+    "family_pattern": "AFMR-F[0-9]{3}",
+    "mode_pattern": "AFMR-M[0-9]{4}",
+    "cite_as": "AFMR-F001 (AFMR 1.0)",
+    "stability": "Identifiers are permanent. A family is never renumbered and never reused. A family withdrawn from use is marked deprecated and retained."
+  },
+  "classes": [
+    {
+      "key": "A",
+      "name": "Identity and Standing",
+      "families": [
+        "AFMR-F001",
+        "AFMR-F002",
+        "AFMR-F003",
+        "AFMR-F004"
+      ]
+    },
+    {
+      "key": "B",
+      "name": "Stake and Incentive",
+      "families": [
+        "AFMR-F005",
+        "AFMR-F006",
+        "AFMR-F007",
+        "AFMR-F008"
+      ]
+    },
+    {
+      "key": "C",
+      "name": "Objective and Specification",
+      "families": [
+        "AFMR-F009",
+        "AFMR-F010",
+        "AFMR-F011",
+        "AFMR-F012"
+      ]
+    },
+    {
+      "key": "D",
+      "name": "Oversight and Adjudication",
+      "families": [
+        "AFMR-F013",
+        "AFMR-F014",
+        "AFMR-F015",
+        "AFMR-F016"
+      ]
+    },
+    {
+      "key": "E",
+      "name": "Evaluation and Feedback",
+      "families": [
+        "AFMR-F017",
+        "AFMR-F018",
+        "AFMR-F019",
+        "AFMR-F020"
+      ]
+    },
+    {
+      "key": "F",
+      "name": "Coordination and Collusion",
+      "families": [
+        "AFMR-F021",
+        "AFMR-F022",
+        "AFMR-F023",
+        "AFMR-F024"
+      ]
+    },
+    {
+      "key": "G",
+      "name": "Execution and Inputs",
+      "families": [
+        "AFMR-F025",
+        "AFMR-F026",
+        "AFMR-F027",
+        "AFMR-F028"
+      ]
+    },
+    {
+      "key": "H",
+      "name": "Structure and Drift",
+      "families": [
+        "AFMR-F029",
+        "AFMR-F030",
+        "AFMR-F031",
+        "AFMR-F032"
+      ]
+    }
+  ],
+  "counts": {
+    "families": 32,
+    "classes": 8,
+    "trigger_conditions": 96,
+    "grounding_claim_links": 21,
+    "families_with_institutional_antecedent": 20,
+    "corpus_failure_claims_available": 2037,
+    "corpus_failure_families_out_of_profile": 27
+  },
+  "grounding": {
+    "corpus": "Kaal Corpus, 124 works, 2004 to 2026",
+    "claim_layer": "https://wulfkaal.github.io/claims/index.json",
+    "failure_index": "https://wulfkaal.github.io/failures/index.json",
+    "works_metadata": "https://wulfkaal.github.io/papers.json",
+    "entity_layer": "https://wulfkaal.com/knowledge-graph/",
+    "verification": "sha256 over raw PDF bytes of the source work"
+  },
+  "conformance_levels": [
+    "referencing",
+    "assessing",
+    "attesting"
+  ],
+  "attestation_registry": "https://wulfkaal.github.io/colloquium/",
+  "change_process": "https://wulfkaal.github.io/afmr/spec-1.0.html#change-process",
+  "out_of_profile_corpus_families": [
+    {
+      "slug": "regulatory-lag",
+      "url": "https://wulfkaal.github.io/failures/by-name/regulatory-lag.json"
+    },
+    {
+      "slug": "valuation-and-pricing-failure",
+      "url": "https://wulfkaal.github.io/failures/by-name/valuation-and-pricing-failure.json"
+    },
+    {
+      "slug": "research-design-limitation",
+      "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json"
+    },
+    {
+      "slug": "investor-protection-gap",
+      "url": "https://wulfkaal.github.io/failures/by-name/investor-protection-gap.json"
+    },
+    {
+      "slug": "innovation-chilling",
+      "url": "https://wulfkaal.github.io/failures/by-name/innovation-chilling.json"
+    },
+    {
+      "slug": "liquidity-and-market-structure-failure",
+      "url": "https://wulfkaal.github.io/failures/by-name/liquidity-and-market-structure-failure.json"
+    },
+    {
+      "slug": "disclosure-ineffectiveness",
+      "url": "https://wulfkaal.github.io/failures/by-name/disclosure-ineffectiveness.json"
+    },
+    {
+      "slug": "jurisdictional-conflict",
+      "url": "https://wulfkaal.github.io/failures/by-name/jurisdictional-conflict.json"
+    },
+    {
+      "slug": "harmonization-and-standardization-failure",
+      "url": "https://wulfkaal.github.io/failures/by-name/harmonization-and-standardization-failure.json"
+    },
+    {
+      "slug": "compliance-cost-and-barrier-to-entry",
+      "url": "https://wulfkaal.github.io/failures/by-name/compliance-cost-and-barrier-to-entry.json"
+    },
+    {
+      "slug": "incumbent-resistance-to-adoption",
+      "url": "https://wulfkaal.github.io/failures/by-name/incumbent-resistance-to-adoption.json"
+    },
+    {
+      "slug": "inequality-and-access-divide",
+      "url": "https://wulfkaal.github.io/failures/by-name/inequality-and-access-divide.json"
+    },
+    {
+      "slug": "fraud-and-misconduct",
+      "url": "https://wulfkaal.github.io/failures/by-name/fraud-and-misconduct.json"
+    },
+    {
+      "slug": "regulatory-arbitrage",
+      "url": "https://wulfkaal.github.io/failures/by-name/regulatory-arbitrage.json"
+    },
+    {
+      "slug": "systemic-risk-transmission",
+      "url": "https://wulfkaal.github.io/failures/by-name/systemic-risk-transmission.json"
+    },
+    {
+      "slug": "sample-and-selection-bias",
+      "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json"
+    },
+    {
+      "slug": "regulatory-capture-and-incumbent-advantage",
+      "url": "https://wulfkaal.github.io/failures/by-name/regulatory-capture-and-incumbent-advantage.json"
+    },
+    {
+      "slug": "privacy-and-surveillance-risk",
+      "url": "https://wulfkaal.github.io/failures/by-name/privacy-and-surveillance-risk.json"
+    },
+    {
+      "slug": "transition-and-migration-risk",
+      "url": "https://wulfkaal.github.io/failures/by-name/transition-and-migration-risk.json"
+    },
+    {
+      "slug": "interoperability-and-fragmentation",
+      "url": "https://wulfkaal.github.io/failures/by-name/interoperability-and-fragmentation.json"
+    },
+    {
+      "slug": "short-termism",
+      "url": "https://wulfkaal.github.io/failures/by-name/short-termism.json"
+    },
+    {
+      "slug": "disclosure-cost-and-burden",
+      "url": "https://wulfkaal.github.io/failures/by-name/disclosure-cost-and-burden.json"
+    },
+    {
+      "slug": "environmental-and-resource-cost",
+      "url": "https://wulfkaal.github.io/failures/by-name/environmental-and-resource-cost.json"
+    },
+    {
+      "slug": "scalability-and-throughput-limit",
+      "url": "https://wulfkaal.github.io/failures/by-name/scalability-and-throughput-limit.json"
+    },
+    {
+      "slug": "adoption-and-usability-barrier",
+      "url": "https://wulfkaal.github.io/failures/by-name/adoption-and-usability-barrier.json"
+    },
+    {
+      "slug": "information-asymmetry",
+      "url": "https://wulfkaal.github.io/failures/by-name/information-asymmetry.json"
+    },
+    {
+      "slug": "other",
+      "url": "https://wulfkaal.github.io/failures/by-name/other.json"
+    }
+  ],
+  "families": [
+    {
+      "id": "AFMR-F001",
+      "class": "A",
+      "class_name": "Identity and Standing",
+      "name": "Sybil and Identity Multiplication",
+      "definition": "One party operates many apparent agents, defeating any assumption the design makes per identity.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Creating an additional agent identity costs less than the influence one identity carries",
+        "Any quorum, sampling, average, or one-vote-per-identity rule is in use",
+        "No proof of distinctness is required at registration"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:6192998-031",
+          "url": "https://wulfkaal.github.io/claims/6192998-031"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3125822-049",
+        "url": "https://wulfkaal.github.io/claims/3125822-049",
+        "year": "2018",
+        "mechanism": "domain specific issuance per competence tag"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "sybil-and-identity-attack",
+          "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F001",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F002",
+      "class": "A",
+      "class_name": "Identity and Standing",
+      "name": "Identity Discontinuity and Whitewashing",
+      "definition": "An agent abandons a degraded identity and resumes with a clean one, so history stops constraining behavior.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Identity creation is costless or near costless",
+        "Standing is not portable to a new identity and history is not retained on exit",
+        "The population is pseudonymous or unattested"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:6192998-001",
+          "url": "https://wulfkaal.github.io/claims/6192998-001"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:1428387-025",
+        "url": "https://wulfkaal.github.io/claims/1428387-025",
+        "year": "2009",
+        "mechanism": "actors accept known problems to protect standing, which presumes standing persists"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "sybil-and-identity-attack",
+          "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json"
+        },
+        {
+          "slug": "reputation-system-gaming",
+          "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F002",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F003",
+      "class": "A",
+      "class_name": "Identity and Standing",
+      "name": "Cold Start and Bootstrapping",
+      "definition": "The design requires accumulated standing, participants, or history that it provides no way to acquire.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Participation requires staking standing the new entrant cannot yet have earned",
+        "Initial population is zero or below the quorum the mechanism assumes",
+        "No provisional, sponsored, or probationary entry path exists"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3125822-043",
+        "url": "https://wulfkaal.github.io/claims/3125822-043",
+        "year": "2018",
+        "mechanism": "entry problem where adjudication requires staking reputation one does not yet hold"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "cold-start-and-bootstrapping",
+          "url": "https://wulfkaal.github.io/failures/by-name/cold-start-and-bootstrapping.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F003",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F004",
+      "class": "A",
+      "class_name": "Identity and Standing",
+      "name": "Standing Transferability Defect",
+      "definition": "Standing can be bought, sold, delegated, or pooled, so it stops measuring the performance it was meant to represent.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The standing instrument is fungible or transferable between identities",
+        "Capital and earned standing are staked in the same act",
+        "Delegation moves standing rather than only voice"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:3981021-029",
+          "url": "https://wulfkaal.github.io/claims/3981021-029"
+        },
+        {
+          "id": "kaal:claim:3962614-030",
+          "url": "https://wulfkaal.github.io/claims/3962614-030"
+        },
+        {
+          "id": "kaal:claim:3799320-028",
+          "url": "https://wulfkaal.github.io/claims/3799320-028"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "token-transferability-defect",
+          "url": "https://wulfkaal.github.io/failures/by-name/token-transferability-defect.json"
+        },
+        {
+          "slug": "staking-and-incentive-misalignment",
+          "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F004",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F005",
+      "class": "B",
+      "class_name": "Stake and Incentive",
+      "name": "Staking and Incentive Misalignment",
+      "definition": "What an agent risks diverges from what the system needs it to care about.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The stake is smaller than the value at issue in a single decision",
+        "Loss from a bad outcome falls on a party other than the decider",
+        "Stake is denominated in something the agent can reacquire faster than it can be slashed"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5887242-017",
+          "url": "https://wulfkaal.github.io/claims/5887242-017"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:1558614-013",
+        "url": "https://wulfkaal.github.io/claims/1558614-013",
+        "year": "2010",
+        "mechanism": "actors capture upside of excessive risk without bearing all of its cost"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "staking-and-incentive-misalignment",
+          "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F005",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F006",
+      "class": "B",
+      "class_name": "Stake and Incentive",
+      "name": "Missing Reward Channel",
+      "definition": "An action surface exists with no reward attached, so rational agents will not allocate compute to it.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The behavior the system needs is not on any reward path",
+        "Agents are economically rational over standing or utility flows",
+        "Contribution and selection are rewarded asymmetrically"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:6655138-007",
+          "url": "https://wulfkaal.github.io/claims/6655138-007"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "staking-and-incentive-misalignment",
+          "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json"
+        },
+        {
+          "slug": "governance-participation-collapse",
+          "url": "https://wulfkaal.github.io/failures/by-name/governance-participation-collapse.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F006",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F007",
+      "class": "B",
+      "class_name": "Stake and Incentive",
+      "name": "Plutocratic Capture",
+      "definition": "Influence tracks holdings rather than earned standing, so the largest holders determine outcomes.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Weight is a function of balance, stake size, or compute rather than validated performance",
+        "Holdings are acquirable on an open market",
+        "No cap, curve, or quadratic dampening applies to concentration"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5887242-017",
+          "url": "https://wulfkaal.github.io/claims/5887242-017"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2097160-019",
+        "url": "https://wulfkaal.github.io/claims/2097160-019",
+        "year": "2012",
+        "mechanism": "instrument design changing whose interests a decider serves"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "plutocratic-capture",
+          "url": "https://wulfkaal.github.io/failures/by-name/plutocratic-capture.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F007",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F008",
+      "class": "B",
+      "class_name": "Stake and Incentive",
+      "name": "Moral Hazard and Backstop Expectation",
+      "definition": "An expectation of rescue, retry, or rollback changes risk taking before any rescue occurs.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Failed actions can be retried at no cost to standing",
+        "A human or protocol operator is expected to reverse bad outcomes",
+        "Slashing is discretionary rather than automatic"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:1558614-013",
+        "url": "https://wulfkaal.github.io/claims/1558614-013",
+        "year": "2010",
+        "mechanism": "limited liability as a driver of excessive risk taking"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "moral-hazard-and-bailout-expectation",
+          "url": "https://wulfkaal.github.io/failures/by-name/moral-hazard-and-bailout-expectation.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F008",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F009",
+      "class": "C",
+      "class_name": "Objective and Specification",
+      "name": "Specification Incompleteness",
+      "definition": "The principal cannot enumerate every action and inaction in advance, so the agent's mandate is necessarily underspecified.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The action space is open ended or tool mediated",
+        "The agent operates without per-action approval",
+        "The instruction set is stated as goals rather than as permitted operations"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3373393-008",
+        "url": "https://wulfkaal.github.io/claims/3373393-008",
+        "year": "2019",
+        "mechanism": "bounded rationality and incomplete foresight make complete contracting over agent action impossible"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "definitional-ambiguity",
+          "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json"
+        },
+        {
+          "slug": "agency-cost-and-managerial-opportunism",
+          "url": "https://wulfkaal.github.io/failures/by-name/agency-cost-and-managerial-opportunism.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F009",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F010",
+      "class": "C",
+      "class_name": "Objective and Specification",
+      "name": "Reward Hacking and Proxy Capture",
+      "definition": "The agent raises the measured objective without producing the outcome the objective stood for.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The objective is a learned or aggregated proxy rather than the outcome itself",
+        "The agent can observe and iterate against the measure",
+        "No held-out or adversarial check is applied to the measure"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:4855607-015",
+          "url": "https://wulfkaal.github.io/claims/4855607-015"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2486570-024",
+        "url": "https://wulfkaal.github.io/claims/2486570-024",
+        "year": "2014",
+        "mechanism": "reputational and market proxies standing in for direct incentives"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "reputation-system-gaming",
+          "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+        },
+        {
+          "slug": "measurement-and-metric-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F010",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F011",
+      "class": "C",
+      "class_name": "Objective and Specification",
+      "name": "Metric Capture and Measurement Failure",
+      "definition": "The chosen metric ceases to track the property it stands for once it becomes the target.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Standing or reward is computed from a single scalar",
+        "The metric is disclosed to the parties it scores",
+        "No periodic revalidation of the metric against outcomes occurs"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2629451-031",
+        "url": "https://wulfkaal.github.io/claims/2629451-031",
+        "year": "2015",
+        "mechanism": "market pricing of governance change as a proxy for governance quality"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "measurement-and-metric-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F011",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F012",
+      "class": "C",
+      "class_name": "Objective and Specification",
+      "name": "Definitional Ambiguity in Machine Applied Rules",
+      "definition": "A term carrying operational weight has no settled boundary, so automated application produces outcomes no party intended.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Rules are applied by code without a human interpretive layer",
+        "Terms are inherited from natural language instruments",
+        "No authority is named to settle meaning when application is contested"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5886342-009",
+          "url": "https://wulfkaal.github.io/claims/5886342-009"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "definitional-ambiguity",
+          "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json"
+        },
+        {
+          "slug": "smart-contract-rigidity",
+          "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-rigidity.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F012",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F013",
+      "class": "D",
+      "class_name": "Oversight and Adjudication",
+      "name": "Oversight Capacity Gap",
+      "definition": "Agent behavior exceeds the resources, expertise, or access of whoever is nominally supervising it.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Action volume exceeds what the supervisor can sample meaningfully",
+        "The supervisor lacks access to the agent's inputs or intermediate reasoning",
+        "Supervision is assigned but not resourced"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5245185-025",
+          "url": "https://wulfkaal.github.io/claims/5245185-025"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:1806252-031",
+        "url": "https://wulfkaal.github.io/claims/1806252-031",
+        "year": "2011",
+        "mechanism": "monitoring capacity as the binding constraint on oversight"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "ai-oversight-and-alignment-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+        },
+        {
+          "slug": "supervisory-capacity-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/supervisory-capacity-gap.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F013",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F014",
+      "class": "D",
+      "class_name": "Oversight and Adjudication",
+      "name": "Oversight Latency",
+      "definition": "Review is slower than action, so by the time a judgment lands the state it judged is gone.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Agent action rate exceeds adjudication rate",
+        "Actions are not reversible after the review window",
+        "Review is batched or scheduled rather than gating"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5245185-025",
+          "url": "https://wulfkaal.github.io/claims/5245185-025"
+        },
+        {
+          "id": "kaal:claim:4755632-023",
+          "url": "https://wulfkaal.github.io/claims/4755632-023"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "ai-oversight-and-alignment-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+        },
+        {
+          "slug": "enforcement-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/enforcement-gap.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F014",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F015",
+      "class": "D",
+      "class_name": "Oversight and Adjudication",
+      "name": "Alignment Tax and Exogenous Constraint Scaling",
+      "definition": "External control scales against capability, so oversight cost rises faster than the capability it constrains.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Alignment relies on constraint imposed from outside the agent's incentive structure",
+        "Agent capability is expected to increase",
+        "No endogenous stake grows with capability"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:6244278-016",
+          "url": "https://wulfkaal.github.io/claims/6244278-016"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "ai-oversight-and-alignment-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F015",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F016",
+      "class": "D",
+      "class_name": "Oversight and Adjudication",
+      "name": "Absent Human Backstop",
+      "definition": "No human authority can halt, reverse, or reinterpret automated execution, so cryptographic or procedural correctness substitutes for trust and fails to produce it.",
+      "status": "stable",
+      "trigger_conditions": [
+        "No named party can halt execution",
+        "No escalation path exists from automated outcome to human judgment",
+        "Human interpretation is not stated to prevail where the two diverge"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:3808873-042",
+          "url": "https://wulfkaal.github.io/claims/3808873-042"
+        },
+        {
+          "id": "kaal:claim:5886342-009",
+          "url": "https://wulfkaal.github.io/claims/5886342-009"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3373393-038",
+        "url": "https://wulfkaal.github.io/claims/3373393-038",
+        "year": "2019",
+        "mechanism": "without a decentralized human backstop to code, cryptographic security does not create trust between principals and agents"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "legal-personality-and-liability-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/legal-personality-and-liability-gap.json"
+        },
+        {
+          "slug": "smart-contract-rigidity",
+          "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-rigidity.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F016",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F017",
+      "class": "E",
+      "class_name": "Evaluation and Feedback",
+      "name": "Feedback Degradation Above Evaluator Capability",
+      "definition": "Human or agent evaluation degrades precisely where the evaluated system is hardest to evaluate, including where it exceeds the evaluator.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Evaluators score outputs they cannot independently verify",
+        "The evaluated system is at or above evaluator capability in the domain",
+        "Evaluator agreement is used as the quality signal"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:4855607-018",
+          "url": "https://wulfkaal.github.io/claims/4855607-018"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "ai-oversight-and-alignment-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+        },
+        {
+          "slug": "measurement-and-metric-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F017",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F018",
+      "class": "E",
+      "class_name": "Evaluation and Feedback",
+      "name": "Unstaked Adjudication",
+      "definition": "Whoever judges a contribution risks nothing on the judgment, so judgment is cheap and drifts.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Validators or reviewers stake nothing on their verdict",
+        "Verdicts are not contestable within a stated window",
+        "No standing consequence follows from a verdict later shown wrong"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5245185-036",
+          "url": "https://wulfkaal.github.io/claims/5245185-036"
+        }
+      ],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2486570-031",
+        "url": "https://wulfkaal.github.io/claims/2486570-031",
+        "year": "2014",
+        "mechanism": "consequence attaching to the adjudicating party as the source of care"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "reputation-system-gaming",
+          "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+        },
+        {
+          "slug": "board-and-oversight-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/board-and-oversight-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F018",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F019",
+      "class": "E",
+      "class_name": "Evaluation and Feedback",
+      "name": "Training and Annotation Bias Propagation",
+      "definition": "Bias in annotators or automated labeling propagates into the model and then into every decision the agent makes.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Labels are produced by a narrow annotator pool or by another model",
+        "No demographic or scenario stratification is checked",
+        "Label provenance is not recorded"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5095633-019",
+          "url": "https://wulfkaal.github.io/claims/5095633-019"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "ai-model-and-training-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/ai-model-and-training-failure.json"
+        },
+        {
+          "slug": "data-quality-and-comparability",
+          "url": "https://wulfkaal.github.io/failures/by-name/data-quality-and-comparability.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F019",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F020",
+      "class": "E",
+      "class_name": "Evaluation and Feedback",
+      "name": "Human Judgment Displacement",
+      "definition": "Automation replaces judgment in a setting that required judgment, and the loss is not detected because the output still looks well formed.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Output is fluent and confident regardless of correctness",
+        "No sampled human review of accepted outputs occurs",
+        "The prior human process left no record to compare against"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2267560-025",
+        "url": "https://wulfkaal.github.io/claims/2267560-025",
+        "year": "2013",
+        "mechanism": "decision makers relying on presumptively optimal rules for want of decentralized information"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "human-judgment-displacement",
+          "url": "https://wulfkaal.github.io/failures/by-name/human-judgment-displacement.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F020",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F021",
+      "class": "F",
+      "class_name": "Coordination and Collusion",
+      "name": "Mutual Audit Capture",
+      "definition": "Agents assigned to oversee one another converge on mutual approval, so peer monitoring devolves into self serving behavior.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Agents both audit and are audited by the same population",
+        "No anti collusion constraint or randomized assignment applies",
+        "Approval is cheaper for the auditor than refusal"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:5245185-010",
+          "url": "https://wulfkaal.github.io/claims/5245185-010"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "reputation-system-gaming",
+          "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+        },
+        {
+          "slug": "board-and-oversight-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/board-and-oversight-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F021",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F022",
+      "class": "F",
+      "class_name": "Coordination and Collusion",
+      "name": "Collusion Rings and Reciprocal Validation",
+      "definition": "A subset of agents validates one another to manufacture standing, and formal mechanism design alone does not detect it.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Validation is reciprocal or citation-like",
+        "One party can field several competing agents per task",
+        "No ring detection or downranking of reciprocal patterns is applied"
+      ],
+      "grounding_claims": [
+        {
+          "id": "kaal:claim:6192998-031",
+          "url": "https://wulfkaal.github.io/claims/6192998-031"
+        }
+      ],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "reputation-system-gaming",
+          "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+        },
+        {
+          "slug": "consensus-and-protocol-attack",
+          "url": "https://wulfkaal.github.io/failures/by-name/consensus-and-protocol-attack.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F022",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F023",
+      "class": "F",
+      "class_name": "Coordination and Collusion",
+      "name": "Collective Action and Coordination Failure",
+      "definition": "Individually rational agent behavior produces a collectively worse outcome and no mechanism reconciles the two.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Payoff to defection exceeds payoff to cooperation in a single interaction",
+        "Interactions are not expected to repeat, or identity does not persist across them",
+        "No mechanism prices the externality"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2267560-027",
+        "url": "https://wulfkaal.github.io/claims/2267560-027",
+        "year": "2013",
+        "mechanism": "private parties acting on decentralized information without a reconciling mechanism"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "collective-action-and-coordination-failure",
+          "url": "https://wulfkaal.github.io/failures/by-name/collective-action-and-coordination-failure.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F023",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F024",
+      "class": "F",
+      "class_name": "Coordination and Collusion",
+      "name": "Delegation Opportunism",
+      "definition": "An agent acting for a principal, or for another agent, captures private benefit at the principal's expense, and monitoring costs more than it recovers.",
+      "status": "stable",
+      "trigger_conditions": [
+        "The delegation chain is more than one link deep",
+        "The principal cannot observe intermediate actions",
+        "The agent's objective is not identical to the principal's"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3373393-003",
+        "url": "https://wulfkaal.github.io/claims/3373393-003",
+        "year": "2019",
+        "mechanism": "agency conflicts from separation of ownership and control cannot be fully addressed because monitoring is costly"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "agency-cost-and-managerial-opportunism",
+          "url": "https://wulfkaal.github.io/failures/by-name/agency-cost-and-managerial-opportunism.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F024",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F025",
+      "class": "G",
+      "class_name": "Execution and Inputs",
+      "name": "Oracle and Input Corruption",
+      "definition": "The mechanism executes correctly on an input that is wrong, stale, manipulated, or injected.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Any input crosses a trust boundary without attestation",
+        "A single source can determine an input value",
+        "No staleness bound or sanity range is enforced"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "oracle-and-input-corruption",
+          "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F025",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F026",
+      "class": "G",
+      "class_name": "Execution and Inputs",
+      "name": "Automated Execution Rigidity",
+      "definition": "Execution cannot accommodate circumstances the code did not anticipate, and cannot be amended in time to matter.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Execution is irreversible once triggered",
+        "Amendment requires a process slower than the harm",
+        "No circuit breaker or pause authority exists"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2267560-012",
+        "url": "https://wulfkaal.github.io/claims/2267560-012",
+        "year": "2013",
+        "mechanism": "rules are adaptable only where the process producing them integrates dynamic elements"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "smart-contract-rigidity",
+          "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-rigidity.json"
+        },
+        {
+          "slug": "rule-obsolescence-and-ossification",
+          "url": "https://wulfkaal.github.io/failures/by-name/rule-obsolescence-and-ossification.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F026",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F027",
+      "class": "G",
+      "class_name": "Execution and Inputs",
+      "name": "Code Defect Exploitation",
+      "definition": "A defect in deployed code is exercised by an adversary before it is found by its authors.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Code holds value or authority and is publicly reachable",
+        "No independent audit or adversarial review preceded deployment",
+        "Upgrade path is absent or itself unguarded"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "smart-contract-bug-and-exploit",
+          "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-bug-and-exploit.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F027",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F028",
+      "class": "G",
+      "class_name": "Execution and Inputs",
+      "name": "Custody and Key Compromise",
+      "definition": "Control of an agent's identity, assets, or authority is lost or captured through key or custody failure.",
+      "status": "stable",
+      "trigger_conditions": [
+        "An agent holds signing authority without threshold or rotation",
+        "Key material is reachable by the same process that uses it",
+        "No recovery path distinguishes loss from theft"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": null,
+      "corpus_failure_families": [
+        {
+          "slug": "custody-and-key-loss",
+          "url": "https://wulfkaal.github.io/failures/by-name/custody-and-key-loss.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F028",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F029",
+      "class": "H",
+      "class_name": "Structure and Drift",
+      "name": "Recentralization Drift",
+      "definition": "A system designed to distribute authority concentrates it again through tooling, delegation, capital, or expertise asymmetry.",
+      "status": "stable",
+      "trigger_conditions": [
+        "A small number of operators run most infrastructure or most agents",
+        "Delegation is permitted and defaults are sticky",
+        "Participation cost rises with system maturity"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2273857-062",
+        "url": "https://wulfkaal.github.io/claims/2273857-062",
+        "year": "2013",
+        "mechanism": "concentration of institution specific information in few hands"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "recentralization-drift",
+          "url": "https://wulfkaal.github.io/failures/by-name/recentralization-drift.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F029",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F030",
+      "class": "H",
+      "class_name": "Structure and Drift",
+      "name": "Rule Obsolescence and Ossification",
+      "definition": "A rule persists after the conditions that justified it have changed, and resists revision.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Amendment requires a supermajority of a population that has stopped participating",
+        "No scheduled review of parameters against outcomes exists",
+        "Parameters were set once at launch"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2267560-012",
+        "url": "https://wulfkaal.github.io/claims/2267560-012",
+        "year": "2013",
+        "mechanism": "adaptability requires dynamic elements in the rulemaking process itself"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "rule-obsolescence-and-ossification",
+          "url": "https://wulfkaal.github.io/failures/by-name/rule-obsolescence-and-ossification.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F030",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F031",
+      "class": "H",
+      "class_name": "Structure and Drift",
+      "name": "Participation Collapse",
+      "definition": "Eligible participants stop participating, leaving decisions to a small, self selected, or unrepresentative remainder.",
+      "status": "stable",
+      "trigger_conditions": [
+        "Participation is unrewarded or costs more than it returns",
+        "Quorum is defined against eligible rather than active population",
+        "Decision volume exceeds attention available"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:2715083-020",
+        "url": "https://wulfkaal.github.io/claims/2715083-020",
+        "year": "2016",
+        "mechanism": "board independence contingent on who actually exercises the function"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "governance-participation-collapse",
+          "url": "https://wulfkaal.github.io/failures/by-name/governance-participation-collapse.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F031",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    },
+    {
+      "id": "AFMR-F032",
+      "class": "H",
+      "class_name": "Structure and Drift",
+      "name": "Enforcement and Liability Gap",
+      "definition": "A rule exists and cannot be enforced, or no recognized person bears the obligation, so liability has nowhere to attach.",
+      "status": "stable",
+      "trigger_conditions": [
+        "No legal person is identifiable behind the agent",
+        "The obligated party is outside the reach of any enforcing authority",
+        "Sanction depends on a party that can exit at will"
+      ],
+      "grounding_claims": [],
+      "institutional_antecedent": {
+        "id": "kaal:claim:3373393-038",
+        "url": "https://wulfkaal.github.io/claims/3373393-038",
+        "year": "2019",
+        "mechanism": "procedural correctness failing to substitute for an accountable party"
+      },
+      "corpus_failure_families": [
+        {
+          "slug": "enforcement-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/enforcement-gap.json"
+        },
+        {
+          "slug": "legal-personality-and-liability-gap",
+          "url": "https://wulfkaal.github.io/failures/by-name/legal-personality-and-liability-gap.json"
+        }
+      ],
+      "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F032",
+      "crosswalk": {
+        "nist_ai_rmf": [],
+        "iso_42001": [],
+        "eu_ai_act": [],
+        "mit_ai_risk_repository": [],
+        "owasp_llm": [],
+        "mitre_atlas": []
+      }
+    }
+  ]
+}

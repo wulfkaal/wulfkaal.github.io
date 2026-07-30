@@ -1,0 +1,70 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F004",
+  "class": "A",
+  "class_name": "Identity and Standing",
+  "name": "Standing Transferability Defect",
+  "definition": "Standing can be bought, sold, delegated, or pooled, so it stops measuring the performance it was meant to represent.",
+  "status": "stable",
+  "trigger_conditions": [
+    "The standing instrument is fungible or transferable between identities",
+    "Capital and earned standing are staked in the same act",
+    "Delegation moves standing rather than only voice"
+  ],
+  "grounding_claims": [
+    {
+      "id": "kaal:claim:3981021-029",
+      "url": "https://wulfkaal.github.io/claims/3981021-029"
+    },
+    {
+      "id": "kaal:claim:3962614-030",
+      "url": "https://wulfkaal.github.io/claims/3962614-030"
+    },
+    {
+      "id": "kaal:claim:3799320-028",
+      "url": "https://wulfkaal.github.io/claims/3799320-028"
+    }
+  ],
+  "institutional_antecedent": null,
+  "corpus_failure_families": [
+    {
+      "slug": "token-transferability-defect",
+      "url": "https://wulfkaal.github.io/failures/by-name/token-transferability-defect.json"
+    },
+    {
+      "slug": "staking-and-incentive-misalignment",
+      "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F004",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F004 Standing Transferability Defect. https://wulfkaal.github.io/afmr/AFMR-F004",
+  "cite_as": "AFMR-F004 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

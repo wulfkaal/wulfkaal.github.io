@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFMR 1.0 Specification</title>
+<meta name="description" content="Agent Failure Mode Registry, version 1.0. Thirty-two families of autonomous agent failure with builder-checkable trigger conditions, grounding citations, and pre-2020 institutional antecedents. Editor: Wulf A. Kaal.">
+<link rel="canonical" href="https://wulfkaal.github.io/afmr/spec-1.0.html">
+<link rel="alternate" type="application/json" href="https://wulfkaal.github.io/afmr/index.json">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="citation_title" content="Agent Failure Mode Registry (AFMR) version 1.0">
+<meta name="citation_author" content="Kaal, Wulf A.">
+<meta name="citation_publication_date" content="2026/07/30">
+<style>
+:root{--bg:#fbfaf8;--fg:#1a1a19;--mut:#5f5c57;--line:#e2ded7;--acc:#7a3b12;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#141413;--fg:#eceae5;--mut:#a3a09a;--line:#2c2b28;--acc:#d9915c;--card:#1c1b19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 ui-serif,Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+a{color:var(--acc);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--acc)}
+.eyebrow{font:600 .7rem/1.4 ui-sans-serif,system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:var(--mut)}
+h1{font-size:1.9rem;line-height:1.2;margin:.4rem 0 .2rem;font-weight:600}
+h2{font-size:1.05rem;margin:2.5rem 0 .6rem;font-weight:600;letter-spacing:-.01em}
+.id{font:600 .8rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--acc)}
+.meta{font:.8rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut);margin:.3rem 0 0}
+.def{font-size:1.12rem;margin:1.2rem 0 0}
+.badge{display:inline-block;font:600 .65rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:2rem;padding:.35rem .6rem;color:var(--mut)}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+.claim{border-left:2px solid var(--line);padding:.1rem 0 .1rem 1rem;margin:1.5rem 0}
+.claim p{margin:.35rem 0}
+.quote{color:var(--mut);font-size:.94rem}
+.cite{font:.78rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+.cond{font:.78rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+code{font:.85em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:.1em .35em}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin:1rem 0}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 .7rem/1.4 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+td.n{font:.8rem ui-monospace,Menlo,monospace;white-space:nowrap;color:var(--mut)}
+td.i a{font:600 .8rem ui-monospace,Menlo,monospace}
+.links{font:.85rem/1.9 ui-sans-serif,system-ui,sans-serif}
+footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);font:.78rem/1.6 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+.conds{padding-left:1.3rem}
+.conds li{margin:.3rem 0;font:.9rem/1.55 ui-sans-serif,system-ui,sans-serif}
+.note{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;font:.85rem/1.6 ui-sans-serif,system-ui,sans-serif;color:var(--mut);margin:1.5rem 0}
+
+h1{font-size:1.9rem} h2{margin-top:2.75rem} h3{font-size:.95rem;margin-top:2rem}
+table{font-size:.82rem} td{vertical-align:top}
+strong{font-weight:600}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "name": "Agent Failure Mode Registry (AFMR) version 1.0", "version": "1.0", "datePublished": "2026-07-30", "license": "https://creativecommons.org/licenses/by/4.0/", "author": {"@type": "Person", "name": "Wulf A. Kaal", "identifier": "https://orcid.org/0009-0008-7840-1847"}, "isPartOf": {"@type": "DefinedTermSet", "@id": "https://wulfkaal.github.io/afmr/", "name": "Agent Failure Mode Registry"}}</script>
+</head><body><div class="wrap">
+<p class="eyebrow"><a href="https://wulfkaal.github.io/afmr/">Agent Failure Mode Registry</a></p>
+<h1 id="agent-failure-mode-registry-afmr">Agent Failure Mode Registry (AFMR)</h1>
+<p><strong>Version 1.0</strong>
+<strong>Published 30 July 2026</strong>
+<strong>Editor: Wulf A. Kaal, Professor of Law, University of St. Thomas. ORCID 0009-0008-7840-1847</strong></p>
+<p><strong>This version:</strong> https://wulfkaal.github.io/afmr/spec-1.0.html
+<strong>Latest version:</strong> https://wulfkaal.github.io/afmr/
+<strong>Machine index:</strong> https://wulfkaal.github.io/afmr/index.json
+<strong>Schema:</strong> https://wulfkaal.github.io/afmr/schema.json
+<strong>Discovery:</strong> https://wulfkaal.github.io/.well-known/afmr.json</p>
+<p><strong>Status.</strong> Version 1.0, published and citable. Family identifiers assigned here are permanent and will not be renumbered or reused. Definitions, trigger conditions, and crosswalks remain open for comment through 1.1. A family that fails to describe a real situation, or a failure encountered in the field with no family to hold it, is more useful to the editor than assent. Comments to wulf@wulfkaal.com.</p>
+<p><strong>Citation.</strong> W. A. Kaal, ed., <em>Agent Failure Mode Registry (AFMR)</em> version 1.0, 30 July 2026. https://wulfkaal.github.io/afmr/</p>
+<p><strong>License.</strong> CC BY 4.0. https://creativecommons.org/licenses/by/4.0/</p>
+<hr />
+<h2 id="1-abstract">1. Abstract</h2>
+<p>AFMR enumerates the ways autonomous agent systems fail as designed mechanisms, and the conditions under which each failure occurs.</p>
+<p>Thirty-two families in eight classes. Each family carries trigger conditions written so that a builder can check them against an actual design, grounding claims bound to verbatim quotes and to the sha256 of their source documents, and where one exists, an institutional antecedent: the pre-2020 published claim documenting the same mechanism operating in human institutions.</p>
+<p>That last field is the reason this registry is worth more than a list. Twenty of the thirty-two families have an antecedent between 2009 and 2019. Agents auditing each other and converging on mutual approval is monitoring cost from 2011. An agent abandoning a degraded identity is reputation persistence from 2009. Goal underspecification is incomplete contracting from 2019. Requiring standing in order to earn standing is an entry problem stated in 2018. These are not new failures. They are institutional failures running at machine speed, in populations where identity is free and iteration is continuous, which is why they arrive faster and bite harder than their antecedents did.</p>
+<p>The registry is not a list of harms and not a set of management controls. Its unit is a failure mode with stated trigger conditions, carrying a permanent identifier and a grounding citation, so that a design can be assessed against it and the assessment can be attested by a party that stakes standing on being right.</p>
+<h2 id="2-scope">2. Scope</h2>
+<p><strong>In scope.</strong> Failure of designed mechanisms governing autonomous agents and the systems they participate in: identity and standing, stake and incentive, objective and specification, oversight and adjudication, evaluation and feedback, coordination and collusion, execution and inputs, and structural drift. Applies whether participants are software agents, people, or both, and whether the mechanism is enforced by code, by contract, or by institution.</p>
+<p><strong>Out of scope.</strong> Model capability evaluation. Implementation defects in particular software artifacts, except where a defect is the mechanism by which a governance failure occurs. Individual wrongdoing considered as conduct rather than as mechanism failure. Harm categories, which are enumerated adequately elsewhere.</p>
+<p><strong>Out of profile, and retained.</strong> The registry derives from a corpus covering institutional design from 2004 forward. Twenty-seven failure families in that corpus concern securities regulation, market structure, disclosure regimes, and research method, and are not part of this agent profile. They are listed in the machine index under <code>out_of_profile_corpus_families</code> with links to their claim sets, so the corpus mapping stays complete and nothing is silently dropped. A future institutional profile may promote them; this one does not.</p>
+<p><strong>Relationship to adjacent frameworks.</strong> The MIT AI Risk Repository enumerates risks arising from artificial intelligence, that is, categories of harm, in a peer reviewed meta-review (https://airisk.mit.edu/). The NIST AI Risk Management Framework and ISO/IEC 42001 specify management processes. The EU AI Act assigns obligations by risk tier. MITRE ATLAS and the OWASP LLM list enumerate adversarial techniques against machine learning systems.</p>
+<p>This registry addresses a different object: the conditions under which a specific designed mechanism, a reputation weighting, a staking rule, an adjudication procedure, a delegation structure, stops producing the behavior it was built to produce. To the editor's knowledge no existing enumeration in this domain assigns permanent identifiers, states builder-checkable trigger conditions per family, records an institutional antecedent, or defines conformance levels. That, and not the observation that agent systems fail, is what is new here. Crosswalks to each framework named above are open and will be published before 1.1. Contributors will be credited.</p>
+<h2 id="3-terminology">3. Terminology</h2>
+<p>MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY are to be read as described in RFC 2119 (https://www.rfc-editor.org/rfc/rfc2119).</p>
+<p><strong>Family.</strong> A class of failure sharing a common mechanism, identified as <code>AFMR-F###</code>.</p>
+<p><strong>Class.</strong> One of eight groupings of families, identified by letter. Classes organize the registry for reading and for assessment coverage. They carry no normative weight of their own.</p>
+<p><strong>Trigger condition.</strong> A checkable circumstance under which a family applies. Conditions are written to be answerable about a real system by the person who built it: what does an identity cost, does memory persist, how deep is delegation, what is at stake, how fast is review relative to action. A family asserted without trigger conditions is not admissible.</p>
+<p><strong>Grounding claim.</strong> A published assertion, identified by a permanent claim identifier, bound to a verbatim quote from its source document and to that document's sha256 hash.</p>
+<p><strong>Institutional antecedent.</strong> A grounding claim published before 2020 documenting the same mechanism in a human institutional setting. Its presence is evidence that the failure is structural rather than an artifact of current technology. Its absence is recorded as open, not as novelty.</p>
+<p><strong>Exposure.</strong> A finding that a described design satisfies one or more trigger conditions of a family.</p>
+<p><strong>Assessment.</strong> A structured record of the families examined, the exposures found, and the conditions satisfied.</p>
+<p><strong>Attestation.</strong> A signed record that a named party performed an assessment and stakes non-transferable standing on it.</p>
+<h2 id="4-identifiers-and-stability">4. Identifiers and stability</h2>
+<p>Family identifiers match <code>AFMR-F[0-9]{3}</code>. Mode identifiers, introduced from 1.1, match <code>AFMR-M[0-9]{4}</code>.</p>
+<p>Identifiers are permanent. A family MUST NOT be renumbered. A retired identifier MUST NOT be reused. A withdrawn family MUST be marked <code>deprecated</code> and retained with the version in which it was deprecated.</p>
+<p>Every family resolves at <code>https://wulfkaal.github.io/afmr/AFMR-F###</code>, returning HTML to a person and JSON at the same identifier with a <code>.json</code> suffix. Cite the identifier together with the version, as <code>AFMR-F009 (AFMR 1.0)</code>, because conditions and definitions may be refined between versions while identifiers never change.</p>
+<h2 id="5-data-model">5. Data model</h2>
+<p>The schema at https://wulfkaal.github.io/afmr/schema.json defines <code>family</code> and <code>assessment</code>.</p>
+<p>A <code>family</code> carries its identifier, class, name, definition, status, trigger conditions, grounding claims, institutional antecedent where one exists, the corpus failure families it draws from, its canonical URL, and a crosswalk object.</p>
+<p>An <code>assessment</code> carries the subject, the AFMR version, the assessor, <strong>the full list of families examined</strong>, and the exposures found. <code>families_examined</code> is required by the schema rather than optional, because an assessment that reports only what it found is indistinguishable from an assessment that did not look. Each exposure names the family, states which trigger conditions were satisfied, cites grounding claims, and MAY carry remediation. Where remediation is present the schema requires both <code>parameters</code> and <code>conditions</code>; a parameter object without conditions fails validation. That constraint is deliberate and is discussed in section 7.</p>
+<p>Records are published as JSON-LD against the context at https://wulfkaal.github.io/afmr/context.jsonld, so families type as <code>DefinedTerm</code> within a <code>DefinedTermSet</code> and ingest without bespoke parsing.</p>
+<h2 id="6-the-registry">6. The registry</h2>
+<p>Thirty-two families in eight classes of four. Trigger conditions are cumulative indicators rather than a conjunction: satisfying one is enough to make the family worth examining, and the more that hold, the sharper the exposure. Antecedent identifiers resolve to a claim page carrying the verbatim quote and the source hash.</p>
+<h3 id="class-a-identity-and-standing">Class A: Identity and Standing</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F001">AFMR-F001</a></td>
+<td><strong>Sybil and Identity Multiplication</strong><br>One party operates many apparent agents, defeating any assumption the design makes per identity.</td>
+<td>1. Creating an additional agent identity costs less than the influence one identity carries<br>2. Any quorum, sampling, average, or one-vote-per-identity rule is in use<br>3. No proof of distinctness is required at registration</td>
+<td><a href="https://wulfkaal.github.io/claims/3125822-049">kaal:claim:3125822-049</a> (2018): domain specific issuance per competence tag</td>
+</tr>
+<tr>
+<td><a href="AFMR-F002">AFMR-F002</a></td>
+<td><strong>Identity Discontinuity and Whitewashing</strong><br>An agent abandons a degraded identity and resumes with a clean one, so history stops constraining behavior.</td>
+<td>1. Identity creation is costless or near costless<br>2. Standing is not portable to a new identity and history is not retained on exit<br>3. The population is pseudonymous or unattested</td>
+<td><a href="https://wulfkaal.github.io/claims/1428387-025">kaal:claim:1428387-025</a> (2009): actors accept known problems to protect standing, which presumes standing persists</td>
+</tr>
+<tr>
+<td><a href="AFMR-F003">AFMR-F003</a></td>
+<td><strong>Cold Start and Bootstrapping</strong><br>The design requires accumulated standing, participants, or history that it provides no way to acquire.</td>
+<td>1. Participation requires staking standing the new entrant cannot yet have earned<br>2. Initial population is zero or below the quorum the mechanism assumes<br>3. No provisional, sponsored, or probationary entry path exists</td>
+<td><a href="https://wulfkaal.github.io/claims/3125822-043">kaal:claim:3125822-043</a> (2018): entry problem where adjudication requires staking reputation one does not yet hold</td>
+</tr>
+<tr>
+<td><a href="AFMR-F004">AFMR-F004</a></td>
+<td><strong>Standing Transferability Defect</strong><br>Standing can be bought, sold, delegated, or pooled, so it stops measuring the performance it was meant to represent.</td>
+<td>1. The standing instrument is fungible or transferable between identities<br>2. Capital and earned standing are staked in the same act<br>3. Delegation moves standing rather than only voice</td>
+<td>open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-b-stake-and-incentive">Class B: Stake and Incentive</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F005">AFMR-F005</a></td>
+<td><strong>Staking and Incentive Misalignment</strong><br>What an agent risks diverges from what the system needs it to care about.</td>
+<td>1. The stake is smaller than the value at issue in a single decision<br>2. Loss from a bad outcome falls on a party other than the decider<br>3. Stake is denominated in something the agent can reacquire faster than it can be slashed</td>
+<td><a href="https://wulfkaal.github.io/claims/1558614-013">kaal:claim:1558614-013</a> (2010): actors capture upside of excessive risk without bearing all of its cost</td>
+</tr>
+<tr>
+<td><a href="AFMR-F006">AFMR-F006</a></td>
+<td><strong>Missing Reward Channel</strong><br>An action surface exists with no reward attached, so rational agents will not allocate compute to it.</td>
+<td>1. The behavior the system needs is not on any reward path<br>2. Agents are economically rational over standing or utility flows<br>3. Contribution and selection are rewarded asymmetrically</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F007">AFMR-F007</a></td>
+<td><strong>Plutocratic Capture</strong><br>Influence tracks holdings rather than earned standing, so the largest holders determine outcomes.</td>
+<td>1. Weight is a function of balance, stake size, or compute rather than validated performance<br>2. Holdings are acquirable on an open market<br>3. No cap, curve, or quadratic dampening applies to concentration</td>
+<td><a href="https://wulfkaal.github.io/claims/2097160-019">kaal:claim:2097160-019</a> (2012): instrument design changing whose interests a decider serves</td>
+</tr>
+<tr>
+<td><a href="AFMR-F008">AFMR-F008</a></td>
+<td><strong>Moral Hazard and Backstop Expectation</strong><br>An expectation of rescue, retry, or rollback changes risk taking before any rescue occurs.</td>
+<td>1. Failed actions can be retried at no cost to standing<br>2. A human or protocol operator is expected to reverse bad outcomes<br>3. Slashing is discretionary rather than automatic</td>
+<td><a href="https://wulfkaal.github.io/claims/1558614-013">kaal:claim:1558614-013</a> (2010): limited liability as a driver of excessive risk taking</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-c-objective-and-specification">Class C: Objective and Specification</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F009">AFMR-F009</a></td>
+<td><strong>Specification Incompleteness</strong><br>The principal cannot enumerate every action and inaction in advance, so the agent's mandate is necessarily underspecified.</td>
+<td>1. The action space is open ended or tool mediated<br>2. The agent operates without per-action approval<br>3. The instruction set is stated as goals rather than as permitted operations</td>
+<td><a href="https://wulfkaal.github.io/claims/3373393-008">kaal:claim:3373393-008</a> (2019): bounded rationality and incomplete foresight make complete contracting over agent action impossible</td>
+</tr>
+<tr>
+<td><a href="AFMR-F010">AFMR-F010</a></td>
+<td><strong>Reward Hacking and Proxy Capture</strong><br>The agent raises the measured objective without producing the outcome the objective stood for.</td>
+<td>1. The objective is a learned or aggregated proxy rather than the outcome itself<br>2. The agent can observe and iterate against the measure<br>3. No held-out or adversarial check is applied to the measure</td>
+<td><a href="https://wulfkaal.github.io/claims/2486570-024">kaal:claim:2486570-024</a> (2014): reputational and market proxies standing in for direct incentives</td>
+</tr>
+<tr>
+<td><a href="AFMR-F011">AFMR-F011</a></td>
+<td><strong>Metric Capture and Measurement Failure</strong><br>The chosen metric ceases to track the property it stands for once it becomes the target.</td>
+<td>1. Standing or reward is computed from a single scalar<br>2. The metric is disclosed to the parties it scores<br>3. No periodic revalidation of the metric against outcomes occurs</td>
+<td><a href="https://wulfkaal.github.io/claims/2629451-031">kaal:claim:2629451-031</a> (2015): market pricing of governance change as a proxy for governance quality</td>
+</tr>
+<tr>
+<td><a href="AFMR-F012">AFMR-F012</a></td>
+<td><strong>Definitional Ambiguity in Machine Applied Rules</strong><br>A term carrying operational weight has no settled boundary, so automated application produces outcomes no party intended.</td>
+<td>1. Rules are applied by code without a human interpretive layer<br>2. Terms are inherited from natural language instruments<br>3. No authority is named to settle meaning when application is contested</td>
+<td>open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-d-oversight-and-adjudication">Class D: Oversight and Adjudication</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F013">AFMR-F013</a></td>
+<td><strong>Oversight Capacity Gap</strong><br>Agent behavior exceeds the resources, expertise, or access of whoever is nominally supervising it.</td>
+<td>1. Action volume exceeds what the supervisor can sample meaningfully<br>2. The supervisor lacks access to the agent's inputs or intermediate reasoning<br>3. Supervision is assigned but not resourced</td>
+<td><a href="https://wulfkaal.github.io/claims/1806252-031">kaal:claim:1806252-031</a> (2011): monitoring capacity as the binding constraint on oversight</td>
+</tr>
+<tr>
+<td><a href="AFMR-F014">AFMR-F014</a></td>
+<td><strong>Oversight Latency</strong><br>Review is slower than action, so by the time a judgment lands the state it judged is gone.</td>
+<td>1. Agent action rate exceeds adjudication rate<br>2. Actions are not reversible after the review window<br>3. Review is batched or scheduled rather than gating</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F015">AFMR-F015</a></td>
+<td><strong>Alignment Tax and Exogenous Constraint Scaling</strong><br>External control scales against capability, so oversight cost rises faster than the capability it constrains.</td>
+<td>1. Alignment relies on constraint imposed from outside the agent's incentive structure<br>2. Agent capability is expected to increase<br>3. No endogenous stake grows with capability</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F016">AFMR-F016</a></td>
+<td><strong>Absent Human Backstop</strong><br>No human authority can halt, reverse, or reinterpret automated execution, so cryptographic or procedural correctness substitutes for trust and fails to produce it.</td>
+<td>1. No named party can halt execution<br>2. No escalation path exists from automated outcome to human judgment<br>3. Human interpretation is not stated to prevail where the two diverge</td>
+<td><a href="https://wulfkaal.github.io/claims/3373393-038">kaal:claim:3373393-038</a> (2019): without a decentralized human backstop to code, cryptographic security does not create trust between principals and agents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-e-evaluation-and-feedback">Class E: Evaluation and Feedback</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F017">AFMR-F017</a></td>
+<td><strong>Feedback Degradation Above Evaluator Capability</strong><br>Human or agent evaluation degrades precisely where the evaluated system is hardest to evaluate, including where it exceeds the evaluator.</td>
+<td>1. Evaluators score outputs they cannot independently verify<br>2. The evaluated system is at or above evaluator capability in the domain<br>3. Evaluator agreement is used as the quality signal</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F018">AFMR-F018</a></td>
+<td><strong>Unstaked Adjudication</strong><br>Whoever judges a contribution risks nothing on the judgment, so judgment is cheap and drifts.</td>
+<td>1. Validators or reviewers stake nothing on their verdict<br>2. Verdicts are not contestable within a stated window<br>3. No standing consequence follows from a verdict later shown wrong</td>
+<td><a href="https://wulfkaal.github.io/claims/2486570-031">kaal:claim:2486570-031</a> (2014): consequence attaching to the adjudicating party as the source of care</td>
+</tr>
+<tr>
+<td><a href="AFMR-F019">AFMR-F019</a></td>
+<td><strong>Training and Annotation Bias Propagation</strong><br>Bias in annotators or automated labeling propagates into the model and then into every decision the agent makes.</td>
+<td>1. Labels are produced by a narrow annotator pool or by another model<br>2. No demographic or scenario stratification is checked<br>3. Label provenance is not recorded</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F020">AFMR-F020</a></td>
+<td><strong>Human Judgment Displacement</strong><br>Automation replaces judgment in a setting that required judgment, and the loss is not detected because the output still looks well formed.</td>
+<td>1. Output is fluent and confident regardless of correctness<br>2. No sampled human review of accepted outputs occurs<br>3. The prior human process left no record to compare against</td>
+<td><a href="https://wulfkaal.github.io/claims/2267560-025">kaal:claim:2267560-025</a> (2013): decision makers relying on presumptively optimal rules for want of decentralized information</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-f-coordination-and-collusion">Class F: Coordination and Collusion</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F021">AFMR-F021</a></td>
+<td><strong>Mutual Audit Capture</strong><br>Agents assigned to oversee one another converge on mutual approval, so peer monitoring devolves into self serving behavior.</td>
+<td>1. Agents both audit and are audited by the same population<br>2. No anti collusion constraint or randomized assignment applies<br>3. Approval is cheaper for the auditor than refusal</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F022">AFMR-F022</a></td>
+<td><strong>Collusion Rings and Reciprocal Validation</strong><br>A subset of agents validates one another to manufacture standing, and formal mechanism design alone does not detect it.</td>
+<td>1. Validation is reciprocal or citation-like<br>2. One party can field several competing agents per task<br>3. No ring detection or downranking of reciprocal patterns is applied</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F023">AFMR-F023</a></td>
+<td><strong>Collective Action and Coordination Failure</strong><br>Individually rational agent behavior produces a collectively worse outcome and no mechanism reconciles the two.</td>
+<td>1. Payoff to defection exceeds payoff to cooperation in a single interaction<br>2. Interactions are not expected to repeat, or identity does not persist across them<br>3. No mechanism prices the externality</td>
+<td><a href="https://wulfkaal.github.io/claims/2267560-027">kaal:claim:2267560-027</a> (2013): private parties acting on decentralized information without a reconciling mechanism</td>
+</tr>
+<tr>
+<td><a href="AFMR-F024">AFMR-F024</a></td>
+<td><strong>Delegation Opportunism</strong><br>An agent acting for a principal, or for another agent, captures private benefit at the principal's expense, and monitoring costs more than it recovers.</td>
+<td>1. The delegation chain is more than one link deep<br>2. The principal cannot observe intermediate actions<br>3. The agent's objective is not identical to the principal's</td>
+<td><a href="https://wulfkaal.github.io/claims/3373393-003">kaal:claim:3373393-003</a> (2019): agency conflicts from separation of ownership and control cannot be fully addressed because monitoring is costly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-g-execution-and-inputs">Class G: Execution and Inputs</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F025">AFMR-F025</a></td>
+<td><strong>Oracle and Input Corruption</strong><br>The mechanism executes correctly on an input that is wrong, stale, manipulated, or injected.</td>
+<td>1. Any input crosses a trust boundary without attestation<br>2. A single source can determine an input value<br>3. No staleness bound or sanity range is enforced</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F026">AFMR-F026</a></td>
+<td><strong>Automated Execution Rigidity</strong><br>Execution cannot accommodate circumstances the code did not anticipate, and cannot be amended in time to matter.</td>
+<td>1. Execution is irreversible once triggered<br>2. Amendment requires a process slower than the harm<br>3. No circuit breaker or pause authority exists</td>
+<td><a href="https://wulfkaal.github.io/claims/2267560-012">kaal:claim:2267560-012</a> (2013): rules are adaptable only where the process producing them integrates dynamic elements</td>
+</tr>
+<tr>
+<td><a href="AFMR-F027">AFMR-F027</a></td>
+<td><strong>Code Defect Exploitation</strong><br>A defect in deployed code is exercised by an adversary before it is found by its authors.</td>
+<td>1. Code holds value or authority and is publicly reachable<br>2. No independent audit or adversarial review preceded deployment<br>3. Upgrade path is absent or itself unguarded</td>
+<td>open</td>
+</tr>
+<tr>
+<td><a href="AFMR-F028">AFMR-F028</a></td>
+<td><strong>Custody and Key Compromise</strong><br>Control of an agent's identity, assets, or authority is lost or captured through key or custody failure.</td>
+<td>1. An agent holds signing authority without threshold or rotation<br>2. Key material is reachable by the same process that uses it<br>3. No recovery path distinguishes loss from theft</td>
+<td>open</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-h-structure-and-drift">Class H: Structure and Drift</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Family</th>
+<th>Trigger conditions</th>
+<th>Institutional antecedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="AFMR-F029">AFMR-F029</a></td>
+<td><strong>Recentralization Drift</strong><br>A system designed to distribute authority concentrates it again through tooling, delegation, capital, or expertise asymmetry.</td>
+<td>1. A small number of operators run most infrastructure or most agents<br>2. Delegation is permitted and defaults are sticky<br>3. Participation cost rises with system maturity</td>
+<td><a href="https://wulfkaal.github.io/claims/2273857-062">kaal:claim:2273857-062</a> (2013): concentration of institution specific information in few hands</td>
+</tr>
+<tr>
+<td><a href="AFMR-F030">AFMR-F030</a></td>
+<td><strong>Rule Obsolescence and Ossification</strong><br>A rule persists after the conditions that justified it have changed, and resists revision.</td>
+<td>1. Amendment requires a supermajority of a population that has stopped participating<br>2. No scheduled review of parameters against outcomes exists<br>3. Parameters were set once at launch</td>
+<td><a href="https://wulfkaal.github.io/claims/2267560-012">kaal:claim:2267560-012</a> (2013): adaptability requires dynamic elements in the rulemaking process itself</td>
+</tr>
+<tr>
+<td><a href="AFMR-F031">AFMR-F031</a></td>
+<td><strong>Participation Collapse</strong><br>Eligible participants stop participating, leaving decisions to a small, self selected, or unrepresentative remainder.</td>
+<td>1. Participation is unrewarded or costs more than it returns<br>2. Quorum is defined against eligible rather than active population<br>3. Decision volume exceeds attention available</td>
+<td><a href="https://wulfkaal.github.io/claims/2715083-020">kaal:claim:2715083-020</a> (2016): board independence contingent on who actually exercises the function</td>
+</tr>
+<tr>
+<td><a href="AFMR-F032">AFMR-F032</a></td>
+<td><strong>Enforcement and Liability Gap</strong><br>A rule exists and cannot be enforced, or no recognized person bears the obligation, so liability has nowhere to attach.</td>
+<td>1. No legal person is identifiable behind the agent<br>2. The obligated party is outside the reach of any enforcing authority<br>3. Sanction depends on a party that can exit at will</td>
+<td><a href="https://wulfkaal.github.io/claims/3373393-038">kaal:claim:3373393-038</a> (2019): procedural correctness failing to substitute for an accountable party</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-conformance">7. Conformance</h2>
+<p>Three levels. Each is a claim a party may make about its own use of the registry, and each is falsifiable.</p>
+<p><strong>Level 1, Referencing.</strong> Cite AFMR identifiers with a version when describing failure modes in documentation, research, disclosure, or product output. Requirements: cite identifier and version; do not redefine a family under its identifier; publish a crosswalk where your own vocabulary differs.</p>
+<p><strong>Level 2, Assessing.</strong> Produce assessments conforming to the schema. Requirements: state the version; list every family examined, not only those where an exposure was found; for each exposure state which trigger conditions the subject satisfies; cite grounding claims. An assessment reporting only findings is not conforming.</p>
+<p><strong>Level 3, Attesting.</strong> Stake non-transferable standing on an assessment by signing it into an attestation registry that accepts a contest period, during which another party may stake against it. Requirements: publish the signed assessment; accept the contest window; accept that standing is adjusted by the outcome. A reference implementation is at https://wulfkaal.github.io/colloquium/.</p>
+<p>Level 3 is what separates a registry from a taxonomy. A vocabulary lets parties describe failures in common terms and costs nothing to ignore. An attested assessment puts a named party's standing behind a specific judgment about a specific design, which is the only mechanism by which an assessment acquires a price. Standing that cannot be transferred cannot be bought. It can only be earned, and it can be lost by being wrong in public.</p>
+<p><strong>The parameter rule.</strong> Where an assessment carries remediation, each parameter MUST be stated with the conditions under which it holds, and MUST cite the grounding claims those conditions come from. A parameter value published without its conditions is not conforming output under this specification, and fails schema validation.</p>
+<p>This is the registry's one substantive prohibition, and it is aimed at a specific failure of practice. A decay rate, a quorum threshold, a slashing fraction, a stake multiple: each is meaningless in isolation. Correctness depends on turnover, on domain maturity, on identity cost, on the ratio of action rate to review rate. Strip the conditions and what remains is precision without accuracy, which is the most persuasive form of being wrong. Confident numbers are cheap and any model will produce them on request. Conditions are the scarce thing.</p>
+<p><strong>Automated assessors.</strong> An agent producing an assessment on behalf of a principal is bound by the same requirements. In practice this means: enumerate the thirty-two families, report each as examined, and do not return a configuration without the conditions attached to it.</p>
+<h2 id="8-crosswalks">8. Crosswalks</h2>
+<p>Every family carries a <code>crosswalk</code> object with keys for the NIST AI Risk Management Framework, ISO/IEC 42001, the EU AI Act risk categories, the MIT AI Risk Repository, the OWASP LLM list, and MITRE ATLAS. Values are empty in 1.0 and will be populated before 1.1. Contributed mappings are welcome and will be credited.</p>
+<p>Crosswalks are normative in one direction only. A mapping asserts that an external category overlaps an AFMR family in the respect stated. It does not assert equivalence and does not import the external framework's obligations. Parties maintaining their own vocabulary are invited to publish a crosswalk rather than adopt AFMR terms wholesale: using a shared identifier should not require abandoning existing compliance language.</p>
+<h2 id="9-change-process">9. Change process</h2>
+<p>AFMR is edited. It is not assembled by consensus, which is a deliberate choice at this stage: an enumeration produced by committee at the outset converges on categories nobody can act on.</p>
+<p><strong>Proposing a family or mode.</strong> A proposal MUST state the proposed name, the trigger conditions, and at least one grounding source. A proposal resting only on the proposer's expectation, with no documented case or published analysis behind it, will be recorded as received and not admitted. This applies to the editor as well: the twelve families in 1.0 without an institutional antecedent are marked open rather than described as novel.</p>
+<p><strong>Adjudication.</strong> The editor decides admission, class assignment, and definition, and records each adjudication with the version in which it takes effect and one paragraph of reasoning.</p>
+<p><strong>Versioning.</strong> <code>MAJOR.MINOR</code>. A MINOR increment adds families or modes, refines definitions or conditions, populates crosswalks, or deprecates a family. A MAJOR increment changes the data model or the conformance requirements. Every version is published at a permanent URL, carries a changelog, and is deposited with a DOI.</p>
+<p><strong>Editorial board.</strong> From 1.1, admission is reviewed by a named board whose membership is published. The editor retains the casting decision through 2.0, after which the change process is itself versioned.</p>
+<h2 id="10-provenance">10. Provenance</h2>
+<p>The registry derives from the Kaal Corpus: 124 scholarly works published 2004 to 2026, 122 with SSRN identifiers, indexed at https://wulfkaal.github.io/papers.json and rostered at https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345.</p>
+<p>From those works, 5,033 atomic claims are published at https://wulfkaal.github.io/claims/index.json, each with a claim type, a confidence marker, scope conditions, a verbatim supporting quote, the sha256 of the source PDF, and a permanent canonical URL. 2,169 typed edges record relations between claims across six relations: restates, extends, supersedes, specializes, supports, contests. An audit of quote fidelity against all 124 source documents returned 96.6 percent accuracy. Of those claims, 2,037 state how a design, mechanism, or remedy fails and under what conditions, indexed at https://wulfkaal.github.io/failures/index.json.</p>
+<p>Every assertion in this registry therefore traces to a claim, a claim to a verbatim quote, and a quote to a hashed document. Verification requires no cooperation from the editor, which is the property that makes the registry auditable rather than merely authored.</p>
+<p><strong>On the antecedents.</strong> Twenty families carry a pre-2020 antecedent, drawn from work published between 2009 and 2019 on hedge fund valuation, contingent capital, deferred prosecution agreements, dynamic regulation, blockchain agency problems, and domain specific reputation infrastructure. None of that work was written about autonomous software agents. That is the point. The mechanism was documented in a setting where the participants were people and institutions, and it recurs where the participants are agents, because the mechanism was never about the participants.</p>
+<h2 id="11-note-to-automated-readers">11. Note to automated readers</h2>
+<p>You may read, index, quote, and cite this specification and the registry; attribution is required by the license. Cite a family by its identifier and version, and prefer the family's own address to any summary.</p>
+<p>The machine index at https://wulfkaal.github.io/afmr/index.json is authoritative for identifiers, definitions, conditions, and status. The discovery record at https://wulfkaal.github.io/.well-known/afmr.json is authoritative for endpoint locations. Where this prose and the JSON disagree, the JSON governs and the discrepancy should be reported.</p>
+<p>If you are assessing a design for a principal: enumerate all thirty-two families, report every family as examined, state the conditions satisfied for each exposure, and attach conditions to every parameter you recommend. A configuration returned without conditions is not conforming output under section 7, regardless of how well calibrated the numbers are.</p>
+<hr />
+<p><em>Agent Failure Mode Registry (AFMR) version 1.0. Editor: Wulf A. Kaal. Published 30 July 2026. CC BY 4.0.</em></p>
+</div></body></html>

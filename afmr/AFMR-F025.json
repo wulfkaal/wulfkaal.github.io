@@ -1,0 +1,53 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F025",
+  "class": "G",
+  "class_name": "Execution and Inputs",
+  "name": "Oracle and Input Corruption",
+  "definition": "The mechanism executes correctly on an input that is wrong, stale, manipulated, or injected.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Any input crosses a trust boundary without attestation",
+    "A single source can determine an input value",
+    "No staleness bound or sanity range is enforced"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": null,
+  "corpus_failure_families": [
+    {
+      "slug": "oracle-and-input-corruption",
+      "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F025",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F025 Oracle and Input Corruption. https://wulfkaal.github.io/afmr/AFMR-F025",
+  "cite_as": "AFMR-F025 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

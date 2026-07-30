@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wulfkaal.github.io/afmr/schema.json",
+  "title": "AFMR family, mode, and assessment records",
+  "$defs": {
+    "family": {
+      "type": "object",
+      "required": [
+        "id",
+        "class",
+        "name",
+        "definition",
+        "trigger_conditions",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^AFMR-F[0-9]{3}$"
+        },
+        "class": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        },
+        "class_name": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "stable",
+            "draft",
+            "deprecated"
+          ]
+        },
+        "trigger_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "description": "Conditions a builder can check against a described design."
+        },
+        "grounding_claims": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "institutional_antecedent": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Pre-2020 claim documenting the same mechanism in human institutions."
+        },
+        "corpus_failure_families": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "canonical_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "crosswalk": {
+          "type": "object"
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "required": [
+        "subject",
+        "afmr_version",
+        "assessor",
+        "families_examined",
+        "exposures"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string"
+        },
+        "afmr_version": {
+          "type": "string"
+        },
+        "assessor": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "families_examined": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^AFMR-F[0-9]{3}$"
+          },
+          "minItems": 1,
+          "description": "Every family considered, whether or not an exposure was found. Required: absence of an exposure must be distinguishable from absence of examination."
+        },
+        "exposures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "family",
+              "conditions_met"
+            ],
+            "properties": {
+              "family": {
+                "type": "string",
+                "pattern": "^AFMR-F[0-9]{3}$"
+              },
+              "conditions_met": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "grounding_claims": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "remediation": {
+                "type": "object",
+                "required": [
+                  "parameters",
+                  "conditions"
+                ],
+                "description": "Parameters MUST be accompanied by the conditions under which they hold. Section 7.",
+                "properties": {
+                  "parameters": {
+                    "type": "object"
+                  },
+                  "conditions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "attestation": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "family": {
+      "$ref": "#/$defs/family"
+    },
+    "assessment": {
+      "$ref": "#/$defs/assessment"
+    }
+  },
+  "type": "object"
+}

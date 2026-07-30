@@ -1,0 +1,58 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F011",
+  "class": "C",
+  "class_name": "Objective and Specification",
+  "name": "Metric Capture and Measurement Failure",
+  "definition": "The chosen metric ceases to track the property it stands for once it becomes the target.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Standing or reward is computed from a single scalar",
+    "The metric is disclosed to the parties it scores",
+    "No periodic revalidation of the metric against outcomes occurs"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:2629451-031",
+    "url": "https://wulfkaal.github.io/claims/2629451-031",
+    "year": "2015",
+    "mechanism": "market pricing of governance change as a proxy for governance quality"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "measurement-and-metric-failure",
+      "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F011",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F011 Metric Capture and Measurement Failure. https://wulfkaal.github.io/afmr/AFMR-F011",
+  "cite_as": "AFMR-F011 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

@@ -1,0 +1,58 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F020",
+  "class": "E",
+  "class_name": "Evaluation and Feedback",
+  "name": "Human Judgment Displacement",
+  "definition": "Automation replaces judgment in a setting that required judgment, and the loss is not detected because the output still looks well formed.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Output is fluent and confident regardless of correctness",
+    "No sampled human review of accepted outputs occurs",
+    "The prior human process left no record to compare against"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:2267560-025",
+    "url": "https://wulfkaal.github.io/claims/2267560-025",
+    "year": "2013",
+    "mechanism": "decision makers relying on presumptively optimal rules for want of decentralized information"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "human-judgment-displacement",
+      "url": "https://wulfkaal.github.io/failures/by-name/human-judgment-displacement.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F020",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F020 Human Judgment Displacement. https://wulfkaal.github.io/afmr/AFMR-F020",
+  "cite_as": "AFMR-F020 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

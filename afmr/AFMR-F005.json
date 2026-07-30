@@ -1,0 +1,63 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F005",
+  "class": "B",
+  "class_name": "Stake and Incentive",
+  "name": "Staking and Incentive Misalignment",
+  "definition": "What an agent risks diverges from what the system needs it to care about.",
+  "status": "stable",
+  "trigger_conditions": [
+    "The stake is smaller than the value at issue in a single decision",
+    "Loss from a bad outcome falls on a party other than the decider",
+    "Stake is denominated in something the agent can reacquire faster than it can be slashed"
+  ],
+  "grounding_claims": [
+    {
+      "id": "kaal:claim:5887242-017",
+      "url": "https://wulfkaal.github.io/claims/5887242-017"
+    }
+  ],
+  "institutional_antecedent": {
+    "id": "kaal:claim:1558614-013",
+    "url": "https://wulfkaal.github.io/claims/1558614-013",
+    "year": "2010",
+    "mechanism": "actors capture upside of excessive risk without bearing all of its cost"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "staking-and-incentive-misalignment",
+      "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F005",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F005 Staking and Incentive Misalignment. https://wulfkaal.github.io/afmr/AFMR-F005",
+  "cite_as": "AFMR-F005 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

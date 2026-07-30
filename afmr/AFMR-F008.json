@@ -1,0 +1,58 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F008",
+  "class": "B",
+  "class_name": "Stake and Incentive",
+  "name": "Moral Hazard and Backstop Expectation",
+  "definition": "An expectation of rescue, retry, or rollback changes risk taking before any rescue occurs.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Failed actions can be retried at no cost to standing",
+    "A human or protocol operator is expected to reverse bad outcomes",
+    "Slashing is discretionary rather than automatic"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:1558614-013",
+    "url": "https://wulfkaal.github.io/claims/1558614-013",
+    "year": "2010",
+    "mechanism": "limited liability as a driver of excessive risk taking"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "moral-hazard-and-bailout-expectation",
+      "url": "https://wulfkaal.github.io/failures/by-name/moral-hazard-and-bailout-expectation.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F008",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F008 Moral Hazard and Backstop Expectation. https://wulfkaal.github.io/afmr/AFMR-F008",
+  "cite_as": "AFMR-F008 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

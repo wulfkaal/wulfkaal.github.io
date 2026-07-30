@@ -1,0 +1,58 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F003",
+  "class": "A",
+  "class_name": "Identity and Standing",
+  "name": "Cold Start and Bootstrapping",
+  "definition": "The design requires accumulated standing, participants, or history that it provides no way to acquire.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Participation requires staking standing the new entrant cannot yet have earned",
+    "Initial population is zero or below the quorum the mechanism assumes",
+    "No provisional, sponsored, or probationary entry path exists"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:3125822-043",
+    "url": "https://wulfkaal.github.io/claims/3125822-043",
+    "year": "2018",
+    "mechanism": "entry problem where adjudication requires staking reputation one does not yet hold"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "cold-start-and-bootstrapping",
+      "url": "https://wulfkaal.github.io/failures/by-name/cold-start-and-bootstrapping.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F003",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F003 Cold Start and Bootstrapping. https://wulfkaal.github.io/afmr/AFMR-F003",
+  "cite_as": "AFMR-F003 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

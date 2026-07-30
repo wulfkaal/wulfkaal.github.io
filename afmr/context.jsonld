@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "afmr": "https://wulfkaal.github.io/afmr/",
+    "kaal": "https://wulfkaal.github.io/claims/",
+    "id": "@id",
+    "name": "name",
+    "definition": "description",
+    "families": {
+      "@id": "hasDefinedTerm",
+      "@container": "@set"
+    },
+    "trigger_conditions": {
+      "@id": "afmr:triggerCondition",
+      "@container": "@set"
+    },
+    "grounding_claims": {
+      "@id": "citation",
+      "@container": "@set"
+    },
+    "institutional_antecedent": "afmr:institutionalAntecedent",
+    "crosswalk": "afmr:crosswalk",
+    "editor": "editor",
+    "version": "version",
+    "license": "license"
+  }
+}

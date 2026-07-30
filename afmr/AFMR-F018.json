@@ -1,0 +1,67 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F018",
+  "class": "E",
+  "class_name": "Evaluation and Feedback",
+  "name": "Unstaked Adjudication",
+  "definition": "Whoever judges a contribution risks nothing on the judgment, so judgment is cheap and drifts.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Validators or reviewers stake nothing on their verdict",
+    "Verdicts are not contestable within a stated window",
+    "No standing consequence follows from a verdict later shown wrong"
+  ],
+  "grounding_claims": [
+    {
+      "id": "kaal:claim:5245185-036",
+      "url": "https://wulfkaal.github.io/claims/5245185-036"
+    }
+  ],
+  "institutional_antecedent": {
+    "id": "kaal:claim:2486570-031",
+    "url": "https://wulfkaal.github.io/claims/2486570-031",
+    "year": "2014",
+    "mechanism": "consequence attaching to the adjudicating party as the source of care"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "reputation-system-gaming",
+      "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json"
+    },
+    {
+      "slug": "board-and-oversight-failure",
+      "url": "https://wulfkaal.github.io/failures/by-name/board-and-oversight-failure.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F018",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F018 Unstaked Adjudication. https://wulfkaal.github.io/afmr/AFMR-F018",
+  "cite_as": "AFMR-F018 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

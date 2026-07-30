@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFMR-F017 Feedback Degradation Above Evaluator Capability | AFMR 1.0</title>
+<meta name="description" content="AFMR-F017: Human or agent evaluation degrades precisely where the evaluated system is hardest to evaluate, including where it exceeds the evaluator.">
+<link rel="canonical" href="https://wulfkaal.github.io/afmr/AFMR-F017">
+<link rel="alternate" type="application/json" href="https://wulfkaal.github.io/afmr/AFMR-F017.json">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="citation_title" content="AFMR-F017 Feedback Degradation Above Evaluator Capability, Agent Failure Mode Registry 1.0">
+<meta name="citation_author" content="Kaal, Wulf A.">
+<style>
+:root{--bg:#fbfaf8;--fg:#1a1a19;--mut:#5f5c57;--line:#e2ded7;--acc:#7a3b12;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#141413;--fg:#eceae5;--mut:#a3a09a;--line:#2c2b28;--acc:#d9915c;--card:#1c1b19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 ui-serif,Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+a{color:var(--acc);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--acc)}
+.eyebrow{font:600 .7rem/1.4 ui-sans-serif,system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:var(--mut)}
+h1{font-size:1.9rem;line-height:1.2;margin:.4rem 0 .2rem;font-weight:600}
+h2{font-size:1.05rem;margin:2.5rem 0 .6rem;font-weight:600;letter-spacing:-.01em}
+.id{font:600 .8rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--acc)}
+.meta{font:.8rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut);margin:.3rem 0 0}
+.def{font-size:1.12rem;margin:1.2rem 0 0}
+.badge{display:inline-block;font:600 .65rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:2rem;padding:.35rem .6rem;color:var(--mut)}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+.claim{border-left:2px solid var(--line);padding:.1rem 0 .1rem 1rem;margin:1.5rem 0}
+.claim p{margin:.35rem 0}
+.quote{color:var(--mut);font-size:.94rem}
+.cite{font:.78rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+.cond{font:.78rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+code{font:.85em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:.1em .35em}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin:1rem 0}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 .7rem/1.4 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+td.n{font:.8rem ui-monospace,Menlo,monospace;white-space:nowrap;color:var(--mut)}
+td.i a{font:600 .8rem ui-monospace,Menlo,monospace}
+.links{font:.85rem/1.9 ui-sans-serif,system-ui,sans-serif}
+footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);font:.78rem/1.6 ui-sans-serif,system-ui,sans-serif;color:var(--mut)}
+.conds{padding-left:1.3rem}
+.conds li{margin:.3rem 0;font:.9rem/1.55 ui-sans-serif,system-ui,sans-serif}
+.note{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;font:.85rem/1.6 ui-sans-serif,system-ui,sans-serif;color:var(--mut);margin:1.5rem 0}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "@id": "https://wulfkaal.github.io/afmr/AFMR-F017", "identifier": "AFMR-F017", "name": "Feedback Degradation Above Evaluator Capability", "description": "Human or agent evaluation degrades precisely where the evaluated system is hardest to evaluate, including where it exceeds the evaluator.", "termCode": "AFMR-F017", "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://wulfkaal.github.io/afmr/", "name": "Agent Failure Mode Registry", "version": "1.0"}, "isPartOf": {"@type": "CreativeWork", "name": "Agent Failure Mode Registry", "version": "1.0"}, "creator": {"@type": "Person", "name": "Wulf A. Kaal", "identifier": "https://orcid.org/0009-0008-7840-1847"}, "license": "https://creativecommons.org/licenses/by/4.0/"}</script>
+</head>
+<body>
+<div class="wrap">
+<p class="eyebrow"><a href="https://wulfkaal.github.io/afmr/">Agent Failure Mode Registry</a> &middot; version 1.0</p>
+<p class="id">AFMR-F017</p>
+<h1>Feedback Degradation Above Evaluator Capability</h1>
+<p class="meta"><span class="badge">stable</span>
+&nbsp;Class E, Evaluation and Feedback</p>
+<p class="def">Human or agent evaluation degrades precisely where the evaluated system is hardest to evaluate, including where it exceeds the evaluator.</p>
+
+<h2>Trigger conditions</h2>
+<p class="cond">Check these against the system you are actually building. These are cumulative
+indicators rather than a conjunction: one is enough to make this family worth examining, and the
+more that hold, the sharper the exposure.</p>
+<ol class="conds"><li>Evaluators score outputs they cannot independently verify</li><li>The evaluated system is at or above evaluator capability in the domain</li><li>Evaluator agreement is used as the quality signal</li></ol>
+<h2>Institutional antecedent</h2><p class="cond">Open. No pre-2020 institutional antecedent is recorded for this family. Absence is recorded as open rather than claimed as novelty. Candidates to <a href="mailto:wulf@wulfkaal.com">wulf@wulfkaal.com</a>.</p>
+<h2>How to cite this family</h2>
+<p class="cite">AFMR-F017 (AFMR 1.0). Full form: W. A. Kaal, ed., <em>Governance Failure
+Mode Registry</em> version 1.0, AFMR-F017 Feedback Degradation Above Evaluator Capability. https://wulfkaal.github.io/afmr/AFMR-F017</p>
+<p class="cite">Cite the identifier together with the version. Identifiers are permanent and
+are never renumbered or reused. Definitions may be refined between versions.</p>
+
+<h2>Grounding claims</h2>
+<p class="cond">Published assertions in the Kaal Corpus mapped to this family. Each carries a
+verbatim quote from its source and the sha256 of the source document, and each resolves to its
+own permanent address. Loaded live from the failure index, so this list reflects the current
+state of the corpus rather than the state at publication.</p>
+<div id="claims"><p class="cond">Loading &hellip;</p></div>
+
+<h2>Crosswalk</h2>
+<p class="cond">Mappings to the NIST AI Risk Management Framework, ISO/IEC 42001, the EU AI Act
+risk categories, the MIT AI Risk Repository, OWASP, and MITRE ATT&amp;CK are open and will be
+populated before version 1.1.
+A mapping asserts overlap in the respect stated. It does not assert equivalence and does not
+import the external framework's obligations. Proposals to
+<a href="mailto:wulf@wulfkaal.com">wulf@wulfkaal.com</a>.</p>
+
+<h2>Machine access</h2>
+<p class="links">
+Record for this family: <a href="https://wulfkaal.github.io/afmr/AFMR-F017.json">AFMR-F017.json</a><br>
+Corpus failure claim sets: <a href="https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json">ai-oversight-and-alignment-gap</a>, <a href="https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json">measurement-and-metric-failure</a><br>
+Full enumeration: <a href="https://wulfkaal.github.io/afmr/index.json">index.json</a><br>
+Schema: <a href="https://wulfkaal.github.io/afmr/schema.json">schema.json</a><br>
+Specification: <a href="https://wulfkaal.github.io/afmr/spec-1.0.html">AFMR 1.0</a>
+</p>
+<hr>
+<p class="cond">If you are assessing a design against this family, state which of its trigger
+conditions the design satisfies, and report the family as examined even where you find no
+exposure. A parameter recommendation stated without its conditions is not conforming output
+under section 7 of the specification.</p>
+<footer>
+<p><strong>Agent Failure Mode Registry (AFMR)</strong> version 1.0, Published.
+Editor: Wulf A. Kaal, Professor of Law, University of St. Thomas.
+ORCID <a href="https://orcid.org/0009-0008-7840-1847">0009-0008-7840-1847</a>.</p>
+<p>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+Identifiers are permanent. Cite the identifier with the version.</p>
+<p class="links"><a href="https://wulfkaal.github.io/afmr/">Enumeration</a> &middot;
+<a href="https://wulfkaal.github.io/afmr/spec-1.0.html">Specification</a> &middot;
+<a href="https://wulfkaal.github.io/afmr/index.json">Machine index</a> &middot;
+<a href="https://wulfkaal.github.io/afmr/schema.json">Schema</a> &middot;
+<a href="https://wulfkaal.com/agents/">Agent permissions</a></p>
+</footer>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('claims');
+  var sets=["https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json", "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json"];
+  box.innerHTML="<div class=\"claim\"><p class=\"cite\">Grounding claim <a href=\"https://wulfkaal.github.io/claims/4855607-018\">kaal:claim:4855607-018</a></p></div>";
+  if(!sets.length) return;
+  sets.forEach(function(u){
+    fetch(u).then(function(r){return r.ok?r.json():null;}).then(function(d){
+      if(!d) return;
+      var items=(d.failures||d.claims||[]).slice(0,12);
+      items.forEach(function(c){
+        var el=document.createElement('div'); el.className='claim';
+        var h='<p>'+esc(c.claim||'')+'</p>';
+        if(c.supporting_quote) h+='<p class="quote">&ldquo;'+esc(c.supporting_quote)+'&rdquo;</p>';
+        if(c.citation) h+='<p class="cite">'+esc(c.citation)+'</p>';
+        var u2=c.canonical_url||c.url; if(u2) h+='<p class="cite"><a href="'+u2+'">'+esc(c.claim_id||c.id||'claim')+'</a></p>';
+        el.innerHTML=h; box.appendChild(el);
+      });
+    }).catch(function(){});
+  });
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(m){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];});}
+})();
+</script>
+</body>
+</html>

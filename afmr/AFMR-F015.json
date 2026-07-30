@@ -1,0 +1,58 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F015",
+  "class": "D",
+  "class_name": "Oversight and Adjudication",
+  "name": "Alignment Tax and Exogenous Constraint Scaling",
+  "definition": "External control scales against capability, so oversight cost rises faster than the capability it constrains.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Alignment relies on constraint imposed from outside the agent's incentive structure",
+    "Agent capability is expected to increase",
+    "No endogenous stake grows with capability"
+  ],
+  "grounding_claims": [
+    {
+      "id": "kaal:claim:6244278-016",
+      "url": "https://wulfkaal.github.io/claims/6244278-016"
+    }
+  ],
+  "institutional_antecedent": null,
+  "corpus_failure_families": [
+    {
+      "slug": "ai-oversight-and-alignment-gap",
+      "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F015",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F015 Alignment Tax and Exogenous Constraint Scaling. https://wulfkaal.github.io/afmr/AFMR-F015",
+  "cite_as": "AFMR-F015 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}

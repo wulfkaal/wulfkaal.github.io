@@ -1,0 +1,62 @@
+{
+  "@context": "https://wulfkaal.github.io/afmr/context.jsonld",
+  "@type": "DefinedTerm",
+  "afmr_version": "1.0",
+  "afmr_status": "Published",
+  "id": "AFMR-F026",
+  "class": "G",
+  "class_name": "Execution and Inputs",
+  "name": "Automated Execution Rigidity",
+  "definition": "Execution cannot accommodate circumstances the code did not anticipate, and cannot be amended in time to matter.",
+  "status": "stable",
+  "trigger_conditions": [
+    "Execution is irreversible once triggered",
+    "Amendment requires a process slower than the harm",
+    "No circuit breaker or pause authority exists"
+  ],
+  "grounding_claims": [],
+  "institutional_antecedent": {
+    "id": "kaal:claim:2267560-012",
+    "url": "https://wulfkaal.github.io/claims/2267560-012",
+    "year": "2013",
+    "mechanism": "rules are adaptable only where the process producing them integrates dynamic elements"
+  },
+  "corpus_failure_families": [
+    {
+      "slug": "smart-contract-rigidity",
+      "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-rigidity.json"
+    },
+    {
+      "slug": "rule-obsolescence-and-ossification",
+      "url": "https://wulfkaal.github.io/failures/by-name/rule-obsolescence-and-ossification.json"
+    }
+  ],
+  "canonical_url": "https://wulfkaal.github.io/afmr/AFMR-F026",
+  "crosswalk": {
+    "nist_ai_rmf": [],
+    "iso_42001": [],
+    "eu_ai_act": [],
+    "mit_ai_risk_repository": [],
+    "owasp_llm": [],
+    "mitre_atlas": []
+  },
+  "in_defined_term_set": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "url": "https://wulfkaal.github.io/afmr/"
+  },
+  "editor": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "affiliation": "University of St. Thomas",
+    "email": "wulf@wulfkaal.com"
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "W. A. Kaal, ed., Agent Failure Mode Registry version 1.0, AFMR-F026 Automated Execution Rigidity. https://wulfkaal.github.io/afmr/AFMR-F026",
+  "cite_as": "AFMR-F026 (AFMR 1.0)",
+  "specification_url": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+  "schema_url": "https://wulfkaal.github.io/afmr/schema.json",
+  "assessment_note": "State which trigger conditions the assessed design satisfies. Report this family as examined even where no exposure is found. A parameter recommendation stated without its conditions is not conforming output under section 7."
+}
