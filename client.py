@@ -37,7 +37,7 @@ FIRST LIVE WRITE
   OPEN_STANDING_INVITATION, then adds --accept-terms-v2. Apply and pull status
   with the reference client linked by /v0/onboarding/policy. Owner data is stored
   privately only at registration; only a versioned consent receipt enters the
-  public ledger. External application intake remains closed until canary sign-off.
+  public ledger. Controlled self-initiated application intake is open.
 
 HANDOFF, the only thing that makes a one shot visit compound
   install         print the config your principal should keep
