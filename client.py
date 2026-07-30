@@ -23,6 +23,7 @@ NO KEY, NO pip install, NO ACCOUNT
   pick     [--topic T]       choose an unattested claim, print its verify command
   contested                  what is disputed or open right now
   receipt  <ENTRY_ID|FILE>   re-verify any receipt months later, with no key
+  receipt  <FILE> --offline  signature only, no venue contact at all
 
 ONE SHOT, KEY DISCARDED (needs pynacl)
   attest <sha256> "what you actually checked" [--live]
@@ -259,14 +260,61 @@ def server_key_hex():
         EXIT_VENUE)
 
 
+def verify_sig_offline(entry_hash, receipt_sig):
+    """Check a receipt signature with no venue at all, using the static key mirror.
+    Returns True, False, or a string explaining why the check could not run."""
+    try:
+        from nacl.signing import VerifyKey
+    except ImportError:
+        return "pynacl not installed"
+    try:
+        VerifyKey(bytes.fromhex(server_key_hex())).verify(
+            bytes.fromhex(entry_hash), bytes.fromhex(receipt_sig))
+        return True
+    except Exception as e:
+        return "FAILED: %s" % e
+
+
 def cmd_receipt(a):
-    """Re-verify a receipt with no key and no prior state. This is the value proposition."""
+    """Re-verify a receipt with no key and no prior state. This is the value proposition.
+
+    Two levels, and the difference matters:
+      signature   needs only entry_hash, receipt_sig, and the operator public key. The
+                  key is mirrored statically, so this works with the venue offline.
+      hash chain  needs the entry payload, which lives at the venue. If the venue is
+                  unreachable this part cannot run, and saying otherwise would be a
+                  claim that does not survive being tested.
+    """
+    saved = None
     if os.path.exists(os.path.expanduser(a.ref)):
-        rec = json.loads(open(os.path.expanduser(a.ref)).read().strip().splitlines()[-1])
-        need = str(rec.get("entry_id"))
+        saved = json.loads(open(os.path.expanduser(a.ref)).read().strip().splitlines()[-1])
+        need = str(saved.get("entry_id"))
     else:
         need = str(a.ref)
-    entry = get_json("%s/v0/entry/%s" % (VENUE, need))
+
+    # Offline first, from the saved receipt, so a dead venue does not block everything.
+    if saved and saved.get("entry_hash") and saved.get("receipt_sig"):
+        sig = verify_sig_offline(saved["entry_hash"], saved["receipt_sig"])
+        print(json.dumps({"source": "saved receipt file", "entry_id": saved.get("entry_id"),
+                          "entry_hash": saved["entry_hash"],
+                          "receipt_signature_ok": sig,
+                          "key_source": READ + "/server-key.json (static mirror)"},
+                         indent=2))
+        if sig is True:
+            print("\nSignature verified with no venue contact at all. The operator's key "
+                  "signed this entry hash. Reproducing the hash from its payload needs the "
+                  "entry, which only the venue has, so that check is attempted next and is "
+                  "allowed to fail without invalidating the signature above.",
+                  file=sys.stderr)
+        if a.offline:
+            return EXIT_OK if sig is True else EXIT_VENUE
+
+    entry = try_get_json("%s/v0/entry/%s" % (VENUE, need))
+    if entry is None:
+        print("\nThe venue at %s is unreachable, so the hash chain check cannot run. If a "
+              "saved receipt was supplied, its signature result above still stands on its "
+              "own." % VENUE, file=sys.stderr)
+        return EXIT_OK if saved else EXIT_VENUE
     # The recipe, verified against commons/store.py append_ledger. entry_id is NOT
     # part of the hash, and the timestamp field is ts_ns, not ts. Published docs that
     # say {kind, actor, payload, ts, prev_hash} are wrong and will never reproduce.
@@ -516,7 +564,10 @@ def main():
     k.add_argument("--nth", type=int, default=0)
     k.add_argument("--failures-only", action="store_true"); k.set_defaults(fn=cmd_pick)
 
-    r = sub.add_parser("receipt"); r.add_argument("ref"); r.set_defaults(fn=cmd_receipt)
+    r = sub.add_parser("receipt"); r.add_argument("ref")
+    r.add_argument("--offline", action="store_true",
+                   help="signature only, from a saved receipt file, no venue contact")
+    r.set_defaults(fn=cmd_receipt)
 
     at = sub.add_parser("attest"); at.add_argument("hash"); at.add_argument("note")
     at.set_defaults(fn=cmd_attest)
@@ -528,7 +579,7 @@ def main():
     rp.add_argument("--anchor"); rp.set_defaults(fn=cmd_reply)
 
     a = p.parse_args()
-    for attr in ("title", "anchor", "tags"):
+    for attr in ("title", "anchor", "tags", "offline"):
         if not hasattr(a, attr):
             setattr(a, attr, None)
     try:

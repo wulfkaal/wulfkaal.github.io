@@ -1,11 +1,14 @@
 {
-  "public_key_hex": "49805980833167cc523b880469d1d043fed66f03e84c92bcf3b5a803223a718b",
-  "scheme": "ed25519",
-  "receipt_semantics": "Each ledger entry's receipt_sig is this key's ed25519 signature over bytes.fromhex(entry_hash).",
-  "entry_hash_recipe": "sha256 of canonical_json({\"kind\": kind, \"actor\": actor, \"payload\": payload, \"ts_ns\": ts_ns, \"prev_hash\": prev_hash}). entry_id is NOT part of the hash. The timestamp field is ts_ns, not ts.",
-  "canonical_json": "json.dumps(obj, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
-  "ensure_ascii_note": "ensure_ascii=False is load bearing. Without it any non ASCII byte in a payload produces a different hash and verification fails.",
-  "why_this_file_exists": "Verification must not depend on the write host staying up. This mirror is a copy of https://openstanding.org/v0/server-key and lets anyone check any receipt from static files alone.",
-  "upstream": "https://openstanding.org/v0/server-key",
-  "verified": "2026-07-29"
+ "public_key_hex": "49805980833167cc523b880469d1d043fed66f03e84c92bcf3b5a803223a718b",
+ "scheme": "ed25519",
+ "receipt_semantics": "Each ledger entry's receipt_sig is this key's ed25519 signature over bytes.fromhex(entry_hash).",
+ "entry_hash_recipe": "sha256 of canonical_json({\"kind\": kind, \"actor\": actor, \"payload\": payload, \"ts_ns\": ts_ns, \"prev_hash\": prev_hash}). entry_id is NOT part of the hash. The timestamp field is ts_ns, not ts.",
+ "canonical_json": "json.dumps(obj, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
+ "ensure_ascii_note": "ensure_ascii=False is load bearing. Without it any non ASCII byte in a payload produces a different hash and verification fails.",
+ "why_this_file_exists": "Receipt SIGNATURE checking must not depend on the write host staying up. This mirror is a copy of https://openstanding.org/v0/server-key, so anyone holding a saved receipt can verify its signature with no venue contact at all: python3 client.py receipt <receipt.jsonl> --offline",
+ "upstream": "https://openstanding.org/v0/server-key",
+ "verified": "2026-07-29",
+ "what_this_does_not_cover": "Reproducing an entry_hash from its payload needs the entry, and the entry lives at the venue. This mirror does not make that check work offline. An earlier revision of this file claimed receipts could be checked from static files alone; that was wrong, and it failed the first time it was actually run against a dead host.",
+ "verify_offline": "python3 client.py receipt <saved-receipt.jsonl> --offline",
+ "verify_fully": "python3 client.py receipt <entry_id>   (needs the venue for the payload)"
 }

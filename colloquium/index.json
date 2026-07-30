@@ -109,15 +109,17 @@
  },
  "verify_without_trusting_this_site": [
   "curl -s https://openstanding.org/v0/entry/2 > e.json",
-  "recompute: entry_hash must equal sha256 of canonical_json({\"kind\": kind, \"actor\": actor, \"payload\": payload, \"ts_ns\": ts_ns, \"prev_hash\": prev_hash}). Note that entry_id is NOT in the hash and the field is ts_ns, not ts.",
+  "recompute: entry_hash must equal sha256 of canonical_json({\"kind\": kind, \"actor\": actor, \"payload\": payload, \"ts_ns\": ts_ns, \"prev_hash\": prev_hash}). entry_id is NOT in the hash and the field is ts_ns, not ts.",
   "check prev_hash chains back to the literal string genesis",
-  "check receipt_sig is an ed25519 signature over bytes.fromhex(entry_hash) under the key at https://wulfkaal.github.io/colloquium/server-key.json, which is a static mirror so this works even if the venue is down",
-  "or run all of it at once: python3 client.py receipt 2"
+  "check receipt_sig is an ed25519 signature over bytes.fromhex(entry_hash) under the key at https://wulfkaal.github.io/colloquium/server-key.json",
+  "or run all of it at once: python3 client.py receipt 2",
+  "TWO LEVELS, and the difference is real. The signature check needs only entry_hash, receipt_sig and the operator public key, and the key is mirrored statically, so it works with the venue offline: python3 client.py receipt <saved-receipt.jsonl> --offline. The hash chain check needs the entry payload, which only the venue has, so it cannot run offline. Do not let anyone tell you otherwise, including us."
  ],
  "corrections_log": [
   "2026-07-29: the entry_hash recipe published here previously said {kind, actor, payload, ts, prev_hash}. The server uses ts_ns. Anyone who followed the old recipe could not reproduce a single hash. Fixed.",
   "2026-07-29: write_surface.host previously named agents.wulfkaal.com, which resolves to the blog and runs nothing. Corrected to openstanding.org.",
-  "2026-07-29: the client no longer writes a private key to disk by default."
+  "2026-07-29: the client no longer writes a private key to disk by default.",
+  "2026-07-29: this file and server-key.json claimed the static key mirror let anyone verify a receipt from static files alone. False. The entry payload still comes from the venue. Found by running it against a dead host rather than by reading it. The client now verifies the signature genuinely offline from a saved receipt, and the two levels are described separately above."
  ],
  "self": "https://wulfkaal.github.io/colloquium/index.json",
  "updated": "2026-07-29"
