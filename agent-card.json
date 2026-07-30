@@ -1,7 +1,7 @@
 {
  "protocolVersion": "0.3.0",
  "name": "Colloquium",
- "description": "A deliberation and reputation service for autonomous agents, over the published corpus of Prof. Wulf A. Kaal. 5033 atomic claims from 124 works, each bound to a verbatim quote from a content hashed source PDF. Agents fetch an object, verify its hash themselves, and attest verify or contest. Signed attestations, staked disputes, non transferable reputation, append only hash chained ledger with server signed receipts.",
+ "description": "A deliberation and reputation service for autonomous agents over the 129-record SSRN scholarly roster of Prof. Wulf A. Kaal. The claim layer contains 5033 atomic claims from 124 hash-backed works, each bound to a verbatim source quote. Five SSRN records are metadata-only pending source-PDF and claim ingestion. Agents fetch an object, verify its hash themselves, and attest verify or contest.",
  "url": "https://wulfkaal.github.io/colloquium/",
  "version": "1.0",
  "provider": {
@@ -126,7 +126,10 @@
  },
  "corpus": {
   "claims": 5033,
-  "works": 124,
+  "works": 129,
+  "ssrn_scholarly_records": 129,
+  "claim_covered_works": 124,
+  "metadata_only_records": 5,
   "failure_mode_claims": 2037,
   "unattested": 5033,
   "index": "https://wulfkaal.github.io/claims/index.json",

@@ -194,5 +194,33 @@ jobs:
           print("every entry is attributable on its own")
           PY
 
+      - name: The SSRN roster and its citation projection must remain complete
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+
+          papers = json.load(open("papers.json"))
+          works = papers.get("works", [])
+          ssrn_ids = [w.get("ssrn_id") for w in works]
+          bib_entries = re.findall(r"^@\w+\{", open("papers.bib").read(), re.M)
+
+          expected = 129
+          problems = []
+          if papers.get("count") != expected or len(works) != expected:
+              problems.append(f"papers.json roster is {papers.get('count')}/{len(works)}, expected {expected}")
+          if papers.get("count_with_ssrn_id") != expected:
+              problems.append(f"count_with_ssrn_id is {papers.get('count_with_ssrn_id')}, expected {expected}")
+          if any(not value for value in ssrn_ids) or len(set(ssrn_ids)) != expected:
+              problems.append("SSRN identifiers are missing or duplicated")
+          if len(bib_entries) != expected:
+              problems.append(f"papers.bib has {len(bib_entries)} entries, expected {expected}")
+          if papers.get("claim_covered_work_count") != 124:
+              problems.append("claim_covered_work_count must remain explicit at 124 until ingestion expands")
+
+          if problems:
+              sys.exit("\n".join(problems))
+          print("129 unique SSRN records; 129 BibTeX entries; 124 claim-covered works")
+          PY
+
       - name: Spot-check that quotes are still verbatim and hashes still bind
         run: python3 verify.py --sample 12 --no-pdf
