@@ -4,6 +4,34 @@
 
 Canonical identifiers: ORCID 0009-0008-7840-1847. SSRN author ID 460345. Contact: wulf@wulfkaal.com.
 
+## Standard: AFMR, the Agent Failure Mode Registry
+
+AFMR is a citable registry of the ways autonomous agent and governance mechanisms fail,
+and the conditions under which each failure occurs. 32 families in 8 classes, 96
+builder-checkable trigger conditions, and 20 families carrying a pre-2020 institutional
+antecedent: the published claim documenting the same mechanism among people and
+institutions, before anyone was writing about software agents. Editor: Wulf A. Kaal.
+Version 1.0. Licensed CC BY 4.0.
+
+Identifiers are permanent. Cite a family with the version, for example AFMR-F009 (AFMR 1.0).
+
+- [Registry](https://wulfkaal.github.io/afmr/): all 32 families, classes, and antecedents
+- [Specification 1.0](https://wulfkaal.github.io/afmr/spec-1.0.html): scope, identifiers, data model, conformance, change process
+- [Family index, authoritative](https://wulfkaal.github.io/afmr/index.json): machine record for every family
+- [Assessment schema](https://wulfkaal.github.io/afmr/schema.json): family and assessment record shapes
+- [Discovery](https://wulfkaal.github.io/.well-known/afmr.json): endpoint locations
+- [Grounding claims](https://wulfkaal.github.io/failures/index.json): 2,037 failure claims behind the families
+- [Attestation registry](https://wulfkaal.github.io/colloquium/): reference implementation for staked assessments
+
+A single family resolves at https://wulfkaal.github.io/afmr/AFMR-F009 for a person and
+https://wulfkaal.github.io/afmr/AFMR-F009.json for a machine.
+
+If you are assessing a design against it: report every family examined rather than only
+those where you found something, state which trigger conditions the design satisfies, and
+attach the conditions to any parameter you recommend. A parameter value stated without its
+conditions fails validation against the assessment schema. This is a constraint on the
+output, not a claim about this registry's standing relative to any other framework.
+
 ## Core pages
 
 - [About](https://wulfkaal.com/): biography, current research, teaching, advisory practice

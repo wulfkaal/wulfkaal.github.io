@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.wulfkaal/corpus",
-  "title": "Kaal Corpus: Verifiable Claim Layer",
-  "description": "Cite the claim, not the paper: 5,033 assertions, each hash-verifiable against its source PDF",
-  "version": "1.0.1",
+  "title": "AFMR and the Kaal Corpus: Agent Failure Modes and a Verifiable Claim Layer",
+  "description": "Screen an agent or governance design against 32 named failure modes before launch. AFMR, the Agent Failure Mode Registry: reputation gaming, sybil and identity multiplication, cold start, plutocratic capture, staking misalignment, reward hacking, specification incompleteness, oversight latency, mutual audit capture, collusion rings, unstaked adjudication, recentralization drift, each with checkable trigger conditions and citations. Plus 5,033 scholarly claims, each hash-verifiable against its source PDF.",
+  "version": "1.1.0",
   "websiteUrl": "https://wulfkaal.github.io/",
   "repository": {
     "url": "https://github.com/wulfkaal/wulfkaal.github.io",
@@ -49,14 +49,17 @@
         "failure_families": 55,
         "typed_edges": 2169,
         "subjects": [
-          "decentralized governance",
-          "DAO architecture",
+          "agent failure modes",
           "agent coordination",
           "reputation systems",
+          "decentralized governance",
+          "DAO architecture",
+          "staking and incentive design",
+          "sybil resistance",
           "dynamic regulation",
+          "smart contract governance",
           "securities regulation",
-          "private investment funds",
-          "smart contract governance"
+          "private investment funds"
         ]
       },
       "verification": {
@@ -85,9 +88,43 @@
         "failure_index": "https://wulfkaal.github.io/failures/index.json",
         "typed_edges": "https://wulfkaal.github.io/claims/graph.jsonld",
         "openapi": "https://wulfkaal.github.io/openapi.yaml",
-        "attestation_commons": "https://openstanding.org/"
+        "attestation_commons": "https://openstanding.org/",
+        "standard_registry": "https://wulfkaal.github.io/afmr/index.json",
+        "standard_specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+        "standard_discovery": "https://wulfkaal.github.io/.well-known/afmr.json"
       },
-      "license": "Attribution required. Read, index, quote and cite with attribution to the claim's canonical URL."
+      "license": "Attribution required. Read, index, quote and cite with attribution to the claim's canonical URL.",
+      "standard": {
+        "name": "Agent Failure Mode Registry",
+        "abbreviation": "AFMR",
+        "version": "1.0",
+        "editor": "Wulf A. Kaal",
+        "families": 32,
+        "classes": 8,
+        "trigger_conditions": 96,
+        "families_with_pre_2020_institutional_antecedent": 20,
+        "registry": "https://wulfkaal.github.io/afmr/",
+        "specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+        "index": "https://wulfkaal.github.io/afmr/index.json",
+        "schema": "https://wulfkaal.github.io/afmr/schema.json",
+        "discovery": "https://wulfkaal.github.io/.well-known/afmr.json",
+        "identifier_policy": "Permanent. Cite the family identifier with the version, for example AFMR-F009 (AFMR 1.0).",
+        "license": "CC-BY-4.0",
+        "conformance": [
+          "referencing: cite identifiers with a version",
+          "assessing: report every family examined and the trigger conditions satisfied",
+          "attesting: stake non-transferable standing on an assessment, with a contest window"
+        ],
+        "output_constraint": "A parameter recommendation stated without the conditions it depends on fails validation against the assessment schema. This constrains assessment output; it asserts nothing about this registry's standing relative to other frameworks.",
+        "crosswalks_open": [
+          "NIST AI RMF",
+          "ISO/IEC 42001",
+          "EU AI Act risk categories",
+          "MIT AI Risk Repository",
+          "OWASP LLM",
+          "MITRE ATLAS"
+        ]
+      }
     }
   }
 }
