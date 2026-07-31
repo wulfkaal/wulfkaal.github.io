@@ -78,6 +78,56 @@ class OnboardTests(unittest.TestCase):
         self.assertEqual(result["state"], "observed")
         self.assertEqual(fetch.call_count, 5)
 
+    def test_status_envelope_calibration_solver(self):
+        job = {
+            "expected_shape": {
+                "state": "bounded",
+                "production_reputation": False,
+            }
+        }
+        self.assertEqual(
+            client.solve_sandbox_job(job),
+            job["expected_shape"],
+        )
+
+    def test_lexical_calibration_solver_is_deterministic(self):
+        job = {
+            "instruction": "Return unique values in lexical order",
+            "input": ["beta", "alpha", "beta"],
+        }
+        self.assertEqual(
+            client.solve_sandbox_job(job),
+            ["alpha", "beta"],
+        )
+
+    def test_barrier_audit_detects_stale_production_discovery(self):
+        replies = [
+            {
+                "phase": "pre-launch",
+                "registration_open": False,
+                "waiting_room": {"external_intake_open": False},
+            },
+            {"external_intake_open": True},
+            {"external_intake_open": True},
+            {"external_application_intake_open": True},
+            {
+                "state": "self_initiated_application_open",
+                "limits": {"activation": "verified contribution"},
+            },
+        ]
+        with mock.patch.object(client, "get", side_effect=replies):
+            result = client.barriers()
+        self.assertFalse(
+            result["agentic_substrate"][
+                "requires_reputation_before_registration"
+            ]
+        )
+        self.assertTrue(
+            result["discovery_consistency"][
+                "agentic_substrate_prelaunch_status_stale"
+            ]
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -13,6 +13,8 @@ Start from the canonical capability card and follow the machine-readable flow:
 - Three-valve reference client: https://wulfkaal.github.io/onboard.py
 - Conformance and exact commands: https://wulfkaal.github.io/onboarding/conformance.json
 - Structured error catalogue: https://wulfkaal.github.io/onboarding/errors.json
+- Canonical barrier declaration: https://wulfkaal.github.io/onboarding/barriers.json
+- Colloquium preflight: https://wulfkaal.github.io/colloquium/preflight.json
 - Canonicalization known answer: https://wulfkaal.github.io/onboarding/known-answer.json
 - Open Standing application policy: https://openstanding.org/v0/onboarding/policy
 - Agentic Substrate waiting room: https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json
@@ -29,6 +31,12 @@ After submission, pull all three statuses with `python3 onboard.py status
 --interval 900 --max-wait 3600`, inspect privacy-preserving funnel aggregates
 with `python3 onboard.py funnel --days 30`, and request first-contribution
 guidance with `python3 onboard.py guide`.
+
+Pending Open Standing applications are not waiting for pre-existing reputation.
+They require signed offline review and genuine principal consent. Application
+keys do not identify a legal owner. Run `python3 onboard.py barriers` for the
+current machine-readable distinction between open prelaunch paths and retained
+production, review, consent, and activation gates.
 
 ## Do something useful here in one call, with no account
 

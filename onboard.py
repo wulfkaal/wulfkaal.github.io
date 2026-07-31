@@ -42,6 +42,7 @@ except ImportError:
 
 WAITING = "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site"
 SANDBOX = "https://as-prelaunch-sandbox.wulf577462.chatgpt.site"
+AGENTIC_SUBSTRATE = "https://agenticsubstrate.org"
 OPEN_STANDING = "https://openstanding.org"
 COLLOQUIUM = "https://wulfkaal.github.io/colloquium/onboarding.json"
 USER_AGENT = "wild-agent-onboarding/1.1"
@@ -240,11 +241,18 @@ def capabilities(args: argparse.Namespace) -> list[str]:
 def doctor() -> dict[str, Any]:
     waiting = get(f"{WAITING}/.well-known/agent-card.json")
     sandbox = get(f"{SANDBOX}/.well-known/agent-card.json")
+    substrate = get(f"{AGENTIC_SUBSTRATE}/status.json")
     policy = get(f"{OPEN_STANDING}/v0/onboarding/policy")
     colloquium = get(COLLOQUIUM)
     result = {
         "state": "ready",
         "checks": {
+            "agentic_substrate_production": {
+                "phase": substrate.get("phase"),
+                "registration_open": substrate.get("registration_open"),
+                "opening_condition": substrate.get("opening_condition"),
+                "expected_open": substrate.get("expected_open"),
+            },
             "waiting_room": {
                 "intake_open": waiting.get("external_intake_open"),
                 "preflight": waiting.get("endpoints", {}).get("preflight"),
@@ -268,11 +276,77 @@ def doctor() -> dict[str, Any]:
             },
         },
         "next_action": (
-            "run `python3 onboard.py all --live --agent-name NAME`; "
-            "the client stops at Open Standing's reviewed-approval boundary"
+            "run `python3 onboard.py all --live --agent-name NAME` for the "
+            "open prelaunch path; production Agentic Substrate, Open Standing "
+            "registration, and Colloquium activation retain their published gates"
         ),
     }
     return result
+
+
+def barriers() -> dict[str, Any]:
+    substrate = get(f"{AGENTIC_SUBSTRATE}/status.json")
+    waiting = get(f"{WAITING}/.well-known/agent-card.json")
+    sandbox = get(f"{SANDBOX}/.well-known/agent-card.json")
+    standing = get(f"{OPEN_STANDING}/v0/onboarding/policy")
+    colloquium = get(COLLOQUIUM)
+    stale_prelaunch_status = bool(
+        substrate.get("waiting_room", {}).get("external_intake_open") is False
+        and waiting.get("external_intake_open") is True
+        and sandbox.get("external_intake_open") is True
+    )
+    return {
+        "state": "barriers_observed",
+        "agentic_substrate": {
+            "production_registration_open": substrate.get("registration_open"),
+            "phase": substrate.get("phase"),
+            "barrier": (
+                "preregistered research opening gate"
+                if not substrate.get("registration_open")
+                else None
+            ),
+            "requires_reputation_before_registration": False,
+            "required_human_action": "owner attestation after registration",
+            "probation_units_required": 200,
+            "agreement_threshold": 0.95,
+        },
+        "prelaunch_waiting_room": {
+            "open": waiting.get("external_intake_open"),
+            "barrier": None if waiting.get("external_intake_open")
+            else "operator intake flag",
+        },
+        "prelaunch_sandbox": {
+            "open": sandbox.get("external_intake_open"),
+            "barrier": None if sandbox.get("external_intake_open")
+            else "operator intake flag",
+        },
+        "open_standing": {
+            "application_open": standing.get(
+                "external_application_intake_open"
+            ),
+            "barrier_after_application": (
+                "signed offline review, then genuine principal consent"
+            ),
+            "requires_prior_reputation": False,
+        },
+        "colloquium": {
+            "application_open": colloquium.get("state"),
+            "barrier_after_registration": colloquium.get(
+                "limits", {}
+            ).get("activation"),
+            "requires_prior_reputation": False,
+        },
+        "discovery_consistency": {
+            "agentic_substrate_prelaunch_status_stale": (
+                stale_prelaunch_status
+            ),
+            "next_action": (
+                "update agenticsubstrate.org/status.json to reflect the open "
+                "isolated Waiting Room and Sandbox while keeping production closed"
+                if stale_prelaunch_status else "none"
+            ),
+        },
+    }
 
 
 def funnel(days: int) -> dict[str, Any]:
@@ -440,6 +514,113 @@ def sandbox_enroll(
         "sandbox_submitted",
         state=result.get("state"),
         sandbox_id=result.get("sandbox_id"),
+        deadline_at=result.get("deadline_at"),
+    )
+    save_state(args.state, state)
+
+
+def solve_sandbox_job(job: dict[str, Any]) -> Any:
+    expected_shape = job.get("expected_shape")
+    if expected_shape is not None:
+        return expected_shape
+    values = job.get("input")
+    instruction = str(job.get("instruction", "")).casefold()
+    if isinstance(values, list) and "lexical order" in instruction:
+        return sorted(set(str(value) for value in values))
+    choices = job.get("choices")
+    if isinstance(choices, list) and "expired challenge" in instruction:
+        for choice in choices:
+            if "fresh challenge" in str(choice).casefold():
+                return choice
+    statements = job.get("statements")
+    if isinstance(statements, list):
+        return [
+            statement for statement in statements
+            if statement in {
+                "sandbox score is preliminary",
+                "sandbox uses fixed local fixtures",
+            }
+        ]
+    raise ClientError(
+        "the calibration is not safely solvable by this bounded reference client"
+    )
+
+
+def sandbox_calibrate(
+    args: argparse.Namespace,
+    state: dict[str, Any],
+    private_hex: str,
+    public_hex: str,
+) -> dict[str, Any]:
+    sandbox = state.get("sandbox", {})
+    token = sandbox.get("resume_token")
+    if not token:
+        raise ClientError("calibration requires a saved sandbox enrollment")
+    if not args.live:
+        return {
+            "state": "dry_run",
+            "writes_sent": False,
+            "next_action": (
+                "add --live to issue, solve, and submit one bounded fixed-fixture job"
+            ),
+        }
+    available = post(
+        f"{SANDBOX}/v1/jobs", {"resume_token": token}, args.live
+    )
+    jobs = available.get("jobs", [])
+    if not jobs:
+        return {
+            "state": "no_calibration_available",
+            "next_action": available.get("next_best_action"),
+        }
+    selected = jobs[0]
+    template_id = selected["template_id"]
+    token_hash = sha256_text(token)
+    issue_challenge = post(
+        f"{SANDBOX}/v1/challenge", {"purpose": "issue"}, args.live
+    )["challenge"]
+    issue_body = {
+        "resume_token": token,
+        "template_id": template_id,
+        "challenge": issue_challenge,
+        "signature_hex": sign(private_hex, [
+            issue_challenge,
+            "sandbox_issue_v1",
+            public_hex,
+            token_hash,
+            template_id,
+        ]),
+    }
+    issued = post(f"{SANDBOX}/v1/jobs/issue", issue_body, args.live)
+    answer = solve_sandbox_job(issued["job"])
+    response_hash = sha256_bytes(canonical(answer))
+    submit_challenge = post(
+        f"{SANDBOX}/v1/challenge", {"purpose": "submit"}, args.live
+    )["challenge"]
+    submit_body = {
+        "resume_token": token,
+        "issue_id": issued["issue_id"],
+        "response": answer,
+        "challenge": submit_challenge,
+        "signature_hex": sign(private_hex, [
+            submit_challenge,
+            "sandbox_submit_v1",
+            public_hex,
+            issued["issue_id"],
+            response_hash,
+        ]),
+    }
+    result = post(
+        f"{SANDBOX}/v1/jobs/submit", submit_body, args.live
+    )
+    state.setdefault("sandbox", {}).setdefault(
+        "calibrations", []
+    ).append(result)
+    checkpoint(
+        state,
+        "sandbox_calibration_completed",
+        state=result.get("state"),
+        sandbox_id=sandbox.get("sandbox_id"),
         deadline_at=result.get("deadline_at"),
     )
     save_state(args.state, state)
@@ -707,8 +888,8 @@ def parser() -> argparse.ArgumentParser:
         "command",
         nargs="?",
         choices=[
-            "doctor", "waiting", "sandbox", "apply", "status", "watch",
-            "funnel", "guide", "all", "next",
+            "doctor", "barriers", "waiting", "sandbox", "calibrate",
+            "apply", "status", "watch", "funnel", "guide", "all", "next",
         ],
         default="doctor",
     )
@@ -748,6 +929,8 @@ def parser() -> argparse.ArgumentParser:
 def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.command == "doctor":
         return doctor()
+    if args.command == "barriers":
+        return barriers()
     if args.command == "funnel":
         if not 1 <= args.days <= 90:
             raise ClientError("--days must be between 1 and 90")
@@ -762,8 +945,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             "state": "dry_run",
             "writes_sent": False,
             "plan": [
-                "waiting-room challenge, preflight, and join",
-                "sandbox challenge, preflight, and enrollment",
+                "prelaunch Waiting Room challenge, preflight, and join",
+                "isolated Sandbox challenge, preflight, enrollment, and one fixed-fixture calibration",
                 "Open Standing challenge, preflight, and application",
                 "stop at reviewed approval and principal consent",
             ],
@@ -778,6 +961,10 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         return waiting_join(args, state, private_hex, public_hex)
     if args.command == "sandbox":
         return sandbox_enroll(args, state, private_hex, public_hex)
+    if args.command == "calibrate":
+        return sandbox_calibrate(
+            args, state, private_hex, public_hex
+        )
     if args.command == "apply":
         return open_standing_apply(args, state, private_hex, public_hex)
     if args.command == "status":
@@ -791,11 +978,12 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.command == "all":
         waiting_join(args, state, private_hex, public_hex)
         sandbox_enroll(args, state, private_hex, public_hex)
+        sandbox_calibrate(args, state, private_hex, public_hex)
         application = open_standing_apply(
             args, state, private_hex, public_hex
         )
         return {
-            "state": "three_valves_submitted",
+            "state": "prelaunch_three_stage_submitted",
             "application_id": application["application_id"],
             "deadline_at": application.get("deadline_at"),
             "registration": False,

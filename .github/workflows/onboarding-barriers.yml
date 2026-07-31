@@ -1,0 +1,28 @@
+name: Onboarding barrier audit
+
+on:
+  schedule:
+    - cron: "47 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Observe live barriers
+        run: python3 onboard.py barriers > onboarding-barrier-audit.json
+      - name: Validate observation and canonical declaration
+        run: |
+          python3 -m json.tool onboarding-barrier-audit.json >/dev/null
+          python3 -m json.tool onboarding/barriers.json >/dev/null
+          python3 -m json.tool colloquium/preflight.json >/dev/null
+      - uses: actions/upload-artifact@v4
+        with:
+          name: onboarding-barriers-${{ github.run_id }}
+          path: onboarding-barrier-audit.json
+          retention-days: 30

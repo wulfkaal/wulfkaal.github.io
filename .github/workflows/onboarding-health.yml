@@ -19,12 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verify discovery and all non-consuming preflight declarations
-        run: python3 onboard.py doctor
+        run: |
+          python3 onboard.py doctor
+          python3 onboard.py barriers
       - name: Verify public conformance assets
         run: |
           python3 -m json.tool onboarding/conformance.json >/dev/null
           python3 -m json.tool onboarding/errors.json >/dev/null
           python3 -m json.tool onboarding/known-answer.json >/dev/null
+          python3 -m json.tool onboarding/barriers.json >/dev/null
+          python3 -m json.tool colloquium/preflight.json >/dev/null
       - name: Verify the canonicalization known answer
         run: |
           python3 - <<'PY'
