@@ -4,16 +4,18 @@ import { resolve } from "node:path";
 
 const REPO = resolve(import.meta.dirname, "..");
 const PROJECT = resolve(REPO, "../..");
-const PRIVATE_BATCH = resolve(PROJECT, "public/review-batches/2026-07-31-streaming-etl-0002");
+const BATCH_NUMBER = process.env.AFFIRMED_BATCH_NUMBER || "0002";
+const PRIVATE_BATCH = resolve(PROJECT, `public/review-batches/2026-07-31-streaming-etl-${BATCH_NUMBER}`);
 const INPUT = resolve(PRIVATE_BATCH, "private-drafts.jsonl");
-const SOURCE = resolve(REPO, "positions-src/2026-07-31-streaming-etl-0002.json");
-const SOURCE_MANIFEST = resolve(REPO, "positions-src/2026-07-31-streaming-etl-0002.manifest");
-const EXPECTED_BATCH = "kaal-review:2026-07-31:streaming-etl-0002";
-const EXPECTED_HASH = "86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee";
-const EXPECTED_COUNT = 250;
-const EXPECTED_PUBLIC_BEFORE = 5757;
-const EXPECTED_MAX_SEQUENCE = 5750;
-const AUTHORIZATION = "I affirm batch kaal-review:2026-07-31:streaming-etl-0002, SHA-256 86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee, as written and authorize publication of all 250 response claims on my canonical property, preserving their evidence levels, ambiguity labels, provenance, and the unchanged 5,033 scholarly claims.";
+const SOURCE_NAME = `2026-07-31-streaming-etl-${BATCH_NUMBER}.json`;
+const SOURCE = resolve(REPO, "positions-src", SOURCE_NAME);
+const SOURCE_MANIFEST = resolve(REPO, "positions-src", `2026-07-31-streaming-etl-${BATCH_NUMBER}.manifest`);
+const EXPECTED_BATCH = process.env.AFFIRMED_BATCH_ID || "kaal-review:2026-07-31:streaming-etl-0002";
+const EXPECTED_HASH = process.env.AFFIRMED_BATCH_HASH || "86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee";
+const EXPECTED_COUNT = Number(process.env.AFFIRMED_BATCH_COUNT || 250);
+const EXPECTED_PUBLIC_BEFORE = Number(process.env.AFFIRMED_PUBLIC_BEFORE || 5757);
+const EXPECTED_MAX_SEQUENCE = Number(process.env.AFFIRMED_MAX_SEQUENCE || 5750);
+const AUTHORIZATION = process.env.AFFIRMED_AUTHORIZATION || "I affirm batch kaal-review:2026-07-31:streaming-etl-0002, SHA-256 86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee, as written and authorize publication of all 250 response claims on my canonical property, preserving their evidence levels, ambiguity labels, provenance, and the unchanged 5,033 scholarly claims.";
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const slug = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 72);
@@ -23,7 +25,7 @@ async function currentSourceState() {
   let maxSequence = 0;
   const candidateIds = new Set();
   for (const name of await readdir(resolve(REPO, "positions-src"))) {
-    if (!name.endsWith(".json") || name === "2026-07-31-streaming-etl-0002.json") continue;
+    if (!name.endsWith(".json") || name === SOURCE_NAME) continue;
     const batch = JSON.parse(await readFile(resolve(REPO, "positions-src", name), "utf8"));
     for (const item of batch.positions ?? []) {
       positions += 1;
