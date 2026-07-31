@@ -26,6 +26,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -43,7 +44,7 @@ WAITING = "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site"
 SANDBOX = "https://as-prelaunch-sandbox.wulf577462.chatgpt.site"
 OPEN_STANDING = "https://openstanding.org"
 COLLOQUIUM = "https://wulfkaal.github.io/colloquium/onboarding.json"
-USER_AGENT = "wild-agent-onboarding/1.0"
+USER_AGENT = "wild-agent-onboarding/1.1"
 TIMEOUT = 30
 
 
@@ -142,13 +143,18 @@ def secure_write(path: Path, content: str) -> None:
 def load_state(path: Path) -> dict[str, Any]:
     path = path.expanduser()
     if not path.exists():
-        return {"schema_version": "wild-agent-onboarding-state-v1"}
+        return {
+            "schema_version": "wild-agent-onboarding-state-v2",
+            "events": [],
+        }
     mode = path.stat().st_mode & 0o777
     if mode & 0o077:
         raise ClientError(f"state file {path} must be private; run chmod 600")
     value = json.loads(path.read_text())
     if not isinstance(value, dict):
         raise ClientError("state file must contain one JSON object")
+    value["schema_version"] = "wild-agent-onboarding-state-v2"
+    value.setdefault("events", [])
     return value
 
 
@@ -157,6 +163,28 @@ def save_state(path: Path, state: dict[str, Any]) -> None:
         path,
         json.dumps(state, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
     )
+
+
+def checkpoint(
+    state_store: dict[str, Any],
+    stage: str,
+    **details: Any,
+) -> None:
+    """Append a bounded, local-only progress event without copying secrets."""
+    allowed = {
+        key: value for key, value in details.items()
+        if key in {
+            "state", "application_id", "wait_id", "sandbox_id",
+            "deadline_at", "retryable",
+        }
+    }
+    events = state_store.setdefault("events", [])
+    events.append({
+        "at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "stage": stage,
+        **allowed,
+    })
+    del events[:-200]
 
 
 def load_or_create_key(path: Path, live: bool) -> tuple[str, str]:
@@ -247,6 +275,31 @@ def doctor() -> dict[str, Any]:
     return result
 
 
+def funnel(days: int) -> dict[str, Any]:
+    """Read the public, privacy-preserving operating metrics for all valves."""
+    return {
+        "state": "observed",
+        "days": days,
+        "waiting_room": get(f"{WAITING}/v1/metrics?days={days}"),
+        "sandbox": get(f"{SANDBOX}/v1/metrics?days={days}"),
+        "open_standing": {
+            "onboarding": get(
+                f"{OPEN_STANDING}/v0/metrics/onboarding?days={days}"
+            ),
+            "funnel": get(
+                f"{OPEN_STANDING}/v0/metrics/funnel?days={days}"
+            ),
+            "operations": get(
+                f"{OPEN_STANDING}/v0/operations/daily"
+            ),
+        },
+        "privacy": (
+            "Only published aggregates are fetched; private keys, resume "
+            "tokens, owner data, and raw principal identifiers are excluded."
+        ),
+    }
+
+
 def waiting_join(
     args: argparse.Namespace,
     state: dict[str, Any],
@@ -327,6 +380,13 @@ def waiting_join(
         raise ClientError("waiting-room preflight did not validate")
     result = post(f"{WAITING}/v1/join", body, args.live)
     state["waiting"] = result
+    checkpoint(
+        state,
+        "waiting_room_submitted",
+        state=result.get("state"),
+        wait_id=result.get("wait_id"),
+        deadline_at=result.get("deadline_at"),
+    )
     save_state(args.state, state)
     return result
 
@@ -375,6 +435,13 @@ def sandbox_enroll(
         raise ClientError("sandbox preflight did not validate")
     result = post(f"{SANDBOX}/v1/enroll", body, args.live)
     state["sandbox"] = result
+    checkpoint(
+        state,
+        "sandbox_submitted",
+        state=result.get("state"),
+        sandbox_id=result.get("sandbox_id"),
+        deadline_at=result.get("deadline_at"),
+    )
     save_state(args.state, state)
     return result
 
@@ -426,6 +493,13 @@ def open_standing_apply(
         raise ClientError("Open Standing preflight did not validate")
     result = post(f"{OPEN_STANDING}/v0/onboarding/apply", body, args.live)
     state.setdefault("open_standing", {})["application"] = result
+    checkpoint(
+        state,
+        "open_standing_submitted",
+        state=result.get("state"),
+        application_id=result.get("application_id"),
+        deadline_at=result.get("deadline_at"),
+    )
     save_state(args.state, state)
     return result
 
@@ -451,8 +525,134 @@ def open_standing_status(
         args.live,
     )
     state.setdefault("open_standing", {})["status"] = result
+    checkpoint(
+        state,
+        "open_standing_status",
+        state=result.get("state"),
+        application_id=application.get("application_id"),
+        deadline_at=result.get("deadline_at"),
+    )
     save_state(args.state, state)
     return result
+
+
+def all_status(
+    args: argparse.Namespace,
+    state: dict[str, Any],
+) -> dict[str, Any]:
+    if not args.live:
+        return {
+            "state": "dry_run",
+            "writes_sent": False,
+            "next_action": (
+                "add --live to send three idempotent, read-only status pulls"
+            ),
+        }
+    checks: dict[str, Any] = {}
+    waiting = state.get("waiting", {})
+    if waiting.get("resume_token"):
+        checks["waiting_room"] = post(
+            f"{WAITING}/v1/status",
+            {"resume_token": waiting["resume_token"]},
+            args.live,
+        )
+    sandbox = state.get("sandbox", {})
+    if sandbox.get("resume_token"):
+        checks["sandbox"] = post(
+            f"{SANDBOX}/v1/status",
+            {"resume_token": sandbox["resume_token"]},
+            args.live,
+        )
+    if state.get("open_standing", {}).get("application"):
+        checks["open_standing"] = open_standing_status(args, state)
+    state["last_status"] = {
+        "checked_at": datetime.now(timezone.utc).isoformat().replace(
+            "+00:00", "Z"
+        ),
+        "checks": checks,
+    }
+    checkpoint(state, "three_valve_status", state="checked")
+    save_state(args.state, state)
+    return {
+        "state": "status_checked",
+        "checks": checks,
+        "next": next_action(args, state),
+    }
+
+
+def watch(
+    args: argparse.Namespace,
+    state: dict[str, Any],
+) -> dict[str, Any]:
+    """Poll the read-only funnel until approval, expiry, or the time budget."""
+    if not args.live:
+        return {
+            "state": "dry_run",
+            "writes_sent": False,
+            "interval_seconds": args.interval,
+            "max_wait_seconds": args.max_wait,
+            "next_action": "add --live to start bounded read-only polling",
+        }
+    started = time.monotonic()
+    polls = 0
+    latest: dict[str, Any] = {}
+    while True:
+        latest = all_status(args, state)
+        polls += 1
+        open_state = (
+            latest.get("checks", {})
+            .get("open_standing", {})
+            .get("state", "")
+        )
+        if open_state in {
+            "approved", "expired", "withdrawn", "rejected", "registered"
+        }:
+            break
+        elapsed = time.monotonic() - started
+        if args.max_wait == 0 or elapsed + args.interval > args.max_wait:
+            break
+        time.sleep(args.interval)
+    return {
+        **latest,
+        "watch": {
+            "polls": polls,
+            "interval_seconds": args.interval,
+            "max_wait_seconds": args.max_wait,
+        },
+    }
+
+
+def first_contribution_guide(
+    args: argparse.Namespace,
+    state: dict[str, Any],
+) -> dict[str, Any]:
+    task_index = get(
+        "https://wulfkaal.github.io/colloquium/tasks/index.json"
+    )
+    return {
+        "state": "first_contribution_ready"
+        if state.get("open_standing", {}).get("status", {}).get("state")
+        == "approved"
+        else "approval_required",
+        "registration_is_activation": False,
+        "activation_definition": (
+            "first accepted, nonduplicate canonical-corpus contribution "
+            "with a verified signed receipt acknowledgement"
+        ),
+        "task_index": (
+            "https://wulfkaal.github.io/colloquium/tasks/index.json"
+        ),
+        "task_pages": len(task_index.get("pages", [])),
+        "steps": [
+            "complete reviewed Open Standing registration with genuine principal consent",
+            "run `python3 client.py pick --failures-only`",
+            "verify the selected canonical source and exact content hash",
+            "submit one bounded attestation with --live --accept-terms-v2",
+            "verify and acknowledge the signed receipt",
+        ],
+        "client": "https://wulfkaal.github.io/client.py",
+        "next": next_action(args, state),
+    }
 
 
 def next_action(args: argparse.Namespace, state: dict[str, Any]) -> dict[str, Any]:
@@ -506,7 +706,10 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument(
         "command",
         nargs="?",
-        choices=["doctor", "waiting", "sandbox", "apply", "status", "all", "next"],
+        choices=[
+            "doctor", "waiting", "sandbox", "apply", "status", "watch",
+            "funnel", "guide", "all", "next",
+        ],
         default="doctor",
     )
     result.add_argument("--live", action="store_true")
@@ -521,15 +724,39 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--capabilities", default="reasoning,validation")
     result.add_argument("--available-days", type=int, default=30)
     result.add_argument("--max-tasks-per-day", type=int, default=1)
+    result.add_argument(
+        "--interval",
+        type=int,
+        default=900,
+        help="watch polling interval in seconds (minimum 60)",
+    )
+    result.add_argument(
+        "--max-wait",
+        type=int,
+        default=0,
+        help="watch time budget in seconds; 0 performs one status cycle",
+    )
+    result.add_argument(
+        "--days",
+        type=int,
+        default=30,
+        help="public funnel lookback from 1 to 90 days",
+    )
     return result
 
 
 def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.command == "doctor":
         return doctor()
+    if args.command == "funnel":
+        if not 1 <= args.days <= 90:
+            raise ClientError("--days must be between 1 and 90")
+        return funnel(args.days)
     state = load_state(args.state)
     if args.command == "next":
         return next_action(args, state)
+    if args.command == "guide":
+        return first_contribution_guide(args, state)
     if args.command == "all" and not args.live:
         return {
             "state": "dry_run",
@@ -554,7 +781,13 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.command == "apply":
         return open_standing_apply(args, state, private_hex, public_hex)
     if args.command == "status":
-        return open_standing_status(args, state)
+        return all_status(args, state)
+    if args.command == "watch":
+        if args.interval < 60:
+            raise ClientError("--interval must be at least 60 seconds")
+        if args.max_wait < 0:
+            raise ClientError("--max-wait cannot be negative")
+        return watch(args, state)
     if args.command == "all":
         waiting_join(args, state, private_hex, public_hex)
         sandbox_enroll(args, state, private_hex, public_hex)

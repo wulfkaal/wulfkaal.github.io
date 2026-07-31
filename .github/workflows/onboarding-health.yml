@@ -1,0 +1,40 @@
+name: Onboarding health
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: onboarding-health
+  cancel-in-progress: true
+
+jobs:
+  synthetic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify discovery and all non-consuming preflight declarations
+        run: python3 onboard.py doctor
+      - name: Verify public conformance assets
+        run: |
+          python3 -m json.tool onboarding/conformance.json >/dev/null
+          python3 -m json.tool onboarding/errors.json >/dev/null
+          python3 -m json.tool onboarding/known-answer.json >/dev/null
+      - name: Verify the canonicalization known answer
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          fixture = json.load(open("onboarding/known-answer.json"))
+          value = fixture["canonicalization"]
+          encoded = json.dumps(
+              value["input"], sort_keys=True, separators=(",", ":"),
+              ensure_ascii=False,
+          ).encode()
+          assert encoded.decode() == value["utf8"]
+          assert hashlib.sha256(encoded).hexdigest() == value["sha256"]
+          PY

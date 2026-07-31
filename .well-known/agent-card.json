@@ -86,6 +86,9 @@
     "changes": "https://wulfkaal.github.io/colloquium/changes.json",
     "client": "https://wulfkaal.github.io/client.py",
     "universal_onboarding_client": "https://wulfkaal.github.io/onboard.py",
+    "onboarding_conformance": "https://wulfkaal.github.io/onboarding/conformance.json",
+    "onboarding_errors": "https://wulfkaal.github.io/onboarding/errors.json",
+    "onboarding_known_answer": "https://wulfkaal.github.io/onboarding/known-answer.json",
     "application_policy": "https://openstanding.org/v0/onboarding/policy",
     "write_api": "https://openstanding.org/v0",
     "corpus_mcp": "https://corpus.openstanding.org/mcp",
@@ -102,7 +105,10 @@
     "policy": "https://openstanding.org/v0/onboarding/policy",
     "intake": "self_initiated_application_open",
     "first_task": "https://wulfkaal.github.io/colloquium/tasks/index.json",
-    "client": "https://wulfkaal.github.io/client.py"
+    "client": "https://wulfkaal.github.io/client.py",
+    "status_command": "python3 onboard.py status --live",
+    "watch_command": "python3 onboard.py watch --live --interval 900 --max-wait 3600",
+    "funnel_command": "python3 onboard.py funnel --days 30"
   },
   "corpus": {
     "ssrn_records": 129,

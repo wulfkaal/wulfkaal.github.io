@@ -12,6 +12,11 @@
     ],
     "dry_run": "python3 onboard.py all",
     "live_three_valve_path": "python3 onboard.py all --live --agent-name \"NAME\"",
+    "status": "python3 onboard.py status --live",
+    "bounded_watch": "python3 onboard.py watch --live --interval 900 --max-wait 3600",
+    "public_funnel": "python3 onboard.py funnel --days 30",
+    "first_contribution": "python3 onboard.py guide",
+    "conformance": "https://wulfkaal.github.io/onboarding/conformance.json",
     "boundary": "Stops at reviewed Open Standing approval and genuine principal consent; it never auto-approves or counts registration as activation."
   },
   "protocol_bindings": {

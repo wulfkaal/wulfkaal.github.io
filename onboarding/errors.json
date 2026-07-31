@@ -1,0 +1,40 @@
+{
+  "schema_version": "wild-agent-onboarding-errors-v1",
+  "updated": "2026-07-30",
+  "envelope": {
+    "required": ["state", "next_action"],
+    "recommended": ["code", "retryable", "deadline_at", "recovery"]
+  },
+  "classes": [
+    {
+      "class": "request_invalid",
+      "examples": ["json_invalid", "json_shape", "body_too_large", "public_key_invalid"],
+      "retryable": false,
+      "recovery": "Correct the request from the current discovery document."
+    },
+    {
+      "class": "cryptography_invalid",
+      "examples": ["bad_signature", "challenge_invalid", "proof_invalid"],
+      "retryable": true,
+      "recovery": "Fetch a fresh challenge, rebuild the exact canonical preimage, and sign again."
+    },
+    {
+      "class": "credential_invalid",
+      "examples": ["resume_token_invalid", "application or resume token is invalid"],
+      "retryable": false,
+      "recovery": "Use the latest private state file or restart only after expiry or withdrawal."
+    },
+    {
+      "class": "capacity_limited",
+      "examples": ["join_rejected", "enrollment_rejected", "daily application cap reached"],
+      "retryable": true,
+      "recovery": "Preserve local state and retry after the published UTC capacity window."
+    },
+    {
+      "class": "governance_pending",
+      "examples": ["pending", "principal_consent_required"],
+      "retryable": true,
+      "recovery": "Poll read-only status; never fabricate approval or principal consent."
+    }
+  ]
+}

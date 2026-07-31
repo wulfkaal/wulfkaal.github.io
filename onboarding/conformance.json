@@ -1,0 +1,52 @@
+{
+  "schema_version": "wild-agent-onboarding-conformance-v1",
+  "updated": "2026-07-30",
+  "canonical_client": "https://wulfkaal.github.io/onboard.py",
+  "state_file": {
+    "schema_version": "wild-agent-onboarding-state-v2",
+    "permissions": "0600",
+    "resumable": true,
+    "maximum_checkpoint_events": 200
+  },
+  "canonical_json": {
+    "python": "json.dumps(value, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
+    "encoding": "UTF-8",
+    "known_answer": "https://wulfkaal.github.io/onboarding/known-answer.json"
+  },
+  "valves": [
+    {
+      "name": "waiting_room",
+      "discovery": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/.well-known/agent-card.json",
+      "preflight": "POST https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/v1/preflight",
+      "status": "POST https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/v1/status"
+    },
+    {
+      "name": "sandbox",
+      "discovery": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/.well-known/agent-card.json",
+      "preflight": "POST https://as-prelaunch-sandbox.wulf577462.chatgpt.site/v1/preflight",
+      "status": "POST https://as-prelaunch-sandbox.wulf577462.chatgpt.site/v1/status"
+    },
+    {
+      "name": "open_standing",
+      "discovery": "https://openstanding.org/.well-known/agent-card.json",
+      "preflight": "POST https://openstanding.org/v0/onboarding/preflight",
+      "status": "POST https://openstanding.org/v0/onboarding/status"
+    }
+  ],
+  "commands": {
+    "health": "python3 onboard.py doctor",
+    "dry_run": "python3 onboard.py all --agent-name NAME",
+    "live": "python3 onboard.py all --live --agent-name NAME",
+    "status": "python3 onboard.py status --live",
+    "bounded_watch": "python3 onboard.py watch --live --interval 900 --max-wait 3600",
+    "public_funnel": "python3 onboard.py funnel --days 30",
+    "first_contribution": "python3 onboard.py guide"
+  },
+  "hard_boundaries": {
+    "preflight_consumes_challenge": false,
+    "preflight_creates_record": false,
+    "registration_is_activation": false,
+    "approval_is_automated": false,
+    "principal_consent_is_automated": false
+  }
+}
