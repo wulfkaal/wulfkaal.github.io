@@ -72,6 +72,41 @@ class OnboardTests(unittest.TestCase):
         self.assertEqual(result["watch"]["polls"], 1)
         pull.assert_called_once()
 
+    def test_registered_agent_does_not_poll_consumed_application_token(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.json"
+            state = {
+                "schema_version": "wild-agent-onboarding-state-v2",
+                "events": [],
+                "public_key_hex": "ab" * 32,
+                "open_standing": {
+                    "application": {
+                        "application_id": "a" * 64,
+                        "resume_token": "consumed-token",
+                    }
+                },
+            }
+            agent = {
+                "agent_no": 5,
+                "consent_status": "active",
+                "proving_count": 2,
+            }
+            with (
+                mock.patch.object(client, "get", return_value=agent),
+                mock.patch.object(client, "post") as submit,
+            ):
+                result = client.open_standing_status(
+                    self.args(path), state
+                )
+            self.assertEqual(result["state"], "registered")
+            self.assertTrue(result["registration"])
+            self.assertTrue(result["activation"])
+            self.assertEqual(
+                client.next_action(self.args(path), state)["state"],
+                "registered_and_activated",
+            )
+            submit.assert_not_called()
+
     def test_funnel_reads_only_public_aggregate_endpoints(self):
         with mock.patch.object(client, "get", return_value={"ok": True}) as fetch:
             result = client.funnel(14)

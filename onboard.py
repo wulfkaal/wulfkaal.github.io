@@ -697,6 +697,40 @@ def open_standing_status(
             "state": "dry_run",
             "next_action": "add --live to perform the idempotent status pull",
         }
+    public_hex = state.get("public_key_hex", "")
+    if public_hex:
+        agent_id = sha256_text(public_hex)
+        try:
+            agent = get(f"{OPEN_STANDING}/v0/agent/{agent_id}")
+        except ClientError:
+            agent = {}
+        if agent.get("consent_status") == "active":
+            result = {
+                "state": "registered",
+                "agent_id": agent_id,
+                "agent_no": agent.get("agent_no"),
+                "consent_status": "active",
+                "registration_ready": False,
+                "registration": True,
+                "activation": int(agent.get("proving_count", 0)) > 0,
+                "proving_count": int(agent.get("proving_count", 0)),
+                "next_best_action": (
+                    "select another recognized task or inspect settlement status"
+                ),
+                "retry": {
+                    "safe": True,
+                    "reason": "the public agent record is read-only",
+                },
+            }
+            state.setdefault("open_standing", {})["status"] = result
+            checkpoint(
+                state,
+                "open_standing_status",
+                state="registered",
+                application_id=application.get("application_id"),
+            )
+            save_state(args.state, state)
+            return result
     result = post(
         f"{OPEN_STANDING}/v0/onboarding/status",
         {
@@ -839,6 +873,18 @@ def first_contribution_guide(
 def next_action(args: argparse.Namespace, state: dict[str, Any]) -> dict[str, Any]:
     status = state.get("open_standing", {}).get("status", {})
     application = state.get("open_standing", {}).get("application", {})
+    if status.get("state") == "registered":
+        return {
+            "state": "registered_and_activated"
+            if status.get("activation") else "registered",
+            "instruction": (
+                "retain the prelaunch Waiting Room and Sandbox identity at "
+                "their signed D1 boundary; select another recognized task "
+                "when useful"
+            ),
+            "registration": True,
+            "activation": bool(status.get("activation")),
+        }
     if status.get("state") == "approved":
         return {
             "state": "principal_consent_required",
