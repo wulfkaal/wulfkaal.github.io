@@ -36,6 +36,14 @@ def position_id(batch, item):
 def canonical_markdown(record):
     topics = ", ".join(record["keywords"])
     conditions = "\n".join(f"- {condition}" for condition in record["scope_conditions"])
+    evidence = ""
+    if record.get("candidateId"):
+        evidence = (
+            f"**Evidence level.** {record['evidenceLevel']}\n\n"
+            f"**Mapping review tier.** {record['reviewTier']}\n\n"
+            f"**Mapping confidence.** {record['mappingConfidence']}  "
+            f"**Mapping ambiguous.** {str(record['mappingAmbiguous']).lower()}\n\n"
+        )
     return (
         f"# {record['identifier']}\n\n"
         f"**Affirmed position.** {record['text']}\n\n"
@@ -46,6 +54,7 @@ def canonical_markdown(record):
         f"**Extends.** {record['extends']['identifier']}: {record['extends']['url']}\n\n"
         f"**Scholarly basis.** {record['extends']['citation']}\n\n"
         f"**Source PDF sha256.** `{record['extends']['source_pdf_sha256']}`\n\n"
+        f"{evidence}"
         f"**Topics.** {topics}\n\n"
         f"**Provenance.** Affirmed in {record['batch_id']} at "
         f"{record['review_provenance']}.\n\n"
@@ -100,6 +109,18 @@ def json_record(batch, item):
         "canonical_url": url,
         "canonicalForm": f"{url}.md",
     }
+    if item.get("candidate_id"):
+        record.update({
+            "candidateId": item["candidate_id"],
+            "evidenceLevel": item["evidence_level"],
+            "reviewTier": item["review_tier"],
+            "mappingConfidence": item["mapping_confidence"],
+            "mappingAmbiguous": item["mapping_ambiguous"],
+            "mappingMethod": item["mapping_method"],
+            "mappingWhyRelevant": item["mapping_why_relevant"],
+            "sourceProvenance": item["source_provenance"],
+            "userAffirmation": item["user_affirmation"],
+        })
     markdown = canonical_markdown(record)
     record["sha256"] = hashlib.sha256(markdown.encode("utf-8")).hexdigest()
     return short_id, record, markdown
@@ -111,6 +132,15 @@ def render_html(record):
         f"<li>{esc(condition)}</li>" for condition in record["scope_conditions"]
     )
     topics = "".join(f'<span class="tag">{esc(topic)}</span>' for topic in record["keywords"])
+    evidence = ""
+    if record.get("candidateId"):
+        evidence = (
+            f"<div class=\"k\">Evidence and mapping</div><p class=\"meta\">"
+            f"Evidence: {esc(record['evidenceLevel'])}<br>"
+            f"Review tier: {esc(record['reviewTier'])}<br>"
+            f"Mapping confidence: {record['mappingConfidence']}<br>"
+            f"Mapping ambiguous: {str(record['mappingAmbiguous']).lower()}</p>"
+        )
     structured = json.dumps(record, ensure_ascii=False)
     return (
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
@@ -131,6 +161,7 @@ def render_html(record):
         f"<a href=\"{esc(record['extends']['url'])}\">{esc(record['extends']['identifier'])}</a><br>"
         f"{esc(record['extends']['citation'])}<br>Source PDF sha256: "
         f"<code>{esc(record['extends']['source_pdf_sha256'])}</code></p>"
+        f"{evidence}"
         f"<div class=\"k\">Topics</div><p>{topics}</p>"
         f"<div class=\"k\">Provenance</div><p class=\"meta\">Affirmed in "
         f"<code>{esc(record['batch_id'])}</code> on {esc(record['datePublished'])}. "
@@ -207,6 +238,11 @@ def schema():
                 "enum": ["agreement", "extension", "qualification", "contradiction"]
             },
             "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "candidateId": {"type": "string", "pattern": "^kaal:response-candidate:"},
+            "evidenceLevel": {"type": "string"},
+            "reviewTier": {"type": "string"},
+            "mappingConfidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "mappingAmbiguous": {"type": "boolean"},
         },
     }
 
@@ -221,7 +257,7 @@ def build_graph(records):
     works = {}
     claims = {}
     for record in records:
-        graph.append({
+        node = {
             "@id": record["canonical_url"],
             "@type": "Claim",
             "identifier": record["identifier"],
@@ -232,7 +268,15 @@ def build_graph(records):
             "respondsTo": {"@id": record["currentDebate"]["url"]},
             "extends": {"@id": record["extends"]["url"]},
             "sha256": record["sha256"],
-        })
+        }
+        if record.get("candidateId"):
+            node.update({
+                "evidenceLevel": record["evidenceLevel"],
+                "reviewTier": record["reviewTier"],
+                "mappingConfidence": record["mappingConfidence"],
+                "mappingAmbiguous": record["mappingAmbiguous"],
+            })
+        graph.append(node)
         work_url = normalized_url(record["currentDebate"]["url"])
         works[work_url] = {
             "@id": work_url,
@@ -266,9 +310,17 @@ def build_graph(records):
 def build_public_metrics(records):
     response_types = {}
     batches = {}
+    evidence_levels = {}
+    review_tiers = {}
+    ambiguous_mappings = 0
     for record in records:
         response_types[record["responseType"]] = response_types.get(record["responseType"], 0) + 1
         batches[record["batch_id"]] = batches.get(record["batch_id"], 0) + 1
+        evidence = record.get("evidenceLevel", "reviewed source")
+        tier = record.get("reviewTier", "human reviewed")
+        evidence_levels[evidence] = evidence_levels.get(evidence, 0) + 1
+        review_tiers[tier] = review_tiers.get(tier, 0) + 1
+        ambiguous_mappings += int(bool(record.get("mappingAmbiguous", False)))
     return {
         "@context": "https://schema.org",
         "@type": "Dataset",
@@ -283,11 +335,27 @@ def build_public_metrics(records):
         "coveredWorks": len({normalized_url(record["currentDebate"]["url"]) for record in records}),
         "mappedScholarlyClaims": len({record["extends"]["identifier"] for record in records}),
         "responseTypes": response_types,
+        "evidenceLevels": evidence_levels,
+        "reviewTiers": review_tiers,
+        "ambiguousMappings": ambiguous_mappings,
         "batches": batches,
         "graph": f"{BASE}/positions/graph.jsonld",
         "bulk": f"{BASE}/positions/all.jsonl",
         "scopeNote": "A public count is not a claim of comprehensive literature coverage. Comprehensive coverage is measured in the private ledger before review throughput is applied.",
     }
+
+
+def build_positions_sitemap(records):
+    urls = "\n".join(
+        f"  <url><loc>{html.escape(record['canonical_url'])}</loc>"
+        f"<lastmod>{record['dateModified']}</lastmod><priority>0.7</priority></url>"
+        for record in records
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{urls}\n</urlset>\n"
+    )
 
 
 def main():
@@ -345,6 +413,9 @@ def main():
     (out_dir / "coverage.json").write_text(
         json.dumps(build_public_metrics(records), ensure_ascii=False, indent=1) + "\n",
         encoding="utf-8",
+    )
+    (args.repo / "sitemap-positions.xml").write_text(
+        build_positions_sitemap(records), encoding="utf-8"
     )
 
     for path in out_dir.iterdir():

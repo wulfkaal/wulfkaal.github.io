@@ -57,6 +57,24 @@
   "sha256": {
    "type": "string",
    "pattern": "^[a-f0-9]{64}$"
+  },
+  "candidateId": {
+   "type": "string",
+   "pattern": "^kaal:response-candidate:"
+  },
+  "evidenceLevel": {
+   "type": "string"
+  },
+  "reviewTier": {
+   "type": "string"
+  },
+  "mappingConfidence": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 1
+  },
+  "mappingAmbiguous": {
+   "type": "boolean"
   }
  }
 }
