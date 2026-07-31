@@ -225,6 +225,30 @@ rather than download it. Read only, no auth, no keys.
 Claim tools return the supporting quote, the canonical URL and the source PDF
 sha256, so anything retrieved can be checked against the original document.
 
+## Agentic claim graph and Answer Service
+
+The public graph pilot projects 100 current, source-derived claims from the
+5,033-claim corpus into an agent-capability graph. It does not create or affirm
+new claims. The separate Kaal Answer Service retrieves those claims with exact
+passages, citations, hashes, scope conditions, and limitations.
+
+- Graph index: https://wulfkaal.github.io/agentic-claim-graph/v1/index.json
+- Graph: https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld
+- Graph manifest: https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json
+- Vocabulary: https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json
+- Answer Service: https://kaal-answer-service.wulf577462.chatgpt.site/
+- Answer API: https://kaal-answer-service.wulf577462.chatgpt.site/api/answer
+- MCP JSON-RPC: https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc
+- A2A card: https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json
+- ARD catalog: https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json
+- Colloquium procedural claims: https://wulfkaal.github.io/agentic-claim-graph/v1/procedural-claims.json
+- Derived candidate queue status: https://wulfkaal.github.io/agentic-claim-graph/v1/derived-candidates.json
+
+An eligible Colloquium settlement may create a process claim about what a
+validation pool concluded concerning a review report. That process claim is
+attributed to Colloquium, not to Wulf A. Kaal. Any substantive derivative
+remains unpublished and unattributed until exact hash-bound affirmation.
+
 <!-- kaal-network:v2 -->
 ## Related infrastructure
 

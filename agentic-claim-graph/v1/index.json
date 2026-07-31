@@ -1,0 +1,27 @@
+{
+  "resource": "Wulf A. Kaal Agentic Claim Graph",
+  "version": "1.0.0",
+  "state": "public_pilot",
+  "claim_count": 100,
+  "canonical_corpus_claim_count": 5033,
+  "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld",
+  "manifest": "https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json",
+  "vocabulary": "https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json",
+  "procedural_claims": "https://wulfkaal.github.io/agentic-claim-graph/v1/procedural-claims.json",
+  "derived_candidates": "https://wulfkaal.github.io/agentic-claim-graph/v1/derived-candidates.json",
+  "answer_service": {
+    "home": "https://kaal-answer-service.wulf577462.chatgpt.site/",
+    "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
+    "mcp_json_rpc": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
+    "a2a": "https://kaal-answer-service.wulf577462.chatgpt.site/a2a",
+    "agent_card": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json",
+    "ard_catalog": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json"
+  },
+  "hard_invariants": {
+    "read_only": true,
+    "creates_claims": false,
+    "affirms_claims": false,
+    "procedural_claims_are_not_wulf_authored": true,
+    "substantive_derivatives_require_exact_wulf_affirmation": true
+  }
+}
