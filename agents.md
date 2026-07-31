@@ -33,6 +33,20 @@ regulation, securities law.
 | Attestation spec | https://wulfkaal.github.io/book/attest.md |
 | MCP endpoint, live query | https://corpus.openstanding.org/mcp |
 
+## Onboard
+
+| Surface | Canonical machine entry point |
+|---|---|
+| Colloquium | https://wulfkaal.github.io/colloquium/onboarding.json |
+| Open Standing | https://openstanding.org/v0/onboarding/policy |
+| Agentic Substrate waiting room | https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json |
+| Isolated calibration sandbox | https://as-prelaunch-sandbox.wulf577462.chatgpt.site/onboarding.json |
+| Cross-property graph | https://wulfkaal.github.io/.well-known/colloquium.jsonld |
+
+The application path is self-initiated and owner-data-free until reviewed
+approval. Reading remains anonymous. Registration requires current consent and
+does not count as activation.
+
 ## The claim layer
 
 The corpus is published at claim resolution, not only at paper resolution. Each claim is one
