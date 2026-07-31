@@ -1,0 +1,22 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "@id": "https://wulfkaal.github.io/positions/coverage.json",
+ "name": "Published Kaal response claim coverage",
+ "description": "Aggregate metrics for affirmed and published response claims only. The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works.",
+ "dateModified": "2026-07-31",
+ "publishedResponseClaims": 10,
+ "coveredWorks": 10,
+ "mappedScholarlyClaims": 8,
+ "responseTypes": {
+  "extension": 6,
+  "qualification": 4
+ },
+ "batches": {
+  "signal-desk:2026-07-31-email-affirmation": 3,
+  "daily-portfolio:2026-07-30": 7
+ },
+ "graph": "https://wulfkaal.github.io/positions/graph.jsonld",
+ "bulk": "https://wulfkaal.github.io/positions/all.jsonl",
+ "scopeNote": "A public count is not a claim of comprehensive literature coverage. Comprehensive coverage is measured in the private ledger before review throughput is applied."
+}

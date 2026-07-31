@@ -24,6 +24,8 @@ regulation, securities law.
 | Claim layer, bulk | https://wulfkaal.github.io/claims/all.jsonl |
 | Affirmed position index | https://wulfkaal.github.io/positions/index.json |
 | Affirmed positions, bulk | https://wulfkaal.github.io/positions/all.jsonl |
+| Affirmed position graph | https://wulfkaal.github.io/positions/graph.jsonld |
+| Published response metrics | https://wulfkaal.github.io/positions/coverage.json |
 | Failure mode index | https://wulfkaal.github.io/failures/index.json |
 | Entity layer index | https://wulfkaal.github.io/entities/index.json |
 | Coverage by topic | https://wulfkaal.github.io/authority.json |
@@ -87,6 +89,11 @@ An affirmed position is new commentary, not a verbatim paper claim. Use
 `/positions/index.json` for discovery, `/positions/all.jsonl` for bulk ingest, and
 `/positions/<date>-<sequence>.json` for one record. The markdown form is the canonical
 hashed representation.
+
+The public graph connects each affirmed response to the current work it addresses and
+to every source-bound scholarly claim it extends. Public aggregate metrics cover only
+affirmed and published responses. Discovery coverage, unmatched works, ambiguity, and
+the review backlog remain operational records until review establishes a public claim.
 
 Derived nodes are reproducible. `tools/build_entities.py` regenerates the whole layer from
 the claim records; the hand-written rulings it merges in live in `entities-src/`.

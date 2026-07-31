@@ -46,6 +46,14 @@
   "extends": {
    "type": "object"
   },
+  "responseType": {
+   "enum": [
+    "agreement",
+    "extension",
+    "qualification",
+    "contradiction"
+   ]
+  },
   "sha256": {
    "type": "string",
    "pattern": "^[a-f0-9]{64}$"

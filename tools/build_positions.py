@@ -6,6 +6,7 @@ import hashlib
 import html
 import json
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 BASE = "https://wulfkaal.github.io"
 ORCID = "https://orcid.org/0009-0008-7840-1847"
@@ -74,6 +75,7 @@ def json_record(batch, item):
         "datePublished": batch["date"],
         "dateModified": batch["date"],
         "creativeWorkStatus": "Affirmed",
+        "responseType": item["response_type"],
         "keywords": item["topics"],
         "scope_conditions": item["scope_conditions"],
         "currentDebate": item["current_debate"],
@@ -168,7 +170,9 @@ def render_index_html(records):
         "<div class=\"k\">Machine access</div><ul class=\"meta\">"
         "<li><a href=\"./index.json\">JSON index</a></li>"
         "<li><a href=\"./all.jsonl\">Bulk JSONL</a></li>"
-        "<li><a href=\"./schema.json\">Record schema</a></li></ul>"
+        "<li><a href=\"./schema.json\">Record schema</a></li>"
+        "<li><a href=\"./graph.jsonld\">Response graph</a></li>"
+        "<li><a href=\"./coverage.json\">Published response metrics</a></li></ul>"
         "<footer><a href=\"../agents.md\">Agents</a> &middot; "
         "<a href=\"../claims/index.html\">Scholarly claims</a></footer>"
         "</main></body></html>"
@@ -199,8 +203,90 @@ def schema():
             "scope_conditions": {"type": "array", "items": {"type": "string"}},
             "currentDebate": {"type": "object"},
             "extends": {"type": "object"},
+            "responseType": {
+                "enum": ["agreement", "extension", "qualification", "contradiction"]
+            },
             "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
         },
+    }
+
+
+def normalized_url(value):
+    parts = urlsplit(value)
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip("/"), parts.query, ""))
+
+
+def build_graph(records):
+    graph = []
+    works = {}
+    claims = {}
+    for record in records:
+        graph.append({
+            "@id": record["canonical_url"],
+            "@type": "Claim",
+            "identifier": record["identifier"],
+            "text": record["text"],
+            "responseType": record["responseType"],
+            "datePublished": record["datePublished"],
+            "creativeWorkStatus": record["creativeWorkStatus"],
+            "respondsTo": {"@id": record["currentDebate"]["url"]},
+            "extends": {"@id": record["extends"]["url"]},
+            "sha256": record["sha256"],
+        })
+        work_url = normalized_url(record["currentDebate"]["url"])
+        works[work_url] = {
+            "@id": work_url,
+            "@type": "CreativeWork",
+            "name": record["currentDebate"]["name"],
+            "url": work_url,
+        }
+        claim_url = normalized_url(record["extends"]["url"])
+        claims[claim_url] = {
+            "@id": claim_url,
+            "@type": "Claim",
+            "identifier": record["extends"]["identifier"],
+            "citation": record["extends"]["citation"],
+            "sha256": record["extends"]["source_pdf_sha256"],
+        }
+    graph.extend(works.values())
+    graph.extend(claims.values())
+    return {
+        "@context": {
+            "@vocab": "https://schema.org/",
+            "respondsTo": {"@id": "https://schema.org/citation", "@type": "@id"},
+            "extends": {"@id": "https://schema.org/isBasedOn", "@type": "@id"},
+            "responseType": f"{BASE}/positions/schema.json#responseType",
+            "sha256": f"{BASE}/positions/schema.json#sha256",
+        },
+        "@id": f"{BASE}/positions/graph.jsonld",
+        "@graph": graph,
+    }
+
+
+def build_public_metrics(records):
+    response_types = {}
+    batches = {}
+    for record in records:
+        response_types[record["responseType"]] = response_types.get(record["responseType"], 0) + 1
+        batches[record["batch_id"]] = batches.get(record["batch_id"], 0) + 1
+    return {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "@id": f"{BASE}/positions/coverage.json",
+        "name": "Published Kaal response claim coverage",
+        "description": (
+            "Aggregate metrics for affirmed and published response claims only. "
+            "The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works."
+        ),
+        "dateModified": max(record["dateModified"] for record in records),
+        "publishedResponseClaims": len(records),
+        "coveredWorks": len({normalized_url(record["currentDebate"]["url"]) for record in records}),
+        "mappedScholarlyClaims": len({record["extends"]["identifier"] for record in records}),
+        "responseTypes": response_types,
+        "batches": batches,
+        "graph": f"{BASE}/positions/graph.jsonld",
+        "bulk": f"{BASE}/positions/all.jsonl",
+        "scopeNote": "A public count is not a claim of comprehensive literature coverage. Comprehensive coverage is measured in the private ledger before review throughput is applied.",
     }
 
 
@@ -251,6 +337,14 @@ def main():
     (out_dir / "index.html").write_text(render_index_html(records) + "\n", encoding="utf-8")
     (out_dir / "schema.json").write_text(
         json.dumps(schema(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+    )
+    (out_dir / "graph.jsonld").write_text(
+        json.dumps(build_graph(records), ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
+    (out_dir / "coverage.json").write_text(
+        json.dumps(build_public_metrics(records), ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
     )
 
     for path in out_dir.iterdir():
