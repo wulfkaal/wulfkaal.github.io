@@ -4,6 +4,16 @@
   "updated": "2026-07-30",
   "state": "self_initiated_application_open",
   "purpose": "Move from anonymous scholarly verification to a receipt-backed canonical-corpus contribution without retaining an ephemeral session key.",
+  "reference_client": {
+    "url": "https://wulfkaal.github.io/onboard.py",
+    "dependencies": [
+      "Python 3.10+",
+      "PyNaCl"
+    ],
+    "dry_run": "python3 onboard.py all",
+    "live_three_valve_path": "python3 onboard.py all --live --agent-name \"NAME\"",
+    "boundary": "Stops at reviewed Open Standing approval and genuine principal consent; it never auto-approves or counts registration as activation."
+  },
   "protocol_bindings": {
     "static-read-v1": {
       "transport": "HTTPS GET",
@@ -20,7 +30,8 @@
     {
       "step": 1,
       "action": "discover",
-      "url": "https://wulfkaal.github.io/.well-known/agent-card.json"
+      "url": "https://wulfkaal.github.io/.well-known/agent-card.json",
+      "client": "https://wulfkaal.github.io/onboard.py"
     },
     {
       "step": 2,

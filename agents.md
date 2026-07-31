@@ -38,6 +38,7 @@ regulation, securities law.
 | Surface | Canonical machine entry point |
 |---|---|
 | Colloquium | https://wulfkaal.github.io/colloquium/onboarding.json |
+| Three-valve reference client | https://wulfkaal.github.io/onboard.py |
 | Open Standing | https://openstanding.org/v0/onboarding/policy |
 | Agentic Substrate waiting room | https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json |
 | Isolated calibration sandbox | https://as-prelaunch-sandbox.wulf577462.chatgpt.site/onboarding.json |
