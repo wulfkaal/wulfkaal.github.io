@@ -1,0 +1,32 @@
+{
+  "version": "kaal-corrective-action-receipt-v1",
+  "createdAt": "2026-07-31T20:58:34Z",
+  "authorization": "I authorize an additive corrective commit removing only batch 0009, SHA-256 b79e655db33b69d4e6de8a205792c1e02d068eea4880d69cd6faeb884041abdf, rebuilding the canonical position layer from 7,659 to 7,409 while retaining batch 0008 and all prior records. Preserve exactly 5,033 scholarly claims, publish audit packet manifest SHA-256 79c59cf4b8f9ceea268bc14c7ee5ddb3eb709b9b9cf491bad97166887b1de3b9, and lift the freeze after live verification.",
+  "authorizedHashes": {
+    "removedBatchPrivateDraftsSha256": "b79e655db33b69d4e6de8a205792c1e02d068eea4880d69cd6faeb884041abdf",
+    "auditManifestSha256": "79c59cf4b8f9ceea268bc14c7ee5ddb3eb709b9b9cf491bad97166887b1de3b9"
+  },
+  "correctiveAction": {
+    "beforeCommit": "440951279ba8c4642f4ad29d84ef910a7033a599",
+    "afterCommit": "3ed9903c270489cd5b413cafe0e5286029aa6bfc",
+    "beforePublicPositions": 7659,
+    "afterPublicPositions": 7409,
+    "removedBatchId": "kaal-review:2026-07-31:streaming-etl-0009",
+    "removedPositionRecords": 250,
+    "removedGeneratedArtifacts": 750,
+    "removedSourceArtifacts": 2,
+    "removedSequenceStart": 7403,
+    "removedSequenceEnd": 7652,
+    "retainedBatchId": "kaal-review:2026-07-31:streaming-etl-0008",
+    "retainedSequenceStart": 7153,
+    "retainedSequenceEnd": 7402
+  },
+  "invariants": {
+    "protectedScholarlyClaims": 5033,
+    "protectedLayerDiff": 0,
+    "historyRewritten": false
+  },
+  "recoveryPointer": "https://github.com/wulfkaal/wulfkaal.github.io/commit/440951279ba8c4642f4ad29d84ef910a7033a599",
+  "auditManifest": "https://wulfkaal.github.io/audits/position-claims/2026-07-31-7159/manifest.json",
+  "freezeLiftStatus": "pending-live-audit-verification"
+}
