@@ -1,0 +1,37 @@
+{
+  "version": "kaal-publication-freeze-lift-receipt-v1",
+  "status": "lifted-after-live-verification",
+  "liftedAt": "2026-07-31T21:04:35Z",
+  "authorization": "I authorize an additive corrective commit removing only batch 0009, SHA-256 b79e655db33b69d4e6de8a205792c1e02d068eea4880d69cd6faeb884041abdf, rebuilding the canonical position layer from 7,659 to 7,409 while retaining batch 0008 and all prior records. Preserve exactly 5,033 scholarly claims, publish audit packet manifest SHA-256 79c59cf4b8f9ceea268bc14c7ee5ddb3eb709b9b9cf491bad97166887b1de3b9, and lift the freeze after live verification.",
+  "verifiedHashes": {
+    "removedBatchPrivateDraftsSha256": "b79e655db33b69d4e6de8a205792c1e02d068eea4880d69cd6faeb884041abdf",
+    "auditManifestSha256": "79c59cf4b8f9ceea268bc14c7ee5ddb3eb709b9b9cf491bad97166887b1de3b9"
+  },
+  "commits": {
+    "combinedPublicationBeforeCorrection": "440951279ba8c4642f4ad29d84ef910a7033a599",
+    "additiveCorrection": "3ed9903c270489cd5b413cafe0e5286029aa6bfc",
+    "auditPublication": "0706ddd123d1a49493f54daf3eb0ddfd6e60a811"
+  },
+  "liveVerification": {
+    "pagesRun": "https://github.com/wulfkaal/wulfkaal.github.io/actions/runs/30664945011",
+    "publicResponsePositions": 7409,
+    "bulkRecords": 7409,
+    "graphStatus": "reachable",
+    "coveragePublishedResponseClaims": 7409,
+    "positionSitemapUrls": 7409,
+    "protectedScholarlyClaims": 5033,
+    "retainedFirstBatch0008RecordStatus": 200,
+    "retainedLastBatch0008RecordStatus": 200,
+    "removedFirstBatch0009RecordStatus": 404,
+    "removedLastBatch0009RecordStatus": 404,
+    "auditManifestStatus": 200,
+    "auditArtifactHashesMatch": true
+  },
+  "audit": {
+    "canonicalPath": "https://wulfkaal.github.io/audits/position-claims/2026-07-31-7159/",
+    "redactionApplied": false,
+    "publicProjectionUsed": false
+  },
+  "futurePublicationGate": "Every future response batch requires exact affirmation of its batch ID, SHA-256, item count, wording, evidence labels, provenance, mappings, and the unchanged 5,033 scholarly-claim invariant.",
+  "implicitBatchAuthorization": false
+}
