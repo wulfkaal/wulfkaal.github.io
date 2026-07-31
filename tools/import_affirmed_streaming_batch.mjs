@@ -88,7 +88,12 @@ async function main() {
       sequence,
       response_type: draft.responseType,
       slug: `streaming-${slug(draft.work.title)}-${sha256(draft.candidateId).slice(0, 10)}`,
-      topics: [...new Set([...(claim.topics ?? []), "historical-response", "scholarly-literature", "openalex"])],
+      topics: [...new Set([
+        ...(claim.topics ?? []),
+        "historical-response",
+        "scholarly-literature",
+        draft.sourceProvenance.source,
+      ])],
       text: draft.draft,
       scope_conditions: [
         "The response is limited to the retrieved source proposition and mapped Kaal claim unless fuller source review supports a broader conclusion.",
