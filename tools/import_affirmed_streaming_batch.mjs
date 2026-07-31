@@ -1,13 +1,15 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, isAbsolute, resolve } from "node:path";
 
 const REPO = resolve(import.meta.dirname, "..");
 const PROJECT = resolve(REPO, "../..");
 const BATCH_NUMBER = process.env.AFFIRMED_BATCH_NUMBER || "0002";
-const PRIVATE_BATCH = resolve(PROJECT, `public/review-batches/2026-07-31-streaming-etl-${BATCH_NUMBER}`);
-const INPUT = resolve(PRIVATE_BATCH, "private-drafts.jsonl");
-const SOURCE_NAME = `2026-07-31-streaming-etl-${BATCH_NUMBER}.json`;
+const DEFAULT_INPUT = resolve(PROJECT, `public/review-batches/2026-07-31-streaming-etl-${BATCH_NUMBER}/private-drafts.jsonl`);
+const INPUT_VALUE = process.env.AFFIRMED_BATCH_INPUT || DEFAULT_INPUT;
+const INPUT = isAbsolute(INPUT_VALUE) ? INPUT_VALUE : resolve(PROJECT, INPUT_VALUE);
+const PRIVATE_BATCH = dirname(INPUT);
+const SOURCE_NAME = process.env.AFFIRMED_SOURCE_NAME || `2026-07-31-streaming-etl-${BATCH_NUMBER}.json`;
 const SOURCE = resolve(REPO, "positions-src", SOURCE_NAME);
 const SOURCE_MANIFEST = resolve(REPO, "positions-src", `2026-07-31-streaming-etl-${BATCH_NUMBER}.manifest`);
 const EXPECTED_BATCH = process.env.AFFIRMED_BATCH_ID || "kaal-review:2026-07-31:streaming-etl-0002";
@@ -15,6 +17,8 @@ const EXPECTED_HASH = process.env.AFFIRMED_BATCH_HASH || "86e0dda588610d89ed45ad
 const EXPECTED_COUNT = Number(process.env.AFFIRMED_BATCH_COUNT || 250);
 const EXPECTED_PUBLIC_BEFORE = Number(process.env.AFFIRMED_PUBLIC_BEFORE || 5757);
 const EXPECTED_MAX_SEQUENCE = Number(process.env.AFFIRMED_MAX_SEQUENCE || 5750);
+const EXPECTED_STATUS = process.env.AFFIRMED_EXPECTED_STATUS || "draft";
+const REVIEW_LEDGER_SHA256 = process.env.AFFIRMED_REVIEW_LEDGER_SHA256 || null;
 const AUTHORIZATION = process.env.AFFIRMED_AUTHORIZATION || "I affirm batch kaal-review:2026-07-31:streaming-etl-0002, SHA-256 86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee, as written and authorize publication of all 250 response claims on my canonical property, preserving their evidence levels, ambiguity labels, provenance, and the unchanged 5,033 scholarly claims.";
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
@@ -50,7 +54,7 @@ async function main() {
   if (drafts.length !== EXPECTED_COUNT) throw new Error(`FAIL CLOSED: expected ${EXPECTED_COUNT} drafts, received ${drafts.length}.`);
   if (new Set(drafts.map((item) => item.candidateId)).size !== EXPECTED_COUNT) throw new Error("FAIL CLOSED: candidate IDs are not unique.");
   if (new Set(drafts.map((item) => item.proposition?.sha256)).size !== EXPECTED_COUNT) throw new Error("FAIL CLOSED: proposition hashes are not unique.");
-  if (drafts.some((item) => item.batchId !== EXPECTED_BATCH || item.status !== "draft" || item.publicationAllowed !== false)) {
+  if (drafts.some((item) => item.batchId !== EXPECTED_BATCH || item.status !== EXPECTED_STATUS || item.publicationAllowed !== false)) {
     throw new Error("FAIL CLOSED: input batch identity or private publication state changed.");
   }
 
@@ -84,6 +88,8 @@ async function main() {
 
     const sequence = state.maxSequence + index + 1;
     const ssrn = /https:\/\/ssrn\.com\/abstract=(\d+)/.exec(claim.citation)?.[0] ?? null;
+    const reviewRationale = draft.substantiveReview?.rationale || primary.whyRelevant;
+    const evidenceLimitations = draft.substantiveReview?.limitations ?? [];
     return {
       sequence,
       response_type: draft.responseType,
@@ -98,11 +104,14 @@ async function main() {
       scope_conditions: [
         "The response is limited to the retrieved source proposition and mapped Kaal claim unless fuller source review supports a broader conclusion.",
         `External evidence level: ${draft.evidenceLevel}.`,
-        `Mapping review tier: ${reviewTier(primary.confidence)}.`,
+        draft.substantiveReview
+          ? "Mapping review tier: substantively reviewed abstract-level qualification."
+          : `Mapping review tier: ${reviewTier(primary.confidence)}.`,
         `Primary mapping confidence: ${primary.confidence}.`,
         draft.mappingAmbiguous
           ? "The source-to-claim mapping remains explicitly ambiguous and is published with that limitation."
           : "The primary mapping cleared the automated ambiguity test; substantive scope remains review-bound.",
+        ...evidenceLimitations,
       ],
       current_debate: { name: draft.work.title, url: draft.work.url },
       extends: {
@@ -117,11 +126,11 @@ async function main() {
       },
       candidate_id: draft.candidateId,
       evidence_level: draft.evidenceLevel,
-      review_tier: reviewTier(primary.confidence),
+      review_tier: draft.substantiveReview ? "substantively reviewed abstract-level qualification" : reviewTier(primary.confidence),
       mapping_confidence: primary.confidence,
       mapping_ambiguous: draft.mappingAmbiguous,
       mapping_method: primary.method,
-      mapping_why_relevant: primary.whyRelevant,
+      mapping_why_relevant: reviewRationale,
       source_provenance: {
         ...draft.sourceProvenance,
         workId: draft.work.id,
@@ -132,6 +141,7 @@ async function main() {
         sourcePropositionSha256: draft.proposition.sha256,
         sourcePropositionIndex: draft.proposition.index,
         claimMappings: mappings,
+        substantiveReview: draft.substantiveReview ?? null,
       },
       user_affirmation: AUTHORIZATION,
     };
@@ -143,6 +153,7 @@ async function main() {
     status: "affirmed",
     review_provenance: "https://kaal-signal-desk.wulf577462.chatgpt.site/#review",
     source_snapshot_sha256: EXPECTED_HASH,
+    review_ledger_sha256: REVIEW_LEDGER_SHA256,
     exact_authorization: AUTHORIZATION,
     positions,
   };
@@ -157,6 +168,7 @@ async function main() {
     firstSequence: positions[0].sequence,
     lastSequence: positions.at(-1).sequence,
     generatedSourceSha256: sha256(serialized),
+    reviewLedgerSha256: REVIEW_LEDGER_SHA256,
     authorization: AUTHORIZATION,
   }, null, 2)}\n`);
 
