@@ -60,7 +60,7 @@
   },
   "candidateId": {
    "type": "string",
-   "pattern": "^kaal:response-candidate:"
+   "pattern": "^kaal:response-(candidate|draft):"
   },
   "evidenceLevel": {
    "type": "string"
@@ -69,7 +69,10 @@
    "type": "string"
   },
   "mappingConfidence": {
-   "type": "number",
+   "type": [
+    "number",
+    "null"
+   ],
    "minimum": 0,
    "maximum": 1
   },

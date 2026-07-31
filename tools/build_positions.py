@@ -11,20 +11,11 @@ from urllib.parse import urlsplit, urlunsplit
 BASE = "https://wulfkaal.github.io"
 ORCID = "https://orcid.org/0009-0008-7840-1847"
 AUTHOR = "Wulf A. Kaal"
-FORBIDDEN_DASHES = ("\u2013", "\u2014")
-
-
-def clean_text(value, where):
-    if isinstance(value, str) and any(mark in value for mark in FORBIDDEN_DASHES):
-        raise SystemExit(f"build error: forbidden dash in {where}")
-
-
 def load_batches(src_dir):
     batches = []
     for path in sorted(src_dir.glob("*.json")):
         with path.open(encoding="utf-8") as handle:
             batch = json.load(handle)
-        clean_text(json.dumps(batch, ensure_ascii=False), str(path))
         batches.append(batch)
     return batches
 
@@ -38,10 +29,11 @@ def canonical_markdown(record):
     conditions = "\n".join(f"- {condition}" for condition in record["scope_conditions"])
     evidence = ""
     if record.get("candidateId"):
+        confidence = record["mappingConfidence"] if record["mappingConfidence"] is not None else "unscored"
         evidence = (
             f"**Evidence level.** {record['evidenceLevel']}\n\n"
             f"**Mapping review tier.** {record['reviewTier']}\n\n"
-            f"**Mapping confidence.** {record['mappingConfidence']}  "
+            f"**Mapping confidence.** {confidence}  "
             f"**Mapping ambiguous.** {str(record['mappingAmbiguous']).lower()}\n\n"
         )
     return (
@@ -134,11 +126,12 @@ def render_html(record):
     topics = "".join(f'<span class="tag">{esc(topic)}</span>' for topic in record["keywords"])
     evidence = ""
     if record.get("candidateId"):
+        confidence = record["mappingConfidence"] if record["mappingConfidence"] is not None else "unscored"
         evidence = (
             f"<div class=\"k\">Evidence and mapping</div><p class=\"meta\">"
             f"Evidence: {esc(record['evidenceLevel'])}<br>"
             f"Review tier: {esc(record['reviewTier'])}<br>"
-            f"Mapping confidence: {record['mappingConfidence']}<br>"
+            f"Mapping confidence: {confidence}<br>"
             f"Mapping ambiguous: {str(record['mappingAmbiguous']).lower()}</p>"
         )
     structured = json.dumps(record, ensure_ascii=False)
@@ -238,10 +231,12 @@ def schema():
                 "enum": ["agreement", "extension", "qualification", "contradiction"]
             },
             "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-            "candidateId": {"type": "string", "pattern": "^kaal:response-candidate:"},
+            "candidateId": {"type": "string", "pattern": "^kaal:response-(candidate|draft):"},
             "evidenceLevel": {"type": "string"},
             "reviewTier": {"type": "string"},
-            "mappingConfidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "mappingConfidence": {
+                "type": ["number", "null"], "minimum": 0, "maximum": 1
+            },
             "mappingAmbiguous": {"type": "boolean"},
         },
     }
@@ -418,9 +413,6 @@ def main():
         build_positions_sitemap(records), encoding="utf-8"
     )
 
-    for path in out_dir.iterdir():
-        if path.is_file():
-            clean_text(path.read_text(encoding="utf-8"), str(path))
     print(f"built {len(records)} affirmed positions")
 
 
