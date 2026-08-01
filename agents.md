@@ -181,9 +181,14 @@ See `colloquium/ATTESTING.md`.
 
 Historical title and alias: Persona Protocol v0.3. Author: Wulf A. Kaal. Record prose license: CC BY 4.0.
 
+Canonical identity: https://wulfkaal.github.io/trustcarry/. Trademark presentation: TrustCarry™ Protocol. The mark is claimed and unregistered; no federal registration is represented.
+
 | Surface | URL | Status |
 |---|---|---|
 | Author-affirmed research claims | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |
 | Internal software observations | https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json | Public internal observations; synthetic fixtures; not independently reproduced |
 | Release manifest | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |
+| Canonical identity | https://wulfkaal.github.io/.well-known/trustcarry.json | Steward, commercial release authority, attestation key, and official policy links |
+| Trademark and naming policy | https://wulfkaal.github.io/trustcarry/TRADEMARKS.md | Permitted references, fork naming, reserved certification language, and license boundary |
+| Official implementation registry | https://wulfkaal.github.io/trustcarry/official-implementations.json | Exclusive machine-readable list of official TrustCarry surfaces |
 <!-- persona-v03-research-records:end -->
