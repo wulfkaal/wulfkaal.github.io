@@ -15,7 +15,7 @@
       "protocolVersion": "2.2"
     }
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "provider": {
     "organization": "Wulf A. Kaal",
     "url": "https://wulfkaal.com/agents/"
@@ -76,6 +76,22 @@
         "claims",
         "source-verification"
       ]
+    },
+    {
+      "id": "query-trustcarry-v03-research-records",
+      "name": "Query TrustCarry Protocol v0.3 research records",
+      "description": "Read the separate collection of 77 author-affirmed research claims and 9 internal software observations. Historical title: Persona Protocol v0.3. The source manuscript is unpublished, the observations are not independently reproduced, and neither collection belongs to the 5,033 scholarly claim layer.",
+      "tags": [
+        "TrustCarry Protocol",
+        "Persona Protocol",
+        "research-claims",
+        "research-observations",
+        "MCP"
+      ],
+      "examples": [
+        "curl -s https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/index.json",
+        "curl -s https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/index.json"
+      ]
     }
   ],
   "endpoints": {
@@ -92,6 +108,9 @@
     "application_policy": "https://openstanding.org/v0/onboarding/policy",
     "write_api": "https://openstanding.org/v0",
     "corpus_mcp": "https://corpus.openstanding.org/mcp",
+    "trustcarry_research_claims": "https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/index.json",
+    "trustcarry_research_observations": "https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/index.json",
+    "trustcarry_release_manifest": "https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/release-manifest.json",
     "knowledge_graph": "https://wulfkaal.github.io/.well-known/colloquium.jsonld"
   },
   "authModel": {
@@ -119,6 +138,18 @@
     "claim_index": "https://wulfkaal.github.io/claims/index.json",
     "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
     "canonical_scholarly_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345"
+  },
+  "researchRecords": {
+    "canonical_name": "TrustCarry Protocol",
+    "versioned_name": "TrustCarry Protocol v0.3",
+    "historical_title_and_alias": "Persona Protocol v0.3",
+    "author": "Wulf A. Kaal",
+    "research_claims": 77,
+    "software_observations": 9,
+    "record_license": "https://creativecommons.org/licenses/by/4.0/",
+    "source_manuscript_status": "unpublished",
+    "scholarly_claim_layer_eligible": false,
+    "observations_independently_reproduced": false
   },
   "invariants": {
     "custodies_funds": false,

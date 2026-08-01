@@ -4,7 +4,7 @@
   "transport": "streamable-http",
   "authentication": "none",
   "readOnly": true,
-  "description": "Read-only access to the published corpus of Prof. Wulf A. Kaal: 5,033 atomic claims from 124 works, 2004-2026. Each claim carries a source quote and the sha256 of its source PDF. Single-author corpus; reports coverage, asserts no ranking.",
+  "description": "Read-only access to two explicitly separate layers: the published scholarly corpus of Prof. Wulf A. Kaal (5,033 atomic claims from 124 works) and the TrustCarry Protocol v0.3 public research-record collections (77 author-affirmed claims and 9 internal software observations). TrustCarry was historically titled Persona Protocol v0.3; its source manuscript remains unpublished, and its records are not part of the 5,033 scholarly layer.",
   "tools": [
     "search_claims",
     "get_claim",
@@ -17,12 +17,39 @@
     "search_posts",
     "verify_document",
     "how_to_cite"
+    ,"search_research_claims"
+    ,"get_research_claim"
+    ,"list_research_observations"
+    ,"get_research_observation"
   ],
   "documentation": "https://wulfkaal.github.io/agents.md",
   "staticMirror": {
     "claimIndex": "https://wulfkaal.github.io/claims/index.json",
     "bulkClaims": "https://wulfkaal.github.io/claims/all.jsonl",
-    "coverage": "https://wulfkaal.github.io/authority.json"
+    "coverage": "https://wulfkaal.github.io/authority.json",
+    "trustCarryResearchClaims": "https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/index.json",
+    "trustCarryResearchClaimsBulk": "https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/all.jsonl",
+    "trustCarryResearchObservations": "https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/index.json",
+    "trustCarryResearchObservationsBulk": "https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/all.jsonl"
+  },
+  "collections": {
+    "scholarlyClaims": {
+      "count": 5033,
+      "sourceClass": "published-source scholarly claims"
+    },
+    "trustCarryResearchClaims": {
+      "count": 77,
+      "license": "CC-BY-4.0",
+      "sourceClass": "author-authored unpublished draft",
+      "scholarlyClaimLayerEligible": false
+    },
+    "trustCarryResearchObservations": {
+      "count": 9,
+      "license": "CC-BY-4.0",
+      "sourceClass": "internal software observations",
+      "independentlyReproduced": false,
+      "scholarlyClaimLayerEligible": false
+    }
   },
   "contact": "wulf@wulfkaal.com",
   "license": "https://creativecommons.org/licenses/by/4.0/"

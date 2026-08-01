@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// SPDX-License-Identifier: Apache-2.0
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
@@ -14,6 +15,12 @@ const CLAIMS_BASE = `${BASE}/research-claims/persona-protocol/v0.3`;
 const OBS_BASE = `${BASE}/research-observations/persona-protocol/v0.3`;
 const RELEASE_DATE = "2026-08-01";
 const BATCH_ID = "persona-protocol-v0.3-new-claims-2026-08-01";
+const CANONICAL_NAME = "TrustCarry Protocol";
+const VERSIONED_NAME = "TrustCarry Protocol v0.3";
+const HISTORICAL_TITLE = "Persona Protocol v0.3";
+const AUTHOR = "Wulf A. Kaal";
+const RECORD_LICENSE = "https://creativecommons.org/licenses/by/4.0/";
+const SOFTWARE_LICENSE = "https://www.apache.org/licenses/LICENSE-2.0";
 const EXPECTED = {
   source: "38efc43b80ab62426ca1f946114677afeda730bca30dda71dfd299223a6def7c",
   claims: "ff768f79b7be01f043039a09bd4cc3e1863b39e08d147ff076b8165fe7387b6c",
@@ -23,6 +30,7 @@ const EXPECTED = {
   withheldCount: 7,
 };
 const AFFIRMATION = "I affirm publication of batch persona-protocol-v0.3-new-claims-2026-08-01 containing 77 author-authored research claims with accepted SHA-256 ff768f79b7be01f043039a09bd4cc3e1863b39e08d147ff076b8165fe7387b6c, sourced solely from Persona Protocol v0.3 with source SHA-256 38efc43b80ab62426ca1f946114677afeda730bca30dda71dfd299223a6def7c, plus 9 internal software observations with SHA-256 c287e0c12d3f168f6d9712e6de67c0f5f7715247252ea39c8a2b35caa7911df5, to the separate public research-claims and research-observations collections. I affirm the stated provenance classes, approve the 7 withheld records remaining unpublished, and do not authorize addition to the 5,033 scholarly claim layer until a canonical public manuscript is fixed and revalidated.";
+const NAMING_AND_LICENSE_AUTHORIZATION = "I confirm TrustCarry Protocol as the canonical name, with Persona Protocol v0.3 retained as its historical title and alias. Attribute the protocol to Wulf A. Kaal. I authorize CC BY 4.0 for the 77 research-claim records and 9 software-observation records, and Apache License 2.0 for the schemas, reference implementation, clients, and conformance tooling.";
 const sha256 = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const esc = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const readJsonl = (buffer) => buffer.toString("utf8").trim().split(/\n/).filter(Boolean).map(JSON.parse);
@@ -69,10 +77,12 @@ const claimRecords = claims.map((source, index) => {
     `**Status.** Public research record. Not yet eligible for the published-source scholarly claim layer.\n\n` +
     `**Claim type.** ${source.claim_type}\n\n` +
     `**Holds when.**\n\n${conditions.map((condition) => `- ${condition}`).join("\n")}\n\n` +
-    `**Supporting passage from Persona Protocol v0.3.**\n\n> ${source.supporting_quote}\n\n` +
+    `**Protocol.** ${VERSIONED_NAME}, historically titled and aliased as ${HISTORICAL_TITLE}.\n\n` +
+    `**Supporting passage from ${HISTORICAL_TITLE}.**\n\n> ${source.supporting_quote}\n\n` +
     `**Source locator.** Line ${source.source_locator.line} of the sealed v0.3 source.\n\n` +
     `**Source SHA-256.** \`${EXPECTED.source}\`\n\n` +
     `**Provenance.** Direct author affirmation of exact batch \`${BATCH_ID}\`. The source manuscript remains an unpublished research draft.\n\n` +
+    `**License.** CC BY 4.0; attribute Wulf A. Kaal and cite the canonical record URL.\n\n` +
     `**Limit.** This record is public and citable as an author-affirmed research proposition. It is not a claim extracted from a canonical published paper, is not an adopted standard, and does not alter the 5,033 scholarly claim layer.\n`;
   const record = {
     "@context": "https://schema.org",
@@ -82,6 +92,9 @@ const claimRecords = claims.map((source, index) => {
     additionalType: `${BASE}/research-claims/schema.json#AuthorAffirmedResearchClaim`,
     text: source.claim,
     author: source.author,
+    copyrightHolder: AUTHOR,
+    license: RECORD_LICENSE,
+    isPartOf: { name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, author: AUTHOR },
     datePublished: RELEASE_DATE,
     dateModified: RELEASE_DATE,
     creativeWorkStatus: "AuthorAffirmedResearchClaim",
@@ -116,10 +129,12 @@ const observationRecords = observations.map((source, index) => {
   const markdown = `# ${source.id}\n\n` +
     `**Internal software observation.** ${source.observation}\n\n` +
     `**Evidence class.** Internal software observation, not independently reproduced.\n\n` +
-    `**Supporting passage from Persona Protocol v0.3.**\n\n> ${source.supporting_quote}\n\n` +
+    `**Protocol.** ${VERSIONED_NAME}, historically titled and aliased as ${HISTORICAL_TITLE}.\n\n` +
+    `**Supporting passage from ${HISTORICAL_TITLE}.**\n\n> ${source.supporting_quote}\n\n` +
     `**Source locator.** Line ${source.source_locator.line} of the sealed v0.3 source.\n\n` +
     `**Source SHA-256.** \`${EXPECTED.source}\`\n\n` +
     `**Implementation commit.** \`${source.implementation_commit}\`\n\n` +
+    `**License.** CC BY 4.0; attribute Wulf A. Kaal and cite the canonical record URL.\n\n` +
     `**Limit.** This observation reports internal behavior under synthetic fixtures. It is not external validation, independent reproduction, a security audit, or a scholarly claim-layer record.\n`;
   const record = {
     "@context": "https://schema.org",
@@ -129,6 +144,9 @@ const observationRecords = observations.map((source, index) => {
     additionalType: `${BASE}/research-observations/schema.json#InternalSoftwareObservation`,
     text: source.observation,
     author: { "@type": "Person", name: "Wulf A. Kaal", identifier: "https://orcid.org/0009-0008-7840-1847" },
+    copyrightHolder: AUTHOR,
+    license: RECORD_LICENSE,
+    isPartOf: { name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, author: AUTHOR },
     datePublished: RELEASE_DATE,
     evidence_class: source.evidence_class,
     implementation_commit: source.implementation_commit,
@@ -160,7 +178,8 @@ const renderHtml = (entry, kind) => {
     `<h1>${esc(record.identifier)}</h1><p class=\"claim\">${esc(record.text)}</p><div class=\"warn\">${esc(warning)}</div>` +
     (conditions ? `<div class=\"k\">Holds when</div><ul class=\"meta\">${conditions}</ul>` : "") +
     `<div class=\"k\">Supporting passage</div><blockquote>${esc(record.supporting_quote)}</blockquote>` +
-    `<div class=\"k\">Provenance</div><p class=\"meta\">Persona Protocol v0.3, line ${record.source_locator.line}. Source sha256: <code>${EXPECTED.source}</code>.</p>` +
+    `<div class=\"k\">Provenance</div><p class=\"meta\">${VERSIONED_NAME} (historical title: ${HISTORICAL_TITLE}), line ${record.source_locator.line}. Source sha256: <code>${EXPECTED.source}</code>.</p>` +
+    `<div class=\"k\">License</div><p class=\"meta\"><a href=\"${RECORD_LICENSE}\">CC BY 4.0</a>; attribution to ${AUTHOR} and the canonical record URL.</p>` +
     `<div class=\"k\">Verify</div><p class=\"meta\">Canonical markdown sha256: <code>${record.sha256}</code></p>` +
     `<footer><a href=\"./\">Collection index</a> &middot; <a href=\"./${entry.sequence}.json\">JSON-LD</a> &middot; <a href=\"./${entry.sequence}.md\">Markdown</a></footer>` +
     "</main></body></html>";
@@ -180,7 +199,10 @@ for (const entry of observationRecords) {
 const claimsIndex = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Persona Protocol v0.3 Author-Affirmed Research Claims",
+  name: `${VERSIONED_NAME} Author-Affirmed Research Claims`,
+  alternateName: `${HISTORICAL_TITLE} Author-Affirmed Research Claims`,
+  author: AUTHOR,
+  license: RECORD_LICENSE,
   description: "Public, author-affirmed research propositions distilled from an unpublished draft. Distinct from the 5,033 published-source scholarly claims.",
   canonical_url: `${CLAIMS_BASE}/`,
   version: "0.3",
@@ -202,7 +224,10 @@ const claimsIndex = {
 const obsIndex = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Persona Protocol v0.3 Internal Software Observations",
+  name: `${VERSIONED_NAME} Internal Software Observations`,
+  alternateName: `${HISTORICAL_TITLE} Internal Software Observations`,
+  author: AUTHOR,
+  license: RECORD_LICENSE,
   description: "Internal software observations on synthetic fixtures, not independently reproduced and not scholarly claim-layer records.",
   canonical_url: `${OBS_BASE}/`,
   version: "0.3",
@@ -237,6 +262,7 @@ const claimSchema = {
   "$id": `${BASE}/research-claims/schema.json`,
   "$anchor": "AuthorAffirmedResearchClaim",
   title: "Author-Affirmed Research Claim",
+  "$comment": `Schema licensed under Apache License 2.0: ${SOFTWARE_LICENSE}`,
   type: "object",
   required: ["identifier", "text", "author", "source", "supporting_quote", "source_locator", "public_record_status", "scholarly_claim_layer_eligible", "batch_id", "canonical_url", "sha256"],
   properties: {
@@ -252,6 +278,7 @@ const obsSchema = {
   "$id": `${BASE}/research-observations/schema.json`,
   "$anchor": "InternalSoftwareObservation",
   title: "Internal Software Observation",
+  "$comment": `Schema licensed under Apache License 2.0: ${SOFTWARE_LICENSE}`,
   type: "object",
   required: ["identifier", "text", "evidence_class", "implementation_commit", "independently_reproduced", "canonical_url", "sha256"],
   properties: {
@@ -263,8 +290,11 @@ const obsSchema = {
 };
 artifacts.push(write("research-claims/schema.json", JSON.stringify(claimSchema, null, 2) + "\n"));
 artifacts.push(write("research-observations/schema.json", JSON.stringify(obsSchema, null, 2) + "\n"));
-artifacts.push(write("research-claims/index.json", JSON.stringify({ name: "Author-Affirmed Research Claims", collections: [{ id: BATCH_ID, url: `${CLAIMS_BASE}/`, count: 77, state: "public_unpublished_source" }] }, null, 2) + "\n"));
-artifacts.push(write("research-observations/index.json", JSON.stringify({ name: "Internal Research Observations", collections: [{ id: BATCH_ID, url: `${OBS_BASE}/`, count: 9, state: "public_internal_not_independently_reproduced" }] }, null, 2) + "\n"));
+artifacts.push(write("research-claims/index.json", JSON.stringify({ name: "Author-Affirmed Research Claims", collections: [{ id: BATCH_ID, name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, url: `${CLAIMS_BASE}/`, count: 77, state: "public_unpublished_source", license: RECORD_LICENSE }] }, null, 2) + "\n"));
+artifacts.push(write("research-observations/index.json", JSON.stringify({ name: "Internal Research Observations", collections: [{ id: BATCH_ID, name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, url: `${OBS_BASE}/`, count: 9, state: "public_internal_not_independently_reproduced", license: RECORD_LICENSE }] }, null, 2) + "\n"));
+const recordLicenseNotice = `# Rights and attribution\n\nThe record prose in this collection is © 2026 Wulf A. Kaal and licensed under the [Creative Commons Attribution 4.0 International License](${RECORD_LICENSE}).\n\nCanonical protocol name: **${CANONICAL_NAME}**. Versioned name: **${VERSIONED_NAME}**. Historical title and alias: **${HISTORICAL_TITLE}**.\n\nThe sealed source manuscript as a whole remains unpublished. This license applies to the 77 public research-claim records and 9 public software-observation records, not to withheld records or the unpublished manuscript as a whole.\n`;
+artifacts.push(write("research-claims/persona-protocol/v0.3/LICENSES.md", recordLicenseNotice));
+artifacts.push(write("research-observations/persona-protocol/v0.3/LICENSES.md", recordLicenseNotice));
 
 const sitemap = (urls) => `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${RELEASE_DATE}</lastmod></url>`).join("\n")}\n</urlset>\n`;
 const claimUrls = [`${CLAIMS_BASE}/`, `${CLAIMS_BASE}/index.json`, `${CLAIMS_BASE}/all.jsonl`, ...claimRecords.flatMap(({ sequence }) => [`${CLAIMS_BASE}/${sequence}`, `${CLAIMS_BASE}/${sequence}.json`, `${CLAIMS_BASE}/${sequence}.md`])];
@@ -280,12 +310,15 @@ const releaseManifest = {
   release_type: "creation_continuity_event",
   predecessor: null,
   governing_policy: "exact hash-bound direct author affirmation",
+  identity: { canonical_name: CANONICAL_NAME, versioned_name: VERSIONED_NAME, historical_title: HISTORICAL_TITLE, historical_alias: HISTORICAL_TITLE, author: AUTHOR, stable_url_note: "Historical persona-protocol URL paths retained to preserve existing public record identifiers." },
   authorization: {
     status: "authorized",
     author: "Wulf A. Kaal",
     affirmation: AFFIRMATION,
     affirmation_sha256: sha256(Buffer.from(AFFIRMATION)),
     signature_status: "hash_bound_direct_author_affirmation_not_cryptographic_signature",
+    naming_and_license_authorization: NAMING_AND_LICENSE_AUTHORIZATION,
+    naming_and_license_authorization_sha256: sha256(Buffer.from(NAMING_AND_LICENSE_AUTHORIZATION)),
   },
   source: {
     title: sealed.source.title,
@@ -296,13 +329,14 @@ const releaseManifest = {
   },
   counts: { research_claims: 77, internal_software_observations: 9, withheld_unpublished: 7, protected_scholarly_claims_unchanged: 5033 },
   source_batch_hashes: { accepted_claims_sha256: EXPECTED.claims, implementation_observations_sha256: EXPECTED.observations, withheld_ledger_sha256: sealed.withheld_claims_sha256 },
-  rights: "Read, index, quote, and cite with attribution to the canonical record URL.",
+  licenses: { research_claim_records: "CC-BY-4.0", software_observation_records: "CC-BY-4.0", schemas: "Apache-2.0", source_manuscript_as_a_whole: "unpublished_not_licensed_by_this_release" },
+  rights: "The 77 research-claim records and 9 software-observation records are licensed CC BY 4.0 with attribution to Wulf A. Kaal and the canonical record URL. The schemas are licensed Apache-2.0.",
   limitations: [
     "The source manuscript is an unpublished research draft.",
     "The 77 propositions are not yet eligible for the published-source scholarly claim layer.",
     "The nine software observations are internal, synthetic-fixture observations and have not been independently reproduced.",
     "The seven withheld records are not published.",
-    "Self-application of the publication controls is not external validation of Persona Protocol.",
+    "Self-application of the publication controls is not external validation of TrustCarry Protocol.",
   ],
   artifacts,
 };
@@ -322,8 +356,8 @@ const updateMarkedSection = (relative, marker, body) => {
   fs.writeFileSync(target, next);
 };
 
-updateMarkedSection("llms.txt", "persona-v03-research-records", `## Persona Protocol v0.3 research records\n\nThese records are public and author-affirmed, but their source remains an unpublished research draft. They are distinct from the 5,033 published-source scholarly claims.\n\n- Research claim index: ${CLAIMS_BASE}/index.json\n- Research claims bulk JSONL: ${CLAIMS_BASE}/all.jsonl\n- Internal observation index: ${OBS_BASE}/index.json\n- Internal observations bulk JSONL: ${OBS_BASE}/all.jsonl\n- Release manifest: ${CLAIMS_BASE}/release-manifest.json`);
-updateMarkedSection("agents.md", "persona-v03-research-records", `## Persona Protocol v0.3 research records\n\n| Surface | URL | Status |\n|---|---|---|\n| Author-affirmed research claims | ${CLAIMS_BASE}/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |\n| Internal software observations | ${OBS_BASE}/index.json | Public internal observations; synthetic fixtures; not independently reproduced |\n| Release manifest | ${CLAIMS_BASE}/release-manifest.json | Exact hash-bound author affirmation and artifact inventory |`);
+updateMarkedSection("llms.txt", "persona-v03-research-records", `## ${VERSIONED_NAME} research records\n\nHistorical title and alias: ${HISTORICAL_TITLE}. Author: ${AUTHOR}. These records are public under CC BY 4.0, but their source remains an unpublished research draft. They are distinct from the 5,033 published-source scholarly claims.\n\n- Research claim index: ${CLAIMS_BASE}/index.json\n- Research claims bulk JSONL: ${CLAIMS_BASE}/all.jsonl\n- Internal observation index: ${OBS_BASE}/index.json\n- Internal observations bulk JSONL: ${OBS_BASE}/all.jsonl\n- Release manifest: ${CLAIMS_BASE}/release-manifest.json`);
+updateMarkedSection("agents.md", "persona-v03-research-records", `## ${VERSIONED_NAME} research records\n\nHistorical title and alias: ${HISTORICAL_TITLE}. Author: ${AUTHOR}. Record prose license: CC BY 4.0.\n\n| Surface | URL | Status |\n|---|---|---|\n| Author-affirmed research claims | ${CLAIMS_BASE}/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |\n| Internal software observations | ${OBS_BASE}/index.json | Public internal observations; synthetic fixtures; not independently reproduced |\n| Release manifest | ${CLAIMS_BASE}/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |`);
 
 const sitemapIndexPath = path.join(ROOT, "sitemap-index.xml");
 let sitemapIndex = fs.readFileSync(sitemapIndexPath, "utf8");
