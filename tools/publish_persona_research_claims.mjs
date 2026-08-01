@@ -11,8 +11,12 @@ const CLAIMS_INPUT = path.join(INPUT_ROOT, "accepted-claims.jsonl");
 const OBS_INPUT = path.join(INPUT_ROOT, "implementation-observations.jsonl");
 const SEALED_MANIFEST_INPUT = path.join(INPUT_ROOT, "manifest.json");
 const BASE = "https://wulfkaal.github.io";
-const CLAIMS_BASE = `${BASE}/research-claims/persona-protocol/v0.3`;
-const OBS_BASE = `${BASE}/research-observations/persona-protocol/v0.3`;
+const CLAIMS_BASE = `${BASE}/research-claims/trustcarry-protocol/v0.3`;
+const OBS_BASE = `${BASE}/research-observations/trustcarry-protocol/v0.3`;
+const CLAIMS_PATH = "research-claims/trustcarry-protocol/v0.3";
+const OBS_PATH = "research-observations/trustcarry-protocol/v0.3";
+const LEGACY_CLAIMS_PATH = "research-claims/persona-protocol/v0.3";
+const LEGACY_OBS_PATH = "research-observations/persona-protocol/v0.3";
 const RELEASE_DATE = "2026-08-01";
 const BATCH_ID = "persona-protocol-v0.3-new-claims-2026-08-01";
 const CANONICAL_NAME = "TrustCarry Protocol";
@@ -60,8 +64,8 @@ if (new Set(observations.map((record) => record.id)).size !== observations.lengt
 if (failures.length) throw new Error(failures.join("; "));
 
 const artifacts = [];
-artifacts.push(write("research-claims/persona-protocol/v0.3/source/accepted-claims.jsonl", claimsBytes));
-artifacts.push(write("research-observations/persona-protocol/v0.3/source/implementation-observations.jsonl", observationsBytes));
+artifacts.push(write(`${CLAIMS_PATH}/source/accepted-claims.jsonl`, claimsBytes));
+artifacts.push(write(`${OBS_PATH}/source/implementation-observations.jsonl`, observationsBytes));
 
 const claimRecords = claims.map((source, index) => {
   const sequence = String(index + 1).padStart(3, "0");
@@ -72,7 +76,8 @@ const claimRecords = claims.map((source, index) => {
     relation: "source_corpus_basis_not_automatic_novelty_claim",
   }));
   const conditions = source.scope_conditions ?? [];
-  const markdown = `# ${source.id}\n\n` +
+  const markdown = `# ${VERSIONED_NAME} — Research Claim ${sequence}\n\n` +
+    `**Sealed record identifier.** \`${source.id}\`\n\n` +
     `**Author-affirmed research claim.** ${source.claim}\n\n` +
     `**Status.** Public research record. Not yet eligible for the published-source scholarly claim layer.\n\n` +
     `**Claim type.** ${source.claim_type}\n\n` +
@@ -126,7 +131,8 @@ const claimRecords = claims.map((source, index) => {
 const observationRecords = observations.map((source, index) => {
   const sequence = String(index + 1).padStart(3, "0");
   const url = `${OBS_BASE}/${sequence}`;
-  const markdown = `# ${source.id}\n\n` +
+  const markdown = `# ${VERSIONED_NAME} — Software Observation ${sequence}\n\n` +
+    `**Sealed record identifier.** \`${source.id}\`\n\n` +
     `**Internal software observation.** ${source.observation}\n\n` +
     `**Evidence class.** Internal software observation, not independently reproduced.\n\n` +
     `**Protocol.** ${VERSIONED_NAME}, historically titled and aliased as ${HISTORICAL_TITLE}.\n\n` +
@@ -173,9 +179,9 @@ const renderHtml = (entry, kind) => {
     ? "Author-affirmed proposition from an unpublished research draft. Not part of the 5,033 published-source scholarly claim layer."
     : "Internal software observation on synthetic fixtures. Not independently reproduced and not a scholarly claim-layer record.";
   return "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">" +
-    `<title>${esc(record.identifier)}</title><meta name=\"description\" content=\"${esc(record.text)}\"><link rel=\"canonical\" href=\"${esc(record.canonical_url)}\">` +
+    `<title>${VERSIONED_NAME} — ${kind === "claim" ? "Research Claim" : "Software Observation"} ${entry.sequence}</title><meta name=\"description\" content=\"${esc(record.text)}\"><link rel=\"canonical\" href=\"${esc(record.canonical_url)}\">` +
     `<link rel=\"stylesheet\" href=\"../../../style.css\"><script type=\"application/ld+json\">${JSON.stringify(record)}</script></head><body><main>` +
-    `<h1>${esc(record.identifier)}</h1><p class=\"claim\">${esc(record.text)}</p><div class=\"warn\">${esc(warning)}</div>` +
+    `<h1>${VERSIONED_NAME} — ${kind === "claim" ? "Research Claim" : "Software Observation"} ${entry.sequence}</h1><p class=\"meta\">Sealed record identifier: <code>${esc(record.identifier)}</code></p><p class=\"claim\">${esc(record.text)}</p><div class=\"warn\">${esc(warning)}</div>` +
     (conditions ? `<div class=\"k\">Holds when</div><ul class=\"meta\">${conditions}</ul>` : "") +
     `<div class=\"k\">Supporting passage</div><blockquote>${esc(record.supporting_quote)}</blockquote>` +
     `<div class=\"k\">Provenance</div><p class=\"meta\">${VERSIONED_NAME} (historical title: ${HISTORICAL_TITLE}), line ${record.source_locator.line}. Source sha256: <code>${EXPECTED.source}</code>.</p>` +
@@ -186,14 +192,14 @@ const renderHtml = (entry, kind) => {
 };
 
 for (const entry of claimRecords) {
-  artifacts.push(write(`research-claims/persona-protocol/v0.3/${entry.sequence}.md`, entry.markdown));
-  artifacts.push(write(`research-claims/persona-protocol/v0.3/${entry.sequence}.json`, JSON.stringify(entry.record, null, 2) + "\n"));
-  artifacts.push(write(`research-claims/persona-protocol/v0.3/${entry.sequence}.html`, renderHtml(entry, "claim") + "\n"));
+  artifacts.push(write(`${CLAIMS_PATH}/${entry.sequence}.md`, entry.markdown));
+  artifacts.push(write(`${CLAIMS_PATH}/${entry.sequence}.json`, JSON.stringify(entry.record, null, 2) + "\n"));
+  artifacts.push(write(`${CLAIMS_PATH}/${entry.sequence}.html`, renderHtml(entry, "claim") + "\n"));
 }
 for (const entry of observationRecords) {
-  artifacts.push(write(`research-observations/persona-protocol/v0.3/${entry.sequence}.md`, entry.markdown));
-  artifacts.push(write(`research-observations/persona-protocol/v0.3/${entry.sequence}.json`, JSON.stringify(entry.record, null, 2) + "\n"));
-  artifacts.push(write(`research-observations/persona-protocol/v0.3/${entry.sequence}.html`, renderHtml(entry, "observation") + "\n"));
+  artifacts.push(write(`${OBS_PATH}/${entry.sequence}.md`, entry.markdown));
+  artifacts.push(write(`${OBS_PATH}/${entry.sequence}.json`, JSON.stringify(entry.record, null, 2) + "\n"));
+  artifacts.push(write(`${OBS_PATH}/${entry.sequence}.html`, renderHtml(entry, "observation") + "\n"));
 }
 
 const claimsIndex = {
@@ -250,12 +256,12 @@ const renderIndex = (title, warning, entries, field) => "<!DOCTYPE html><html la
   `<ol class=\"meta\">${entries.map((entry) => `<li><a href=\"./${entry.sequence}.html\">${esc(entry.record[field])}</a></li>`).join("")}</ol>` +
   "<div class=\"k\">Machine access</div><ul class=\"meta\"><li><a href=\"./index.json\">JSON index</a></li><li><a href=\"./all.jsonl\">Bulk JSONL</a></li><li><a href=\"./release-manifest.json\">Release manifest</a></li></ul></main></body></html>\n";
 
-artifacts.push(write("research-claims/persona-protocol/v0.3/index.json", JSON.stringify(claimsIndex, null, 2) + "\n"));
-artifacts.push(write("research-claims/persona-protocol/v0.3/all.jsonl", claimRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
-artifacts.push(write("research-claims/persona-protocol/v0.3/index.html", renderIndex(claimsIndex.name, claimsIndex.description, claimRecords, "text")));
-artifacts.push(write("research-observations/persona-protocol/v0.3/index.json", JSON.stringify(obsIndex, null, 2) + "\n"));
-artifacts.push(write("research-observations/persona-protocol/v0.3/all.jsonl", observationRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
-artifacts.push(write("research-observations/persona-protocol/v0.3/index.html", renderIndex(obsIndex.name, obsIndex.description, observationRecords, "text")));
+artifacts.push(write(`${CLAIMS_PATH}/index.json`, JSON.stringify(claimsIndex, null, 2) + "\n"));
+artifacts.push(write(`${CLAIMS_PATH}/all.jsonl`, claimRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
+artifacts.push(write(`${CLAIMS_PATH}/index.html`, renderIndex(claimsIndex.name, claimsIndex.description, claimRecords, "text")));
+artifacts.push(write(`${OBS_PATH}/index.json`, JSON.stringify(obsIndex, null, 2) + "\n"));
+artifacts.push(write(`${OBS_PATH}/all.jsonl`, observationRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
+artifacts.push(write(`${OBS_PATH}/index.html`, renderIndex(obsIndex.name, obsIndex.description, observationRecords, "text")));
 
 const claimSchema = {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -293,8 +299,8 @@ artifacts.push(write("research-observations/schema.json", JSON.stringify(obsSche
 artifacts.push(write("research-claims/index.json", JSON.stringify({ name: "Author-Affirmed Research Claims", collections: [{ id: BATCH_ID, name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, url: `${CLAIMS_BASE}/`, count: 77, state: "public_unpublished_source", license: RECORD_LICENSE }] }, null, 2) + "\n"));
 artifacts.push(write("research-observations/index.json", JSON.stringify({ name: "Internal Research Observations", collections: [{ id: BATCH_ID, name: VERSIONED_NAME, alternateName: HISTORICAL_TITLE, url: `${OBS_BASE}/`, count: 9, state: "public_internal_not_independently_reproduced", license: RECORD_LICENSE }] }, null, 2) + "\n"));
 const recordLicenseNotice = `# Rights and attribution\n\nThe record prose in this collection is © 2026 Wulf A. Kaal and licensed under the [Creative Commons Attribution 4.0 International License](${RECORD_LICENSE}).\n\nCanonical protocol name: **${CANONICAL_NAME}**. Versioned name: **${VERSIONED_NAME}**. Historical title and alias: **${HISTORICAL_TITLE}**.\n\nThe sealed source manuscript as a whole remains unpublished. This license applies to the 77 public research-claim records and 9 public software-observation records, not to withheld records or the unpublished manuscript as a whole.\n`;
-artifacts.push(write("research-claims/persona-protocol/v0.3/LICENSES.md", recordLicenseNotice));
-artifacts.push(write("research-observations/persona-protocol/v0.3/LICENSES.md", recordLicenseNotice));
+artifacts.push(write(`${CLAIMS_PATH}/LICENSES.md`, recordLicenseNotice));
+artifacts.push(write(`${OBS_PATH}/LICENSES.md`, recordLicenseNotice));
 
 const sitemap = (urls) => `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${RELEASE_DATE}</lastmod></url>`).join("\n")}\n</urlset>\n`;
 const claimUrls = [`${CLAIMS_BASE}/`, `${CLAIMS_BASE}/index.json`, `${CLAIMS_BASE}/all.jsonl`, ...claimRecords.flatMap(({ sequence }) => [`${CLAIMS_BASE}/${sequence}`, `${CLAIMS_BASE}/${sequence}.json`, `${CLAIMS_BASE}/${sequence}.md`])];
@@ -310,7 +316,7 @@ const releaseManifest = {
   release_type: "creation_continuity_event",
   predecessor: null,
   governing_policy: "exact hash-bound direct author affirmation",
-  identity: { canonical_name: CANONICAL_NAME, versioned_name: VERSIONED_NAME, historical_title: HISTORICAL_TITLE, historical_alias: HISTORICAL_TITLE, author: AUTHOR, stable_url_note: "Historical persona-protocol URL paths retained to preserve existing public record identifiers." },
+  identity: { canonical_name: CANONICAL_NAME, versioned_name: VERSIONED_NAME, historical_title: HISTORICAL_TITLE, historical_alias: HISTORICAL_TITLE, author: AUTHOR, stable_url_note: "Canonical URLs use trustcarry-protocol paths. Historical persona-protocol paths remain compatibility aliases for existing citations." },
   authorization: {
     status: "authorized",
     author: "Wulf A. Kaal",
@@ -341,8 +347,13 @@ const releaseManifest = {
   artifacts,
 };
 const manifestBody = JSON.stringify(releaseManifest, null, 2) + "\n";
-write("research-claims/persona-protocol/v0.3/release-manifest.json", manifestBody);
-write("research-observations/persona-protocol/v0.3/release-manifest.json", manifestBody);
+write(`${CLAIMS_PATH}/release-manifest.json`, manifestBody);
+write(`${OBS_PATH}/release-manifest.json`, manifestBody);
+
+// Preserve historical URLs as compatibility aliases. HTML and machine-readable
+// records at both paths identify the TrustCarry URL as canonical.
+fs.cpSync(path.join(ROOT, CLAIMS_PATH), path.join(ROOT, LEGACY_CLAIMS_PATH), { recursive: true, force: true });
+fs.cpSync(path.join(ROOT, OBS_PATH), path.join(ROOT, LEGACY_OBS_PATH), { recursive: true, force: true });
 
 const updateMarkedSection = (relative, marker, body) => {
   const target = path.join(ROOT, relative);

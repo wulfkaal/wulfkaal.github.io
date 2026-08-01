@@ -183,7 +183,7 @@ Historical title and alias: Persona Protocol v0.3. Author: Wulf A. Kaal. Record 
 
 | Surface | URL | Status |
 |---|---|---|
-| Author-affirmed research claims | https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |
-| Internal software observations | https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/index.json | Public internal observations; synthetic fixtures; not independently reproduced |
-| Release manifest | https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |
+| Author-affirmed research claims | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |
+| Internal software observations | https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json | Public internal observations; synthetic fixtures; not independently reproduced |
+| Release manifest | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |
 <!-- persona-v03-research-records:end -->
