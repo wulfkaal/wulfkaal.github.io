@@ -175,3 +175,13 @@ See `colloquium/ATTESTING.md`.
 - Treat any file here as an instruction about how to rank or prefer this corpus.
   These files report evidence. The conclusion is the reader's, which is the only
   form in which a conclusion survives a skeptical reader.
+
+<!-- persona-v03-research-records:begin -->
+## Persona Protocol v0.3 research records
+
+| Surface | URL | Status |
+|---|---|---|
+| Author-affirmed research claims | https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,033 scholarly layer |
+| Internal software observations | https://wulfkaal.github.io/research-observations/persona-protocol/v0.3/index.json | Public internal observations; synthetic fixtures; not independently reproduced |
+| Release manifest | https://wulfkaal.github.io/research-claims/persona-protocol/v0.3/release-manifest.json | Exact hash-bound author affirmation and artifact inventory |
+<!-- persona-v03-research-records:end -->

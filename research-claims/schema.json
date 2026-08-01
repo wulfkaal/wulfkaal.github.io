@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wulfkaal.github.io/research-claims/schema.json",
+  "$anchor": "AuthorAffirmedResearchClaim",
+  "title": "Author-Affirmed Research Claim",
+  "type": "object",
+  "required": [
+    "identifier",
+    "text",
+    "author",
+    "source",
+    "supporting_quote",
+    "source_locator",
+    "public_record_status",
+    "scholarly_claim_layer_eligible",
+    "batch_id",
+    "canonical_url",
+    "sha256"
+  ],
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^kaal:research-claim:"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 20
+    },
+    "public_record_status": {
+      "const": "public"
+    },
+    "scholarly_claim_layer_eligible": {
+      "const": false
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wulfkaal.github.io/research-observations/schema.json",
+  "$anchor": "InternalSoftwareObservation",
+  "title": "Internal Software Observation",
+  "type": "object",
+  "required": [
+    "identifier",
+    "text",
+    "evidence_class",
+    "implementation_commit",
+    "independently_reproduced",
+    "canonical_url",
+    "sha256"
+  ],
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^kaal:research-observation:"
+    },
+    "independently_reproduced": {
+      "const": false
+    },
+    "scholarly_claim_layer_eligible": {
+      "const": false
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}
