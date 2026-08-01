@@ -5,13 +5,15 @@ import { dirname, isAbsolute, resolve } from "node:path";
 const REPO = resolve(import.meta.dirname, "..");
 const PROJECT = resolve(REPO, "../..");
 const BATCH_NUMBER = process.env.AFFIRMED_BATCH_NUMBER || "0002";
+const BATCH_DATE = process.env.AFFIRMED_BATCH_DATE || "2026-07-31";
 const DEFAULT_INPUT = resolve(PROJECT, `public/review-batches/2026-07-31-streaming-etl-${BATCH_NUMBER}/private-drafts.jsonl`);
 const INPUT_VALUE = process.env.AFFIRMED_BATCH_INPUT || DEFAULT_INPUT;
 const INPUT = isAbsolute(INPUT_VALUE) ? INPUT_VALUE : resolve(PROJECT, INPUT_VALUE);
 const PRIVATE_BATCH = dirname(INPUT);
 const SOURCE_NAME = process.env.AFFIRMED_SOURCE_NAME || `2026-07-31-streaming-etl-${BATCH_NUMBER}.json`;
 const SOURCE = resolve(REPO, "positions-src", SOURCE_NAME);
-const SOURCE_MANIFEST = resolve(REPO, "positions-src", `2026-07-31-streaming-etl-${BATCH_NUMBER}.manifest`);
+const SOURCE_MANIFEST_NAME = process.env.AFFIRMED_SOURCE_MANIFEST || SOURCE_NAME.replace(/\.json$/, ".manifest");
+const SOURCE_MANIFEST = resolve(REPO, "positions-src", SOURCE_MANIFEST_NAME);
 const EXPECTED_BATCH = process.env.AFFIRMED_BATCH_ID || "kaal-review:2026-07-31:streaming-etl-0002";
 const EXPECTED_HASH = process.env.AFFIRMED_BATCH_HASH || "86e0dda588610d89ed45ad08f4697601b5577f6e761e0bd9a9aef701c9c9deee";
 const EXPECTED_COUNT = Number(process.env.AFFIRMED_BATCH_COUNT || 250);
@@ -33,7 +35,7 @@ async function currentSourceState() {
     const batch = JSON.parse(await readFile(resolve(REPO, "positions-src", name), "utf8"));
     for (const item of batch.positions ?? []) {
       positions += 1;
-      if (batch.date === "2026-07-31") maxSequence = Math.max(maxSequence, Number(item.sequence));
+      if (batch.date === BATCH_DATE) maxSequence = Math.max(maxSequence, Number(item.sequence));
       if (item.candidate_id) candidateIds.add(item.candidate_id);
     }
   }
@@ -149,7 +151,7 @@ async function main() {
 
   const batch = {
     batch_id: EXPECTED_BATCH,
-    date: "2026-07-31",
+    date: BATCH_DATE,
     status: "affirmed",
     review_provenance: "https://kaal-signal-desk.wulf577462.chatgpt.site/#review",
     source_snapshot_sha256: EXPECTED_HASH,
@@ -183,8 +185,8 @@ async function main() {
     publicIndex: "https://wulfkaal.github.io/positions/index.json",
     items: drafts.map((draft, index) => ({
       candidateId: draft.candidateId,
-      canonicalId: `kaal:position:2026-07-31-${String(state.maxSequence + index + 1).padStart(3, "0")}`,
-      canonicalUrl: `https://wulfkaal.github.io/positions/2026-07-31-${String(state.maxSequence + index + 1).padStart(3, "0")}`,
+      canonicalId: `kaal:position:${BATCH_DATE}-${String(state.maxSequence + index + 1).padStart(3, "0")}`,
+      canonicalUrl: `https://wulfkaal.github.io/positions/${BATCH_DATE}-${String(state.maxSequence + index + 1).padStart(3, "0")}`,
       status: "generated",
     })),
   }, null, 2)}\n`);
