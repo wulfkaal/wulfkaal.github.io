@@ -14,10 +14,21 @@ AUTHOR = "Wulf A. Kaal"
 def load_batches(src_dir):
     batches = []
     for path in sorted(src_dir.glob("*.json")):
+        if path.name == "withdrawn-identifiers.json":
+            continue
         with path.open(encoding="utf-8") as handle:
             batch = json.load(handle)
         batches.append(batch)
     return batches
+
+
+def load_withdrawn_identifiers(src_dir):
+    path = src_dir / "withdrawn-identifiers.json"
+    if not path.exists():
+        return set()
+    with path.open(encoding="utf-8") as handle:
+        payload = json.load(handle)
+    return set(payload.get("identifiers", []))
 
 
 def position_id(batch, item):
@@ -362,8 +373,12 @@ def main():
     out_dir.mkdir(exist_ok=True)
 
     records = []
+    withdrawn = load_withdrawn_identifiers(src_dir)
     for batch in load_batches(src_dir):
         for item in batch["positions"]:
+            identifier = f"kaal:position:{position_id(batch, item)}"
+            if identifier in withdrawn:
+                continue
             short_id, record, markdown = json_record(batch, item)
             records.append(record)
             (out_dir / f"{short_id}.md").write_text(markdown, encoding="utf-8")

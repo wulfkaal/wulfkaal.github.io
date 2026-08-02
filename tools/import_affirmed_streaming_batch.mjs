@@ -30,10 +30,14 @@ async function currentSourceState() {
   let positions = 0;
   let maxSequence = 0;
   const candidateIds = new Set();
+  const withdrawnPath = resolve(REPO, "positions-src", "withdrawn-identifiers.json");
+  const withdrawn = new Set(JSON.parse(await readFile(withdrawnPath, "utf8")).identifiers ?? []);
   for (const name of await readdir(resolve(REPO, "positions-src"))) {
-    if (!name.endsWith(".json") || name === SOURCE_NAME) continue;
+    if (!name.endsWith(".json") || name === SOURCE_NAME || name === "withdrawn-identifiers.json") continue;
     const batch = JSON.parse(await readFile(resolve(REPO, "positions-src", name), "utf8"));
     for (const item of batch.positions ?? []) {
+      const identifier = `kaal:position:${batch.date}-${String(item.sequence).padStart(3, "0")}`;
+      if (withdrawn.has(identifier)) continue;
       positions += 1;
       if (batch.date === BATCH_DATE) maxSequence = Math.max(maxSequence, Number(item.sequence));
       if (item.candidate_id) candidateIds.add(item.candidate_id);
