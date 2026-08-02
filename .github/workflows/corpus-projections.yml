@@ -98,7 +98,9 @@ jobs:
           col = json.load(open("colloquium/index.json"))
           for k, v in (col.get("read_surface") or {}).items():
               if isinstance(v, str) and v.startswith("http") and "<" not in v:
-                  urls.add(v)
+                  # Read-surface entries may append a human-readable parenthetical
+                  # after the URL. Probe the URL token, not the annotation.
+                  urls.add(v.split()[0])
 
           def head(u):
               try:
