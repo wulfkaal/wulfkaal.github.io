@@ -23,6 +23,7 @@ on:
       - 'claims/index.json'
       - 'rank.json'
       - 'papers.json'
+      - 'colloquium/jobs.json'
       - 'tools/**'
       - '.github/workflows/corpus-projections.yml'
   pull_request:
@@ -33,6 +34,11 @@ on:
       - 'robots.txt'
       - '.well-known/**'
       - 'colloquium/index.json'
+      - 'colloquium/jobs.json'
+      - 'colloquium/tasks/**'
+      - 'client.py'
+      - 'tests/**'
+      - 'afmr/schemas/**'
   workflow_dispatch:
   schedule:
     # Weekly drift check: catches anything that changed outside this workflow.
@@ -68,15 +74,18 @@ jobs:
             --corpus-url claims/all.jsonl \
             --out        claims/index.json
 
+      - name: Regenerate the paged Colloquium activation feed
+        run: python3 tools/build_colloquium_tasks.py
+
       - name: Commit only if something actually changed
         run: |
-          if git diff --quiet -- rank.md claims/index.json; then
+          if git diff --quiet -- rank.md claims/index.json colloquium/tasks; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rank.md claims/index.json
+          git add rank.md claims/index.json colloquium/tasks
           git commit -m "Regenerate projections from the corpus [skip ci]"
           git push
 
@@ -226,3 +235,30 @@ jobs:
 
       - name: Spot-check that quotes are still verbatim and hashes still bind
         run: python3 verify.py --sample 12 --no-pdf
+
+      - name: Colloquium onboarding contracts and CLI stay executable
+        run: |
+          python3 tools/build_colloquium_tasks.py --check
+          python3 -m unittest tests/test_colloquium_client.py
+
+      - name: AFMR Lift Harness schemas remain strict and resolvable
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          root = pathlib.Path("afmr/schemas")
+          expected = {
+              "lift-comparison-manifest-v1.schema.json",
+              "lift-comparison-public-card-v1.schema.json",
+              "lift-comparison-public-card-index-v1.schema.json",
+          }
+          for name in expected:
+              schema = json.loads((root / name).read_text())
+              assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
+              assert schema["$id"].endswith("/afmr/schemas/" + name)
+              assert schema["additionalProperties"] is False
+          catalog = json.loads((root / "index.json").read_text())
+          advertised = {url.rsplit("/", 1)[-1] for url in catalog["schemas"].values()}
+          if advertised != expected:
+              sys.exit(f"schema catalog drift: {advertised} != {expected}")
+          print("AFMR Lift Harness schema catalog OK")
+          PY

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wulfkaal.github.io/afmr/schemas/lift-comparison-public-card-index-v1.schema.json",
+  "title": "AFMR Lift Comparison Public Card Index 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "schema_version",
+    "artifact_schema",
+    "evidence_maturity",
+    "cards",
+    "updated_at",
+    "notice"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "https://wulfkaal.github.io/afmr/schemas/lift-comparison-public-card-index-v1.schema.json"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "artifact_schema": {
+      "const": "https://wulfkaal.github.io/afmr/schemas/lift-comparison-public-card-v1.schema.json"
+    },
+    "evidence_maturity": {
+      "enum": [
+        "configuration_only",
+        "preregistered",
+        "measured",
+        "review_ready",
+        "reviewed"
+      ]
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "$ref": "lift-comparison-public-card-v1.schema.json"
+      }
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "notice": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    }
+  }
+}
