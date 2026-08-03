@@ -25,6 +25,7 @@ on:
       - 'papers.json'
       - 'colloquium/jobs.json'
       - 'tools/**'
+      - 'agentic-claim-graph/**'
       - '.github/workflows/corpus-projections.yml'
   pull_request:
     paths:
@@ -39,6 +40,7 @@ on:
       - 'client.py'
       - 'tests/**'
       - 'afmr/schemas/**'
+      - 'agentic-claim-graph/**'
   workflow_dispatch:
   schedule:
     # Weekly drift check: catches anything that changed outside this workflow.
@@ -240,6 +242,11 @@ jobs:
         run: |
           python3 tools/build_colloquium_tasks.py --check
           python3 -m unittest tests/test_colloquium_client.py
+
+      - name: The graph release chain must close
+        run: |
+          pip install --quiet cryptography
+          python3 tools/verify_graph_release.py agentic-claim-graph/v1
 
       - name: AFMR Lift Harness schemas remain strict and resolvable
         run: |

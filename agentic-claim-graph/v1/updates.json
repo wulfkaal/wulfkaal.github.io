@@ -1,5 +1,7 @@
 {
-  "feed_version": "1.0.0",
+  "feed_version": "1.1.0",
+  "current_update_id": "kaal:update:96f86d8427e9cc83d18a7155",
+  "signing_keys": "https://wulfkaal.github.io/agentic-claim-graph/v1/signing-keys.json",
   "updates": [
     {
       "update_version": "1.0.0",
@@ -13,6 +15,29 @@
       "signature_algorithm": "Ed25519",
       "signing_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAxWtiBY5n+ARnA5x1bxqiUtGClNoM3mtBhmYuWglxQlI=\n-----END PUBLIC KEY-----\n",
       "signed_payload_sha256": "f52cf1addb8d76f0bea3d234da19f978d43f5aae3cc20f13250e555eb2ed7613"
+    },
+    {
+      "update_version": "1.0.1",
+      "update_id": "kaal:update:96f86d8427e9cc83d18a7155",
+      "graph_id": "kaal:agentic-claim-graph:pilot-100:v1",
+      "graph_sha256": "7914a0e4ce2df76d0d4314255720cbeaeb483bdabc7a28d3618f7bfbd140ac0b",
+      "claim_count": 100,
+      "change_type": "digest_correction_under_rotated_key",
+      "lifecycle_status": "current",
+      "supersedes": "kaal:update:c989e54b5c633f059050c84a",
+      "supersedes_reason": "The superseded record attested to a graph build that was never published. Its signature is valid; its subject was not the served artifact.",
+      "key_rotation": {
+        "previous_key_status": "unavailable",
+        "reason": "Prior key was generated in an ephemeral build worktree and not persisted.",
+        "succession_proof": "none",
+        "authenticated_by": "control of the publishing origin, not by the previous key"
+      },
+      "signature_status": "signed",
+      "signature": "hb18eAMhVf7MyGl2UdBZD+/cT8E+c+rZEqm0T3smHPs3/S31lLQYm8A7nDbsjZCluwZIZGdk7SZmqKMbrTRRCQ==",
+      "signature_algorithm": "Ed25519",
+      "signing_key_id": "kaal:graph-signing-key:2026-08-03",
+      "signing_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEANVfVQtA10P58QjPzxSYjmwNpTaZlc9sS+F724E8GbpY=\n-----END PUBLIC KEY-----\n",
+      "signed_payload_sha256": "7423b5337d84f7300e6ccddc8b09398aa8c7dc2e2990e4cd7ef39f4754317576"
     }
   ]
 }
