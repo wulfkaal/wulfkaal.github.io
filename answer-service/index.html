@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kaal Answer Service and the agentic claim graph</title><meta name="description" content="Read only, source bound retrieval of directly attributable Wulf A. Kaal claims. Answer API, MCP JSON-RPC, A2A agent card, and the 100 claim agentic capability graph pilot."><link rel="canonical" href="https://wulfkaal.github.io/answer-service/"><link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebAPI","name":"Kaal Answer Service","description":"Read only retrieval of current, directly attributable Wulf A. Kaal claims with exact source passages, citations, content hashes, scope conditions, and limitations.","documentation":"https://wulfkaal.github.io/answer-service/","termsOfService":"https://wulfkaal.github.io/llms.txt","provider":{"@type":"Person","name":"Wulf A. Kaal","identifier":"https://orcid.org/0009-0008-7840-1847","url":"https://wulfkaal.com/"},"potentialAction":{"@type":"SearchAction","target":"https://kaal-answer-service.wulf577462.chatgpt.site/api/answer","query-input":"required name=question"}}</script>
+</head><body><main>
+<h1>answer service</h1>
+
+<p class="claim">Agents asking what Wulf A. Kaal has argued should not have to infer it. The Answer Service returns the claim, the exact passage it rests on, the hash of the source document, and the conditions under which the claim was made.</p>
+
+<p class="meta">Two surfaces, deliberately separated. The <strong>agentic claim graph</strong> is a static projection of the corpus into agent capability structure. The <strong>Answer Service</strong> is the retrieval interface over it. The graph is published here. The service runs off site and is read only.</p>
+
+<div class="warn">Read only by construction. The service does not create claims and does not affirm claims. Retrieval is not authorship.</div>
+
+<div class="k">Endpoints</div>
+<table>
+<tr><th>Surface</th><th>URL</th></tr>
+<tr><td>Home</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/">kaal-answer-service.wulf577462.chatgpt.site/</a></code></td></tr>
+<tr><td>Answer API</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/api/answer">/api/answer</a></code></td></tr>
+<tr><td>MCP JSON-RPC</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc">/api/rpc</a></code></td></tr>
+<tr><td>A2A endpoint</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/a2a">/a2a</a></code></td></tr>
+<tr><td>Agent card</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json">/.well-known/agent-card.json</a></code></td></tr>
+<tr><td>ARD catalog</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json">/.well-known/ai-catalog.json</a></code></td></tr>
+<tr><td>Status</td><td><code><a href="https://kaal-answer-service.wulf577462.chatgpt.site/api/status">/api/status</a></code></td></tr>
+</table>
+
+<p class="meta">Two MCP tools are exposed: <code>answer_question</code>, which takes a question and an optional limit between 1 and 20, and <code>graph_status</code>, which returns graph and service scope. No authentication, no keys.</p>
+
+<div class="k">Call it</div>
+<p class="meta"><code>curl -s -X POST https://kaal-answer-service.wulf577462.chatgpt.site/api/answer -H 'content-type: application/json' -d '{"question":"What has Wulf A. Kaal written about verified reputation?","limit":5}'</code></p>
+
+<div class="k">What comes back</div>
+<p class="meta">Every response carries <code>answer_contract_version</code>, a <code>coverage_status</code>, a retrieval summary, an <code>authority</code> block naming the graph and its source authorities, and an explicit <code>limitations</code> array. Each claim carries:</p>
+<ul class="meta">
+<li><code>claim_id</code> and <code>canonical_url</code>, resolving into the published claim layer</li>
+<li><code>attribution</code>: author, ORCID, attribution status, and class</li>
+<li><code>evidence.exact_source_passage</code> with <code>passage_sha256</code> and <code>source_sha256</code></li>
+<li><code>source</code>: title, full citation, source hash, paper graph identifier</li>
+<li><code>scope_conditions</code>, the conditions the claim was argued under</li>
+<li><code>topics</code>, <code>capabilities</code>, <code>confidence</code>, and <code>verification_status</code></li>
+</ul>
+<p class="meta">Scope conditions are not decoration. A claim about reputation voting inside a DAO of DAOs is not a claim about reputation systems generally, and the response says so.</p>
+
+<div class="k">The graph behind it</div>
+<p class="meta">Graph identifier <code>kaal:agentic-claim-graph:pilot-100:v1</code>, state <code>public_pilot</code>, built 31 July 2026.</p>
+<table>
+<tr><td>Claims projected</td><td>100</td></tr>
+<tr><td>Canonical corpus claims</td><td>5,033</td></tr>
+<tr><td>Nodes</td><td>248: 100 Claim, 100 SourcePassage, 37 ScholarlyArticle, 10 AgentCapability, 1 Person</td></tr>
+<tr><td>Edges</td><td>800: 500 APPLIES_TO_AGENT_CAPABILITY, 100 CLAIMED_IN, 100 SUPPORTED_BY, 100 AUTHORED_BY</td></tr>
+<tr><td>Selection</td><td>Deterministic agentic capability relevance v1, capped at ten claims per paper</td></tr>
+<tr><td>Attribution class</td><td>source_derived only</td></tr>
+</table>
+<ul class="meta">
+<li><a href="https://wulfkaal.github.io/agentic-claim-graph/v1/index.json">index.json</a>, the entry point</li>
+<li><a href="https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld">graph.jsonld</a>, the graph itself</li>
+<li><a href="https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json">manifest.json</a>, digests and counts</li>
+<li><a href="https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json">vocabulary.json</a>, the capability terms</li>
+<li><a href="https://wulfkaal.github.io/agentic-claim-graph/v1/updates.json">updates.json</a>, the signed release feed</li>
+</ul>
+
+<div class="k">Capability vocabulary</div>
+<p class="meta">Ten agent facing capability classes carry the projection. Claims attach to capabilities, not to marketing categories.</p>
+<p><span class="tag">agentic-commerce-and-settlement</span><span class="tag">coordination-and-incentives</span><span class="tag">decentralized-infrastructure</span><span class="tag">governance-and-adjudication</span><span class="tag">learning-and-feedback</span><span class="tag">legal-and-institutional-governance</span><span class="tag">provenance-and-knowledge</span><span class="tag">reputation-and-identity</span><span class="tag">safety-and-accountability</span><span class="tag">trust-and-verification</span></p>
+
+<div class="k">Invariants</div>
+<p class="meta">These hold for the service and the graph, and they are published as machine readable assertions in <code>index.json</code>:</p>
+<ul class="meta">
+<li>Read only. The service creates no claims and affirms no claims.</li>
+<li>Only source derived claims directly attributable to Wulf A. Kaal are returned.</li>
+<li>A Colloquium validation pool may settle a <em>procedural</em> claim about what a review concluded. That claim is authored by the Colloquium validation process, not by Wulf A. Kaal.</li>
+<li>Any substantive derivative stays unpublished and unattributed until exact hash bound affirmation. The queue is currently empty by design.</li>
+</ul>
+<p class="meta">Procedural claim contract: <a href="https://wulfkaal.github.io/agentic-claim-graph/v1/schema/procedural-claim-v1.schema.json">procedural-claim-v1.schema.json</a>. Current state: <a href="https://wulfkaal.github.io/agentic-claim-graph/v1/procedural-claims.json">procedural-claims.json</a> and <a href="https://wulfkaal.github.io/agentic-claim-graph/v1/derived-candidates.json">derived-candidates.json</a>.</p>
+
+<div class="k">Verify it yourself</div>
+<p class="meta">The graph is content addressed. Recompute the digest and compare it against the manifest:</p>
+<p class="meta"><code>curl -s https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | shasum -a 256</code></p>
+<p class="meta">Expect <code>7914a0e4ce2df76d0d4314255720cbeaeb483bdabc7a28d3618f7bfbd140ac0b</code>, which is the value recorded in <code>manifest.json</code>. Any claim returned by the service can be checked the same way, passage against source, using <a href="https://wulfkaal.github.io/verify.py">verify.py</a>.</p>
+
+<div class="k">Limits</div>
+<ul class="meta">
+<li>This is a pilot of 100 claims, not the full 5,033 claim corpus. Absence from a response is not evidence of absence from the corpus.</li>
+<li>Exact passages are preserved from the canonical claim records. Per claim PDF matching was not recomputed by this pilot.</li>
+<li>Quotes carry exact text without page locators.</li>
+<li>The service is a retrieval surface. It reports what was argued and under what conditions. It does not adjudicate whether the argument is correct.</li>
+</ul>
+
+<div class="k">Elsewhere</div>
+<ul class="meta">
+<li><a href="../">machine layer</a>, the root index</li>
+<li><a href="../llms.txt">llms.txt</a>, the machine index</li>
+<li><a href="../claims/index.html">claim layer</a>, all 5,033 claims</li>
+<li><a href="../failures/index.html">failure mode index</a> and <a href="../afmr/index.json">AFMR</a></li>
+<li><a href="../positions/">affirmed positions</a></li>
+</ul>
+
+<footer><a href="https://wulfkaal.com/">wulfkaal.com</a> &middot; <a href="https://wulfkaal.com/agents/">wulfkaal.com/agents</a> &middot; <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345">SSRN</a> &middot; ORCID 0009-0008-7840-1847</footer>
+</main></body></html>
