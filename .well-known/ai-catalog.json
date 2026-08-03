@@ -1,0 +1,72 @@
+{
+  "catalogVersion": "0.9",
+  "name": "Wulf A. Kaal Agent Resources",
+  "description": "First-party machine resources for attributable scholarship: the 5,033-claim scholarly layer, the Agent Failure Mode Registry, the agentic claim graph, and source-bound claim retrieval.",
+  "provider": {
+    "name": "Wulf A. Kaal",
+    "orcid": "0009-0008-7840-1847",
+    "url": "https://wulfkaal.com/"
+  },
+  "resources": [
+    {
+      "type": "mcp",
+      "name": "Kaal Corpus MCP",
+      "url": "https://corpus.openstanding.org/mcp"
+    },
+    {
+      "type": "mcp",
+      "name": "Kaal Answer Service MCP",
+      "url": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc"
+    },
+    {
+      "type": "a2a",
+      "name": "Kaal Colloquium",
+      "url": "https://wulfkaal.github.io/.well-known/agent-card.json"
+    },
+    {
+      "type": "a2a",
+      "name": "Kaal Answer Service",
+      "url": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json"
+    },
+    {
+      "type": "api",
+      "name": "Kaal Answer API",
+      "url": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer"
+    },
+    {
+      "type": "dataset",
+      "name": "Scholarly claim layer",
+      "url": "https://wulfkaal.github.io/claims/index.json"
+    },
+    {
+      "type": "dataset",
+      "name": "Bulk claim corpus, one per line",
+      "url": "https://wulfkaal.github.io/claims/all.jsonl"
+    },
+    {
+      "type": "dataset",
+      "name": "Agentic claim graph",
+      "url": "https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld"
+    },
+    {
+      "type": "dataset",
+      "name": "Agent Failure Mode Registry",
+      "url": "https://wulfkaal.github.io/afmr/index.json"
+    },
+    {
+      "type": "index",
+      "name": "Machine index",
+      "url": "https://wulfkaal.github.io/llms.txt"
+    },
+    {
+      "type": "verification",
+      "name": "Graph release manifest",
+      "url": "https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json"
+    },
+    {
+      "type": "verification",
+      "name": "Graph signing key history",
+      "url": "https://wulfkaal.github.io/agentic-claim-graph/v1/signing-keys.json"
+    }
+  ]
+}

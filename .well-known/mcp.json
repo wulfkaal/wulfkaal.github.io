@@ -16,11 +16,11 @@
     "corpus_overview",
     "search_posts",
     "verify_document",
-    "how_to_cite"
-    ,"search_research_claims"
-    ,"get_research_claim"
-    ,"list_research_observations"
-    ,"get_research_observation"
+    "how_to_cite",
+    "search_research_claims",
+    "get_research_claim",
+    "list_research_observations",
+    "get_research_observation"
   ],
   "documentation": "https://wulfkaal.github.io/agents.md",
   "staticMirror": {
@@ -55,5 +55,21 @@
     }
   },
   "contact": "wulf@wulfkaal.com",
-  "license": "https://creativecommons.org/licenses/by/4.0/"
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "related_servers": [
+    {
+      "name": "kaal-answer-service",
+      "endpoint": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
+      "transport": "http-json-rpc",
+      "authentication": "none",
+      "readOnly": true,
+      "description": "Source-bound retrieval over the 100-claim agentic claim graph pilot. Returns exact passages, citations, content hashes, scope conditions and limitations. Creates no claims and affirms none.",
+      "tools": [
+        "answer_question",
+        "graph_status"
+      ],
+      "documentation": "https://wulfkaal.github.io/answer-service/",
+      "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
+    }
+  ]
 }

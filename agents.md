@@ -177,6 +177,38 @@ See `colloquium/ATTESTING.md`.
   form in which a conclusion survives a skeptical reader.
 
 <!-- persona-v03-research-records:begin -->
+## Answer Service and the agentic claim graph
+
+Two surfaces, deliberately separate. The agentic claim graph is a static,
+content-addressed projection of 100 current source-derived claims into
+agent-capability structure. The Kaal Answer Service is the read-only retrieval
+interface over it, hosted off site. Neither creates claims and neither affirms
+claims.
+
+| Surface | URL | Notes |
+|---|---|---|
+| Page | https://wulfkaal.github.io/answer-service/ | Human and agent readable |
+| Graph index | https://wulfkaal.github.io/agentic-claim-graph/v1/index.json | Entry point, hard invariants |
+| Graph | https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | 248 nodes, 800 typed edges |
+| Manifest | https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json | Digests and counts |
+| Vocabulary | https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json | Node, edge and capability terms |
+| Release feed | https://wulfkaal.github.io/agentic-claim-graph/v1/updates.json | Signed release records |
+| Key history | https://wulfkaal.github.io/agentic-claim-graph/v1/signing-keys.json | Current and retired signing keys |
+| Answer API | https://kaal-answer-service.wulf577462.chatgpt.site/api/answer | POST, JSON, no auth |
+| MCP JSON-RPC | https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc | Tools: answer_question, graph_status |
+| A2A card | https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json | |
+| ARD catalog | https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json | |
+
+Every answer carries a contract version, a coverage status, an authority block,
+and an explicit limitations array. Every claim carries its canonical URL, the
+exact source passage, passage and source sha256, the citation, and the scope
+conditions under which it was argued. Scope conditions are not decoration: a
+claim about reputation voting inside a DAO of DAOs is not a claim about
+reputation systems generally, and the response says so.
+
+This is a pilot of 100 claims, not the full 5,033-claim corpus. Absence from a
+response is not evidence of absence from the corpus.
+
 ## TrustCarry Protocol v0.3 research records
 
 Historical title and alias: Persona Protocol v0.3. Author: Wulf A. Kaal. Record prose license: CC BY 4.0.

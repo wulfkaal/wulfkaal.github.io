@@ -10,10 +10,13 @@
   "api": {
     "type": "openapi",
     "url": "https://wulfkaal.github.io/openapi.yaml",
-    "mcp_url": "https://corpus.openstanding.org/mcp"
+    "mcp_url": "https://corpus.openstanding.org/mcp",
+    "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
+    "answer_mcp_url": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc"
   },
   "contact_email": "wulf@wulfkaal.com",
   "legal_info_url": "https://wulfkaal.com/agents/",
   "bulk_corpus": "https://wulfkaal.github.io/claims/all.jsonl",
-  "verification": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum"
+  "verification": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum",
+  "agentic_claim_graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
 }

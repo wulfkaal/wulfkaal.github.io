@@ -52,5 +52,55 @@
       "term": "trust-and-verification",
       "definition": "Agent-facing capability classification used by kaal:agentic-claim-graph:pilot-100:v1."
     }
-  ]
+  ],
+  "node_types": [
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#Claim",
+      "term": "Claim",
+      "definition": "A single assertion drawn from a published work, directly attributable to Wulf A. Kaal, carrying its canonical URL, scope conditions and verification status."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#SourcePassage",
+      "term": "SourcePassage",
+      "definition": "The verbatim passage from the source document that a Claim rests on, carrying passage_sha256 and source_sha256."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#ScholarlyArticle",
+      "term": "ScholarlyArticle",
+      "definition": "A published work in the corpus that one or more Claims are drawn from."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#AgentCapability",
+      "term": "AgentCapability",
+      "definition": "An agent-facing capability class that Claims are projected onto."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#Person",
+      "term": "Person",
+      "definition": "The author of the claims. Identified by ORCID."
+    }
+  ],
+  "edge_types": [
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#APPLIES_TO_AGENT_CAPABILITY",
+      "term": "APPLIES_TO_AGENT_CAPABILITY",
+      "definition": "Claim to AgentCapability. The claim bears on the named capability class."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#CLAIMED_IN",
+      "term": "CLAIMED_IN",
+      "definition": "Claim to ScholarlyArticle. The work the claim was argued in."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#SUPPORTED_BY",
+      "term": "SUPPORTED_BY",
+      "definition": "Claim to SourcePassage. The exact passage the claim rests on."
+    },
+    {
+      "id": "https://wulfkaal.github.io/agentic-claim-graph/v1#AUTHORED_BY",
+      "term": "AUTHORED_BY",
+      "definition": "Claim to Person. Authorship of the claim."
+    }
+  ],
+  "note": "graph.jsonld sets @vocab to https://wulfkaal.github.io/agentic-claim-graph/v1#. Node and edge type terms resolve against this document. The capability terms below classify claims; they are not marketing categories."
 }
