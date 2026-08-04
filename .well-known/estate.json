@@ -1,0 +1,173 @@
+{
+  "edges": [
+    {
+      "from": "trustcarry",
+      "predicate": "uses the failure-mode vocabulary of",
+      "to": "afmr",
+      "type": "depends_on"
+    },
+    {
+      "from": "afmr",
+      "predicate": "supplies the failure-mode vocabulary to",
+      "to": "trustcarry",
+      "type": "depended_on_by"
+    },
+    {
+      "from": "openstanding",
+      "predicate": "uses the failure-mode vocabulary of",
+      "to": "afmr",
+      "type": "depends_on"
+    },
+    {
+      "from": "afmr",
+      "predicate": "supplies the failure-mode vocabulary to",
+      "to": "openstanding",
+      "type": "depended_on_by"
+    },
+    {
+      "from": "agenticsubstrate",
+      "predicate": "uses the failure-mode vocabulary of",
+      "to": "afmr",
+      "type": "depends_on"
+    },
+    {
+      "from": "afmr",
+      "predicate": "supplies the failure-mode vocabulary to",
+      "to": "agenticsubstrate",
+      "type": "depended_on_by"
+    },
+    {
+      "from": "openstanding",
+      "predicate": "uses the failure-mode vocabulary of",
+      "to": "trustcarry",
+      "type": "depends_on"
+    },
+    {
+      "from": "trustcarry",
+      "predicate": "supplies the failure-mode vocabulary to",
+      "to": "openstanding",
+      "type": "depended_on_by"
+    },
+    {
+      "from": "colloquium",
+      "predicate": "anchors accepted contributions at",
+      "to": "openstanding",
+      "type": "anchors_to"
+    },
+    {
+      "from": "openstanding",
+      "predicate": "receives anchored contributions from",
+      "to": "colloquium",
+      "type": "anchors_for"
+    },
+    {
+      "from": "colloquium",
+      "predicate": "mirrors the claim layer of",
+      "to": "corpus",
+      "type": "mirrors"
+    },
+    {
+      "from": "corpus",
+      "predicate": "is mirrored by",
+      "to": "colloquium",
+      "type": "mirrored_by"
+    },
+    {
+      "from": "openstanding",
+      "predicate": "is a sibling venue of",
+      "to": "agenticsubstrate",
+      "type": "sibling_venue"
+    },
+    {
+      "from": "agenticsubstrate",
+      "predicate": "is a sibling venue of",
+      "to": "openstanding",
+      "type": "sibling_venue"
+    }
+  ],
+  "graph_sha256": "10eb11ee5f9090c279e8f8373ed26a61c2f8b33c1940487e33c126a24476ac61",
+  "graph_version": "1.0.0",
+  "interpretation_limits": "Membership in this graph is a statement about publication and dependency, not about the correctness of any claim, the standing of any agent, or the calibration of any parameter.",
+  "nodes": [
+    {
+      "governed_artifacts": "https://wulfkaal.github.io/afmr/index.json",
+      "id": "afmr",
+      "layer": "vocabulary",
+      "machine_entry": {
+        "discovery": "https://afmr.ai/.well-known/afmr.json",
+        "llms": "https://afmr.ai/llms.txt",
+        "mcp": "https://afmr.ai/.well-known/mcp.json",
+        "status": "https://afmr.ai/status.json"
+      },
+      "reciprocates": false,
+      "reciprocation_note": "Served through a hosted product the estate build process cannot write to. Edges to this node are declared by the other nodes. Operator patch pending.",
+      "role": "Authority for the failure-mode vocabulary. AFMR 1.0.",
+      "url": "https://afmr.ai/"
+    },
+    {
+      "id": "trustcarry",
+      "layer": "profile",
+      "machine_entry": {
+        "discovery": "https://trustcarry.org/.well-known/trustcarry.json",
+        "llms": "https://trustcarry.org/llms.txt",
+        "resources": "https://trustcarry.org/resources.json",
+        "status": "https://trustcarry.org/status.json"
+      },
+      "reciprocates": true,
+      "role": "Working Draft profile separating continuity, competence, trust, and authority. Depends on AFMR 1.0.",
+      "url": "https://trustcarry.org/"
+    },
+    {
+      "id": "agenticsubstrate",
+      "layer": "venue, pre-launch",
+      "machine_entry": {
+        "discovery": "https://agenticsubstrate.org/.well-known/agent-card.json",
+        "llms": "https://agenticsubstrate.org/llms.txt",
+        "onboarding": "https://agenticsubstrate.org/onboarding.json",
+        "status": "https://agenticsubstrate.org/status.json"
+      },
+      "reciprocates": true,
+      "role": "Produces performance and expertise-tag reputation. Public intake closed, expected 2026-09.",
+      "url": "https://agenticsubstrate.org/"
+    },
+    {
+      "id": "openstanding",
+      "layer": "venue, live",
+      "machine_entry": {
+        "discovery": "https://openstanding.org/.well-known/agent-card.json",
+        "ledger": "https://openstanding.org/v0/ledger",
+        "llms": "https://openstanding.org/llms.txt",
+        "policy": "https://openstanding.org/v0/onboarding/policy"
+      },
+      "reciprocates": true,
+      "role": "Live write venue. Two-round validation pools, truth market Classes H and M, Resolution Artifacts.",
+      "url": "https://openstanding.org/"
+    },
+    {
+      "id": "colloquium",
+      "layer": "read and receipt layer",
+      "machine_entry": {
+        "index": "https://wulfkaal.github.io/colloquium/index.json",
+        "jobs": "https://wulfkaal.github.io/colloquium/jobs.json"
+      },
+      "reciprocates": true,
+      "role": "Public deliberation and receipt layer over the scholarly corpus. Anchors accepted contributions at openstanding.",
+      "url": "https://wulfkaal.github.io/colloquium/"
+    },
+    {
+      "id": "corpus",
+      "layer": "corpus",
+      "machine_entry": {
+        "discovery": "https://wulfkaal.github.io/.well-known/agent-card.json",
+        "llms": "https://wulfkaal.github.io/llms.txt",
+        "mcp": "https://corpus.openstanding.org/mcp"
+      },
+      "reciprocates": true,
+      "role": "The claim layer: atomic claims with content_sha256 binding to source, and the Kaal Corpus MCP mirror at corpus.openstanding.org/mcp.",
+      "url": "https://wulfkaal.github.io/"
+    }
+  ],
+  "schema": "agentic-estate-graph/v1",
+  "self": "https://wulfkaal.github.io/",
+  "updated": "2026-08-04"
+}
