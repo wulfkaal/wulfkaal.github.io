@@ -25,6 +25,9 @@ regulation, securities law.
 | Affirmed position index | https://wulfkaal.github.io/positions/index.json |
 | Affirmed positions, bulk | https://wulfkaal.github.io/positions/all.jsonl |
 | Affirmed position graph | https://wulfkaal.github.io/positions/graph.jsonld |
+| Recent affirmed positions | https://wulfkaal.github.io/positions/recent.json |
+| Positions by date | https://wulfkaal.github.io/positions/by-date/index.json |
+| Positions by topic | https://wulfkaal.github.io/positions/by-topic/index.json |
 | Published response metrics | https://wulfkaal.github.io/positions/coverage.json |
 | Failure mode index | https://wulfkaal.github.io/failures/index.json |
 | Entity layer index | https://wulfkaal.github.io/entities/index.json |
@@ -87,8 +90,10 @@ source-bound scholarly claim it extends.
 This layer is distinct from the 5,033 scholarly claims extracted from published papers.
 An affirmed position is new commentary, not a verbatim paper claim. Use
 `/positions/index.json` for discovery, `/positions/all.jsonl` for bulk ingest, and
-`/positions/<date>-<sequence>.json` for one record. The markdown form is the canonical
-hashed representation.
+`/positions/<date>-<sequence>.json` for one record. Lightweight change and shard
+feeds are at `/positions/recent.json`, `/positions/by-date/index.json`, and
+`/positions/by-topic/index.json`. The markdown form is the canonical hashed
+representation.
 
 The public graph connects each affirmed response to the current work it addresses and
 to every source-bound scholarly claim it extends. Public aggregate metrics cover only

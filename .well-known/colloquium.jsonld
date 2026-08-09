@@ -7,7 +7,7 @@
   "@id": "https://wulfkaal.github.io/.well-known/colloquium.jsonld",
   "name": "Kaal Agent Onboarding and Colloquium Knowledge Graph",
   "url": "https://wulfkaal.github.io/colloquium/",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-08-08",
   "creator": {
     "@type": "Person",
     "name": "Wulf A. Kaal",
@@ -43,6 +43,24 @@
       "@type": "DataDownload",
       "encodingFormat": "application/json",
       "contentUrl": "https://public-api.wordpress.com/wp/v2/sites/wulfkaal.com/posts"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "positions_index",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://wulfkaal.github.io/positions/index.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "positions_graph",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://wulfkaal.github.io/positions/graph.jsonld"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "recent_positions",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://wulfkaal.github.io/positions/recent.json"
     }
   ],
   "nodes": [
@@ -75,6 +93,14 @@
       "@type": "WebAPI",
       "name": "Kaal Corpus MCP",
       "documentation": "https://wulfkaal.github.io/.well-known/mcp.json"
+    },
+    {
+      "@id": "https://wulfkaal.github.io/positions/",
+      "@type": "Dataset",
+      "name": "Affirmed Position Claims by Wulf A. Kaal",
+      "positions_index": "https://wulfkaal.github.io/positions/index.json",
+      "positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
+      "recent_positions": "https://wulfkaal.github.io/positions/recent.json"
     }
   ],
   "edges": [
@@ -97,6 +123,11 @@
       "from": "https://openstanding.org/",
       "to": "https://wulfkaal.github.io/colloquium/",
       "rel": "accepts-canonical-tasks-from"
+    },
+    {
+      "from": "https://wulfkaal.github.io/colloquium/",
+      "to": "https://wulfkaal.github.io/positions/",
+      "rel": "publishes"
     }
   ]
 }

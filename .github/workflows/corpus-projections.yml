@@ -21,6 +21,7 @@ on:
     paths:
       - 'claims/all.jsonl'
       - 'claims/index.json'
+      - 'positions-src/**'
       - 'rank.json'
       - 'papers.json'
       - 'colloquium/jobs.json'
@@ -79,15 +80,18 @@ jobs:
       - name: Regenerate the paged Colloquium activation feed
         run: python3 tools/build_colloquium_tasks.py
 
+      - name: Regenerate public position discovery surfaces
+        run: python3 tools/build_positions.py
+
       - name: Commit only if something actually changed
         run: |
-          if git diff --quiet -- rank.md claims/index.json colloquium/tasks; then
+          if git diff --quiet -- rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rank.md claims/index.json colloquium/tasks
+          git add rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld
           git commit -m "Regenerate projections from the corpus [skip ci]"
           git push
 
@@ -242,6 +246,9 @@ jobs:
         run: |
           python3 tools/build_colloquium_tasks.py --check
           python3 -m unittest tests/test_colloquium_client.py
+
+      - name: Position discovery projections remain exact and fail closed
+        run: python3 -m unittest tests/test_position_discoverability.py tests/test_position_notifier.py
 
       - name: The graph release chain must close
         run: |

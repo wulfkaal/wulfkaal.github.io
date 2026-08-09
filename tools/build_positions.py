@@ -5,12 +5,49 @@ import argparse
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
 BASE = "https://wulfkaal.github.io"
 ORCID = "https://orcid.org/0009-0008-7840-1847"
 AUTHOR = "Wulf A. Kaal"
+RECENT_LIMIT = 100
+RELATED_LIMIT = 20
+
+
+def topic_slug(value):
+    return re.sub(r"^-|-$", "", re.sub(r"[^a-z0-9]+", "-", str(value).lower()))
+
+
+def descriptive_heading(record):
+    debate = " ".join(record["currentDebate"]["name"].split())
+    return f"{record['responseType'].title()}: {debate}"
+
+
+def descriptive_title(record, limit=90):
+    debate = " ".join(record["currentDebate"]["name"].split())
+    suffix = " — Wulf A. Kaal Position"
+    available = limit - len(suffix)
+    if len(debate) > available:
+        debate = debate[: available - 1].rsplit(" ", 1)[0].rstrip(" ,:;-") + "…"
+    return debate + suffix
+
+
+def compact_record(record):
+    return {
+        "identifier": record["identifier"],
+        "canonical_url": record["canonical_url"],
+        "name": descriptive_heading(record),
+        "datePublished": record["datePublished"],
+        "dateModified": record["dateModified"],
+        "responseType": record["responseType"],
+        "keywords": record["keywords"],
+        "extends": {
+            "identifier": record["extends"]["identifier"],
+            "url": record["extends"]["url"],
+        },
+    }
 def load_batches(src_dir):
     batches = []
     for path in sorted(src_dir.glob("*.json")):
@@ -134,7 +171,10 @@ def render_html(record):
     conditions = "".join(
         f"<li>{esc(condition)}</li>" for condition in record["scope_conditions"]
     )
-    topics = "".join(f'<span class="tag">{esc(topic)}</span>' for topic in record["keywords"])
+    topics = "".join(
+        f'<a class="tag" href="./by-topic/{esc(topic_slug(topic))}.html">{esc(topic)}</a>'
+        for topic in record["keywords"]
+    )
     evidence = ""
     if record.get("candidateId"):
         confidence = record["mappingConfidence"] if record["mappingConfidence"] is not None else "unscored"
@@ -145,16 +185,27 @@ def render_html(record):
             f"Mapping confidence: {confidence}<br>"
             f"Mapping ambiguous: {str(record['mappingAmbiguous']).lower()}</p>"
         )
-    structured = json.dumps(record, ensure_ascii=False)
+    # JSON itself escapes quotes, while escaping HTML-significant characters
+    # prevents a hostile source title from closing the script element.
+    structured = (
+        json.dumps(record, ensure_ascii=False)
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("&", "\\u0026")
+    )
+    heading = descriptive_heading(record)
+    title = descriptive_title(record)
     return (
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
-        f"<title>{esc(record['identifier'])}</title>"
+        f"<title>{esc(title)}</title>"
         f"<meta name=\"description\" content=\"{esc(record['text'])}\">"
         f"<link rel=\"canonical\" href=\"{esc(record['canonical_url'])}\">"
         "<link rel=\"stylesheet\" href=\"../style.css\">"
         f"<script type=\"application/ld+json\">{structured}</script></head><body><main>"
-        f"<h1>{esc(record['identifier'])}</h1>"
+        f"<h1>{esc(heading)}</h1>"
+        f"<p class=\"meta\">Record: <code>{esc(record['identifier'])}</code> &middot; "
+        f"<a href=\"./by-date/{esc(record['datePublished'])}.html\">{esc(record['datePublished'])}</a></p>"
         f"<p class=\"claim\">{esc(record['text'])}</p>"
         "<div class=\"warn\">Affirmed commentary position. This record extends a "
         "source-bound scholarly claim but is not a verbatim paper claim.</div>"
@@ -352,16 +403,210 @@ def build_public_metrics(records):
 
 
 def build_positions_sitemap(records):
-    urls = "\n".join(
-        f"  <url><loc>{html.escape(record['canonical_url'])}</loc>"
-        f"<lastmod>{record['dateModified']}</lastmod><priority>0.7</priority></url>"
+    lastmod = max(record["dateModified"] for record in records)
+    primary = [
+        (f"{BASE}/positions/", lastmod, "0.9"),
+        (f"{BASE}/positions/recent.json", lastmod, "0.8"),
+        (f"{BASE}/positions/by-date/index.json", lastmod, "0.7"),
+        (f"{BASE}/positions/by-topic/index.json", lastmod, "0.7"),
+    ]
+    primary.extend(
+        (record["canonical_url"], record["dateModified"], "0.7")
         for record in records
+    )
+    urls = "\n".join(
+        f"  <url><loc>{html.escape(url)}</loc><lastmod>{modified}</lastmod>"
+        f"<priority>{priority}</priority></url>"
+        for url, modified, priority in primary
     )
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{urls}\n</urlset>\n"
     )
+
+
+def write_json(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def render_shard_html(title, description, records):
+    items = "".join(
+        f'<li><a href="{html.escape(record["canonical_url"])}">'
+        f'{html.escape(record["name"])}</a> <span class="meta">'
+        f'{html.escape(record["datePublished"])}</span></li>'
+        for record in records
+    )
+    return (
+        '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        f'<title>{html.escape(title)} — Wulf A. Kaal Positions</title>'
+        f'<meta name="description" content="{html.escape(description)}">'
+        '<link rel="stylesheet" href="../../style.css"></head><body><main>'
+        f'<h1>{html.escape(title)}</h1><p class="claim">{html.escape(description)}</p>'
+        f'<ol class="meta">{items}</ol><footer><a href="../">All affirmed positions</a>'
+        '</footer></main></body></html>\n'
+    )
+
+
+def build_shards(out_dir, records, lastmod):
+    by_date = {}
+    by_topic = {}
+    by_claim = {}
+    for record in records:
+        by_date.setdefault(record["datePublished"], []).append(record)
+        for topic in record["keywords"]:
+            by_topic.setdefault(topic_slug(topic), []).append(record)
+        claim_id = record["extends"]["identifier"].replace("kaal:claim:", "")
+        by_claim.setdefault(claim_id, []).append(record)
+
+    for subdir in ("by-date", "by-topic", "by-claim"):
+        target = out_dir / subdir
+        target.mkdir(parents=True, exist_ok=True)
+        for old in target.glob("*.json"):
+            old.unlink()
+        for old in target.glob("*.html"):
+            old.unlink()
+
+    compact = {record["identifier"]: compact_record(record) for record in records}
+    for kind, groups in (("date", by_date), ("topic", by_topic), ("claim", by_claim)):
+        directory = out_dir / f"by-{kind}"
+        index_items = []
+        for key in sorted(groups):
+            values = [compact[record["identifier"]] for record in groups[key]]
+            payload = {
+                "schemaVersion": "kaal-position-shard-v1",
+                kind: key,
+                "count": len(values),
+                "dateModified": lastmod,
+                "positions": values,
+            }
+            write_json(directory / f"{key}.json", payload)
+            description = (
+                f"Owner-authorized Kaal positions published on {key}."
+                if kind == "date"
+                else f"Owner-authorized Kaal positions explicitly tagged {key}."
+                if kind == "topic"
+                else f"Owner-authorized positions explicitly extending scholarly claim {key}."
+            )
+            (directory / f"{key}.html").write_text(
+                render_shard_html(f"Kaal positions by {kind}: {key}", description, values),
+                encoding="utf-8",
+            )
+            index_items.append({
+                kind: key,
+                "count": len(values),
+                "json": f"{BASE}/positions/by-{kind}/{key}.json",
+                "html": f"{BASE}/positions/by-{kind}/{key}.html",
+            })
+        write_json(directory / "index.json", {
+            "schemaVersion": "kaal-position-shard-index-v1",
+            "dimension": kind,
+            "dateModified": lastmod,
+            "count": len(index_items),
+            "shards": index_items,
+        })
+
+    recent = [compact[record["identifier"]] for record in records[:RECENT_LIMIT]]
+    write_json(out_dir / "recent.json", {
+        "schemaVersion": "kaal-position-change-feed-v1",
+        "dateModified": lastmod,
+        "count": len(recent),
+        "totalPositions": len(records),
+        "ordering": "identifier descending",
+        "positions": recent,
+    })
+    return by_claim
+
+
+def add_reverse_claim_links(repo, by_claim):
+    start = "<!-- positions-related:start -->"
+    end = "<!-- positions-related:end -->"
+    # Remove only our generated block first, including from claims whose final
+    # related position was later withdrawn. The protected JSON/Markdown corpus
+    # is never touched.
+    for path in (repo / "claims").glob("*.html"):
+        page = path.read_text(encoding="utf-8")
+        clean = re.sub(re.escape(start) + r".*?" + re.escape(end), "", page, flags=re.S)
+        if clean != page:
+            path.write_text(clean, encoding="utf-8")
+    for claim_id, records in by_claim.items():
+        path = repo / "claims" / f"{claim_id}.html"
+        if not path.exists():
+            raise RuntimeError(f"Missing scholarly claim page for explicit relation: {claim_id}")
+        page = path.read_text(encoding="utf-8")
+        links = "".join(
+            f'<li><a href="{html.escape(record["canonical_url"])}">'
+            f'{html.escape(descriptive_heading(record))}</a></li>'
+            for record in records[:RELATED_LIMIT]
+        )
+        more = ""
+        if len(records) > RELATED_LIMIT:
+            more = (
+                f'<li><a href="../positions/by-claim/{claim_id}.html">'
+                f'All {len(records)} explicitly related positions</a></li>'
+            )
+        block = (
+            f'{start}<div class="k">Positions extending this scholarly claim</div>'
+            f'<ul class="meta">{links}{more}</ul>{end}'
+        )
+        page = page.replace("<footer>", block + "<footer>", 1)
+        path.write_text(page, encoding="utf-8")
+
+
+def update_discovery_surfaces(repo, lastmod, position_count):
+    endpoints = {
+        "positions_index": f"{BASE}/positions/index.json",
+        "positions_graph": f"{BASE}/positions/graph.jsonld",
+        "recent_positions": f"{BASE}/positions/recent.json",
+    }
+    for relative in ("agent-card.json", ".well-known/agent-card.json"):
+        path = repo / relative
+        card = json.loads(path.read_text(encoding="utf-8"))
+        card.setdefault("endpoints", {}).update(endpoints)
+        card.setdefault("corpus", {}).update({
+            "public_positions_index": endpoints["positions_index"],
+            "public_positions_graph": endpoints["positions_graph"],
+            "recent_positions": endpoints["recent_positions"],
+        })
+        write_json(path, card)
+
+    graph_path = repo / ".well-known" / "colloquium.jsonld"
+    graph = json.loads(graph_path.read_text(encoding="utf-8"))
+    graph["dateModified"] = lastmod
+    for name, url, mime in (
+        ("positions_index", endpoints["positions_index"], "application/json"),
+        ("positions_graph", endpoints["positions_graph"], "application/ld+json"),
+        ("recent_positions", endpoints["recent_positions"], "application/json"),
+    ):
+        graph["distribution"] = [
+            item for item in graph.get("distribution", []) if item.get("name") != name
+        ]
+        graph["distribution"].append({
+            "@type": "DataDownload", "name": name,
+            "encodingFormat": mime, "contentUrl": url,
+        })
+    position_node = {
+        "@id": f"{BASE}/positions/",
+        "@type": "Dataset",
+        "name": "Affirmed Position Claims by Wulf A. Kaal",
+        **endpoints,
+    }
+    graph["nodes"] = [node for node in graph.get("nodes", []) if node.get("@id") != position_node["@id"]]
+    graph["nodes"].append(position_node)
+    edge = {"from": f"{BASE}/colloquium/", "to": f"{BASE}/positions/", "rel": "publishes"}
+    graph["edges"] = [item for item in graph.get("edges", []) if item != edge] + [edge]
+    write_json(graph_path, graph)
+
+    sitemap_path = repo / "sitemap-index.xml"
+    sitemap = sitemap_path.read_text(encoding="utf-8")
+    for url in (f"{BASE}/sitemap-positions.xml", f"{BASE}/positions/sitemap-positions-attribution.xml"):
+        pattern = rf"(<sitemap><loc>{re.escape(url)}</loc><lastmod>)[^<]+(</lastmod></sitemap>)"
+        sitemap, count = re.subn(pattern, rf"\g<1>{lastmod}\g<2>", sitemap)
+        if count != 1:
+            raise RuntimeError(f"Expected one sitemap-index entry for {url}")
+    sitemap_path.write_text(sitemap, encoding="utf-8")
 
 
 def main():
@@ -427,6 +672,10 @@ def main():
     (args.repo / "sitemap-positions.xml").write_text(
         build_positions_sitemap(records), encoding="utf-8"
     )
+    lastmod = index["dateModified"]
+    by_claim = build_shards(out_dir, records, lastmod)
+    add_reverse_claim_links(args.repo, by_claim)
+    update_discovery_surfaces(args.repo, lastmod, len(records))
 
     print(f"built {len(records)} affirmed positions")
 
