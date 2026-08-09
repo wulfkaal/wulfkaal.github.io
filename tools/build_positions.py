@@ -599,6 +599,26 @@ def update_discovery_surfaces(repo, lastmod, position_count):
     graph["edges"] = [item for item in graph.get("edges", []) if item != edge] + [edge]
     write_json(graph_path, graph)
 
+    mcp_path = repo / ".well-known" / "mcp.json"
+    mcp = json.loads(mcp_path.read_text(encoding="utf-8"))
+    for tool in ("search_positions", "get_position", "positions_on_topic"):
+        if tool not in mcp["tools"]:
+            mcp["tools"].append(tool)
+    mcp["staticMirror"].update({
+        "publicPositionsIndex": endpoints["positions_index"],
+        "publicPositionsGraph": endpoints["positions_graph"],
+        "recentPublicPositions": endpoints["recent_positions"],
+        "publicPositionsByDate": f"{BASE}/positions/by-date/index.json",
+        "publicPositionsByTopic": f"{BASE}/positions/by-topic/index.json",
+    })
+    mcp["collections"]["publicPositions"] = {
+        "count": position_count,
+        "sourceClass": "owner-authorized dated commentary",
+        "scholarlyClaimLayerEligible": False,
+        "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim.",
+    }
+    write_json(mcp_path, mcp)
+
     sitemap_path = repo / "sitemap-index.xml"
     sitemap = sitemap_path.read_text(encoding="utf-8")
     for url in (f"{BASE}/sitemap-positions.xml", f"{BASE}/positions/sitemap-positions-attribution.xml"):

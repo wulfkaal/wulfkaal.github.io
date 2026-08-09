@@ -95,6 +95,10 @@ feeds are at `/positions/recent.json`, `/positions/by-date/index.json`, and
 `/positions/by-topic/index.json`. The markdown form is the canonical hashed
 representation.
 
+The public read-only MCP endpoint exposes `search_positions`, `get_position`, and
+`positions_on_topic` for direct agent retrieval. These tools preserve the distinction
+between owner-authorized commentary and the protected scholarly claim each record extends.
+
 The public graph connects each affirmed response to the current work it addresses and
 to every source-bound scholarly claim it extends. Public aggregate metrics cover only
 affirmed and published responses. Discovery coverage, unmatched works, ambiguity, and

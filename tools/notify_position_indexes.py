@@ -22,6 +22,7 @@ BASE = "https://wulfkaal.github.io"
 INDEXNOW = "https://api.indexnow.org/indexnow"
 PROTECTED_SHA256 = "70d6bdd792c9421fb4d9f1852458e9751f04a1daeb2e080f8d4f3bbeaee23a63"
 UA = "kaal-position-index-notifier/1.0"
+DEFAULT_KEY_FILE = Path(__file__).resolve().parents[1] / "indexnow-key.txt"
 
 
 def fetch(url, method="GET", payload=None, headers=None, attempts=6):
@@ -111,20 +112,26 @@ def main():
         "protectedInvariant": protected,
     }
 
+    key_file = Path(os.environ.get("INDEXNOW_KEY_FILE", str(DEFAULT_KEY_FILE)))
     key = os.environ.get("INDEXNOW_KEY", "").strip()
+    if not key and key_file.is_file():
+        key = key_file.read_text(encoding="utf-8").strip()
     if not key:
         write_receipt(args.output_receipt, {
             **base_receipt,
             "status": "not-notified-missing-indexnow-key",
             "notificationSent": False,
-            "blocker": "INDEXNOW_KEY is absent",
+            "blocker": "IndexNow key is absent from INDEXNOW_KEY and INDEXNOW_KEY_FILE",
         })
-        print(json.dumps({"notificationSent": False, "blocker": "INDEXNOW_KEY is absent"}))
+        print(json.dumps({
+            "notificationSent": False,
+            "blocker": "IndexNow key is absent from INDEXNOW_KEY and INDEXNOW_KEY_FILE",
+        }))
         return
     if not re.fullmatch(r"[A-Za-z0-9_-]{8,128}", key):
         raise SystemExit("FAIL CLOSED: INDEXNOW_KEY has an invalid format")
 
-    key_location = os.environ.get("INDEXNOW_KEY_LOCATION", f"{BASE}/{key}.txt")
+    key_location = os.environ.get("INDEXNOW_KEY_LOCATION", f"{BASE}/indexnow-key.txt")
     key_status, key_bytes = fetch(key_location)
     if key_status != 200 or key_bytes.decode("utf-8").strip() != key:
         write_receipt(args.output_receipt, {

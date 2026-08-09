@@ -20,7 +20,10 @@
     "search_research_claims",
     "get_research_claim",
     "list_research_observations",
-    "get_research_observation"
+    "get_research_observation",
+    "search_positions",
+    "get_position",
+    "positions_on_topic"
   ],
   "documentation": "https://wulfkaal.github.io/agents.md",
   "staticMirror": {
@@ -33,7 +36,12 @@
     "trustCarryResearchObservationsBulk": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/all.jsonl",
     "trustCarryIdentity": "https://wulfkaal.github.io/.well-known/trustcarry.json",
     "trustCarryTrademarkPolicy": "https://wulfkaal.github.io/trustcarry/TRADEMARKS.md",
-    "trustCarryOfficialImplementations": "https://wulfkaal.github.io/trustcarry/official-implementations.json"
+    "trustCarryOfficialImplementations": "https://wulfkaal.github.io/trustcarry/official-implementations.json",
+    "publicPositionsIndex": "https://wulfkaal.github.io/positions/index.json",
+    "publicPositionsGraph": "https://wulfkaal.github.io/positions/graph.jsonld",
+    "recentPublicPositions": "https://wulfkaal.github.io/positions/recent.json",
+    "publicPositionsByDate": "https://wulfkaal.github.io/positions/by-date/index.json",
+    "publicPositionsByTopic": "https://wulfkaal.github.io/positions/by-topic/index.json"
   },
   "collections": {
     "scholarlyClaims": {
@@ -52,6 +60,12 @@
       "sourceClass": "internal software observations",
       "independentlyReproduced": false,
       "scholarlyClaimLayerEligible": false
+    },
+    "publicPositions": {
+      "count": 8063,
+      "sourceClass": "owner-authorized dated commentary",
+      "scholarlyClaimLayerEligible": false,
+      "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim."
     }
   },
   "contact": "wulf@wulfkaal.com",

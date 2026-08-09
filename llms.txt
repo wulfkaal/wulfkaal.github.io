@@ -165,7 +165,11 @@ published papers.
 - One position: https://wulfkaal.github.io/positions/<date>-<sequence>.json
 - Schema: https://wulfkaal.github.io/positions/schema.json
 - Graph: https://wulfkaal.github.io/positions/graph.jsonld
+- Recent change feed: https://wulfkaal.github.io/positions/recent.json
+- Date shards: https://wulfkaal.github.io/positions/by-date/index.json
+- Topic shards: https://wulfkaal.github.io/positions/by-topic/index.json
 - Published response metrics: https://wulfkaal.github.io/positions/coverage.json
+- Live read-only tools: search_positions, get_position, positions_on_topic
 
 ## Entity layer
 
@@ -220,7 +224,7 @@ rather than download it. Read only, no auth, no keys.
 - Transport: streamable HTTP
 - Tools: search_claims, get_claim, claims_on_topic, claim_layer_overview,
   search_papers, get_paper, papers_by_year, corpus_overview, search_posts,
-  verify_document, how_to_cite
+  verify_document, how_to_cite, search_positions, get_position, positions_on_topic
 - Descriptor: https://wulfkaal.github.io/.well-known/mcp.json
 
 Claim tools return the supporting quote, the canonical URL and the source PDF

@@ -66,6 +66,11 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         downloads = {item.get("name"): item.get("contentUrl") for item in graph["distribution"]}
         self.assertEqual({key: downloads[key] for key in ENDPOINTS}, ENDPOINTS)
 
+        descriptor = load(".well-known/mcp.json")
+        self.assertTrue({"search_positions", "get_position", "positions_on_topic"}.issubset(descriptor["tools"]))
+        self.assertEqual(descriptor["collections"]["publicPositions"]["count"], len(self.records))
+        self.assertFalse(descriptor["collections"]["publicPositions"]["scholarlyClaimLayerEligible"])
+
     def test_every_position_page_has_descriptive_safe_labels(self):
         for row in self.records:
             short = row["identifier"].replace("kaal:position:", "")
