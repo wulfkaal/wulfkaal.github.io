@@ -2,13 +2,13 @@
 """
 enrich_claims_index.py — lever L03.
 
-claims/index.json currently ships 5,033 entries shaped like:
+claims/index.json currently ships 5,073 entries shaped like:
 
     {"id", "url", "claim", "type", "topics", "is_failure_mode"}
 
 It is the most likely bulk-ingest target on the whole host: priority 0.9 in the
 sitemap, and the target of the legacy plugin manifest's api.url. An agent that
-ingests it therefore ends up holding 5,033 quotable assertions with no
+ingests it therefore ends up holding 5,073 quotable assertions with no
 attribution attached — which is exactly the condition under which a model
 paraphrases a claim without citing anyone.
 

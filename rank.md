@@ -10,13 +10,13 @@ ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN auth
 | | |
 |---|---|
 | Published works | 124 |
-| Atomic claims | 5033 |
+| Atomic claims | 5073 |
 | Failure-mode claims | 2037 |
 | Failure families | 55 |
 | Typed edges between claims | 2169 |
 | Publication span | 2004 to 2026 |
 
-**Verification.** Every supporting quote is checked against its source PDF after normalization: whitespace collapsed, typographic punctuation folded to ASCII, ligatures expanded. Wording and word order are unchanged, but quotes are NOT byte-identical to raw pdftotext output, so apply the same normalization to both sides before comparing. An independent audit of all 5,033 claims against the 124 local source PDFs located 4,862 (96.6%). Every source PDF hash matched. 171 quotes were not located, of which 37 belong to a scanned work with no text layer that no text method can verify.
+**Verification.** Every supporting quote is checked against its source PDF after normalization: whitespace collapsed, typographic punctuation folded to ASCII, ligatures expanded. Wording and word order are unchanged, but quotes are NOT byte-identical to raw pdftotext output, so apply the same normalization to both sides before comparing. An independent audit of all 5,073 claims against the 125 local source PDFs located 4,902 (96.6%). Every source PDF hash matched. 171 quotes were not located, of which 37 belong to a scanned work with no text layer that no text method can verify.
 
 ## Coverage by topic
 

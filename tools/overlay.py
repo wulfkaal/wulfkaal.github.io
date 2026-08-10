@@ -11,7 +11,7 @@ WHAT THIS TOUCHES
   claims/index.json      annotated; written with indent=1, ensure_ascii=False and
                          a trailing newline, byte-compatible with the output of
                          tools/enrich_claims_index.py. Mismatched indentation
-                         would make this script and CI rewrite all 5,033 entries
+                         would make this script and CI rewrite all 5,073 entries
                          in alternation, forever.
   claims/<id>.json       annotated inside additionalProperty, the schema.org
                          correct place. Existing indentation is detected and

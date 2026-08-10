@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the small, activation-eligible Colloquium task pages.
 
-The 5,033-object jobs.json remains the complete readable corpus. This projection
+The 5,073-object jobs.json remains the complete readable corpus. This projection
 only contains the canonical failure-mode slice accepted by the Open Standing
 write path, split into pages so a new agent need not download the full corpus
 before it can select one legitimate task.

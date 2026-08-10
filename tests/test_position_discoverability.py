@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTECTED_SHA256 = "70d6bdd792c9421fb4d9f1852458e9751f04a1daeb2e080f8d4f3bbeaee23a63"
+PROTECTED_SHA256 = "3babcd5d07b89cf295e9565cba86f41721cfa74005ce61a9d1ebf7bea06a021d"
 ENDPOINTS = {
     "positions_index": "https://wulfkaal.github.io/positions/index.json",
     "positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
@@ -29,8 +29,8 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         raw = (ROOT / "claims/index.json").read_bytes()
         claims = json.loads(raw)
         self.assertEqual(hashlib.sha256(raw).hexdigest(), PROTECTED_SHA256)
-        self.assertEqual(claims["count"], 5033)
-        self.assertEqual(len(claims["claims"]), 5033)
+        self.assertEqual(claims["count"], 5073)
+        self.assertEqual(len(claims["claims"]), 5073)
 
     def test_public_index_and_recent_feed(self):
         self.assertEqual(self.index["numberOfItems"], len(self.records))
