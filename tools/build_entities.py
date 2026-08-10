@@ -3,7 +3,7 @@
 build-entities.py -- generate the entity layer for wulfkaal.github.io.
 
 The claim layer already carries an `about` array on every claim record: 7,197
-distinct concept slugs across 5,113 claims. Nothing resolves those slugs. An
+distinct concept slugs across 5,145 claims. Nothing resolves those slugs. An
 agent that reads "reputation-staking" on a claim has nowhere to go.
 
 This builds that layer: /entities/<slug>.{json,md,html} plus /entities/index.json,

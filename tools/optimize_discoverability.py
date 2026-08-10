@@ -215,7 +215,7 @@ LLMS_SECTION = """
 ## Agentic claim graph and Answer Service
 
 The public graph pilot projects 100 current, source-derived claims from the
-5,113-claim corpus into an agent-capability graph. It does not create or affirm
+5,145-claim corpus into an agent-capability graph. It does not create or affirm
 new claims. The separate Kaal Answer Service retrieves those claims with exact
 passages, citations, hashes, scope conditions, and limitations.
 
@@ -283,7 +283,7 @@ conditions under which it was argued. Scope conditions are not decoration: a
 claim about reputation voting inside a DAO of DAOs is not a claim about
 reputation systems generally, and the response says so.
 
-This is a pilot of 100 claims, not the full 5,113-claim corpus. Absence from a
+This is a pilot of 100 claims, not the full 5,145-claim corpus. Absence from a
 response is not evidence of absence from the corpus.
 """ % {"gh": GH, "graph": GRAPH, "as": AS}
 
@@ -361,7 +361,7 @@ CATALOG = {
     "catalogVersion": "0.9",
     "name": "Wulf A. Kaal Agent Resources",
     "description": (
-        "First-party machine resources for attributable scholarship: the 5,113-claim "
+        "First-party machine resources for attributable scholarship: the 5,145-claim "
         "scholarly layer, the Agent Failure Mode Registry, the agentic claim graph, and "
         "source-bound claim retrieval."
     ),

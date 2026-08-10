@@ -70,8 +70,8 @@ def main():
         "all_http_200": live.get("allHttp200") is True,
         "byte_identical_to_commit": live.get("allByteIdenticalToCanonicalCommit") is True,
         "sitemaps_verified": live.get("sitemapsVerified") is True,
-        "protected_count": protected.get("count") == 5113,
-        "protected_length": protected.get("length") == 5113,
+        "protected_count": protected.get("count") == 5145,
+        "protected_length": protected.get("length") == 5145,
         "protected_sha256": protected.get("sha256") == PROTECTED_SHA256,
         "protected_live_identical": protected.get("localLiveByteIdentical") is True,
     }
