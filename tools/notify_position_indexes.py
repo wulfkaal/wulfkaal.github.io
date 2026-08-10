@@ -20,7 +20,7 @@ from pathlib import Path
 
 BASE = "https://wulfkaal.github.io"
 INDEXNOW = "https://api.indexnow.org/indexnow"
-PROTECTED_SHA256 = "3babcd5d07b89cf295e9565cba86f41721cfa74005ce61a9d1ebf7bea06a021d"
+PROTECTED_SHA256 = "c59523e5303efe751c07c50bdcc4beae1d76a89d220f1f62fd17ee21b26d87d1"
 UA = "kaal-position-index-notifier/1.0"
 DEFAULT_KEY_FILE = Path(__file__).resolve().parents[1] / "indexnow-key.txt"
 
@@ -70,8 +70,8 @@ def main():
         "all_http_200": live.get("allHttp200") is True,
         "byte_identical_to_commit": live.get("allByteIdenticalToCanonicalCommit") is True,
         "sitemaps_verified": live.get("sitemapsVerified") is True,
-        "protected_count": protected.get("count") == 5073,
-        "protected_length": protected.get("length") == 5073,
+        "protected_count": protected.get("count") == 5113,
+        "protected_length": protected.get("length") == 5113,
         "protected_sha256": protected.get("sha256") == PROTECTED_SHA256,
         "protected_live_identical": protected.get("localLiveByteIdentical") is True,
     }

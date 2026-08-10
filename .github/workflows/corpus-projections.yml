@@ -67,7 +67,7 @@ jobs:
         run: python3 tools/make_rank_md.py rank.json > rank.md
 
       # --with-quote is REQUIRED, not optional. Without it this job would strip
-      # the verbatim supporting_quote from all 5,033 entries on the next corpus
+      # the verbatim supporting_quote from all 5,113 entries on the next corpus
       # change -- a projection job silently undoing a deliberate decision is the
       # exact failure mode this workflow exists to prevent.
       - name: Re-enrich claims/index.json from claims/all.jsonl
@@ -221,7 +221,7 @@ jobs:
           ssrn_ids = [w.get("ssrn_id") for w in works]
           bib_entries = re.findall(r"^@\w+\{", open("papers.bib").read(), re.M)
 
-          expected = 130
+          expected = 131
           problems = []
           if papers.get("count") != expected or len(works) != expected:
               problems.append(f"papers.json roster is {papers.get('count')}/{len(works)}, expected {expected}")
@@ -231,12 +231,12 @@ jobs:
               problems.append("SSRN identifiers are missing or duplicated")
           if len(bib_entries) != expected:
               problems.append(f"papers.bib has {len(bib_entries)} entries, expected {expected}")
-          if papers.get("claim_covered_work_count") != 125:
-              problems.append("claim_covered_work_count must remain explicit at 125 until ingestion expands")
+          if papers.get("claim_covered_work_count") != 126:
+              problems.append("claim_covered_work_count must remain explicit at 126 until ingestion expands")
 
           if problems:
               sys.exit("\n".join(problems))
-          print("130 unique SSRN records; 130 BibTeX entries; 125 claim-covered works")
+          print("131 unique SSRN records; 131 BibTeX entries; 126 claim-covered works")
           PY
 
       - name: Spot-check that quotes are still verbatim and hashes still bind

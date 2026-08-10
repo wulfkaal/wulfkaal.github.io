@@ -250,7 +250,7 @@ def render_index_html(records):
         "<h1>Affirmed Position Claims</h1>"
         "<p class=\"claim\">Reviewed, dated commentary positions grounded in the "
         "source-bound scholarly claim corpus.</p>"
-        "<div class=\"warn\">This layer is distinct from the 5,073 claims extracted "
+        "<div class=\"warn\">This layer is distinct from the 5,113 claims extracted "
         "from published papers. Each position identifies the scholarly claim it extends.</div>"
         f"<div class=\"k\">Positions</div><ol class=\"meta\">{items}</ol>"
         "<div class=\"k\">Machine access</div><ul class=\"meta\">"
