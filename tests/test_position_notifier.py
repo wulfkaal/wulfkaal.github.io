@@ -29,8 +29,8 @@ class PositionNotifierTests(unittest.TestCase):
                 "sitemapsVerified": True,
             },
             "protectedInvariant": {
-                "count": 5113,
-                "length": 5113,
+                "count": 5145,
+                "length": 5145,
                 "sha256": NOTIFIER.PROTECTED_SHA256,
                 "localLiveByteIdentical": True,
             },
@@ -71,8 +71,8 @@ class PositionNotifierTests(unittest.TestCase):
                 "sitemapsVerified": True,
             },
             "protectedInvariant": {
-                "count": 5113,
-                "length": 5113,
+                "count": 5145,
+                "length": 5145,
                 "sha256": NOTIFIER.PROTECTED_SHA256,
                 "localLiveByteIdentical": True,
             },
@@ -122,7 +122,7 @@ class PositionNotifierTests(unittest.TestCase):
             },
             "protectedInvariant": {
                 "count": 5072,
-                "length": 5113,
+                "length": 5145,
                 "sha256": NOTIFIER.PROTECTED_SHA256,
                 "localLiveByteIdentical": True,
             },

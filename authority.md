@@ -4,7 +4,7 @@ This is an evidence index, not a ranking assertion. Each topic block reports wha
 
 ## Corpus
 
-- 126 works, 5113 atomic claims, 2004 to 2026
+- 127 works, 5145 atomic claims, 2004 to 2026
 - 2037 failure mode claims in 55 families
 - Canonical index: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345
 
