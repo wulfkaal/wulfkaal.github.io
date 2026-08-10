@@ -68,8 +68,21 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
         descriptor = load(".well-known/mcp.json")
         self.assertTrue({"search_positions", "get_position", "positions_on_topic"}.issubset(descriptor["tools"]))
+        self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], 5113)
         self.assertEqual(descriptor["collections"]["publicPositions"]["count"], len(self.records))
         self.assertFalse(descriptor["collections"]["publicPositions"]["scholarlyClaimLayerEligible"])
+
+        coverage = load("positions/claim-5113-coverage.json")
+        self.assertEqual(coverage["protectedScholarlyClaims"], 5113)
+        self.assertEqual(coverage["affirmedPositionsMapped"], len(self.records))
+        dataset = load("positions/dataset.jsonld")
+        downloads = {item["name"] for item in dataset["distribution"]}
+        self.assertIn("claim-5113-coverage.json", downloads)
+        self.assertIn("claim-source-5113-map.jsonl", downloads)
+        legacy = load("positions/claim-5033-coverage.json")
+        self.assertTrue(legacy["deprecatedAlias"])
+        self.assertEqual(legacy["protectedScholarlyClaims"], 5113)
+        self.assertTrue(legacy["supersededBy"].endswith("claim-5113-coverage.json"))
 
     def test_every_position_page_has_descriptive_safe_labels(self):
         for row in self.records:
