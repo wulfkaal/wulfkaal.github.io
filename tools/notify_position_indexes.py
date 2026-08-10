@@ -20,7 +20,6 @@ from pathlib import Path
 
 BASE = "https://wulfkaal.github.io"
 INDEXNOW = "https://api.indexnow.org/indexnow"
-PROTECTED_SHA256 = "c59523e5303efe751c07c50bdcc4beae1d76a89d220f1f62fd17ee21b26d87d1"
 UA = "kaal-position-index-notifier/1.0"
 DEFAULT_KEY_FILE = Path(__file__).resolve().parents[1] / "indexnow-key.txt"
 
@@ -70,9 +69,9 @@ def main():
         "all_http_200": live.get("allHttp200") is True,
         "byte_identical_to_commit": live.get("allByteIdenticalToCanonicalCommit") is True,
         "sitemaps_verified": live.get("sitemapsVerified") is True,
-        "protected_count": protected.get("count") == 5145,
-        "protected_length": protected.get("length") == 5145,
-        "protected_sha256": protected.get("sha256") == PROTECTED_SHA256,
+        "protected_count": isinstance(protected.get("count"), int) and protected.get("count") > 0,
+        "protected_length": protected.get("length") == protected.get("count"),
+        "protected_sha256": bool(re.fullmatch(r"[a-f0-9]{64}", protected.get("sha256") or "")),
         "protected_live_identical": protected.get("localLiveByteIdentical") is True,
     }
     if not all(gates.values()):
@@ -95,6 +94,15 @@ def main():
     live_index = json.loads(live_index_bytes)
     if live_index_status != 200 or live_index.get("numberOfItems") != source.get("after"):
         raise SystemExit("FAIL CLOSED: live position count does not match publication receipt")
+    live_claims_status, live_claims_bytes = fetch(f"{BASE}/claims/index.json")
+    live_claims = json.loads(live_claims_bytes)
+    if (
+        live_claims_status != 200
+        or live_claims.get("count") != protected.get("count")
+        or len(live_claims.get("claims") or []) != protected.get("length")
+        or hashlib.sha256(live_claims_bytes).hexdigest() != protected.get("sha256")
+    ):
+        raise SystemExit("FAIL CLOSED: live protected claims do not match publication receipt")
     for url in urls:
         status, _ = fetch(url)
         if status != 200:

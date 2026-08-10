@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 import os
 import sys
@@ -17,6 +18,7 @@ SPEC.loader.exec_module(NOTIFIER)
 
 class PositionNotifierTests(unittest.TestCase):
     def test_missing_key_records_no_notification_after_live_gates(self):
+        claims_bytes = json.dumps({"count": 5145, "claims": [None] * 5145}).encode()
         publication = {
             "status": "live-verified-publication-complete",
             "batchId": "test-batch",
@@ -31,7 +33,7 @@ class PositionNotifierTests(unittest.TestCase):
             "protectedInvariant": {
                 "count": 5145,
                 "length": 5145,
-                "sha256": NOTIFIER.PROTECTED_SHA256,
+                "sha256": hashlib.sha256(claims_bytes).hexdigest(),
                 "localLiveByteIdentical": True,
             },
         }
@@ -39,6 +41,8 @@ class PositionNotifierTests(unittest.TestCase):
         def fake_fetch(url, **_kwargs):
             if url.endswith("positions/index.json"):
                 return 200, json.dumps({"numberOfItems": 8063}).encode()
+            if url.endswith("claims/index.json"):
+                return 200, claims_bytes
             return 200, b"ok"
 
         with tempfile.TemporaryDirectory() as temp:
@@ -59,6 +63,7 @@ class PositionNotifierTests(unittest.TestCase):
             self.assertIn("IndexNow key is absent", receipt["blocker"])
 
     def test_public_key_file_is_used_and_verified_before_notification(self):
+        claims_bytes = json.dumps({"count": 5145, "claims": [None] * 5145}).encode()
         publication = {
             "status": "live-verified-publication-complete",
             "batchId": "test-batch",
@@ -73,7 +78,7 @@ class PositionNotifierTests(unittest.TestCase):
             "protectedInvariant": {
                 "count": 5145,
                 "length": 5145,
-                "sha256": NOTIFIER.PROTECTED_SHA256,
+                "sha256": hashlib.sha256(claims_bytes).hexdigest(),
                 "localLiveByteIdentical": True,
             },
         }
@@ -84,6 +89,8 @@ class PositionNotifierTests(unittest.TestCase):
             calls.append((url, method, payload))
             if url.endswith("positions/index.json"):
                 return 200, json.dumps({"numberOfItems": 8063}).encode()
+            if url.endswith("claims/index.json"):
+                return 200, claims_bytes
             if url.endswith("indexnow-key.txt"):
                 return 200, (key + "\n").encode()
             if method == "POST":
@@ -123,7 +130,7 @@ class PositionNotifierTests(unittest.TestCase):
             "protectedInvariant": {
                 "count": 5072,
                 "length": 5145,
-                "sha256": NOTIFIER.PROTECTED_SHA256,
+                "sha256": "a" * 64,
                 "localLiveByteIdentical": True,
             },
         }
