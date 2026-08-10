@@ -221,7 +221,7 @@ jobs:
           ssrn_ids = [w.get("ssrn_id") for w in works]
           bib_entries = re.findall(r"^@\w+\{", open("papers.bib").read(), re.M)
 
-          expected = 131
+          expected = 132
           problems = []
           if papers.get("count") != expected or len(works) != expected:
               problems.append(f"papers.json roster is {papers.get('count')}/{len(works)}, expected {expected}")
@@ -236,7 +236,7 @@ jobs:
 
           if problems:
               sys.exit("\n".join(problems))
-          print("131 unique SSRN records; 131 BibTeX entries; 126 claim-covered works")
+          print("132 unique SSRN records; 132 BibTeX entries; 126 claim-covered works")
           PY
 
       - name: Spot-check that quotes are still verbatim and hashes still bind
