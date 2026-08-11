@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-271",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-271",
+   "text": "Hasan, Brunie, and Bertino independently specify the identity-binding mechanism behind Kaal's claim. Their survey distinguishes pseudonym-bound reputation, which a participant can abandon by re-entering under a fresh pseudonym, from identity-bound reputation that survives pseudonym changes; in the surveyed BPRF design, PKI recognition reassigns prior reputation after exit and re-entry and thereby resists Sybil and whitewashing attacks. This supports persistence as a defense against costless history shedding, while qualifying Kaal's design: the surveyed mechanism is human- and PKI-bound and does not establish per-capability agent tags, non-transferability between tags, or the substrate's wider incentives.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/3490236"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7260278-013"
+   },
+   "sha256": "1bfa27753d5e815bfb49914bb5ee8515751097d009906c7c2b5e9cd28ab6786b",
+   "evidenceLevel": "peer-reviewed ACM Computing Surveys article with an author-hosted public full text and independent Crossref, OpenAlex, and Semantic Scholar identity checks",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-270",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-270",
@@ -164175,6 +164195,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/3490236",
+   "@type": "CreativeWork",
+   "name": "Privacy-Preserving Reputation Systems Based on Blockchain and Other Cryptographic Building Blocks: A Survey",
+   "url": "https://doi.org/10.1145/3490236"
+  },
+  {
    "@id": "https://doi.org/10.1145/3805689.3806748",
    "@type": "CreativeWork",
    "name": "Dissociative Identity: Language Model Agents Lack Grounding for Reputation Mechanisms",
@@ -208591,6 +208617,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7260278-013",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7260278-013",
+   "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+   "sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7260278-012",

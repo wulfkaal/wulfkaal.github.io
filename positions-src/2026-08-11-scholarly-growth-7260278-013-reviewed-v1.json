@@ -1,0 +1,149 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-013-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-013.html",
+  "source_snapshot_sha256": "a2abe1ece6167dddd2887a47cbb2105e6a595ce3ad1b2a9506ac8ea8fd82f5c3",
+  "review_ledger_sha256": "0e6c772c5371d05fc6b7bc46c353eaf25f7dad439677bffb9da44fa0026cd6b4",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 271,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-identity-bound-reputation-whitewashing-qualification-d3dcafe307",
+      "topics": [
+        "reputation",
+        "ai-and-agents",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "persistent-agent-identity",
+        "identity-bound-reputation",
+        "whitewashing-resistance",
+        "pseudonym-governance"
+      ],
+      "text": "Hasan, Brunie, and Bertino independently specify the identity-binding mechanism behind Kaal's claim. Their survey distinguishes pseudonym-bound reputation, which a participant can abandon by re-entering under a fresh pseudonym, from identity-bound reputation that survives pseudonym changes; in the surveyed BPRF design, PKI recognition reassigns prior reputation after exit and re-entry and thereby resists Sybil and whitewashing attacks. This supports persistence as a defense against costless history shedding, while qualifying Kaal's design: the surveyed mechanism is human- and PKI-bound and does not establish per-capability agent tags, non-transferability between tags, or the substrate's wider incentives.",
+      "scope_conditions": [
+        "The response is limited to the full-text passages and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed ACM Computing Surveys article with an author-hosted public full text and independent Crossref, OpenAlex, and Semantic Scholar identity checks.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The retained source is a survey and design taxonomy, not an empirical test of Kaal's agentic reputation substrate.",
+        "Its concrete BPRF mechanism binds human participants through PKI-backed real identity; it does not establish non-transferable per-capability tags for autonomous agents.",
+        "The source supports persistence across exit, re-entry, and pseudonym change, but does not prove that Kaal's implementation makes every form of agent-history shedding costly.",
+        "The source does not test Kaal's staking, pool, settlement, decay, capability-tag, or work-allocation mechanisms."
+      ],
+      "current_debate": {
+        "name": "Privacy-Preserving Reputation Systems Based on Blockchain and Other Cryptographic Building Blocks: A Survey",
+        "url": "https://doi.org/10.1145/3490236"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-013",
+        "url": "https://wulfkaal.github.io/claims/7260278-013",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-013-identity-bound-reputation-01",
+      "evidence_level": "peer-reviewed ACM Computing Surveys article with an author-hosted public full text and independent Crossref, OpenAlex, and Semantic Scholar identity checks",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "Both propositions concern whether reputation history remains bound to an accountable identity rather than being discarded through a fresh identity; Hasan et al. supply the independent whitewashing mechanism and a PKI-bound implementation example.",
+      "source_provenance": {
+        "source": "ACM Computing Surveys article and author-hosted public full text",
+        "sourceRecordId": "10.1145/3490236",
+        "doi": "10.1145/3490236",
+        "canonicalUrl": "https://doi.org/10.1145/3490236",
+        "pdfUrl": "https://perso.liris.cnrs.fr/omar.hasan/publications/hasan_2023_acm.pdf",
+        "retrievedAt": "2026-08-11T17:07:13.214Z",
+        "sourcePdfSha256": "1c378a24256fc599b0d70128a894cc4352264b2f720d9b6f4717db018a509a88",
+        "extractedTextSha256": "368adf2071212b0ace822f568453b1f8757596b5f11696f60cfa0f7a78d8fcf7",
+        "crossrefResponseBodySha256": "b2aaf84cb25a072de0622c0db7866cac6f6e8ed305591505854b7e81b972deb6",
+        "openAlexResponseBodySha256": "e45d81c210e2f1d850a8fe91f39268cd446f3730a93ffde37f2216ed3e8e5937",
+        "semanticScholarResponseBodySha256": "7a6b79dbb15b99632d631211c292e60427a45f4fb6e9a354d5f19ece721f12cd",
+        "sourceProposition": "Hasan, Brunie, and Bertino distinguish pseudonym-bound reputation, which can be abandoned through a fresh pseudonym, from identity-bound reputation that survives pseudonym changes; their BPRF case reassigns existing reputation after exit and re-entry and thereby resists Sybil and whitewashing attacks.",
+        "sourcePropositionSha256": "d3dcafe30757abc66cbf5b5549c8a235f1272deee67854b29baa80ff3c469120",
+        "sourceEvidenceSetSha256": "32fd19042e9fb2835e881d7c3cc8d068f2dffe6d00cd9ef61eb4c0fc5202a2ec",
+        "sourceEvidencePassages": [
+          {
+            "text": "A privacy-preserving reputation system can be either pseudonym-bound or identity-bound. In a pseudonym-bound system, the reputation of the ratee is associated with her pseudonym. If she changes or creates a new pseudonym, then she looses her reputation. The use of pseudonyms has the drawback that the reputation is not transferable between a ratee’s multiple pseudonyms. An additional major drawback is that a dishonest ratee can drop a pseudonym with bad reputation and re-enter the system with a new pseudonym and a fresh reputation. This common attack against pseudonym-bound systems is known as whitewashing.",
+            "locator": {
+              "version": "ACM Computing Surveys 55(2), Article 111",
+              "page": "111:5",
+              "section": "2.2 Reputation Binding"
+            },
+            "sha256": "d2aac1e2f9dba4682a01f411f7a4913250d4fe88cba49011f368bf3726c11439"
+          },
+          {
+            "text": "On the other hand, in an identity-bound system, the reputation of a ratee is bound to her real identity. Even if she changes pseudonyms, she maintains her reputation. This is often made possible by verifying the true identity of a ratee before issuing a new pseudonym.",
+            "locator": {
+              "version": "ACM Computing Surveys 55(2), Article 111",
+              "page": "111:5",
+              "section": "2.2 Reputation Binding"
+            },
+            "sha256": "2bbde7e936d5ea91b16752b34504b74692f107c0aca0181dedd74b70aa6bfaeb"
+          },
+          {
+            "text": "Reputation is identity-bound because users are authenticated using a PKI. If they exit and re-enter the system, they can be recognized and re-assigned their existing reputation. This mechanism provides strong resistance against Sybil attacks and whitewashing.",
+            "locator": {
+              "version": "ACM Computing Surveys 55(2), Article 111",
+              "page": "111:24",
+              "section": "7.3 Jo and Choi 2019"
+            },
+            "sha256": "1fa8249e78de56bc7b41c141c90c24e3f4f3ded4a46c0fb95bbdf4e8fec3ffdf"
+          }
+        ],
+        "workId": "work:doi:10.1145/3490236",
+        "workAuthors": [
+          "Omar Hasan",
+          "Lionel Brunie",
+          "Elisa Bertino"
+        ],
+        "workPublishedAt": "2022-01-18",
+        "identityKeys": [
+          "doi:10.1145/3490236",
+          "openalex:W3138603542",
+          "semanticscholar:9b8bff3f912de813a07cde4d05fa19f387d83436",
+          "pdf:1c378a24256fc599b0d70128a894cc4352264b2f720d9b6f4717db018a509a88",
+          "proposition:d3dcafe30757abc66cbf5b5549c8a235f1272deee67854b29baa80ff3c469120"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-013",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-013",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "Both propositions concern whether reputation history remains bound to an accountable identity rather than being discarded through a fresh identity; Hasan et al. supply the independent whitewashing mechanism and a PKI-bound implementation example.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T17:07:13.214Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "identity-bound reputation survives pseudonym change and re-entry, preventing costless whitewashing of history",
+          "compatibleScope": "distributed reputation-system identity binding used to qualify a per-tag autonomous-agent reputation design",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The retained source is a survey and design taxonomy, not an empirical test of Kaal's agentic reputation substrate.",
+            "Its concrete BPRF mechanism binds human participants through PKI-backed real identity; it does not establish non-transferable per-capability tags for autonomous agents.",
+            "The source supports persistence across exit, re-entry, and pseudonym change, but does not prove that Kaal's implementation makes every form of agent-history shedding costly.",
+            "The source does not test Kaal's staking, pool, settlement, decay, capability-tag, or work-allocation mechanisms."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
