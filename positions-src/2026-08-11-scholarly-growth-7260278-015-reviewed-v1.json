@@ -1,0 +1,166 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-015-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-015.html",
+  "source_snapshot_sha256": "4e6cb185caae47ea783d1a3106a70aef68dbb1d533da0ab778c6bcaa0c6e5d7e",
+  "review_ledger_sha256": "88ecf451aef72fad99997992c92992e6031c6dd53882896d51388b80af67aa1e",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 273,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-temporal-reputation-decay-partner-selection-qualification-41b8d279b9",
+      "topics": [
+        "reputation",
+        "risk-and-incentives",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "temporal-reputation",
+        "forgetting-factors",
+        "dynamic-agent-behaviour",
+        "partner-selection"
+      ],
+      "text": "Player and Griffiths independently operationalize a bounded version of Kaal’s decay mechanism. In their multi-agent trust models, sliding windows delete older interaction records that no longer represent current behavior, while forgetting factors continuously down-weight older interactions; their adaptive RaPTaR method then uses current-behavior estimates to improve future partner selection. This supports treating reputation evidence as perishable rather than permanent. It does not establish Kaal’s stronger claim that the value of the future never reaches zero for every incumbent, nor does it validate his standing-token, staking, or rights architecture.",
+      "scope_conditions": [
+        "The response is limited to the four page-bound full-text passages and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed journal article with a Warwick author-accepted 25-page full text, exact page-bound passages, and Crossref, OpenAlex, and Semantic Scholar identity verification.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The retained source studies trust and reputation assessment in simulated multi-agent systems, not Kaal’s specific agentic-reputation substrate.",
+        "Its forgetting factors and sliding windows make reputation evidence temporally perishable, but the paper does not use Kaal’s standing-token, staking, pool, settlement, or legal-rights architecture.",
+        "The experiments test partner selection under changing behaviour; they do not directly prove that the value of the future can never reach zero for every incumbent.",
+        "RaPTaR is presented as an improvement over fixed-rate forgetting, so the qualification does not endorse a single global decay parameter."
+      ],
+      "current_debate": {
+        "name": "Improving trust and reputation assessment with dynamic behaviour",
+        "url": "https://doi.org/10.1017/s0269888920000077"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-015",
+        "url": "https://wulfkaal.github.io/claims/7260278-015",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-015-temporal-reputation-01",
+      "evidence_level": "peer-reviewed journal article with a Warwick author-accepted 25-page full text, exact page-bound passages, and Crossref, OpenAlex, and Semantic Scholar identity verification",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "Both propositions treat reputation as dynamically relevant to future interaction opportunities; Player and Griffiths directly specify temporal down-weighting and deletion of stale evidence while leaving Kaal’s stronger incumbent-value result untested.",
+      "source_provenance": {
+        "source": "The Knowledge Engineering Review and Warwick Research Archive Portal",
+        "sourceRecordId": "10.1017/s0269888920000077",
+        "doi": "10.1017/s0269888920000077",
+        "canonicalUrl": "https://doi.org/10.1017/s0269888920000077",
+        "repositoryUrl": "https://wrap.warwick.ac.uk/131522/",
+        "pdfUrl": "https://wrap.warwick.ac.uk/id/eprint/131522/1/WRAP-improving-trust-reputation-dynamic-behaviour-Player-2019.pdf",
+        "retrievedAt": "2026-08-11T18:05:28.436Z",
+        "sourcePdfSha256": "fa96e6e0ed2678f64b3c5d98331825c5aaf3a890b88c4415f1f5313ff3fb1a4b",
+        "extractedTextSha256": "4e9526d8caf39fce2a3e3454b9edb99752498d77190e1ce1606cb57decd3d7a2",
+        "textExtraction": {
+          "tool": "pdftotext -layout",
+          "quality": "clean machine-readable 25-page author accepted manuscript; exact passages verified on PDF pages 7 and 15"
+        },
+        "crossrefResponseBodySha256": "b32cf1cc2d320da9d34bdeb3f105bed8b7193bce44f20649bf91463498808706",
+        "openAlexResponseBodySha256": "692faaf35c89c91138ddc18d23cd9c21874ed74c1d4a7b7c0bbd8fa7c8f0603c",
+        "semanticScholarResponseBodySha256": "86f9c1cc5af24000f80e60969410d02b6b4fbb3cd21f4d1765a0135c12fd5d91",
+        "sourceProposition": "Player and Griffiths model reputation information as time-sensitive: sliding windows delete older interactions that no longer represent current behaviour, forgetting factors continuously down-weight older interactions, and their adaptive RaPTaR method uses current-behaviour estimates to select better future interaction partners.",
+        "sourcePropositionSha256": "4fd4ea0e137f5828603821cc9d2a1f91f444926eabdf562d33a601132f5fcede",
+        "sourceEvidenceSetSha256": "dda24dfacae97a3b9f689d63a2e9cfce6078c41195ed52c5cd145bbd8a9551db",
+        "sourceEvidencePassages": [
+          {
+            "text": "A sliding window of size n retains the most recent n experiences. The intuition is that the most recent n instances capture an agent’s current behaviour, and older interaction records which are no longer relevant are deleted.",
+            "locator": {
+              "version": "Warwick author accepted manuscript",
+              "pdfPage": 7,
+              "printedPage": 6,
+              "section": "2.3 Dynamic Behaviour"
+            },
+            "sha256": "0b8bd8d762cce74549302c432f6bec7ccc7e326580c36d47d3164a80429f93f7"
+          },
+          {
+            "text": "A forgetting factor, also referred to as a longevity factor, forgets at a constant rate with all instances being retained and more recent interactions weighted higher.",
+            "locator": {
+              "version": "Warwick author accepted manuscript",
+              "pdfPage": 7,
+              "printedPage": 6,
+              "section": "2.3 Dynamic Behaviour"
+            },
+            "sha256": "8aca75749d2596d743c24b8aaa47ed5d8e81100424800be0778acbe992e317ce"
+          },
+          {
+            "text": "RaPTaR aims to improve an agent’s ability to assess another agent’s behaviour, and thereby select better partners for interactions.",
+            "locator": {
+              "version": "Warwick author accepted manuscript",
+              "pdfPage": 15,
+              "printedPage": 14,
+              "section": "5 Results and Evaluation"
+            },
+            "sha256": "44bfc05617868207dad0a58e9fd8bfacf17f79b1525f735c3c339b0a504925e1"
+          },
+          {
+            "text": "RaPTaR outperforms all sliding windows with various window sizes (ws) and forgetting factor values (λ), where the improvement varies between 2-5%.",
+            "locator": {
+              "version": "Warwick author accepted manuscript",
+              "pdfPage": 15,
+              "printedPage": 14,
+              "section": "5 Results and Evaluation"
+            },
+            "sha256": "23a2815c38769d6ee1126a2c4858fcb0392f6be72f28ba4489fc532a263d9a63"
+          }
+        ],
+        "workId": "work:doi:10.1017/s0269888920000077",
+        "workAuthors": [
+          "Caroline Player",
+          "Nathan Griffiths"
+        ],
+        "workPublishedAt": "2020-06-17",
+        "identityKeys": [
+          "doi:10.1017/s0269888920000077",
+          "openalex:https://openalex.org/W2997571012",
+          "semanticscholar:c7f2f606e116321cc1f78e6cf9a2733704d057ce",
+          "pdf:fa96e6e0ed2678f64b3c5d98331825c5aaf3a890b88c4415f1f5313ff3fb1a4b",
+          "proposition:4fd4ea0e137f5828603821cc9d2a1f91f444926eabdf562d33a601132f5fcede"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-015",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-015",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "Both propositions treat reputation as dynamically relevant to future interaction opportunities; Player and Griffiths directly specify temporal down-weighting and deletion of stale evidence while leaving Kaal’s stronger incumbent-value result untested.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T18:05:28.436Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "older reputation evidence is deleted or continuously down-weighted, and current assessments guide future partner selection",
+          "compatibleScope": "simulated multi-agent trust and reputation assessment used only to qualify Kaal’s broader decay discipline",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The retained source studies trust and reputation assessment in simulated multi-agent systems, not Kaal’s specific agentic-reputation substrate.",
+            "Its forgetting factors and sliding windows make reputation evidence temporally perishable, but the paper does not use Kaal’s standing-token, staking, pool, settlement, or legal-rights architecture.",
+            "The experiments test partner selection under changing behaviour; they do not directly prove that the value of the future can never reach zero for every incumbent.",
+            "RaPTaR is presented as an improvement over fixed-rate forgetting, so the qualification does not endorse a single global decay parameter."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
