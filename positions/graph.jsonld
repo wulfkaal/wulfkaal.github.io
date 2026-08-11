@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-281",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-281",
+   "text": "Pizzi and coauthors provide an independent implementation precedent for the narrower inspectable-history mechanism in Kaal's claim. AiiDA represents calculations and data as nodes connected by directional, labeled links, producing a directed acyclic graph from initial data through intermediate calculations to final results. The system saves that provenance chain and supports fast queries over data history. This qualifies the proposition that a directed, ordered structure can preserve an inspectable record of accumulated work. AiiDA applies to computational workflows and data rather than a population of autonomous agents, and it does not establish reputation weighting, validation, adjudication, or governance in Kaal's WDAG.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1016/j.commatsci.2015.09.013"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7260278-023"
+   },
+   "sha256": "3977b9c2161d19fae069a7f01c0211ba40db16061a2c439f972676f624625072",
+   "evidenceLevel": "public 30-page arXiv full text of a peer-reviewed journal article with Crossref and OpenAlex identity agreement; six exact page-bound passages",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-280",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-280",
@@ -164375,6 +164395,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1016/j.commatsci.2015.09.013",
+   "@type": "CreativeWork",
+   "name": "AiiDA: automated interactive infrastructure and database for computational science",
+   "url": "https://doi.org/10.1016/j.commatsci.2015.09.013"
+  },
+  {
    "@id": "https://doi.org/10.1162/qss_a_00021",
    "@type": "CreativeWork",
    "name": "Microsoft Academic Graph: When experts are not enough",
@@ -208851,6 +208877,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7260278-023",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7260278-023",
+   "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+   "sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7260278-022",

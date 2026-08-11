@@ -1,0 +1,181 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-023-reviewed-v2",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-023.html",
+  "source_snapshot_sha256": "1d82dcbdf0d0c907d47bee0a1867ac1b5c2766402282b6c5125f7958065c086b",
+  "review_ledger_sha256": "27d45a151075eec0e351f48fb30668a5d060e83bc22020492cf3fa68ceee2990",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 281,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-aiida-directed-provenance-history-qualification",
+      "topics": [
+        "citation-and-knowledge",
+        "reputation",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "knowledge-graphs",
+        "provenance",
+        "directed-acyclic-graphs",
+        "computational-workflows",
+        "reproducibility"
+      ],
+      "text": "Pizzi and coauthors provide an independent implementation precedent for the narrower inspectable-history mechanism in Kaal's claim. AiiDA represents calculations and data as nodes connected by directional, labeled links, producing a directed acyclic graph from initial data through intermediate calculations to final results. The system saves that provenance chain and supports fast queries over data history. This qualifies the proposition that a directed, ordered structure can preserve an inspectable record of accumulated work. AiiDA applies to computational workflows and data rather than a population of autonomous agents, and it does not establish reputation weighting, validation, adjudication, or governance in Kaal's WDAG.",
+      "scope_conditions": [
+        "The response is limited to the six page-bound passages and the one mapped Kaal claim.",
+        "External evidence level: public 30-page arXiv full text of a peer-reviewed journal article with Crossref and OpenAlex identity agreement; six exact page-bound passages.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "AiiDA records computational data and calculation provenance, not the work history of a population of autonomous agents.",
+        "Its ordering is causal through directed input-output links; the paper does not claim a reputation-weighted social historiography.",
+        "The source does not establish identity, validation, adjudication, reputation, or governance edges in Kaal's WDAG.",
+        "The relationship is used only to qualify the narrower inspectable-history mechanism and does not validate Kaal's broader architecture."
+      ],
+      "current_debate": {
+        "name": "AiiDA: automated interactive infrastructure and database for computational science",
+        "url": "https://doi.org/10.1016/j.commatsci.2015.09.013"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-023",
+        "url": "https://wulfkaal.github.io/claims/7260278-023",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-023-aiida-provenance-history-01",
+      "evidence_level": "public 30-page arXiv full text of a peer-reviewed journal article with Crossref and OpenAlex identity agreement; six exact page-bound passages",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.98,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source independently models a directed acyclic provenance graph that preserves a causal chain of work from initial data through intermediate calculations to final results and exposes fast queries over that history.",
+      "source_provenance": {
+        "source": "arXiv public full text and Computational Materials Science journal identity",
+        "sourceRecordId": "10.1016/j.commatsci.2015.09.013",
+        "doi": "10.1016/j.commatsci.2015.09.013",
+        "canonicalUrl": "https://doi.org/10.1016/j.commatsci.2015.09.013",
+        "pdfUrl": "https://arxiv.org/pdf/1504.01163",
+        "retrievedAt": "2026-08-11T22:04:48.432Z",
+        "sourcePdfSha256": "f3f32ed849eabce6f9917b84908e395a2c542037113d97bd0d11b83368069edc",
+        "extractedTextSha256": "36017fcf3f28617cf1bfb72a9bb34f4f4b2a53fcbaa355ded127db1304e443a2",
+        "textExtraction": {
+          "tool": "pdftotext -layout",
+          "quality": "clean machine-readable 30-page manuscript; six exact passages verified on PDF pages 9 and 14"
+        },
+        "crossrefMetadataSha256": "7c26888511e4bf3eb7e955deb5898fbe27d4519499113c102aec2cc8e2814002",
+        "openAlexMetadataSha256": "92c3dac34d1ed3af87b0254d561aed9ac522ae29cb1a2a21c51f719c945e3bfd",
+        "sourceProposition": "Pizzi and coauthors model calculations and data as nodes joined by directional labeled links in a directed acyclic graph that preserves the causal chain from initial data through intermediate steps to final results and supports queries over data history.",
+        "sourcePropositionSha256": "77ecc4be44d6b7bf36b4ad1805b13f3720d371698848403599e18f9ddeccbc96",
+        "sourceEvidenceSetSha256": "055d5e0c12732f01637ce116fb74ce6101e075c3330868da606e8a30dc7853f0",
+        "sourceEvidencePassages": [
+          {
+            "text": "We thus represent each fundamental object, Calculation and Data, as a node in a graph. These nodes can be connected together with directional and labeled links to represent input and output data of a calculation.",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 9,
+              "section": "5.1 The data model in AiiDA"
+            },
+            "sha256": "d4f5c0a61b8a83ce24025ce07df5f95526963c451c003b6b3d774a6f8d75e472"
+          },
+          {
+            "text": "As the output Data nodes can in turn be used as input of new calculations, we are effectively modeling a Directed Acyclic Graph (DAG) representing the chain of relationships between the initial data",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 9,
+              "section": "5.1 The data model in AiiDA"
+            },
+            "sha256": "3b811c46c5bc6512bb85aef8c6c75d1b47cbf25b82a7216d8553d41ae4719f9d"
+          },
+          {
+            "text": "through all the intermediate steps that are required to obtain the final result: the provenance information of the data is therefore saved.",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 9,
+              "section": "5.1 The data model in AiiDA"
+            },
+            "sha256": "80e1081a080a2a0ba9464553a82ccd7d7f2af2f9f3f7871547631af801720f7c"
+          },
+          {
+            "text": "The graph is acyclic because links represent a causal connection, and therefore a loop is not allowed.",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 9,
+              "section": "5.1 The data model in AiiDA"
+            },
+            "sha256": "7b53e98d0bf3a29bc6688e9906acdfedc70c490ee414faffdfa11ac848ee51ca"
+          },
+          {
+            "text": "we can store DAGs with arbitrary queryable attributes associated to each node.",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 14,
+              "section": "5.3 Graph database: querying the provenance"
+            },
+            "sha256": "b6c69f7f2e20a94adfb3b916d2d69d677feda37bf05bacf2b07678c134133eed"
+          },
+          {
+            "text": "Obviously, the DbPath table allows for fast queries on the data history",
+            "locator": {
+              "version": "arXiv:1504.01163v2",
+              "pdfPage": 14,
+              "section": "5.3 Graph database: querying the provenance"
+            },
+            "sha256": "674b83479773593bc43f55ca9370a9cc9faa2f2355238fa552b024ed09ab80e9"
+          }
+        ],
+        "workId": "work:doi:10.1016/j.commatsci.2015.09.013",
+        "workAuthors": [
+          "Giovanni Pizzi",
+          "Andrea Cepellotti",
+          "Riccardo Sabatini",
+          "Nicola Marzari",
+          "Boris Kozinsky"
+        ],
+        "workPublishedAt": "2016-01-01",
+        "identityKeys": [
+          "doi:10.1016/j.commatsci.2015.09.013",
+          "arxiv:1504.01163",
+          "pdf:f3f32ed849eabce6f9917b84908e395a2c542037113d97bd0d11b83368069edc",
+          "proposition:77ecc4be44d6b7bf36b4ad1805b13f3720d371698848403599e18f9ddeccbc96"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-023",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-023",
+            "rank": 1,
+            "confidence": 0.98,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source independently models a directed acyclic provenance graph that preserves a causal chain of work from initial data through intermediate calculations to final results and exposes fast queries over that history.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T22:04:48.432Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "directed labeled causal graph preserving the chain from initial inputs through intermediate work to final results and supporting history queries",
+          "compatibleScope": "computational-workflow provenance used only to qualify the inspectable-history mechanism",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "AiiDA records computational data and calculation provenance, not the work history of a population of autonomous agents.",
+            "Its ordering is causal through directed input-output links; the paper does not claim a reputation-weighted social historiography.",
+            "The source does not establish identity, validation, adjudication, reputation, or governance edges in Kaal's WDAG.",
+            "The relationship is used only to qualify the narrower inspectable-history mechanism and does not validate Kaal's broader architecture."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
