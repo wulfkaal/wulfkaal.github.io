@@ -1,0 +1,177 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-026-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-026.html",
+  "source_snapshot_sha256": "f3341bdfb23bed84fe038770eba948f6cf94a3b5c5755ba5056b44062d90d6d6",
+  "review_ledger_sha256": "7248fadd4fbc194a5c627458cf8761835b0e10c7ac97d631482b2fdb44cc7685",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 284,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-peer-validated-contribution-qualification",
+      "topics": [
+        "reputation",
+        "risk-and-incentives",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "peer-validation",
+        "institutional-validation",
+        "reputation-systems"
+      ],
+      "text": "Olifer independently supports a narrower peer-validation form of Kaal's accrual rule. In his network-community model, members submit documents with verifiable content; three randomly selected independent reviewers decide authenticity by simple majority; and reputation increases only after the submitted document is evaluated as authentic, while a negative evaluation reduces it. That mechanism makes a community validation decision, rather than mere activity or self-assertion, the gate for reputation accrual. It qualifies rather than fully validates Kaal's design: Olifer models document-authenticity review in a bounded community, not Kaal's broader REP ledger, legal or technical institutional attestations, capability tags, stake, citation weighting, or production governance substrate.",
+      "scope_conditions": [
+        "The response is limited to the six page-bound passages and the one mapped Kaal claim.",
+        "External evidence level: public 25-page arXiv v2 full text with arXiv and OpenAlex identity agreement; six exact page-bound passages.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The retained source is an analytical and computational model of document authenticity in a network community, not an implementation of Kaal's REP ledger.",
+        "Its peer majority functions as the modeled community's validation institution; it does not specify a separate legal entity, institutional attestation credential, or Kaal's validator governance.",
+        "The validated contribution is submission of a verifiable document, not the full range of research, code, adjudication, or governance contributions contemplated by Kaal.",
+        "The model permits reputation loss after a negative evaluation and reputation-weighted reviewer selection; it does not test Kaal's citation weighting, stake, decay, capability tags, or production security."
+      ],
+      "current_debate": {
+        "name": "A model of a virtual community with a decentralized reputation-based peer evaluation",
+        "url": "https://arxiv.org/abs/1710.07984"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-026",
+        "url": "https://wulfkaal.github.io/claims/7260278-026",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-026-peer-validated-contribution-01",
+      "evidence_level": "public 25-page arXiv v2 full text with arXiv and OpenAlex identity agreement; six exact page-bound passages",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.99,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source independently conditions reputation accrual on community evaluation of a verifiable submitted contribution as authentic.",
+      "source_provenance": {
+        "source": "arXiv v2 full text",
+        "sourceRecordId": "1710.07984",
+        "doi": "10.48550/arxiv.1710.07984",
+        "canonicalUrl": "https://arxiv.org/abs/1710.07984",
+        "pdfUrl": "https://arxiv.org/pdf/1710.07984",
+        "retrievedAt": "2026-08-11T23:34:31.264Z",
+        "sourcePdfSha256": "de771c97d6cd6f68f251a56b2a453cb0c98df6a8a99621ce7a912c67852bd42d",
+        "extractedTextSha256": "281da90edc87dbcce8f48c8a2166d281df71ea64351c2faf74520c4dcc556abb",
+        "textExtraction": {
+          "tool": "pdftotext -raw and -layout",
+          "quality": "clean machine-readable 25-page arXiv v2 PDF; six exact passages verified on PDF pages 1-3"
+        },
+        "arxivMetadataSha256": "57ec71422392582aa11c0a572309e1d9fd43e99f48e7849f8b411eb85a0c73d2",
+        "openAlexMetadataSha256": "7ef42a06f5b87d531ab0d53a88946dd65675a47175597445b82086d4dd0fccab",
+        "semanticScholarAttemptSha256": "65ab993d12c5c2cc9b68e6da2bb79b326930283e520363ffcdc145f88cd5a148",
+        "semanticScholarHttpStatus": 429,
+        "sourceProposition": "Olifer models a network community in which a member gains reputation only after a submitted verifiable document is evaluated as authentic by a majority of three randomly selected independent reviewers; an inauthentic evaluation decreases reputation.",
+        "sourcePropositionSha256": "a1c0537b85ed3577f6a798f445e6e49f9ea21eb66927d60368b631217a9530c0",
+        "sourceEvidenceSetSha256": "e597975f06705b9541a251d2dd7326bd3d4a5b8145b99dc746c85fbc5c386df5",
+        "sourceEvidencePassages": [
+          {
+            "text": "members submit documents with verifiable content.",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 1,
+              "section": "Abstract"
+            },
+            "sha256": "00c0af50d54e539f1d91212bd81ff13800e5a3de5c7c89afa463c14716318a3c"
+          },
+          {
+            "text": "Documents are evaluated by three individuals, randomly selected from all the members.",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 1,
+              "section": "Abstract"
+            },
+            "sha256": "d72eeaaf379acc9732c145a444c5470814c6b221cd6ea9f8221ecae328a6526d"
+          },
+          {
+            "text": "The members whose documents are evaluated as authentic gain reputation. Otherwise, they lose it.",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 1,
+              "section": "Abstract"
+            },
+            "sha256": "3edd6dde5d1711ce2597100d46cba9cd3a68301a49dfab4f24887a9b562f6037"
+          },
+          {
+            "text": "The proposed verification process is inspired by academia peer-reviewing.",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 1,
+              "section": "Introduction"
+            },
+            "sha256": "14d7f65ee0c4f0e6d28322180762fb251620cc0f8ada3b21fbe8b08d581713d3"
+          },
+          {
+            "text": "each of three reviewers votes pro or contra and the decision is determined by a simple majority",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 2,
+              "section": "Introduction"
+            },
+            "sha256": "db31913d380feff63bb64b9f79e83f66a1467930c2b430574630df09dfe1d649"
+          },
+          {
+            "text": "After the document, submitted by a member, is evaluated, the member’s reputation changes. It increases or remains maximal (equal to r2) if the document is evaluated as authentic. Otherwise the reputation decreases or remains minimal",
+            "locator": {
+              "version": "arXiv v2",
+              "pdfPage": 3,
+              "section": "Communities with three levels of reputation"
+            },
+            "sha256": "c13bd62a1c7b8adb6462c49ab53cabf86e1a008ff3e147ac39f31a50422f8087"
+          }
+        ],
+        "workId": "work:arxiv:1710.07984",
+        "workAuthors": [
+          "Andrei Olifer"
+        ],
+        "workPublishedAt": "2018",
+        "identityKeys": [
+          "arxiv:1710.07984",
+          "doi:10.48550/arxiv.1710.07984",
+          "pdf:de771c97d6cd6f68f251a56b2a453cb0c98df6a8a99621ce7a912c67852bd42d",
+          "proposition:a1c0537b85ed3577f6a798f445e6e49f9ea21eb66927d60368b631217a9530c0"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-026",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-026",
+            "rank": 1,
+            "confidence": 0.99,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source independently conditions reputation accrual on community evaluation of a verifiable submitted contribution as authentic.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T23:34:31.264Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "reputation changes only after a submitted verifiable document receives a community majority authenticity decision",
+          "compatibleScope": "network-community peer validation used only to qualify institutionally validated contribution",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The retained source is an analytical and computational model of document authenticity in a network community, not an implementation of Kaal's REP ledger.",
+            "Its peer majority functions as the modeled community's validation institution; it does not specify a separate legal entity, institutional attestation credential, or Kaal's validator governance.",
+            "The validated contribution is submission of a verifiable document, not the full range of research, code, adjudication, or governance contributions contemplated by Kaal.",
+            "The model permits reputation loss after a negative evaluation and reputation-weighted reviewer selection; it does not test Kaal's citation weighting, stake, decay, capability tags, or production security."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
