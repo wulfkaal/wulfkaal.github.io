@@ -1,0 +1,211 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-007-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-007.html",
+  "source_snapshot_sha256": "06bf0ad6296dcd9a944371b2e0a262be4dba3b512fc91a463417711fb99a5f08",
+  "review_ledger_sha256": "b6251e7775ab938fb95f7a1fe1c093210e0c57b02da8f2c6dc987a412147ede1",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 265,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-free-mad-consensus-free-qualification-734f8c21de",
+      "topics": [
+        "institutional-design",
+        "consensus-and-security",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "multi-agent-debate",
+        "anti-conformity",
+        "decision-mechanisms"
+      ],
+      "text": "Cui et al.’s FREE-MAD supplies an experimentally evaluated alternative to the anti-conformity mechanism in Kaal’s staged-deliberation design. Agents begin with independently generated answers, critically assess peer reasoning without being instructed to follow the majority, and a score-based mechanism derives the final answer from the full trajectory rather than last-round consensus. Across eight reasoning benchmarks, the authors report better reasoning performance with a single-round debate. The comparison qualifies Kaal’s stronger design: FREE-MAD exposes peer responses, has no separately accountable binding adjudicator, and mitigates conformity through prompting and scoring rather than by making the running consensus unobservable.",
+      "scope_conditions": [
+        "The response is limited to the page-bound full-text mechanism evidence and the one mapped Kaal claim.",
+        "External evidence level: ACL Anthology published full text with Crossref and OpenAlex identity verification, exact PDF SHA-256, and page-bound mechanism evidence.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source evaluates multi-agent LLM reasoning benchmarks, not legal or institutional binding judgment.",
+        "FREE-MAD exposes peer responses during one debate round; it mitigates conformity by prompt and scoring rather than hiding a running consensus signal.",
+        "The score-based decision mechanism is not a separately accountable adjudicator and includes randomized tie resolution.",
+        "Reported benchmark improvements do not prove that Kaal's broader architecture guarantees independence, security, or institutional validity."
+      ],
+      "current_debate": {
+        "name": "Free-MAD: Consensus-Free Multi-Agent Debate",
+        "url": "https://doi.org/10.18653/v1/2026.findings-acl.1600"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-007",
+        "url": "https://wulfkaal.github.io/claims/7260278-007",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-007-free-mad-01",
+      "evidence_level": "ACL Anthology published full text with Crossref and OpenAlex identity verification, exact PDF SHA-256, and page-bound mechanism evidence",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.91,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "Both works preserve independent initial reasoning, expose claims to critical exchange, and avoid treating observed majority consensus as the final-decision rule; FREE-MAD supplies experimental evidence for an alternative anti-conformity mechanism and therefore qualifies the stronger hidden-consensus design.",
+      "source_provenance": {
+        "source": "ACL Anthology published full text, Crossref, and OpenAlex",
+        "sourceRecordId": "10.18653/v1/2026.findings-acl.1600",
+        "doi": "10.18653/v1/2026.findings-acl.1600",
+        "canonicalUrl": "https://doi.org/10.18653/v1/2026.findings-acl.1600",
+        "anthologyUrl": "https://aclanthology.org/2026.findings-acl.1600/",
+        "pdfUrl": "https://aclanthology.org/2026.findings-acl.1600.pdf",
+        "retrievedAt": "2026-08-11T14:15:53.814Z",
+        "crossrefResponseBodySha256": "b2aed5c74aa5189f058ec3eeadc612748c87f025114051f900208ed23e37ccc4",
+        "openAlexResponseBodySha256": "c8c81779e54b7f5d45865c030a6cea6e43d3540264212cc8793911224d544f9d",
+        "anthologyLandingPageSha256": "720bc868880a1f58ca1fa86b487db7926d018b729b5ca6452e868b2040313482",
+        "pdfSha256": "f22d0829b7c6f91a3540a01ca8e2e597b7fefb55ef780814bf1ad7aa60986f27",
+        "pdfPages": 21,
+        "textExtraction": {
+          "tool": "pdftotext",
+          "quality": "clean machine-readable full text; independent-initial-response, anti-conformity debate, and score-based final-answer passages verified on PDF pages 1, 4, 5, and 6"
+        },
+        "sourceProposition": "FREE-MAD records independently generated initial responses, conducts a consensus-free debate with anti-conformity prompting, and derives a final answer through a score mechanism over the full response trajectory rather than last-round consensus.",
+        "sourcePropositionSha256": "4bdda37ec20a0966da1bcd835a867e4b07564302722c7a3b22ebf2ec2c36dcba",
+        "evidenceSetSha256": "bfa4522a4ceced47c83e10671b1dcc128d69ab50c65e433c028af21092a662b2",
+        "evidencePassages": [
+          {
+            "text": "FREE-MAD introduces a novel score-based decision mechanism that evaluates the entire debate trajectory rather than relying on the last round only.",
+            "locator": {
+              "pdfPage": 1,
+              "printedPage": 31977,
+              "section": "Abstract",
+              "pageTextSha256": "28dfc78c16ed4a37a1d39e88aa489b4ff28a36fe0d841ad619bf4c5d72e2f017"
+            },
+            "sha256": "6688b342a46bbc0250c5f84f7bb406e551546109aab0577c6cf7cb8d4bbf2b65"
+          },
+          {
+            "text": "From empirical observations, we find that the initial responses generated independently by multiple agents may outperform the debate results obtained after applying MAD.",
+            "locator": {
+              "pdfPage": 4,
+              "printedPage": 31980,
+              "section": "3.2 Weaknesses of Existing MAD Approaches",
+              "pageTextSha256": "bb861fa042e5a189c158a167ec8a3ba24abbbfabcdc8625d677841f158c7696e"
+            },
+            "sha256": "0716244bf3b8972fb189f76c4841b050270b5dea0b520836f848e5a26065dd8f"
+          },
+          {
+            "text": "Agents are expected to change their beliefs only if there is a clear indication that their own answer is incorrect, rather than aiming to reach consensus with others.",
+            "locator": {
+              "pdfPage": 5,
+              "printedPage": 31981,
+              "section": "4.2 Consensus-Free Debate",
+              "pageTextSha256": "32f9897ff06cf0a94925b74bd8768c9d5dfaee17f733e79307cce4fce49f5404"
+            },
+            "sha256": "f3d042b36d888d84ba7b639bea7d39b0d9b09a05c0a8591a1ef5fd63b443a8aa"
+          },
+          {
+            "text": "The agents in this framework are not designed to seek consensus; instead, they rigorously assess the reasoning behind the answers.",
+            "locator": {
+              "pdfPage": 6,
+              "printedPage": 31982,
+              "section": "4.3 Score-Based Decision Mechanism",
+              "pageTextSha256": "ac0880da211a8d64c7d9a5326fb93c6b667d8eddf3167073969a96cc205458ec"
+            },
+            "sha256": "7d99f96060110a64a3b6beb0ae4a22946a2436ba7069068c4f29bbf6bee4adad"
+          }
+        ],
+        "workId": "work:doi:10.18653/v1/2026.findings-acl.1600",
+        "workAuthors": [
+          "Yu Cui",
+          "Hang Fu",
+          "Haibin Zhang",
+          "Licheng Wang",
+          "Cong Zuo"
+        ],
+        "workPublishedAt": "2026-07-02",
+        "identityKeys": [
+          "doi:10.18653/v1/2026.findings-acl.1600",
+          "openalex:W4415087697",
+          "pdf:f22d0829b7c6f91a3540a01ca8e2e597b7fefb55ef780814bf1ad7aa60986f27",
+          "evidence-set:bfa4522a4ceced47c83e10671b1dcc128d69ab50c65e433c028af21092a662b2",
+          "proposition:4bdda37ec20a0966da1bcd835a867e4b07564302722c7a3b22ebf2ec2c36dcba"
+        ],
+        "sourceEvidenceSetSha256": "bfa4522a4ceced47c83e10671b1dcc128d69ab50c65e433c028af21092a662b2",
+        "sourceEvidencePassages": [
+          {
+            "text": "FREE-MAD introduces a novel score-based decision mechanism that evaluates the entire debate trajectory rather than relying on the last round only.",
+            "locator": {
+              "pdfPage": 1,
+              "printedPage": 31977,
+              "section": "Abstract",
+              "pageTextSha256": "28dfc78c16ed4a37a1d39e88aa489b4ff28a36fe0d841ad619bf4c5d72e2f017"
+            },
+            "sha256": "6688b342a46bbc0250c5f84f7bb406e551546109aab0577c6cf7cb8d4bbf2b65"
+          },
+          {
+            "text": "From empirical observations, we find that the initial responses generated independently by multiple agents may outperform the debate results obtained after applying MAD.",
+            "locator": {
+              "pdfPage": 4,
+              "printedPage": 31980,
+              "section": "3.2 Weaknesses of Existing MAD Approaches",
+              "pageTextSha256": "bb861fa042e5a189c158a167ec8a3ba24abbbfabcdc8625d677841f158c7696e"
+            },
+            "sha256": "0716244bf3b8972fb189f76c4841b050270b5dea0b520836f848e5a26065dd8f"
+          },
+          {
+            "text": "Agents are expected to change their beliefs only if there is a clear indication that their own answer is incorrect, rather than aiming to reach consensus with others.",
+            "locator": {
+              "pdfPage": 5,
+              "printedPage": 31981,
+              "section": "4.2 Consensus-Free Debate",
+              "pageTextSha256": "32f9897ff06cf0a94925b74bd8768c9d5dfaee17f733e79307cce4fce49f5404"
+            },
+            "sha256": "f3d042b36d888d84ba7b639bea7d39b0d9b09a05c0a8591a1ef5fd63b443a8aa"
+          },
+          {
+            "text": "The agents in this framework are not designed to seek consensus; instead, they rigorously assess the reasoning behind the answers.",
+            "locator": {
+              "pdfPage": 6,
+              "printedPage": 31982,
+              "section": "4.3 Score-Based Decision Mechanism",
+              "pageTextSha256": "ac0880da211a8d64c7d9a5326fb93c6b667d8eddf3167073969a96cc205458ec"
+            },
+            "sha256": "7d99f96060110a64a3b6beb0ae4a22946a2436ba7069068c4f29bbf6bee4adad"
+          }
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-007",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-007",
+            "rank": 1,
+            "confidence": 0.91,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "Both works preserve independent initial reasoning, expose claims to critical exchange, and avoid treating observed majority consensus as the final-decision rule; FREE-MAD supplies experimental evidence for an alternative anti-conformity mechanism and therefore qualifies the stronger hidden-consensus design.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T14:15:53.814Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "independent initial reasoning, critical exchange, explicit anti-conformity, and a final-answer rule that does not equate last-round majority with correctness",
+          "compatibleScope": "multi-agent LLM benchmark evidence used only as a bounded extension of the anti-conformity portion of Kaal's staged-deliberation design",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The source evaluates multi-agent LLM reasoning benchmarks, not legal or institutional binding judgment.",
+            "FREE-MAD exposes peer responses during one debate round; it mitigates conformity by prompt and scoring rather than hiding a running consensus signal.",
+            "The score-based decision mechanism is not a separately accountable adjudicator and includes randomized tie resolution.",
+            "Reported benchmark improvements do not prove that Kaal's broader architecture guarantees independence, security, or institutional validity."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
