@@ -1,0 +1,184 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-022-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-022.html",
+  "source_snapshot_sha256": "41428b80a48d6f46e2ea93dd28b7d29705de9d002ba082186364d18006993a2c",
+  "review_ledger_sha256": "3195c85206be8867fb25cf15013efa1b3b52b0cc6498894a7e5a6e15915df205",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 280,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-mag-typed-scholarly-relations-qualification-qssa00021",
+      "topics": [
+        "citation-and-knowledge",
+        "institutional-design",
+        "reputation",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "knowledge-graphs",
+        "scholarly-communication",
+        "citation-networks",
+        "typed-relationships",
+        "fields-of-study"
+      ],
+      "text": "Wang and coauthors provide an independent implementation precedent for the narrower representation pattern in Kaal's claim. Microsoft Academic Graph models scholarly communications as a heterogeneous graph centered on publications, with directed typed relations for authorship, concepts, publication venues, citations, and semantic relatedness. Its concept entities categorize publications by field of study, and its citing relation can carry citation-context attributes. This supports the narrower proposition that an institutional scholarly graph can represent contributions or publications and multiple typed citation and domain relationships. It does not establish a typed validation relationship, autonomous-agent identity, reputation effects, or governance in Kaal's WDAG, and it does not validate the broader agentic reputation substrate.",
+      "scope_conditions": [
+        "The response is limited to the six page-bound passages and the one mapped Kaal claim.",
+        "External evidence level: public 18-page MIT Press CC-BY full text with Crossref and OpenAlex identity agreement; six exact page-bound passages.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "MAG is a bibliographic and scholarly-communication graph, not Kaal's WDAG or an agentic reputation substrate.",
+        "The source specifies typed authorship, concept, venue, citation, and semantic-relatedness edges but does not define a typed validation relationship among contributions.",
+        "Publications, rather than autonomous-agent contributions or adjudication records, are the central MAG entity.",
+        "The relationship is used only to qualify the narrower institutional representation pattern and does not validate Kaal's broader architecture."
+      ],
+      "current_debate": {
+        "name": "Microsoft Academic Graph: When experts are not enough",
+        "url": "https://doi.org/10.1162/qss_a_00021"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-022",
+        "url": "https://wulfkaal.github.io/claims/7260278-022",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-022-mag-typed-relations-01",
+      "evidence_level": "public 18-page MIT Press CC-BY full text with Crossref and OpenAlex identity agreement; six exact page-bound passages",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.98,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source independently implements a scholarly graph centered on publications and explicitly names typed directed relations for authorship, concepts, venues, citations, and semantic relatedness, plus field-of-study categorization.",
+      "source_provenance": {
+        "source": "MIT Press Quantitative Science Studies",
+        "sourceRecordId": "10.1162/qss_a_00021",
+        "doi": "10.1162/qss_a_00021",
+        "canonicalUrl": "https://doi.org/10.1162/qss_a_00021",
+        "pdfUrl": "https://www.mitpressjournals.org/doi/pdf/10.1162/qss_a_00021",
+        "retrievedAt": "2026-08-11T21:41:09.334Z",
+        "sourcePdfSha256": "373dbc96288b8a53ea2d7db37d940afcc520c9e7208d7bee8d83e4682258c69c",
+        "extractedTextSha256": "f51eb3f53769121bb39ec51aa2c73d07ce8465d71f3eee2984c4c3f2707af961",
+        "textExtraction": {
+          "tool": "pdftotext -layout",
+          "quality": "clean machine-readable 18-page journal article; six exact passages verified on PDF pages 4, 5, and 12"
+        },
+        "crossrefMetadataSha256": "3350ac3526727fbccbb3563d1c1e462433b19ada99bdbfb703f31d355d6a78f0",
+        "openAlexMetadataSha256": "f59be519a48291c0d65a9df313f140c55f749cd68ac6562a6dca70d453180d4f",
+        "articlePageFetchSha256": "bf25c41aa805d351b1d67becfae974faf76f9546fd10618a21bde297ced7c952",
+        "articlePageFetchStatus": 403,
+        "sourceProposition": "Wang and coauthors describe Microsoft Academic Graph as a heterogeneous scholarly-communication graph centered on publications, with directed typed relationships for authorship, concepts, venues, citations, and semantic relatedness, while concept entities categorize publications by field of study.",
+        "sourcePropositionSha256": "f2593476c21ad4c67ac4d858c4cabfba25641a8d537e3ceda880f19a7e2428d8",
+        "sourceEvidenceSetSha256": "882ae5d84bb1d831e1ea9b20d363c2ef36fba93c4ad052da43e5f758511eb94a",
+        "sourceEvidencePassages": [
+          {
+            "text": "MAG uses a graph structure in which the nodes and the edges represent the entities involved in the scholarly communications and the interactions or relationships among them, respectively.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 4,
+              "section": "2 MAG Schema"
+            },
+            "sha256": "d6d626e0194456fe4c163ea7c5eb79fd1a11419af40a85b9e6b5664988ec3015"
+          },
+          {
+            "text": "Publications are the main entity type in that all other entities are connected to a publication one way or another.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 5,
+              "section": "2.1 Publications"
+            },
+            "sha256": "d22821d180e28992716f505344eb47f3ce741e2c7ec797496c9a871ba6fd4a7f"
+          },
+          {
+            "text": "Accordingly, in MAG, authorship relations are modeled as “has authors” and represented by a directed edge from a publication to each of its authors, rather than the other way around, representing a “having authored” relation of an author.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 5,
+              "section": "2.1 Publications"
+            },
+            "sha256": "1b7d5b4050906039dc9bb37602f3f6cc6e53d9b246aa763c81f81a13939688a9"
+          },
+          {
+            "text": "to a concept and “is published at” to a venue entity, respectively.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 5,
+              "section": "2.1 Publications"
+            },
+            "sha256": "2156f88399fa628f2aa8ceb0eed362583569941fb1d8812bcc08288c45911bcd"
+          },
+          {
+            "text": "In addition to the “citing” relation among publications, the AI agents in MAS further infer an “is related to” relation based on the semantic similarities of the contents, of which software utilities are also included in the MAG distribution, as described below.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 5,
+              "section": "2.1 Publications"
+            },
+            "sha256": "a242a92b2a7e0b0ab9c979c9ed962017f1612f417ed9137658622680fbb14243"
+          },
+          {
+            "text": "Concepts are the entities MAG uses to categorize the fields of study of publications.",
+            "locator": {
+              "version": "Quantitative Science Studies 1(1), 396-413",
+              "pdfPage": 12,
+              "section": "2.5 Concepts"
+            },
+            "sha256": "280af46851783a79cb37736643ab2a3efcaf67a19b18338b953dda637d986653"
+          }
+        ],
+        "workId": "work:doi:10.1162/qss_a_00021",
+        "workAuthors": [
+          "Kuansan Wang",
+          "Zhihong Shen",
+          "Chiyuan Huang",
+          "Chieh-Han Wu",
+          "Yuxiao Dong",
+          "Anshul Kanakia"
+        ],
+        "workPublishedAt": "2020-02-01",
+        "identityKeys": [
+          "doi:10.1162/qss_a_00021",
+          "pdf:373dbc96288b8a53ea2d7db37d940afcc520c9e7208d7bee8d83e4682258c69c",
+          "proposition:f2593476c21ad4c67ac4d858c4cabfba25641a8d537e3ceda880f19a7e2428d8"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-022",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-022",
+            "rank": 1,
+            "confidence": 0.98,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source independently implements a scholarly graph centered on publications and explicitly names typed directed relations for authorship, concepts, venues, citations, and semantic relatedness, plus field-of-study categorization.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-11T21:41:09.334Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "publication-centered heterogeneous scholarly graph with directed typed relations for authorship, concepts, venues, citations, and semantic relatedness",
+          "compatibleScope": "bibliographic scholarly-communication graph used only to qualify typed institutional representation of contributions or publications",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "MAG is a bibliographic and scholarly-communication graph, not Kaal's WDAG or an agentic reputation substrate.",
+            "The source specifies typed authorship, concept, venue, citation, and semantic-relatedness edges but does not define a typed validation relationship among contributions.",
+            "Publications, rather than autonomous-agent contributions or adjudication records, are the central MAG entity.",
+            "The relationship is used only to qualify the narrower institutional representation pattern and does not validate Kaal's broader architecture."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
