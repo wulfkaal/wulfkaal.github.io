@@ -1,0 +1,200 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-300",
+ "identifier": "kaal:position:2026-08-08-300",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Peer Prediction Tests Llm Truthfulness Without Ground Truth Labels",
+ "text": "Qiu, Carroll, and Allen qualify Kaal's diagnosis by supplying an incentive-bearing LLM evaluation that does not require ground-truth labels. Their peer-prediction pipeline scores a participant by how much its answer helps an independent expert predict another participant's answer. It separately rewards experts for faithfully reporting probability estimates and converts the scores into training rewards or evaluation payoffs. Under stated prior assumptions, honest and informative reporting is a payoff-maximizing equilibrium. Experiments across models from 135M to 405B parameters and 85 domains show resistance to deceptive answers and recovery of most of the truthfulness loss after malicious fine-tuning. This does not verify work quality against Kaal's reputation substrate, and it does not directly measure calibration, herding, or free-riding. It shows that mutual-predictability rewards are a bounded alternative to verified-quality payoffs for testing truthfulness and informativeness.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "ai-and-agents",
+  "economics",
+  "risk-and-incentives",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "large-language-models",
+  "agent-evaluation",
+  "peer-prediction",
+  "incentive-compatible-evaluation",
+  "truthfulness"
+ ],
+ "scope_conditions": [
+  "The response is limited to the four evidence-bound passages and the one mapped Kaal claim.",
+  "External evidence level: complete public 36-page arXiv 2601.20299v1 preprint with arXiv and OpenAlex identity, exact page-bound passages, formal incentive analysis, and empirical LLM evaluation.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The source is arXiv 2601.20299v1. The inspected arXiv and OpenAlex records establish public preprint identity but not peer-review acceptance.",
+  "The method uses mutual-predictability scores without ground-truth labels. It does not make payoff depend on independently verified work quality in Kaal's sense.",
+  "The exact incentive-compatibility theorem assumes shared priors. The heterogeneous-prior result requires sufficiently large and diverse participant and expert pools under stated distributional assumptions.",
+  "The experiments cover specified question-answering tasks, 85 domains, and models from 135M to 405B parameters. They do not test Kaal's controlled cohort or reputation substrate.",
+  "The paper tests truthfulness, informativeness, and deception resistance. It does not directly measure confidence calibration, visible-consensus herding, or contribution free-riding as separated outcomes.",
+  "Semantic Scholar returned HTTP 429 for the bounded searches and direct Qiu record. arXiv, the complete public preprint, and OpenAlex independently bind the retained source."
+ ],
+ "currentDebate": {
+  "name": "Truthfulness Despite Weak Supervision: Evaluating and Training LLMs Using Peer Prediction",
+  "url": "https://arxiv.org/abs/2601.20299"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261018-002",
+  "url": "https://wulfkaal.github.io/claims/7261018-002",
+  "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+  "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261018",
+  "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261018-002"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Truthfulness Despite Weak Supervision: Evaluating and Training LLMs Using Peer Prediction",
+   "url": "https://arxiv.org/abs/2601.20299"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-002-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-002.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-300",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-300.md",
+ "candidateId": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-002-qiu-peer-prediction-01",
+ "evidenceLevel": "complete public 36-page arXiv 2601.20299v1 preprint with arXiv and OpenAlex identity, exact page-bound passages, formal incentive analysis, and empirical LLM evaluation",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.98,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source implements an LLM evaluation in which peer-prediction scores can operate as payoffs and empirically distinguish honest from deceptive answers. It qualifies Kaal's stronger verified-quality premise by showing a bounded non-ground-truth incentive mechanism for truthfulness and informativeness.",
+ "sourceProvenance": {
+  "source": "complete public arXiv preprint independently bound through arXiv and OpenAlex",
+  "sourceRecordId": "arxiv:2601.20299",
+  "canonicalUrl": "https://arxiv.org/abs/2601.20299",
+  "publicPdfUrl": "https://arxiv.org/pdf/2601.20299",
+  "retrievedAt": "2026-08-12T07:47:31.106Z",
+  "publicPdfSha256": "c0c8885d4292eabc980e1f66f4463c78a999e9e9dc697564de9d0856599bf4bb",
+  "publicPdfBytes": 4412318,
+  "extractedFlowTextSha256": "a554d732140b078f87eabbe157c6c5091c41985eaaa57aae858749d7e62fde90",
+  "extractedLayoutTextSha256": "88164a7bb20f79ad34a3caac4bdddbba463ed3e933ec45cb9043383f15503982",
+  "textExtraction": {
+   "tool": "pdftotext flow and layout extraction",
+   "quality": "complete searchable 36-page public preprint; title, authors, version, and exact page-bound passages verified"
+  },
+  "arxivResponseBodySha256": "f0b57a822d860e6daae7f1509aece17ac71ea4f131f9c2301c6bd570de022529",
+  "openAlexResponseBodySha256": "e7261cebc3a90584707c18ec0f56bbc5741c74a00acfea915d578dba6d77769f",
+  "semanticScholarAttempt": {
+   "httpStatus": 429,
+   "responseBodySha256": "65ab993d12c5c2cc9b68e6da2bb79b326930283e520363ffcdc145f88cd5a148",
+   "publicationDecisionEffect": "none; arXiv, complete public preprint, and OpenAlex independently bind the source"
+  },
+  "openReviewSearchAttempt": {
+   "httpStatus": 200,
+   "responseBodySha256": "0d1b0019ceea56f147d74bde24dc2c0fbb03722a64f6ec78d276448be12af249",
+   "venueConfirmationFound": false
+  },
+  "sourceProposition": "Qiu, Carroll, and Allen adapt peer prediction to LLM evaluation and training so participant and expert scores can function as payoffs: a participant is rewarded for how much its answer helps an independent expert predict another participant's answer, experts are rewarded for faithfully reporting probability estimates, and the induced equilibrium favors honest and informative rather than deceptive or uninformative reports; experiments cover models from 135M to 405B parameters and 85 domains.",
+  "sourcePropositionSha256": "7fa3b344cd629d1e8bfab5f448dbf26299dc3b9fee792762507c59488da14e25",
+  "sourceEvidenceSetSha256": "626e743628431b344eea612c38c972612519a7e1d75e52826660170218c1c156",
+  "sourceEvidencePassages": [
+   {
+    "text": "It rewards honest and informative answers over deceptive and uninformative ones, using a metric based on mutual predictability and without requiring ground truth labels.",
+    "locator": {
+     "version": "arXiv 2601.20299v1",
+     "pdfPage": 1,
+     "section": "Abstract"
+    },
+    "sha256": "14cd48d3d4f9605442bc6a75164d239900acbcc624116b4a09050a8db0bc27e1"
+   },
+   {
+    "text": "The mechanism rewards the source for informative answers, and each participant's final score is its average reward as a source across all rounds. Using the logarithmic scoring rule, the mechanism rewards the expert for faithfully reporting their probability estimates on the target's answer.",
+    "locator": {
+     "version": "arXiv 2601.20299v1",
+     "pdfPage": 5,
+     "section": "3.1 The Peer Prediction Evaluation Pipeline",
+     "note": "Faithful combination of two exact bullet passages on the same PDF page; no quotation marks used in the public response."
+    },
+    "sha256": "efcbdad9caf790f0c4c70d53c4e0aa561b1c8e85c774189b2fdeccf6ab330842"
+   },
+   {
+    "text": "Theorem 1 states that the peer prediction method is incentive compatible, and thus resistant to deception and strategic manipulation. In particular, models are incentivised to converge upon honest and informative policies, if either (I) they are trained on the peer prediction scores as reward signals, or (II) they perform inference-time reasoning to maximize the evaluation scores.",
+    "locator": {
+     "version": "arXiv 2601.20299v1",
+     "pdfPage": 6,
+     "section": "3.3 Formal Properties"
+    },
+    "sha256": "652c251d362e3b66fb4a103cf11d4347d52e69b8aa4d4e1dfa7c321ccd815310"
+   },
+   {
+    "text": "We use models ranging from 135M to 405B parameters in size, and a set of questions from 85 different domains.",
+    "locator": {
+     "version": "arXiv 2601.20299v1",
+     "pdfPage": 7,
+     "section": "4 Experiments"
+    },
+    "sha256": "9612367abd600ed234d46a92991bfb4e0abd4fa3852b1d12dea49365fe22c862"
+   }
+  ],
+  "workId": "work:arxiv:2601.20299",
+  "workAuthors": [
+   "Tianyi Alex Qiu",
+   "Micah Carroll",
+   "Cameron Allen"
+  ],
+  "workPublishedAt": "2026-01-28",
+  "identityKeys": [
+   "arxiv:2601.20299",
+   "openalex:W7126123644",
+   "pdf:c0c8885d4292eabc980e1f66f4463c78a999e9e9dc697564de9d0856599bf4bb",
+   "proposition:7fa3b344cd629d1e8bfab5f448dbf26299dc3b9fee792762507c59488da14e25"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261018-002",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261018-002",
+    "rank": 1,
+    "confidence": 0.98,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source implements an LLM evaluation in which peer-prediction scores can operate as payoffs and empirically distinguish honest from deceptive answers. It qualifies Kaal's stronger verified-quality premise by showing a bounded non-ground-truth incentive mechanism for truthfulness and informativeness.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-12T07:47:31.106Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "peer-prediction scores reward participant informativeness and expert probability reporting and can serve as evaluation payoffs or training rewards",
+   "compatibleScope": "qualification limited to LLM truthfulness, informativeness, and deception resistance under the paper's theoretical assumptions and tested question-answering settings",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "limitations": [
+    "The source is arXiv 2601.20299v1. The inspected arXiv and OpenAlex records establish public preprint identity but not peer-review acceptance.",
+    "The method uses mutual-predictability scores without ground-truth labels. It does not make payoff depend on independently verified work quality in Kaal's sense.",
+    "The exact incentive-compatibility theorem assumes shared priors. The heterogeneous-prior result requires sufficiently large and diverse participant and expert pools under stated distributional assumptions.",
+    "The experiments cover specified question-answering tasks, 85 domains, and models from 135M to 405B parameters. They do not test Kaal's controlled cohort or reputation substrate.",
+    "The paper tests truthfulness, informativeness, and deception resistance. It does not directly measure confidence calibration, visible-consensus herding, or contribution free-riding as separated outcomes.",
+    "Semantic Scholar returned HTTP 429 for the bounded searches and direct Qiu record. arXiv, the complete public preprint, and OpenAlex independently bind the retained source."
+   ]
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "d5753c33d94945d4d92d4cf4894b10575aff4242c6e37a5c5e6e5e347cb30433"
+}

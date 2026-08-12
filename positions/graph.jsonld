@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-300",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-300",
+   "text": "Qiu, Carroll, and Allen qualify Kaal's diagnosis by supplying an incentive-bearing LLM evaluation that does not require ground-truth labels. Their peer-prediction pipeline scores a participant by how much its answer helps an independent expert predict another participant's answer. It separately rewards experts for faithfully reporting probability estimates and converts the scores into training rewards or evaluation payoffs. Under stated prior assumptions, honest and informative reporting is a payoff-maximizing equilibrium. Experiments across models from 135M to 405B parameters and 85 domains show resistance to deceptive answers and recovery of most of the truthfulness loss after malicious fine-tuning. This does not verify work quality against Kaal's reputation substrate, and it does not directly measure calibration, herding, or free-riding. It shows that mutual-predictability rewards are a bounded alternative to verified-quality payoffs for testing truthfulness and informativeness.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2601.20299"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261018-002"
+   },
+   "sha256": "d5753c33d94945d4d92d4cf4894b10575aff4242c6e37a5c5e6e5e347cb30433",
+   "evidenceLevel": "complete public 36-page arXiv 2601.20299v1 preprint with arXiv and OpenAlex identity, exact page-bound passages, formal incentive analysis, and empirical LLM evaluation",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-299",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-299",
@@ -164755,6 +164775,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://arxiv.org/abs/2601.20299",
+   "@type": "CreativeWork",
+   "name": "Truthfulness Despite Weak Supervision: Evaluating and Training LLMs Using Peer Prediction",
+   "url": "https://arxiv.org/abs/2601.20299"
+  },
+  {
    "@id": "https://arxiv.org/abs/2605.14537",
    "@type": "CreativeWork",
    "name": "Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining",
@@ -209345,6 +209371,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261018-002",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261018-002",
+   "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+   "sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261018-001",
