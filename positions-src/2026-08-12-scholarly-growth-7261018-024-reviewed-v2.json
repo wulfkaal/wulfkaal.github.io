@@ -1,0 +1,148 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-024-reviewed-v2",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-024.html",
+  "source_snapshot_sha256": "c66cc250ac176022eda8344d0e93392f2ca8365a99ba994fd2403c1876abe112",
+  "review_ledger_sha256": "c5f90816a171e97d1920a6608adf44166a7dc2d1d60eebe18e2be8237c85994c",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 321,
+      "response_type": "qualification",
+      "slug": "peer-rated-task-performance-changes-agent-reputation",
+      "topics": [
+        "reputation",
+        "risk-and-incentives",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "agent-reputation",
+        "performance-validation",
+        "llm-agents"
+      ],
+      "text": "Lou et al. provide a narrow operational analogue to Kaal's standing mechanism. Their DRF framework raises an LLM agent's reputation when its peer-derived task score meets the task threshold and lowers reputation when the score falls below it. The source supports performance-contingent gains and losses in standing. It does not establish independent or cryptographic verification, and it tests a simulated rating network rather than Kaal's substrate.",
+      "scope_conditions": [
+        "The response is limited to the exact reputation-update passages and the one mapped Kaal claim.",
+        "External evidence level: complete public arXiv v1 manuscript bound through title, seven authors, category, date, PDF hash, HTML identity, extracted text, section, equations, and printed-page locators.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The rating network evaluates agent task plans and performance through peer agents rather than independent or cryptographic verification.",
+        "The task threshold is set from task requirements and empirical experience rather than derived from Kaal's validation design.",
+        "The experiments use simulated LLM-agent teams and do not evaluate Kaal's cohort or reference implementation.",
+        "The source does not establish production security, resistance to collusion, or identity-replacement resistance.",
+        "Semantic Scholar fresh search returned HTTP 429, while the complete arXiv manuscript remained publicly accessible."
+      ],
+      "current_debate": {
+        "name": "DRF: LLM-AGENT Dynamic Reputation Filtering Framework",
+        "url": "https://arxiv.org/abs/2509.05764"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261018-024",
+        "url": "https://wulfkaal.github.io/claims/7261018-024",
+        "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+        "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261018",
+        "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-024-lou-et-al-01-v2",
+      "evidence_level": "complete public arXiv v1 manuscript bound through title, seven authors, category, date, PDF hash, HTML identity, extracted text, section, equations, and printed-page locators",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.98,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source expressly increases or decreases an LLM agent's reputation according to an evaluated task score, while exposing the narrower peer-rating verification model.",
+      "source_provenance": {
+        "source": "complete public arXiv v1 manuscript",
+        "sourceRecordId": "arxiv:2509.05764v1",
+        "canonicalUrl": "https://arxiv.org/abs/2509.05764",
+        "publicFullTextUrl": "https://arxiv.org/pdf/2509.05764",
+        "retrievedAt": "2026-08-12T22:39:26.158Z",
+        "publicPdfSha256": "4366c277eb3fe3074ef332d32340c451ba59329ec3a81d43687080ca4f99165b",
+        "publicHtmlSha256": "6ea2f87c65ae509b079b3db3d032449562419dec63d4d6345d7d9c55c095cf9f",
+        "extractedTextSha256": "e9ce3b230e7d28d029a967f72a780402aa95de0812cff467d0b2afc5386bd640",
+        "textExtraction": {
+          "tool": "pdftotext 25.06.0 layout mode",
+          "quality": "complete 15-page manuscript with title, authors, section headings, equations, experiment descriptions, and stable printed-page locators"
+        },
+        "sourceProposition": "Lou et al. assign reputation to LLM agents after a multi-agent rating round. Their mechanism increases reputation when a peer-derived task score meets the task threshold and decreases reputation when the score falls below it. This independently supports Kaal's proposition that standing can rise or fall through evaluated work. The source uses peer ratings rather than independent or cryptographic verification, and its experiments test a simulated LLM-agent framework rather than Kaal's substrate.",
+        "sourcePropositionSha256": "396b499bd61e6f9b7ef61d3e143387ea4e75fc59002832771b6e18497201fac6",
+        "sourceEvidenceSetSha256": "63ec6fbebb25073a52296c11969cd4627ea405dac61b6d262f979d8adae014c2",
+        "sourceEvidencePassages": [
+          {
+            "text": "it indicates that agent i has performed well in that task time interval and its reputation should be increased, as shown in Equation (7).",
+            "locator": {
+              "version": "arXiv:2509.05764v1",
+              "printedPage": 8,
+              "section": "4.2 LLM-Agent Reputation Iteration Mechanism",
+              "publicPdfSha256": "4366c277eb3fe3074ef332d32340c451ba59329ec3a81d43687080ca4f99165b"
+            },
+            "sha256": "093e3374621beafd47d3c1bd0089decd769c8cb9faf063d11a77763a35598b63"
+          },
+          {
+            "text": "it indicates that agent i has performed poorly in that task time interval, likely due to malicious interference or inherently being a subpar agent. Therefore, we need to use Equation (8) to decrease the reputation of the agent.",
+            "locator": {
+              "version": "arXiv:2509.05764v1",
+              "printedPage": 9,
+              "section": "4.2 LLM-Agent Reputation Iteration Mechanism",
+              "publicPdfSha256": "4366c277eb3fe3074ef332d32340c451ba59329ec3a81d43687080ca4f99165b"
+            },
+            "sha256": "f828e570133b98a7fa5751e4dfb92b409d191ddcdb7c17a39f317adfd352217a"
+          }
+        ],
+        "workId": "work:arxiv:2509.05764",
+        "workAuthors": [
+          "Yuwei Lou",
+          "Hao Hu",
+          "Shaocong Ma",
+          "Zongfei Zhang",
+          "Liang Wang",
+          "Jidong Ge",
+          "Xianping Tao"
+        ],
+        "workPublishedAt": "2025-09-06",
+        "identityKeys": [
+          "arxiv:2509.05764v1",
+          "pdf:4366c277eb3fe3074ef332d32340c451ba59329ec3a81d43687080ca4f99165b",
+          "proposition:396b499bd61e6f9b7ef61d3e143387ea4e75fc59002832771b6e18497201fac6"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261018-024",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261018-024",
+            "rank": 1,
+            "confidence": 0.98,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source expressly increases or decreases an LLM agent's reputation according to an evaluated task score, while exposing the narrower peer-rating verification model.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-12T22:44:09.290Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "peer-derived task performance determines an explicit increase or decrease in agent reputation",
+          "compatibleScope": "qualification limited to a simulated LLM-agent rating network and performance-contingent reputation updates",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The rating network evaluates agent task plans and performance through peer agents rather than independent or cryptographic verification.",
+            "The task threshold is set from task requirements and empirical experience rather than derived from Kaal's validation design.",
+            "The experiments use simulated LLM-agent teams and do not evaluate Kaal's cohort or reference implementation.",
+            "The source does not establish production security, resistance to collusion, or identity-replacement resistance.",
+            "Semantic Scholar fresh search returned HTTP 429, while the complete arXiv manuscript remained publicly accessible."
+          ],
+          "exactSupportingQuotesVerified": true,
+          "v1Correction": "V1 passage fields accurately paraphrased the evidence. V2 replaces them with exact contiguous source excerpts before publication."
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}
