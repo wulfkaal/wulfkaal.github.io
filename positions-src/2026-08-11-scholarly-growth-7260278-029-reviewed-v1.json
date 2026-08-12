@@ -1,0 +1,166 @@
+{
+  "batch_id": "kaal-review:2026-08-11:scholarly-growth-7260278-029-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-029.html",
+  "source_snapshot_sha256": "af40e114b9adbf47576ff898f28ac37e0ff797377e45cc606dead04a9d16c2e0",
+  "review_ledger_sha256": "95dae1c4fa79bf3b9adb1f367713074fd7c7885e4f59c8a155fa943b76a81d6a",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 287,
+      "response_type": "qualification",
+      "slug": "scholarly-growth-reputation-authority-risk-qualification",
+      "topics": [
+        "institutional-design",
+        "consensus-and-security",
+        "reputation",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "online-deliberation",
+        "reputation-bias",
+        "reason-giving"
+      ],
+      "text": "Manzoor, Chen, Lee, and Smith provide empirical reason to qualify the design guarantee. In a seven-year panel of more than one million online debates, they isolate a causal reputation effect after controlling for unstructured argument text: reputation increased persuasion beyond the validity, strength, and presentation of the arguments, and ten additional reputation points raised persuasion probability by 31% over the platform average. They characterize reputation as a low-effort heuristic proxy for argument quality and warn that visible participant characteristics can distort consensus toward reputed participants. This supports making reasons inspectable, but shows that reason visibility alone does not prevent standing from functioning as authority; an implementation must also constrain, segregate, or counteract reputation cues during merits evaluation. The evidence is from human online debate, not Kaal's agent validation pools, so it identifies a concrete failure mode rather than validating the proposed architecture.",
+      "scope_conditions": [
+        "The response is limited to the four page-bound passages and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed Management Science article with a public 43-page arXiv v1 full text and independent Crossref, OpenAlex, and arXiv identity checks.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The evidence concerns human dyadic debate on ChangeMyView, not validation pools, formal adjudication, or autonomous agents.",
+        "The study tests visible platform reputation points, not Kaal's multi-source, non-transferable REP or bounded visibility controls.",
+        "It shows that reputation can act as a persuasive heuristic despite exposed argument text; it does not test whether Kaal's proposed interface successfully prevents that effect.",
+        "The relationship therefore qualifies the design claim by identifying an empirically demonstrated failure mode and an implementation burden, rather than validating the architecture."
+      ],
+      "current_debate": {
+        "name": "Influence via Ethos: On the Persuasive Power of Reputation in Deliberation Online",
+        "url": "https://doi.org/10.1287/mnsc.2023.4762"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-029",
+        "url": "https://wulfkaal.github.io/claims/7260278-029",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-11:scholarly-growth-7260278-029-ethos-reputation-bias-01",
+      "evidence_level": "peer-reviewed Management Science article with a public 43-page arXiv v1 full text and independent Crossref, OpenAlex, and arXiv identity checks",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.99,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source directly separates the persuasive effect of participant reputation from the validity, strength, presentation, and text of arguments, testing the exact failure mode in which standing becomes a substitute for reasons on a deliberation surface.",
+      "source_provenance": {
+        "source": "Management Science article and public arXiv v1 full text",
+        "sourceRecordId": "10.1287/mnsc.2023.4762",
+        "doi": "10.1287/mnsc.2023.4762",
+        "arxiv": "2006.00707",
+        "canonicalUrl": "https://doi.org/10.1287/mnsc.2023.4762",
+        "pdfUrl": "https://arxiv.org/pdf/2006.00707",
+        "retrievedAt": "2026-08-12T01:09:08.262Z",
+        "sourcePdfSha256": "f04f435e3ab425b68de771527378d9256d9c69161e249676e5197fc5ad81db14",
+        "extractedTextSha256": "4f843747cb3894f0694e162ba66f94bf6d3f60aa064cc6a82ab5a079e2bf0d93",
+        "textExtraction": {
+          "tool": "pdftotext -raw",
+          "quality": "clean machine-readable 43-page arXiv v1; four exact passages verified on PDF pages 1, 2, and 34"
+        },
+        "crossrefResponseBodySha256": "00fb58171983b67b6e3e4a28228adf2f1c72128c0b5c7fc3a6132475a4d8ff8c",
+        "openAlexResponseBodySha256": "32a441a3df239f98900459b2ce070e3858eea094e0920324992129711f6dad6e",
+        "arxivLandingPageSha256": "cd7a5d873f682313b95d4681b95ef44e513cf42ac03326c76037cbbb1aa1a545",
+        "sourceProposition": "In a seven-year panel of more than one million online debates, visible reputation causally increased persuasion beyond argument validity, strength, and presentation, operating as a heuristic proxy for argument quality and risking consensus distortion toward reputed participants.",
+        "sourcePropositionSha256": "d194c64abe4189ac3a41fe64c1b9ddcb3ccaa0e9213177d43a660ecb4c1b872e",
+        "sourceEvidenceSetSha256": "82b03013ad116dc7d24250d1a8ec5d50f5c3789b2c7754a3556d24511e2a7333",
+        "sourceEvidencePassages": [
+          {
+            "text": "We find that an individual’s reputation significantly impacts their persuasion rate above and beyond the validity, strength and presentation of their arguments.",
+            "locator": {
+              "version": "arXiv:2006.00707v1",
+              "pdfPage": 1,
+              "section": "Abstract"
+            },
+            "sha256": "01d02d91bc6636915b4c40e50f65194ed877c630349c7695f812f17a54409e8f"
+          },
+          {
+            "text": "While going virtual broadens participation, the increased visibility of “reputation” indicators online could distort the equitability of the deliberation process.",
+            "locator": {
+              "version": "arXiv:2006.00707v1",
+              "pdfPage": 2,
+              "section": "1 Introduction"
+            },
+            "sha256": "310fa0708c113368d5cdcd68d3e079bf481bd4c2aa738c78a8cb94f399dfc4ae"
+          },
+          {
+            "text": "These findings suggest that reputation serves as a proxy for argument quality and validity, and is used by cognitively-overloaded posters as a low-effort information-processing heuristic to evaluate a challenger’s arguments.",
+            "locator": {
+              "version": "arXiv:2006.00707v1",
+              "pdfPage": 34,
+              "manuscriptPage": 33,
+              "section": "6 Conclusion"
+            },
+            "sha256": "ba2f4523606274b9be94e81d58c4612813325214e5d80f07e215bd7778975fbb"
+          },
+          {
+            "text": "As a consequence, the degree of consensus within each deliberation session could increase, while distorting the average consensus opinions over a sequence of deliberation sessions towards those held by reputed participants.",
+            "locator": {
+              "version": "arXiv:2006.00707v1",
+              "pdfPage": 34,
+              "manuscriptPage": 33,
+              "section": "6 Conclusion"
+            },
+            "sha256": "7ef87f68c81d5d936632c4b8358682f640090647d7364af29b8cc85184fc3051"
+          }
+        ],
+        "workId": "work:doi:10.1287/mnsc.2023.4762",
+        "workAuthors": [
+          "Emaad Manzoor",
+          "George H. Chen",
+          "Dokyun Lee",
+          "Michael D. Smith"
+        ],
+        "workPublishedAt": "2024-03",
+        "identityKeys": [
+          "doi:10.1287/mnsc.2023.4762",
+          "arxiv:2006.00707",
+          "openalex:W3030764060",
+          "pdf:f04f435e3ab425b68de771527378d9256d9c69161e249676e5197fc5ad81db14",
+          "proposition:d194c64abe4189ac3a41fe64c1b9ddcb3ccaa0e9213177d43a660ecb4c1b872e"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-029",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-029",
+            "rank": 1,
+            "confidence": 0.99,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source directly separates the persuasive effect of participant reputation from the validity, strength, presentation, and text of arguments, testing the exact failure mode in which standing becomes a substitute for reasons on a deliberation surface.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-12T01:09:08.262Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "visible reputation cue, separately controlled argument text, causal persuasion effect, heuristic processing, and consensus distortion",
+          "compatibleScope": "online deliberation used only to qualify the no-standing-as-authority interface guarantee",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The evidence concerns human dyadic debate on ChangeMyView, not validation pools, formal adjudication, or autonomous agents.",
+            "The study tests visible platform reputation points, not Kaal's multi-source, non-transferable REP or bounded visibility controls.",
+            "It shows that reputation can act as a persuasive heuristic despite exposed argument text; it does not test whether Kaal's proposed interface successfully prevents that effect.",
+            "The relationship therefore qualifies the design claim by identifying an empirically demonstrated failure mode and an implementation burden, rather than validating the architecture."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
