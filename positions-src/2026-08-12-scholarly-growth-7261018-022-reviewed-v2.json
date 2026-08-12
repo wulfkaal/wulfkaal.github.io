@@ -1,0 +1,139 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-022-reviewed-v2",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-022.html",
+  "source_snapshot_sha256": "41e1911054e36441859b60115cb52f8a5990041182f67b7c1e841940542c2a82",
+  "review_ledger_sha256": "4560bc11457f6e8ee9889565da502185f9b682519011d340937f19c76b431d36",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 319,
+      "response_type": "qualification",
+      "slug": "timestamp-evidence-does-not-prove-later-events",
+      "topics": [
+        "research-methods",
+        "citation-and-knowledge",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "timestamping",
+        "evidence",
+        "cryptographic-signatures"
+      ],
+      "text": "Public timestamps establish a narrow temporal proposition. Birkholz, Fossati, and Riechert distinguish timestamps covering payload data from timestamps covering a cryptographic signature. A payload timestamp proves that the payload existed at an earlier point. It does not establish when a separate signature was created. The authors warn that treating it as such can cause validators to accept signatures produced after key revocation.\n\nThis distinction qualifies Kaal's claim directly. His public timestamp establishes that the attested artifact existed no later than the recorded time. Further conclusions require evidence bound to each later event. The timestamp alone does not prove execution, deployment, review, or any subsequent operational step.\n\nThe source concerns COSE messages and RFC 3161 tokens. It does not audit Kaal's artifact or provenance chain. It also does not determine whether any later event occurred. Its contribution is narrower. It defines the evidentiary scope of a timestamp and explains why extending that scope without event-specific proof creates a verification error.",
+      "scope_conditions": [
+        "The response is limited to two evidence-bound passages and the one mapped Kaal claim.",
+        "External evidence level: complete official RFC Editor text bound through DOI, Crossref, title, authors, publication date, section locator, and official RFC status.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The RFC concerns COSE messages and RFC 3161 timestamp tokens.",
+        "It does not audit Kaal's artifact, provenance chain, execution, deployment, review, or any later event.",
+        "It defines the semantic boundary of timestamp evidence rather than proving that any specific later event occurred.",
+        "Semantic Scholar returned HTTP 429. Haber and Stornetta remained metadata-only in this bounded run."
+      ],
+      "current_debate": {
+        "name": "CBOR Object Signing and Encryption (COSE) Header Parameter for Timestamp Tokens as Defined in RFC 3161",
+        "url": "https://www.rfc-editor.org/rfc/rfc9921.txt"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261018-022",
+        "url": "https://wulfkaal.github.io/claims/7261018-022",
+        "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+        "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261018",
+        "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-022-rfc9921-01",
+      "evidence_level": "complete official RFC Editor text bound through DOI, Crossref, title, authors, publication date, section locator, and official RFC status",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.99,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source expressly distinguishes proof of earlier payload existence from proof of a later signature event. This is the same evidentiary boundary stated by Kaal's claim.",
+      "source_provenance": {
+        "source": "complete official RFC Editor text",
+        "sourceRecordId": "doi:10.17487/rfc9921",
+        "canonicalUrl": "https://doi.org/10.17487/RFC9921",
+        "publicFullTextUrl": "https://www.rfc-editor.org/rfc/rfc9921.txt",
+        "retrievedAt": "2026-08-12T21:47:00.854Z",
+        "publicTextSha256": "ba1c4dbb7b4ea83f517418a9b8963085c0a8b5e5bea0c992089d215579b78f39",
+        "officialHtmlSha256": "8d3a5b667b88e65bee779335f7996d9c5455b02d768b867d9c19ec2e0f37bdd1",
+        "textExtraction": {
+          "tool": "native RFC Editor plain text",
+          "quality": "complete official text with stable numbered section and line locators"
+        },
+        "sourceProposition": "Birkholz, Fossati, and Riechert distinguish a timestamp covering payload data from a timestamp explicitly covering a cryptographic signature. A payload timestamp establishes earlier existence of the payload but does not prove signature creation time. They warn that conflating these meanings can create verification vulnerabilities. This directly qualifies Kaal's source-bound claim that a public timestamp establishes existence no later than the attesting record but does not, standing alone, prove every later operational event. The RFC does not audit Kaal's artifact, provenance chain, execution, deployment, or later events.",
+        "sourcePropositionSha256": "1bbf103586b37f63bc34d1d6e405a8116400c4999996bb14c11a9f7881071e1e",
+        "sourceEvidenceSetSha256": "71e9be2d696ce9aaa30fdec53854b03fda90b7261a106683a55643b3d5ec9355",
+        "sourceEvidencePassages": [
+          {
+            "text": "proving the existence of payload data at an earlier point in time",
+            "locator": {
+              "version": "RFC Editor plain-text RFC 9921",
+              "section": "5.1 Avoiding Semantic Confusion",
+              "lines": "468-474",
+              "publicTextSha256": "ba1c4dbb7b4ea83f517418a9b8963085c0a8b5e5bea0c992089d215579b78f39"
+            },
+            "sha256": "e725707f8353c87382bd5b803dca7285467c3ae16806d90f92620e52568c7e1d"
+          },
+          {
+            "text": "Validators must not interpret protected-header payload timestamps as proof of signature creation time",
+            "locator": {
+              "version": "RFC Editor plain-text RFC 9921",
+              "section": "5.1 Avoiding Semantic Confusion",
+              "lines": "475-478",
+              "publicTextSha256": "ba1c4dbb7b4ea83f517418a9b8963085c0a8b5e5bea0c992089d215579b78f39"
+            },
+            "sha256": "b069380d446ac37b13651013909b3f0d504f8989a06ac77d260bac3e13f3f603"
+          }
+        ],
+        "workId": "work:doi:10.17487/rfc9921",
+        "workAuthors": [
+          "Henk Birkholz",
+          "Thomas Fossati",
+          "Maik Riechert"
+        ],
+        "workPublishedAt": "2026-02",
+        "identityKeys": [
+          "doi:10.17487/rfc9921",
+          "text:ba1c4dbb7b4ea83f517418a9b8963085c0a8b5e5bea0c992089d215579b78f39",
+          "proposition:1bbf103586b37f63bc34d1d6e405a8116400c4999996bb14c11a9f7881071e1e"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261018-022",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261018-022",
+            "rank": 1,
+            "confidence": 0.99,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source expressly distinguishes proof of earlier payload existence from proof of a later signature event. This is the same evidentiary boundary stated by Kaal's claim.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-12T21:51:08.542Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "timestamp object coverage determines which earlier existence proposition is established",
+          "compatibleScope": "qualification limited to the distinction between attested data existence and separate later events",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The RFC concerns COSE messages and RFC 3161 timestamp tokens.",
+            "It does not audit Kaal's artifact, provenance chain, execution, deployment, review, or any later event.",
+            "It defines the semantic boundary of timestamp evidence rather than proving that any specific later event occurred.",
+            "Semantic Scholar returned HTTP 429. Haber and Stornetta remained metadata-only in this bounded run."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}

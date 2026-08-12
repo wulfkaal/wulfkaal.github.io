@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-319",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-319",
+   "text": "Public timestamps establish a narrow temporal proposition. Birkholz, Fossati, and Riechert distinguish timestamps covering payload data from timestamps covering a cryptographic signature. A payload timestamp proves that the payload existed at an earlier point. It does not establish when a separate signature was created. The authors warn that treating it as such can cause validators to accept signatures produced after key revocation.\n\nThis distinction qualifies Kaal's claim directly. His public timestamp establishes that the attested artifact existed no later than the recorded time. Further conclusions require evidence bound to each later event. The timestamp alone does not prove execution, deployment, review, or any subsequent operational step.\n\nThe source concerns COSE messages and RFC 3161 tokens. It does not audit Kaal's artifact or provenance chain. It also does not determine whether any later event occurred. Its contribution is narrower. It defines the evidentiary scope of a timestamp and explains why extending that scope without event-specific proof creates a verification error.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.rfc-editor.org/rfc/rfc9921.txt"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261018-022"
+   },
+   "sha256": "57be8d07b74b8c8cbc735e5defeb48fb63380abacfd954c156eb55703e4b32b9",
+   "evidenceLevel": "complete official RFC Editor text bound through DOI, Crossref, title, authors, publication date, section locator, and official RFC status",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-318",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-318",
@@ -165135,6 +165155,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.rfc-editor.org/rfc/rfc9921.txt",
+   "@type": "CreativeWork",
+   "name": "CBOR Object Signing and Encryption (COSE) Header Parameter for Timestamp Tokens as Defined in RFC 3161",
+   "url": "https://www.rfc-editor.org/rfc/rfc9921.txt"
+  },
+  {
    "@id": "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.00173/pdf",
    "@type": "CreativeWork",
    "name": "Lessons from the first two years of operating a study registry",
@@ -209839,6 +209865,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261018-022",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261018-022",
+   "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+   "sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261018-021",
