@@ -1,0 +1,164 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-296",
+ "identifier": "kaal:position:2026-08-08-296",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Failed Quality Gate Stops Pipeline Advancement",
+ "text": "Gluhak and Pavlič provide direct operational support for Kaal's fail-closed control rule. Their CI/CD case study uses dependent quality checks. If any check fails, the pipeline fails and the code is not integrated into the larger codebase. This independently instantiates a failed control stopping advancement instead of merely annotating a run. The comparison is bounded. The source concerns software-delivery pipelines and static source-code quality, not autonomous-agent reputation infrastructure or Kaal's broader control taxonomy.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "extension",
+ "keywords": [
+  "research-methods",
+  "risk-and-incentives",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "software-delivery",
+  "ci-cd",
+  "quality-gates",
+  "fail-closed-controls"
+ ],
+ "scope_conditions": [
+  "The response is limited to the two page-bound passages and the one mapped Kaal claim.",
+  "External evidence level: peer-reviewed workshop paper with a systematic literature review and implemented CI/CD case study, complete public CC BY 4.0 full text, CEUR proceedings identity, and DBLP identity record.",
+  "Mapping review tier: independent substantive scholarly-growth extension.",
+  "The source concerns software-delivery pipelines and static source-code quality checks, not autonomous-agent reputation infrastructure.",
+  "The paper supplies an implemented case study and exact fail-closed integration behavior; it does not test Kaal's broader control taxonomy or every type of operational run.",
+  "CEUR-WS binds the public CC BY 4.0 PDF to the peer-reviewed SQAMIA 2022 proceedings, and DBLP independently binds title, authors, year, venue, and the same public PDF URL.",
+  "Semantic Scholar returned HTTP 429 for both bounded searches; OpenAlex title search did not index this CEUR paper, and the alternate host and DBLP JSON representation were unavailable. The canonical CEUR PDF, CEUR proceedings record, and DBLP XML record were complete.",
+  "The inherited candidates were lexical discovery signals only; none supplied the failed-control and halted-advancement mechanism."
+ ],
+ "currentDebate": {
+  "name": "A Quality Gate Role in a Software Delivery Pipeline",
+  "url": "https://ceur-ws.org/Vol-3237/#paper-glu"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7260278-038",
+  "url": "https://wulfkaal.github.io/claims/7260278-038",
+  "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+  "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7260278",
+  "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7260278-038"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "A Quality Gate Role in a Software Delivery Pipeline",
+   "url": "https://ceur-ws.org/Vol-3237/#paper-glu"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-12:scholarly-growth-7260278-038-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-038.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-296",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-296.md",
+ "candidateId": "kaal:response-candidate:2026-08-12:scholarly-growth-7260278-038-fail-closed-quality-gate-01",
+ "evidenceLevel": "peer-reviewed workshop paper with a systematic literature review and implemented CI/CD case study, complete public CC BY 4.0 full text, CEUR proceedings identity, and DBLP identity record",
+ "reviewTier": "independent substantive scholarly-growth extension",
+ "mappingConfidence": 0.99,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source's implemented pipeline makes checks mutually dependent on success and prevents code integration when one check fails, directly instantiating Kaal's fail-closed advancement rule.",
+ "sourceProvenance": {
+  "source": "Complete public CEUR-WS workshop paper bound to the peer-reviewed SQAMIA 2022 proceedings and DBLP record",
+  "sourceRecordId": "ceur:vol-3237-paper-glu",
+  "canonicalUrl": "https://ceur-ws.org/Vol-3237/#paper-glu",
+  "fullTextUrl": "https://ceur-ws.org/Vol-3237/paper-glu.pdf",
+  "retrievedAt": "2026-08-12T05:44:11.466Z",
+  "sourceFullTextSha256": "ded8dab08387304d5ad9240752607d650d8443a26ebf231efe237eb7a9999d79",
+  "extractedTextSha256": "04b2819432c5254048caa0d141b7cf0c1fc2e532af448d75a3db08890dfd1deb",
+  "textExtraction": {
+   "tool": "pdftotext 25.06.0 flow extraction",
+   "quality": "complete searchable twelve-page paper; two exact page-bound passages verified"
+  },
+  "ceurVolumeResponseBodySha256": "a61edc014c15a7621c7cde4fbe94294b09950956f5131a9515e52c2c8b03c162",
+  "dblpRecordResponseBodySha256": "72365060d2034df666e4b11f6198968e7a953fd42346153bd4a8a5852348862f",
+  "sourceProposition": "Gluhak and Pavlič implement dependent quality checks in a CI/CD case study such that failure of any check fails the pipeline and prevents the code from being integrated into the larger codebase.",
+  "sourcePropositionSha256": "1eba915937f57489ecaaae7de8cd5a38ad68d4d25e0ed3fd987916e15d55f17f",
+  "sourceEvidenceSetSha256": "3b86e16d2691d7a4d1e3275696b6052d89d9e7fee39327c2a39646de2464e558",
+  "sourceEvidencePassages": [
+   {
+    "text": "A key to success lies in establishing widely agreed rules, then are enforced in every development iteration. A quality gate in a CI/CD pipeline can be realized in the form of a static source code analysis. It offers a repeatable and a consistent internal quality analysis after every source code push to a version control system.",
+    "locator": {
+     "version": "CEUR-WS Vol-3237 CC BY 4.0 workshop paper",
+     "pdfPage": 1,
+     "section": "1. Introduction"
+    },
+    "sha256": "75dbd237e7e6e3280c614a70b69b6f521c9da2f1237d399a2cca7badfc045dfb"
+   },
+   {
+    "text": "With these steps we established a simple pipeline with quality checks dependent on each other to succeed. If one is to fail, the pipeline fails, and code is not integrated to the larger codebase.",
+    "locator": {
+     "version": "CEUR-WS Vol-3237 CC BY 4.0 workshop paper",
+     "pdfPage": 7,
+     "section": "4.1 The Initial Pipeline State"
+    },
+    "sha256": "0c4b590b010b360eddecb86abe74ddf98296cc1a3f3b7e69a7b873c2ec29e649"
+   }
+  ],
+  "workId": "work:ceur:vol-3237-paper-glu",
+  "workAuthors": [
+   "Marko Gluhak",
+   "Luka Pavlič"
+  ],
+  "workPublishedAt": "2022",
+  "identityKeys": [
+   "ceur:vol-3237-paper-glu",
+   "dblp:conf/sqamia/GluhakP22",
+   "fulltext-pdf:ded8dab08387304d5ad9240752607d650d8443a26ebf231efe237eb7a9999d79",
+   "proposition:1eba915937f57489ecaaae7de8cd5a38ad68d4d25e0ed3fd987916e15d55f17f"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7260278-038",
+    "claimUrl": "https://wulfkaal.github.io/claims/7260278-038",
+    "rank": 1,
+    "confidence": 0.99,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source's implemented pipeline makes checks mutually dependent on success and prevents code integration when one check fails, directly instantiating Kaal's fail-closed advancement rule.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-12T05:44:11.466Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "dependent automated checks whose failure fails the pipeline and prevents integration into the larger codebase",
+   "compatibleScope": "direct extension limited to fail-closed advancement in software-delivery pipelines",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "limitations": [
+    "The source concerns software-delivery pipelines and static source-code quality checks, not autonomous-agent reputation infrastructure.",
+    "The paper supplies an implemented case study and exact fail-closed integration behavior; it does not test Kaal's broader control taxonomy or every type of operational run.",
+    "CEUR-WS binds the public CC BY 4.0 PDF to the peer-reviewed SQAMIA 2022 proceedings, and DBLP independently binds title, authors, year, venue, and the same public PDF URL.",
+    "Semantic Scholar returned HTTP 429 for both bounded searches; OpenAlex title search did not index this CEUR paper, and the alternate host and DBLP JSON representation were unavailable. The canonical CEUR PDF, CEUR proceedings record, and DBLP XML record were complete.",
+    "The inherited candidates were lexical discovery signals only; none supplied the failed-control and halted-advancement mechanism."
+   ]
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth extension and the unchanged 5,145 scholarly claims under the current owner instruction.",
+ "sha256": "62a32da7fceaefe071a98d31edfc0fcf9ee89e96d17e3dc7f23561499378d77e"
+}

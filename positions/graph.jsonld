@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-296",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-296",
+   "text": "Gluhak and Pavlič provide direct operational support for Kaal's fail-closed control rule. Their CI/CD case study uses dependent quality checks. If any check fails, the pipeline fails and the code is not integrated into the larger codebase. This independently instantiates a failed control stopping advancement instead of merely annotating a run. The comparison is bounded. The source concerns software-delivery pipelines and static source-code quality, not autonomous-agent reputation infrastructure or Kaal's broader control taxonomy.",
+   "responseType": "extension",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://ceur-ws.org/Vol-3237/#paper-glu"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7260278-038"
+   },
+   "sha256": "62a32da7fceaefe071a98d31edfc0fcf9ee89e96d17e3dc7f23561499378d77e",
+   "evidenceLevel": "peer-reviewed workshop paper with a systematic literature review and implemented CI/CD case study, complete public CC BY 4.0 full text, CEUR proceedings identity, and DBLP identity record",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-295",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-295",
@@ -164675,6 +164695,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://ceur-ws.org/Vol-3237",
+   "@type": "CreativeWork",
+   "name": "A Quality Gate Role in a Software Delivery Pipeline",
+   "url": "https://ceur-ws.org/Vol-3237"
+  },
+  {
    "@id": "https://doi.org/10.1007/978-3-030-80960-7_17",
    "@type": "CreativeWork",
    "name": "Machine Learning Pipelines: Provenance, Reproducibility and FAIR Data Principles",
@@ -209241,6 +209267,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7260278-038",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7260278-038",
+   "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+   "sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7260278-037",
