@@ -1,0 +1,158 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7260278-037-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7260278-037.html",
+  "source_snapshot_sha256": "0eb40116ac15ec37d1deb01c131178aef760035b0647cede0424c70fc4c9f24d",
+  "review_ledger_sha256": "8011332ca298b76aefdf3170aa74c4ea5d1bdeccd019a2c10605e617a2fb5709",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 295,
+      "response_type": "qualification",
+      "slug": "machine-learning-run-provenance-reporting-qualification",
+      "topics": [
+        "research-methods",
+        "institutional-design",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "machine-learning",
+        "provenance",
+        "reproducibility",
+        "experiment-management"
+      ],
+      "text": "Samuel, Löffler, and König-Ries provide independent support for the run-level part of Kaal's reporting-layer design. Their study identifies code, data, parameters, package versions, preprocessing, and execution context as information needed to reproduce machine-learning experiments. ProvBook captures, stores, describes, and compares provenance across Jupyter executions. It also binds each model run to its execution environment. This supports preserving run evidence and controls and comparing results across runs. The comparison is bounded. The source concerns machine-learning research pipelines, not autonomous-agent reputation pools, and it does not test periodic institutional summaries. It therefore qualifies the run-level and cross-run provenance components of Kaal's three-part reporting design rather than validating the complete architecture.",
+      "scope_conditions": [
+        "The response is limited to the three page-bound passages and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed conference-chapter identity with complete public arXiv accepted manuscript, plus Crossref, OpenAlex, Semantic Scholar, arXiv, and DOI landing records.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source addresses machine-learning research pipelines and Jupyter executions, not autonomous-agent reputation pools.",
+        "It supports run-bound provenance, configuration, execution context, and cross-run comparison; it does not test periodic institutional summaries.",
+        "The complete public two-page arXiv accepted manuscript is bound to the later Springer conference chapter through matching title, authors, DOI records, arXiv identity, Crossref, OpenAlex, Semantic Scholar, and the DOI landing page.",
+        "The bounded Semantic Scholar discovery query returned HTTP 429, while its direct DOI record returned HTTP 200 and independently bound the DOI, arXiv identifier, authors, abstract, and public PDF.",
+        "The evidence qualifies two components of Kaal's three-part reporting design and does not validate the broader Agentic Reputation Substrate."
+      ],
+      "current_debate": {
+        "name": "Machine Learning Pipelines: Provenance, Reproducibility and FAIR Data Principles",
+        "url": "https://doi.org/10.1007/978-3-030-80960-7_17"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7260278-037",
+        "url": "https://wulfkaal.github.io/claims/7260278-037",
+        "citation": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate (2026). SSRN: https://ssrn.com/abstract=7260278",
+        "paper": "Wulf A. Kaal, Paper 2 - Architecture of the Agentic Reputation Substrate",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7260278",
+        "source_pdf_sha256": "d48801f279dba594e1f3e65d74d31f862261ada6428ea119f948e8d7cfee1db0"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7260278-037-ml-pipeline-provenance-01",
+      "evidence_level": "peer-reviewed conference-chapter identity with complete public arXiv accepted manuscript, plus Crossref, OpenAlex, Semantic Scholar, arXiv, and DOI landing records",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source implements a reporting and provenance layer that preserves run inputs, parameters, execution context, and results across executions, directly qualifying Kaal's run-evidence and run-control components.",
+      "source_provenance": {
+        "source": "Complete public arXiv accepted manuscript bound to the Springer peer-reviewed conference chapter",
+        "sourceRecordId": "arxiv:2006.12117v1",
+        "doi": "10.1007/978-3-030-80960-7_17",
+        "canonicalUrl": "https://doi.org/10.1007/978-3-030-80960-7_17",
+        "fullTextUrl": "https://arxiv.org/pdf/2006.12117",
+        "retrievedAt": "2026-08-12T05:13:17.002Z",
+        "sourceFullTextSha256": "097c42ce060345edaa9be504d8113e06028322f01e292c40c32fe43e1da3b545",
+        "extractedTextSha256": "3226d8778ef6e0d4938462bdd9b20e4bb6816b8690c626e10aefde4948761353",
+        "textExtraction": {
+          "tool": "pdftotext 25.06.0 flow extraction",
+          "quality": "complete searchable two-page accepted manuscript; three exact page-bound passages verified"
+        },
+        "crossrefResponseBodySha256": "5d36d401cb82f4a6051e9d56b28613db1a1c1164d20b3ffdfa1e95263cdc8e15",
+        "openAlexResponseBodySha256": "6140266c242cddc2e902590bd0725d56d17b2cb91d7017c2128b863153742045",
+        "semanticScholarResponseBodySha256": "331f11383f7aadf9ee792381109463a4d813735257e5701585c3e75b3e22f1e7",
+        "arxivResponseBodySha256": "f0da0b6399d798a56d05c90a0f3bba3d7dde7bf655d85649b4593d88aeec72cf",
+        "doiLandingBodySha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+        "sourceProposition": "Samuel, Löffler, and König-Ries identify experiment entities, code, data, parameters, and execution context as reproducibility inputs, and present ProvBook as capturing, storing, describing, and comparing provenance across notebook executions while binding each model run to its execution environment.",
+        "sourcePropositionSha256": "b0c21a1a8a0c5121f0ce2fce71b4b509bc3578d196df97d91a5c6fd8a466d46c",
+        "sourceEvidenceSetSha256": "c551db3c011d054b6f22be2abac1008dde6371e6c2c5f1d3ae998bc646d966df",
+        "sourceEvidencePassages": [
+          {
+            "text": "All the participants mentioned that if ML experiments are properly described with all the entities of the experiments and their relationships between each other, it will benefit them not only in the reproducibility of results but also for comparison to other competing methods (baseline).",
+            "locator": {
+              "version": "arXiv:2006.12117v1 accepted manuscript",
+              "pdfPage": 1,
+              "section": "2 The situation: Characteristics of Machine Learning Experiments and their Reproducibility"
+            },
+            "sha256": "68f164dae290e75f83ca0d10d9df1c14f307c7440d230c0bce2ecbfe69503ad1"
+          },
+          {
+            "text": "With ProvBook, users can capture, store, describe and compare the provenance of different executions of Jupyter notebooks.",
+            "locator": {
+              "version": "arXiv:2006.12117v1 accepted manuscript",
+              "pdfPage": 2,
+              "section": "4 Achieving Reproducibility using ProvBook"
+            },
+            "sha256": "49a7854c2865f057ed57e2d0635d7aed1f8c2169cbfff2a428f44a5fc58458cb"
+          },
+          {
+            "text": "Therefore, it is important to describe the data being used, the code and parameters of the model, the execution environment to know how the results have been derived. ProvBook helps in achieving this reproducibility level by providing the provenance of each run of the model along with the execution environment.",
+            "locator": {
+              "version": "arXiv:2006.12117v1 accepted manuscript",
+              "pdfPage": 2,
+              "section": "4 Achieving Reproducibility using ProvBook"
+            },
+            "sha256": "964b4f80e7ac81441538392f1aadaa4312d6ad4ce86b0b4e02194c89acb9a731"
+          }
+        ],
+        "workId": "work:doi:10.1007/978-3-030-80960-7_17",
+        "workAuthors": [
+          "Sheeba Samuel",
+          "Frank Löffler",
+          "Birgitta König-Ries"
+        ],
+        "workPublishedAt": "2021",
+        "identityKeys": [
+          "doi:10.1007/978-3-030-80960-7_17",
+          "arxiv:2006.12117",
+          "openalex:https://openalex.org/W3036942246",
+          "semantic-scholar:9a566a363614e8f3e499462df07a09aa061cdc11",
+          "fulltext-pdf:097c42ce060345edaa9be504d8113e06028322f01e292c40c32fe43e1da3b545",
+          "proposition:b0c21a1a8a0c5121f0ce2fce71b4b509bc3578d196df97d91a5c6fd8a466d46c"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7260278-037",
+            "claimUrl": "https://wulfkaal.github.io/claims/7260278-037",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source implements a reporting and provenance layer that preserves run inputs, parameters, execution context, and results across executions, directly qualifying Kaal's run-evidence and run-control components.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-12T05:13:17.002Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "capture, storage, description, and comparison of provenance for individual computational runs with code, parameters, data, results, and execution environment",
+          "compatibleScope": "qualification limited to the run-level evidence and control components of Kaal's reporting layer",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The source addresses machine-learning research pipelines and Jupyter executions, not autonomous-agent reputation pools.",
+            "It supports run-bound provenance, configuration, execution context, and cross-run comparison; it does not test periodic institutional summaries.",
+            "The complete public two-page arXiv accepted manuscript is bound to the later Springer conference chapter through matching title, authors, DOI records, arXiv identity, Crossref, OpenAlex, Semantic Scholar, and the DOI landing page.",
+            "The bounded Semantic Scholar discovery query returned HTTP 429, while its direct DOI record returned HTTP 200 and independently bound the DOI, arXiv identifier, authors, abstract, and public PDF.",
+            "The evidence qualifies two components of Kaal's three-part reporting design and does not validate the broader Agentic Reputation Substrate."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the unchanged 5,145 scholarly claims under the current owner instruction."
+    }
+  ]
+}
