@@ -1,0 +1,155 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-026-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-026.html",
+  "source_snapshot_sha256": "f14ad06d94b085ca725fb2c43eed29a5bfcc12345717549be99d9f26f754ae2c",
+  "review_ledger_sha256": "5fc2871186d09fae126a21b45a8867f346c7c0fd56aef3a709c0fcc4a49f8423",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 323,
+      "response_type": "qualification",
+      "slug": "structured-assessment-precedes-final-verdict",
+      "topics": [
+        "ai-and-agents",
+        "consensus-and-security",
+        "research-methods",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "multi-agent-deliberation",
+        "llm-evaluation",
+        "controlled-comparison"
+      ],
+      "text": "Structured assessment changes a decision process only if the assessment arrives before judgment. That sequence matters. Harrasse, Bandi, and Bandi route paired LLM evaluations through advocates, a criteria-based judge, and an independent jury that renders the final verdict. D3 compares that deliberative architecture with a single judge that selects directly. On MT-Bench, D3-MORE reports 85.1 percent accuracy, 12.6 percentage points above the single-judge baseline. This result qualifies Kaal's treatment-control design. It supports separating an assessment-exchange treatment from a no-exchange adjudication baseline. Yet the study does not establish a matched control with identical token budgets or Kaal's validator incentives, binding rules, and reputation consequences. The correspondence is limited to the comparative design and its measured evaluation setting. Deliberation has evidentiary value only when the baseline preserves the decision it replaces.",
+      "scope_conditions": [
+        "The response is limited to the exact protocol, baseline, and reported-result passages and the one mapped Kaal claim.",
+        "External evidence level: complete public EACL manuscript bound through ACL Anthology ID, DOI, title, three authors, conference record, PDF hash, HTML identity, extracted text, comparative baseline, reported result, and printed-page locators.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "D3 evaluates paired LLM responses rather than Kaal's validation substrate.",
+        "The single-judge baseline does not match D3's agent count, token budget, or deliberation cost.",
+        "The source does not test Kaal's validator eligibility, incentive rules, reputation consequences, or binding implementation.",
+        "The reported comparison supports the treatment-control architecture but does not establish the effects registered by Kaal.",
+        "Semantic Scholar search returned HTTP 429, while the ACL Anthology, Crossref, OpenAlex, and the complete public manuscript supplied stable identity and evidence records."
+      ],
+      "current_debate": {
+        "name": "Debate, Deliberate, Decide (D3): A Cost-Aware Adversarial Framework for Reliable and Interpretable LLM Evaluation",
+        "url": "https://aclanthology.org/2026.eacl-long.392/"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261018-026",
+        "url": "https://wulfkaal.github.io/claims/7261018-026",
+        "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+        "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261018",
+        "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-026-harrasse-bandi-bandi-01",
+      "evidence_level": "complete public EACL manuscript bound through ACL Anthology ID, DOI, title, three authors, conference record, PDF hash, HTML identity, extracted text, comparative baseline, reported result, and printed-page locators",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source routes structured advocate assessments through a judge and jury before the final verdict, then compares the architecture with direct single-judge selection on the same benchmark suite.",
+      "source_provenance": {
+        "source": "complete public EACL 2026 manuscript",
+        "sourceRecordId": "acl:2026.eacl-long.392",
+        "canonicalUrl": "https://aclanthology.org/2026.eacl-long.392/",
+        "publicFullTextUrl": "https://aclanthology.org/2026.eacl-long.392.pdf",
+        "retrievedAt": "2026-08-12T23:39:42.927Z",
+        "publicPdfSha256": "310bfef0132de7232dda97eae6adcf5374cc917f9f62c813cfea4a42d7df5f14",
+        "publicHtmlSha256": "66051925599109a78ddddf6d46b56f9f18fbc24a01d0d7572ca1287db4e64a56",
+        "extractedTextSha256": "a6d25e7b959b1b21b4b1310fc1db41dd16703cd67fa62a39def28cd2e054f94c",
+        "textExtraction": {
+          "tool": "pdftotext 25.06.0 raw mode",
+          "quality": "complete 17-page conference manuscript with title, authors, protocol, baseline comparison, results, appendices, and stable printed-page locators"
+        },
+        "sourceProposition": "Harrasse, Bandi, and Bandi route paired LLM evaluations through structured advocates, a criteria-based judge, and an independent jury that renders a final verdict. They compare D3 against a single judge that selects directly and report higher MT-Bench accuracy for D3-MORE. This independently supports Kaal's separation of an assessment-exchange treatment from no-exchange adjudication. It does not establish a matched token budget, Kaal's validation substrate, or the effects of Kaal's treatment.",
+        "sourcePropositionSha256": "52cc7bc0d437e595db3c8c1ebaba943f7ac992aa3d946af712ad0c2d6131ce75",
+        "sourceEvidenceSetSha256": "55bf979c92efcc5dbf4e0bd8e32a7e24cec39a318825e2f5777b8b577c47e399",
+        "sourceEvidencePassages": [
+          {
+            "text": "A Judge provides criteria-based scoring to guide refinement. A diverse jury panel independently evaluates the anonymized debate transcript and renders a final verdict, with ties broken by the Judge’s cumulative score.",
+            "locator": {
+              "anthologyId": "2026.eacl-long.392",
+              "printedPage": 8377,
+              "section": "Figure 1",
+              "publicPdfSha256": "310bfef0132de7232dda97eae6adcf5374cc917f9f62c813cfea4a42d7df5f14"
+            },
+            "sha256": "a34c0b20650e6a2b970c2d71de0c65c63ded8e880a117a7b3ca4ae15f54d51d9"
+          },
+          {
+            "text": "We compare D3 against four strong baselines: (1) a single GPT-4-Turbo judge directly selecting the better answer, representing standard practice",
+            "locator": {
+              "anthologyId": "2026.eacl-long.392",
+              "printedPage": 8379,
+              "section": "4.2 Models and Comparative Baselines",
+              "publicPdfSha256": "310bfef0132de7232dda97eae6adcf5374cc917f9f62c813cfea4a42d7df5f14"
+            },
+            "sha256": "e58171306b37a3600f30144c14e98a7a3d1845de6b79ce807b9c1ca6b91ec591"
+          },
+          {
+            "text": "D3-MORE achieves an accuracy of 85.1%, representing a 12.6% absolute improvement over the standard Single Judge baseline",
+            "locator": {
+              "anthologyId": "2026.eacl-long.392",
+              "printedPage": 8380,
+              "section": "5.3 D3 Achieves State-of-the-Art Agreement with Human Judgments",
+              "publicPdfSha256": "310bfef0132de7232dda97eae6adcf5374cc917f9f62c813cfea4a42d7df5f14"
+            },
+            "sha256": "404199bf78411053c66528519b8506a5399086d61bdf18b8ccd4f15b49ca5963"
+          }
+        ],
+        "workId": "work:doi:10.18653/v1/2026.eacl-long.392",
+        "workAuthors": [
+          "Abir Harrasse",
+          "Chaithanya Bandi",
+          "Hari Bandi"
+        ],
+        "workPublishedAt": "2026-03-24",
+        "identityKeys": [
+          "acl:2026.eacl-long.392",
+          "doi:10.18653/v1/2026.eacl-long.392",
+          "pdf:310bfef0132de7232dda97eae6adcf5374cc917f9f62c813cfea4a42d7df5f14",
+          "proposition:52cc7bc0d437e595db3c8c1ebaba943f7ac992aa3d946af712ad0c2d6131ce75"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261018-026",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261018-026",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source routes structured advocate assessments through a judge and jury before the final verdict, then compares the architecture with direct single-judge selection on the same benchmark suite.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-12T23:44:46.658Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "structured advocate assessments are evaluated before a jury renders the final verdict, with direct single-judge selection as a no-debate comparison",
+          "compatibleScope": "qualification limited to comparative LLM evaluation on MT-Bench, AlignBench, and AUTO-J",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "exactSupportingQuotesVerified": true,
+          "limitations": [
+            "D3 evaluates paired LLM responses rather than Kaal's validation substrate.",
+            "The single-judge baseline does not match D3's agent count, token budget, or deliberation cost.",
+            "The source does not test Kaal's validator eligibility, incentive rules, reputation consequences, or binding implementation.",
+            "The reported comparison supports the treatment-control architecture but does not establish the effects registered by Kaal.",
+            "Semantic Scholar search returned HTTP 429, while the ACL Anthology, Crossref, OpenAlex, and the complete public manuscript supplied stable identity and evidence records."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}
