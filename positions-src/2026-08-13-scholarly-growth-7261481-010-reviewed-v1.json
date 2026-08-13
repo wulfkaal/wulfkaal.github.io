@@ -1,0 +1,173 @@
+{
+  "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-010-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-010.html",
+  "source_snapshot_sha256": "5bf2b8b879a7c52528d839246e83506deacabbb914fafbfece6a316803bab3a6",
+  "review_ledger_sha256": "97bb9513cdf0bb69a3ff955a7466e17ee01cb3ba3ddbdbd9f7d71a969669078a",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 345,
+      "response_type": "qualification",
+      "slug": "causal-mediation-mechanism-attribution",
+      "topics": [
+        "research-methods",
+        "institutional-design",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "causal-inference",
+        "causal-mediation",
+        "mechanism-identification",
+        "experimental-design",
+        "evidence-provenance"
+      ],
+      "text": "Imai, Keele, Tingley, and Yamamoto sharpen Kaal's attribution rule. They define a causal mechanism through a mediator and show that identifying the mechanism requires explicit assumptions, mediation analysis, sensitivity analysis, or research designs that manipulate the mediator. A randomized treatment can identify an overall effect without identifying how that effect arose. The source therefore supports Kaal's demand for mechanism-specific evidence. It also narrows it. Randomizing treatment and the intermediate variable is not automatically sufficient, and ablation is not examined. Attribution remains conditional on the mediator, estimand, design, and identification assumptions.",
+      "scope_conditions": [
+        "The response is limited to the exact causal-mediation passages and the one mapped Kaal claim.",
+        "External evidence level: complete 25-page peer-reviewed author-hosted article with concordant Crossref DOI, OpenAlex, and Semantic Scholar identity records.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source does not examine Kaal's institutional architecture, registered metrics, or implementation.",
+        "The source does not examine ablation studies as such.",
+        "Randomizing treatment and the intermediate variable is not automatically sufficient to identify a mechanism.",
+        "Mediation estimates remain conditional on the mediator, estimand, identification assumptions, and research design.",
+        "Semantic Scholar discovery search returned HTTP 429, while its exact DOI endpoint returned HTTP 200 and was used only for identity corroboration.",
+        "The Cambridge landing page returned HTTP 500, so the complete author-hosted PDF and independent DOI records supplied the evidence."
+      ],
+      "current_debate": {
+        "name": "Unpacking the Black Box of Causality: Learning about Causal Mechanisms from Experimental and Observational Studies",
+        "url": "https://doi.org/10.1017/S0003055411000414"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261481-010",
+        "url": "https://wulfkaal.github.io/claims/7261481-010",
+        "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+        "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261481",
+        "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-010-causal-mediation-01",
+      "evidence_level": "complete 25-page peer-reviewed author-hosted article with concordant Crossref DOI, OpenAlex, and Semantic Scholar identity records",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.98,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source directly separates overall causal effects from mechanism identification and specifies mediation evidence, design, and assumptions needed for defensible mechanism attribution.",
+      "source_provenance": {
+        "source": "peer-reviewed APSR article with complete author-hosted PDF",
+        "sourceRecordId": "doi:10.1017/S0003055411000414",
+        "canonicalUrl": "https://doi.org/10.1017/S0003055411000414",
+        "retrievedAt": "2026-08-13T11:39:38.117Z",
+        "pdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+        "textSha256": "ccdd5e0af860fc1e87bd3e92cbccaf5e5dea1154ff884d4eaeb5b21bd57dd825",
+        "crossrefRecordSha256": "d81d50532a5366c969181e6ff67eb5c9720e979acef876b8e8f0240db77517bd",
+        "openAlexRecordSha256": "5d09f9fd72da5238bbc960848a9630a85cd5e9f9776020b3eee1880a0d336c3a",
+        "semanticScholarRecordSha256": "b20bb0800a872a96c52b60240f19cd90fa8eaa4812e03977f824c3910bca7988",
+        "sourceProposition": "Imai, Keele, Tingley, and Yamamoto distinguish an overall causal effect from the mechanism that produces it. They define a mechanism through an intermediate variable, formalize causal mediation estimands, and show that identification depends on design and assumptions. Even randomizing treatment and the intermediate variable does not automatically identify the mechanism. Their article also separates identifying a treatment component that affects an outcome from identifying the causal process itself.",
+        "sourcePropositionSha256": "7fef16fa902ce1928c1a2545630dbc69ac4ec376e37a88a81d0aceb1f6b228be",
+        "sourceEvidenceSetSha256": "96d8508b470d5deeff699cc7669125d7efb965e98c38b6985ecc6220391b8ac1",
+        "sourceEvidencePassages": [
+          {
+            "text": "The identification of a causal mechanism requires the specification of an intermediate variable or a mediator that lies on the causal pathway between the treatment and outcome variables.",
+            "locator": {
+              "source": "complete author-hosted APSR article",
+              "section": "opening framework, printed page 765",
+              "pdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+              "evidenceFormat": "complete 25-page peer-reviewed article"
+            },
+            "sha256": "adbe7138b306d9d88f2a47398a8f7e300a45e7081c126961495ccb2ae7e4d18e"
+          },
+          {
+            "text": "although randomization is often seen as the gold standard for estimating causal effects, even randomizing both treatment and intermediate variables cannot identify a mechanism.",
+            "locator": {
+              "source": "complete author-hosted APSR article",
+              "section": "opening framework, printed page 766",
+              "pdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+              "evidenceFormat": "complete 25-page peer-reviewed article"
+            },
+            "sha256": "f5891a0ea6c3a55829abaa6110a9c3b0b64740b7eb5239703ad8e863df91e75b"
+          },
+          {
+            "text": "Another possibility is to identify particular components of a treatment that are capable of affecting an outcome, rather than focusing on causal processes",
+            "locator": {
+              "source": "complete author-hosted APSR article",
+              "section": "concluding remarks, printed page 784",
+              "pdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+              "evidenceFormat": "complete 25-page peer-reviewed article"
+            },
+            "sha256": "84e59325588bce1dfb895cca1b02b565c1d9d87d451fe5a0745265368bf982ad"
+          }
+        ],
+        "workId": "work:doi:10.1017/S0003055411000414",
+        "workAuthors": [
+          "Kosuke Imai",
+          "Luke Keele",
+          "Dustin Tingley",
+          "Teppei Yamamoto"
+        ],
+        "workPublishedAt": "2011-11",
+        "identityKeys": [
+          "doi:10.1017/S0003055411000414",
+          "openalex:W2132575282",
+          "s2:CorpusId:13120263",
+          "pdf:1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+          "proposition:7fef16fa902ce1928c1a2545630dbc69ac4ec376e37a88a81d0aceb1f6b228be"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261481-010",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261481-010",
+            "rank": 1,
+            "confidence": 0.98,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source directly separates overall causal effects from mechanism identification and specifies mediation evidence, design, and assumptions needed for defensible mechanism attribution.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-13T11:44:06.525Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "independenceBasis": "The four external authors have no author overlap with Wulf A. Kaal.",
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "versionReviewed": "complete author-hosted version of APSR 105(4), 765 to 789",
+          "refereedStatusVerified": true,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "causal mediation and research design distinguish an overall effect from the intermediate process that produces it",
+          "compatibleScope": "causal mechanism identification in experimental and observational studies under explicit estimands and assumptions",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "exactSupportingQuotesVerified": true,
+          "limitations": [
+            "The source does not examine Kaal's institutional architecture, registered metrics, or implementation.",
+            "The source does not examine ablation studies as such.",
+            "Randomizing treatment and the intermediate variable is not automatically sufficient to identify a mechanism.",
+            "Mediation estimates remain conditional on the mediator, estimand, identification assumptions, and research design.",
+            "Semantic Scholar discovery search returned HTTP 429, while its exact DOI endpoint returned HTTP 200 and was used only for identity corroboration.",
+            "The Cambridge landing page returned HTTP 500, so the complete author-hosted PDF and independent DOI records supplied the evidence."
+          ]
+        },
+        "liveVerification": {
+          "checkedAt": "2026-08-13T11:46:06.305Z",
+          "authorPdfHttpStatus": 200,
+          "authorPdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+          "frozenAuthorPdfSha256": "1cf7b3cd9e77da5787bd420d165c005c24c6e0563c40efe7d5e204f2d103a55d",
+          "crossrefHttpStatus": 200,
+          "crossrefRecordSha256": "d81d50532a5366c969181e6ff67eb5c9720e979acef876b8e8f0240db77517bd",
+          "frozenCrossrefRecordSha256": "d81d50532a5366c969181e6ff67eb5c9720e979acef876b8e8f0240db77517bd",
+          "openAlexHttpStatus": 200,
+          "openAlexRecordSha256": "5d09f9fd72da5238bbc960848a9630a85cd5e9f9776020b3eee1880a0d336c3a",
+          "frozenOpenAlexRecordSha256": "5d09f9fd72da5238bbc960848a9630a85cd5e9f9776020b3eee1880a0d336c3a",
+          "exactFullTextPassagesVerified": true
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}
