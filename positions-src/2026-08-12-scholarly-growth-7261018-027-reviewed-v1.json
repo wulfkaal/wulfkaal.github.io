@@ -1,0 +1,155 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-027-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-027.html",
+  "source_snapshot_sha256": "7c2e75407b1d3af1613f31b7e5f7f3879df4eaee4f57b69683deffba67be08a3",
+  "review_ledger_sha256": "43a0348077324b8b76bb90d2af4f7a7e496e0c1020135291b56432be5836cf26",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 324,
+      "response_type": "qualification",
+      "slug": "fixed-conditions-isolate-treatment-effect",
+      "topics": [
+        "research-methods",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "experimental-design",
+        "causal-inference",
+        "omitted-variable-control"
+      ],
+      "text": "Hunt, Stringer, and Polagye qualify Kaal's fixed-conditions design. Their turbine experiment held confinement, Froude number, Reynolds number, and other non-dimensional parameters constant while varying aspect ratio. When they relaxed the Froude-number control, the resulting efficiency increase could have been misattributed to aspect ratio. This supports the causal rationale for fixing treatment-relevant conditions. The correspondence remains methodological. The source studies a hydraulic turbine, not agentic validators or a multi-model cohort. It does not verify that Kaal held every relevant condition fixed. It also shows that identifying every relevant control is difficult and that an omitted condition can change the inference.",
+      "scope_conditions": [
+        "The response is limited to the exact control and omitted-variable passages and the one mapped Kaal claim.",
+        "External evidence level: complete public 20-page author manuscript bound through arXiv ID, journal DOI, title, three authors, Crossref, OpenAlex, Semantic Scholar, PDF hash, extracted text, and page-level evidence locators.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source studies cross-flow turbine performance, not agentic validators or a multi-model cohort.",
+        "The source establishes a domain-specific control mechanism and attribution risk. It does not verify that Kaal identified or held every treatment-relevant condition fixed.",
+        "The experiment does not audit Kaal's tasks, timing, models, cohort, implementation, or outcomes.",
+        "A prior public Kaal position already states the general one-change-at-a-time principle from experimental economics. This relationship is retained only for its distinct empirical demonstration of an omitted-control attribution error.",
+        "OpenAlex returned HTTP 429 for two broad language searches, Semantic Scholar returned HTTP 429 for the broad search and all eight inherited refreshes, and SSRN returned HTTP 403. No blocked response was promoted beyond its receipt-bound evidence level."
+      ],
+      "current_debate": {
+        "name": "Effect of aspect ratio on cross-flow turbine performance",
+        "url": "https://arxiv.org/abs/2104.07618"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261018-027",
+        "url": "https://wulfkaal.github.io/claims/7261018-027",
+        "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+        "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261018",
+        "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-027-hunt-stringer-polagye-01",
+      "evidence_level": "complete public 20-page author manuscript bound through arXiv ID, journal DOI, title, three authors, Crossref, OpenAlex, Semantic Scholar, PDF hash, extracted text, and page-level evidence locators",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The experiment isolates one variable by fixing the relevant non-dimensional parameters and then demonstrates the attribution error that appears when one control is allowed to vary.",
+      "source_provenance": {
+        "source": "complete public arXiv author manuscript bound to the Journal of Renewable and Sustainable Energy article",
+        "sourceRecordId": "doi:10.1063/5.0016753",
+        "canonicalUrl": "https://arxiv.org/abs/2104.07618",
+        "publicFullTextUrl": "https://arxiv.org/pdf/2104.07618",
+        "retrievedAt": "2026-08-13T00:10:16.735Z",
+        "publicPdfSha256": "598253e569910597a7707f8a48956fda50a93a9e24dd8d675cf43baa63390d49",
+        "publicHtmlSha256": "f1582728a9b6c98eb010fd6e3be0e0379c5d2190b37843bb64e25e4820fe6231",
+        "extractedTextSha256": "505434f31d57875e1ff72118ff508036dd445ccf6e8f1e22de3eff4201b68401",
+        "textExtraction": {
+          "tool": "pdftotext 25.06.0 raw mode",
+          "quality": "complete searchable 20-page author manuscript with abstract, methods, results, discussion, conclusion, and stable PDF-page locators"
+        },
+        "sourceProposition": "Hunt, Stringer, and Polagye isolate turbine aspect ratio by holding confinement, Froude number, Reynolds number, and other non-dimensional parameters constant. They show that allowing the Froude number to vary could wrongly attribute an efficiency increase to aspect ratio. This independently supports the causal purpose of Kaal's fixed treatment-relevant conditions. It does not verify Kaal's cohort, controls, execution, or outcomes.",
+        "sourcePropositionSha256": "ce3307fe2c1a8fbcfd6baadd34268f878849d0147fd05e2e78c9c9394463b962",
+        "sourceEvidenceSetSha256": "a3e298d12af4690428e3f56ea24b3efb1dde968bede4682940a4446ac4cb835e",
+        "sourceEvidencePassages": [
+          {
+            "text": "To isolate the effect of aspect ratio, all other non-dimensional parameters are held constant, including the relative confinement, Froude number, and Reynolds number.",
+            "locator": {
+              "arxivId": "2104.07618v1",
+              "pdfPage": 1,
+              "section": "Abstract",
+              "publicPdfSha256": "598253e569910597a7707f8a48956fda50a93a9e24dd8d675cf43baa63390d49"
+            },
+            "sha256": "f39a2c1382b6ae2e5ea72c6e15bc3eb6d9b4def4d3c9fe0b1fb618dccac12b39"
+          },
+          {
+            "text": "However, in experiments, unlike in simulation, it can be challenging to hold all other relevant non-dimensional parameters constant.",
+            "locator": {
+              "arxivId": "2104.07618v1",
+              "pdfPage": 14,
+              "section": "IV.B Assessment of Experimental Approach",
+              "publicPdfSha256": "598253e569910597a7707f8a48956fda50a93a9e24dd8d675cf43baa63390d49"
+            },
+            "sha256": "15c73fe6856248bfd40595e50c12a4a8b9496e4578f472227c4228c15c41d9ba"
+          },
+          {
+            "text": "As demonstrated, if the Froude number was allowed to vary, we could have incorrectly attributed an increase in turbine efficiency to a decrease in aspect ratio.",
+            "locator": {
+              "arxivId": "2104.07618v1",
+              "pdfPage": 14,
+              "section": "IV.B Assessment of Experimental Approach",
+              "publicPdfSha256": "598253e569910597a7707f8a48956fda50a93a9e24dd8d675cf43baa63390d49"
+            },
+            "sha256": "a1c4252f72f2653ea8e7c8acc7b9f284a4896934f9c38a99795f077bf98ebbad"
+          }
+        ],
+        "workId": "work:doi:10.1063/5.0016753",
+        "workAuthors": [
+          "Aidan Hunt",
+          "Carl Stringer",
+          "Brian Polagye"
+        ],
+        "workPublishedAt": "2020-09-01",
+        "identityKeys": [
+          "doi:10.1063/5.0016753",
+          "arxiv:2104.07618v1",
+          "openalex:W3086649711",
+          "semantic-scholar:49ba4b69f27bbf8d7835dfbc6c8cafe6140b7405",
+          "pdf:598253e569910597a7707f8a48956fda50a93a9e24dd8d675cf43baa63390d49",
+          "proposition:ce3307fe2c1a8fbcfd6baadd34268f878849d0147fd05e2e78c9c9394463b962"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261018-027",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261018-027",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The experiment isolates one variable by fixing the relevant non-dimensional parameters and then demonstrates the attribution error that appears when one control is allowed to vary.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-13T00:14:09.825Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "one varied experimental parameter is isolated by fixing other relevant parameters, and relaxing one control produces a demonstrated attribution risk",
+          "compatibleScope": "qualification limited to the causal rationale and omitted-control risk of Kaal's fixed-conditions experimental design",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "exactSupportingQuotesVerified": true,
+          "limitations": [
+            "The source studies cross-flow turbine performance, not agentic validators or a multi-model cohort.",
+            "The source establishes a domain-specific control mechanism and attribution risk. It does not verify that Kaal identified or held every treatment-relevant condition fixed.",
+            "The experiment does not audit Kaal's tasks, timing, models, cohort, implementation, or outcomes.",
+            "A prior public Kaal position already states the general one-change-at-a-time principle from experimental economics. This relationship is retained only for its distinct empirical demonstration of an omitted-control attribution error.",
+            "OpenAlex returned HTTP 429 for two broad language searches, Semantic Scholar returned HTTP 429 for the broad search and all eight inherited refreshes, and SSRN returned HTTP 403. No blocked response was promoted beyond its receipt-bound evidence level."
+          ]
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}
