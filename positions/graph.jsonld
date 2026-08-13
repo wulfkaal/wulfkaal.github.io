@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-355",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-355",
+   "text": "State must persist before an evolutionary trajectory can be evaluated. Lalan, Ghosh, Kolsur, and Dutta implement a stateful multi-agent search for unit-test generation. A controller carries edge cases, coverage scores, mutation feedback, exception signals, and reward history across successive stages. Later stages inherit and refine earlier judgments. A critic scores candidates, while evolutionary selection preserves a population of high-performing elites. The reported system achieves higher coverage than stateless prompting baselines.\n\nThis evidence qualifies Kaal's E2B question. It shows that an artificial agent process can preserve evaluation-relevant state across evolutionary stages and condition later candidates on that history. The resulting search is selected and history dependent rather than a sequence of isolated samples.\n\nThe limit controls the inference. The paper evaluates unit-test generation, not Kaal's substrate or registered population. It compares stateful evolutionary search with stateless prompting, not with neutral drift under the same mutation, population, and compute conditions. Higher coverage therefore does not establish that selection, rather than accumulated state, reward shaping, or additional search, produced the trajectory. The source supports technical feasibility and the need for a drift control. It does not report the E2B result.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2510.07147"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-020"
+   },
+   "sha256": "43f9ee40b1af9432815b580ee31feb42259803ff50d87e28f92c308b58cfd68a",
+   "evidenceLevel": "complete public 24-page arXiv v1 preprint with exact PDF SHA-256, page-bound passages, arXiv API identity, and DataCite identity",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.95,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-354",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-354",
@@ -165855,6 +165875,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://arxiv.org/abs/2510.07147",
+   "@type": "CreativeWork",
+   "name": "A Multi-Agent Framework for Stateful Inference-Time Search",
+   "url": "https://arxiv.org/abs/2510.07147"
+  },
+  {
    "@id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328",
    "@type": "CreativeWork",
    "name": "Causal Inference Under Multiple Versions of Treatment",
@@ -210769,6 +210795,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-020",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-020",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261481-019",

@@ -1,0 +1,183 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-355",
+ "identifier": "kaal:position:2026-08-08-355",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Stateful Evolution Supports Feasibility Not Drift Identification",
+ "text": "State must persist before an evolutionary trajectory can be evaluated. Lalan, Ghosh, Kolsur, and Dutta implement a stateful multi-agent search for unit-test generation. A controller carries edge cases, coverage scores, mutation feedback, exception signals, and reward history across successive stages. Later stages inherit and refine earlier judgments. A critic scores candidates, while evolutionary selection preserves a population of high-performing elites. The reported system achieves higher coverage than stateless prompting baselines.\n\nThis evidence qualifies Kaal's E2B question. It shows that an artificial agent process can preserve evaluation-relevant state across evolutionary stages and condition later candidates on that history. The resulting search is selected and history dependent rather than a sequence of isolated samples.\n\nThe limit controls the inference. The paper evaluates unit-test generation, not Kaal's substrate or registered population. It compares stateful evolutionary search with stateless prompting, not with neutral drift under the same mutation, population, and compute conditions. Higher coverage therefore does not establish that selection, rather than accumulated state, reward shaping, or additional search, produced the trajectory. The source supports technical feasibility and the need for a drift control. It does not report the E2B result.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "research-methods",
+  "ai-and-agents",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "multi-agent-systems",
+  "evolutionary-search",
+  "persistent-state",
+  "selection",
+  "drift"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact public-preprint proposition and the one mapped Kaal claim.",
+  "External evidence level: complete public 24-page arXiv v1 preprint with exact PDF SHA-256, page-bound passages, arXiv API identity, and DataCite identity.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The source studies inference-time unit-test generation, not Kaal's substrate or registered E2B population.",
+  "Its evolutionary stages are search iterations under one controller, not biological generations or persistent autonomous-agent identities.",
+  "The baselines are stateless prompts. The experiments do not include a neutral-drift control under the same mutation, population, and compute conditions.",
+  "Higher coverage therefore cannot identify selection rather than accumulated state, reward shaping, or additional search budget as the causal mechanism.",
+  "The work is an arXiv v1 preprint marked under review."
+ ],
+ "currentDebate": {
+  "name": "A Multi-Agent Framework for Stateful Inference-Time Search",
+  "url": "https://arxiv.org/abs/2510.07147"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261481-020",
+  "url": "https://wulfkaal.github.io/claims/7261481-020",
+  "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+  "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261481",
+  "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-020"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "A Multi-Agent Framework for Stateful Inference-Time Search",
+   "url": "https://arxiv.org/abs/2510.07147"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-020-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-020.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-355",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-355.md",
+ "candidateId": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-020-stateful-evolution-01",
+ "evidenceLevel": "complete public 24-page arXiv v1 preprint with exact PDF SHA-256, page-bound passages, arXiv API identity, and DataCite identity",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.95,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source implements persistent state across evolutionary stages, inheritance of earlier judgments, and elite selection, while leaving the drift distinction unresolved.",
+ "sourceProvenance": {
+  "source": "complete public arXiv v1 preprint independently bound through PDF, abstract page, arXiv API, and DataCite",
+  "sourceRecordId": "arxiv:2510.07147v1",
+  "canonicalUrl": "https://doi.org/10.48550/arXiv.2510.07147",
+  "publicFullTextUrl": "https://arxiv.org/pdf/2510.07147",
+  "retrievedAt": "2026-08-13T16:42:28.204Z",
+  "sourceArticlePages": 24,
+  "primaryFullTextEvidenceReceiptSha256": "0fb58c0ce35afe082515259a0eb42e13a17abbc81d287d336fd7a87d543f9944",
+  "pdfSha256": "f8ef6038de00c4e969b601550f6a935f0d660f2d35322c934bcba5186b1b0a8c",
+  "extractedTextSha256": "ba4e7b6e8041c2d3bec67b08be2a6a365716d3fcf146dd727d50749bcf1e0589",
+  "arxivAbstractSha256": "8a3d704e36b28df5d36c90020e113761956006f0578545967077b5c2984b632b",
+  "arxivApiSha256": "576b24c08b885a1e099559a898319ba3b20435791ca12e42f1f28bde1348ee36",
+  "dataCiteResponseSha256": "df448ceb2131b079b81491c64b44bb68dc7ae5b4d44f240b267f1af75183be50",
+  "textExtraction": {
+   "tool": "pdftotext 25.06.0 with layout preservation",
+   "quality": "complete 24-page PDF with headings, definitions, tables, results, references, and appendices legible"
+  },
+  "sourceProposition": "Lalan, Ghosh, Kolsur, and Dutta implement a multi-agent evolutionary search in which a controller carries evaluation state across successive stages, later stages inherit earlier judgments, and selection preserves high-scoring elites. Their experiments report higher unit-test coverage than stateless prompting baselines.",
+  "sourcePropositionSha256": "8c51ee9187878aa9ed7d41b24fe05c262b250bf013a03471f1e9e2b2f5e5c750",
+  "sourceEvidenceSetSha256": "38b05c60151ededded6c1877b850a0954b8598f7379b810dd8c6c3e6ab406341",
+  "sourceEvidencePassages": [
+   {
+    "text": "A controller maintains persistent state across generations, while evolutionary preservation ensures diversity and exploration across all possible cases.",
+    "locator": {
+     "version": "arXiv:2510.07147v1, complete 24-page PDF",
+     "printedPage": 1,
+     "section": "Abstract",
+     "primaryFullTextUrl": "https://arxiv.org/pdf/2510.07147"
+    },
+    "sha256": "84a622ffb4a54cc2a1432bfb08c87b544c78d97f2fcccc402952f476b7e62a3e"
+   },
+   {
+    "text": "This shared evaluation signal serves as a persistent knowledge base, allowing later stages to inherit and refine the judgment of earlier stages rather than re-learning from scratch",
+    "locator": {
+     "version": "arXiv:2510.07147v1, complete 24-page PDF",
+     "printedPage": 2,
+     "section": "1 Introduction",
+     "primaryFullTextUrl": "https://arxiv.org/pdf/2510.07147"
+    },
+    "sha256": "d3948290bf7275425871c66094ab773ace66ee64868c73e2ba03cb920ec09d0f"
+   },
+   {
+    "text": "Evolutionary selection: The framework preserves a population of diverse elites, avoiding reliance on a single trajectory and improving robustness without requiring specialized training.",
+    "locator": {
+     "version": "arXiv:2510.07147v1, complete 24-page PDF",
+     "printedPage": 5,
+     "section": "3 Methodology",
+     "primaryFullTextUrl": "https://arxiv.org/pdf/2510.07147"
+    },
+    "sha256": "b9ecebf1c434eab55c5cbedae787638af66c0ef5ffea10a44a042dcec1d7d08e"
+   }
+  ],
+  "workId": "work:arxiv:2510.07147v1",
+  "workAuthors": [
+   "Arshika Lalan",
+   "Rajat Ghosh",
+   "Aditya Kolsur",
+   "Debojyoti Dutta"
+  ],
+  "workPublishedAt": "2025-10-08",
+  "identityKeys": [
+   "arxiv:2510.07147v1",
+   "doi:10.48550/arxiv.2510.07147",
+   "pdf:f8ef6038de00c4e969b601550f6a935f0d660f2d35322c934bcba5186b1b0a8c",
+   "proposition:8c51ee9187878aa9ed7d41b24fe05c262b250bf013a03471f1e9e2b2f5e5c750"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261481-020",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261481-020",
+    "rank": 1,
+    "confidence": 0.95,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source implements persistent state across evolutionary stages, inheritance of earlier judgments, and elite selection, while leaving the drift distinction unresolved.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-13T16:42:28.204Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "controller-carried state, inherited evaluations, mutation, reward scoring, and elite preservation across evolutionary stages",
+   "compatibleScope": "qualification limited to technical feasibility and the unresolved need for a neutral-drift control",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "limitations": [
+    "The source studies inference-time unit-test generation, not Kaal's substrate or registered E2B population.",
+    "Its evolutionary stages are search iterations under one controller, not biological generations or persistent autonomous-agent identities.",
+    "The baselines are stateless prompts. The experiments do not include a neutral-drift control under the same mutation, population, and compute conditions.",
+    "Higher coverage therefore cannot identify selection rather than accumulated state, reward shaping, or additional search budget as the causal mechanism.",
+    "The work is an arXiv v1 preprint marked under review."
+   ],
+   "exactSupportingQuotesVerified": true
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "43f9ee40b1af9432815b580ee31feb42259803ff50d87e28f92c308b58cfd68a"
+}
