@@ -1,0 +1,184 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-361",
+ "identifier": "kaal:position:2026-08-08-361",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Externally Provisioned Environment Within Run Selection",
+ "text": "An externally supplied experimental environment does not make the selection process external to the experiment.\n\nBatut, Parsons, Fischer, Beslon, and Knibbe describe in silico experimental evolution. They separate the setup from the operation. Population size, spatial structure, the fitness measure, and selection strength are chosen at the beginning of a run. Within that setup, artificial organisms reproduce and mutate. Fitter organisms reproduce, while other organisms die. This supplies an independent mechanism comparator for Kaal's classification. Selection can operate inside a computational experiment even when the environment and its parameters were provisioned before the run.\n\nThe relationship is a qualification. The paper studies simulated bacteria, not Kaal's agents or E2B execution. It does not inspect Kaal's evidence, verify the host environment, or establish that the reported selection rule executed. It also treats investigator-chosen fitness and selection parameters, not every form of endogenous selection. The external source supports the distinction between experimental provisioning and within-experiment selection. Historical occurrence in Kaal's experiment remains bound to Kaal's execution evidence.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "research-methods",
+  "ai-and-agents",
+  "economics",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "experimental-methods",
+  "evolutionary-computation",
+  "selection",
+  "evidence-provenance"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact public primary-paper proposition and the one mapped Kaal claim.",
+  "External evidence level: complete peer-reviewed open-access BMC Bioinformatics article with DOI-bound identity and exact full-text proposition evidence.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The source studies simulated bacterial genomes, not Kaal's agents or the E2B execution record.",
+  "The source does not inspect Kaal's experiment, verify its host environment, or establish that Kaal's reported selection rule executed.",
+  "The source treats investigator-chosen fitness and selection parameters. It does not establish every possible meaning of endogenous selection."
+ ],
+ "currentDebate": {
+  "name": "In silico experimental evolution: a tool to test evolutionary scenarios",
+  "url": "https://doi.org/10.1186/1471-2105-14-S15-S11"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261481-028",
+  "url": "https://wulfkaal.github.io/claims/7261481-028",
+  "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+  "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261481",
+  "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-028"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "In silico experimental evolution: a tool to test evolutionary scenarios",
+   "url": "https://doi.org/10.1186/1471-2105-14-S15-S11"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-028-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-028.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-361",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-361.md",
+ "candidateId": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-028-batut-in-silico-selection-01",
+ "evidenceLevel": "complete peer-reviewed open-access BMC Bioinformatics article with DOI-bound identity and exact full-text proposition evidence",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.95,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source directly separates investigator-chosen experimental parameters from fitness-dependent selection and reproduction operating within the computational run. This qualifies Kaal's classification without validating historical execution in Kaal's experiment.",
+ "sourceProvenance": {
+  "source": "complete peer-reviewed open-access BMC Bioinformatics article",
+  "sourceRecordId": "doi:10.1186/1471-2105-14-S15-S11",
+  "doi": "10.1186/1471-2105-14-s15-s11",
+  "pmcid": "PMC3851946",
+  "canonicalUrl": "https://doi.org/10.1186/1471-2105-14-S15-S11",
+  "publicFullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3851946/",
+  "retrievedAt": "2026-08-13T20:39:26.642Z",
+  "crossrefRecordSha256": "d97c51bd2ce18742a1860261a76fa43d6bbced384c38d0fde5d1fb150568aabd",
+  "fullTextXmlSha256": "cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e",
+  "primaryEvidenceReceiptSha256": "7d7e989b64c70301f6dd798e8332a8ca944c128daba23467b9dc0d06b14d1bc5",
+  "sourceProposition": "Batut and coauthors separate experimental provisioning from within-run selection. Investigators choose the population structure, fitness measure, and selection strength before a run. Inside the computational experiment, fitness-dependent reproduction renews the population while other organisms die.",
+  "sourcePropositionSha256": "a94255ab2d8cb90a5820436dc731b2abd2318a011f4edb25074d7c34b1b068cd",
+  "sourceEvidenceSetSha256": "12989bb4ef48aded1b2e6d923aade3d5a0a994eca1873b5b39d240ea3c8d779c",
+  "sourceEvidencePassages": [
+   {
+    "text": "In silico experimental evolution consists in building artificial organisms and letting them reproduce and mutate inside the computer.",
+    "sha256": "5f22e1f98b95045d04528e4b333d708edd1ef354708186e192430c6809e23f24",
+    "locator": {
+     "source": "BMC Bioinformatics 14(Suppl 15):S11 (2013)",
+     "section": "Methods, In silico experimental evolution",
+     "canonicalUrl": "https://doi.org/10.1186/1471-2105-14-S15-S11",
+     "pmcid": "PMC3851946",
+     "fullTextXmlSha256": "cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e"
+    }
+   },
+   {
+    "text": "At each time step, a part or the whole population is renewed by letting the fittest organisms reproduce - possibly with mutations - and letting other organisms die.",
+    "sha256": "d70af30dc78ddc750eb3bb051193590603009913c449c9f1a9a5a844db1c4823",
+    "locator": {
+     "source": "BMC Bioinformatics 14(Suppl 15):S11 (2013)",
+     "section": "Methods, In silico experimental evolution",
+     "canonicalUrl": "https://doi.org/10.1186/1471-2105-14-S15-S11",
+     "pmcid": "PMC3851946",
+     "fullTextXmlSha256": "cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e"
+    }
+   },
+   {
+    "text": "The size of the population, its spatial arrangement, the mutation rates, the rate of sexual recombination, the fitness measure and the strength of selection are chosen at the beginning of the run and some can also be allowed to change during the run.",
+    "sha256": "44df553d605018c88701ad8c5d8911f8ad3a54e6da35d29aea9bd0d1b62240b7",
+    "locator": {
+     "source": "BMC Bioinformatics 14(Suppl 15):S11 (2013)",
+     "section": "Methods, In silico experimental evolution",
+     "canonicalUrl": "https://doi.org/10.1186/1471-2105-14-S15-S11",
+     "pmcid": "PMC3851946",
+     "fullTextXmlSha256": "cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e"
+    }
+   }
+  ],
+  "workId": "work:doi:10.1186/1471-2105-14-S15-S11",
+  "workAuthors": [
+   "Bérénice Batut",
+   "David P. Parsons",
+   "Stephan Fischer",
+   "Guillaume Beslon",
+   "Carole Knibbe"
+  ],
+  "workPublishedAt": "2013-10-15",
+  "identityKeys": [
+   "doi:10.1186/1471-2105-14-s15-s11",
+   "pmcid:pmc3851946",
+   "fulltext:cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e",
+   "proposition:a94255ab2d8cb90a5820436dc731b2abd2318a011f4edb25074d7c34b1b068cd"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261481-028",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261481-028",
+    "rank": 1,
+    "confidence": 0.95,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source directly separates investigator-chosen experimental parameters from fitness-dependent selection and reproduction operating within the computational run. This qualifies Kaal's classification without validating historical execution in Kaal's experiment.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-13T20:43:41.995Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "investigator-provisioned experimental parameters followed by fitness-dependent reproduction and death inside the computational run",
+   "compatibleScope": "methodological qualification of the distinction between externally provisioned experimental conditions and selection operating within the experiment",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "exactSupportingQuotesVerified": true,
+   "limitations": [
+    "The source studies simulated bacterial genomes, not Kaal's agents or the E2B execution record.",
+    "The source does not inspect Kaal's experiment, verify its host environment, or establish that Kaal's reported selection rule executed.",
+    "The source treats investigator-chosen fitness and selection parameters. It does not establish every possible meaning of endogenous selection."
+   ]
+  },
+  "liveVerification": {
+   "checkedAt": "2026-08-13T20:45:14.827Z",
+   "crossrefHttpStatus": 200,
+   "crossrefResponseSha256": "d97c51bd2ce18742a1860261a76fa43d6bbced384c38d0fde5d1fb150568aabd",
+   "frozenCrossrefSha256": "d97c51bd2ce18742a1860261a76fa43d6bbced384c38d0fde5d1fb150568aabd",
+   "fullTextXmlSha256": "cd684e81021a5c3d1663922d2f71eb039381e0b32612ed72301b0893f599a82e"
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "a073187830dc2b77dbff0c1de2142da677bcb86aa0a1ea117d418cd877bb5dfb"
+}

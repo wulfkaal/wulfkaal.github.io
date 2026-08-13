@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-361",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-361",
+   "text": "An externally supplied experimental environment does not make the selection process external to the experiment.\n\nBatut, Parsons, Fischer, Beslon, and Knibbe describe in silico experimental evolution. They separate the setup from the operation. Population size, spatial structure, the fitness measure, and selection strength are chosen at the beginning of a run. Within that setup, artificial organisms reproduce and mutate. Fitter organisms reproduce, while other organisms die. This supplies an independent mechanism comparator for Kaal's classification. Selection can operate inside a computational experiment even when the environment and its parameters were provisioned before the run.\n\nThe relationship is a qualification. The paper studies simulated bacteria, not Kaal's agents or E2B execution. It does not inspect Kaal's evidence, verify the host environment, or establish that the reported selection rule executed. It also treats investigator-chosen fitness and selection parameters, not every form of endogenous selection. The external source supports the distinction between experimental provisioning and within-experiment selection. Historical occurrence in Kaal's experiment remains bound to Kaal's execution evidence.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1186/1471-2105-14-S15-S11"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-028"
+   },
+   "sha256": "a073187830dc2b77dbff0c1de2142da677bcb86aa0a1ea117d418cd877bb5dfb",
+   "evidenceLevel": "complete peer-reviewed open-access BMC Bioinformatics article with DOI-bound identity and exact full-text proposition evidence",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.95,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-360",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-360",
@@ -165975,6 +165995,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1186/1471-2105-14-S15-S11",
+   "@type": "CreativeWork",
+   "name": "In silico experimental evolution: a tool to test evolutionary scenarios",
+   "url": "https://doi.org/10.1186/1471-2105-14-S15-S11"
+  },
+  {
    "@id": "https://doi.org/10.1111/j.1745-9125.1998.tb01268.x",
    "@type": "CreativeWork",
    "name": "Using the Correct Statistical Test for the Equality of Regression Coefficients",
@@ -210919,6 +210945,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-028",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-028",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261481-026",
