@@ -1,0 +1,192 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-343",
+ "identifier": "kaal:position:2026-08-08-343",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Majority Aggregation Preserves Measurable Judgment Uncertainty",
+ "text": "Davani, Díaz, and Prabhakaran qualify Kaal's treatment of cohort judgment as an estimator rather than a truth oracle. Across seven binary classification tasks, they show that majority voting can erase systematic annotator disagreement. Their multi-annotator model matches or improves predictive performance and produces uncertainty estimates that better track disagreement. This supports the narrower proposition that aggregation leaves measurable uncertainty and that a naive aggregate can conceal structure in the judgments it combines. The limitation is material. Their tasks concern subjective language annotation, not Kaal's verification cohort. The source does not validate Kaal's variance calculation, reproduce Part VI.C, or show that every form of verification preserves information asymmetry.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "economics",
+  "research-methods",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "aggregation",
+  "decision-science",
+  "annotation",
+  "uncertainty",
+  "evidence-provenance"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact TACL passages and the one mapped Kaal claim.",
+  "External evidence level: complete 19-page peer-reviewed TACL article with concordant ACL Anthology, Crossref DOI, OpenAlex, and Semantic Scholar identity.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The tasks concern subjective language annotation, not Kaal's verification cohort.",
+  "The source does not reproduce or validate Kaal's Part VI.C calculation.",
+  "It does not show that every verification architecture preserves information asymmetry.",
+  "Its empirical comparison covers seven binary classification tasks and does not establish universal superiority of multi-annotator modeling.",
+  "Semantic Scholar search returned HTTP 429, although the exact DOI endpoint returned HTTP 200 and was used only for identity corroboration."
+ ],
+ "currentDebate": {
+  "name": "Dealing with Disagreements: Looking Beyond the Majority Vote in Subjective Annotations",
+  "url": "https://doi.org/10.1162/tacl_a_00449"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261481-008",
+  "url": "https://wulfkaal.github.io/claims/7261481-008",
+  "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+  "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261481",
+  "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-008"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Dealing with Disagreements: Looking Beyond the Majority Vote in Subjective Annotations",
+   "url": "https://doi.org/10.1162/tacl_a_00449"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-008-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-008.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-343",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-343.md",
+ "candidateId": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-008-annotator-disagreement-01",
+ "evidenceLevel": "complete 19-page peer-reviewed TACL article with concordant ACL Anthology, Crossref DOI, OpenAlex, and Semantic Scholar identity",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.97,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source directly treats aggregated judgments as a fallible estimator, measures disagreement as annotation variance, and shows that majority aggregation can discard information and add noise.",
+ "sourceProvenance": {
+  "source": "complete TACL PDF with concordant ACL Anthology, Crossref, OpenAlex, and Semantic Scholar identity",
+  "sourceRecordId": "doi:10.1162/tacl_a_00449",
+  "canonicalUrl": "https://doi.org/10.1162/tacl_a_00449",
+  "retrievedAt": "2026-08-13T10:39:08.904Z",
+  "pdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+  "textSha256": "75d50525863aa3e0245a1a70164aac1009e0508bce929fe973c7691348835bbc",
+  "crossrefRecordSha256": "e8a97241bbc6640e2573ac28de6395c2f3850a4e15faad8b228a23ea7aa69fbf",
+  "openAlexRecordSha256": "d60b4e6c2efe88f295adaca0040bcad1f525deb35f58ef7154798f8bf3bafabe",
+  "semanticScholarRecordSha256": "3efdfce3e26ec4adbdb8c30df498e85007452bcbef55757e13f2300309f623b1",
+  "sourceProposition": "Davani, Díaz, and Prabhakaran show that majority aggregation can conceal systematic annotator disagreement. Across seven binary classification tasks, a multi-annotator approach matches or improves performance and yields uncertainty estimates tied to the variance of annotations. The result makes aggregate judgment a fallible estimator with measurable uncertainty rather than a truth oracle.",
+  "sourcePropositionSha256": "fcce51788fb54ecc9c2ad642f6f4f708eaf9500b9700d51ec0608024baed646f",
+  "sourceEvidenceSetSha256": "4cfa82d44bc2bfe42bf58db1f2811473088eb8e1b9675639ba7e9b5d08aae12f",
+  "sourceEvidencePassages": [
+   {
+    "text": "Majority voting and averaging are common approaches used to resolve annotator disagreements and derive single ground truth labels from multiple annotations. However, annotators may systematically disagree with one another",
+    "locator": {
+     "source": "TACL 2022 PDF",
+     "section": "Abstract, printed page 92",
+     "pdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+     "evidenceFormat": "complete 19-page peer-reviewed journal article"
+    },
+    "sha256": "667bca0c702a10931e2e7e4b4647edd0fe5ab93553e04be3fd79459f876e882a"
+   },
+   {
+    "text": "aggregating annotations based on majority votes disposes of information about each annotator and inserts noise into the labels.",
+    "locator": {
+     "source": "TACL 2022 PDF",
+     "section": "Section 4.3.1, printed page 98",
+     "pdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+     "evidenceFormat": "complete 19-page peer-reviewed journal article"
+    },
+    "sha256": "73d28097f3cea606ca70ec3edbeb015142a8e1ccb845d3ca061df72c7f94d913"
+   },
+   {
+    "text": "We compare uncertainty in predictions with annotator disagreement, measured as the variance of the annotations.",
+    "locator": {
+     "source": "TACL 2022 PDF",
+     "section": "Section 4.3.2, printed page 98",
+     "pdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+     "evidenceFormat": "complete 19-page peer-reviewed journal article"
+    },
+    "sha256": "44525c8bd58a083fedd223ac9e7abea82c12e9414401894fd9413441cc2e047d"
+   }
+  ],
+  "workId": "work:doi:10.1162/tacl_a_00449",
+  "workAuthors": [
+   "Aida Mostafazadeh Davani",
+   "Mark Díaz",
+   "Vinodkumar Prabhakaran"
+  ],
+  "workPublishedAt": "2022",
+  "identityKeys": [
+   "doi:10.1162/tacl_a_00449",
+   "acl:2022.tacl-1.6",
+   "openalex:W3206428286",
+   "pdf:f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+   "proposition:fcce51788fb54ecc9c2ad642f6f4f708eaf9500b9700d51ec0608024baed646f"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261481-008",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261481-008",
+    "rank": 1,
+    "confidence": 0.97,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source directly treats aggregated judgments as a fallible estimator, measures disagreement as annotation variance, and shows that majority aggregation can discard information and add noise.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-13T10:43:33.968Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "independenceBasis": "The three external authors have no author overlap with Wulf A. Kaal.",
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "versionReviewed": "TACL volume 10, 2022, pages 92 to 110",
+   "refereedStatusVerified": true,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "majority aggregation compresses heterogeneous judgments into a label while annotation variance and multi-annotator predictions retain measurable uncertainty",
+   "compatibleScope": "subjective binary language-annotation tasks with multiple annotators",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "exactSupportingQuotesVerified": true,
+   "limitations": [
+    "The tasks concern subjective language annotation, not Kaal's verification cohort.",
+    "The source does not reproduce or validate Kaal's Part VI.C calculation.",
+    "It does not show that every verification architecture preserves information asymmetry.",
+    "Its empirical comparison covers seven binary classification tasks and does not establish universal superiority of multi-annotator modeling.",
+    "Semantic Scholar search returned HTTP 429, although the exact DOI endpoint returned HTTP 200 and was used only for identity corroboration."
+   ]
+  },
+  "liveVerification": {
+   "checkedAt": "2026-08-13T10:45:42.853Z",
+   "aclPdfHttpStatus": 200,
+   "aclPdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+   "frozenAclPdfSha256": "f91373fb25d611350303bd1fef5c1d982a08377352aa863691d593b937b385da",
+   "crossrefHttpStatus": 200,
+   "crossrefRecordSha256": "e8a97241bbc6640e2573ac28de6395c2f3850a4e15faad8b228a23ea7aa69fbf",
+   "frozenCrossrefRecordSha256": "e8a97241bbc6640e2573ac28de6395c2f3850a4e15faad8b228a23ea7aa69fbf",
+   "openAlexHttpStatus": 200,
+   "openAlexRecordSha256": "1a22bc0d6a00599817ea1ef627dfb645e81fc10a3187cf3c8010bd84a7cb1f0e",
+   "frozenOpenAlexRecordSha256": "d60b4e6c2efe88f295adaca0040bcad1f525deb35f58ef7154798f8bf3bafabe",
+   "exactFullTextPassagesVerified": true
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "7f8ebc29556d0f74de3e2c215ecdd7bbb4e83ff2a0c2bfcf640f20024d7f57f4"
+}
