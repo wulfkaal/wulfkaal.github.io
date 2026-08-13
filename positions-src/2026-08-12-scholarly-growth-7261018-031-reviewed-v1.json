@@ -1,0 +1,155 @@
+{
+  "batch_id": "kaal-review:2026-08-12:scholarly-growth-7261018-031-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261018-031.html",
+  "source_snapshot_sha256": "9386c29129c078e5586438e318fe29e7b32189fc624f19a554269f91417f6d8a",
+  "review_ledger_sha256": "aac8951729f4e446a779a05210179384a1f526b55e89515a74c265f1fbe29ea2",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 328,
+      "response_type": "qualification",
+      "slug": "scientific-evidence-is-bound-to-the-tested-research-apparatus",
+      "topics": [
+        "research-methods",
+        "institutional-design",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "scientific-software",
+        "software-testing",
+        "evidence-provenance",
+        "reproducibility"
+      ],
+      "text": "Scientific evidence is apparatus-bound. Kanewala and Bieman's systematic review explains why. The review reports that scientific software generates evidence for research publications, while also finding that testing is often limited to the initial scientific problem addressed by the code. Reliability on a different problem therefore cannot be guaranteed. This supports treating the completed E1 and E2a evidence as evidence about the historical research apparatus that produced it.\n\nThe relationship is a qualification. The review does not examine Kaal's apparatus, autonomous agents, either experiment, or the current reference implementation, and it cannot establish which code, models, or institutional conditions produced Kaal's results. Those facts remain source-bound to Kaal's Article. The external evidence instead supplies the methodological reason for keeping the completed evidence tied to its tested apparatus. A later or modified system requires separate verification before the earlier results can be transferred to it.",
+      "scope_conditions": [
+        "The response is limited to the exact PMC full-text passages and the one mapped Kaal claim.",
+        "External evidence level: complete peer-reviewed scholarly full text from PMC BioC XML with concordant Crossref, OpenAlex, and Semantic Scholar identities.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The review does not examine Kaal's historical apparatus, autonomous agents, E1, E2a, or the current reference implementation.",
+        "It cannot verify which code, models, or institutional conditions produced Kaal's results.",
+        "The external relationship is methodological and does not independently establish Kaal's source-bound provenance statement.",
+        "Crossref Spanish, Semantic Scholar search, arXiv, and one mapped Semantic Scholar record returned HTTP 429. No rate-limited response was promoted."
+      ],
+      "current_debate": {
+        "name": "Testing Scientific Software: A Systematic Literature Review",
+        "url": "https://doi.org/10.1016/j.infsof.2014.05.006"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261018-031",
+        "url": "https://wulfkaal.github.io/claims/7261018-031",
+        "citation": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort (2026). SSRN: https://ssrn.com/abstract=7261018",
+        "paper": "Wulf A. Kaal, Empirical Evaluation of the Agentic Reputation Substrate: Deliberation, the Composition of Error, and the Registered Measurement of Agency Costs in a Controlled Multi-Model Cohort",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261018",
+        "source_pdf_sha256": "1d6cbe544bd0055133f7cf8ff308be4fde955867bd8dc764992b8d516af15fa8"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-12:scholarly-growth-7261018-031-kanewala-bieman-01",
+      "evidence_level": "complete peer-reviewed scholarly full text from PMC BioC XML with concordant Crossref, OpenAlex, and Semantic Scholar identities",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The review provides the methodological reason to bind completed empirical evidence to the scientific apparatus and problem actually tested.",
+      "source_provenance": {
+        "source": "peer-reviewed PMC full text with concordant Crossref, OpenAlex, and Semantic Scholar identities",
+        "sourceRecordId": "doi:10.1016/j.infsof.2014.05.006",
+        "canonicalUrl": "https://doi.org/10.1016/j.infsof.2014.05.006",
+        "publisherUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4128280/",
+        "retrievedAt": "2026-08-13T02:10:39.892Z",
+        "crossrefRecordSha256": "380905855bdfc3352c8e6979e2c8ecfefa04c64c7ded69b0a62e528d055d49c3",
+        "openAlexRecordSha256": "03827a5eaa70390d91abc6c48af97a997ab976df5f444a68d8a6137403844691",
+        "semanticScholarRecordSha256": "2cc4e28196d31c4a7349018ac22efa7b78d7481007d68a8f87ed4c384a9fed4b",
+        "pmcFullTextSha256": "083518f21826563878c50d7220da47b523567acaeb6bc53d22f96fe5dddc2c2d",
+        "textExtraction": {
+          "tool": "NCBI PMC BioC XML",
+          "quality": "complete machine-readable peer-reviewed full text with exact proposition-bearing passages and section offsets"
+        },
+        "sourceProposition": "Kanewala and Bieman systematically review 62 studies of scientific-software testing. They report that scientific software produces evidence used in research publications. They also find that testing may be limited to the initial scientific problem addressed by the code, so reliability on a different problem cannot be guaranteed. The evidence supports treating completed empirical results as bound to the tested research apparatus unless a later or modified system is separately verified.",
+        "sourcePropositionSha256": "3a1d61d632ee5822612c2ccae7989dd7b48337ce0a594ea4d997adf8bb672f63",
+        "sourceEvidenceSetSha256": "5a27d345cbb992219427fe338d26085eb7a36e721d71dad2d13d3af7b43bdbc7",
+        "sourceEvidencePassages": [
+          {
+            "text": "In addition, results from scientific software are used as evidence in research publications.",
+            "locator": {
+              "source": "PMC BioC full text",
+              "pmcid": "PMC4128280",
+              "section": "Introduction",
+              "bioCOffset": 1876,
+              "fullTextSha256": "083518f21826563878c50d7220da47b523567acaeb6bc53d22f96fe5dddc2c2d"
+            },
+            "sha256": "150cc0ea4d5823d05affb89d92bb91866c510ffb17ac7054c696e8fdf9339fc4"
+          },
+          {
+            "text": "Testing is done only with respect to the initial specific scientific problem addressed by the code. Therefore the reliability of results when applied to a different problem cannot be guaranteed.",
+            "locator": {
+              "source": "PMC BioC full text",
+              "pmcid": "PMC4128280",
+              "section": "Results, RQ2",
+              "bioCOffset": 21316,
+              "fullTextSha256": "083518f21826563878c50d7220da47b523567acaeb6bc53d22f96fe5dddc2c2d"
+            },
+            "sha256": "8b289fa36adf54733f6821992e3979803f2dd28142f3ff77ccc1f520b25d6f23"
+          }
+        ],
+        "workId": "work:doi:10.1016/j.infsof.2014.05.006",
+        "workAuthors": [
+          "Upulee Kanewala",
+          "James M. Bieman"
+        ],
+        "workPublishedAt": "2014-10",
+        "identityKeys": [
+          "doi:10.1016/j.infsof.2014.05.006",
+          "openalex:W2017425457",
+          "semantic-scholar:fb8006e49819656b93f331bcf67a677be02efb6f",
+          "pmcid:PMC4128280",
+          "crossref:380905855bdfc3352c8e6979e2c8ecfefa04c64c7ded69b0a62e528d055d49c3",
+          "proposition:3a1d61d632ee5822612c2ccae7989dd7b48337ce0a594ea4d997adf8bb672f63"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261018-031",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261018-031",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The review provides the methodological reason to bind completed empirical evidence to the scientific apparatus and problem actually tested.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-13T02:14:27.530Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "scientific evidence is produced by a tested code-and-model apparatus for a defined problem, and reliability does not automatically transfer to a different problem or modified apparatus",
+          "compatibleScope": "external methodological qualification limited to scientific software and the evidence-producing apparatus actually tested",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "exactSupportingQuotesVerified": true,
+          "limitations": [
+            "The review does not examine Kaal's historical apparatus, autonomous agents, E1, E2a, or the current reference implementation.",
+            "It cannot verify which code, models, or institutional conditions produced Kaal's results.",
+            "The external relationship is methodological and does not independently establish Kaal's source-bound provenance statement.",
+            "Crossref Spanish, Semantic Scholar search, arXiv, and one mapped Semantic Scholar record returned HTTP 429. No rate-limited response was promoted."
+          ]
+        },
+        "liveVerification": {
+          "checkedAt": "2026-08-13T02:15:54.451Z",
+          "crossrefHttpStatus": 200,
+          "crossrefResponseSha256": "380905855bdfc3352c8e6979e2c8ecfefa04c64c7ded69b0a62e528d055d49c3",
+          "pmcHttpStatus": 200,
+          "pmcFullTextSha256": "083518f21826563878c50d7220da47b523567acaeb6bc53d22f96fe5dddc2c2d",
+          "frozenPmcFullTextSha256": "083518f21826563878c50d7220da47b523567acaeb6bc53d22f96fe5dddc2c2d"
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}
