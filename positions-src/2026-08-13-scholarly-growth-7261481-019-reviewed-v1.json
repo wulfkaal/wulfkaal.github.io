@@ -1,0 +1,149 @@
+{
+  "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-019-reviewed-v1",
+  "date": "2026-08-08",
+  "status": "affirmed",
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-019.html",
+  "source_snapshot_sha256": "0f82b0c42a6947244aee1c18400fdb4ec8fd638b97ab5a24c46d67098698a549",
+  "review_ledger_sha256": "40e56b29a374e53e50f58374a2ce406591f0f96f498065c3d7cb858751b31edb",
+  "exact_authorization": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+  "positions": [
+    {
+      "sequence": 354,
+      "response_type": "qualification",
+      "slug": "treatment-versions-separate-partially-matched-estimands",
+      "topics": [
+        "research-methods",
+        "scholarly-growth-coverage",
+        "scholarly-literature",
+        "causal-inference",
+        "estimands",
+        "matched-analysis",
+        "experimental-design"
+      ],
+      "text": "Changed experimental bindings change the question being estimated. VanderWeele and Hernán analyze causal inference when one nominal treatment contains multiple versions. Their framework separates the treatment label from the version that determines the potential outcome. It permits version-specific comparisons and policy-level averages over assigned versions. Those quantities are not interchangeable. An overall average remains tied to the distribution and assignment policy for treatment versions.\n\nThis analysis qualifies Kaal's treatment of a broader comparison. A comparison that changes the agent, task, or model binding can be interpreted as changing the version of the experimental condition. It no longer estimates the strict effect associated with one preserved binding. It estimates a broader regime or policy contrast whose meaning depends on which versions enter each condition and how they are assigned. Reporting the result as a separate, partially matched estimand therefore preserves the causal question.\n\nThe correspondence is methodological. VanderWeele and Hernán study treatment versions in causal inference, not autonomous agents or Kaal's registered cohort. Their framework does not define Kaal's binding keys or validate his empirical design. It supports the narrower classification: once binding fields change, the resulting comparison requires a separate estimand and an explicit account of the versions included.",
+      "scope_conditions": [
+        "The response is limited to the exact peer-reviewed causal-inference proposition and the one mapped Kaal claim.",
+        "External evidence level: complete 20-page peer-reviewed article indexed through PMC with concordant PubMed, Crossref, Europe PMC, and author-publication identity receipts.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source concerns treatment versions in causal inference, not autonomous agents or computational-economics experiments.",
+        "It does not define Kaal's agent, task, or model binding keys.",
+        "It does not use the term partially matched estimand or validate Kaal's registered cohort.",
+        "Direct automated retrieval of the current PMC and publisher full text was access challenged, although the complete 20-page primary text was indexed and reviewed with PubMed, Crossref, and author-page identity receipts."
+      ],
+      "current_debate": {
+        "name": "Causal Inference Under Multiple Versions of Treatment",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328/"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261481-019",
+        "url": "https://wulfkaal.github.io/claims/7261481-019",
+        "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+        "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261481",
+        "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-019-treatment-versions-01",
+      "evidence_level": "complete 20-page peer-reviewed article indexed through PMC with concordant PubMed, Crossref, Europe PMC, and author-publication identity receipts",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The source separates version-specific causal effects from policy-level averages when the nominal treatment contains outcome-relevant versions.",
+      "source_provenance": {
+        "source": "complete primary scholarly text indexed through PMC with PubMed, Crossref, Europe PMC, and author-publication identity",
+        "sourceRecordId": "doi:10.1515/jci-2012-0002",
+        "canonicalUrl": "https://doi.org/10.1515/jci-2012-0002",
+        "publicFullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328/",
+        "retrievedAt": "2026-08-13T16:17:28.075Z",
+        "sourceArticlePages": 20,
+        "indexedPrimaryFullTextEvidenceReceiptSha256": "23e82d2f72504163967f7fd295f5e96670574317ae40b5dc83ca7d267c6406f6",
+        "pubmedRecordSha256": "36cc2816aec3de09b87bc45c1abf7f28d7dd2ebd67897e401e2738a6de261076",
+        "crossrefResponseSha256": "11f936a123af6369a1f4b7d0d985f5d7cdf0d30afea72b9077cc7d5477dade7a",
+        "europePmcRecordSha256": "24e7139cba71dc38abcf8ee639f6bbef0ed60e4ccf2646e9594d9b70a17dd92b",
+        "authorPublicationPageSha256": "c9b07562a50cd7f8092e848d48286176200f116c50f399fed5dd2dc06fe6ad82",
+        "textExtraction": {
+          "tool": "primary scholarly search reader",
+          "quality": "complete 20-page article with page sequence and exact passages verified",
+          "directAutomationAccessLimitations": [
+            "The current direct PMC request returned an automated-browser challenge.",
+            "The current De Gruyter text-mining endpoints returned HTTP 202 challenge responses.",
+            "The indexed Harvard PDF URL returned HTTP 404 to the direct fetch even though the complete 20-page text remained available through the scholarly search reader."
+          ]
+        },
+        "sourceProposition": "VanderWeele and Hernán distinguish version-specific treatment effects from policy-level averages over versions. When versions may produce different potential outcomes, the version becomes part of the causal question and can be represented as a distinct treatment or regime.",
+        "sourcePropositionSha256": "8ebd49cd222adac360598daed5e26bc8e3627fbd36e6350245d3f64e2badaf35",
+        "sourceEvidenceSetSha256": "427f05264f3c5e07e01e70c4eb71028aa71399f7db72fae028ccb30d0b405cbc",
+        "sourceEvidencePassages": [
+          {
+            "text": "redefine each version of treatment as a different treatment",
+            "locator": {
+              "version": "Journal of Causal Inference 1(1), complete 20-page article indexed through PMC",
+              "printedPage": 1,
+              "section": "1 Introduction",
+              "primaryFullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328/"
+            },
+            "sha256": "f15d5074e3a1ffa504b0ea34457e086993171b541ce1462ab4defc4132fc74ca"
+          },
+          {
+            "text": "the potential outcome is not fixed by treatment alone",
+            "locator": {
+              "version": "Journal of Causal Inference 1(1), complete 20-page article indexed through PMC",
+              "printedPage": 2,
+              "section": "1 Introduction",
+              "primaryFullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328/"
+            },
+            "sha256": "bac7dbd038819659b2327cdba5a670a18f5e17509f1d8534982d10c975b4bef8"
+          }
+        ],
+        "workId": "work:doi:10.1515/jci-2012-0002",
+        "workAuthors": [
+          "Tyler J. VanderWeele",
+          "Miguel A. Hernán"
+        ],
+        "workPublishedAt": "2013-05-01",
+        "identityKeys": [
+          "doi:10.1515/jci-2012-0002",
+          "pmid:25379365",
+          "pmcid:PMC4219328",
+          "proposition:8ebd49cd222adac360598daed5e26bc8e3627fbd36e6350245d3f64e2badaf35"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7261481-019",
+            "claimUrl": "https://wulfkaal.github.io/claims/7261481-019",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The source separates version-specific causal effects from policy-level averages when the nominal treatment contains outcome-relevant versions.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-13T16:17:28.075Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "canonicalPublicStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "outcome-relevant treatment versions create version-specific causal effects and policy-level averages rather than one interchangeable matched quantity",
+          "compatibleScope": "qualification limited to estimand classification when experimental bindings change",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "sameSourceDistinctionVerified": true,
+          "limitations": [
+            "The source concerns treatment versions in causal inference, not autonomous agents or computational-economics experiments.",
+            "It does not define Kaal's agent, task, or model binding keys.",
+            "It does not use the term partially matched estimand or validate Kaal's registered cohort.",
+            "Direct automated retrieval of the current PMC and publisher full text was access challenged, although the complete 20-page primary text was indexed and reviewed with PubMed, Crossref, and author-page identity receipts."
+          ],
+          "exactSupportingQuotesVerified": true
+        }
+      },
+      "user_affirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction."
+    }
+  ]
+}

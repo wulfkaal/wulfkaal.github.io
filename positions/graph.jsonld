@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-354",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-354",
+   "text": "Changed experimental bindings change the question being estimated. VanderWeele and Hernán analyze causal inference when one nominal treatment contains multiple versions. Their framework separates the treatment label from the version that determines the potential outcome. It permits version-specific comparisons and policy-level averages over assigned versions. Those quantities are not interchangeable. An overall average remains tied to the distribution and assignment policy for treatment versions.\n\nThis analysis qualifies Kaal's treatment of a broader comparison. A comparison that changes the agent, task, or model binding can be interpreted as changing the version of the experimental condition. It no longer estimates the strict effect associated with one preserved binding. It estimates a broader regime or policy contrast whose meaning depends on which versions enter each condition and how they are assigned. Reporting the result as a separate, partially matched estimand therefore preserves the causal question.\n\nThe correspondence is methodological. VanderWeele and Hernán study treatment versions in causal inference, not autonomous agents or Kaal's registered cohort. Their framework does not define Kaal's binding keys or validate his empirical design. It supports the narrower classification: once binding fields change, the resulting comparison requires a separate estimand and an explicit account of the versions included.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-019"
+   },
+   "sha256": "2fa80f3ca569a33a1f6f59f9bb84c496297fe252d1c9ab2951aeed52539e947b",
+   "evidenceLevel": "complete 20-page peer-reviewed article indexed through PMC with concordant PubMed, Crossref, Europe PMC, and author-publication identity receipts",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-353",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-353",
@@ -165835,6 +165855,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328",
+   "@type": "CreativeWork",
+   "name": "Causal Inference Under Multiple Versions of Treatment",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4219328"
+  },
+  {
    "@id": "https://arxiv.org/abs/2606.05670v1",
    "@type": "CreativeWork",
    "name": "Do More Agents Help? Controlled and Protocol-Aligned Evaluation of LLM Agent Workflows",
@@ -210743,6 +210769,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-019",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-019",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261481-018",
