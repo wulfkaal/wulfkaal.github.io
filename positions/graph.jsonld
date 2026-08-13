@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-357",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-357",
+   "text": "Jaderberg, Dalibard, Osindero, Czarnecki, and their coauthors provide an independent operational comparator for a selection-induced lineage transition. The mechanism is concrete. Population Based Training evaluates concurrently trained agents and applies an exploit rule when a population member is ready. Under one reported rule, a lower-performing agent copies the weights and hyperparameters of a better-performing agent, while another rule directs an agent in the bottom fifth to copy from the top fifth. Training then continues from the inherited model state. The authors represent each executed exploit operation as a branch in the full phylogenetic tree because the parameters were copied. The transition is therefore an implemented change in model ancestry rather than a descriptive label.\n\nThe relationship is a qualification. The paper shows that a performance-based selection rule can produce a traceable computational lineage transition. It does not validate Kaal's registered E2B rule, fitness measure, parentage record, or execution receipts. Population Based Training also copies model weights and hyperparameters within an asynchronous optimizer. Kaal's lineage objects and selection conditions may differ. The external evidence establishes mechanism correspondence and operational feasibility. Historical occurrence in Kaal's experiment remains bound to the interim E2B record. A lineage transition is externally legible only when the selection event and inherited state are both preserved.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/1711.09846"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-022"
+   },
+   "sha256": "14b48c9b1fc7fdabbc8400308a3150b3c8cf5d7b043bc8b0aa7d53fcc7781915",
+   "evidenceLevel": "complete public 21-page arXiv v2 primary paper with exact PDF SHA-256, page-bound passages, arXiv API identity, and DataCite identity",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-356",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-356",
@@ -165895,6 +165915,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://arxiv.org/abs/1711.09846",
+   "@type": "CreativeWork",
+   "name": "Population Based Training of Neural Networks",
+   "url": "https://arxiv.org/abs/1711.09846"
+  },
+  {
    "@id": "https://arxiv.org/abs/2505.22954",
    "@type": "CreativeWork",
    "name": "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents",
@@ -210821,6 +210847,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-022",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-022",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261481-021",
