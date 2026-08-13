@@ -1,0 +1,187 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-353",
+ "identifier": "kaal:position:2026-08-08-353",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Matched Protocols Narrow Agent Workflow Attribution",
+ "text": "Matched comparisons require more than common outcome labels. Fu and colleagues ask whether reorganizing a single-agent workflow into a multi-agent workflow changes accuracy and cost. Their BenchAgent design holds the base model, benchmark loader, tool interface, answer contract, evaluator, and accounting substrate constant. It also records agent identifiers and stage-level traces under one execution system. The measured difference can therefore be assigned more narrowly to workflow organization.\n\nThis evidence qualifies Kaal's strict matched-analysis requirement. The source binds the compared workflows to the same base model and benchmark inputs. It also keeps the execution and evaluation surfaces common and preserves the identifiers needed to reconstruct agent activity. These controls prevent a comparison from treating changes in model, task delivery, tool access, or logging as if they were effects of agent organization.\n\nThe qualification remains limited. BenchAgent compares a single-agent anchor with workflows that necessarily contain different numbers and roles of agents. It does not preserve the identity of one agent across every condition, reproduce Kaal's registered analysis, or test his cohort. The source supports the narrower methodological proposition: an agent-workflow comparison becomes interpretable only when task, model, execution, and attribution fields remain bound across conditions.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "research-methods",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "agent-evaluation",
+  "matched-analysis",
+  "experimental-design",
+  "workflow-attribution"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact preprint proposition and the one mapped Kaal claim.",
+  "External evidence level: complete public 33-page arXiv preprint under review with concordant arXiv API, abstract-page, and PDF identity.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "BenchAgent is an arXiv preprint under review, not a completed peer-reviewed publication.",
+  "The source preserves a shared model, benchmark, tools, evaluator, and logging substrate, but the compared workflows necessarily contain different agent counts and roles.",
+  "Comparable agent identifiers and traces do not prove that the identity of one agent is preserved across every condition.",
+  "The source does not reproduce Kaal's registered analysis, controlled cohort, or exact agent-task-model keys."
+ ],
+ "currentDebate": {
+  "name": "Do More Agents Help? Controlled and Protocol-Aligned Evaluation of LLM Agent Workflows",
+  "url": "https://arxiv.org/abs/2606.05670v1"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261481-018",
+  "url": "https://wulfkaal.github.io/claims/7261481-018",
+  "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+  "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261481",
+  "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-018"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Do More Agents Help? Controlled and Protocol-Aligned Evaluation of LLM Agent Workflows",
+   "url": "https://arxiv.org/abs/2606.05670v1"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-018-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-018.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-353",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-353.md",
+ "candidateId": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-018-matched-agent-workflow-01",
+ "evidenceLevel": "complete public 33-page arXiv preprint under review with concordant arXiv API, abstract-page, and PDF identity",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.98,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source holds the base model and task-delivery substrate constant across agent workflows and preserves agent identifiers and traces for comparable attribution.",
+ "sourceProvenance": {
+  "source": "complete public arXiv v1 preprint with arXiv API and abstract-page identity",
+  "sourceRecordId": "arxiv:2606.05670v1",
+  "canonicalUrl": "https://arxiv.org/abs/2606.05670v1",
+  "publicPdfUrl": "https://arxiv.org/pdf/2606.05670v1",
+  "retrievedAt": "2026-08-13T15:43:53.238Z",
+  "publicPdfSha256": "020436341ab6180a8be217e2840e452cf4df2d7b59bae76de25b7d0ebb18504c",
+  "publicPdfBytes": 4051132,
+  "publicPdfPages": 33,
+  "extractedFlowTextSha256": "e4e81adbcb41b1653828d408dcfeb4bc01301341f866c62c95c3143dbde914ab",
+  "extractedLayoutTextSha256": "a50b16750cca937c1f5b1645ffd02bcadbf5366d169e64846195a8dfe53565b0",
+  "textExtraction": {
+   "tool": "pdftotext flow and layout extraction",
+   "quality": "complete searchable 33-page preprint with title, authors, sections, page sequence, and exact passages verified"
+  },
+  "arxivApiRecordSha256": "fb25ad55833c60e7d0495f1746c519f978379fbc8b2e630d6dc8800e380737ba",
+  "publicAbstractPageSha256": "51bd3ad40dfeb9e325c139156b1797b1802ccd53c5d584f14b39357961bb6277",
+  "sourceProposition": "Fu and coauthors define workflow lift under a shared comparison substrate that holds the base model, benchmark loader, tool interface, answer contract, evaluator, and accounting constant, while retaining agent identifiers and stage traces that make workflow activity comparable.",
+  "sourcePropositionSha256": "55f44623202534783511df587866aeb36a896e52e2d81871ebf16f519b52005f",
+  "sourceEvidenceSetSha256": "4571d25da8ddbd466d2c37b274c01023c0ec209475404ba21f715189d7465a15",
+  "sourceEvidencePassages": [
+   {
+    "text": "Does adding more agents help an LLM workflow once compared systems share the same benchmark loader, tool access, answer contract, usage accounting, and trajectory logging?",
+    "locator": {
+     "version": "arXiv:2606.05670v1",
+     "pdfPage": 1,
+     "section": "Abstract"
+    },
+    "sha256": "add5ddc0839cd170fa0bdf786807bcbccac9e42241a8d598c7d7bcf198951e4c"
+   },
+   {
+    "text": "Our primary substrate-internal quantity is workflow lift: the change in accuracy and cost when a single-agent workflow is replaced by a fixed or evolving MAS workflow, with the base model, benchmark loader, tool interface, answer contract, evaluator, and accounting substrate held constant.",
+    "locator": {
+     "version": "arXiv:2606.05670v1",
+     "pdfPage": 4,
+     "section": "3.1 Terminology and Workflow Lift"
+    },
+    "sha256": "6cd3e9c8ae3be4a665d4ed9d0a4607bc9bb603c6a7926d424c6bc8d68840171b"
+   },
+   {
+    "text": "This substrate renders final scores, token usage, latency, tool calls, message histories, agent identifiers, and stage-level traces comparable across workflows.",
+    "locator": {
+     "version": "arXiv:2606.05670v1",
+     "pdfPage": 4,
+     "section": "3.2 Comparison Setup: SI and PAE"
+    },
+    "sha256": "67b57c23dcf0f344a9d2ae5e93c8c4d30044ab0ff1de0a6a202064754e6756a5"
+   },
+   {
+    "text": "This experiment tests whether fixed or evolving MAS produce workflow lift over the BenchAgent single-agent anchor under matched model, tool surface, evaluator, and logging protocol",
+    "locator": {
+     "version": "arXiv:2606.05670v1",
+     "pdfPage": 6,
+     "section": "4.2 Broad Benchmark Results"
+    },
+    "sha256": "ec708f4efae8e75fd086c39fa3fd84e91fcf95e867a7ad7ed64fbb8161d4e659"
+   }
+  ],
+  "workId": "work:arxiv:2606.05670v1",
+  "workAuthors": [
+   "Yuhang Fu",
+   "Ruishan Fang",
+   "Jiaqi Shao",
+   "Huiyu Zheng",
+   "Zhengtao Zhu",
+   "Bing Luo",
+   "Tao Lin"
+  ],
+  "workPublishedAt": "2026-06-04",
+  "identityKeys": [
+   "arxiv:2606.05670v1",
+   "pdf:020436341ab6180a8be217e2840e452cf4df2d7b59bae76de25b7d0ebb18504c",
+   "proposition:55f44623202534783511df587866aeb36a896e52e2d81871ebf16f519b52005f"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261481-018",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261481-018",
+    "rank": 1,
+    "confidence": 0.98,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source holds the base model and task-delivery substrate constant across agent workflows and preserves agent identifiers and traces for comparable attribution.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-13T15:43:53.238Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "a shared comparison substrate holds model, task delivery, tools, evaluation, and accounting constant while retaining agent identifiers and traces",
+   "compatibleScope": "qualification limited to matched attribution in agent-workflow evaluation",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "limitations": [
+    "BenchAgent is an arXiv preprint under review, not a completed peer-reviewed publication.",
+    "The source preserves a shared model, benchmark, tools, evaluator, and logging substrate, but the compared workflows necessarily contain different agent counts and roles.",
+    "Comparable agent identifiers and traces do not prove that the identity of one agent is preserved across every condition.",
+    "The source does not reproduce Kaal's registered analysis, controlled cohort, or exact agent-task-model keys."
+   ],
+   "exactSupportingQuotesVerified": true
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "d5467640ec5d969287092da2a1684cbaecbaa51a54719daff2df862035fbed71"
+}
