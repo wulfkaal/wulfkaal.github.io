@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-364",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-364",
+   "text": "Post-treatment regrading can compromise a treatment-effect estimate.\n\nMontgomery, Nyhan, and Torres analyze post-treatment conditioning in experiments. They classify three recurring practices: controlling for variables measured after treatment, dropping observations under post-treatment criteria, and restricting samples by post-treatment variables. Their analytical demonstrations and reanalyses show that these choices can distort causal-effect estimates. The direction and size of the bias may not be bounded without strong assumptions. Random assignment does not preserve its identifying advantage once an analysis conditions on information created or selected after treatment.\n\nThis evidence qualifies Kaal's claim. Regrading a diagnostic after execution can alter the information used to evaluate an observed effect. If the regrading changes classifications, exclusions, or conditioning criteria after treatment, the resulting estimate may not identify the treatment effect claimed. Montgomery, Nyhan, and Torres do not examine Kaal's diagnostic runs. They also do not establish that every post-execution correction creates bias. A correction specified independently of treatment may instead improve measurement. The comparison supports a methodological limit. A treatment-effect conclusion requires the post-execution regrading rule, its timing, and its relation to treatment assignment to be independently reconciled.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1111/ajps.12357"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-031"
+   },
+   "sha256": "5e45b9200a3b10b114eff3f3b546a468f79fc0b326cd3823f151ce4619d08754",
+   "evidenceLevel": "DOI-bound peer-reviewed publisher abstract and complete official AJPS author summary with independently concordant identity records",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.94,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-363",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-363",
@@ -166035,6 +166055,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1111/ajps.12357",
+   "@type": "CreativeWork",
+   "name": "How Conditioning on Posttreatment Variables Can Ruin Your Experiment and What to Do about It",
+   "url": "https://doi.org/10.1111/ajps.12357"
+  },
+  {
    "@id": "https://doi.org/10.1287/mnsc.2015.2217",
    "@type": "CreativeWork",
    "name": "Reputation Transferability in Online Labor Markets",
@@ -210997,6 +211023,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-031",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-031",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7261481-030",

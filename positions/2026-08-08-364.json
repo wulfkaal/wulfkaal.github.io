@@ -1,0 +1,203 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-08-364",
+ "identifier": "kaal:position:2026-08-08-364",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Posttreatment Regrading Treatment Effect",
+ "text": "Post-treatment regrading can compromise a treatment-effect estimate.\n\nMontgomery, Nyhan, and Torres analyze post-treatment conditioning in experiments. They classify three recurring practices: controlling for variables measured after treatment, dropping observations under post-treatment criteria, and restricting samples by post-treatment variables. Their analytical demonstrations and reanalyses show that these choices can distort causal-effect estimates. The direction and size of the bias may not be bounded without strong assumptions. Random assignment does not preserve its identifying advantage once an analysis conditions on information created or selected after treatment.\n\nThis evidence qualifies Kaal's claim. Regrading a diagnostic after execution can alter the information used to evaluate an observed effect. If the regrading changes classifications, exclusions, or conditioning criteria after treatment, the resulting estimate may not identify the treatment effect claimed. Montgomery, Nyhan, and Torres do not examine Kaal's diagnostic runs. They also do not establish that every post-execution correction creates bias. A correction specified independently of treatment may instead improve measurement. The comparison supports a methodological limit. A treatment-effect conclusion requires the post-execution regrading rule, its timing, and its relation to treatment assignment to be independently reconciled.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-08",
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "research-methods",
+  "consensus-and-security",
+  "scholarly-growth-coverage",
+  "scholarly-literature",
+  "causal-inference",
+  "experimental-design",
+  "post-treatment-bias",
+  "outcome-measurement",
+  "evidence-provenance"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact post-treatment-conditioning proposition and the one mapped Kaal claim.",
+  "External evidence level: DOI-bound peer-reviewed publisher abstract and complete official AJPS author summary with independently concordant identity records.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The article does not examine Kaal's historical diagnostic runs, information environment, or regrading process.",
+  "Post-execution correction is not automatically post-treatment conditioning. A correction specified independently of treatment may improve measurement rather than introduce bias.",
+  "The source establishes a general experimental-methods risk. It does not prove the magnitude or direction of bias in Kaal's diagnostic results.",
+  "The publisher article and PDF endpoints returned HTTP 403. The review is bound to the DOI-registered publisher abstract, complete official AJPS author summary, and independently concordant identity records."
+ ],
+ "currentDebate": {
+  "name": "How Conditioning on Posttreatment Variables Can Ruin Your Experiment and What to Do about It",
+  "url": "https://doi.org/10.1111/ajps.12357"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7261481-031",
+  "url": "https://wulfkaal.github.io/claims/7261481-031",
+  "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+  "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7261481",
+  "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7261481-031"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "How Conditioning on Posttreatment Variables Can Ruin Your Experiment and What to Do about It",
+   "url": "https://doi.org/10.1111/ajps.12357"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-13:scholarly-growth-7261481-031-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7261481-031.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-08-364",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-08-364.md",
+ "candidateId": "kaal:response-candidate:2026-08-13:scholarly-growth-7261481-031-posttreatment-conditioning-01",
+ "evidenceLevel": "DOI-bound peer-reviewed publisher abstract and complete official AJPS author summary with independently concordant identity records",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.94,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one review",
+ "mappingWhyRelevant": "The source directly analyzes treatment-effect distortion from criteria, exclusions, and conditioning introduced after treatment. This supplies a close methodological qualification while leaving the facts of Kaal's historical diagnostic regrading unproven.",
+ "sourceProvenance": {
+  "source": "peer-reviewed journal article with DOI-bound publisher abstract and complete official author summary",
+  "sourceRecordId": "doi:10.1111/ajps.12357",
+  "doi": "10.1111/ajps.12357",
+  "canonicalUrl": "https://doi.org/10.1111/ajps.12357",
+  "publicEvidenceUrl": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/amp/",
+  "retrievedAt": "2026-08-13T22:09:24.565Z",
+  "crossrefRecordSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+  "openAlexRecordSha256": "b992286612c09838f5468e0c68a1cb3b0b07789699f4bc54b76925f8bc4017ac",
+  "semanticScholarRecordSha256": "94239edd59a47b7830927e8041ac2ae166e9124e05cfd6596d19cbde4aa6956c",
+  "officialAuthorSummarySha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a",
+  "primaryEvidenceReceiptSha256": "ba79ea0219a354110a94acf7096341166ab883eb57768723bbe7d20abc184f68",
+  "sourceProposition": "Montgomery, Nyhan, and Torres show that conditioning an experiment on variables or criteria defined after treatment can distort causal-effect estimates, including when observations are eliminated or samples are restricted by post-treatment information.",
+  "sourcePropositionSha256": "1b2ee51703b753a7b68530170405a96c8c34783fd355f93124b9170a89e81f0e",
+  "sourceEvidenceSetSha256": "250ac1cd3fa2dc0d92b03c750d1fe061d7aabb54b997992379d5a0b50a7b8d64",
+  "sourceEvidencePassages": [
+   {
+    "text": "Typical examples include controlling for posttreatment variables in statistical models, eliminating observations based on posttreatment criteria, or subsetting the data based on posttreatment variables.",
+    "locator": {
+     "source": "How Conditioning on Posttreatment Variables Can Ruin Your Experiment and What to Do about It",
+     "section": "Abstract",
+     "canonicalUrl": "https://doi.org/10.1111/ajps.12357",
+     "evidenceUrl": "https://api.crossref.org/works/10.1111%2Fajps.12357",
+     "crossrefRecordSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+     "officialAuthorSummarySha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a"
+    },
+    "sha256": "4656414cf810dd748f816865751b9fb7304cac49a6e1ec74857112bc139dad4d"
+   },
+   {
+    "text": "Though these modeling choices are intended to address common problems encountered when conducting experiments, they can bias estimates of causal effects.",
+    "locator": {
+     "source": "How Conditioning on Posttreatment Variables Can Ruin Your Experiment and What to Do about It",
+     "section": "Abstract",
+     "canonicalUrl": "https://doi.org/10.1111/ajps.12357",
+     "evidenceUrl": "https://api.crossref.org/works/10.1111%2Fajps.12357",
+     "crossrefRecordSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+     "officialAuthorSummarySha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a"
+    },
+    "sha256": "0bbe404ebf39099c03bfa7cb3c3c87efc624c411df748f5208b761e1a17f2660"
+   },
+   {
+    "text": "As we show in our article, these practices contaminate experimental analyses and distort treatment effect estimates.",
+    "locator": {
+     "source": "AJPS official author summary",
+     "section": "Author summary",
+     "canonicalUrl": "https://doi.org/10.1111/ajps.12357",
+     "evidenceUrl": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/amp/",
+     "crossrefRecordSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+     "officialAuthorSummarySha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a"
+    },
+    "sha256": "8f910a2ff8ccc28d7129546a9fd692fcb824bf454672a4291e25b30b40dadb07"
+   },
+   {
+    "text": "Post-treatment bias can affect our estimates in any direction and can be of any size.",
+    "locator": {
+     "source": "AJPS official author summary",
+     "section": "Author summary",
+     "canonicalUrl": "https://doi.org/10.1111/ajps.12357",
+     "evidenceUrl": "https://ajps.org/2019/06/10/conditioning-on-posttreatment-variables-can-ruin-your-experiment/amp/",
+     "crossrefRecordSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+     "officialAuthorSummarySha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a"
+    },
+    "sha256": "209f312c1c89ead93f501dddc1cbb7c449262f405434a716a3ec3d152f6b9379"
+   }
+  ],
+  "workId": "work:doi:10.1111/ajps.12357",
+  "workAuthors": [
+   "Jacob M. Montgomery",
+   "Brendan Nyhan",
+   "Michelle Torres"
+  ],
+  "workPublishedAt": "2018-03-30",
+  "identityKeys": [
+   "doi:10.1111/ajps.12357",
+   "author-summary:44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a",
+   "proposition:1b2ee51703b753a7b68530170405a96c8c34783fd355f93124b9170a89e81f0e"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7261481-031",
+    "claimUrl": "https://wulfkaal.github.io/claims/7261481-031",
+    "rank": 1,
+    "confidence": 0.94,
+    "method": "independent substantive scholarly-growth one-to-one review",
+    "whyRelevant": "The source directly analyzes treatment-effect distortion from criteria, exclusions, and conditioning introduced after treatment. This supplies a close methodological qualification while leaving the facts of Kaal's historical diagnostic regrading unproven.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-13T22:15:04.888Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "canonicalPublicStatusVerified": true,
+   "peerReviewedStatusVerified": true,
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "post-treatment criteria, exclusions, or conditioning can compromise experimental treatment-effect estimates",
+   "compatibleScope": "qualification through a close causal-inference methods comparison",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "sameSourceDistinctionVerified": true,
+   "exactSupportingQuotesVerified": true,
+   "limitations": [
+    "The article does not examine Kaal's historical diagnostic runs, information environment, or regrading process.",
+    "Post-execution correction is not automatically post-treatment conditioning. A correction specified independently of treatment may improve measurement rather than introduce bias.",
+    "The source establishes a general experimental-methods risk. It does not prove the magnitude or direction of bias in Kaal's diagnostic results.",
+    "The publisher article and PDF endpoints returned HTTP 403. The review is bound to the DOI-registered publisher abstract, complete official AJPS author summary, and independently concordant identity records."
+   ]
+  },
+  "liveVerification": {
+   "checkedAt": "2026-08-13T22:16:35.344Z",
+   "officialAuthorSummaryHttpStatus": 200,
+   "crossrefHttpStatus": 200,
+   "openAlexHttpStatus": 200,
+   "officialAuthorSummaryResponseSha256": "44be5b178e5dd80901dec92cbd95e90c54b07c22dd25d1660235fb50115de83a",
+   "crossrefResponseSha256": "b24fae009071d19ef12f9ceed7c6d78d7c5d7b61cf248db8230e0cee12775b25",
+   "openAlexResponseSha256": "37bbf89396a1a24c2ba804e4d5267f7c070a0deeda0ac5f1528b969198377734",
+   "exactPassagesVerified": true
+  }
+ },
+ "userAffirmation": "Automatically authorized under standing authority receipt kaal-standing-publication-authorization:2026-08-01:hourly-reviewed-batches, SHA-256 e2126054b58bb4e88db65c334ef4fc8ae78dcaadc63543c408133c4eefceb9b1, limited to this substantively reviewed scholarly-growth qualification and the protected scholarly claims matching the current bridge checkpoint under the current owner instruction.",
+ "sha256": "5e45b9200a3b10b114eff3f3b546a468f79fc0b326cd3823f151ce4619d08754"
+}
