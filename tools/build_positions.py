@@ -84,10 +84,11 @@ def canonical_markdown(record):
             f"**Mapping confidence.** {confidence}  "
             f"**Mapping ambiguous.** {str(record['mappingAmbiguous']).lower()}\n\n"
         )
+    lifecycle_label = "Published" if record["publicationStatus"] == "public" else "Privately compiled"
     return (
         f"# {record['identifier']}\n\n"
         f"**Affirmed position.** {record['text']}\n\n"
-        f"**Status.** affirmed  **Published.** {record['datePublished']}\n\n"
+        f"**Status.** affirmed  **{lifecycle_label}.** {record['datePublished']}\n\n"
         f"**Holds when.**\n\n{conditions}\n\n"
         f"**Current debate.** {record['currentDebate']['name']}: "
         f"{record['currentDebate']['url']}\n\n"
@@ -139,7 +140,11 @@ def json_record(batch, item):
         ],
         "batch_id": batch["batch_id"],
         "review_provenance": batch["review_provenance"],
-        "publicationStatus": "public",
+        "publicationStatus": (
+            "private_compiled"
+            if batch.get("repository_mode") == "private" or batch.get("private_compilation") is True
+            else "public"
+        ),
         "recordTypeNote": (
             "Dated commentary position extending a scholarly corpus claim. "
             "Not a verbatim claim extracted from the paper."
@@ -285,7 +290,7 @@ def schema():
             "identifier": {"type": "string", "pattern": "^kaal:position:"},
             "text": {"type": "string"},
             "creativeWorkStatus": {"const": "Affirmed"},
-            "publicationStatus": {"const": "public"},
+            "publicationStatus": {"enum": ["public", "private_compiled"]},
             "scope_conditions": {"type": "array", "items": {"type": "string"}},
             "currentDebate": {"type": "object"},
             "extends": {"type": "object"},
@@ -378,17 +383,22 @@ def build_public_metrics(records):
         evidence_levels[evidence] = evidence_levels.get(evidence, 0) + 1
         review_tiers[tier] = review_tiers.get(tier, 0) + 1
         ambiguous_mappings += int(bool(record.get("mappingAmbiguous", False)))
+    public_count = sum(record["publicationStatus"] == "public" for record in records)
+    private_compiled_count = sum(record["publicationStatus"] == "private_compiled" for record in records)
     return {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "@id": f"{BASE}/positions/coverage.json",
-        "name": "Published Kaal response claim coverage",
+        "name": "Kaal response claim coverage",
         "description": (
-            "Aggregate metrics for affirmed and published response claims only. "
+            "Aggregate metrics for affirmed response claims, with historical public and "
+            "private-compiled lifecycle states reported separately. "
             "The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works."
         ),
         "dateModified": max(record["dateModified"] for record in records),
-        "publishedResponseClaims": len(records),
+        "affirmedResponseClaims": len(records),
+        "publishedResponseClaims": public_count,
+        "privateCompiledResponseClaims": private_compiled_count,
         "coveredWorks": len({normalized_url(record["currentDebate"]["url"]) for record in records}),
         "mappedScholarlyClaims": len({record["extends"]["identifier"] for record in records}),
         "responseTypes": response_types,
@@ -398,7 +408,7 @@ def build_public_metrics(records):
         "batches": batches,
         "graph": f"{BASE}/positions/graph.jsonld",
         "bulk": f"{BASE}/positions/all.jsonl",
-        "scopeNote": "A public count is not a claim of comprehensive literature coverage. Comprehensive coverage is measured in the private ledger before review throughput is applied.",
+        "scopeNote": "Private-compiled records are not public growth, live publication, deployment, or discoverability. A public count is not a claim of comprehensive literature coverage.",
     }
 
 
@@ -555,7 +565,10 @@ def add_reverse_claim_links(repo, by_claim):
         path.write_text(page, encoding="utf-8")
 
 
-def update_discovery_surfaces(repo, lastmod, position_count):
+def update_discovery_surfaces(repo, lastmod, records):
+    position_count = len(records)
+    public_count = sum(record["publicationStatus"] == "public" for record in records)
+    private_compiled_count = sum(record["publicationStatus"] == "private_compiled" for record in records)
     endpoints = {
         "positions_index": f"{BASE}/positions/index.json",
         "positions_graph": f"{BASE}/positions/graph.jsonld",
@@ -613,9 +626,12 @@ def update_discovery_surfaces(repo, lastmod, position_count):
     })
     mcp["collections"]["publicPositions"] = {
         "count": position_count,
-        "sourceClass": "owner-authorized dated commentary",
+        "publicCount": public_count,
+        "privateCompiledCount": private_compiled_count,
+        "sourceClass": "owner-authorized dated commentary with explicit lifecycle status",
         "scholarlyClaimLayerEligible": False,
         "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim.",
+        "reportingBoundary": "Private-compiled records are not public growth, live publication, deployment, or discoverability.",
     }
     write_json(mcp_path, mcp)
 
@@ -695,7 +711,7 @@ def main():
     lastmod = index["dateModified"]
     by_claim = build_shards(out_dir, records, lastmod)
     add_reverse_claim_links(args.repo, by_claim)
-    update_discovery_surfaces(args.repo, lastmod, len(records))
+    update_discovery_surfaces(args.repo, lastmod, records)
 
     print(f"built {len(records)} affirmed positions")
 

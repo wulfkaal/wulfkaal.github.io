@@ -2,19 +2,22 @@
  "@context": "https://schema.org",
  "@type": "Dataset",
  "@id": "https://wulfkaal.github.io/positions/coverage.json",
- "name": "Published Kaal response claim coverage",
- "description": "Aggregate metrics for affirmed and published response claims only. The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works.",
+ "name": "Kaal response claim coverage",
+ "description": "Aggregate metrics for affirmed response claims, with historical public and private-compiled lifecycle states reported separately. The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works.",
  "dateModified": "2026-08-08",
+ "affirmedResponseClaims": 8305,
  "publishedResponseClaims": 8304,
- "coveredWorks": 7495,
- "mappedScholarlyClaims": 1745,
+ "privateCompiledResponseClaims": 1,
+ "coveredWorks": 7496,
+ "mappedScholarlyClaims": 1746,
  "responseTypes": {
-  "qualification": 6083,
+  "qualification": 6084,
   "extension": 2074,
   "agreement": 145,
   "contradiction": 2
  },
  "evidenceLevels": {
+  "complete peer-reviewed version-of-record PDF with DOI-bound Crossref, OpenAlex, Semantic Scholar, and Europe PMC identity records": 1,
   "DOI-bound peer-reviewed publisher abstract and complete official AJPS author summary with independently concordant identity records": 1,
   "complete author-hosted peer-reviewed Management Science article with DOI-bound identity and exact full-text proposition evidence": 1,
   "complete public arXiv v1 preprint with author-bound identity and exact full-text proposition evidence": 1,
@@ -125,7 +128,7 @@
   "reviewed source": 10
  },
  "reviewTiers": {
-  "independent substantive scholarly-growth qualification": 93,
+  "independent substantive scholarly-growth qualification": 94,
   "independent substantive scholarly-growth extension": 13,
   "substantively reviewed abstract-level extension": 65,
   "substantively reviewed abstract-level agreement": 70,
@@ -140,6 +143,7 @@
  },
  "ambiguousMappings": 7840,
  "batches": {
+  "kaal-review:2026-08-13:scholarly-growth-7261481-032-reviewed-v1": 1,
   "kaal-review:2026-08-13:scholarly-growth-7261481-031-reviewed-v1": 1,
   "kaal-review:2026-08-13:scholarly-growth-7261481-030-reviewed-v1": 1,
   "kaal-review:2026-08-13:scholarly-growth-7261481-029-reviewed-v1": 1,
@@ -326,5 +330,5 @@
  },
  "graph": "https://wulfkaal.github.io/positions/graph.jsonld",
  "bulk": "https://wulfkaal.github.io/positions/all.jsonl",
- "scopeNote": "A public count is not a claim of comprehensive literature coverage. Comprehensive coverage is measured in the private ledger before review throughput is applied."
+ "scopeNote": "Private-compiled records are not public growth, live publication, deployment, or discoverability. A public count is not a claim of comprehensive literature coverage."
 }

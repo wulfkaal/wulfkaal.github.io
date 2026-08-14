@@ -39,6 +39,17 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         self.assertEqual(recent["count"], len(expected))
         self.assertEqual([row["identifier"] for row in recent["positions"]], expected)
 
+    def test_private_compilation_status_is_not_public_growth(self):
+        statuses = Counter(row["publicationStatus"] for row in self.records)
+        self.assertEqual(statuses, Counter({"public": 8304, "private_compiled": 1}))
+        private_record = next(row for row in self.records if row["publicationStatus"] == "private_compiled")
+        self.assertEqual(private_record["identifier"], "kaal:position:2026-08-08-365")
+        self.assertEqual(private_record["extends"]["identifier"], "kaal:claim:7261481-032")
+        coverage = load("positions/coverage.json")
+        self.assertEqual(coverage["publishedResponseClaims"], 8304)
+        self.assertEqual(coverage["privateCompiledResponseClaims"], 1)
+        self.assertIn("not public growth", coverage["scopeNote"])
+
     def test_date_shards_are_an_exact_partition(self):
         ids = []
         for shard in load("positions/by-date/index.json")["shards"]:
