@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "kaal-private-position-source-manifest-v1",
+  "batchId": "kaal-review:2026-08-08:continuous-crossref-0036-all-0106-reviewed-v1",
+  "runId": "kaal-continuous-claim-visibility-loop-20260814T173717Z",
+  "repositoryMode": "private",
+  "privateCompilationEligible": true,
+  "sourceSnapshotSha256": "f9a345f32ee07eed2e4f1bfb4978a909004a4965a3c6e568ec82e0fb6eab626c",
+  "sourceCount": 3,
+  "positionCountBefore": 8309,
+  "positionCountAfter": 8312,
+  "firstSequence": 370,
+  "lastSequence": 372,
+  "generatedSourceSha256": "9760a7c148263ec36f1b1c138584948c85691a5aa4865661061c579b25e9d72d",
+  "reviewManifestSha256": "ce379f0215f677b9f4e76c810fd32381a79efc0864faa87d05e44ff2fe6f5b64",
+  "reviewLedgerSha256": "d32d0185c46f8a5e598252d358353e0bc03d0f2a754f774633db52a48e2f540e",
+  "privateFreezeSha256": "67f3a6af7b15bc25c7deccf162ba396d6ca3386171b87e1ce6bf058c919bf243",
+  "protectedScholarlyInvariant": {
+    "count": 5145,
+    "sha256": "613fbb8ba1000d4580a033e113c2bad57547e43104ecb5fcd9bc075ae9580d22",
+    "bridgeCheckpointMatched": true
+  },
+  "mappings": [
+    {
+      "sequence": 370,
+      "candidateId": "kaal:response-draft:2026-08-08:62fd668bf3e13e2ce91d",
+      "claimId": "kaal:claim:3125827-001",
+      "doi": "10.33140/amlai.06.04.01",
+      "propositionSha256": "0a4f0962d56b96ea79575fcf5210d220f1a1ae2790b841e1c822f8096cc088be",
+      "oneToOneExtendsMapping": true,
+      "nonOverlap": {
+        "candidateId": false,
+        "url": false,
+        "proposition": false
+      }
+    },
+    {
+      "sequence": 371,
+      "candidateId": "kaal:response-draft:2026-08-08:ace26f77761e4a40bf47",
+      "claimId": "kaal:claim:3125827-001",
+      "doi": "10.3390/s21196408",
+      "propositionSha256": "f991cbd19f1354c7a43d44df8937296ee76eedc0aaeeb3e6d6c39a5d2fabf09b",
+      "oneToOneExtendsMapping": true,
+      "nonOverlap": {
+        "candidateId": false,
+        "url": false,
+        "proposition": false
+      }
+    },
+    {
+      "sequence": 372,
+      "candidateId": "kaal:response-draft:2026-08-08:b7c04adc2f784c1a4f6b",
+      "claimId": "kaal:claim:4796714-014",
+      "doi": "10.1145/3774629",
+      "propositionSha256": "2aef0d6695ed1c83d09c0f3651cf1927f5275f8f34960b5d8fe2fefe63a34112",
+      "oneToOneExtendsMapping": true,
+      "nonOverlap": {
+        "candidateId": false,
+        "url": false,
+        "proposition": false
+      }
+    }
+  ],
+  "evidenceLimits": [
+    "All retained evidence is bound to exact propositions and result passages in current Crossref records and immutable provider receipts.",
+    "Strategic-mining source text was also verified in publisher HTML. The MDPI and ACM PDFs returned HTTP 403, so no full-text inference was used for those works.",
+    "No retained source is treated as endorsement, citation, causation, or validation of Kaal's broader claim."
+  ],
+  "nonOverlapChecks": {
+    "againstCanonicalPrivate": {
+      "candidateIdMatches": 0,
+      "canonicalUrlMatches": 0,
+      "propositionHashMatches": 0
+    },
+    "withinBatch": {
+      "candidateIdsUnique": true,
+      "propositionHashesUnique": true,
+      "responseWordingUnique": true
+    }
+  },
+  "m1Validation": {
+    "status": "M1-PASS-WITH-LIMITS",
+    "deterministicGate": "pass",
+    "draftSha256": "51654f21c2065a77acd6e29294ce99674218f616ffebe7e3f1fc1fac29296d74",
+    "words": 285,
+    "hardFailures": 0,
+    "warnings": 0,
+    "limitation": "Short private position format and no GB10 corpus access under the user's boundary."
+  },
+  "privateAuthorityReceiptSha256": "741affb54c568f9f36faef60c46d9c67644739a69b5a0e90bef4beb3f61d8a5f",
+  "authorization": "Authorized for deterministic private-repository compilation only under private authority receipt SHA-256 741affb54c568f9f36faef60c46d9c67644739a69b5a0e90bef4beb3f61d8a5f. No public publication, GitHub Pages, IndexNow, or third-party submission authority exists.",
+  "reportingBoundary": "This frozen batch is compiled only into the authenticated private repository. It is not public growth, live publication, deployment, or discoverability.",
+  "compiledAt": "2026-08-14T17:49:52.860Z"
+}

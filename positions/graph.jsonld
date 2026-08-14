@@ -15,6 +15,66 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-372",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-372",
+   "text": "GPoS: Geospatially-aware Proof of Stake reports a distinct concentration mechanism in proof-of-stake consensus. Across Aptos, Avalanche, Ethereum, Solana, and Sui, a few geographic regions dominate consensus voting power. The study reports limited geospatial decentralization and tests a geospatially aware voting design. Its experiments report a 45 percent average improvement in geospatial decentralization with minimal overhead in the tested BFT protocols. Kaal's claim that token-weighted proof-of-stake governance can concentrate control is extended along a geographic dimension. That extension does not validate the wealth-based mechanism. Only the Crossref-indexed abstract passed because the ACM PDF returned HTTP 403. Broader governance outcomes remain unverified.",
+   "responseType": "extension",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/3774629"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/4796714-014"
+   },
+   "sha256": "6321a7e0aef6535ac66e6796d4a7d03ec7512d3b40ccee2101264204003b2b1e",
+   "evidenceLevel": "Current Crossref record with immutable review receipt",
+   "reviewTier": "independent private substantive general-literature extension",
+   "mappingConfidence": 0.62,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-371",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-371",
+   "text": "Blockchain Technologies: Probability of Double-Spend Attack on a Proof-of-Stake Consensus quantifies two attack strategies. Their success probabilities depend on network parameters and confirmation depth. The authors use those results to derive the number of confirmations a vendor should await before delivering goods or services. These findings extend Kaal's claim that fixed consensus rules cannot eliminate strategic attacks by independent nodes. Transaction finality and confirmation depth bound, but do not remove, proof-of-stake double-spend risk. Only the Crossref-indexed abstract passed because the publisher PDF returned HTTP 403. No inference reaches every proof-of-stake protocol.",
+   "responseType": "extension",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.3390/s21196408"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/3125827-001"
+   },
+   "sha256": "743e09eb403ba5bbf1a9cd7d452334a29f36d6c7bf85bc2c7ab9de1de338b9a2",
+   "evidenceLevel": "Current Crossref record with immutable review receipt",
+   "reviewTier": "independent private substantive general-literature extension",
+   "mappingConfidence": 0.62,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-08-370",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-08-370",
+   "text": "Strategic Mining in Proof-of-Stake with Practical Random Election identifies a concrete failure in validator selection. Distributed random beacons fix randomness across several slots because of latency. Validators can infer future election information. The study reports that, without propagation delay, a validator with any proportion of stake can profit from strategic mining and obtain higher block rewards than prior strategies. The result extends Kaal's claim that fixed consensus rules remain vulnerable to strategic gaming as conditions change. It is limited to the modeled protocol and its no-delay assumption. The evidence does not establish failure across all proof-of-stake systems.",
+   "responseType": "extension",
+   "datePublished": "2026-08-08",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.33140/amlai.06.04.01"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/3125827-001"
+   },
+   "sha256": "a7b6ad0ab1a73841483552335c40b0b22fb692891c626bf57b390b35c4e153db",
+   "evidenceLevel": "Current Crossref record with immutable review receipt",
+   "reviewTier": "independent private substantive general-literature extension",
+   "mappingConfidence": 0.62,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-08-369",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-08-369",
@@ -166155,6 +166215,24 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/3774629",
+   "@type": "CreativeWork",
+   "name": "GPoS: Geospatially-aware Proof of Stake",
+   "url": "https://doi.org/10.1145/3774629"
+  },
+  {
+   "@id": "https://doi.org/10.3390/s21196408",
+   "@type": "CreativeWork",
+   "name": "Blockchain Technologies: Probability of Double-Spend Attack on a Proof-of-Stake Consensus",
+   "url": "https://doi.org/10.3390/s21196408"
+  },
+  {
+   "@id": "https://doi.org/10.33140/amlai.06.04.01",
+   "@type": "CreativeWork",
+   "name": "Strategic Mining in Proof-of-Stake with Practical Random Election",
+   "url": "https://doi.org/10.33140/amlai.06.04.01"
+  },
+  {
    "@id": "https://doi.org/10.3390/jsan13020021",
    "@type": "CreativeWork",
    "name": "Veritas: Layer-2 Scaling Solution for Decentralized Oracles on Ethereum Blockchain with Reputation and Real-Time Considerations",
@@ -211155,6 +211233,20 @@
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
   },
   {
+   "@id": "https://wulfkaal.github.io/claims/4796714-014",
+   "@type": "Claim",
+   "identifier": "kaal:claim:4796714-014",
+   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
+   "sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/3125827-001",
+   "@type": "Claim",
+   "identifier": "kaal:claim:3125827-001",
+   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
+   "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb"
+  },
+  {
    "@id": "https://wulfkaal.github.io/claims/3782205-036",
    "@type": "Claim",
    "identifier": "kaal:claim:3782205-036",
@@ -213743,13 +213835,6 @@
    "identifier": "kaal:claim:2150377-029",
    "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377",
    "sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/3125827-001",
-   "@type": "Claim",
-   "identifier": "kaal:claim:3125827-001",
-   "citation": "Craig Calcaterra, Wulf A. Kaal, Secure Proof of Stake Protocol (2018). SSRN: https://ssrn.com/abstract=3125827",
-   "sha256": "598d9bd95e4af7a0a35328677c6bfc069f69f2e32c30c720b3a0be98a23a40cb"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/2831040-008",
@@ -218412,13 +218497,6 @@
    "identifier": "kaal:claim:3808859-036",
    "citation": "Wulf A. Kaal, Decentralization – Why We Need Technology Infrastructure Upgrades (2021). SSRN: https://ssrn.com/abstract=3808859",
    "sha256": "304ad25d43b5ecea3158e3a2ca04e6e1e3bd2958e2134e2dcefbfedf3b6f3ab7"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/4796714-014",
-   "@type": "Claim",
-   "identifier": "kaal:claim:4796714-014",
-   "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714",
-   "sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/5454054-011",
