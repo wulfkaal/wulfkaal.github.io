@@ -41,13 +41,28 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
     def test_private_compilation_status_is_not_public_growth(self):
         statuses = Counter(row["publicationStatus"] for row in self.records)
-        self.assertEqual(statuses, Counter({"public": 8304, "private_compiled": 1}))
-        private_record = next(row for row in self.records if row["publicationStatus"] == "private_compiled")
-        self.assertEqual(private_record["identifier"], "kaal:position:2026-08-08-365")
-        self.assertEqual(private_record["extends"]["identifier"], "kaal:claim:7261481-032")
+        self.assertEqual(statuses, Counter({"public": 8304, "private_compiled": 5}))
+        private_records = sorted(
+            (row for row in self.records if row["publicationStatus"] == "private_compiled"),
+            key=lambda row: row["identifier"],
+        )
+        self.assertEqual(
+            [row["identifier"] for row in private_records],
+            [f"kaal:position:2026-08-08-{sequence}" for sequence in range(365, 370)],
+        )
+        self.assertEqual(
+            [row["extends"]["identifier"] for row in private_records],
+            [
+                "kaal:claim:7261481-032",
+                "kaal:claim:3782210-002",
+                "kaal:claim:3782216-001",
+                "kaal:claim:4900878-034",
+                "kaal:claim:3782205-036",
+            ],
+        )
         coverage = load("positions/coverage.json")
         self.assertEqual(coverage["publishedResponseClaims"], 8304)
-        self.assertEqual(coverage["privateCompiledResponseClaims"], 1)
+        self.assertEqual(coverage["privateCompiledResponseClaims"], 5)
         self.assertIn("not public growth", coverage["scopeNote"])
 
     def test_date_shards_are_an_exact_partition(self):
