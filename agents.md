@@ -34,7 +34,7 @@ regulation, securities law.
 | Coverage by topic | https://wulfkaal.github.io/authority.json |
 | Works metadata | https://wulfkaal.github.io/papers.json |
 | BibTeX | https://wulfkaal.github.io/papers.bib |
-| Knowledge graph | https://wulfkaal.github.io/Academic-Papers/knowledge-graph/knowledge_graph.json |
+| Knowledge graph | https://wulfkaal.github.io/claims/graph.jsonld |
 | Attestation spec | https://wulfkaal.github.io/book/attest.md |
 | MCP endpoint, live query | https://corpus.openstanding.org/mcp |
 
