@@ -1,15 +1,15 @@
 {
-  "schemaVersion": "kaal-private-position-source-manifest-v1",
+  "schemaVersion": "kaal-public-position-source-manifest-v1",
   "batchId": "kaal-review:2026-08-13:scholarly-growth-7261481-032-reviewed-v1",
-  "repositoryMode": "private",
-  "privateCompilationEligible": true,
+  "repositoryMode": "public",
+  "privateCompilationEligible": false,
   "sourceSnapshotSha256": "4081fec1ec4dbf80da926b24204b22e2b954a54e12301da90cfe2f121b0fd66d",
   "sourceCount": 1,
   "positionCountBefore": 8304,
   "positionCountAfter": 8305,
   "firstSequence": 365,
   "lastSequence": 365,
-  "generatedSourceSha256": "72a4474ad770f70087943d4a5e371f4502240784ad4d35824fd577b5cd35c0d1",
+  "generatedSourceSha256": "251405035c824a93ece06ee7d8c41483b2da99e077720ae751fe01b9d1a6e7d5",
   "reviewManifestSha256": "aebdb49548c3e53aa87ce46ab71acccfe99308ba6273d245f2499c1e3d31c5c3",
   "reviewLedgerSha256": "9d65b8a126653a00828183d811c0166d5a1667cdffce3dc457b599588b4c9d37",
   "queryLogSha256": "ffe40ff9bce7554b8bae6f1c68c22b38feb87642cf9be6931b201de4077974e6",
@@ -47,7 +47,13 @@
     "existingSourceBatchFound": false,
     "comparisonCandidateSubsumed": true
   },
-  "privateAuthorityReceiptSha256": "741affb54c568f9f36faef60c46d9c67644739a69b5a0e90bef4beb3f61d8a5f",
-  "authorization": "Authorized for deterministic private-repository compilation only under private authority receipt SHA-256 741affb54c568f9f36faef60c46d9c67644739a69b5a0e90bef4beb3f61d8a5f. No public publication, GitHub Pages, IndexNow, or third-party submission authority exists.",
-  "reportingBoundary": "This frozen batch is eligible only for compilation into the authenticated private repository. It is not public growth, live publication, deployment, or discoverability."
+  "authorization": "Authorized by Wulf A. Kaal on 2026-08-15 for public corpus publication under public-reactivation authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c. Publication remains receipt-bound to successful GitHub Pages deployment and exact live-byte verification.",
+  "reportingBoundary": "This reviewed batch is authorized for public corpus publication only after successful deployment and exact live-byte verification.",
+  "publicPublicationEligible": true,
+  "priorPrivateAuthorityReceiptSha256": "741affb54c568f9f36faef60c46d9c67644739a69b5a0e90bef4beb3f61d8a5f",
+  "publicReactivationAuthoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+  "priorPrivateManifestSha256": "ec814df42b7b9f3b3f790b0fd7152a1d0050540ce6cbc3576934e7d6a0d817a4",
+  "priorPrivateSourceSha256": "72a4474ad770f70087943d4a5e371f4502240784ad4d35824fd577b5cd35c0d1",
+  "reactivatedAt": "2026-08-15T13:58:34Z",
+  "pagesWorkflowRun": 31888421664
 }

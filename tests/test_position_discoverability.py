@@ -39,19 +39,22 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         self.assertEqual(recent["count"], len(expected))
         self.assertEqual([row["identifier"] for row in recent["positions"]], expected)
 
-    def test_private_compilation_status_is_not_public_growth(self):
+    def test_public_reactivation_promotes_all_compiled_positions(self):
         statuses = Counter(row["publicationStatus"] for row in self.records)
-        self.assertEqual(statuses, Counter({"public": 8304, "private_compiled": 9}))
-        private_records = sorted(
-            (row for row in self.records if row["publicationStatus"] == "private_compiled"),
+        self.assertEqual(statuses, Counter({"public": 8313}))
+        reactivated_records = sorted(
+            (row for row in self.records if row["identifier"] in {
+                f"kaal:position:2026-08-08-{sequence}" for sequence in range(365, 374)
+            }),
             key=lambda row: row["identifier"],
         )
         self.assertEqual(
-            [row["identifier"] for row in private_records],
+            [row["identifier"] for row in reactivated_records],
             [f"kaal:position:2026-08-08-{sequence}" for sequence in range(365, 374)],
         )
+        self.assertTrue(all(row["publicationStatus"] == "public" for row in reactivated_records))
         self.assertEqual(
-            [row["extends"]["identifier"] for row in private_records],
+            [row["extends"]["identifier"] for row in reactivated_records],
             [
                 "kaal:claim:7261481-032",
                 "kaal:claim:3782210-002",
@@ -65,9 +68,9 @@ class PositionDiscoverabilityTests(unittest.TestCase):
             ],
         )
         coverage = load("positions/coverage.json")
-        self.assertEqual(coverage["publishedResponseClaims"], 8304)
-        self.assertEqual(coverage["privateCompiledResponseClaims"], 9)
-        self.assertIn("not public growth", coverage["scopeNote"])
+        self.assertEqual(coverage["publishedResponseClaims"], 8313)
+        self.assertEqual(coverage["privateCompiledResponseClaims"], 0)
+        self.assertIn("published public records", coverage["scopeNote"])
 
     def test_date_shards_are_an_exact_partition(self):
         ids = []

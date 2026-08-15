@@ -391,9 +391,11 @@ def build_public_metrics(records):
         "@id": f"{BASE}/positions/coverage.json",
         "name": "Kaal response claim coverage",
         "description": (
-            "Aggregate metrics for affirmed response claims, with historical public and "
-            "private-compiled lifecycle states reported separately. "
-            "The private coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works."
+            "Aggregate metrics for affirmed public response claims. "
+            "The coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works."
+            if private_compiled_count == 0 else
+            "Aggregate metrics for affirmed response claims, with public and private-compiled lifecycle states reported separately. "
+            "The coverage ledger also tracks mapped, unmatched, ambiguous, and review-stage works."
         ),
         "dateModified": max(record["dateModified"] for record in records),
         "affirmedResponseClaims": len(records),
@@ -408,7 +410,11 @@ def build_public_metrics(records):
         "batches": batches,
         "graph": f"{BASE}/positions/graph.jsonld",
         "bulk": f"{BASE}/positions/all.jsonl",
-        "scopeNote": "Private-compiled records are not public growth, live publication, deployment, or discoverability. A public count is not a claim of comprehensive literature coverage.",
+        "scopeNote": (
+            "All indexed response claims are published public records. A public count is not a claim of comprehensive literature coverage."
+            if private_compiled_count == 0 else
+            "Private-compiled records are not public growth, live publication, deployment, or discoverability. A public count is not a claim of comprehensive literature coverage."
+        ),
     }
 
 
@@ -631,7 +637,11 @@ def update_discovery_surfaces(repo, lastmod, records):
         "sourceClass": "owner-authorized dated commentary with explicit lifecycle status",
         "scholarlyClaimLayerEligible": False,
         "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim.",
-        "reportingBoundary": "Private-compiled records are not public growth, live publication, deployment, or discoverability.",
+        "reportingBoundary": (
+            "All indexed response claims are published public records with canonical URLs."
+            if private_compiled_count == 0 else
+            "Private-compiled records are not public growth, live publication, deployment, or discoverability."
+        ),
     }
     write_json(mcp_path, mcp)
 
