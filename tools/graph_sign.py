@@ -131,6 +131,12 @@ def main() -> int:
     ap.add_argument("--reason", default="", help="why the previous key is unavailable")
     ap.add_argument("--key-id", default=None, help="identifier for the new key")
     ap.add_argument("--as-of", default=None, help="ISO date for the key history, e.g. 2026-08-03")
+    ap.add_argument("--change-type", default=None,
+                    help="what this record attests, e.g. eligible_set_expansion; "
+                         "defaults to digest_correction, which is only right when the "
+                         "graph bytes changed without a change in scope")
+    ap.add_argument("--supersedes-reason", default=None,
+                    help="why the prior record is superseded, stated accurately")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -185,15 +191,16 @@ def main() -> int:
         "update_id": "kaal:update:%s" % hashlib.sha256(
             (digest + (prior or {}).get("graph_id", "") + key_id).encode()
         ).hexdigest()[:24],
-        "graph_id": (prior or manifest).get("graph_id", manifest.get("graph_id")),
+        "graph_id": manifest.get("graph_id") or (prior or {}).get("graph_id"),
         "graph_sha256": digest,
         "claim_count": manifest.get("claim_count"),
-        "change_type": "digest_correction_under_rotated_key" if rotating else "digest_correction",
+        "change_type": args.change_type
+        or ("digest_correction_under_rotated_key" if rotating else "digest_correction"),
         "lifecycle_status": "current",
     }
     if prior:
         body["supersedes"] = prior["update_id"]
-        body["supersedes_reason"] = (
+        body["supersedes_reason"] = args.supersedes_reason or (
             "The superseded record attested to a graph build that was never published. "
             "Its signature is valid; its subject was not the served artifact."
         )

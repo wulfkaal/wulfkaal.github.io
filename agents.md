@@ -198,7 +198,7 @@ claims.
 |---|---|---|
 | Page | https://wulfkaal.github.io/answer-service/ | Human and agent readable |
 | Graph index | https://wulfkaal.github.io/agentic-claim-graph/v1/index.json | Entry point, hard invariants |
-| Graph | https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | 248 nodes, 800 typed edges |
+| Graph | https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | 2,699 nodes, 8,245 typed edges |
 | Manifest | https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json | Digests and counts |
 | Vocabulary | https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json | Node, edge and capability terms |
 | Release feed | https://wulfkaal.github.io/agentic-claim-graph/v1/updates.json | Signed release records |
@@ -215,7 +215,8 @@ conditions under which it was argued. Scope conditions are not decoration: a
 claim about reputation voting inside a DAO of DAOs is not a claim about
 reputation systems generally, and the response says so.
 
-This is a pilot of 100 claims, not the full 5,197-claim corpus. Absence from a
+This graph carries the 1,280 capability-eligible claims under selection method v1
+(ten claims per work), not the full 5,197-claim corpus. Absence from a
 response is not evidence of absence from the corpus.
 
 ## TrustCarry Protocol v0.3 research records
