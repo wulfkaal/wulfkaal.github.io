@@ -193,7 +193,7 @@ AFMR is edited. It is not assembled by consensus, which is a deliberate choice a
 
 ## 10. Provenance
 
-The registry derives from the Kaal Corpus: 124 scholarly works published 2004 to 2026, 122 with SSRN identifiers, indexed at https://wulfkaal.github.io/papers.json and rostered at https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345.
+The registry derives from the Kaal Corpus: 133 scholarly works published 2004 to 2026, all with SSRN identifiers, indexed at https://wulfkaal.github.io/papers.json and rostered at https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345.
 
 From those works, 5,145 atomic claims are published at https://wulfkaal.github.io/claims/index.json, each with a claim type, a confidence marker, scope conditions, a verbatim supporting quote, the sha256 of the source PDF, and a permanent canonical URL. 2,169 typed edges record relations between claims across six relations: restates, extends, supersedes, specializes, supports, contests. An audit of quote fidelity against all 126 source documents returned 96.7 percent accuracy. Of those claims, 2,037 state how a design, mechanism, or remedy fails and under what conditions, indexed at https://wulfkaal.github.io/failures/index.json.
 

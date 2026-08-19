@@ -1,134 +1,148 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "@id": "https://wulfkaal.github.io/positions/#dataset",
-  "name": "Affirmed Position Claims by Wulf A. Kaal",
-  "description": "Machine-readable, owner-authorized dated commentary positions, each attributed to a canonical URL, content-hashed, and grounded in the source-bound scholarly claim corpus of Wulf A. Kaal.",
-  "url": "https://wulfkaal.github.io/positions/",
-  "identifier": "https://wulfkaal.github.io/positions/index.json",
-  "creator": {
-    "@type": "Person",
-    "name": "Wulf A. Kaal",
-    "identifier": "https://orcid.org/0009-0008-7840-1847"
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "@id": "https://wulfkaal.github.io/positions/#dataset",
+ "name": "Affirmed Position Claims by Wulf A. Kaal",
+ "description": "Machine-readable, owner-authorized dated commentary positions, each attributed to a canonical URL, content-hashed, and grounded in the source-bound scholarly claim corpus of Wulf A. Kaal.",
+ "url": "https://wulfkaal.github.io/positions/",
+ "identifier": "https://wulfkaal.github.io/positions/index.json",
+ "creator": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "license": "https://wulfkaal.github.io/positions/schema.json",
+ "isBasedOn": "https://wulfkaal.github.io/claims/index.json",
+ "hasPart": [
+  "https://wulfkaal.github.io/positions/recent.json",
+  "https://wulfkaal.github.io/positions/by-date/index.json",
+  "https://wulfkaal.github.io/positions/by-topic/index.json",
+  "https://wulfkaal.github.io/positions/by-claim/index.json"
+ ],
+ "dateModified": "2026-08-08",
+ "creativeWorkStatus": "Owner-authorized",
+ "variableMeasured": "8313 affirmed position claims (8304 historical public, 9 private compiled); 5145 protected scholarly claims (separate, unchanged).",
+ "reportingBoundary": "Private-compiled records are not public growth, live publication, deployment, or discoverability.",
+ "distribution": [
+  {
+   "@type": "DataDownload",
+   "name": "canonical-url-registry.jsonl",
+   "contentUrl": "https://wulfkaal.github.io/positions/canonical-url-registry.jsonl",
+   "encodingFormat": "application/x-ndjson",
+   "sha256": "97af31c5855ee5ded19f894489f18c0467ba8a58bdfb74a470b25a351538864f"
   },
-  "license": "https://wulfkaal.github.io/positions/schema.json",
-  "isBasedOn": "https://wulfkaal.github.io/claims/index.json",
-  "hasPart": [
-    "https://wulfkaal.github.io/positions/recent.json",
-    "https://wulfkaal.github.io/positions/by-date/index.json",
-    "https://wulfkaal.github.io/positions/by-topic/index.json",
-    "https://wulfkaal.github.io/positions/by-claim/index.json"
-  ],
-  "dateModified": "2026-08-08",
-  "creativeWorkStatus": "Owner-authorized",
-  "variableMeasured": "8313 affirmed position claims (8304 historical public, 9 private compiled); 5145 protected scholarly claims (separate, unchanged).",
-  "reportingBoundary": "Private-compiled records are not public growth, live publication, deployment, or discoverability.",
-  "distribution": [
-    {
-      "@type": "DataDownload",
-      "name": "canonical-url-registry.jsonl",
-      "contentUrl": "https://wulfkaal.github.io/positions/canonical-url-registry.jsonl",
-      "encodingFormat": "application/x-ndjson",
-      "sha256": "97af31c5855ee5ded19f894489f18c0467ba8a58bdfb74a470b25a351538864f"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "provenance-evidence-hashes.jsonl",
-      "contentUrl": "https://wulfkaal.github.io/positions/provenance-evidence-hashes.jsonl",
-      "encodingFormat": "application/x-ndjson",
-      "sha256": "e3dbef62be0cb7d2aff7609a2484cb9e64e5044494e5d5c61ad11c428c2bc367"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "claim-source-5145-map.jsonl",
-      "contentUrl": "https://wulfkaal.github.io/positions/claim-source-5145-map.jsonl",
-      "encodingFormat": "application/x-ndjson",
-      "sha256": "7de56e454cbf6de50f3123264fe42bcc4835a045526c5ad7174b09aead9daa47"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "claim-5145-coverage.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/claim-5145-coverage.json",
-      "encodingFormat": "application/json",
-      "sha256": "b6c1dd81ff6b48c2bab287c28f91380a02fa94b01bac484d245d6b65ca850081"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "positions.bib",
-      "contentUrl": "https://wulfkaal.github.io/positions/positions.bib",
-      "encodingFormat": "application/x-bibtex",
-      "sha256": "7ce0cd8c20d81ca687eafadb14aee25d853050a0c1305ab5c79814d4d799f709"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "positions.csl.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/positions.csl.json",
-      "encodingFormat": "application/json",
-      "sha256": "edb44b55725cccbc915c02f725cc171c549a8e11de602dfe9eae203e3d28b54a"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "positions.dublin-core.jsonl",
-      "contentUrl": "https://wulfkaal.github.io/positions/positions.dublin-core.jsonl",
-      "encodingFormat": "application/x-ndjson",
-      "sha256": "072ff4f3f5d138c48fcb50950567045e8026146bb56897f89064744ab867875b"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "feed.atom.xml",
-      "contentUrl": "https://wulfkaal.github.io/positions/feed.atom.xml",
-      "encodingFormat": "application/atom+xml",
-      "sha256": "f80091a1eea8ac7dcceb119e5920acf399064fe79f5963208e109341c0a63d68"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "feed.rss.xml",
-      "contentUrl": "https://wulfkaal.github.io/positions/feed.rss.xml",
-      "encodingFormat": "application/rss+xml",
-      "sha256": "f57c47a47213e52eb91cc3842cf6f477550892ece424557fc65f7b1f6f8437a0"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "sitemap-positions-attribution.xml",
-      "contentUrl": "https://wulfkaal.github.io/positions/sitemap-positions-attribution.xml",
-      "encodingFormat": "application/xml",
-      "sha256": "d664966d9e48f61e9a99d61efda0217620ecdac52254f13aa274c3ce53e58ad7"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "recent.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/recent.json",
-      "encodingFormat": "application/json",
-      "sha256": "73fc716f18bb6a29c1062331fb6af0e5f7585eea53f34adbcc344b9f4a8e7482"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "by-date/index.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/by-date/index.json",
-      "encodingFormat": "application/json",
-      "sha256": "cef0449758eba899fb89c170ae717ffd62323d157c253f91c8e93f8ed575c253"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "by-topic/index.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/by-topic/index.json",
-      "encodingFormat": "application/json",
-      "sha256": "57eb17637f7c2aae272c12b9a6cd26bba703502b4c8dd3c8083f48ddc37c08cb"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "by-claim/index.json",
-      "contentUrl": "https://wulfkaal.github.io/positions/by-claim/index.json",
-      "encodingFormat": "application/json",
-      "sha256": "b15e0d0723d21e6ca6d7096271c50880135926e3e2d5d0c4971221162bd745aa"
-    }
-  ],
-  "keywords": [
-    "governance",
-    "dynamic regulation",
-    "blockchain",
-    "AI agents",
-    "scholarly claims",
-    "attribution"
-  ]
+  {
+   "@type": "DataDownload",
+   "name": "provenance-evidence-hashes.jsonl",
+   "contentUrl": "https://wulfkaal.github.io/positions/provenance-evidence-hashes.jsonl",
+   "encodingFormat": "application/x-ndjson",
+   "sha256": "e3dbef62be0cb7d2aff7609a2484cb9e64e5044494e5d5c61ad11c428c2bc367"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "claim-source-5145-map.jsonl",
+   "contentUrl": "https://wulfkaal.github.io/positions/claim-source-5145-map.jsonl",
+   "encodingFormat": "application/x-ndjson",
+   "sha256": "7de56e454cbf6de50f3123264fe42bcc4835a045526c5ad7174b09aead9daa47"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "claim-5145-coverage.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/claim-5145-coverage.json",
+   "encodingFormat": "application/json",
+   "sha256": "b6c1dd81ff6b48c2bab287c28f91380a02fa94b01bac484d245d6b65ca850081"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "positions.bib",
+   "contentUrl": "https://wulfkaal.github.io/positions/positions.bib",
+   "encodingFormat": "application/x-bibtex",
+   "sha256": "7ce0cd8c20d81ca687eafadb14aee25d853050a0c1305ab5c79814d4d799f709"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "positions.csl.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/positions.csl.json",
+   "encodingFormat": "application/json",
+   "sha256": "edb44b55725cccbc915c02f725cc171c549a8e11de602dfe9eae203e3d28b54a"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "positions.dublin-core.jsonl",
+   "contentUrl": "https://wulfkaal.github.io/positions/positions.dublin-core.jsonl",
+   "encodingFormat": "application/x-ndjson",
+   "sha256": "072ff4f3f5d138c48fcb50950567045e8026146bb56897f89064744ab867875b"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "feed.atom.xml",
+   "contentUrl": "https://wulfkaal.github.io/positions/feed.atom.xml",
+   "encodingFormat": "application/atom+xml",
+   "sha256": "f80091a1eea8ac7dcceb119e5920acf399064fe79f5963208e109341c0a63d68"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "feed.rss.xml",
+   "contentUrl": "https://wulfkaal.github.io/positions/feed.rss.xml",
+   "encodingFormat": "application/rss+xml",
+   "sha256": "f57c47a47213e52eb91cc3842cf6f477550892ece424557fc65f7b1f6f8437a0"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "sitemap-positions-attribution.xml",
+   "contentUrl": "https://wulfkaal.github.io/positions/sitemap-positions-attribution.xml",
+   "encodingFormat": "application/xml",
+   "sha256": "d664966d9e48f61e9a99d61efda0217620ecdac52254f13aa274c3ce53e58ad7"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "recent.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/recent.json",
+   "encodingFormat": "application/json",
+   "sha256": "73fc716f18bb6a29c1062331fb6af0e5f7585eea53f34adbcc344b9f4a8e7482"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "by-date/index.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/by-date/index.json",
+   "encodingFormat": "application/json",
+   "sha256": "cef0449758eba899fb89c170ae717ffd62323d157c253f91c8e93f8ed575c253"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "by-topic/index.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/by-topic/index.json",
+   "encodingFormat": "application/json",
+   "sha256": "57eb17637f7c2aae272c12b9a6cd26bba703502b4c8dd3c8083f48ddc37c08cb"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "by-claim/index.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/by-claim/index.json",
+   "encodingFormat": "application/json",
+   "sha256": "b15e0d0723d21e6ca6d7096271c50880135926e3e2d5d0c4971221162bd745aa"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "claim-source-5197-map.jsonl",
+   "contentUrl": "https://wulfkaal.github.io/positions/claim-source-5197-map.jsonl",
+   "encodingFormat": "application/x-ndjson",
+   "sha256": "7de56e454cbf6de50f3123264fe42bcc4835a045526c5ad7174b09aead9daa47"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "claim-5197-coverage.json",
+   "contentUrl": "https://wulfkaal.github.io/positions/claim-5197-coverage.json",
+   "encodingFormat": "application/json",
+   "sha256": "b6c1dd81ff6b48c2bab287c28f91380a02fa94b01bac484d245d6b65ca850081"
+  }
+ ],
+ "keywords": [
+  "governance",
+  "dynamic regulation",
+  "blockchain",
+  "AI agents",
+  "scholarly claims",
+  "attribution"
+ ]
 }

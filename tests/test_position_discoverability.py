@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTECTED_SHA256 = "613fbb8ba1000d4580a033e113c2bad57547e43104ecb5fcd9bc075ae9580d22"
+PROTECTED_SHA256 = "af2db2da29d62ebf3d39a557aea87e808374908f1a91eaef8bfb5f838398a742"
 ENDPOINTS = {
     "positions_index": "https://wulfkaal.github.io/positions/index.json",
     "positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
@@ -29,8 +29,8 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         raw = (ROOT / "claims/index.json").read_bytes()
         claims = json.loads(raw)
         self.assertEqual(hashlib.sha256(raw).hexdigest(), PROTECTED_SHA256)
-        self.assertEqual(claims["count"], 5145)
-        self.assertEqual(len(claims["claims"]), 5145)
+        self.assertEqual(claims["count"], 5197)
+        self.assertEqual(len(claims["claims"]), 5197)
 
     def test_public_index_and_recent_feed(self):
         self.assertEqual(self.index["numberOfItems"], len(self.records))
@@ -101,21 +101,21 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
         descriptor = load(".well-known/mcp.json")
         self.assertTrue({"search_positions", "get_position", "positions_on_topic"}.issubset(descriptor["tools"]))
-        self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], 5145)
+        self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], 5197)
         self.assertEqual(descriptor["collections"]["publicPositions"]["count"], len(self.records))
         self.assertFalse(descriptor["collections"]["publicPositions"]["scholarlyClaimLayerEligible"])
 
-        coverage = load("positions/claim-5145-coverage.json")
-        self.assertEqual(coverage["protectedScholarlyClaims"], 5145)
+        coverage = load("positions/claim-5197-coverage.json")
+        self.assertEqual(coverage["protectedScholarlyClaims"], 5197)
         self.assertEqual(coverage["affirmedPositionsMapped"], len(self.records))
         dataset = load("positions/dataset.jsonld")
         downloads = {item["name"] for item in dataset["distribution"]}
-        self.assertIn("claim-5145-coverage.json", downloads)
-        self.assertIn("claim-source-5145-map.jsonl", downloads)
+        self.assertIn("claim-5197-coverage.json", downloads)
+        self.assertIn("claim-source-5197-map.jsonl", downloads)
         legacy = load("positions/claim-5033-coverage.json")
         self.assertTrue(legacy["deprecatedAlias"])
-        self.assertEqual(legacy["protectedScholarlyClaims"], 5145)
-        self.assertTrue(legacy["supersededBy"].endswith("claim-5145-coverage.json"))
+        self.assertEqual(legacy["protectedScholarlyClaims"], 5197)
+        self.assertTrue(legacy["supersededBy"].endswith("claim-5197-coverage.json"))
 
     def test_every_position_page_has_descriptive_safe_labels(self):
         for row in self.records:

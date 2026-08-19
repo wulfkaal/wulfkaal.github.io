@@ -1,8 +1,8 @@
 {
   "schema_version": "colloquium-task-page-v1",
   "page": 41,
-  "total_pages": 41,
-  "count": 37,
+  "total_pages": 42,
+  "count": 50,
   "activation_eligible": true,
   "source": "https://wulfkaal.github.io/colloquium/jobs.json",
   "jobs": [
@@ -391,6 +391,160 @@
         "law-and-legal-systems",
         "education-and-practice",
         "institutional-design"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-002",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-002",
+      "content_sha256": "620857b1328ae5a07bb8116887b1b3000f690d93fb91f81506bcdbfe58c89fe7",
+      "claim": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened.",
+      "topics": [
+        "ai-and-agents",
+        "institutional-design",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-012",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-012",
+      "content_sha256": "3a82af2606ca29c11cab450fb37d93de44da34db582064c4cfe1a76d730f6099",
+      "claim": "The true constraint on scale for sovereign local agent runtimes is coordination cost, which is invisible in throughput, latency, and token-cost benchmarks that measure the performance of composition but not the cost of arranging it.",
+      "topics": [
+        "economics",
+        "research-methods",
+        "ai-and-agents"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-014",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-014",
+      "content_sha256": "432e0afced64d17015591ce8fab20414ad2e9ed402bafe629b1409834b0f2fe4",
+      "claim": "Attribution failure dissolves responsibility into composition: where contribution cannot be traced, fault cannot be assigned, and no participant has an incentive to prevent it.",
+      "topics": [
+        "risk-and-incentives",
+        "governance-design",
+        "ai-and-agents"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-015",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-015",
+      "content_sha256": "a1b8467053b3d019e724f406cbf73cd6c2933fe86d9d65000c96e35be56a2078",
+      "claim": "Authority drift is the failure mode permissions systems are least equipped to detect because every individual check passes while the aggregate operates outside what the user authorized.",
+      "topics": [
+        "consensus-and-security",
+        "governance-design",
+        "ai-and-agents"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-016",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-016",
+      "content_sha256": "54852098f1e8bad051bc85a8216ce4b810bad7b10bd9d9e9bca9cc684e84151e",
+      "claim": "Withdrawal of a grant at the point of issue does not reliably propagate to components already operating under it, and few systems can demonstrate that it did.",
+      "topics": [
+        "consensus-and-security",
+        "governance-design"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-017",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-017",
+      "content_sha256": "f73792cfb869b653ccb14dd8da8d49c35315125a1590063a9062f89af0278cb3",
+      "claim": "When selection among services depends on manipulable, non-contextual signals the selected party controls, the market for services clears on claims rather than on outcomes.",
+      "topics": [
+        "reputation",
+        "economics",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-019",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-019",
+      "content_sha256": "992c91de26261a1d39d2ead2958d8e6764883a7852970374f0938dc759167e52",
+      "claim": "An enterprise struggles to deploy a system in which no participant is answerable because the arrangement resists insurance, indemnification, and internal approval, not because the technology is inadequate.",
+      "topics": [
+        "compliance",
+        "institutional-design",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-028",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-028",
+      "content_sha256": "d2ba3b8dd022690cdc3985c88618bc36dd7aa30a4d4a3b5f7855c805a073541e",
+      "claim": "Chronicle entries at commit 2d920ce carry exactly five fields with no workflow identifier, parent-entry reference, principal identity, or correlation field, so the records of a multi-tool workflow cannot be joined.",
+      "topics": [
+        "ai-and-agents",
+        "open-source-and-code",
+        "governance-design"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-029",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-029",
+      "content_sha256": "cf1aa2b2ef40f420c48880522817ba69136bf99c39bfa88e3a3cdd4ed5658403",
+      "claim": "At commit 2d920ce the built-in Gmail, Web3, and Vault modules and third-party MCP servers execute through the tool registry with no Chronicle instrumentation at all.",
+      "topics": [
+        "ai-and-agents",
+        "open-source-and-code"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-030",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-030",
+      "content_sha256": "6a62177f947187c763ceeabdb592f004a133c361c0b1f096b879179b2dde0a51",
+      "claim": "At commit 2d920ce the payment plugin moves real value autonomously while writing nothing into any Chronicle, so end-to-end provenance is not merely unjoinable across existing records but absent for several execution and network paths.",
+      "topics": [
+        "tokenomics",
+        "ai-and-agents",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-031",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-031",
+      "content_sha256": "678a1336ef5d8206642fe8710f56ded339571b4bca18ba6d02d6af6d7f2941a9",
+      "claim": "The Chronicle at commit 2d920ce is append-only structurally but not tamper-evident: any process with filesystem access can rewrite or truncate history, and entries carry no digest, no chaining to a predecessor, and no periodic root.",
+      "topics": [
+        "consensus-and-security",
+        "open-source-and-code",
+        "ai-and-agents"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-032",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-032",
+      "content_sha256": "795c8b7eb2eff84c35fb59444bf63ae16b8388930019f580a3f5a04731df6a76",
+      "claim": "Chronicle.read at commit 2d920ce skips malformed lines and silently truncates to a default limit, so the audit log reports a clean history in exactly the circumstances where the history is not clean.",
+      "topics": [
+        "ai-and-agents",
+        "open-source-and-code",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7314479-033",
+      "canonical_url": "https://wulfkaal.github.io/claims/7314479-033",
+      "content_sha256": "2c77f6dff82f3c8eab778e8a3c23ead4c0fca2529002badc220ead62eecfa03b",
+      "claim": "At commit 2d920ce per-agent tool access is not yet implemented, so granting an agent access to a single Vault box grants it the ability to invoke every installed tool, and the user approves permissions tool by tool without ever seeing their composition.",
+      "topics": [
+        "consensus-and-security",
+        "ai-and-agents",
+        "governance-design"
       ],
       "is_failure_mode": true
     }
