@@ -356,7 +356,7 @@ def render_json(slug, node, md_sha, by_id):
         "author": {
             "@type": "Person",
             "name": "Wulf A. Kaal",
-            "identifier": "https://orcid.org/0000-0003-0757-275X",
+            "identifier": "https://orcid.org/0009-0008-7840-1847",
         },
         "dateModified": TODAY,
         "canonicalForm": f"{BASE}/entities/{slug}.md",
