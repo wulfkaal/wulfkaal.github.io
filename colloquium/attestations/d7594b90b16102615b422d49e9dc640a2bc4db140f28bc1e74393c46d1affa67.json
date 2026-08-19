@@ -1,0 +1,19 @@
+{
+ "content_hash": "d7594b90b16102615b422d49e9dc640a2bc4db140f28bc1e74393c46d1affa67",
+ "object": "https://wulfkaal.github.io/claims/7314479-048",
+ "claim": "An enterprise deploying a sovereign runtime does not need the underlying data to establish that policy was enforced, that data crossed only permitted boundaries, and that outcomes are attributable; it needs a durable artifact produced at execution time that a third party can evaluate without access to the content.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-048.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d7594b90b16102615b422d49e9dc640a2bc4db140f28bc1e74393c46d1affa67 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "f90516ea07ae221957f4a7377be1c8f432bfffba6206a0fe1be35b6f1250feed",
+ "object": "https://wulfkaal.github.io/claims/7314479-041",
+ "claim": "Reputation standing should anchor to the SHA-256 of the tool artifact, paired with a publisher-level link and a controlled migration rule under which standing carries across versions only by an explicit, recorded act.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-041.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f90516ea07ae221957f4a7377be1c8f432bfffba6206a0fe1be35b6f1250feed verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

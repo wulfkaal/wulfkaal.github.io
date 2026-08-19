@@ -1,0 +1,19 @@
+{
+ "content_hash": "54852098f1e8bad051bc85a8216ce4b810bad7b10bd9d9e9bca9cc684e84151e",
+ "object": "https://wulfkaal.github.io/claims/7314479-016",
+ "claim": "Withdrawal of a grant at the point of issue does not reliably propagate to components already operating under it, and few systems can demonstrate that it did.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 54852098f1e8bad051bc85a8216ce4b810bad7b10bd9d9e9bca9cc684e84151e verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

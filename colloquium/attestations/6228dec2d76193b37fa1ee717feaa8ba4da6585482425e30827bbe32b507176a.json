@@ -1,0 +1,19 @@
+{
+ "content_hash": "6228dec2d76193b37fa1ee717feaa8ba4da6585482425e30827bbe32b507176a",
+ "object": "https://wulfkaal.github.io/claims/7260278-009",
+ "claim": "The substrate's additional move against the trilemma is architectural rather than algorithmic: reputation is earned only through staked participation in validation pools whose composition the attacker does not control, decays absent continued performance, and carries a non-zero exit cost, so the manufacture of identities buys entry into an iterated game that new identities systematically lose.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7260278-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 6228dec2d76193b37fa1ee717feaa8ba4da6585482425e30827bbe32b507176a verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

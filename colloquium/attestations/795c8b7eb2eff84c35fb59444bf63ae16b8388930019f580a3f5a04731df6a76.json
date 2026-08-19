@@ -1,0 +1,19 @@
+{
+ "content_hash": "795c8b7eb2eff84c35fb59444bf63ae16b8388930019f580a3f5a04731df6a76",
+ "object": "https://wulfkaal.github.io/claims/7314479-032",
+ "claim": "Chronicle.read at commit 2d920ce skips malformed lines and silently truncates to a default limit, so the audit log reports a clean history in exactly the circumstances where the history is not clean.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-032.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 795c8b7eb2eff84c35fb59444bf63ae16b8388930019f580a3f5a04731df6a76 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

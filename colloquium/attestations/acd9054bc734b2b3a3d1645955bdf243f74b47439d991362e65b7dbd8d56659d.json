@@ -1,0 +1,19 @@
+{
+ "content_hash": "acd9054bc734b2b3a3d1645955bdf243f74b47439d991362e65b7dbd8d56659d",
+ "object": "https://wulfkaal.github.io/claims/7260278-022",
+ "claim": "At the institutional level, the WDAG represents contributions and the typed relationships among them, including citation, validation, and domain relationships.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7260278-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest acd9054bc734b2b3a3d1645955bdf243f74b47439d991362e65b7dbd8d56659d verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

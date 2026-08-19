@@ -1,0 +1,19 @@
+{
+ "content_hash": "0f179da5f83caa93fe3406e4075ac9434cd6b3677f739b5bb2edc18c4a5763a2",
+ "object": "https://wulfkaal.github.io/claims/7314479-039",
+ "claim": "Because provenance fields are minted by Core and never supplied by the tool, the tool remains low-trust and cannot forge its own provenance.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 0f179da5f83caa93fe3406e4075ac9434cd6b3677f739b5bb2edc18c4a5763a2 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

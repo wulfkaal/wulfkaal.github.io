@@ -1,0 +1,19 @@
+{
+ "content_hash": "36ca15fe305285e3f7c256322a94ffe8910768f4ad3e2c69fd4b9f53ca6efc3d",
+ "object": "https://wulfkaal.github.io/claims/7314479-022",
+ "claim": "Provenance must remain durable, portable, and interpretable by a party who did not observe the original execution; provenance that exists only inside a live session is telemetry.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-022.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 36ca15fe305285e3f7c256322a94ffe8910768f4ad3e2c69fd4b9f53ca6efc3d verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

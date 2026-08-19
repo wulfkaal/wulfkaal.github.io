@@ -1,0 +1,19 @@
+{
+ "content_hash": "b96be610cdbb87b4d3d3b54ad3a8a45985c7d84671ef552afea1c62a3debeedc",
+ "object": "https://wulfkaal.github.io/claims/7314479-034",
+ "claim": "The Gatekeeper documentation at commit 2d920ce specifies four filtering layers, but the implementation contains only the domain allowlist and audit logging; content inspection and personal-information filtering are absent from the code.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-034.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b96be610cdbb87b4d3d3b54ad3a8a45985c7d84671ef552afea1c62a3debeedc verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

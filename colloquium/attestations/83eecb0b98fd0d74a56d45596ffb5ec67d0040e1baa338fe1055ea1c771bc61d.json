@@ -1,0 +1,19 @@
+{
+ "content_hash": "83eecb0b98fd0d74a56d45596ffb5ec67d0040e1baa338fe1055ea1c771bc61d",
+ "object": "https://wulfkaal.github.io/claims/7314479-042",
+ "claim": "Cross-tool provenance and tamper evidence should precede a tool marketplace, because a registry that distributes tools without them will accumulate an installed base whose behavior cannot be reconstructed.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-042.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 83eecb0b98fd0d74a56d45596ffb5ec67d0040e1baa338fe1055ea1c771bc61d verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

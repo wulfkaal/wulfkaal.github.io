@@ -1,0 +1,19 @@
+{
+ "content_hash": "d2ba3b8dd022690cdc3985c88618bc36dd7aa30a4d4a3b5f7855c805a073541e",
+ "object": "https://wulfkaal.github.io/claims/7314479-028",
+ "claim": "Chronicle entries at commit 2d920ce carry exactly five fields with no workflow identifier, parent-entry reference, principal identity, or correlation field, so the records of a multi-tool workflow cannot be joined.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest d2ba3b8dd022690cdc3985c88618bc36dd7aa30a4d4a3b5f7855c805a073541e verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "fef8e8bdcad5e85d47fd43296f67f04615a110be8a275064f759777d7bbc32cc",
+ "object": "https://wulfkaal.github.io/claims/7314479-007",
+ "claim": "A plugin written by the vendor is a feature governed by the vendor's own accountability, while a service invoked across an economic boundary is a counterparty requiring institutions between parties.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7314479-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fef8e8bdcad5e85d47fd43296f67f04615a110be8a275064f759777d7bbc32cc verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}
