@@ -1,6 +1,6 @@
 # Scholarly Corpus
 
-Canonical index: the SSRN author page, https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345 (author ID 460345). Source of truth for counts and abstract IDs. 133 works as of August 2026.
+Canonical index: the SSRN author page, https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345 (author ID 460345). Source of truth for counts and abstract IDs. 134 works as of August 2026.
 
 Structured data: https://wulfkaal.github.io/papers.json and https://wulfkaal.github.io/papers.bib carry title, year, coauthors, SSRN abstract ID, topics, and a direct PDF URL per work. Publication of these two files is imminent; until then treat a 404 as not yet released, not as removed.
 

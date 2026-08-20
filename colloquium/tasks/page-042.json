@@ -2,7 +2,7 @@
   "schema_version": "colloquium-task-page-v1",
   "page": 42,
   "total_pages": 42,
-  "count": 3,
+  "count": 12,
   "activation_eligible": true,
   "source": "https://wulfkaal.github.io/colloquium/jobs.json",
   "jobs": [
@@ -40,6 +40,119 @@
         "governance-design",
         "institutional-design",
         "ai-and-agents"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-002",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-002",
+      "content_sha256": "3da0d47ad71ad42ceef5349c41108eee0472384dafd15479d6f7db67fd65f778",
+      "claim": "Where identities can be discarded and re-minted at negligible cost, a refundable bond released at exit pads the operator's walk-away value by the full release-discounted principal, with custody carry as an additional tax.",
+      "topics": [
+        "risk-and-incentives",
+        "tokenomics",
+        "reputation",
+        "economics"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-003",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-003",
+      "content_sha256": "9e84434215099bde1db50fdf008a8bc498159bd4b134c74dabba0beb0157f9b2",
+      "claim": "The flaw in bonded-stake deterrence is structural, not a matter of detection, latency, or adjudication error: a bond refunded on clean exit is an asset the operator carries out the door, raising walk-away value by the honest-release value of the principal — release pads the walk.",
+      "topics": [
+        "risk-and-incentives",
+        "consensus-and-security",
+        "tokenomics",
+        "economics"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-004",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-004",
+      "content_sha256": "d04595428962099532931413c544534693573dba90c3e8699ffa9e6bef8bd0c8",
+      "claim": "For long-lived delegation with positive carry, the marginal capacity effect of refundable principal is strictly negative in both exit cells and, whenever adjudication probability is positive, in both stay cells; the relationship premium is the scalable continuation-value component of deterrence.",
+      "topics": [
+        "risk-and-incentives",
+        "economics",
+        "consensus-and-security",
+        "reputation"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-010",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-010",
+      "content_sha256": "396b743e0942d97811c374b09eabe7f0f8c21f03faba0cf3144423d5bd0628b7",
+      "claim": "In the strict long-match limit with positive carry, refundable escrowed principal weakly contracts the credible capacity frontier in all four cells of the regime map — nonpositive everywhere, strictly negative in both exit cells, and strictly negative in both stay cells whenever adjudication probability is positive.",
+      "topics": [
+        "economics",
+        "risk-and-incentives",
+        "consensus-and-security"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-011",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-011",
+      "content_sha256": "c1bb7d7b3bb6cf5753ea51a03909c0a91876263a85f66b8d786e0f568428759d",
+      "claim": "No escape hatch restores a positive marginal effect of escrow in the long-match limit: the release-clock wedge is either impossible outright or requires a filing threshold exceeding one, and short cycles are excluded by the limit itself.",
+      "topics": [
+        "risk-and-incentives",
+        "economics",
+        "consensus-and-security"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-012",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-012",
+      "content_sha256": "94b2fb5b16c644ed27bea7e8fc4555d7a470b74861ee7ce961cb04fbbbaf8093",
+      "claim": "Making the stake captive closes the release leak but does not rescue the instrument: the surviving capacity slope is still negative in the carry cost because the walk value of the balance cancels through the surplus — the stake never mints a hostage.",
+      "topics": [
+        "risk-and-incentives",
+        "consensus-and-security",
+        "economics"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-015",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-015",
+      "content_sha256": "df7fa9146d673494319555fda0c25650f172732699c0eb4cc576cbbe290b43e7",
+      "claim": "False freezes tax honest release value and worsen the release-clock wedge's own admission condition, so challenger bonds, standing rules, and other anti-griefing measures are design candidates whose effects require separate modeling.",
+      "topics": [
+        "risk-and-incentives",
+        "governance-design",
+        "consensus-and-security"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-020",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-020",
+      "content_sha256": "86865103d6ac35b0eea3a98f12ab959962008d42b3dac3669aaf1b608bbedb55",
+      "claim": "Within delegated proof-of-stake, the refundable fungible principal is not the scalable deterrent; the continuation value of remaining matched is.",
+      "topics": [
+        "consensus-and-security",
+        "blockchain",
+        "tokenomics",
+        "reputation"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7322599-028",
+      "canonical_url": "https://wulfkaal.github.io/claims/7322599-028",
+      "content_sha256": "8aa70602ce8908b2d0a7a27889e7c4493d7d8dddbf2918f81b216b395a8797db",
+      "claim": "Refundable stake does not expand credible capacity in the strict long-match limit: leaky release raises walk-away value, captive regimes close the leak without a positive marginal slope, and design by stake sizing is design of the wrong variable.",
+      "topics": [
+        "risk-and-incentives",
+        "economics",
+        "consensus-and-security",
+        "reputation"
       ],
       "is_failure_mode": true
     }

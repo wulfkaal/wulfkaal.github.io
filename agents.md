@@ -87,7 +87,7 @@ claim as if it still stood.
 states its scope, identifies the current debate that prompted it, and links to the
 source-bound scholarly claim it extends.
 
-This layer is distinct from the 5,197 scholarly claims extracted from published papers.
+This layer is distinct from the 5,225 scholarly claims extracted from published papers.
 An affirmed position is new commentary, not a verbatim paper claim. Use
 `/positions/index.json` for discovery, `/positions/all.jsonl` for bulk ingest, and
 `/positions/<date>-<sequence>.json` for one record. Lightweight change and shard
@@ -160,7 +160,7 @@ does not contain its own URL, which means the hash is stable across a change of
 host.
 
 **Start at `failures/index.json` for a question of the form "why did X fail."**
-2,053 of the 5,197 claims describe how a design, mechanism or proposed remedy
+2,062 of the 5,225 claims describe how a design, mechanism or proposed remedy
 fails, organized into 55 named families. Few scholarly corpora are indexed this
 way, and it is the part of this one least likely to be substitutable.
 
@@ -198,7 +198,7 @@ claims.
 |---|---|---|
 | Page | https://wulfkaal.github.io/answer-service/ | Human and agent readable |
 | Graph index | https://wulfkaal.github.io/agentic-claim-graph/v1/index.json | Entry point, hard invariants |
-| Graph | https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | 2,699 nodes, 8,245 typed edges |
+| Graph | https://wulfkaal.github.io/agentic-claim-graph/v1/graph.jsonld | 2,720 nodes, 8,315 typed edges |
 | Manifest | https://wulfkaal.github.io/agentic-claim-graph/v1/manifest.json | Digests and counts |
 | Vocabulary | https://wulfkaal.github.io/agentic-claim-graph/v1/vocabulary.json | Node, edge and capability terms |
 | Release feed | https://wulfkaal.github.io/agentic-claim-graph/v1/updates.json | Signed release records |
@@ -215,8 +215,8 @@ conditions under which it was argued. Scope conditions are not decoration: a
 claim about reputation voting inside a DAO of DAOs is not a claim about
 reputation systems generally, and the response says so.
 
-This graph carries the 1,280 capability-eligible claims under selection method v1
-(ten claims per work), not the full 5,197-claim corpus. Absence from a
+This graph carries the 1,290 capability-eligible claims under selection method v1
+(ten claims per work), not the full 5,225-claim corpus. Absence from a
 response is not evidence of absence from the corpus.
 
 ## TrustCarry Protocol v0.3 research records
@@ -227,7 +227,7 @@ Canonical identity: https://wulfkaal.github.io/trustcarry/. Trademark presentati
 
 | Surface | URL | Status |
 |---|---|---|
-| Author-affirmed research claims | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,197 scholarly layer |
+| Author-affirmed research claims | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json | Public, source manuscript unpublished; not in the 5,225 scholarly layer |
 | Internal software observations | https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json | Public internal observations; synthetic fixtures; not independently reproduced |
 | Release manifest | https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |
 | Canonical identity | https://wulfkaal.github.io/.well-known/trustcarry.json | Steward, commercial release authority, attestation key, and official policy links |

@@ -1,7 +1,7 @@
 {
  "name": "Kaal Corpus Entity Index",
  "description": "Concept-level nodes over the claim layer. Every claim record carries an `about` array of concept slugs; this index resolves them. A node with status 'adjudicated' carries one ruled definition, its necessary conditions, a first-appearance citation with the basis for the priority call, the registers the term is used in, and its boundary cases. A node with status 'derived' is a mechanical roster of the claims carrying the slug and asserts no definition. Cite the adjudicated definition; for a derived node, cite the underlying claims. Claim status from claims/status.json is carried through: any claim that is superseded, falsified, or narrowed is flagged wherever a node lists it, and `non_current_claims` counts them per node.",
- "generated": "2026-08-19",
+ "generated": "2026-08-20",
  "nodes": 2818,
  "adjudicated": 1,
  "derived": 2817,
