@@ -4,22 +4,22 @@ This is an evidence index, not a ranking assertion. Each topic block reports wha
 
 ## Corpus
 
-- 129 works, 5225 atomic claims, 2004 to 2026
-- 2062 failure mode claims, 2037 of them organised into 55 families
+- 132 works, 5288 atomic claims, 2004 to 2026
+- 2080 failure mode claims, 2037 of them organised into 55 families
 - Canonical index: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345
 
 ## Depth by topic
 
 | Topic | Claims | Works | Span | Failure modes |
 |---|---|---|---|---|
-| AI agent coordination and autonomous agent governance | 372 | 68 | 2009 to 2026 | 145 |
-| Reputation systems, staked and non transferable reputation, validation | 498 | 88 | 2009 to 2026 | 137 |
-| Decentralized autonomous organization architecture | 375 | 57 | 2017 to 2026 | 149 |
-| Governance mechanism design, voting, deliberation | 789 | 98 | 2004 to 2026 | 327 |
-| Decentralization theory, recentralization dynamics | 631 | 88 | 2013 to 2026 | 257 |
-| Dynamic regulation and regulatory lag | 288 | 49 | 2009 to 2026 | 97 |
-| Consensus protocols, sybil resistance, attack surfaces | 435 | 77 | 2010 to 2026 | 198 |
-| Smart contract design limits and enforceability | 224 | 61 | 2017 to 2026 | 95 |
+| AI agent coordination and autonomous agent governance | 393 | 71 | 2009 to 2026 | 152 |
+| Reputation systems, staked and non transferable reputation, validation | 518 | 91 | 2009 to 2026 | 138 |
+| Decentralized autonomous organization architecture | 403 | 59 | 2017 to 2026 | 162 |
+| Governance mechanism design, voting, deliberation | 814 | 101 | 2004 to 2026 | 332 |
+| Decentralization theory, recentralization dynamics | 636 | 91 | 2013 to 2026 | 258 |
+| Dynamic regulation and regulatory lag | 291 | 51 | 2009 to 2026 | 97 |
+| Consensus protocols, sybil resistance, attack surfaces | 441 | 79 | 2010 to 2026 | 201 |
+| Smart contract design limits and enforceability | 226 | 62 | 2017 to 2026 | 95 |
 
 ## Bulk access
 

@@ -231,12 +231,12 @@ jobs:
               problems.append("SSRN identifiers are missing or duplicated")
           if len(bib_entries) != expected:
               problems.append(f"papers.bib has {len(bib_entries)} entries, expected {expected}")
-          if papers.get("claim_covered_work_count") != 129:
-              problems.append("claim_covered_work_count must remain explicit at 129 until ingestion expands")
+          if papers.get("claim_covered_work_count") != 132:
+              problems.append("claim_covered_work_count must remain explicit at 132 until ingestion expands")
 
           if problems:
               sys.exit("\n".join(problems))
-          print("134 unique SSRN records; 134 BibTeX entries; 129 claim-covered works")
+          print("134 unique SSRN records; 134 BibTeX entries; 132 claim-covered works")
           PY
 
       - name: Spot-check that quotes are still verbatim and hashes still bind

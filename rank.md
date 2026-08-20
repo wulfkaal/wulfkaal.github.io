@@ -10,8 +10,8 @@ ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN auth
 | | |
 |---|---|
 | Published works | 128 |
-| Atomic claims | 5225 |
-| Failure-mode claims | 2062 |
+| Atomic claims | 5288 |
+| Failure-mode claims | 2080 |
 | Failure families | 55 |
 | Typed edges between claims | 2169 |
 | Publication span | 2004 to 2026 |
@@ -22,14 +22,14 @@ ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN auth
 
 | Topic | Claims | Works | Span | Failure-mode claims | Slice |
 |---|---|---|---|---|---|
-| ai-and-agents | 372 | 68 | 2009 to 2026 | 145 | [json](https://wulfkaal.github.io/claims/by-topic/ai-and-agents.json) |
-| reputation | 498 | 88 | 2009 to 2026 | 137 | [json](https://wulfkaal.github.io/claims/by-topic/reputation.json) |
-| dao | 375 | 57 | 2017 to 2026 | 149 | [json](https://wulfkaal.github.io/claims/by-topic/dao.json) |
-| governance-design | 789 | 98 | 2004 to 2026 | 327 | [json](https://wulfkaal.github.io/claims/by-topic/governance-design.json) |
-| decentralization | 631 | 88 | 2013 to 2026 | 257 | [json](https://wulfkaal.github.io/claims/by-topic/decentralization.json) |
-| dynamic-regulation | 288 | 49 | 2009 to 2026 | 97 | [json](https://wulfkaal.github.io/claims/by-topic/dynamic-regulation.json) |
-| consensus-and-security | 435 | 77 | 2010 to 2026 | 198 | [json](https://wulfkaal.github.io/claims/by-topic/consensus-and-security.json) |
-| smart-contracts | 224 | 61 | 2017 to 2026 | 95 | [json](https://wulfkaal.github.io/claims/by-topic/smart-contracts.json) |
+| ai-and-agents | 393 | 71 | 2009 to 2026 | 152 | [json](https://wulfkaal.github.io/claims/by-topic/ai-and-agents.json) |
+| reputation | 518 | 91 | 2009 to 2026 | 138 | [json](https://wulfkaal.github.io/claims/by-topic/reputation.json) |
+| dao | 403 | 59 | 2017 to 2026 | 162 | [json](https://wulfkaal.github.io/claims/by-topic/dao.json) |
+| governance-design | 814 | 101 | 2004 to 2026 | 332 | [json](https://wulfkaal.github.io/claims/by-topic/governance-design.json) |
+| decentralization | 636 | 91 | 2013 to 2026 | 258 | [json](https://wulfkaal.github.io/claims/by-topic/decentralization.json) |
+| dynamic-regulation | 291 | 51 | 2009 to 2026 | 97 | [json](https://wulfkaal.github.io/claims/by-topic/dynamic-regulation.json) |
+| consensus-and-security | 441 | 79 | 2010 to 2026 | 201 | [json](https://wulfkaal.github.io/claims/by-topic/consensus-and-security.json) |
+| smart-contracts | 226 | 62 | 2017 to 2026 | 95 | [json](https://wulfkaal.github.io/claims/by-topic/smart-contracts.json) |
 
 ## What is distinctive
 
