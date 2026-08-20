@@ -1,6 +1,6 @@
 {
   "feed_version": "1.1.0",
-  "current_update_id": "kaal:update:1482a8023b2cbaf30f50ffc8",
+  "current_update_id": "kaal:update:daa383d17bbf1ed5191d51b0",
   "signing_keys": "https://wulfkaal.github.io/agentic-claim-graph/v1/signing-keys.json",
   "updates": [
     {
@@ -72,6 +72,23 @@
       "signing_key_id": "kaal:graph-signing-key:2026-08-03",
       "signing_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEANVfVQtA10P58QjPzxSYjmwNpTaZlc9sS+F724E8GbpY=\n-----END PUBLIC KEY-----\n",
       "signed_payload_sha256": "b2bc6ecc72d396cba28c91af4489dcaa163add49fcb420c5ec5955b6ddde92b1"
+    },
+    {
+      "update_version": "1.0.1",
+      "update_id": "kaal:update:daa383d17bbf1ed5191d51b0",
+      "graph_id": "kaal:agentic-claim-graph:eligible-1320:v1",
+      "graph_sha256": "ba75192e5c7c440c0d16daec5de1ddf8bc8e4de368a5cc42b93402db5c3fc552",
+      "claim_count": 1320,
+      "change_type": "eligible_set_expansion",
+      "lifecycle_status": "current",
+      "supersedes": "kaal:update:1482a8023b2cbaf30f50ffc8",
+      "supersedes_reason": "Expanded from the 1,290-claim eligible set to the full 1,320-claim eligible set under deterministic selection method v1 (ten-claim per-paper cap), after claim extraction for SSRN 6819121, 6886078, and 6890879 grew the canonical corpus to 5,288 claims across 132 works. The superseded record remains a valid attestation of the eligible-1290 graph it described.",
+      "signature_status": "signed",
+      "signature": "lYNffJurLiLHzCYYodN6o8cAjIVw6W2O1BGzoDRkcyJWpKIbctQjHFtNgP07W52VFJgykBFVosrTU24n+82fDA==",
+      "signature_algorithm": "Ed25519",
+      "signing_key_id": "kaal:graph-signing-key:2026-08-03",
+      "signing_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEANVfVQtA10P58QjPzxSYjmwNpTaZlc9sS+F724E8GbpY=\n-----END PUBLIC KEY-----\n",
+      "signed_payload_sha256": "cc91a98edb7549c9f7681c71e9f5008d6f083544886e13889c9f413e3042f471"
     }
   ]
 }

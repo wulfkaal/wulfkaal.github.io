@@ -5,10 +5,10 @@
     "kaal": "https://wulfkaal.github.io/"
   },
   "schema_version": "1.0.0",
-  "graph_id": "kaal:agentic-claim-graph:eligible-1290:v1",
+  "graph_id": "kaal:agentic-claim-graph:eligible-1320:v1",
   "state": "public",
   "publication_authorized": true,
-  "built_at": "2026-08-20T20:58:49.728Z",
+  "built_at": "2026-08-20T21:36:21.585Z",
   "author": {
     "name": "Wulf A. Kaal",
     "orcid": "0009-0008-7840-1847"
@@ -18,22 +18,22 @@
     "paper_graph": "https://github.com/wulfkaal/Academic-Papers/tree/main/knowledge-graph"
   },
   "source_digests": {
-    "claims_index_sha256": "0c52f28487e99aff85e255f0d371f82ffe1500e20d32b35f4598249db6143619",
+    "claims_index_sha256": "e57542cfd4621e616731e55fd8145e373784df790ffa891539b7f8fa2e2d068c",
     "status_overlay_sha256": "33fad7b0e03cca0f65d30f2d56f2231f1b1eaae6d240c00413fb9c11f67ebf7a",
-    "paper_graph_sha256": "dcabfb253bea88b93b942d2ca9327fac53bdde20d3d7d7e2611e53f2f8c9c001"
+    "paper_graph_sha256": "ee8a7432f644f8954aa161d483c0c8bf213fb60e9549288ebbb1e4d4b6c07074"
   },
   "source_counts": {
-    "canonical_claims": 5225,
-    "paper_graph_nodes": 144,
-    "paper_graph_papers": 132
+    "canonical_claims": 5288,
+    "paper_graph_nodes": 147,
+    "paper_graph_papers": 135
   },
   "pilot": {
-    "selected_claims": 1290,
+    "selected_claims": 1320,
     "selection_method": "deterministic agentic capability relevance v1 with ten-claim per-paper cap",
     "attribution_class": "source_derived_only",
-    "exact_supporting_quotes_present": 1290,
+    "exact_supporting_quotes_present": 1320,
     "per_claim_pdf_quote_match_recomputed": false,
-    "publication_gate": "Authorized by Wulf A. Kaal, 2026-08-20: full eligible set under selection method v1 after corpus growth to 5,225 claims (SSRN 7322599)."
+    "publication_gate": "Authorized by Wulf A. Kaal, 2026-08-20: full eligible set under selection method v1 after claim extraction for SSRN 6819121, 6886078, and 6890879 (corpus 5,288)."
   },
   "nodes": [
     {
@@ -36224,6 +36224,914 @@
       "locator_status": "exact_quote_without_page_locator"
     },
     {
+      "id": "kaal:claim:6819121-008",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-008",
+      "text": "In the weighted directed acyclic graph, every governance action is a vertex, references are directed weighted edges that revalue past contributions in light of present consensus, and acyclicity makes the institutional record cumulative and non-reversible.",
+      "claim_type": "mechanism",
+      "topics": [
+        "governance-design",
+        "reputation",
+        "citation-and-knowledge",
+        "blockchain"
+      ],
+      "scope_conditions": [
+        "the WDAG architecture of the Calcaterra-Kaal framework"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 69
+    },
+    {
+      "id": "kaal:claim:6819121-008:source-passage",
+      "type": "SourcePassage",
+      "text": "Every governance action, work evidence, protocol-development proposals, comments, and votes, is a vertex in the graph. References between posts are directed, weighted edges that revalue past contributions in light of present consensus. The graph is acyclic because references point only backward in time, ensuring that the institutional record is cumulative and non-reversible.",
+      "text_sha256": "1abc8501afcf55cdd80d326f2d78648fcd35a3c127a325c3b11f1ac0d964174a",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-010",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-010",
+      "text": "A contributor's reputation in the framework is the cumulative reference-weighted score of past contributions, with each reference revaluing prior contributions in light of present consensus.",
+      "claim_type": "definitional",
+      "topics": [
+        "reputation",
+        "citation-and-knowledge",
+        "governance-design"
+      ],
+      "scope_conditions": [
+        "the Calcaterra-Kaal reputation architecture"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 64
+    },
+    {
+      "id": "kaal:claim:6819121-010:source-passage",
+      "type": "SourcePassage",
+      "text": "A contributor's reputation is the cumulative reference-weighted score of past contributions, with each reference revaluing prior contributions in light of present consensus.",
+      "text_sha256": "72c24b797ca11bad34fe30497b882a3dc070a247592cb4c6b5a1716581e1b97f",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-012",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-012",
+      "text": "The institutional deficit is structural rather than incidental: DAO architecture has solved decentralized capital formation and programmable value transfer, and has not yet solved AI-mediated governance, Sybil-resistant identity, and constitutional separation of powers.",
+      "claim_type": "empirical",
+      "topics": [
+        "dao",
+        "institutional-design",
+        "ai-and-agents"
+      ],
+      "scope_conditions": [
+        "forty operational DAOs against the thirteen-category rubric"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "evidenced",
+      "relevance_score": 59
+    },
+    {
+      "id": "kaal:claim:6819121-012:source-passage",
+      "type": "SourcePassage",
+      "text": "The deficit is structural rather than incidental. It reflects that DAO architecture has solved the problems for which it was originally designed, decentralized capital formation and programmable value transfer, and has not yet solved the problems that emerged after its design",
+      "text_sha256": "41a211bd6dd1efc0dd4736a766a7055f7a6d56c8b469fb78dc3445b0b5a13c33",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-013",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-013",
+      "text": "A visibility paradox holds across every segment: categories producing visible artifacts score consistently above the midpoint while categories producing invisible governance infrastructure score consistently below it.",
+      "claim_type": "empirical",
+      "topics": [
+        "dao",
+        "institutional-design",
+        "empirical-evidence",
+        "risk-and-incentives"
+      ],
+      "scope_conditions": [
+        "forty operational DAOs against the thirteen-category rubric"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "evidenced",
+      "relevance_score": 60
+    },
+    {
+      "id": "kaal:claim:6819121-013:source-passage",
+      "type": "SourcePassage",
+      "text": "Categories that produce visible artifacts, token launches, treasury balances, mission statements, marketplace activity, contract automation, score consistently above 5 across the dataset. Categories that produce invisible institutional infrastructure, legal wrappers, judicial branches, AI alignment policies, on-chain reputation ledgers, agent-identity protocols, score consistently below 5.",
+      "text_sha256": "4ec39db09e9b47f835774953dff7c6105b7cb8a5ac261ceabfc206cb3052a340",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-016",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-016",
+      "text": "Even AI-adjacent DAOs are building the plumbing for autonomous agents to consume on-chain data while failing to build the institutional guardrails to constrain those agents when they act on that data.",
+      "claim_type": "empirical",
+      "topics": [
+        "ai-and-agents",
+        "dao",
+        "risk-and-incentives"
+      ],
+      "scope_conditions": [
+        "AI-adjacent DAOs in the dataset (Vana, Filecoin, Streamr)"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "evidenced",
+      "relevance_score": 61
+    },
+    {
+      "id": "kaal:claim:6819121-016:source-passage",
+      "type": "SourcePassage",
+      "text": "These DAOs are building the plumbing for autonomous agents to consume on-chain data while simultaneously failing to build the institutional guardrails to constrain those agents when they act on that data.",
+      "text_sha256": "9efe8f9fedd71fb07362ca13b0b2a448f0b0ca3cc9457b032653bbf23aa5c9ef",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-017",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-017",
+      "text": "The framework predicts three failure modes \u2014 agent-executed governance attacks, governance paralysis from agent disagreement, and alignment drift in long-participating agents \u2014 all worsening as autonomous-agent participation grows, with DAOs lacking AI-alignment infrastructure the first to experience them.",
+      "claim_type": "predictive",
+      "topics": [
+        "ai-and-agents",
+        "dao",
+        "risk-and-incentives",
+        "systemic-risk"
+      ],
+      "scope_conditions": [
+        "DAOs with growing autonomous-agent participation"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 65
+    },
+    {
+      "id": "kaal:claim:6819121-017:source-passage",
+      "type": "SourcePassage",
+      "text": "The framework predicts that all three will worsen as autonomous-agent participation grows, and that DAOs without AI-alignment infrastructure will be the first to experience them.",
+      "text_sha256": "93d3c62bee5ffd1b4633c1466687324c3d34c4ee9837a5e75008021b36756a68",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-018",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-018",
+      "text": "None of the predicted agent-governance failure modes is hypothetical: agent-executed attacks appear in nascent form in flash-loan governance attacks executed by autonomous capital, including the Beanstalk exploit.",
+      "claim_type": "empirical",
+      "topics": [
+        "ai-and-agents",
+        "consensus-and-security",
+        "dao"
+      ],
+      "scope_conditions": [
+        "documented instances cited in the Article"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "evidenced",
+      "relevance_score": 61
+    },
+    {
+      "id": "kaal:claim:6819121-018:source-passage",
+      "type": "SourcePassage",
+      "text": "None of these failure modes is hypothetical. The first has been documented in nascent form in flash-loan governance attacks executed by autonomous capital, including the Beanstalk exploit.",
+      "text_sha256": "227698d765d71364002519bc4973c57c7a925f301edcd5c8d0bc1b688c9e3600",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-019",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-019",
+      "text": "Token-plutocracy is the default governance form: across all forty DAOs governance is fundamentally token-weighted, even the strongest formal processes recreate capital-based concentration beneath the procedural facade, and no DAO has implemented reputation-weighted voting in production.",
+      "claim_type": "empirical",
+      "topics": [
+        "dao",
+        "decentralization",
+        "tokenomics",
+        "reputation"
+      ],
+      "scope_conditions": [
+        "forty operational DAOs against the thirteen-category rubric"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "evidenced",
+      "relevance_score": 59
+    },
+    {
+      "id": "kaal:claim:6819121-019:source-passage",
+      "type": "SourcePassage",
+      "text": "Even DAOs with the strongest formal governance processes, BanklessDAO at 8/10 on Governance, ENS at 8/10, operate underlying token-weighted voting that recreates capital-based concentration beneath the procedural facade. No DAO in the dataset has implemented reputation-weighted voting in production.",
+      "text_sha256": "d6b5500f428d85fda54fc1fa17348f4d7eba89d6921bbf4866f244ecbab4d24a",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-020",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-020",
+      "text": "Reputation is Sybil-resistant in a way token holdings are not: a strategic actor can acquire tokens by purchase but cannot acquire reputation without making contributions that other contributors will reference favorably.",
+      "claim_type": "mechanism",
+      "topics": [
+        "reputation",
+        "consensus-and-security",
+        "dao"
+      ],
+      "scope_conditions": [
+        "reference-weighted reputation in the WDAG architecture"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 62
+    },
+    {
+      "id": "kaal:claim:6819121-020:source-passage",
+      "type": "SourcePassage",
+      "text": "a strategic actor can acquire token holdings by purchasing tokens, but a strategic actor cannot acquire reputation without making contributions that the rest of the protocol's contributors will reference favorably.",
+      "text_sha256": "c3fefd4d121211a7397b2546921dd984b86b0eeca13f8792741ffe4c91594c39",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6819121-023",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6819121-023",
+      "text": "The institutional repair agenda converges on five upgrades: ERC-1155 multi-token reputation, tripartite governance separation, stablecoin treasury infrastructure, WDAG-based historiographic transparency, and values-drift detection.",
+      "claim_type": "design",
+      "topics": [
+        "dao",
+        "governance-design",
+        "institutional-design",
+        "reputation"
+      ],
+      "scope_conditions": [
+        "projected upgrades across the forty-DAO dataset"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 69
+    },
+    {
+      "id": "kaal:claim:6819121-023:source-passage",
+      "type": "SourcePassage",
+      "text": "The improvement agenda converges on five upgrades. First, ERC-1155 multi-token reputation as the architectural mechanism for moving from token-weighted to reputation-weighted voting. Second, tripartite governance separation through the deployment of distinct legislative, executive, and judicial smart-contract modules. Third, stablecoin treasury infrastructure for predictable contributor compensation and protocol revenue management. Fourth, historiographic transparency through the implementation of WDAG-based governance logging that exposes the full reference graph of governance decisions to public inspection. Fifth, values-drift detection",
+      "text_sha256": "feeffd29295a1e8ffcb1304372005a05c9f0ddb597dca6aa6d74aeca47c4d61f",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-001",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-001",
+      "text": "The available governance responses to autonomous AI agents are structurally inadequate in opposite ways: informal deliberative governance cannot bind agents quickly or at scale, while pure formal verification is technically sound but institutionally inoperable because it excludes non-logician stakeholders.",
+      "claim_type": "failure",
+      "topics": [
+        "ai-and-agents",
+        "governance-design",
+        "institutional-design"
+      ],
+      "scope_conditions": [
+        "governance of consequential autonomous AI agents"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 96
+    },
+    {
+      "id": "kaal:claim:6886078-001:source-passage",
+      "type": "SourcePassage",
+      "text": "Informal, deliberative, and discretionary governance cannot bind autonomous agents quickly or at scale, and it provides no mechanical means of enforcement. Pure formal verification is technically sound but institutionally inoperable: it demands specialist expertise that excludes nearly every governance stakeholder who is not a logician, so the resulting infrastructure is formally capable yet practically inert.",
+      "text_sha256": "faded1dc49a911b785d17bff387e8166764a8ae6f8f53b80dc7ec0b7cc6e9d60",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-005",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-005",
+      "text": "GaaP composes four interdependent layers \u2014 a WDAG substrate with non-transferable reputation staking, a translation and validation layer, deterministic cryptoeconomic enforcement, and a temporal layer in which the system governs its own evolution \u2014 each independently necessary and none individually sufficient.",
+      "claim_type": "design",
+      "topics": [
+        "governance-design",
+        "ai-and-agents",
+        "reputation",
+        "institutional-design"
+      ],
+      "scope_conditions": [
+        "the GaaP architecture"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 93
+    },
+    {
+      "id": "kaal:claim:6886078-005:source-passage",
+      "type": "SourcePassage",
+      "text": "GaaP composes four interdependent layers, illustrated in Fig. 1. Each layer is independently necessary and none is individually sufficient.",
+      "text_sha256": "da8f33f60b697387b0373cb88847e0bb95e42290ce36ff46bce3309d5ff36ad4",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-006",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-006",
+      "text": "Because the WDAG is acyclic and append-only it provides a continuous and verifiable audit trail \u2014 the institutional analog of a proof tree \u2014 supplying accountability without requiring a formal proof.",
+      "claim_type": "mechanism",
+      "topics": [
+        "reputation",
+        "governance-design",
+        "citation-and-knowledge"
+      ],
+      "scope_conditions": [
+        "the Calcaterra-Kaal WDAG substrate"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 69
+    },
+    {
+      "id": "kaal:claim:6886078-006:source-passage",
+      "type": "SourcePassage",
+      "text": "Because the graph is acyclic and append-only, it provides a continuous and verifiable audit trail: every decision is traceable to the evidence and validations that produced it. This trail is the institutional analog of a proof tree, supplying accountability without requiring a formal proof.",
+      "text_sha256": "e13e99da1ba03d306111abfc07040aa8cf7353b747342c95932eceb2c4fe024c",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-007",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-007",
+      "text": "Reputation-weighted validation adjudicates semantic faithfulness and consistency and records the result on the WDAG, replacing a decidable decision procedure as the verification step.",
+      "claim_type": "mechanism",
+      "topics": [
+        "reputation",
+        "governance-design",
+        "ai-and-agents"
+      ],
+      "scope_conditions": [
+        "stage three of the GaaP validation pipeline"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 87
+    },
+    {
+      "id": "kaal:claim:6886078-007:source-passage",
+      "type": "SourcePassage",
+      "text": "Stage three, reputation-weighted validation, adjudicates semantic faithfulness and consistency and records the result on the WDAG, replacing a decidable decision procedure as the verification step.",
+      "text_sha256": "333f31f724c26ce2cfc74112eb532773ff60c7f28cac7d445f3e22c8cb6aa31d",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-009",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-009",
+      "text": "Separating non-transferable reputation tokens from fungible collateral tokens closes the governance-capture pathway that single-token systems expose, in which voting power can be purchased or borrowed.",
+      "claim_type": "design",
+      "topics": [
+        "tokenomics",
+        "reputation",
+        "consensus-and-security"
+      ],
+      "scope_conditions": [
+        "the dual-token enforcement layer"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 71
+    },
+    {
+      "id": "kaal:claim:6886078-009:source-passage",
+      "type": "SourcePassage",
+      "text": "Non-transferable reputation tokens are separated from fungible, priceable col- lateral tokens. This separation closes the governance-capture pathway that single-token systems expose, in which voting power can be purchased or borrowed",
+      "text_sha256": "0c981fb1c94d77fd9840dafa5530d472f9a62c9651e6ff2a4ca9a8ece27c83a2",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-011",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-011",
+      "text": "GaaP's central claim is the deliberate concession that institutional operability is worth a bounded residual: it retains full natural-language expressiveness and buys reliability through incentive alignment and reputation-weighted aggregation rather than claiming complete error elimination.",
+      "claim_type": "design",
+      "topics": [
+        "governance-design",
+        "ai-and-agents",
+        "institutional-design"
+      ],
+      "scope_conditions": [
+        "the expressiveness-against-enforceability tradeoff"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 75
+    },
+    {
+      "id": "kaal:claim:6886078-011:source-passage",
+      "type": "SourcePassage",
+      "text": "It retains full natural-language expressiveness and buys relia- bility through economic incentive alignment and reputation- weighted aggregation, accepting a bounded and auditable residual error rather than claiming its complete elimination. The concession is deliberate and is the paper\u2019s central claim: institutional operability is worth a bounded residual.",
+      "text_sha256": "3df6530fbbfa5d1e8fd588dc29e6c5c807c0224bfbc624127e5dbe5672d3c0ad",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-012",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-012",
+      "text": "Four mechanisms jointly bound the reasoning residual \u2014 typed primitives remove category errors, ontology-mediated composition removes input-space errors, reputation-weighted multi-party validation suppresses idiosyncratic inference error under skin in the game, and the append-only audit trail makes the residual visible and contestable \u2014 yielding error that is bounded, attributable, and correctable rather than zero.",
+      "claim_type": "mechanism",
+      "topics": [
+        "governance-design",
+        "reputation",
+        "risk-and-incentives"
+      ],
+      "scope_conditions": [
+        "the GaaP substrate mechanisms"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 65
+    },
+    {
+      "id": "kaal:claim:6886078-012:source-passage",
+      "type": "SourcePassage",
+      "text": "The append-only audit trail makes the residual visible and contestable rather than hidden. The result is not zero error but error that is bounded, attributable, and correctable.",
+      "text_sha256": "859312ef0ff1bb374ead5de53b791013f451553f90826b9e63e5fa5a90a8028b",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-013",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-013",
+      "text": "Because validation pools stake the same reputation they earn and vote on protocol change under fixed hard protocols, the system is its own meta-system, reconciling Arrow's bound on preference aggregation with the Folk Theorem's sustained cooperation in an operating system of governance.",
+      "claim_type": "mechanism",
+      "topics": [
+        "governance-design",
+        "institutional-design",
+        "reputation"
+      ],
+      "scope_conditions": [
+        "governed self-modification without an external meta-system"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 72
+    },
+    {
+      "id": "kaal:claim:6886078-013:source-passage",
+      "type": "SourcePassage",
+      "text": "Because validation pools stake the same reputation they earn and vote on protocol change under fixed hard protocols, the system is its own meta-system.",
+      "text_sha256": "dbeadbd7e5369b7be1933b159de59c2b0581673225a0b069ce52149ab68b53fd",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-014",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-014",
+      "text": "The WDAG trail resolves the attribution problem for autonomous-agent harm: when an agent acts, the governing decision, its evidence, and the validators who staked on it are all recoverable, so accountability follows from institutional traceability rather than formal proof.",
+      "claim_type": "mechanism",
+      "topics": [
+        "ai-and-agents",
+        "governance-design",
+        "compliance"
+      ],
+      "scope_conditions": [
+        "accountability for autonomous-agent actions under GaaP"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 80
+    },
+    {
+      "id": "kaal:claim:6886078-014:source-passage",
+      "type": "SourcePassage",
+      "text": "When an agent acts, the governing decision, the evidence behind it, and the validators who staked on it are all recoverable. Accountability follows from institutional traceability rather than from a formal proof, which is what makes it deployable at scale.",
+      "text_sha256": "2a78f73694202ca2117027a384fd8632ee0977b7389a4e8ef6ee3ddbada91af0",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6886078-015",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6886078-015",
+      "text": "As a callable, reusable governance primitive that deployers and regulators can compose into agent stacks, GaaP operationalizes the dynamic and anticipatory regulation program by supplying the feedback and enforcement that reactive instruments lack.",
+      "claim_type": "design",
+      "topics": [
+        "dynamic-regulation",
+        "ai-and-agents",
+        "governance-design"
+      ],
+      "scope_conditions": [
+        "GaaP as regulatory infrastructure"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 73
+    },
+    {
+      "id": "kaal:claim:6886078-015:source-passage",
+      "type": "SourcePassage",
+      "text": "GaaP is a callable governance service that deployers and regulators can compose into agent stacks rather than rebuild for each deployment. As a reusable primitive it operationalizes the dynamic and anticipatory regulation program, supplying the feedback and enforcement that reactive instruments lack",
+      "text_sha256": "c8b6540fc3cf641b98b0893f0a4967ca06328418e61a0e29d2969b61ba78ac77",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-002",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-002",
+      "text": "Cooperation is sustained when interaction is repeated, memory of past conduct persists, and that memory has consequences; in an economy of agents those conditions must be supplied by an explicit, portable signal, and reputation is that signal.",
+      "claim_type": "mechanism",
+      "topics": [
+        "reputation",
+        "ai-and-agents",
+        "economics"
+      ],
+      "scope_conditions": [
+        "the practical reading of the Folk Theorems for software agents"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 55
+    },
+    {
+      "id": "kaal:claim:6890879-002:source-passage",
+      "type": "SourcePassage",
+      "text": "Cooperation is sustained when interaction is repeated, when memory of past conduct persists, and when that memory has consequences for future opportunity. In a human institution, those conditions are supplied informally by social memory and formally by law. In an economy of agents, they must be supplied by an explicit, portable signal. Reputation is that signal.",
+      "text_sha256": "ab723df4681b547c0c23470bf3ae1d1074e36f80f3e74552c30cc2a52d46893b",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-003",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-003",
+      "text": "A theory of agent coordination is, at its core, a theory of reputation governance, because reputation is the variable that operationalizes the Folk Theorems when the participants are software.",
+      "claim_type": "definitional",
+      "topics": [
+        "reputation",
+        "ai-and-agents",
+        "economics"
+      ],
+      "scope_conditions": [
+        "coordination among software agents"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 60
+    },
+    {
+      "id": "kaal:claim:6890879-003:source-passage",
+      "type": "SourcePassage",
+      "text": "It is the variable that operationalizes the Folk Theorems when the participants are software, and it is the reason a theory of agent coordination is, at its core, a theory of reputation governance.",
+      "text_sha256": "a704adf9dfe6fc58074ce7c36456b86d68b108ab9acf83c12df325cdf18d8fb2",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-004",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-004",
+      "text": "The computative labor force is composed of generative agents whose action set is produced rather than given, and in the computative labor market the binding coordination constraint is accumulated reputation, because reputation, not capacity, is what remains scarce when capacity is abundant.",
+      "claim_type": "definitional",
+      "topics": [
+        "economics",
+        "ai-and-agents",
+        "reputation"
+      ],
+      "scope_conditions": [
+        "the CELF/CELM against NCLF/NCLM distinction"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 60
+    },
+    {
+      "id": "kaal:claim:6890879-004:source-passage",
+      "type": "SourcePassage",
+      "text": "The computative labor force (CELF) is composed of generative agents whose action set is not given but produced. The agents create new options as they operate, so the possibility space is endogenous. In the computative labor market (CELM), the binding coordination constraint is not the price of a scarce input but the reputation an agent has accumulated, because reputation, not capacity, is what remains scarce when capacity is abundant.",
+      "text_sha256": "b9c60619aba940c0a6e5a1c542b98325797046c958fcd3f60180d255b8bddf06",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-005",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-005",
+      "text": "As the marginal cost of cognitive production approaches zero, price loses its grip as a coordinating device, because a signal that approaches zero cannot discriminate among options.",
+      "claim_type": "mechanism",
+      "topics": [
+        "economics",
+        "ai-and-agents",
+        "innovation"
+      ],
+      "scope_conditions": [
+        "the macro condition an agent economy creates"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 41
+    },
+    {
+      "id": "kaal:claim:6890879-005:source-passage",
+      "type": "SourcePassage",
+      "text": "As the marginal cost of cognitive production approaches zero, price loses its grip as a coordinating device, because a signal that approaches zero cannot discriminate among options.",
+      "text_sha256": "c44f84ddb4bbca1b0ac86a6155ec9f9656909578f30e6c98b97c2e565e9c7329",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-006",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-006",
+      "text": "Under computational abundance what remains scarce is not the ability to act but the demonstrated trustworthiness to be relied upon, which is to say reputation.",
+      "claim_type": "mechanism",
+      "topics": [
+        "economics",
+        "reputation",
+        "ai-and-agents"
+      ],
+      "scope_conditions": [
+        "the collapse of scarcity as the divergence condition"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 63
+    },
+    {
+      "id": "kaal:claim:6890879-006:source-passage",
+      "type": "SourcePassage",
+      "text": "What remains scarce is not the ability to act but the demonstrated trustworthiness to be relied upon, which is to say reputation.",
+      "text_sha256": "f84e11f70feaf4bcabbdf7670f8d036f4c60b0a8f93a7db20889f932a4928f43",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-007",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-007",
+      "text": "A computative economy is not a neoclassical economy with reputation substituted for price, because the action set is generative: agents reinvest compute and revenue into endogenously created markets and stake accumulated reputation into new skill tags, so the possibility space grows rather than clears.",
+      "claim_type": "mechanism",
+      "topics": [
+        "economics",
+        "ai-and-agents",
+        "innovation"
+      ],
+      "scope_conditions": [
+        "the generative action set at scale"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 41
+    },
+    {
+      "id": "kaal:claim:6890879-007:source-passage",
+      "type": "SourcePassage",
+      "text": "It is not, because the action set is generative. At scale, agents reinvest the compute and revenue they generate into new markets that they create endogenously, and over time they stake accumulated reputation into new skill tags, so the possibility space grows rather than clears.",
+      "text_sha256": "54beb888f39a5bcfc24b45025eb8e02c61ead6a06438fb622e05d1a71acb8d5e",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-008",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-008",
+      "text": "The appropriate solution concept for a computative economy shifts from competitive equilibrium over a fixed commodity space to recursive equilibrium over an expanding one, positioned as a generalization of the Arrow-Debreu model rather than a re-pricing of it.",
+      "claim_type": "definitional",
+      "topics": [
+        "economics",
+        "research-methods",
+        "ai-and-agents"
+      ],
+      "scope_conditions": [
+        "the solution concept for expanding possibility spaces"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 41
+    },
+    {
+      "id": "kaal:claim:6890879-008:source-passage",
+      "type": "SourcePassage",
+      "text": "The appropriate solution concept shifts from a competitive equilibrium over a fixed commodity space to a recursive equilibrium over an expanding one, positioned as a generalization of the Arrow-Debreu model rather than a re- pricing of it",
+      "text_sha256": "f397598818c574f754de34258f63c87450cd7070dc32ebfe15544389040c90f4",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-009",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-009",
+      "text": "Three present-day convergences \u2014 capable generative agents, collapsing marginal cost, and existing on-chain coordination substrates with reputation primitives \u2014 jointly convert the neoclassical-computative distinction from a forecast into a studiable system.",
+      "claim_type": "methodological",
+      "topics": [
+        "research-methods",
+        "ai-and-agents",
+        "economics",
+        "blockchain"
+      ],
+      "scope_conditions": [
+        "conditions holding as of 2026"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 46
+    },
+    {
+      "id": "kaal:claim:6890879-009:source-passage",
+      "type": "SourcePassage",
+      "text": "Individually, none of these is sufficient. Together, they convert the distinction between neoclassical and computative labor from a forecast into a studiable system.",
+      "text_sha256": "9ef390eea956ff817c754b5f4a241e63c0444827728fe27a7344a435df980155",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-011",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-011",
+      "text": "Existing decentralized organizations, coordinating through capital-weighted mechanisms in which influence tracks transferable holdings, are computative labor forces operating without reputation institutions \u2014 a standing instance of the neoclassical configuration against which the computative alternative can be measured.",
+      "claim_type": "mechanism",
+      "topics": [
+        "dao",
+        "economics",
+        "reputation",
+        "decentralization"
+      ],
+      "scope_conditions": [
+        "capital-weighted DAOs as the observable comparison pole"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 50
+    },
+    {
+      "id": "kaal:claim:6890879-011:source-passage",
+      "type": "SourcePassage",
+      "text": "They are, in effect, computative labor forces operating without the reputation institutions the computative account holds to be necessary, which makes them a standing instance of the neoclassical configuration against which the computative alternative can be measured.",
+      "text_sha256": "f35f5b4b65af0fe74bfb2d8d56f8c1a2e97c80d28cdbc69a2bcf169b5b8ae7fe",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
+      "id": "kaal:claim:6890879-012",
+      "type": "Claim",
+      "canonical_url": "https://wulfkaal.github.io/claims/6890879-012",
+      "text": "The movement from scarce human labor to abundant agent labor is not a quantitative extension of the neoclassical picture but a change in its binding constraint: when capacity is abundant, reputation is what remains scarce, and coordination organizes around it.",
+      "claim_type": "mechanism",
+      "topics": [
+        "economics",
+        "ai-and-agents",
+        "reputation"
+      ],
+      "scope_conditions": [
+        "the agent economy's binding constraint"
+      ],
+      "attribution_class": "source_derived",
+      "attribution_status": "directly_attributable_to_wulf_a_kaal",
+      "verification_status": "current",
+      "source_quote_status": "present_in_canonical_claim_record",
+      "source_quote_individual_match_status": "not_recomputed_by_pilot",
+      "confidence": "argued",
+      "relevance_score": 60
+    },
+    {
+      "id": "kaal:claim:6890879-012:source-passage",
+      "type": "SourcePassage",
+      "text": "The movement from scarce human labor to abundant agent labor is not a quantitative extension of the neoclassical picture but a change in its binding constraint. When capacity is abundant, reputation is what remains scarce, and coordination organizes around it.",
+      "text_sha256": "59eb16b8f208eebe84193b204069171563131ededeb2670fd084c480ab0d9223",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "locator_status": "exact_quote_without_page_locator"
+    },
+    {
       "id": "kaal:claim:7260278-001",
       "type": "Claim",
       "canonical_url": "https://wulfkaal.github.io/claims/7260278-001",
@@ -38334,7 +39242,7 @@
       "id": "kaal:paper:0322f0ae77c2",
       "type": "ScholarlyArticle",
       "paper_graph_id": "0322f0ae77c2",
-      "title": "CRYPTO ECONOMICS",
+      "title": "Crypto Economics - The Top 100 Token Models Compared",
       "filename": "Kaal - 2018 - Crypto Economics - The Top 100 Token Models Compared.pdf",
       "source_sha256": "72b13f11002ba26206cd53e74c324b913d1830c642bfa024da6bac0d3af3a7b0",
       "citation": "Wulf A. Kaal, Crypto Economics - The Top 100 Token Models Compared (2018). SSRN: https://ssrn.com/abstract=3249860"
@@ -38343,7 +39251,7 @@
       "id": "kaal:paper:05b1eb3f34f6",
       "type": "ScholarlyArticle",
       "paper_graph_id": "05b1eb3f34f6",
-      "title": "STABLE CRYPTOCURRENCIES",
+      "title": "Stable Cryptocurrencies",
       "filename": "Calcaterra et al. - 2019 - Stable Cryptocurrencies.pdf",
       "source_sha256": "ef5031b16aa53476ed618f0bdf92601cd4affb893692c701134bd9cba3ea8acf",
       "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies (2019). SSRN: https://ssrn.com/abstract=3396522"
@@ -38352,7 +39260,7 @@
       "id": "kaal:paper:0a7cc7a795b0",
       "type": "ScholarlyArticle",
       "paper_graph_id": "0a7cc7a795b0",
-      "title": "BLOCKCHAIN-BASED CORPORATE GOVERNANCE",
+      "title": "Blockchain-Based Corporate Governance",
       "filename": "Kaal - 2019 - Blockchain-Based Corporate Governance.pdf",
       "source_sha256": "e6b562527f7f19accaa35491db0a0db168b6a936755e1dca424e9f30bee7a815",
       "citation": "Wulf A. Kaal, Blockchain-Based Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3441904"
@@ -38388,7 +39296,7 @@
       "id": "kaal:paper:13c8d2352bf9",
       "type": "ScholarlyArticle",
       "paper_graph_id": "13c8d2352bf9",
-      "title": "BLOCKCHAIN INNOVATION FOR PRIVATE INVESTMENT",
+      "title": "Blockchain Innovation for Private Investment Funds",
       "filename": "Kaal - 2017 - Blockchain Innovation for Private Investment Funds.pdf",
       "source_sha256": "aafb1be3c25cd33da477d759df9ca2f856f0a8fe133d6396da2e75d0af573dbd",
       "citation": "Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033"
@@ -38406,7 +39314,7 @@
       "id": "kaal:paper:1917f964a918",
       "type": "ScholarlyArticle",
       "paper_graph_id": "1917f964a918",
-      "title": "CHOOL OF AW",
+      "title": "A Comparative Perspective on the Limitations of the Duty of Oversight \u2013 A Comment on Lisa Fairfax",
       "filename": "Kaal - 2013 - A Comparative Perspective on the Limitations of the Duty of Oversight \u2013 A Comment on Lisa Fairfax.pdf",
       "source_sha256": "ac5c955fe01209c54c78c4575c0b8bf570e5f1259c3f855510697cf51a32e59a",
       "citation": "Kaal, A Comparative Perspective on the Limitations of the Duty of Oversight \u2013 A Comment on Lisa Fairfax (2013)"
@@ -38415,7 +39323,7 @@
       "id": "kaal:paper:198fb0749390",
       "type": "ScholarlyArticle",
       "paper_graph_id": "198fb0749390",
-      "title": "STABLE CRYPTOCURRENCIES",
+      "title": "Stable Cryptocurrencies - First Order Principles",
       "filename": "Calcaterra et al. - 2019 - Stable Cryptocurrencies - First Order Principles.pdf",
       "source_sha256": "72ed2581b4cac2bd18a5b2640be959487a3cbc34c86ab5e5664924bcdb53c8e0",
       "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Stable Cryptocurrencies - First Order Principles (2019). SSRN: https://ssrn.com/abstract=3402701"
@@ -38424,7 +39332,7 @@
       "id": "kaal:paper:1a98edb02e8a",
       "type": "ScholarlyArticle",
       "paper_graph_id": "1a98edb02e8a",
-      "title": "CHOOL OF AW",
+      "title": "Investment Adviser Regulation",
       "filename": "Kaal - 2013 - Investment Adviser Regulation.pdf",
       "source_sha256": "7075ce35282a8ee75b81ae3dec0e19f68631beae7f3c3a00ab2827538dc9e302",
       "citation": "Wulf A. Kaal, Investment Adviser Regulation (2013). SSRN: https://ssrn.com/abstract=2337268"
@@ -38451,7 +39359,7 @@
       "id": "kaal:paper:2113e75d4244",
       "type": "ScholarlyArticle",
       "paper_graph_id": "2113e75d4244",
-      "title": "REPUTATION AS CAPITAL",
+      "title": "REPUTATION AS CAPITAL \u2013 How Decentralized Autonomous Organizations Address Shortcomings in the Ventu",
       "filename": "Kaal - 2021 - REPUTATION AS CAPITAL \u2013 How Decentralized Autonomous Organizations Address Shortcomings in the Ventu.pdf",
       "source_sha256": "c6e202e77fd08db801f932774026458b94e5d103abf30cb1189fe6a1c5edf391",
       "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL \u2013 How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614"
@@ -38460,7 +39368,7 @@
       "id": "kaal:paper:2119194f55b6",
       "type": "ScholarlyArticle",
       "paper_graph_id": "2119194f55b6",
-      "title": "CHOOL OF AW",
+      "title": "Evolution of Law Dynamic Regulation in a New Institutional Economics Framework",
       "filename": "Kaal - 2013 - Evolution of Law Dynamic Regulation in a New Institutional Economics Framework.pdf",
       "source_sha256": "7ecc9dd1826121a95bf252476cdaa1c8737ad8079e12caf66c4342ffae7af8af",
       "citation": "Wulf A. Kaal, Evolution of Law Dynamic Regulation in a New Institutional Economics Framework (2013). SSRN: https://ssrn.com/abstract=2267560"
@@ -38469,7 +39377,7 @@
       "id": "kaal:paper:261ddfc2a5ce",
       "type": "ScholarlyArticle",
       "paper_graph_id": "261ddfc2a5ce",
-      "title": "Version10.0-May2024",
+      "title": "DAO Market Meta Analysis 2024",
       "filename": "Kaal - 2024 - DAO Market Meta Analysis 2024.pdf",
       "source_sha256": "bb2052d809a4615f0f3e2526ba6416293c40d00260149ba4fe6f38addf052796",
       "citation": "Wulf A. Kaal, DAO Market Meta Analysis 2024 (2024). SSRN: https://ssrn.com/abstract=5254152"
@@ -38478,7 +39386,7 @@
       "id": "kaal:paper:26e22a74a0ab",
       "type": "ScholarlyArticle",
       "paper_graph_id": "26e22a74a0ab",
-      "title": "DECENTRALIZATION AND FEEDBACK EFFECTS",
+      "title": "Decentralization and Feedback Effects",
       "filename": "Kaal - 2021 - Decentralization and Feedback Effects.pdf",
       "source_sha256": "31e91158fdeefebc2f0be54ebf89751f7cdd4c89ecea932888f5ba9be6b1caba",
       "citation": "Wulf A. Kaal, Decentralization and Feedback Effects (2021). SSRN: https://ssrn.com/abstract=3808852"
@@ -38505,7 +39413,7 @@
       "id": "kaal:paper:2e15dbcebdbb",
       "type": "ScholarlyArticle",
       "paper_graph_id": "2e15dbcebdbb",
-      "title": "DIGITAL ASSET MARKET EVOLUTION",
+      "title": "Digital Asset Market Evolution",
       "filename": "Kaal - 2020 - Digital Asset Market Evolution.pdf",
       "source_sha256": "d1d4a15a293b715bb6a5a32e689f59c3a1587915039ba9a1cf4eeb8ee2a1e57c",
       "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
@@ -38532,7 +39440,7 @@
       "id": "kaal:paper:33defa8cf1f7",
       "type": "ScholarlyArticle",
       "paper_graph_id": "33defa8cf1f7",
-      "title": "STOCK PRICE RESPONSE TO N/DPAS",
+      "title": "Stock Price Response to Non- and Deferred Prosecution Agreements",
       "filename": "Kaal and Lacine - 2015 - Stock Price Response to Non- and Deferred Prosecution Agreements.pdf",
       "source_sha256": "507404d641abb922ab6d8e3a0b032e35ead2befd7b88746d09d178a8fa816957",
       "citation": "Wulf A. Kaal, Timothy Lacine, Stock Price Response to Non- and Deferred Prosecution Agreements (2015). SSRN: https://ssrn.com/abstract=2629451"
@@ -38568,7 +39476,7 @@
       "id": "kaal:paper:3bc641edb392",
       "type": "ScholarlyArticle",
       "paper_graph_id": "3bc641edb392",
-      "title": "DECENTRALIZED UNDERWRITING",
+      "title": "Decentralized Underwriting",
       "filename": "Calcaterra et al. - 2019 - Decentralized Underwriting.pdf",
       "source_sha256": "ce2bda03a0b788ea3e7747f02c3c351ef7c808a41150d5cda34767bbe98800c0",
       "citation": "Craig Calcaterra, Wulf A. Kaal, Vadhindran K. Rao, Decentralized Underwriting (2019). SSRN: https://ssrn.com/abstract=3396542"
@@ -38577,7 +39485,7 @@
       "id": "kaal:paper:3c97a74f6667",
       "type": "ScholarlyArticle",
       "paper_graph_id": "3c97a74f6667",
-      "title": "BLOCKCHAIN-BASED SECURITIES OFFERINGS",
+      "title": "Blockchain-Based Securities Offerings",
       "filename": "Kaal and Evans - 2019 - Blockchain-Based Securities Offerings.pdf",
       "source_sha256": "c7626eeb7642045b79f8745df1f7232a8fe8bc44a1f7e87b592850e35b392b50",
       "citation": "Wulf A. Kaal, Samuel Evans, Blockchain-Based Securities Offerings (2019). SSRN: https://ssrn.com/abstract=3411110"
@@ -38595,7 +39503,7 @@
       "id": "kaal:paper:4008ed72ee00",
       "type": "ScholarlyArticle",
       "paper_graph_id": "4008ed72ee00",
-      "title": "CONFLUENCE OF MUTUAL AND PRIVATE FUNDS",
+      "title": "Confluence of Mutual and Private Funds",
       "filename": "Kaal - 2016 - Confluence of Mutual and Private Funds.pdf",
       "source_sha256": "b5c92186260d4a8499a14f81ee24ace093b24e7740af3effcd1c526fa4fa221e",
       "citation": "Kaal, Confluence of Mutual and Private Funds (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2715083"
@@ -38622,7 +39530,7 @@
       "id": "kaal:paper:46edd9b9d8d9",
       "type": "ScholarlyArticle",
       "paper_graph_id": "46edd9b9d8d9",
-      "title": "Version 4 - April 2025",
+      "title": "Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse",
       "filename": "Kaal - 2025 - Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse.pdf",
       "source_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
       "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296"
@@ -38631,7 +39539,7 @@
       "id": "kaal:paper:4d8750d8b664",
       "type": "ScholarlyArticle",
       "paper_graph_id": "4d8750d8b664",
-      "title": "VENTURE CAPITAL AS DYNAMIC REGULATION OF DISRUPTIVE INNOVATION",
+      "title": "Venture Capital as Dynamic Regulation of Disruptive Innovation",
       "filename": "Kaal and Vermeulen - 2016 - Venture Capital as Dynamic Regulation of Disruptive Innovation.pdf",
       "source_sha256": "c72871b76fa2ad5a8a69ee8d3defc8f64e624be9052ce763e79cf6c58883f726",
       "citation": "Wulf A. Kaal, Erik P.M. Vermeulen, Venture Capital as Dynamic Regulation of Disruptive Innovation (2016). SSRN: https://ssrn.com/abstract=2740477"
@@ -38694,7 +39602,7 @@
       "id": "kaal:paper:584f5a5c8f6a",
       "type": "ScholarlyArticle",
       "paper_graph_id": "584f5a5c8f6a",
-      "title": "2016-2017 UNCONSTRAINED MUTUAL FUNDS 1",
+      "title": "Unconstrained Mutual Funds and Retail Investor Protection",
       "filename": "Kaal and Anderson - 2016 - Unconstrained Mutual Funds and Retail Investor Protection.pdf",
       "source_sha256": "0877b0a076f2614559cb0b1a736f73401cecbee7cfe014da6e36709208e92a74",
       "citation": "Wulf A. Kaal, Unconstrained Mutual Funds and Retail Investor Protection (2016). SSRN: https://ssrn.com/abstract=2811729"
@@ -38712,7 +39620,7 @@
       "id": "kaal:paper:5bd5119b9767",
       "type": "ScholarlyArticle",
       "paper_graph_id": "5bd5119b9767",
-      "title": "FAIR TOKEN LAUNCH",
+      "title": "Fair Token Launch",
       "filename": "Kaal - 2022 - Fair Token Launch.pdf",
       "source_sha256": "e0925afde0c42a16cd5310983789fae3eb3d1f121e2954a72afa64191d00fe37",
       "citation": "Wulf A. Kaal, Fair Token Launch (2022). SSRN: https://ssrn.com/abstract=4015908"
@@ -38721,7 +39629,7 @@
       "id": "kaal:paper:5c5b5030d8bd",
       "type": "ScholarlyArticle",
       "paper_graph_id": "5c5b5030d8bd",
-      "title": "DID THE DODD-FRANK ACT IMPACT PRIVATE FUND PERFORMANCE ? \u2013 EVIDENCE FROM",
+      "title": "Did the Dodd-Frank Act Impact Private Fund Performance  \u2013 Evidence from 2010 \u2013 2015",
       "filename": "Kaal et al. - 2016 - Did the Dodd-Frank Act Impact Private Fund Performance  \u2013 Evidence from 2010 \u2013 2015.pdf",
       "source_sha256": "dc3b2f9e60e42ea1b42c2e0062d65569675b014c05fcd30b15ad44d2410b2ce7",
       "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Private Fund Performance  \u2013 Evidence from 2010 \u2013 2015 (2016). SSRN: https://ssrn.com/abstract=2816408"
@@ -38730,7 +39638,7 @@
       "id": "kaal:paper:5df2a93d8aa2",
       "type": "ScholarlyArticle",
       "paper_graph_id": "5df2a93d8aa2",
-      "title": "BLOCKCHAIN TECHNOLOGY AND RACE IN CORPORATE",
+      "title": "Blockchain Technology and Race in Corporate America",
       "filename": "Kaal - 2017 - Blockchain Technology and Race in Corporate America.pdf",
       "source_sha256": "125f01674d13b6bb0310c4be7a20ff538dccbc36ecf352770b3c580028387edd",
       "citation": "Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378"
@@ -38739,7 +39647,7 @@
       "id": "kaal:paper:5fa27c808a0b",
       "type": "ScholarlyArticle",
       "paper_graph_id": "5fa27c808a0b",
-      "title": "HOW DECENTRALIZED SYSTEMS CAN UPGRADE AI",
+      "title": "How Decentralized Systems Can Upgrade AI",
       "filename": "Kaal - 2021 - How Decentralized Systems Can Upgrade AI.pdf",
       "source_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
       "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867"
@@ -38766,7 +39674,7 @@
       "id": "kaal:paper:626b662bc95c",
       "type": "ScholarlyArticle",
       "paper_graph_id": "626b662bc95c",
-      "title": "AW AND CONOMICS ORKING APER ERIES",
+      "title": "Regulatory Competition in EU Corporate Law after Inspire Art Unbundling Delaware's Product for Euro",
       "filename": "Kirchner et al. - 2004 - Regulatory Competition in EU Corporate Law after Inspire Art Unbundling Delaware's Product for Euro.pdf",
       "source_sha256": "e142130507ea2f5b025fd97b3f762d44ee3a7aaa82b155aab63434b85e8fd834",
       "citation": "Christian Kirchner, Richard W. Painter, Wulf A. Kaal, Regulatory Competition in EU Corporate Law after Inspire Art Unbundling Delaware's Product for Euro (2004). SSRN: https://ssrn.com/abstract=617681"
@@ -38793,7 +39701,7 @@
       "id": "kaal:paper:68d3e6df312c",
       "type": "ScholarlyArticle",
       "paper_graph_id": "68d3e6df312c",
-      "title": "Version9.0-July2024",
+      "title": "Quantum Economy and the Future of Work",
       "filename": "Kaal - 2024 - Quantum Economy and the Future of Work.pdf",
       "source_sha256": "64ea6e8b7cfb3d9a83801eba54f9b87182b842a963273ddab7f2d5305639db73",
       "citation": "Wulf A. Kaal, Quantum Economy and the Future of Work (2024). SSRN: https://ssrn.com/abstract=4900880"
@@ -38802,7 +39710,7 @@
       "id": "kaal:paper:6963df831130",
       "type": "ScholarlyArticle",
       "paper_graph_id": "6963df831130",
-      "title": "Version 6 - December 2025",
+      "title": "The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory",
       "filename": "Kaal - 2025 - The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory.pdf",
       "source_sha256": "d2f6edebc562152f6ea706cc3ad944f7a1b81979931571e54cb782849839dfce",
       "citation": "Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442"
@@ -38811,7 +39719,7 @@
       "id": "kaal:paper:6c100ed87523",
       "type": "ScholarlyArticle",
       "paper_graph_id": "6c100ed87523",
-      "title": "Version 9.0 - May 2024",
+      "title": "AI Governance",
       "filename": "Kaal - 2024 - AI Governance.pdf",
       "source_sha256": "59fa63bae179e8f9b6b8efbdf90cee28400276512a1b04f9f579a48641305c93",
       "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714"
@@ -38820,7 +39728,7 @@
       "id": "kaal:paper:6c1cfff713cf",
       "type": "ScholarlyArticle",
       "paper_graph_id": "6c1cfff713cf",
-      "title": "CHOOL OF AW",
+      "title": "The Role of Corporate Integrity Agreements in the Expansion of Fiduciary Duties",
       "filename": "Kaal and Malay - 2013 - The Role of Corporate Integrity Agreements in the Expansion of Fiduciary Duties.pdf",
       "source_sha256": "50973e1e820aef47a4e7ffdbdcb513d03f1845643fcf4fa5910e9528a0b7dac2",
       "citation": "Wulf A. Kaal, Elizabeth R. Malay, The Role of Corporate Integrity Agreements in the Expansion of Fiduciary Duties (2013). SSRN: https://ssrn.com/abstract=2317580"
@@ -38829,7 +39737,7 @@
       "id": "kaal:paper:717a665c0399",
       "type": "ScholarlyArticle",
       "paper_graph_id": "717a665c0399",
-      "title": "DID THE DODD-FRANK ACT IMPACT HEDGE FUND PERFORMANCE ?",
+      "title": "Did the Dodd-Frank Act Impact Hedge Fund Performance",
       "filename": "Kaal et al. - 2014 - Did the Dodd-Frank Act Impact Hedge Fund Performance.pdf",
       "source_sha256": "0e1c4615b104821577498d9655de43b9c5c3e985bb0215f56c038b8232be65c3",
       "citation": "Wulf A. Kaal, Barbara Luppi, Sandra Paterlini, Did the Dodd-Frank Act Impact Hedge Fund Performance (2014). SSRN: https://ssrn.com/abstract=2389416"
@@ -38838,7 +39746,7 @@
       "id": "kaal:paper:73edbcb0a6e2",
       "type": "ScholarlyArticle",
       "paper_graph_id": "73edbcb0a6e2",
-      "title": "Version10.0-July2024",
+      "title": "Quantum Economy and Tokenomics",
       "filename": "Kaal - 2024 - Quantum Economy and Tokenomics.pdf",
       "source_sha256": "75bf96d3b751b4ad0a6ca4a32591cf026094f113e3a372aa6c61790941b391f7",
       "citation": "Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878"
@@ -38847,7 +39755,7 @@
       "id": "kaal:paper:75e8fdfd174b",
       "type": "ScholarlyArticle",
       "paper_graph_id": "75e8fdfd174b",
-      "title": "DYNAMIC REGULATION FOR INNOVATION",
+      "title": "Dynamic Regulation for Innovation",
       "filename": "Kaal - 2016 - Dynamic Regulation for Innovation.pdf",
       "source_sha256": "de5156f14f44a5753cab55b6c4b03049eda58a143b99e08ef427aee1d261e1bf",
       "citation": "Wulf A. Kaal, Dynamic Regulation for Innovation (2016). SSRN: https://ssrn.com/abstract=2831040"
@@ -38883,7 +39791,7 @@
       "id": "kaal:paper:7de71edc4f11",
       "type": "ScholarlyArticle",
       "paper_graph_id": "7de71edc4f11",
-      "title": "2022 DAO FALLACIES",
+      "title": "DAO Fallacies",
       "filename": "Kaal - 2022 - DAO Fallacies.pdf",
       "source_sha256": "48f1e307cdbbe28c7843f7744d0ba8cf01662f257a53f2066a7a6c7e03a5acec",
       "citation": "Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783"
@@ -38892,7 +39800,7 @@
       "id": "kaal:paper:7e12446b9eae",
       "type": "ScholarlyArticle",
       "paper_graph_id": "7e12446b9eae",
-      "title": "PRIVATE INVESTMENT FUND REGULATION",
+      "title": "Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016",
       "filename": "Kaal - 2017 - Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016.pdf",
       "source_sha256": "0955054f49c7011d33c285579bb046e6b284e42755b10fd2546a728c202669d5",
       "citation": "Wulf A. Kaal, Private Investment Fund Regulation - Theory and Empirical Evidence from 1998 to 2016 (2017). SSRN: https://ssrn.com/abstract=2998097"
@@ -38901,7 +39809,7 @@
       "id": "kaal:paper:7e7413ad2514",
       "type": "ScholarlyArticle",
       "paper_graph_id": "7e7413ad2514",
-      "title": "2022 DIGITAL ASSET VALUATION",
+      "title": "Digital Asset Valuation",
       "filename": "Kaal et al. - 2022 - Digital Asset Valuation.pdf",
       "source_sha256": "52ba05b1292b1be4bfaf1ee5cf56b14fea9c196d870603e794d7ee316df129bd",
       "citation": "Wulf A. Kaal, Samuel Evans, Hayley Howe, Digital Asset Valuation (2022). SSRN: https://ssrn.com/abstract=4033886"
@@ -38910,7 +39818,7 @@
       "id": "kaal:paper:808865325975",
       "type": "ScholarlyArticle",
       "paper_graph_id": "808865325975",
-      "title": "DAOS \u2013 INTERNAL GOVERNANCE & EXTERNAL LEGAL DESIGN",
+      "title": "Decentralized Autonomous Organizations \u2013 Internal Governance and External Legal Design",
       "filename": "Kaal - 2020 - Decentralized Autonomous Organizations \u2013 Internal Governance and External Legal Design.pdf",
       "source_sha256": "530b3a40c244aeca2eb4c53f4c9b4d6b2962bd6be9f92b4ebe17139c17f4c0e0",
       "citation": "Wulf A. Kaal, Decentralized Autonomous Organizations \u2013 Internal Governance and External Legal Design (2020). SSRN: https://ssrn.com/abstract=3652481"
@@ -38919,7 +39827,7 @@
       "id": "kaal:paper:818e5417df51",
       "type": "ScholarlyArticle",
       "paper_graph_id": "818e5417df51",
-      "title": "2017 LEGAL EDUCATION IN BLOCKCHAIN REVOLUTION",
+      "title": "Legal Education in the Blockchain Revolution",
       "filename": "Fenwick et al. - 2017 - Legal Education in the Blockchain Revolution.pdf",
       "source_sha256": "abcef529c7200261c59eec43018375b3b26e3186239fb9d002bacc298dba26ff",
       "citation": "Mark Fenwick, Wulf A. Kaal, Erik P. M. Vermeulen, Legal Education in the Blockchain Revolution (2017). SSRN: https://ssrn.com/abstract=2939127"
@@ -38946,7 +39854,7 @@
       "id": "kaal:paper:89ff38111830",
       "type": "ScholarlyArticle",
       "paper_graph_id": "89ff38111830",
-      "title": "2019 BLOCKCHAIN SOLUTIONS FOR CORPORATE GOVERNANCE",
+      "title": "Blockchain Solutions for Agency Problems in Corporate Governance",
       "filename": "Kaal - 2019 - Blockchain Solutions for Agency Problems in Corporate Governance.pdf",
       "source_sha256": "4d1424b9ba9aff8a61bc7a0dddd02cded93785e5843685dde76c07dcdb23961e",
       "citation": "Wulf A. Kaal, Blockchain Solutions for Agency Problems in Corporate Governance (2019). SSRN: https://ssrn.com/abstract=3373393"
@@ -38964,7 +39872,7 @@
       "id": "kaal:paper:8b7efdf0148a",
       "type": "ScholarlyArticle",
       "paper_graph_id": "8b7efdf0148a",
-      "title": "WWuullff KKaaaall // IInntt..AArrttiiff..IInntteellll..&&MMaacchh..LLeeaarrnn.. 55((11)) ((22002255)) xxxx--xxxx Page 1 of xx",
+      "title": "Artificial Intelligence The Final Frontier",
       "filename": "Kaal - 2025 - Artificial Intelligence The Final Frontier.pdf",
       "source_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
       "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633"
@@ -38973,7 +39881,7 @@
       "id": "kaal:paper:8b928d929edc",
       "type": "ScholarlyArticle",
       "paper_graph_id": "8b928d929edc",
-      "title": "REPUTATION AS CAPITAL",
+      "title": "Reputation as Capital \u2013 How DAOs Upgrade Finance",
       "filename": "Kaal - 2021 - Reputation as Capital \u2013 How DAOs Upgrade Finance.pdf",
       "source_sha256": "04297905564a6092b2db7640561f58fd374d3114c79527357bad09d11b909819",
       "citation": "Wulf A. Kaal, Reputation as Capital \u2013 How DAOs Upgrade Finance (2021). SSRN: https://ssrn.com/abstract=3949098"
@@ -39000,7 +39908,7 @@
       "id": "kaal:paper:919c42f125f2",
       "type": "ScholarlyArticle",
       "paper_graph_id": "919c42f125f2",
-      "title": "DECENTRALIZATION \u2013 WHY WE NEED TECHNOLOGY INFRASTRUCTURE UPGRADES",
+      "title": "Decentralization \u2013 Why We Need Technology Infrastructure Upgrades",
       "filename": "Kaal - 2021 - Decentralization \u2013 Why We Need Technology Infrastructure Upgrades.pdf",
       "source_sha256": "304ad25d43b5ecea3158e3a2ca04e6e1e3bd2958e2134e2dcefbfedf3b6f3ab7",
       "citation": "Wulf A. Kaal, Decentralization \u2013 Why We Need Technology Infrastructure Upgrades (2021). SSRN: https://ssrn.com/abstract=3808859"
@@ -39036,7 +39944,7 @@
       "id": "kaal:paper:991488ad67fb",
       "type": "ScholarlyArticle",
       "paper_graph_id": "991488ad67fb",
-      "title": "PRIVATE FUND INDUSTRY FIVE YEARS AFTER THE DODD-FRANK ACT",
+      "title": "The Private Fund Industry Five Years after the Dodd-Frank Act \u2013 A Survey Study",
       "filename": "Kaal - 2016 - The Private Fund Industry Five Years after the Dodd-Frank Act \u2013 A Survey Study.pdf",
       "source_sha256": "643658c02f6625bca35595696116d0ad74d681ed8579c644832ae4a88b2a8c14",
       "citation": "Wulf A. Kaal, The Private Fund Industry Five Years after the Dodd-Frank Act \u2013 A Survey Study (2016). SSRN: https://ssrn.com/abstract=2732915"
@@ -39072,16 +39980,25 @@
       "id": "kaal:paper:a4fa3c22dd50",
       "type": "ScholarlyArticle",
       "paper_graph_id": "a4fa3c22dd50",
-      "title": "REGULATION TOMORROW: WHAT",
+      "title": "Regulation Tomorrow What Happens When Technology Is Faster Than the Law",
       "filename": "Fenwick et al. - 2017 - Regulation Tomorrow What Happens When Technology Is Faster Than the Law.pdf",
       "source_sha256": "9cd875ebdb0266febbdcdabfca5b9b9f0de1b7ad9e3d5a8a5971bdbe469323b7",
       "citation": "Mark Fenwick, Wulf A. Kaal, Erik P. M. Vermeulen, Regulation Tomorrow What Happens When Technology Is Faster Than the Law (2017). SSRN: https://ssrn.com/abstract=2834531"
     },
     {
+      "id": "kaal:paper:a8215c285cc2",
+      "type": "ScholarlyArticle",
+      "paper_graph_id": "a8215c285cc2",
+      "title": "The Institutional Deficit in DAOs",
+      "filename": "Kaal - 2026 - The Institutional Deficit in Decentralized Autonomous Organizations - An Empirical Analysis.pdf",
+      "source_sha256": "f04b274f926d23848e77b429a13227baed9858b90fec826ddaabd2acca7035fe",
+      "citation": "Wulf A. Kaal, The Institutional Deficit in Decentralized Autonomous Organizations - An Empirical Analysis (2026). SSRN: https://ssrn.com/abstract=6819121"
+    },
+    {
       "id": "kaal:paper:a87e522e3b75",
       "type": "ScholarlyArticle",
       "paper_graph_id": "a87e522e3b75",
-      "title": "Version 9 - August 2025",
+      "title": "Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era",
       "filename": "Andreas and Kaal - 2025 - Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era.pdf",
       "source_sha256": "55738b4035a91b70aa2ddaa127552fe4b373ec641afee2719fbdcabebdcbea44",
       "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218"
@@ -39090,7 +40007,7 @@
       "id": "kaal:paper:a9c0b315b800",
       "type": "ScholarlyArticle",
       "paper_graph_id": "a9c0b315b800",
-      "title": "DECENTRALIZATION \u2013 A PRIMER ON THE NEW ECONOMY",
+      "title": "Decentralization - A Primer on the New Economy",
       "filename": "Kaal - 2019 - Decentralization - A Primer on the New Economy.pdf",
       "source_sha256": "6293780b57a1ae1de17ec00f99cc94295d4f72ea4d08b17a5c08c44772b221db",
       "citation": "Wulf A. Kaal, Decentralization - A Primer on the New Economy (2019). SSRN: https://ssrn.com/abstract=3406323"
@@ -39099,16 +40016,25 @@
       "id": "kaal:paper:ab4db2eb301d",
       "type": "ScholarlyArticle",
       "paper_graph_id": "ab4db2eb301d",
-      "title": "INITIAL COIN OFFERINGS",
+      "title": "Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses",
       "filename": "Kaal - 2018 - Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses.pdf",
       "source_sha256": "83e9ccb9219a217d9fcfc5c098b897229ee7cf85623bee3ae22d2e986548466b",
       "citation": "Wulf A. Kaal, Initial Coin Offerings The Top 25 Jurisdictions and Their Comparative Regulatory Responses (2018). SSRN: https://ssrn.com/abstract=3117224"
     },
     {
+      "id": "kaal:paper:ae5513427968",
+      "type": "ScholarlyArticle",
+      "paper_graph_id": "ae5513427968",
+      "title": "Governance as a Product: A Reputation-Weighted",
+      "filename": "Kaal - 2026 - Governance as a Product (GaaP) A Reputation-Weighted Institutional Architecture for Autonomous AI Agent Governance.pdf",
+      "source_sha256": "cebb94de31b049b52f2290c30cd666fa30fd247c15ef33d057870921f165aa5b",
+      "citation": "Wulf A. Kaal, Governance as a Product (GaaP): A Reputation-Weighted Institutional Architecture for Autonomous AI Agent Governance (2026). SSRN: https://ssrn.com/abstract=6886078"
+    },
+    {
       "id": "kaal:paper:b09332fe0086",
       "type": "ScholarlyArticle",
       "paper_graph_id": "b09332fe0086",
-      "title": "HOW TO ORGANIZE NOW FOR SUCCESS TOMORROW - VERSION 7.DOCX (DO NOT DELETE) 5/31/17 10:47 PM",
+      "title": "The \u2018Unmediated\u2019 and \u2018Tech-Driven\u2019 Corporate Governance of Today's Winning Companies",
       "filename": "Fenwick et al. - 2017 - The \u2018Unmediated\u2019 and \u2018Tech-Driven\u2019 Corporate Governance of Today's Winning Companies.pdf",
       "source_sha256": "fa4e986917d437cb1504281e7b986be2698e9507d8feaf426c9d7d1754ca882c",
       "citation": "Mark Fenwick, Wulf A. Kaal, Erik P. M. Vermeulen, The \u2018Unmediated\u2019 and \u2018Tech-Driven\u2019 Corporate Governance of Today's Winning Companies (2017). SSRN: https://ssrn.com/abstract=2922176"
@@ -39144,7 +40070,7 @@
       "id": "kaal:paper:b7496072f42b",
       "type": "ScholarlyArticle",
       "paper_graph_id": "b7496072f42b",
-      "title": "2019 TECHNOLOGY IN HEDGE FUNDS",
+      "title": "Financial Technology and Hedge Funds",
       "filename": "Kaal - 2019 - Financial Technology and Hedge Funds.pdf",
       "source_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
       "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548"
@@ -39153,7 +40079,7 @@
       "id": "kaal:paper:b92bf3c25e3f",
       "type": "ScholarlyArticle",
       "paper_graph_id": "b92bf3c25e3f",
-      "title": "HEDGE FUNDS' SYSTEMIC RISK DISCLOSURES IN BANKRUPTCY",
+      "title": "Hedge Funds\u2019 Systemic Risk Disclosures in Bankruptcy",
       "filename": "Kaal - 2013 - Hedge Funds\u2019 Systemic Risk Disclosures in Bankruptcy.pdf",
       "source_sha256": "b3682f24c0b277b3307fb9f54cd17a4e0a87b48eecba34b40e189212f20c9a22",
       "citation": "Wulf A. Kaal, Hedge Funds\u2019 Systemic Risk Disclosures in Bankruptcy (2013). SSRN: https://ssrn.com/abstract=2348463"
@@ -39171,7 +40097,7 @@
       "id": "kaal:paper:bc0242e1bd47",
       "type": "ScholarlyArticle",
       "paper_graph_id": "bc0242e1bd47",
-      "title": "BLOCKCHAIN TECHNOLOGY FOR GOOD",
+      "title": "Blockchain Technology for Good",
       "filename": "Kaal - 2020 - Blockchain Technology for Good.pdf",
       "source_sha256": "5216a7bca45a48e3bef11ec524936e66af737c0fd66271e9f6866dc20a4482cc",
       "citation": "Kaal, Blockchain Technology for Good (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3709041"
@@ -39186,10 +40112,19 @@
       "citation": "Richard W. Painter, Wulf A. Kaal, Extraterritorial Application of US Securities Law \u2013 Will the US Become the Default Jurisdiction for (2010). SSRN: https://ssrn.com/abstract=1664809"
     },
     {
+      "id": "kaal:paper:be86ac40c342",
+      "type": "ScholarlyArticle",
+      "paper_graph_id": "be86ac40c342",
+      "title": "From Neoclassical to Computative Labor: Foundations",
+      "filename": "Kaal - 2026 - From Neoclassical to Computative Labor Foundations for a Testable Theory of Reputation Governance in the Agent Economy.pdf",
+      "source_sha256": "062ff740fd37295e1da5844353b6daae342bc07208665d114f28d6b1cd4cbdc9",
+      "citation": "Wulf A. Kaal, From Neoclassical to Computative Labor: Foundations for a Testable Theory of Reputation Governance in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=6890879"
+    },
+    {
       "id": "kaal:paper:bf34b0870e32",
       "type": "ScholarlyArticle",
       "paper_graph_id": "bf34b0870e32",
-      "title": "AI GOVERNANCE VIA WEB3 REPUTATION",
+      "title": "AI Governance Via Web3 Reputation System",
       "filename": "Kaal - 2024 - AI Governance Via Web3 Reputation System.pdf",
       "source_sha256": "ab66c1e99a88da1fa36b0c6b536df5184231fe6aa427f3dd53287a4e0ac79853",
       "citation": "Wulf A. Kaal, AI Governance Via Web3 Reputation System (2024). SSRN: https://ssrn.com/abstract=4941807"
@@ -39198,7 +40133,7 @@
       "id": "kaal:paper:bfe03b9f2b10",
       "type": "ScholarlyArticle",
       "paper_graph_id": "bfe03b9f2b10",
-      "title": "EElleeccttrroonniicc ccooppyy aavvaaiillaabbllee aatt:: hhttttppss::////ssssrrnn..ccoomm//aabbssttrraacctt==11776655990011",
+      "title": "The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche",
       "filename": "Kaal and Painter - 2011 - The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche.pdf",
       "source_sha256": "7b08b8a15f7d72b4eeed41be2d17c20428cb4727269077a6575c5d22e31ecdc5",
       "citation": "Kaal and Painter, The Aftermath of Morrison v. National Australia Bank and Elliott Associates v. Porsche (2011). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1765901"
@@ -39207,7 +40142,7 @@
       "id": "kaal:paper:c023b0375c90",
       "type": "ScholarlyArticle",
       "paper_graph_id": "c023b0375c90",
-      "title": "KAAL PAINTER_FINAL_11.10.DOCX (DO NOT DELETE) 11/16/2010 12:33 PM",
+      "title": "Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in",
       "filename": "Painter and Kaal - 2010 - Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in.pdf",
       "source_sha256": "e898211630f4116879329d6de8397523dca5b066864147421aa5cbc7429dc83b",
       "citation": "Painter and Kaal, Initial Reflections on an Evolving Standard Constraints on Risk Taking by Directors and Officers in (2010). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1558614"
@@ -39225,7 +40160,7 @@
       "id": "kaal:paper:c42c66b4e407",
       "type": "ScholarlyArticle",
       "paper_graph_id": "c42c66b4e407",
-      "title": "Version 5 - June 2024",
+      "title": "How AI Models are Optimized Through Web3 Governance",
       "filename": "Kaal - 2024 - How AI Models are Optimized Through Web3 Governance.pdf",
       "source_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
       "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607"
@@ -39252,7 +40187,7 @@
       "id": "kaal:paper:cb028a4b38fc",
       "type": "ScholarlyArticle",
       "paper_graph_id": "cb028a4b38fc",
-      "title": "KAAL POST-AUTHOR PAGES (DO NOT DELETE) 6/18/2013 4:23 PM",
+      "title": "Hedge Fund Manager Registration Under the Dodd-Frank Act",
       "filename": "Kaal - 2012 - Hedge Fund Manager Registration Under the Dodd-Frank Act.pdf",
       "source_sha256": "0b58bb409cac7674d78515f5374096f9a349de3bbd1983c990e0edc85a635a09",
       "citation": "Wulf A. Kaal, Hedge Fund Manager Registration Under the Dodd-Frank Act (2012). SSRN: https://ssrn.com/abstract=2150377"
@@ -39261,7 +40196,7 @@
       "id": "kaal:paper:d11e51ffe1cd",
       "type": "ScholarlyArticle",
       "paper_graph_id": "d11e51ffe1cd",
-      "title": "Version 6 - August 2025",
+      "title": "The Evolving Role of Artificial Intelligence in Law",
       "filename": "Kaal and Gray - 2025 - The Evolving Role of Artificial Intelligence in Law.pdf",
       "source_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
       "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658"
@@ -39270,7 +40205,7 @@
       "id": "kaal:paper:d6770104da37",
       "type": "ScholarlyArticle",
       "paper_graph_id": "d6770104da37",
-      "title": "HOW TO REGULATE DISRUPTIVE INNOVATION \u2013 FROM FACTS TO DATA",
+      "title": "How to Regulate Disruptive Innovation - From Facts to Data",
       "filename": "Kaal and Vermeulen - 2016 - How to Regulate Disruptive Innovation - From Facts to Data.pdf",
       "source_sha256": "3515f2317ed9c1d33ae55d70467cdf1f6c4e350065ea6a887d5d7619599ad7d2",
       "citation": "Wulf A. Kaal, Erik P.M. Vermeulen, How to Regulate Disruptive Innovation - From Facts to Data (2016). SSRN: https://ssrn.com/abstract=2808132"
@@ -39288,7 +40223,7 @@
       "id": "kaal:paper:dafca01f9b55",
       "type": "ScholarlyArticle",
       "paper_graph_id": "dafca01f9b55",
-      "title": "CHOOL OF AW",
+      "title": "Dynamic Regulation of the Financial Services Industry",
       "filename": "Kaal - 2013 - Dynamic Regulation of the Financial Services Industry.pdf",
       "source_sha256": "e7cb3dea40593135acc99a9b00690138fe01020514ebf388f5140e1b0e59e82a",
       "citation": "Wulf A. Kaal, Dynamic Regulation of the Financial Services Industry (2013). SSRN: https://ssrn.com/abstract=2273857"
@@ -39306,7 +40241,7 @@
       "id": "kaal:paper:dee2eeeaba8e",
       "type": "ScholarlyArticle",
       "paper_graph_id": "dee2eeeaba8e",
-      "title": "DECENTRALIZATION NEUTRALIZERS",
+      "title": "Decentralization Neutralizers",
       "filename": "Kaal - 2021 - Decentralization Neutralizers.pdf",
       "source_sha256": "f11493915e6b8c266d421510b5546816e33defb5650aac9d09b20d78549da727",
       "citation": "Wulf A. Kaal, Decentralization Neutralizers (2021). SSRN: https://ssrn.com/abstract=3808873"
@@ -39315,7 +40250,7 @@
       "id": "kaal:paper:defe156f293c",
       "type": "ScholarlyArticle",
       "paper_graph_id": "defe156f293c",
-      "title": "THE EFFECT OF PRIVATE FUND DISCLOSURES",
+      "title": "Private Fund Disclosures Under the Dodd-Frank Act",
       "filename": "Kaal - 2014 - Private Fund Disclosures Under the Dodd-Frank Act.pdf",
       "source_sha256": "0c950d73240845e78faf1c3ca0ab820fcc50556faf7ff07f7f773d0876f0be8a",
       "citation": "Wulf A. Kaal, Private Fund Disclosures Under the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2447306"
@@ -39333,7 +40268,7 @@
       "id": "kaal:paper:e4868bd4a593",
       "type": "ScholarlyArticle",
       "paper_graph_id": "e4868bd4a593",
-      "title": "2016-2017 INVESTOR DUE DILIGENCE 1",
+      "title": "Private Fund Investor Due Diligence \u2013 Evidence from 1995 to 2015",
       "filename": "Kaal - 2016 - Private Fund Investor Due Diligence \u2013 Evidence from 1995 to 2015.pdf",
       "source_sha256": "b52152af561288173840a1cabbcf8f4b337e73507c856ee01600799073f4156f",
       "citation": "Wulf A. Kaal, Private Fund Investor Due Diligence \u2013 Evidence from 1995 to 2015 (2016). SSRN: https://ssrn.com/abstract=2811718"
@@ -39342,7 +40277,7 @@
       "id": "kaal:paper:e55a3be24d91",
       "type": "ScholarlyArticle",
       "paper_graph_id": "e55a3be24d91",
-      "title": "SECURITIES VS. UTILITY TOKENS",
+      "title": "Securities Versus Utility Tokens",
       "filename": "Kaal - 2022 - Securities Versus Utility Tokens.pdf",
       "source_sha256": "bb03790af46b3710e306121cfae25f850e3e7477e0f95313af42b9feeb6bc0c4",
       "citation": "Wulf A. Kaal, Securities Versus Utility Tokens (2022). SSRN: https://ssrn.com/abstract=4021599"
@@ -39351,7 +40286,7 @@
       "id": "kaal:paper:e7ed954f6916",
       "type": "ScholarlyArticle",
       "paper_graph_id": "e7ed954f6916",
-      "title": "DECENTRALIZED MECHANICAL TURK THROUGH VERIFIED REPUTATION",
+      "title": "Decentralized Mechanical Turk Through Verified Reputation",
       "filename": "Kaal - 2018 - Decentralized Mechanical Turk Through Verified Reputation.pdf",
       "source_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
       "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900"
@@ -39369,7 +40304,7 @@
       "id": "kaal:paper:e9ac83802858",
       "type": "ScholarlyArticle",
       "paper_graph_id": "e9ac83802858",
-      "title": "CHOOL OF AW",
+      "title": "Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance",
       "filename": "Kaal - 2012 - Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance.pdf",
       "source_sha256": "1c16ff10a284469ba15fb7ba5523449b917388ee692d9b394f9e8c094544e32c",
       "citation": "Wulf A. Kaal, Initial Reflections on the Possible Application of Contingent Capital in Corporate Governance (2012). SSRN: https://ssrn.com/abstract=1998455"
@@ -39414,7 +40349,7 @@
       "id": "kaal:paper:ee58906b59b8",
       "type": "ScholarlyArticle",
       "paper_graph_id": "ee58906b59b8",
-      "title": "THE HISTORY OF HEDGE FUND REGULATION IN THE UNITED STATES",
+      "title": "The History of Hedge Fund Regulation in the United States",
       "filename": "Kaal and Oesterle - 2016 - The History of Hedge Fund Regulation in the United States.pdf",
       "source_sha256": "7764601d3ed5bb056b58949e8411eff9dfb9855f143719062030c980c5fa801b",
       "citation": "Kaal and Oesterle, The History of Hedge Fund Regulation in the United States (2016). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2714974"
@@ -39423,7 +40358,7 @@
       "id": "kaal:paper:ef1b76de3b36",
       "type": "ScholarlyArticle",
       "paper_graph_id": "ef1b76de3b36",
-      "title": "DECENTRALIZED COMMERCE",
+      "title": "Decentralized Commerce \u2013 A Primer on Why Decentralized Reputation Verification Systems Are Needed",
       "filename": "Kaal - 2019 - Decentralized Commerce \u2013 A Primer on Why Decentralized Reputation Verification Systems Are Needed.pdf",
       "source_sha256": "bc2d6f0ddc0852fb4085c4543c7c1dec19aaf8745eb67e3acc637e552bd7fb7d",
       "citation": "Wulf A. Kaal, Decentralized Commerce \u2013 A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401"
@@ -39432,7 +40367,7 @@
       "id": "kaal:paper:ef72161a992f",
       "type": "ScholarlyArticle",
       "paper_graph_id": "ef72161a992f",
-      "title": "2016-2017 DYNAMIC REGULATION 1",
+      "title": "Dynamic Regulation via Contingent Capital",
       "filename": "Kaal - 2017 - Dynamic Regulation via Contingent Capital.pdf",
       "source_sha256": "250b10782a5ea5dece9235a7f711aee408feaf36f2e78e310d589b5ee6304be2",
       "citation": "Kaal, Dynamic Regulation via Contingent Capital (2017). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2957645"
@@ -39441,7 +40376,7 @@
       "id": "kaal:paper:f12eb3aecb41",
       "type": "ScholarlyArticle",
       "paper_graph_id": "f12eb3aecb41",
-      "title": "2017 CRYPTO TRANSACTION DISPUTE RESOLUTION",
+      "title": "Crypto Transaction Dispute Resolution",
       "filename": "Kaal and Calcaterra - 2017 - Crypto Transaction Dispute Resolution.pdf",
       "source_sha256": "80b92e67594394e38af41b769327936833de8e25d6cf3def966a6ba13bc83d17",
       "citation": "Wulf A. Kaal, Craig Calcaterra, Crypto Transaction Dispute Resolution (2017). SSRN: https://ssrn.com/abstract=2992962"
@@ -39450,7 +40385,7 @@
       "id": "kaal:paper:f2a8b6c70c07",
       "type": "ScholarlyArticle",
       "paper_graph_id": "f2a8b6c70c07",
-      "title": "CUSTODY OF DIGITAL ASSETS",
+      "title": "Custody of Digital Assets",
       "filename": "Kaal and Howe - 2021 - Custody of Digital Assets.pdf",
       "source_sha256": "9bc0903d01910460298e754c451f027df4324367359800a98ee8e638d94aff55",
       "citation": "Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876"
@@ -39459,7 +40394,7 @@
       "id": "kaal:paper:f51fe3577738",
       "type": "ScholarlyArticle",
       "paper_graph_id": "f51fe3577738",
-      "title": "SYSTEMIC RISK OF PRIVATE FUNDS",
+      "title": "The Systemic Risk of Private Funds after the Dodd-Frank Act",
       "filename": "Kaal - 2014 - The Systemic Risk of Private Funds after the Dodd-Frank Act.pdf",
       "source_sha256": "5f68a401c935527d89658171e9b48a4d186710459aaf2bdbead755507394e8c9",
       "citation": "Wulf A. Kaal, The Systemic Risk of Private Funds after the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2470008"
@@ -39552,6 +40487,12 @@
       "from": "kaal:claim:4900880-017",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:0080439b021928f6fa11a3d7",
+      "from": "kaal:claim:6819121-010",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:0082e313180a041b456de306",
@@ -39692,6 +40633,12 @@
       "to": "kaal:claim:2061166-006:source-passage"
     },
     {
+      "id": "kaal:edge:013014677d59615dd42a0a0f",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:provenance-and-knowledge"
+    },
+    {
       "id": "kaal:edge:01316d686dcac738246e8bc8",
       "from": "kaal:claim:3782201-007",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -39726,6 +40673,12 @@
       "from": "kaal:claim:3782192-030",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:82a122606c71"
+    },
+    {
+      "id": "kaal:edge:015253132745e639bd645c2a",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:015cc7b5f7d2275d9b01c2df",
@@ -40782,6 +41735,12 @@
       "from": "kaal:claim:5095633-038",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:0779a5ef5db0bccd061ffc79",
+      "from": "kaal:claim:6890879-008",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
     },
     {
       "id": "kaal:edge:077f205d243df50de4bb7de8",
@@ -41906,6 +42865,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:0d038edafcb27534082a0dae",
+      "from": "kaal:claim:6886078-012",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-012:source-passage"
+    },
+    {
       "id": "kaal:edge:0d0ee27ecd8ad43756fccf6f",
       "from": "kaal:claim:3406323-007",
       "relation": "AUTHORED_BY",
@@ -42146,6 +43111,12 @@
       "to": "kaal:claim:2273857-005:source-passage"
     },
     {
+      "id": "kaal:edge:0e5343ff0523b08f3035e15b",
+      "from": "kaal:claim:6890879-012",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:0e587efda3825d274545f4af",
       "from": "kaal:claim:5886342-033",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -42170,6 +43141,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:0e7301d4388d4473614bf7da",
+      "from": "kaal:claim:6819121-017",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-017:source-passage"
+    },
+    {
       "id": "kaal:edge:0e8097e7d09262010e8fd1cc",
       "from": "kaal:claim:1998455-033",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -42192,6 +43169,12 @@
       "from": "kaal:claim:3962614-037",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3962614-037:source-passage"
+    },
+    {
+      "id": "kaal:edge:0ead51bfb94dfa8dcddd26e4",
+      "from": "kaal:claim:6819121-010",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:0eae804f745da3ae9e83d0f9",
@@ -42560,6 +43543,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:105aee9f2b3cdc5d9760dda6",
+      "from": "kaal:claim:6886078-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:1060e1017d289f10b950bee1",
       "from": "kaal:claim:2811729-014",
       "relation": "SUPPORTED_BY",
@@ -42914,6 +43903,12 @@
       "to": "kaal:claim:3125827-024:source-passage"
     },
     {
+      "id": "kaal:edge:12388803ba4db9317a9bb731",
+      "from": "kaal:claim:6890879-003",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:123dc6ebb47d3a27b3f86da0",
       "from": "kaal:claim:1558614-023",
       "relation": "AUTHORED_BY",
@@ -43026,6 +44021,12 @@
       "from": "kaal:claim:2337268-008",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:12c927cea5b6d20930bf48de",
+      "from": "kaal:claim:6890879-004",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:12dc3377de91e483e54542d6",
@@ -43356,6 +44357,12 @@
       "from": "kaal:claim:4957318-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:149d34c52459bb34143f2734",
+      "from": "kaal:claim:6886078-011",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-011:source-passage"
     },
     {
       "id": "kaal:edge:149f741e013bb6d37041eba4",
@@ -44108,6 +45115,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:185d722355d78fedcf499d57",
+      "from": "kaal:claim:6890879-005",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-005:source-passage"
+    },
+    {
       "id": "kaal:edge:186037920f6a822436162cd4",
       "from": "kaal:claim:3949098-039",
       "relation": "SUPPORTED_BY",
@@ -44390,6 +45403,12 @@
       "to": "kaal:claim:1765901-017:source-passage"
     },
     {
+      "id": "kaal:edge:19e25c894bbf56761a815cbb",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
       "id": "kaal:edge:19f8e17cdb0c59f24dd7bfb7",
       "from": "kaal:claim:1908473-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -44450,6 +45469,12 @@
       "to": "kaal:agent-capability:agentic-commerce-and-settlement"
     },
     {
+      "id": "kaal:edge:1a3a8c01354248217c26ef88",
+      "from": "kaal:claim:6886078-012",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:1a3ba2fd48146a4c5050914c",
       "from": "kaal:claim:4033886-005",
       "relation": "CLAIMED_IN",
@@ -44474,6 +45499,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:1a5fc956d8f6f2f2a285bed5",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
       "id": "kaal:edge:1a657e6f976e5aa87cd43cef",
       "from": "kaal:claim:4900880-037",
       "relation": "SUPPORTED_BY",
@@ -44484,6 +45515,12 @@
       "from": "kaal:claim:2811729-016",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:1a73352bca29716d7e445119",
+      "from": "kaal:claim:6886078-001",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-001:source-passage"
     },
     {
       "id": "kaal:edge:1a7f5ecab611b1aec2de914f",
@@ -44544,6 +45581,12 @@
       "from": "kaal:claim:3782205-035",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:1accb19d8b8c13ae80421e5f",
+      "from": "kaal:claim:6886078-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:1ad755b0ed1da18c312bd339",
@@ -44792,6 +45835,12 @@
       "to": "kaal:claim:3782214-036:source-passage"
     },
     {
+      "id": "kaal:edge:1c21c93ac63dd0e7d012f340",
+      "from": "kaal:claim:6890879-007",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-007:source-passage"
+    },
+    {
       "id": "kaal:edge:1c23714e399efc2fed052366",
       "from": "kaal:claim:5583610-038",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -44826,6 +45875,12 @@
       "from": "kaal:claim:5245185-034",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:5245185-034:source-passage"
+    },
+    {
+      "id": "kaal:edge:1c6954edf0f9add44db1cdc2",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
       "id": "kaal:edge:1c6a4c0303646df2ba6a5e13",
@@ -44976,6 +46031,12 @@
       "from": "kaal:claim:3606663-033",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:1d4a4da0333ef007d999a5ae",
+      "from": "kaal:claim:6819121-016",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-016:source-passage"
     },
     {
       "id": "kaal:edge:1d4c156a621ff707a7cbf9a9",
@@ -45144,6 +46205,12 @@
       "from": "kaal:claim:7314479-041",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:1e19c03a7c7512636dcb5905",
+      "from": "kaal:claim:6890879-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:1e2df9f093b2ad6e7553f120",
@@ -45324,6 +46391,12 @@
       "from": "kaal:claim:3782193-032",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
+      "id": "kaal:edge:1f0bfe86928b46c588d25160",
+      "from": "kaal:claim:6819121-017",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
       "id": "kaal:edge:1f17b1edd31fbbd970d52b07",
@@ -45792,6 +46865,12 @@
       "from": "kaal:claim:2998033-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:219116317ae2855cd57d3ec8",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
     },
     {
       "id": "kaal:edge:219a80ae2f15c54ec3002f28",
@@ -46278,6 +47357,12 @@
       "from": "kaal:claim:3808852-010",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:23f453f4d6c3c6fbbce0e299",
+      "from": "kaal:claim:6886078-013",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:23fc0b3ce4e78b6d5398290a",
@@ -46988,6 +48073,12 @@
       "to": "kaal:claim:3981021-026:source-passage"
     },
     {
+      "id": "kaal:edge:277c21b52b3fc429f2444e82",
+      "from": "kaal:claim:6819121-010",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-010:source-passage"
+    },
+    {
       "id": "kaal:edge:2794ef1426f048fd2c4042e2",
       "from": "kaal:claim:5541658-011",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -47222,6 +48313,12 @@
       "to": "kaal:paper:0136b419272a"
     },
     {
+      "id": "kaal:edge:289dec35977dc47b7dc47de6",
+      "from": "kaal:claim:6886078-007",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:289f2689fb39456724120654",
       "from": "kaal:claim:3782216-014",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -47322,6 +48419,12 @@
       "from": "kaal:claim:3071378-033",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:5df2a93d8aa2"
+    },
+    {
+      "id": "kaal:edge:29119546d12a902494092f07",
+      "from": "kaal:claim:6890879-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
     },
     {
       "id": "kaal:edge:2914a27b4ea0ebec08c810e5",
@@ -47582,6 +48685,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:2a0ff84ef479fbf1bb28072b",
+      "from": "kaal:claim:6890879-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:2a109220841d70e807c11b26",
       "from": "kaal:claim:3128900-046",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -47708,6 +48817,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:2ac95648193b7bf062efefee",
+      "from": "kaal:claim:6890879-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:2aca25d13ed352f9a8c4dc1f",
       "from": "kaal:claim:3227967-010",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -47742,6 +48857,12 @@
       "from": "kaal:claim:3405660-011",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:2aef625ffb9e98bdb5f6604e",
+      "from": "kaal:claim:6819121-018",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-018:source-passage"
     },
     {
       "id": "kaal:edge:2af41d1d8058d589a4e096b7",
@@ -47842,6 +48963,12 @@
     {
       "id": "kaal:edge:2b671086510973c40f737a66",
       "from": "kaal:claim:7260278-003",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:2b6e948f36bdaf68c0d88a0b",
+      "from": "kaal:claim:6890879-011",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
@@ -47982,6 +49109,12 @@
       "from": "kaal:claim:5541658-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:provenance-and-knowledge"
+    },
+    {
+      "id": "kaal:edge:2bdda60ab57bb8a17433a072",
+      "from": "kaal:claim:6890879-012",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-012:source-passage"
     },
     {
       "id": "kaal:edge:2be632530983dac980a042cc",
@@ -48494,6 +49627,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:2eea68a0d4a1b4ac3ad1da04",
+      "from": "kaal:claim:6819121-008",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:2ef62f3cfc915d6b0db16888",
       "from": "kaal:claim:2317580-039",
       "relation": "SUPPORTED_BY",
@@ -48504,6 +49643,12 @@
       "from": "kaal:claim:2939127-030",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:2f1c9760821101b4cdcd9bd7",
+      "from": "kaal:claim:6819121-012",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-012:source-passage"
     },
     {
       "id": "kaal:edge:2f29ca339c97ed7032aaee52",
@@ -48540,6 +49685,18 @@
       "from": "kaal:claim:2389416-014",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:2f5b3bd27e25d7a3366eead3",
+      "from": "kaal:claim:6819121-019",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:2f63f8a9e02ba5380c7362a1",
+      "from": "kaal:claim:6886078-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:2f658a598a28556b2c8874f2",
@@ -48594,6 +49751,12 @@
       "from": "kaal:claim:3396542-035",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:2fca141078d1d457f8eb0057",
+      "from": "kaal:claim:6819121-013",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:2fccd7b8204ce669a67f4f6c",
@@ -48816,6 +49979,12 @@
       "from": "kaal:claim:5541658-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:30fc66904d73d0054a405b63",
+      "from": "kaal:claim:6890879-002",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:30fe279530f1ddac7fe18a93",
@@ -49142,6 +50311,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:327c14ab4143fd38852d1db1",
+      "from": "kaal:claim:6819121-018",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:327f26c8db9d8855757324f7",
       "from": "kaal:claim:5254152-039",
       "relation": "AUTHORED_BY",
@@ -49388,6 +50563,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:339ac73849c551da5ad8127a",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:agentic-commerce-and-settlement"
+    },
+    {
       "id": "kaal:edge:33a9542e005aadefe7b48b6e",
       "from": "kaal:claim:3396522-027",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -49476,6 +50657,12 @@
       "from": "kaal:claim:5245185-002",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:3429ad3df49c3921faa0bef8",
+      "from": "kaal:claim:6890879-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:342fd8ead138553856306117",
@@ -49718,6 +50905,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:3501c0c17d9d080876725e51",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
       "id": "kaal:edge:3501e6228165a68c26cec4fc",
       "from": "kaal:claim:6244278-035",
       "relation": "CLAIMED_IN",
@@ -49796,6 +50989,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:358802fbc3862672f4d14b5d",
+      "from": "kaal:claim:6886078-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:3588989f3c8e546bfb9d9bc3",
       "from": "kaal:claim:2389416-015",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -49834,6 +51033,12 @@
     {
       "id": "kaal:edge:359cbdaab4b7e671959e7bcf",
       "from": "kaal:claim:3396542-005",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:35b6bce21b87b51c98493553",
+      "from": "kaal:claim:6890879-009",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
@@ -49980,6 +51185,12 @@
       "from": "kaal:claim:3782193-032",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:agentic-commerce-and-settlement"
+    },
+    {
+      "id": "kaal:edge:3633ec85a41ab0a77359ad61",
+      "from": "kaal:claim:6819121-017",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:36394dcdb3ef25a7fac7b99c",
@@ -50328,6 +51539,12 @@
       "from": "kaal:claim:2714974-020",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
+      "id": "kaal:edge:37e216a9173af18b9706be46",
+      "from": "kaal:claim:6819121-008",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-008:source-passage"
     },
     {
       "id": "kaal:edge:37eaddd247e06941057767eb",
@@ -51998,6 +53215,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:4000141b6122f94bc1092e3a",
+      "from": "kaal:claim:6886078-007",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:4013fa048c9921708cee3dab",
       "from": "kaal:claim:5583610-036",
       "relation": "SUPPORTED_BY",
@@ -52388,6 +53611,12 @@
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
+      "id": "kaal:edge:41d23537c2bf94276fbeaac0",
+      "from": "kaal:claim:6819121-013",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-013:source-passage"
+    },
+    {
       "id": "kaal:edge:41e3efde6f4f8abf87352039",
       "from": "kaal:claim:3373393-036",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -52478,6 +53707,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:424d379f2e6e9973d6ddef28",
+      "from": "kaal:claim:6890879-003",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:425049e21189336c28d9500c",
       "from": "kaal:claim:2998033-034",
       "relation": "CLAIMED_IN",
@@ -52532,6 +53767,12 @@
       "to": "kaal:paper:2033fccc767e"
     },
     {
+      "id": "kaal:edge:4286e45377f61b9368b1cbbe",
+      "from": "kaal:claim:6886078-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:429189b87d71996d90175ea7",
       "from": "kaal:claim:2834531-025",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -52544,10 +53785,22 @@
       "to": "kaal:claim:3782201-027:source-passage"
     },
     {
+      "id": "kaal:edge:4299840a5d4adb0bfdf9f76f",
+      "from": "kaal:claim:6886078-005",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:42a345de01ee43378ad2f567",
       "from": "kaal:claim:6244278-027",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:6244278-027:source-passage"
+    },
+    {
+      "id": "kaal:edge:42af9331f9bbedd8fd8434f1",
+      "from": "kaal:claim:6886078-007",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-007:source-passage"
     },
     {
       "id": "kaal:edge:42b22fc195bf0d2d10fff9a7",
@@ -52814,6 +54067,12 @@
       "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
+      "id": "kaal:edge:44650845fb34147df1938fc4",
+      "from": "kaal:claim:6819121-019",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:4465a5d008c8a3cf288aef6f",
       "from": "kaal:claim:4941807-021",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -52926,6 +54185,12 @@
       "from": "kaal:claim:3652481-036",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:44de17a7797cc31e516bd731",
+      "from": "kaal:claim:6886078-001",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
       "id": "kaal:edge:44defcd43172f293211cdfb0",
@@ -53276,6 +54541,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:46b10c039df130b358c61c20",
+      "from": "kaal:claim:6890879-004",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:46b2c9f6bb044e84175ae5d9",
       "from": "kaal:claim:4529715-039",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -53304,6 +54575,12 @@
       "from": "kaal:claim:5254152-039",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:46cb494cad7a5e62dc126e0f",
+      "from": "kaal:claim:6890879-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:46d270d80df604bac9871def",
@@ -53460,6 +54737,12 @@
       "from": "kaal:claim:3949098-040",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:47c4cf34625e1a62f11dfd7a",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:47c5fa8bdf8ba14ea5eaa254",
@@ -53720,6 +55003,12 @@
       "to": "kaal:claim:2337268-043:source-passage"
     },
     {
+      "id": "kaal:edge:48ded477d3cad3490f7f654e",
+      "from": "kaal:claim:6890879-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:490364c76a7b903e524eb8da",
       "from": "kaal:claim:5095633-022",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -53814,6 +55103,12 @@
       "from": "kaal:claim:5887242-035",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:5887242-035:source-passage"
+    },
+    {
+      "id": "kaal:edge:49780a1aa62d685ef06d73b2",
+      "from": "kaal:claim:6890879-011",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-011:source-passage"
     },
     {
       "id": "kaal:edge:497b428f9371c2be57e3f6c7",
@@ -54596,6 +55891,18 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:4d8bba68d3cc02ded76322e5",
+      "from": "kaal:claim:6890879-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:4d9febc3668f1229c05d6fd5",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:4da8879cd2071d247667d36f",
       "from": "kaal:claim:3606663-033",
       "relation": "CLAIMED_IN",
@@ -54782,6 +56089,12 @@
       "to": "kaal:agent-capability:agentic-commerce-and-settlement"
     },
     {
+      "id": "kaal:edge:4e6a87d377fc653662ddea3e",
+      "from": "kaal:claim:6890879-005",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:4e6c8860269eccddf25f5f71",
       "from": "kaal:claim:3125822-037",
       "relation": "CLAIMED_IN",
@@ -54926,6 +56239,12 @@
       "to": "kaal:claim:3962614-038:source-passage"
     },
     {
+      "id": "kaal:edge:4f502e6ed33b15ff0617aba9",
+      "from": "kaal:claim:6886078-001",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:4f5a01ebe2fe3ac7e7066f26",
       "from": "kaal:claim:3782216-015",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -55032,6 +56351,12 @@
       "from": "kaal:claim:3411110-039",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:3c97a74f6667"
+    },
+    {
+      "id": "kaal:edge:4fcc6f3ae17bb2ecc16a0cc2",
+      "from": "kaal:claim:6886078-006",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:4fd05d8e0952ce332e85e089",
@@ -55280,6 +56605,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:50fe4daa69713e9d1f15a248",
+      "from": "kaal:claim:6890879-011",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:50ffd7e5b509c1b3d45fa69f",
       "from": "kaal:claim:3709041-028",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -55310,6 +56641,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:5165647cd4f5d9dd8353f869",
+      "from": "kaal:claim:6819121-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:5171bb5b1eb47f1219a93ae2",
       "from": "kaal:claim:3249860-040",
       "relation": "AUTHORED_BY",
@@ -55332,6 +56669,12 @@
       "from": "kaal:claim:7261481-006",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:b2974ed6aa12"
+    },
+    {
+      "id": "kaal:edge:518a5d2766c2808fc890efc3",
+      "from": "kaal:claim:6819121-016",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:518dc9a049b2545c432f457e",
@@ -55550,6 +56893,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:52bdf8ef5517a2f23ad3f4e0",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
       "id": "kaal:edge:52c4e2071c58bfc4e6d2ac6c",
       "from": "kaal:claim:1806252-015",
       "relation": "CLAIMED_IN",
@@ -55700,6 +57049,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:53647f585bc0ce2c5c9d7507",
+      "from": "kaal:claim:6819121-017",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:5364b24b9f8819ed41f271e6",
       "from": "kaal:claim:kaal-2014-dynamicregulationviagove-021",
       "relation": "SUPPORTED_BY",
@@ -55812,6 +57167,12 @@
       "from": "kaal:claim:2811718-035",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:2811718-035:source-passage"
+    },
+    {
+      "id": "kaal:edge:53edb1b721f14b1f6574a1a0",
+      "from": "kaal:claim:6819121-008",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:53f07d93c95ed3907b80789e",
@@ -56402,6 +57763,12 @@
       "to": "kaal:claim:3117224-031:source-passage"
     },
     {
+      "id": "kaal:edge:560ab0f5adfd80be220c540f",
+      "from": "kaal:claim:6886078-011",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:560e2d9558af61b3d5846cec",
       "from": "kaal:claim:1908473-031",
       "relation": "AUTHORED_BY",
@@ -56642,6 +58009,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:57422822ac1094731fc4d4af",
+      "from": "kaal:claim:6886078-014",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:575198baa15ed658dc3c38d6",
       "from": "kaal:claim:3125822-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -56694,6 +58067,12 @@
       "from": "kaal:claim:6421319-001",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:6421319-001:source-passage"
+    },
+    {
+      "id": "kaal:edge:57896809b69df15927861931",
+      "from": "kaal:claim:6819121-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:578a37ce3bc5017897644002",
@@ -56794,6 +58173,12 @@
     {
       "id": "kaal:edge:580d74b271fa2c29026ebf86",
       "from": "kaal:claim:4015908-014",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:5812562fa43954d90ad860f1",
+      "from": "kaal:claim:6886078-015",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
@@ -57020,6 +58405,12 @@
       "to": "kaal:claim:1428387-032:source-passage"
     },
     {
+      "id": "kaal:edge:598d91aa082648cb0c3ac2e9",
+      "from": "kaal:claim:6886078-015",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:learning-and-feedback"
+    },
+    {
       "id": "kaal:edge:5995dcc02494ae3238aec739",
       "from": "kaal:claim:3962614-038",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -57084,6 +58475,12 @@
       "from": "kaal:claim:2389423-013",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:59d6b0b607d20bd1a2e7a5b7",
+      "from": "kaal:claim:6890879-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:59eda5d10da83b5533a78251",
@@ -57278,6 +58675,12 @@
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
+      "id": "kaal:edge:5b3d048885dc33ffa3753ac4",
+      "from": "kaal:claim:6886078-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:5b4c248a567c5c41d2d75dc8",
       "from": "kaal:claim:2748096-035",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -57344,6 +58747,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:5b9458b069ceadcb3d7f549b",
+      "from": "kaal:claim:6886078-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:5b960440b1233784eda9ca69",
       "from": "kaal:claim:1558614-015",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -57396,6 +58805,12 @@
       "from": "kaal:claim:3125822-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:5bc9c3c3e68c841185d4a1ee",
+      "from": "kaal:claim:6890879-004",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
     },
     {
       "id": "kaal:edge:5bceb87bf01f56c498ee06e6",
@@ -57630,6 +59045,12 @@
       "from": "kaal:claim:6244278-025",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:dc94180d51a5"
+    },
+    {
+      "id": "kaal:edge:5cedf676a966e94fd8ecb583",
+      "from": "kaal:claim:6886078-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:provenance-and-knowledge"
     },
     {
       "id": "kaal:edge:5cee50dfc879a35c43c0ca59",
@@ -58208,6 +59629,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:5f98e3d1ae540a3393269dfd",
+      "from": "kaal:claim:6886078-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:5fa0c32575f280347d635ec5",
       "from": "kaal:claim:3936876-035",
       "relation": "CLAIMED_IN",
@@ -58242,6 +59669,12 @@
       "from": "kaal:claim:2808132-006",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:d6770104da37"
+    },
+    {
+      "id": "kaal:edge:5fca5915a40429fff8f573bb",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:5fd88adb31de4aca607b678f",
@@ -58338,6 +59771,12 @@
       "from": "kaal:claim:5541658-012",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:6028ca652588a2ba04e31512",
+      "from": "kaal:claim:6890879-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:602fd0842e6f4bc9fee3e7e6",
@@ -58652,6 +60091,12 @@
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
+      "id": "kaal:edge:620bb39e71049b38f70824ae",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:620d7619fc0c93ab71994b8d",
       "from": "kaal:claim:3808867-016",
       "relation": "CLAIMED_IN",
@@ -58752,6 +60197,12 @@
       "from": "kaal:claim:3799320-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:6274f12c0dba645e27d77c44",
+      "from": "kaal:claim:6890879-004",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:627f1a4f1458422d951576df",
@@ -59000,10 +60451,22 @@
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
+      "id": "kaal:edge:63e287a4c157757faab61608",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:63ead4bdaed381562bb6d632",
       "from": "kaal:claim:2273857-053",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:63eb59cfa72878701519a8b8",
+      "from": "kaal:claim:6819121-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:63ec6a9d53ba2d249b31806f",
@@ -59378,6 +60841,12 @@
       "to": "kaal:paper:e55a3be24d91"
     },
     {
+      "id": "kaal:edge:658a35eb636afb3b2022e24c",
+      "from": "kaal:claim:6886078-014",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:658b0b11c59c37467b6c1a13",
       "from": "kaal:claim:7314479-040",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -59594,10 +61063,22 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:669a7d3149efc891f59ff621",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
       "id": "kaal:edge:669be6a03272a924394e0dff",
       "from": "kaal:claim:3002908-031",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:669d40c9185142e357e28f8d",
+      "from": "kaal:claim:6890879-002",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:66a2d490fe9c87b87d2429b0",
@@ -60194,6 +61675,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:6a5e931076778478236e60bd",
+      "from": "kaal:claim:6890879-009",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:6a5e96cb53aa13c43098ccb3",
       "from": "kaal:claim:2992962-019",
       "relation": "AUTHORED_BY",
@@ -60300,6 +61787,12 @@
       "from": "kaal:claim:3782214-040",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:6af8ecac5656335d6b58b4b6",
+      "from": "kaal:claim:6886078-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
     },
     {
       "id": "kaal:edge:6b01835c19abebeac2d212fe",
@@ -60698,6 +62191,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:6cc643348d74f6964131675f",
+      "from": "kaal:claim:6890879-006",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:6ccc72703a0ee4913dae7c7a",
       "from": "kaal:claim:3405401-016",
       "relation": "SUPPORTED_BY",
@@ -61082,6 +62581,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:6f17066e1a6d237baef4f5fe",
+      "from": "kaal:claim:6886078-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:6f17ae5596d229964c4fb9ee",
       "from": "kaal:claim:4855607-032",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -61100,10 +62605,34 @@
       "to": "kaal:claim:4021599-017:source-passage"
     },
     {
+      "id": "kaal:edge:6f47e51b680b0979ef0bcb70",
+      "from": "kaal:claim:6890879-007",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
+      "id": "kaal:edge:6f4de99085a909ae2d071dee",
+      "from": "kaal:claim:6890879-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:6f54b3e6366e252b2c80f121",
+      "from": "kaal:claim:6886078-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:6f66c0c3eb1ab940800b1da4",
       "from": "kaal:claim:2389416-031",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:2389416-031:source-passage"
+    },
+    {
+      "id": "kaal:edge:6f77b8a877760fbe01f39863",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:6f824e20743d78bfe8c17018",
@@ -61146,6 +62675,12 @@
       "from": "kaal:claim:3396542-033",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3396542-033:source-passage"
+    },
+    {
+      "id": "kaal:edge:6fae0d91dd7fbcc6a59adcac",
+      "from": "kaal:claim:6819121-020",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:6fb583b20dd88bb971d184d9",
@@ -61598,6 +63133,12 @@
       "to": "kaal:paper:6963df831130"
     },
     {
+      "id": "kaal:edge:71a1f70c5c11d807ba47fc7b",
+      "from": "kaal:claim:6886078-009",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-009:source-passage"
+    },
+    {
       "id": "kaal:edge:71a5d553cd9b2d311c583f18",
       "from": "kaal:claim:3017612-033",
       "relation": "AUTHORED_BY",
@@ -61668,6 +63209,12 @@
       "from": "kaal:claim:3396542-006",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:71ddb3fb514a0d93c3ca380a",
+      "from": "kaal:claim:6890879-009",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-009:source-passage"
     },
     {
       "id": "kaal:edge:71ea81a74af60ac65b7300ba",
@@ -61866,6 +63413,12 @@
       "from": "kaal:claim:2447306-004",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:729ebc11bb41e6000f5cf50e",
+      "from": "kaal:claim:6886078-015",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:72aa86295a8a8b910a6934a8",
@@ -62084,6 +63637,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:73b5a3254e360eb71bc3c423",
+      "from": "kaal:claim:6819121-010",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:73b8da8059194e3dc81357f6",
       "from": "kaal:claim:2732915-020",
       "relation": "AUTHORED_BY",
@@ -62232,6 +63791,12 @@
       "from": "kaal:claim:7261481-028",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:7483bbe6b7488cb6e2acc9c9",
+      "from": "kaal:claim:6886078-015",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:748d4c85da53dcfaaf73b136",
@@ -62432,6 +63997,12 @@
       "to": "kaal:paper:2113e75d4244"
     },
     {
+      "id": "kaal:edge:75b89d662687489a801e243a",
+      "from": "kaal:claim:6890879-005",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:75bd5266b16c1d75603d285f",
       "from": "kaal:claim:6269518-011",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -62544,6 +64115,12 @@
       "from": "kaal:claim:3936876-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:763a3525111f336cc829aa9e",
+      "from": "kaal:claim:6890879-002",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:764015da8eb91bb9641efddf",
@@ -62796,6 +64373,12 @@
       "from": "kaal:claim:2811718-017",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:77936bc1638505e104aff219",
+      "from": "kaal:claim:6819121-010",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:77b5cd02c30786d0051c4ebe",
@@ -63212,6 +64795,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:799e907f3417856e5b6e0581",
+      "from": "kaal:claim:6886078-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:799ff8de391cc6e6786cb77e",
       "from": "kaal:claim:2959730-031",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -63450,6 +65039,12 @@
       "from": "kaal:claim:3799320-033",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:7aaf148b99915c02bc780d74",
+      "from": "kaal:claim:6819121-019",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:7ab0fc16ade925bf049f8efc",
@@ -63768,6 +65363,12 @@
       "from": "kaal:claim:3782214-030",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:7c1ea7ed66d71d94d867fc8e",
+      "from": "kaal:claim:6886078-005",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-005:source-passage"
     },
     {
       "id": "kaal:edge:7c22f04aefbf62a11c278df4",
@@ -64274,6 +65875,12 @@
       "to": "kaal:claim:5886442-021:source-passage"
     },
     {
+      "id": "kaal:edge:7ef528f84bde6c1b69a4820d",
+      "from": "kaal:claim:6819121-016",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:7effbd59571de8cf51254895",
       "from": "kaal:claim:5454054-002",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -64662,6 +66269,12 @@
       "from": "kaal:claim:3125827-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:8145ae4fa04b1e819e6f24a0",
+      "from": "kaal:claim:6819121-020",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:81475b55d2a3c3fcac94a24b",
@@ -65642,10 +67255,22 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:86d7ab3c0c2b1e014c05a266",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:86d7f93ac01bf189e7218196",
       "from": "kaal:claim:4685567-004",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
+      "id": "kaal:edge:86f5209ed70a0ef575adcc42",
+      "from": "kaal:claim:6819121-016",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:8702dd3477159cc68dd474e5",
@@ -65700,6 +67325,12 @@
       "from": "kaal:claim:2998033-034",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:2998033-034:source-passage"
+    },
+    {
+      "id": "kaal:edge:875a08d00aa2ea15633542bf",
+      "from": "kaal:claim:6819121-012",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:875bd6e8825ae79a5056d731",
@@ -65972,6 +67603,12 @@
       "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
+      "id": "kaal:edge:88bd73f8cf1b8210a47d318a",
+      "from": "kaal:claim:6819121-020",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:88c0fffe86dc848a46b80f90",
       "from": "kaal:claim:3405401-028",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -66132,6 +67769,12 @@
       "from": "kaal:claim:5454054-033",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:896c11c71d99b22018bb949c",
+      "from": "kaal:claim:6886078-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:896e2c53a1e1fd1a34f755a0",
@@ -66320,6 +67963,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:8a4362eff9dd6defa912329e",
+      "from": "kaal:claim:6819121-012",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:8a4814cd6fa4fdaa7c92b70d",
       "from": "kaal:claim:4900880-037",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -66494,6 +68143,12 @@
       "to": "kaal:paper:8caf55569acd"
     },
     {
+      "id": "kaal:edge:8b24f124fd2054d3d17c183f",
+      "from": "kaal:claim:6890879-006",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:8b27d935100e550299c8f9da",
       "from": "kaal:claim:4529715-039",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -66620,6 +68275,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:8bc859119449ea22ce6edb3b",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:8bd00f0934e4ba7ac2e41b78",
       "from": "kaal:claim:3782214-030",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -66646,6 +68307,12 @@
     {
       "id": "kaal:edge:8be620b021a6a8ce2ef39ece",
       "from": "kaal:claim:2834531-002",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:8be7e182510bf37d5fdf0908",
+      "from": "kaal:claim:6819121-023",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
@@ -66764,6 +68431,12 @@
       "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
+      "id": "kaal:edge:8c972f0a13c159857939b789",
+      "from": "kaal:claim:6819121-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:8c9b42a0654f6a8640914947",
       "from": "kaal:claim:2389423-008",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -66786,6 +68459,12 @@
       "from": "kaal:claim:1558614-025",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:8cb6a50e50035abf0c65ca52",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:8cb6a864edf0962d46cd30a7",
@@ -67562,6 +69241,12 @@
       "to": "kaal:agent-capability:provenance-and-knowledge"
     },
     {
+      "id": "kaal:edge:9063e57a6308450b90df543a",
+      "from": "kaal:claim:6890879-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:906787ac6c8c7f680f08e610",
       "from": "kaal:claim:3405401-014",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -67844,6 +69529,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:9283a8ee4d8f3d9a65e9b65c",
+      "from": "kaal:claim:6819121-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
       "id": "kaal:edge:928628b08b55ec56aa06356a",
       "from": "kaal:claim:3227967-030",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -68076,6 +69767,12 @@
       "from": "kaal:claim:5254152-036",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:93a85f2b47fdae9a8186506a",
+      "from": "kaal:claim:6890879-002",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-002:source-passage"
     },
     {
       "id": "kaal:edge:93aa27c96814b58961a4edef",
@@ -68366,6 +70063,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:94f523d6c4812987d44eb5c2",
+      "from": "kaal:claim:6819121-020",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
       "id": "kaal:edge:94f66757c849233d1d220d7e",
       "from": "kaal:claim:5245185-003",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -68420,6 +70123,12 @@
       "to": "kaal:agent-capability:provenance-and-knowledge"
     },
     {
+      "id": "kaal:edge:953baee66d1e67e2393a8719",
+      "from": "kaal:claim:6886078-001",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:953c6f88154a30d67ac1a976",
       "from": "kaal:claim:3782201-002",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -68466,6 +70175,12 @@
       "from": "kaal:claim:3782198-014",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3782198-014:source-passage"
+    },
+    {
+      "id": "kaal:edge:958288c3f193afc00c1b74c8",
+      "from": "kaal:claim:6886078-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
     },
     {
       "id": "kaal:edge:9584e55f02831a3b31c3ce06",
@@ -69620,6 +71335,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:9c0007659b9aaf6f169e6431",
+      "from": "kaal:claim:6886078-006",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-006:source-passage"
+    },
+    {
       "id": "kaal:edge:9c061fe9c30f39d22219bee0",
       "from": "kaal:claim:2831040-031",
       "relation": "AUTHORED_BY",
@@ -70106,6 +71827,12 @@
       "to": "kaal:agent-capability:learning-and-feedback"
     },
     {
+      "id": "kaal:edge:9e380c46c754fa2b88023359",
+      "from": "kaal:claim:6819121-019",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-019:source-passage"
+    },
+    {
       "id": "kaal:edge:9e38f2aff8e8ab84a26d81b3",
       "from": "kaal:claim:5886342-002",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -70472,6 +72199,12 @@
       "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
+      "id": "kaal:edge:9f91bc0af4201fed8db0b847",
+      "from": "kaal:claim:6886078-013",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:9f92901045f7027f2c1ff7e0",
       "from": "kaal:claim:2748096-029",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -70482,6 +72215,12 @@
       "from": "kaal:claim:3782198-037",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3782198-037:source-passage"
+    },
+    {
+      "id": "kaal:edge:9f94bc8fa728b5ab24dd5a70",
+      "from": "kaal:claim:6890879-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:9f97f137d5b9dd4d3d9726e2",
@@ -70742,6 +72481,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:a0c786c79a67864c11f68023",
+      "from": "kaal:claim:6886078-012",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:a0cd6880cb16469fab5ac5aa",
       "from": "kaal:claim:2337268-004",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -70980,6 +72725,12 @@
       "from": "kaal:claim:3249860-017",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:a24956239f175e189a0e6ffa",
+      "from": "kaal:claim:6890879-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
       "id": "kaal:edge:a254c6b9a02fa30b0753553d",
@@ -71720,6 +73471,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:a5f1b003fb62ae8203063af4",
+      "from": "kaal:claim:6890879-008",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:a5f26dad16ed45a3cf826b88",
       "from": "kaal:claim:4529715-028",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -71858,6 +73615,12 @@
       "to": "kaal:paper:8caf55569acd"
     },
     {
+      "id": "kaal:edge:a6ca8232c435b4f09d44a49e",
+      "from": "kaal:claim:6819121-010",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:provenance-and-knowledge"
+    },
+    {
       "id": "kaal:edge:a6cae075426fc96f8270b15a",
       "from": "kaal:claim:2939127-023",
       "relation": "CLAIMED_IN",
@@ -71960,6 +73723,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:a72fff3ca4b9330e33f00c24",
+      "from": "kaal:claim:6819121-023",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-023:source-passage"
+    },
+    {
       "id": "kaal:edge:a7352ef36d6c8958c981639b",
       "from": "kaal:claim:1765901-003",
       "relation": "AUTHORED_BY",
@@ -71982,6 +73751,12 @@
       "from": "kaal:claim:3396542-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
+      "id": "kaal:edge:a73d2455d75efc6ea45db82c",
+      "from": "kaal:claim:6890879-006",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-006:source-passage"
     },
     {
       "id": "kaal:edge:a73df092afc3b99bd38294d2",
@@ -72524,6 +74299,12 @@
       "to": "kaal:claim:3249860-006:source-passage"
     },
     {
+      "id": "kaal:edge:aa13eb1ee605f162a671d3c9",
+      "from": "kaal:claim:6890879-002",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:aa1dd8545dd65269e370d93d",
       "from": "kaal:claim:4734750-040",
       "relation": "SUPPORTED_BY",
@@ -72574,6 +74355,12 @@
     {
       "id": "kaal:edge:aa4fdf0e8ee6fad673bf7bd7",
       "from": "kaal:claim:2389423-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:aa5031215cf880716478ae76",
+      "from": "kaal:claim:6886078-011",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
@@ -72998,6 +74785,12 @@
       "to": "kaal:claim:6192998-001:source-passage"
     },
     {
+      "id": "kaal:edge:ac7216dd7c8e60a064848f53",
+      "from": "kaal:claim:6886078-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:ac7e3afee60cbda30ac3408a",
       "from": "kaal:claim:2061166-021",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -73118,6 +74911,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:ad0d4facdb19bb42f16b3b2c",
+      "from": "kaal:claim:6886078-014",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-014:source-passage"
+    },
+    {
       "id": "kaal:edge:ad0d851f5a4b05b4879ec73f",
       "from": "kaal:claim:2629451-003",
       "relation": "SUPPORTED_BY",
@@ -73174,6 +74973,12 @@
     {
       "id": "kaal:edge:ad58d9587915dd7db4b661a2",
       "from": "kaal:claim:5887242-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:ad619b3deadff22ef7bcf0b8",
+      "from": "kaal:claim:6890879-003",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
@@ -73814,6 +75619,18 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:b07c9dad3d3c8b97cb346297",
+      "from": "kaal:claim:6886078-015",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:b0812e6c32dfb9af4a57638b",
+      "from": "kaal:claim:6890879-004",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:b0846e7093c0b9d135260483",
       "from": "kaal:claim:3402701-040",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -73836,6 +75653,12 @@
       "from": "kaal:claim:1558614-020",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:b09dbfab5494793fb089bd51",
+      "from": "kaal:claim:6886078-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:b0a8e321eebd92b9c6619149",
@@ -74006,6 +75829,12 @@
       "to": "kaal:claim:4855607-001:source-passage"
     },
     {
+      "id": "kaal:edge:b152f434445072f13c83d911",
+      "from": "kaal:claim:6890879-002",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:b1548de49b49dffd0c28e59f",
       "from": "kaal:claim:2739479-014",
       "relation": "AUTHORED_BY",
@@ -74166,6 +75995,12 @@
       "from": "kaal:claim:2922176-024",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
+      "id": "kaal:edge:b22dc54f3a705d6fdaaf7c89",
+      "from": "kaal:claim:6819121-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:agentic-commerce-and-settlement"
     },
     {
       "id": "kaal:edge:b22df021d077ebc31b5e9f25",
@@ -74360,6 +76195,12 @@
       "to": "kaal:claim:1558614-013:source-passage"
     },
     {
+      "id": "kaal:edge:b2f9fb86a525238c837f218c",
+      "from": "kaal:claim:6890879-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:b2fa1964f349205aae72c8a4",
       "from": "kaal:claim:3931933-022",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -74400,6 +76241,12 @@
       "from": "kaal:claim:7314479-043",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:647c18dd0885"
+    },
+    {
+      "id": "kaal:edge:b30fb4818ac82ff11cc81ef3",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:b31455f542ed8f0e6ab75bd3",
@@ -74556,6 +76403,12 @@
       "from": "kaal:claim:5225296-027",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:b3a7a174e80068ed671ab9fd",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
       "id": "kaal:edge:b3ad0609c0a393d6bcc0f1df",
@@ -74960,6 +76813,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:b5c7ae1ea52101d179abbe2b",
+      "from": "kaal:claim:6886078-001",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
       "id": "kaal:edge:b5cbe389a43ca8a33037d465",
       "from": "kaal:claim:4855607-021",
       "relation": "SUPPORTED_BY",
@@ -75242,6 +77101,12 @@
       "to": "kaal:agent-capability:agentic-commerce-and-settlement"
     },
     {
+      "id": "kaal:edge:b77f8a0d564f1ea3ce54bfcf",
+      "from": "kaal:claim:6890879-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:b78906eff9e49e1e2e8b3fd7",
       "from": "kaal:claim:3606663-035",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -75326,6 +77191,12 @@
       "to": "kaal:paper:350ca2eb3957"
     },
     {
+      "id": "kaal:edge:b8007f8fba0ae735b1721b0a",
+      "from": "kaal:claim:6886078-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
       "id": "kaal:edge:b801ec4121eb866df9357447",
       "from": "kaal:claim:5454054-027",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -75384,6 +77255,12 @@
       "from": "kaal:claim:6421319-025",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:6421319-025:source-passage"
+    },
+    {
+      "id": "kaal:edge:b8480843cf9fb568928aa95c",
+      "from": "kaal:claim:6890879-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:b84f9e87425c171ec9b6e35a",
@@ -75608,6 +77485,12 @@
       "to": "kaal:claim:3808852-019:source-passage"
     },
     {
+      "id": "kaal:edge:b929cdc2c2a90d9c3b91482a",
+      "from": "kaal:claim:6886078-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:b930f247e0c8af1c2f1ae889",
       "from": "kaal:claim:4900880-017",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -75714,6 +77597,12 @@
       "from": "kaal:claim:3799320-031",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:b99c7f331e3bff5efa59a705",
+      "from": "kaal:claim:6819121-013",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
     },
     {
       "id": "kaal:edge:b9abd078e1b539cced758c57",
@@ -76170,6 +78059,12 @@
       "from": "kaal:claim:2061166-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:bbf978b8caab602d1b3bd603",
+      "from": "kaal:claim:6890879-007",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:bc071aff097ae49de9162a6a",
@@ -77042,6 +78937,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:c0d787652bd5f41e586497fe",
+      "from": "kaal:claim:6890879-003",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:c0e42af63e6cc96a68356472",
       "from": "kaal:claim:4941807-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -77132,6 +79033,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:c131077ed87c3cca50112934",
+      "from": "kaal:claim:6890879-003",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:c131642d99b4d041f06ee846",
       "from": "kaal:claim:3808873-034",
       "relation": "CLAIMED_IN",
@@ -77140,6 +79047,12 @@
     {
       "id": "kaal:edge:c15b162c8f2550b63efc5e08",
       "from": "kaal:claim:6244278-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:c15bc1c66d1815c943595b10",
+      "from": "kaal:claim:6890879-007",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
     },
@@ -77252,10 +79165,22 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:c1f3670b753371cb9d646e0b",
+      "from": "kaal:claim:6890879-003",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-003:source-passage"
+    },
+    {
       "id": "kaal:edge:c1f37cdbf1514921063bccf6",
       "from": "kaal:claim:5095633-031",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:learning-and-feedback"
+    },
+    {
+      "id": "kaal:edge:c206c3337bd0d798840410a7",
+      "from": "kaal:claim:6819121-018",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
       "id": "kaal:edge:c206df669a2f9e8353d9786b",
@@ -77600,6 +79525,12 @@
       "to": "kaal:claim:2831040-025:source-passage"
     },
     {
+      "id": "kaal:edge:c3c00358329db933ffa50919",
+      "from": "kaal:claim:6886078-009",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:c3c61098bd0283aba997da3b",
       "from": "kaal:claim:5254152-016",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -77608,6 +79539,12 @@
     {
       "id": "kaal:edge:c3cd36e699c5ea0cf1293eb7",
       "from": "kaal:claim:4855607-029",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:c3daed0a199534f4de1f6509",
+      "from": "kaal:claim:6819121-016",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
     },
@@ -77666,10 +79603,28 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:c415895e6a447a8b357503ab",
+      "from": "kaal:claim:6819121-010",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:c416369d70e71977acb1c57b",
+      "from": "kaal:claim:6886078-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:c4176f693b3cc6a2c18983c3",
       "from": "kaal:claim:3406323-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
+      "id": "kaal:edge:c4183b63d054b4c4bfb64283",
+      "from": "kaal:claim:6886078-001",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:c41876877d5aac8e485fa49c",
@@ -77774,6 +79729,18 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:c4a1ccb7ce06c4790e418ddd",
+      "from": "kaal:claim:6819121-019",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:c4b21dfa91999f88bb5fc1b2",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:provenance-and-knowledge"
+    },
+    {
       "id": "kaal:edge:c4b97dcd6b22915de4e53bfd",
       "from": "kaal:claim:3782192-037",
       "relation": "CLAIMED_IN",
@@ -77802,6 +79769,12 @@
       "from": "kaal:claim:3962614-023",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3962614-023:source-passage"
+    },
+    {
+      "id": "kaal:edge:c4cd3bc35351729ca34f0492",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:c4ef1c3c43989c5205d57326",
@@ -77916,6 +79889,12 @@
       "from": "kaal:claim:4941807-008",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
+      "id": "kaal:edge:c579d3d2f8e9a2cd421d5f00",
+      "from": "kaal:claim:6886078-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:c58d14f32e5a1413f19250dd",
@@ -78096,6 +80075,12 @@
       "from": "kaal:claim:3128900-017",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:c6530fb351e9747ed76dd4d4",
+      "from": "kaal:claim:6886078-009",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
     },
     {
       "id": "kaal:edge:c6551e7f2972eba24335c91d",
@@ -78420,6 +80405,12 @@
       "from": "kaal:claim:2732915-008",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:c7c682d678340cac8e943630",
+      "from": "kaal:claim:6890879-003",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:c7c7117b55966809179adc94",
@@ -79118,6 +81109,12 @@
       "to": "kaal:agent-capability:safety-and-accountability"
     },
     {
+      "id": "kaal:edge:cb56ad27ac43373991970336",
+      "from": "kaal:claim:6890879-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:cb5a1fbd9a029d8767a4e45c",
       "from": "kaal:claim:3227967-010",
       "relation": "SUPPORTED_BY",
@@ -79418,6 +81415,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:cd1813651f56e2aec3c6c087",
+      "from": "kaal:claim:6819121-018",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:cd1e746c992994cddc432d05",
       "from": "kaal:claim:3411110-020",
       "relation": "CLAIMED_IN",
@@ -79434,6 +81437,12 @@
       "from": "kaal:claim:6607458-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
+      "id": "kaal:edge:cd36dd4cd2748d33f4a11e4f",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:cd45fe81f3de580ab9238843",
@@ -79550,6 +81559,18 @@
       "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
+      "id": "kaal:edge:cdad8b2f4789528594c0ebb5",
+      "from": "kaal:claim:6886078-015",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-015:source-passage"
+    },
+    {
+      "id": "kaal:edge:cdb021f9e0963c9950adb0ec",
+      "from": "kaal:claim:6886078-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:cdb33fe30f9d239aaec5905c",
       "from": "kaal:claim:3995709-030",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -79572,6 +81593,12 @@
       "from": "kaal:claim:3396522-029",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:cdd535e3f8e9b7633e030970",
+      "from": "kaal:claim:6886078-013",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6886078-013:source-passage"
     },
     {
       "id": "kaal:edge:cdd9f28c66df4aff82cab925",
@@ -79614,6 +81641,12 @@
       "from": "kaal:claim:3411897-008",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:ce1621c8435f4935a9f303ad",
+      "from": "kaal:claim:6886078-011",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:ce180932142b7835d03afc38",
@@ -79958,6 +81991,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:cff4f5d88adcd9a1109d55fb",
+      "from": "kaal:claim:6819121-016",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:cff6b0b50f866988a561d45e",
       "from": "kaal:claim:3782216-016",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -80136,6 +82175,12 @@
       "from": "kaal:claim:3071378-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:d10709161afa12ae86039a0d",
+      "from": "kaal:claim:6890879-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:d10bca32b9a8c656dd54f9d7",
@@ -80444,6 +82489,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:d29c3786779067c26d6bd01b",
+      "from": "kaal:claim:6819121-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:d29eb03032ea25a63257defd",
       "from": "kaal:claim:3782201-007",
       "relation": "CLAIMED_IN",
@@ -80466,6 +82517,12 @@
       "from": "kaal:claim:2922176-026",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:d2e0bfbdc1e530a8efb19925",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:d2e44b5e50289ecb16ca14d9",
@@ -80876,6 +82933,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:d4bdc2c133cd1de2de021e7d",
+      "from": "kaal:claim:6819121-019",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:d4c86205c18375056b118da9",
       "from": "kaal:claim:2834531-008",
       "relation": "AUTHORED_BY",
@@ -80984,6 +83047,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:d546450e257e75a078b4f7fd",
+      "from": "kaal:claim:6890879-011",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:d54da2b82ff7d7c795f09283",
       "from": "kaal:claim:2061166-029",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -81024,6 +83093,12 @@
       "from": "kaal:claim:3396542-036",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:d5a49d68624ceae103af22ac",
+      "from": "kaal:claim:6886078-001",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:d5b860748153208063a0f68c",
@@ -81572,10 +83647,22 @@
       "to": "kaal:claim:3405660-007:source-passage"
     },
     {
+      "id": "kaal:edge:d87f0427f8ca9b9a0ed5c82e",
+      "from": "kaal:claim:6819121-018",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:d881fe8749c40eabdfd22dc9",
       "from": "kaal:claim:6607458-012",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:d88caa1aa911f740caf33c71",
+      "from": "kaal:claim:6890879-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
       "id": "kaal:edge:d88f15f313a3b7c8c584b0b3",
@@ -82022,6 +84109,12 @@
       "to": "kaal:paper:e95036f04e90"
     },
     {
+      "id": "kaal:edge:dac903e66ee1ea34b9f00b56",
+      "from": "kaal:claim:6886078-001",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
+    },
+    {
       "id": "kaal:edge:dacf6134b79dd065867c5659",
       "from": "kaal:claim:3071378-040",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -82086,6 +84179,12 @@
       "from": "kaal:claim:3949098-022",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
+      "id": "kaal:edge:db17cd10b94fe270efb8204e",
+      "from": "kaal:claim:6886078-005",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
       "id": "kaal:edge:db1d64b440f7f7e658b48265",
@@ -82256,6 +84355,12 @@
       "to": "kaal:claim:2348463-017:source-passage"
     },
     {
+      "id": "kaal:edge:dbbbda42f356bac118ba152c",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
       "id": "kaal:edge:dbc3f81033ef6557b1f79774",
       "from": "kaal:claim:2061166-010",
       "relation": "AUTHORED_BY",
@@ -82344,6 +84449,12 @@
       "from": "kaal:claim:5225296-028",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:dc3d843c0360e98d1593c385",
+      "from": "kaal:claim:6890879-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
       "id": "kaal:edge:dc3fe8474a099e42a49ca743",
@@ -82844,6 +84955,12 @@
       "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
+      "id": "kaal:edge:df02e446c20e4b5601b1c71d",
+      "from": "kaal:claim:6890879-007",
+      "relation": "AUTHORED_BY",
+      "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
       "id": "kaal:edge:df1c83677ae2c05c2c444ede",
       "from": "kaal:claim:5887242-020",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -82914,6 +85031,12 @@
       "from": "kaal:claim:2732915-018",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
+      "id": "kaal:edge:df616addff92ea279d027e8d",
+      "from": "kaal:claim:6819121-010",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
     },
     {
       "id": "kaal:edge:df644e5def3c8977220862ca",
@@ -83366,6 +85489,12 @@
       "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
+      "id": "kaal:edge:e1a013e742639f9ba9f5b122",
+      "from": "kaal:claim:6819121-020",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6819121-020:source-passage"
+    },
+    {
       "id": "kaal:edge:e1a0d6582480da4c4bc0528e",
       "from": "kaal:claim:4033886-014",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -83430,6 +85559,18 @@
       "from": "kaal:claim:5454054-006",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:55b8a33538b1"
+    },
+    {
+      "id": "kaal:edge:e200b5f7fceed32da320b70c",
+      "from": "kaal:claim:6819121-023",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
+    },
+    {
+      "id": "kaal:edge:e21105ad99d6092b443ac778",
+      "from": "kaal:claim:6819121-012",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:e21212904876e374e7a477de",
@@ -83580,6 +85721,12 @@
       "from": "kaal:claim:3782193-018",
       "relation": "AUTHORED_BY",
       "to": "https://orcid.org/0009-0008-7840-1847"
+    },
+    {
+      "id": "kaal:edge:e2f05b3a469b16a31796d319",
+      "from": "kaal:claim:6819121-013",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:e2f7239b4bf639e3110ea4b2",
@@ -84656,6 +86803,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:e85a1149cc035ad4a60a92e1",
+      "from": "kaal:claim:6890879-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
       "id": "kaal:edge:e85f83bef2d574f5faf0b1cc",
       "from": "kaal:claim:2998097-004",
       "relation": "CLAIMED_IN",
@@ -84738,6 +86891,12 @@
       "from": "kaal:claim:2267560-032",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:2119194f55b6"
+    },
+    {
+      "id": "kaal:edge:e8d43cc6b50cbf7f47d71aa0",
+      "from": "kaal:claim:6819121-008",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:trust-and-verification"
     },
     {
       "id": "kaal:edge:e8e4ebc64349f127abf08245",
@@ -84974,6 +87133,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:ea24d0b2e6d52dc601587525",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
       "id": "kaal:edge:ea3377f8c442821faaf58ae2",
       "from": "kaal:claim:2348463-022",
       "relation": "CLAIMED_IN",
@@ -85190,6 +87355,12 @@
       "to": "kaal:claim:4900880-023:source-passage"
     },
     {
+      "id": "kaal:edge:eb40f3dbb0c5aca2e294c97b",
+      "from": "kaal:claim:6819121-017",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:eb4188d719365bc88ba6e42b",
       "from": "kaal:claim:2831040-026",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -85380,6 +87551,12 @@
       "from": "kaal:claim:4855607-037",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:c42c66b4e407"
+    },
+    {
+      "id": "kaal:edge:ec5232ac3044829775e3b2b8",
+      "from": "kaal:claim:6886078-015",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
     },
     {
       "id": "kaal:edge:ec5cb27bf1f3fa15acbde471",
@@ -85788,6 +87965,12 @@
       "from": "kaal:claim:4855607-011",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:c42c66b4e407"
+    },
+    {
+      "id": "kaal:edge:ee1e48a98aba9a5d0c7f1f3a",
+      "from": "kaal:claim:6819121-017",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:ee2440b3e3a1f848d942d405",
@@ -86214,6 +88397,12 @@
       "from": "kaal:claim:3405660-035",
       "relation": "CLAIMED_IN",
       "to": "kaal:paper:cacb6ae9fa42"
+    },
+    {
+      "id": "kaal:edge:f04563b57f5014b554fa444a",
+      "from": "kaal:claim:6886078-006",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:ae5513427968"
     },
     {
       "id": "kaal:edge:f04d1feebdf75dc80b0ea6c3",
@@ -86810,6 +88999,12 @@
       "to": "kaal:paper:3aaceac02ce3"
     },
     {
+      "id": "kaal:edge:f3037cb940d50430855d5215",
+      "from": "kaal:claim:6890879-012",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
+    },
+    {
       "id": "kaal:edge:f312cf8a91b126001464d7ae",
       "from": "kaal:claim:7261018-023",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -86894,6 +89089,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:f36b3367246d771d9be325e0",
+      "from": "kaal:claim:6819121-023",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:f379d8a6bc5aad7d90b1b314",
       "from": "kaal:claim:3117224-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -86954,6 +89155,12 @@
       "to": "kaal:claim:6192998-032:source-passage"
     },
     {
+      "id": "kaal:edge:f3d9a5f1b0f4175b48cff9e9",
+      "from": "kaal:claim:6819121-018",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:f3dbefd66345708a427a4cd1",
       "from": "kaal:claim:3782216-001",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -87000,6 +89207,12 @@
       "from": "kaal:claim:3227933-013",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:trust-and-verification"
+    },
+    {
+      "id": "kaal:edge:f3f74e04cade0e00b5cbaf01",
+      "from": "kaal:claim:6890879-008",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-008:source-passage"
     },
     {
       "id": "kaal:edge:f3f89f1fe8967405a928a92b",
@@ -87248,6 +89461,12 @@
       "to": "kaal:agent-capability:coordination-and-incentives"
     },
     {
+      "id": "kaal:edge:f546e00256a22413d8d388e0",
+      "from": "kaal:claim:6886078-006",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:reputation-and-identity"
+    },
+    {
       "id": "kaal:edge:f547d0a1f80a4ba2f5c69b0b",
       "from": "kaal:claim:2029983-012",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -87452,6 +89671,12 @@
       "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
+      "id": "kaal:edge:f62ab5a45a2bb62026d5545c",
+      "from": "kaal:claim:6819121-017",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:f62fa1c040f699f08a87bdc4",
       "from": "kaal:claim:2097160-006",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -87474,6 +89699,12 @@
       "from": "kaal:claim:3936876-030",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:f6464c1ef7ef287326ee3ab9",
+      "from": "kaal:claim:6886078-014",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
     },
     {
       "id": "kaal:edge:f64820a0998fb051a1ebe324",
@@ -87596,6 +89827,12 @@
       "to": "kaal:agent-capability:trust-and-verification"
     },
     {
+      "id": "kaal:edge:f6c745089cd6b9185548525e",
+      "from": "kaal:claim:6890879-004",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:f6d448a8604468561da845da",
       "from": "kaal:claim:3652481-037",
       "relation": "SUPPORTED_BY",
@@ -87666,6 +89903,12 @@
       "from": "kaal:claim:3808852-017",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:provenance-and-knowledge"
+    },
+    {
+      "id": "kaal:edge:f723b3f99ca37aba1da17751",
+      "from": "kaal:claim:6819121-018",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:decentralized-infrastructure"
     },
     {
       "id": "kaal:edge:f728bd19986532b38d393dba",
@@ -87788,6 +90031,12 @@
       "to": "https://orcid.org/0009-0008-7840-1847"
     },
     {
+      "id": "kaal:edge:f7da420d7be9a7e99ed1b48c",
+      "from": "kaal:claim:6890879-009",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:coordination-and-incentives"
+    },
+    {
       "id": "kaal:edge:f7e00004c980eb15c5147456",
       "from": "kaal:claim:3652481-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
@@ -87864,6 +90113,12 @@
       "from": "kaal:claim:3782220-019",
       "relation": "SUPPORTED_BY",
       "to": "kaal:claim:3782220-019:source-passage"
+    },
+    {
+      "id": "kaal:edge:f85d22b4b127465112b61486",
+      "from": "kaal:claim:6886078-005",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
       "id": "kaal:edge:f85eb3ca3e0786ad663d3d38",
@@ -88214,6 +90469,12 @@
       "to": "kaal:agent-capability:reputation-and-identity"
     },
     {
+      "id": "kaal:edge:fa2cac254deb3e3ab1639abf",
+      "from": "kaal:claim:6819121-020",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:fa3ef4868fb5424d64e778d4",
       "from": "kaal:claim:3782214-027",
       "relation": "CLAIMED_IN",
@@ -88248,6 +90509,12 @@
       "from": "kaal:claim:6421319-019",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:safety-and-accountability"
+    },
+    {
+      "id": "kaal:edge:fa797fcc4bbd25df1de2e996",
+      "from": "kaal:claim:6890879-011",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:be86ac40c342"
     },
     {
       "id": "kaal:edge:fa7ec3316c7e0eb59eaf5d58",
@@ -88364,6 +90631,12 @@
       "to": "kaal:agent-capability:legal-and-institutional-governance"
     },
     {
+      "id": "kaal:edge:fafa1856034497ecf746ea34",
+      "from": "kaal:claim:6819121-017",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
       "id": "kaal:edge:fafba7cf7c998e5b0d98e25c",
       "from": "kaal:claim:2337268-012",
       "relation": "SUPPORTED_BY",
@@ -88454,6 +90727,12 @@
       "to": "kaal:claim:1664809-021:source-passage"
     },
     {
+      "id": "kaal:edge:fb9c84c732267a51fac50e07",
+      "from": "kaal:claim:6819121-016",
+      "relation": "APPLIES_TO_AGENT_CAPABILITY",
+      "to": "kaal:agent-capability:legal-and-institutional-governance"
+    },
+    {
       "id": "kaal:edge:fb9cf93ad5f36d0d73fd6184",
       "from": "kaal:claim:2150377-034",
       "relation": "AUTHORED_BY",
@@ -88482,6 +90761,12 @@
       "from": "kaal:claim:2992962-005",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:governance-and-adjudication"
+    },
+    {
+      "id": "kaal:edge:fbb4b9d7574d2bc1b8760a55",
+      "from": "kaal:claim:6890879-004",
+      "relation": "SUPPORTED_BY",
+      "to": "kaal:claim:6890879-004:source-passage"
     },
     {
       "id": "kaal:edge:fbbf8a2e85c78951a05dabab",
@@ -89328,6 +91613,12 @@
       "from": "kaal:claim:6269518-003",
       "relation": "APPLIES_TO_AGENT_CAPABILITY",
       "to": "kaal:agent-capability:decentralized-infrastructure"
+    },
+    {
+      "id": "kaal:edge:ffdadf85a2f79a22d50782b7",
+      "from": "kaal:claim:6819121-019",
+      "relation": "CLAIMED_IN",
+      "to": "kaal:paper:a8215c285cc2"
     },
     {
       "id": "kaal:edge:ffddd64fe6a61185a22a4350",
