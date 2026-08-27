@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-033",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-033",
+   "text": "Tool approval is not agent authorization. Dietz and coauthors show why the distinction becomes consequential when one principal invokes another. In Quire, Android applications can communicate despite having different permission sets. A privileged application may then exercise authority for an unprivileged caller. The system addresses that confused deputy problem by preserving the complete call chain and evaluating the requested action against every principal in it. The effective authority is therefore the intersection of permissions across the chain, not the permission of the final tool alone.\n\nThis evidence qualifies Kaal's claim about tool composition in a sovereign agent runtime. The source does not inspect Mosaic Companion, Vault boxes, installed tools, or commit 2d920ce. It cannot establish that every tool was available to every agent or that the named approval interface concealed their combined outbound surface. Quire studies communication among smartphone applications, not language model agents. Its contribution is narrower. It demonstrates that a locally valid permission check can fail at the institutional level when the system omits the principal that initiated the composed action.\n\nPer-agent tool access should therefore be an execution constraint, not a descriptive setting. Each invocation should carry the initiating agent, every intervening principal, the selected tool, and the requested resource. Authorization should fail when any principal lacks the required permission. A tool that intentionally acts with its own greater authority should state that transition explicitly and obtain a distinct grant. The user also needs a composed view before approval: the complete tool set available to the agent, the union of reachable domains and resources, and the authority changes created by delegation. Tool-by-tool approval can remain useful. It cannot define bounded consent unless the runtime also evaluates and discloses what those tools become when composed.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/usenixsecurity11/quire-lightweight-provenance-smart-phone-operating-systems"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-033"
+   },
+   "sha256": "9fc386fa8360b228cbbae00ebe42860cc113eae36dbadb1f5f579029ba59d412",
+   "evidenceLevel": "peer-reviewed USENIX Security systems paper with complete official proceedings full text and implemented Android prototype",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-032",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-032",
@@ -166835,6 +166855,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/usenixsecurity11/quire-lightweight-provenance-smart-phone-operating-systems",
+   "@type": "CreativeWork",
+   "name": "Quire: Lightweight Provenance for Smart Phone Operating Systems",
+   "url": "https://www.usenix.org/conference/usenixsecurity11/quire-lightweight-provenance-smart-phone-operating-systems"
+  },
+  {
    "@id": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan",
    "@type": "CreativeWork",
    "name": "Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions",
@@ -212037,6 +212063,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-033",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-033",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-032",
