@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-002",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-002",
+   "text": "Custody is not an execution history. Kifor and coauthors study agent-mediated healthcare systems in which data, procedures, and logs are divided among heterogeneous autonomous information systems. They show that provenance-aware instrumentation can record events, dependencies, and human decisions across those systems. The resulting process documentation represents the distributed execution, connects its causal steps, and permits later reconstruction and audit. This independently extends Kaal's failure claim: custody identifies where the bytes reside, but a separate recording architecture must preserve what the composed services did.\n\nThe evidence is a 2006 peer-reviewed healthcare systems article. Its agents coordinate medical services, not sovereign local LLM runtimes. The paper does not test whether any current local runtime preserves a sufficient history or whether provenance alone creates institutional accountability. One design requirement follows. Composed services need execution-time provenance before custody can answer what happened.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1109/MIS.2006.119"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-002"
+   },
+   "sha256": "e5f9aec08e0b06630dea2402fd2578f7d44b77caf3b7c2b61cc1b1711e14d607",
+   "evidenceLevel": "peer-reviewed journal article with complete public accepted manuscript and Crossref identity",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.96,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-001",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-001",
@@ -166255,6 +166275,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1109/MIS.2006.119",
+   "@type": "CreativeWork",
+   "name": "Provenance in Agent-Mediated Healthcare Systems",
+   "url": "https://doi.org/10.1109/MIS.2006.119"
+  },
+  {
    "@id": "https://arxiv.org/abs/2602.14951v1",
    "@type": "CreativeWork",
    "name": "Sovereign Agents: Towards Infrastructural Sovereignty and Diffused Accountability in Decentralized AI",
@@ -211283,6 +211309,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-002",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-002",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-001",
