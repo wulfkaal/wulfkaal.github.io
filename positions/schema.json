@@ -63,7 +63,11 @@
   },
   "candidateId": {
    "type": "string",
-   "pattern": "^kaal:response-(candidate|draft):"
+   "pattern": "^kaal:(response-(candidate|draft):|candidate:)"
+  },
+  "publicIdentitySha256": {
+   "type": "string",
+   "pattern": "^[a-f0-9]{64}$"
   },
   "evidenceLevel": {
    "type": "string"
