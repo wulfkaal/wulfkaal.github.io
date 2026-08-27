@@ -7,7 +7,7 @@ import html
 import json
 import re
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 BASE = "https://wulfkaal.github.io"
 ORCID = "https://orcid.org/0009-0008-7840-1847"
@@ -55,6 +55,17 @@ def load_batches(src_dir):
             continue
         with path.open(encoding="utf-8") as handle:
             batch = json.load(handle)
+        if batch.get("status") == "standing-preauthorized":
+            authority = batch.get("public_authority") or {}
+            if (
+                batch.get("repository_mode") != "public"
+                or batch.get("private_compilation") is not False
+                or authority.get("lane") != "scholarly-growth"
+                or authority.get("standingPreauthorization") is not True
+                or not re.fullmatch(r"[a-f0-9]{64}", authority.get("batchManifestSha256") or "")
+                or not batch.get("exact_authorization")
+            ):
+                raise RuntimeError(f"Invalid standing-preauthorized source batch: {path.name}")
         batches.append(batch)
     return batches
 
@@ -166,6 +177,22 @@ def json_record(batch, item):
             "sourceProvenance": item["source_provenance"],
             "userAffirmation": item["user_affirmation"],
         })
+        provenance = item.get("source_provenance") or {}
+        normalized_work = provenance.get("normalizedWorkId")
+        source_version = provenance.get("sourceVersion")
+        proposition_hash = provenance.get("sourcePropositionSha256")
+        if normalized_work and source_version and proposition_hash:
+            public_identity = "\x1f".join(
+                (str(normalized_work), str(source_version).lower(), str(proposition_hash))
+            )
+            record["publicIdentitySha256"] = hashlib.sha256(
+                public_identity.encode("utf-8")
+            ).hexdigest()
+        elif batch.get("status") == "standing-preauthorized":
+            raise RuntimeError(
+                "Compound-growth positions require normalizedWorkId, sourceVersion, "
+                "and sourcePropositionSha256"
+            )
     markdown = canonical_markdown(record)
     record["sha256"] = hashlib.sha256(markdown.encode("utf-8")).hexdigest()
     return short_id, record, markdown
@@ -298,7 +325,8 @@ def schema():
                 "enum": ["agreement", "extension", "qualification", "contradiction"]
             },
             "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-            "candidateId": {"type": "string", "pattern": "^kaal:response-(candidate|draft):"},
+            "candidateId": {"type": "string", "pattern": "^kaal:(response-(candidate|draft):|candidate:)"},
+            "publicIdentitySha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
             "evidenceLevel": {"type": "string"},
             "reviewTier": {"type": "string"},
             "mappingConfidence": {
@@ -311,7 +339,38 @@ def schema():
 
 def normalized_url(value):
     parts = urlsplit(value)
-    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip("/"), parts.query, ""))
+    host = parts.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    query = urlencode(sorted(
+        (key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+        and key.lower() not in {"fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source"}
+    ))
+    return urlunsplit(("https", host, parts.path.rstrip("/") or "/", query, ""))
+
+
+def normalized_work_identity(record):
+    provenance = record.get("sourceProvenance") or {}
+    if provenance.get("normalizedWorkId"):
+        return provenance["normalizedWorkId"].lower()
+    identity_keys = provenance.get("identityKeys") or []
+    doi = provenance.get("doi") or next(
+        (value[4:] for value in identity_keys if str(value).lower().startswith("doi:")),
+        None,
+    )
+    if doi:
+        doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", str(doi).strip(), flags=re.I)
+        doi = re.sub(r"^doi:\s*", "", doi, flags=re.I).lower()
+        if re.match(r"^10\.\d{4,9}/", doi):
+            return "doi:" + doi
+    url = normalized_url(record["currentDebate"]["url"])
+    parts = urlsplit(url)
+    if parts.netloc == "arxiv.org":
+        match = re.search(r"/(?:abs|pdf)/([^/?#]+?)(?:\.pdf)?$", parts.path, re.I)
+        if match:
+            return "arxiv:" + re.sub(r"v\d+$", "", match.group(1), flags=re.I).lower()
+    return "url:" + url
 
 
 def build_graph(records):
@@ -401,7 +460,8 @@ def build_public_metrics(records):
         "affirmedResponseClaims": len(records),
         "publishedResponseClaims": public_count,
         "privateCompiledResponseClaims": private_compiled_count,
-        "coveredWorks": len({normalized_url(record["currentDebate"]["url"]) for record in records}),
+        "coveredWorks": len({normalized_work_identity(record) for record in records}),
+        "coveredWorksIdentityRule": "DOI, arXiv work/version family, provider identity, or normalized canonical URL; tracking and mirror variants do not count separately.",
         "mappedScholarlyClaims": len({record["extends"]["identifier"] for record in records}),
         "responseTypes": response_types,
         "evidenceLevels": evidence_levels,
@@ -671,15 +731,28 @@ def main():
             if identifier in withdrawn:
                 continue
             short_id, record, markdown = json_record(batch, item)
-            records.append(record)
-            (out_dir / f"{short_id}.md").write_text(markdown, encoding="utf-8")
-            (out_dir / f"{short_id}.json").write_text(
-                json.dumps(record, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
-            )
-            (out_dir / f"{short_id}.html").write_text(
-                render_html(record) + "\n", encoding="utf-8"
-            )
+            records.append((short_id, record, markdown))
 
+    candidate_ids = [record.get("candidateId") for _, record, _ in records if record.get("candidateId")]
+    if len(candidate_ids) != len(set(candidate_ids)):
+        raise RuntimeError("Duplicate public candidate identity detected")
+    public_identities = [
+        record.get("publicIdentitySha256")
+        for _, record, _ in records if record.get("publicIdentitySha256")
+    ]
+    if len(public_identities) != len(set(public_identities)):
+        raise RuntimeError("Duplicate compound-growth work/version/proposition identity detected")
+
+    for short_id, record, markdown in records:
+        (out_dir / f"{short_id}.md").write_text(markdown, encoding="utf-8")
+        (out_dir / f"{short_id}.json").write_text(
+            json.dumps(record, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+        )
+        (out_dir / f"{short_id}.html").write_text(
+            render_html(record) + "\n", encoding="utf-8"
+        )
+
+    records = [record for _, record, _ in records]
     records.sort(key=lambda rec: rec["identifier"], reverse=True)
     index = {
         "@context": "https://schema.org",

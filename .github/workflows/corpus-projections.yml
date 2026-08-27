@@ -56,10 +56,11 @@ concurrency:
 
 jobs:
   projections:
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
 
@@ -67,7 +68,7 @@ jobs:
         run: python3 tools/make_rank_md.py rank.json > rank.md
 
       # --with-quote is REQUIRED, not optional. Without it this job would strip
-      # the verbatim supporting_quote from all 5,145 entries on the next corpus
+      # the verbatim supporting_quote from the protected baseline on the next corpus
       # change -- a projection job silently undoing a deliberate decision is the
       # exact failure mode this workflow exists to prevent.
       - name: Re-enrich claims/index.json from claims/all.jsonl
@@ -83,7 +84,33 @@ jobs:
       - name: Regenerate public position discovery surfaces
         run: python3 tools/build_positions.py
 
+      - name: Enforce source-only ownership for compound-growth commits
+        if: github.event_name == 'push'
+        shell: bash
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          if [[ "$COMMIT_MESSAGE" != *"[kaal-growth]"* ]]; then
+            exit 0
+          fi
+          python3 - <<'PY'
+          import subprocess, sys
+          changed = subprocess.check_output(
+              ["git", "diff", "--name-only", "HEAD^", "HEAD"], text=True
+          ).splitlines()
+          forbidden = [path for path in changed if not path.startswith("positions-src/")]
+          if forbidden:
+              sys.exit("compound-growth publisher changed CI-owned paths: " + ", ".join(forbidden))
+          if not changed:
+              sys.exit("compound-growth source commit changed no position source records")
+          print(f"source-only ownership verified for {len(changed)} path(s)")
+          PY
+
+      - name: Validate generated position projections before push
+        run: python3 -m unittest tests/test_position_discoverability.py tests/test_position_notifier.py
+
       - name: Commit only if something actually changed
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld; then
             echo "projections already current; nothing to commit"
@@ -92,17 +119,23 @@ jobs:
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld
-          git commit -m "Regenerate projections from the corpus [skip ci]"
+          git commit -m "Regenerate projections from the corpus"
           git push
 
   integrity:
+    needs: projections
+    if: always() && needs.projections.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
 
       - name: Every URL this repo advertises must resolve
+        if: github.event_name != 'push'
         run: |
           python3 - <<'PY'
           import json, re, sys, urllib.request, concurrent.futures as cf
