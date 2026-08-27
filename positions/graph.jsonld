@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-018",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-018",
+   "text": "Threat resistance belongs inside the specification of a reputation system. Hoffman, Zage, and Nita-Rotaru decompose a reputation system into formulation, calculation, and dissemination components, classify attack classes, and use that decomposition to identify the design choices each attack exploits. This method links an attack class to a defense rather than treating a reputation score as self-validating.\n\nTheir survey identifies a specific composite mechanism. The attack is composite. One actor can acquire multiple identities and collude through them even when source data is authenticated. The colluding identities can participate mutually in events that generate real feedback at a rate that improves their scores faster than honest participation. This mechanism closely corresponds to wash interaction because the events are produced to manufacture feedback rather than to evidence independent service quality. Whitewashing permits an attacker to abandon a degraded identity and re-enter with a fresh reputation. Orchestrated attacks combine these strategies and change roles over time.\n\nThe source is a peer-reviewed survey of peer-to-peer reputation systems, and it does not study autonomous agent markets, measure attack prevalence, or test a particular production system. Its taxonomy predates blockchain wash trading terminology and does not analyze reputation transfer between task domains. Reputation is defined for a given domain and purpose, which supports contextual specification but does not establish that a score safe in one context can be carried safely into another. No surveyed system defends against every catalogued attack.\n\nThe design consequence is narrower than a general demand for a secure score. A scoring rule should state the attacker identities it permits, the interactions it treats as independent, the coalitions it assumes, the cost of re-entry, and the contexts across which history may travel. It should map each assumption to a tested defense and identify uncovered attack classes. Authentication alone cannot supply this result because authenticated identities can still collude and create feedback. A system that omits these bounds publishes a number without describing how adversaries may manufacture it.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/1592451.1592452"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-018"
+   },
+   "sha256": "051b1518dc71e42c0a8329aca7ff1e5c29cafd929646dae2966d61ea49a66af7",
+   "evidenceLevel": "peer-reviewed ACM Computing Surveys article with complete author-hosted manuscript and DOI-bound Crossref identity",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.93,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-017",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-017",
@@ -166575,6 +166595,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/1592451.1592452",
+   "@type": "CreativeWork",
+   "name": "A Survey of Attack and Defense Techniques for Reputation Systems",
+   "url": "https://doi.org/10.1145/1592451.1592452"
+  },
+  {
    "@id": "https://www.nber.org/papers/w34161",
    "@type": "CreativeWork",
    "name": "Misinformation and Mistrust: The Equilibrium Effects of Fake Reviews on Amazon.com",
@@ -211699,6 +211725,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-018",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-018",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-017",
