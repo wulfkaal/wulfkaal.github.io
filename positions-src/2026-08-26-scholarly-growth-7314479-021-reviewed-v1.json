@@ -1,0 +1,224 @@
+{
+  "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-021-reviewed-v1",
+  "date": "2026-08-26",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-021.html",
+  "source_snapshot_sha256": "8d1b39eb2e433900ec34983d27da7bbb024e17308fe3596d31b8fd23ad3994a3",
+  "review_ledger_sha256": "edc833199918999fdffe39fb50a4197a5f39f5802f38f6dbbb5d3e1f8d9fdb80",
+  "exact_authorization": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+  "positions": [
+    {
+      "sequence": 21,
+      "response_type": "qualification",
+      "slug": "reputation-privilege-incentive-boundary",
+      "topics": [
+        "institutional-design",
+        "governance-design",
+        "reputation",
+        "authorization",
+        "privilege-escalation",
+        "incentives",
+        "platform-governance",
+        "security-boundary"
+      ],
+      "text": "Mazloomzadeh and his coauthors provide empirical support for the incentive mechanism that arises when reputation controls access. Stack Overflow describes reputation as a measure of community trust. Users earn the score through contributions and peer feedback. The score also determines what a user may do. Higher scores unlock voting and moderation privileges. Reputation therefore operates as more than public recognition. It becomes a credential for platform authority.\n\nThe paper connects this coupling to manipulation. The authors reviewed 1,697 posts from Stack Overflow meta sites and identified voting rings, bounty gaming, revenge voting, and closing rings. Voting rings coordinate accounts to inflate one another's scores. Bounty gaming transfers reputation through awards that do not reflect answer quality. The authors also developed two detection methods. Approximately 60 to 80 percent of the users flagged by those methods later had reputation removed by Stack Overflow for suspicious activity.\n\nThe most direct observation concerns privilege escalation. The study records a highly reputed administrator who used bounties to move another user toward the score required for moderation privileges. The manipulation targeted the performance signal because the signal carried operational power. This evidence supports the proposition that attaching authority to reputation increases the return from manipulating reputation. The source does not establish that reputation alone caused every observed fraud. It also does not measure the marginal cost of manipulation or compare an advisory score with an otherwise identical privilege-bearing score. The evidence is a peer-reviewed empirical study of one online developer community. It relies partly on discussions of reported fraud and on platform responses to algorithmically flagged users. It does not study sovereign local agent runtimes, autonomous execution, financial loss, or legal authority. Its findings cannot establish a universal incentive ratio. They do show a realized pathway from coordinated feedback to inflated reputation and from inflated reputation to moderation power.\n\nThe institutional consequence is narrow. A reputation system should not decide whether an actor may cross a security boundary. If reputation remains visible for coordination or evaluation, authorization should rest on separately issued and revocable credentials. This separation removes privilege escalation from the direct payoff of reputation gaming. It does not eliminate manipulation of the signal, but it prevents a manipulated performance measure from becoming authority merely because its number increased.",
+      "scope_conditions": [
+        "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed ACM journal article with complete public author manuscript and empirical platform study.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The study concerns one online developer community rather than a sovereign local agent runtime or autonomous execution environment.",
+        "Its fraud taxonomy relies partly on public Meta discussions and does not establish a complete incident population.",
+        "The detection algorithms identify suspicious patterns, and later score reductions are a validation proxy rather than an adjudication of every flagged user.",
+        "The paper does not causally compare an advisory reputation score with an otherwise identical privilege-bearing score.",
+        "The study does not measure the marginal cost of manipulation or estimate a benefit-to-cost ratio.",
+        "The platform privileges do not establish financial loss, legal delegation, or production security behavior."
+      ],
+      "current_debate": {
+        "name": "Reputation Gaming in Crowd Technical Knowledge Sharing",
+        "url": "https://doi.org/10.1145/3691627"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-021",
+        "url": "https://wulfkaal.github.io/claims/7314479-021",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7314479",
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-021-reputation-privilege-incentive-boundary-01",
+      "evidence_level": "peer-reviewed ACM journal article with complete public author manuscript and empirical platform study",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.99,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one qualification review",
+      "mapping_why_relevant": "The article directly instantiates the claim's mechanism. Reputation is earned as a performance and peer-feedback signal, the score unlocks operational privileges, and coordinated voting or bounty behavior can inflate the score. The recorded use of bounties to move a user toward moderation privileges provides a one-to-one realized pathway from signal manipulation to privilege escalation. The mapping is a qualification because the study does not measure manipulation cost or causally compare coupled and advisory-only designs.",
+      "source_provenance": {
+        "source": "peer-reviewed ACM Transactions on Software Engineering and Methodology article with complete public author manuscript and DOI-bound Crossref identity",
+        "sourceRecordId": "doi:10.1145/3691627",
+        "doi": "10.1145/3691627",
+        "arxiv": "2111.07101v2",
+        "canonicalUrl": "https://doi.org/10.1145/3691627",
+        "publicFullTextUrl": "https://arxiv.org/pdf/2111.07101",
+        "retrievedAt": "2026-08-27T11:43:58.788Z",
+        "fullTextPdfSha256": "e5968e805c2aaaa5e12b092dad0a0e7a990ead68e761375b13cf30508b896594",
+        "extractedTextSha256": "e2f1430e0a69c45c24b05f3391baf45cdd6ab7b50d526f5223af5b1e4a37802b",
+        "crossrefRecordSha256": "97a22ecec83e63e03b1776ca3677bd4c846c2836c0a4fb62a7ffd813de400fa4",
+        "primaryEvidenceReceiptSha256": "c7538ba8bf8948eee8efcde153a148006431b06d5c10a14f852b6caee9e7c6a5",
+        "sourceProposition": "Mazloomzadeh et al. document that Stack Overflow reputation unlocks platform privileges, that the privilege attachment creates an incentive for fraud, and that coordinated voting and bounty manipulation can inflate scores, including toward moderation privileges.",
+        "sourcePropositionSha256": "5dbebd677dfe1e5d96017cd05685eb079d1781bf50761e4051d578f4f44b8d63",
+        "sourceEvidenceSetSha256": "330fee25f9f3ce9ce13d8fd0fc2ae6a81476a383f7a4f5bcd9ef7499dca4754a",
+        "sourceEvidencePassages": [
+          {
+            "text": "users with high reputation scores can gain more privileges",
+            "locator": {
+              "publication": "ACM Transactions on Software Engineering and Methodology 34(1)",
+              "page": 2,
+              "section": "1 Introduction"
+            },
+            "sha256": "7696359901a12b8b3ef7b57e7b5034d32d1d1de3ea23c8b180232e9757dc4f1a"
+          },
+          {
+            "text": "The danger of employing an incentive system in a crowd-sourced platform comes from the privileges that are associated with reputation and the incentive mechanisms.",
+            "locator": {
+              "publication": "ACM Transactions on Software Engineering and Methodology 34(1)",
+              "page": 2,
+              "section": "1 Introduction"
+            },
+            "sha256": "197e46403fa4ef8c465a286a0e561868d7fdd4d622fdfe30fd92a1b969f3b8ff"
+          },
+          {
+            "text": "Unscrupulous users can team up to manipulate the reputation system, by promoting each others posts to gain high scores in a short time",
+            "locator": {
+              "publication": "ACM Transactions on Software Engineering and Methodology 34(1)",
+              "page": 2,
+              "section": "1 Introduction"
+            },
+            "sha256": "2129ae865c5e933df2d72ff6054b67cb6d39447970a56ebc9ba72b24b9dad2db"
+          },
+          {
+            "text": "We observed that around 60-80% of those users got their reputation scores reduced by Stack Overflow due to suspicious activities.",
+            "locator": {
+              "publication": "ACM Transactions on Software Engineering and Methodology 34(1)",
+              "page": 4,
+              "section": "1 Introduction"
+            },
+            "sha256": "0e4467d3389276f656db61ad08de30e7b19759faf61a38986ec6520411b2e967"
+          },
+          {
+            "text": "This was to assist the lower rep user attain a rep level that would give that user moderation privileges.",
+            "locator": {
+              "publication": "ACM Transactions on Software Engineering and Methodology 34(1)",
+              "page": 36,
+              "section": "5.2 Reputation Gaming and Software Engineering Research"
+            },
+            "sha256": "44a734987acea0c065afce20b646a6575bd5066bea807d60560486c86eb7a4be"
+          }
+        ],
+        "workId": "work:doi:10.1145/3691627",
+        "workAuthors": [
+          "Iren Mazloomzadeh",
+          "Gias Uddin",
+          "Foutse Khomh",
+          "Ashkan Sami"
+        ],
+        "workPublishedAt": "2024-12-28",
+        "identityKeys": [
+          "doi:10.1145/3691627",
+          "arxiv:2111.07101v2",
+          "pdf:e5968e805c2aaaa5e12b092dad0a0e7a990ead68e761375b13cf30508b896594",
+          "proposition:5dbebd677dfe1e5d96017cd05685eb079d1781bf50761e4051d578f4f44b8d63"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-021",
+            "claimUrl": "https://wulfkaal.github.io/claims/7314479-021",
+            "rank": 1,
+            "confidence": 0.99,
+            "method": "independent substantive scholarly-growth one-to-one qualification review",
+            "whyRelevant": "The article directly instantiates the claim's mechanism. Reputation is earned as a performance and peer-feedback signal, the score unlocks operational privileges, and coordinated voting or bounty behavior can inflate the score. The recorded use of bounties to move a user toward moderation privileges provides a one-to-one realized pathway from signal manipulation to privilege escalation. The mapping is a qualification because the study does not measure manipulation cost or causally compare coupled and advisory-only designs.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-27T11:43:58.788Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "kaalReferenceFoundInSource": false,
+          "temporalIndependence": "The article was published in 2024, before Kaal's 2026 paper.",
+          "canonicalPublicStatusVerified": true,
+          "peerReviewedStatusVerified": true,
+          "evidenceClassification": "peer-reviewed empirical software-engineering study with qualitative fraud taxonomy and algorithmic suspicious-user detection",
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "peer feedback produces reputation, reputation unlocks platform privileges, and coordinated votes or bounties can inflate reputation, including toward moderation privileges",
+          "compatibleScope": "reputation-gated authority in an online developer community, limited because the source does not study sovereign runtimes, legal authority, or financial privilege",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "exactSupportingQuotesVerified": true,
+          "nonOverlap": {
+            "candidateIdMatches": false,
+            "canonicalUrlMatches": false,
+            "propositionHashMatches": false,
+            "priorPositionForClaim": false
+          },
+          "limitations": [
+            "The study concerns one online developer community rather than a sovereign local agent runtime or autonomous execution environment.",
+            "Its fraud taxonomy relies partly on public Meta discussions and does not establish a complete incident population.",
+            "The detection algorithms identify suspicious patterns, and later score reductions are a validation proxy rather than an adjudication of every flagged user.",
+            "The paper does not causally compare an advisory reputation score with an otherwise identical privilege-bearing score.",
+            "The study does not measure the marginal cost of manipulation or estimate a benefit-to-cost ratio.",
+            "The platform privileges do not establish financial loss, legal delegation, or production security behavior."
+          ],
+          "rejectionReasonsRecorded": true
+        },
+        "contentMap": {
+          "proposition": "Privilege-bearing reputation increases the return to manipulating a performance signal.",
+          "evidenceLayer": "peer-reviewed ACM journal article with complete public author manuscript and empirical platform study",
+          "strongestLimitation": "The study does not measure manipulation cost or causally isolate the effect of attaching privileges to reputation.",
+          "consequence": "A manipulated performance score can become an authorization credential when privileges are bound to score thresholds.",
+          "requestedAction": "Keep reputation advisory and require separately issued, revocable credentials for crossing security boundaries."
+        },
+        "stylePack": {
+          "profile": "M1 early sole-author baseline v1.2.0",
+          "verifiedProfileWorks": [
+            "1428387",
+            "2150377",
+            "2267560"
+          ],
+          "passageCount": 5,
+          "rhetoricalFunctions": [
+            "empirical evidence followed by limitation",
+            "institutional classification",
+            "conflict and incentive analysis",
+            "sampling limitation",
+            "classification before inference"
+          ],
+          "sameRegisterPassagePackAvailable": true,
+          "limitation": "The short public position permits only bounded stylometric comparison."
+        },
+        "m1Validation": {
+          "status": "M1-PASS-WITH-LIMITS",
+          "deterministicGate": "pass",
+          "hardFailures": 0,
+          "warnings": 0,
+          "words": 375,
+          "reason": "The publication-bound position passed strict and public deterministic controls against a task-local multi-work style pack. Its short length limits stylometric comparison."
+        }
+      },
+      "user_affirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "private-authority-receipts/2026-08-15-public-corpus-reactivation.json",
+    "authoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+    "eventSupersessionReceipt": "private-authority-receipts/2026-08-26-public-event-authority-supersession.json",
+    "eventSupersessionSha256": "7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4",
+    "runId": "kaal-continuous-claim-visibility-loop-20260827T113542Z"
+  }
+}

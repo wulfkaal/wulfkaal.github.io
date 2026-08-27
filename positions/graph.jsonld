@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-021",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-021",
+   "text": "Mazloomzadeh and his coauthors provide empirical support for the incentive mechanism that arises when reputation controls access. Stack Overflow describes reputation as a measure of community trust. Users earn the score through contributions and peer feedback. The score also determines what a user may do. Higher scores unlock voting and moderation privileges. Reputation therefore operates as more than public recognition. It becomes a credential for platform authority.\n\nThe paper connects this coupling to manipulation. The authors reviewed 1,697 posts from Stack Overflow meta sites and identified voting rings, bounty gaming, revenge voting, and closing rings. Voting rings coordinate accounts to inflate one another's scores. Bounty gaming transfers reputation through awards that do not reflect answer quality. The authors also developed two detection methods. Approximately 60 to 80 percent of the users flagged by those methods later had reputation removed by Stack Overflow for suspicious activity.\n\nThe most direct observation concerns privilege escalation. The study records a highly reputed administrator who used bounties to move another user toward the score required for moderation privileges. The manipulation targeted the performance signal because the signal carried operational power. This evidence supports the proposition that attaching authority to reputation increases the return from manipulating reputation. The source does not establish that reputation alone caused every observed fraud. It also does not measure the marginal cost of manipulation or compare an advisory score with an otherwise identical privilege-bearing score. The evidence is a peer-reviewed empirical study of one online developer community. It relies partly on discussions of reported fraud and on platform responses to algorithmically flagged users. It does not study sovereign local agent runtimes, autonomous execution, financial loss, or legal authority. Its findings cannot establish a universal incentive ratio. They do show a realized pathway from coordinated feedback to inflated reputation and from inflated reputation to moderation power.\n\nThe institutional consequence is narrow. A reputation system should not decide whether an actor may cross a security boundary. If reputation remains visible for coordination or evaluation, authorization should rest on separately issued and revocable credentials. This separation removes privilege escalation from the direct payoff of reputation gaming. It does not eliminate manipulation of the signal, but it prevents a manipulated performance measure from becoming authority merely because its number increased.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/3691627"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-021"
+   },
+   "sha256": "60fed3dba61f0e0be4fbf97e93801fc7b62f3cee755f92c64be834b43abe70ba",
+   "evidenceLevel": "peer-reviewed ACM journal article with complete public author manuscript and empirical platform study",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-020",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-020",
@@ -166635,6 +166655,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/3691627",
+   "@type": "CreativeWork",
+   "name": "Reputation Gaming in Crowd Technical Knowledge Sharing",
+   "url": "https://doi.org/10.1145/3691627"
+  },
+  {
    "@id": "https://doi.org/10.1109/TNSM.2021.3077276",
    "@type": "CreativeWork",
    "name": "Trust-Based Blockchain Authorization for IoT",
@@ -211777,6 +211803,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-021",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-021",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-020",
