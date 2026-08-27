@@ -8,6 +8,26 @@
     <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://wulfkaal.github.io/positions/feed.rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Revocation Completion Requires Enforcement Acknowledgements</title>
+      <link>https://wulfkaal.github.io/positions/2026-08-26-023</link>
+      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-023</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Wulf A. Kaal</dc:creator>
+      <category>institutional-design</category>
+      <category>governance-design</category>
+      <category>authorization</category>
+      <category>revocation</category>
+      <category>access-control</category>
+      <category>distributed-systems</category>
+      <category>enforcement-boundary</category>
+      <category>auditability</category>
+      <description>Revocation is complete only when enforcement has changed.
+
+Spencer, Smalley, Loscocco, Hibler, Andersen, and Lepreau developed the Flask security architecture around that distinction. The architecture separates a policy decision from a system-wide policy change. Its synchronization protocol has three steps. The security server notifies every object manager that may hold the affected policy. Each object manager updates its internal state. Each manager then reports that the change is complete.
+
+The final report supplies the operative completion condition. The security server cannot treat the policy change as complete until all affected object managers have reported completion. Sequence numbers bind policy decisions and change requests when their messages interleave. The architecture therefore addresses both propagation and demonstration. A revocation record states that authority was withdr</description>
+    </item>
+    <item>
       <title>Portable Provenance Beyond Runtime Telemetry</title>
       <link>https://wulfkaal.github.io/positions/2026-08-26-022</link>
       <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-022</guid>
@@ -3147,20 +3167,6 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
       <category>scholarly-literature</category>
       <category>crossref</category>
       <description>Token-based Voting Systems states that standard token-vote aggregation can produce oligarchic dominance or voter apathy. This independently corresponds to Kaal&apos;s criticism that one-token-one-vote concentrates power in large holders and produces suboptimal outcomes. The abstract proposition does not quantify either pathology or establish that every token-voting design has it.</description>
-    </item>
-    <item>
-      <title>Streaming Lt P Gt Decentralized Autonomous Organization And Blockchain Based Incentivizati 234B0Eb27B</title>
-      <link>https://wulfkaal.github.io/positions/2026-08-08-196</link>
-      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-08-196</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Wulf A. Kaal</dc:creator>
-      <category>dao</category>
-      <category>decentralization</category>
-      <category>institutional-design</category>
-      <category>historical-response</category>
-      <category>scholarly-literature</category>
-      <category>crossref</category>
-      <description>Decentralized Autonomous Organization and Blockchain-Based Incentivization Framework for Community-Based Facilities Management proposes blockchain voting for transparent collective decisions about shared building upkeep. This operationalizes Kaal&apos;s process-centered DAO definition in a smart-building setting. The abstract reports prototype-oriented evaluation rather than comparative proof of decentralization or governance quality.</description>
     </item>
   </channel>
 </rss>

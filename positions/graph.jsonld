@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-023",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-023",
+   "text": "Revocation is complete only when enforcement has changed.\n\nSpencer, Smalley, Loscocco, Hibler, Andersen, and Lepreau developed the Flask security architecture around that distinction. The architecture separates a policy decision from a system-wide policy change. Its synchronization protocol has three steps. The security server notifies every object manager that may hold the affected policy. Each object manager updates its internal state. Each manager then reports that the change is complete.\n\nThe final report supplies the operative completion condition. The security server cannot treat the policy change as complete until all affected object managers have reported completion. Sequence numbers bind policy decisions and change requests when their messages interleave. The architecture therefore addresses both propagation and demonstration. A revocation record states that authority was withdrawn. The completion reports establish whether the relevant enforcement components changed state under the same sequenced request.\n\nThe mechanism also reaches beyond future access checks. Permissions may migrate into cached decisions, open file descriptions, page tables, active connections, and operations already in progress. Removing a permission from the central policy does not remove those migrated permissions. Flask accordingly requires each affected manager to update its cache and address permissions that have already entered local execution state.\n\nThe evidence remains limited. The article reports a 1999 operating system architecture and prototype, not a sovereign agent runtime. Complete callbacks for migrated permissions were implemented only in the Flask microkernel. The file server did not yet interrupt operations in progress. Atomic policy change across the remaining object managers was unfinished, and coordination among distributed security servers remained future work.\n\nThe source does not prove that every component in a modern agent system will honor withdrawal. It establishes a narrower design criterion. A system should identify every affected enforcement manager, bind each acknowledgement to the same sequenced change, and refuse to declare completion while any required acknowledgement is absent. Without that evidence, withdrawal remains an instruction in transit rather than a completed policy change.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/8th-usenix-security-symposium/flask-security-architecture-system-support-diverse-security"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-023"
+   },
+   "sha256": "cde570feaa1f2761eef83fc2c8a1fa31b9e327333533d7a1a73ac697d8272aff",
+   "evidenceLevel": "peer-reviewed conference paper with complete official proceedings full text and prototype architecture",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-022",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-022",
@@ -166675,6 +166695,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/8th-usenix-security-symposium/flask-security-architecture-system-support-diverse-security",
+   "@type": "CreativeWork",
+   "name": "The Flask Security Architecture: System Support for Diverse Security Policies",
+   "url": "https://www.usenix.org/conference/8th-usenix-security-symposium/flask-security-architecture-system-support-diverse-security"
+  },
+  {
    "@id": "https://doi.org/10.1145/1084805.1084812",
    "@type": "CreativeWork",
    "name": "A survey of data provenance in e-science",
@@ -211829,6 +211855,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-023",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-023",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-022",

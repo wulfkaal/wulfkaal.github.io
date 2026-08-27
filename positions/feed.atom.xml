@@ -9,6 +9,28 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Revocation Completion Requires Enforcement Acknowledgements</title>
+    <id>kaal:position:2026-08-26-023</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-023" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-023.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="institutional-design"/>
+    <category term="governance-design"/>
+    <category term="authorization"/>
+    <category term="revocation"/>
+    <category term="access-control"/>
+    <category term="distributed-systems"/>
+    <category term="enforcement-boundary"/>
+    <category term="auditability"/>
+    <link href="https://www.usenix.org/conference/8th-usenix-security-symposium/flask-security-architecture-system-support-diverse-security" rel="related"/>
+    <summary type="text">Revocation is complete only when enforcement has changed.
+
+Spencer, Smalley, Loscocco, Hibler, Andersen, and Lepreau developed the Flask security architecture around that distinction. The architecture separates a policy decision from a system-wide policy change. Its synchronization protocol has three steps. The security server notifies every object manager that may hold the affected policy. Each object manager updates its internal state. Each manager then reports that the change is complete.
+
+The final report supplies the operative completion condition. The security server cannot treat the policy change as complete until all affected object managers have reported completion. Sequence numbers bind policy decisions and change requests when their messages interleave. The architecture therefore addresses both propagation and demonstration. A revocation record states that authority was withdr</summary>
+  </entry>
+  <entry>
     <title>Portable Provenance Beyond Runtime Telemetry</title>
     <id>kaal:position:2026-08-26-022</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-022" rel="alternate" type="text/html"/>
@@ -3546,21 +3568,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.2139/ssrn.6269359" rel="related"/>
     <summary type="text">Token-based Voting Systems states that standard token-vote aggregation can produce oligarchic dominance or voter apathy. This independently corresponds to Kaal&apos;s criticism that one-token-one-vote concentrates power in large holders and produces suboptimal outcomes. The abstract proposition does not quantify either pathology or establish that every token-voting design has it.</summary>
-  </entry>
-  <entry>
-    <title>Streaming Lt P Gt Decentralized Autonomous Organization And Blockchain Based Incentivizati 234B0Eb27B</title>
-    <id>kaal:position:2026-08-08-196</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-196" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-196.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="dao"/>
-    <category term="decentralization"/>
-    <category term="institutional-design"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.2139/ssrn.6751782" rel="related"/>
-    <summary type="text">Decentralized Autonomous Organization and Blockchain-Based Incentivization Framework for Community-Based Facilities Management proposes blockchain voting for transparent collective decisions about shared building upkeep. This operationalizes Kaal&apos;s process-centered DAO definition in a smart-building setting. The abstract reports prototype-oriented evaluation rather than comparative proof of decentralization or governance quality.</summary>
   </entry>
 </feed>
