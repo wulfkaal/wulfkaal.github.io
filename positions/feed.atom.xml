@@ -9,6 +9,27 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Tamper Evidence Requires Authenticated History Proofs</title>
+    <id>kaal:position:2026-08-26-031</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-031" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-031.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="institutional-design"/>
+    <category term="governance-design"/>
+    <category term="ai-and-agents"/>
+    <category term="audit-logs"/>
+    <category term="tamper-evidence"/>
+    <category term="hash-chaining"/>
+    <category term="authenticated-data-structures"/>
+    <category term="observability"/>
+    <category term="open-source-and-code"/>
+    <link href="https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident" rel="related"/>
+    <summary type="text">Append-only storage and tamper-evident history are different institutional properties. The former constrains the ordinary write path, while the latter permits an auditor to detect whether a past event was removed, rewritten, or presented inconsistently across views. Kaal&apos;s source-bound inspection of Chronicle at commit 2d920ce reports the first property without the second: a process with filesystem access can rewrite or truncate the JSONL history, while each entry lacks a digest, predecessor link, or periodically anchored root.
+
+Crosby and Wallach provide an independent systems result that sharpens this classification. Their 2009 USENIX Security paper models an untrusted logger and defines tamper evidence through two verifiable obligations. An auditor must be able to establish that a recorded event remains present. The auditor must also be able to establish that the current log is consis</summary>
+  </entry>
+  <entry>
     <title>Workflow Correlation Requires An Explicit Method</title>
     <id>kaal:position:2026-08-26-028</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-028" rel="alternate" type="text/html"/>
@@ -3586,20 +3607,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.2139/ssrn.6265083" rel="related"/>
     <summary type="text">Governance Through Voting reports that directors at firms experiencing major environmental and social incidents receive 9.8 percent more negative shareholder votes. This supplies an empirical example of the director-election control available to traditional shareholders in Kaal&apos;s contrast with ICO investors. The abstract does not examine ICOs or establish that dissent alone changes firm conduct.</summary>
-  </entry>
-  <entry>
-    <title>Streaming The Governance Gambit How Stablecoin Voting Rewards Could Reintroduce Interest T 9D0194153C</title>
-    <id>kaal:position:2026-08-08-202</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-202" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-202.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="tokenomics"/>
-    <category term="compliance"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.2139/ssrn.6349800" rel="related"/>
-    <summary type="text">The Governance Gambit states that the GENIUS Act creates a federal prudential framework for dollar-backed payment stablecoins while prohibiting issuers from paying token-holder interest or yield. This qualifies Kaal&apos;s account of the Act as an enabling stablecoin framework by identifying a simultaneous statutory boundary. The proposition does not address merchant-issued structures or whether governance rewards satisfy that boundary.</summary>
   </entry>
 </feed>

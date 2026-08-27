@@ -8,6 +8,25 @@
     <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://wulfkaal.github.io/positions/feed.rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Tamper Evidence Requires Authenticated History Proofs</title>
+      <link>https://wulfkaal.github.io/positions/2026-08-26-031</link>
+      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-031</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Wulf A. Kaal</dc:creator>
+      <category>institutional-design</category>
+      <category>governance-design</category>
+      <category>ai-and-agents</category>
+      <category>audit-logs</category>
+      <category>tamper-evidence</category>
+      <category>hash-chaining</category>
+      <category>authenticated-data-structures</category>
+      <category>observability</category>
+      <category>open-source-and-code</category>
+      <description>Append-only storage and tamper-evident history are different institutional properties. The former constrains the ordinary write path, while the latter permits an auditor to detect whether a past event was removed, rewritten, or presented inconsistently across views. Kaal&apos;s source-bound inspection of Chronicle at commit 2d920ce reports the first property without the second: a process with filesystem access can rewrite or truncate the JSONL history, while each entry lacks a digest, predecessor link, or periodically anchored root.
+
+Crosby and Wallach provide an independent systems result that sharpens this classification. Their 2009 USENIX Security paper models an untrusted logger and defines tamper evidence through two verifiable obligations. An auditor must be able to establish that a recorded event remains present. The auditor must also be able to establish that the current log is consis</description>
+    </item>
+    <item>
       <title>Workflow Correlation Requires An Explicit Method</title>
       <link>https://wulfkaal.github.io/positions/2026-08-26-028</link>
       <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-028</guid>
@@ -3187,19 +3206,6 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
       <category>scholarly-literature</category>
       <category>crossref</category>
       <description>Governance Through Voting reports that directors at firms experiencing major environmental and social incidents receive 9.8 percent more negative shareholder votes. This supplies an empirical example of the director-election control available to traditional shareholders in Kaal&apos;s contrast with ICO investors. The abstract does not examine ICOs or establish that dissent alone changes firm conduct.</description>
-    </item>
-    <item>
-      <title>Streaming The Governance Gambit How Stablecoin Voting Rewards Could Reintroduce Interest T 9D0194153C</title>
-      <link>https://wulfkaal.github.io/positions/2026-08-08-202</link>
-      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-08-202</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Wulf A. Kaal</dc:creator>
-      <category>tokenomics</category>
-      <category>compliance</category>
-      <category>historical-response</category>
-      <category>scholarly-literature</category>
-      <category>crossref</category>
-      <description>The Governance Gambit states that the GENIUS Act creates a federal prudential framework for dollar-backed payment stablecoins while prohibiting issuers from paying token-holder interest or yield. This qualifies Kaal&apos;s account of the Act as an enabling stablecoin framework by identifying a simultaneous statutory boundary. The proposition does not address merchant-issued structures or whether governance rewards satisfy that boundary.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,193 @@
+{
+  "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-031-reviewed-v1",
+  "date": "2026-08-26",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-031.html",
+  "source_snapshot_sha256": "7f3a59a45c95f9804b3e13b2a0147ccfaad488bd2baaefd019db672c695605d7",
+  "review_ledger_sha256": "26032b89878aa611fe9ecc7402710025907ad27d63ebdb722eee206f923b1d75",
+  "exact_authorization": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+  "positions": [
+    {
+      "sequence": 31,
+      "response_type": "qualification",
+      "slug": "tamper-evidence-requires-authenticated-history-proofs",
+      "topics": [
+        "institutional-design",
+        "governance-design",
+        "ai-and-agents",
+        "audit-logs",
+        "tamper-evidence",
+        "hash-chaining",
+        "authenticated-data-structures",
+        "observability",
+        "open-source-and-code"
+      ],
+      "text": "Append-only storage and tamper-evident history are different institutional properties. The former constrains the ordinary write path, while the latter permits an auditor to detect whether a past event was removed, rewritten, or presented inconsistently across views. Kaal's source-bound inspection of Chronicle at commit 2d920ce reports the first property without the second: a process with filesystem access can rewrite or truncate the JSONL history, while each entry lacks a digest, predecessor link, or periodically anchored root.\n\nCrosby and Wallach provide an independent systems result that sharpens this classification. Their 2009 USENIX Security paper models an untrusted logger and defines tamper evidence through two verifiable obligations. An auditor must be able to establish that a recorded event remains present. The auditor must also be able to establish that the current log is consistent with an earlier view. Their construction authenticates successive commitments to the log through a tree-based data structure. The mechanism matters more than the particular structure. A history becomes tamper-evident only when its present state carries authenticated evidence about prior state and an auditor can test that evidence.\n\nThis source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce. It therefore cannot verify the repository finding. It also does not establish that cryptography prevents deletion or makes logged events truthful. A compromised logger can still control future inputs, and deletion may be detectable without being preventable. The paper supports only the mechanism-level qualification: structural append behavior alone does not establish tamper evidence.\n\nThe institutional requirement follows directly. Chronicle should retain its current append interface only as a storage property until it binds each entry or authenticated subtree to prior history, commits roots beyond the rewriting process's unilateral control, and exposes inclusion and consistency verification. Without those controls, an audit record proves what the current file says. It does not prove that the file preserves what the system previously recorded.",
+      "scope_conditions": [
+        "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed USENIX Security systems paper with complete official proceedings full text, formal auditing semantics, authenticated data structure, and prototype evaluation.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce and therefore cannot verify the repository finding.",
+        "The paper models an untrusted logger, clients, and auditors and assumes signed commitments are distributed beyond the logger before later verification.",
+        "The construction detects inconsistent history and missing events but does not make event contents truthful or prevent deletion.",
+        "A root retained only under the rewriting process's unilateral control would not supply the paper's independent cross-view evidence.",
+        "The history tree is one efficient construction and the source does not establish that it is the only defensible tamper-evidence mechanism.",
+        "The paper does not test a sovereign local agent runtime or production Chronicle workload."
+      ],
+      "current_debate": {
+        "name": "Efficient Data Structures for Tamper-Evident Logging",
+        "url": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-031",
+        "url": "https://wulfkaal.github.io/claims/7314479-031",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7314479",
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-031-tamper-evidence-requires-authenticated-history-proofs-01",
+      "evidence_level": "peer-reviewed USENIX Security systems paper with complete official proceedings full text, formal auditing semantics, authenticated data structure, and prototype evaluation",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.99,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one qualification review",
+      "mapping_why_relevant": "The source independently distinguishes an event stream from a tamper-evident log by requiring verifiable inclusion of past events and consistency between present and earlier views. Its authenticated commitments and audit proofs directly qualify Kaal's classification that structural append behavior without per-history authentication, predecessor binding, or externally checkable roots does not establish tamper evidence. The mapping remains bounded because Crosby and Wallach do not inspect Chronicle or the named commit.",
+      "source_provenance": {
+        "source": "2009 peer-reviewed USENIX Security paper with complete official proceedings full text",
+        "sourceRecordId": "usenix:sec09:crosby",
+        "canonicalUrl": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident",
+        "publicFullTextUrl": "https://static.usenix.org/events/sec09/tech/full_papers/crosby.pdf",
+        "retrievedAt": "2026-08-27T16:44:44.802Z",
+        "fullTextPdfSha256": "6628ff8f3931a95f63dac9d4e398f69584e2cb1be516e1a606c610e6af52d50c",
+        "extractedTextSha256": "62263d479adb134a91994e31c01e20a998b2071a7ae649658e3cd1d786efb03e",
+        "officialUsenixRecordSha256": "20d25baa2a0ff66d9f25ad55679751eb389f17f4410b4a5e704b37428b2bafd1",
+        "primaryEvidenceReceiptSha256": "3a7b1214d670a0c8eb3b579b8fd7cd7de80d740a378a0f246252183e5e9c794f",
+        "sourceProposition": "Crosby and Wallach define tamper evidence as an auditing property. An auditor must verify that an event remains present and that the current log is consistent with an earlier view. Their history-tree construction authenticates successive commitments to the log and generates inclusion and incremental consistency proofs.",
+        "sourcePropositionSha256": "550fcfea08e3afe30cd1ffef8154ef31aaf101c295f1eeef899d646e3448a9c8",
+        "sourceEvidenceSetSha256": "814f10b5ed009490a1a7d43586e6fdf8566c32c20a5e0d535c82f262321788c0",
+        "sourceEvidencePassages": [
+          {
+            "text": "The logger must be able to prove that individual logged events are still present",
+            "locator": {
+              "publication": "18th USENIX Security Symposium",
+              "pdfPage": 1,
+              "section": "Abstract"
+            },
+            "sha256": "55f73471fa3ce0541e1cb549388e3c2d2f64914a0631fcf533c59130539219e1"
+          },
+          {
+            "text": "Each commitment snapshots the entire log up to that point.",
+            "locator": {
+              "publication": "18th USENIX Security Symposium",
+              "pdfPage": 2,
+              "section": "1 Introduction"
+            },
+            "sha256": "55bf540de2995f9de2666c4af0d9b22661760cf4b84539ceb8f5853f1aa2b139"
+          }
+        ],
+        "workId": "work:usenix:sec09:crosby",
+        "workAuthors": [
+          "Scott A. Crosby",
+          "Dan S. Wallach"
+        ],
+        "workPublishedAt": "2009",
+        "identityKeys": [
+          "usenix:sec09:crosby",
+          "pdf:6628ff8f3931a95f63dac9d4e398f69584e2cb1be516e1a606c610e6af52d50c",
+          "proposition:550fcfea08e3afe30cd1ffef8154ef31aaf101c295f1eeef899d646e3448a9c8"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-031",
+            "claimUrl": "https://wulfkaal.github.io/claims/7314479-031",
+            "rank": 1,
+            "confidence": 0.99,
+            "method": "independent substantive scholarly-growth one-to-one qualification review",
+            "whyRelevant": "The source independently distinguishes an event stream from a tamper-evident log by requiring verifiable inclusion of past events and consistency between present and earlier views. Its authenticated commitments and audit proofs directly qualify Kaal's classification that structural append behavior without per-history authentication, predecessor binding, or externally checkable roots does not establish tamper evidence. The mapping remains bounded because Crosby and Wallach do not inspect Chronicle or the named commit.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-27T16:44:44.802Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "kaalReferenceFoundInSource": false,
+          "temporalIndependence": "The paper was published in 2009, before Kaal's 2026 paper.",
+          "canonicalPublicStatusVerified": true,
+          "peerReviewedStatusVerified": true,
+          "evidenceClassification": "peer-reviewed systems paper with formal tamper-evident auditing semantics, authenticated history tree, and prototype evaluation",
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "signed commitments authenticate successive log states while membership proofs test event inclusion and incremental proofs test consistency between historical views",
+          "compatibleScope": "tamper-evident logging under an untrusted logger, limited because the source does not inspect Chronicle or a sovereign local agent runtime",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "exactSupportingQuotesVerified": true,
+          "nonOverlap": {
+            "candidateIdMatches": false,
+            "canonicalUrlMatches": false,
+            "propositionHashMatches": false,
+            "priorPositionForClaim": false
+          },
+          "limitations": [
+            "The source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce and therefore cannot verify the repository finding.",
+            "The paper models an untrusted logger, clients, and auditors and assumes signed commitments are distributed beyond the logger before later verification.",
+            "The construction detects inconsistent history and missing events but does not make event contents truthful or prevent deletion.",
+            "A root retained only under the rewriting process's unilateral control would not supply the paper's independent cross-view evidence.",
+            "The history tree is one efficient construction and the source does not establish that it is the only defensible tamper-evidence mechanism.",
+            "The paper does not test a sovereign local agent runtime or production Chronicle workload."
+          ],
+          "rejectionReasonsRecorded": true
+        },
+        "contentMap": {
+          "proposition": "Structural append behavior does not establish tamper evidence without authenticated evidence of event inclusion and consistency across log views.",
+          "evidenceLayer": "peer-reviewed USENIX Security systems paper with complete official proceedings full text, formal auditing semantics, authenticated data structure, and prototype evaluation",
+          "strongestLimitation": "The source does not inspect Chronicle or the named commit.",
+          "consequence": "An ordinary append interface can preserve write order while leaving earlier history rewritable without detection.",
+          "requestedAction": "Bind entries or authenticated subtrees to prior history, externalize signed root commitments, and expose inclusion and consistency verification before classifying Chronicle as tamper-evident."
+        },
+        "stylePack": {
+          "profile": "M1 early sole-author baseline v1.2.0",
+          "verifiedProfileWorks": [
+            "1428387",
+            "2150377",
+            "2267560"
+          ],
+          "passageCount": 5,
+          "rhetoricalFunctions": [
+            "classification",
+            "mechanism",
+            "limitation",
+            "institutional consequence",
+            "closing stake"
+          ],
+          "sameRegisterPassagePackAvailable": true,
+          "limitation": "The short public position permits only bounded stylometric comparison."
+        },
+        "m1Validation": {
+          "status": "M1-PASS-WITH-LIMITS",
+          "deterministicGate": "pass",
+          "hardFailures": 0,
+          "warnings": 0,
+          "words": 309,
+          "reason": "The publication-bound position passed strict and public deterministic controls against a task-local three-work style pack. Its short length limits stylometric comparison."
+        }
+      },
+      "user_affirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "private-authority-receipts/2026-08-15-public-corpus-reactivation.json",
+    "authoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+    "eventSupersessionReceipt": "private-authority-receipts/2026-08-26-public-event-authority-supersession.json",
+    "eventSupersessionSha256": "7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4",
+    "runId": "kaal-continuous-claim-visibility-loop-20260827T163551Z"
+  }
+}

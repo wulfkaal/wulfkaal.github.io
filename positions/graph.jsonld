@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-031",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-031",
+   "text": "Append-only storage and tamper-evident history are different institutional properties. The former constrains the ordinary write path, while the latter permits an auditor to detect whether a past event was removed, rewritten, or presented inconsistently across views. Kaal's source-bound inspection of Chronicle at commit 2d920ce reports the first property without the second: a process with filesystem access can rewrite or truncate the JSONL history, while each entry lacks a digest, predecessor link, or periodically anchored root.\n\nCrosby and Wallach provide an independent systems result that sharpens this classification. Their 2009 USENIX Security paper models an untrusted logger and defines tamper evidence through two verifiable obligations. An auditor must be able to establish that a recorded event remains present. The auditor must also be able to establish that the current log is consistent with an earlier view. Their construction authenticates successive commitments to the log through a tree-based data structure. The mechanism matters more than the particular structure. A history becomes tamper-evident only when its present state carries authenticated evidence about prior state and an auditor can test that evidence.\n\nThis source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce. It therefore cannot verify the repository finding. It also does not establish that cryptography prevents deletion or makes logged events truthful. A compromised logger can still control future inputs, and deletion may be detectable without being preventable. The paper supports only the mechanism-level qualification: structural append behavior alone does not establish tamper evidence.\n\nThe institutional requirement follows directly. Chronicle should retain its current append interface only as a storage property until it binds each entry or authenticated subtree to prior history, commits roots beyond the rewriting process's unilateral control, and exposes inclusion and consistency verification. Without those controls, an audit record proves what the current file says. It does not prove that the file preserves what the system previously recorded.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-031"
+   },
+   "sha256": "289c43cf76b5cd48697e2b830b3bb54bcf44328fa24313ade259a49e8b40e705",
+   "evidenceLevel": "peer-reviewed USENIX Security systems paper with complete official proceedings full text, formal auditing semantics, authenticated data structure, and prototype evaluation",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-028",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-028",
@@ -166795,6 +166815,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident",
+   "@type": "CreativeWork",
+   "name": "Efficient Data Structures for Tamper-Evident Logging",
+   "url": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident"
+  },
+  {
    "@id": "https://www.usenix.org/legacy/event/osdi04/tech/full_papers/barham/barham_html",
    "@type": "CreativeWork",
    "name": "Using Magpie for request extraction and workload modelling",
@@ -211985,6 +212011,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-031",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-031",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-028",
