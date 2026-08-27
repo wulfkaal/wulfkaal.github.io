@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-022",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-022",
+   "text": "Provenance is not established by recording activity during execution.\n\nSimmhan, Plale, and Gannon classify provenance systems by representation, storage, and dissemination. Their classification matters because each function answers a different institutional question. Representation determines what a record says. Storage determines whether the record survives. Dissemination determines whether another system or person can use it.\n\nThe survey treats persistence as a design problem. Provenance may be embedded with the data or stored separately. The authors explain that a system must decide whether provenance is immutable, updated, or versioned. They also identify archival retention as an answer to storage cost. These choices are not equivalent. An execution trace held only by a running service has not resolved any of them. It may describe what the service observed, but its availability still depends on the service and the session that produced it.\n\nPortability and interpretation impose separate conditions. The survey describes derivation graphs, search, retrieval interfaces, and replication at another site as methods for disseminating provenance. It also explains why syntax alone is insufficient. Semantic information, including ontologies that define concepts and relationships, supplies context for interpreting a lineage record. A detailed history permits users to assess whether data is acceptable only when the record preserves enough meaning for that assessment. A transferable file without stable identifiers, defined relations, and contextual terms may be portable as bytes while remaining unusable as evidence.\n\nThe source is a peer-reviewed survey of scientific data systems published in 2005. It does not study autonomous agents, sovereign runtimes, legal admissibility, or adversarial deletion. It reports a taxonomy and surveyed design choices rather than a controlled comparison. The authors also found no metadata standard that worked across disciplines. The evidence therefore does not establish that one format guarantees durable or universally intelligible provenance. The institutional requirement is narrower. Runtime telemetry should be treated as an input to provenance, not as completed provenance. Before the originating session ends, the relevant record should be sealed into a versioned and retrievable artifact. Its identifiers, relations, time references, and governing vocabulary should travel with it. A party that did not observe the execution must be able to recover the record, verify its integrity, and understand the causal account without depending on the original service.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/1084805.1084812"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-022"
+   },
+   "sha256": "489ef10e15b5d6697601d3ac7f28ba38421fd31aebfaa180e3ec1bebb15c55b9",
+   "evidenceLevel": "peer-reviewed survey article with complete publisher full text and provenance-system taxonomy",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.99,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-021",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-021",
@@ -166655,6 +166675,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/1084805.1084812",
+   "@type": "CreativeWork",
+   "name": "A survey of data provenance in e-science",
+   "url": "https://doi.org/10.1145/1084805.1084812"
+  },
+  {
    "@id": "https://doi.org/10.1145/3691627",
    "@type": "CreativeWork",
    "name": "Reputation Gaming in Crowd Technical Knowledge Sharing",
@@ -211803,6 +211829,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-022",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-022",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-021",
