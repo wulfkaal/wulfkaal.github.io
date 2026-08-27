@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-005",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-005",
+   "text": "Encryption at rest does not establish user-held state when the service provider controls the keys. Hofmann and Truong show why. In their analysis of end-to-end encrypted cloud storage, provider-held keys supply no protection once the provider is compromised. The relevant alternative encrypts files under keys managed by the user and evaluates confidentiality against a server with full access to its own infrastructure. This moves custody from a promise about data location to a test of decryption authority.\n\nThe evidence is narrower than the general claim. The study concerns cloud storage, not agent working memory, and it documents flaws even in systems marketed as zero knowledge. User-managed keys can still fail through protocol defects, malicious client delivery, weak credentials, or metadata leakage. Those limits sharpen the classification. State is not user-held merely because ciphertext sits behind an ownership label. It is user-held only when the operator lacks the capability to recover the working contents without the user's participation. A credible system should test that condition against a compromised provider, not against its marketing description.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/3658644.3690309"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-005"
+   },
+   "sha256": "a9624f484e312d4c136fef8f1374c72614461f7ce811e840b40093b79bbbc992",
+   "evidenceLevel": "peer-reviewed ACM CCS 2024 conference paper with complete public full text",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-004",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-004",
@@ -166315,6 +166335,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/3658644.3690309",
+   "@type": "CreativeWork",
+   "name": "End-to-End Encrypted Cloud Storage in the Wild: A Broken Ecosystem",
+   "url": "https://doi.org/10.1145/3658644.3690309"
+  },
+  {
    "@id": "https://doi.org/10.1145/3359591.3359737",
    "@type": "CreativeWork",
    "name": "Local-first software: you own your data, in spite of the cloud",
@@ -211361,6 +211387,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-005",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-005",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-004",
