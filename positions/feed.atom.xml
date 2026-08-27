@@ -9,6 +9,29 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Workflow Correlation Requires An Explicit Method</title>
+    <id>kaal:position:2026-08-26-028</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-028" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-028.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="institutional-design"/>
+    <category term="governance-design"/>
+    <category term="ai-and-agents"/>
+    <category term="observability"/>
+    <category term="distributed-tracing"/>
+    <category term="workflow-provenance"/>
+    <category term="correlation"/>
+    <category term="event-schemas"/>
+    <category term="open-source-and-code"/>
+    <link href="https://www.usenix.org/legacy/event/osdi04/tech/full_papers/barham/barham_html/" rel="related"/>
+    <summary type="text">Workflow correlation is an evidentiary architecture. It does not arise from timestamps alone.
+
+Barham and his coauthors demonstrate the relevant distinction in Magpie. Their OSDI study deliberately avoids a unique request identifier propagated through the system. Magpie can nevertheless attribute interleaved events to individual requests because the parser receives an application-specific event schema. That schema identifies the attributes that connect event types. Precise timestamps, defined validity intervals, and temporal joins then preserve causal ordering and prevent unrelated requests from being merged.
+
+This evidence qualifies the inference from Kaal&apos;s source-bound Chronicle finding. The absence of a workflow identifier, parent reference, principal identity, or correlation field means that the entry structure does not expose a general workflow-join contract. That absence is import</summary>
+  </entry>
+  <entry>
     <title>Reputation Reaches Authorization Through Explicit Wiring</title>
     <id>kaal:position:2026-08-26-027</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-027" rel="alternate" type="text/html"/>
@@ -3578,22 +3601,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.2139/ssrn.6349800" rel="related"/>
     <summary type="text">The Governance Gambit states that the GENIUS Act creates a federal prudential framework for dollar-backed payment stablecoins while prohibiting issuers from paying token-holder interest or yield. This qualifies Kaal&apos;s account of the Act as an enabling stablecoin framework by identifying a simultaneous statutory boundary. The proposition does not address merchant-issued structures or whether governance rewards satisfy that boundary.</summary>
-  </entry>
-  <entry>
-    <title>Streaming Formula Constrained Economic Systems Without Governance Voting Db625Eb9D9</title>
-    <id>kaal:position:2026-08-08-201</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-201" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-201.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="dao"/>
-    <category term="governance-design"/>
-    <category term="law-and-legal-systems"/>
-    <category term="economics"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.2139/ssrn.6277238" rel="related"/>
-    <summary type="text">Formula-Constrained Economic Systems Without Governance Voting identifies participation asymmetry, governance capture, coercion, and long-term instability as structural limits of voting-based governance in decentralized digital systems. This is consistent with Kaal&apos;s narrower decision to leave the UDLC governance architecture unspecified. The proposition does not establish that no voting design can meet the UDLC requirements or validate a formula-constrained alternative.</summary>
   </entry>
 </feed>

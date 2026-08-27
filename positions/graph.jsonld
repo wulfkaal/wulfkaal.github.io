@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-028",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-028",
+   "text": "Workflow correlation is an evidentiary architecture. It does not arise from timestamps alone.\n\nBarham and his coauthors demonstrate the relevant distinction in Magpie. Their OSDI study deliberately avoids a unique request identifier propagated through the system. Magpie can nevertheless attribute interleaved events to individual requests because the parser receives an application-specific event schema. That schema identifies the attributes that connect event types. Precise timestamps, defined validity intervals, and temporal joins then preserve causal ordering and prevent unrelated requests from being merged.\n\nThis evidence qualifies the inference from Kaal's source-bound Chronicle finding. The absence of a workflow identifier, parent reference, principal identity, or correlation field means that the entry structure does not expose a general workflow-join contract. That absence is important. It does not establish that joining is logically impossible if structured data payloads or an external schema supply equivalent relationship rules. Magpie shows that correlation can be reconstructed without one global request identifier. It also shows why a timestamp, source label, event type, and opaque data field are not enough by themselves. The joining method must specify which values relate events, when those relationships remain valid, and how causal transitions are distinguished under concurrency.\n\nThe institutional consequence is narrow. A record can establish that an event occurred without establishing which multi-tool workflow contains it, which operation caused it, or which principal bears responsibility for it. Before Chronicle records support workflow-level provenance, the interface should bind either propagated workflow and parent identifiers or a documented alternative schema with join attributes, validity rules, and causal semantics. That mechanism should then be tested against concurrent, branching, and asynchronous workflows. Until such evidence exists, Chronicle should be classified as an event record rather than a verified workflow trace.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/legacy/event/osdi04/tech/full_papers/barham/barham_html/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-028"
+   },
+   "sha256": "4191773ef4146ebe2a9840fa085076c328ee13482df4cb49e8550c8543d359ba",
+   "evidenceLevel": "peer-reviewed USENIX conference paper with complete official proceedings full text and evaluated request-extraction system",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-027",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-027",
@@ -166775,6 +166795,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/legacy/event/osdi04/tech/full_papers/barham/barham_html",
+   "@type": "CreativeWork",
+   "name": "Using Magpie for request extraction and workload modelling",
+   "url": "https://www.usenix.org/legacy/event/osdi04/tech/full_papers/barham/barham_html"
+  },
+  {
    "@id": "https://doi.org/10.1007/s12652-018-0887-z",
    "@type": "CreativeWork",
    "name": "Trust architecture and reputation evaluation for internet of things",
@@ -211959,6 +211985,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-028",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-028",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-027",

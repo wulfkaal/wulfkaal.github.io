@@ -8,6 +8,27 @@
     <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://wulfkaal.github.io/positions/feed.rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Workflow Correlation Requires An Explicit Method</title>
+      <link>https://wulfkaal.github.io/positions/2026-08-26-028</link>
+      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-028</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Wulf A. Kaal</dc:creator>
+      <category>institutional-design</category>
+      <category>governance-design</category>
+      <category>ai-and-agents</category>
+      <category>observability</category>
+      <category>distributed-tracing</category>
+      <category>workflow-provenance</category>
+      <category>correlation</category>
+      <category>event-schemas</category>
+      <category>open-source-and-code</category>
+      <description>Workflow correlation is an evidentiary architecture. It does not arise from timestamps alone.
+
+Barham and his coauthors demonstrate the relevant distinction in Magpie. Their OSDI study deliberately avoids a unique request identifier propagated through the system. Magpie can nevertheless attribute interleaved events to individual requests because the parser receives an application-specific event schema. That schema identifies the attributes that connect event types. Precise timestamps, defined validity intervals, and temporal joins then preserve causal ordering and prevent unrelated requests from being merged.
+
+This evidence qualifies the inference from Kaal&apos;s source-bound Chronicle finding. The absence of a workflow identifier, parent reference, principal identity, or correlation field means that the entry structure does not expose a general workflow-join contract. That absence is import</description>
+    </item>
+    <item>
       <title>Reputation Reaches Authorization Through Explicit Wiring</title>
       <link>https://wulfkaal.github.io/positions/2026-08-26-027</link>
       <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-027</guid>
@@ -3179,21 +3200,6 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
       <category>scholarly-literature</category>
       <category>crossref</category>
       <description>The Governance Gambit states that the GENIUS Act creates a federal prudential framework for dollar-backed payment stablecoins while prohibiting issuers from paying token-holder interest or yield. This qualifies Kaal&apos;s account of the Act as an enabling stablecoin framework by identifying a simultaneous statutory boundary. The proposition does not address merchant-issued structures or whether governance rewards satisfy that boundary.</description>
-    </item>
-    <item>
-      <title>Streaming Formula Constrained Economic Systems Without Governance Voting Db625Eb9D9</title>
-      <link>https://wulfkaal.github.io/positions/2026-08-08-201</link>
-      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-08-201</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Wulf A. Kaal</dc:creator>
-      <category>dao</category>
-      <category>governance-design</category>
-      <category>law-and-legal-systems</category>
-      <category>economics</category>
-      <category>historical-response</category>
-      <category>scholarly-literature</category>
-      <category>crossref</category>
-      <description>Formula-Constrained Economic Systems Without Governance Voting identifies participation asymmetry, governance capture, coercion, and long-term instability as structural limits of voting-based governance in decentralized digital systems. This is consistent with Kaal&apos;s narrower decision to leave the UDLC governance architecture unspecified. The proposition does not establish that no voting design can meet the UDLC requirements or validate a formula-constrained alternative.</description>
     </item>
   </channel>
 </rss>
