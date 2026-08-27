@@ -9,6 +9,28 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Declared Filters Need Executable Decision Paths</title>
+    <id>kaal:position:2026-08-26-034</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-034" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-034.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="institutional-design"/>
+    <category term="governance-design"/>
+    <category term="ai-and-agents"/>
+    <category term="privacy"/>
+    <category term="personal-information"/>
+    <category term="information-flow"/>
+    <category term="content-inspection"/>
+    <category term="audit-logging"/>
+    <category term="policy-enforcement"/>
+    <category term="open-source-and-code"/>
+    <link href="https://www.usenix.org/conference/osdi10/taintdroid-information-flow-tracking-system-realtime-privacy-monitoring" rel="related"/>
+    <summary type="text">An outbound domain allowlist and an audit log do not perform personal-information filtering. Enck and coauthors demonstrate the distinction in TaintDroid. Android permissions could decide whether an application accessed location, camera, microphone, or device identifiers. They provided little visibility into how that data was used after access. TaintDroid therefore labeled data at privacy-sensitive sources, propagated those labels through variables, files, and interprocess messages, and examined the labels when data reached a network or other system boundary. The implementation identified 68 instances of potential misuse across 20 of 30 applications. The mechanism was executable. Its evidence did not rest on a list of intended controls.
+
+This evidence qualifies Kaal&apos;s repository finding. The source does not inspect Gatekeeper, its documentation, Mosaic Companion, or commit 2d920ce. It ca</summary>
+  </entry>
+  <entry>
     <title>Tool Authority Must Compose Across The Principal Chain</title>
     <id>kaal:position:2026-08-26-033</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-033" rel="alternate" type="text/html"/>
@@ -3603,21 +3625,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.1111/j.1467-8683.2010.00802.x" rel="related"/>
     <summary type="text">Shareholder Voting and Directors&apos; Remuneration Report Legislation states that the United Kingdom&apos;s 2002 rules gave shareholders a mandatory non-binding vote on boardroom pay. This supplies a concrete statutory example of the governance control available to traditional shareholders in Kaal&apos;s contrast with ICO investors. The proposition does not establish that a non-binding vote controls directors or promoters in practice.</summary>
-  </entry>
-  <entry>
-    <title>Streaming Impact Of Restricted Voting Share Structure On Firm Value And Performance Fff4Fbeef7</title>
-    <id>kaal:position:2026-08-08-205</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-205" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-205.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="governance-design"/>
-    <category term="empirical-evidence"/>
-    <category term="economics"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.1111/j.1467-8683.2010.00808.x" rel="related"/>
-    <summary type="text">Impact of Restricted Voting Share Structure on Firm Value and Performance finds, in a ten-year Canadian panel, that RVS firms did not have lower value, operating performance, or stock performance than comparable non-RVS firms. This qualifies Kaal&apos;s U.S. cross-sectional claim that fewer defensive mechanisms correlate with higher valuation and performance. The result is jurisdiction- and structure-specific and does not show that RVS is harmless in every governance environment.</summary>
   </entry>
 </feed>
