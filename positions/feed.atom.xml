@@ -9,6 +9,26 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Delegation Chain Authority Intersection</title>
+    <id>kaal:position:2026-08-26-015</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-015" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-015.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="consensus-and-security"/>
+    <category term="governance-design"/>
+    <category term="ai-and-agents"/>
+    <category term="authority"/>
+    <category term="delegation"/>
+    <category term="permissions"/>
+    <category term="consent"/>
+    <category term="confused-deputy"/>
+    <link href="https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses" rel="related"/>
+    <summary type="text">Authority can exceed consent even when the final permission check is correct. Felt and her coauthors identify permission redelegation where an application holding a user granted permission performs a privileged task for an application that lacks it. The system approves the call because the immediate deputy has the required permission. The requester nonetheless causes an action that it could not invoke directly. The paper reports fifteen such vulnerabilities across five core Android applications.
+
+The mechanism supplies a concrete instance of authority drift. A user grants authority to one application. Interapplication communication then places that authority under the influence of a less privileged requester. A permissions system that evaluates only the immediate caller sees a valid grant and permits the action. It does not preserve the bounded purpose or authority of every participant i</summary>
+  </entry>
+  <entry>
     <title>Traceable Composition Responsibility</title>
     <id>kaal:position:2026-08-26-014</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-014" rel="alternate" type="text/html"/>
@@ -3505,19 +3525,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.21203/rs.3.rs-8004820/v1" rel="related"/>
     <summary type="text">Explainable AI and Blockchain for Dual-Currency Payments states that high transaction fees, settlement delays, currency fluctuations, and restricted wallet access impair financial inclusion and income security for cross-border digital labor in Bangladesh. This supplies a jurisdiction-specific cost barrier consistent with the premise of Kaal&apos;s micropayment claim. The abstract does not attribute the costs specifically to centralized systems or establish that blockchain processing removes them.</summary>
-  </entry>
-  <entry>
-    <title>Streaming Integrating Ai And Blockchain Technologies For Advanced Financial Systems Cross  5373E15036</title>
-    <id>kaal:position:2026-08-08-188</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-188" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-188.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="blockchain"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.36227/techrxiv.174961755.51277488/v1" rel="related"/>
-    <summary type="text">Integrating AI and Blockchain Technologies for Advanced Financial Systems states that blockchain provides immutable transaction records and decentralized verification. This independently agrees with Kaal&apos;s ledger-integrity mechanism for recording and verifying agent transactions. The abstract does not establish that every agent decision is recorded, that all records are publicly visible, or that immutability alone produces accountability.</summary>
   </entry>
 </feed>

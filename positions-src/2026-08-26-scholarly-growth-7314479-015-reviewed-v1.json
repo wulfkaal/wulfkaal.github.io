@@ -1,0 +1,176 @@
+{
+  "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-015-reviewed-v1",
+  "date": "2026-08-26",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-015.html",
+  "source_snapshot_sha256": "a1d2c14827fc592e14d8268819ecd540b9fa57a066dee5dcece8c7557b120df4",
+  "review_ledger_sha256": "4f2104b63ae4cf46fd261b280b7e4d364dd27c042dadf8fe70db85106a2d176b",
+  "exact_authorization": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+  "positions": [
+    {
+      "sequence": 15,
+      "response_type": "extension",
+      "slug": "delegation-chain-authority-intersection",
+      "topics": [
+        "consensus-and-security",
+        "governance-design",
+        "ai-and-agents",
+        "authority",
+        "delegation",
+        "permissions",
+        "consent",
+        "confused-deputy"
+      ],
+      "text": "Authority can exceed consent even when the final permission check is correct. Felt and her coauthors identify permission redelegation where an application holding a user granted permission performs a privileged task for an application that lacks it. The system approves the call because the immediate deputy has the required permission. The requester nonetheless causes an action that it could not invoke directly. The paper reports fifteen such vulnerabilities across five core Android applications.\n\nThe mechanism supplies a concrete instance of authority drift. A user grants authority to one application. Interapplication communication then places that authority under the influence of a less privileged requester. A permissions system that evaluates only the immediate caller sees a valid grant and permits the action. It does not preserve the bounded purpose or authority of every participant in the chain. Local validity therefore coexists with an aggregate result outside the user's authorization.\n\nThe evidence is narrower than the institutional claim. The study concerns browsers and smartphone applications in 2011. It does not examine sovereign local agent runtimes, legal delegation, contractual purpose, or every form of authority drift. It also does not prove that permissions systems are least equipped to detect this failure relative to other failures. The institutional implication remains defensible. A runtime should carry authority provenance through every delegation boundary and evaluate a request against the intersection of the authority held along the full chain of influence. An intentional increase in authority requires a separate, explicit grant bound to the action and the principal. Otherwise a sequence of correct permission decisions can still produce an unauthorized result.",
+      "scope_conditions": [
+        "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed USENIX Security conference paper with complete official proceedings full text.",
+        "Mapping review tier: independent substantive scholarly-growth extension.",
+        "The study concerns browsers and smartphone applications in 2011 rather than sovereign local agent runtimes.",
+        "The paper addresses OS permissions and inter-application communication rather than legal delegation, contractual purpose, or institutional consent standards.",
+        "The evidence establishes a concrete authority-redelegation mechanism but does not prove that permissions systems are least equipped to detect it relative to other failures.",
+        "The case study reports Android vulnerabilities and does not establish prevalence across all permission architectures or delegation chains.",
+        "IPC Inspection attenuates authority along a call chain but does not determine when an intentional authority increase is institutionally valid."
+      ],
+      "current_debate": {
+        "name": "Permission Re-Delegation: Attacks and Defenses",
+        "url": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-015",
+        "url": "https://wulfkaal.github.io/claims/7314479-015",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7314479",
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-015-delegation-chain-authority-intersection-01",
+      "evidence_level": "peer-reviewed USENIX Security conference paper with complete official proceedings full text",
+      "review_tier": "independent substantive scholarly-growth extension",
+      "mapping_confidence": 0.97,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The paper independently demonstrates the mechanism required by Kaal's authority-drift claim. A deputy with a valid user grant can act for a requester that lacks the grant, and the system approves the immediate call because the deputy is authorized. The mapping remains bounded because the study concerns Android permissions, not sovereign runtimes, legal delegation, or comparative detectability across failure modes.",
+      "source_provenance": {
+        "source": "USENIX Security 2011 peer-reviewed conference paper with complete official proceedings full text",
+        "sourceRecordId": "usenix:sec11:permission-re-delegation",
+        "canonicalUrl": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses",
+        "publicFullTextUrl": "https://static.usenix.org/events/sec11/tech/full_papers/Felt.pdf",
+        "retrievedAt": "2026-08-27T08:45:57.059Z",
+        "fullTextPdfSha256": "33425001f7e93b6da0c3d138e198b36ba0d93bbb49018e3fbf3baaf8be625c66",
+        "extractedTextSha256": "151b3ad0acc1b518ca4a34e1fac47345b303a7f8439c38a3fe9d9e8ee71512ec",
+        "officialProceedingsRecordSha256": "b5a5cc75654f1919ed550b5139e460dfea328309ff09556c1b3526e39ce2a68a",
+        "primaryEvidenceReceiptSha256": "ae3e7a5a75cd026fa374ad4b19f9550fd36cc32f28d5491c506288c581756903",
+        "sourceProposition": "Felt and her coauthors show that a per-application permission system can approve a privileged call because the immediate deputy holds the grant even when a less privileged requester initiated the action without the user's involvement.",
+        "sourcePropositionSha256": "f1c3b9b60ca76d0ce5fe74a4f0b4d23778acf0472c05d6c24fe8e46b025e4ee4",
+        "sourceEvidenceSetSha256": "156d7cc56879ac31f0650a5412e9a158716e3b94e5ddf71bbcca7d4ac887ed04",
+        "sourceEvidencePassages": [
+          {
+            "text": "Permission re-delegation occurs when an application with permissions performs a privileged task for an application without permissions.",
+            "locator": {
+              "publication": "20th USENIX Security Symposium",
+              "page": 1,
+              "section": "Abstract"
+            },
+            "sha256": "0f436429d9f61ea4e361093ed90ecee5dacadc6c588ef31fe177e9c32fa39985"
+          }
+        ],
+        "workId": "work:usenix:sec11:permission-re-delegation",
+        "workAuthors": [
+          "Adrienne Porter Felt",
+          "Helen J. Wang",
+          "Alexander Moshchuk",
+          "Steven Hanna",
+          "Erika Chin"
+        ],
+        "workPublishedAt": "2011-08",
+        "identityKeys": [
+          "usenix:sec11:permission-re-delegation",
+          "pdf:33425001f7e93b6da0c3d138e198b36ba0d93bbb49018e3fbf3baaf8be625c66",
+          "proposition:f1c3b9b60ca76d0ce5fe74a4f0b4d23778acf0472c05d6c24fe8e46b025e4ee4"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-015",
+            "claimUrl": "https://wulfkaal.github.io/claims/7314479-015",
+            "rank": 1,
+            "confidence": 0.97,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The paper independently demonstrates the mechanism required by Kaal's authority-drift claim. A deputy with a valid user grant can act for a requester that lacks the grant, and the system approves the immediate call because the deputy is authorized. The mapping remains bounded because the study concerns Android permissions, not sovereign runtimes, legal delegation, or comparative detectability across failure modes.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-27T08:45:57.059Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "kaalReferenceFoundInSource": false,
+          "temporalIndependence": "The USENIX paper was published in 2011, before Kaal's 2026 paper.",
+          "canonicalPublicStatusVerified": true,
+          "peerReviewedStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "the immediate deputy possesses a valid permission, the requester does not, and the permission system nonetheless executes the privileged call because it evaluates the deputy rather than the full chain of influence",
+          "compatibleScope": "delegation chains under bounded user consent, limited because the empirical system is Android rather than a sovereign local agent runtime",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "exactSupportingQuotesVerified": true,
+          "nonOverlap": {
+            "candidateIdMatches": false,
+            "canonicalUrlMatches": false,
+            "propositionHashMatches": false,
+            "priorPositionForClaim": false
+          },
+          "limitations": [
+            "The study concerns browsers and smartphone applications in 2011 rather than sovereign local agent runtimes.",
+            "The paper addresses OS permissions and inter-application communication rather than legal delegation, contractual purpose, or institutional consent standards.",
+            "The evidence establishes a concrete authority-redelegation mechanism but does not prove that permissions systems are least equipped to detect it relative to other failures.",
+            "The case study reports Android vulnerabilities and does not establish prevalence across all permission architectures or delegation chains.",
+            "IPC Inspection attenuates authority along a call chain but does not determine when an intentional authority increase is institutionally valid."
+          ],
+          "rejectionReasonsRecorded": true
+        },
+        "contentMap": {
+          "proposition": "A valid immediate permission can authorize a composed action that exceeds the initiating principal's grant.",
+          "evidenceLayer": "peer-reviewed USENIX Security conference paper with complete official proceedings full text",
+          "strongestLimitation": "The evidence concerns Android inter-application calls and does not establish comparative detectability or legal authority in sovereign agent runtimes.",
+          "consequence": "Checking only the immediate deputy allows local authorization validity to coexist with an unauthorized aggregate action.",
+          "requestedAction": "Carry authority provenance through every delegation boundary, evaluate the full chain of influence, and require a separate explicit grant for intentional authority increases."
+        },
+        "stylePack": {
+          "profile": "M1 early sole-author baseline v1.2.0",
+          "verifiedProfileWorks": [
+            "1428387",
+            "1806252",
+            "2150377",
+            "2267560"
+          ],
+          "sameRegisterPassagePackAvailable": true,
+          "limitation": "The short public position permits only bounded stylometric comparison."
+        },
+        "m1Validation": {
+          "status": "M1-PASS-WITH-LIMITS",
+          "deterministicGate": "pass",
+          "hardFailures": 0,
+          "warnings": 0,
+          "words": 263,
+          "reason": "The publication-bound position passed strict and public deterministic controls against a task-local multi-work style pack. Its short length limits stylometric comparison."
+        }
+      },
+      "user_affirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "private-authority-receipts/2026-08-15-public-corpus-reactivation.json",
+    "authoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+    "eventSupersessionReceipt": "private-authority-receipts/2026-08-26-public-event-authority-supersession.json",
+    "eventSupersessionSha256": "7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4",
+    "runId": "kaal-continuous-claim-visibility-loop-20260827T083552Z"
+  }
+}

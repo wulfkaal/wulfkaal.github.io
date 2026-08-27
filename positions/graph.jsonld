@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-015",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-015",
+   "text": "Authority can exceed consent even when the final permission check is correct. Felt and her coauthors identify permission redelegation where an application holding a user granted permission performs a privileged task for an application that lacks it. The system approves the call because the immediate deputy has the required permission. The requester nonetheless causes an action that it could not invoke directly. The paper reports fifteen such vulnerabilities across five core Android applications.\n\nThe mechanism supplies a concrete instance of authority drift. A user grants authority to one application. Interapplication communication then places that authority under the influence of a less privileged requester. A permissions system that evaluates only the immediate caller sees a valid grant and permits the action. It does not preserve the bounded purpose or authority of every participant in the chain. Local validity therefore coexists with an aggregate result outside the user's authorization.\n\nThe evidence is narrower than the institutional claim. The study concerns browsers and smartphone applications in 2011. It does not examine sovereign local agent runtimes, legal delegation, contractual purpose, or every form of authority drift. It also does not prove that permissions systems are least equipped to detect this failure relative to other failures. The institutional implication remains defensible. A runtime should carry authority provenance through every delegation boundary and evaluate a request against the intersection of the authority held along the full chain of influence. An intentional increase in authority requires a separate, explicit grant bound to the action and the principal. Otherwise a sequence of correct permission decisions can still produce an unauthorized result.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-015"
+   },
+   "sha256": "2ab5fe2e14e8d2dca65d2cd11ad430837b3d355db52cfa545648a7af93fe80a0",
+   "evidenceLevel": "peer-reviewed USENIX Security conference paper with complete official proceedings full text",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-014",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-014",
@@ -166515,6 +166535,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses",
+   "@type": "CreativeWork",
+   "name": "Permission Re-Delegation: Attacks and Defenses",
+   "url": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses"
+  },
+  {
    "@id": "https://arxiv.org/abs/2101.09385",
    "@type": "CreativeWork",
    "name": "Outlining Traceability: A Principle for Operationalizing Accountability in Computing Systems",
@@ -211621,6 +211647,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-015",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-015",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-014",
