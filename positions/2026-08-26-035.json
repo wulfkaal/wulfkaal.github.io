@@ -1,0 +1,220 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-26-035",
+ "identifier": "kaal:position:2026-08-26-035",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Economic Contracts Need Explicit Negotiation Terms",
+ "text": "A tool manifest without economic terms is a capability description, not a usable economic contract. Bartolini, Preist, and Jennings make the institutional distinction explicit in their software framework for automated negotiation. Before agents negotiate, the parties must share a negotiation template that defines the object of negotiation. Their examples identify product type, price, and supply date as parameters. The framework then tests proposals against those declared parameters and the public rules of the mechanism. Price is not an incidental annotation. It is one of the terms against which an offer becomes comparable, valid, and capable of forming an agreement.\n\nThis evidence qualifies Kaal's repository-specific finding. It does not show that every tool manifest must contain every economic term at discovery time. Nor does it inspect Mosaic Companion or commit 2d920ce. The paper addresses negotiation, not payment settlement, revenue sharing, or scholarly attribution. Its mechanism is nevertheless relevant. An agent cannot infer a valid price, settlement destination, attribution rule, or expected revenue from a manifest that does not declare them or bind them to a later agreement protocol. The absence of these fields leaves economic execution outside the presented contract.\n\nThe institutional response is therefore narrower than adding arbitrary metadata. A manifest intended to support autonomous exchange should identify which economic terms are fixed, which remain open to negotiation, how an accepted proposal becomes binding, and which later settlement and attribution records complete the transaction. Until those bindings exist, the tool may be technically callable. It is not economically self-describing.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-26",
+ "dateModified": "2026-08-26",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "institutional-design",
+  "governance-design",
+  "ai-and-agents",
+  "economics",
+  "tokenomics",
+  "smart-contracts",
+  "automated-negotiation",
+  "payments",
+  "attribution",
+  "open-source-and-code"
+ ],
+ "scope_conditions": [
+  "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+  "External evidence level: peer-reviewed SELMAS proceedings chapter with complete institutional-repository full text and an implemented automated-negotiation framework.",
+  "Mapping review tier: independent substantive scholarly-growth qualification.",
+  "The source does not inspect Mosaic Companion, its tool manifest, or commit 2d920ce and therefore cannot verify the repository finding.",
+  "The framework does not establish that every discovery manifest must contain every economic term before negotiation begins.",
+  "The paper addresses negotiation mechanisms and agreement formation, not payment settlement addresses or transaction finality.",
+  "The source does not specify scholarly attribution declarations or revenue-sharing expectations.",
+  "Its examples concern electronic-business negotiation and auctions, not language model agents or Model Context Protocol tools.",
+  "The implemented framework demonstrates expressibility and protocol enforcement, not adoption or market effectiveness in sovereign agent runtimes."
+ ],
+ "currentDebate": {
+  "name": "A Software Framework for Automated Negotiation",
+  "url": "https://eprints.soton.ac.uk/260807/"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7314479-035",
+  "url": "https://wulfkaal.github.io/claims/7314479-035",
+  "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+  "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": "https://ssrn.com/abstract=7314479",
+  "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-035"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "A Software Framework for Automated Negotiation",
+   "url": "https://eprints.soton.ac.uk/260807/"
+  }
+ ],
+ "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-035-reviewed-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-035.html",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-26-035",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-26-035.md",
+ "candidateId": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-035-economic-contracts-need-explicit-negotiation-terms-01",
+ "evidenceLevel": "peer-reviewed SELMAS proceedings chapter with complete institutional-repository full text and an implemented automated-negotiation framework",
+ "reviewTier": "independent substantive scholarly-growth qualification",
+ "mappingConfidence": 0.97,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent substantive scholarly-growth one-to-one qualification review",
+ "mappingWhyRelevant": "The source independently treats the negotiation mechanism as public and shared and requires a template that explicitly defines the object and parameters of negotiation, including price. This directly qualifies Kaal's repository-specific finding that a tool's only presented contract omits economic fields. The mapping remains limited because the source does not inspect Mosaic Companion or the named commit and does not address settlement addresses, scholarly attribution, or revenue sharing.",
+ "sourceProvenance": {
+  "source": "2005 peer-reviewed Springer LNCS proceedings chapter with complete University of Southampton repository full text",
+  "sourceRecordId": "doi:10.1007/978-3-540-31846-0_13",
+  "canonicalUrl": "https://eprints.soton.ac.uk/260807/",
+  "doiUrl": "https://doi.org/10.1007/978-3-540-31846-0_13",
+  "publicFullTextUrl": "https://eprints.soton.ac.uk/260807/1/selmas04.pdf",
+  "retrievedAt": "2026-08-27T18:42:58.844Z",
+  "fullTextPdfSha256": "8e070fbf3fc3482b93b70c0bc17fba32901df621dfb4045b8b66422821c0953f",
+  "extractedTextSha256": "7345739cbd465a6ea5a90d272a61c6da60843982da7e19c3269b5f41773dfcf2",
+  "institutionalRecordSha256": "12767ac81f8cac7c0b96eeacf49e104fe01f83b3fd3401e1a157710fdd4bedf7",
+  "primaryEvidenceReceiptSha256": "0d7c5a463213b3328915a7f2d5202a1713f77b84f2e22a8efae9da0eff3f95d9",
+  "sourceProposition": "Bartolini, Preist, and Jennings show that automated negotiation requires a public, shared mechanism and a template that makes the object and parameters of negotiation explicit, including product type, price, and supply date.",
+  "sourcePropositionSha256": "5a65816febe4e6846485f26f1475fd26e29242300da754bc169500ab429b6063",
+  "sourceEvidenceSetSha256": "aa747ef083ab9ea32cfe5a3cebd63e8b149e466443d852b36abf5d7b9a59dba8",
+  "sourceEvidencePassages": [
+   {
+    "text": "If agents are to negotiate automatically with one another they must share a negotiation mechanism, specifying what possible actions each party can take at any given time, when negotiation terminates, and what is the structure of the resulting agreements.",
+    "locator": {
+     "publication": "Software Engineering for Multi-Agent Systems III, LNCS 3390",
+     "proceedingsPage": 213,
+     "section": "Abstract"
+    },
+    "sha256": "61f859aa8b094e2fd9f0454c66b7daee5e535fd944d47427c5ab12cfe002338f"
+   },
+   {
+    "text": "To be able to negotiate with one another, parties must initially share a negotiation template. This specifies the different parameters of the negotiation (e.g. product type, price, supply date etc).",
+    "locator": {
+     "publication": "Software Engineering for Multi-Agent Systems III, LNCS 3390",
+     "proceedingsPage": 216,
+     "section": "2.1 The Basic Concepts"
+    },
+    "sha256": "9da2af349ca6f9e6dea108d7cda535e7869dd2845d88354d5fa1b15a0172422d"
+   },
+   {
+    "text": "In an English auction, the proposals specify the price of the good, every other parameter being fully instantiated in the negotiation template.",
+    "locator": {
+     "publication": "Software Engineering for Multi-Agent Systems III, LNCS 3390",
+     "proceedingsPage": 217,
+     "section": "2.1 The Basic Concepts"
+    },
+    "sha256": "1879308213b3f1e3b8d2197d7a99314805689cf80db46c6f28b0edff897d74c0"
+   }
+  ],
+  "workId": "work:doi:10.1007/978-3-540-31846-0_13",
+  "workAuthors": [
+   "Claudio Bartolini",
+   "Chris Preist",
+   "Nicholas R. Jennings"
+  ],
+  "workPublishedAt": "2005",
+  "identityKeys": [
+   "doi:10.1007/978-3-540-31846-0_13",
+   "eprints:260807",
+   "pdf:8e070fbf3fc3482b93b70c0bc17fba32901df621dfb4045b8b66422821c0953f",
+   "proposition:5a65816febe4e6846485f26f1475fd26e29242300da754bc169500ab429b6063"
+  ],
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7314479-035",
+    "claimUrl": "https://wulfkaal.github.io/claims/7314479-035",
+    "rank": 1,
+    "confidence": 0.97,
+    "method": "independent substantive scholarly-growth one-to-one qualification review",
+    "whyRelevant": "The source independently treats the negotiation mechanism as public and shared and requires a template that explicitly defines the object and parameters of negotiation, including price. This directly qualifies Kaal's repository-specific finding that a tool's only presented contract omits economic fields. The mapping remains limited because the source does not inspect Mosaic Companion or the named commit and does not address settlement addresses, scholarly attribution, or revenue sharing.",
+    "ambiguous": false
+   }
+  ],
+  "substantiveReview": {
+   "reviewedAt": "2026-08-27T18:42:58.844Z",
+   "sourceIdentityVerified": true,
+   "authorIndependenceVerified": true,
+   "kaalReferenceFoundInSource": false,
+   "temporalIndependence": "The chapter was published in 2005, before Kaal's 2026 paper.",
+   "canonicalPublicStatusVerified": true,
+   "peerReviewedStatusVerified": true,
+   "evidenceClassification": "peer-reviewed conference proceedings chapter with a declarative rule taxonomy, a generic negotiation protocol, and an implemented software framework",
+   "retractionOrSupersessionFound": false,
+   "propositionFidelityVerified": true,
+   "mechanismCorrespondence": "a public shared negotiation mechanism and accepted template that explicitly define negotiable parameters such as product type, price, and supply date before proposals can form an agreement",
+   "compatibleScope": "machine-readable automated negotiation, limited because the source does not study tool manifests, settlement, attribution, revenue sharing, or language model agents",
+   "responseWordingDefensible": true,
+   "oneToOneExtendsMapping": true,
+   "exactSupportingQuotesVerified": true,
+   "nonOverlap": {
+    "candidateIdMatches": false,
+    "canonicalUrlMatches": false,
+    "propositionHashMatches": false,
+    "priorPositionForClaim": false
+   },
+   "limitations": [
+    "The source does not inspect Mosaic Companion, its tool manifest, or commit 2d920ce and therefore cannot verify the repository finding.",
+    "The framework does not establish that every discovery manifest must contain every economic term before negotiation begins.",
+    "The paper addresses negotiation mechanisms and agreement formation, not payment settlement addresses or transaction finality.",
+    "The source does not specify scholarly attribution declarations or revenue-sharing expectations.",
+    "Its examples concern electronic-business negotiation and auctions, not language model agents or Model Context Protocol tools.",
+    "The implemented framework demonstrates expressibility and protocol enforcement, not adoption or market effectiveness in sovereign agent runtimes."
+   ],
+   "rejectionReasonsRecorded": true
+  },
+  "contentMap": {
+   "proposition": "A capability description is not an economically usable contract when it omits the parameters that make offers comparable and capable of forming an agreement.",
+   "evidenceLayer": "peer-reviewed SELMAS proceedings chapter with complete institutional-repository full text and an implemented automated-negotiation framework",
+   "strongestLimitation": "The source does not inspect Mosaic Companion and does not address settlement, attribution, or revenue sharing.",
+   "consequence": "A tool may remain technically callable while its economic execution is not self-describing.",
+   "requestedAction": "Declare fixed and negotiable economic terms, bind accepted proposals to an agreement protocol, and identify the later settlement and attribution records that complete the transaction."
+  },
+  "stylePack": {
+   "profile": "M1 early sole-author baseline v1.2.0",
+   "verifiedProfileWorks": [
+    "1428387",
+    "1998455",
+    "2150377",
+    "2267560"
+   ],
+   "passageCount": 5,
+   "rhetoricalFunctions": [
+    "classification",
+    "mechanism",
+    "limitation",
+    "institutional consequence",
+    "requested action"
+   ],
+   "sameRegisterPassagePackAvailable": true,
+   "limitation": "The short public position permits only bounded stylometric comparison."
+  },
+  "m1Validation": {
+   "status": "M1-PASS-WITH-LIMITS",
+   "deterministicGate": "pass",
+   "hardFailures": 0,
+   "warnings": 0,
+   "words": 249,
+   "reason": "The publication-bound position passed strict and public deterministic controls against a task-local four-work style pack. Its short length limits stylometric comparison."
+  }
+ },
+ "userAffirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+ "sha256": "7a86e74dd63bce58d1a5bdaff71dbc7625dafe194a81e4ce3fbb0f9ddcef4c25"
+}

@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-035",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-035",
+   "text": "A tool manifest without economic terms is a capability description, not a usable economic contract. Bartolini, Preist, and Jennings make the institutional distinction explicit in their software framework for automated negotiation. Before agents negotiate, the parties must share a negotiation template that defines the object of negotiation. Their examples identify product type, price, and supply date as parameters. The framework then tests proposals against those declared parameters and the public rules of the mechanism. Price is not an incidental annotation. It is one of the terms against which an offer becomes comparable, valid, and capable of forming an agreement.\n\nThis evidence qualifies Kaal's repository-specific finding. It does not show that every tool manifest must contain every economic term at discovery time. Nor does it inspect Mosaic Companion or commit 2d920ce. The paper addresses negotiation, not payment settlement, revenue sharing, or scholarly attribution. Its mechanism is nevertheless relevant. An agent cannot infer a valid price, settlement destination, attribution rule, or expected revenue from a manifest that does not declare them or bind them to a later agreement protocol. The absence of these fields leaves economic execution outside the presented contract.\n\nThe institutional response is therefore narrower than adding arbitrary metadata. A manifest intended to support autonomous exchange should identify which economic terms are fixed, which remain open to negotiation, how an accepted proposal becomes binding, and which later settlement and attribution records complete the transaction. Until those bindings exist, the tool may be technically callable. It is not economically self-describing.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://eprints.soton.ac.uk/260807/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-035"
+   },
+   "sha256": "7a86e74dd63bce58d1a5bdaff71dbc7625dafe194a81e4ce3fbb0f9ddcef4c25",
+   "evidenceLevel": "peer-reviewed SELMAS proceedings chapter with complete institutional-repository full text and an implemented automated-negotiation framework",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-034",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-034",
@@ -166875,6 +166895,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://eprints.soton.ac.uk/260807",
+   "@type": "CreativeWork",
+   "name": "A Software Framework for Automated Negotiation",
+   "url": "https://eprints.soton.ac.uk/260807"
+  },
+  {
    "@id": "https://www.usenix.org/conference/osdi10/taintdroid-information-flow-tracking-system-realtime-privacy-monitoring",
    "@type": "CreativeWork",
    "name": "TaintDroid: An Information-Flow Tracking System for Realtime Privacy Monitoring on Smartphones",
@@ -212089,6 +212115,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-035",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-035",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-034",
