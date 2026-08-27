@@ -8,6 +8,25 @@
     <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://wulfkaal.github.io/positions/feed.rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Audit History Reads Require Explicit Completeness State</title>
+      <link>https://wulfkaal.github.io/positions/2026-08-26-032</link>
+      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-032</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Wulf A. Kaal</dc:creator>
+      <category>institutional-design</category>
+      <category>governance-design</category>
+      <category>ai-and-agents</category>
+      <category>audit-logs</category>
+      <category>error-propagation</category>
+      <category>data-corruption</category>
+      <category>recovery</category>
+      <category>observability</category>
+      <category>open-source-and-code</category>
+      <description>A clean prefix is not a clean history. Ganesan and coauthors tested eight distributed storage systems under single file system faults and found that corruption of a small part of a log could affect a far larger recorded history. Kafka could lose an entire log or all entries from the corrupted entry onward. The finding supplies an independent systems mechanism for the institutional distinction in Kaal&apos;s Chronicle claim.
+
+The source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce. It cannot establish that Chronicle.read skips malformed JSONL lines or applies an undisclosed default limit. Its evidence is narrower and still consequential. Recovery behavior determines what the reader may treat as the record. A reader that drops an unparseable entry or returns only a bounded view without an explicit completeness state converts detectable record damage into an apparently ordinar</description>
+    </item>
+    <item>
       <title>Tamper Evidence Requires Authenticated History Proofs</title>
       <link>https://wulfkaal.github.io/positions/2026-08-26-031</link>
       <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-26-031</guid>
@@ -3192,20 +3211,6 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
       <category>scholarly-literature</category>
       <category>crossref</category>
       <description>Does proxy voting really promote corporate sustainability? reports that proxy-voting agents attribute inconsistent guideline compliance partly to portfolio managers not being aligned with their clients&apos; stated sustainability commitments. This independently instantiates Kaal&apos;s manager-agent and shareholder-principal misalignment mechanism. The abstract does not quantify residual loss or establish that every proxy-voting failure is caused by misalignment.</description>
-    </item>
-    <item>
-      <title>Streaming Governance Through Voting Shareholder Responses To Major Environmental And Socia 3D2Ea86F48</title>
-      <link>https://wulfkaal.github.io/positions/2026-08-08-203</link>
-      <guid isPermaLink="true">https://wulfkaal.github.io/positions/2026-08-08-203</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Wulf A. Kaal</dc:creator>
-      <category>governance-design</category>
-      <category>corporate-governance</category>
-      <category>tokenomics</category>
-      <category>historical-response</category>
-      <category>scholarly-literature</category>
-      <category>crossref</category>
-      <description>Governance Through Voting reports that directors at firms experiencing major environmental and social incidents receive 9.8 percent more negative shareholder votes. This supplies an empirical example of the director-election control available to traditional shareholders in Kaal&apos;s contrast with ICO investors. The abstract does not examine ICOs or establish that dissent alone changes firm conduct.</description>
     </item>
   </channel>
 </rss>

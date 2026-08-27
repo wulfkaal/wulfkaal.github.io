@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-032",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-032",
+   "text": "A clean prefix is not a clean history. Ganesan and coauthors tested eight distributed storage systems under single file system faults and found that corruption of a small part of a log could affect a far larger recorded history. Kafka could lose an entire log or all entries from the corrupted entry onward. The finding supplies an independent systems mechanism for the institutional distinction in Kaal's Chronicle claim.\n\nThe source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce. It cannot establish that Chronicle.read skips malformed JSONL lines or applies an undisclosed default limit. Its evidence is narrower and still consequential. Recovery behavior determines what the reader may treat as the record. A reader that drops an unparseable entry or returns only a bounded view without an explicit completeness state converts detectable record damage into an apparently ordinary result. The interface then fails to distinguish four different states: complete history, intentionally bounded view, corrupted history, and history recovered after loss. Those states cannot carry the same audit meaning.\n\nThe paper also shows why storage redundancy alone does not cure the problem. Local recovery policy can amplify a single corruption into broader inaccessibility or silent loss. Chronicle therefore needs an explicit read contract. It should report parse failures with stable locators, disclose every applied limit, return a continuation or completeness marker, preserve access to raw rejected bytes, and state whether the result is complete, bounded, or damaged. An audit surface that continues after corruption may remain available. It does not remain reliable unless the evidence loss is itself part of the record.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-032"
+   },
+   "sha256": "d864c82589a26ba5c6fa278ae45feae2bae1973f3c19bbef37a154039a182069",
+   "evidenceLevel": "peer-reviewed USENIX FAST systems paper with complete official proceedings full text and fault-injection evaluation across eight distributed storage systems",
+   "reviewTier": "independent substantive scholarly-growth qualification",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-031",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-031",
@@ -166815,6 +166835,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan",
+   "@type": "CreativeWork",
+   "name": "Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions",
+   "url": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan"
+  },
+  {
    "@id": "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/efficient-data-structures-tamper-evident",
    "@type": "CreativeWork",
    "name": "Efficient Data Structures for Tamper-Evident Logging",
@@ -212011,6 +212037,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-032",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-032",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-031",

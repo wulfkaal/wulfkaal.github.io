@@ -1,0 +1,195 @@
+{
+  "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-032-reviewed-v1",
+  "date": "2026-08-26",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-032.html",
+  "source_snapshot_sha256": "98321591bca65875cda289ab3807490289702013242ddc940f7df647f0ec1ff2",
+  "review_ledger_sha256": "2e1b9fad0ce7b12454760edaf6b3134097d5de1df8c1fea3f0aa01deeaaf088c",
+  "exact_authorization": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+  "positions": [
+    {
+      "sequence": 32,
+      "response_type": "qualification",
+      "slug": "audit-history-reads-require-explicit-completeness-state",
+      "topics": [
+        "institutional-design",
+        "governance-design",
+        "ai-and-agents",
+        "audit-logs",
+        "error-propagation",
+        "data-corruption",
+        "recovery",
+        "observability",
+        "open-source-and-code"
+      ],
+      "text": "A clean prefix is not a clean history. Ganesan and coauthors tested eight distributed storage systems under single file system faults and found that corruption of a small part of a log could affect a far larger recorded history. Kafka could lose an entire log or all entries from the corrupted entry onward. The finding supplies an independent systems mechanism for the institutional distinction in Kaal's Chronicle claim.\n\nThe source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce. It cannot establish that Chronicle.read skips malformed JSONL lines or applies an undisclosed default limit. Its evidence is narrower and still consequential. Recovery behavior determines what the reader may treat as the record. A reader that drops an unparseable entry or returns only a bounded view without an explicit completeness state converts detectable record damage into an apparently ordinary result. The interface then fails to distinguish four different states: complete history, intentionally bounded view, corrupted history, and history recovered after loss. Those states cannot carry the same audit meaning.\n\nThe paper also shows why storage redundancy alone does not cure the problem. Local recovery policy can amplify a single corruption into broader inaccessibility or silent loss. Chronicle therefore needs an explicit read contract. It should report parse failures with stable locators, disclose every applied limit, return a continuation or completeness marker, preserve access to raw rejected bytes, and state whether the result is complete, bounded, or damaged. An audit surface that continues after corruption may remain available. It does not remain reliable unless the evidence loss is itself part of the record.",
+      "scope_conditions": [
+        "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed USENIX FAST systems paper with complete official proceedings full text and fault-injection evaluation across eight distributed storage systems.",
+        "Mapping review tier: independent substantive scholarly-growth qualification.",
+        "The source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce and therefore cannot verify the repository finding.",
+        "The paper studies eight distributed storage systems under injected single file system faults, not an audit-log user interface.",
+        "Its Kafka and LogCabin results concern the tested versions and recovery paths and do not establish a universal rule for log readers.",
+        "The source studies corrupted persistent records, not malformed JSONL parsing or an undisclosed query limit.",
+        "The paper does not measure Chronicle deployments or the prevalence of its named read behavior.",
+        "The evidence shows silent loss or inaccessibility in specified systems but does not prove that every continued read represents its result as a clean history."
+      ],
+      "current_debate": {
+        "name": "Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions",
+        "url": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-032",
+        "url": "https://wulfkaal.github.io/claims/7314479-032",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7314479",
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-032-audit-history-reads-require-explicit-completeness-state-01",
+      "evidence_level": "peer-reviewed USENIX FAST systems paper with complete official proceedings full text and fault-injection evaluation across eight distributed storage systems",
+      "review_tier": "independent substantive scholarly-growth qualification",
+      "mapping_confidence": 0.98,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one qualification review",
+      "mapping_why_relevant": "The source independently demonstrates that recovery policy after a corrupted log entry can silently remove an entire log or its suffix. This directly qualifies Kaal's institutional claim that a reader which skips malformed records or returns a bounded view without an explicit completeness state can present an apparently ordinary history when evidence is missing. The mapping remains bounded because Ganesan and coauthors do not inspect Chronicle, its JSONL parser, its default limit, or the named commit.",
+      "source_provenance": {
+        "source": "2017 peer-reviewed USENIX FAST paper with complete official proceedings full text",
+        "sourceRecordId": "usenix:fast17:ganesan",
+        "canonicalUrl": "https://www.usenix.org/conference/fast17/technical-sessions/presentation/ganesan",
+        "publicFullTextUrl": "https://www.usenix.org/system/files/conference/fast17/fast17-ganesan.pdf",
+        "retrievedAt": "2026-08-27T17:11:29.144Z",
+        "fullTextPdfSha256": "228845e4e684d8cdd65e4277ef5363286b6a0c9d9e20b2ae2bbe765dcecf063a",
+        "extractedTextSha256": "f9abd5f6e5bb3cbd75c330a53e3b229d9e7ddff1620d3139fb1775903bfea029",
+        "officialUsenixRecordSha256": "96547efabdc8df4e972b76d8c1aad980d302cf3e2c2a3d2cf2cdeee50da0a0eb",
+        "primaryEvidenceReceiptSha256": "5b7582d0625a05cc54b3532ef892f112768760e0a5f4ff0bb280c188e2212414",
+        "sourceProposition": "Ganesan and coauthors show that local recovery policy determines the scope of loss after log corruption. In their experiments, Kafka could lose an entire log or every entry from the corrupted entry to the end, while affected data could be silently lost or become inaccessible.",
+        "sourcePropositionSha256": "73d42387dd9b53a3e9a86dab0dd1328c2c13e7b860616250a6c37f1403200ca4",
+        "sourceEvidenceSetSha256": "19891bc4a052395ea1d1fd157e8eaf225cdb9ba5b979e16ef0a4640ddcc0c573",
+        "sourceEvidencePassages": [
+          {
+            "text": "The affected portions can be silently lost or become inaccessible.",
+            "locator": {
+              "publication": "15th USENIX Conference on File and Storage Technologies",
+              "proceedingsPage": 158,
+              "section": "4.2 Key Findings"
+            },
+            "sha256": "8d088916211cf1e55e107da94f892323e435ac007b4fd440c1921b10abdb01c6"
+          },
+          {
+            "text": "Kafka can sometimes lose an entire log or all entries starting from the corrupted entry until the end of the log.",
+            "locator": {
+              "publication": "15th USENIX Conference on File and Storage Technologies",
+              "proceedingsPage": 158,
+              "section": "4.2 Key Findings"
+            },
+            "sha256": "7f05a05a09380e5a167fa8d66743e787c1a093f9cf5688cdd7277fb5539afc2e"
+          }
+        ],
+        "workId": "work:usenix:fast17:ganesan",
+        "workAuthors": [
+          "Aishwarya Ganesan",
+          "Ramnatthan Alagappan",
+          "Andrea C. Arpaci-Dusseau",
+          "Remzi H. Arpaci-Dusseau"
+        ],
+        "workPublishedAt": "2017",
+        "identityKeys": [
+          "usenix:fast17:ganesan",
+          "pdf:228845e4e684d8cdd65e4277ef5363286b6a0c9d9e20b2ae2bbe765dcecf063a",
+          "proposition:73d42387dd9b53a3e9a86dab0dd1328c2c13e7b860616250a6c37f1403200ca4"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-032",
+            "claimUrl": "https://wulfkaal.github.io/claims/7314479-032",
+            "rank": 1,
+            "confidence": 0.98,
+            "method": "independent substantive scholarly-growth one-to-one qualification review",
+            "whyRelevant": "The source independently demonstrates that recovery policy after a corrupted log entry can silently remove an entire log or its suffix. This directly qualifies Kaal's institutional claim that a reader which skips malformed records or returns a bounded view without an explicit completeness state can present an apparently ordinary history when evidence is missing. The mapping remains bounded because Ganesan and coauthors do not inspect Chronicle, its JSONL parser, its default limit, or the named commit.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-27T17:11:29.144Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "kaalReferenceFoundInSource": false,
+          "temporalIndependence": "The paper was published in 2017, before Kaal's 2026 paper.",
+          "canonicalPublicStatusVerified": true,
+          "peerReviewedStatusVerified": true,
+          "evidenceClassification": "peer-reviewed systems paper with injected file-system faults and observed log-corruption recovery outcomes",
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "local recovery from a corrupted log entry can discard the corrupted entry and subsequent entries or truncate and lose all later log data",
+          "compatibleScope": "persistent log-corruption recovery in distributed storage systems, limited because the source does not inspect Chronicle or its read interface",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "exactSupportingQuotesVerified": true,
+          "nonOverlap": {
+            "candidateIdMatches": false,
+            "canonicalUrlMatches": false,
+            "propositionHashMatches": false,
+            "priorPositionForClaim": false
+          },
+          "limitations": [
+            "The source does not inspect Chronicle, Mosaic Companion, or commit 2d920ce and therefore cannot verify the repository finding.",
+            "The paper studies eight distributed storage systems under injected single file system faults, not an audit-log user interface.",
+            "Its Kafka and LogCabin results concern the tested versions and recovery paths and do not establish a universal rule for log readers.",
+            "The source studies corrupted persistent records, not malformed JSONL parsing or an undisclosed query limit.",
+            "The paper does not measure Chronicle deployments or the prevalence of its named read behavior.",
+            "The evidence shows silent loss or inaccessibility in specified systems but does not prove that every continued read represents its result as a clean history."
+          ],
+          "rejectionReasonsRecorded": true
+        },
+        "contentMap": {
+          "proposition": "A log reader needs an explicit completeness state because local recovery after corruption can silently remove an entire log or its suffix.",
+          "evidenceLayer": "peer-reviewed USENIX FAST systems paper with complete official proceedings full text and fault-injection evaluation across eight distributed storage systems",
+          "strongestLimitation": "The source does not inspect Chronicle, malformed JSONL parsing, or the named default limit.",
+          "consequence": "A clean-looking prefix or bounded view cannot carry the audit meaning of a complete history when omitted evidence is not surfaced.",
+          "requestedAction": "Report parse failures, applied limits, rejected bytes, and whether each result is complete, bounded, or damaged."
+        },
+        "stylePack": {
+          "profile": "M1 early sole-author baseline v1.2.0",
+          "verifiedProfileWorks": [
+            "1428387",
+            "1998455",
+            "2150377",
+            "2267560"
+          ],
+          "passageCount": 4,
+          "rhetoricalFunctions": [
+            "classification",
+            "mechanism",
+            "limitation",
+            "institutional consequence"
+          ],
+          "sameRegisterPassagePackAvailable": true,
+          "limitation": "The short public position permits only bounded stylometric comparison."
+        },
+        "m1Validation": {
+          "status": "M1-PASS-WITH-LIMITS",
+          "deterministicGate": "pass",
+          "hardFailures": 0,
+          "warnings": 0,
+          "words": 261,
+          "reason": "The publication-bound position passed strict and public deterministic controls against a task-local four-work style pack. Its short length limits stylometric comparison."
+        }
+      },
+      "user_affirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "private-authority-receipts/2026-08-15-public-corpus-reactivation.json",
+    "authoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+    "eventSupersessionReceipt": "private-authority-receipts/2026-08-26-public-event-authority-supersession.json",
+    "eventSupersessionSha256": "7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4",
+    "runId": "kaal-continuous-claim-visibility-loop-20260827T170534Z"
+  }
+}
