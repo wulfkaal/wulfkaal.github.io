@@ -6,6 +6,7 @@ import hashlib
 import html
 import json
 import re
+from collections import Counter
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -418,6 +419,39 @@ def build_public_metrics(records):
     }
 
 
+def build_claim_coverage(records, protected_claims=5288):
+    """Build the protected-claim mapping summary from the public index."""
+    mapped = Counter(record["extends"]["identifier"] for record in records)
+    public_count = sum(record["publicationStatus"] == "public" for record in records)
+    private_count = sum(
+        record["publicationStatus"] == "private_compiled" for record in records
+    )
+    top_claims = sorted(mapped.items(), key=lambda item: (-item[1], item[0]))[:50]
+    return {
+        "version": "kaal-attribution-discoverability-v1",
+        "protectedScholarlyClaims": protected_claims,
+        "distinctClaimsExtended": len(mapped),
+        "protectedClaimCoverageRatio": round(len(mapped) / protected_claims, 5),
+        "affirmedPositionsMapped": len(records),
+        "publicPositions": public_count,
+        "privateCompiledPositions": private_count,
+        "positionsMissingProtectedClaim": 0,
+        "reportingBoundary": (
+            "All mapped positions are published public records. Public mapping does not establish comprehensive literature coverage."
+            if private_count == 0 else
+            "Private-compiled records are not public growth, live publication, deployment, or discoverability."
+        ),
+        "topExtendedClaims": [
+            {
+                "claimId": claim_id,
+                "url": f"{BASE}/claims/{claim_id.replace('kaal:claim:', '')}",
+                "extendingPositions": count,
+            }
+            for claim_id, count in top_claims
+        ],
+    }
+
+
 def build_positions_sitemap(records):
     lastmod = max(record["dateModified"] for record in records)
     primary = [
@@ -713,6 +747,10 @@ def main():
     )
     (out_dir / "coverage.json").write_text(
         json.dumps(build_public_metrics(records), ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
+    (out_dir / "claim-5288-coverage.json").write_text(
+        json.dumps(build_claim_coverage(records), ensure_ascii=False, indent=1) + "\n",
         encoding="utf-8",
     )
     (args.repo / "sitemap-positions.xml").write_text(

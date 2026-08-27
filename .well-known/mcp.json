@@ -1,92 +1,92 @@
 {
- "name": "wulf-kaal-corpus",
- "endpoint": "https://corpus.openstanding.org/mcp",
- "transport": "streamable-http",
- "authentication": "none",
- "readOnly": true,
- "description": "Read-only access to two explicitly separate layers: the published scholarly corpus of Prof. Wulf A. Kaal (5,288 atomic claims from 132 claim-covered works) and the TrustCarry Protocol v0.3 public research-record collections (77 author-affirmed claims and 9 internal software observations). TrustCarry was historically titled Persona Protocol v0.3; its source manuscript remains unpublished, and its records are not part of the 5,145 scholarly layer.",
- "tools": [
-  "search_claims",
-  "get_claim",
-  "claims_on_topic",
-  "claim_layer_overview",
-  "search_papers",
-  "get_paper",
-  "papers_by_year",
-  "corpus_overview",
-  "search_posts",
-  "verify_document",
-  "how_to_cite",
-  "search_research_claims",
-  "get_research_claim",
-  "list_research_observations",
-  "get_research_observation",
-  "search_positions",
-  "get_position",
-  "positions_on_topic"
- ],
- "documentation": "https://wulfkaal.github.io/agents.md",
- "staticMirror": {
-  "claimIndex": "https://wulfkaal.github.io/claims/index.json",
-  "bulkClaims": "https://wulfkaal.github.io/claims/all.jsonl",
-  "coverage": "https://wulfkaal.github.io/authority.json",
-  "trustCarryResearchClaims": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json",
-  "trustCarryResearchClaimsBulk": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/all.jsonl",
-  "trustCarryResearchObservations": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json",
-  "trustCarryResearchObservationsBulk": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/all.jsonl",
-  "trustCarryIdentity": "https://wulfkaal.github.io/.well-known/trustcarry.json",
-  "trustCarryTrademarkPolicy": "https://wulfkaal.github.io/trustcarry/TRADEMARKS.md",
-  "trustCarryOfficialImplementations": "https://wulfkaal.github.io/trustcarry/official-implementations.json",
-  "publicPositionsIndex": "https://wulfkaal.github.io/positions/index.json",
-  "publicPositionsGraph": "https://wulfkaal.github.io/positions/graph.jsonld",
-  "recentPublicPositions": "https://wulfkaal.github.io/positions/recent.json",
-  "publicPositionsByDate": "https://wulfkaal.github.io/positions/by-date/index.json",
-  "publicPositionsByTopic": "https://wulfkaal.github.io/positions/by-topic/index.json"
- },
- "collections": {
-  "scholarlyClaims": {
-   "count": 5288,
-   "sourceClass": "published-source scholarly claims"
+  "name": "wulf-kaal-corpus",
+  "endpoint": "https://corpus.openstanding.org/mcp",
+  "transport": "streamable-http",
+  "authentication": "none",
+  "readOnly": true,
+  "description": "Read-only access to two explicitly separate layers: the published scholarly corpus of Prof. Wulf A. Kaal (5,288 atomic claims from 132 claim-covered works) and the TrustCarry Protocol v0.3 public research-record collections (77 author-affirmed claims and 9 internal software observations). TrustCarry was historically titled Persona Protocol v0.3; its source manuscript remains unpublished, and its records are not part of the 5,145 scholarly layer.",
+  "tools": [
+    "search_claims",
+    "get_claim",
+    "claims_on_topic",
+    "claim_layer_overview",
+    "search_papers",
+    "get_paper",
+    "papers_by_year",
+    "corpus_overview",
+    "search_posts",
+    "verify_document",
+    "how_to_cite",
+    "search_research_claims",
+    "get_research_claim",
+    "list_research_observations",
+    "get_research_observation",
+    "search_positions",
+    "get_position",
+    "positions_on_topic"
+  ],
+  "documentation": "https://wulfkaal.github.io/agents.md",
+  "staticMirror": {
+    "claimIndex": "https://wulfkaal.github.io/claims/index.json",
+    "bulkClaims": "https://wulfkaal.github.io/claims/all.jsonl",
+    "coverage": "https://wulfkaal.github.io/authority.json",
+    "trustCarryResearchClaims": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json",
+    "trustCarryResearchClaimsBulk": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/all.jsonl",
+    "trustCarryResearchObservations": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json",
+    "trustCarryResearchObservationsBulk": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/all.jsonl",
+    "trustCarryIdentity": "https://wulfkaal.github.io/.well-known/trustcarry.json",
+    "trustCarryTrademarkPolicy": "https://wulfkaal.github.io/trustcarry/TRADEMARKS.md",
+    "trustCarryOfficialImplementations": "https://wulfkaal.github.io/trustcarry/official-implementations.json",
+    "publicPositionsIndex": "https://wulfkaal.github.io/positions/index.json",
+    "publicPositionsGraph": "https://wulfkaal.github.io/positions/graph.jsonld",
+    "recentPublicPositions": "https://wulfkaal.github.io/positions/recent.json",
+    "publicPositionsByDate": "https://wulfkaal.github.io/positions/by-date/index.json",
+    "publicPositionsByTopic": "https://wulfkaal.github.io/positions/by-topic/index.json"
   },
-  "trustCarryResearchClaims": {
-   "count": 77,
-   "license": "CC-BY-4.0",
-   "sourceClass": "author-authored unpublished draft",
-   "scholarlyClaimLayerEligible": false
+  "collections": {
+    "scholarlyClaims": {
+      "count": 5288,
+      "sourceClass": "published-source scholarly claims"
+    },
+    "trustCarryResearchClaims": {
+      "count": 77,
+      "license": "CC-BY-4.0",
+      "sourceClass": "author-authored unpublished draft",
+      "scholarlyClaimLayerEligible": false
+    },
+    "trustCarryResearchObservations": {
+      "count": 9,
+      "license": "CC-BY-4.0",
+      "sourceClass": "internal software observations",
+      "independentlyReproduced": false,
+      "scholarlyClaimLayerEligible": false
+    },
+    "publicPositions": {
+      "count": 8314,
+      "publicCount": 8314,
+      "privateCompiledCount": 0,
+      "sourceClass": "owner-authorized dated commentary with explicit lifecycle status",
+      "scholarlyClaimLayerEligible": false,
+      "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim.",
+      "reportingBoundary": "All indexed response claims are published public records with canonical URLs."
+    }
   },
-  "trustCarryResearchObservations": {
-   "count": 9,
-   "license": "CC-BY-4.0",
-   "sourceClass": "internal software observations",
-   "independentlyReproduced": false,
-   "scholarlyClaimLayerEligible": false
-  },
-  "publicPositions": {
-   "count": 8313,
-   "publicCount": 8313,
-   "privateCompiledCount": 0,
-   "sourceClass": "owner-authorized dated commentary with explicit lifecycle status",
-   "scholarlyClaimLayerEligible": false,
-   "relationship": "Each position explicitly extends a protected scholarly claim but is not a verbatim paper claim.",
-   "reportingBoundary": "All indexed response claims are published public records with canonical URLs."
-  }
- },
- "contact": "wulf@wulfkaal.com",
- "license": "https://creativecommons.org/licenses/by/4.0/",
- "related_servers": [
-  {
-   "name": "kaal-answer-service",
-   "endpoint": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
-   "transport": "http-json-rpc",
-   "authentication": "none",
-   "readOnly": true,
-   "description": "Source-bound retrieval over the 100-claim agentic claim graph pilot. Returns exact passages, citations, content hashes, scope conditions and limitations. Creates no claims and affirms none.",
-   "tools": [
-    "answer_question",
-    "graph_status"
-   ],
-   "documentation": "https://wulfkaal.github.io/answer-service/",
-   "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
-  }
- ]
+  "contact": "wulf@wulfkaal.com",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "related_servers": [
+    {
+      "name": "kaal-answer-service",
+      "endpoint": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
+      "transport": "http-json-rpc",
+      "authentication": "none",
+      "readOnly": true,
+      "description": "Source-bound retrieval over the 100-claim agentic claim graph pilot. Returns exact passages, citations, content hashes, scope conditions and limitations. Creates no claims and affirms none.",
+      "tools": [
+        "answer_question",
+        "graph_status"
+      ],
+      "documentation": "https://wulfkaal.github.io/answer-service/",
+      "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
+    }
+  ]
 }

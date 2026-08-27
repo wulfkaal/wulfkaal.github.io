@@ -41,7 +41,7 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
     def test_public_reactivation_promotes_all_compiled_positions(self):
         statuses = Counter(row["publicationStatus"] for row in self.records)
-        self.assertEqual(statuses, Counter({"public": 8313}))
+        self.assertEqual(statuses, Counter({"public": len(self.records)}))
         reactivated_records = sorted(
             (row for row in self.records if row["identifier"] in {
                 f"kaal:position:2026-08-08-{sequence}" for sequence in range(365, 374)
@@ -68,7 +68,7 @@ class PositionDiscoverabilityTests(unittest.TestCase):
             ],
         )
         coverage = load("positions/coverage.json")
-        self.assertEqual(coverage["publishedResponseClaims"], 8313)
+        self.assertEqual(coverage["publishedResponseClaims"], len(self.records))
         self.assertEqual(coverage["privateCompiledResponseClaims"], 0)
         self.assertIn("published public records", coverage["scopeNote"])
 
