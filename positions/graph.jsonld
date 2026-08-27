@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-004",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-004",
+   "text": "Offline capability is an architectural test, not a feature label. Kleppmann and coauthors distinguish cloud applications from local-first software by the location of the primary data copy, the presence of a locally installed executable, and continued operation without a network connection. Their prototypes permit users to disconnect, continue working, and later merge changes. Applications centered on synchronous server interaction instead lock users out when the network fails. This independently extends Kaal's operational test: retained function under isolation supplies observable evidence that computation and state remain on the user's device.\n\nThe correspondence has limits. Local-first software addresses collaborative data applications, not agent runtimes or model inference. Offline editing does not establish that every relevant computation occurs locally, and later synchronization may still depend on external infrastructure. The paper nevertheless sharpens the classification rule. A local interface cannot establish local execution when the underlying capability disappears at disconnection. Network isolation converts an architectural claim into a falsifiable test.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1145/3359591.3359737"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-004"
+   },
+   "sha256": "c23ceec6f927685140fe30fb678300049e05ceff1d01e28fec1966f69721f69c",
+   "evidenceLevel": "peer-reviewed Onward! 2019 conference paper with complete public full text",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.96,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-003",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-003",
@@ -166295,6 +166315,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://doi.org/10.1145/3359591.3359737",
+   "@type": "CreativeWork",
+   "name": "Local-first software: you own your data, in spite of the cloud",
+   "url": "https://doi.org/10.1145/3359591.3359737"
+  },
+  {
    "@id": "https://arxiv.org/abs/2602.14219v1",
    "@type": "CreativeWork",
    "name": "The Agent Economy: A Blockchain-Based Foundation for Autonomous AI Agents",
@@ -211335,6 +211361,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-004",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-004",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-003",

@@ -1,0 +1,216 @@
+{
+  "batch_id": "kaal-review:2026-08-26:scholarly-growth-7314479-004-reviewed-v1",
+  "date": "2026-08-26",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions/by-claim/7314479-004.html",
+  "source_snapshot_sha256": "134a6a014fb93797d06d722ae4109695189c61cb31194abacc6e352c3ab5d39c",
+  "review_ledger_sha256": "3bcce36099f2a1f3f778edb79b3b2f21cb8e63ca40aaf053ac5c26bb047a6230",
+  "exact_authorization": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification.",
+  "positions": [
+    {
+      "sequence": 4,
+      "response_type": "extension",
+      "slug": "network-isolation-local-execution-test",
+      "topics": [
+        "ai-and-agents",
+        "research-methods",
+        "decentralization",
+        "local-first-software",
+        "offline-capability",
+        "evidence-provenance"
+      ],
+      "text": "Offline capability is an architectural test, not a feature label. Kleppmann and coauthors distinguish cloud applications from local-first software by the location of the primary data copy, the presence of a locally installed executable, and continued operation without a network connection. Their prototypes permit users to disconnect, continue working, and later merge changes. Applications centered on synchronous server interaction instead lock users out when the network fails. This independently extends Kaal's operational test: retained function under isolation supplies observable evidence that computation and state remain on the user's device.\n\nThe correspondence has limits. Local-first software addresses collaborative data applications, not agent runtimes or model inference. Offline editing does not establish that every relevant computation occurs locally, and later synchronization may still depend on external infrastructure. The paper nevertheless sharpens the classification rule. A local interface cannot establish local execution when the underlying capability disappears at disconnection. Network isolation converts an architectural claim into a falsifiable test.",
+      "scope_conditions": [
+        "The response is limited to the exact full-text propositions and the one mapped Kaal claim.",
+        "External evidence level: peer-reviewed Onward! 2019 conference paper with complete public full text.",
+        "Mapping review tier: independent substantive scholarly-growth extension.",
+        "The paper studies collaborative data applications, not AI agent runtimes or model inference.",
+        "Offline editing does not establish that every relevant computation occurs on the user’s device.",
+        "The prototypes test continued offline work, but they do not define a general benchmark for all claimed local execution.",
+        "Synchronization and collaboration may still use external infrastructure after connectivity returns."
+      ],
+      "current_debate": {
+        "name": "Local-first software: you own your data, in spite of the cloud",
+        "url": "https://doi.org/10.1145/3359591.3359737"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-004",
+        "url": "https://wulfkaal.github.io/claims/7314479-004",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7314479",
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:response-candidate:2026-08-26:scholarly-growth-7314479-004-network-isolation-01",
+      "evidence_level": "peer-reviewed Onward! 2019 conference paper with complete public full text",
+      "review_tier": "independent substantive scholarly-growth extension",
+      "mapping_confidence": 0.96,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent substantive scholarly-growth one-to-one review",
+      "mapping_why_relevant": "The paper independently operationalizes locality through retained function after network loss. Its comparison of cloud applications, primary local data, locally installed executables, and normally functioning offline prototypes directly extends Kaal's disconnection test while leaving agent-specific inference outside scope.",
+      "source_provenance": {
+        "source": "peer-reviewed Onward! 2019 conference paper with complete public full text",
+        "sourceRecordId": "doi:10.1145/3359591.3359737",
+        "doi": "10.1145/3359591.3359737",
+        "canonicalUrl": "https://doi.org/10.1145/3359591.3359737",
+        "publicFullTextUrl": "https://www.inkandswitch.com/essay/local-first/local-first.pdf",
+        "retrievedAt": "2026-08-27T03:12:11.694Z",
+        "fullTextPdfSha256": "88da54a770caa92bfc1160c13fe2d62cd7716582ff31c42e835a8ef54993cfaf",
+        "extractedTextSha256": "f26eea0008cbe93dfe3225fc83ac555df0edf8e1aa43faf3b77234c00ef2559d",
+        "openAlexRecordSha256": "c813d0c5e94c525520887c8069ecd1532741b4cba42aed767b2b09fbc5b6afaa",
+        "primaryEvidenceReceiptSha256": "3f67c713e29e2a5c41bcdb274083b44714b4b10baa223fe53f75e73e30edd52c",
+        "sourceProposition": "Kleppmann and coauthors distinguish local-first execution from server-centered cloud software through primary local data, a locally installed executable, and retained normal function when the network is unavailable.",
+        "sourcePropositionSha256": "5be7a29f8c7109bc75057b8bcab33abc39e15a613da51161f04d092e3b08fe11",
+        "sourceEvidenceSetSha256": "c0f830cac76325e6f4aa185effb4b99cd44d4689ad90e86f01683267dab0276c",
+        "sourceEvidencePassages": [
+          {
+            "text": "“Old-fashioned” apps work fine without an Internet connection, but cloud apps typically don’t work while offline.",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 3,
+              "section": "3. The network is optional"
+            },
+            "sha256": "bc7d7aaf9d2375d3e63996e510e9872d9d23c80bc60adb39fdd23a03ec5dd5bd"
+          },
+          {
+            "text": "Since local-first applications store the primary copy of their data in each device’s local filesystem, the user can read and write this data anytime, even while offline.",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 4,
+              "section": "3. The network is optional"
+            },
+            "sha256": "a02d2bfee4566fb89d582b2051e318e0f311f53086f630ce606106845d2c520f"
+          },
+          {
+            "text": "Moreover, for good offline support it is desirable for the software to run as a locally installed executable on your device, rather than a tab in a web browser.",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 4,
+              "section": "3. The network is optional"
+            },
+            "sha256": "ed762b3a482a5fc476da95aac6194ae8907efb668939d8a52f23632b81036b96"
+          },
+          {
+            "text": "Most web apps have little or no support for offline working: if your network hiccups for even a moment, you are locked out of your work mid-sentence",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 10,
+              "section": "Web apps"
+            },
+            "sha256": "73a7e20fdfec38ea33a7eaf0ede04f96483b056d3a1d492c5eb0a0aaead685fa"
+          },
+          {
+            "text": "While other applications on the system threw up errors (“offline! warning!”) and blocked the user from working, the local-first prototypes function normally regardless of network status.",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 18,
+              "section": "5.3.2 Findings"
+            },
+            "sha256": "47e9ee6c6a211b8b51a3707aff41e580ceefc8aa24cb257c36e0ed5f5125915b"
+          },
+          {
+            "text": "Servers thus have a role to play in the local-first world — not as central authorities, but as “cloud peers” that support client applications without being on the critical path.",
+            "locator": {
+              "publication": "Onward! 2019",
+              "pdfPage": 20,
+              "section": "7. Towards a cloud peer"
+            },
+            "sha256": "d46654f93e9b63b6f61f521f787662a7651e62d4aac1232ce43465fd7f0f41f8"
+          }
+        ],
+        "workId": "work:doi:10.1145/3359591.3359737",
+        "workAuthors": [
+          "Martin Kleppmann",
+          "Adam Wiggins",
+          "Peter van Hardenberg",
+          "Mark McGranaghan"
+        ],
+        "workPublishedAt": "2019-10",
+        "identityKeys": [
+          "doi:10.1145/3359591.3359737",
+          "pdf:88da54a770caa92bfc1160c13fe2d62cd7716582ff31c42e835a8ef54993cfaf",
+          "proposition:5be7a29f8c7109bc75057b8bcab33abc39e15a613da51161f04d092e3b08fe11"
+        ],
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-004",
+            "claimUrl": "https://wulfkaal.github.io/claims/7314479-004",
+            "rank": 1,
+            "confidence": 0.96,
+            "method": "independent substantive scholarly-growth one-to-one review",
+            "whyRelevant": "The paper independently operationalizes locality through retained function after network loss. Its comparison of cloud applications, primary local data, locally installed executables, and normally functioning offline prototypes directly extends Kaal's disconnection test while leaving agent-specific inference outside scope.",
+            "ambiguous": false
+          }
+        ],
+        "substantiveReview": {
+          "reviewedAt": "2026-08-27T03:12:11.694Z",
+          "sourceIdentityVerified": true,
+          "authorIndependenceVerified": true,
+          "kaalReferenceFoundInSource": false,
+          "temporalIndependence": "The proceedings paper was published in 2019, before Kaal's 2026 paper.",
+          "canonicalPublicStatusVerified": true,
+          "peerReviewedStatusVerified": true,
+          "retractionOrSupersessionFound": false,
+          "propositionFidelityVerified": true,
+          "mechanismCorrespondence": "primary local data, a locally installed executable, and retained normal function when disconnected",
+          "compatibleScope": "local-first collaborative software architecture, limited because the source does not study AI agent inference",
+          "responseWordingDefensible": true,
+          "oneToOneExtendsMapping": true,
+          "exactSupportingQuotesVerified": true,
+          "nonOverlap": {
+            "candidateIdMatches": false,
+            "canonicalUrlMatches": false,
+            "propositionHashMatches": false,
+            "priorPositionForClaim": false
+          },
+          "limitations": [
+            "The paper studies collaborative data applications, not AI agent runtimes or model inference.",
+            "Offline editing does not establish that every relevant computation occurs on the user’s device.",
+            "The prototypes test continued offline work, but they do not define a general benchmark for all claimed local execution.",
+            "Synchronization and collaboration may still use external infrastructure after connectivity returns."
+          ],
+          "rejectionReasonsRecorded": true
+        },
+        "contentMap": {
+          "proposition": "Retained function during network isolation supplies observable evidence of local execution.",
+          "evidenceLayer": "peer-reviewed Onward! 2019 conference paper with complete public full text",
+          "strongestLimitation": "The source concerns collaborative applications rather than agent-runtime inference.",
+          "consequence": "A local interface is insufficient when the capability disappears after disconnection.",
+          "requestedAction": "Classify execution through the falsifiable isolation test."
+        },
+        "stylePack": {
+          "profile": "M1 early sole-author baseline v1.2.0",
+          "verifiedProfileWorks": [
+            "1428387",
+            "2150377",
+            "2267560"
+          ],
+          "sameRegisterPassagePackAvailable": true,
+          "limitation": "The short public position permits only bounded stylometric comparison."
+        },
+        "m1Validation": {
+          "status": "M1-PASS-WITH-LIMITS",
+          "deterministicGate": "pass",
+          "hardFailures": 0,
+          "warnings": 0,
+          "words": 156,
+          "reason": "The publication-bound position passed strict and public deterministic controls. Its short length limits stylometric comparison."
+        }
+      },
+      "user_affirmation": "Authorized under public authority SHA-256 87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c and event supersession SHA-256 7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4. Publication remains receipt-bound to successful workflows and exact live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "private-authority-receipts/2026-08-15-public-corpus-reactivation.json",
+    "authoritySha256": "87aad20196a753015a36d970f742c885eb763efdbada4869949bfffe3298130c",
+    "eventSupersessionReceipt": "private-authority-receipts/2026-08-26-public-event-authority-supersession.json",
+    "eventSupersessionSha256": "7d47ef36085c4dce590f287c986e4106f3bf35a7da5a25322d6fc3d4abf456d4",
+    "runId": "kaal-continuous-claim-visibility-loop-20260827T030534Z"
+  }
+}
