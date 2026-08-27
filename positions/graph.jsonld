@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-012",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-012",
+   "text": "Scale is an amortization problem before it is a throughput problem. Chen and her coauthors make this distinction explicit in AgentSlimming. Their starting workflow is a graph of agents and communication edges. The method prunes redundant nodes, substitutes lower-cost models, and retains changes only when baseline performance survives. Across eight benchmarks, the resulting workflows reduced recurring token and API expense while preserving or improving selected task scores. The authors then separate the one-time search and evaluation burden from per-query inference savings and calculate time to break even.\n\nThis evidence extends Kaal's claim in a narrower and testable form. A benchmark that reports accuracy and inference cost after workflow selection measures the performance of an arrangement. It does not disclose what it cost to discover, validate, and maintain that arrangement. Scale cannot be inferred from per-query cost alone. The design cost must be amortized over actual use, and a topology change must be charged for the validation required to preserve acceptable behavior.\n\nThe limits are material. AgentSlimming studies cloud-model workflow graphs, public reasoning benchmarks, and task-level optimization. It does not examine sovereign local runtimes, latency, institutional coordination, security review, or legal arrangements. It also finds cost reductions for a compression method, not a universal constraint on scaling. Sovereign runtime benchmarks should therefore report design and search effort, validation cost, recurring inference cost, break-even volume, topology changes, and performance loss as separate quantities. The cost of arranging the system belongs in the scaling result.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://aclanthology.org/2026.acl-long.1387/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-012"
+   },
+   "sha256": "d95a8ae378d6d44ff2a937f9ecd54116a1206c678e58ef35be92eadaafeb48bf",
+   "evidenceLevel": "peer-reviewed conference paper with complete official proceedings full text",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.97,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-011",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-011",
@@ -166455,6 +166475,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://aclanthology.org/2026.acl-long.1387",
+   "@type": "CreativeWork",
+   "name": "AgentSlimming: Towards Efficient and Cost-Aware Multi-Agent Systems",
+   "url": "https://aclanthology.org/2026.acl-long.1387"
+  },
+  {
    "@id": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214911",
    "@type": "CreativeWork",
    "name": "A theory of discrete hierarchies as optimal cost-adjusted productivity organisations",
@@ -211543,6 +211569,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-012",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-012",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-011",
