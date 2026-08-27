@@ -9,6 +9,28 @@
   <author><name>Wulf A. Kaal</name><uri>https://orcid.org/0009-0008-7840-1847</uri></author>
   <rights>Read, index, quote, and cite with attribution to the canonical URL.</rights>
   <entry>
+    <title>Revocation As Systemwide State Transition</title>
+    <id>kaal:position:2026-08-26-016</id>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-016" rel="alternate" type="text/html"/>
+    <link href="https://wulfkaal.github.io/positions/2026-08-26-016.md" rel="alternate" type="text/markdown"/>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <category term="consensus-and-security"/>
+    <category term="governance-design"/>
+    <category term="ai-and-agents"/>
+    <category term="revocation"/>
+    <category term="authority"/>
+    <category term="capabilities"/>
+    <category term="isolation"/>
+    <category term="synchronization"/>
+    <link href="https://www.usenix.org/conference/atc24/presentation/chen-xiangdong" rel="related"/>
+    <summary type="text">Revocation is a state problem. Chen and his coauthors compare Intel MPK, ARM PAC, ARM MTE, and ARM Morello capabilities. They find that rights retained in registers on other cores prevent a revoking core from establishing that the right has disappeared, unless the system uses an interprocessor interrupt or a restricted single core model. Of the four mechanisms, only MTE implements the core coherent synchronization principle they identify.
+
+The result supplies a concrete mechanism for failed propagation. Withdrawal can be correct at the source. An active component may still hold and exercise a derived instance of the grant. The issuer&apos;s record proves a local change. The prior right may remain live elsewhere. Local withdrawal is not cessation. Every live instance matters. A current validity check may instead stand between each instance and the protected action.
+
+The evidence is narrower th</summary>
+  </entry>
+  <entry>
     <title>Delegation Chain Authority Intersection</title>
     <id>kaal:position:2026-08-26-015</id>
     <link href="https://wulfkaal.github.io/positions/2026-08-26-015" rel="alternate" type="text/html"/>
@@ -3510,20 +3532,5 @@ The comparison is bounded. Credit rating agencies evaluate securities, not LLM-g
     <category term="crossref"/>
     <link href="https://doi.org/10.1017/err.2026.10103" rel="related"/>
     <summary type="text">AI Agents in Payments identifies technical, legal, and societal risks including cybersecurity vulnerabilities, liability gaps, regulatory non-compliance, and economic disruption. This independently extends Kaal&apos;s monitoring-framework risk gap with a concrete taxonomy in the same payment-agent domain. The abstract proposition does not assess the monitoring framework itself or its scalability and adaptability omissions.</summary>
-  </entry>
-  <entry>
-    <title>Streaming Explainable Ai And Blockchain For Dual Currency Payments A Systematic Review Of  B384Ff0F87</title>
-    <id>kaal:position:2026-08-08-189</id>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-189" rel="alternate" type="text/html"/>
-    <link href="https://wulfkaal.github.io/positions/2026-08-08-189.md" rel="alternate" type="text/markdown"/>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <category term="economics"/>
-    <category term="blockchain"/>
-    <category term="historical-response"/>
-    <category term="scholarly-literature"/>
-    <category term="crossref"/>
-    <link href="https://doi.org/10.21203/rs.3.rs-8004820/v1" rel="related"/>
-    <summary type="text">Explainable AI and Blockchain for Dual-Currency Payments states that high transaction fees, settlement delays, currency fluctuations, and restricted wallet access impair financial inclusion and income security for cross-border digital labor in Bangladesh. This supplies a jurisdiction-specific cost barrier consistent with the premise of Kaal&apos;s micropayment claim. The abstract does not attribute the costs specifically to centralized systems or establish that blockchain processing removes them.</summary>
   </entry>
 </feed>

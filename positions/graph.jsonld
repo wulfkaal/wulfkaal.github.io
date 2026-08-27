@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-26-016",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-26-016",
+   "text": "Revocation is a state problem. Chen and his coauthors compare Intel MPK, ARM PAC, ARM MTE, and ARM Morello capabilities. They find that rights retained in registers on other cores prevent a revoking core from establishing that the right has disappeared, unless the system uses an interprocessor interrupt or a restricted single core model. Of the four mechanisms, only MTE implements the core coherent synchronization principle they identify.\n\nThe result supplies a concrete mechanism for failed propagation. Withdrawal can be correct at the source. An active component may still hold and exercise a derived instance of the grant. The issuer's record proves a local change. The prior right may remain live elsewhere. Local withdrawal is not cessation. Every live instance matters. A current validity check may instead stand between each instance and the protected action.\n\nThe evidence is narrower than the institutional claim. The paper studies access to memory across processor cores. It does not study legal grants, delegated purpose, revocation across machines, or sovereign local agent runtimes. It also does not establish that few systems can demonstrate propagation across the full universe of authorization systems. Its comparative result is limited to four modern hardware isolation mechanisms.\n\nA sovereign runtime should treat revocation as a systemwide transition with an observable completion condition. Each execution path must consult current authority state or operate through a revocable indirection. A completion receipt should bind the grant, the cutoff, the affected holders, synchronization evidence, and the first rejected use after the cutoff. The distinction controls the claim. Without that evidence, an issuer can demonstrate withdrawal. It cannot demonstrate cessation.",
+   "responseType": "extension",
+   "datePublished": "2026-08-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/conference/atc24/presentation/chen-xiangdong"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-016"
+   },
+   "sha256": "b9e8582dfcb2438f698370af6cb11331495f465b4dff8838824a0d03ac7d0184",
+   "evidenceLevel": "peer-reviewed USENIX ATC conference paper with complete official proceedings full text",
+   "reviewTier": "independent substantive scholarly-growth extension",
+   "mappingConfidence": 0.98,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-015",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-015",
@@ -166535,6 +166555,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://www.usenix.org/conference/atc24/presentation/chen-xiangdong",
+   "@type": "CreativeWork",
+   "name": "Limitations and Opportunities of Modern Hardware Isolation Mechanisms",
+   "url": "https://www.usenix.org/conference/atc24/presentation/chen-xiangdong"
+  },
+  {
    "@id": "https://www.usenix.org/conference/usenixsecurity11/permission-re-delegation-attacks-and-defenses",
    "@type": "CreativeWork",
    "name": "Permission Re-Delegation: Attacks and Defenses",
@@ -211647,6 +211673,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-016",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-016",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-015",
