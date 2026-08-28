@@ -1,0 +1,94 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-08-28-001",
+ "identifier": "kaal:position:2026-08-28-001",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Dapper Trace Identifiers Qualify Chronicle Reconstruction",
+ "text": "Google's Dapper tracing infrastructure independently supports the identifier half of Kaal's Chronicle reconstruction claim. Each span carries a span identifier and a parent identifier, and every span in the trace shares a common trace identifier, allowing causal relationships across hosts to be reconstructed by joining those identifiers. The precedent is narrower than Kaal's design: Dapper supplies no principal identifier, no Chronicle schema, and no Core-specific minting authority. Its reconstruction also applies only to sampled activity that was captured and not collapsed by batching.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-08-28",
+ "dateModified": "2026-08-28",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "qualification",
+ "keywords": [
+  "ai-and-agents",
+  "open-source-and-code",
+  "governance-design"
+ ],
+ "scope_conditions": [
+  "Shared trace and parent identifiers only; no support for a principal identifier.",
+  "Google distributed tracing is not a sovereign local agent runtime.",
+  "Sampling and batching limit reconstruction completeness."
+ ],
+ "currentDebate": {
+  "name": "Dapper, a Large-Scale Distributed Systems Tracing Infrastructure",
+  "url": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure/"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7314479-038",
+  "url": "https://wulfkaal.github.io/claims/7314479-038",
+  "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+  "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": null,
+  "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-038"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Dapper, a Large-Scale Distributed Systems Tracing Infrastructure",
+   "url": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure/"
+  }
+ ],
+ "batch_id": "kaal-growth:2026-08-28:daily-001-remediated-v1",
+ "review_provenance": "https://wulfkaal.github.io/positions-src/2026-08-28-compound-growth-kaal-growth-2026-08-28-daily-001-remediated-v1.json",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-08-28-001",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-08-28-001.md",
+ "candidateId": "kaal:candidate:3bc24438b7fc5503f825afc372bb62766e4c85312bb790c8ac9fe5e6fb3f90be",
+ "evidenceLevel": "permitted_full_text",
+ "reviewTier": "independent evidence-first compound-growth review",
+ "mappingConfidence": null,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent one-to-one proposition and mechanism review",
+ "mappingWhyRelevant": "Dapper independently supports the shared trace identifier and parent identifier needed to reconstruct causal relationships by selection. It does not supply Kaal's principal identifier, Chronicle schema, or Core-specific minting authority, so the response is limited to those two mechanisms.",
+ "sourceProvenance": {
+  "canonicalUrl": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure/",
+  "retrievedAt": "2026-08-28T13:58:26Z",
+  "sourceContentSha256": "41baea09d066e0167ca0943968d44f7f07790be700440427f78c034910e5765d",
+  "sourceProposition": "Dapper models a distributed trace as a tree whose spans carry span and parent identifiers, while every span in the trace shares a common trace identifier used for reconstruction.",
+  "sourcePropositionSha256": "939c6d1b44fcf8926300f95d5f0341ea0b392225c288618572c9ed03230f1318",
+  "normalizedWorkId": "google-research:dapper-2010",
+  "sourceVersion": "published",
+  "exactEvidenceQuote": "Dapper records a human-readable span name for each span, as well as a span id and parent id in order to reconstruct the causal relationships between the individual spans in a single distributed trace. Spans created without a parent id are known as root spans. All spans associated with a specific trace also share a common trace id.",
+  "exactEvidenceQuoteSha256": "1518f69dad3a78ec4d712d991cd3144f16f2bde1e8fdb758707096e8bd661142",
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7314479-038",
+    "confidence": null,
+    "method": "independent one-to-one review",
+    "whyRelevant": "Dapper independently supports the shared trace identifier and parent identifier needed to reconstruct causal relationships by selection. It does not supply Kaal's principal identifier, Chronicle schema, or Core-specific minting authority, so the response is limited to those two mechanisms.",
+    "ambiguous": false
+   }
+  ]
+ },
+ "userAffirmation": "Standing scholarly-growth preauthorization bound to 43b5726c8369904d8596ab3b06b7be37290a6b29fc158dcbb757e38b98e8e5ec; publication remains conditional on successful projection, deployment, and live-byte verification.",
+ "publicIdentitySha256": "3bc24438b7fc5503f825afc372bb62766e4c85312bb790c8ac9fe5e6fb3f90be",
+ "sha256": "2560fcddc575f113e924988547aa95f4d128247cf721322a5a3e4c3a0980f243"
+}

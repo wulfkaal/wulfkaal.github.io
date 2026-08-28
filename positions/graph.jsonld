@@ -15,6 +15,106 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-28-005",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-28-005",
+   "text": "Mui, Mohtashemi, and Halberstadt provide a formal basis for Kaal's domain-specificity commitment. Their model indexes an agent's reputation by context and by the evaluating agent, and encounter history is accumulated within a context rather than globally. They state that cross-context estimation is not addressed and identify vectorized quantities as a simple design direction. This extends Kaal's non-transfer rule: without an explicit cross-context estimator, silent domain transfer is not licensed by the model. The source does not test silent-transfer harms, measure how often implementations discard context, or attribute context collapse to display convenience. The reviewed evidence is the authors' PostScript copy, not publisher PDF bytes.",
+   "responseType": "extension",
+   "datePublished": "2026-08-28",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://groups.csail.mit.edu/medg/people/lmui/papers.html"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-045"
+   },
+   "sha256": "28962340d65df84818ae4813b8f389d57e6ceb4491c49cdf9599a1694ec0761f",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-28-004",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-28-004",
+   "text": "Friedman and Resnick's author-hosted draft of 11 August 1999 supports Kaal's system-created identity-cost mechanism while exposing its costs. Cheap pseudonyms let participants escape reputational consequences. Cooperation can be restored through dues, entry fees, or free but unreplaceable pseudonyms, separating persistent identity from public legal identity. Those mechanisms are not costless: dues impose distrust on newcomers, fees may exclude low-payoff participants while failing to deter the wealthiest, and unreplaceable pseudonyms require a trusted intermediary. The draft does not state Kaal's exact accumulated-standing-versus-restart-cost threshold and does not study sovereign agent runtimes. This response cites the 1999 author draft, not the 2001 publisher version.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-28",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://presnick.people.si.umich.edu/papers/identifiers/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-044"
+   },
+   "sha256": "b123bd18fc2f24dce2f7103f2c9bb783c021c64a9b61621ddd1d7ce05ef59f7a",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-28-003",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-28-003",
+   "text": "Resnick, Zeckhauser, Friedman, and Kuwabara support one component of Kaal's counterparty-selection claim: a reputation system collects, distributes, and aggregates feedback about past behavior so parties who do not know one another can decide whom to trust. Their 2000 article also qualifies portability. It reports that cross-system rating transfer failed in practice and that limited distribution confined reputation's effect to one online arena. The article does not compare reputation with contract, regulation, or brand and does not establish that those alternatives fail at machine speed. Its support reaches only the stranger-trust function of aggregated past conduct.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-28",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://rzeckhauser.scholars.harvard.edu/publications/reputation-systems"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-043"
+   },
+   "sha256": "b3201f7b3dbd9965d10c8eb97c36ef36b486fd5deadd316723dcb6793d33d67f",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-28-002",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-28-002",
+   "text": "Haber and Stornetta's 1991 linking scheme is a direct precedent for the integrity mechanism in Kaal's Chronicle claim. Their signed certificates carry hash-bound information from earlier certificates, a challenger may follow the sequence forward or backward, and retrospective insertion into the existing stream requires a hash collision. The precedent is narrower than Kaal's operational design. It does not specify a persisted per-tool head, separately evaluate deletion or reordering, establish a determinable break point, or prove a one-hash append cost. Protection also depends on independently held certificates or an external anchor when the local chain and head share one rewritable trust boundary.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-28",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://doi.org/10.1007/BF00196791"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-040"
+   },
+   "sha256": "81308bae2a4133ddcfb7e3d7db5058f1f3086cca9867f5464a397ff7d286cdfc",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-28-001",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-28-001",
+   "text": "Google's Dapper tracing infrastructure independently supports the identifier half of Kaal's Chronicle reconstruction claim. Each span carries a span identifier and a parent identifier, and every span in the trace shares a common trace identifier, allowing causal relationships across hosts to be reconstructed by joining those identifiers. The precedent is narrower than Kaal's design: Dapper supplies no principal identifier, no Chronicle schema, and no Core-specific minting authority. Its reconstruction also applies only to sampled activity that was captured and not collapsed by batching.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-28",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure/"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-038"
+   },
+   "sha256": "2560fcddc575f113e924988547aa95f4d128247cf721322a5a3e4c3a0980f243",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-26-037",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-26-037",
@@ -166935,6 +167035,36 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://groups.csail.mit.edu/medg/people/lmui/papers.html",
+   "@type": "CreativeWork",
+   "name": "A Computational Model of Trust and Reputation",
+   "url": "https://groups.csail.mit.edu/medg/people/lmui/papers.html"
+  },
+  {
+   "@id": "https://presnick.people.si.umich.edu/papers/identifiers",
+   "@type": "CreativeWork",
+   "name": "The Social Cost of Cheap Pseudonyms, author draft of 11 August 1999",
+   "url": "https://presnick.people.si.umich.edu/papers/identifiers"
+  },
+  {
+   "@id": "https://rzeckhauser.scholars.harvard.edu/publications/reputation-systems",
+   "@type": "CreativeWork",
+   "name": "Reputation Systems",
+   "url": "https://rzeckhauser.scholars.harvard.edu/publications/reputation-systems"
+  },
+  {
+   "@id": "https://doi.org/10.1007/BF00196791",
+   "@type": "CreativeWork",
+   "name": "How to Time-Stamp a Digital Document",
+   "url": "https://doi.org/10.1007/BF00196791"
+  },
+  {
+   "@id": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure",
+   "@type": "CreativeWork",
+   "name": "Dapper, a Large-Scale Distributed Systems Tracing Infrastructure",
+   "url": "https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure"
+  },
+  {
    "@id": "https://columbialawreview.org/content/the-right-to-contest-ai",
    "@type": "CreativeWork",
    "name": "The Right to Contest AI",
@@ -212167,6 +212297,41 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-045",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-045",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-044",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-044",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-043",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-043",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-040",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-040",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-038",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-038",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-037",
