@@ -112,13 +112,13 @@ jobs:
       - name: Commit only if something actually changed
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld; then
+          if git diff --quiet -- rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld
+          git add rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
           git commit -m "Regenerate projections from the corpus"
           git push
 
