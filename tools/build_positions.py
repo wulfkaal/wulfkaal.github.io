@@ -715,6 +715,107 @@ def update_discovery_surfaces(repo, lastmod, records):
     sitemap_path.write_text(sitemap, encoding="utf-8")
 
 
+def update_attribution_surfaces(repo, records):
+    """Keep claim-mapping and integrity exports in lockstep with positions."""
+    claims_index = json.loads((repo / "claims" / "index.json").read_text(encoding="utf-8"))
+    protected_count = claims_index["count"]
+    protected_ids = {claim["id"] for claim in claims_index.get("claims", [])}
+    if len(protected_ids) != protected_count:
+        raise RuntimeError("Protected scholarly claim count or identity set is invalid")
+
+    claim_counts = {}
+    source_map = []
+    canonical = []
+    evidence = []
+    for record in records:
+        claim = record.get("extends") or {}
+        claim_id = claim.get("identifier")
+        if claim_id not in protected_ids:
+            raise RuntimeError(f"Position maps outside the protected corpus: {record['identifier']}")
+        claim_counts[claim_id] = claim_counts.get(claim_id, 0) + 1
+        short_id = record["identifier"].replace("kaal:position:", "")
+        markdown_path = repo / "positions" / f"{short_id}.md"
+        markdown_sha = hashlib.sha256(markdown_path.read_bytes()).hexdigest()
+        canonical.append({
+            "identifier": record["identifier"], "canonical_url": record["canonical_url"],
+            "canonicalForm": record["canonicalForm"], "sha256": markdown_sha,
+            "datePublished": record["datePublished"], "dateModified": record["dateModified"],
+            "batch_id": record["batch_id"], "responseType": record["responseType"],
+        })
+        source_map.append({
+            "position": record["identifier"], "canonical_url": record["canonical_url"],
+            "responseType": record["responseType"],
+            "source": {"name": record["currentDebate"]["name"], "url": record["currentDebate"]["url"]},
+            "extendsClaim": {
+                "id": claim_id, "url": claim["url"], "citation": claim["citation"],
+                "source_pdf_sha256": claim.get("source_pdf_sha256"), "inProtectedCorpus": True,
+                "corpusClaimYear": claim.get("year"),
+            },
+            "isBasedOn": [claim["url"], record["currentDebate"]["url"]],
+            "batch_id": record["batch_id"],
+        })
+        evidence.append({
+            "identifier": record["identifier"], "canonical_url": record["canonical_url"],
+            "canonicalFormSha256": markdown_sha,
+            "textSha256": hashlib.sha256(record["text"].encode("utf-8")).hexdigest(),
+            "evidenceLevel": record.get("evidenceLevel", "reviewed source"), "responseType": record["responseType"],
+            "sourceUrl": record["currentDebate"]["url"], "sourceName": record["currentDebate"]["name"],
+            "extendsClaimId": claim_id, "extendsClaimUrl": claim["url"],
+            "sourcePdfSha256": claim.get("source_pdf_sha256"),
+            "reviewProvenance": record.get("review_provenance"), "batch_id": record["batch_id"],
+        })
+
+    def write_jsonl(path, rows):
+        path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+
+    positions_dir = repo / "positions"
+    write_jsonl(positions_dir / "canonical-url-registry.jsonl", canonical)
+    write_jsonl(positions_dir / f"claim-source-{protected_count}-map.jsonl", source_map)
+    write_jsonl(positions_dir / "claim-source-5033-map.jsonl", source_map)
+    write_jsonl(positions_dir / "provenance-evidence-hashes.jsonl", evidence)
+
+    top_claims = sorted(claim_counts.items(), key=lambda item: (-item[1], item[0]))[:50]
+    public_count = sum(record["publicationStatus"] == "public" for record in records)
+    private_count = sum(record["publicationStatus"] == "private_compiled" for record in records)
+    reporting_boundary = (
+        "All mapped positions are published public records. Public mapping does not establish comprehensive literature coverage."
+        if private_count == 0 else
+        "Private-compiled records are not public growth, live publication, deployment, or discoverability."
+    )
+    coverage = {
+        "version": "kaal-attribution-discoverability-v1",
+        "protectedScholarlyClaims": protected_count,
+        "distinctClaimsExtended": len(claim_counts),
+        "protectedClaimCoverageRatio": round(len(claim_counts) / protected_count, 5),
+        "affirmedPositionsMapped": len(records), "publicPositions": public_count,
+        "privateCompiledPositions": private_count,
+        "positionsMissingProtectedClaim": 0, "reportingBoundary": reporting_boundary,
+        "topExtendedClaims": [
+            {"claimId": claim_id, "url": f"{BASE}/claims/{claim_id.replace('kaal:claim:', '')}", "extendingPositions": count}
+            for claim_id, count in top_claims
+        ],
+    }
+    write_json(positions_dir / f"claim-{protected_count}-coverage.json", coverage)
+    write_json(positions_dir / "claim-5033-coverage.json", {
+        **coverage, "deprecatedAlias": True,
+        "supersededBy": f"{BASE}/positions/claim-{protected_count}-coverage.json",
+    })
+
+    dataset_path = positions_dir / "dataset.jsonld"
+    dataset = json.loads(dataset_path.read_text(encoding="utf-8"))
+    dataset["dateModified"] = max(record["dateModified"] for record in records)
+    dataset["variableMeasured"] = (
+        f"{len(records)} affirmed position claims ({public_count} public, {private_count} private compiled); "
+        f"{protected_count} protected scholarly claims (separate, unchanged)."
+    )
+    dataset["reportingBoundary"] = reporting_boundary
+    for item in dataset.get("distribution", []):
+        target = positions_dir / item["name"]
+        if target.exists():
+            item["sha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
+    write_json(dataset_path, dataset)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
@@ -795,6 +896,7 @@ def main():
     by_claim = build_shards(out_dir, records, lastmod)
     add_reverse_claim_links(args.repo, by_claim)
     update_discovery_surfaces(args.repo, lastmod, records)
+    update_attribution_surfaces(args.repo, records)
 
     print(f"built {len(records)} affirmed positions")
 
