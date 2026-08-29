@@ -15,6 +15,26 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-08-29-001",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-08-29-001",
+   "text": "Haldar, Chandra, and Franz show that semantic remote attestation can evaluate program behavior and required properties rather than a particular binary, allowing multiple implementations to pass the same checks. This supports Kaal's criteria-versus-frozen-specification distinction at mechanism level. The source is narrower: it concerns a Java TrustedVM and counterparty-specified security properties, not legal or regulatory criteria, and it does not establish that regulated technology never needs to be reopened when criteria change. Software through the trusted virtual machine also remains subject to signed-hash binary attestation.",
+   "responseType": "qualification",
+   "datePublished": "2026-08-29",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://www.usenix.org/techsessionssummary/vm-04-151-technical-paper"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-049"
+   },
+   "sha256": "b92725c4b2f162ce7d5f0790b091a733bd59f93476065f297f2404da6bd84204",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-08-28-005",
    "@type": "Claim",
    "identifier": "kaal:position:2026-08-28-005",
@@ -167035,6 +167055,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://usenix.org/techsessionssummary/vm-04-151-technical-paper",
+   "@type": "CreativeWork",
+   "name": "Semantic Remote Attestation -- A Virtual Machine directed approach to Trusted Computing",
+   "url": "https://usenix.org/techsessionssummary/vm-04-151-technical-paper"
+  },
+  {
    "@id": "https://groups.csail.mit.edu/medg/people/lmui/papers.html",
    "@type": "CreativeWork",
    "name": "A Computational Model of Trust and Reputation",
@@ -212297,6 +212323,13 @@
    "@type": "CreativeWork",
    "name": "MCP release candidate announcement",
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-049",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-049",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/7314479-045",
