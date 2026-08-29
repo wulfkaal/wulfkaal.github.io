@@ -1,0 +1,81 @@
+{
+  "batch_id": "kaal-growth:2026-08-29:daily-001-remediated-v1",
+  "date": "2026-08-29",
+  "status": "standing-preauthorized",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions-src/2026-08-29-compound-growth-kaal-growth-2026-08-29-daily-001-remediated-v1.json",
+  "source_snapshot_sha256": "261472533fdcf80661583f9af001e3e06d077feae0c30b918f23dc1d79ceeb86",
+  "review_ledger_sha256": "210a97e98410b0ff6820432471ed4a82779da15d69e7144f0a5e40c6f69cd90b",
+  "exact_authorization": "Publish frozen scholarly-growth packets automatically only after every evidence, identity, uniqueness, authority, protected-layer, deterministic-build, deployment, and live-byte verification gate passes.",
+  "positions": [
+    {
+      "sequence": 1,
+      "response_type": "qualification",
+      "slug": "semantic-remote-attestation-qualifies-criteria-over-binaries",
+      "topics": [
+        "dynamic-regulation",
+        "compliance",
+        "innovation",
+        "consensus-and-security"
+      ],
+      "text": "Haldar, Chandra, and Franz show that semantic remote attestation can evaluate program behavior and required properties rather than a particular binary, allowing multiple implementations to pass the same checks. This supports Kaal's criteria-versus-frozen-specification distinction at mechanism level. The source is narrower: it concerns a Java TrustedVM and counterparty-specified security properties, not legal or regulatory criteria, and it does not establish that regulated technology never needs to be reopened when criteria change. Software through the trusted virtual machine also remains subject to signed-hash binary attestation.",
+      "scope_conditions": [
+        "The prototype concerns Java virtual machines and remote security attestation, not sovereign local agent runtimes.",
+        "The paper tests machine-checkable security properties, not legal or regulatory criteria.",
+        "Software through the trusted virtual machine still requires signed-hash binary attestation.",
+        "The remote counterparty authors the checked policy; public authority over criteria is not addressed."
+      ],
+      "current_debate": {
+        "name": "Semantic Remote Attestation -- A Virtual Machine directed approach to Trusted Computing",
+        "url": "https://www.usenix.org/techsessionssummary/vm-04-151-technical-paper"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7314479-049",
+        "url": "https://wulfkaal.github.io/claims/7314479-049",
+        "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": null,
+        "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+      },
+      "candidate_id": "kaal:candidate:d7c55f1e407215b7cb33231bf85753e1d1c05522944a069b515ca6b53f7d2654",
+      "evidence_level": "permitted_full_text",
+      "review_tier": "independent evidence-first compound-growth review",
+      "mapping_confidence": null,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent one-to-one proposition and mechanism review",
+      "mapping_why_relevant": "Haldar, Chandra, and Franz directly support property-based attestation across multiple implementations rather than conformity to a single binary. The match is limited to the technical criteria-versus-specification mechanism: the paper does not study legal regulation or establish that regulated technology never needs reopening.",
+      "source_provenance": {
+        "canonicalUrl": "https://www.usenix.org/techsessionssummary/vm-04-151-technical-paper",
+        "retrievedAt": "2026-08-29T12:07:29.846Z",
+        "sourceContentSha256": "776d2ceb3d56463242b5e066226039ccc09ad24e48f025776f0be707bf74499b",
+        "sourceProposition": "Semantic remote attestation checks program behavior against requested properties rather than certifying a particular binary, allowing different implementations to pass when they satisfy those properties.",
+        "sourcePropositionSha256": "23035e5b5ad5e9cf5da5277130dd562a26729b79bd70ec3aa132e554c475ece0",
+        "normalizedWorkId": "usenix:seshadri-2004-semantic-remote-attestation",
+        "sourceVersion": "published",
+        "exactEvidenceQuote": "A key advantage of our approach is that reasoning about the behavior of a program is now not tied to a particular binary.",
+        "exactEvidenceQuoteSha256": "25f8bd862358daae037226d8e88957ac08de957480105fa721daac577395589b",
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7314479-049",
+            "confidence": null,
+            "method": "independent one-to-one review",
+            "whyRelevant": "Haldar, Chandra, and Franz directly support property-based attestation across multiple implementations rather than conformity to a single binary. The match is limited to the technical criteria-versus-specification mechanism: the paper does not study legal regulation or establish that regulated technology never needs reopening.",
+            "ambiguous": false
+          }
+        ]
+      },
+      "user_affirmation": "Standing scholarly-growth preauthorization bound to 261472533fdcf80661583f9af001e3e06d077feae0c30b918f23dc1d79ceeb86; publication remains conditional on successful projection, deployment, and live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "kaal-authority:2026-08-27:compound-growth-standing-preauthorization",
+    "lane": "scholarly-growth",
+    "standingPreauthorization": true,
+    "batchManifestSha256": "261472533fdcf80661583f9af001e3e06d077feae0c30b918f23dc1d79ceeb86"
+  }
+}
