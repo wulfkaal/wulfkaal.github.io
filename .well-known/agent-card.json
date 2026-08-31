@@ -113,6 +113,26 @@
         "curl -s -X POST https://kaal-answer-service.wulf577462.chatgpt.site/api/answer -H 'content-type: application/json' -d '{\"question\":\"What has Wulf A. Kaal written about verified reputation?\",\"limit\":5}'",
         "curl -s https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
       ]
+    },
+    {
+      "id": "kaal-research-skills-pin",
+      "name": "Kaal research skills (pinned GitHub bytes, not a release)",
+      "description": "Cite the six public research-skill SKILL.md files at exact commit 66b25c443bfd9b6dcf85bde4e05e96d9030de653 tree e7ca0d75f0c160b4f2701d865ac01597a760c647. freeze.json https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/freeze.json. SHA256SUMS https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/SHA256SUMS. Sidecar ACCEPT receipt SHA-256 f8abaefa057461468a773d57d71878369016286e7422ba0337040203dadd2bd3. Not a GitHub Release. Not Cursor marketplace. Not liveRoutes. Explicitly: not a GitHub Release, not marketplace, not liveRoutes. freeze.json status stays PUBLIC_CANDIDATE_UNSIGNED_UNATTESTED_NOT_ACCEPT. publication_authorized remains false. kaal-property-router git blob SHA-1 51b13fec0baa0703bd71d259ad9c6928663d1717; kaal-afmr-research git blob SHA-1 644d42f3f0148324adca93def6615824baaa5e8a; kaal-agentic-substrate-research git blob SHA-1 c5e8b64a1bb9ce15269ba3df3a4a676983ec9ac5; kaal-open-standing-research git blob SHA-1 c2ef295f5058a00eaa7647247e64b00eb9f1d7d2; kaal-trustcarry-research git blob SHA-1 cf9536730243186fd07c5d89edab80b2be3793cb; kaal-wulf-research git blob SHA-1 c105795ed523167640073f48424aa372e70d4863.",
+      "tags": [
+        "research-skills",
+        "pin",
+        "not-a-release",
+        "not-marketplace",
+        "not-liveRoutes"
+      ],
+      "examples": [
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-property-router/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-afmr-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-agentic-substrate-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-open-standing-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-trustcarry-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-wulf-research/SKILL.md"
+      ]
     }
   ],
   "endpoints": {
@@ -179,7 +199,7 @@
     "author": "Wulf A. Kaal",
     "protocol_steward": "Wulf A. Kaal",
     "commercial_release_authority": "Kaal Consulting LLC",
-    "trademark_presentation": "TrustCarry™ Protocol",
+    "trademark_presentation": "TrustCarry\u2122 Protocol",
     "trademark_registration_status": "claimed_unregistered",
     "research_claims": 77,
     "software_observations": 9,
@@ -206,6 +226,9 @@
     "answer_service": "https://kaal-answer-service.wulf577462.chatgpt.site/",
     "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
     "answer_service_mcp": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
-    "machine_index": "https://wulfkaal.github.io/llms.txt"
+    "machine_index": "https://wulfkaal.github.io/llms.txt",
+    "kaal_research_skills": "https://github.com/wulfkaal/kaal-research-skills",
+    "kaal_research_skills_freeze": "https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/freeze.json",
+    "kaal_research_skills_sha256sums": "https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/SHA256SUMS"
   }
 }

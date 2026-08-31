@@ -234,3 +234,23 @@ Canonical identity: https://wulfkaal.github.io/trustcarry/. Trademark presentati
 | Trademark and naming policy | https://wulfkaal.github.io/trustcarry/TRADEMARKS.md | Permitted references, fork naming, reserved certification language, and license boundary |
 | Official implementation registry | https://wulfkaal.github.io/trustcarry/official-implementations.json | Exclusive machine-readable list of official TrustCarry surfaces |
 <!-- persona-v03-research-records:end -->
+
+<!-- kaal-research-skills-pin:begin -->
+## Kaal research skills (pinned GitHub bytes, not a release)
+
+Public GitHub bytes only. Not a GitHub Release. Not Cursor marketplace. Not liveRoutes. Explicitly: not a GitHub Release, not marketplace, not liveRoutes.
+freeze.json status stays `PUBLIC_CANDIDATE_UNSIGNED_UNATTESTED_NOT_ACCEPT`. Sidecar ACCEPT receipt SHA-256 `f8abaefa057461468a773d57d71878369016286e7422ba0337040203dadd2bd3` (1424).
+Pin commit `66b25c443bfd9b6dcf85bde4e05e96d9030de653` tree `e7ca0d75f0c160b4f2701d865ac01597a760c647`.
+Repo: https://github.com/wulfkaal/kaal-research-skills
+freeze.json: https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/freeze.json
+SHA256SUMS: https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/SHA256SUMS
+
+Raw SKILL.md (git blob SHA-1 on that commit):
+
+- kaal-property-router `51b13fec0baa0703bd71d259ad9c6928663d1717` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-property-router/SKILL.md
+- kaal-afmr-research `644d42f3f0148324adca93def6615824baaa5e8a` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-afmr-research/SKILL.md
+- kaal-agentic-substrate-research `c5e8b64a1bb9ce15269ba3df3a4a676983ec9ac5` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-agentic-substrate-research/SKILL.md
+- kaal-open-standing-research `c2ef295f5058a00eaa7647247e64b00eb9f1d7d2` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-open-standing-research/SKILL.md
+- kaal-trustcarry-research `cf9536730243186fd07c5d89edab80b2be3793cb` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-trustcarry-research/SKILL.md
+- kaal-wulf-research `c105795ed523167640073f48424aa372e70d4863` https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-wulf-research/SKILL.md
+<!-- kaal-research-skills-pin:end -->
