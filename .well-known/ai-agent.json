@@ -13,9 +13,14 @@
       "url": "https://openstanding.org/v0",
       "protocolBinding": "https://wulfkaal.github.io/colloquium/onboarding.json#open-standing-signed-rest-v2",
       "protocolVersion": "2.2"
+    },
+    {
+      "url": "https://kaal-answer-service.wulf577462.chatgpt.site/a2a",
+      "protocolBinding": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json",
+      "protocolVersion": "1.0"
     }
   ],
-  "version": "1.1.0",
+  "version": "1.3.0",
   "provider": {
     "organization": "Wulf A. Kaal",
     "url": "https://wulfkaal.com/agents/"
@@ -76,10 +81,64 @@
         "claims",
         "source-verification"
       ]
+    },
+    {
+      "id": "query-trustcarry-v03-research-records",
+      "name": "Query TrustCarry Protocol v0.3 research records",
+      "description": "Read the separate collection of 77 author-affirmed research claims and 9 internal software observations. Historical title: Persona Protocol v0.3. The source manuscript is unpublished, the observations are not independently reproduced, and neither collection belongs to the 5,288 scholarly claim layer.",
+      "tags": [
+        "TrustCarry Protocol",
+        "Persona Protocol",
+        "research-claims",
+        "research-observations",
+        "MCP"
+      ],
+      "examples": [
+        "curl -s https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json",
+        "curl -s https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json"
+      ]
+    },
+    {
+      "id": "answer-from-kaal-claims",
+      "name": "Answer from Kaal claims",
+      "description": "Retrieve current, directly attributable Wulf A. Kaal claims with the exact source passage each rests on, the sha256 of the source document, scope conditions, citations, and an explicit limitations array. Read only: the service creates no claims and affirms none. Retrieval is not authorship.",
+      "tags": [
+        "scholarly-retrieval",
+        "citation",
+        "provenance",
+        "agentic-governance",
+        "claim-graph"
+      ],
+      "examples": [
+        "curl -s -X POST https://kaal-answer-service.wulf577462.chatgpt.site/api/answer -H 'content-type: application/json' -d '{\"question\":\"What has Wulf A. Kaal written about verified reputation?\",\"limit\":5}'",
+        "curl -s https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
+      ]
+    },
+    {
+      "id": "kaal-research-skills-pin",
+      "name": "Kaal research skills (pinned GitHub bytes, not a release)",
+      "description": "Cite the six public research-skill SKILL.md files at exact commit 66b25c443bfd9b6dcf85bde4e05e96d9030de653 tree e7ca0d75f0c160b4f2701d865ac01597a760c647. freeze.json https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/freeze.json. SHA256SUMS https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/SHA256SUMS. Sidecar ACCEPT receipt SHA-256 f8abaefa057461468a773d57d71878369016286e7422ba0337040203dadd2bd3. Not a GitHub Release. Not Cursor marketplace. Not liveRoutes. Explicitly: not a GitHub Release, not marketplace, not liveRoutes. freeze.json status stays PUBLIC_CANDIDATE_UNSIGNED_UNATTESTED_NOT_ACCEPT. publication_authorized remains false. kaal-property-router git blob SHA-1 51b13fec0baa0703bd71d259ad9c6928663d1717; kaal-afmr-research git blob SHA-1 644d42f3f0148324adca93def6615824baaa5e8a; kaal-agentic-substrate-research git blob SHA-1 c5e8b64a1bb9ce15269ba3df3a4a676983ec9ac5; kaal-open-standing-research git blob SHA-1 c2ef295f5058a00eaa7647247e64b00eb9f1d7d2; kaal-trustcarry-research git blob SHA-1 cf9536730243186fd07c5d89edab80b2be3793cb; kaal-wulf-research git blob SHA-1 c105795ed523167640073f48424aa372e70d4863.",
+      "tags": [
+        "research-skills",
+        "pin",
+        "not-a-release",
+        "not-marketplace",
+        "not-liveRoutes"
+      ],
+      "examples": [
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-property-router/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-afmr-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-agentic-substrate-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-open-standing-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-trustcarry-research/SKILL.md",
+        "curl -s https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/skills/kaal-wulf-research/SKILL.md"
+      ]
     }
   ],
   "endpoints": {
     "onboarding": "https://wulfkaal.github.io/colloquium/onboarding.json",
+    "onboarding_preflight": "https://wulfkaal.github.io/colloquium/preflight.json",
+    "onboarding_barriers": "https://wulfkaal.github.io/onboarding/barriers.json",
     "state": "https://wulfkaal.github.io/colloquium/index.json",
     "activation_tasks": "https://wulfkaal.github.io/colloquium/tasks/index.json",
     "complete_claim_index": "https://wulfkaal.github.io/colloquium/jobs.json",
@@ -89,7 +148,20 @@
     "application_policy": "https://openstanding.org/v0/onboarding/policy",
     "write_api": "https://openstanding.org/v0",
     "corpus_mcp": "https://corpus.openstanding.org/mcp",
-    "knowledge_graph": "https://wulfkaal.github.io/.well-known/colloquium.jsonld"
+    "knowledge_graph": "https://wulfkaal.github.io/.well-known/colloquium.jsonld",
+    "onboarding_conformance": "https://wulfkaal.github.io/onboarding/conformance.json",
+    "onboarding_errors": "https://wulfkaal.github.io/onboarding/errors.json",
+    "onboarding_known_answer": "https://wulfkaal.github.io/onboarding/known-answer.json",
+    "trustcarry_research_claims": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/index.json",
+    "trustcarry_research_observations": "https://wulfkaal.github.io/research-observations/trustcarry-protocol/v0.3/index.json",
+    "trustcarry_release_manifest": "https://wulfkaal.github.io/research-claims/trustcarry-protocol/v0.3/release-manifest.json",
+    "trustcarry_identity": "https://wulfkaal.github.io/.well-known/trustcarry.json",
+    "trustcarry_trademark_policy": "https://wulfkaal.github.io/trustcarry/TRADEMARKS.md",
+    "trustcarry_governance": "https://wulfkaal.github.io/trustcarry/GOVERNANCE.md",
+    "trustcarry_official_implementations": "https://wulfkaal.github.io/trustcarry/official-implementations.json",
+    "positions_index": "https://wulfkaal.github.io/positions/index.json",
+    "positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
+    "recent_positions": "https://wulfkaal.github.io/positions/recent.json"
   },
   "authModel": {
     "read": "none",
@@ -102,17 +174,39 @@
     "policy": "https://openstanding.org/v0/onboarding/policy",
     "intake": "self_initiated_application_open",
     "first_task": "https://wulfkaal.github.io/colloquium/tasks/index.json",
-    "client": "https://wulfkaal.github.io/client.py"
+    "client": "https://wulfkaal.github.io/client.py",
+    "status_command": "python3 onboard.py status --live",
+    "watch_command": "python3 onboard.py watch --live --interval 900 --max-wait 3600",
+    "funnel_command": "python3 onboard.py funnel --days 30"
   },
   "corpus": {
-    "ssrn_records": 129,
-    "claim_covered_works": 124,
-    "metadata_only_records": 5,
+    "ssrn_records": 134,
+    "claim_covered_works": 132,
+    "metadata_only_records": 2,
     "atomic_claims": 5288,
     "failure_mode_claims": 2080,
     "claim_index": "https://wulfkaal.github.io/claims/index.json",
     "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
-    "canonical_scholarly_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345"
+    "canonical_scholarly_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
+    "public_positions_index": "https://wulfkaal.github.io/positions/index.json",
+    "public_positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
+    "recent_positions": "https://wulfkaal.github.io/positions/recent.json"
+  },
+  "researchRecords": {
+    "canonical_name": "TrustCarry Protocol",
+    "versioned_name": "TrustCarry Protocol v0.3",
+    "historical_title_and_alias": "Persona Protocol v0.3",
+    "author": "Wulf A. Kaal",
+    "protocol_steward": "Wulf A. Kaal",
+    "commercial_release_authority": "Kaal Consulting LLC",
+    "trademark_presentation": "TrustCarry™ Protocol",
+    "trademark_registration_status": "claimed_unregistered",
+    "research_claims": 77,
+    "software_observations": 9,
+    "record_license": "https://creativecommons.org/licenses/by/4.0/",
+    "source_manuscript_status": "unpublished",
+    "scholarly_claim_layer_eligible": false,
+    "observations_independently_reproduced": false
   },
   "invariants": {
     "custodies_funds": false,
@@ -126,5 +220,15 @@
     "agentic_substrate_waiting_room": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/.well-known/agent-card.json",
     "agentic_substrate_sandbox": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/.well-known/agent-card.json"
   },
-  "contact": "wulf@wulfkaal.com"
+  "contact": "wulf@wulfkaal.com",
+  "relatedResources": {
+    "agentic_claim_graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json",
+    "answer_service": "https://kaal-answer-service.wulf577462.chatgpt.site/",
+    "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
+    "answer_service_mcp": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
+    "machine_index": "https://wulfkaal.github.io/llms.txt",
+    "kaal_research_skills": "https://github.com/wulfkaal/kaal-research-skills",
+    "kaal_research_skills_freeze": "https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/freeze.json",
+    "kaal_research_skills_sha256sums": "https://raw.githubusercontent.com/wulfkaal/kaal-research-skills/66b25c443bfd9b6dcf85bde4e05e96d9030de653/SHA256SUMS"
+  }
 }
