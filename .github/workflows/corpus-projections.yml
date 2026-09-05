@@ -109,16 +109,27 @@ jobs:
       - name: Validate generated position projections before push
         run: python3 -m unittest tests/test_position_discoverability.py tests/test_position_notifier.py
 
+      - name: Derive the published corpus counts from the corpus
+        # authority.json and the agent cards each restate the corpus size, and
+        # nothing derived them, so they drifted: authority.json's `works` froze
+        # at 126 on 2026-08-10 while the index went on to 132, and the aliases
+        # were stuck at 124 with an ssrn_records of 129. This makes those numbers
+        # a function of claims/index.json and papers.json. It also FAILS the run
+        # if a claim cites a source digest papers.json does not list, which is
+        # how a three-character transcription error in one digest hid a covered
+        # work for weeks.
+        run: python3 tools/derive_corpus_counts.py
+
       - name: Commit only if something actually changed
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
+          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
+          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
           git commit -m "Regenerate projections from the corpus"
           git push
 
