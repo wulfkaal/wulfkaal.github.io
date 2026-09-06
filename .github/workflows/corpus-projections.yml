@@ -296,8 +296,24 @@ jobs:
                   fail.append(f"indexed position {stem} is missing {missing}")
                   break
 
+          # The count is published in five places as of 2026-09-06. Every one must
+          # agree with the layer, and every one must actually carry the field -- a
+          # silently absent field is how the cards drifted apart in August.
+          published = {"authority.json": ("public_positions", "count")}
+          for card in ("agent-card.json", ".well-known/agent-card.json",
+                       ".well-known/agent.json", ".well-known/ai-agent.json"):
+              published[card] = ("corpus", "public_positions")
+          for path, (block, field) in published.items():
+              doc = json.load(open(path)).get(block) or {}
+              if field not in doc:
+                  fail.append(f"{path} does not publish {block}.{field}")
+              elif doc[field] != len(listed):
+                  fail.append(f"{path} publishes {block}.{field}={doc[field]} "
+                              f"against {len(listed)} indexed positions")
+
           print(f"positions: {len(affirmed)} affirmed, {len(withdrawn)} withdrawn, "
-                f"{len(listed)} indexed, {bulk} bulk rows, {len(sitemap)} sitemap urls")
+                f"{len(listed)} indexed, {bulk} bulk rows, {len(sitemap)} sitemap urls, "
+                f"published in {len(published)} files")
           if not fail:
               print("positions layer is self-consistent and no withdrawal is advertised")
               raise SystemExit(0)

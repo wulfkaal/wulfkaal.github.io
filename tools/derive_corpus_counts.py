@@ -49,7 +49,8 @@ AUTHORITY_MAP = {"works": "works", "atomic_claims": "atomic_claims",
                  "publication_span": "publication_span"}
 CARD_MAP = {"claim_covered_works": "works", "atomic_claims": "atomic_claims",
             "failure_mode_claims": "failure_mode_claims",
-            "ssrn_records": "ssrn_records", "metadata_only_records": "metadata_only_records"}
+            "ssrn_records": "ssrn_records", "metadata_only_records": "metadata_only_records",
+            "public_positions": "public_positions"}
 
 
 def load(path):
@@ -112,20 +113,22 @@ def derive():
         print("FAIL: papers.json carries no usable years", file=sys.stderr)
         raise SystemExit(1)
 
-    # Positions are REPORTED, not written. 8,354 affirmed records - the largest
-    # part of the public claim surface - and nothing outside positions/ publishes a
-    # count of them, so there is no field to derive into. Reporting them here keeps
-    # them reconciled on every run; adding a published positions count to
-    # authority.json would be a new public assertion and is the owner's call.
-    try:
-        pidx, _ = load(ROOT / "positions" / "index.json")
-        affirmed = sum(1 for f in (ROOT / "positions").iterdir()
-                       if f.suffix == ".json" and f.name[0].isdigit()
-                       and json.loads(f.read_text(encoding="utf-8")).get("creativeWorkStatus") == "Affirmed")
-        print(f"  positions (reported, not published): {pidx['numberOfItems']} indexed, "
-              f"{affirmed} affirmed on disk", file=sys.stderr)
-    except FileNotFoundError:
-        pass
+    # Positions: 8,354 affirmed records, the largest single layer of the public
+    # claim surface. Published as of 2026-09-06 in authority.json's public_positions
+    # block and in each card's corpus block, deliberately NOT inside corpus_summary
+    # -- a position extends a scholarly claim but is not one, and a reader who sums
+    # the two and calls the result "claims" is the failure this placement prevents.
+    pidx, _ = load(ROOT / "positions" / "index.json")
+    indexed = pidx["numberOfItems"]
+    affirmed = sum(1 for f in sorted((ROOT / "positions").iterdir())
+                   if f.suffix == ".json" and f.name[0].isdigit()
+                   and json.loads(f.read_text(encoding="utf-8")).get("creativeWorkStatus") == "Affirmed")
+    if indexed != affirmed or indexed != len(pidx["itemListElement"]):
+        print(f"FAIL: positions disagree -- index declares {indexed}, carries "
+              f"{len(pidx['itemListElement'])}, {affirmed} affirmed on disk. Publishing a "
+              f"count from a layer that does not reconcile is how the old numbers froze.",
+              file=sys.stderr)
+        raise SystemExit(1)
 
     failures, _ = load(ROOT / "failures" / "index.json")
     families = {f["family"] for f in failures["failures"] if f.get("family")}
@@ -149,6 +152,7 @@ def derive():
         "works": len(covered),
         "coauthored_works": coauthored,
         "failure_families": len(families),
+        "public_positions": indexed,
         "publication_span": f"{years[0]} to {years[-1]}",
         "failure_mode_claims": index["failure_mode_count"],
         "ssrn_records": papers.get("count", len(works)),
@@ -182,6 +186,7 @@ def main():
         print(f"  {key:22} {value}")
     changed = []
     changed += apply_to("authority.json", "corpus_summary", AUTHORITY_MAP, truth)
+    changed += apply_to("authority.json", "public_positions", {"count": "public_positions"}, truth)
     for card in ("agent-card.json", ".well-known/agent-card.json",
                  ".well-known/agent.json", ".well-known/ai-agent.json"):
         changed += apply_to(card, "corpus", CARD_MAP, truth)
