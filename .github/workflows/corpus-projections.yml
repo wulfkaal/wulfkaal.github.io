@@ -21,6 +21,7 @@ on:
     paths:
       - 'claims/all.jsonl'
       - 'claims/index.json'
+      - 'failures/**'
       - 'positions-src/**'
       - 'rank.json'
       - 'papers.json'
@@ -31,6 +32,7 @@ on:
   pull_request:
     paths:
       - 'claims/**'
+      - 'failures/**'
       - 'rank.json'
       - 'sitemap.xml'
       - 'robots.txt'
@@ -195,6 +197,58 @@ jobs:
           if declared and declared != actual:
               sys.exit("ledger_sha256 does not match ledger.jsonl. A wrong hash on a "
                        "self-verifying surface is worse than no hash at all.")
+          PY
+
+      - name: Every failure-mode claim must be classified into a family
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys, collections
+
+          claims = json.load(open("claims/index.json"))
+          index = json.load(open("failures/index.json"))
+
+          flagged = {c["id"] for c in claims["claims"] if c.get("is_failure_mode")}
+          covered = {f["id"] for f in index["failures"]}
+          missing, stray = flagged - covered, covered - flagged
+
+          fams = {m["failure_family"] for m in index["modes"]}
+          by_name = {f[:-5] for f in os.listdir("failures/by-name") if f.endswith(".json")}
+          pages = {f[:-5] for f in os.listdir("failures") if f.endswith(".html")} - {"index"}
+          sitemap = set(re.findall(r"failures/([a-z0-9-]+)\.html",
+                                   open("sitemap-claims.xml").read())) - {"index"}
+
+          fail = []
+          if missing:
+              papers = collections.Counter(i.split(":")[2].rsplit("-", 1)[0] for i in missing)
+              fail.append(
+                  f"{len(missing)} failure-mode claims are not in failures/index.json, from "
+                  + ", ".join(f"{k} ({v})" for k, v in papers.most_common()))
+          if stray:
+              fail.append(f"{len(stray)} entries in failures/index.json are not failure-mode claims")
+          if index["count"] != len(index["failures"]):
+              fail.append(f'index declares {index["count"]} records but carries {len(index["failures"])}')
+          if index["families"] != len(fams):
+              fail.append(f'index declares {index["families"]} families but carries {len(fams)}')
+          for label, got in (("by-name documents", by_name), ("HTML pages", pages),
+                             ("sitemap entries", sitemap)):
+              if got != fams:
+                  fail.append(f"{label} do not match the family list: "
+                              f"missing {sorted(fams - got)}, extra {sorted(got - fams)}")
+
+          print(f"failure-mode claims {len(flagged)}, classified {len(covered)}, families {len(fams)}")
+          if not fail:
+              print("failure layer covers the claim layer")
+              raise SystemExit(0)
+          for line in fail:
+              print("FAIL:", line)
+          print()
+          print("The failure layer is generated separately from the claim layer, so it goes")
+          print("stale silently: on 2026-09-05 it still covered 2,037 of 2,080 claims, three")
+          print("weeks after the papers that produced the other 43 were ingested, and nothing")
+          print("said so. Regenerate with tools/build_failure_index.py --classify <file>,")
+          print("where the file assigns a family and a specific_name to each new claim. That")
+          print("assignment is a judgement and is deliberately not automated.")
+          sys.exit(1)
           PY
 
       - name: No AI crawler may be disallowed, and the search-side ones must be named
