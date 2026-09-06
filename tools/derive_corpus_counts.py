@@ -112,6 +112,21 @@ def derive():
         print("FAIL: papers.json carries no usable years", file=sys.stderr)
         raise SystemExit(1)
 
+    # Positions are REPORTED, not written. 8,354 affirmed records - the largest
+    # part of the public claim surface - and nothing outside positions/ publishes a
+    # count of them, so there is no field to derive into. Reporting them here keeps
+    # them reconciled on every run; adding a published positions count to
+    # authority.json would be a new public assertion and is the owner's call.
+    try:
+        pidx, _ = load(ROOT / "positions" / "index.json")
+        affirmed = sum(1 for f in (ROOT / "positions").iterdir()
+                       if f.suffix == ".json" and f.name[0].isdigit()
+                       and json.loads(f.read_text(encoding="utf-8")).get("creativeWorkStatus") == "Affirmed")
+        print(f"  positions (reported, not published): {pidx['numberOfItems']} indexed, "
+              f"{affirmed} affirmed on disk", file=sys.stderr)
+    except FileNotFoundError:
+        pass
+
     failures, _ = load(ROOT / "failures" / "index.json")
     families = {f["family"] for f in failures["failures"] if f.get("family")}
     if failures.get("families") not in (None, len(families)):
