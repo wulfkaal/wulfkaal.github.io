@@ -2,6 +2,7 @@
  "failure_mode": "enforcement-gap",
  "specific_names": [
   "Attack-induced decentralization",
+  "Authority Drift",
   "Boundary probing under codified law",
   "Decapitation strategy failure",
   "Escalating policing costs",
@@ -13,10 +14,12 @@
   "Juror competence and bias in decentralized adjudication",
   "Letter-of-the-law rule gaming",
   "ODR and DDR fail New York Convention due process",
+  "Permission Composition Unseen",
   "Policing overhead drain",
   "Regulation cannot reach private standard setting",
   "Regulator inaction despite identified risk",
   "Regulatory Vacuum for Autonomous Products",
+  "Revocation Non-Propagation",
   "SIFI threshold underinclusion",
   "Subadviser regulatory gap",
   "Uncapped synthetic leverage",
@@ -81,7 +84,7 @@
   "waiver-loophole-persists",
   "waste standard too narrow"
  ],
- "count": 80,
+ "count": 83,
  "claims": [
   {
    "id": "kaal:claim:617681-011",
@@ -1120,6 +1123,45 @@
    "year": "2025",
    "quote": "DDR's reliance on decentralized networks raises concerns about juror competence and bias, as noted by Salger.",
    "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218"
+  },
+  {
+   "id": "kaal:claim:7314479-015",
+   "url": "https://wulfkaal.github.io/claims/7314479-015",
+   "claim": "Authority drift is the failure mode permissions systems are least equipped to detect because every individual check passes while the aggregate operates outside what the user authorized.",
+   "specific_name": "Authority Drift",
+   "conditions": [
+    "delegation chains under a bounded original consent"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "Authority drift is the failure mode that permissions systems are least equipped to detect, because at every individual step the system behaves correctly. Each check passes. The aggregate is nonetheless outside what the user authorized.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-016",
+   "url": "https://wulfkaal.github.io/claims/7314479-016",
+   "claim": "Withdrawal of a grant at the point of issue does not reliably propagate to components already operating under it, and few systems can demonstrate that it did.",
+   "specific_name": "Revocation Non-Propagation",
+   "conditions": [
+    "revocation in composed multi-component systems"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "Revocation compounds the problem: withdrawal of a grant at the point of issue does not reliably propagate to components already operating under it, and few systems can demonstrate that it did.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-033",
+   "url": "https://wulfkaal.github.io/claims/7314479-033",
+   "claim": "At commit 2d920ce per-agent tool access is not yet implemented, so granting an agent access to a single Vault box grants it the ability to invoke every installed tool, and the user approves permissions tool by tool without ever seeing their composition.",
+   "specific_name": "Permission Composition Unseen",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "The permission model records that per-agent tool access and per-agent internet access are not yet implemented, and that consequently all tools are available to all agents. Granting an agent access to a single Vault box therefore grants it the ability to invoke every installed tool, whose union of declared domains defines the true outbound surface. The user approves permissions tool by tool and receives their composition without ever seeing it.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
   }
  ]
 }

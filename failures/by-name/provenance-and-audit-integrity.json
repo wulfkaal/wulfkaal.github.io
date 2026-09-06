@@ -1,0 +1,106 @@
+{
+ "failure_mode": "provenance-and-audit-integrity",
+ "specific_names": [
+  "Append-Only Without Tamper Evidence",
+  "Attribution Failure Dissolves Responsibility",
+  "Custody Without Account",
+  "Silent Truncation Reports Clean History",
+  "Uninstrumented Execution Path",
+  "Unjoinable Audit Records",
+  "Unlogged Autonomous Payment"
+ ],
+ "count": 7,
+ "claims": [
+  {
+   "id": "kaal:claim:7314479-002",
+   "url": "https://wulfkaal.github.io/claims/7314479-002",
+   "claim": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened.",
+   "specific_name": "Custody Without Account",
+   "conditions": [
+    "multi-component workflows in sovereign local agent runtimes"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "A user who holds every byte locally and composes fifteen services into a workflow has perfect custody and no answer at all to the question of what happened.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-014",
+   "url": "https://wulfkaal.github.io/claims/7314479-014",
+   "claim": "Attribution failure dissolves responsibility into composition: where contribution cannot be traced, fault cannot be assigned, and no participant has an incentive to prevent it.",
+   "specific_name": "Attribution Failure Dissolves Responsibility",
+   "conditions": [
+    "workflows crossing several independently operated components"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "Attribution failure is not merely an inconvenience for debugging. It is the dissolution of responsibility into composition. Where contribution cannot be traced, fault cannot be assigned, and where fault cannot be assigned, no participant has an incentive to prevent it.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-028",
+   "url": "https://wulfkaal.github.io/claims/7314479-028",
+   "claim": "Chronicle entries at commit 2d920ce carry exactly five fields with no workflow identifier, parent-entry reference, principal identity, or correlation field, so the records of a multi-tool workflow cannot be joined.",
+   "specific_name": "Unjoinable Audit Records",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "The entry structure, defined in electron/integrations/sandbox/types.ts, is exactly five fields: id, timestamp, source, type, and data. There is no workflow identifier, no parent-entry reference, no agent or principal identity, and no session or correlation field on the entry.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-029",
+   "url": "https://wulfkaal.github.io/claims/7314479-029",
+   "claim": "At commit 2d920ce the built-in Gmail, Web3, and Vault modules and third-party MCP servers execute through the tool registry with no Chronicle instrumentation at all.",
+   "specific_name": "Uninstrumented Execution Path",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "The built-in Gmail, Web3, and Vault modules and third-party MCP servers execute through the tool registry with no Chronicle instrumentation at all.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-030",
+   "url": "https://wulfkaal.github.io/claims/7314479-030",
+   "claim": "At commit 2d920ce the payment plugin moves real value autonomously while writing nothing into any Chronicle, so end-to-end provenance is not merely unjoinable across existing records but absent for several execution and network paths.",
+   "specific_name": "Unlogged Autonomous Payment",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "And the payment plugin, which moves real value autonomously, writes nothing into any Chronicle. End-to-end provenance is therefore not merely unjoinable across the records that exist; for several execution and network paths, no record exists to join.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-031",
+   "url": "https://wulfkaal.github.io/claims/7314479-031",
+   "claim": "The Chronicle at commit 2d920ce is append-only structurally but not tamper-evident: any process with filesystem access can rewrite or truncate history, and entries carry no digest, no chaining to a predecessor, and no periodic root.",
+   "specific_name": "Append-Only Without Tamper Evidence",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "It is not tamper-evident. The Chronicle is a plain JSONL file in the user's configuration directory. Any process with filesystem access, including a compromised host application or the user, can rewrite or truncate history, and nothing in the record would reveal it. Entries carry no digest, no chaining to a predecessor, and no periodic root.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7314479-032",
+   "url": "https://wulfkaal.github.io/claims/7314479-032",
+   "claim": "Chronicle.read at commit 2d920ce skips malformed lines and silently truncates to a default limit, so the audit log reports a clean history in exactly the circumstances where the history is not clean.",
+   "specific_name": "Silent Truncation Reports Clean History",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "An audit log that truncates without saying so, and drops unparseable evidence without escalating, reports a clean history in exactly the circumstances where the history is not clean.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  }
+ ]
+}

@@ -2,16 +2,25 @@
  "failure_mode": "staking-and-incentive-misalignment",
  "specific_names": [
   "Asymmetric Payoff for Net Negative Ventures",
+  "Capacity Frontier Contraction Under Escrow",
+  "Captive Stake Mints No Hostage",
   "DAO extinction by fee loss",
+  "False Freeze Taxes Honest Release",
+  "Fungible Principal Is Not the Deterrent",
   "Generation not internalized",
   "Incentive Duality Failure",
   "Monodimensional gamification",
+  "Negative Marginal Capacity of Refundable Principal",
+  "No Escape Hatch for the Release-Clock Wedge",
   "No Incentive to Find Flaws",
   "Nothing at Stake Voting",
   "Off-protocol generation",
   "Quantity-only reward",
+  "Refundable Bond as Exit Asset",
+  "Release Pads the Walk",
   "Reliance on good will",
   "Smart contract zero-sum trap",
+  "Stake Sizing Is the Wrong Variable",
   "Strategic breach when token value falls below claim",
   "Unbalanced reward structure",
   "Unrewarded generation",
@@ -55,7 +64,7 @@
   "unsustainable-open-source",
   "voting crowds out commenting"
  ],
- "count": 53,
+ "count": 62,
  "claims": [
   {
    "id": "kaal:claim:617681-037",
@@ -749,6 +758,123 @@
    "year": "2026",
    "quote": "Without that representation, no quality metric can be computed, and without quality metrics, generation cannot be rewarded for quality, only for quantity.",
    "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138"
+  },
+  {
+   "id": "kaal:claim:7322599-002",
+   "url": "https://wulfkaal.github.io/claims/7322599-002",
+   "claim": "Where identities can be discarded and re-minted at negligible cost, a refundable bond released at exit pads the operator's walk-away value by the full release-discounted principal, with custody carry as an additional tax.",
+   "specific_name": "Release Pads the Walk",
+   "conditions": [
+    "pseudonymous parties with negligible identity-replacement cost"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "In a model where identities can be discarded and re-minted at negligible cost, a refundable bond released at exit pads the oper- ator’s walk-away value by the full release-discounted principal; custody carry is an additional tax.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-003",
+   "url": "https://wulfkaal.github.io/claims/7322599-003",
+   "claim": "The flaw in bonded-stake deterrence is structural, not a matter of detection, latency, or adjudication error: a bond refunded on clean exit is an asset the operator carries out the door, raising walk-away value by the honest-release value of the principal — release pads the walk.",
+   "specific_name": "Refundable Bond as Exit Asset",
+   "conditions": [
+    "long-lived delegated relationships with refundable collateral"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "The flaw is not detection, latency, or adjudication error, although each is priced in the model. The flaw is structural: a bond that is refunded on clean exit is an asset the operator carries out the door. It raises the operator’s walk-away value by the honest-release value of the principal, while misconduct changes recovery only through the filing-, freeze-, adjudication-, and slash-weighted recovery wedge; custody carry further reduces capacity. Release pads the walk.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-004",
+   "url": "https://wulfkaal.github.io/claims/7322599-004",
+   "claim": "For long-lived delegation with positive carry, the marginal capacity effect of refundable principal is strictly negative in both exit cells and, whenever adjudication probability is positive, in both stay cells; the relationship premium is the scalable continuation-value component of deterrence.",
+   "specific_name": "Negative Marginal Capacity of Refundable Principal",
+   "conditions": [
+    "the strict long-match limit with positive custody carry"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "For long-lived delegation with positive carry, the marginal capacity effect is strictly negative in both exit cells and, whenever the adjudication probability is positive, in both stay cells: refundability raises walk-away value and imposes carry, so additional principal fails to expand long-match capacity, and the relationship premium, the value of staying over leaving, is the scalable continuation-value component of deterrence.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-010",
+   "url": "https://wulfkaal.github.io/claims/7322599-010",
+   "claim": "In the strict long-match limit with positive carry, refundable escrowed principal weakly contracts the credible capacity frontier in all four cells of the regime map — nonpositive everywhere, strictly negative in both exit cells, and strictly negative in both stay cells whenever adjudication probability is positive.",
+   "specific_name": "Capacity Frontier Contraction Under Escrow",
+   "conditions": [
+    "the strict long-match limit with positive carry"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "In the strict long-match limit ( q → 0) with positive carry, refundable escrowed principal weakly contracts the credible capacity frontier in all four cells of the regime map.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-011",
+   "url": "https://wulfkaal.github.io/claims/7322599-011",
+   "claim": "No escape hatch restores a positive marginal effect of escrow in the long-match limit: the release-clock wedge is either impossible outright or requires a filing threshold exceeding one, and short cycles are excluded by the limit itself.",
+   "specific_name": "No Escape Hatch for the Release-Clock Wedge",
+   "conditions": [
+    "the strict long-match limit with positive carry"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "No escape hatch exists on this domain: if dh ≤ R, with R the filed-thief recovery mixture defined above, the release-clock wedge is impossible outright; if dh > R, the wedge’s filing threshold exceeds one, because φ∗ > 1 exactly when q < C F + R, which positive carry guarantees in the limit. Short cycles are excluded by the limit itself.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-012",
+   "url": "https://wulfkaal.github.io/claims/7322599-012",
+   "claim": "Making the stake captive closes the release leak but does not rescue the instrument: the surviving capacity slope is still negative in the carry cost because the walk value of the balance cancels through the surplus — the stake never mints a hostage.",
+   "specific_name": "Captive Stake Mints No Hostage",
+   "conditions": [
+    "misconduct punishable in place with stake seized before any release clock runs"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "Captivity does not rescue the instrument: when misconduct is punishable in place with the stake seized before any release clock runs, the leak closes, but the surviving slope is −p CF , because the walk value of the balance cancels through the surplus. The stake never mints a hostage.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-015",
+   "url": "https://wulfkaal.github.io/claims/7322599-015",
+   "claim": "False freezes tax honest release value and worsen the release-clock wedge's own admission condition, so challenger bonds, standing rules, and other anti-griefing measures are design candidates whose effects require separate modeling.",
+   "specific_name": "False Freeze Taxes Honest Release",
+   "conditions": [
+    "griefing priced within the model's composites"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "False freezes are priced inside the same composites: they tax honest release value, relax the participation floor, and can help the exit constraint only in the badly filed regime. Within the model, griefing therefore worsens the wedge’s own admission condition; challenger bonds, standing rules, and other anti-griefing measures are design candidates whose effects require separate modeling.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-020",
+   "url": "https://wulfkaal.github.io/claims/7322599-020",
+   "claim": "Within delegated proof-of-stake, the refundable fungible principal is not the scalable deterrent; the continuation value of remaining matched is.",
+   "specific_name": "Fungible Principal Is Not the Deterrent",
+   "conditions": [
+    "the delegated domain of the model, not consensus-layer security"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "Within that delegated domain, the refundable fungible princi- pal of conventional proof-of-stake delegation is not the scalable deterrent; the continu- ation value of remaining matched is.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
+  },
+  {
+   "id": "kaal:claim:7322599-028",
+   "url": "https://wulfkaal.github.io/claims/7322599-028",
+   "claim": "Refundable stake does not expand credible capacity in the strict long-match limit: leaky release raises walk-away value, captive regimes close the leak without a positive marginal slope, and design by stake sizing is design of the wrong variable.",
+   "specific_name": "Stake Sizing Is the Wrong Variable",
+   "conditions": [
+    "the strict long-match limit; margins away from the limit depend on release, filing, custody, and turnover terms"
+   ],
+   "source": "Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets",
+   "year": "2026",
+   "quote": "In the strict long-match limit it does not: leaky release raises walk-away value, captive regimes close that leak without produc- ing a positive marginal principal slope, and what remains is carry. Relationship premia provide the scalable continuation-value component of deterrence, while the mechanism’s release, filing, custody, and turnover terms determine whether collateral can help at the margin away from the limit. Design by stake sizing remains design, but it is design of the wrong variable.",
+   "citation": "Wulf A. Kaal, Refundable Stake Does Not Expand Deterrent Capacity in Long-Lived Delegation: Collateral, Premia, and Pseudonymous Markets (2026). SSRN: https://ssrn.com/abstract=7322599"
   }
  ]
 }

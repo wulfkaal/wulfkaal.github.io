@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2037,
- "families": 55,
- "distinct_specific_names": 2004,
+ "count": 2080,
+ "families": 57,
+ "distinct_specific_names": 2047,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -48,7 +48,7 @@
   },
   {
    "failure_family": "rule-obsolescence-and-ossification",
-   "count": 96,
+   "count": 97,
    "url": "https://wulfkaal.github.io/failures/by-name/rule-obsolescence-and-ossification.json",
    "specific_names": [
     "Category mismatch between technology and law",
@@ -68,10 +68,11 @@
   },
   {
    "failure_family": "enforcement-gap",
-   "count": 80,
+   "count": 83,
    "url": "https://wulfkaal.github.io/failures/by-name/enforcement-gap.json",
    "specific_names": [
     "Attack-induced decentralization",
+    "Authority Drift",
     "Boundary probing under codified law",
     "Decapitation strategy failure",
     "Escalating policing costs",
@@ -81,10 +82,29 @@
     "Instrument-specific rule misses strategy-level risk",
     "Judicial invalidation unwinds registration",
     "Juror competence and bias in decentralized adjudication",
-    "Letter-of-the-law rule gaming",
-    "ODR and DDR fail New York Convention due process"
+    "Letter-of-the-law rule gaming"
    ],
    "example": "The quality problems in Delaware adjudication mean it is not a foregone conclusion that the bundled product of statutes plus specialized courts leads to optimal results."
+  },
+  {
+   "failure_family": "staking-and-incentive-misalignment",
+   "count": 62,
+   "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json",
+   "specific_names": [
+    "Asymmetric Payoff for Net Negative Ventures",
+    "Capacity Frontier Contraction Under Escrow",
+    "Captive Stake Mints No Hostage",
+    "DAO extinction by fee loss",
+    "False Freeze Taxes Honest Release",
+    "Fungible Principal Is Not the Deterrent",
+    "Generation not internalized",
+    "Incentive Duality Failure",
+    "Monodimensional gamification",
+    "Negative Marginal Capacity of Refundable Principal",
+    "No Escape Hatch for the Release-Clock Wedge",
+    "No Incentive to Find Flaws"
+   ],
+   "example": "Compensating arbitrators by the number of cases they hear gives litigants a substantial role in shaping the system but may yield decisions so eager to please all parties that they lack decisiveness, sound reasoning and value as precedent."
   },
   {
    "failure_family": "valuation-and-pricing-failure",
@@ -128,7 +148,7 @@
   },
   {
    "failure_family": "measurement-and-metric-failure",
-   "count": 56,
+   "count": 57,
    "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json",
    "specific_names": [
     "Asset class blind SIFI designation",
@@ -137,18 +157,18 @@
     "Benchmark absence blocks performance assessment",
     "Centralized Measurement Single Point of Failure",
     "Conflated resolution signal",
+    "Coordination Cost Invisible to Benchmarks",
     "Existing default risk signals failed in the crisis",
     "Fungible Measure Blind to Expertise",
     "Idiosyncratic reviewer preference",
     "Monitoring Lag Blindness",
-    "National Accounts Blind Spot",
-    "National Accounts Invisibility"
+    "National Accounts Blind Spot"
    ],
    "example": "Regulating on the basis of retailization would not currently be justifiable, because retailization cannot be quantified with any degree of certainty and regulation premised on speculation without proof or data validation would probably produce inadequate results."
   },
   {
    "failure_family": "reputation-system-gaming",
-   "count": 56,
+   "count": 57,
    "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json",
    "specific_names": [
     "Absent reputation layer",
@@ -160,9 +180,9 @@
     "Reflection layer dominance",
     "Reputation gaming through selective staking",
     "Reputation monopoly",
+    "Selection on Manipulable Signals",
     "Ungrounded reflection validators",
-    "Value threshold breach",
-    "absent citation verification layer"
+    "Value threshold breach"
    ],
    "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
   },
@@ -187,24 +207,44 @@
    "example": "Enacting the proposed German Corporation Act amendments that would give contingent capital securities a statutory basis would require substantial changes across other areas of German law, and is unlikely to be achieved unless European Union law requires it and the standards are internationally recognized."
   },
   {
-   "failure_family": "staking-and-incentive-misalignment",
+   "failure_family": "ai-oversight-and-alignment-gap",
    "count": 53,
-   "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json",
+   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
    "specific_names": [
-    "Asymmetric Payoff for Net Negative Ventures",
-    "DAO extinction by fee loss",
-    "Generation not internalized",
-    "Incentive Duality Failure",
-    "Monodimensional gamification",
-    "No Incentive to Find Flaws",
-    "Nothing at Stake Voting",
-    "Off-protocol generation",
-    "Quantity-only reward",
-    "Reliance on good will",
-    "Smart contract zero-sum trap",
-    "Strategic breach when token value falls below claim"
+    "AI-Governance Vacuum",
+    "Adversarial feedback provider incentives",
+    "Agent-Executed Attack in Nascent Form",
+    "Algorithmic Collusion",
+    "Algorithmic Collusion Risk",
+    "Capital Formation Outpaces AI Governance",
+    "Closed model opacity",
+    "Compound RLHF failure",
+    "Explainable RL immaturity",
+    "Helpfulness harmlessness tension",
+    "Human unintelligibility of algorithmic optimization",
+    "Inevitable corruption of unsupervised coded automation"
    ],
-   "example": "Compensating arbitrators by the number of cases they hear gives litigants a substantial role in shaping the system but may yield decisions so eager to please all parties that they lack decisiveness, sound reasoning and value as precedent."
+   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
+  },
+  {
+   "failure_family": "governance-participation-collapse",
+   "count": 51,
+   "url": "https://wulfkaal.github.io/failures/by-name/governance-participation-collapse.json",
+   "specific_names": [
+    "Corruption of delegated voting",
+    "DAO washing and robo voting decay",
+    "Democratic Legitimacy Deficit of Code",
+    "Egalitarian voting expertise deficit",
+    "Exclusion of edge reviewers",
+    "Exit only control, delayed by listing",
+    "Governance latency in traditional models",
+    "Homogeneity Suppresses Decentralization Benefits",
+    "Hype dissipation of fundraiser DAOs",
+    "Liveness fault from participant inaction",
+    "No Challenge Procedure",
+    "Quota and participation requirements in work-to-earn"
+   ],
+   "example": "Existing proposals for implementing contingent capital do not explain how they would address the information asymmetries and principal and agent problems that may lie at the core of the credit crisis."
   },
   {
    "failure_family": "agency-cost-and-managerial-opportunism",
@@ -227,48 +267,8 @@
    "example": "European lawyers may advise clients to incorporate at home simply because those lawyers do not want to deal with the courts and lawyers of another Member State, which suppresses cross border incorporation independently of statute quality."
   },
   {
-   "failure_family": "governance-participation-collapse",
-   "count": 50,
-   "url": "https://wulfkaal.github.io/failures/by-name/governance-participation-collapse.json",
-   "specific_names": [
-    "Corruption of delegated voting",
-    "DAO washing and robo voting decay",
-    "Democratic Legitimacy Deficit of Code",
-    "Egalitarian voting expertise deficit",
-    "Exclusion of edge reviewers",
-    "Exit only control, delayed by listing",
-    "Governance latency in traditional models",
-    "Homogeneity Suppresses Decentralization Benefits",
-    "Hype dissipation of fundraiser DAOs",
-    "Liveness fault from participant inaction",
-    "Quota and participation requirements in work-to-earn",
-    "Silent majority voting deficit"
-   ],
-   "example": "Existing proposals for implementing contingent capital do not explain how they would address the information asymmetries and principal and agent problems that may lie at the core of the credit crisis."
-  },
-  {
-   "failure_family": "ai-oversight-and-alignment-gap",
-   "count": 47,
-   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
-   "specific_names": [
-    "Adversarial feedback provider incentives",
-    "Algorithmic Collusion",
-    "Algorithmic Collusion Risk",
-    "Closed model opacity",
-    "Compound RLHF failure",
-    "Explainable RL immaturity",
-    "Helpfulness harmlessness tension",
-    "Human unintelligibility of algorithmic optimization",
-    "Inevitable corruption of unsupervised coded automation",
-    "Majority capture of the reward model",
-    "Overspecific human guidance",
-    "Unquantifiable risk of centralized automation"
-   ],
-   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
-  },
-  {
    "failure_family": "adoption-and-usability-barrier",
-   "count": 43,
+   "count": 44,
    "url": "https://wulfkaal.github.io/failures/by-name/adoption-and-usability-barrier.json",
    "specific_names": [
     "Analog Habit Persistence",
@@ -285,6 +285,26 @@
     "Missing Requester Interfaces"
    ],
    "example": "Arbitration of corporate governance disputes has not emerged in the United States because arbitration is at best the next best alternative to Delaware, and a second place finish does not justify the investment needed to design a workable arbitration framework."
+  },
+  {
+   "failure_family": "definitional-ambiguity",
+   "count": 44,
+   "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
+   "specific_names": [
+    "Absence of bright line verification standard",
+    "Ambiguity, bad definitions, aggregation difficulty",
+    "Ambiguous questions and definitions",
+    "Ambiguous reporting requirements",
+    "BaFin substance over form reclassification",
+    "Counterparty definitions unclear to filers",
+    "Form PF design defects",
+    "Indeterminate reasonable steps standard",
+    "Indeterminate statutory cross reference in Article 51",
+    "Interpretation dependent RAUM drives thresholds",
+    "Interpretive slack in RAUM propagates into designation thresholds",
+    "Language Cannot Describe Reality"
+   ],
+   "example": "Law generally declines to adopt a general principle barring managers from incurring risk above a defined standard because such a standard is hard to define; corporate law instead insulates managers' risk decisions through the business judgment rule."
   },
   {
    "failure_family": "investor-protection-gap",
@@ -305,26 +325,6 @@
     "Revlon tiering defect"
    ],
    "example": "Existing international proposals and guidelines on hedge fund valuation fail because they do not adequately distinguish between retail and qualified investors, and as of 2009 no legislature has issued an exhaustive set of rules addressing the factors that cause inaccurate valuation."
-  },
-  {
-   "failure_family": "definitional-ambiguity",
-   "count": 43,
-   "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
-   "specific_names": [
-    "Absence of bright line verification standard",
-    "Ambiguity, bad definitions, aggregation difficulty",
-    "Ambiguous questions and definitions",
-    "Ambiguous reporting requirements",
-    "BaFin substance over form reclassification",
-    "Counterparty definitions unclear to filers",
-    "Form PF design defects",
-    "Indeterminate reasonable steps standard",
-    "Indeterminate statutory cross reference in Article 51",
-    "Interpretation dependent RAUM drives thresholds",
-    "Interpretive slack in RAUM propagates into designation thresholds",
-    "RAUM definition requires filer interpretation"
-   ],
-   "example": "Law generally declines to adopt a general principle barring managers from incurring risk above a defined standard because such a standard is hard to define; corporate law instead insulates managers' risk decisions through the business judgment rule."
   },
   {
    "failure_family": "scalability-and-throughput-limit",
@@ -427,6 +427,46 @@
    "example": "Independent administrators and valuation committees do not solve the independence problem for startup funds, because a majority of hedge funds in their startup phase try to keep overheads down and so may have independence problems precisely when independence is most crucial."
   },
   {
+   "failure_family": "plutocratic-capture",
+   "count": 38,
+   "url": "https://wulfkaal.github.io/failures/by-name/plutocratic-capture.json",
+   "specific_names": [
+    "Cheap small cap launch capture",
+    "Early whale supply capture",
+    "External governance takeover",
+    "Fungible Asset Governance Corruption",
+    "Fungible governance capture",
+    "Majority power capture",
+    "Majority rule minority discrimination",
+    "Minority stakeholder governance capture",
+    "One Token One Vote Plutocracy",
+    "One token one vote proportional control",
+    "Polarizing outcomes of one token one vote",
+    "Priority Hijacking by Large Donors"
+   ],
+   "example": "Because rulemaking is subject to regulatory cycles and to a classic collective action problem, rules are generally not enacted at the moment appropriate information for rulemaking becomes available."
+  },
+  {
+   "failure_family": "disclosure-ineffectiveness",
+   "count": 37,
+   "url": "https://wulfkaal.github.io/failures/by-name/disclosure-ineffectiveness.json",
+   "specific_names": [
+    "Aggregation destroys informational value",
+    "Complexity-blind disclosure policy",
+    "Compliant disclosure that still fails to inform",
+    "Comprehension gap",
+    "Demystification without risk reduction",
+    "Disclosure regime outpaced by product complexity",
+    "Disclosure saturation does not produce understanding",
+    "Documented Control Absent From Code",
+    "Generic disclosure rules blunt the discipline effect",
+    "Prospectus may not meet the statutory adequacy standard",
+    "Sanitized disclosure degrades systemic risk data",
+    "Undisclosed co-investment allocation"
+   ],
+   "example": "More disclosure does not always mean better governance, because the information provided may be hard to assess and evaluate."
+  },
+  {
    "failure_family": "liquidity-and-market-structure-failure",
    "count": 37,
    "url": "https://wulfkaal.github.io/failures/by-name/liquidity-and-market-structure-failure.json",
@@ -445,26 +485,6 @@
     "Overcollateralization Penalty"
    ],
    "example": "The German ABCP conduit model, which financed long term American mortgage loans with short term paper and pocketed the spread, was profitable only for as long as new buyers for the short term paper could be found, so the model collapsed the moment institutional buyers withdrew."
-  },
-  {
-   "failure_family": "plutocratic-capture",
-   "count": 37,
-   "url": "https://wulfkaal.github.io/failures/by-name/plutocratic-capture.json",
-   "specific_names": [
-    "Cheap small cap launch capture",
-    "Early whale supply capture",
-    "External governance takeover",
-    "Fungible Asset Governance Corruption",
-    "Fungible governance capture",
-    "Majority power capture",
-    "Majority rule minority discrimination",
-    "Minority stakeholder governance capture",
-    "One Token One Vote Plutocracy",
-    "One token one vote proportional control",
-    "Polarizing outcomes of one token one vote",
-    "Priority Hijacking by Large Donors"
-   ],
-   "example": "Because rulemaking is subject to regulatory cycles and to a classic collective action problem, rules are generally not enacted at the moment appropriate information for rulemaking becomes available."
   },
   {
    "failure_family": "cold-start-and-bootstrapping",
@@ -487,26 +507,6 @@
    "example": "The two sources that finance Delaware's bundled package, franchise taxes and legal fees for local counsel, might not be as lucrative for a European Member State, so the expensive package of statutes plus adjudication may have no viable funding model."
   },
   {
-   "failure_family": "disclosure-ineffectiveness",
-   "count": 36,
-   "url": "https://wulfkaal.github.io/failures/by-name/disclosure-ineffectiveness.json",
-   "specific_names": [
-    "Aggregation destroys informational value",
-    "Complexity-blind disclosure policy",
-    "Compliant disclosure that still fails to inform",
-    "Comprehension gap",
-    "Demystification without risk reduction",
-    "Disclosure regime outpaced by product complexity",
-    "Disclosure saturation does not produce understanding",
-    "Generic disclosure rules blunt the discipline effect",
-    "Prospectus may not meet the statutory adequacy standard",
-    "Sanitized disclosure degrades systemic risk data",
-    "Undisclosed co-investment allocation",
-    "Unreviewed and unrated whitepaper disclosure"
-   ],
-   "example": "More disclosure does not always mean better governance, because the information provided may be hard to assess and evaluate."
-  },
-  {
    "failure_family": "jurisdictional-conflict",
    "count": 35,
    "url": "https://wulfkaal.github.io/failures/by-name/jurisdictional-conflict.json",
@@ -527,6 +527,26 @@
    "example": "Even if the ECJ has embraced the incorporation theory, Member States can still frustrate Type B regulatory competition through tax law, capital market law, listing requirements and other mechanisms, so the seat theory may retain de facto dominance."
   },
   {
+   "failure_family": "compliance-cost-and-barrier-to-entry",
+   "count": 35,
+   "url": "https://wulfkaal.github.io/failures/by-name/compliance-cost-and-barrier-to-entry.json",
+   "specific_names": [
+    "ATS compliance cost barrier",
+    "Best execution burden asymmetry",
+    "Clarification generates its own uncertainty and cost",
+    "Clarification generates uncertainty and cost",
+    "Compliance cost entry barrier",
+    "Compliance cost pass-through to investors",
+    "Disproportionate burden on smaller advisers",
+    "Formally identical rules with divergent practical burden",
+    "MiCA non-compliance exposure",
+    "Non-systemic banks pay for a fund they cannot draw on",
+    "Regressive compliance burden",
+    "Regulatory barriers to entry for small firms"
+   ],
+   "example": "Applying section 10(b) and Rule 10b-5 together with the fraud on the market theory substantially increases the potential liability of issuers and can lead to questionable results, which is why EU jurisdictions may not want that rule applied to their securities markets."
+  },
+  {
    "failure_family": "harmonization-and-standardization-failure",
    "count": 34,
    "url": "https://wulfkaal.github.io/failures/by-name/harmonization-and-standardization-failure.json",
@@ -545,26 +565,6 @@
     "One size fits all law reduces systemic resilience"
    ],
    "example": "The Societas Europaea has drawn a less than enthusiastic initial reaction, plausibly because its rules are the product of years of negotiation and political compromise rather than a response to market forces."
-  },
-  {
-   "failure_family": "compliance-cost-and-barrier-to-entry",
-   "count": 34,
-   "url": "https://wulfkaal.github.io/failures/by-name/compliance-cost-and-barrier-to-entry.json",
-   "specific_names": [
-    "ATS compliance cost barrier",
-    "Best execution burden asymmetry",
-    "Clarification generates its own uncertainty and cost",
-    "Clarification generates uncertainty and cost",
-    "Compliance cost entry barrier",
-    "Compliance cost pass-through to investors",
-    "Disproportionate burden on smaller advisers",
-    "Formally identical rules with divergent practical burden",
-    "MiCA non-compliance exposure",
-    "Non-systemic banks pay for a fund they cannot draw on",
-    "Regressive compliance burden",
-    "Regulatory barriers to entry for small firms"
-   ],
-   "example": "Applying section 10(b) and Rule 10b-5 together with the fraud on the market theory substantially increases the potential liability of issuers and can lead to questionable results, which is why EU jurisdictions may not want that rule applied to their securities markets."
   },
   {
    "failure_family": "legal-personality-and-liability-gap",
@@ -647,6 +647,26 @@
    "example": "Disruptive innovation in law renders obsolete many and probably most of the traditional legal skills and characteristics that law schools currently cultivate."
   },
   {
+   "failure_family": "other",
+   "count": 31,
+   "url": "https://wulfkaal.github.io/failures/by-name/other.json",
+   "specific_names": [
+    "Developer blindness to business and ethical context",
+    "Ethical collectivism corrupts reason",
+    "Manifest Without Economic Terms",
+    "Unreliable Institutional Reasoning",
+    "asymmetric-regulation",
+    "asymmetric-regulation-costs",
+    "bailout-induced-monitoring-failure",
+    "broker-location-loophole",
+    "ccrm-free-riding",
+    "depositary-withdrawal",
+    "derivatives-exception-to-morrison",
+    "foreign-operations-deterrence"
+   ],
+   "example": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive."
+  },
+  {
    "failure_family": "ai-model-and-training-failure",
    "count": 31,
    "url": "https://wulfkaal.github.io/failures/by-name/ai-model-and-training-failure.json",
@@ -665,26 +685,6 @@
     "absent reliability guarantee"
    ],
    "example": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades."
-  },
-  {
-   "failure_family": "other",
-   "count": 29,
-   "url": "https://wulfkaal.github.io/failures/by-name/other.json",
-   "specific_names": [
-    "Developer blindness to business and ethical context",
-    "Ethical collectivism corrupts reason",
-    "asymmetric-regulation",
-    "asymmetric-regulation-costs",
-    "bailout-induced-monitoring-failure",
-    "broker-location-loophole",
-    "ccrm-free-riding",
-    "depositary-withdrawal",
-    "derivatives-exception-to-morrison",
-    "foreign-operations-deterrence",
-    "inconsistent-conduct-and-effects-application",
-    "jurisdiction-only-drafting-error"
-   ],
-   "example": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive."
   },
   {
    "failure_family": "inequality-and-access-divide",
@@ -708,10 +708,11 @@
   },
   {
    "failure_family": "consensus-and-protocol-attack",
-   "count": 28,
+   "count": 29,
    "url": "https://wulfkaal.github.io/failures/by-name/consensus-and-protocol-attack.json",
    "specific_names": [
     "51 percent control attack",
+    "Flash-Loan Governance Capture",
     "Fork Induced Double Spend Reemergence",
     "Untested security-by-design claim",
     "attack-surface-expansion",
@@ -721,8 +722,7 @@
     "charity-dao-attack-exposure",
     "classical-cryptography-obsolescence",
     "cryptographic-obsolescence",
-    "fair exchange impossibility",
-    "false-security-proof"
+    "fair exchange impossibility"
    ],
    "example": "The hidden voting scheme depends on the choice of symmetric encryption protocol: a poorly chosen protocol exposes the platform to a birthday problem attack in which malicious voters submit an encrypted key that can be decrypted in two different ways, letting them retroactively choose their vote."
   },
@@ -1085,6 +1085,21 @@
    "example": "Requiring hedge funds to supply risk and valuation data in a simplified format would in fact impose a significant burden on the industry, since simplification requirements would raise transaction costs, require pre-screening, and possibly additional staff."
   },
   {
+   "failure_family": "provenance-and-audit-integrity",
+   "count": 7,
+   "url": "https://wulfkaal.github.io/failures/by-name/provenance-and-audit-integrity.json",
+   "specific_names": [
+    "Append-Only Without Tamper Evidence",
+    "Attribution Failure Dissolves Responsibility",
+    "Custody Without Account",
+    "Silent Truncation Reports Clean History",
+    "Uninstrumented Execution Path",
+    "Unjoinable Audit Records",
+    "Unlogged Autonomous Payment"
+   ],
+   "example": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened."
+  },
+  {
    "failure_family": "environmental-and-resource-cost",
    "count": 6,
    "url": "https://wulfkaal.github.io/failures/by-name/environmental-and-resource-cost.json",
@@ -1097,6 +1112,20 @@
     "proof-of-work-energy-waste"
    ],
    "example": "Proof of work mining carries significant externalities: the authors estimate that the total energy cost of running the global network of computers solving proof of work puzzles was around 700 million US dollars per year before publication."
+  },
+  {
+   "failure_family": "institutional-underprovision",
+   "count": 6,
+   "url": "https://wulfkaal.github.io/failures/by-name/institutional-underprovision.json",
+   "specific_names": [
+    "Half-Built Institutional Architecture",
+    "Invisible Institutions Underprovided",
+    "Market Discipline Underinvests",
+    "Structural Institutional Deficit",
+    "Visibility Paradox",
+    "Visible Success With Invisible Failure"
+   ],
+   "example": "Across forty DAOs in eight segments the unweighted dataset mean is 67.3 of 130 points (51.8 percent): the median DAO has implemented roughly half of the institutional architecture the framework prescribes."
   }
  ],
  "failures": [
@@ -29655,6 +29684,660 @@
    "topics": [
     "law-and-legal-systems",
     "education-and-practice",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-002",
+   "url": "https://wulfkaal.github.io/claims/7314479-002",
+   "family": "provenance-and-audit-integrity",
+   "name": "Custody Without Account",
+   "claim": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened.",
+   "conditions": [
+    "multi-component workflows in sovereign local agent runtimes"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-012",
+   "url": "https://wulfkaal.github.io/claims/7314479-012",
+   "family": "measurement-and-metric-failure",
+   "name": "Coordination Cost Invisible to Benchmarks",
+   "claim": "The true constraint on scale for sovereign local agent runtimes is coordination cost, which is invisible in throughput, latency, and token-cost benchmarks that measure the performance of composition but not the cost of arranging it.",
+   "conditions": [
+    "benchmarks the field currently reports for agent runtimes"
+   ],
+   "topics": [
+    "economics",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-014",
+   "url": "https://wulfkaal.github.io/claims/7314479-014",
+   "family": "provenance-and-audit-integrity",
+   "name": "Attribution Failure Dissolves Responsibility",
+   "claim": "Attribution failure dissolves responsibility into composition: where contribution cannot be traced, fault cannot be assigned, and no participant has an incentive to prevent it.",
+   "conditions": [
+    "workflows crossing several independently operated components"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "governance-design",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-015",
+   "url": "https://wulfkaal.github.io/claims/7314479-015",
+   "family": "enforcement-gap",
+   "name": "Authority Drift",
+   "claim": "Authority drift is the failure mode permissions systems are least equipped to detect because every individual check passes while the aggregate operates outside what the user authorized.",
+   "conditions": [
+    "delegation chains under a bounded original consent"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "governance-design",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-016",
+   "url": "https://wulfkaal.github.io/claims/7314479-016",
+   "family": "enforcement-gap",
+   "name": "Revocation Non-Propagation",
+   "claim": "Withdrawal of a grant at the point of issue does not reliably propagate to components already operating under it, and few systems can demonstrate that it did.",
+   "conditions": [
+    "revocation in composed multi-component systems"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-017",
+   "url": "https://wulfkaal.github.io/claims/7314479-017",
+   "family": "reputation-system-gaming",
+   "name": "Selection on Manipulable Signals",
+   "claim": "When selection among services depends on manipulable, non-contextual signals the selected party controls, the market for services clears on claims rather than on outcomes.",
+   "conditions": [
+    "service selection driven by self-reported or volume-based signals"
+   ],
+   "topics": [
+    "reputation",
+    "economics",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-019",
+   "url": "https://wulfkaal.github.io/claims/7314479-019",
+   "family": "adoption-and-usability-barrier",
+   "name": "Unanswerable Arrangement Blocks Adoption",
+   "claim": "An enterprise struggles to deploy a system in which no participant is answerable because the arrangement resists insurance, indemnification, and internal approval, not because the technology is inadequate.",
+   "conditions": [
+    "adoption of sovereign runtimes by regulated entities"
+   ],
+   "topics": [
+    "compliance",
+    "institutional-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-028",
+   "url": "https://wulfkaal.github.io/claims/7314479-028",
+   "family": "provenance-and-audit-integrity",
+   "name": "Unjoinable Audit Records",
+   "claim": "Chronicle entries at commit 2d920ce carry exactly five fields with no workflow identifier, parent-entry reference, principal identity, or correlation field, so the records of a multi-tool workflow cannot be joined.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "open-source-and-code",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-029",
+   "url": "https://wulfkaal.github.io/claims/7314479-029",
+   "family": "provenance-and-audit-integrity",
+   "name": "Uninstrumented Execution Path",
+   "claim": "At commit 2d920ce the built-in Gmail, Web3, and Vault modules and third-party MCP servers execute through the tool registry with no Chronicle instrumentation at all.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "open-source-and-code"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-030",
+   "url": "https://wulfkaal.github.io/claims/7314479-030",
+   "family": "provenance-and-audit-integrity",
+   "name": "Unlogged Autonomous Payment",
+   "claim": "At commit 2d920ce the payment plugin moves real value autonomously while writing nothing into any Chronicle, so end-to-end provenance is not merely unjoinable across existing records but absent for several execution and network paths.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "tokenomics",
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-031",
+   "url": "https://wulfkaal.github.io/claims/7314479-031",
+   "family": "provenance-and-audit-integrity",
+   "name": "Append-Only Without Tamper Evidence",
+   "claim": "The Chronicle at commit 2d920ce is append-only structurally but not tamper-evident: any process with filesystem access can rewrite or truncate history, and entries carry no digest, no chaining to a predecessor, and no periodic root.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "open-source-and-code",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-032",
+   "url": "https://wulfkaal.github.io/claims/7314479-032",
+   "family": "provenance-and-audit-integrity",
+   "name": "Silent Truncation Reports Clean History",
+   "claim": "Chronicle.read at commit 2d920ce skips malformed lines and silently truncates to a default limit, so the audit log reports a clean history in exactly the circumstances where the history is not clean.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "open-source-and-code",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-033",
+   "url": "https://wulfkaal.github.io/claims/7314479-033",
+   "family": "enforcement-gap",
+   "name": "Permission Composition Unseen",
+   "claim": "At commit 2d920ce per-agent tool access is not yet implemented, so granting an agent access to a single Vault box grants it the ability to invoke every installed tool, and the user approves permissions tool by tool without ever seeing their composition.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "ai-and-agents",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-034",
+   "url": "https://wulfkaal.github.io/claims/7314479-034",
+   "family": "disclosure-ineffectiveness",
+   "name": "Documented Control Absent From Code",
+   "claim": "The Gatekeeper documentation at commit 2d920ce specifies four filtering layers, but the implementation contains only the domain allowlist and audit logging; content inspection and personal-information filtering are absent from the code.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "disclosure",
+    "open-source-and-code",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-035",
+   "url": "https://wulfkaal.github.io/claims/7314479-035",
+   "family": "other",
+   "name": "Manifest Without Economic Terms",
+   "claim": "At commit 2d920ce the manifest, the only contract a tool presents, contains no economic field: no price, no settlement address, no attribution declaration, no revenue expectation.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "economics",
+    "tokenomics",
+    "smart-contracts",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7314479-037",
+   "url": "https://wulfkaal.github.io/claims/7314479-037",
+   "family": "governance-participation-collapse",
+   "name": "No Challenge Procedure",
+   "claim": "No challenge procedure appears in the Mosaic documentation or code at commit 2d920ce; nothing converts a user's disagreement with an outcome into an alteration of allocation, standing, or authority.",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "topics": [
+    "governance-design",
+    "institutional-design",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-002",
+   "url": "https://wulfkaal.github.io/claims/7322599-002",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Release Pads the Walk",
+   "claim": "Where identities can be discarded and re-minted at negligible cost, a refundable bond released at exit pads the operator's walk-away value by the full release-discounted principal, with custody carry as an additional tax.",
+   "conditions": [
+    "pseudonymous parties with negligible identity-replacement cost"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "tokenomics",
+    "reputation",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-003",
+   "url": "https://wulfkaal.github.io/claims/7322599-003",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Refundable Bond as Exit Asset",
+   "claim": "The flaw in bonded-stake deterrence is structural, not a matter of detection, latency, or adjudication error: a bond refunded on clean exit is an asset the operator carries out the door, raising walk-away value by the honest-release value of the principal — release pads the walk.",
+   "conditions": [
+    "long-lived delegated relationships with refundable collateral"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "consensus-and-security",
+    "tokenomics",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-004",
+   "url": "https://wulfkaal.github.io/claims/7322599-004",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Negative Marginal Capacity of Refundable Principal",
+   "claim": "For long-lived delegation with positive carry, the marginal capacity effect of refundable principal is strictly negative in both exit cells and, whenever adjudication probability is positive, in both stay cells; the relationship premium is the scalable continuation-value component of deterrence.",
+   "conditions": [
+    "the strict long-match limit with positive custody carry"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "economics",
+    "consensus-and-security",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-010",
+   "url": "https://wulfkaal.github.io/claims/7322599-010",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Capacity Frontier Contraction Under Escrow",
+   "claim": "In the strict long-match limit with positive carry, refundable escrowed principal weakly contracts the credible capacity frontier in all four cells of the regime map — nonpositive everywhere, strictly negative in both exit cells, and strictly negative in both stay cells whenever adjudication probability is positive.",
+   "conditions": [
+    "the strict long-match limit with positive carry"
+   ],
+   "topics": [
+    "economics",
+    "risk-and-incentives",
+    "consensus-and-security"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-011",
+   "url": "https://wulfkaal.github.io/claims/7322599-011",
+   "family": "staking-and-incentive-misalignment",
+   "name": "No Escape Hatch for the Release-Clock Wedge",
+   "claim": "No escape hatch restores a positive marginal effect of escrow in the long-match limit: the release-clock wedge is either impossible outright or requires a filing threshold exceeding one, and short cycles are excluded by the limit itself.",
+   "conditions": [
+    "the strict long-match limit with positive carry"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "economics",
+    "consensus-and-security"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-012",
+   "url": "https://wulfkaal.github.io/claims/7322599-012",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Captive Stake Mints No Hostage",
+   "claim": "Making the stake captive closes the release leak but does not rescue the instrument: the surviving capacity slope is still negative in the carry cost because the walk value of the balance cancels through the surplus — the stake never mints a hostage.",
+   "conditions": [
+    "misconduct punishable in place with stake seized before any release clock runs"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "consensus-and-security",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-015",
+   "url": "https://wulfkaal.github.io/claims/7322599-015",
+   "family": "staking-and-incentive-misalignment",
+   "name": "False Freeze Taxes Honest Release",
+   "claim": "False freezes tax honest release value and worsen the release-clock wedge's own admission condition, so challenger bonds, standing rules, and other anti-griefing measures are design candidates whose effects require separate modeling.",
+   "conditions": [
+    "griefing priced within the model's composites"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "governance-design",
+    "consensus-and-security"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-020",
+   "url": "https://wulfkaal.github.io/claims/7322599-020",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Fungible Principal Is Not the Deterrent",
+   "claim": "Within delegated proof-of-stake, the refundable fungible principal is not the scalable deterrent; the continuation value of remaining matched is.",
+   "conditions": [
+    "the delegated domain of the model, not consensus-layer security"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "blockchain",
+    "tokenomics",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7322599-028",
+   "url": "https://wulfkaal.github.io/claims/7322599-028",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Stake Sizing Is the Wrong Variable",
+   "claim": "Refundable stake does not expand credible capacity in the strict long-match limit: leaky release raises walk-away value, captive regimes close the leak without a positive marginal slope, and design by stake sizing is design of the wrong variable.",
+   "conditions": [
+    "the strict long-match limit; margins away from the limit depend on release, filing, custody, and turnover terms"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "economics",
+    "consensus-and-security",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-004",
+   "url": "https://wulfkaal.github.io/claims/6819121-004",
+   "family": "rule-obsolescence-and-ossification",
+   "name": "Static Rule Set Gamed",
+   "claim": "Any DAO operating a static rule set in a strategic environment with patient capital and high stakes faces the Folk-Theoretic prediction that the rule set will eventually be gamed, and the empirical record of DAO governance attacks confirms the prediction.",
+   "conditions": [
+    "static rule sets under patient strategic capital"
+   ],
+   "topics": [
+    "dao",
+    "consensus-and-security",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-005",
+   "url": "https://wulfkaal.github.io/claims/6819121-005",
+   "family": "consensus-and-protocol-attack",
+   "name": "Flash-Loan Governance Capture",
+   "claim": "In the Beanstalk Farms exploit of April 2022, an attacker borrowed roughly one billion dollars in flash loans to hold two-thirds of governance tokens for a single block and drained roughly 182 million dollars, showing that token-weighted governance offers no defense against temporary token acquisition.",
+   "conditions": [
+    "documented flash-loan governance attack"
+   ],
+   "topics": [
+    "dao",
+    "consensus-and-security",
+    "defi",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-011",
+   "url": "https://wulfkaal.github.io/claims/6819121-011",
+   "family": "institutional-underprovision",
+   "name": "Half-Built Institutional Architecture",
+   "claim": "Across forty DAOs in eight segments the unweighted dataset mean is 67.3 of 130 points (51.8 percent): the median DAO has implemented roughly half of the institutional architecture the framework prescribes.",
+   "conditions": [
+    "forty operational DAOs against the thirteen-category rubric"
+   ],
+   "topics": [
+    "dao",
+    "empirical-evidence",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-012",
+   "url": "https://wulfkaal.github.io/claims/6819121-012",
+   "family": "institutional-underprovision",
+   "name": "Structural Institutional Deficit",
+   "claim": "The institutional deficit is structural rather than incidental: DAO architecture has solved decentralized capital formation and programmable value transfer, and has not yet solved AI-mediated governance, Sybil-resistant identity, and constitutional separation of powers.",
+   "conditions": [
+    "forty operational DAOs against the thirteen-category rubric"
+   ],
+   "topics": [
+    "dao",
+    "institutional-design",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-013",
+   "url": "https://wulfkaal.github.io/claims/6819121-013",
+   "family": "institutional-underprovision",
+   "name": "Visibility Paradox",
+   "claim": "A visibility paradox holds across every segment: categories producing visible artifacts score consistently above the midpoint while categories producing invisible governance infrastructure score consistently below it.",
+   "conditions": [
+    "forty operational DAOs against the thirteen-category rubric"
+   ],
+   "topics": [
+    "dao",
+    "institutional-design",
+    "empirical-evidence",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-014",
+   "url": "https://wulfkaal.github.io/claims/6819121-014",
+   "family": "institutional-underprovision",
+   "name": "Invisible Institutions Underprovided",
+   "claim": "Investment in invisible institutions is systematically underprovided relative to investment in visible institutions, even when the invisible institutions are more important to long-run resilience.",
+   "conditions": [
+    "institutional investment incentives under the visibility paradox"
+   ],
+   "topics": [
+    "institutional-design",
+    "economics",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-015",
+   "url": "https://wulfkaal.github.io/claims/6819121-015",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "AI-Governance Vacuum",
+   "claim": "The AI-governance vacuum is universal: AI Alignment scores 2.10 of 10 across the dataset with no DAO above 5, the only category in the thirteen-dimension framework where no entity crosses the midpoint, and Agent Integration scores only 3.30.",
+   "conditions": [
+    "forty operational DAOs against the thirteen-category rubric"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "dao",
+    "empirical-evidence",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-016",
+   "url": "https://wulfkaal.github.io/claims/6819121-016",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Plumbing Without Guardrails",
+   "claim": "Even AI-adjacent DAOs are building the plumbing for autonomous agents to consume on-chain data while failing to build the institutional guardrails to constrain those agents when they act on that data.",
+   "conditions": [
+    "AI-adjacent DAOs in the dataset (Vana, Filecoin, Streamr)"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "dao",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-017",
+   "url": "https://wulfkaal.github.io/claims/6819121-017",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Predicted Agent-Governance Failures",
+   "claim": "The framework predicts three failure modes — agent-executed governance attacks, governance paralysis from agent disagreement, and alignment drift in long-participating agents — all worsening as autonomous-agent participation grows, with DAOs lacking AI-alignment infrastructure the first to experience them.",
+   "conditions": [
+    "DAOs with growing autonomous-agent participation"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "dao",
+    "risk-and-incentives",
+    "systemic-risk"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-018",
+   "url": "https://wulfkaal.github.io/claims/6819121-018",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Agent-Executed Attack in Nascent Form",
+   "claim": "None of the predicted agent-governance failure modes is hypothetical: agent-executed attacks appear in nascent form in flash-loan governance attacks executed by autonomous capital, including the Beanstalk exploit.",
+   "conditions": [
+    "documented instances cited in the Article"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "consensus-and-security",
+    "dao"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-019",
+   "url": "https://wulfkaal.github.io/claims/6819121-019",
+   "family": "plutocratic-capture",
+   "name": "Token-Plutocracy Default",
+   "claim": "Token-plutocracy is the default governance form: across all forty DAOs governance is fundamentally token-weighted, even the strongest formal processes recreate capital-based concentration beneath the procedural facade, and no DAO has implemented reputation-weighted voting in production.",
+   "conditions": [
+    "forty operational DAOs against the thirteen-category rubric"
+   ],
+   "topics": [
+    "dao",
+    "decentralization",
+    "tokenomics",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-025",
+   "url": "https://wulfkaal.github.io/claims/6819121-025",
+   "family": "compliance-cost-and-barrier-to-entry",
+   "name": "Upgrade Cost Unfunded",
+   "claim": "Implementing the full five-upgrade suite costs roughly six to eighteen months of engineering and 300,000 to 2 million dollars per DAO, and no DAO in the dataset has committed to the investment.",
+   "conditions": [
+    "cost estimates for the five-upgrade suite"
+   ],
+   "topics": [
+    "dao",
+    "economics",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-028",
+   "url": "https://wulfkaal.github.io/claims/6819121-028",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Capital Formation Outpaces AI Governance",
+   "claim": "Capital-formation institutions score one to two standard deviations higher than AI-governance institutions: Fundraising at 6.88 and Payment System at 6.25 against Agent Integration at 3.30 and AI Alignment at 2.10.",
+   "conditions": [
+    "cross-cohort category means"
+   ],
+   "topics": [
+    "dao",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-029",
+   "url": "https://wulfkaal.github.io/claims/6819121-029",
+   "family": "institutional-underprovision",
+   "name": "Visible Success With Invisible Failure",
+   "claim": "A DAO can be highly successful on visible categories and effectively non-functional on invisible categories simultaneously, as ConstitutionDAO's maximum Fundraising score paired with minimum Governance score shows.",
+   "conditions": [
+    "ConstitutionDAO as the dataset's extreme visibility-paradox case"
+   ],
+   "topics": [
+    "dao",
+    "governance-design",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:6819121-032",
+   "url": "https://wulfkaal.github.io/claims/6819121-032",
+   "family": "institutional-underprovision",
+   "name": "Market Discipline Underinvests",
+   "claim": "Market discipline alone will not produce balanced institutional development, because it under-invests in the invisible institutional infrastructure that is most predictive of long-run resilience.",
+   "conditions": [
+    "the public-goods argument applied to the DAO sector"
+   ],
+   "topics": [
+    "regulatory-failure",
+    "institutional-design",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:6886078-001",
+   "url": "https://wulfkaal.github.io/claims/6886078-001",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Opposite Inadequacies of Governance Response",
+   "claim": "The available governance responses to autonomous AI agents are structurally inadequate in opposite ways: informal deliberative governance cannot bind agents quickly or at scale, while pure formal verification is technically sound but institutionally inoperable because it excludes non-logician stakeholders.",
+   "conditions": [
+    "governance of consequential autonomous AI agents"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "governance-design",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:6886078-002",
+   "url": "https://wulfkaal.github.io/claims/6886078-002",
+   "family": "definitional-ambiguity",
+   "name": "Language Cannot Describe Reality",
+   "claim": "The first irreducible failure of human governance is the inability of language to describe reality: however precisely a specification is drafted, there will always be situations it does not cover — a structural limit of natural language, not a drafting defect.",
+   "conditions": [
+    "natural-language governance specifications"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "governance-design",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:6886078-003",
+   "url": "https://wulfkaal.github.io/claims/6886078-003",
+   "family": "other",
+   "name": "Unreliable Institutional Reasoning",
+   "claim": "The second irreducible failure is the unreliability of logical reasoning: even within situations a specification describes, human institutions draw conclusions from inconsistent premises, apply rules inconsistently across cases, and miss implications of the rules they hold.",
+   "conditions": [
+    "institutional reasoning over stated rules"
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "governance-design",
     "institutional-design"
    ]
   }

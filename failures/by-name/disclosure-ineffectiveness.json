@@ -8,6 +8,7 @@
   "Demystification without risk reduction",
   "Disclosure regime outpaced by product complexity",
   "Disclosure saturation does not produce understanding",
+  "Documented Control Absent From Code",
   "Generic disclosure rules blunt the discipline effect",
   "Prospectus may not meet the statutory adequacy standard",
   "Sanitized disclosure degrades systemic risk data",
@@ -38,7 +39,7 @@
   "undisclosed valuation policy",
   "unreasoned-decisions-undermine-legitimacy"
  ],
- "count": 36,
+ "count": 37,
  "claims": [
   {
    "id": "kaal:claim:1428387-032",
@@ -515,6 +516,19 @@
    "year": "2024",
    "quote": "However, this approach assumes that entities will accurately and fully disclose their AI applications and potential issues. There may be incentives for underreporting or misreporting to avoid scrutiny or regulatory burdens, which could undermine the effectiveness of the regulations.",
    "citation": "Wulf A. Kaal, AI Governance (2024). SSRN: https://ssrn.com/abstract=4796714"
+  },
+  {
+   "id": "kaal:claim:7314479-034",
+   "url": "https://wulfkaal.github.io/claims/7314479-034",
+   "claim": "The Gatekeeper documentation at commit 2d920ce specifies four filtering layers, but the implementation contains only the domain allowlist and audit logging; content inspection and personal-information filtering are absent from the code.",
+   "specific_name": "Documented Control Absent From Code",
+   "conditions": [
+    "mosaic-companion public repository at commit 2d920ce, retrieved August 18, 2026"
+   ],
+   "source": "Institutional Requirements for Sovereign Local Agent Runtimes",
+   "year": "2026",
+   "quote": "The Gatekeeper documentation specifies four filtering layers: domain allowlist, content and MIME type inspection, a personal-information baseline using regular expressions and named-entity recognition, and audit logging. The implementation contains the first and the fourth.",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
   }
  ]
 }
