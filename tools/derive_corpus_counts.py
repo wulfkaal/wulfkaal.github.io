@@ -10,10 +10,18 @@ were worse -- 126 in one, 124 and an ssrn_records of 129 in the aliases -- while
 every one of them kept reporting atomic_claims correctly. That is the signature
 of hand-maintenance, and no script can drift that way.
 
-Everything here is read from claims/index.json and papers.json. Fields that are
-NOT derivable from those two files are left alone on purpose: failure_families
-and publication_span are not computed here, and inventing them would trade a
-stale number for a wrong one.
+Reads claims/index.json, papers.json and failures/index.json. Every published
+count is now derived; nothing in corpus_summary or the card corpus blocks is
+typed by hand.
+
+publication_span comes from the min and max year in papers.json.
+
+failure_families is the number of distinct `family` values in failures/index.json.
+That file is generated separately and can lag the claim layer: on 2026-09-05 it
+covered 2,037 of the 2,080 failure-mode claims, missing 43 from SSRN 7314479. The
+family count is therefore only as current as that file, and this script says so
+loudly rather than implying the number is fresh. Regenerating the failure index is
+a separate job.
 
 coauthored_works IS derived, as of 2026-09-05. It had been frozen at 46 since at
 least 2026-07-28 while works went 124 -> 132, and wulfkaal.com separately claimed
@@ -36,7 +44,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # authority.json key -> card key. Same quantity, two names.
 AUTHORITY_MAP = {"works": "works", "atomic_claims": "atomic_claims",
                  "failure_mode_claims": "failure_mode_claims",
-                 "coauthored_works": "coauthored_works"}
+                 "coauthored_works": "coauthored_works",
+                 "failure_families": "failure_families",
+                 "publication_span": "publication_span"}
 CARD_MAP = {"claim_covered_works": "works", "atomic_claims": "atomic_claims",
             "failure_mode_claims": "failure_mode_claims",
             "ssrn_records": "ssrn_records", "metadata_only_records": "metadata_only_records"}
@@ -97,10 +107,34 @@ def derive():
         print(f"FAIL: cannot classify a byline in papers.json: {exc}", file=sys.stderr)
         raise SystemExit(1)
 
+    years = sorted(int(w["year"]) for w in works if str(w.get("year", "")).isdigit())
+    if not years:
+        print("FAIL: papers.json carries no usable years", file=sys.stderr)
+        raise SystemExit(1)
+
+    failures, _ = load(ROOT / "failures" / "index.json")
+    families = {f["family"] for f in failures["failures"] if f.get("family")}
+    if failures.get("families") not in (None, len(families)):
+        print(f"FAIL: failures/index.json declares {failures['families']} families "
+              f"but its records carry {len(families)}", file=sys.stderr)
+        raise SystemExit(1)
+
+    # The failure index is generated separately and can lag the claim layer. Say so
+    # when it does: the family count is current as of that file, not as of the corpus.
+    classified = {f["id"] for f in failures["failures"]}
+    unclassified = {c["id"] for c in claims if c.get("is_failure_mode")} - classified
+    if unclassified:
+        print(f"NOTE: {len(unclassified)} failure-mode claims are absent from "
+              f"failures/index.json, so failure_families={len(families)} is current as of "
+              f"that file, not the claim layer. Regenerate it to settle the count.",
+              file=sys.stderr)
+
     return {
         "atomic_claims": len(claims),
         "works": len(covered),
         "coauthored_works": coauthored,
+        "failure_families": len(families),
+        "publication_span": f"{years[0]} to {years[-1]}",
         "failure_mode_claims": index["failure_mode_count"],
         "ssrn_records": papers.get("count", len(works)),
         # Roster entries no claim cites: metadata-only records.
@@ -128,7 +162,7 @@ def apply_to(relative, block_key, mapping, truth):
 
 def main():
     truth = derive()
-    print("derived from claims/index.json + papers.json:")
+    print("derived from claims/index.json + papers.json + failures/index.json:")
     for key, value in truth.items():
         print(f"  {key:22} {value}")
     changed = []
