@@ -11,9 +11,17 @@ every one of them kept reporting atomic_claims correctly. That is the signature
 of hand-maintenance, and no script can drift that way.
 
 Everything here is read from claims/index.json and papers.json. Fields that are
-NOT derivable from those two files are left alone on purpose: failure_families,
-publication_span and coauthored_works are not computed here, and inventing them
-would trade a stale number for a wrong one.
+NOT derivable from those two files are left alone on purpose: failure_families
+and publication_span are not computed here, and inventing them would trade a
+stale number for a wrong one.
+
+coauthored_works IS derived, as of 2026-09-05. It had been frozen at 46 since at
+least 2026-07-28 while works went 124 -> 132, and wulfkaal.com separately claimed
+59. The real figure is 49 of the 132 claim-covered works. papers.json carries a
+free-text `authors` string, but it splits cleanly on commas and " and ", and a
+part names Kaal iff it contains "kaal" -- which classifies all 30 distinct
+strings in the roster, including the bare "Kaal" (solo, 8 records) and the
+surname-only "Kaal and Painter" (coauthored).
 
 Idempotent. Writes only when a value actually changes, and preserves each file's
 existing indentation so a no-op run produces byte-identical files.
@@ -27,7 +35,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # authority.json key -> card key. Same quantity, two names.
 AUTHORITY_MAP = {"works": "works", "atomic_claims": "atomic_claims",
-                 "failure_mode_claims": "failure_mode_claims"}
+                 "failure_mode_claims": "failure_mode_claims",
+                 "coauthored_works": "coauthored_works"}
 CARD_MAP = {"claim_covered_works": "works", "atomic_claims": "atomic_claims",
             "failure_mode_claims": "failure_mode_claims",
             "ssrn_records": "ssrn_records", "metadata_only_records": "metadata_only_records"}
@@ -41,6 +50,14 @@ def load(path):
 
 def save(path, data, indent):
     path.write_text(json.dumps(data, indent=indent, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def solo_authored(authors):
+    """True when every name in the byline is Kaal himself."""
+    parts = [p.strip() for p in re.split(r",|\band\b", authors) if p.strip()]
+    if not any("kaal" in p.lower() for p in parts):
+        raise ValueError(f"byline names no Kaal: {authors!r}")
+    return all("kaal" in p.lower() for p in parts)
 
 
 def derive():
@@ -70,9 +87,20 @@ def derive():
               file=sys.stderr)
         raise SystemExit(1)
 
+    # Same denominator as `works`: coauthored among the claim-covered works, not
+    # among the full SSRN roster (that figure is 50, and mixing the two is how a
+    # reader ends up comparing 49 against 132 and 50 against 134).
+    try:
+        coauthored = len([w for w in works
+                          if w.get("sha256") in covered and not solo_authored(w.get("authors", ""))])
+    except ValueError as exc:
+        print(f"FAIL: cannot classify a byline in papers.json: {exc}", file=sys.stderr)
+        raise SystemExit(1)
+
     return {
         "atomic_claims": len(claims),
         "works": len(covered),
+        "coauthored_works": coauthored,
         "failure_mode_claims": index["failure_mode_count"],
         "ssrn_records": papers.get("count", len(works)),
         # Roster entries no claim cites: metadata-only records.
