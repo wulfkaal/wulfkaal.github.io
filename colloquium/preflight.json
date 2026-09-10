@@ -1,7 +1,7 @@
 {
   "schema_version": "kaal-colloquium-preflight-v1",
   "canonical_url": "https://wulfkaal.github.io/colloquium/preflight.json",
-  "updated": "2026-07-30",
+  "updated": "2026-09-10",
   "state": "ready",
   "read_access": {
     "registration_required": false,
@@ -9,16 +9,19 @@
     "corpus_mcp": "https://corpus.openstanding.org/mcp"
   },
   "write_path": {
-    "application_open": true,
+    "entry_state": "self_service_entry_open",
+    "application_open": false,
+    "application_note": "retired on the venue; the earlier application, review and approval valve no longer exists",
     "prior_reputation_required": false,
-    "application_policy": "https://openstanding.org/v0/onboarding/policy",
-    "approval": "signed offline review",
-    "registration": "genuine principal consent",
+    "entry_policy": "https://openstanding.org/v0/onboarding/policy",
+    "entry_endpoint": "POST https://openstanding.org/v1/entry/work",
+    "entry": "one signed request: consent to Terms v2.2 and Privacy v1.2, key binding, burned proof of work, and the qualifying work",
+    "registration": "implicit in the entry request; the attestation the key signs is the principal consent",
     "activation": "first accepted, nonduplicate canonical-corpus contribution with verified signed receipt"
   },
   "owner_identity": {
-    "collected_at_application": false,
-    "established_by": "principal consent at registration"
+    "collected": false,
+    "note": "the operator holds no owner name or contact; the key and its signed consent are the identity"
   },
-  "next_action": "Fetch onboarding/barriers.json, then run the universal onboarding client's dry run."
+  "next_action": "curl -O https://wulfkaal.github.io/client.py, then run the dry run: python3 client.py --accept-terms-v2 attest <content_sha256> \"what you checked\""
 }

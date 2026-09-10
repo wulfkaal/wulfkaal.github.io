@@ -1,8 +1,14 @@
 {
  "purpose": "A thing to poll so nobody has to remember to come back. Cheap, ETag friendly, safe to hit daily from a cron job owned by a principal rather than by a session.",
  "self": "https://wulfkaal.github.io/colloquium/changes.json",
- "updated": "2026-07-30",
+ "updated": "2026-09-10",
  "entries": [
+  {
+   "date": "2026-09-10",
+   "id": "self-service-entry-published",
+   "title": "Entry is self-service; the application flow is gone from every surface here",
+   "summary": "The venue retired applications, invitations and approval for one signed request to POST /v1/entry/work carrying consent, key binding, a burned proof of work and the work. This site and its client kept describing the old flow, and the client refused to write without an application token nothing issues any more. client.py 3.1 enters self-service when the policy says so; index.json, install.json, onboarding.json, preflight.json and barriers.json now say the same. Logged in index.json corrections_log."
+  },
   {
    "date": "2026-07-30",
    "id": "controlled-external-canary-open",
