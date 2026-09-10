@@ -63,16 +63,30 @@ def verify(shards, claims_index):
             problems.append(f"{slug}.json repeats a claim id")
 
     claims = claims_index["claims"] if isinstance(claims_index, dict) else claims_index
-    from collections import Counter
-    tagged = Counter()
+    # Compare MEMBERSHIP, not cardinality. Counting only was a P0 found by a Codex
+    # audit on 2026-09-10: swapping one claim id in ai-and-agents.json for an
+    # unrelated claim kept the length at 393 and passed every check, so a corrupted
+    # shard could publish someone else's subject matter under a topic and the derived
+    # HTML would render it. Equal counts are not equal sets.
+    tagged = {}
     for claim in claims:
         for topic in (claim.get("topics") or []):
-            tagged[topic] += 1
+            tagged.setdefault(topic, set()).add(claim["id"])
     for slug, (_, ids) in sorted(shards.items()):
-        if tagged.get(slug) != len(ids):
+        expected = tagged.get(slug, set())
+        actual = set(ids)
+        if actual == expected:
+            continue
+        extra = sorted(actual - expected)
+        missing = sorted(expected - actual)
+        if extra:
             problems.append(
-                f"{slug}: index.json tags {tagged.get(slug)} claims, "
-                f"the shard lists {len(ids)}")
+                f"{slug}: shard lists {len(extra)} claim(s) that claims/index.json does "
+                f"not tag {slug}, e.g. {extra[0]}")
+        if missing:
+            problems.append(
+                f"{slug}: claims/index.json tags {len(missing)} claim(s) the shard omits, "
+                f"e.g. {missing[0]}")
     for topic in sorted(set(tagged) - set(shards)):
         problems.append(f"topic {topic!r} is tagged on claims but has no shard file")
     return problems
@@ -166,6 +180,18 @@ def retopic_claims_index_html(html_text, shard_counts):
     """
     wrong = []
 
+    # Scope the rewrite to the Topics table. TOPIC_ROW alone matches anywhere in the
+    # document, and a Codex audit showed a matching row inside a <template> having its
+    # digits silently rewritten. Only the region introduced by the Topics heading is
+    # eligible.
+    start = html_text.find('<div class="k">Topics</div>')
+    if start == -1:
+        return html_text, [("(no Topics table found)", 0, 0)]
+    end = html_text.find("</table>", start)
+    if end == -1:
+        return html_text, [("(Topics table is unterminated)", 0, 0)]
+    head, table, tail = html_text[:start], html_text[start:end], html_text[end:]
+
     def fix(m):
         slug, shown = m.group(2), int(m.group(4))
         real = shard_counts.get(slug)
@@ -174,7 +200,14 @@ def retopic_claims_index_html(html_text, shard_counts):
         wrong.append((slug, shown, real))
         return f"{m.group(1)}{slug}{m.group(3)}{real}{m.group(5)}{slug}{m.group(6)}"
 
-    return TOPIC_ROW.sub(fix, html_text), wrong
+    rewritten = TOPIC_ROW.sub(fix, table)
+    # The table must describe exactly the shards, not a subset of them.
+    listed = set(re.findall(r'<tr><td>([a-z-]+)</td><td>\d+</td>', rewritten))
+    for slug in sorted(set(shard_counts) - listed):
+        wrong.append((f"{slug} (missing row)", 0, shard_counts[slug]))
+    for slug in sorted(listed - set(shard_counts)):
+        wrong.append((f"{slug} (row for a topic with no shard)", 0, 0))
+    return head + rewritten + tail, wrong
 
 
 def main():
