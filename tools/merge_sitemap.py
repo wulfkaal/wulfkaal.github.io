@@ -43,6 +43,9 @@ WANT = [
      "only by guessing a filename, hiding 67% of the topic-tagged corpus"),
     ("positions/by-topic/index.json", "0.8",
      "the same enumeration for public positions"),
+    ("claims/by-topic/index.html", "0.9",
+     "the human entry point to the topic layer; links all 29 topic pages, which is "
+     "how a crawler reaches them without the sitemap listing each leaf"),
 ]
 
 # Leaves stay out on purpose. This sitemap advertises entry points, not items:
