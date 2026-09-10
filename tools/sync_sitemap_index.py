@@ -81,23 +81,47 @@ def main():
     state = load_state(repo)
     today = datetime.date.today().isoformat()
 
-    drifted = [(rel, announced, sha) for rel, announced, sha in rows
-               if state.get(rel, {}).get("sha256") != sha]
+    # Two independent ways the index can lie, and the first version of this tool only
+    # caught one of them:
+    #   content drift  -- the file changed but the date did not
+    #   date drift     -- the date was edited (or lost in a merge) while the file did not
+    # Checking only the hash certified a date of 2020-01-01 on an unchanged sitemap,
+    # which is precisely the failure this tool exists to prevent. Grok's audit caught it.
+    content_drift = [(rel, announced, sha) for rel, announced, sha in rows
+                     if state.get(rel, {}).get("sha256") != sha]
+    date_drift = [(rel, announced, sha) for rel, announced, sha in rows
+                  if state.get(rel, {}).get("sha256") == sha
+                  and state.get(rel, {}).get("lastmod") != announced]
+    drifted = content_drift + date_drift
+
+    # A key in state for a sitemap the index no longer lists is a ghost: it makes the
+    # record disagree with what is published, and hides a removal.
+    ghosts = sorted(set(state) - {rel for rel, _, _ in rows})
 
     if a.check:
-        if drifted:
-            for rel, announced, _ in drifted:
-                known = state.get(rel, {})
-                print(f"  {rel}: content differs from the copy recorded on "
-                      f"{known.get('lastmod', '(never recorded)')}, but the index still "
-                      f"announces {announced}", file=sys.stderr)
+        if not rows:
+            print("no sitemap entries matched; sitemap-index.xml may have been "
+                  "reformatted and this check is now inert", file=sys.stderr)
+            return 1
+        for rel, announced, _ in content_drift:
+            known = state.get(rel, {})
+            print(f"  {rel}: content differs from the copy recorded on "
+                  f"{known.get('lastmod', '(never recorded)')}, but the index still "
+                  f"announces {announced}", file=sys.stderr)
+        for rel, announced, _ in date_drift:
+            print(f"  {rel}: unchanged since {state[rel]['lastmod']}, but the index "
+                  f"announces {announced}", file=sys.stderr)
+        for rel in ghosts:
+            print(f"  {rel}: recorded in {STATE} but no longer listed in "
+                  f"sitemap-index.xml", file=sys.stderr)
+        if drifted or ghosts:
             print("sitemap-index.xml announces stale dates; "
                   "run tools/sync_sitemap_index.py", file=sys.stderr)
             return 1
         print(f"sitemap-index.xml lastmod dates are current ({len(rows)} sitemaps tracked)")
         return 0
 
-    if not drifted:
+    if not drifted and not ghosts:
         print(f"sitemap-index.xml already current; {len(rows)} sitemaps tracked")
         return 0
 
@@ -107,9 +131,15 @@ def main():
     seeding = not state
     changed = {rel for rel, _, _ in drifted}
     new_dates = {}
-    for rel, announced, sha in drifted:
+    for rel, announced, sha in content_drift:
         new_dates[rel] = announced if seeding else today
         state[rel] = {"sha256": sha, "lastmod": new_dates[rel]}
+    # Date drift is repaired from the record, not stamped with today: the file did not
+    # change, so the recorded date is the true one and the index is what is wrong.
+    for rel, _, sha in date_drift:
+        new_dates[rel] = state[rel]["lastmod"]
+    for rel in ghosts:
+        del state[rel]
 
     def replace(match):
         rel = match.group(2).replace(BASE, "")

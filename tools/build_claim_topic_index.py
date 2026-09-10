@@ -33,6 +33,7 @@ import argparse
 import html
 import json
 import pathlib
+import re
 import sys
 
 BASE = "https://wulfkaal.github.io"
@@ -149,6 +150,33 @@ def render_index_html(rows, total):
         '</footer></main></body></html>\n')
 
 
+TOPIC_ROW = re.compile(
+    r'(<tr><td>)([a-z-]+)(</td><td>)(\d+)(</td><td><a href="\./by-topic/)\2(\.json")')
+
+
+def retopic_claims_index_html(html_text, shard_counts):
+    """Correct the Topics table in claims/index.html from the shards.
+
+    That page is generated upstream and its table had drifted: 24 of 29 counts were
+    low, understating the corpus by 508 claim-tags on its primary human page, while
+    the shards it links were right. The numbers are derivable, so they are derived
+    here like every other published count in this repo, and --check fails when they
+    drift again. Only the digits are rewritten; the table's structure, ordering and
+    surrounding markup are left exactly as the upstream generator emitted them.
+    """
+    wrong = []
+
+    def fix(m):
+        slug, shown = m.group(2), int(m.group(4))
+        real = shard_counts.get(slug)
+        if real is None or real == shown:
+            return m.group(0)
+        wrong.append((slug, shown, real))
+        return f"{m.group(1)}{slug}{m.group(3)}{real}{m.group(5)}{slug}{m.group(6)}"
+
+    return TOPIC_ROW.sub(fix, html_text), wrong
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true",
@@ -202,6 +230,11 @@ def main():
             return 1
         html_pages[f"{slug}.html"] = render_shard_html(slug, [by_id[i] for i in ids])
 
+    claims_html_path = repo / "claims" / "index.html"
+    claims_html = claims_html_path.read_text(encoding="utf-8")
+    fixed_html, wrong_counts = retopic_claims_index_html(
+        claims_html, {slug: len(ids) for slug, (_, ids) in shards.items()})
+
     if args.check:
         if not index_path.exists():
             print(f"{index_path} is missing; run tools/build_claim_topic_index.py",
@@ -218,14 +251,26 @@ def main():
             print(f"{len(stale)} human page(s) missing or stale, e.g. {stale[0]}; "
                   f"run tools/build_claim_topic_index.py", file=sys.stderr)
             return 1
+        if wrong_counts:
+            for slug, shown, real in wrong_counts[:10]:
+                print(f"  claims/index.html says {slug} has {shown} claims; "
+                      f"the shard has {real}", file=sys.stderr)
+            print(f"{len(wrong_counts)} topic count(s) in claims/index.html disagree "
+                  f"with the shards; run tools/build_claim_topic_index.py",
+                  file=sys.stderr)
+            return 1
         print(f"claim topic index current: {len(shards)} shards, "
               f"{sum(len(i) for _, i in shards.values())} tags, "
-              f"{len(html_pages)} human pages")
+              f"{len(html_pages)} human pages, claims/index.html counts agree")
         return 0
 
     for name, body in html_pages.items():
         (topic_dir / name).write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
+    if wrong_counts:
+        claims_html_path.write_text(fixed_html, encoding="utf-8")
+        for slug, shown, real in wrong_counts:
+            print(f"  claims/index.html {slug}: {shown} -> {real}")
     print(f"wrote {index_path.relative_to(repo)}: {len(shards)} shards, "
           f"{sum(len(i) for _, i in shards.values())} claim-topic tags, "
           f"and {len(html_pages)} human pages beside them")
