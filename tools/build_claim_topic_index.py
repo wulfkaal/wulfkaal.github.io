@@ -30,6 +30,7 @@ claims/index.json. A shard index that agrees with a stale shard is worse than no
 """
 
 import argparse
+import html
 import json
 import pathlib
 import sys
@@ -100,6 +101,54 @@ def build(shards, sample_id):
     }
 
 
+def render_shard_html(slug, claims):
+    """A human page for one topic. The JSON twin is for machines; a person
+    clicking a topic previously got a wall of raw JSON, which is not reachable
+    in any sense that matters."""
+    items = "".join(
+        f'<li><a href="{html.escape(c["url"])}">{html.escape(c["claim"])}</a>'
+        f' <span class="meta">{html.escape(str(c.get("year") or ""))}</span></li>'
+        for c in claims)
+    title = f"Kaal claims by topic: {slug}"
+    desc = (f"{len(claims)} atomic, individually citable claims from the published "
+            f"work of Wulf A. Kaal tagged {slug}.")
+    return (
+        '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        f'<title>{html.escape(title)} — Wulf A. Kaal Claims</title>'
+        f'<meta name="description" content="{html.escape(desc)}">'
+        '<link rel="stylesheet" href="../../style.css"></head><body><main>'
+        f'<h1>{html.escape(title)}</h1><p class="claim">{html.escape(desc)}</p>'
+        f'<ol class="meta">{items}</ol><footer>'
+        '<a href="./">All claim topics</a> · '
+        f'<a href="./{html.escape(slug)}.json">This topic as JSON</a> · '
+        '<a href="../">All claims</a>'
+        '</footer></main></body></html>\n')
+
+
+def render_index_html(rows, total):
+    """The human entry point to the topic layer."""
+    items = "".join(
+        f'<li><a href="./{html.escape(slug)}.html">{html.escape(slug)}</a>'
+        f' <span class="meta">{n} claims</span></li>'
+        for slug, n in rows)
+    desc = (f"Every topic in the Kaal claim corpus, with its claim count. "
+            f"{len(rows)} topics covering {total} topic-tagged claims.")
+    return (
+        '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        '<title>Kaal claims by topic — Wulf A. Kaal Claims</title>'
+        f'<meta name="description" content="{html.escape(desc)}">'
+        '<link rel="stylesheet" href="../../style.css"></head><body><main>'
+        '<h1>Kaal claims by topic</h1>'
+        f'<p class="claim">{html.escape(desc)}</p>'
+        f'<ol class="meta">{items}</ol><footer>'
+        '<a href="./index.json">This index as JSON</a> · '
+        '<a href="../">All claims</a> · '
+        '<a href="../../">Wulf A. Kaal</a>'
+        '</footer></main></body></html>\n')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true",
@@ -117,6 +166,8 @@ def main():
         return 1
 
     claims_index = json.loads((repo / "claims" / "index.json").read_text(encoding="utf-8"))
+    records = claims_index["claims"] if isinstance(claims_index, dict) else claims_index
+    by_id = {c["id"]: c for c in records}
     problems = verify(shards, claims_index)
     if problems:
         print("the topic shards do not agree with claims/index.json:", file=sys.stderr)
@@ -138,6 +189,19 @@ def main():
 
     wanted = json.dumps(build(shards, sample_id), ensure_ascii=False, indent=2) + "\n"
 
+    # The human twins. Rendered from the same shards the JSON index describes, so the
+    # two can never disagree: one generator, one source, both outputs.
+    rows = [(slug, len(ids)) for slug, (_, ids) in sorted(shards.items())]
+    html_pages = {"index.html": render_index_html(rows, sum(n for _, n in rows))}
+    for slug, (_, ids) in sorted(shards.items()):
+        missing = [i for i in ids if i not in by_id]
+        if missing:
+            print(f"{slug}: {len(missing)} claim id(s) are not in claims/index.json, "
+                  f"e.g. {missing[0]!r}; refusing to render a page with dead entries",
+                  file=sys.stderr)
+            return 1
+        html_pages[f"{slug}.html"] = render_shard_html(slug, [by_id[i] for i in ids])
+
     if args.check:
         if not index_path.exists():
             print(f"{index_path} is missing; run tools/build_claim_topic_index.py",
@@ -147,13 +211,24 @@ def main():
             print(f"{index_path} is stale; run tools/build_claim_topic_index.py",
                   file=sys.stderr)
             return 1
+        stale = [name for name, body in html_pages.items()
+                 if not (topic_dir / name).exists()
+                 or (topic_dir / name).read_text(encoding="utf-8") != body]
+        if stale:
+            print(f"{len(stale)} human page(s) missing or stale, e.g. {stale[0]}; "
+                  f"run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
         print(f"claim topic index current: {len(shards)} shards, "
-              f"{sum(len(i) for _, i in shards.values())} tags")
+              f"{sum(len(i) for _, i in shards.values())} tags, "
+              f"{len(html_pages)} human pages")
         return 0
 
+    for name, body in html_pages.items():
+        (topic_dir / name).write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
     print(f"wrote {index_path.relative_to(repo)}: {len(shards)} shards, "
-          f"{sum(len(i) for _, i in shards.values())} claim-topic tags")
+          f"{sum(len(i) for _, i in shards.values())} claim-topic tags, "
+          f"and {len(html_pages)} human pages beside them")
     return 0
 
 

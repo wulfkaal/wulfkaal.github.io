@@ -455,6 +455,9 @@ jobs:
           print("AFMR Lift Harness schema catalog OK")
           PY
 
+      - name: Every sitemap must announce its real last-modified date
+        run: python3 tools/sync_sitemap_index.py --check
+
       - name: Every claim topic must be enumerable, not merely guessable
         run: |
           python3 tools/build_claim_topic_index.py --check
@@ -491,6 +494,13 @@ jobs:
                   continue
               if shard["json"] != f"https://wulfkaal.github.io/claims/by-topic/{slug}.json":
                   problems.append(f"{slug}: index url does not match its slug")
+              # Reachable for a person too. A topic that answers only in JSON is
+              # machine-readable, not readable.
+              page = pathlib.Path("claims/by-topic") / f"{slug}.html"
+              if not page.exists():
+                  problems.append(f"{slug} has no human page")
+          if not pathlib.Path("claims/by-topic/index.html").exists():
+              problems.append("the topic layer has no human entry point")
 
           # The shards list bare ids; the index publishes the id->url transform. A
           # template nobody exercises is a template that rots, so apply it to a real
