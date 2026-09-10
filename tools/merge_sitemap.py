@@ -38,7 +38,17 @@ WANT = [
     ("papers.bib", "0.7", None),
     ("colloquium/index.json", "0.7", None),
     ("book/index.md", "0.7", None),
+    ("claims/by-topic/index.json", "0.9",
+     "every claim topic with its count; without it the 29 slices were reachable "
+     "only by guessing a filename, hiding 67% of the topic-tagged corpus"),
+    ("positions/by-topic/index.json", "0.8",
+     "the same enumeration for public positions"),
 ]
+
+# Leaves stay out on purpose. This sitemap advertises entry points, not items:
+# failures/index.json is here and failures/by-name/*.json is not, and the same
+# holds for the by-topic shards. The indexes above enumerate them, which is the
+# crawler's job to follow, not the sitemap's job to duplicate.
 
 
 def main() -> int:
