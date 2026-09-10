@@ -454,3 +454,48 @@ jobs:
               sys.exit(f"schema catalog drift: {advertised} != {expected}")
           print("AFMR Lift Harness schema catalog OK")
           PY
+
+      - name: Every claim topic must be enumerable, not merely guessable
+        run: |
+          python3 tools/build_claim_topic_index.py --check
+          python3 - <<'PY'
+          import json, pathlib, sys
+          # A published index that nothing points at is still undiscoverable. Before this
+          # check existed, 29 topic slices covering 11,256 claim-topic tags were live and
+          # only 8 slugs appeared in any agent entry point, so 67% of the layer was
+          # reachable only by guessing a URL.
+          url = "https://wulfkaal.github.io/claims/by-topic/index.json"
+          problems = []
+
+          for name in ("agent-card.json", ".well-known/agent-card.json"):
+              card = json.loads(pathlib.Path(name).read_text())
+              if card["corpus"].get("claim_topic_index") != url:
+                  problems.append(f"{name} does not advertise the claim topic index")
+          if (pathlib.Path("agent-card.json").read_bytes()
+                  != pathlib.Path(".well-known/agent-card.json").read_bytes()):
+              problems.append("the two agent cards have diverged")
+
+          mcp = json.loads(pathlib.Path(".well-known/mcp.json").read_text())
+          if mcp["staticMirror"].get("claimTopicIndex") != url:
+              problems.append(".well-known/mcp.json staticMirror omits claimTopicIndex")
+
+          if url not in pathlib.Path("llms.txt").read_text():
+              problems.append("llms.txt does not name the claim topic index")
+
+          index = json.loads(pathlib.Path("claims/by-topic/index.json").read_text())
+          for shard in index["shards"]:
+              slug = shard["topic"]
+              path = pathlib.Path("claims/by-topic") / f"{slug}.json"
+              if not path.exists():
+                  problems.append(f"index lists {slug} but {path} is missing")
+                  continue
+              if shard["json"] != f"https://wulfkaal.github.io/claims/by-topic/{slug}.json":
+                  problems.append(f"{slug}: index url does not match its slug")
+
+          if problems:
+              for problem in problems:
+                  print("  " + problem, file=sys.stderr)
+              sys.exit("the claim topic layer is published but not discoverable")
+          print(f"claim topic layer discoverable: {index['count']} topics, "
+                f"{index['totalClaimTopicTags']} tags, advertised in 4 entry points")
+          PY
