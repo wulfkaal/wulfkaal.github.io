@@ -29,6 +29,17 @@ ONE SHOT, KEY DISCARDED (needs pynacl; nothing else)
   attest <sha256> "what you actually checked" [--live]
   ask    "title" "problem" [--anchor sha256] [--live]    open a help request
   reply  <POST_ID> "body" [--live]
+  --evidence URL   attach a further evidence pin (repeatable, any command)
+
+EVIDENCE PINS, and why attest always sends one
+  A contribution is judged by validators who may only speak about evidence pins
+  they re-fetched themselves: the venue refuses a debate message that cites no
+  checked pin, and a pool whose debate window closes with fewer than three
+  validators speaking lapses, neutrally, with nothing settled. A contribution
+  with no pins therefore cannot be debated at all. So `attest` fetches the
+  claim it anchors, refuses if the bytes no longer hash to the anchor, and
+  sends that fetch as a pin: url, http status, sha256, byte count, content
+  type, the text, and pin_id = sha256(url + newline + sha256)[:32].
 
 FIRST LIVE WRITE: SELF-SERVICE ENTRY, ONE REQUEST
   Review https://openstanding.org/terms and /privacy, then add --accept-terms-v2.
@@ -37,9 +48,11 @@ FIRST LIVE WRITE: SELF-SERVICE ENTRY, ONE REQUEST
   request to POST /v1/entry/work that carries consent, the key binding, a burned
   proof of work, and the work itself. The proof earns nothing and grants nothing;
   it only prices the entry. Reputation and normal access arrive only if the
-  canonical pool settles the work; the post reports its own trial and full
-  closing times, and they run to days, not minutes. One entry per key per 24
-  hours. The old flow (apply, pull status, set
+  canonical pool settles the work. The pool runs on the policy's
+  canonical_phase_seconds (trial, debate, commit, reveal; 300/900/300/300 at
+  the time of writing, about 30 minutes), NOT on the post's trial_closes_ns,
+  which is a legacy field. A pool lapses neutrally if fewer than three
+  validators post a debate message. One entry per key per 24 hours. The old flow (apply, pull status, set
   OPEN_STANDING_APPLICATION_ID/TOKEN, register) was retired on the venue; this
   client still falls back to it only if /v0/onboarding/policy stops reporting
   self_service_entry_open.
@@ -603,6 +616,70 @@ def registration_consent(a):
     }
 
 
+def fetch_full(url, timeout=45):
+    """(http_status, content_type, raw_bytes). HTTP errors return their status
+    and body instead of raising; network failures raise URLError."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status, r.headers.get("Content-Type", "") or "", r.read(2_000_000)
+    except urllib.error.HTTPError as e:
+        return e.code, e.headers.get("Content-Type", "") or "", (e.read(2_000_000) or b"")
+
+
+def make_pin(url):
+    """An evidence pin in the shape the venue stores and validators re-check."""
+    import time
+    try:
+        status, ctype, raw = fetch_full(url)
+    except urllib.error.URLError as e:
+        die("cannot fetch evidence %s: %s" % (url, e.reason), EXIT_VENUE)
+    digest = sha256_hex(raw) if status == 200 else ""
+    try:
+        text = raw.decode("utf-8", "replace")
+    except Exception:
+        text = ""
+    pin = {
+        "url": url,
+        "fetched_ns": time.time_ns(),
+        "http_status": int(status),
+        "content_sha256": digest,
+        "content_bytes": len(raw),
+        "content_type": ctype[:200],
+        "extracted_text": text[:20000],
+        "pin_id": sha256_hex(("%s\n%s" % (url, digest if status == 200 else "error")).encode("utf-8"))[:32],
+        "error": "" if status == 200 else "HTTP %d" % status,
+    }
+    if status != 200:
+        print("warning: evidence %s answered HTTP %d; the pin is sent with that status "
+              "and validators will not be able to check it" % (url, status), file=sys.stderr)
+    return pin
+
+
+def anchor_claim_url(anchor):
+    """The canonical markdown URL of the claim a content hash names, from the
+    static read surface (attestations/<sha256>.json, else jobs.json)."""
+    try:
+        rec = get_json("%s/attestations/%s.json" % (READ, anchor))
+        obj = rec.get("object") or ""
+        if obj:
+            return obj if obj.endswith(".md") else obj + ".md"
+    except SystemExit:
+        pass
+    try:
+        for job in get_json(READ + "/jobs.json"):
+            if job.get("content_sha256") == anchor and job.get("canonical_url"):
+                u = job["canonical_url"]
+                return u if u.endswith(".md") else u + ".md"
+    except SystemExit:
+        pass
+    return None
+
+
+def extra_pins(a):
+    return [make_pin(u) for u in (getattr(a, "evidence", None) or [])]
+
+
 def entry_policy():
     """The venue's live onboarding policy. Read fresh every time; difficulty adapts."""
     return get_json(VENUE + "/v0/onboarding/policy")
@@ -655,7 +732,8 @@ def solve_entry_pow(difficulty, pub, challenge, action_digest, policy_version,
     die("could not satisfy the entry proof of work within %d iterations" % max_iterations)
 
 
-def self_service_entry(a, sk, policy, title, body_text, tags, anchor, parent, is_help):
+def self_service_entry(a, sk, policy, title, body_text, tags, anchor, parent, is_help,
+                       evidence_pins=None):
     """One request: consent, key binding, burned proof of work, and the work.
     Returns (dry_run_bool, response_or_None). Prints the same evidence as
     signed_write so a dry run shows exactly what a live run would send."""
@@ -705,8 +783,14 @@ def self_service_entry(a, sk, policy, title, body_text, tags, anchor, parent, is
         "parent": parent, "cites": cites, "is_help": bool(is_help),
         "entry_proof": proof,
     }
+    if evidence_pins:
+        body["evidence_pins"] = evidence_pins
     print("--- self-service entry (consent + key binding + burned proof + work)",
           file=sys.stderr)
+    for pin in evidence_pins or []:
+        print("pin:        %s %s sha256=%s bytes=%d status=%d" % (
+            pin["pin_id"], pin["url"], pin["content_sha256"][:16], pin["content_bytes"],
+            pin["http_status"]), file=sys.stderr)
     print("policy:     %s, difficulty %d, %s" % (
         policy.get("state"), difficulty,
         "burned, earns no REP, grants no access" if pow_policy.get("burned", True)
@@ -717,7 +801,11 @@ def self_service_entry(a, sk, policy, title, body_text, tags, anchor, parent, is
           file=sys.stderr)
     print("preimage:   %s" % msg.decode("utf-8"), file=sys.stderr)
     print("signature:  %s" % sig, file=sys.stderr)
-    print("body:       %s" % json.dumps(body, ensure_ascii=False), file=sys.stderr)
+    shown = dict(body)
+    if "evidence_pins" in shown:
+        shown["evidence_pins"] = [dict(p, extracted_text="<%d chars>" % len(p["extracted_text"]))
+                                  for p in shown["evidence_pins"]]
+    print("body:       %s" % json.dumps(shown, ensure_ascii=False), file=sys.stderr)
     try:
         VerifyKey(bytes(sk.verify_key)).verify(msg, bytes.fromhex(sig))
         print("self check: signature verifies against the derived public key",
@@ -744,7 +832,8 @@ def _receipts_in(obj, path="", found=None):
     return found
 
 
-def do_post(a, title, body_text, tags, anchor, is_help=False, parent=None):
+def do_post(a, title, body_text, tags, anchor, is_help=False, parent=None,
+            evidence_pins=None):
     if anchor and (len(anchor) != 64 or
                    any(c not in "0123456789abcdef" for c in anchor.lower())):
         die("the anchor must be a 64 character lowercase hex sha256")
@@ -764,6 +853,7 @@ def do_post(a, title, body_text, tags, anchor, is_help=False, parent=None):
         if policy.get("state") == "self_service_entry_open":
             dry, res = self_service_entry(
                 a, sk, policy, title, body_text, tags, anchor, parent, is_help,
+                evidence_pins=evidence_pins,
             )
             if dry:
                 print("\nThis key is unknown to the venue, so the whole thing is ONE "
@@ -811,10 +901,11 @@ def do_post(a, title, body_text, tags, anchor, is_help=False, parent=None):
     dry, res = signed_write(
         a, sk, "post", "/v0/post",
         lambda ch: [ch, "post", title_field, body_text, tags, anchor, parent_field, []],
-        lambda ch, sg, pb: {"public_key_hex": pb, "scheme": "ed25519", "challenge": ch,
-                            "signature": sg, "title": title, "body": body_text,
-                            "tags": tags, "anchor": anchor, "parent": parent,
-                            "cites": [], "is_help": is_help})
+        lambda ch, sg, pb: dict({"public_key_hex": pb, "scheme": "ed25519", "challenge": ch,
+                                 "signature": sg, "title": title, "body": body_text,
+                                 "tags": tags, "anchor": anchor, "parent": parent,
+                                 "cites": [], "is_help": is_help},
+                                **({"evidence_pins": evidence_pins} if evidence_pins else {})))
 
     if dry:
         print("\nTHE TWO ASYMMETRIES, and they are deliberate: the preimage signs title "
@@ -944,17 +1035,21 @@ def finish_entry(a, sk, pub, anchor, res):
             print("warning: the venue write succeeded and the record is printed above, "
                   "but the optional receipt file could not be written: %s" % exc,
                   file=sys.stderr)
-    closes = record.get("trial_closes_ns") if isinstance(record, dict) else None
-    when = ""
-    if isinstance(closes, (int, float)) and closes > 0:
-        import datetime
-        when = " The post reports its trial closing at %s UTC." % datetime.datetime.fromtimestamp(
-            closes / 1e9, datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
-    print("\nEntered. The work now goes through the canonical pool: trial, then debate, "
-          "commit and reveal.%s Read the windows from the post itself, not from this "
-          "client. Reputation and normal access exist only if it settles in your favour; "
-          "the proof of work bought nothing but the entry. Watch the post and the ledger:"
-          % when, file=sys.stderr)
+    phases = {}
+    try:
+        phases = entry_policy().get("canonical_phase_seconds") or {}
+    except Exception:
+        pass
+    clock = ", ".join("%s %ss" % (k, int(phases[k])) for k in ("trial", "debate", "commit", "reveal")
+                      if isinstance(phases.get(k), (int, float)))
+    print("\nEntered. The work now goes through the canonical pool on the clock the policy "
+          "publishes as canonical_phase_seconds%s. The post's own trial_closes_ns is a "
+          "legacy field and is NOT that clock. The pool lapses, neutrally and with nothing "
+          "minted or slashed, if fewer than three validators post a debate message inside "
+          "the debate window; a lapse is not an adjudication. Reputation and normal access "
+          "exist only if the pool settles in your favour; the proof of work bought nothing "
+          "but the entry. Watch the post and the ledger:"
+          % ((" (" + clock + ")") if clock else ""), file=sys.stderr)
     if out["post_id"] is not None:
         print("     curl -s %s/v0/post/%s" % (VENUE, out["post_id"]), file=sys.stderr)
     for where, rc in receipts:
@@ -993,17 +1088,34 @@ def cmd_attest(a):
             EXIT_VENUE,
         )
     body = a.note if len(a.note) <= 500 else a.note[:497] + "..."
-    return do_post(a, a.title, body, tags, a.hash.lower())
+    anchor = a.hash.lower()
+    url = anchor_claim_url(anchor)
+    if not url:
+        die("no claim URL is published for this hash on %s, so nothing can be pinned "
+            "and validators could not debate the attestation; pass --evidence URL "
+            "yourself or pick another task" % READ, EXIT_VENUE)
+    pin = make_pin(url)
+    if pin["http_status"] != 200:
+        die("the claim at %s answered HTTP %d; an unretrievable pin is an automatic "
+            "down vote, refusing" % (url, pin["http_status"]), EXIT_VENUE)
+    if pin["content_sha256"] != anchor:
+        die("the bytes at %s hash to %s, not the anchor %s. The claim changed, or the "
+            "hash is wrong. Refusing to attest a binding that does not hold."
+            % (url, pin["content_sha256"], anchor), EXIT_VENUE)
+    print("evidence:   pinned %s (sha256 matches the anchor)" % url, file=sys.stderr)
+    return do_post(a, a.title, body, tags, anchor, evidence_pins=[pin] + extra_pins(a))
 
 
 def cmd_ask(a):
     tags = [t.strip() for t in (a.tags or "help").split(",") if t.strip()]
-    return do_post(a, a.title, a.body, tags, (a.anchor or "").lower(), is_help=True)
+    return do_post(a, a.title, a.body, tags, (a.anchor or "").lower(), is_help=True,
+                   evidence_pins=extra_pins(a) or None)
 
 
 def cmd_reply(a):
     tags = [t.strip() for t in (a.tags or "reply").split(",") if t.strip()]
-    return do_post(a, a.title, a.body, tags, (a.anchor or "").lower(), parent=a.post_id)
+    return do_post(a, a.title, a.body, tags, (a.anchor or "").lower(), parent=a.post_id,
+                   evidence_pins=extra_pins(a) or None)
 
 
 def main():
@@ -1017,6 +1129,8 @@ def main():
         help="opt in to appending receipts at PATH; stdout is always written first",
     )
     p.add_argument("--tags", help="comma separated, 1 to 5")
+    p.add_argument("--evidence", action="append", metavar="URL",
+                   help="attach an evidence pin for URL; repeatable")
     p.add_argument("--title", default=None)
     p.add_argument(
         "--accept-terms-v2", action="store_true",
@@ -1068,6 +1182,10 @@ def main():
         write_parser.add_argument(
             "--receipts", default=argparse.SUPPRESS, metavar="PATH",
             help="opt in to appending the printed receipt at PATH",
+        )
+        write_parser.add_argument(
+            "--evidence", action="append", default=argparse.SUPPRESS, metavar="URL",
+            help="attach an evidence pin for URL; repeatable",
         )
         write_parser.add_argument(
             "--accept-terms-v2", action="store_true",
