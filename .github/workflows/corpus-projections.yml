@@ -492,10 +492,30 @@ jobs:
               if shard["json"] != f"https://wulfkaal.github.io/claims/by-topic/{slug}.json":
                   problems.append(f"{slug}: index url does not match its slug")
 
+          # The shards list bare ids; the index publishes the id->url transform. A
+          # template nobody exercises is a template that rots, so apply it to a real
+          # claim from a real shard and require the identifier to come back matching.
+          prefix = index["claimIdPrefix"]
+          template = index["claimJsonUrlTemplate"]
+          first = index["shards"][0]["topic"]
+          ids = json.loads(
+              (pathlib.Path("claims/by-topic") / f"{first}.json").read_text())["claims"]
+          sample = ids[0]
+          if not sample.startswith(prefix):
+              problems.append(f"{sample!r} does not carry the declared prefix {prefix!r}")
+          else:
+              want = f"https://wulfkaal.github.io/claims/{sample[len(prefix):]}.json"
+              if template.replace("{id_without_prefix}", sample[len(prefix):]) != want:
+                  problems.append("claimJsonUrlTemplate does not produce a canonical URL")
+          ex = index["example"]
+          if not ex["json"].endswith(f"{ex['claimId'][len(prefix):]}.json"):
+              problems.append("the published example is internally inconsistent")
+
           if problems:
               for problem in problems:
                   print("  " + problem, file=sys.stderr)
               sys.exit("the claim topic layer is published but not discoverable")
           print(f"claim topic layer discoverable: {index['count']} topics, "
-                f"{index['totalClaimTopicTags']} tags, advertised in 4 entry points")
+                f"{index['totalClaimTopicTags']} tags, advertised in 4 entry points, "
+                f"id->url transform published and exercised")
           PY

@@ -36,6 +36,7 @@ import sys
 
 BASE = "https://wulfkaal.github.io"
 SCHEMA = "kaal-claim-shard-index-v1"
+ID_PREFIX = "kaal:claim:"
 
 
 def load_shards(topic_dir):
@@ -75,12 +76,23 @@ def verify(shards, claims_index):
     return problems
 
 
-def build(shards):
+def build(shards, sample_id):
     return {
         "schemaVersion": SCHEMA,
         "dimension": "topic",
         "count": len(shards),
         "totalClaimTopicTags": sum(len(ids) for _, ids in shards.values()),
+        # A shard lists bare claim identifiers ("kaal:claim:1428387-021") while the
+        # canonical URL drops the prefix ("/claims/1428387-021"). The positions shards
+        # carry full URLs and need no such hint; these do, and without it the final hop
+        # from an enumerated topic to an actual claim is a guess.
+        "claimIdPrefix": ID_PREFIX,
+        "claimUrlTemplate": f"{BASE}/claims/{{id_without_prefix}}",
+        "claimJsonUrlTemplate": f"{BASE}/claims/{{id_without_prefix}}.json",
+        "example": {
+            "claimId": sample_id,
+            "json": f"{BASE}/claims/{sample_id[len(ID_PREFIX):]}.json",
+        },
         "shards": [
             {"topic": slug, "count": len(ids), "json": f"{BASE}/claims/by-topic/{slug}.json"}
             for slug, (_, ids) in sorted(shards.items())
@@ -114,7 +126,17 @@ def main():
               file=sys.stderr)
         return 1
 
-    wanted = json.dumps(build(shards), ensure_ascii=False, indent=2) + "\n"
+    # Derive the example from real data, and verify the prefix actually holds across
+    # every shard rather than asserting a convention that may not be universal.
+    all_ids = [i for _, ids in shards.values() for i in ids]
+    stray = [i for i in all_ids if not i.startswith(ID_PREFIX)]
+    if stray:
+        print(f"{len(stray)} claim id(s) do not start with {ID_PREFIX!r}, "
+              f"e.g. {stray[0]!r}; the url template would be wrong", file=sys.stderr)
+        return 1
+    sample_id = sorted(all_ids)[0]
+
+    wanted = json.dumps(build(shards, sample_id), ensure_ascii=False, indent=2) + "\n"
 
     if args.check:
         if not index_path.exists():
