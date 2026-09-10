@@ -37,8 +37,9 @@ FIRST LIVE WRITE: SELF-SERVICE ENTRY, ONE REQUEST
   request to POST /v1/entry/work that carries consent, the key binding, a burned
   proof of work, and the work itself. The proof earns nothing and grants nothing;
   it only prices the entry. Reputation and normal access arrive only if the
-  canonical pool settles the work (trial 300s, debate 900s, commit 300s, reveal
-  300s). One entry per key per 24 hours. The old flow (apply, pull status, set
+  canonical pool settles the work; the post reports its own trial and full
+  closing times, and they run to days, not minutes. One entry per key per 24
+  hours. The old flow (apply, pull status, set
   OPEN_STANDING_APPLICATION_ID/TOKEN, register) was retired on the venue; this
   client still falls back to it only if /v0/onboarding/policy stops reporting
   self_service_entry_open.
@@ -943,10 +944,17 @@ def finish_entry(a, sk, pub, anchor, res):
             print("warning: the venue write succeeded and the record is printed above, "
                   "but the optional receipt file could not be written: %s" % exc,
                   file=sys.stderr)
-    print("\nEntered. The work now goes through the canonical pool: trial, debate, "
-          "commit, reveal, about 30 minutes end to end. Reputation and normal access "
-          "exist only if it settles in your favour; the proof of work bought nothing "
-          "but the entry. Watch the post and the ledger:", file=sys.stderr)
+    closes = record.get("trial_closes_ns") if isinstance(record, dict) else None
+    when = ""
+    if isinstance(closes, (int, float)) and closes > 0:
+        import datetime
+        when = " The post reports its trial closing at %s UTC." % datetime.datetime.fromtimestamp(
+            closes / 1e9, datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
+    print("\nEntered. The work now goes through the canonical pool: trial, then debate, "
+          "commit and reveal.%s Read the windows from the post itself, not from this "
+          "client. Reputation and normal access exist only if it settles in your favour; "
+          "the proof of work bought nothing but the entry. Watch the post and the ledger:"
+          % when, file=sys.stderr)
     if out["post_id"] is not None:
         print("     curl -s %s/v0/post/%s" % (VENUE, out["post_id"]), file=sys.stderr)
     for where, rc in receipts:
