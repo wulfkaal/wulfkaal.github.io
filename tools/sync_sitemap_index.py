@@ -104,7 +104,8 @@ def main():
         print("refusing to run against a damaged record; restore it from git",
               file=sys.stderr)
         return 1
-    today = datetime.date.today().isoformat()
+    utc_today = datetime.datetime.now(datetime.timezone.utc).date()
+    today = utc_today.isoformat()
 
     # A date that is not a date, or is in the future, is as misleading as a stale one
     # and string equality never noticed.
@@ -115,14 +116,13 @@ def main():
         except ValueError:
             malformed.append((rel, announced, "is not an ISO date"))
             continue
-        if when > datetime.date.today():
+        if when > utc_today:
             malformed.append((rel, announced, "is in the future"))
 
     # Every <loc> must point at a file. survey() skips missing ones, so a dangling
     # entry produced no state key, became no ghost, and passed.
     dangling = [m.group(2).replace(BASE, "") for m in ENTRY.finditer(text)
-                if m.group(2).replace(BASE, "") not in OWNED_ELSEWHERE
-                and not (repo / m.group(2).replace(BASE, "")).exists()]
+                if not (repo / m.group(2).replace(BASE, "")).exists()]
 
     # Two independent ways the index can lie, and the first version of this tool only
     # caught one of them:
