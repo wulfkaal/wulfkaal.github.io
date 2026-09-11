@@ -1,10 +1,13 @@
 import importlib.util
+import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+BASE = "https://wulfkaal.github.io"
 
 
 def load_module(name, relative):
@@ -17,6 +20,25 @@ def load_module(name, relative):
 CLAIMS = load_module("normalize_claim_discovery", "tools/normalize_claim_discovery.py")
 SITEMAPS = load_module("check_sitemap_uniqueness", "tools/check_sitemap_uniqueness.py")
 SYNC = load_module("sync_sitemap_index", "tools/sync_sitemap_index.py")
+
+
+def required_human_urls(repo):
+    families = sorted({
+        mode["failure_family"]
+        for mode in json.loads((repo / "failures" / "index.json").read_text(encoding="utf-8"))["modes"]
+    })
+    urls = [
+        f"{BASE}/",
+        f"{BASE}/claims/index.html",
+        f"{BASE}/failures/index.html",
+    ]
+    urls.extend(f"{BASE}/failures/{family}.html" for family in families)
+    return urls
+
+
+def missing_required_human_urls(sitemap_text, required):
+    have = set(re.findall(r"<loc>(.*?)</loc>", sitemap_text))
+    return [url for url in required if url not in have]
 
 
 class SitemapIntegrityTests(unittest.TestCase):
@@ -50,7 +72,7 @@ class SitemapIntegrityTests(unittest.TestCase):
         self.assertNotIn("/claims/1-001.json", output)
         self.assertNotIn("/claims/1-001.md", output)
         self.assertNotIn("authority.json", output)
-        self.assertNotIn("/claims/index.html", output)
+        self.assertIn("/claims/index.html", output)
 
     def test_duplicate_url_across_indexed_sitemaps_fails(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -111,6 +133,29 @@ class SitemapIntegrityTests(unittest.TestCase):
                 if not (repo / match.group(2).replace(SYNC.BASE, "")).exists()
             ]
         self.assertEqual(dangling, ["sitemap-positions.xml"])
+
+    def test_claim_sitemap_pins_sixty_human_urls(self):
+        required = required_human_urls(ROOT)
+        self.assertEqual(len(required), 60)
+        self.assertEqual(len(set(required)), 60)
+        missing = missing_required_human_urls(
+            (ROOT / "sitemap-claims.xml").read_text(encoding="utf-8"),
+            required,
+        )
+        self.assertEqual(missing, [])
+
+    def test_removing_one_required_human_url_fails_in_a_copy(self):
+        required = required_human_urls(ROOT)
+        source = (ROOT / "sitemap-claims.xml").read_text(encoding="utf-8")
+        dropped = required[1]
+        with tempfile.TemporaryDirectory() as temp:
+            copy = Path(temp) / "sitemap-claims.xml"
+            copy.write_text(source.replace(dropped, dropped + ".removed"), encoding="utf-8")
+            missing = missing_required_human_urls(
+                copy.read_text(encoding="utf-8"),
+                required,
+            )
+        self.assertEqual(missing, [dropped])
 
     def test_entity_sitemap_generator_does_not_stamp_wall_clock_lastmod(self):
         source = (ROOT / "tools" / "build_entities.py").read_text(encoding="utf-8")

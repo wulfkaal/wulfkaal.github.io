@@ -36,6 +36,7 @@ def canonicalize_page(source, url):
 def sitemap(records, repo):
     rows = [
         f"  <url><loc>{BASE}/</loc><priority>1.0</priority></url>",
+        f"  <url><loc>{BASE}/claims/index.html</loc><priority>1.0</priority></url>",
         f"  <url><loc>{BASE}/failures/index.html</loc><priority>1.0</priority></url>",
     ]
     for record in records:
