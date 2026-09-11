@@ -482,9 +482,6 @@ def build_positions_sitemap(records):
     lastmod = max(record["dateModified"] for record in records)
     primary = [
         (f"{BASE}/positions/", lastmod, "0.9"),
-        (f"{BASE}/positions/recent.json", lastmod, "0.8"),
-        (f"{BASE}/positions/by-date/index.json", lastmod, "0.7"),
-        (f"{BASE}/positions/by-topic/index.json", lastmod, "0.7"),
     ]
     primary.extend(
         (record["canonical_url"], record["dateModified"], "0.7")
