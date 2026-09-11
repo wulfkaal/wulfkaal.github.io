@@ -680,6 +680,16 @@ def update_discovery_surfaces(repo, lastmod, records):
 
     mcp_path = repo / ".well-known" / "mcp.json"
     mcp = json.loads(mcp_path.read_text(encoding="utf-8"))
+    scholarly_count = json.loads(
+        (repo / "claims" / "index.json").read_text(encoding="utf-8")
+    )["count"]
+    mcp["description"], replaced = re.subn(
+        r"not part of the [\d,]+ scholarly layer\.",
+        f"not part of the {scholarly_count:,} scholarly layer.",
+        mcp["description"],
+    )
+    if replaced != 1:
+        raise RuntimeError("Expected one scholarly-layer count in MCP description")
     for tool in ("search_positions", "get_position", "positions_on_topic"):
         if tool not in mcp["tools"]:
             mcp["tools"].append(tool)
