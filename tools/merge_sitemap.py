@@ -26,6 +26,7 @@ import sys
 from pathlib import Path
 
 BASE = "https://wulfkaal.github.io/"
+SITEMAP_LOC = re.compile(r"<sitemap><loc>(.*?)</loc>")
 
 # Human-facing hubs that are worth advertising.
 WANT = [
@@ -41,6 +42,20 @@ def is_human_search_url(url: str) -> bool:
     return not rel or rel.endswith("/") or "." not in name or name.endswith(".html")
 
 
+def sibling_sitemap_urls(repo: Path) -> set[str]:
+    """Return URLs already advertised by another repository-local sitemap."""
+    index = (repo / "sitemap-index.xml").read_text(encoding="utf-8")
+    urls = set()
+    for sitemap_url in SITEMAP_LOC.findall(index):
+        rel = sitemap_url.removeprefix(BASE)
+        if rel == "sitemap.xml":
+            continue
+        path = repo / rel
+        if path.exists():
+            urls.update(re.findall(r"<loc>(.*?)</loc>", path.read_text(encoding="utf-8")))
+    return urls
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("repo")
@@ -50,6 +65,7 @@ def main() -> int:
     repo = Path(a.repo)
     p = repo / "sitemap.xml"
     txt = p.read_text()
+    advertised_elsewhere = sibling_sitemap_urls(repo)
 
     # One URL per line is the repository's stable sitemap format. Drop a directly
     # attached explanatory comment with a removed machine-only entry so reruns are
@@ -58,7 +74,8 @@ def main() -> int:
     removed = []
 
     def keep_search_row(match):
-        if is_human_search_url(match.group(1)):
+        if (is_human_search_url(match.group(1))
+                and match.group(1) not in advertised_elsewhere):
             return match.group(0)
         removed.append(match.group(1))
         return ""
@@ -97,7 +114,7 @@ def main() -> int:
     add = []
     for rel, prio, why in WANT:
         u = BASE + rel
-        if u in have:
+        if u in have or u in advertised_elsewhere:
             continue
         if not (repo / rel).exists():
             print(f"  · skipping {rel} — not in the tree, so advertising it would "
