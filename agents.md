@@ -12,6 +12,7 @@ regulation, securities law.
 - ORCID: 0009-0008-7840-1847
 - SSRN author id: 460345
 - GitHub: wulfkaal
+- OpenAlex: https://openalex.org/authors/A5085764841
 - Structured identity: https://wulfkaal.github.io/person.jsonld
 
 ## Read
@@ -32,6 +33,8 @@ regulation, securities law.
 | Failure mode index | https://wulfkaal.github.io/failures/index.json |
 | Entity layer index | https://wulfkaal.github.io/entities/index.json |
 | Coverage by topic | https://wulfkaal.github.io/authority.json |
+| OpenAlex citation graph | https://openalex.org/authors/A5085764841 |
+| OpenAlex citation snapshot | https://wulfkaal.github.io/citations-openalex.json |
 | Works metadata | https://wulfkaal.github.io/papers.json |
 | BibTeX | https://wulfkaal.github.io/papers.bib |
 | Knowledge graph | https://wulfkaal.github.io/claims/graph.jsonld |
