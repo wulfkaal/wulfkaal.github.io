@@ -42,10 +42,8 @@ import html
 import json
 import os
 import sys
-from datetime import date
 
 BASE = "https://wulfkaal.github.io"
-TODAY = date.today().isoformat()
 
 # Resolved the same way tools/overlay.py resolves them, so this runs from
 # anywhere as long as it sits in tools/ inside the repo.
@@ -156,7 +154,7 @@ def render_md(slug, node, by_id):
 
     if adj:
         ap("**Status.** adjudicated  "
-           f"**Adjudicated.** {adj.get('adjudicated_on', TODAY)}  "
+           f"**Adjudicated.** {adj['adjudicated_on']}  "
            f"**By.** {adj.get('adjudicated_by', 'Wulf A. Kaal')}")
         ap("")
         ap("## Definition")
@@ -358,7 +356,6 @@ def render_json(slug, node, md_sha, by_id):
             "name": "Wulf A. Kaal",
             "identifier": "https://orcid.org/0009-0008-7840-1847",
         },
-        "dateModified": TODAY,
         "canonicalForm": f"{BASE}/entities/{slug}.md",
         "sha256": md_sha,
         "additionalProperty": [
@@ -414,7 +411,7 @@ def render_json(slug, node, md_sha, by_id):
             ]
 
         adjudication = {
-            "adjudicated_on": adj.get("adjudicated_on", TODAY),
+            "adjudicated_on": adj["adjudicated_on"],
             "adjudicated_by": adj.get("adjudicated_by", "Wulf A. Kaal"),
             "definition": adj["definition"],
             "necessary_conditions": [
@@ -676,7 +673,6 @@ def main():
             "falsified, or narrowed is flagged wherever a node lists it, and "
             "`non_current_claims` counts them per node."
         ),
-        "generated": TODAY,
         "nodes": len(index_nodes),
         "adjudicated": sum(1 for n in index_nodes if n["status"] == "adjudicated"),
         "derived": sum(1 for n in index_nodes if n["status"] == "derived"),
@@ -717,13 +713,16 @@ def main():
             "</main></body></html>")
 
     # sitemap
+    # Entity pages are derived records without an independently meaningful content
+    # date. A wall-clock lastmod made a no-op rebuild claim that every page changed.
+    # Omit it: an absent lastmod is truthful and the sitemap index separately tracks
+    # changes to this file by content hash.
     locs = "".join(
-        f"<url><loc>{BASE}/entities/{s}.html</loc><lastmod>{TODAY}</lastmod></url>"
-        for s in written)
+        f"<url><loc>{BASE}/entities/{s}.html</loc></url>" for s in written)
     with open(os.path.join(a.repo, "sitemap-entities.xml"), "w", encoding="utf-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                 f"<url><loc>{BASE}/entities/</loc><lastmod>{TODAY}</lastmod></url>"
+                 f"<url><loc>{BASE}/entities/</loc></url>"
                  f"{locs}</urlset>\n")
 
     print(f"wrote {len(written)} entity nodes ({index['adjudicated']} adjudicated) "
