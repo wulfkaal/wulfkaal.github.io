@@ -145,14 +145,12 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
     def test_positions_sitemap_lastmod_matches_index(self):
         sitemap = (ROOT / "sitemap-index.xml").read_text(encoding="utf-8")
-        for url in (
-            "https://wulfkaal.github.io/sitemap-positions.xml",
-            "https://wulfkaal.github.io/positions/sitemap-positions-attribution.xml",
-        ):
-            self.assertIn(
-                f"<sitemap><loc>{url}</loc><lastmod>{self.index['dateModified']}</lastmod></sitemap>",
-                sitemap,
-            )
+        url = "https://wulfkaal.github.io/sitemap-positions.xml"
+        self.assertIn(
+            f"<sitemap><loc>{url}</loc><lastmod>{self.index['dateModified']}</lastmod></sitemap>",
+            sitemap,
+        )
+        self.assertNotIn("sitemap-positions-attribution.xml", sitemap)
 
 
 if __name__ == "__main__":

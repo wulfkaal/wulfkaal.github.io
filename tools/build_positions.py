@@ -707,11 +707,23 @@ def update_discovery_surfaces(repo, lastmod, records):
 
     sitemap_path = repo / "sitemap-index.xml"
     sitemap = sitemap_path.read_text(encoding="utf-8")
-    for url in (f"{BASE}/sitemap-positions.xml", f"{BASE}/positions/sitemap-positions-attribution.xml"):
-        pattern = rf"(<sitemap><loc>{re.escape(url)}</loc><lastmod>)[^<]+(</lastmod></sitemap>)"
-        sitemap, count = re.subn(pattern, rf"\g<1>{lastmod}\g<2>", sitemap)
-        if count != 1:
-            raise RuntimeError(f"Expected one sitemap-index entry for {url}")
+    url = f"{BASE}/sitemap-positions.xml"
+    pattern = rf"(<sitemap><loc>{re.escape(url)}</loc><lastmod>)[^<]+(</lastmod></sitemap>)"
+    sitemap, count = re.subn(pattern, rf"\g<1>{lastmod}\g<2>", sitemap)
+    if count != 1:
+        raise RuntimeError(f"Expected one sitemap-index entry for {url}")
+
+    # The attribution sitemap duplicates every canonical position already present
+    # in sitemap-positions.xml. Keep the compatibility file published, but do not
+    # advertise it as a second search sitemap.
+    attribution = f"{BASE}/positions/sitemap-positions-attribution.xml"
+    attribution_entry = (
+        rf"\s*<sitemap><loc>{re.escape(attribution)}</loc>"
+        rf"<lastmod>[^<]+</lastmod></sitemap>"
+    )
+    sitemap, removed = re.subn(attribution_entry, "", sitemap)
+    if removed > 1:
+        raise RuntimeError("Expected at most one attribution sitemap-index entry")
     sitemap_path.write_text(sitemap, encoding="utf-8")
 
 
