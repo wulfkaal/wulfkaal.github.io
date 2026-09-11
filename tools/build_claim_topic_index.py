@@ -31,6 +31,7 @@ claims/index.json. A shard index that agrees with a stale shard is worse than no
 
 import argparse
 import html
+import html.parser
 import json
 import pathlib
 import re
@@ -41,15 +42,44 @@ SCHEMA = "kaal-claim-shard-index-v1"
 ID_PREFIX = "kaal:claim:"
 
 
+SHARD_KEYS = {"topic", "count", "claims"}
+
+
 def load_shards(topic_dir):
-    """Every topic slice on disk, as {slug: (declared_count, actual_ids)}."""
-    shards = {}
+    """Every topic slice on disk, as {slug: (declared_count, actual_ids)}.
+
+    Returns (shards, problems). The first version read only `count` and `claims` and
+    substituted the filename for `topic`, so a shard whose declared topic contradicted
+    its filename, or one carrying extra keys, passed unexamined -- a Codex audit
+    renamed a shard's topic to "contradicts-filename", added an unexpected object, and
+    got a clean --check. A file that lies about what it is cannot be trusted about
+    what it contains.
+    """
+    shards, problems = {}, []
     for path in sorted(topic_dir.glob("*.json")):
         if path.name == "index.json":
             continue
-        data = json.loads(path.read_text(encoding="utf-8"))
-        shards[path.stem] = (data.get("count"), data.get("claims") or [])
-    return shards
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            problems.append(f"{path.name} is not readable JSON: {exc}")
+            continue
+        if not isinstance(data, dict):
+            problems.append(f"{path.name} is not an object")
+            continue
+        extra = set(data) - SHARD_KEYS
+        if extra:
+            problems.append(f"{path.name} carries unexpected key(s): {sorted(extra)}")
+        if data.get("topic") != path.stem:
+            problems.append(
+                f"{path.name} declares topic {data.get('topic')!r}, "
+                f"which is not its filename {path.stem!r}")
+        ids = data.get("claims")
+        if not isinstance(ids, list):
+            problems.append(f"{path.name} has no claims list")
+            continue
+        shards[path.stem] = (data.get("count"), ids)
+    return shards, problems
 
 
 def verify(shards, claims_index):
@@ -89,6 +119,12 @@ def verify(shards, claims_index):
                 f"e.g. {missing[0]}")
     for topic in sorted(set(tagged) - set(shards)):
         problems.append(f"topic {topic!r} is tagged on claims but has no shard file")
+    # An absent topic and an empty shard compare equal under set equality, so an empty
+    # shard for a topic nothing is tagged with slipped through. A topic layer should
+    # not advertise a topic the corpus does not have.
+    for slug, (_, ids) in sorted(shards.items()):
+        if not ids:
+            problems.append(f"{slug}: shard is empty; no claim is tagged {slug}")
     return problems
 
 
@@ -164,8 +200,64 @@ def render_index_html(rows, total):
         '</footer></main></body></html>\n')
 
 
-TOPIC_ROW = re.compile(
-    r'(<tr><td>)([a-z-]+)(</td><td>)(\d+)(</td><td><a href="\./by-topic/)\2(\.json")')
+class _TopicTable(html.parser.HTMLParser):
+    """Extract the Topics table semantically.
+
+    Two regexes used to do this: one to rewrite counts, one to check completeness.
+    They recognised different narrow byte patterns, and a Codex audit defeated both at
+    once with markup that renders identically -- `<td class="unused">` on the third
+    cell. The rewrite skipped the row, the completeness check still listed the slug,
+    and --check exited 0 with a visibly wrong count on the page. A parser reads the
+    table the way a browser does, so formatting cannot hide a row from it.
+    """
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.in_table = self.in_row = False
+        self.cells = None
+        self.buf = []
+        self.href = None
+        self.rows = []          # (slug, count_text, href)
+        self.depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "table" and not self.in_table:
+            self.in_table = True
+        elif self.in_table and tag == "tr":
+            self.in_row, self.cells = True, []
+        elif self.in_row and tag in ("td", "th"):
+            self.buf, self.href = [], None
+        elif self.in_row and tag == "a":
+            self.href = dict(attrs).get("href")
+
+    def handle_endtag(self, tag):
+        if tag == "table" and self.in_table:
+            self.in_table = False
+        elif self.in_row and tag == "tr":
+            if self.cells and len(self.cells) >= 3:
+                slug, count, _ = self.cells[0], self.cells[1], self.cells[2]
+                self.rows.append((slug.strip(), count.strip(), self.href))
+            self.in_row, self.cells = False, None
+        elif self.in_row and tag in ("td", "th") and self.cells is not None:
+            self.cells.append("".join(self.buf))
+
+    def handle_data(self, data):
+        if self.in_row:
+            self.buf.append(data)
+
+
+def parse_topic_table(html_text):
+    """-> (start, end, [(slug, count_text, href)]) for the Topics table, or None."""
+    marker = html_text.find('<div class="k">Topics</div>')
+    if marker == -1:
+        return None
+    start = html_text.find("<table", marker)
+    end = html_text.find("</table>", start)
+    if start == -1 or end == -1:
+        return None
+    parser = _TopicTable()
+    parser.feed(html_text[start:end + len("</table>")])
+    return start, end + len("</table>"), parser.rows
 
 
 def retopic_claims_index_html(html_text, shard_counts):
@@ -174,40 +266,51 @@ def retopic_claims_index_html(html_text, shard_counts):
     That page is generated upstream and its table had drifted: 24 of 29 counts were
     low, understating the corpus by 508 claim-tags on its primary human page, while
     the shards it links were right. The numbers are derivable, so they are derived
-    here like every other published count in this repo, and --check fails when they
-    drift again. Only the digits are rewritten; the table's structure, ordering and
-    surrounding markup are left exactly as the upstream generator emitted them.
+    here and --check fails when they drift again.
     """
-    wrong = []
-
-    # Scope the rewrite to the Topics table. TOPIC_ROW alone matches anywhere in the
-    # document, and a Codex audit showed a matching row inside a <template> having its
-    # digits silently rewritten. Only the region introduced by the Topics heading is
-    # eligible.
-    start = html_text.find('<div class="k">Topics</div>')
-    if start == -1:
+    parsed = parse_topic_table(html_text)
+    if parsed is None:
         return html_text, [("(no Topics table found)", 0, 0)]
-    end = html_text.find("</table>", start)
-    if end == -1:
-        return html_text, [("(Topics table is unterminated)", 0, 0)]
-    head, table, tail = html_text[:start], html_text[start:end], html_text[end:]
+    start, end, rows = parsed
+    wrong = []
+    seen = set()
+    table = html_text[start:end]
 
-    def fix(m):
-        slug, shown = m.group(2), int(m.group(4))
+    for slug, count_text, href in rows:
+        if not slug or slug == "Topic":
+            continue
+        if slug in seen:
+            wrong.append((f"{slug} (duplicate row)", 0, 0))
+            continue
+        seen.add(slug)
         real = shard_counts.get(slug)
-        if real is None or real == shown:
-            return m.group(0)
-        wrong.append((slug, shown, real))
-        return f"{m.group(1)}{slug}{m.group(3)}{real}{m.group(5)}{slug}{m.group(6)}"
+        if real is None:
+            wrong.append((f"{slug} (row for a topic with no shard)", 0, 0))
+            continue
+        want_href = f"./by-topic/{slug}.json"
+        if href != want_href:
+            wrong.append((f"{slug} (link is {href!r}, expected {want_href!r})", 0, real))
+            continue
+        try:
+            shown = int(count_text)
+        except ValueError:
+            wrong.append((f"{slug} (count {count_text!r} is not a number)", 0, real))
+            continue
+        if shown != real:
+            wrong.append((slug, shown, real))
+            # Rewrite this row's count wherever it sits, matching the cell that
+            # precedes this slug's own link rather than a fixed byte pattern.
+            pattern = re.compile(
+                r"(<td[^>]*>\s*" + re.escape(slug) + r"\s*</td>\s*<td[^>]*>\s*)"
+                + re.escape(count_text) + r"(\s*</td>)")
+            table, n = pattern.subn(rf"\g<1>{real}\g<2>", table, count=1)
+            if n != 1:
+                wrong.append((f"{slug} (count cell could not be rewritten)", shown, real))
 
-    rewritten = TOPIC_ROW.sub(fix, table)
-    # The table must describe exactly the shards, not a subset of them.
-    listed = set(re.findall(r'<tr><td>([a-z-]+)</td><td>\d+</td>', rewritten))
-    for slug in sorted(set(shard_counts) - listed):
+    for slug in sorted(set(shard_counts) - seen):
         wrong.append((f"{slug} (missing row)", 0, shard_counts[slug]))
-    for slug in sorted(listed - set(shard_counts)):
-        wrong.append((f"{slug} (row for a topic with no shard)", 0, 0))
-    return head + rewritten + tail, wrong
+
+    return html_text[:start] + table + html_text[end:], wrong
 
 
 def main():
@@ -221,7 +324,12 @@ def main():
     topic_dir = repo / "claims" / "by-topic"
     index_path = topic_dir / "index.json"
 
-    shards = load_shards(topic_dir)
+    shards, shard_problems = load_shards(topic_dir)
+    if shard_problems:
+        for problem in shard_problems:
+            print(f"  {problem}", file=sys.stderr)
+        print("refusing to trust shards that misdescribe themselves", file=sys.stderr)
+        return 1
     if not shards:
         print(f"no topic shards found under {topic_dir}", file=sys.stderr)
         return 1
