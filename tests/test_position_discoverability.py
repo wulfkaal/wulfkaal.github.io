@@ -112,6 +112,7 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         downloads = {item["name"] for item in dataset["distribution"]}
         self.assertIn("claim-5288-coverage.json", downloads)
         self.assertIn("claim-source-5288-map.jsonl", downloads)
+        self.assertNotIn("sitemap-positions-attribution.xml", downloads)
         legacy = load("positions/claim-5033-coverage.json")
         self.assertTrue(legacy["deprecatedAlias"])
         self.assertEqual(legacy["protectedScholarlyClaims"], 5288)

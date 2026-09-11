@@ -828,6 +828,10 @@ def update_attribution_surfaces(repo, records):
         f"{protected_count} protected scholarly claims (separate, unchanged)."
     )
     dataset["reportingBoundary"] = reporting_boundary
+    dataset["distribution"] = [
+        item for item in dataset.get("distribution", [])
+        if item.get("name") != "sitemap-positions-attribution.xml"
+    ]
     for item in dataset.get("distribution", []):
         target = positions_dir / item["name"]
         if target.exists():
