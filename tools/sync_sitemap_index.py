@@ -187,6 +187,7 @@ def main():
     # only record the hash. Stamping today onto files that did not change today would
     # be the same lie in the other direction.
     changed = {rel for rel, _, _ in drifted}
+    seeded = {rel for rel, _, _ in content_drift if rel not in state}
     new_dates = {}
     for rel, announced, sha in content_drift:
         # Seed PER ENTRY. `seeding = not state` was global, so one surviving record made
@@ -214,7 +215,7 @@ def main():
         encoding="utf-8")
 
     for rel, announced, _ in drifted:
-        note = "recorded" if seeding else f"{announced} -> {new_dates[rel]}"
+        note = "recorded" if rel in seeded else f"{announced} -> {new_dates[rel]}"
         print(f"  {rel}: {note}")
     return 0
 

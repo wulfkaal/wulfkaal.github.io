@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-merge_sitemap.py — add missing entries to sitemap.xml, remove nothing, and
+merge_sitemap.py — keep sitemap.xml limited to human-facing search pages and
 refuse to advertise a file that does not exist.
 
-Third file in this pack to be converted from replacement to merge, and the
-lesson is the same: a repository under active development will have changes a
-static patch does not know about, and replacing the file reverts them silently.
+Machine-readable resources remain published through llms.txt and the agent card;
+putting JSON, JSONL, Markdown, Python, schemas, signatures, or other machine-only
+artifacts in the search sitemap creates crawl noise rather than human results.
 
 It also enforces the rule the sitemap defect taught in the first place. Every
 <loc> must resolve to a file in the working tree. A dead link inside a sitemap
@@ -27,31 +27,18 @@ from pathlib import Path
 
 BASE = "https://wulfkaal.github.io/"
 
-# Surfaces that carry attribution or verification, and are worth advertising.
+# Human-facing hubs that are worth advertising.
 WANT = [
-    ("rank.md", "0.9", "markdown twin of the evidence index, for agents that will "
-                       "not parse JSON"),
-    ("verify.py", "0.7", "one command to check any claim against its hashed source"),
-    ("llms-full.txt", "0.9", None),
-    ("claims/graph.jsonld", "0.8", None),
-    ("failures/index.json", "0.9", "the most differentiated slice of the corpus"),
-    ("papers.bib", "0.7", None),
-    ("colloquium/index.json", "0.7", None),
-    ("book/index.md", "0.7", None),
-    ("claims/by-topic/index.json", "0.9",
-     "every claim topic with its count; without it the 29 slices were reachable "
-     "only by guessing a filename, hiding 67% of the topic-tagged corpus"),
-    ("positions/by-topic/index.json", "0.8",
-     "the same enumeration for public positions"),
     ("claims/by-topic/index.html", "0.9",
      "the human entry point to the topic layer; links all 29 topic pages, which is "
      "how a crawler reaches them without the sitemap listing each leaf"),
 ]
 
-# Leaves stay out on purpose. This sitemap advertises entry points, not items:
-# failures/index.json is here and failures/by-name/*.json is not, and the same
-# holds for the by-topic shards. The indexes above enumerate them, which is the
-# crawler's job to follow, not the sitemap's job to duplicate.
+def is_human_search_url(url: str) -> bool:
+    """Keep directory, extensionless canonical, and HTML URLs only."""
+    rel = url.removeprefix(BASE).split("?", 1)[0].split("#", 1)[0]
+    name = rel.rstrip("/").rsplit("/", 1)[-1]
+    return not rel or rel.endswith("/") or "." not in name or name.endswith(".html")
 
 
 def main() -> int:
@@ -63,6 +50,22 @@ def main() -> int:
     repo = Path(a.repo)
     p = repo / "sitemap.xml"
     txt = p.read_text()
+
+    # One URL per line is the repository's stable sitemap format. Drop a directly
+    # attached explanatory comment with a removed machine-only entry so reruns are
+    # byte-stable and do not leave misleading orphan comments.
+    row = re.compile(r'(?:  <!--[^\n]*-->\n)*  <url><loc>(.*?)</loc>.*?</url>\n')
+    removed = []
+
+    def keep_search_row(match):
+        if is_human_search_url(match.group(1)):
+            return match.group(0)
+        removed.append(match.group(1))
+        return ""
+
+    txt = row.sub(keep_search_row, txt)
+    for url in removed:
+        print(f"  - {url}")
     have = set(re.findall(r"<loc>(.*?)</loc>", txt))
 
     # 1. report anything already advertised that does not exist
@@ -73,8 +76,22 @@ def main() -> int:
             continue                      # directory index, or another repo
         if not (repo / rel).exists():
             dead.append(u)
-    for u in dead:
-        print(f"  ! already advertised but missing from the tree: {u}")
+    pruned_dead = bool(dead and not a.dry_run)
+    if pruned_dead:
+        dead_set = set(dead)
+
+        def drop_dead_row(match):
+            if match.group(1) in dead_set:
+                print(f"  - {match.group(1)} (missing from tree)")
+                return ""
+            return match.group(0)
+
+        txt = row.sub(drop_dead_row, txt)
+        have -= dead_set
+        dead = []
+    else:
+        for u in dead:
+            print(f"  ! already advertised but missing from the tree: {u}")
 
     # 2. add what is missing and does exist
     add = []
@@ -89,6 +106,8 @@ def main() -> int:
         add.append((u, prio, why))
 
     if not add:
+        if (removed or pruned_dead) and not a.dry_run:
+            p.write_text(txt)
         print("  sitemap already advertises every existing surface; nothing to add")
         return 1 if dead else 0
 
