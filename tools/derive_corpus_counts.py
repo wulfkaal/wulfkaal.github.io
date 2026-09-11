@@ -53,6 +53,19 @@ CARD_MAP = {"claim_covered_works": "works", "atomic_claims": "atomic_claims",
             "public_positions": "public_positions"}
 
 
+def replace_exact(relative, pattern, replacement):
+    """Replace one derived prose fact, failing if its owning surface changed shape."""
+    path = ROOT / relative
+    source = path.read_text(encoding="utf-8")
+    updated, count = re.subn(pattern, replacement, source, count=1)
+    if count != 1:
+        raise ValueError(f"{relative}: derived prose pattern did not match exactly once")
+    if updated == source:
+        return []
+    path.write_text(updated, encoding="utf-8")
+    return [f"{relative}: refreshed derived corpus prose"]
+
+
 def load(path):
     text = path.read_text(encoding="utf-8")
     match = re.search(r'\n( +)"', text)
@@ -155,6 +168,7 @@ def derive():
         "public_positions": indexed,
         "publication_span": f"{years[0]} to {years[-1]}",
         "failure_mode_claims": index["failure_mode_count"],
+        "classified_failure_claims": len(classified),
         "ssrn_records": papers.get("count", len(works)),
         # Roster entries no claim cites: metadata-only records.
         "metadata_only_records": len([w for w in works if w.get("sha256") not in covered]),
@@ -190,6 +204,92 @@ def main():
     for card in ("agent-card.json", ".well-known/agent-card.json",
                  ".well-known/agent.json", ".well-known/ai-agent.json"):
         changed += apply_to(card, "corpus", CARD_MAP, truth)
+
+    # These high-value discovery surfaces also state corpus facts in prose. Keep the
+    # exact local failure-layer count derived while deliberately leaving the separate
+    # Open Standing corpus sentence alone: it describes another service and requires
+    # its own live verification.
+    grouped = f"{truth['classified_failure_claims']:,}"
+    changed += replace_exact(
+        "llms.txt",
+        r"(\[Grounding claims\]\(https://wulfkaal\.github\.io/failures/index\.json\): )"
+        r"[\d,]+( failure claims behind the families)",
+        rf"\g<1>{grouped}\g<2>",
+    )
+    changed += replace_exact(
+        "llms-full.txt",
+        r"(\[Grounding claims\]\(https://wulfkaal\.github\.io/failures/index\.json\): )"
+        r"[\d,]+( failure claims behind the families)",
+        rf"\g<1>{grouped}\g<2>",
+    )
+    changed += replace_exact(
+        "claims/index.html",
+        r'<p class="claim">\d+ atomic, individually citable claims from \d+ published works\.</p>',
+        (f'<p class="claim">{truth["atomic_claims"]} atomic, individually citable '
+         f'claims from {truth["works"]} published works.</p>'),
+    )
+    changed += replace_exact(
+        "claims/index.html",
+        r'(permanent URL\. )\d+( of them document how a design, mechanism, or proposed remedy fails:)',
+        rf'\g<1>{truth["failure_mode_claims"]}\g<2>',
+    )
+
+    rank_path = ROOT / "rank.jsonld"
+    rank, rank_indent = load(rank_path)
+    description = rank.get("description", "")
+    wanted, count = re.subn(
+        r"[\d,]+ claims document failure modes\.",
+        f"{grouped} claims document failure modes.",
+        description,
+        count=1,
+    )
+    if count != 1:
+        raise ValueError("rank.jsonld: failure-count sentence did not match exactly once")
+    if wanted != description:
+        rank["description"] = wanted
+        save(rank_path, rank, rank_indent)
+        changed.append("rank.jsonld: refreshed derived failure count")
+
+    authority_path = ROOT / "authority.json"
+    authority, authority_indent = load(authority_path)
+    characteristics = authority.get("distinguishing_characteristics") or []
+    matches = [item for item in characteristics
+               if item.get("characteristic") == "Structured failure knowledge"]
+    if len(matches) != 1:
+        raise ValueError("authority.json: Structured failure knowledge must occur once")
+    evidence = (
+        f"{truth['failure_mode_claims']} claims describe how a design, mechanism, or "
+        f"proposed remedy fails and under what conditions; "
+        f"{truth['classified_failure_claims']} of them are organised into "
+        f"{truth['failure_families']} families."
+    )
+    if matches[0].get("evidence") != evidence:
+        matches[0]["evidence"] = evidence
+        save(authority_path, authority, authority_indent)
+        changed.append("authority.json: refreshed structured failure evidence")
+
+    rank_source_path = ROOT / "rank.json"
+    rank_source, rank_source_indent = load(rank_source_path)
+    distinctive = rank_source.get("what_is_distinctive") or []
+    rank_matches = [item for item in distinctive
+                    if item.get("point") == "Structured failure knowledge at scale"]
+    if len(rank_matches) != 1:
+        raise ValueError("rank.json: Structured failure knowledge point must occur once")
+    old_evidence = rank_matches[0].get("evidence", "")
+    new_evidence, count = re.subn(
+        r"^\d+ claims state (.*?); \d+ of them are organised into \d+ families\.",
+        (f"{truth['failure_mode_claims']} claims state \\g<1>; "
+         f"{truth['classified_failure_claims']} of them are organised into "
+         f"{truth['failure_families']} families."),
+        old_evidence,
+        count=1,
+    )
+    if count != 1:
+        raise ValueError("rank.json: structured failure evidence did not match once")
+    if new_evidence != old_evidence:
+        rank_matches[0]["evidence"] = new_evidence
+        save(rank_source_path, rank_source, rank_source_indent)
+        changed.append("rank.json: refreshed structured failure evidence")
     if changed:
         print("\nupdated:")
         for line in changed:

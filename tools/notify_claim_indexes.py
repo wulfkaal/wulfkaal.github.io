@@ -23,6 +23,13 @@ a search engine resolves, and it discounts the siblings.
 
 This tool submits ENTRY POINTS, not leaves. IndexNow rate-limits large batches, and the
 indexes enumerate the rest.
+
+LIVE RECEIPTS
+
+A live run requires ``--receipt``. The tool writes the immutable intent before the
+external request, then writes ``<receipt>.result.json`` with the response. If transport
+fails after the request begins, the result is ``unknown-outcome`` and must not be retried
+blindly. A dry run sends nothing and may write a single ``dry-run-verified`` receipt.
 """
 
 import argparse
@@ -33,6 +40,7 @@ import os
 import pathlib
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -46,7 +54,6 @@ URLS = [
     f"{BASE}/claims/",
     f"{BASE}/claims/index.json",
     f"{BASE}/claims/by-topic/",
-    f"{BASE}/claims/by-topic/index.html",
     f"{BASE}/claims/by-topic/index.json",
     f"{BASE}/failures/index.json",
     f"{BASE}/llms.txt",
@@ -56,42 +63,74 @@ URLS = [
 ]
 
 
-def fetch(url, method="GET", payload=None, headers=None):
-    request = urllib.request.Request(
-        url, data=payload, method=method, headers={**UA, **(headers or {})})
-    try:
-        with urllib.request.urlopen(request, timeout=45) as response:
-            return response.status, response.read()
-    except urllib.error.HTTPError as exc:
-        return exc.code, exc.read()
+def fetch(url, method="GET", payload=None, headers=None, attempts=4):
+    error = None
+    for attempt in range(attempts):
+        request = urllib.request.Request(
+            url, data=payload, method=method, headers={**UA, **(headers or {})})
+        try:
+            with urllib.request.urlopen(request, timeout=45) as response:
+                return response.status, response.read()
+        except urllib.error.HTTPError as exc:
+            return exc.code, exc.read()
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            error = exc
+            if attempt + 1 < attempts:
+                time.sleep(min(2 ** attempt, 8))
+    raise RuntimeError(f"request failed after {attempts} attempts: {url}: {error}")
+
+
+def write_once(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("x", encoding="utf-8") as handle:
+        json.dump(value, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def result_path(receipt_path):
+    return receipt_path.with_name(receipt_path.name + ".result.json")
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dry-run", action="store_true",
                     help="verify everything and print the payload; submit nothing")
-    ap.add_argument("--receipt", default="")
+    ap.add_argument("--receipt", type=pathlib.Path)
     a = ap.parse_args()
 
-    print(f"verifying {len(URLS)} URLs before announcing any of them...")
-    dead = []
-    for url in URLS:
-        status, _ = fetch(url)
-        print(f"  {status}  {url}")
-        if status != 200:
-            dead.append((url, status))
-    if dead:
-        for url, status in dead:
-            print(f"  DEAD {status} {url}", file=sys.stderr)
-        print("FAIL CLOSED: refusing to announce a URL that does not resolve",
-              file=sys.stderr)
+    if not a.dry_run and a.receipt is None:
+        print("FAIL CLOSED: live notification requires --receipt", file=sys.stderr)
         return 1
+    if a.receipt is not None:
+        result = result_path(a.receipt)
+        if a.receipt.exists() or result.exists():
+            print("FAIL CLOSED: receipt or result path already exists", file=sys.stderr)
+            return 1
 
     key = os.environ.get("INDEXNOW_KEY", "").strip()
     if not key and DEFAULT_KEY_FILE.is_file():
         key = DEFAULT_KEY_FILE.read_text(encoding="utf-8").strip()
     if not re.fullmatch(r"[A-Za-z0-9_-]{8,128}", key or ""):
         print("FAIL CLOSED: no usable IndexNow key", file=sys.stderr)
+        return 1
+
+    print(f"verifying {len(URLS)} URLs before announcing any of them...")
+    dead = []
+    verified = []
+    for url in URLS:
+        status, body = fetch(url)
+        print(f"  {status}  {url}")
+        if status != 200:
+            dead.append((url, status))
+        else:
+            verified.append({"url": url, "sha256": hashlib.sha256(body).hexdigest()})
+    if dead:
+        for url, status in dead:
+            print(f"  DEAD {status} {url}", file=sys.stderr)
+        print("FAIL CLOSED: refusing to announce a URL that does not resolve",
+              file=sys.stderr)
         return 1
 
     key_location = f"{BASE}/indexnow-key.txt"
@@ -104,33 +143,63 @@ def main():
 
     payload = {"host": "wulfkaal.github.io", "key": key,
                "keyLocation": key_location, "urlList": URLS}
-    receipt = {
-        "schemaVersion": "kaal-claim-index-notification-receipt-v1",
+    payload_bytes = json.dumps(
+        payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    ).encode("utf-8")
+    intent = {
+        "schemaVersion": "kaal-claim-index-notification-intent-v1",
         "recordedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "mode": "dry-run" if a.dry_run else "live",
         "verifiedUrlCount": len(URLS),
-        "urls": URLS,
+        "verifiedUrls": verified,
         "keyLocation": key_location,
+        "payloadSha256": hashlib.sha256(payload_bytes).hexdigest(),
+        "notificationSent": False,
     }
 
     if a.dry_run:
+        if a.receipt is not None:
+            write_once(a.receipt, {**intent, "status": "dry-run-verified"})
         print("\nDRY RUN — nothing submitted. Payload that WOULD be sent:")
         print(json.dumps({**payload, "key": "<withheld>"}, indent=2))
         return 0
 
-    status, response = fetch(
-        INDEXNOW, method="POST", payload=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json; charset=utf-8"})
+    # Persist the exact intent before the external request. If the process dies or the
+    # request has an ambiguous outcome, the durable intent prevents a blind retry.
+    write_once(a.receipt, {**intent, "status": "intent-recorded"})
+
+    try:
+        status, response = fetch(
+            INDEXNOW, method="POST", payload=payload_bytes,
+            headers={"Content-Type": "application/json; charset=utf-8"}, attempts=1)
+    except Exception as exc:
+        write_once(result_path(a.receipt), {
+            "schemaVersion": "kaal-claim-index-notification-result-v1",
+            "recordedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "intentSha256": hashlib.sha256(a.receipt.read_bytes()).hexdigest(),
+            "status": "unknown-outcome",
+            "notificationSent": False,
+            "blocker": str(exc),
+        })
+        print("UNKNOWN OUTCOME: request may have reached IndexNow; do not retry blindly",
+              file=sys.stderr)
+        return 1
     accepted = status in (200, 202)
-    receipt.update({"status": "notified" if accepted else "notification-failed",
-                    "httpStatus": status, "notificationSent": accepted,
-                    "response": response.decode("utf-8", "replace")[:400]})
+    result = {
+        "schemaVersion": "kaal-claim-index-notification-result-v1",
+        "recordedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "intentSha256": hashlib.sha256(a.receipt.read_bytes()).hexdigest(),
+        "status": "notified" if accepted else "notification-failed",
+        "httpStatus": status,
+        "notificationSent": accepted,
+        "responseSha256": hashlib.sha256(response).hexdigest(),
+    }
+    write_once(result_path(a.receipt), result)
     print(f"\nIndexNow HTTP {status} — {'accepted' if accepted else 'NOT ACCEPTED'}")
     if not accepted:
-        print(f"  {receipt['response']}", file=sys.stderr)
-    if a.receipt:
-        pathlib.Path(a.receipt).write_text(
-            json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
-        print(f"  receipt: {a.receipt}")
+        print(f"  response sha256: {result['responseSha256']}", file=sys.stderr)
+    print(f"  intent: {a.receipt}")
+    print(f"  result: {result_path(a.receipt)}")
     return 0 if accepted else 1
 
 

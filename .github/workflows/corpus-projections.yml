@@ -84,6 +84,12 @@ jobs:
             --corpus-url claims/all.jsonl \
             --out        claims/index.json
 
+      - name: Regenerate enumerable claim-topic projections
+        run: python3 tools/build_claim_topic_index.py
+
+      - name: Normalize claim canonicals and search sitemap
+        run: python3 tools/normalize_claim_discovery.py
+
       - name: Regenerate the paged Colloquium activation feed
         run: python3 tools/build_colloquium_tasks.py
 
@@ -112,8 +118,17 @@ jobs:
           print(f"source-only ownership verified for {len(changed)} path(s)")
           PY
 
-      - name: Validate generated position projections before push
-        run: python3 -m unittest tests/test_position_discoverability.py tests/test_position_notifier.py
+      - name: Validate generated discovery projections before push
+        run: |
+          python3 -m unittest \
+            tests/test_claim_notifier.py \
+            tests/test_claim_topic_discoverability.py \
+            tests/test_corpus_count_projections.py \
+            tests/test_position_discoverability.py \
+            tests/test_position_notifier.py \
+            tests/test_sitemap_integrity.py
+          python3 tools/build_claim_topic_index.py --check
+          python3 tools/normalize_claim_discovery.py --check
 
       - name: Derive the published corpus counts from the corpus
         # authority.json and the agent cards each restate the corpus size, and
@@ -126,16 +141,24 @@ jobs:
         # work for weeks.
         run: python3 tools/derive_corpus_counts.py
 
+      - name: Regenerate rank prose after count derivation
+        run: python3 tools/make_rank_md.py rank.json > rank.md
+
+      - name: Synchronize sitemap content dates and enforce one owner per URL
+        run: |
+          python3 tools/sync_sitemap_index.py
+          python3 tools/check_sitemap_uniqueness.py
+
       - name: Commit only if something actually changed
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.md claims/index.json claims/*.html colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
+          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.md claims/index.json 'claims/*.html' colloquium/tasks positions sitemap-positions.xml sitemap-index.xml agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
+          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
           git commit -m "Regenerate projections from the corpus"
           git push
 
@@ -428,7 +451,11 @@ jobs:
           python3 -m unittest tests/test_colloquium_client.py
 
       - name: Position discovery projections remain exact and fail closed
-        run: python3 -m unittest tests/test_position_discoverability.py tests/test_position_notifier.py
+        run: |
+          python3 -m unittest \
+            tests/test_corpus_count_projections.py \
+            tests/test_position_discoverability.py \
+            tests/test_position_notifier.py
 
       - name: The graph release chain must close
         run: |
@@ -458,10 +485,17 @@ jobs:
           PY
 
       - name: Every sitemap must announce its real last-modified date
-        run: python3 tools/sync_sitemap_index.py --check
+        run: |
+          python3 tools/sync_sitemap_index.py --check
+          python3 tools/check_sitemap_uniqueness.py
 
       - name: Every claim topic must be enumerable, not merely guessable
         run: |
+          python3 -m unittest \
+            tests/test_claim_notifier.py \
+            tests/test_claim_topic_discoverability.py \
+            tests/test_sitemap_integrity.py
+          python3 tools/normalize_claim_discovery.py --check
           python3 tools/build_claim_topic_index.py --check
           python3 - <<'PY'
           import json, pathlib, sys
