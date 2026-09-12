@@ -133,8 +133,8 @@ class EntityDiscoverabilityTests(unittest.TestCase):
                     pending.append(target)
 
         missing = sorted(entity_pages - set(depths))
-        self.assertFalse(
-            missing,
+        self.assertEqual(
+            len(missing), 0,
             f"{len(missing)} sitemap entity page(s) exceed depth 3, e.g. "
             f"{[page.relative_to(ROOT).as_posix() for page in missing[:5]]}",
         )
