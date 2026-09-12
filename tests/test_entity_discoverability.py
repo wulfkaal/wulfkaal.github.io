@@ -4,7 +4,7 @@ import json
 import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,7 +89,10 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         self.assertEqual(set(linked_slugs), set(self.entities))
 
         sitemap = ET.parse(ROOT / "sitemap-entities.xml")
-        locs = {element.text for element in sitemap.iter("{*}loc")}
+        locs = {
+            element.text for element in sitemap.iter()
+            if element.tag == "loc" or element.tag.endswith("}loc")
+        }
         sitemap_slugs = {
             urlparse(url).path.removeprefix("/entities/").removesuffix(".html")
             for url in locs
