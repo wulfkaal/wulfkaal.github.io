@@ -178,6 +178,15 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
         finally:
             CHECKER.ALLOWLISTS["JSON_LD"] = original
 
+    def test_ci_runs_mutation_suite_and_checker_in_both_validation_jobs(self):
+        workflow = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertEqual(workflow.count("tests/test_html_discoverability.py"), 2)
+        self.assertEqual(
+            workflow.count("python3 tools/check_html_discoverability.py --root ."), 2
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
