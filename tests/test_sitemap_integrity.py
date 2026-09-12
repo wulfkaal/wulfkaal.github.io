@@ -84,7 +84,9 @@ class SitemapIntegrityTests(unittest.TestCase):
             (repo / "failures" / "one.html").write_text("ok", encoding="utf-8")
             dates = {
                 f"{BASE}/": "2026-01-01",
-                f"{BASE}/failures/one.html": "2026-01-02",
+                f"{BASE}/claims/index.html": "2026-01-02",
+                f"{BASE}/failures/index.html": "2026-01-03",
+                f"{BASE}/failures/one.html": "2026-01-04",
             }
             output = CLAIMS.sitemap([], repo, dates)
         self.assertIn(
@@ -92,7 +94,17 @@ class SitemapIntegrityTests(unittest.TestCase):
             output,
         )
         self.assertIn(
-            f"<loc>{BASE}/failures/one.html</loc><lastmod>2026-01-02</lastmod>"
+            f"<loc>{BASE}/claims/index.html</loc><lastmod>2026-01-02</lastmod>"
+            "<priority>1.0</priority>",
+            output,
+        )
+        self.assertIn(
+            f"<loc>{BASE}/failures/index.html</loc><lastmod>2026-01-03</lastmod>"
+            "<priority>1.0</priority>",
+            output,
+        )
+        self.assertIn(
+            f"<loc>{BASE}/failures/one.html</loc><lastmod>2026-01-04</lastmod>"
             "<priority>0.7</priority>",
             output,
         )
