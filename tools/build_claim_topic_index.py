@@ -21,8 +21,8 @@ The index is DERIVED, never typed, matching how every other published count in t
 repo works: `--check` fails loudly in CI when it drifts, so the layer holds without
 attention. It mirrors `kaal-position-shard-index-v1` exactly (same key order, same
 shard shape, same two-space indent and trailing newline) so both dimensions parse
-identically. The only difference is the schema name and the absence of `html`: the
-claim slices ship JSON only.
+identically. Each shard advertises both its JSON membership and its bounded human
+landing page.
 
 The generator also VERIFIES rather than trusting: each shard's own `count` must equal
 the length of its claim list, and the union of the shards must equal the topic tags in
@@ -40,6 +40,9 @@ import sys
 BASE = "https://wulfkaal.github.io"
 SCHEMA = "kaal-claim-shard-index-v1"
 ID_PREFIX = "kaal:claim:"
+PAGE_SIZE = 200
+BREADCRUMB_START = "<!-- claim-topic-breadcrumb:start -->"
+BREADCRUMB_END = "<!-- claim-topic-breadcrumb:end -->"
 
 
 SHARD_KEYS = {"topic", "count", "claims"}
@@ -146,13 +149,35 @@ def build(shards, sample_id):
             "json": f"{BASE}/claims/{sample_id[len(ID_PREFIX):]}.json",
         },
         "shards": [
-            {"topic": slug, "count": len(ids), "json": f"{BASE}/claims/by-topic/{slug}.json"}
+            {
+                "topic": slug,
+                "count": len(ids),
+                "json": f"{BASE}/claims/by-topic/{slug}.json",
+                "html": f"{BASE}/claims/by-topic/{slug}.html",
+            }
             for slug, (_, ids) in sorted(shards.items())
         ],
     }
 
 
-def render_shard_html(slug, claims):
+def topic_page_name(slug, page_number):
+    return f"{slug}.html" if page_number == 1 else f"{slug}-{page_number}.html"
+
+
+def render_pagination(slug, page_number, page_count):
+    if page_count == 1:
+        return ""
+    links = []
+    for number in range(1, page_count + 1):
+        if number == page_number:
+            links.append(f'<span aria-current="page">{number}</span>')
+        else:
+            links.append(
+                f'<a href="./{topic_page_name(slug, number)}">{number}</a>')
+    return '<nav aria-label="Topic pages">Pages: ' + " · ".join(links) + "</nav>"
+
+
+def render_shard_html(slug, claims, page_number=1, page_count=1, total=None):
     """A human page for one topic. The JSON twin is for machines; a person
     clicking a topic previously got a wall of raw JSON, which is not reachable
     in any sense that matters."""
@@ -160,21 +185,56 @@ def render_shard_html(slug, claims):
         f'<li><a href="{html.escape(c["url"])}">{html.escape(c["claim"])}</a>'
         f' <span class="meta">{html.escape(str(c.get("year") or ""))}</span></li>'
         for c in claims)
+    total = len(claims) if total is None else total
     title = f"Kaal claims by topic: {slug}"
-    desc = (f"{len(claims)} atomic, individually citable claims from the published "
+    page_title = title if page_number == 1 else f"{title}, page {page_number}"
+    desc = (f"{total} atomic, individually citable claims from the published "
             f"work of Wulf A. Kaal tagged {slug}.")
+    canonical = f"{BASE}/claims/by-topic/{topic_page_name(slug, page_number)}"
+    breadcrumb = (
+        '<nav aria-label="Breadcrumb"><a href="../index.html">All claims</a> · '
+        '<a href="./index.html">Topics</a> · '
+        f'<span>{html.escape(slug)}</span>'
+        + (f' · <span>Page {page_number}</span>' if page_number > 1 else "")
+        + '</nav>')
     return (
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        f'<title>{html.escape(title)} — Wulf A. Kaal Claims</title>'
+        f'<title>{html.escape(page_title)} | Wulf A. Kaal Claims</title>'
         f'<meta name="description" content="{html.escape(desc)}">'
+        f'<link rel="canonical" href="{canonical}">'
         '<link rel="stylesheet" href="../../style.css"></head><body><main>'
-        f'<h1>{html.escape(title)}</h1><p class="claim">{html.escape(desc)}</p>'
-        f'<ol class="meta">{items}</ol><footer>'
+        f'{breadcrumb}<h1>{html.escape(page_title)}</h1>'
+        f'<p class="claim">{html.escape(desc)}</p>{render_pagination(slug, page_number, page_count)}'
+        f'<ol class="meta">{items}</ol>{render_pagination(slug, page_number, page_count)}<footer>'
         '<a href="./">All claim topics</a> · '
         f'<a href="./{html.escape(slug)}.json">This topic as JSON</a> · '
         '<a href="../">All claims</a>'
         '</footer></main></body></html>\n')
+
+
+def add_claim_breadcrumb(source, record):
+    topics = sorted(record.get("topics") or [])
+    topic_links = ", ".join(
+        f'<a href="./by-topic/{html.escape(topic)}.html">{html.escape(topic)}</a>'
+        for topic in topics
+    )
+    body = (
+        f'{BREADCRUMB_START}<nav aria-label="Breadcrumb">'
+        '<a href="./index.html">All claims</a> · '
+        f'<span>Topics: {topic_links}</span> · '
+        f'<span>{html.escape(record["id"])}</span></nav>{BREADCRUMB_END}'
+    )
+    if BREADCRUMB_START in source or BREADCRUMB_END in source:
+        pattern = re.compile(
+            re.escape(BREADCRUMB_START) + r".*?" + re.escape(BREADCRUMB_END), re.S)
+        if len(pattern.findall(source)) != 1:
+            raise ValueError(f'{record["id"]} has malformed topic breadcrumbs')
+        return pattern.sub(body, source, count=1)
+    marker = "<body><main>"
+    if marker not in source:
+        raise ValueError(f'{record["id"]} has no breadcrumb insertion point')
+    return source.replace(marker, marker + body, 1)
 
 
 def render_index_html(rows, total):
@@ -188,7 +248,7 @@ def render_index_html(rows, total):
     return (
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        '<title>Kaal claims by topic — Wulf A. Kaal Claims</title>'
+        '<title>Kaal claims by topic | Wulf A. Kaal Claims</title>'
         f'<meta name="description" content="{html.escape(desc)}">'
         '<link rel="stylesheet" href="../../style.css"></head><body><main>'
         '<h1>Kaal claims by topic</h1>'
@@ -307,6 +367,15 @@ def retopic_claims_index_html(html_text, shard_counts):
             if n != 1:
                 wrong.append((f"{slug} (count cell could not be rewritten)", shown, real))
 
+        topic_link = f'<a href="./by-topic/{slug}.html">{slug}</a>'
+        if topic_link not in table:
+            pattern = re.compile(
+                r"(<td[^>]*>\s*)" + re.escape(slug) + r"(\s*</td>)")
+            table, n = pattern.subn(rf"\g<1>{topic_link}\g<2>", table, count=1)
+            wrong.append((f"{slug} (HTML topic link missing)", 0, real))
+            if n != 1:
+                wrong.append((f"{slug} (topic cell could not be linked)", 0, real))
+
     for slug in sorted(set(shard_counts) - seen):
         wrong.append((f"{slug} (missing row)", 0, shard_counts[slug]))
 
@@ -384,7 +453,24 @@ def main():
                   f"e.g. {missing[0]!r}; refusing to render a page with dead entries",
                   file=sys.stderr)
             return 1
-        html_pages[f"{slug}.html"] = render_shard_html(slug, [by_id[i] for i in ids])
+        claim_rows = [by_id[i] for i in ids]
+        page_count = (len(claim_rows) + PAGE_SIZE - 1) // PAGE_SIZE
+        for page_number in range(1, page_count + 1):
+            start = (page_number - 1) * PAGE_SIZE
+            page_claims = claim_rows[start:start + PAGE_SIZE]
+            html_pages[topic_page_name(slug, page_number)] = render_shard_html(
+                slug, page_claims, page_number, page_count, len(claim_rows))
+
+    claim_pages = {}
+    try:
+        for record in records:
+            short = record["id"].removeprefix(ID_PREFIX)
+            path = repo / "claims" / f"{short}.html"
+            claim_pages[path] = add_claim_breadcrumb(
+                path.read_text(encoding="utf-8"), record)
+    except (OSError, ValueError) as exc:
+        print(f"cannot generate claim breadcrumbs: {exc}", file=sys.stderr)
+        return 1
 
     claims_html_path = repo / "claims" / "index.html"
     claims_html = claims_html_path.read_text(encoding="utf-8")
@@ -412,6 +498,20 @@ def main():
             print(f"{len(stale)} human page(s) missing or stale, e.g. {stale[0]}; "
                   f"run tools/build_claim_topic_index.py", file=sys.stderr)
             return 1
+        unexpected = sorted(
+            path.name for path in topic_dir.glob("*.html")
+            if path.name not in html_pages)
+        if unexpected:
+            print(f"{len(unexpected)} obsolete human page(s), e.g. {unexpected[0]}; "
+                  f"run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
+        stale_claims = [path for path, body in claim_pages.items()
+                        if path.read_text(encoding="utf-8") != body]
+        if stale_claims:
+            print(f"{len(stale_claims)} claim breadcrumb(s) missing or stale, e.g. "
+                  f"{stale_claims[0].name}; run tools/build_claim_topic_index.py",
+                  file=sys.stderr)
+            return 1
         if wrong_counts:
             for slug, shown, real in wrong_counts[:10]:
                 print(f"  claims/index.html says {slug} has {shown} claims; "
@@ -426,11 +526,18 @@ def main():
             return 1
         print(f"claim topic index current: {len(shards)} shards, "
               f"{sum(len(i) for _, i in shards.values())} tags, "
-              f"{len(html_pages)} human pages, claims/index.html counts agree")
+              f"{len(html_pages)} human pages, {len(claim_pages)} claim breadcrumbs, "
+              "claims/index.html counts and links agree")
         return 0
 
+    for path in topic_dir.glob("*.html"):
+        if path.name not in html_pages:
+            path.unlink()
     for name, body in html_pages.items():
         (topic_dir / name).write_text(body, encoding="utf-8")
+    for path, body in claim_pages.items():
+        if path.read_text(encoding="utf-8") != body:
+            path.write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
     if wrong_counts or entity_hub_changed:
         claims_html_path.write_text(fixed_html, encoding="utf-8")
@@ -438,7 +545,7 @@ def main():
             print(f"  claims/index.html {slug}: {shown} -> {real}")
     print(f"wrote {index_path.relative_to(repo)}: {len(shards)} shards, "
           f"{sum(len(i) for _, i in shards.values())} claim-topic tags, "
-          f"and {len(html_pages)} human pages beside them")
+          f"{len(html_pages)} human pages, and {len(claim_pages)} claim breadcrumbs")
     return 0
 
 
