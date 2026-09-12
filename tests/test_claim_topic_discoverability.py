@@ -1,6 +1,7 @@
 import importlib.util
 import html.parser
 import json
+import posixpath
 import re
 import tempfile
 import unittest
@@ -34,19 +35,29 @@ def local_html_path(source, href):
         "https://wulfkaal.github.io/" + source.relative_to(ROOT).as_posix(), href
     )
     parsed = urllib.parse.urlsplit(target)
-    if parsed.netloc != "wulfkaal.github.io":
+    if (parsed.scheme not in ("", "https")
+            or parsed.netloc not in ("", "wulfkaal.github.io")
+            or parsed.query):
         return None
-    relative = parsed.path.lstrip("/")
+    decoded = urllib.parse.unquote(parsed.path)
+    normalized = posixpath.normpath("/" + decoded.lstrip("/"))
+    if decoded.endswith("/") and not normalized.endswith("/"):
+        normalized += "/"
+    if normalized == "/../" or normalized.startswith("/../"):
+        return None
+    relative = normalized.lstrip("/")
+    choices = []
     if not relative or relative.endswith("/"):
-        relative += "index.html"
+        choices.append(relative + "index.html")
     elif not Path(relative).suffix:
-        relative += ".html"
-    candidate = ROOT / relative
-    try:
-        candidate.relative_to(ROOT / "claims")
-    except ValueError:
-        return None
-    return candidate if candidate.is_file() and candidate.suffix == ".html" else None
+        choices.extend((relative + ".html", relative + "/index.html", relative))
+    else:
+        choices.append(relative)
+    for choice in choices:
+        candidate = ROOT / choice
+        if candidate.is_file() and candidate.suffix == ".html":
+            return candidate
+    return None
 
 
 def reachable_html(start, maximum_depth):
@@ -68,7 +79,7 @@ def reachable_html(start, maximum_depth):
 
 
 class ClaimTopicDiscoverabilityTests(unittest.TestCase):
-    def test_every_sitemap_claim_is_reachable_from_claim_index_within_four_hops(self):
+    def test_every_sitemap_claim_is_reachable_from_root_within_three_hops(self):
         sitemap = ET.parse(ROOT / "sitemap-claims.xml")
         claim_urls = {
             element.text
@@ -78,7 +89,11 @@ class ClaimTopicDiscoverabilityTests(unittest.TestCase):
                 r"https://wulfkaal\.github\.io/claims/[^/.]+", element.text
             )
         }
-        reachable = reachable_html(ROOT / "claims" / "index.html", 4)
+        # Match the compounding-plan mapping: an extensionless public URL resolves
+        # to its checked-in .html twin, while directory URLs resolve to index.html.
+        # Starting at the site root makes this an actual click-depth assertion rather
+        # than measuring from a claim-specific entry point.
+        reachable = reachable_html(ROOT / "index.html", 3)
         reached_urls = {
             "https://wulfkaal.github.io/" + page.relative_to(ROOT).with_suffix("").as_posix()
             for page in reachable
@@ -93,7 +108,7 @@ class ClaimTopicDiscoverabilityTests(unittest.TestCase):
         self.assertLessEqual(
             max(reachable[ROOT / (urllib.parse.urlsplit(url).path.lstrip("/") + ".html")]
                 for url in claim_urls),
-            4,
+            3,
         )
 
     def test_load_shards_rejects_mislabelled_and_extended_records(self):
@@ -159,6 +174,20 @@ class ClaimTopicDiscoverabilityTests(unittest.TestCase):
         ])
         self.assertIn('<td data-count="stale">9</td>', fixed)
         self.assertIn('<a href="./by-topic/governance.html">governance</a>', fixed)
+
+    def test_claim_index_exposes_every_overflow_topic_page(self):
+        source = '<html><body><main><table></table><footer>End</footer></main></body></html>'
+        page_counts = {"economics": 5, "governance": 1}
+
+        once, changed = BUILDER.expose_overflow_topic_pages(source, page_counts)
+        twice, changed_again = BUILDER.expose_overflow_topic_pages(once, page_counts)
+
+        self.assertTrue(changed)
+        self.assertFalse(changed_again)
+        self.assertEqual(once, twice)
+        for number in range(2, 6):
+            self.assertIn(f'./by-topic/economics-{number}.html', once)
+        self.assertNotIn('./by-topic/governance-2.html', once)
 
     def test_index_exposes_unambiguous_claim_resolution_templates(self):
         built = BUILDER.build(

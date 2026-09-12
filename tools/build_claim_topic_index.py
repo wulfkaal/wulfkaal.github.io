@@ -43,6 +43,8 @@ ID_PREFIX = "kaal:claim:"
 PAGE_SIZE = 200
 BREADCRUMB_START = "<!-- claim-topic-breadcrumb:start -->"
 BREADCRUMB_END = "<!-- claim-topic-breadcrumb:end -->"
+OVERFLOW_START = "<!-- claim-topic-overflow:start -->"
+OVERFLOW_END = "<!-- claim-topic-overflow:end -->"
 
 
 SHARD_KEYS = {"topic", "count", "claims"}
@@ -397,6 +399,34 @@ def expose_entity_hub(html_text):
     return html_text.replace(marker, link + marker, 1), True
 
 
+def expose_overflow_topic_pages(html_text, page_counts):
+    """Link every paginated topic page from the primary claim discovery hub."""
+    links = []
+    for slug, page_count in sorted(page_counts.items()):
+        for page_number in range(2, page_count + 1):
+            name = topic_page_name(slug, page_number)
+            links.append(
+                f'<li><a href="./by-topic/{html.escape(name)}">'
+                f'{html.escape(slug)}, page {page_number}</a></li>')
+    body = (
+        f'{OVERFLOW_START}<nav aria-label="Additional claim topic pages">'
+        '<div class="k">Additional topic pages</div><ul class="meta">'
+        + "".join(links) + f'</ul></nav>{OVERFLOW_END}'
+    )
+    pattern = re.compile(
+        re.escape(OVERFLOW_START) + r".*?" + re.escape(OVERFLOW_END), re.S)
+    matches = pattern.findall(html_text)
+    if len(matches) > 1:
+        raise ValueError("claims/index.html contains duplicate overflow topic hubs")
+    if matches:
+        updated = pattern.sub(body, html_text, count=1)
+        return updated, updated != html_text
+    marker = "<footer>"
+    if marker not in html_text:
+        raise ValueError("claims/index.html has no footer before which to add topic pages")
+    return html_text.replace(marker, body + marker, 1), True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true",
@@ -476,8 +506,14 @@ def main():
     claims_html = claims_html_path.read_text(encoding="utf-8")
     fixed_html, wrong_counts = retopic_claims_index_html(
         claims_html, {slug: len(ids) for slug, (_, ids) in shards.items()})
+    page_counts = {
+        slug: (len(ids) + PAGE_SIZE - 1) // PAGE_SIZE
+        for slug, (_, ids) in shards.items()
+    }
     try:
         fixed_html, entity_hub_changed = expose_entity_hub(fixed_html)
+        fixed_html, overflow_hub_changed = expose_overflow_topic_pages(
+            fixed_html, page_counts)
     except ValueError as exc:
         print(str(exc), file=sys.stderr)
         return 1
@@ -524,6 +560,10 @@ def main():
             print("claims/index.html does not link the entity hub; "
                   "run tools/build_claim_topic_index.py", file=sys.stderr)
             return 1
+        if overflow_hub_changed:
+            print("claims/index.html does not expose every overflow topic page; "
+                  "run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
         print(f"claim topic index current: {len(shards)} shards, "
               f"{sum(len(i) for _, i in shards.values())} tags, "
               f"{len(html_pages)} human pages, {len(claim_pages)} claim breadcrumbs, "
@@ -539,7 +579,7 @@ def main():
         if path.read_text(encoding="utf-8") != body:
             path.write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
-    if wrong_counts or entity_hub_changed:
+    if wrong_counts or entity_hub_changed or overflow_hub_changed:
         claims_html_path.write_text(fixed_html, encoding="utf-8")
         for slug, shown, real in wrong_counts:
             print(f"  claims/index.html {slug}: {shown} -> {real}")
