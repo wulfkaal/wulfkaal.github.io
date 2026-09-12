@@ -33,11 +33,20 @@ def canonicalize_page(source, url):
     return source.replace(marker, tag + marker, 1)
 
 
-def sitemap(records, repo):
+def sitemap(records, repo, existing_dates=None):
+    existing_dates = existing_dates or {}
+
+    def ranked_row(url, priority):
+        lastmod = (
+            f"<lastmod>{existing_dates[url]}</lastmod>"
+            if url in existing_dates else ""
+        )
+        return f"  <url><loc>{url}</loc>{lastmod}<priority>{priority}</priority></url>"
+
     rows = [
-        f"  <url><loc>{BASE}/</loc><priority>1.0</priority></url>",
-        f"  <url><loc>{BASE}/claims/index.html</loc><priority>1.0</priority></url>",
-        f"  <url><loc>{BASE}/failures/index.html</loc><priority>1.0</priority></url>",
+        ranked_row(f"{BASE}/", "1.0"),
+        ranked_row(f"{BASE}/claims/index.html", "1.0"),
+        ranked_row(f"{BASE}/failures/index.html", "1.0"),
     ]
     for record in records:
         rows.append(
@@ -46,9 +55,7 @@ def sitemap(records, repo):
     failures = sorted((repo / "failures").glob("*.html"))
     for path in failures:
         if path.name != "index.html":
-            rows.append(
-                f"  <url><loc>{BASE}/failures/{path.name}</loc><priority>0.7</priority></url>"
-            )
+            rows.append(ranked_row(f"{BASE}/failures/{path.name}", "0.7"))
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -88,7 +95,7 @@ def desired(repo):
     dates = dict(re.findall(r"<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>", old))
     for record in records:
         record["date"] = dates.get(record["url"], record["date"])
-    return pages, sitemap(records, repo)
+    return pages, sitemap(records, repo, dates)
 
 
 def main():

@@ -77,6 +77,26 @@ class SitemapIntegrityTests(unittest.TestCase):
         self.assertNotIn("authority.json", output)
         self.assertIn("/claims/index.html", output)
 
+    def test_claim_sitemap_preserves_ranked_url_lastmods(self):
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            (repo / "failures").mkdir()
+            (repo / "failures" / "one.html").write_text("ok", encoding="utf-8")
+            dates = {
+                f"{BASE}/": "2026-01-01",
+                f"{BASE}/failures/one.html": "2026-01-02",
+            }
+            output = CLAIMS.sitemap([], repo, dates)
+        self.assertIn(
+            f"<loc>{BASE}/</loc><lastmod>2026-01-01</lastmod><priority>1.0</priority>",
+            output,
+        )
+        self.assertIn(
+            f"<loc>{BASE}/failures/one.html</loc><lastmod>2026-01-02</lastmod>"
+            "<priority>0.7</priority>",
+            output,
+        )
+
     def test_duplicate_url_across_indexed_sitemaps_fails(self):
         with tempfile.TemporaryDirectory() as temp:
             repo = Path(temp)
