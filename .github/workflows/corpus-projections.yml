@@ -138,6 +138,7 @@ jobs:
           python3 tools/build_claim_topic_index.py --check
           python3 tools/build_entities.py --check
           python3 tools/normalize_claim_discovery.py --check
+          python3 tools/check_html_discoverability.py --root .
 
       - name: Derive the published corpus counts from the corpus
         # authority.json and the agent cards each restate the corpus size, and
