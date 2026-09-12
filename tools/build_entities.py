@@ -42,6 +42,7 @@ import html
 import json
 import os
 import sys
+import xml.etree.ElementTree as ET
 
 BASE = "https://wulfkaal.github.io"
 HUB_PAGE_SIZE = 200
@@ -788,13 +789,31 @@ def main():
     # date. A wall-clock lastmod made a no-op rebuild claim that every page changed.
     # Omit it: an absent lastmod is truthful and the sitemap index separately tracks
     # changes to this file by content hash.
-    locs = "".join(
-        f"<url><loc>{BASE}/entities/{s}.html</loc></url>" for s in written)
-    publish(os.path.join(a.repo, "sitemap-entities.xml"),
+    sitemap_path = os.path.join(a.repo, "sitemap-entities.xml")
+    sitemap_urls = [f"{BASE}/entities/"] + [
+        f"{BASE}/entities/{slug}.html" for slug in written
+    ]
+    sitemap_body = None
+    try:
+        with open(sitemap_path, encoding="utf-8") as fh:
+            current_sitemap = fh.read()
+        current_urls = [
+            element.text for element in ET.fromstring(current_sitemap).iter()
+            if element.tag == "loc" or element.tag.endswith("}loc")
+        ]
+        if len(current_urls) == len(set(current_urls)) == len(sitemap_urls) \
+                and set(current_urls) == set(sitemap_urls):
+            sitemap_body = current_sitemap
+    except (OSError, ET.ParseError):
+        pass
+    if sitemap_body is None:
+        locs = "".join(f"<url><loc>{url}</loc></url>" for url in sitemap_urls)
+        sitemap_body = (
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-            f"<url><loc>{BASE}/entities/</loc></url>"
-            f"{locs}</urlset>\n")
+            f"{locs}</urlset>\n"
+        )
+    publish(sitemap_path, sitemap_body)
 
     if a.check and stale:
         for path in stale[:20]:
