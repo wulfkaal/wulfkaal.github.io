@@ -105,11 +105,11 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         sitemap_urls = [
             element.text for element in sitemap.iter()
             if (element.tag == "loc" or element.tag.endswith("}loc"))
-            and element.text != f"{BASE}/entities/"
         ]
         expected_pages = {
             ROOT / "entities" / f"{slug}.html" for slug in self.entities
         }
+        expected_pages.add(ROOT / "entities" / "index.html")
         mapped_pages = []
 
         for sitemap_url in sitemap_urls:
@@ -117,7 +117,10 @@ class EntityDiscoverabilityTests(unittest.TestCase):
             self.assertEqual((parsed_url.scheme, parsed_url.netloc),
                              ("https", "wulfkaal.github.io"))
             self.assertFalse(parsed_url.params or parsed_url.query or parsed_url.fragment)
-            page = ROOT / parsed_url.path.removeprefix("/")
+            relative_path = parsed_url.path.removeprefix("/")
+            page = ROOT / relative_path
+            if parsed_url.path.endswith("/"):
+                page /= "index.html"
             mapped_pages.append(page)
             with self.subTest(sitemap_url=sitemap_url):
                 self.assertIn(page, expected_pages)

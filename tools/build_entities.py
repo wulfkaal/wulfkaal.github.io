@@ -613,10 +613,15 @@ def render_hub_pages(index_nodes, index, claim_count, singleton_count):
             href = "index.html" if target == 1 else f"page-{target}.html"
             navigation.append(f'<a href="{href}">{target}</a>')
         filename = "index.html" if page_number == 1 else f"page-{page_number}.html"
+        canonical = (
+            f'<link rel="canonical" href="{BASE}/entities/">'
+            if page_number == 1 else ""
+        )
         pages[filename] = (
             '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Entity index, Kaal corpus</title>'
+            f'{canonical}'
             '<link rel="stylesheet" href="../style.css"></head><body><main>'
             '<nav aria-label="Breadcrumb"><a href="../">Home</a> &middot; '
             '<a href="../claims/">Claims</a></nav>'
