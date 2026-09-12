@@ -1,5 +1,6 @@
 import collections
 import html.parser
+import importlib.util
 import json
 import unittest
 import xml.etree.ElementTree as ET
@@ -12,6 +13,11 @@ BASE = "https://wulfkaal.github.io"
 MAX_HUB_PAGES = 32
 MAX_ENTITY_LINKS_PER_HUB = 200
 MAX_HUB_BYTES = 64 * 1024
+CHECKER_SPEC = importlib.util.spec_from_file_location(
+    "check_html_discoverability", ROOT / "tools" / "check_html_discoverability.py"
+)
+CHECKER = importlib.util.module_from_spec(CHECKER_SPEC)
+CHECKER_SPEC.loader.exec_module(CHECKER)
 
 
 class PageParser(html.parser.HTMLParser):
@@ -99,6 +105,40 @@ class EntityDiscoverabilityTests(unittest.TestCase):
             if url.startswith(f"{BASE}/entities/") and url.endswith(".html")
         }
         self.assertEqual(sitemap_slugs, set(self.entities))
+
+    def test_every_sitemap_entity_is_within_three_root_clicks(self):
+        sitemap = ET.parse(ROOT / "sitemap-entities.xml")
+        entity_pages = set()
+        for element in sitemap.iter():
+            if not (element.tag == "loc" or element.tag.endswith("}loc")) \
+                    or not element.text \
+                    or urlparse(element.text).path in ("/entities", "/entities/"):
+                continue
+            candidates = CHECKER.candidates_for(ROOT, element.text, html_only=True)
+            self.assertEqual(len(candidates), 1, element.text)
+            entity_pages.add(candidates[0])
+
+        depths = {ROOT / "index.html": 0}
+        pending = collections.deque(depths)
+        cache = {}
+        while pending:
+            page = pending.popleft()
+            if depths[page] == 3:
+                continue
+            for href in CHECKER.parse_page(page, cache).anchors:
+                target, is_local = CHECKER.local_target(ROOT, page, href)
+                if is_local and target is not None and target.suffix == ".html" \
+                        and target not in depths:
+                    depths[target] = depths[page] + 1
+                    pending.append(target)
+
+        missing = sorted(entity_pages - set(depths))
+        self.assertFalse(
+            missing,
+            f"{len(missing)} sitemap entity page(s) exceed depth 3, e.g. "
+            f"{[page.relative_to(ROOT).as_posix() for page in missing[:5]]}",
+        )
+        self.assertLessEqual(max(depths[page] for page in entity_pages), 3)
 
     def test_every_entity_sitemap_url_matches_its_page_canonical(self):
         sitemap = ET.parse(ROOT / "sitemap-entities.xml")

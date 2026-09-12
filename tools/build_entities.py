@@ -638,6 +638,22 @@ def render_hub_pages(index_nodes, index, claim_count, singleton_count):
     return pages
 
 
+def expose_entity_hub_from_root(html_text):
+    """Add the one root link that keeps every paginated entity within three clicks."""
+    href = "./entities/index.html"
+    if html_text.count(href) == 1:
+        return html_text
+    if href in html_text:
+        raise ValueError("index.html contains duplicate entity hub links")
+    marker = ('    <li><a href="./claims/index.html">Scholarly claim layer</a>, '
+              'atomic citable claims</li>')
+    if html_text.count(marker) != 1:
+        raise ValueError("index.html has no unique scholarly claim layer entry")
+    link = ('\n    <li><a href="./entities/index.html">Entity index</a>, concept nodes '
+            'over the claim layer</li>')
+    return html_text.replace(marker, marker + link, 1)
+
+
 # -------------------------------------------------------------------------- run
 
 
@@ -783,6 +799,15 @@ def main():
     for filename, body in render_hub_pages(
             index_nodes, index, len(by_id), len(singletons)).items():
         publish(os.path.join(out_dir, filename), body)
+
+    root_index_path = os.path.join(a.repo, "index.html")
+    try:
+        with open(root_index_path, encoding="utf-8") as fh:
+            root_index = expose_entity_hub_from_root(fh.read())
+    except (OSError, ValueError) as exc:
+        print(f"cannot expose entity hub from root: {exc}", file=sys.stderr)
+        return 1
+    publish(root_index_path, root_index)
 
     # sitemap
     # Entity pages are derived records without an independently meaningful content
