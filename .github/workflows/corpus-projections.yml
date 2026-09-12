@@ -155,6 +155,7 @@ jobs:
 
       - name: Synchronize sitemap content dates and enforce one owner per URL
         run: |
+          python3 tools/merge_sitemap.py .
           python3 tools/sync_sitemap_index.py
           python3 tools/check_sitemap_uniqueness.py
 

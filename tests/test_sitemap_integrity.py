@@ -1,6 +1,8 @@
 import importlib.util
 import json
+import os
 import re
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -20,6 +22,7 @@ def load_module(name, relative):
 CLAIMS = load_module("normalize_claim_discovery", "tools/normalize_claim_discovery.py")
 SITEMAPS = load_module("check_sitemap_uniqueness", "tools/check_sitemap_uniqueness.py")
 SYNC = load_module("sync_sitemap_index", "tools/sync_sitemap_index.py")
+MERGE = load_module("merge_sitemap", "tools/merge_sitemap.py")
 
 
 def required_human_urls(repo):
@@ -157,11 +160,43 @@ class SitemapIntegrityTests(unittest.TestCase):
             )
         self.assertEqual(missing, [dropped])
 
-    def test_entity_sitemap_generator_does_not_stamp_wall_clock_lastmod(self):
-        source = (ROOT / "tools" / "build_entities.py").read_text(encoding="utf-8")
-        block = source[source.index("# sitemap"):source.index("print(f\"wrote", source.index("# sitemap"))]
-        self.assertNotIn("<lastmod>", block)
-        self.assertNotIn("TODAY", source)
+    def test_every_eligible_url_has_authoritative_lastmod(self):
+        problems, count = MERGE.check_lastmods(ROOT)
+        self.assertEqual(problems, [])
+        self.assertEqual(count, 7921)
+
+    def test_git_content_date_is_stable_and_ignores_filesystem_mtime(self):
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+            subprocess.run(["git", "config", "user.name", "Fixture"], cwd=repo, check=True)
+            subprocess.run(
+                ["git", "config", "user.email", "fixture@example.test"],
+                cwd=repo,
+                check=True,
+            )
+            source = repo / "source.html"
+            source.write_text("first\n", encoding="utf-8")
+            subprocess.run(["git", "add", "source.html"], cwd=repo, check=True)
+            env = os.environ.copy()
+            env.update({
+                "GIT_AUTHOR_DATE": "2001-02-03T04:05:06+00:00",
+                "GIT_COMMITTER_DATE": "2001-02-03T04:05:06+00:00",
+                "LC_ALL": "fr_FR.UTF-8",
+            })
+            subprocess.run(["git", "commit", "-qm", "fixture"], cwd=repo, env=env, check=True)
+            os.utime(source, (2_000_000_000, 2_000_000_000))
+            self.assertEqual(MERGE.git_content_date(repo, Path("source.html")), "2001-02-03")
+
+            source.write_text("dirty\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "uncommitted content"):
+                MERGE.git_content_date(repo, Path("source.html"))
+
+    def test_lastmod_generator_rejects_clock_and_mtime_sources(self):
+        source = (ROOT / "tools" / "merge_sitemap.py").read_text(encoding="utf-8")
+        forbidden = ("datetime.now", "date.today", "time.time", ".stat()", "st_mtime")
+        for token in forbidden:
+            self.assertNotIn(token, source)
 
 
 if __name__ == "__main__":
