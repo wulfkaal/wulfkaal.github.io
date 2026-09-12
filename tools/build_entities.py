@@ -506,7 +506,7 @@ def render_html(slug, node, entity_record):
     ap(f"<title>{e(node['name'])} -- Kaal corpus entity</title>")
     ap(f'<meta name="description" content="{e(desc)}">')
     ap('<link rel="stylesheet" href="../style.css">')
-    ap(f'<link rel="canonical" href="{BASE}/entities/{slug}">')
+    ap(f'<link rel="canonical" href="{BASE}/entities/{slug}.html">')
     schema = json.dumps(page_json_ld(slug, entity_record), ensure_ascii=False,
                         separators=(",", ":")).replace("</", "<\\/")
     ap(f'<script type="application/ld+json">{schema}</script>')

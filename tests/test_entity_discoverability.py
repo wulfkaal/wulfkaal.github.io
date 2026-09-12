@@ -100,11 +100,39 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         }
         self.assertEqual(sitemap_slugs, set(self.entities))
 
+    def test_every_entity_sitemap_url_matches_its_page_canonical(self):
+        sitemap = ET.parse(ROOT / "sitemap-entities.xml")
+        sitemap_urls = [
+            element.text for element in sitemap.iter()
+            if (element.tag == "loc" or element.tag.endswith("}loc"))
+            and element.text != f"{BASE}/entities/"
+        ]
+        expected_pages = {
+            ROOT / "entities" / f"{slug}.html" for slug in self.entities
+        }
+        mapped_pages = []
+
+        for sitemap_url in sitemap_urls:
+            parsed_url = urlparse(sitemap_url)
+            self.assertEqual((parsed_url.scheme, parsed_url.netloc),
+                             ("https", "wulfkaal.github.io"))
+            self.assertFalse(parsed_url.params or parsed_url.query or parsed_url.fragment)
+            page = ROOT / parsed_url.path.removeprefix("/")
+            mapped_pages.append(page)
+            with self.subTest(sitemap_url=sitemap_url):
+                self.assertIn(page, expected_pages)
+                self.assertTrue(page.is_file())
+                self.assertEqual(parse_page(page).canonicals, [sitemap_url])
+
+        self.assertEqual(len(mapped_pages), len(set(mapped_pages)))
+        self.assertEqual(set(mapped_pages), expected_pages)
+
     def test_entity_pages_have_exact_canonical_breadcrumbs_and_json_ld(self):
         for slug, record in self.entities.items():
             with self.subTest(slug=slug):
                 page = parse_page(ROOT / "entities" / f"{slug}.html")
-                self.assertEqual(page.canonicals, [record["url"]])
+                self.assertEqual(page.canonicals,
+                                 [f"{BASE}/entities/{slug}.html"])
                 self.assertIn("../", page.links)
                 self.assertIn("../claims/", page.links)
                 self.assertIn("./", page.links)
