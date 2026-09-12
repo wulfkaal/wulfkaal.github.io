@@ -109,6 +109,17 @@ class SitemapIntegrityTests(unittest.TestCase):
             output,
         )
 
+    def test_claim_discovery_check_accepts_committed_projections(self):
+        result = subprocess.run(
+            ["python3", "tools/normalize_claim_discovery.py", "--check"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("claim discovery current:", result.stdout)
+
     def test_duplicate_url_across_indexed_sitemaps_fails(self):
         with tempfile.TemporaryDirectory() as temp:
             repo = Path(temp)
