@@ -503,9 +503,11 @@ jobs:
           python3 -m unittest \
             tests/test_claim_notifier.py \
             tests/test_claim_topic_discoverability.py \
+            tests/test_entity_discoverability.py \
             tests/test_sitemap_integrity.py
           python3 tools/normalize_claim_discovery.py --check
           python3 tools/build_claim_topic_index.py --check
+          python3 tools/build_entities.py --check
           python3 - <<'PY'
           import json, pathlib, sys
           # A published index that nothing points at is still undiscoverable. Before this
