@@ -313,6 +313,21 @@ def retopic_claims_index_html(html_text, shard_counts):
     return html_text[:start] + table + html_text[end:], wrong
 
 
+def expose_entity_hub(html_text):
+    """Expose the generated entity hub from the already linked claim layer."""
+    href = "../entities/index.html"
+    if html_text.count(href) == 1:
+        return html_text, False
+    if href in html_text:
+        raise ValueError("claims/index.html contains duplicate entity hub links")
+    marker = '</ul><div class="k">Topics</div>'
+    if marker not in html_text:
+        raise ValueError("claims/index.html has no Machine access list before Topics")
+    link = ('<li><a href="../entities/index.html">Entity index</a>, concept nodes '
+            'over the claim layer</li>')
+    return html_text.replace(marker, link + marker, 1), True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true",
@@ -375,6 +390,11 @@ def main():
     claims_html = claims_html_path.read_text(encoding="utf-8")
     fixed_html, wrong_counts = retopic_claims_index_html(
         claims_html, {slug: len(ids) for slug, (_, ids) in shards.items()})
+    try:
+        fixed_html, entity_hub_changed = expose_entity_hub(fixed_html)
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
 
     if args.check:
         if not index_path.exists():
@@ -400,6 +420,10 @@ def main():
                   f"with the shards; run tools/build_claim_topic_index.py",
                   file=sys.stderr)
             return 1
+        if entity_hub_changed:
+            print("claims/index.html does not link the entity hub; "
+                  "run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
         print(f"claim topic index current: {len(shards)} shards, "
               f"{sum(len(i) for _, i in shards.values())} tags, "
               f"{len(html_pages)} human pages, claims/index.html counts agree")
@@ -408,7 +432,7 @@ def main():
     for name, body in html_pages.items():
         (topic_dir / name).write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
-    if wrong_counts:
+    if wrong_counts or entity_hub_changed:
         claims_html_path.write_text(fixed_html, encoding="utf-8")
         for slug, shown, real in wrong_counts:
             print(f"  claims/index.html {slug}: {shown} -> {real}")

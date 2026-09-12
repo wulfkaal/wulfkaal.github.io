@@ -44,6 +44,7 @@ import os
 import sys
 
 BASE = "https://wulfkaal.github.io"
+HUB_PAGE_SIZE = 200
 
 # Resolved the same way tools/overlay.py resolves them, so this runs from
 # anywhere as long as it sits in tools/ inside the repo.
@@ -469,7 +470,28 @@ def render_json(slug, node, md_sha, by_id):
 # ------------------------------------------------------------------------- html
 
 
-def render_html(slug, node):
+def page_json_ld(slug, entity_record):
+    """The HTML projection repeats only identity and counts from the entity record."""
+    properties = {
+        item["name"]: item["value"]
+        for item in entity_record.get("additionalProperty", [])
+    }
+    return {
+        "@context": "https://schema.org",
+        "@type": (entity_record["@type"] if properties["status"] == "adjudicated"
+                  else "DefinedTerm"),
+        "@id": entity_record["@id"],
+        "identifier": entity_record["identifier"],
+        "name": entity_record["name"],
+        "url": entity_record["@id"],
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": key, "value": properties[key]}
+            for key in ("status", "claim_count", "work_count")
+        ],
+    }
+
+
+def render_html(slug, node, entity_record):
     adj = node.get("adjudication")
     claims = node["claims"]
     years = [c["year"] for c in claims if c["year"]]
@@ -485,7 +507,13 @@ def render_html(slug, node):
     ap(f'<meta name="description" content="{e(desc)}">')
     ap('<link rel="stylesheet" href="../style.css">')
     ap(f'<link rel="canonical" href="{BASE}/entities/{slug}">')
+    schema = json.dumps(page_json_ld(slug, entity_record), ensure_ascii=False,
+                        separators=(",", ":")).replace("</", "<\\/")
+    ap(f'<script type="application/ld+json">{schema}</script>')
     ap("</head><body><main>")
+    ap('<nav aria-label="Breadcrumb"><a href="../">Home</a> &middot; '
+       '<a href="../claims/">Claims</a> &middot; '
+       '<a href="./">Entities</a></nav>')
     ap(f"<h1>entity &middot; {e(status)}</h1>")
     ap(f'<p class="claim">{e(node["name"])}</p>')
     span = f"{min(years)}&ndash;{max(years)}" if years else ""
@@ -565,11 +593,52 @@ def render_html(slug, node):
     return "".join(P)
 
 
+def render_hub_pages(index_nodes, index, claim_count, singleton_count):
+    """Return bounded HTML pages that enumerate every entity exactly once."""
+    page_count = (len(index_nodes) + HUB_PAGE_SIZE - 1) // HUB_PAGE_SIZE
+    pages = {}
+    for page_number in range(1, page_count + 1):
+        start = (page_number - 1) * HUB_PAGE_SIZE
+        chunk = index_nodes[start:start + HUB_PAGE_SIZE]
+        rows = []
+        for node in chunk:
+            badge = ("<b>adjudicated</b>" if node["status"] == "adjudicated"
+                     else "derived")
+            rows.append(
+                f'<li><a href="{node["slug"]}.html">{html.escape(node["name"])}</a> '
+                f'<span class="meta">{node["claim_count"]} claims &middot; '
+                f'{badge}</span></li>')
+        navigation = []
+        for target in range(1, page_count + 1):
+            href = "index.html" if target == 1 else f"page-{target}.html"
+            navigation.append(f'<a href="{href}">{target}</a>')
+        filename = "index.html" if page_number == 1 else f"page-{page_number}.html"
+        pages[filename] = (
+            '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<title>Entity index, Kaal corpus</title>'
+            '<link rel="stylesheet" href="../style.css"></head><body><main>'
+            '<nav aria-label="Breadcrumb"><a href="../">Home</a> &middot; '
+            '<a href="../claims/">Claims</a></nav>'
+            '<h1>entity index</h1>'
+            f'<p class="meta">{len(index_nodes)} nodes '
+            f'({index["adjudicated"]} adjudicated, {index["derived"]} derived) over '
+            f'{claim_count} claims. {singleton_count} further slugs appear on one claim '
+            f'each and resolve through <a href="index.json">index.json</a>.</p>'
+            f'<p class="meta">Page {page_number} of {page_count}: '
+            + " &middot; ".join(navigation) + "</p><ul>" + "".join(rows) + "</ul>"
+            '<p class="meta"><a href="index.json">Full machine index</a></p>'
+            '</main></body></html>')
+    return pages
+
+
 # -------------------------------------------------------------------------- run
 
 
 def main():
     ap_ = argparse.ArgumentParser()
+    ap_.add_argument("--check", action="store_true",
+                     help="exit 1 if any generated entity projection is stale")
     ap_.add_argument("--repo", default=ROOT)
     ap_.add_argument("--src", default=os.path.join(ROOT, "entities-src"))
     ap_.add_argument("--min-claims", type=int, default=2)
@@ -579,7 +648,23 @@ def main():
     out_dir = os.path.join(a.repo, "entities")
     if not os.path.isdir(claims_dir):
         sys.exit(f"no claims dir at {claims_dir}")
-    os.makedirs(out_dir, exist_ok=True)
+    if not a.check:
+        os.makedirs(out_dir, exist_ok=True)
+
+    stale = []
+
+    def publish(path, body):
+        if a.check:
+            try:
+                with open(path, encoding="utf-8") as fh:
+                    current = fh.read()
+            except OSError:
+                current = None
+            if current != body:
+                stale.append(os.path.relpath(path, a.repo))
+        else:
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(body)
 
     print(f"reading claims from {claims_dir}")
     by_id, about = load_claims(claims_dir)
@@ -629,14 +714,14 @@ def main():
 
         md = render_md(slug, node, by_id)
         md_path = os.path.join(out_dir, f"{slug}.md")
-        with open(md_path, "w", encoding="utf-8") as fh:
-            fh.write(md)
+        publish(md_path, md)
         md_sha = hashlib.sha256(md.encode("utf-8")).hexdigest()
 
-        with open(os.path.join(out_dir, f"{slug}.json"), "w", encoding="utf-8") as fh:
-            json.dump(render_json(slug, node, md_sha, by_id), fh, indent=1, ensure_ascii=False)
-        with open(os.path.join(out_dir, f"{slug}.html"), "w", encoding="utf-8") as fh:
-            fh.write(render_html(slug, node))
+        entity_record = render_json(slug, node, md_sha, by_id)
+        entity_json = json.dumps(entity_record, indent=1, ensure_ascii=False)
+        publish(os.path.join(out_dir, f"{slug}.json"), entity_json)
+        publish(os.path.join(out_dir, f"{slug}.html"),
+                render_html(slug, node, entity_record))
 
         yrs = [c["year"] for c in claims if c["year"]]
         index_nodes.append({
@@ -686,31 +771,12 @@ def main():
         "entities": index_nodes,
         "singletons": singletons,
     }
-    with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as fh:
-        json.dump(index, fh, indent=1, ensure_ascii=False)
-        fh.write("\n")
+    publish(os.path.join(out_dir, "index.json"),
+            json.dumps(index, indent=1, ensure_ascii=False) + "\n")
 
-    # index.html
-    rows = []
-    for n in index_nodes[:400]:
-        badge = "<b>adjudicated</b>" if n["status"] == "adjudicated" else "derived"
-        rows.append(f'<li><a href="{n["slug"]}.html">{html.escape(n["name"])}</a> '
-                    f'<span class="meta">{n["claim_count"]} claims &middot; {badge}</span></li>')
-    with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(
-            '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1">'
-            "<title>Entity index -- Kaal corpus</title>"
-            '<link rel="stylesheet" href="../style.css"></head><body><main>'
-            "<h1>entity index</h1>"
-            f'<p class="meta">{len(index_nodes)} nodes '
-            f'({index["adjudicated"]} adjudicated, {index["derived"]} derived) over '
-            f'{len(by_id)} claims. {len(singletons)} further slugs appear on one claim '
-            f'each and resolve through <a href="index.json">index.json</a>.</p>'
-            "<ul>" + "".join(rows) + "</ul>"
-            '<p class="meta">Showing the 400 largest. Full list: '
-            '<a href="index.json">index.json</a></p>'
-            "</main></body></html>")
+    for filename, body in render_hub_pages(
+            index_nodes, index, len(by_id), len(singletons)).items():
+        publish(os.path.join(out_dir, filename), body)
 
     # sitemap
     # Entity pages are derived records without an independently meaningful content
@@ -719,11 +785,18 @@ def main():
     # changes to this file by content hash.
     locs = "".join(
         f"<url><loc>{BASE}/entities/{s}.html</loc></url>" for s in written)
-    with open(os.path.join(a.repo, "sitemap-entities.xml"), "w", encoding="utf-8") as fh:
-        fh.write('<?xml version="1.0" encoding="UTF-8"?>\n'
-                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                 f"<url><loc>{BASE}/entities/</loc></url>"
-                 f"{locs}</urlset>\n")
+    publish(os.path.join(a.repo, "sitemap-entities.xml"),
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            f"<url><loc>{BASE}/entities/</loc></url>"
+            f"{locs}</urlset>\n")
+
+    if a.check and stale:
+        for path in stale[:20]:
+            print(f"  stale: {path}", file=sys.stderr)
+        print(f"{len(stale)} entity projection(s) are missing or stale; "
+              "run tools/build_entities.py", file=sys.stderr)
+        return 1
 
     print(f"wrote {len(written)} entity nodes ({index['adjudicated']} adjudicated) "
           f"to {out_dir}")
@@ -733,7 +806,8 @@ def main():
         if n["status"] == "adjudicated":
             print(f"  adjudicated: {n['slug']}  {n['claim_count']} claims  "
                   f"{n['year_span'][0]}-{n['year_span'][1]}  sha256 {n['content_sha256'][:16]}...")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
