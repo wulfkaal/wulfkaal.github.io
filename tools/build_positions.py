@@ -14,6 +14,8 @@ ORCID = "https://orcid.org/0009-0008-7840-1847"
 AUTHOR = "Wulf A. Kaal"
 RECENT_LIMIT = 100
 RELATED_LIMIT = 20
+CHECK = False
+STALE_PATHS = set()
 
 
 def topic_slug(value):
@@ -25,13 +27,14 @@ def descriptive_heading(record):
     return f"{record['responseType'].title()}: {debate}"
 
 
-def descriptive_title(record, limit=90):
+def descriptive_title(record):
     debate = " ".join(record["currentDebate"]["name"].split())
-    suffix = " — Wulf A. Kaal Position"
-    available = limit - len(suffix)
-    if len(debate) > available:
-        debate = debate[: available - 1].rsplit(" ", 1)[0].rstrip(" ,:;-") + "…"
-    return debate + suffix
+    return f"{debate} | {record['identifier']} | Wulf A. Kaal Position"
+
+
+def descriptive_description(record):
+    debate = " ".join(record["currentDebate"]["name"].split())
+    return f"{record['text']} | {debate} | {record['identifier']}"
 
 
 def compact_record(record):
@@ -231,7 +234,7 @@ def render_html(record):
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
         f"<title>{esc(title)}</title>"
-        f"<meta name=\"description\" content=\"{esc(record['text'])}\">"
+        f"<meta name=\"description\" content=\"{esc(descriptive_description(record))}\">"
         f"<link rel=\"canonical\" href=\"{esc(record['canonical_url'])}\">"
         "<link rel=\"stylesheet\" href=\"../style.css\">"
         f"<script type=\"application/ld+json\">{structured}</script></head><body><main>"
@@ -499,9 +502,17 @@ def build_positions_sitemap(records):
     )
 
 
-def write_json(path, value):
+def write_text(path, value):
+    if CHECK:
+        if not path.is_file() or path.read_text(encoding="utf-8") != value:
+            STALE_PATHS.add(path)
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(value, encoding="utf-8")
+
+
+def write_json(path, value):
+    write_text(path, json.dumps(value, ensure_ascii=False, indent=2) + "\n")
 
 
 def render_shard_html(title, description, records):
@@ -536,11 +547,12 @@ def build_shards(out_dir, records, lastmod):
 
     for subdir in ("by-date", "by-topic", "by-claim"):
         target = out_dir / subdir
-        target.mkdir(parents=True, exist_ok=True)
-        for old in target.glob("*.json"):
-            old.unlink()
-        for old in target.glob("*.html"):
-            old.unlink()
+        if not CHECK:
+            target.mkdir(parents=True, exist_ok=True)
+            for old in target.glob("*.json"):
+                old.unlink()
+            for old in target.glob("*.html"):
+                old.unlink()
 
     compact = {record["identifier"]: compact_record(record) for record in records}
     for kind, groups in (("date", by_date), ("topic", by_topic), ("claim", by_claim)):
@@ -563,9 +575,9 @@ def build_shards(out_dir, records, lastmod):
                 if kind == "topic"
                 else f"Owner-authorized positions explicitly extending scholarly claim {key}."
             )
-            (directory / f"{key}.html").write_text(
+            write_text(
+                directory / f"{key}.html",
                 render_shard_html(f"Kaal positions by {kind}: {key}", description, values),
-                encoding="utf-8",
             )
             index_items.append({
                 kind: key,
@@ -580,6 +592,15 @@ def build_shards(out_dir, records, lastmod):
             "count": len(index_items),
             "shards": index_items,
         })
+        if CHECK:
+            expected_json = {"index.json", *(f"{key}.json" for key in groups)}
+            expected_html = {f"{key}.html" for key in groups}
+            for old in directory.glob("*.json"):
+                if old.name not in expected_json:
+                    STALE_PATHS.add(old)
+            for old in directory.glob("*.html"):
+                if old.name not in expected_html:
+                    STALE_PATHS.add(old)
 
     recent = [compact[record["identifier"]] for record in records[:RECENT_LIMIT]]
     write_json(out_dir / "recent.json", {
@@ -596,19 +617,22 @@ def build_shards(out_dir, records, lastmod):
 def add_reverse_claim_links(repo, by_claim):
     start = "<!-- positions-related:start -->"
     end = "<!-- positions-related:end -->"
-    # Remove only our generated block first, including from claims whose final
-    # related position was later withdrawn. The protected JSON/Markdown corpus
-    # is never touched.
-    for path in (repo / "claims").glob("*.html"):
-        page = path.read_text(encoding="utf-8")
-        clean = re.sub(re.escape(start) + r".*?" + re.escape(end), "", page, flags=re.S)
-        if clean != page:
-            path.write_text(clean, encoding="utf-8")
     for claim_id, records in by_claim.items():
         path = repo / "claims" / f"{claim_id}.html"
         if not path.exists():
             raise RuntimeError(f"Missing scholarly claim page for explicit relation: {claim_id}")
+
+    # Replace only our generated block, including removal when a claim's final
+    # related position was withdrawn. The protected JSON/Markdown corpus is
+    # never touched.
+    for path in (repo / "claims").glob("*.html"):
         page = path.read_text(encoding="utf-8")
+        expected = re.sub(re.escape(start) + r".*?" + re.escape(end), "", page, flags=re.S)
+        records = by_claim.get(path.stem)
+        if not records:
+            if expected != page:
+                write_text(path, expected)
+            continue
         links = "".join(
             f'<li><a href="{html.escape(record["canonical_url"])}">'
             f'{html.escape(descriptive_heading(record))}</a></li>'
@@ -624,8 +648,8 @@ def add_reverse_claim_links(repo, by_claim):
             f'{start}<div class="k">Positions extending this scholarly claim</div>'
             f'<ul class="meta">{links}{more}</ul>{end}'
         )
-        page = page.replace("<footer>", block + "<footer>", 1)
-        path.write_text(page, encoding="utf-8")
+        expected = expected.replace("<footer>", block + "<footer>", 1)
+        write_text(path, expected)
 
 
 def update_discovery_surfaces(repo, lastmod, records):
@@ -731,7 +755,7 @@ def update_discovery_surfaces(repo, lastmod, records):
     sitemap, removed = re.subn(attribution_entry, "", sitemap)
     if removed > 1:
         raise RuntimeError("Expected at most one attribution sitemap-index entry")
-    sitemap_path.write_text(sitemap, encoding="utf-8")
+    write_text(sitemap_path, sitemap)
 
 
 def update_attribution_surfaces(repo, records):
@@ -785,7 +809,7 @@ def update_attribution_surfaces(repo, records):
         })
 
     def write_jsonl(path, rows):
-        path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+        write_text(path, "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows))
 
     positions_dir = repo / "positions"
     write_jsonl(positions_dir / "canonical-url-registry.jsonl", canonical)
@@ -840,12 +864,16 @@ def update_attribution_surfaces(repo, records):
 
 
 def main():
+    global CHECK
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
+    CHECK = args.check
     src_dir = args.repo / "positions-src"
     out_dir = args.repo / "positions"
-    out_dir.mkdir(exist_ok=True)
+    if not CHECK:
+        out_dir.mkdir(exist_ok=True)
 
     records = []
     withdrawn = load_withdrawn_identifiers(src_dir)
@@ -868,13 +896,12 @@ def main():
         raise RuntimeError("Duplicate compound-growth work/version/proposition identity detected")
 
     for short_id, record, markdown in records:
-        (out_dir / f"{short_id}.md").write_text(markdown, encoding="utf-8")
-        (out_dir / f"{short_id}.json").write_text(
-            json.dumps(record, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+        write_text(out_dir / f"{short_id}.md", markdown)
+        write_text(
+            out_dir / f"{short_id}.json",
+            json.dumps(record, ensure_ascii=False, indent=1) + "\n",
         )
-        (out_dir / f"{short_id}.html").write_text(
-            render_html(record) + "\n", encoding="utf-8"
-        )
+        write_text(out_dir / f"{short_id}.html", render_html(record) + "\n")
 
     records = [record for _, record, _ in records]
     records.sort(key=lambda rec: rec["identifier"], reverse=True)
@@ -893,35 +920,38 @@ def main():
         "bulk": f"{BASE}/positions/all.jsonl",
         "schema": f"{BASE}/positions/schema.json",
     }
-    (out_dir / "index.json").write_text(
-        json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
-    )
-    (out_dir / "all.jsonl").write_text(
+    write_text(out_dir / "index.json", json.dumps(index, ensure_ascii=False, indent=1) + "\n")
+    write_text(
+        out_dir / "all.jsonl",
         "".join(json.dumps(rec, ensure_ascii=False) + "\n" for rec in records),
-        encoding="utf-8",
     )
-    (out_dir / "index.html").write_text(render_index_html(records) + "\n", encoding="utf-8")
-    (out_dir / "schema.json").write_text(
-        json.dumps(schema(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+    write_text(out_dir / "index.html", render_index_html(records) + "\n")
+    write_text(out_dir / "schema.json", json.dumps(schema(), ensure_ascii=False, indent=1) + "\n")
+    write_text(
+        out_dir / "graph.jsonld", json.dumps(build_graph(records), ensure_ascii=False, indent=1) + "\n"
     )
-    (out_dir / "graph.jsonld").write_text(
-        json.dumps(build_graph(records), ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8",
-    )
-    (out_dir / "coverage.json").write_text(
+    write_text(
+        out_dir / "coverage.json",
         json.dumps(build_public_metrics(records), ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8",
     )
-    (args.repo / "sitemap-positions.xml").write_text(
-        build_positions_sitemap(records), encoding="utf-8"
-    )
+    write_text(args.repo / "sitemap-positions.xml", build_positions_sitemap(records))
     lastmod = index["dateModified"]
     by_claim = build_shards(out_dir, records, lastmod)
     add_reverse_claim_links(args.repo, by_claim)
     update_discovery_surfaces(args.repo, lastmod, records)
     update_attribution_surfaces(args.repo, records)
 
-    print(f"built {len(records)} affirmed positions")
+    if CHECK:
+        if STALE_PATHS:
+            sample = sorted(str(path.relative_to(args.repo)) for path in STALE_PATHS)[:20]
+            for path in sample:
+                print(f"stale: {path}")
+            if len(STALE_PATHS) > len(sample):
+                print(f"and {len(STALE_PATHS) - len(sample)} more stale paths")
+            raise SystemExit(1)
+        print(f"checked {len(records)} affirmed positions")
+    else:
+        print(f"built {len(records)} affirmed positions")
 
 
 if __name__ == "__main__":

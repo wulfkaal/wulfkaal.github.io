@@ -1,4 +1,5 @@
 import hashlib
+import html
 import json
 import re
 import unittest
@@ -128,6 +129,34 @@ class PositionDiscoverabilityTests(unittest.TestCase):
             self.assertNotEqual(heading, row["identifier"])
             structured = re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S).group(1)
             self.assertEqual(json.loads(structured)["identifier"], row["identifier"])
+
+    def test_sitemap_position_pages_have_unique_search_metadata(self):
+        sitemap = (ROOT / "sitemap-positions.xml").read_text(encoding="utf-8")
+        prefix = "https://wulfkaal.github.io/positions/"
+        urls = re.findall(r"<loc>(.*?)</loc>", sitemap)
+        page_urls = [url for url in urls if url.startswith(prefix) and url != prefix]
+        metadata = {"title": {}, "description": {}}
+
+        for url in page_urls:
+            stem = url.removeprefix(prefix)
+            page_path = ROOT / "positions" / f"{stem}.html"
+            self.assertTrue(page_path.is_file(), f"missing sitemap position page: {page_path}")
+            page = page_path.read_text(encoding="utf-8")
+            matches = {
+                "title": re.search(r"<title>(.*?)</title>", page, re.S),
+                "description": re.search(
+                    r'<meta name="description" content="(.*?)">', page, re.S
+                ),
+            }
+            for field, match in matches.items():
+                self.assertIsNotNone(match, f"missing {field}: {url}")
+                normalized = " ".join(html.unescape(match.group(1)).split()).casefold()
+                self.assertTrue(normalized, f"empty {field}: {url}")
+                metadata[field].setdefault(normalized, []).append(url)
+
+        for field, values in metadata.items():
+            duplicates = [group for group in values.values() if len(group) > 1]
+            self.assertFalse(bool(duplicates), f"duplicate normalized {field}: {duplicates[:3]}")
 
     def test_reverse_links_follow_only_explicit_extends_edges(self):
         by_claim = {}
