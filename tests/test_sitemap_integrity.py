@@ -45,6 +45,9 @@ def missing_required_human_urls(sitemap_text, required):
 
 
 class SitemapIntegrityTests(unittest.TestCase):
+    def test_claim_hub_canonical_matches_its_sitemap_url(self):
+        self.assertEqual(CLAIMS.CLAIMS_HUB_URL, f"{BASE}/claims/index.html")
+
     def test_claim_page_gets_one_extensionless_canonical(self):
         source = '<html><head><link rel="stylesheet" href="../style.css"></head></html>'
         url = "https://wulfkaal.github.io/claims/1-001"

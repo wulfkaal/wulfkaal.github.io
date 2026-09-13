@@ -2,9 +2,10 @@
 """Normalize claim search URLs and canonical HTML without touching claim content.
 
 The claim JSON and Markdown files are machine/citation surfaces. Search sitemaps should
-advertise one human canonical URL per claim, while each HTML representation should state
-that same extensionless canonical explicitly. This tool derives both projections from
-``claims/index.json`` and never edits the hashed ``claims/<id>.md`` objects.
+advertise one human URL per page, while each HTML representation should state that exact
+sitemap URL as its canonical. Claim pages remain extensionless; the hub uses its advertised
+``claims/index.html`` URL. This tool derives both projections from ``claims/index.json`` and
+never edits the hashed ``claims/<id>.md`` objects.
 """
 
 import argparse
@@ -17,6 +18,7 @@ import sys
 
 
 BASE = "https://wulfkaal.github.io"
+CLAIMS_HUB_URL = f"{BASE}/claims/index.html"
 CANONICAL = re.compile(r'<link\s+rel=["\']canonical["\'][^>]*>', re.I)
 
 
@@ -45,7 +47,7 @@ def sitemap(records, repo, existing_dates=None):
 
     rows = [
         ranked_row(f"{BASE}/", "1.0"),
-        ranked_row(f"{BASE}/claims/index.html", "1.0"),
+        ranked_row(CLAIMS_HUB_URL, "1.0"),
         ranked_row(f"{BASE}/failures/index.html", "1.0"),
     ]
     for record in records:
@@ -86,7 +88,7 @@ def desired(repo):
 
     hub = repo / "claims" / "index.html"
     pages[hub] = canonicalize_page(
-        hub.read_text(encoding="utf-8"), f"{BASE}/claims/"
+        hub.read_text(encoding="utf-8"), CLAIMS_HUB_URL
     )
 
     # Preserve the already-published, more precise lastmod when it exists. The year is
