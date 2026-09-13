@@ -1,6 +1,8 @@
+import collections
 import importlib.util
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 
@@ -180,6 +182,50 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
         page = (self.root / "positions/one.html").read_text(encoding="utf-8")
         self.write("positions/one.html", page.replace("</body>", '<a href="/missing.json">x</a></body>'))
         self.assertIn("LOCAL_LINK", self.codes()[0])
+
+    def test_research_html_paths_are_reachable_within_two_clicks(self):
+        owners = collections.defaultdict(list)
+        sitemap_index = ET.parse(ROOT / "sitemap-index.xml").getroot()
+        for node in sitemap_index.findall("sm:sitemap", CHECKER.NS):
+            sitemap_url = node.findtext("sm:loc", namespaces=CHECKER.NS)
+            sitemap_path = ROOT / CHECKER.relative_path(sitemap_url)
+            sitemap = ET.parse(sitemap_path).getroot()
+            for loc in sitemap.findall("sm:url/sm:loc", CHECKER.NS):
+                url = (loc.text or "").strip()
+                relative = CHECKER.relative_path(url)
+                if relative and relative.startswith(("research-claims/", "research-observations/")):
+                    owners[url].append(sitemap_path.name)
+
+        self.assertTrue(owners)
+        for url, sitemap_owners in owners.items():
+            with self.subTest(url=url):
+                self.assertEqual(len(sitemap_owners), 1, "URL has multiple sitemap owners")
+                self.assertEqual(len(CHECKER.candidates_for(ROOT, url)), 1, "Advertised URL does not resolve uniquely")
+
+        cache = {}
+        root_page = ROOT / "index.html"
+        depths = {root_page: 0}
+        queue = collections.deque([root_page])
+        while queue:
+            page = queue.popleft()
+            parser = CHECKER.parse_page(page, cache)
+            for href in parser.anchors:
+                target, is_local = CHECKER.local_target(ROOT, page, href)
+                if is_local and target is not None and target.suffix == ".html" and target not in depths:
+                    depths[target] = depths[page] + 1
+                    queue.append(target)
+
+        research_html = set()
+        for url in owners:
+            candidates = CHECKER.candidates_for(ROOT, url, html_only=True)
+            if candidates:
+                research_html.add(candidates[0])
+        too_deep = {
+            CHECKER.public_url(page, ROOT): depths.get(page)
+            for page in research_html
+            if depths.get(page, float("inf")) > 2
+        }
+        self.assertEqual(too_deep, {})
 
     def test_canonical_failures_cannot_be_allowlisted(self):
         for exceptions in CHECKER.ALLOWLISTS.values():

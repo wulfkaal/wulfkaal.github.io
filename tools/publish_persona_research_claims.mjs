@@ -373,8 +373,32 @@ const updateMarkedSection = (relative, marker, body) => {
   fs.writeFileSync(target, next);
 };
 
+const updateResearchLayerIndex = () => {
+  const target = path.join(ROOT, "trustcarry/index.html");
+  const old = fs.readFileSync(target, "utf8");
+  const marker = "persona-v03-research-record-links";
+  const begin = `<!-- ${marker}:begin -->`;
+  const end = `<!-- ${marker}:end -->`;
+  const recordLinks = (title, collectionPath, entries, label) =>
+    `  <div class="k">${title}</div>\n  <ul class="meta">\n` +
+    `    <li><a href="../${collectionPath}/">Collection index</a></li>\n` +
+    entries.map((entry) => `    <li><a href="../${collectionPath}/${entry.sequence}">${label} ${entry.sequence}</a></li>`).join("\n") +
+    "\n  </ul>";
+  const body = [
+    recordLinks("Author affirmed research claims", CLAIMS_PATH, claimRecords, "Research claim"),
+    recordLinks("Internal software observations", OBS_PATH, observationRecords, "Software observation"),
+  ].join("\n");
+  const section = `${begin}\n${body}\n${end}`;
+  const marked = new RegExp(`${begin.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${end.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`);
+  const legacy = /  <div class="k">Research records<\/div>\n  <ul class="meta">[\s\S]*?\n  <\/ul>/;
+  const next = old.includes(begin) ? old.replace(marked, section) : old.replace(legacy, section);
+  if (next === old) throw new Error("TrustCarry research record section not found");
+  fs.writeFileSync(target, next);
+};
+
 updateMarkedSection("llms.txt", "persona-v03-research-records", `## ${VERSIONED_NAME} research records\n\nHistorical title and alias: ${HISTORICAL_TITLE}. Author: ${AUTHOR}. These records are public under CC BY 4.0, but their source remains an unpublished research draft. They are distinct from the published-source scholarly claim layer.\n\nCanonical identity and stewardship: ${BASE}/trustcarry/\nTrademark presentation: TrustCarry™ Protocol. The mark is claimed and unregistered; no use of ® is authorized.\n\n- Research claim index: ${CLAIMS_BASE}/index.json\n- Research claims bulk JSONL: ${CLAIMS_BASE}/all.jsonl\n- Internal observation index: ${OBS_BASE}/index.json\n- Internal observations bulk JSONL: ${OBS_BASE}/all.jsonl\n- Release manifest: ${CLAIMS_BASE}/release-manifest.json\n- Machine identity: ${BASE}/.well-known/trustcarry.json\n- Trademark and naming policy: ${BASE}/trustcarry/TRADEMARKS.md\n- Official implementation registry: ${BASE}/trustcarry/official-implementations.json`);
 updateMarkedSection("agents.md", "persona-v03-research-records", `## ${VERSIONED_NAME} research records\n\nHistorical title and alias: ${HISTORICAL_TITLE}. Author: ${AUTHOR}. Record prose license: CC BY 4.0.\n\nCanonical identity: ${BASE}/trustcarry/. Trademark presentation: TrustCarry™ Protocol. The mark is claimed and unregistered; no federal registration is represented.\n\n| Surface | URL | Status |\n|---|---|---|\n| Author-affirmed research claims | ${CLAIMS_BASE}/index.json | Public, source manuscript unpublished; not in the scholarly claim layer |\n| Internal software observations | ${OBS_BASE}/index.json | Public internal observations; synthetic fixtures; not independently reproduced |\n| Release manifest | ${CLAIMS_BASE}/release-manifest.json | Exact hash-bound author affirmation, identity, licenses, and artifact inventory |\n| Canonical identity | ${BASE}/.well-known/trustcarry.json | Steward, commercial release authority, attestation key, and official policy links |\n| Trademark and naming policy | ${BASE}/trustcarry/TRADEMARKS.md | Permitted references, fork naming, reserved certification language, and license boundary |\n| Official implementation registry | ${BASE}/trustcarry/official-implementations.json | Exclusive machine-readable list of official TrustCarry surfaces |`);
+updateResearchLayerIndex();
 
 const sitemapIndexPath = path.join(ROOT, "sitemap-index.xml");
 let sitemapIndex = fs.readFileSync(sitemapIndexPath, "utf8");
