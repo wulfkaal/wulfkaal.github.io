@@ -247,10 +247,19 @@ def render_index_html(rows, total):
         for slug, n in rows)
     desc = (f"Every topic in the Kaal claim corpus, with its claim count. "
             f"{len(rows)} topics covering {total} topic-tagged claims.")
+    title = "Kaal claims by topic | Wulf A. Kaal Claims"
+    structured = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": f"{BASE}/claims/by-topic/index.html",
+        "name": title,
+        "description": desc,
+    }, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     return (
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        '<title>Kaal claims by topic | Wulf A. Kaal Claims</title>'
+        f'<title>{title}</title>'
+        f'<script type="application/ld+json">{structured}</script>'
         f'<meta name="description" content="{html.escape(desc)}">'
         '<link rel="stylesheet" href="../../style.css"></head><body><main>'
         '<h1>Kaal claims by topic</h1>'
