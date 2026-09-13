@@ -95,6 +95,15 @@ class ClaimTopicDiscoverabilityTests(unittest.TestCase):
             1,
         )
 
+    def test_topic_hub_is_reachable_from_root_within_two_hops(self):
+        target_url = "https://wulfkaal.github.io/claims/by-topic/index.html"
+        target = local_html_path(ROOT / "index.html", target_url)
+        reachable = reachable_html(ROOT / "index.html", 2)
+
+        self.assertEqual(target, ROOT / "claims" / "by-topic" / "index.html")
+        self.assertIn(target, reachable)
+        self.assertLessEqual(reachable[target], 2)
+
     def test_every_sitemap_claim_is_reachable_from_root_within_two_hops(self):
         sitemap = ET.parse(ROOT / "sitemap-claims.xml")
         advertised_claim_urls = [

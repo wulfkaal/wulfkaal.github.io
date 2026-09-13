@@ -46,6 +46,8 @@ BREADCRUMB_START = "<!-- claim-topic-breadcrumb:start -->"
 BREADCRUMB_END = "<!-- claim-topic-breadcrumb:end -->"
 OVERFLOW_START = "<!-- claim-topic-overflow:start -->"
 OVERFLOW_END = "<!-- claim-topic-overflow:end -->"
+TOPIC_HUB_START = "<!-- claim-topic-hub:start -->"
+TOPIC_HUB_END = "<!-- claim-topic-hub:end -->"
 CLAIM_LINKS_START = "<!-- sitemap-claim-links:start -->"
 CLAIM_LINKS_END = "<!-- sitemap-claim-links:end -->"
 
@@ -440,6 +442,27 @@ def expose_overflow_topic_pages(html_text, page_counts):
     return html_text.replace(marker, body + marker, 1), True
 
 
+def expose_topic_hub(html_text):
+    """Link the complete topic index from the primary claim discovery hub."""
+    body = (
+        f'{TOPIC_HUB_START}<p class="meta">'
+        '<a href="./by-topic/index.html">All claim topics</a>'
+        f'</p>{TOPIC_HUB_END}'
+    )
+    pattern = re.compile(
+        re.escape(TOPIC_HUB_START) + r".*?" + re.escape(TOPIC_HUB_END), re.S)
+    matches = pattern.findall(html_text)
+    if len(matches) > 1:
+        raise ValueError("claims/index.html contains duplicate topic hub links")
+    if matches:
+        updated = pattern.sub(body, html_text, count=1)
+        return updated, updated != html_text
+    marker = '<div class="k">Topics</div>'
+    if marker not in html_text:
+        raise ValueError("claims/index.html has no Topics heading")
+    return html_text.replace(marker, marker + body, 1), True
+
+
 def sitemap_claim_urls(repo):
     """Return each extensionless claim URL, after verifying its checked-in page."""
     root = ET.parse(repo / "sitemap-claims.xml").getroot()
@@ -590,6 +613,7 @@ def main():
     }
     try:
         fixed_html, entity_hub_changed = expose_entity_hub(fixed_html)
+        fixed_html, topic_hub_changed = expose_topic_hub(fixed_html)
         fixed_html, overflow_hub_changed = expose_overflow_topic_pages(
             fixed_html, page_counts)
         fixed_html, claim_roster_changed = expose_sitemap_claims(
@@ -640,6 +664,10 @@ def main():
             print("claims/index.html does not link the entity hub; "
                   "run tools/build_claim_topic_index.py", file=sys.stderr)
             return 1
+        if topic_hub_changed:
+            print("claims/index.html does not link the topic hub; "
+                  "run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
         if overflow_hub_changed:
             print("claims/index.html does not expose every overflow topic page; "
                   "run tools/build_claim_topic_index.py", file=sys.stderr)
@@ -663,7 +691,7 @@ def main():
         if path.read_text(encoding="utf-8") != body:
             path.write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
-    if (wrong_counts or entity_hub_changed or overflow_hub_changed
+    if (wrong_counts or entity_hub_changed or topic_hub_changed or overflow_hub_changed
             or claim_roster_changed):
         claims_html_path.write_text(fixed_html, encoding="utf-8")
         for slug, shown, real in wrong_counts:
