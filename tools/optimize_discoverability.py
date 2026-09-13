@@ -67,6 +67,16 @@ changed, skipped, missing = [], [], []
 AS = "https://kaal-answer-service.wulf577462.chatgpt.site"
 GH = "https://wulfkaal.github.io"
 GRAPH = GH + "/agentic-claim-graph/v1"
+SITEMAP_INPUTS = (
+    "sitemap.xml",
+    "sitemap-claims.xml",
+    "sitemap-colloquium.xml",
+    "sitemap-entities.xml",
+    "sitemap-positions.xml",
+    "sitemap-research-claims.xml",
+    "sitemap-research-observations.xml",
+    "sitemap-trustcarry.xml",
+)
 
 
 def note(kind, what):
@@ -105,6 +115,7 @@ DESCRIPTION_RE = re.compile(
     r'(<meta\s+name=["\']description["\']\s+content=)(["\'])(.*?)\2',
     re.IGNORECASE | re.DOTALL,
 )
+CANONICAL_TAG_RE = re.compile(r"<link\b[^>]*>", re.IGNORECASE)
 
 
 def parse_html_text(value):
@@ -117,16 +128,23 @@ def parse_html_text(value):
 def sitemap_html_pages(repo):
     pages = {}
     sitemap_index = ET.parse(repo / "sitemap-index.xml").getroot()
-    for node in sitemap_index.findall("sm:sitemap", NS):
-        sitemap_url = (node.findtext("sm:loc", namespaces=NS) or "").strip()
-        relative = relative_path(sitemap_url)
-        if relative is None:
-            raise RuntimeError("Non-local sitemap in sitemap-index.xml: %s" % sitemap_url)
+    sitemap_nodes = sitemap_index.findall("sm:sitemap", NS)
+    inventory = tuple(
+        relative_path((node.findtext("sm:loc", namespaces=NS) or "").strip())
+        for node in sitemap_nodes
+    )
+    if inventory != SITEMAP_INPUTS:
+        raise RuntimeError(
+            "sitemap-index.xml inventory differs from declared SITEMAP_INPUTS: %r" % (inventory,)
+        )
+    for relative in SITEMAP_INPUTS:
         sitemap = ET.parse(repo / relative).getroot()
         for loc in sitemap.findall("sm:url/sm:loc", NS):
             url = (loc.text or "").strip()
             choices = candidates_for(repo, url, html_only=True)
             if len(choices) == 1:
+                if url in pages:
+                    raise RuntimeError("Sitemap URL has multiple owners: %s" % url)
                 pages[url] = choices[0]
     return pages
 
@@ -152,6 +170,30 @@ def set_description(value, description):
     return value[:title_end] + '<meta name="description" content="%s">' % escaped + value[title_end:]
 
 
+def set_canonical(value, canonical):
+    parser = parse_html_text(value)
+    escaped = html.escape(canonical, quote=True)
+    if len(parser.canonicals) > 1:
+        raise RuntimeError("Cannot normalize page with multiple canonicals")
+    if len(parser.canonicals) == 1:
+        if parser.canonicals[0] == canonical:
+            return value
+        matches = []
+        for match in CANONICAL_TAG_RE.finditer(value):
+            candidate = parse_html_text(match.group(0))
+            if candidate.canonicals:
+                matches.append(match)
+        if len(matches) != 1:
+            raise RuntimeError("Cannot locate sole canonical tag")
+        match = matches[0]
+        return value[:match.start()] + '<link rel="canonical" href="%s">' % escaped + value[match.end():]
+    title_end = value.lower().find("</title>")
+    if title_end < 0:
+        raise RuntimeError("Cannot add canonical to page without title")
+    title_end += len("</title>")
+    return value[:title_end] + '<link rel="canonical" href="%s">' % escaped + value[title_end:]
+
+
 def add_json_ld(value, url, title, description):
     document = {
         "@context": "https://schema.org",
@@ -171,6 +213,18 @@ def add_json_ld(value, url, title, description):
 def project_html_metadata(repo):
     pages = sitemap_html_pages(repo)
     texts = {path: path.read_text(encoding="utf-8") for path in set(pages.values())}
+
+    urls_for_path = {}
+    for url, path in sorted(pages.items()):
+        if path in urls_for_path:
+            raise RuntimeError(
+                "HTML page is advertised by multiple sitemap URLs: %s and %s"
+                % (urls_for_path[path], url)
+            )
+        urls_for_path[path] = url
+
+    for path, value in sorted(texts.items()):
+        texts[path] = set_canonical(value, urls_for_path[path])
 
     for path, value in sorted(texts.items()):
         parser = parse_html_text(value)
@@ -201,14 +255,13 @@ def project_html_metadata(repo):
                 texts[path], "%s [%s]" % (parser.descriptions[0].strip(), identifier)
             )
 
-    url_for_path = {path: url for url, path in pages.items()}
     for path, value in sorted(texts.items()):
         parser = parse_html_text(value)
         if not parser.json_ld:
             if len(parser.titles) != 1 or len(parser.descriptions) != 1:
                 raise RuntimeError("Cannot source JSON-LD facts for %s" % path)
             texts[path] = add_json_ld(
-                value, url_for_path[path], parser.titles[0].strip(), parser.descriptions[0].strip()
+                value, urls_for_path[path], parser.titles[0].strip(), parser.descriptions[0].strip()
             )
 
     for path, wanted in sorted(texts.items()):

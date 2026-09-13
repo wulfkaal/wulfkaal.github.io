@@ -98,7 +98,9 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
         original = path.read_text(encoding="utf-8")
         for mutated, expected in (
             (original.replace('<link rel="canonical" href="https://wulfkaal.github.io/claims/one">', ""), "CANONICAL_COUNT"),
-            (original.replace("/claims/one\"", "/claims/wrong\""), "CANONICAL_SELF"),
+            (original.replace("/claims/one\"", "/claims/wrong\""), "CANONICAL_URL"),
+            # This alias resolves to the same file, but is not the sitemap URL.
+            (original.replace("/claims/one\"", "/claims/one.html\""), "CANONICAL_URL"),
             (original.replace("<link rel=\"stylesheet\"", '<link rel="canonical" href="https://wulfkaal.github.io/claims/one"><link rel="stylesheet"'), "CANONICAL_COUNT"),
         ):
             self.write("claims/one.html", mutated)
@@ -179,16 +181,16 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
         self.write("positions/one.html", page.replace("</body>", '<a href="/missing.json">x</a></body>'))
         self.assertIn("LOCAL_LINK", self.codes()[0])
 
-    def test_allowlists_are_exact_and_reason_tagged(self):
+    def test_canonical_failures_cannot_be_allowlisted(self):
         for exceptions in CHECKER.ALLOWLISTS.values():
             for digest, reason in exceptions.items():
                 self.assertRegex(digest, r"^[0-9a-f]{64}$")
                 self.assertTrue(reason.strip())
-        original = CHECKER.ALLOWLISTS["CANONICAL_COUNT"]
+        original = CHECKER.ALLOWLISTS.get("CANONICAL_COUNT")
         try:
-            detail = "claims/one.html: 0"
-            digest = CHECKER.exception_digest([detail])
-            CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = {digest: "fixture legacy exception"}
+            CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = {
+                "0" * 64: "attempted fixture exception"
+            }
             page = (self.root / "claims/one.html").read_text(encoding="utf-8")
             self.write(
                 "claims/one.html",
@@ -198,12 +200,12 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
                 ),
             )
             problems, _ = CHECKER.check(self.root)
-            self.assertFalse(any(p.startswith("CANONICAL_COUNT claims/one.html") for p in problems))
-            self.assertFalse(
-                CHECKER.pending_is_allowed("CANONICAL_COUNT", [detail, "entities/one.html: 0"])
-            )
+            self.assertTrue(any(p.startswith("CANONICAL_COUNT claims/one.html") for p in problems))
         finally:
-            CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = original
+            if original is None:
+                del CHECKER.ALLOWLISTS["CANONICAL_COUNT"]
+            else:
+                CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = original
 
     def test_ci_runs_mutation_suite_and_checker_in_both_validation_jobs(self):
         workflow = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(

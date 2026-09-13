@@ -3,7 +3,6 @@
 
 import argparse
 import collections
-import hashlib
 import html
 import html.parser
 import json
@@ -19,14 +18,7 @@ ORIGIN = urllib.parse.urlsplit(BASE).netloc
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 MAX_DEPTH = 4
 
-# Each digest binds the complete sorted exception set for one diagnostic code.
-# Adding or removing even one page invalidates the exception and fails closed.
-ALLOWLISTS = {
-    "CANONICAL_COUNT": {
-        "c78d8eda8bd2927ceae1cd3bf389801a086d120c71357935a30b1c4ebd02add7":
-            "legacy static families predate canonical projection; exact 61-page set",
-    },
-}
+ALLOWLISTS = {}
 
 
 class PageParser(html.parser.HTMLParser):
@@ -168,14 +160,6 @@ def parse_page(path, cache):
     return cache[path]
 
 
-def exception_digest(details):
-    return hashlib.sha256("\n".join(sorted(details)).encode("utf-8")).hexdigest()
-
-
-def pending_is_allowed(code, details):
-    return bool(details) and exception_digest(details) in ALLOWLISTS.get(code, {})
-
-
 def check(root):
     root = pathlib.Path(root).resolve()
     problems = set()
@@ -255,11 +239,11 @@ def check(root):
             problems.add(f"DEPTH {url}: {depth} > {MAX_DEPTH}")
 
         if len(parser.canonicals) != 1:
-            pending["CANONICAL_COUNT"].append(f"{relative}: {len(parser.canonicals)}")
-        else:
-            canonical_paths = candidates_for(root, parser.canonicals[0], html_only=True)
-            if len(canonical_paths) != 1 or canonical_paths[0] != page:
-                problems.add(f"CANONICAL_SELF {relative}: {parser.canonicals[0]}")
+            problems.add(f"CANONICAL_COUNT {relative}: {len(parser.canonicals)}")
+        elif parser.canonicals[0] != url:
+            problems.add(
+                f"CANONICAL_URL {relative}: {parser.canonicals[0]} != {url}"
+            )
 
         fields = (("title", parser.titles), ("description", parser.descriptions))
         for field, values in fields:
@@ -300,8 +284,7 @@ def check(root):
                 )
 
     for code, details in sorted(pending.items()):
-        if not pending_is_allowed(code, details):
-            problems.update(f"{code} {detail}" for detail in details)
+        problems.update(f"{code} {detail}" for detail in details)
     for code, exceptions in ALLOWLISTS.items():
         for digest, reason in exceptions.items():
             if len(digest) != 64 or any(character not in "0123456789abcdef" for character in digest):
