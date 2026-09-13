@@ -36,6 +36,7 @@ import json
 import pathlib
 import re
 import sys
+import xml.etree.ElementTree as ET
 
 BASE = "https://wulfkaal.github.io"
 SCHEMA = "kaal-claim-shard-index-v1"
@@ -45,6 +46,8 @@ BREADCRUMB_START = "<!-- claim-topic-breadcrumb:start -->"
 BREADCRUMB_END = "<!-- claim-topic-breadcrumb:end -->"
 OVERFLOW_START = "<!-- claim-topic-overflow:start -->"
 OVERFLOW_END = "<!-- claim-topic-overflow:end -->"
+CLAIM_LINKS_START = "<!-- sitemap-claim-links:start -->"
+CLAIM_LINKS_END = "<!-- sitemap-claim-links:end -->"
 
 
 SHARD_KEYS = {"topic", "count", "claims"}
@@ -437,6 +440,54 @@ def expose_overflow_topic_pages(html_text, page_counts):
     return html_text.replace(marker, body + marker, 1), True
 
 
+def sitemap_claim_urls(repo):
+    """Return each extensionless claim URL, after verifying its checked-in page."""
+    root = ET.parse(repo / "sitemap-claims.xml").getroot()
+    namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    pattern = re.compile(re.escape(BASE) + r"/claims/([^/.]+)$")
+    urls = []
+    seen = set()
+    for node in root.findall("sm:url/sm:loc", namespace):
+        url = node.text or ""
+        match = pattern.fullmatch(url)
+        if not match:
+            continue
+        if url in seen:
+            raise ValueError(f"sitemap-claims.xml advertises {url} more than once")
+        seen.add(url)
+        page = repo / "claims" / f"{match.group(1)}.html"
+        if not page.is_file():
+            raise ValueError(f"sitemap URL has no checked-in HTML page: {url}")
+        urls.append(url)
+    return urls
+
+
+def expose_sitemap_claims(html_text, urls):
+    """Directly enumerate all sitemap-backed claims from the primary claim hub."""
+    links = "".join(
+        f'<li><a href="./{html.escape(url.rsplit("/", 1)[1])}">'
+        f'{html.escape(url.rsplit("/", 1)[1])}</a></li>'
+        for url in urls
+    )
+    body = (
+        f'{CLAIM_LINKS_START}<nav aria-label="All sitemap claim pages">'
+        '<div class="k">All claim pages</div><ol class="meta">'
+        + links + f'</ol></nav>{CLAIM_LINKS_END}'
+    )
+    pattern = re.compile(
+        re.escape(CLAIM_LINKS_START) + r".*?" + re.escape(CLAIM_LINKS_END), re.S)
+    matches = pattern.findall(html_text)
+    if len(matches) > 1:
+        raise ValueError("claims/index.html contains duplicate sitemap claim rosters")
+    if matches:
+        updated = pattern.sub(body, html_text, count=1)
+        return updated, updated != html_text
+    marker = "<footer>"
+    if marker not in html_text:
+        raise ValueError("claims/index.html has no footer before which to add claim links")
+    return html_text.replace(marker, body + marker, 1), True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true",
@@ -479,6 +530,23 @@ def main():
               f"e.g. {stray[0]!r}; the url template would be wrong", file=sys.stderr)
         return 1
     sample_id = sorted(all_ids)[0]
+
+    try:
+        advertised_claim_urls = sitemap_claim_urls(repo)
+    except (OSError, ValueError, ET.ParseError) as exc:
+        print(f"cannot enumerate sitemap claim pages: {exc}", file=sys.stderr)
+        return 1
+    record_urls = {record["url"] for record in records}
+    advertised_urls = set(advertised_claim_urls)
+    if advertised_urls != record_urls:
+        missing = sorted(record_urls - advertised_urls)
+        extra = sorted(advertised_urls - record_urls)
+        print(
+            "sitemap claim ownership disagrees with claims/index.json: "
+            f"{len(missing)} missing and {len(extra)} extra",
+            file=sys.stderr,
+        )
+        return 1
 
     wanted = json.dumps(build(shards, sample_id), ensure_ascii=False, indent=2) + "\n"
 
@@ -524,6 +592,8 @@ def main():
         fixed_html, entity_hub_changed = expose_entity_hub(fixed_html)
         fixed_html, overflow_hub_changed = expose_overflow_topic_pages(
             fixed_html, page_counts)
+        fixed_html, claim_roster_changed = expose_sitemap_claims(
+            fixed_html, advertised_claim_urls)
     except ValueError as exc:
         print(str(exc), file=sys.stderr)
         return 1
@@ -574,6 +644,10 @@ def main():
             print("claims/index.html does not expose every overflow topic page; "
                   "run tools/build_claim_topic_index.py", file=sys.stderr)
             return 1
+        if claim_roster_changed:
+            print("claims/index.html does not enumerate every sitemap claim; "
+                  "run tools/build_claim_topic_index.py", file=sys.stderr)
+            return 1
         print(f"claim topic index current: {len(shards)} shards, "
               f"{sum(len(i) for _, i in shards.values())} tags, "
               f"{len(html_pages)} human pages, {len(claim_pages)} claim breadcrumbs, "
@@ -589,7 +663,8 @@ def main():
         if path.read_text(encoding="utf-8") != body:
             path.write_text(body, encoding="utf-8")
     index_path.write_text(wanted, encoding="utf-8")
-    if wrong_counts or entity_hub_changed or overflow_hub_changed:
+    if (wrong_counts or entity_hub_changed or overflow_hub_changed
+            or claim_roster_changed):
         claims_html_path.write_text(fixed_html, encoding="utf-8")
         for slug, shown, real in wrong_counts:
             print(f"  claims/index.html {slug}: {shown} -> {real}")

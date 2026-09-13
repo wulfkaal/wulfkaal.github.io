@@ -17,6 +17,12 @@ SPEC = importlib.util.spec_from_file_location("claim_topic_builder", SCRIPT)
 BUILDER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(BUILDER)
 
+SITEMAP_SPEC = importlib.util.spec_from_file_location(
+    "sitemap_ownership", ROOT / "tools" / "check_sitemap_uniqueness.py"
+)
+SITEMAPS = importlib.util.module_from_spec(SITEMAP_SPEC)
+SITEMAP_SPEC.loader.exec_module(SITEMAPS)
+
 
 class LinkParser(html.parser.HTMLParser):
     def __init__(self):
@@ -89,37 +95,64 @@ class ClaimTopicDiscoverabilityTests(unittest.TestCase):
             1,
         )
 
-    def test_every_sitemap_claim_is_reachable_from_root_within_three_hops(self):
+    def test_every_sitemap_claim_is_reachable_from_root_within_two_hops(self):
         sitemap = ET.parse(ROOT / "sitemap-claims.xml")
-        claim_urls = {
+        advertised_claim_urls = [
             element.text
             for element in sitemap.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/"
                                             "{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
-            if element.text and re.fullmatch(
-                r"https://wulfkaal\.github\.io/claims/[^/.]+", element.text
+            if element.text and (
+                element.text == "https://wulfkaal.github.io/claims/index.html"
+                or re.fullmatch(
+                    r"https://wulfkaal\.github\.io/claims/[^/.]+", element.text
+                )
             )
-        }
+        ]
+        claim_urls = set(advertised_claim_urls)
         # Match the compounding-plan mapping: an extensionless public URL resolves
         # to its checked-in .html twin, while directory URLs resolve to index.html.
         # Starting at the site root makes this an actual click-depth assertion rather
         # than measuring from a claim-specific entry point.
-        reachable = reachable_html(ROOT / "index.html", 3)
-        reached_urls = {
-            "https://wulfkaal.github.io/" + page.relative_to(ROOT).with_suffix("").as_posix()
-            for page in reachable
-        }
+        reachable = reachable_html(ROOT / "index.html", 2)
 
         self.assertTrue(claim_urls)
-        missing = sorted(claim_urls - reached_urls)
-        self.assertFalse(
-            missing,
-            f"{len(missing)} sitemap claim(s) are unreachable, e.g. {missing[:5]}",
+        self.assertEqual(len(advertised_claim_urls), len(claim_urls))
+        ownership_problems, owners = SITEMAPS.check(ROOT)
+        self.assertEqual(ownership_problems, [])
+        self.assertTrue(all(owners[url] == ["sitemap-claims.xml"] for url in claim_urls))
+        unresolved = sorted(
+            url for url in claim_urls
+            if local_html_path(ROOT / "index.html", url) is None
         )
+        self.assertEqual(unresolved, [])
+        claim_pages = {
+            url: local_html_path(ROOT / "index.html", url) for url in claim_urls
+        }
+        missing = sorted(url for url, page in claim_pages.items() if page not in reachable)
+        if missing:
+            self.fail(
+                f"{len(missing)} sitemap claim(s) are unreachable, e.g. {missing[:5]}"
+            )
         self.assertLessEqual(
-            max(reachable[ROOT / (urllib.parse.urlsplit(url).path.lstrip("/") + ".html")]
-                for url in claim_urls),
-            3,
+            max(reachable[page] for page in claim_pages.values()),
+            2,
         )
+
+    def test_claim_hub_enumerates_sitemap_claims_idempotently(self):
+        source = "<html><body><main><footer>End</footer></main></body></html>"
+        urls = [
+            "https://wulfkaal.github.io/claims/1-001",
+            "https://wulfkaal.github.io/claims/1-002",
+        ]
+
+        once, changed = BUILDER.expose_sitemap_claims(source, urls)
+        twice, changed_again = BUILDER.expose_sitemap_claims(once, urls)
+
+        self.assertTrue(changed)
+        self.assertFalse(changed_again)
+        self.assertEqual(once, twice)
+        self.assertIn('<a href="./1-001">1-001</a>', once)
+        self.assertIn('<a href="./1-002">1-002</a>', once)
 
     def test_load_shards_rejects_mislabelled_and_extended_records(self):
         with tempfile.TemporaryDirectory() as temp:
