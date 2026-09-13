@@ -207,9 +207,15 @@ class SitemapIntegrityTests(unittest.TestCase):
         self.assertEqual(missing, [dropped])
 
     def test_every_eligible_url_has_authoritative_lastmod(self):
-        problems, count = MERGE.check_lastmods(ROOT)
-        self.assertEqual(problems, [])
+        rendered, count = MERGE.rendered_lastmod_sitemaps(ROOT)
         self.assertEqual(count, 7921)
+        for sitemap_name, expected in rendered.items():
+            with self.subTest(sitemap=sitemap_name):
+                self.assertEqual(
+                    (ROOT / sitemap_name).read_text(encoding="utf-8"),
+                    expected,
+                    f"{sitemap_name} has missing or stale URL-level lastmod values",
+                )
 
     def test_git_content_date_is_stable_and_ignores_filesystem_mtime(self):
         with tempfile.TemporaryDirectory() as temp:
