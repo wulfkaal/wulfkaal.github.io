@@ -23,8 +23,8 @@ MAX_DEPTH = 4
 # Adding or removing even one page invalidates the exception and fails closed.
 ALLOWLISTS = {
     "CANONICAL_COUNT": {
-        "9522fb86ddc0127ba1bd3d42e428e60dbb9d5f2551d4e17a13de115fd7bbe062":
-            "legacy static families predate canonical projection; exact 62-page set",
+        "c78d8eda8bd2927ceae1cd3bf389801a086d120c71357935a30b1c4ebd02add7":
+            "legacy static families predate canonical projection; exact 61-page set",
     },
 }
 
