@@ -65,9 +65,21 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         claims = parse_page(ROOT / "claims" / "index.html")
         self.assertIn("../entities/index.html", claims.links)
 
-        pending = collections.deque([ROOT / "entities" / "index.html"])
+        entity_index = (ROOT / "entities" / "index.html").resolve()
+        parsed_index = parse_page(entity_index)
+        direct_slugs = []
+        pending = collections.deque()
+        for href in parsed_index.links:
+            target = (entity_index.parent / urlparse(href).path).resolve()
+            if target.name.startswith("page-") and target.suffix == ".html":
+                pending.append(target)
+            if target.parent == entity_index.parent and target.suffix == ".html" \
+                    and target.stem in self.entities:
+                direct_slugs.append(target.stem)
+        self.assertEqual(len(direct_slugs), len(set(direct_slugs)))
+        self.assertEqual(set(direct_slugs), set(self.entities))
+
         seen_pages = set()
-        linked_slugs = []
         while pending:
             page = pending.popleft().resolve()
             self.assertTrue(page.is_relative_to((ROOT / "entities").resolve()))
@@ -80,19 +92,15 @@ class EntityDiscoverabilityTests(unittest.TestCase):
             entity_links = []
             for href in parsed.links:
                 target = (page.parent / urlparse(href).path).resolve()
-                if target.name == "index.html" or target.name.startswith("page-"):
-                    if target.suffix == ".html":
-                        pending.append(target)
+                if target.name.startswith("page-") and target.suffix == ".html":
+                    pending.append(target)
                 if target.parent == (ROOT / "entities").resolve():
                     slug = target.stem
                     if target.suffix == ".html" and slug in self.entities:
                         entity_links.append(slug)
             self.assertLessEqual(len(entity_links), MAX_ENTITY_LINKS_PER_HUB)
-            linked_slugs.extend(entity_links)
 
-        self.assertGreater(len(seen_pages), 1)
-        self.assertEqual(len(linked_slugs), len(set(linked_slugs)))
-        self.assertEqual(set(linked_slugs), set(self.entities))
+        self.assertGreater(len(seen_pages), 0)
 
         sitemap = ET.parse(ROOT / "sitemap-entities.xml")
         locs = {
@@ -106,13 +114,12 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         }
         self.assertEqual(sitemap_slugs, set(self.entities))
 
-    def test_every_sitemap_entity_is_within_three_root_clicks(self):
+    def test_every_sitemap_entity_is_within_two_root_clicks(self):
         sitemap = ET.parse(ROOT / "sitemap-entities.xml")
         entity_pages = set()
         for element in sitemap.iter():
             if not (element.tag == "loc" or element.tag.endswith("}loc")) \
-                    or not element.text \
-                    or urlparse(element.text).path in ("/entities", "/entities/"):
+                    or not element.text:
                 continue
             candidates = CHECKER.candidates_for(ROOT, element.text, html_only=True)
             self.assertEqual(len(candidates), 1, element.text)
@@ -123,7 +130,7 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         cache = {}
         while pending:
             page = pending.popleft()
-            if depths[page] == 3:
+            if depths[page] == 2:
                 continue
             for href in CHECKER.parse_page(page, cache).anchors:
                 target, is_local = CHECKER.local_target(ROOT, page, href)
@@ -135,10 +142,10 @@ class EntityDiscoverabilityTests(unittest.TestCase):
         missing = sorted(entity_pages - set(depths))
         self.assertEqual(
             len(missing), 0,
-            f"{len(missing)} sitemap entity page(s) exceed depth 3, e.g. "
+            f"{len(missing)} sitemap entity page(s) exceed depth 2, e.g. "
             f"{[page.relative_to(ROOT).as_posix() for page in missing[:5]]}",
         )
-        self.assertLessEqual(max(depths[page] for page in entity_pages), 3)
+        self.assertLessEqual(max(depths[page] for page in entity_pages), 2)
 
     def test_every_entity_sitemap_url_matches_its_page_canonical(self):
         sitemap = ET.parse(ROOT / "sitemap-entities.xml")

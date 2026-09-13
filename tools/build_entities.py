@@ -595,12 +595,13 @@ def render_html(slug, node, entity_record):
 
 
 def render_hub_pages(index_nodes, index, claim_count, singleton_count):
-    """Return bounded HTML pages that enumerate every entity exactly once."""
+    """Return a complete index plus bounded paginated entity views."""
     page_count = (len(index_nodes) + HUB_PAGE_SIZE - 1) // HUB_PAGE_SIZE
     pages = {}
     for page_number in range(1, page_count + 1):
         start = (page_number - 1) * HUB_PAGE_SIZE
-        chunk = index_nodes[start:start + HUB_PAGE_SIZE]
+        chunk = (index_nodes if page_number == 1
+                 else index_nodes[start:start + HUB_PAGE_SIZE])
         rows = []
         for node in chunk:
             badge = ("<b>adjudicated</b>" if node["status"] == "adjudicated"
@@ -618,10 +619,25 @@ def render_hub_pages(index_nodes, index, claim_count, singleton_count):
             f'<link rel="canonical" href="{BASE}/entities/">'
             if page_number == 1 else ""
         )
+        metadata = ""
+        if page_number == 1:
+            description = index["description"]
+            schema = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "url": f"{BASE}/entities/",
+                "name": "Entity index, Kaal corpus",
+                "description": description,
+            }, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+            metadata = (
+                f'<script type="application/ld+json">{schema}</script>'
+                f'<meta name="description" content="{html.escape(description, quote=True)}">'
+            )
         pages[filename] = (
             '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Entity index, Kaal corpus</title>'
+            f'{metadata}'
             f'{canonical}'
             '<link rel="stylesheet" href="../style.css"></head><body><main>'
             '<nav aria-label="Breadcrumb"><a href="../">Home</a> &middot; '
