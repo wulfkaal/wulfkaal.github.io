@@ -257,17 +257,17 @@ const obsIndex = {
   })),
 };
 
-const renderIndex = (title, warning, entries, field) => "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">" +
-  `<title>${esc(title)}</title><link rel=\"stylesheet\" href=\"../../../style.css\"></head><body><main><h1>${esc(title)}</h1><div class=\"warn\">${esc(warning)}</div>` +
+const renderIndex = (title, warning, entries, field, canonicalUrl) => "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">" +
+  `<title>${esc(title)}</title><link rel=\"canonical\" href=\"${esc(canonicalUrl)}\"><link rel=\"stylesheet\" href=\"../../../style.css\"></head><body><main><h1>${esc(title)}</h1><div class=\"warn\">${esc(warning)}</div>` +
   `<ol class=\"meta\">${entries.map((entry) => `<li><a href=\"./${entry.sequence}.html\">${esc(entry.record[field])}</a></li>`).join("")}</ol>` +
   "<div class=\"k\">Machine access</div><ul class=\"meta\"><li><a href=\"./index.json\">JSON index</a></li><li><a href=\"./all.jsonl\">Bulk JSONL</a></li><li><a href=\"./release-manifest.json\">Release manifest</a></li></ul></main></body></html>\n";
 
 artifacts.push(write(`${CLAIMS_PATH}/index.json`, JSON.stringify(claimsIndex, null, 2) + "\n"));
 artifacts.push(write(`${CLAIMS_PATH}/all.jsonl`, claimRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
-artifacts.push(write(`${CLAIMS_PATH}/index.html`, renderIndex(claimsIndex.name, claimsIndex.description, claimRecords, "text")));
+artifacts.push(write(`${CLAIMS_PATH}/index.html`, renderIndex(claimsIndex.name, claimsIndex.description, claimRecords, "text", claimsIndex.canonical_url)));
 artifacts.push(write(`${OBS_PATH}/index.json`, JSON.stringify(obsIndex, null, 2) + "\n"));
 artifacts.push(write(`${OBS_PATH}/all.jsonl`, observationRecords.map(({ record }) => JSON.stringify(record)).join("\n") + "\n"));
-artifacts.push(write(`${OBS_PATH}/index.html`, renderIndex(obsIndex.name, obsIndex.description, observationRecords, "text")));
+artifacts.push(write(`${OBS_PATH}/index.html`, renderIndex(obsIndex.name, obsIndex.description, observationRecords, "text", obsIndex.canonical_url)));
 
 const claimSchema = {
   "$schema": "https://json-schema.org/draft/2020-12/schema",

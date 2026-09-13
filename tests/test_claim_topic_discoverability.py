@@ -79,6 +79,16 @@ def reachable_html(start, maximum_depth):
 
 
 class ClaimTopicDiscoverabilityTests(unittest.TestCase):
+    def test_topic_hub_generator_uses_its_sitemap_canonical(self):
+        page = BUILDER.render_index_html([("example", 1)], 1)
+        self.assertEqual(
+            page.count(
+                '<link rel="canonical" '
+                'href="https://wulfkaal.github.io/claims/by-topic/index.html">'
+            ),
+            1,
+        )
+
     def test_every_sitemap_claim_is_reachable_from_root_within_three_hops(self):
         sitemap = ET.parse(ROOT / "sitemap-claims.xml")
         claim_urls = {

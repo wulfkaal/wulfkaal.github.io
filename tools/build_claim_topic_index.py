@@ -259,6 +259,7 @@ def render_index_html(rows, total):
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<title>{title}</title>'
+        f'<link rel="canonical" href="{BASE}/claims/by-topic/index.html">'
         f'<script type="application/ld+json">{structured}</script>'
         f'<meta name="description" content="{html.escape(desc)}">'
         '<link rel="stylesheet" href="../../style.css"></head><body><main>'
