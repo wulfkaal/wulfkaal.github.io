@@ -96,6 +96,15 @@ def git_content_dates(repo: Path, paths: set[Path]) -> dict[Path, str]:
     are rejected because their current bytes have no committed content date yet.
     Filesystem timestamps are never consulted.
     """
+    shallow_result = _git(repo, ["rev-parse", "--is-shallow-repository"])
+    if shallow_result.returncode:
+        raise ValueError(shallow_result.stderr.strip() or "git rev-parse failed")
+    if shallow_result.stdout.strip() == "true":
+        raise ValueError(
+            "shallow git history cannot provide authoritative content dates; "
+            "configure actions/checkout with fetch-depth: 0"
+        )
+
     wanted = {path.as_posix() for path in paths}
     tracked_result = _git(repo, ["ls-files", "-z"])
     if tracked_result.returncode:

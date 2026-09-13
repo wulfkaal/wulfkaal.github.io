@@ -45,6 +45,37 @@ def missing_required_human_urls(sitemap_text, required):
 
 
 class SitemapIntegrityTests(unittest.TestCase):
+    def test_projections_checkout_fetches_full_history(self):
+        lines = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(
+            encoding="utf-8"
+        ).splitlines()
+        projections_start = lines.index("  projections:")
+        projections_end = next(
+            index
+            for index in range(projections_start + 1, len(lines))
+            if lines[index].startswith("  ")
+            and not lines[index].startswith("    ")
+            and lines[index].endswith(":")
+        )
+        projection_lines = lines[projections_start:projections_end]
+        checkout_indexes = [
+            index
+            for index, line in enumerate(projection_lines)
+            if line.strip().startswith("- uses: actions/checkout")
+        ]
+        self.assertGreater(len(checkout_indexes), 0)
+        for index in checkout_indexes:
+            step_end = next(
+                (
+                    candidate
+                    for candidate in range(index + 1, len(projection_lines))
+                    if projection_lines[candidate].startswith("      - ")
+                ),
+                len(projection_lines),
+            )
+            step = projection_lines[index:step_end]
+            self.assertIn("          fetch-depth: 0", step)
+
     def test_claim_hub_canonical_matches_its_sitemap_url(self):
         self.assertEqual(CLAIMS.CLAIMS_HUB_URL, f"{BASE}/claims/index.html")
 
@@ -259,6 +290,39 @@ class SitemapIntegrityTests(unittest.TestCase):
             source.write_text("dirty\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "uncommitted content"):
                 MERGE.git_content_date(repo, Path("source.html"))
+
+    def test_git_content_date_rejects_shallow_history(self):
+        with tempfile.TemporaryDirectory() as temp:
+            source_repo = Path(temp) / "source"
+            shallow_repo = Path(temp) / "shallow"
+            source_repo.mkdir()
+            subprocess.run(["git", "init", "-q"], cwd=source_repo, check=True)
+            subprocess.run(
+                ["git", "config", "user.name", "Fixture"],
+                cwd=source_repo,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "config", "user.email", "fixture@example.test"],
+                cwd=source_repo,
+                check=True,
+            )
+            source = source_repo / "source.html"
+            source.write_text("first\n", encoding="utf-8")
+            subprocess.run(["git", "add", "source.html"], cwd=source_repo, check=True)
+            subprocess.run(["git", "commit", "-qm", "first"], cwd=source_repo, check=True)
+            source.write_text("second\n", encoding="utf-8")
+            subprocess.run(["git", "commit", "-qam", "second"], cwd=source_repo, check=True)
+            subprocess.run(
+                [
+                    "git", "clone", "-q", "--depth", "1",
+                    source_repo.as_uri(), str(shallow_repo),
+                ],
+                check=True,
+            )
+
+            with self.assertRaisesRegex(ValueError, "fetch-depth: 0"):
+                MERGE.git_content_date(shallow_repo, Path("source.html"))
 
     def test_lastmod_generator_rejects_clock_and_mtime_sources(self):
         source = (ROOT / "tools" / "merge_sitemap.py").read_text(encoding="utf-8")
