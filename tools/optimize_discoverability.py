@@ -51,10 +51,17 @@ patch, and it deserves its own commit with its own message. The audit report
 covers it.
 """
 
+import html
 import json
+import pathlib
+import re
 import sys
+import xml.etree.ElementTree as ET
 
-DRY = "--dry-run" in sys.argv
+from check_html_discoverability import NS, PageParser, candidates_for, normalized_text, relative_path
+
+CHECK = "--check" in sys.argv
+DRY = "--dry-run" in sys.argv or CHECK
 changed, skipped, missing = [], [], []
 
 AS = "https://kaal-answer-service.wulf577462.chatgpt.site"
@@ -90,6 +97,130 @@ def read_text(path):
 def write_text(path, s):
     if not DRY:
         open(path, "w", encoding="utf-8").write(s)
+
+
+# ------------------------------------------------ sitemap-backed HTML metadata
+
+DESCRIPTION_RE = re.compile(
+    r'(<meta\s+name=["\']description["\']\s+content=)(["\'])(.*?)\2',
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def parse_html_text(value):
+    parser = PageParser()
+    parser.feed(value)
+    parser.close()
+    return parser
+
+
+def sitemap_html_pages(repo):
+    pages = {}
+    sitemap_index = ET.parse(repo / "sitemap-index.xml").getroot()
+    for node in sitemap_index.findall("sm:sitemap", NS):
+        sitemap_url = (node.findtext("sm:loc", namespaces=NS) or "").strip()
+        relative = relative_path(sitemap_url)
+        if relative is None:
+            raise RuntimeError("Non-local sitemap in sitemap-index.xml: %s" % sitemap_url)
+        sitemap = ET.parse(repo / relative).getroot()
+        for loc in sitemap.findall("sm:url/sm:loc", NS):
+            url = (loc.text or "").strip()
+            choices = candidates_for(repo, url, html_only=True)
+            if len(choices) == 1:
+                pages[url] = choices[0]
+    return pages
+
+
+def source_record(path):
+    if path.name == "index.html":
+        record_path = path.with_name("index.json")
+    else:
+        record_path = path.with_suffix(".json")
+    if not record_path.is_file():
+        return None
+    return json.loads(record_path.read_text(encoding="utf-8"))
+
+
+def set_description(value, description):
+    escaped = html.escape(description, quote=True)
+    if DESCRIPTION_RE.search(value):
+        return DESCRIPTION_RE.sub(lambda match: match.group(1) + match.group(2) + escaped + match.group(2), value, count=1)
+    title_end = value.lower().find("</title>")
+    if title_end < 0:
+        raise RuntimeError("Cannot add description to page without title")
+    title_end += len("</title>")
+    return value[:title_end] + '<meta name="description" content="%s">' % escaped + value[title_end:]
+
+
+def add_json_ld(value, url, title, description):
+    document = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": url,
+        "name": title,
+        "description": description,
+    }
+    encoded = json.dumps(document, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    title_end = value.lower().find("</title>")
+    if title_end < 0:
+        raise RuntimeError("Cannot add JSON-LD to page without title")
+    title_end += len("</title>")
+    return value[:title_end] + '<script type="application/ld+json">%s</script>' % encoded + value[title_end:]
+
+
+def project_html_metadata(repo):
+    pages = sitemap_html_pages(repo)
+    texts = {path: path.read_text(encoding="utf-8") for path in set(pages.values())}
+
+    for path, value in sorted(texts.items()):
+        parser = parse_html_text(value)
+        if len(parser.descriptions) == 1 and normalized_text(parser.descriptions[0]):
+            continue
+        record = source_record(path)
+        description = record.get("description", "").strip() if isinstance(record, dict) else ""
+        if not description:
+            raise RuntimeError("No source-record description for %s" % path)
+        texts[path] = set_description(value, description)
+
+    descriptions = {}
+    for url, path in sorted(pages.items()):
+        parser = parse_html_text(texts[path])
+        if len(parser.descriptions) != 1:
+            raise RuntimeError("Expected one description for %s" % path)
+        descriptions.setdefault(parser.descriptions[0].strip(), []).append((url, path))
+    for group in descriptions.values():
+        if len(group) < 2:
+            continue
+        for _url, path in group:
+            parser = parse_html_text(texts[path])
+            record = source_record(path)
+            identifier = record.get("identifier", "").strip() if isinstance(record, dict) else ""
+            if not identifier:
+                raise RuntimeError("No source-record identifier for duplicate description in %s" % path)
+            texts[path] = set_description(
+                texts[path], "%s [%s]" % (parser.descriptions[0].strip(), identifier)
+            )
+
+    url_for_path = {path: url for url, path in pages.items()}
+    for path, value in sorted(texts.items()):
+        parser = parse_html_text(value)
+        if not parser.json_ld:
+            if len(parser.titles) != 1 or len(parser.descriptions) != 1:
+                raise RuntimeError("Cannot source JSON-LD facts for %s" % path)
+            texts[path] = add_json_ld(
+                value, url_for_path[path], parser.titles[0].strip(), parser.descriptions[0].strip()
+            )
+
+    for path, wanted in sorted(texts.items()):
+        current = path.read_text(encoding="utf-8")
+        relative = path.relative_to(repo).as_posix()
+        if current == wanted:
+            continue
+        write_text(str(path), wanted)
+        note("c", "%s: projected sitemap HTML metadata" % relative)
+
+
+project_html_metadata(pathlib.Path(".").resolve())
 
 
 # ---------------------------------------------------------------- agent cards
@@ -357,14 +488,19 @@ if plug is not None:
 
 # ---------------------------------------------------------------- ai-catalog.json
 
+_claim_index = read_json("claims/index.json")
+_scholarly_claim_count = _claim_index.get("count") if _claim_index else None
+if not isinstance(_scholarly_claim_count, int):
+    raise RuntimeError("claims/index.json has no integer count")
+
 CATALOG = {
     "catalogVersion": "0.9",
     "name": "Wulf A. Kaal Agent Resources",
     "description": (
-        "First-party machine resources for attributable scholarship: the 5,145-claim "
+        "First-party machine resources for attributable scholarship: the %s-claim "
         "scholarly layer, the Agent Failure Mode Registry, the agentic claim graph, and "
         "source-bound claim retrieval."
-    ),
+    ) % f"{_scholarly_claim_count:,}",
     "provider": {
         "name": "Wulf A. Kaal",
         "orcid": "0009-0008-7840-1847",
@@ -505,3 +641,6 @@ if "--check-urls" in sys.argv:
         print("        advertised in: %s" % ", ".join(where))
     print("\n  Note: POST-only endpoints answer 400 to a GET and SSRN answers 403 to")
     print("  automated clients. Both are expected. A 404 is not.")
+
+if CHECK and (changed or missing):
+    raise SystemExit(1)

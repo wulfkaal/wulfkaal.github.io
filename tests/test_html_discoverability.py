@@ -105,23 +105,45 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
             self.assertIn(expected, self.codes()[0])
         self.write("claims/one.html", original)
 
-    def test_metadata_mutations_fail(self):
+    def test_every_sitemap_backed_page_requires_nonempty_description(self):
+        for path in (
+            "index.html", "claims/one.html", "entities/one.html",
+            "claims/by-topic/one.html", "positions/one.html",
+        ):
+            with self.subTest(path=path):
+                original = (self.root / path).read_text(encoding="utf-8")
+                parser = CHECKER.PageParser()
+                parser.feed(original)
+                self.write(path, original.replace(parser.descriptions[0], "", 1))
+                self.assertIn("METADATA_DESCRIPTION", self.codes()[0])
+                self.write(path, original)
+
+    def test_description_and_title_duplicates_fail(self):
         entity = self.root / "entities/one.html"
         original = entity.read_text(encoding="utf-8")
-        self.write("entities/one.html", original.replace("Entity description", ""))
-        self.assertIn("METADATA_DESCRIPTION", self.codes()[0])
         claim = (self.root / "claims/one.html").read_text(encoding="utf-8")
         self.write("entities/one.html", original.replace("Entity one", "Claim one"))
         self.write("claims/one.html", claim)
         self.assertIn("METADATA_DUPLICATE_TITLE", self.codes()[0])
 
-    def test_each_generated_family_requires_valid_json_ld(self):
+        self.write("entities/one.html", original.replace("Entity description", "Claim description"))
+        self.assertIn("METADATA_DUPLICATE_DESCRIPTION", self.codes()[0])
+
+    def test_every_sitemap_backed_page_requires_valid_json_ld(self):
         paths = (
-            "claims/one.html", "entities/one.html", "claims/by-topic/one.html", "positions/one.html"
+            "index.html", "claims/one.html", "entities/one.html",
+            "claims/by-topic/one.html", "positions/one.html",
         )
         for path in paths:
             with self.subTest(path=path):
                 original = (self.root / path).read_text(encoding="utf-8")
+                self.write(
+                    path,
+                    original.replace(
+                        '<script type="application/ld+json">{"@type":"Thing"}</script>', ""
+                    ),
+                )
+                self.assertIn("JSON_LD", self.codes()[0])
                 self.write(path, original.replace('{"@type":"Thing"}', "{"))
                 self.assertIn("JSON_LD", self.codes()[0])
                 self.write(path, original)
@@ -162,21 +184,26 @@ class HtmlDiscoverabilityTests(unittest.TestCase):
             for digest, reason in exceptions.items():
                 self.assertRegex(digest, r"^[0-9a-f]{64}$")
                 self.assertTrue(reason.strip())
-        original = CHECKER.ALLOWLISTS["JSON_LD"]
+        original = CHECKER.ALLOWLISTS["CANONICAL_COUNT"]
         try:
-            detail = "claims/one.html: missing for claim"
+            detail = "claims/one.html: 0"
             digest = CHECKER.exception_digest([detail])
-            CHECKER.ALLOWLISTS["JSON_LD"] = {digest: "fixture legacy exception"}
+            CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = {digest: "fixture legacy exception"}
             page = (self.root / "claims/one.html").read_text(encoding="utf-8")
             self.write(
                 "claims/one.html",
-                page.replace('<script type="application/ld+json">{"@type":"Thing"}</script>', ""),
+                page.replace(
+                    '<link rel="canonical" href="https://wulfkaal.github.io/claims/one">',
+                    "",
+                ),
             )
             problems, _ = CHECKER.check(self.root)
-            self.assertFalse(any(p.startswith("JSON_LD claims/one.html") for p in problems))
-            self.assertFalse(CHECKER.pending_is_allowed("JSON_LD", [detail, "entities/one.html: missing for entity"]))
+            self.assertFalse(any(p.startswith("CANONICAL_COUNT claims/one.html") for p in problems))
+            self.assertFalse(
+                CHECKER.pending_is_allowed("CANONICAL_COUNT", [detail, "entities/one.html: 0"])
+            )
         finally:
-            CHECKER.ALLOWLISTS["JSON_LD"] = original
+            CHECKER.ALLOWLISTS["CANONICAL_COUNT"] = original
 
     def test_ci_runs_mutation_suite_and_checker_in_both_validation_jobs(self):
         workflow = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(

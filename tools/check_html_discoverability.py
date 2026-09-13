@@ -26,18 +26,6 @@ ALLOWLISTS = {
         "9522fb86ddc0127ba1bd3d42e428e60dbb9d5f2551d4e17a13de115fd7bbe062":
             "legacy static families predate canonical projection; exact 62-page set",
     },
-    "JSON_LD": {
-        "0c342efa5d0b2cc3878280bcbc268c074a98f36926c9b66abd4e72b9ed5853b3":
-            "legacy topic index predates structured-data projection; exact one-page set",
-    },
-    "METADATA_DESCRIPTION": {
-        "eddc56f4b1f5c7a6f92eadc018a241891d05ad7a07be3b9101f5cddc47ef0884":
-            "legacy research indexes predate description projection; exact three-page set",
-    },
-    "METADATA_DUPLICATE_DESCRIPTION": {
-        "35b30bf6e6a00fed6bf24109c66e2dc058d2929bea6856212ffc7978a7abae42":
-            "source-bound claims share exact text; exact five duplicate groups",
-    },
 }
 
 
@@ -171,22 +159,6 @@ def local_target(root, source, href):
     return (choices[0] if choices else None), True
 
 
-def generated_family(url):
-    path = urllib.parse.urlsplit(url).path
-    if path.endswith("/"):
-        return None
-    name = pathlib.PurePosixPath(path).name
-    if path.startswith("/claims/by-topic/"):
-        return "topic"
-    if path.startswith("/claims/") and name not in ("", "index.html"):
-        return "claim"
-    if path.startswith("/entities/") and name not in ("", "index.html"):
-        return "entity"
-    if path.startswith("/positions/") and name not in ("", "index.html"):
-        return "position"
-    return None
-
-
 def parse_page(path, cache):
     if path not in cache:
         parser = PageParser()
@@ -295,17 +267,16 @@ def check(root):
             if len(normalized) != 1 or not normalized[0]:
                 pending[f"METADATA_{field.upper()}"] .append(f"{relative}: count={len(values)}")
             else:
-                metadata[field][normalized[0]].append(url)
+                key = values[0].strip() if field == "description" else normalized[0]
+                metadata[field][key].append(url)
 
-        family = generated_family(url)
-        if family:
-            if not parser.json_ld:
-                pending["JSON_LD"].append(f"{relative}: missing for {family}")
-            for number, document in enumerate(parser.json_ld, 1):
-                try:
-                    json.loads(document)
-                except json.JSONDecodeError as exc:
-                    problems.add(f"JSON_LD {relative}: block {number} invalid at {exc.pos}")
+        if not parser.json_ld:
+            problems.add(f"JSON_LD {relative}: missing")
+        for number, document in enumerate(parser.json_ld, 1):
+            try:
+                json.loads(document)
+            except json.JSONDecodeError as exc:
+                problems.add(f"JSON_LD {relative}: block {number} invalid at {exc.pos}")
 
         for kind, resource in parser.resources:
             absolute = urllib.parse.urljoin(public_url(page, root), resource)
@@ -323,8 +294,9 @@ def check(root):
     for field, values in metadata.items():
         for urls in values.values():
             if len(urls) > 1:
-                pending[f"METADATA_DUPLICATE_{field.upper()}"] .append(
-                    ", ".join(sorted(urls))
+                duplicates = ", ".join(sorted(urls))
+                pending[f"METADATA_DUPLICATE_{field.upper()}"] .extend(
+                    f"{url}: duplicates {duplicates}" for url in sorted(urls)
                 )
 
     for code, details in sorted(pending.items()):
