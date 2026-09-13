@@ -2,8 +2,10 @@
 """Build deterministic machine-readable essay projections from owned sources."""
 
 import argparse
+import html
 import json
 from pathlib import Path
+import re
 from urllib.parse import urlsplit
 
 
@@ -108,6 +110,39 @@ def build_graph(records):
     }
 
 
+def build_sitemap(records):
+    newest = max(record["datePublished"] for record in records)
+    rows = [
+        (f"{BASE}/essays/index.json", newest),
+        (f"{BASE}/essays/all.jsonl", newest),
+        (f"{BASE}/essays/graph.jsonld", newest),
+    ]
+    rows.extend((record["projection_url"], record["datePublished"]) for record in records)
+    urls = "\n".join(
+        f"  <url><loc>{html.escape(url)}</loc><lastmod>{date}</lastmod></url>"
+        for url, date in rows
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{urls}\n</urlset>\n"
+    )
+
+
+def update_sitemap_index(repo, lastmod):
+    path = repo / "sitemap-index.xml"
+    value = path.read_text(encoding="utf-8")
+    url = f"{BASE}/sitemap-essays.xml"
+    entry = f"  <sitemap><loc>{url}</loc><lastmod>{lastmod}</lastmod></sitemap>"
+    pattern = rf"  <sitemap><loc>{re.escape(url)}</loc><lastmod>[^<]+</lastmod></sitemap>"
+    value, count = re.subn(pattern, entry, value)
+    if count == 0:
+        value = value.replace("</sitemapindex>\n", f"{entry}\n</sitemapindex>\n")
+    elif count != 1:
+        raise RuntimeError(f"Expected at most one sitemap-index entry for {url}")
+    write_text(path, value)
+
+
 def update_discovery(repo):
     index_url = f"{BASE}/essays/index.json"
     for relative in ("agent-card.json", ".well-known/agent-card.json", ".well-known/agent.json", ".well-known/ai-agent.json"):
@@ -148,6 +183,9 @@ def main():
     write_json(out / "index.json", index)
     write_text(out / "all.jsonl", "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in records))
     write_json(out / "graph.jsonld", build_graph(records))
+    newest = max(record["datePublished"] for record in records)
+    write_text(args.repo / "sitemap-essays.xml", build_sitemap(records))
+    update_sitemap_index(args.repo, newest)
     update_discovery(args.repo)
     if CHECK:
         expected = {"index.json", "all.jsonl", "graph.jsonld", *(f"{row['slug']}.json" for row in records)}

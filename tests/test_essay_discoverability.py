@@ -1,10 +1,13 @@
 import hashlib
+import importlib.util
 import json
 import unittest
 from pathlib import Path
+import xml.etree.ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 SLUG = "2026-09-12-prompts-dont-govern-agents-reputation-does"
 CLAIMS = [
     "6886078-002", "6244278-014", "7314479-015", "7314479-014",
@@ -22,6 +25,41 @@ def load(relative):
 
 
 class EssayDiscoverabilityTests(unittest.TestCase):
+    def test_essay_sitemap_has_exact_projection_urls_and_content_dates(self):
+        records = load("essays/index.json")["itemListElement"]
+        newest = max(record["datePublished"] for record in records)
+        expected = {
+            "https://wulfkaal.github.io/essays/index.json": newest,
+            "https://wulfkaal.github.io/essays/all.jsonl": newest,
+            "https://wulfkaal.github.io/essays/graph.jsonld": newest,
+            **{
+                record["projection_url"]: record["datePublished"]
+                for record in records
+            },
+        }
+        root = ET.parse(ROOT / "sitemap-essays.xml").getroot()
+        actual = {
+            node.findtext("sm:loc", namespaces=SITEMAP_NS):
+            node.findtext("sm:lastmod", namespaces=SITEMAP_NS)
+            for node in root.findall("sm:url", SITEMAP_NS)
+        }
+        self.assertEqual(actual, expected)
+        self.assertTrue(all(url.startswith("https://wulfkaal.github.io/") for url in actual))
+
+    def test_essay_sitemap_is_registered_with_one_generator_owner(self):
+        root = ET.parse(ROOT / "sitemap-index.xml").getroot()
+        locations = [
+            node.findtext("sm:loc", namespaces=SITEMAP_NS)
+            for node in root.findall("sm:sitemap", SITEMAP_NS)
+        ]
+        self.assertIn("https://wulfkaal.github.io/sitemap-essays.xml", locations)
+
+        script = ROOT / "tools" / "sync_sitemap_index.py"
+        spec = importlib.util.spec_from_file_location("sync_sitemap_index", script)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertIn("sitemap-essays.xml", module.OWNED_ELSEWHERE)
+
     def test_essay_record_is_exact_and_all_claims_resolve(self):
         source = load(f"essays-src/{SLUG}.json")
         record = load(f"essays/{SLUG}.json")

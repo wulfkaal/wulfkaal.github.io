@@ -34,11 +34,13 @@ import sys
 BASE = "https://wulfkaal.github.io/"
 STATE = "sitemap-index-state.json"
 
-# build_positions.py owns this sitemap and sets its lastmod from the newest position
-# record's dateModified -- a CONTENT date, not a file date. Deriving it here would
-# overwrite that every run, build_positions.py would put it back on its next run, and
-# CI would flip-flop between two tools that are each right. Leave them to their owner.
+# build_positions.py and build_essays.py own these sitemaps and set their lastmod from
+# the newest record's dateModified/datePublished -- CONTENT dates, not file dates.
+# Deriving them here would overwrite that every run, their generators would put them
+# back on the next run, and CI would flip-flop between tools that are each right.
+# Leave them to their owners.
 OWNED_ELSEWHERE = {
+    "sitemap-essays.xml",
     "sitemap-positions.xml",
 }
 

@@ -142,6 +142,7 @@ jobs:
             tests/test_html_discoverability.py \
             tests/test_corpus_count_projections.py \
             tests/test_essay_discoverability.py \
+            tests/test_essay_notifier.py \
             tests/test_position_discoverability.py \
             tests/test_position_notifier.py \
             tests/test_sitemap_integrity.py
@@ -174,13 +175,13 @@ jobs:
       - name: Commit only if something actually changed
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
+          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
             echo "projections already current; nothing to commit"
             exit 0
           fi
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
+          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
           git commit -m "Regenerate projections from the corpus"
           git push
 
@@ -477,6 +478,7 @@ jobs:
           python3 -m unittest \
             tests/test_corpus_count_projections.py \
             tests/test_essay_discoverability.py \
+            tests/test_essay_notifier.py \
             tests/test_position_discoverability.py \
             tests/test_position_notifier.py
           python3 tools/build_essays.py --check
