@@ -53,6 +53,8 @@ def compact_record(record):
     }
 def load_batches(src_dir):
     batches = []
+    identifiers = set()
+    allowed_response_types = {"agreement", "extension", "qualification", "contradiction"}
     for path in sorted(src_dir.glob("*.json")):
         if path.name == "withdrawn-identifiers.json":
             continue
@@ -69,6 +71,40 @@ def load_batches(src_dir):
                 or not batch.get("exact_authorization")
             ):
                 raise RuntimeError(f"Invalid standing-preauthorized source batch: {path.name}")
+        for item in batch.get("positions", []):
+            identifier = f"{batch.get('date')}-{item.get('sequence', 0):03d}"
+            if identifier in identifiers:
+                raise RuntimeError(f"Duplicate position date plus sequence identifier: {identifier}")
+            identifiers.add(identifier)
+            if batch.get("schema_version") != "kaal-position-batch-strict-v1":
+                continue
+            for label, value in (
+                ("current_debate.url", (item.get("current_debate") or {}).get("url")),
+                ("extends.url", (item.get("extends") or {}).get("url")),
+            ):
+                parts = urlsplit(value or "")
+                if parts.scheme != "https" or not parts.netloc:
+                    raise RuntimeError(f"{path.name} {identifier} {label} must use https")
+            extends = item.get("extends") or {}
+            claim_id = extends.get("identifier") or ""
+            expected_url = f"{BASE}/claims/{claim_id.removeprefix('kaal:claim:')}"
+            if not claim_id.startswith("kaal:claim:") or extends.get("url") != expected_url:
+                raise RuntimeError(
+                    f"{path.name} {identifier} extends.url does not match its identifier"
+                )
+            for label in ("topics", "scope_conditions"):
+                values = item.get(label)
+                if not isinstance(values, list) or not values or any(
+                    not isinstance(value, str) or not value.strip() for value in values
+                ):
+                    raise RuntimeError(f"{path.name} {identifier} {label} must be non-empty")
+            if item.get("response_type") not in allowed_response_types:
+                raise RuntimeError(f"{path.name} {identifier} response_type is not allowed")
+            provenance = item.get("source_provenance") or {}
+            passage = provenance.get("sourcePassage") or ""
+            passage_hash = hashlib.sha256(passage.encode("utf-8")).hexdigest()
+            if provenance.get("sourcePassageSha256") != passage_hash:
+                raise RuntimeError(f"{path.name} {identifier} source passage sha256 does not match")
         batches.append(batch)
     return batches
 
@@ -168,6 +204,10 @@ def json_record(batch, item):
         "canonical_url": url,
         "canonicalForm": f"{url}.md",
     }
+    if batch.get("schema_version") == "kaal-position-batch-strict-v1" and item.get("source_provenance"):
+        record["sourceProvenance"] = item["source_provenance"]
+    if batch.get("schema_version") == "kaal-position-batch-strict-v1" and item.get("user_affirmation"):
+        record["userAffirmation"] = item["user_affirmation"]
     if item.get("candidate_id"):
         record.update({
             "candidateId": item["candidate_id"],

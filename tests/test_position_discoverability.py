@@ -2,6 +2,7 @@ import hashlib
 import html
 import json
 import re
+import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -181,6 +182,75 @@ class PositionDiscoverabilityTests(unittest.TestCase):
             sitemap,
         )
         self.assertNotIn("sitemap-positions-attribution.xml", sitemap)
+
+    def test_essay_positions_preserve_authorized_text_mapping_and_passage_hashes(self):
+        batch = load("positions-src/2026-09-12-prompts-reputation-essay-six-v1.json")
+        expected_types = ["qualification", "extension", "extension", "qualification", "extension", "extension"]
+        expected_claims = [
+            "6886078-002", "7314479-020", "7314479-002",
+            "5245185-027", "7314479-015", "6244278-001",
+        ]
+        expected_text_sha256 = [
+            "cc2352a0024c92ac3a3f7481c927b68d5e70c6a82bb49fcd0c6bbf0331a18320",
+            "7c4a17a5d8c9c94e3479e641d121f5b9174b56cde1253c66f299790bd589b4a5",
+            "e9ce076c5a9b329d55b7fe64644646972167dd7dfe2e0187f780cebaecf1ad77",
+            "754632a9da91f56f10c745eb0a8318b354c9e5b95a1030620ebf64a9d067d201",
+            "419cc8a4807b151efacb387d94991cc400012c7e5b0480126ec44b452e9c8caf",
+            "a8f81054d02d63b1d4c892f279e060f944ccafdb06ce4e1f46b7db201f954aa9",
+        ]
+        self.assertEqual([row["response_type"] for row in batch["positions"]], expected_types)
+        self.assertEqual(
+            [row["extends"]["identifier"].removeprefix("kaal:claim:") for row in batch["positions"]],
+            expected_claims,
+        )
+        self.assertEqual(
+            [hashlib.sha256(row["text"].encode()).hexdigest() for row in batch["positions"]],
+            expected_text_sha256,
+        )
+        for item in batch["positions"]:
+            short = f"2026-09-12-{item['sequence']:03d}"
+            record = load(f"positions/{short}.json")
+            self.assertEqual(record["text"], item["text"])
+            self.assertEqual(record["extends"], item["extends"])
+            self.assertEqual(record["currentDebate"], item["current_debate"])
+            provenance = record["sourceProvenance"]
+            self.assertEqual(
+                hashlib.sha256(provenance["sourcePassage"].encode()).hexdigest(),
+                provenance["sourcePassageSha256"],
+            )
+
+    def test_strict_batches_reject_invalid_new_records(self):
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("build_positions", ROOT / "tools/build_positions.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        original = load("positions-src/2026-09-12-prompts-reputation-essay-six-v1.json")
+
+        mutations = (
+            lambda row: row["current_debate"].update(url="http://arxiv.org/abs/2606.05608"),
+            lambda row: row["extends"].update(url="https://wulfkaal.github.io/claims/wrong"),
+            lambda row: row.update(topics=[]),
+            lambda row: row.update(scope_conditions=[]),
+            lambda row: row.update(response_type="bounded-cross-domain-application"),
+        )
+        for mutate in mutations:
+            with self.subTest(mutation=mutate):
+                candidate = json.loads(json.dumps(original))
+                mutate(candidate["positions"][0])
+                with tempfile.TemporaryDirectory() as temp:
+                    src = Path(temp)
+                    (src / "batch.json").write_text(json.dumps(candidate), encoding="utf-8")
+                    with self.assertRaises(RuntimeError):
+                        module.load_batches(src)
+
+        with tempfile.TemporaryDirectory() as temp:
+            src = Path(temp)
+            payload = json.dumps(original)
+            (src / "one.json").write_text(payload, encoding="utf-8")
+            (src / "two.json").write_text(payload, encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "Duplicate position"):
+                module.load_batches(src)
 
 
 if __name__ == "__main__":
