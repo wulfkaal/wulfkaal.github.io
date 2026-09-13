@@ -217,6 +217,22 @@ class SitemapIntegrityTests(unittest.TestCase):
                     f"{sitemap_name} has missing or stale URL-level lastmod values",
                 )
 
+    def test_claim_hub_lastmod_matches_its_committed_content_date(self):
+        url = f"{BASE}/claims/index.html"
+        expected = MERGE.expected_lastmods(ROOT)[("sitemap-claims.xml", url)]
+        sitemap = (ROOT / "sitemap-claims.xml").read_text(encoding="utf-8")
+        row = next(
+            body
+            for body in MERGE.URL_ROW.findall(sitemap)
+            if MERGE.URL_LOC.search(body).group(1) == url
+        )
+        actual = MERGE.LASTMOD.search(row).group(1)
+        self.assertEqual(
+            actual,
+            expected,
+            "claim hub sitemap lastmod must identify the latest committed hub bytes",
+        )
+
     def test_git_content_date_is_stable_and_ignores_filesystem_mtime(self):
         with tempfile.TemporaryDirectory() as temp:
             repo = Path(temp)
