@@ -131,6 +131,22 @@ class PositionDiscoverabilityTests(unittest.TestCase):
             structured = re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S).group(1)
             self.assertEqual(json.loads(structured)["identifier"], row["identifier"])
 
+    def test_position_index_has_canonical_json_ld_identity(self):
+        page = (ROOT / "positions" / "index.html").read_text(encoding="utf-8")
+        blocks = re.findall(
+            r'<script type="application/ld\+json">(.*?)</script>', page, re.S
+        )
+        self.assertEqual(len(blocks), 1)
+        structured = json.loads(blocks[0])
+        canonical = "https://wulfkaal.github.io/positions/"
+        self.assertEqual(structured["@context"], "https://schema.org")
+        self.assertEqual(structured["@type"], "CollectionPage")
+        self.assertEqual(structured["@id"], canonical)
+        self.assertEqual(structured["url"], canonical)
+        self.assertEqual(
+            structured["name"], "Affirmed Position Claims by Wulf A. Kaal"
+        )
+
     def test_sitemap_position_pages_have_unique_search_metadata(self):
         sitemap = (ROOT / "sitemap-positions.xml").read_text(encoding="utf-8")
         prefix = "https://wulfkaal.github.io/positions/"

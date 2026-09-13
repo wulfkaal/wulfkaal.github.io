@@ -314,6 +314,17 @@ def render_index_html(records):
         f'{html.escape(rec["datePublished"])}</span></li>'
         for rec in records
     )
+    structured = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": f"{BASE}/positions/",
+        "url": f"{BASE}/positions/",
+        "name": "Affirmed Position Claims by Wulf A. Kaal",
+        "description": (
+            "Reviewed, dated commentary positions grounded in the source-bound "
+            "scholarly claim corpus."
+        ),
+    }, ensure_ascii=False, separators=(",", ":"))
     return (
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
@@ -321,7 +332,8 @@ def render_index_html(records):
         "<meta name=\"description\" content=\"Reviewed, dated commentary positions "
         "grounded in Wulf A. Kaal's scholarly claim corpus.\">"
         "<link rel=\"canonical\" href=\"https://wulfkaal.github.io/positions/\">"
-        "<link rel=\"stylesheet\" href=\"../style.css\"></head><body><main>"
+        "<link rel=\"stylesheet\" href=\"../style.css\">"
+        f"<script type=\"application/ld+json\">{structured}</script></head><body><main>"
         "<h1>Affirmed Position Claims</h1>"
         "<p class=\"claim\">Reviewed, dated commentary positions grounded in the "
         "source-bound scholarly claim corpus.</p>"
