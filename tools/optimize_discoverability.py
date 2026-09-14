@@ -76,6 +76,7 @@ SITEMAP_INPUTS = (
     "sitemap-research-claims.xml",
     "sitemap-research-observations.xml",
     "sitemap-trustcarry.xml",
+    "sitemap-essays.xml",
 )
 
 
@@ -496,7 +497,7 @@ if mcp is not None:
         "authentication": "none",
         "readOnly": True,
         "description": (
-            "Source-bound retrieval over the 100-claim agentic claim graph pilot. Returns "
+            "Source-bound retrieval over the 1,330-claim agentic claim graph. Returns "
             "exact passages, citations, content hashes, scope conditions and limitations. "
             "Creates no claims and affirms none."
         ),
@@ -518,7 +519,7 @@ if plug is not None:
     touched = False
     extra = (
         " A separate read-only Answer Service at %s/api/answer returns a smaller, "
-        "deterministic 100-claim agentic pilot with exact passages, hashes, scope "
+        "deterministic 1,330-claim agentic graph with exact passages, hashes, scope "
         "conditions and an explicit limitations array; its MCP endpoint is %s/api/rpc. "
         "The graph behind it is published and content addressed at %s/index.json." % (AS, AS, GRAPH)
     )

@@ -10,8 +10,8 @@ ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN auth
 | | |
 |---|---|
 | Published works | 128 |
-| Atomic claims | 5288 |
-| Failure-mode claims | 2080 |
+| Atomic claims | 5363 |
+| Failure-mode claims | 2134 |
 | Failure families | 55 |
 | Typed edges between claims | 2169 |
 | Publication span | 2004 to 2026 |

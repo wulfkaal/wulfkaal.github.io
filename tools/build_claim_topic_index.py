@@ -378,7 +378,8 @@ def retopic_claims_index_html(html_text, shard_counts):
             # Rewrite this row's count wherever it sits, matching the cell that
             # precedes this slug's own link rather than a fixed byte pattern.
             pattern = re.compile(
-                r"(<td[^>]*>\s*" + re.escape(slug) + r"\s*</td>\s*<td[^>]*>\s*)"
+                r"(<td[^>]*>\s*(?:<a[^>]*>)?" + re.escape(slug)
+                + r"(?:</a>)?\s*</td>\s*<td[^>]*>\s*)"
                 + re.escape(count_text) + r"(\s*</td>)")
             table, n = pattern.subn(rf"\g<1>{real}\g<2>", table, count=1)
             if n != 1:

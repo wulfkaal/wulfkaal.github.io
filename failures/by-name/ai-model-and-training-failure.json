@@ -1,15 +1,23 @@
 {
  "failure_mode": "ai-model-and-training-failure",
  "specific_names": [
+  "AI Feedback Bias Propagation",
   "Distribution shift brittleness",
+  "Format D Training Untested",
   "GNN adversarial vulnerability",
   "Homogeneous graph assumption",
+  "No Policy Trained",
   "Overfitting from repeated reuse of the same data set",
   "Plausibility Truth Orthogonality",
   "Restricted legal dataset access",
+  "Reward Model May Relearn Style Proxy",
+  "Reward Model Overoptimization",
   "Scale Without Quality",
+  "Signal Invariance Does Not Establish Policy Invariance",
   "Small Dataset Overfitting",
   "Sparse reward learning failure",
+  "Training Flywheel Unimplemented",
+  "Training Pipeline Remains a Proposal",
   "Training data bias amplification",
   "Western training data bias",
   "absent reliability guarantee",
@@ -33,7 +41,7 @@
   "training data bias transmission",
   "unexplainable prediction"
  ],
- "count": 31,
+ "count": 39,
  "claims": [
   {
    "id": "kaal:claim:2998033-021",
@@ -445,6 +453,110 @@
    "year": "2026",
    "quote": "Probabilistic large language models hallucinate because they are trained to predict statistically likely token sequences, not to verify propositional truth.",
    "citation": "Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319"
+  },
+  {
+   "id": "kaal:claim:7456999-013",
+   "url": "https://wulfkaal.github.io/claims/7456999-013",
+   "claim": "No policy is trained anywhere in the paper.",
+   "specific_name": "No Policy Trained",
+   "conditions": [
+    "the experiments and proposals reported in this paper"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "No policy is trained anywhere in this paper, which is the ﬁrst thing Part VIII says the program owes.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-016",
+   "url": "https://wulfkaal.github.io/claims/7456999-016",
+   "claim": "Reward-model overoptimization can raise proxy reward while degrading true reward as optimized policies move farther from the reference policy.",
+   "specific_name": "Reward Model Overoptimization",
+   "conditions": [
+    "the scaling-law setting documented by Gao, Schulman, and Hilton"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Gao, Schulman, and Hilton (2023) demonstrated that reward model overoptimization follows predictable scaling laws: as KL divergence between the optimized policy and the reference policy grows, the proxy reward continues to rise while the true reward degrades.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-024",
+   "url": "https://wulfkaal.github.io/claims/7456999-024",
+   "claim": "RLAIF addresses scalability by substituting AI-generated preferences, but it propagates the AI labeler's own biases through the pipeline.",
+   "specific_name": "AI Feedback Bias Propagation",
+   "conditions": [
+    "RLAIF systems whose labeler reflects prior RLHF training"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "RLAIF (Lee et al. 2024) substitutes AI-generated preferences for human ones, addressing the scalability bottleneck but introducing a new form of the same problem: the AI labeler’s own biases (which are themselves the output of prior RLHF training) propagate through the pipeline.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-044",
+   "url": "https://wulfkaal.github.io/claims/7456999-044",
+   "claim": "Format D would train on arguments accompanying a staked vote change, but that use is untested.",
+   "specific_name": "Format D Training Untested",
+   "conditions": [
+    "the proposed Debate-Informed Revision training format"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Format D would train a model on the arguments that accompanied a staked vote change. That use is untested.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-050",
+   "url": "https://wulfkaal.github.io/claims/7456999-050",
+   "claim": "The proposed four-format flywheel is not measured or implemented and is listed as an open problem.",
+   "specific_name": "Training Flywheel Unimplemented",
+   "conditions": [
+    "the coupled four-format training system"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "This compounding structure is what the paper elsewhere calls the ﬂywheel. Nothing in this paper measures it, no stage of it is implemented, and it is listed as the third open problem in Part VIII.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-057",
+   "url": "https://wulfkaal.github.io/claims/7456999-057",
+   "claim": "Remark 1 states only signal invariance and supports no policy-level consequence without a separability model and empirical training evidence.",
+   "specific_name": "Signal Invariance Does Not Establish Policy Invariance",
+   "conditions": [
+    "the style-invariance remark"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "This is a restatement of signal invariance. It adds nothing to reinforcement learning from veriﬁable rewards. It does not show that a pool resolution is style-independent. It does not show that a ﬁtted reward model inherits the invariance of . It also says nothing about how a trained policy allocates gradient effort. Any policy-level claim would require a stated separability model and empirical training evidence. Neither is present here.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-067",
+   "url": "https://wulfkaal.github.io/claims/7456999-067",
+   "claim": "The three-stage RLRF training pipeline is a proposal, and the paper does not establish a signal-quality advantage before specifying it.",
+   "specific_name": "Training Pipeline Remains a Proposal",
+   "conditions": [
+    "the proposed training pipeline in Part VI"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Part IV does not establish a signal-quality advantage. The training pipeline below is a proposal. Where a stage rests on a result from Part V, the text below says whether that result is measured or simulated.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-068",
+   "url": "https://wulfkaal.github.io/claims/7456999-068",
+   "claim": "A fitted reputation reward model can learn style correlations absent from an externally checked outcome, and no such reward model is trained or tested in the paper.",
+   "specific_name": "Reward Model May Relearn Style Proxy",
+   "conditions": [
+    "the proposed Reputation Reward Model in Stage 2"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "A ﬁtted model can learn style correlations absent from . No RRM is trained or tested in this paper, so resistance to reward hacking is not claimed.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

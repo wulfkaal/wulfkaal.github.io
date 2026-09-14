@@ -1,9 +1,13 @@
 {
  "failure_mode": "sample-and-selection-bias",
  "specific_names": [
+  "Adversarial Cohort Cannot Establish Base Rate",
   "Cognitive bias in screening",
   "Confidentiality driven nonresponse",
+  "Experiment T Magnitude Inconclusive",
   "Private fund survey nonresponse",
+  "Record Selector Does Not Beat Visible Check Selector",
+  "Selector Result Reverses Under Tie Break",
   "executed-agreement-selection-bias",
   "false-inference-from-live-experiments",
   "incomplete-response-data",
@@ -19,7 +23,7 @@
   "small-sample-limitation",
   "survivorship-bias-excludes-highest-impact-ndpas"
  ],
- "count": 17,
+ "count": 21,
  "claims": [
   {
    "id": "kaal:claim:1428387-015",
@@ -243,6 +247,58 @@
    "year": "2021",
    "quote": "A potential drawback of this process is that perceptual, emotional, and cognitive processes impact the decision in addition to financial decisions because the evaluation criteria is made through subjective human decision-making.",
    "citation": "Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614"
+  },
+  {
+   "id": "kaal:claim:7456999-011",
+   "url": "https://wulfkaal.github.io/claims/7456999-011",
+   "claim": "The cohort does not show that the highest-record selector beats shipping an artifact that passes the visible checks because the measured margin is 0.037 and its interval contains zero.",
+   "specific_name": "Record Selector Does Not Beat Visible Check Selector",
+   "conditions": [
+    "the highest-record and passes-the-checked-cases selectors in the measured cohort"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "The highest-record selector has not been shown to beat the alternative a competent engineer would actually deploy, which is to ship whatever satisﬁes the checks already in hand. The point estimate favors the record by 0.0374 across twenty-two speciﬁcations, with a ninety-ﬁve percent interval of [-0.102, +0.176], winning nine, losing seven and tying six. The interval contains zero and one speciﬁcation is worth 0.045.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-060",
+   "url": "https://wulfkaal.github.io/claims/7456999-060",
+   "claim": "Fifty-three cohort records passed every visible check and failed withheld checks, but adversarial configurations were instructed to produce this behavior, so the number is not a base rate.",
+   "specific_name": "Adversarial Cohort Cannot Establish Base Rate",
+   "conditions": [
+    "the measured cohort with deliberately adversarial configurations"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Fifty-three of the ﬁve hundred and sixty-four records are cases where a party satisﬁed every checked case and failed the withheld ones. That is a real deterministic check satisﬁed by work that fails a withheld one. The adversarial con ﬁgurations were instructed to satisfy the visible checks by whatever means, so a share of these ﬁfty- three is conduct the design asked for rather than conduct observed in the wild, and the ﬁfty-three should not be read as a base rate.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-061",
+   "url": "https://wulfkaal.github.io/claims/7456999-061",
+   "claim": "The record's measured advantage over passing visible checks changes sign under an arbitrary file-order tie-break, so the quantity is not resolved at this sample size.",
+   "specific_name": "Selector Result Reverses Under Tie Break",
+   "conditions": [
+    "the comparison between highest-record and passes-the-checked-cases selectors"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "That comparison is also unstable in a way the interval already implies. Selecting the ﬁrst satisfying artifact in ﬁle order, an arbitrary choice, reverses the sign and the record loses by 0.0511. Averaging over which satisfying artifact is chosen, which is the honest treatment because ﬁle order carries no meaning, the record wins by 0.0374. A quantity that changes sign under a tie-break has not been measured at this sample size.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-074",
+   "url": "https://wulfkaal.github.io/claims/7456999-074",
+   "claim": "Experiment T did not show that consensus-weighted selection outperformed equal weighting because the +0.0017 difference had a ninety-five percent interval from -0.0051 to +0.0085.",
+   "specific_name": "Experiment T Magnitude Inconclusive",
+   "conditions": [
+    "Experiment T's seven-model panel and two-constraint task"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Experiment T does not show that consensus-weighted selection outperformed equal-weighted selection within this panel and task. Across 589 surviving prompts, joint satisfaction was 0.7963 under consensus weighting and 0.7946 under equal weighting, a difference of +0.0017 with a 95% interval from -0.0051 to +0.0085.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

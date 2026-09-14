@@ -2,12 +2,14 @@
  "failure_mode": "reputation-system-gaming",
  "specific_names": [
   "Absent reputation layer",
+  "Adaptive Weight Accuracy Unproved",
   "Discontinuous reputation update",
   "Meta-reputation aristocracy",
   "Partial necessity implementation",
   "Pollyanna feedback bias",
   "Reflection dominance",
   "Reflection layer dominance",
+  "Reputation May Track Agreement Instead of Accuracy",
   "Reputation gaming through selective staking",
   "Reputation monopoly",
   "Selection on Manipulable Signals",
@@ -58,7 +60,7 @@
   "validator knowledge limit",
   "web of trust breaks under economic value"
  ],
- "count": 57,
+ "count": 59,
  "claims": [
   {
    "id": "kaal:claim:2992962-039",
@@ -799,6 +801,32 @@
    "year": "2026",
    "quote": "Self-reported capability, static ratings, installation counts, and volume metrics are each manipulable, and none is contextual. A component that performs well on one class of task and poorly on another carries a single undifferentiated score, if it carries one at all. The consequence is that the market for services clears on claims rather than on outcomes.",
    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7456999-034",
+   "url": "https://wulfkaal.github.io/claims/7456999-034",
+   "claim": "It remains unproved whether equilibrium reputation weights track externally checked accuracy rather than pool agreement, or whether keyed-task weights transfer to unkeyed tasks.",
+   "specific_name": "Reputation May Track Agreement Instead of Accuracy",
+   "conditions": [
+    "the proposed multiplicative reputation update"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "It does not give that the pool resolution is externally correct. Whether the weights at the reputation ﬁxed point come to track validator accuracy against rather than merely tracking agreement with the realized pool resolution, and whether weights earned on keyed tasks transfer to unkeyed ones, is unproved and is the second open problem in Part VIII.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-069",
+   "url": "https://wulfkaal.github.io/claims/7456999-069",
+   "claim": "RLRF is intended to make governance adapt through evolving reputation weights, but whether those weights track validator accuracy or transfer between keyed and unkeyed tasks remains unproved.",
+   "specific_name": "Adaptive Weight Accuracy Unproved",
+   "conditions": [
+    "the dynamic-regulation rationale for RLRF"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "RLRF is intended to address this by making the governance mechanism endogenous. The reputation vector evolves as validators assess new outputs, and the design intent is that the reward signal tracks distributional shift without centralized re-annotation. Whether the weights at the reputation ﬁxed point come to track validator accuracy against rather than merely tracking agreement with the realized pool resolution, and whether weights earned on keyed tasks transfer to unkeyed ones, is unproved and is the second open problem in Part VIII.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

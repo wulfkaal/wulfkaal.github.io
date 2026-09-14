@@ -907,7 +907,23 @@ def update_attribution_surfaces(repo, records):
     dataset["distribution"] = [
         item for item in dataset.get("distribution", [])
         if item.get("name") != "sitemap-positions-attribution.xml"
+        and not re.fullmatch(r"claim-source-\d+-map\.jsonl", item.get("name", ""))
+        and not re.fullmatch(r"claim-\d+-coverage\.json", item.get("name", ""))
     ]
+    dataset["distribution"].extend([
+        {
+            "@type": "DataDownload",
+            "name": f"claim-source-{protected_count}-map.jsonl",
+            "contentUrl": f"{BASE}/positions/claim-source-{protected_count}-map.jsonl",
+            "encodingFormat": "application/x-ndjson",
+        },
+        {
+            "@type": "DataDownload",
+            "name": f"claim-{protected_count}-coverage.json",
+            "contentUrl": f"{BASE}/positions/claim-{protected_count}-coverage.json",
+            "encodingFormat": "application/json",
+        },
+    ])
     for item in dataset.get("distribution", []):
         target = positions_dir / item["name"]
         if target.exists():

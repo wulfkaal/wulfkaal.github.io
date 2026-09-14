@@ -233,6 +233,16 @@ def main():
         r'(permanent URL\. )\d+( of them document how a design, mechanism, or proposed remedy fails:)',
         rf'\g<1>{truth["failure_mode_claims"]}\g<2>',
     )
+    changed += replace_exact(
+        "claims/index.html",
+        r'("description":")\d+( citable atomic claims on decentralized governance)',
+        rf'\g<1>{truth["atomic_claims"]}\g<2>',
+    )
+    changed += replace_exact(
+        "claims/index.html",
+        r'(<meta name="description" content=")\d+( citable atomic claims on decentralized governance)',
+        rf'\g<1>{truth["atomic_claims"]}\g<2>',
+    )
 
     rank_path = ROOT / "rank.jsonld"
     rank, rank_indent = load(rank_path)
@@ -259,7 +269,7 @@ def main():
         raise ValueError("authority.json: Structured failure knowledge must occur once")
     evidence = (
         f"{truth['failure_mode_claims']} claims describe how a design, mechanism, or "
-        f"proposed remedy fails and under what conditions; "
+        f"proposed remedy fails and under what conditions. "
         f"{truth['classified_failure_claims']} of them are organised into "
         f"{truth['failure_families']} families."
     )
@@ -277,8 +287,8 @@ def main():
         raise ValueError("rank.json: Structured failure knowledge point must occur once")
     old_evidence = rank_matches[0].get("evidence", "")
     new_evidence, count = re.subn(
-        r"^\d+ claims state (.*?); \d+ of them are organised into \d+ families\.",
-        (f"{truth['failure_mode_claims']} claims state \\g<1>; "
+        r"^\d+ claims state (.*?)[.;] \d+ of them are organised into \d+ families\.",
+        (f"{truth['failure_mode_claims']} claims state \\g<1>. "
          f"{truth['classified_failure_claims']} of them are organised into "
          f"{truth['failure_families']} families."),
         old_evidence,
@@ -295,7 +305,7 @@ def main():
         for line in changed:
             print(f"  {line}")
     else:
-        print("\nall published counts already match the corpus; nothing written")
+        print("\nall published counts already match the corpus, nothing written")
 
 
 if __name__ == "__main__":

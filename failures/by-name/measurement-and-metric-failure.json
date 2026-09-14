@@ -1,6 +1,7 @@
 {
  "failure_mode": "measurement-and-metric-failure",
  "specific_names": [
+  "Agreement Rates Do Not Identify Cause",
   "Asset class blind SIFI designation",
   "Backward looking risk models miss future tail events",
   "Balance sheet leverage mismeasurement",
@@ -12,11 +13,15 @@
   "Fungible Measure Blind to Expertise",
   "Idiosyncratic reviewer preference",
   "Monitoring Lag Blindness",
+  "Mutual Information Does Not Establish Fisher Information",
   "National Accounts Blind Spot",
   "National Accounts Invisibility",
   "Non Comparable Impact Metrics",
+  "Pairwise Disagreement Identification Failure",
   "Portfolio correlation blind spot",
+  "Simulated Accuracy Misstated as Published Rate",
   "Subjective deal evaluation error",
+  "Trajectory Estimand Undefined",
   "Unverified Impact Inputs",
   "Venture capital signal divergence from market valuation",
   "Venture capital signal not validated by the market",
@@ -58,7 +63,7 @@
   "unquantifiable-social-variables",
   "unstable-recursive-valuation"
  ],
- "count": 57,
+ "count": 62,
  "claims": [
   {
    "id": "kaal:claim:1428387-040",
@@ -779,6 +784,71 @@
    "year": "2026",
    "quote": "This is the true constraint on scale for the class, and it is invisible in every benchmark the field currently reports. Throughput, latency, and token cost measure the performance of composition. They do not measure the cost of arranging it.",
    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7456999-017",
+   "url": "https://wulfkaal.github.io/claims/7456999-017",
+   "claim": "Inter-annotator agreement rates are compatible with an incentive account, but ambiguity, plural values, rater error, underspecified instructions, heterogeneity, and legitimate preference diversity can produce the same rates.",
+   "specific_name": "Agreement Rates Do Not Identify Cause",
+   "conditions": [
+    "causal interpretation of the cited RLHF agreement rates"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "The Ouyang et al. (2022) and Bai et al. (2022) agreement rates are compatible with the absence of material consequence for annotators, but they do not identify it as the cause. Ambiguity, plural values, rater error, underspeciﬁed instructions, distributional heterogeneity, and legitimate preference diversity can produce the same rates.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-021",
+   "url": "https://wulfkaal.github.io/claims/7456999-021",
+   "claim": "Pairwise disagreement measures label instability but does not identify annotator error variance or a structural variance floor without an explicit latent-label model.",
+   "specific_name": "Pairwise Disagreement Identification Failure",
+   "conditions": [
+    "inference from pairwise disagreement statistics"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Pairwise disagreement measures label instability but does not identify annotator error variance or a structural variance ﬂoor without an explicit latent-label model.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-045",
+   "url": "https://wulfkaal.github.io/claims/7456999-045",
+   "claim": "Equation 5 is a mutual-information identity rather than a Fisher-information decomposition, so the Fisher question does not follow from it.",
+   "specific_name": "Mutual Information Does Not Establish Fisher Information",
+   "conditions": [
+    "interpretation of equation 5"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Equation (5) is a mutual-information identity. It is not a Fisher-information decomposition. The open empirical question in Part IV.B concerns Fisher information, a different object, and does not follow from (5).",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-053",
+   "url": "https://wulfkaal.github.io/claims/7456999-053",
+   "claim": "Equilibrium-trajectory separation cannot be evaluated until a common stochastic process, its filtrations, a concentration functional, and a cross-mode estimand are defined.",
+   "specific_name": "Trajectory Estimand Undefined",
+   "conditions": [
+    "the proposed separation of Mode A and Mode B trajectories"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "It cannot be evaluated until a common stochastic process for Mode A and Mode B, its ﬁltrations, a concentration functional, and a cross-mode estimand are deﬁned. Finding 7 reports two stability statistics from the sweep. Those statistics do not deﬁne or test the proposed separation.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-062",
+   "url": "https://wulfkaal.github.io/claims/7456999-062",
+   "claim": "The sweep's 67.7 percent annotator baseline is a simulated output rather than a published agreement rate or a measurement of human annotators.",
+   "specific_name": "Simulated Accuracy Misstated as Published Rate",
+   "conditions": [
+    "Finding 1 of the parameter sweep"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "In the sweep, the modeled RLHF baseline settles at 67.7% accuracy and RLRF exceeds 0.97, both under parameters the sweep sets. Neither ﬁgure is a published agreement rate, and Part V.B.1 explains why calling 67.7 the Ouyang-Coste bound conﬂates an output of the model with an input to it.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

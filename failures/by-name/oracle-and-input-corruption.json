@@ -4,6 +4,8 @@
   "Code cannot govern tangible performance",
   "Governance Attack Vector in Funding Oracles",
   "Oracle and governance dependency of escrow enforcement",
+  "Pool Agreement Is Not External Correctness",
+  "Recorded Resolution Is Not External Correctness",
   "centralized-oracle-capture",
   "centralized-oracle-defeat",
   "immature-decentralized-oracles",
@@ -14,7 +16,7 @@
   "unverifiable food integrity claims",
   "unverified-edge-information"
  ],
- "count": 12,
+ "count": 14,
  "claims": [
   {
    "id": "kaal:claim:2922176-009",
@@ -174,6 +176,32 @@
    "year": "2025",
    "quote": "Escrow mechanisms, while effective for automation, require reliable oracles and robust governance to prevent manipulation, as emphasized by Zhao and Chen.",
    "citation": "Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218"
+  },
+  {
+   "id": "kaal:claim:7456999-033",
+   "url": "https://wulfkaal.github.io/claims/7456999-033",
+   "claim": "The multiplicative-weights regret bound limits performance against the realized pool resolution, but does not show that the pool resolution is externally correct.",
+   "specific_name": "Pool Agreement Is Not External Correctness",
+   "conditions": [
+    "the unkeyed reputation update in equation 3"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "What the regret bound gives is that the weighted pool does not do much worse than the best ﬁxed validator in hindsight, measured against the realized pool resolution. It does not give that the pool resolution is externally correct.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-037",
+   "url": "https://wulfkaal.github.io/claims/7456999-037",
+   "claim": "Validators face consequences for disagreement with an unkeyed pool or error against a keyed result, but this only creates an incentive to match the recorded resolution and does not prove an unkeyed resolution correct.",
+   "specific_name": "Recorded Resolution Is Not External Correctness",
+   "conditions": [
+    "the signal properties of keyed and unkeyed RLRF events"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "First, validators bear material consequences for disagreement with an unkeyed pool resolution or inaccuracy against a keyed outcome. This creates an incentive to match the recorded resolution, but it does not establish that an unkeyed resolution is externally correct.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

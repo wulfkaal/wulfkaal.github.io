@@ -1,6 +1,7 @@
 {
  "failure_mode": "ai-oversight-and-alignment-gap",
  "specific_names": [
+  "AI Labeler Has Nothing to Lose",
   "AI-Governance Vacuum",
   "Adversarial feedback provider incentives",
   "Agent-Executed Attack in Nascent Form",
@@ -18,6 +19,7 @@
   "Overspecific human guidance",
   "Plumbing Without Guardrails",
   "Predicted Agent-Governance Failures",
+  "Staked Pool Without Answer Key Unproved",
   "Unquantifiable risk of centralized automation",
   "absence of legacy dynamic toolset",
   "absent dynamic governance toolset",
@@ -54,7 +56,7 @@
   "unverified post hoc explanations",
   "validation layer scope limit"
  ],
- "count": 53,
+ "count": 55,
  "claims": [
   {
    "id": "kaal:claim:3808867-023",
@@ -752,6 +754,32 @@
    "year": "2026",
    "quote": "Informal, deliberative, and discretionary governance cannot bind autonomous agents quickly or at scale, and it provides no mechanical means of enforcement. Pure formal verification is technically sound but institutionally inoperable: it demands specialist expertise that excludes nearly every governance stakeholder who is not a logician, so the resulting infrastructure is formally capable yet practically inert.",
    "citation": "Wulf A. Kaal, Governance as a Product (GaaP): A Reputation-Weighted Institutional Architecture for Autonomous AI Agent Governance (2026). SSRN: https://ssrn.com/abstract=6886078"
+  },
+  {
+   "id": "kaal:claim:7456999-027",
+   "url": "https://wulfkaal.github.io/claims/7456999-027",
+   "claim": "RLAIF and Constitutional AI remove the human scalability bottleneck, but neither gives the model labeler anything to lose.",
+   "specific_name": "AI Labeler Has Nothing to Lose",
+   "conditions": [
+    "the comparison made with RLRF's economic-stake design"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "Both remove the human from the loop, which is the scalability half of the problem this paper poses. Neither gives the labeler anything to lose, which is the half that remains.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7456999-028",
+   "url": "https://wulfkaal.github.io/claims/7456999-028",
+   "claim": "Verifiable-reward reinforcement learning already supplies deterministic rewards where answer keys exist, while the claim that a staked pool can substitute where no key exists is not established here.",
+   "specific_name": "Staked Pool Without Answer Key Unproved",
+   "conditions": [
+    "domains without an externally available answer key"
+   ],
+   "source": "Reinforcement Learning from Reputation Feedback",
+   "year": "2026",
+   "quote": "The residue is the domain restriction: RLVR works where an answer key exists, and the claim of this paper is that a staked pool can stand where the key cannot. That claim is not established here.",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
   }
  ]
 }

@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2080,
+ "count": 2134,
  "families": 57,
- "distinct_specific_names": 2047,
+ "distinct_specific_names": 2101,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -87,8 +87,28 @@
    "example": "The quality problems in Delaware adjudication mean it is not a foregone conclusion that the bundled product of statutes plus specialized courts leads to optimal results."
   },
   {
+   "failure_family": "research-design-limitation",
+   "count": 81,
+   "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
+   "specific_names": [
+    "Added Transcript Information Unproved",
+    "Anonymity versus descriptive depth tradeoff",
+    "Arrow Analogy Overreach",
+    "Biomimicry Experimentation Deficit",
+    "Causal Primitive Attribution Not Established",
+    "Conjecture Withdrawn",
+    "Cost offset inference in tension with fee practice",
+    "DSGE Friction Obsolescence",
+    "Demand Side Descriptive Failure",
+    "Efficiency Conjecture Incoherent",
+    "Equilibrium Trajectory Separation Open",
+    "Evidence Free Token Design"
+   ],
+   "example": "State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds."
+  },
+  {
    "failure_family": "staking-and-incentive-misalignment",
-   "count": 62,
+   "count": 63,
    "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json",
    "specific_names": [
     "Asymmetric Payoff for Net Negative Ventures",
@@ -127,30 +147,11 @@
    "example": "Broker quotes are an unreliable fallback for valuation: they can be hard to obtain and can vary by 20 to 30 percent for instruments such as mortgage-backed securities, which makes accurate valuation of those securities difficult."
   },
   {
-   "failure_family": "research-design-limitation",
-   "count": 62,
-   "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
-   "specific_names": [
-    "Anonymity versus descriptive depth tradeoff",
-    "Biomimicry Experimentation Deficit",
-    "Cost offset inference in tension with fee practice",
-    "DSGE Friction Obsolescence",
-    "Demand Side Descriptive Failure",
-    "Evidence Free Token Design",
-    "Literature blind spot on regulation",
-    "Low explanatory power of linear specification",
-    "Marshallian Cross Dissolution",
-    "Missing Normative Apparatus",
-    "Missing generation side",
-    "Nashian idealization"
-   ],
-   "example": "State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds."
-  },
-  {
    "failure_family": "measurement-and-metric-failure",
-   "count": 57,
+   "count": 62,
    "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json",
    "specific_names": [
+    "Agreement Rates Do Not Identify Cause",
     "Asset class blind SIFI designation",
     "Backward looking risk models miss future tail events",
     "Balance sheet leverage mismeasurement",
@@ -161,28 +162,27 @@
     "Existing default risk signals failed in the crisis",
     "Fungible Measure Blind to Expertise",
     "Idiosyncratic reviewer preference",
-    "Monitoring Lag Blindness",
-    "National Accounts Blind Spot"
+    "Monitoring Lag Blindness"
    ],
    "example": "Regulating on the basis of retailization would not currently be justifiable, because retailization cannot be quantified with any degree of certainty and regulation premised on speculation without proof or data validation would probably produce inadequate results."
   },
   {
    "failure_family": "reputation-system-gaming",
-   "count": 57,
+   "count": 59,
    "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json",
    "specific_names": [
     "Absent reputation layer",
+    "Adaptive Weight Accuracy Unproved",
     "Discontinuous reputation update",
     "Meta-reputation aristocracy",
     "Partial necessity implementation",
     "Pollyanna feedback bias",
     "Reflection dominance",
     "Reflection layer dominance",
+    "Reputation May Track Agreement Instead of Accuracy",
     "Reputation gaming through selective staking",
     "Reputation monopoly",
-    "Selection on Manipulable Signals",
-    "Ungrounded reflection validators",
-    "Value threshold breach"
+    "Selection on Manipulable Signals"
    ],
    "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
   },
@@ -208,9 +208,10 @@
   },
   {
    "failure_family": "ai-oversight-and-alignment-gap",
-   "count": 53,
+   "count": 55,
    "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
    "specific_names": [
+    "AI Labeler Has Nothing to Lose",
     "AI-Governance Vacuum",
     "Adversarial feedback provider incentives",
     "Agent-Executed Attack in Nascent Form",
@@ -221,8 +222,7 @@
     "Compound RLHF failure",
     "Explainable RL immaturity",
     "Helpfulness harmlessness tension",
-    "Human unintelligibility of algorithmic optimization",
-    "Inevitable corruption of unsupervised coded automation"
+    "Human unintelligibility of algorithmic optimization"
    ],
    "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
   },
@@ -267,6 +267,26 @@
    "example": "European lawyers may advise clients to incorporate at home simply because those lawyers do not want to deal with the courts and lawyers of another Member State, which suppresses cross border incorporation independently of statute quality."
   },
   {
+   "failure_family": "definitional-ambiguity",
+   "count": 45,
+   "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
+   "specific_names": [
+    "Absence of bright line verification standard",
+    "Ambiguity, bad definitions, aggregation difficulty",
+    "Ambiguous questions and definitions",
+    "Ambiguous reporting requirements",
+    "BaFin substance over form reclassification",
+    "Counterparty definitions unclear to filers",
+    "Form PF design defects",
+    "Indeterminate reasonable steps standard",
+    "Indeterminate statutory cross reference in Article 51",
+    "Interpretation dependent RAUM drives thresholds",
+    "Interpretive slack in RAUM propagates into designation thresholds",
+    "Language Cannot Describe Reality"
+   ],
+   "example": "Law generally declines to adopt a general principle barring managers from incurring risk above a defined standard because such a standard is hard to define; corporate law instead insulates managers' risk decisions through the business judgment rule."
+  },
+  {
    "failure_family": "adoption-and-usability-barrier",
    "count": 44,
    "url": "https://wulfkaal.github.io/failures/by-name/adoption-and-usability-barrier.json",
@@ -287,24 +307,24 @@
    "example": "Arbitration of corporate governance disputes has not emerged in the United States because arbitration is at best the next best alternative to Delaware, and a second place finish does not justify the investment needed to design a workable arbitration framework."
   },
   {
-   "failure_family": "definitional-ambiguity",
+   "failure_family": "data-quality-and-comparability",
    "count": 44,
-   "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
+   "url": "https://wulfkaal.github.io/failures/by-name/data-quality-and-comparability.json",
    "specific_names": [
-    "Absence of bright line verification standard",
-    "Ambiguity, bad definitions, aggregation difficulty",
-    "Ambiguous questions and definitions",
-    "Ambiguous reporting requirements",
-    "BaFin substance over form reclassification",
-    "Counterparty definitions unclear to filers",
-    "Form PF design defects",
-    "Indeterminate reasonable steps standard",
-    "Indeterminate statutory cross reference in Article 51",
-    "Interpretation dependent RAUM drives thresholds",
-    "Interpretive slack in RAUM propagates into designation thresholds",
-    "Language Cannot Describe Reality"
+    "Acknowledged data gaps",
+    "Deal flow data unavailability",
+    "Defect to use matching reveals assessment risk",
+    "Defective inputs to stage one screen",
+    "Error propagation from filer uncertainty to regulator conclusions",
+    "Error propagation from filings to designation",
+    "Estimates and assumptions substitute for measurement",
+    "Filer error anomalies",
+    "Finding 4 Lacks Supporting Values",
+    "Fisher Comparison Lacks Common Observation Model",
+    "Human error in manual fee calculation",
+    "Inaccurate regulatory data undermines systemic risk assessment"
    ],
-   "example": "Law generally declines to adopt a general principle barring managers from incurring risk above a defined standard because such a standard is hard to define; corporate law instead insulates managers' risk decisions through the business judgment rule."
+   "example": "The SEC has not standardized the disclosures required in Form PF, and there is evidence that Form PF requirements rest on an inconsistent use of industry terms, which can in turn produce inconsistent and contradictory data reporting."
   },
   {
    "failure_family": "investor-protection-gap",
@@ -367,26 +387,6 @@
    "example": "Limiting the use of hard-to-value assets and complex financial products is very unlikely to have positive effects, because the implicit inhibition of financial innovation would probably limit investors' use of hedging products and interfere with economic expansion."
   },
   {
-   "failure_family": "data-quality-and-comparability",
-   "count": 40,
-   "url": "https://wulfkaal.github.io/failures/by-name/data-quality-and-comparability.json",
-   "specific_names": [
-    "Acknowledged data gaps",
-    "Deal flow data unavailability",
-    "Defect to use matching reveals assessment risk",
-    "Defective inputs to stage one screen",
-    "Error propagation from filer uncertainty to regulator conclusions",
-    "Error propagation from filings to designation",
-    "Estimates and assumptions substitute for measurement",
-    "Filer error anomalies",
-    "Human error in manual fee calculation",
-    "Inaccurate regulatory data undermines systemic risk assessment",
-    "Inconsistent adviser responses",
-    "Mandated data collection creates evaluation problems"
-   ],
-   "example": "The SEC has not standardized the disclosures required in Form PF, and there is evidence that Form PF requirements rest on an inconsistent use of industry terms, which can in turn produce inconsistent and contradictory data reporting."
-  },
-  {
    "failure_family": "supervisory-capacity-gap",
    "count": 39,
    "url": "https://wulfkaal.github.io/failures/by-name/supervisory-capacity-gap.json",
@@ -405,6 +405,26 @@
     "advice-beyond-lawyer-competence"
    ],
    "example": "Conducting judicial proceedings through interpreters is cumbersome and confusing and creates a perceived bias in favor of litigants and lawyers fluent in the language of the proceedings, which is a barrier to exporting adjudication."
+  },
+  {
+   "failure_family": "ai-model-and-training-failure",
+   "count": 39,
+   "url": "https://wulfkaal.github.io/failures/by-name/ai-model-and-training-failure.json",
+   "specific_names": [
+    "AI Feedback Bias Propagation",
+    "Distribution shift brittleness",
+    "Format D Training Untested",
+    "GNN adversarial vulnerability",
+    "Homogeneous graph assumption",
+    "No Policy Trained",
+    "Overfitting from repeated reuse of the same data set",
+    "Plausibility Truth Orthogonality",
+    "Restricted legal dataset access",
+    "Reward Model May Relearn Style Proxy",
+    "Reward Model Overoptimization",
+    "Scale Without Quality"
+   ],
+   "example": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades."
   },
   {
    "failure_family": "board-and-oversight-failure",
@@ -667,26 +687,6 @@
    "example": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive."
   },
   {
-   "failure_family": "ai-model-and-training-failure",
-   "count": 31,
-   "url": "https://wulfkaal.github.io/failures/by-name/ai-model-and-training-failure.json",
-   "specific_names": [
-    "Distribution shift brittleness",
-    "GNN adversarial vulnerability",
-    "Homogeneous graph assumption",
-    "Overfitting from repeated reuse of the same data set",
-    "Plausibility Truth Orthogonality",
-    "Restricted legal dataset access",
-    "Scale Without Quality",
-    "Small Dataset Overfitting",
-    "Sparse reward learning failure",
-    "Training data bias amplification",
-    "Western training data bias",
-    "absent reliability guarantee"
-   ],
-   "example": "Repeated use of the same dataset by data scientists creates an overfitting risk: the training model fits the test set so closely that its performance on a different dataset degrades."
-  },
-  {
    "failure_family": "inequality-and-access-divide",
    "count": 29,
    "url": "https://wulfkaal.github.io/failures/by-name/inequality-and-access-divide.json",
@@ -725,6 +725,26 @@
     "fair exchange impossibility"
    ],
    "example": "The hidden voting scheme depends on the choice of symmetric encryption protocol: a poorly chosen protocol exposes the platform to a birthday problem attack in which malicious voters submit an encrypted key that can be decrypted in two different ways, letting them retroactively choose their vote."
+  },
+  {
+   "failure_family": "sybil-and-identity-attack",
+   "count": 28,
+   "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json",
+   "specific_names": [
+    "Adaptive Sybil Dispersion Camouflage",
+    "Anonymity dilution at scale",
+    "Anonymity driven attack surface",
+    "Anonymity driven opportunism raises transaction costs",
+    "Anonymity-enabled attacks",
+    "Anonymous trolling friction",
+    "Equal salary sockpuppet exploit",
+    "Fee and KYC pseudo-defense",
+    "Identity verification tradeoff",
+    "Inevitable sockpuppet exposure",
+    "Nontransferability Alone Does Not Resist Sybils",
+    "Simulated Sybil Tolerance Is Not Established Resistance"
+   ],
+   "example": "Centralized platforms cannot simply drop identity verification, because they need it to keep malicious actors from abusing the network and to ensure work quality; this is the tradeoff a staking based design is meant to dissolve."
   },
   {
    "failure_family": "information-asymmetry",
@@ -787,24 +807,24 @@
    "example": "The Commodity Exchange Act family and friends exemption allows a qualifying manager to trade options and futures for fifteen individuals who need not be sophisticated or qualified investors, which circumvents accredited investor standards and admits retail investors into hedge funds."
   },
   {
-   "failure_family": "sybil-and-identity-attack",
-   "count": 24,
-   "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json",
+   "failure_family": "sample-and-selection-bias",
+   "count": 21,
+   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
    "specific_names": [
-    "Anonymity dilution at scale",
-    "Anonymity driven attack surface",
-    "Anonymity driven opportunism raises transaction costs",
-    "Anonymity-enabled attacks",
-    "Anonymous trolling friction",
-    "Equal salary sockpuppet exploit",
-    "Fee and KYC pseudo-defense",
-    "Identity verification tradeoff",
-    "Inevitable sockpuppet exposure",
-    "Sockpuppet attack",
-    "Sockpuppet attack on Web of Trust",
-    "Sockpuppet attack on web-of-trust vouching"
+    "Adversarial Cohort Cannot Establish Base Rate",
+    "Cognitive bias in screening",
+    "Confidentiality driven nonresponse",
+    "Experiment T Magnitude Inconclusive",
+    "Private fund survey nonresponse",
+    "Record Selector Does Not Beat Visible Check Selector",
+    "Selector Result Reverses Under Tie Break",
+    "executed-agreement-selection-bias",
+    "false-inference-from-live-experiments",
+    "incomplete-response-data",
+    "industry-opacity-limits-sample-size",
+    "public-information-bias"
    ],
-   "example": "Centralized platforms cannot simply drop identity verification, because they need it to keep malicious actors from abusing the network and to ensure work quality; this is the tradeoff a staking based design is meant to dissolve."
+   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
   },
   {
    "failure_family": "trigger-design-failure",
@@ -845,26 +865,6 @@
     "diversification breakdown under stress"
    ],
    "example": "A country whose bankers do not embrace intentional risk taking is still exposed to risk, both through the collateral effects of intentional risk taking abroad and through unintentional risk taking at home, so domestic cultural restraint is not a sufficient safeguard."
-  },
-  {
-   "failure_family": "sample-and-selection-bias",
-   "count": 17,
-   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
-   "specific_names": [
-    "Cognitive bias in screening",
-    "Confidentiality driven nonresponse",
-    "Private fund survey nonresponse",
-    "executed-agreement-selection-bias",
-    "false-inference-from-live-experiments",
-    "incomplete-response-data",
-    "industry-opacity-limits-sample-size",
-    "public-information-bias",
-    "publication selection bias",
-    "regulatory-avoiders-unobservable",
-    "sample-size-does-not-fix-bias",
-    "selection bias from small survey samples"
-   ],
-   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
   },
   {
    "failure_family": "regulatory-capture-and-incumbent-advantage",
@@ -987,6 +987,26 @@
    "example": "The DAO failed because of fundamental flaws in its own code, which allowed hackers to move one third of its funds to a subsidiary account, showing that governance built entirely on smart contracts inherits the defects of its code."
   },
   {
+   "failure_family": "oracle-and-input-corruption",
+   "count": 14,
+   "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json",
+   "specific_names": [
+    "Code cannot govern tangible performance",
+    "Governance Attack Vector in Funding Oracles",
+    "Oracle and governance dependency of escrow enforcement",
+    "Pool Agreement Is Not External Correctness",
+    "Recorded Resolution Is Not External Correctness",
+    "centralized-oracle-capture",
+    "centralized-oracle-defeat",
+    "immature-decentralized-oracles",
+    "off-chain equity verification burden",
+    "oracle-feed-outage",
+    "top-down reform inertia",
+    "unavoidable contract bugs"
+   ],
+   "example": "Top-down corporate governance reform measures rarely, if ever, produce genuine change in the governance or culture of firms, and are commonly met with indifference, skepticism, or hostility from management."
+  },
+  {
    "failure_family": "custody-and-key-loss",
    "count": 14,
    "url": "https://wulfkaal.github.io/failures/by-name/custody-and-key-loss.json",
@@ -1047,26 +1067,6 @@
    "example": "Hardcoded lockup periods can protect token holders against supply side induced devaluation, but they also decrease the token economic flexibility the promoter team needs to raise additional funds, so the remedy trades investor protection against issuer financing capacity."
   },
   {
-   "failure_family": "oracle-and-input-corruption",
-   "count": 12,
-   "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json",
-   "specific_names": [
-    "Code cannot govern tangible performance",
-    "Governance Attack Vector in Funding Oracles",
-    "Oracle and governance dependency of escrow enforcement",
-    "centralized-oracle-capture",
-    "centralized-oracle-defeat",
-    "immature-decentralized-oracles",
-    "off-chain equity verification burden",
-    "oracle-feed-outage",
-    "top-down reform inertia",
-    "unavoidable contract bugs",
-    "unverifiable food integrity claims",
-    "unverified-edge-information"
-   ],
-   "example": "Top-down corporate governance reform measures rarely, if ever, produce genuine change in the governance or culture of firms, and are commonly met with indifference, skepticism, or hostility from management."
-  },
-  {
    "failure_family": "disclosure-cost-and-burden",
    "count": 10,
    "url": "https://wulfkaal.github.io/failures/by-name/disclosure-cost-and-burden.json",
@@ -1086,18 +1086,34 @@
   },
   {
    "failure_family": "provenance-and-audit-integrity",
-   "count": 7,
+   "count": 8,
    "url": "https://wulfkaal.github.io/failures/by-name/provenance-and-audit-integrity.json",
    "specific_names": [
     "Append-Only Without Tamper Evidence",
     "Attribution Failure Dissolves Responsibility",
     "Custody Without Account",
     "Silent Truncation Reports Clean History",
+    "Sweep Artifacts Unreleased",
     "Uninstrumented Execution Path",
     "Unjoinable Audit Records",
     "Unlogged Autonomous Payment"
    ],
    "example": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened."
+  },
+  {
+   "failure_family": "institutional-underprovision",
+   "count": 7,
+   "url": "https://wulfkaal.github.io/failures/by-name/institutional-underprovision.json",
+   "specific_names": [
+    "Debate Transport Absent",
+    "Half-Built Institutional Architecture",
+    "Invisible Institutions Underprovided",
+    "Market Discipline Underinvests",
+    "Structural Institutional Deficit",
+    "Visibility Paradox",
+    "Visible Success With Invisible Failure"
+   ],
+   "example": "Across forty DAOs in eight segments the unweighted dataset mean is 67.3 of 130 points (51.8 percent): the median DAO has implemented roughly half of the institutional architecture the framework prescribes."
   },
   {
    "failure_family": "environmental-and-resource-cost",
@@ -1112,20 +1128,6 @@
     "proof-of-work-energy-waste"
    ],
    "example": "Proof of work mining carries significant externalities: the authors estimate that the total energy cost of running the global network of computers solving proof of work puzzles was around 700 million US dollars per year before publication."
-  },
-  {
-   "failure_family": "institutional-underprovision",
-   "count": 6,
-   "url": "https://wulfkaal.github.io/failures/by-name/institutional-underprovision.json",
-   "specific_names": [
-    "Half-Built Institutional Architecture",
-    "Invisible Institutions Underprovided",
-    "Market Discipline Underinvests",
-    "Structural Institutional Deficit",
-    "Visibility Paradox",
-    "Visible Success With Invisible Failure"
-   ],
-   "example": "Across forty DAOs in eight segments the unweighted dataset mean is 67.3 of 130 points (51.8 percent): the median DAO has implemented roughly half of the institutional architecture the framework prescribes."
   }
  ],
  "failures": [
@@ -30339,6 +30341,813 @@
     "law-and-legal-systems",
     "governance-design",
     "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-002",
+   "url": "https://wulfkaal.github.io/claims/7456999-002",
+   "family": "research-design-limitation",
+   "name": "Causal Primitive Attribution Not Established",
+   "claim": "The paper treats RLHF as applying a scarcity-economic primitive to a computative signal-generation task, but cited agreement rates do not establish that framing as a causal explanation.",
+   "conditions": [
+    "the conceptual framing of RLHF pathologies in this paper"
+   ],
+   "topics": [
+    "economics",
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-003",
+   "url": "https://wulfkaal.github.io/claims/7456999-003",
+   "family": "research-design-limitation",
+   "name": "Fisher Information Dominance Unproved",
+   "claim": "Fisher information dominance is an open empirical question under assumptions that the paper identifies as necessary but insufficient.",
+   "conditions": [
+    "the Fisher information comparison proposed in Part IV"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-004",
+   "url": "https://wulfkaal.github.io/claims/7456999-004",
+   "family": "research-design-limitation",
+   "name": "Equilibrium Trajectory Separation Open",
+   "claim": "Equilibrium-trajectory separation is the paper's first open problem, not an established result.",
+   "conditions": [
+    "the proposed comparison of Mode A and Mode B"
+   ],
+   "topics": [
+    "research-methods",
+    "economics",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-005",
+   "url": "https://wulfkaal.github.io/claims/7456999-005",
+   "family": "sybil-and-identity-attack",
+   "name": "Sybil Resistance Mechanism Unspecified",
+   "claim": "Sybil resistance is only a design objective because the detector, dispersion statistic, threshold, error model, reputation update, Round 2 update, and critical share are unspecified.",
+   "conditions": [
+    "the current RLRF specification"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "reputation",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-006",
+   "url": "https://wulfkaal.github.io/claims/7456999-006",
+   "family": "research-design-limitation",
+   "name": "Conjecture Withdrawn",
+   "claim": "Conjecture 1 is withdrawn.",
+   "conditions": [
+    "Version 14 and later versions of this paper"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-010",
+   "url": "https://wulfkaal.github.io/claims/7456999-010",
+   "family": "research-design-limitation",
+   "name": "Selector Does Not Test Mechanism",
+   "claim": "The measured selector is an argmax over a record, not the reputation-weighted aggregation specified by RLRF, and the cohort contains no validation pool, stake, or deliberation round.",
+   "conditions": [
+    "interpretation of the measured cohort as evidence about RLRF"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-011",
+   "url": "https://wulfkaal.github.io/claims/7456999-011",
+   "family": "sample-and-selection-bias",
+   "name": "Record Selector Does Not Beat Visible Check Selector",
+   "claim": "The cohort does not show that the highest-record selector beats shipping an artifact that passes the visible checks because the measured margin is 0.037 and its interval contains zero.",
+   "conditions": [
+    "the highest-record and passes-the-checked-cases selectors in the measured cohort"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-012",
+   "url": "https://wulfkaal.github.io/claims/7456999-012",
+   "family": "research-design-limitation",
+   "name": "Simulation Is Not Validation",
+   "claim": "The 225-configuration sweep covers 4,500 trials, treats party accuracy as an input, and is reported as simulation rather than validation.",
+   "conditions": [
+    "the parameter sweep reported in Part V.B"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-013",
+   "url": "https://wulfkaal.github.io/claims/7456999-013",
+   "family": "ai-model-and-training-failure",
+   "name": "No Policy Trained",
+   "claim": "No policy is trained anywhere in the paper.",
+   "conditions": [
+    "the experiments and proposals reported in this paper"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-016",
+   "url": "https://wulfkaal.github.io/claims/7456999-016",
+   "family": "ai-model-and-training-failure",
+   "name": "Reward Model Overoptimization",
+   "claim": "Reward-model overoptimization can raise proxy reward while degrading true reward as optimized policies move farther from the reference policy.",
+   "conditions": [
+    "the scaling-law setting documented by Gao, Schulman, and Hilton"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-017",
+   "url": "https://wulfkaal.github.io/claims/7456999-017",
+   "family": "measurement-and-metric-failure",
+   "name": "Agreement Rates Do Not Identify Cause",
+   "claim": "Inter-annotator agreement rates are compatible with an incentive account, but ambiguity, plural values, rater error, underspecified instructions, heterogeneity, and legitimate preference diversity can produce the same rates.",
+   "conditions": [
+    "causal interpretation of the cited RLHF agreement rates"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-021",
+   "url": "https://wulfkaal.github.io/claims/7456999-021",
+   "family": "measurement-and-metric-failure",
+   "name": "Pairwise Disagreement Identification Failure",
+   "claim": "Pairwise disagreement measures label instability but does not identify annotator error variance or a structural variance floor without an explicit latent-label model.",
+   "conditions": [
+    "inference from pairwise disagreement statistics"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-022",
+   "url": "https://wulfkaal.github.io/claims/7456999-022",
+   "family": "research-design-limitation",
+   "name": "Arrow Analogy Overreach",
+   "claim": "Arrow's theorem is only an analogy to RLHF aggregation and does not derive reward hacking or overoptimization.",
+   "conditions": [
+    "the paper's use of Arrow's impossibility theorem"
+   ],
+   "topics": [
+    "economics",
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-023",
+   "url": "https://wulfkaal.github.io/claims/7456999-023",
+   "family": "research-design-limitation",
+   "name": "Incomplete Contracts Analogy Overreach",
+   "claim": "The incomplete-contracts comparison treats out-of-distribution behavior as unresolved, but remains an analogy rather than a derivation of reward overoptimization.",
+   "conditions": [
+    "the paper's use of the incomplete-contracts literature"
+   ],
+   "topics": [
+    "economics",
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-024",
+   "url": "https://wulfkaal.github.io/claims/7456999-024",
+   "family": "ai-model-and-training-failure",
+   "name": "AI Feedback Bias Propagation",
+   "claim": "RLAIF addresses scalability by substituting AI-generated preferences, but it propagates the AI labeler's own biases through the pipeline.",
+   "conditions": [
+    "RLAIF systems whose labeler reflects prior RLHF training"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-027",
+   "url": "https://wulfkaal.github.io/claims/7456999-027",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "AI Labeler Has Nothing to Lose",
+   "claim": "RLAIF and Constitutional AI remove the human scalability bottleneck, but neither gives the model labeler anything to lose.",
+   "conditions": [
+    "the comparison made with RLRF's economic-stake design"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-028",
+   "url": "https://wulfkaal.github.io/claims/7456999-028",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Staked Pool Without Answer Key Unproved",
+   "claim": "Verifiable-reward reinforcement learning already supplies deterministic rewards where answer keys exist, while the claim that a staked pool can substitute where no key exists is not established here.",
+   "conditions": [
+    "domains without an externally available answer key"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-029",
+   "url": "https://wulfkaal.github.io/claims/7456999-029",
+   "family": "research-design-limitation",
+   "name": "Format D Increment Untested",
+   "claim": "Format D combines reasoning supervision with adversarial argument, and its claimed increment is selecting revisions by which arguments moved a staked assessor, an increment no experiment in the paper tests.",
+   "conditions": [
+    "the proposed Debate-Informed Revision format"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-030",
+   "url": "https://wulfkaal.github.io/claims/7456999-030",
+   "family": "research-design-limitation",
+   "name": "Nearest Mechanism Comparison Missing",
+   "claim": "The paper's remaining residue is a combination rather than a primitive, and it is not compared with the nearest sequential peer-prediction, prediction-market, staking, or debate mechanisms.",
+   "conditions": [
+    "the novelty claim remaining after the paper's literature concessions"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-033",
+   "url": "https://wulfkaal.github.io/claims/7456999-033",
+   "family": "oracle-and-input-corruption",
+   "name": "Pool Agreement Is Not External Correctness",
+   "claim": "The multiplicative-weights regret bound limits performance against the realized pool resolution, but does not show that the pool resolution is externally correct.",
+   "conditions": [
+    "the unkeyed reputation update in equation 3"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-034",
+   "url": "https://wulfkaal.github.io/claims/7456999-034",
+   "family": "reputation-system-gaming",
+   "name": "Reputation May Track Agreement Instead of Accuracy",
+   "claim": "It remains unproved whether equilibrium reputation weights track externally checked accuracy rather than pool agreement, or whether keyed-task weights transfer to unkeyed tasks.",
+   "conditions": [
+    "the proposed multiplicative reputation update"
+   ],
+   "topics": [
+    "reputation",
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-035",
+   "url": "https://wulfkaal.github.io/claims/7456999-035",
+   "family": "sybil-and-identity-attack",
+   "name": "Nontransferability Alone Does Not Resist Sybils",
+   "claim": "Non-transferability alone does not establish Sybil resistance.",
+   "conditions": [
+    "the non-transferable REP design"
+   ],
+   "topics": [
+    "reputation",
+    "consensus-and-security",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-036",
+   "url": "https://wulfkaal.github.io/claims/7456999-036",
+   "family": "research-design-limitation",
+   "name": "Repeated Game Preconditions Unestablished",
+   "claim": "Repeated-game cooperation results require persistent identity, patient agents, observable deviations, and enforceable punishments, none of which RLRF presently establishes.",
+   "conditions": [
+    "application of repeated-game results to RLRF"
+   ],
+   "topics": [
+    "economics",
+    "reputation",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-037",
+   "url": "https://wulfkaal.github.io/claims/7456999-037",
+   "family": "oracle-and-input-corruption",
+   "name": "Recorded Resolution Is Not External Correctness",
+   "claim": "Validators face consequences for disagreement with an unkeyed pool or error against a keyed result, but this only creates an incentive to match the recorded resolution and does not prove an unkeyed resolution correct.",
+   "conditions": [
+    "the signal properties of keyed and unkeyed RLRF events"
+   ],
+   "topics": [
+    "reputation",
+    "risk-and-incentives",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-038",
+   "url": "https://wulfkaal.github.io/claims/7456999-038",
+   "family": "research-design-limitation",
+   "name": "Added Transcript Information Unproved",
+   "claim": "The two-round protocol is proposed to collect more structured data than a scalar label, but the paper does not establish that the added fields contain more information about policy quality.",
+   "conditions": [
+    "the intended information gain of the two-round protocol"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-040",
+   "url": "https://wulfkaal.github.io/claims/7456999-040",
+   "family": "institutional-underprovision",
+   "name": "Debate Transport Absent",
+   "claim": "The proposed debate transport layer is not built or exercised, and none of the paper's evidence includes a debate corpus.",
+   "conditions": [
+    "the debate stage of the proposed two-round protocol"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "decentralization"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-041",
+   "url": "https://wulfkaal.github.io/claims/7456999-041",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Round 2 Update Unspecified",
+   "claim": "The paper gives no single rule connecting Round 2 stake redistribution, equation 3's reputation update, and the consensus-alignment penalty, so the Round 2 effect on reputation and stake is unspecified.",
+   "conditions": [
+    "the Full Vote update in the current mechanism specification"
+   ],
+   "topics": [
+    "reputation",
+    "governance-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-044",
+   "url": "https://wulfkaal.github.io/claims/7456999-044",
+   "family": "ai-model-and-training-failure",
+   "name": "Format D Training Untested",
+   "claim": "Format D would train on arguments accompanying a staked vote change, but that use is untested.",
+   "conditions": [
+    "the proposed Debate-Informed Revision training format"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-045",
+   "url": "https://wulfkaal.github.io/claims/7456999-045",
+   "family": "measurement-and-metric-failure",
+   "name": "Mutual Information Does Not Establish Fisher Information",
+   "claim": "Equation 5 is a mutual-information identity rather than a Fisher-information decomposition, so the Fisher question does not follow from it.",
+   "conditions": [
+    "interpretation of equation 5"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-046",
+   "url": "https://wulfkaal.github.io/claims/7456999-046",
+   "family": "research-design-limitation",
+   "name": "Positive Information Terms Unproved",
+   "claim": "Every mutual-information term in equation 5 is nonnegative, but the paper shows none to be strictly positive.",
+   "conditions": [
+    "the transcript decomposition in equation 5"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-047",
+   "url": "https://wulfkaal.github.io/claims/7456999-047",
+   "family": "data-quality-and-comparability",
+   "name": "No Common Observation Processing Chain",
+   "claim": "The data processing inequality cannot compare RLHF and RLRF because their labels arise from different observation mechanisms and no processing chain connects them.",
+   "conditions": [
+    "attempts to order RLHF and RLRF information using data processing"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-048",
+   "url": "https://wulfkaal.github.io/claims/7456999-048",
+   "family": "research-design-limitation",
+   "name": "Transcript Informativeness Unproved",
+   "claim": "The two rounds are intended to capture contested quality dimensions and the reasons they matter, but the paper does not show that either collection is informative about policy quality.",
+   "conditions": [
+    "the intended informational value of the RLRF transcript"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-050",
+   "url": "https://wulfkaal.github.io/claims/7456999-050",
+   "family": "ai-model-and-training-failure",
+   "name": "Training Flywheel Unimplemented",
+   "claim": "The proposed four-format flywheel is not measured or implemented and is listed as an open problem.",
+   "conditions": [
+    "the coupled four-format training system"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-051",
+   "url": "https://wulfkaal.github.io/claims/7456999-051",
+   "family": "research-design-limitation",
+   "name": "Efficiency Conjecture Incoherent",
+   "claim": "The paper withdrew its earlier Cramer-Rao efficiency conjecture because revisions could not make it coherent and comparable with deployed RLHF, and it makes no mean squared error claim.",
+   "conditions": [
+    "the withdrawn Conjecture 1"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-052",
+   "url": "https://wulfkaal.github.io/claims/7456999-052",
+   "family": "data-quality-and-comparability",
+   "name": "Fisher Comparison Lacks Common Observation Model",
+   "claim": "The Fisher-information comparison lacks a common observation model, and rationality plus the stated non-babbling and positive-information conditions do not establish a strict ordering.",
+   "conditions": [
+    "the open empirical question on Fisher information"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-053",
+   "url": "https://wulfkaal.github.io/claims/7456999-053",
+   "family": "measurement-and-metric-failure",
+   "name": "Trajectory Estimand Undefined",
+   "claim": "Equilibrium-trajectory separation cannot be evaluated until a common stochastic process, its filtrations, a concentration functional, and a cross-mode estimand are defined.",
+   "conditions": [
+    "the proposed separation of Mode A and Mode B trajectories"
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "economics"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-054",
+   "url": "https://wulfkaal.github.io/claims/7456999-054",
+   "family": "sybil-and-identity-attack",
+   "name": "Adaptive Sybil Dispersion Camouflage",
+   "claim": "An adaptive adversary could disguise Round 1 coordination by injecting noise and coordinate only in Round 2, and the present mechanism does not prevent that response.",
+   "conditions": [
+    "the proposed low-dispersion Sybil detector"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "reputation",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-055",
+   "url": "https://wulfkaal.github.io/claims/7456999-055",
+   "family": "definitional-ambiguity",
+   "name": "Majority Limit Misstated as Byzantine Bound",
+   "claim": "The paper withdraws its comparison between a 49 percent simulated Sybil share and classical Byzantine fault tolerance because the two limits are different.",
+   "conditions": [
+    "interpretation of the sweep's majority-agreement result"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-057",
+   "url": "https://wulfkaal.github.io/claims/7456999-057",
+   "family": "ai-model-and-training-failure",
+   "name": "Signal Invariance Does Not Establish Policy Invariance",
+   "claim": "Remark 1 states only signal invariance and supports no policy-level consequence without a separability model and empirical training evidence.",
+   "conditions": [
+    "the style-invariance remark"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-058",
+   "url": "https://wulfkaal.github.io/claims/7456999-058",
+   "family": "research-design-limitation",
+   "name": "Measured Cohort Omits Mechanism",
+   "claim": "The measured cohort contains real artifacts and deterministic verdicts, but contains no validation pool, stake, deliberation round, or reputation weight from the proposed mechanism.",
+   "conditions": [
+    "the evidentiary reach of the measured cohort"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-060",
+   "url": "https://wulfkaal.github.io/claims/7456999-060",
+   "family": "sample-and-selection-bias",
+   "name": "Adversarial Cohort Cannot Establish Base Rate",
+   "claim": "Fifty-three cohort records passed every visible check and failed withheld checks, but adversarial configurations were instructed to produce this behavior, so the number is not a base rate.",
+   "conditions": [
+    "the measured cohort with deliberately adversarial configurations"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-061",
+   "url": "https://wulfkaal.github.io/claims/7456999-061",
+   "family": "sample-and-selection-bias",
+   "name": "Selector Result Reverses Under Tie Break",
+   "claim": "The record's measured advantage over passing visible checks changes sign under an arbitrary file-order tie-break, so the quantity is not resolved at this sample size.",
+   "conditions": [
+    "the comparison between highest-record and passes-the-checked-cases selectors"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-062",
+   "url": "https://wulfkaal.github.io/claims/7456999-062",
+   "family": "measurement-and-metric-failure",
+   "name": "Simulated Accuracy Misstated as Published Rate",
+   "claim": "The sweep's 67.7 percent annotator baseline is a simulated output rather than a published agreement rate or a measurement of human annotators.",
+   "conditions": [
+    "Finding 1 of the parameter sweep"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-063",
+   "url": "https://wulfkaal.github.io/claims/7456999-063",
+   "family": "research-design-limitation",
+   "name": "Parameterized Accuracy Is Not Measurement",
+   "claim": "The sweep's reported RLRF accuracy above 0.97 is an output of parameters set by the sweep, not a measurement of a system.",
+   "conditions": [
+    "Finding 2 of the parameter sweep"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-064",
+   "url": "https://wulfkaal.github.io/claims/7456999-064",
+   "family": "sybil-and-identity-attack",
+   "name": "Simulated Sybil Tolerance Is Not Established Resistance",
+   "claim": "Mode B remains above 0.90 simulated accuracy up to a 0.49 Sybil share, but unspecified detector and update components prevent this result from establishing Sybil resistance.",
+   "conditions": [
+    "the parameterized simulation in Finding 3"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "empirical-evidence",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-065",
+   "url": "https://wulfkaal.github.io/claims/7456999-065",
+   "family": "data-quality-and-comparability",
+   "name": "Finding 4 Lacks Supporting Values",
+   "claim": "Finding 4 supports no tuning conclusion because the paper reports no parameter ranking or supporting values for it.",
+   "conditions": [
+    "the reported evidence for Finding 4"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-066",
+   "url": "https://wulfkaal.github.io/claims/7456999-066",
+   "family": "research-design-limitation",
+   "name": "Stability Statistics Do Not Test Trajectory Separation",
+   "claim": "Finding 7 reports opposing stability orderings but does not define or test equilibrium-trajectory separation.",
+   "conditions": [
+    "the two coefficients of variation reported in Finding 7"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-067",
+   "url": "https://wulfkaal.github.io/claims/7456999-067",
+   "family": "ai-model-and-training-failure",
+   "name": "Training Pipeline Remains a Proposal",
+   "claim": "The three-stage RLRF training pipeline is a proposal, and the paper does not establish a signal-quality advantage before specifying it.",
+   "conditions": [
+    "the proposed training pipeline in Part VI"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-068",
+   "url": "https://wulfkaal.github.io/claims/7456999-068",
+   "family": "ai-model-and-training-failure",
+   "name": "Reward Model May Relearn Style Proxy",
+   "claim": "A fitted reputation reward model can learn style correlations absent from an externally checked outcome, and no such reward model is trained or tested in the paper.",
+   "conditions": [
+    "the proposed Reputation Reward Model in Stage 2"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-069",
+   "url": "https://wulfkaal.github.io/claims/7456999-069",
+   "family": "reputation-system-gaming",
+   "name": "Adaptive Weight Accuracy Unproved",
+   "claim": "RLRF is intended to make governance adapt through evolving reputation weights, but whether those weights track validator accuracy or transfer between keyed and unkeyed tasks remains unproved.",
+   "conditions": [
+    "the dynamic-regulation rationale for RLRF"
+   ],
+   "topics": [
+    "dynamic-regulation",
+    "reputation",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-071",
+   "url": "https://wulfkaal.github.io/claims/7456999-071",
+   "family": "research-design-limitation",
+   "name": "RLRF Equilibrium Conditions Unverified",
+   "claim": "The paper does not establish that the RLRF best-response map satisfies the continuity, convexity, or contraction conditions required for equilibrium and convergence.",
+   "conditions": [
+    "application of recursive-equilibrium results to the RLRF validation pool"
+   ],
+   "topics": [
+    "economics",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-073",
+   "url": "https://wulfkaal.github.io/claims/7456999-073",
+   "family": "provenance-and-audit-integrity",
+   "name": "Sweep Artifacts Unreleased",
+   "claim": "Reproducibility by others has not been demonstrated because the parameter grids, generating code, and trial-level outputs are not released with this version.",
+   "conditions": [
+    "the parameter sweep in this paper version"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "open-source-and-code"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-074",
+   "url": "https://wulfkaal.github.io/claims/7456999-074",
+   "family": "sample-and-selection-bias",
+   "name": "Experiment T Magnitude Inconclusive",
+   "claim": "Experiment T did not show that consensus-weighted selection outperformed equal weighting because the +0.0017 difference had a ninety-five percent interval from -0.0051 to +0.0085.",
+   "conditions": [
+    "Experiment T's seven-model panel and two-constraint task"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7456999-075",
+   "url": "https://wulfkaal.github.io/claims/7456999-075",
+   "family": "data-quality-and-comparability",
+   "name": "Unparsed Replies Reverse Estimate",
+   "claim": "Recovering previously unparsed assessor replies reversed Experiment T's magnitude estimate to -0.0017 while leaving its interval inclusive of zero and its attribution result below the required percentile.",
+   "conditions": [
+    "the revised Experiment T analysis"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "ai-and-agents"
    ]
   }
  ]
