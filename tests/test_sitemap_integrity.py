@@ -6,6 +6,7 @@ import subprocess
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +24,7 @@ CLAIMS = load_module("normalize_claim_discovery", "tools/normalize_claim_discove
 SITEMAPS = load_module("check_sitemap_uniqueness", "tools/check_sitemap_uniqueness.py")
 SYNC = load_module("sync_sitemap_index", "tools/sync_sitemap_index.py")
 MERGE = load_module("merge_sitemap", "tools/merge_sitemap.py")
+BING_AUTH = load_module("check_bing_site_auth", "tools/check_bing_site_auth.py")
 
 
 def required_human_urls(repo):
@@ -45,6 +47,63 @@ def missing_required_human_urls(sitemap_text, required):
 
 
 class SitemapIntegrityTests(unittest.TestCase):
+    def test_bing_site_auth_matches_reviewed_binding_and_safe_xml_shape(self):
+        BING_AUTH.validate(ROOT / "BingSiteAuth.xml")
+
+    def test_bing_site_auth_mutations_fail_closed(self):
+        source = ROOT / "BingSiteAuth.xml"
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp) / "BingSiteAuth.xml"
+            candidate.write_bytes(source.read_bytes())
+            candidate.chmod(BING_AUTH.EXPECTED_MODE)
+            BING_AUTH.validate(candidate)
+
+            mutations = (
+                b"",
+                source.read_bytes() + b"\n",
+                source.read_bytes().replace(b"<users>", b"<users unexpected='1'>"),
+                source.read_bytes().replace(b"</user>", b"<nested/></user>"),
+            )
+            for payload in mutations:
+                with self.subTest(payload_size=len(payload)):
+                    candidate.write_bytes(payload)
+                    with self.assertRaises(BING_AUTH.ValidationError):
+                        BING_AUTH.validate(candidate)
+
+            candidate.write_bytes(source.read_bytes())
+            candidate.chmod(0o600)
+            with self.assertRaisesRegex(BING_AUTH.ValidationError, "mode"):
+                BING_AUTH.validate(candidate)
+
+            with mock.patch.object(Path, "is_symlink", return_value=True):
+                with self.assertRaisesRegex(BING_AUTH.ValidationError, "non-symlink"):
+                    BING_AUTH.validate(candidate)
+
+    def test_bing_site_auth_rejects_unsafe_xml_shapes(self):
+        unsafe_documents = (
+            b"<!DOCTYPE users [<!ENTITY x 'value'>]><users><user>&x;</user></users>",
+            b"<users><!--comment--><user>value</user></users>",
+            b"<users><?instruction value?><user>value</user></users>",
+            b"<users><user><![CDATA[value]]></user></users>",
+            b"<users><user><nested/></user></users>",
+            b"<users unexpected='1'><user>value</user></users>",
+            b"<users><user unexpected='1'>value</user></users>",
+            b"<unexpected><user>value</user></unexpected>",
+            b"<users><user>   </user></users>",
+        )
+        for payload in unsafe_documents:
+            with self.subTest(payload=payload[:24]):
+                with self.assertRaises(BING_AUTH.ValidationError):
+                    BING_AUTH.validate_xml(payload)
+
+    def test_bing_site_auth_changes_trigger_ci(self):
+        workflow = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(
+            encoding="utf-8"
+        )
+        push, pull_request = workflow.split("  pull_request:", 1)
+        self.assertIn("      - 'BingSiteAuth.xml'", push)
+        self.assertIn("      - 'BingSiteAuth.xml'", pull_request.split("  workflow_dispatch:", 1)[0])
+
     def test_projections_checkout_fetches_full_history(self):
         lines = (ROOT / ".github" / "workflows" / "corpus-projections.yml").read_text(
             encoding="utf-8"
