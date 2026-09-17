@@ -1,27 +1,33 @@
 {
-  "fetched_at": "2026-09-11T22:16:17Z",
+  "fetched_at": "2026-09-17T13:47:55Z",
   "source": "live",
   "canonical_orcid": "0009-0008-7840-1847",
   "canonical_url": "https://wulfkaal.github.io/citations-openalex.json",
+  "preferred_lookup": [
+    "https://openalex.org/authors/A5085764841",
+    "https://api.openalex.org/authors?filter=orcid:0009-0008-7840-1847"
+  ],
+  "do_not_use": "https://api.openalex.org/authors/orcid:0009-0008-7840-1847 currently resolves to ghost A5143966534 (0 works, 0 citations) even though filter=orcid hits A5085764841.",
   "profiles": [
     {
       "openalex_id": "A5085764841",
       "url": "https://openalex.org/authors/A5085764841",
       "role": "citation_graph",
-      "works_count": 178,
-      "cited_by_count": 1140,
-      "bound_orcid": "0000-0003-0757-275X"
+      "works_count": 211,
+      "cited_by_count": 1159,
+      "bound_orcid": "0009-0008-7840-1847"
     },
     {
       "openalex_id": "A5143966534",
       "url": "https://openalex.org/authors/A5143966534",
-      "role": "orcid_resolution",
-      "works_count": 7,
+      "role": "ghost_orcid_path",
+      "works_count": 0,
       "cited_by_count": 0,
-      "bound_orcid": "0009-0008-7840-1847"
+      "bound_orcid": "0009-0008-7840-1847",
+      "note": "Empty record. No Claim button. Still captures GET /authors/orcid:0009-0008-7840-1847. OpenAlex ticket filed 2026-09-11."
     }
   ],
-  "distinct_citing_work_count": 919,
+  "distinct_citing_work_count": 916,
   "distinct_citing_work_method": "Live OpenAlex /works filter=cites:<work-id>|... over the listed works of A5085764841 and A5143966534, unioned.",
-  "note": "Do not treat authors/orcid:0009-0008-7840-1847 as the citation graph until it matches the fat profile."
+  "note": "Cite A5085764841 or filter=orcid:0009-0008-7840-1847. Do not treat authors/orcid:0009-0008-7840-1847 as the citation graph while it returns A5143966534."
 }
