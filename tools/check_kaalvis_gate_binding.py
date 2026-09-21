@@ -39,10 +39,15 @@ def main():
 
     try:
         head = git_output("rev-parse", "HEAD")
-        branch = git_output("symbolic-ref", "--short", "HEAD")
     except subprocess.CalledProcessError as exc:
         detail = exc.stderr.strip() or str(exc)
         print(f"kaalvis gate binding failed: {detail}", file=sys.stderr)
+        return 1
+
+    try:
+        branch = git_output("symbolic-ref", "--short", "HEAD")
+    except subprocess.CalledProcessError:
+        print("kaalvis gate binding failed: detached HEAD", file=sys.stderr)
         return 1
 
     errors = validate_binding(head, branch, args.expect)
