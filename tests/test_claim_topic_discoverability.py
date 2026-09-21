@@ -3,6 +3,7 @@ import html.parser
 import json
 import posixpath
 import re
+import subprocess
 import tempfile
 import unittest
 import urllib.parse
@@ -85,6 +86,108 @@ def reachable_html(start, maximum_depth):
 
 
 class ClaimTopicDiscoverabilityTests(unittest.TestCase):
+    def test_generator_rewrites_count_after_topic_row_is_linked(self):
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            claims_dir = repo / "claims"
+            topic_dir = claims_dir / "by-topic"
+            topic_dir.mkdir(parents=True)
+
+            records = [{
+                "id": "kaal:claim:1-001",
+                "url": "https://wulfkaal.github.io/claims/1-001",
+                "claim": "First claim",
+                "year": 2026,
+                "topics": ["governance"],
+            }]
+
+            def write_sources():
+                (topic_dir / "governance.json").write_text(
+                    json.dumps({
+                        "topic": "governance",
+                        "count": len(records),
+                        "claims": [record["id"] for record in records],
+                    }),
+                    encoding="utf-8",
+                )
+                (claims_dir / "index.json").write_text(
+                    json.dumps({"claims": records}), encoding="utf-8"
+                )
+                urls = "".join(
+                    f"<url><loc>{record['url']}</loc></url>" for record in records
+                )
+                (repo / "sitemap-claims.xml").write_text(
+                    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                    + urls + "</urlset>",
+                    encoding="utf-8",
+                )
+                for record in records:
+                    short = record["id"].removeprefix(BUILDER.ID_PREFIX)
+                    path = claims_dir / f"{short}.html"
+                    if not path.exists():
+                        path.write_text(
+                            "<html><body><main><h1>Claim</h1></main></body></html>",
+                            encoding="utf-8",
+                        )
+
+            (claims_dir / "index.html").write_text(
+                '<html><body><main><ul></ul><div class="k">Topics</div>'
+                '<table><tr><th>Topic</th><th>Claims</th><th>Download</th></tr>'
+                '<tr><td>governance</td><td>1</td><td>'
+                '<a href="./by-topic/governance.json">JSON</a></td></tr></table>'
+                "<footer>End</footer></main></body></html>",
+                encoding="utf-8",
+            )
+            write_sources()
+
+            first = subprocess.run(
+                ["python3", str(SCRIPT), "--repo", str(repo)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(first.returncode, 0, first.stderr)
+            linked_page = (claims_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn(
+                '<a href="./by-topic/governance.html">governance</a>', linked_page
+            )
+
+            records.append({
+                "id": "kaal:claim:1-002",
+                "url": "https://wulfkaal.github.io/claims/1-002",
+                "claim": "Second claim",
+                "year": 2026,
+                "topics": ["governance"],
+            })
+            write_sources()
+
+            regenerated = subprocess.run(
+                ["python3", str(SCRIPT), "--repo", str(repo)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(regenerated.returncode, 0, regenerated.stderr)
+            self.assertNotIn(
+                "count cell could not be rewritten",
+                regenerated.stdout + regenerated.stderr,
+            )
+            updated_page = (claims_dir / "index.html").read_text(encoding="utf-8")
+            self.assertNotEqual(updated_page, linked_page)
+            self.assertRegex(
+                updated_page,
+                r'<td><a href="\./by-topic/governance\.html">governance</a>'
+                r'</td><td>2</td>',
+            )
+
+            checked = subprocess.run(
+                ["python3", str(SCRIPT), "--repo", str(repo), "--check"],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(checked.returncode, 0, checked.stderr)
+
     def test_topic_hub_generator_uses_its_sitemap_canonical(self):
         page = BUILDER.render_index_html([("example", 1)], 1)
         self.assertEqual(
