@@ -323,6 +323,37 @@ class SitemapIntegrityTests(unittest.TestCase):
             "claim hub sitemap lastmod must identify the latest committed hub bytes",
         )
 
+    def test_agent_card_refresh_is_bound_through_sitemap_index(self):
+        url = f"{BASE}/.well-known/agent-card.json"
+        expected = MERGE.git_content_date(ROOT, Path(".well-known/agent-card.json"))
+        sitemap_path = ROOT / "sitemap-colloquium.xml"
+        sitemap = sitemap_path.read_text(encoding="utf-8")
+        row = next(
+            body
+            for body in MERGE.URL_ROW.findall(sitemap)
+            if MERGE.URL_LOC.search(body).group(1) == url
+        )
+        self.assertEqual(
+            MERGE.LASTMOD.search(row).group(1),
+            expected,
+            "agent-card sitemap lastmod must identify its latest committed bytes",
+        )
+
+        state = json.loads((ROOT / SYNC.STATE).read_text(encoding="utf-8"))
+        recorded = state["sitemap-colloquium.xml"]
+        self.assertEqual(recorded["sha256"], SYNC.digest(sitemap_path))
+
+        _, index_rows = SYNC.survey(ROOT)
+        announced = {
+            relative: lastmod
+            for relative, lastmod, _ in index_rows
+        }["sitemap-colloquium.xml"]
+        self.assertEqual(
+            announced,
+            recorded["lastmod"],
+            "sitemap index date must match the digest-bound state record",
+        )
+
     def test_git_content_date_is_stable_and_ignores_filesystem_mtime(self):
         with tempfile.TemporaryDirectory() as temp:
             repo = Path(temp)
