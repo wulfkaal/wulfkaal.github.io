@@ -1,0 +1,291 @@
+{
+  "schema_version": "kaal-position-batch-strict-v1",
+  "batch_id": "kaalvis:2026-09-21:rlhf-stack-essay-six-v1",
+  "date": "2026-09-21",
+  "status": "affirmed",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+  "source_snapshot_sha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+  "exact_authorization": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21",
+  "review_notes": [
+    {
+      "sequence": 8,
+      "response_type": "qualification",
+      "justification": "The qualification accepts that RLHF has a structural flaw but relocates it from the human annotator to the costless reward signal."
+    },
+    {
+      "sequence": 9,
+      "response_type": "qualification",
+      "justification": "The qualification accepts calibration as useful while holding that it cannot supply its own reference where no answer key exists."
+    },
+    {
+      "sequence": 10,
+      "response_type": "qualification",
+      "justification": "The qualification accepts that closed-choice outputs cannot fabricate text while denying that this eliminates error."
+    },
+    {
+      "sequence": 11,
+      "response_type": "extension",
+      "justification": "The extension applies the limits of internal monitoring loops to calibrated decision engines and adds a cost for careless checking."
+    },
+    {
+      "sequence": 12,
+      "response_type": "extension",
+      "justification": "The extension places decentralized validation of feedback as the third layer of a stack alongside verifiable rewards and calibrated decisions."
+    },
+    {
+      "sequence": 13,
+      "response_type": "extension",
+      "justification": "The extension applies the migration of the binding constraint from generation to evaluation to the question of what succeeds RLHF."
+    }
+  ],
+  "positions": [
+    {
+      "sequence": 8,
+      "response_type": "qualification",
+      "slug": "rlhf-flaw-is-institutional",
+      "topics": [
+        "ai-and-agents",
+        "institutional-design",
+        "reputation"
+      ],
+      "text": "TypeSafe's case for Jev locates RLHF's flaw in the human in the loop. Kaal's position is that the flaw is institutional: whoever supplies the reward signal bears no consequence for being wrong. A model that labels in the annotator's place loses nothing either. Replacing the human does not fix it; giving the signal a price does.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7456999-027",
+        "url": "https://wulfkaal.github.io/claims/7456999-027",
+        "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+        "paper": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999. https://doi.org/10.2139/ssrn.7456999",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7456999",
+        "source_pdf_sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "That is an institutional flaw, not a biological one.",
+        "sourcePassageSha256": "95fbee0b890f727fc8029c5a6209942e20d98011f944c3ca3a070ffc53d30b4b"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    },
+    {
+      "sequence": 9,
+      "response_type": "qualification",
+      "slug": "calibration-needs-a-key",
+      "topics": [
+        "ai-and-agents",
+        "research-methods",
+        "risk-and-incentives"
+      ],
+      "text": "Calibration can only be measured against a reference. Where no answer key exists, that reference is a label someone supplies, whether a human annotator, another model or a synthetic generator. If that label is costless, the flaw RLHF had returns through the label.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7456999-024",
+        "url": "https://wulfkaal.github.io/claims/7456999-024",
+        "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+        "paper": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999. https://doi.org/10.2139/ssrn.7456999",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7456999",
+        "source_pdf_sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "If that label is costless, the human-shaped flaw returns through the label.",
+        "sourcePassageSha256": "603f8d1ad642adadc2fd360d89e2fae59bd20197f0171d2601c99d2647a69d6f"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    },
+    {
+      "sequence": 10,
+      "response_type": "qualification",
+      "slug": "hallucination-redefined-not-eliminated",
+      "topics": [
+        "ai-and-agents",
+        "risk-and-incentives"
+      ],
+      "text": "A model that must pick from a closed list cannot invent a citation, but it can still pick the wrong item. Kaal's position is that closed-choice decision engines redefine hallucination rather than eliminate it: the error moves from fabricated text to confident misclassification.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:5541658-007",
+        "url": "https://wulfkaal.github.io/claims/5541658-007",
+        "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+        "paper": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658. https://doi.org/10.2139/ssrn.5541658",
+        "authors": [
+          "Wulf A. Kaal",
+          "Morgan A. Gray"
+        ],
+        "year": "2025",
+        "ssrn": "https://ssrn.com/abstract=5541658",
+        "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "Second, zero hallucination is a redefinition, not an elimination.",
+        "sourcePassageSha256": "321906684d74ef6ba13427d47b35a1fc6ca9f414da37ae98f8520ec266526abe"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    },
+    {
+      "sequence": 11,
+      "response_type": "extension",
+      "slug": "calibration-must-be-checked-continuously",
+      "topics": [
+        "ai-and-agents",
+        "governance-design",
+        "accountability"
+      ],
+      "text": "Calibration is a property of populations, not of single decisions. A model can be calibrated on average and miscalibrated on a subgroup, and it can drift. Someone has to keep checking it on cases it has never seen, from outside its own data loop, and must bear a cost for checking carelessly.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:5245185-032",
+        "url": "https://wulfkaal.github.io/claims/5245185-032",
+        "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+        "paper": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185. https://doi.org/10.2139/ssrn.5245185",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2025",
+        "ssrn": "https://ssrn.com/abstract=5245185",
+        "source_pdf_sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "Someone has to keep checking it, on cases it has never seen.",
+        "sourcePassageSha256": "4f3180131a111e290ad15a175fe94f4c865b332c16becb715646fa0b3c09fc8b"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    },
+    {
+      "sequence": 12,
+      "response_type": "extension",
+      "slug": "after-rlhf-comes-a-stack",
+      "topics": [
+        "ai-and-agents",
+        "governance-design",
+        "reputation"
+      ],
+      "text": "No single model comes after RLHF. A stack does: verifiable rewards where an answer key exists, calibrated decisions for typed choices, and accountable validation, in which staked validators verify feedback, where no key exists.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:4855607-035",
+        "url": "https://wulfkaal.github.io/claims/4855607-035",
+        "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+        "paper": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607. https://doi.org/10.2139/ssrn.4855607",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2024",
+        "ssrn": "https://ssrn.com/abstract=4855607",
+        "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "No single model comes after RLHF. A stack does.",
+        "sourcePassageSha256": "16f18b40c630040f3b6f61026d03ecf45927329144800ab93e48c2db09ebd345"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    },
+    {
+      "sequence": 13,
+      "response_type": "extension",
+      "slug": "a-score-is-not-a-stake",
+      "topics": [
+        "economics",
+        "ai-and-agents",
+        "reputation"
+      ],
+      "text": "When generation becomes cheap, the binding constraint moves to evaluation. A calibrated score prices an error but does not make anyone answer for it. The successor to RLHF is the signal someone is willing to stand behind.",
+      "scope_conditions": [
+        "TypeSafe's post announces a product. It is not an empirical test of these claims.",
+        "The position is Kaal's own argument in the essay After RLHF Comes a Stack, Not a Model.",
+        "The position does not evaluate Jev's accuracy, which TypeSafe has not published a calibration figure for.",
+        "The accountable-validation layer is proposed, not tested: no policy has yet been trained under it."
+      ],
+      "current_debate": {
+        "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7261481-005",
+        "url": "https://wulfkaal.github.io/claims/7261481-005",
+        "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+        "paper": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481. https://doi.org/10.2139/ssrn.7261481",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": "https://ssrn.com/abstract=7261481",
+        "source_pdf_sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+      },
+      "source_provenance": {
+        "name": "After RLHF Comes a Stack, Not a Model",
+        "canonicalUrl": "https://wulfkaal.com/2026/09/21/after-rlhf-comes-a-stack-not-a-model/",
+        "sourceContentSha256": "2ec658f0ed960263956de32e4d31390876e3b6c531bd91bc28a875317e39dcdd",
+        "sourcePassage": "A score is not a stake.",
+        "sourcePassageSha256": "a2d683ad1adb11cb099d463d6559ae195401760fd3c9a5c8f3f4bbcc19276867"
+      },
+      "user_affirmation": "Wulf A. Kaal affirmed these six propositions by one-click selection on 2026-09-21"
+    }
+  ]
+}

@@ -15,6 +15,102 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-013",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-013",
+   "text": "When generation becomes cheap, the binding constraint moves to evaluation. A calibrated score prices an error but does not make anyone answer for it. The successor to RLHF is the signal someone is willing to stand behind.",
+   "responseType": "extension",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7261481-005"
+   },
+   "sha256": "5ea16441f6f183a2a1bb4991be8deb97aacd5c59da8bc61e599b7e7c19c16ea5"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-012",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-012",
+   "text": "No single model comes after RLHF. A stack does: verifiable rewards where an answer key exists, calibrated decisions for typed choices, and accountable validation, in which staked validators verify feedback, where no key exists.",
+   "responseType": "extension",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/4855607-035"
+   },
+   "sha256": "f3f8a5d17aa372523b85d661b877d544bc46dcf2efe757e109978cb846f61967"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-011",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-011",
+   "text": "Calibration is a property of populations, not of single decisions. A model can be calibrated on average and miscalibrated on a subgroup, and it can drift. Someone has to keep checking it on cases it has never seen, from outside its own data loop, and must bear a cost for checking carelessly.",
+   "responseType": "extension",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/5245185-032"
+   },
+   "sha256": "f400947d3736431520577a9772fab414a0761f41ec8c7b96d726d56c992fb114"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-010",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-010",
+   "text": "A model that must pick from a closed list cannot invent a citation, but it can still pick the wrong item. Kaal's position is that closed-choice decision engines redefine hallucination rather than eliminate it: the error moves from fabricated text to confident misclassification.",
+   "responseType": "qualification",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/5541658-007"
+   },
+   "sha256": "b3469997cf5c779be41891bf1c0847ff445864072eaf1dacc08cf3b983aa67ed"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-009",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-009",
+   "text": "Calibration can only be measured against a reference. Where no answer key exists, that reference is a label someone supplies, whether a human annotator, another model or a synthetic generator. If that label is costless, the flaw RLHF had returns through the label.",
+   "responseType": "qualification",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7456999-024"
+   },
+   "sha256": "fca431ad631d410b864ae87d6c9dcf6fe34d577f5eceb5da3887735c5fa86de2"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-21-008",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-21-008",
+   "text": "TypeSafe's case for Jev locates RLHF's flaw in the human in the loop. Kaal's position is that the flaw is institutional: whoever supplies the reward signal bears no consequence for being wrong. A model that labels in the annotator's place loses nothing either. Replacing the human does not fix it; giving the signal a price does.",
+   "responseType": "qualification",
+   "datePublished": "2026-09-21",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7456999-027"
+   },
+   "sha256": "da3d7f8e2c6c3054af2bf13bbd1eb558c874284a5683132fd7550fd544e0d4c4"
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-09-21-007",
    "@type": "Claim",
    "identifier": "kaal:position:2026-09-21-007",
@@ -167263,6 +167359,12 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+   "@type": "CreativeWork",
+   "name": "TypeSafe, Introducing System One models and Jev (TypeSafe blog, 2026), and the promotional claim that Jev is what comes after RLHF",
+   "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+  },
+  {
    "@id": "https://theregister.com/2026/03/14/cortical_labs_biological_cloud",
    "@type": "CreativeWork",
    "name": "Simon Sharwood, Inside datacenter where day starts with cerebrospinal fluid (The Register, 14 March 2026), reporting the launch of the Cortical Labs biological computing cloud",
@@ -212545,6 +212647,48 @@
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
   },
   {
+   "@id": "https://wulfkaal.github.io/claims/7261481-005",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7261481-005",
+   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
+   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/4855607-035",
+   "@type": "Claim",
+   "identifier": "kaal:claim:4855607-035",
+   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
+   "sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/5245185-032",
+   "@type": "Claim",
+   "identifier": "kaal:claim:5245185-032",
+   "citation": "Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185",
+   "sha256": "4d7adba83ec722480e97bde6528cbe9ce98c709e45cb18794f157a64b8fe7da2"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/5541658-007",
+   "@type": "Claim",
+   "identifier": "kaal:claim:5541658-007",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7456999-024",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7456999-024",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+   "sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7456999-027",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7456999-027",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+   "sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+  },
+  {
    "@id": "https://wulfkaal.github.io/claims/2831040-009",
    "@type": "Claim",
    "identifier": "kaal:claim:2831040-009",
@@ -213122,13 +213266,6 @@
    "@id": "https://wulfkaal.github.io/claims/7261481-006",
    "@type": "Claim",
    "identifier": "kaal:claim:7261481-006",
-   "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
-   "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/7261481-005",
-   "@type": "Claim",
-   "identifier": "kaal:claim:7261481-005",
    "citation": "Wulf A. Kaal, Computative Economics: A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=7261481",
    "sha256": "78c42db521624f7398717732a7fa51a6e3157a5adf02a2e09fbab15e0cf920d9"
   },
@@ -217049,13 +217186,6 @@
    "@id": "https://wulfkaal.github.io/claims/5541658-032",
    "@type": "Claim",
    "identifier": "kaal:claim:5541658-032",
-   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
-   "sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/5541658-007",
-   "@type": "Claim",
-   "identifier": "kaal:claim:5541658-007",
    "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
    "sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60"
   },
@@ -223974,13 +224104,6 @@
    "identifier": "kaal:claim:3981021-019",
    "citation": "Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021",
    "sha256": "9d8bc78d119c780c96c89ce3e820f4ac8b037d39b3ade59feb4e40d46b048288"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/4855607-035",
-   "@type": "Claim",
-   "identifier": "kaal:claim:4855607-035",
-   "citation": "Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607",
-   "sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/2992962-028",
