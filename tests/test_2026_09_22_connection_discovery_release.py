@@ -1,11 +1,20 @@
 import hashlib
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 BATCH = "positions-src/2026-09-22-connection-discovery-five-v1.json"
+AUDITED_TIP = "4fd33d0957618853e470b87c664a32b37deeb653"
+REQUIRED_GENERATOR_COMMANDS = (
+    "python3 tools/build_positions.py",
+    "python3 tools/derive_corpus_counts.py",
+    "python3 tools/merge_sitemap.py .",
+    "python3 tools/sync_sitemap_index.py",
+    "python3 tools/check_sitemap_uniqueness.py",
+)
 EXPECTED = [
     (
         "2026-09-22-001",
@@ -50,6 +59,24 @@ def load(relative):
 
 
 class ConnectionDiscoveryReleaseTests(unittest.TestCase):
+    def test_corrective_commit_names_every_release_generator(self):
+        messages = subprocess.run(
+            [
+                "git",
+                "log",
+                "--format=%B",
+                f"{AUDITED_TIP}..HEAD",
+            ],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout
+
+        for command in REQUIRED_GENERATOR_COMMANDS:
+            with self.subTest(command=command):
+                self.assertIn(command, messages)
+
     def test_five_affirmed_positions_are_exact_public_projections(self):
         batch = load(BATCH)
         self.assertEqual(len(batch["positions"]), len(EXPECTED))
