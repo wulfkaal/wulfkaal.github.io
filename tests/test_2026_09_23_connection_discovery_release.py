@@ -100,9 +100,19 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
                 )
                 self.assertIn("2026-09-23", item["user_affirmation"])
 
-    def test_all_published_position_counts_are_8380(self):
-        self.assertEqual(load("positions/index.json")["numberOfItems"], 8_380)
-        self.assertEqual(load("authority.json")["public_positions"]["count"], 8_380)
+    def test_every_published_surface_reports_the_same_position_count(self):
+        # A witness frozen to one number is a tripwire on the clock: it has to be
+        # edited every time a position is published, so it goes stale instead of
+        # ever failing. The invariant it was reaching for is agreement, so that is
+        # what gets asserted here -- every published surface reports one count.
+        index = load("positions/index.json")
+        total = index["numberOfItems"]
+        self.assertGreater(total, 0)
+        identifiers = [row["identifier"] for row in index["itemListElement"]]
+        self.assertEqual(len(identifiers), total)
+        self.assertEqual(len(set(identifiers)), total)
+
+        self.assertEqual(load("authority.json")["public_positions"]["count"], total)
         for relative in (
             "agent-card.json",
             ".well-known/agent-card.json",
@@ -110,7 +120,24 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
             ".well-known/ai-agent.json",
         ):
             with self.subTest(relative=relative):
-                self.assertEqual(load(relative)["corpus"]["public_positions"], 8_380)
+                self.assertEqual(load(relative)["corpus"]["public_positions"], total)
+
+        # This witness pinned neither the MCP catalogue nor the coverage projection,
+        # so an mcp-only or coverage-only drift walked past it. Both are published
+        # surfaces reporting the same number, so they are bound to it here.
+        mcp = load(".well-known/mcp.json")["collections"]["publicPositions"]
+        with self.subTest(relative=".well-known/mcp.json"):
+            self.assertEqual(mcp["count"], total)
+            self.assertEqual(mcp["publicCount"], total)
+
+        coverage = load("positions/coverage.json")
+        with self.subTest(relative="positions/coverage.json"):
+            self.assertEqual(coverage["affirmedResponseClaims"], total)
+            self.assertEqual(coverage["publishedResponseClaims"], total)
+            self.assertEqual(
+                mcp["privateCompiledCount"],
+                coverage["privateCompiledResponseClaims"],
+            )
 
 
 if __name__ == "__main__":
