@@ -6,7 +6,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BATCH = "positions-src/2026-09-23-connection-discovery-two-v1.json"
-SOURCE_ID = "2609.26749v1"
 EVIDENCE = "positions-src/evidence/2026-09-23-source-evidence.json"
 EXPECTED = [
     (
@@ -62,18 +61,24 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
             self.assertEqual(record["text"], item["text"])
             self.assertEqual(indexed[record["identifier"]], record)
 
-    def test_every_source_passage_is_verbatim_in_the_stored_abstract(self):
-        # The abstract is vendored next to the batch, so this fails closed
-        # everywhere instead of skipping when an external attachment is absent.
+    def test_every_source_passage_is_verbatim_in_its_stored_abstract(self):
+        # The witness opens the evidence file named by the batch's
+        # source_snapshot_sha256 and reads the abstract stored under the key the
+        # batch itself names, so a passage that does not occur verbatim in the
+        # abstract it claims to come from fails even when its own hash was
+        # rewritten to match the replacement.
         batch = load(BATCH)
         raw = (ROOT / EVIDENCE).read_bytes()
         self.assertEqual(
             hashlib.sha256(raw).hexdigest(), batch["source_snapshot_sha256"]
         )
-        abstract = json.loads(raw.decode("utf-8"))[SOURCE_ID]["abstract"]
+        evidence = json.loads(raw.decode("utf-8"))
         for item in batch["positions"]:
             provenance = item["source_provenance"]
             with self.subTest(sequence=item["sequence"]):
+                source_key = provenance["canonicalUrl"].rstrip("/").split("/")[-1]
+                self.assertIn(source_key, evidence)
+                abstract = evidence[source_key]["abstract"]
                 self.assertEqual(
                     hashlib.sha256(abstract.encode()).hexdigest(),
                     provenance["sourceContentSha256"],
