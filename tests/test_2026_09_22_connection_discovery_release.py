@@ -134,6 +134,12 @@ class ConnectionDiscoveryReleaseTests(unittest.TestCase):
         ):
             with self.subTest(relative=relative):
                 self.assertEqual(load(relative)["corpus"]["public_positions"], total)
+        # The MCP catalogue is a published surface too: an mcp-only count drift
+        # has to reach this witness, which otherwise would not see it.
+        with self.subTest(relative=".well-known/mcp.json"):
+            collection = load(".well-known/mcp.json")["collections"]["publicPositions"]
+            self.assertEqual(collection["count"], total)
+            self.assertEqual(collection["publicCount"], total)
 
 
 if __name__ == "__main__":
