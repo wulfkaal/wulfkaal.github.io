@@ -106,17 +106,25 @@ class ConnectionDiscoveryReleaseTests(unittest.TestCase):
             self.assertEqual(record["text"], item["text"])
             self.assertEqual(indexed[record["identifier"]], record)
 
-    def test_this_release_added_exactly_five_positions_and_counts_agree(self):
-        # A later release moves the total, so pin this release's own contribution
-        # and the agreement of every published count instead of an absolute number.
+    def test_this_release_is_exactly_five_positions_and_every_count_agrees(self):
+        # A later release moves the total, so pin this release's own delta (every
+        # 2026-09-22 identifier, and no others) plus agreement across every
+        # published surface, rather than an absolute number that goes stale.
         index = load("positions/index.json")
         total = index["numberOfItems"]
-        self.assertEqual(len(index["itemListElement"]), total)
-        self.assertGreaterEqual(total, 8_378)
-        published = {row["identifier"] for row in index["itemListElement"]}
-        for short, *_ in EXPECTED:
-            with self.subTest(short=short):
-                self.assertIn(f"kaal:position:{short}", published)
+        identifiers = [row["identifier"] for row in index["itemListElement"]]
+        self.assertEqual(len(identifiers), total)
+        self.assertEqual(len(set(identifiers)), total)
+
+        dated = sorted(
+            identifier
+            for identifier in identifiers
+            if identifier.startswith("kaal:position:2026-09-22-")
+        )
+        self.assertEqual(
+            dated, [f"kaal:position:{short}" for short, *_rest in EXPECTED]
+        )
+
         self.assertEqual(load("authority.json")["public_positions"]["count"], total)
         for relative in (
             "agent-card.json",

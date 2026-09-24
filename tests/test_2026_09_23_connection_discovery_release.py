@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BATCH = "positions-src/2026-09-23-connection-discovery-two-v1.json"
 SOURCE_ID = "2609.26749v1"
+EVIDENCE = "positions-src/evidence/2026-09-23-source-evidence.json"
 EXPECTED = [
     (
         "2026-09-23-001",
@@ -49,8 +50,7 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
                 hashlib.sha256(item["text"].encode()).hexdigest(), text_sha256
             )
             self.assertEqual(item["current_debate"]["url"], debate_url)
-            self.assertIn("Wulf A. Kaal affirmed", item["user_affirmation"])
-            self.assertIn("2026-09-23", item["user_affirmation"])
+            self.assertTrue(item["user_affirmation"].startswith("Wulf A. Kaal affirmed"))
 
             record = load(f"positions/{short}.json")
             self.assertEqual(record["identifier"], f"kaal:position:{short}")
@@ -63,33 +63,37 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
             self.assertEqual(indexed[record["identifier"]], record)
 
     def test_every_source_passage_is_verbatim_in_the_stored_abstract(self):
-        # The abstract lives with the queued spec, outside this repository, so the
-        # batch pins it by digest. Open it when present and read the passage out of
-        # it; skip only when the attachment is absent, never silently pass.
-        evidence_path = Path(
-            "/Users/wulfkaal/.config/herdr/setups/2026-09-11/specs/kaalvis"
-            "/63-attachments/source-evidence-2026-09-23.json"
-        )
+        # The abstract is vendored next to the batch, so this fails closed
+        # everywhere instead of skipping when an external attachment is absent.
         batch = load(BATCH)
-        if not evidence_path.is_file():
-            self.skipTest(f"stored abstract not available at {evidence_path}")
-        raw = evidence_path.read_bytes()
+        raw = (ROOT / EVIDENCE).read_bytes()
         self.assertEqual(
             hashlib.sha256(raw).hexdigest(), batch["source_snapshot_sha256"]
         )
-        evidence = json.loads(raw.decode("utf-8"))
+        abstract = json.loads(raw.decode("utf-8"))[SOURCE_ID]["abstract"]
         for item in batch["positions"]:
             provenance = item["source_provenance"]
-            abstract = evidence[SOURCE_ID]["abstract"]
-            self.assertEqual(
-                hashlib.sha256(abstract.encode()).hexdigest(),
-                provenance["sourceContentSha256"],
-            )
-            self.assertEqual(abstract.count(provenance["sourcePassage"]), 1)
-            self.assertEqual(
-                hashlib.sha256(provenance["sourcePassage"].encode()).hexdigest(),
-                provenance["sourcePassageSha256"],
-            )
+            with self.subTest(sequence=item["sequence"]):
+                self.assertEqual(
+                    hashlib.sha256(abstract.encode()).hexdigest(),
+                    provenance["sourceContentSha256"],
+                )
+                self.assertEqual(abstract.count(provenance["sourcePassage"]), 1)
+                self.assertEqual(
+                    hashlib.sha256(provenance["sourcePassage"].encode()).hexdigest(),
+                    provenance["sourcePassageSha256"],
+                )
+
+    def test_published_affirmation_equals_the_affirmed_batch_string(self):
+        batch = load(BATCH)
+        for item, (short, *_rest) in zip(batch["positions"], EXPECTED, strict=True):
+            with self.subTest(short=short):
+                record = load(f"positions/{short}.json")
+                self.assertEqual(record["userAffirmation"], item["user_affirmation"])
+                self.assertTrue(
+                    item["user_affirmation"].startswith("Wulf A. Kaal affirmed")
+                )
+                self.assertIn("2026-09-23", item["user_affirmation"])
 
     def test_all_published_position_counts_are_8380(self):
         self.assertEqual(load("positions/index.json")["numberOfItems"], 8_380)
