@@ -106,9 +106,18 @@ class ConnectionDiscoveryReleaseTests(unittest.TestCase):
             self.assertEqual(record["text"], item["text"])
             self.assertEqual(indexed[record["identifier"]], record)
 
-    def test_all_published_position_counts_are_8378(self):
-        self.assertEqual(load("positions/index.json")["numberOfItems"], 8_378)
-        self.assertEqual(load("authority.json")["public_positions"]["count"], 8_378)
+    def test_this_release_added_exactly_five_positions_and_counts_agree(self):
+        # A later release moves the total, so pin this release's own contribution
+        # and the agreement of every published count instead of an absolute number.
+        index = load("positions/index.json")
+        total = index["numberOfItems"]
+        self.assertEqual(len(index["itemListElement"]), total)
+        self.assertGreaterEqual(total, 8_378)
+        published = {row["identifier"] for row in index["itemListElement"]}
+        for short, *_ in EXPECTED:
+            with self.subTest(short=short):
+                self.assertIn(f"kaal:position:{short}", published)
+        self.assertEqual(load("authority.json")["public_positions"]["count"], total)
         for relative in (
             "agent-card.json",
             ".well-known/agent-card.json",
@@ -116,7 +125,7 @@ class ConnectionDiscoveryReleaseTests(unittest.TestCase):
             ".well-known/ai-agent.json",
         ):
             with self.subTest(relative=relative):
-                self.assertEqual(load(relative)["corpus"]["public_positions"], 8_378)
+                self.assertEqual(load(relative)["corpus"]["public_positions"], total)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BATCH = "positions-src/2026-09-23-connection-discovery-two-v1.json"
+SOURCE_ID = "2609.26749v1"
 EXPECTED = [
     (
         "2026-09-23-001",
@@ -48,7 +49,8 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
                 hashlib.sha256(item["text"].encode()).hexdigest(), text_sha256
             )
             self.assertEqual(item["current_debate"]["url"], debate_url)
-            self.assertTrue(item["user_affirmation"].startswith("Wulf A. Kaal affirmed"))
+            self.assertIn("Wulf A. Kaal affirmed", item["user_affirmation"])
+            self.assertIn("2026-09-23", item["user_affirmation"])
 
             record = load(f"positions/{short}.json")
             self.assertEqual(record["identifier"], f"kaal:position:{short}")
@@ -60,10 +62,30 @@ class ConnectionDiscoveryRelease20260923Tests(unittest.TestCase):
             self.assertEqual(record["text"], item["text"])
             self.assertEqual(indexed[record["identifier"]], record)
 
-    def test_every_source_passage_is_verbatim_in_its_stored_abstract(self):
-        evidence = load(BATCH)
-        for item in evidence["positions"]:
+    def test_every_source_passage_is_verbatim_in_the_stored_abstract(self):
+        # The abstract lives with the queued spec, outside this repository, so the
+        # batch pins it by digest. Open it when present and read the passage out of
+        # it; skip only when the attachment is absent, never silently pass.
+        evidence_path = Path(
+            "/Users/wulfkaal/.config/herdr/setups/2026-09-11/specs/kaalvis"
+            "/63-attachments/source-evidence-2026-09-23.json"
+        )
+        batch = load(BATCH)
+        if not evidence_path.is_file():
+            self.skipTest(f"stored abstract not available at {evidence_path}")
+        raw = evidence_path.read_bytes()
+        self.assertEqual(
+            hashlib.sha256(raw).hexdigest(), batch["source_snapshot_sha256"]
+        )
+        evidence = json.loads(raw.decode("utf-8"))
+        for item in batch["positions"]:
             provenance = item["source_provenance"]
+            abstract = evidence[SOURCE_ID]["abstract"]
+            self.assertEqual(
+                hashlib.sha256(abstract.encode()).hexdigest(),
+                provenance["sourceContentSha256"],
+            )
+            self.assertEqual(abstract.count(provenance["sourcePassage"]), 1)
             self.assertEqual(
                 hashlib.sha256(provenance["sourcePassage"].encode()).hexdigest(),
                 provenance["sourcePassageSha256"],
