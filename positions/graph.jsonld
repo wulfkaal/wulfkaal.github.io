@@ -15,6 +15,86 @@
  "@id": "https://wulfkaal.github.io/positions/graph.jsonld",
  "@graph": [
   {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-26-004",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-26-004",
+   "text": "Gao, Schulman, and Hilton show the central Goodhart problem in reward-model optimization: an imperfect proxy can improve under optimization while ground-truth performance worsens. This supports the protected overoptimization claim in their controlled synthetic setup. The result should not be overstated. Their gold-standard reward model stands in for humans, and the abstract does not establish that degradation is monotonic in realized KL distance from the reference policy.",
+   "responseType": "qualification",
+   "datePublished": "2026-09-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2210.10760v1"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7456999-016"
+   },
+   "sha256": "4223e126645f75f2203300500e9114fdd816c184478be395d3a0be989495fc42",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-26-003",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-26-003",
+   "text": "Ouyang and coauthors operationalize RLHF as three linked stages: supervised fine-tuning, reward-model training from labeler-ranked outputs, and PPO optimization against that reward model. This directly supports the protected pipeline description within the InstructGPT design. The correspondence should remain bounded. It does not establish that every later preference-optimization method uses an explicit reward model or PPO, and it does not by itself validate the broader RLRF proposal.",
+   "responseType": "agreement",
+   "datePublished": "2026-09-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2203.02155v1"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7456999-015"
+   },
+   "sha256": "e0b43a828691bd167afbd884c0da1632f1bfa13f385b6e726e42a5b4d346617a",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-26-002",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-26-002",
+   "text": "Agreement is not an outcome measure. Shao's matched Wason-task replays show that language-model groups reached consensus more often than human groups while simulated consensus failed to track collective accuracy. This result supports evaluation grounded in observed outcomes under stated conditions: a consensus signal can reflect correlated error and cannot independently establish correctness. The finding does not test reputation-weighted governance. It is limited to one objective reasoning task, one principal served build, an exploratory cross-family point, and remaining endpoint-measurement asymmetries.",
+   "responseType": "qualification",
+   "datePublished": "2026-09-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2609.20543v1"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-024"
+   },
+   "sha256": "9279e2e99877baf5607120fedd56277e65e761254e290523816e4c3b9eec9162",
+   "evidenceLevel": "authoritative_abstract",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
+   "@id": "https://wulfkaal.github.io/positions/2026-09-26-001",
+   "@type": "Claim",
+   "identifier": "kaal:position:2026-09-26-001",
+   "text": "Authority that exists when reasoning begins is insufficient if it can disappear before an effect becomes durable. He and Yu add a concrete commit-time mechanism to this authority-drift problem. Their strict profile holds registered data, evidence, policy, and authority premises through durability; their compatible profile recertifies the effect against current dependencies and policy. The extension is conditional on complete registered footprints, trusted mediation, and effects that cannot bypass the gate. It does not establish semantic truth or production-wide safety.",
+   "responseType": "extension",
+   "datePublished": "2026-09-26",
+   "creativeWorkStatus": "Affirmed",
+   "respondsTo": {
+    "@id": "https://arxiv.org/abs/2609.20261v1"
+   },
+   "extends": {
+    "@id": "https://wulfkaal.github.io/claims/7314479-015"
+   },
+   "sha256": "d6d49ee476b6ec938b02bd30a3fdb7bb3ba32ba84e39b05bacb574aa1ca5bbe1",
+   "evidenceLevel": "authoritative_abstract",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false
+  },
+  {
    "@id": "https://wulfkaal.github.io/positions/2026-09-23-002",
    "@type": "Claim",
    "identifier": "kaal:position:2026-09-23-002",
@@ -167471,6 +167551,30 @@
    "sha256": "5a92a000acd0eda048fa345d25142e7cef1ed584eff031384b9bc9e7be8487ca"
   },
   {
+   "@id": "https://arxiv.org/abs/2210.10760v1",
+   "@type": "CreativeWork",
+   "name": "In Gao, Schulman, and Hilton's synthetic proxy-versus-gold reward-model setup, optimizing an imperfect proxy too much can hinder ground-truth performance.",
+   "url": "https://arxiv.org/abs/2210.10760v1"
+  },
+  {
+   "@id": "https://arxiv.org/abs/2203.02155v1",
+   "@type": "CreativeWork",
+   "name": "Ouyang et al.'s InstructGPT method uses supervised fine-tuning, reward-model training on labeler-ranked outputs, and PPO optimization against that reward model.",
+   "url": "https://arxiv.org/abs/2203.02155v1"
+  },
+  {
+   "@id": "https://arxiv.org/abs/2609.20543v1",
+   "@type": "CreativeWork",
+   "name": "Language-model groups overstate consensus when replaying human deliberation on a reasoning task",
+   "url": "https://arxiv.org/abs/2609.20543v1"
+  },
+  {
+   "@id": "https://arxiv.org/abs/2609.20261v1",
+   "@type": "CreativeWork",
+   "name": "When AI Agents Commit: Cognitive Serializability Across Data, Evidence, Policy, and Authority",
+   "url": "https://arxiv.org/abs/2609.20261v1"
+  },
+  {
    "@id": "https://arxiv.org/abs/2609.26749v1",
    "@type": "CreativeWork",
    "name": "Om Nepal, Sushant Aryal, Oluseyi Olukola, Nick Rahimi, Metrics Failure in LLM-Based Code Vulnerability Repair: An Empirical Study and a Change-Aware Screen (arXiv:2609.26749, 2026)",
@@ -212789,6 +212893,34 @@
    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate"
   },
   {
+   "@id": "https://wulfkaal.github.io/claims/7456999-016",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7456999-016",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+   "sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7456999-015",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7456999-015",
+   "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+   "sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-024",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-024",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
+   "@id": "https://wulfkaal.github.io/claims/7314479-015",
+   "@type": "Claim",
+   "identifier": "kaal:claim:7314479-015",
+   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+  },
+  {
    "@id": "https://wulfkaal.github.io/claims/1428387-032",
    "@type": "Claim",
    "identifier": "kaal:claim:1428387-032",
@@ -212927,13 +213059,6 @@
    "identifier": "kaal:claim:6244278-001",
    "citation": "Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278",
    "sha256": "53533cdcc081184e7a376516ad4fece0a64ce49f6c8931b6a2c2e98ed914a84b"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/7314479-015",
-   "@type": "Claim",
-   "identifier": "kaal:claim:7314479-015",
-   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
-   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },
   {
    "@id": "https://wulfkaal.github.io/claims/5245185-027",
@@ -213079,13 +213204,6 @@
    "@id": "https://wulfkaal.github.io/claims/7314479-025",
    "@type": "Claim",
    "identifier": "kaal:claim:7314479-025",
-   "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
-   "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
-  },
-  {
-   "@id": "https://wulfkaal.github.io/claims/7314479-024",
-   "@type": "Claim",
-   "identifier": "kaal:claim:7314479-024",
    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
    "sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
   },

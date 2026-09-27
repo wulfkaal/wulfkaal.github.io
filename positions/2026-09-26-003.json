@@ -1,0 +1,91 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/positions/2026-09-26-003",
+ "identifier": "kaal:position:2026-09-26-003",
+ "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+ "name": "Instructgpt Three Stage Rlhf Pipeline",
+ "text": "Ouyang and coauthors operationalize RLHF as three linked stages: supervised fine-tuning, reward-model training from labeler-ranked outputs, and PPO optimization against that reward model. This directly supports the protected pipeline description within the InstructGPT design. The correspondence should remain bounded. It does not establish that every later preference-optimization method uses an explicit reward model or PPO, and it does not by itself validate the broader RLRF proposal.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "datePublished": "2026-09-26",
+ "dateModified": "2026-09-26",
+ "creativeWorkStatus": "Affirmed",
+ "responseType": "agreement",
+ "keywords": [
+  "ai-and-agents",
+  "research-methods"
+ ],
+ "scope_conditions": [
+  "the canonical RLHF pipeline described by the cited literature"
+ ],
+ "currentDebate": {
+  "name": "Ouyang et al.'s InstructGPT method uses supervised fine-tuning, reward-model training on labeler-ranked outputs, and PPO optimization against that reward model.",
+  "url": "https://arxiv.org/abs/2203.02155v1"
+ },
+ "extends": {
+  "identifier": "kaal:claim:7456999-015",
+  "url": "https://wulfkaal.github.io/claims/7456999-015",
+  "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+  "paper": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+  "authors": [
+   "Wulf A. Kaal"
+  ],
+  "year": "2026",
+  "ssrn": null,
+  "source_pdf_sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+ },
+ "isBasedOn": [
+  {
+   "@id": "https://wulfkaal.github.io/claims/7456999-015"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Ouyang et al.'s InstructGPT method uses supervised fine-tuning, reward-model training on labeler-ranked outputs, and PPO optimization against that reward model.",
+   "url": "https://arxiv.org/abs/2203.02155v1"
+  }
+ ],
+ "batch_id": "kaal-growth:2026-09-26:daily-001",
+ "review_provenance": "https://wulfkaal.github.io/positions-src/2026-09-26-compound-growth-kaal-growth-2026-09-26-daily-001.json",
+ "publicationStatus": "public",
+ "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+ "isPartOf": {
+  "@id": "https://wulfkaal.github.io/positions/index.json"
+ },
+ "version": "1.0",
+ "canonical_url": "https://wulfkaal.github.io/positions/2026-09-26-003",
+ "canonicalForm": "https://wulfkaal.github.io/positions/2026-09-26-003.md",
+ "candidateId": "kaal:candidate:0a89bee805f767babdf32d8db7b45fa8c2f8760590d1e7dfb83f587747fda1b2",
+ "evidenceLevel": "permitted_full_text",
+ "reviewTier": "independent evidence-first compound-growth review",
+ "mappingConfidence": null,
+ "mappingAmbiguous": false,
+ "mappingMethod": "independent one-to-one proposition and mechanism review",
+ "mappingWhyRelevant": "This is a direct mechanism-level match to the protected three-stage RLHF description, but it supports Ouyang et al.'s InstructGPT pipeline rather than a universal claim about every modern preference-optimization method.",
+ "sourceProvenance": {
+  "canonicalUrl": "https://arxiv.org/abs/2203.02155v1",
+  "retrievedAt": "2026-09-26T12:43:33.343Z",
+  "sourceContentSha256": "6d8e81f561c9b6f3b9b125197b23ce59f3b1f70c198be30fb9f45f3c0cb579bc",
+  "sourceProposition": "Ouyang et al.'s InstructGPT method uses supervised fine-tuning, reward-model training on labeler-ranked outputs, and PPO optimization against that reward model.",
+  "sourcePropositionSha256": "fdb607c838f76d5e543460fa65d762b4cce630b44972748894dc274fafe8967d",
+  "normalizedWorkId": "arxiv:2203.02155",
+  "sourceVersion": "v1",
+  "exactEvidenceQuote": "A diagram illustrating the three steps of our method: (1) supervised fine-tuning (SFT), (2) reward model (RM) training, and (3) reinforcement learning via proximal policy optimization (PPO) on this reward model. Blue arrows indicate that this data is used to train one of our models. In Step 2, boxes A-D are samples from our models that get ranked by labelers.",
+  "exactEvidenceQuoteSha256": "f0369bc97a14e5dd23ce5c53ebd6c4577068143c668bb843084b03974a1fed98",
+  "claimMappings": [
+   {
+    "claimId": "kaal:claim:7456999-015",
+    "confidence": null,
+    "method": "independent one-to-one review",
+    "whyRelevant": "This is a direct mechanism-level match to the protected three-stage RLHF description, but it supports Ouyang et al.'s InstructGPT pipeline rather than a universal claim about every modern preference-optimization method.",
+    "ambiguous": false
+   }
+  ]
+ },
+ "userAffirmation": "Standing scholarly-growth preauthorization bound to a477d44b57756f7af8b15c04a79ae0c9cbe7d66a30ac9edc97a09fc21c8944b7; publication remains conditional on successful projection, deployment, and live-byte verification.",
+ "publicIdentitySha256": "0a89bee805f767babdf32d8db7b45fa8c2f8760590d1e7dfb83f587747fda1b2",
+ "sha256": "e0b43a828691bd167afbd884c0da1632f1bfa13f385b6e726e42a5b4d346617a"
+}
