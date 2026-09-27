@@ -169,23 +169,68 @@ jobs:
       - name: Regenerate rank prose after count derivation
         run: python3 tools/make_rank_md.py rank.json > rank.md
 
+      - name: Commit generated projections locally before any date is derived from them
+        run: |
+          # merge_sitemap.py dates each URL from COMMITTED history via git_content_dates, which
+          # refuses a source path whose content is uncommitted: bytes git has never seen have no
+          # content date. derive_corpus_counts.py rewrites .well-known/agent-card.json, one of those
+          # source paths. Deriving before committing therefore failed whenever the counts actually
+          # MOVED, and passed whenever they did not, so this job could only break on a run that was
+          # about to publish growth.
+          #
+          # This commit is LOCAL and is amended into the single pushed projection commit by the
+          # final step. It deliberately runs on pull requests too: the derivation below is not
+          # gated, so skipping this on a PR left the original failure in place there (Codex
+          # reproduced exactly that in a PR-equivalent checkout, MAJOR, 2026-09-27). Nothing is
+          # pushed from here, and on a pull request nothing is pushed at all.
+          git config user.name  "corpus-projections[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
+            echo "generated projections already current; nothing to commit before date derivation"
+            echo "PROJECTION_PRECOMMIT=0" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
+          git commit -m "Regenerate projections from the corpus"
+          echo "PROJECTION_PRECOMMIT=1" >> "$GITHUB_ENV"
+
       - name: Synchronize sitemap content dates and enforce one owner per URL
         run: |
           python3 tools/merge_sitemap.py .
           python3 tools/sync_sitemap_index.py
           python3 tools/check_sitemap_uniqueness.py
 
-      - name: Commit only if something actually changed
+      - name: Amend the date-derived output into one projection commit and push it
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
-            echo "projections already current; nothing to commit"
-            exit 0
-          fi
+          # ONE commit reaches the remote, carrying the established subject. That contract is load
+          # bearing: tools/kaal-compound-growth-publish.mjs waitForProjection() walks
+          # `rev-list --ancestry-path <trigger>..<head>` and picks the commit whose subject is
+          # exactly "Regenerate projections from the corpus", then feeds that SHA to
+          # waitForRun(..., "pages-build-deployment") and to kaal-live-verify-batch --projection-commit.
+          # A two-commit topology would hand it the PRE-derivation commit: Pages never deploys that
+          # SHA, so the publisher would wait out its deadline and then verify live bytes against a
+          # tree without the date-derived output (Codex, BLOCKING, 2026-09-27). Amending keeps the
+          # pushed tip, the matched subject and the deployed SHA the same object.
           git config user.name  "corpus-projections[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
-          git commit -m "Regenerate projections from the corpus"
+          if ! git diff --quiet -- authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json claims/*.html claims/by-topic/index.json claims/by-topic/*.html entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json; then
+            git add authority.json .well-known/agent.json .well-known/ai-agent.json rank.json rank.md rank.jsonld llms.txt llms-full.txt claims/index.json 'claims/*.html' claims/by-topic/index.json 'claims/by-topic/*.html' entities essays sitemap-entities.xml colloquium/tasks positions sitemap-claims.xml sitemap-colloquium.xml sitemap-essays.xml sitemap-positions.xml sitemap-index.xml sitemap-index-state.json agent-card.json .well-known/agent-card.json .well-known/colloquium.jsonld .well-known/mcp.json
+            if [ "${PROJECTION_PRECOMMIT:-0}" = 1 ]; then
+              git commit --amend --no-edit
+            else
+              git commit -m "Regenerate projections from the corpus"
+            fi
+          fi
+          # Push on being ahead of upstream, not on the diff above. The earlier step may have
+          # committed while this one finds nothing, and returning early there would strand those
+          # projections as a local commit the runner discards, regenerating and discarding forever.
+          if [ -z "$(git log --oneline @{u}..HEAD)" ]; then
+            echo "nothing ahead of the remote; nothing to push"
+            exit 0
+          fi
+          git log --oneline @{u}..HEAD
+          test "$(git log --oneline @{u}..HEAD | wc -l)" -eq 1 || { echo "refusing: expected exactly one projection commit"; exit 1; }
           git push
 
   integrity:
