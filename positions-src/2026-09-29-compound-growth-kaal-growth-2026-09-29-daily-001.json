@@ -1,0 +1,80 @@
+{
+  "batch_id": "kaal-growth:2026-09-29:daily-001",
+  "date": "2026-09-29",
+  "status": "standing-preauthorized",
+  "repository_mode": "public",
+  "private_compilation": false,
+  "review_provenance": "https://wulfkaal.github.io/positions-src/2026-09-29-compound-growth-kaal-growth-2026-09-29-daily-001.json",
+  "source_snapshot_sha256": "117417c0b40eab1eddcaa1e572143f0eb2dd8933ab9967b21db818ffe6316b22",
+  "review_ledger_sha256": "6d3ec7c91ff1b36f771255c2f25569c288fee3d41e33e6eb16c879d3c7668307",
+  "exact_authorization": "Publish frozen scholarly-growth packets automatically only after every evidence, identity, uniqueness, authority, protected-layer, deterministic-build, deployment, and live-byte verification gate passes.",
+  "positions": [
+    {
+      "sequence": 1,
+      "response_type": "agreement",
+      "slug": "non-transferability-alone-does-not-create-sybil-resistance",
+      "topics": [
+        "identity",
+        "reputation",
+        "sybil-resistance",
+        "blockchain-governance"
+      ],
+      "text": "Fábrega and coauthors demonstrate that formal non-transferability does not by itself preserve one-person-one-account control. TEE-based key encumbrance can let one actor rent or direct voting rights across identity-verified wallets without transferring the underlying credential. The result supports the narrower proposition that Sybil resistance also requires control-binding assumptions or countermeasures; it does not show that every non-transferable identity design fails.",
+      "scope_conditions": [
+        "TEE-based key encumbrance is available",
+        "wallet or credential control can be rented or delegated",
+        "the protected claim is treated as a negative sufficiency proposition"
+      ],
+      "current_debate": {
+        "name": "Liquefaction: Privately Liquefying Blockchain Assets",
+        "url": "https://arxiv.org/abs/2412.02634v1"
+      },
+      "extends": {
+        "identifier": "kaal:claim:7456999-035",
+        "url": "https://wulfkaal.github.io/claims/7456999-035",
+        "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+        "paper": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999",
+        "authors": [
+          "Wulf A. Kaal"
+        ],
+        "year": "2026",
+        "ssrn": null,
+        "source_pdf_sha256": "01016fbbcc25cad205cebd59ea686d8dfee8ae9b632095d86ba6c9a900456a4b"
+      },
+      "candidate_id": "kaal:candidate:f4873d4d7ffa500799c2e5ffe83a6d0ac5b1d1f526681cdad47f225052d93dcd",
+      "evidence_level": "permitted_full_text",
+      "review_tier": "independent evidence-first compound-growth review",
+      "mapping_confidence": null,
+      "mapping_ambiguous": false,
+      "mapping_method": "independent one-to-one proposition and mechanism review",
+      "mapping_why_relevant": "The source supplies a concrete blockchain counterexample to sufficiency: formal non-transferability and identity verification do not preserve one-person-one-account control when key encumbrance permits voting rights or credential proofs to be rented across identity-verified wallets.",
+      "source_provenance": {
+        "canonicalUrl": "https://arxiv.org/abs/2412.02634v1",
+        "retrievedAt": "2026-09-29T13:50:34.917Z",
+        "sourceContentSha256": "c1f2566c1831ef117bf3d0d2765267f736fbe58fdc9683009dbce3f2f1fef473",
+        "sourceProposition": "Fábrega et al. show that identity systems intended to prevent Sybil accounts can remain insufficient when key encumbrance lets one actor control voting across identity-verified wallets.",
+        "sourcePropositionSha256": "6541a5532ced5676f668d7975d1cd690ba23e0e5594a47754e2833469132db20",
+        "normalizedWorkId": "arxiv:2412.02634",
+        "sourceVersion": "v1",
+        "exactEvidenceQuote": "While whales splitting their tokens across Sybil accounts is a known attack on quadratic voting systems, identity systems alone (ensuring one user, one account to negate Sybils) are insufficient in the presence of key encumbrance.",
+        "exactEvidenceQuoteSha256": "1b73f25cb56212a892a170f3890458f3eb01c61ce13822bc09748e7823e7b039",
+        "claimMappings": [
+          {
+            "claimId": "kaal:claim:7456999-035",
+            "confidence": null,
+            "method": "independent one-to-one review",
+            "whyRelevant": "The source supplies a concrete blockchain counterexample to sufficiency: formal non-transferability and identity verification do not preserve one-person-one-account control when key encumbrance permits voting rights or credential proofs to be rented across identity-verified wallets.",
+            "ambiguous": false
+          }
+        ]
+      },
+      "user_affirmation": "Standing scholarly-growth preauthorization bound to 117417c0b40eab1eddcaa1e572143f0eb2dd8933ab9967b21db818ffe6316b22; publication remains conditional on successful projection, deployment, and live-byte verification."
+    }
+  ],
+  "public_authority": {
+    "authorityReceipt": "kaal-authority:2026-08-27:compound-growth-standing-preauthorization",
+    "lane": "scholarly-growth",
+    "standingPreauthorization": true,
+    "batchManifestSha256": "117417c0b40eab1eddcaa1e572143f0eb2dd8933ab9967b21db818ffe6316b22"
+  }
+}
