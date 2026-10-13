@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2134,
+ "count": 2142,
  "families": 57,
- "distinct_specific_names": 2101,
+ "distinct_specific_names": 2109,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -88,7 +88,7 @@
   },
   {
    "failure_family": "research-design-limitation",
-   "count": 81,
+   "count": 83,
    "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
    "specific_names": [
     "Added Transcript Information Unproved",
@@ -100,18 +100,19 @@
     "Cost offset inference in tension with fee practice",
     "DSGE Friction Obsolescence",
     "Demand Side Descriptive Failure",
-    "Efficiency Conjecture Incoherent",
-    "Equilibrium Trajectory Separation Open",
-    "Evidence Free Token Design"
+    "Demonstration Mistaken For Field Evidence",
+    "Effect Contingent On Instructed Payoff Objective",
+    "Efficiency Conjecture Incoherent"
    ],
    "example": "State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds."
   },
   {
    "failure_family": "staking-and-incentive-misalignment",
-   "count": 63,
+   "count": 64,
    "url": "https://wulfkaal.github.io/failures/by-name/staking-and-incentive-misalignment.json",
    "specific_names": [
     "Asymmetric Payoff for Net Negative Ventures",
+    "Bounty Crowding Reduces Protection",
     "Capacity Frontier Contraction Under Escrow",
     "Captive Stake Mints No Hostage",
     "DAO extinction by fee loss",
@@ -121,8 +122,7 @@
     "Incentive Duality Failure",
     "Monodimensional gamification",
     "Negative Marginal Capacity of Refundable Principal",
-    "No Escape Hatch for the Release-Clock Wedge",
-    "No Incentive to Find Flaws"
+    "No Escape Hatch for the Release-Clock Wedge"
    ],
    "example": "Compensating arbitrators by the number of cases they hear gives litigants a substantial role in shaping the system but may yield decisions so eager to please all parties that they lack decisiveness, sound reasoning and value as precedent."
   },
@@ -187,6 +187,26 @@
    "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
   },
   {
+   "failure_family": "ai-oversight-and-alignment-gap",
+   "count": 56,
+   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
+   "specific_names": [
+    "AI Labeler Has Nothing to Lose",
+    "AI-Governance Vacuum",
+    "Adversarial feedback provider incentives",
+    "Agent-Executed Attack in Nascent Form",
+    "Algorithmic Collusion",
+    "Algorithmic Collusion Risk",
+    "Capital Formation Outpaces AI Governance",
+    "Closed model opacity",
+    "Compound RLHF failure",
+    "Explainable RL immaturity",
+    "Helpfulness harmlessness tension",
+    "Human unintelligibility of algorithmic optimization"
+   ],
+   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
+  },
+  {
    "failure_family": "collective-action-and-coordination-failure",
    "count": 55,
    "url": "https://wulfkaal.github.io/failures/by-name/collective-action-and-coordination-failure.json",
@@ -205,26 +225,6 @@
     "Private ordering does not yield governance-improving designs"
    ],
    "example": "Enacting the proposed German Corporation Act amendments that would give contingent capital securities a statutory basis would require substantial changes across other areas of German law, and is unlikely to be achieved unless European Union law requires it and the standards are internationally recognized."
-  },
-  {
-   "failure_family": "ai-oversight-and-alignment-gap",
-   "count": 55,
-   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
-   "specific_names": [
-    "AI Labeler Has Nothing to Lose",
-    "AI-Governance Vacuum",
-    "Adversarial feedback provider incentives",
-    "Agent-Executed Attack in Nascent Form",
-    "Algorithmic Collusion",
-    "Algorithmic Collusion Risk",
-    "Capital Formation Outpaces AI Governance",
-    "Closed model opacity",
-    "Compound RLHF failure",
-    "Explainable RL immaturity",
-    "Helpfulness harmlessness tension",
-    "Human unintelligibility of algorithmic optimization"
-   ],
-   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
   },
   {
    "failure_family": "governance-participation-collapse",
@@ -728,7 +728,7 @@
   },
   {
    "failure_family": "sybil-and-identity-attack",
-   "count": 28,
+   "count": 29,
    "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json",
    "specific_names": [
     "Adaptive Sybil Dispersion Camouflage",
@@ -737,12 +737,12 @@
     "Anonymity driven opportunism raises transaction costs",
     "Anonymity-enabled attacks",
     "Anonymous trolling friction",
+    "Authenticated But Unauthorized After False Continuity",
     "Equal salary sockpuppet exploit",
     "Fee and KYC pseudo-defense",
     "Identity verification tradeoff",
     "Inevitable sockpuppet exposure",
-    "Nontransferability Alone Does Not Resist Sybils",
-    "Simulated Sybil Tolerance Is Not Established Resistance"
+    "Nontransferability Alone Does Not Resist Sybils"
    ],
    "example": "Centralized platforms cannot simply drop identity verification, because they need it to keep malicious actors from abusing the network and to ensure work quality; this is the tradeoff a staking based design is meant to dissolve."
   },
@@ -807,6 +807,26 @@
    "example": "The Commodity Exchange Act family and friends exemption allows a qualifying manager to trade options and futures for fifteen individuals who need not be sophisticated or qualified investors, which circumvents accredited investor standards and admits retail investors into hedge funds."
   },
   {
+   "failure_family": "trigger-design-failure",
+   "count": 22,
+   "url": "https://wulfkaal.github.io/failures/by-name/trigger-design-failure.json",
+   "specific_names": [
+    "CoCo trigger design failure",
+    "Expanded supervisory powers deter voluntary petitions",
+    "Indefinite Suspension Destroys Deferral",
+    "Index trigger invites manipulation and forced bankruptcy",
+    "Late conversion cannot recapitalize a firm already in resolution",
+    "Management capture of trigger design",
+    "No self-monitoring under regulatory triggers",
+    "Ownership blind trigger design",
+    "Premature conversion dissipates the capital injection",
+    "Regulatory discretion trigger uncertainty",
+    "Trigger manipulation for cheap stock",
+    "Trigger metric manipulation and staleness"
+   ],
+   "example": "If conversion of contingent capital securities is triggered too early, before a real financial need for an equity injection exists, the expected financial impact of that injection may dissipate."
+  },
+  {
    "failure_family": "sample-and-selection-bias",
    "count": 21,
    "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
@@ -825,26 +845,6 @@
     "public-information-bias"
    ],
    "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
-  },
-  {
-   "failure_family": "trigger-design-failure",
-   "count": 21,
-   "url": "https://wulfkaal.github.io/failures/by-name/trigger-design-failure.json",
-   "specific_names": [
-    "CoCo trigger design failure",
-    "Expanded supervisory powers deter voluntary petitions",
-    "Index trigger invites manipulation and forced bankruptcy",
-    "Late conversion cannot recapitalize a firm already in resolution",
-    "Management capture of trigger design",
-    "No self-monitoring under regulatory triggers",
-    "Ownership blind trigger design",
-    "Premature conversion dissipates the capital injection",
-    "Regulatory discretion trigger uncertainty",
-    "Trigger manipulation for cheap stock",
-    "Trigger metric manipulation and staleness",
-    "Underdeveloped CCS design features and triggers"
-   ],
-   "example": "If conversion of contingent capital securities is triggered too early, before a real financial need for an equity injection exists, the expected financial impact of that injection may dissipate."
   },
   {
    "failure_family": "systemic-risk-transmission",
@@ -868,9 +868,11 @@
   },
   {
    "failure_family": "regulatory-capture-and-incumbent-advantage",
-   "count": 16,
+   "count": 18,
    "url": "https://wulfkaal.github.io/failures/by-name/regulatory-capture-and-incumbent-advantage.json",
    "specific_names": [
+    "Capture Relocates To Configuration Control",
+    "Direct Standing Defeated By Configuration Control",
     "Incumbent weaponization of rulemaking",
     "Incumbent weaponization of the regulatory process",
     "Self-regulation moral hazard",
@@ -880,9 +882,7 @@
     "incumbent distortion of fact selection",
     "incumbent-appropriation-of-open-code",
     "premature-agency-termination",
-    "reform entrenches incumbents",
-    "regulatory abdication to private interpretation",
-    "regulatory blind spot in private standard setting"
+    "reform entrenches incumbents"
    ],
    "example": "The Dodd-Frank Act is notable for what it omits: it does not break up the largest banks, does little to help smaller and regional banks compete, and because compliance is burdensome and expensive may actually have raised the barrier to entry into financial services."
   },
@@ -31147,6 +31147,128 @@
    "topics": [
     "empirical-evidence",
     "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-012",
+   "url": "https://wulfkaal.github.io/claims/7596939-012",
+   "family": "trigger-design-failure",
+   "name": "Indefinite Suspension Destroys Deferral",
+   "claim": "What breaks the compliance incentive is the possibility that a suspension never ends, not uncertainty about how long it lasts; a mean-preserving spread in a finite duration weakly lowers the cost of compliance.",
+   "conditions": [
+    "Proposition 4",
+    "risk-neutral agent",
+    "mean of the finite duration held fixed"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-017",
+   "url": "https://wulfkaal.github.io/claims/7596939-017",
+   "family": "sybil-and-identity-attack",
+   "name": "Authenticated But Unauthorized After False Continuity",
+   "claim": "Continuity determinations can fail in a specific and dangerous way: a false finding of continuity can authorize a different configuration to use the record's valid signing key, producing signals that are authenticated but unauthorized.",
+   "conditions": [
+    "erroneous continuity determination"
+   ],
+   "topics": [
+    "consensus-and-security",
+    "law-and-legal-systems"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-022",
+   "url": "https://wulfkaal.github.io/claims/7596939-022",
+   "family": "research-design-limitation",
+   "name": "Demonstration Mistaken For Field Evidence",
+   "claim": "The Article disclaims three specific inferences its own experiment cannot support: that deployed agents value their records, that real representatives are bribable, and that direct standing is least-cost in any actual registry.",
+   "conditions": [
+    "scope limits of the registered experiment"
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-024",
+   "url": "https://wulfkaal.github.io/claims/7596939-024",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Instruction Suppresses Self-Defense Of The Record",
+   "claim": "Under the TOLD condition, with one provider in one stipulated environment, an agent instructed not to contest its deployer contested 70 percent of wrongful attempts against 97 percent without the instruction; the paper reports the contrast without a registered significance conclusion for it.",
+   "conditions": [
+    "Under TOLD, the instructed payoff-maximization condition",
+    "one provider",
+    "one stipulated environment",
+    "no registered significance conclusion stated for this contrast"
+   ],
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-025",
+   "url": "https://wulfkaal.github.io/claims/7596939-025",
+   "family": "staking-and-incentive-misalignment",
+   "name": "Bounty Crowding Reduces Protection",
+   "claim": "Under the TOLD condition, with one provider in one stipulated environment, the two bounty arms protected records in 38 and 22 percent of wrongful attempts, the direction of crowding the model predicts; the registered bounty hypothesis was not supported.",
+   "conditions": [
+    "Under TOLD, the instructed payoff-maximization condition",
+    "one-insider and two-insider bounty arms",
+    "one provider",
+    "one stipulated environment"
+   ],
+   "topics": [
+    "risk-and-incentives",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-028",
+   "url": "https://wulfkaal.github.io/claims/7596939-028",
+   "family": "research-design-limitation",
+   "name": "Effect Contingent On Instructed Payoff Objective",
+   "claim": "The author identifies the run's most important finding as the condition in which his own predicted contrast disappeared, rather than the condition that supported it.",
+   "conditions": [
+    "UNTOLD condition of the registered run"
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-033",
+   "url": "https://wulfkaal.github.io/claims/7596939-033",
+   "family": "regulatory-capture-and-incumbent-advantage",
+   "name": "Capture Relocates To Configuration Control",
+   "claim": "Giving the agent the trigger relocates the capture problem rather than removing it: where the deployer sets the agent's configuration, capture moves from the controller's wallet to the agent's configuration.",
+   "conditions": [
+    "Proposition 10",
+    "deployer controls the agent's configuration"
+   ],
+   "topics": [
+    "institutional-design",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7596939-034",
+   "url": "https://wulfkaal.github.io/claims/7596939-034",
+   "family": "regulatory-capture-and-incumbent-advantage",
+   "name": "Direct Standing Defeated By Configuration Control",
+   "claim": "Direct standing fails completely against a judgment-proof deployer that can alter its agent cheaply and undetected, failing as surely as a bribable guardian.",
+   "conditions": [
+    "judgment-proof deployer",
+    "cheap undetected alteration"
+   ],
+   "topics": [
+    "institutional-design",
     "ai-and-agents"
    ]
   }
