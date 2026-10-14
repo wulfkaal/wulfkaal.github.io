@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/7598518-024",
+ "identifier": "kaal:claim:7598518-024",
+ "text": "No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=7598518",
+  "sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+  "encoding": "https://wulfkaal.com/papers/7598518.pdf"
+ },
+ "keywords": [
+  "research-methods",
+  "consensus-and-security"
+ ],
+ "about": [],
+ "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "design"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "stated"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "The oracle alone receives one bit per candidate from the sealed reference, the candidate's true validity verdict.",
+    "Validators do see a tag, whose association with rare membership is bounded by design."
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "supporting_quote",
+   "value": "Validators judge validity only. No validator, filter, or score is asked about rarity, novelty, frequency, diversity, or coverage. The outcome is computed by an evaluator alone, from a sealed reference holding rare-set membership and component identity, which no filter reads."
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "content_sha256",
+   "value": "24caa2e52d9aeec82dd850e1a1adc77a9c37eeade8e3c7c8e226899593c80f83"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  }
+ ]
+}

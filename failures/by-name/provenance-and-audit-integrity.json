@@ -2,15 +2,18 @@
  "failure_mode": "provenance-and-audit-integrity",
  "specific_names": [
   "Append-Only Without Tamper Evidence",
+  "Architecture Cannot Prove Outcome Unread",
   "Attribution Failure Dissolves Responsibility",
+  "Audit Short Of Verdicts And Findings Unadopted",
   "Custody Without Account",
+  "Seal Is A Commitment Not A Lock",
   "Silent Truncation Reports Clean History",
   "Sweep Artifacts Unreleased",
   "Uninstrumented Execution Path",
   "Unjoinable Audit Records",
   "Unlogged Autonomous Payment"
  ],
- "count": 8,
+ "count": 11,
  "claims": [
   {
    "id": "kaal:claim:7314479-002",
@@ -115,6 +118,48 @@
    "year": "2026",
    "quote": "Since the parameter grids, the generating code and the trial- level outputs are not released with this version, reproducibility by anyone else has not been demonstrated at all, and nothing has been tested across hardware platforms or across alternative RLHF baseline calibrations.",
    "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7598518-005",
+   "url": "https://wulfkaal.github.io/claims/7598518-005",
+   "claim": "The architecture shows that the author arranged not to read the outcome early and that specified later adjustments would be detectable, and it does not show that the filter works or prove that the outcome was never read.",
+   "specific_name": "Architecture Cannot Prove Outcome Unread",
+   "conditions": [
+    "Concerns the sealing and audit architecture of Section VI.",
+    "The negative half is the author's own statement of what the architecture cannot establish."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "The architecture shows that the author arranged not to read the outcome early and that specified later adjustments would be detectable. It does not show that the filter works, and it does not prove the outcome was never read.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-007",
+   "url": "https://wulfkaal.github.io/claims/7598518-007",
+   "claim": "The seal is a commitment made visible rather than a lock, because the operator can open the files.",
+   "specific_name": "Seal Is A Commitment Not A Lock",
+   "conditions": [
+    "Concerns the sealed outcome store of Section VI.",
+    "The limit is stated by the paper, not inferred from the architecture."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "The seal is a commitment made visible, not a lock: the operator can open the files.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-047",
+   "url": "https://wulfkaal.github.io/claims/7598518-047",
+   "claim": "In the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three and left identified low-severity findings unadopted.",
+   "specific_name": "Audit Short Of Verdicts And Findings Unadopted",
+   "conditions": [
+    "The shortfall is disclosed in the paper's own limits section and in the audit records.",
+    "It concerns the conduct of the study's review, not the filter's performance."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "in the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three, and they left identified low-severity findings unadopted, as their audit records state.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
   }
  ]
 }

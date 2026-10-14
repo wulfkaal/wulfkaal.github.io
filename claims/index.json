@@ -4,9 +4,9 @@
  "author": "Wulf A. Kaal",
  "orcid": "0009-0008-7840-1847",
  "canonical_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
- "count": 5398,
- "works_covered": 134,
- "failure_mode_count": 2142,
+ "count": 5445,
+ "works_covered": 135,
+ "failure_mode_count": 2165,
  "typed_edges": 2169,
  "edge_relations": [
   "restates",
@@ -102001,6 +102001,943 @@
     "at the theorem's stated parameter setting"
    ],
    "supporting_quote": "Against such a professional, direct standing has no structural advantage."
+  },
+  {
+   "id": "kaal:claim:7598518-001",
+   "url": "https://wulfkaal.github.io/claims/7598518-001",
+   "claim": "When intelligence models repeatedly learn from data that earlier intelligence models produced, the rare cases disappear first: the unusual facts, minority patterns and edge cases that make data valuable. This is what model collapse names.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Applies to repeated generations of models trained on earlier models' output.",
+    "The quote is the paper's own statement of the phenomenon it tests against, not a result of this study."
+   ],
+   "supporting_quote": "Intelligence models increasingly learn from data that earlier Intelligence models produced. When that loop repeats over generations, the rare cases disappear first: the unusual facts, minority patterns, and edge cases that make data valuable. This is known as model collapse."
+  },
+  {
+   "id": "kaal:claim:7598518-002",
+   "url": "https://wulfkaal.github.io/claims/7598518-002",
+   "claim": "The paper follows on from the author's Reinforcement Learning from Reputation Feedback paper and tests one use of that mechanism, as a filter on training data, and not the mechanism as a whole.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Scope is relative to the author's parent reputation-feedback paper.",
+    "The restriction is the paper's own statement of what it does and does not test."
+   ],
+   "supporting_quote": "The paper follows on from the author's Reinforcement Learning from Reputation Feedback (RLRF) paper. It tests one use of that mechanism, as a filter on training data, not the mechanism as a whole."
+  },
+  {
+   "id": "kaal:claim:7598518-003",
+   "url": "https://wulfkaal.github.io/claims/7598518-003",
+   "claim": "The test was designed, preregistered, and frozen before any result was read.",
+   "type": "empirical",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The design was frozen on a simulated mixture of common and rare data clusters.",
+    "The statement concerns the conduct of the study, not the performance of the filter."
+   ],
+   "supporting_quote": "The test was designed, preregistered, and frozen before any result was read."
+  },
+  {
+   "id": "kaal:claim:7598518-004",
+   "url": "https://wulfkaal.github.io/claims/7598518-004",
+   "claim": "Model engines served as blind auditors of the design, the code and the text, and they are not independent peer review.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The description is the author's own, in the paper's byline footnote.",
+    "Sections IV and VI set out the audit rounds the footnote refers to."
+   ],
+   "supporting_quote": "Model engines served as blind auditors of the design, the code, and this text, as Sections IV and VI describe. They are not independent peer review."
+  },
+  {
+   "id": "kaal:claim:7598518-005",
+   "url": "https://wulfkaal.github.io/claims/7598518-005",
+   "claim": "The architecture shows that the author arranged not to read the outcome early and that specified later adjustments would be detectable, and it does not show that the filter works or prove that the outcome was never read.",
+   "type": "condition",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concerns the sealing and audit architecture of Section VI.",
+    "The negative half is the author's own statement of what the architecture cannot establish."
+   ],
+   "supporting_quote": "The architecture shows that the author arranged not to read the outcome early and that specified later adjustments would be detectable. It does not show that the filter works, and it does not prove the outcome was never read."
+  },
+  {
+   "id": "kaal:claim:7598518-006",
+   "url": "https://wulfkaal.github.io/claims/7598518-006",
+   "claim": "Because the Gaussian outcomes already exist, written before any venue reviewed the design, the paper does not claim untouched Stage 1 status.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concerns the Gaussian substrate outcomes, which were produced before venue review.",
+    "The paper declines the status rather than asserting it."
+   ],
+   "supporting_quote": "The Gaussian outcomes also already exist, written before any venue reviewed the design, so the paper does not claim untouched Stage 1 status."
+  },
+  {
+   "id": "kaal:claim:7598518-007",
+   "url": "https://wulfkaal.github.io/claims/7598518-007",
+   "claim": "The seal is a commitment made visible rather than a lock, because the operator can open the files.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "consensus-and-security"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concerns the sealed outcome store of Section VI.",
+    "The limit is stated by the paper, not inferred from the architecture."
+   ],
+   "supporting_quote": "The seal is a commitment made visible, not a lock: the operator can open the files."
+  },
+  {
+   "id": "kaal:claim:7598518-008",
+   "url": "https://wulfkaal.github.io/claims/7598518-008",
+   "claim": "The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The bar is part of the pre-data specification of which sentences each outcome permits.",
+    "Reporting the bar is not itself one of the barred claims."
+   ],
+   "supporting_quote": "The design also fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse"
+  },
+  {
+   "id": "kaal:claim:7598518-009",
+   "url": "https://wulfkaal.github.io/claims/7598518-009",
+   "claim": "No result is reported: as of 11 October 2026 substrate P had completed one of its ten arm-runs with no record existing, substrate G had finished with its outcomes sealed, and substrate F was procedure-invalid.",
+   "type": "empirical",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Status as of 11 October 2026, the date the paper states.",
+    "The sealed outcomes are not reported, so no reading of the filter is available."
+   ],
+   "supporting_quote": "No result is reported yet. Substrate P is running: as of 11 October 2026, one of its ten arm-runs has completed and no record exists. Substrate G has finished, and its outcomes sit sealed. Substrate F is procedure-invalid."
+  },
+  {
+   "id": "kaal:claim:7598518-010",
+   "url": "https://wulfkaal.github.io/claims/7598518-010",
+   "claim": "A preregistration binds an author only to the extent that departures from it would be visible.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Stated as the premise of the paper's integrity architecture.",
+    "It is a proposition about preregistration as an instrument, not a result of this study."
+   ],
+   "supporting_quote": "A preregistration binds an author only to the extent that departures from it would be visible."
+  },
+  {
+   "id": "kaal:claim:7598518-011",
+   "url": "https://wulfkaal.github.io/claims/7598518-011",
+   "claim": "The analysis refuses to unseal unless the design hash is accepted, the tree is clean and matches its commit byte for byte, and the code differs from the audited commits only in a named allowlist.",
+   "type": "mechanism",
+   "topics": [
+    "consensus-and-security",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Describes the unseal procedure of Section VI.",
+    "The refusal is a property of the analysis code, which the paper states was audited before any outcome was read."
+   ],
+   "supporting_quote": "The analysis checks each manifest's provenance, checks every sealed file against its digest before reading it, and records a digest of every file the variance release reads, refusing at unseal if any changed. It refuses unless the design hash is accepted, the tree is clean and matches its commit byte for byte, and the code differs from the audited commits only in a named allowlist."
+  },
+  {
+   "id": "kaal:claim:7598518-012",
+   "url": "https://wulfkaal.github.io/claims/7598518-012",
+   "claim": "The results section is written in advance as a reporting shell that fixes the order of reporting, with every number left empty until the frozen analysis fills it.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concerns the pre-written results shell of the working draft.",
+    "A reader can compare the finished section against the version written before any outcome was read."
+   ],
+   "supporting_quote": "The results section of the working draft is written in advance as a reporting shell: it fixes the order of reporting, the P verdict first, then procedure validity, then the nine confirmatory labels, the secondary and failure-mode labels, the gates and ladder, and the secondary outcomes and costs, with every number left empty until the frozen analysis fills it"
+  },
+  {
+   "id": "kaal:claim:7598518-013",
+   "url": "https://wulfkaal.github.io/claims/7598518-013",
+   "claim": "The study runs fixed-size replacement, the protocol on which collapse was first shown, and includes no accumulation arm, so no result it produces bears on whether a filter adds anything once real data accumulates.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to the replacement regime only.",
+    "The distinction matters because accumulating real and synthetic data keeps error bounded in the settings studied, while replacement collapses."
+   ],
+   "supporting_quote": "This paper runs fixed-size replacement, the protocol on which collapse was first shown, and has no accumulation arm, so no result here bears on whether a filter adds anything once real data accumulates."
+  },
+  {
+   "id": "kaal:claim:7598518-014",
+   "url": "https://wulfkaal.github.io/claims/7598518-014",
+   "claim": "A filter that claims to address collapse must beat real-data retention, not only unfiltered replacement, because retaining ten percent of the original data slows the damage.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "argued",
+   "scope_conditions": [
+    "The comparator standard follows from published results on real-data retention.",
+    "It sets a requirement on what a filter must show, not a result about any filter."
+   ],
+   "supporting_quote": "Retaining ten percent of the original data slows the damage (Shumailov et al. 2024), and accumulating all real data keeps test error bounded in the settings studied (Gerstgrasser et al. 2024; Kazdan et al. 2025), although even a synthetic share as small as 1 per 1,000 can stop larger training sets from helping in regression (Dohmatob et al. 2025). A filter that claims to address collapse must therefore beat real-data retention, not only unfiltered replacement."
+  },
+  {
+   "id": "kaal:claim:7598518-015",
+   "url": "https://wulfkaal.github.io/claims/7598518-015",
+   "claim": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "reported",
+   "scope_conditions": [
+    "The result is prior work, not a finding of this study.",
+    "What this paper isolates is how to weight several assessors behind a validity filter, not whether verifier selection works."
+   ],
+   "supporting_quote": "The closest prior work is Feng et al. (2025), who show that verifier-selected synthetic data can prevent collapse, with Gaussian-mixture theory and experiments comparing oracle and weak verifiers with self-selection and random selection. The paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established."
+  },
+  {
+   "id": "kaal:claim:7598518-016",
+   "url": "https://wulfkaal.github.io/claims/7598518-016",
+   "claim": "Yi et al. (2026) report that an imperfect external verifier drives the model toward the verifier's own knowledge center.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "reported",
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is a limit on verifier-based selection generally, including the pool under test."
+   ],
+   "supporting_quote": "An imperfect external verifier drives the model toward the verifier's own knowledge center (Yi et al. 2026)"
+  },
+  {
+   "id": "kaal:claim:7598518-017",
+   "url": "https://wulfkaal.github.io/claims/7598518-017",
+   "claim": "Ferbach et al. (2024) report that curation acts as implicit preference optimization that amplifies the curator's biases.",
+   "type": "mechanism",
+   "topics": [
+    "risk-and-incentives",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "reported",
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is the channel the parent reputation program claims reputation can resist."
+   ],
+   "supporting_quote": "Curation acts as implicit preference optimization that amplifies the curator's biases (Ferbach et al. 2024)"
+  },
+  {
+   "id": "kaal:claim:7598518-018",
+   "url": "https://wulfkaal.github.io/claims/7598518-018",
+   "claim": "Qiao et al. (2026) report that verifiers which see only fragmented slices of the reference can accelerate tail loss.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "reported",
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "The pool under test applies one domain-general validity bit, so this is not the failure mode it is exposed to."
+   ],
+   "supporting_quote": "verifiers that see only fragmented slices of the reference can accelerate tail loss (Qiao et al. 2026)"
+  },
+  {
+   "id": "kaal:claim:7598518-019",
+   "url": "https://wulfkaal.github.io/claims/7598518-019",
+   "claim": "Filters that select on surprise or entropy, not validity, work where they work because they see what a validity filter is forbidden to see, and against that literature a null here is a literature rather than a caveat.",
+   "type": "mechanism",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "argued",
+   "scope_conditions": [
+    "The comparison rests on published surprise-filter and entropy-filter results.",
+    "The paper runs no surprise or entropy arm, so it supplies no measured comparison with them."
+   ],
+   "supporting_quote": "Filters that select on surprise or entropy, not validity, work where they work because they see what a validity filter is forbidden to see: a high-surprise filter mitigates collapse about as well as human-data baselines (Gambetta et al. 2026), and an entropy-rate filter reports diversity gains where a log-probability filter gives no significant benefit (Mitchell 2026). Against that literature, a null here is a literature rather than a caveat."
+  },
+  {
+   "id": "kaal:claim:7598518-020",
+   "url": "https://wulfkaal.github.io/claims/7598518-020",
+   "claim": "Reputation in this experiment is settled once against a key before training, so the pool is supervised reweighting from a disjoint key, and the paper does not compare it with a key-free latent-variable aggregator.",
+   "type": "condition",
+   "topics": [
+    "reputation",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The concession places the weight inside the established family of reliability-weighted aggregation.",
+    "No comparison with a key-free aggregator is run, so no claim about that comparison is available."
+   ],
+   "supporting_quote": "In this experiment, the concession is stronger: reputation is settled once against a key before training, so the pool is supervised reweighting from a disjoint key. The paper does not compare it with a key-free latent-variable aggregator."
+  },
+  {
+   "id": "kaal:claim:7598518-021",
+   "url": "https://wulfkaal.github.io/claims/7598518-021",
+   "claim": "The channel the RLRF program claims reputation can resist is the one this study does not open, because its validators are stationary, its stake has no external value, and its weights are fixed before generation 1.",
+   "type": "condition",
+   "topics": [
+    "risk-and-incentives",
+    "reputation"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The limit is structural, set by the design, rather than an observed null.",
+    "Goodhart resistance is the property the parent program claims, so this study leaves that claim untested."
+   ],
+   "supporting_quote": "This is the channel the RLRF program claims reputation can resist. This study does not open it: its validators are stationary, its stake has no external value, and its weights are fixed before generation 1."
+  },
+  {
+   "id": "kaal:claim:7598518-022",
+   "url": "https://wulfkaal.github.io/claims/7598518-022",
+   "claim": "A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.",
+   "type": "mechanism",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "argued",
+   "scope_conditions": [
+    "The ceiling holds where rare content is as checkable as common content, which this design enforces by construction.",
+    "The experiment therefore includes an oracle validity filter as a premise rather than as a result."
+   ],
+   "supporting_quote": "A validity filter judges whether an output is correct, not whether it is rare. Where rare content is as checkable as common content, such a filter can change rare composition only through the generator's own error profile. If collapse proceeds by under-sampling rare modes, no validity filter restores them, and a reputation-weighted filter is no exception."
+  },
+  {
+   "id": "kaal:claim:7598518-023",
+   "url": "https://wulfkaal.github.io/claims/7598518-023",
+   "claim": "The primary outcome caps each rare component's retained mass at its original level and averages over components, so that a component which dies counts as a loss and a component which grows cannot offset it.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The cap responds to total rare-region mass behaving close to a martingale under resampling, where individual components drift and die while the aggregate stays near its starting value.",
+    "Uncapped rare mass is reported beside the capped outcome, supports no claim, and shows only what the cap changed."
+   ],
+   "supporting_quote": "The primary outcome therefore caps each rare component's retained mass at its original level and averages over components. A component that dies counts as a loss. A component that grows cannot offset it."
+  },
+  {
+   "id": "kaal:claim:7598518-024",
+   "url": "https://wulfkaal.github.io/claims/7598518-024",
+   "claim": "No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "consensus-and-security"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The oracle alone receives one bit per candidate from the sealed reference, the candidate's true validity verdict.",
+    "Validators do see a tag, whose association with rare membership is bounded by design."
+   ],
+   "supporting_quote": "Validators judge validity only. No validator, filter, or score is asked about rarity, novelty, frequency, diversity, or coverage. The outcome is computed by an evaluator alone, from a sealed reference holding rare-set membership and component identity, which no filter reads."
+  },
+  {
+   "id": "kaal:claim:7598518-025",
+   "url": "https://wulfkaal.github.io/claims/7598518-025",
+   "claim": "A candidate is accepted when its weighted valid share exceeds the threshold of one half, and a candidate within a tenth of that threshold is contested, receives four more validators, and is bound by the recomputed share.",
+   "type": "design",
+   "topics": [
+    "consensus-and-security",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Five validators are seated per candidate from a roster of twenty, and each votes independently.",
+    "The rule replaces the parent protocol's two rounds with a single assessment and a threshold-triggered second look."
+   ],
+   "supporting_quote": "A candidate c is accepted when its weighted valid share s(c) = ∑ wivi(c) i exceeds θ = 0. 5, where vi(c) ∈ {0, 1} is validator i's vote. A candidate with |s(c) − θ| ≤ 0. 1 is contested and receives four more validators, and the recomputed share binds."
+  },
+  {
+   "id": "kaal:claim:7598518-026",
+   "url": "https://wulfkaal.github.io/claims/7598518-026",
+   "claim": "The reputation update is an asymmetric multiplicative rule in which reputation is multiplied by one plus alpha when a vote matches the revealed key and by one minus gamma when it does not, with alpha fixed at 0.05, gamma at 0.10, and a floor applied after each update.",
+   "type": "design",
+   "topics": [
+    "reputation",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The parent paper requires only that gamma exceed alpha; this design fixes both rates.",
+    "Any single weight above one half is capped there and the excess redistributed among the other seated validators."
+   ],
+   "supporting_quote": "The update is equation (3) of the RLRF paper, an asymmetric multiplicative rule. On tag t, reputation updates as ri,t ← ri,t(1 + α) when the vote matches the revealed key and ri,t ← ri,t(1 − γ) when it does not. The RLRF paper requires only (0) γ > α, and this design fixes α = 0. 05 and γ = 0. 10. Each reputation starts at ri,t = 1, and after each update the floor ri,t ≥ 0. 01 is applied."
+  },
+  {
+   "id": "kaal:claim:7598518-027",
+   "url": "https://wulfkaal.github.io/claims/7598518-027",
+   "claim": "Reputation is settled once by key, after the generation-0 fit on real data and before generation 1, and no candidate that enters training ever updates a reputation.",
+   "type": "design",
+   "topics": [
+    "reputation",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The design uses only keyed settlement, although the parent rule also covers unkeyed events.",
+    "This removes reputation dynamics during the recursion, so the weights are fixed throughout the run."
+   ],
+   "supporting_quote": "This study uses only keyed settlement, once, after the generation-0 fit on real data and before generation 1. No candidate that enters training ever updates a reputation."
+  },
+  {
+   "id": "kaal:claim:7598518-028",
+   "url": "https://wulfkaal.github.io/claims/7598518-028",
+   "claim": "The pool's entire exposure to real data is 192 rows, below the 200 real rows the ten percent arm receives and far below the roughly 1,990 distinct real rows it trains on over the run.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The keyed record is stratified to teach the pool who judges validity well on which tag, and nothing about where the rare components lie beyond a bounded tag leakage.",
+    "The source's text layer drops an exponent inline, so the quote renders the formulas as \"in one 50 generation\" and \"N(1 - 0. 9 )\". The claim asserts only the three row counts, which the quote states in figures."
+   ],
+   "supporting_quote": "Those KG = 192 rows are the pool's entire exposure to real data, below the ⌊0. 1N⌋ = 200 real rows the ten percent arm receives in one 50 generation and far below the N(1 − 0. 9 ) ≈ 1, 990 distinct real rows it trains on over the run."
+  },
+  {
+   "id": "kaal:claim:7598518-029",
+   "url": "https://wulfkaal.github.io/claims/7598518-029",
+   "claim": "Three validator families share a mean accuracy of 0.75 while differing in structure: one is homogeneous at 0.75, one has each validator reliable at 0.90 on two hash-drawn tags and at 0.60 on the other two so that domain-scoped reputation has something to find, and one has five validators at 0.90 and fifteen at 0.70, a competent minority.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The validators are simulated and err independently given their accuracy, which depends only on the tag.",
+    "The families are a property of the design, fixed before any run."
+   ],
+   "supporting_quote": "Family U is homogeneous at 0.75. In family H each validator is reliable at 0.90 on two hash-drawn tags and at 0.60 on the other two, so domain-scoped reputation has something to find. Family Mn has five validators at 0.90 and fifteen at 0.70, a competent minority. The three share a mean accuracy of 0.75."
+  },
+  {
+   "id": "kaal:claim:7598518-030",
+   "url": "https://wulfkaal.github.io/claims/7598518-030",
+   "claim": "A coin-flip family is a negative control, because a coin-flip pool knows nothing about validity, and if it meets the registered leak criterion or fails its acceptance rule, both substrates lose confirmatory status.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "consensus-and-security"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The control works because a coin-flip pool knows nothing about validity, so any apparent effect there indicates a leak.",
+    "The consequence is registered in advance and applies to both substrates, not only the one where the failure appears."
+   ],
+   "supporting_quote": "Family Z votes by coin flip. It is a negative control: a coin-flip pool knows nothing about validity, and if it meets the registered leak criterion or fails its acceptance rule, both substrates lose confirmatory status."
+  },
+  {
+   "id": "kaal:claim:7598518-031",
+   "url": "https://wulfkaal.github.io/claims/7598518-031",
+   "claim": "A threshold arm that accepts too few candidates fills the shortfall uniformly from rejected candidates, and an arm whose minimum over generations of the seed-mean fill-free share falls below 0.98 in a family has its tests there invalidated.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "consensus-and-security"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The gate binds every threshold arm, including the single verifier and the equal-weight pool.",
+    "Validator compute is not equal across arms, so an equal candidate budget does not mean equal assessment cost."
+   ],
+   "supporting_quote": "A threshold arm that accepts too few fills the shortfall uniformly from rejected candidates, and an arm whose minimum over generations of the seed-mean fill-free share, min(accepted, N)/N with N = 2, 000 training rows per generation, falls below amin = 0. 98 in a family has its tests there invalidated."
+  },
+  {
+   "id": "kaal:claim:7598518-032",
+   "url": "https://wulfkaal.github.io/claims/7598518-032",
+   "claim": "The pool under test omits most of what makes RLRF an institution: it has no economy, no strategy, no adversary, no deliberation, and no reputation dynamics after the single settlement.",
+   "type": "condition",
+   "topics": [
+    "institutional-design",
+    "reputation"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The omission is deliberate and stated in the design, not a discovered shortfall.",
+    "It bounds what any result can say about the parent mechanism as a whole."
+   ],
+   "supporting_quote": "The pool under test omits most of what makes RLRF an institution. It has no economy, no strategy, no adversary, no deliberation, and no reputation dynamics after the single settlement."
+  },
+  {
+   "id": "kaal:claim:7598518-033",
+   "url": "https://wulfkaal.github.io/claims/7598518-033",
+   "claim": "The frozen pass rule requires, on the five-run means from generation 0 to 9, a full-replacement perplexity rise of at least 4.0 with a margin of at least 2.0 over the rise under ten percent retention, with the thresholds sitting at fractions of the reported change so the rule does not depend on which published baseline was meant, and a miss blocks reading anything else.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The rule governs the replication substrate, which the filter never enters.",
+    "A miss blocks every other reading, including the sealed Gaussian outcomes."
+   ],
+   "supporting_quote": "The frozen pass rule requires, on the five-run means from generation 0 to 9, a full-replacement perplexity rise ∆FR ≥ 4. 0 with ∆FR − ∆R10 ≥ 2. 0, where ∆R10 is the same rise under ten percent retention. The thresholds sit at fractions of the reported 8-point change so that the rule does not depend on which of two published baselines, 20 or 34, was meant. A miss blocks reading anything else."
+  },
+  {
+   "id": "kaal:claim:7598518-034",
+   "url": "https://wulfkaal.github.io/claims/7598518-034",
+   "claim": "A substrate was declared procedure-invalid by the operator before any run or reading, with no pre-run rule fired and no written reason recorded, and its nine registered tests stand at a p-value of one with no other label, so the filter is tested on one substrate, a two-dimensional mixture with simulated validators.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The paper draws no inference from the invalidated substrate.",
+    "The declaration is one of two departures from the frozen procedure that the paper discloses."
+   ],
+   "supporting_quote": "The operator declared it procedure-invalid before any run or reading. No pre-run rule fired, and no written reason was recorded. Its nine registered tests stand at p equal to 1 with no other label, and the paper draws no inference from it. The consequence is plain: the filter is tested on one substrate, a two-dimensional mixture with simulated validators."
+  },
+  {
+   "id": "kaal:claim:7598518-035",
+   "url": "https://wulfkaal.github.io/claims/7598518-035",
+   "claim": "The preregistered pilot meant to confirm that every arm completes was never run, the confirmatory seeds ran without it, and the paper states that their later completion does not cure the skipped gate.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "This is one of two disclosed departures from the frozen procedure.",
+    "Both departures qualify every reading the paper would issue."
+   ],
+   "supporting_quote": "The preregistered pilot, three seeds and two generations meant to confirm that every arm completes, was never run, and the confirmatory seeds ran without it. Their later completion does not cure the skipped gate."
+  },
+  {
+   "id": "kaal:claim:7598518-036",
+   "url": "https://wulfkaal.github.io/claims/7598518-036",
+   "claim": "The design binds in one file, frozen by hash only after twenty-two rounds of blind audit by two model engines, and every harness and analysis step refuses to run against a design whose hash differs.",
+   "type": "mechanism",
+   "topics": [
+    "research-methods",
+    "open-source-and-code"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Every random draw derives from a named hash template, so no draw depends on anything outside its listed fields.",
+    "The auditing engines are model engines and are not independent peer review."
+   ],
+   "supporting_quote": "The design binds in one file, frozen by hash only after twenty-two rounds of blind audit by two model engines, the last of which both passed with no findings. Every harness and analysis step refuses to run against a design whose hash differs."
+  },
+  {
+   "id": "kaal:claim:7598518-037",
+   "url": "https://wulfkaal.github.io/claims/7598518-037",
+   "claim": "A contrast is superior when its Holm-adjusted p-value is below 0.05, its 95 percent interval lies above zero, and its point estimate is at least 0.10; it is negative when the adjusted p-value is below 0.05 and the interval lies below zero, a substantive null when its 90 percent interval lies within plus or minus that margin, and inconclusive otherwise.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The unit of analysis is the seed, and every contrast is a paired seed-level difference within a validator family.",
+    "The effect sizes were fixed by the operator before any pilot."
+   ],
+   "supporting_quote": "A contrast is superior when its Holm-adjusted p-value is below 0. 05 (Holm 1979), its 95 percent interval lies above zero, and its point estimate satisfies ^ d ≥ δ = 0. 10. It is negative when the adjusted p-value is below 0.05 and the interval lies below zero, a substantive null when its 90 percent interval lies within [− δ, δ], and inconclusive otherwise."
+  },
+  {
+   "id": "kaal:claim:7598518-038",
+   "url": "https://wulfkaal.github.io/claims/7598518-038",
+   "claim": "A positive reading on substrate G needs nine superior labels, and if the ten percent arm's retention exceeds 0.90 in a family the pool cannot be labeled superior to it there and no positive reading is possible.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The power calculation assumes a normal approximation and a planning alternative fixed before the runs.",
+    "The stated power covers the labels only and not the gates."
+   ],
+   "supporting_quote": "A positive reading on substrate G needs nine superior labels. For a contrast with paired seed-level standard deviation sd over S seeds, se = sd/ S. Under a normal approximation and a true effect δalt, the label power is ( Φ​ δalt−max(δ, z1−0.05/24 se) se ), z1−0.05/24 ≈ 2. 865, where z1−0.05/24 is the critical value at the most demanding Holm step and Φ is the standard normal distribution function. The design takes the product of the nine single-test powers as the conjunction power. At S = 200 and δalt = 0. 15, the break-even sd for a conjunction power of 0. 80 is about 0. 36, a figure that holds only when the comparator's retention is at most 0. 85. If the ten percent arm's retention exceeds 0.90 in a family, the pool cannot be labeled superior to it there, and no positive reading is possible."
+  },
+  {
+   "id": "kaal:claim:7598518-039",
+   "url": "https://wulfkaal.github.io/claims/7598518-039",
+   "claim": "Because no standard deviation was known before the runs, the design fixes a masked release in which the analysis releases only each test's variance of paired differences, withholds the mean, and reports the realized power first, and if the realized conjunction power is below 0.80 the substrate is reported as underpowered with the same prominence as any label.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The masked release is fixed in the design rather than chosen after the outcomes existed.",
+    "Whether the substrate is underpowered is not known until the gate opens."
+   ],
+   "supporting_quote": "No standard deviation was known before the runs, so the design fixes a masked release: after the gate opens, the analysis releases only each test's variance of paired differences, withholds the mean, and reports the realized power first. If the realized conjunction power is below 0. 80, the substrate is reported as underpowered, with the same prominence as any label."
+  },
+  {
+   "id": "kaal:claim:7598518-040",
+   "url": "https://wulfkaal.github.io/claims/7598518-040",
+   "claim": "Six rungs are read in order and report the first link not demonstrated among the five that carry a pass rule, and a failed rung means a link was not demonstrated rather than that the effect is absent.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The ladder exists because a null is more useful when its location is known.",
+    "The descriptive composition rung never stops the ladder, which is why five of the six carry a pass rule."
+   ],
+   "supporting_quote": "A null is more useful when its location is known. Six rungs, read in order, report the first link not demonstrated among the five that carry a pass rule: collapse, the oracle premise, whether the weights tracked reliability on held-out keyed items, measured by a Spearman correlation (Spearman 1904) whose 95 percent lower bound must exceed 0. 3, whether the weights improved the validity of what the pool accepted, a descriptive composition rung that never stops the ladder, and retention itself. A failed rung means a link was not demonstrated, not that the effect is absent."
+  },
+  {
+   "id": "kaal:claim:7598518-041",
+   "url": "https://wulfkaal.github.io/claims/7598518-041",
+   "claim": "A positive reading would not say the weights mattered: the attribution sentence is issued only if the pool's contrast against full replacement and the reputation pool's contrast against the equal-weight pool are both superior in every family including the homogeneous one, the oracle premise and ladder rungs 3 and 4 pass in every family, and the key cap holds.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The positive reading and the attribution sentence are distinct registered claims with distinct conditions.",
+    "If the reputation contrast is null or negative in any family, the paper may say only that any difference is not attributable to reputation over equal weighting."
+   ],
+   "supporting_quote": "The positive reading would not say the weights mattered. That needs the attribution sentence, issued only if the pool's contrast against full replacement and the reputation pool's contrast against the equal-weight pool are both superior in every family, the homogeneous one included, the oracle premise and ladder rungs 3 and 4 pass in every family, and the key cap holds."
+  },
+  {
+   "id": "kaal:claim:7598518-042",
+   "url": "https://wulfkaal.github.io/claims/7598518-042",
+   "claim": "The design names a failure pattern in advance: if the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues a registered sentence recording that each had lower capped retention at generation 50 than full replacement, as a registered negative result and not an implementation failure.",
+   "type": "design",
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The sentence is available only on the stated pattern of labels in every family.",
+    "Naming the pattern in advance is what distinguishes it from a post hoc explanation of a bad result."
+   ],
+   "supporting_quote": "If the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues the registered failure-mode sentence: each had lower capped retention at generation 50 than full replacement. The design named that pattern in advance. It is a registered negative result, not an implementation failure."
+  },
+  {
+   "id": "kaal:claim:7598518-043",
+   "url": "https://wulfkaal.github.io/claims/7598518-043",
+   "claim": "The two ways the oracle premise can fail license different readings: missing the registered margin is consistent with the validity-rarity limit without proving it, while failing the acceptance gate says nothing about whether perfect validity information helps, and either way no positive label can be attributed to validity filtering.",
+   "type": "mechanism",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Both failure modes are registered in advance rather than drawn after the outcomes were read.",
+    "The distinction governs what the paper may say, not what the filter did."
+   ],
+   "supporting_quote": "If the oracle premise fails, the reading depends on how. If the oracle contrast misses the registered margin, perfect validity information was not shown to help at that margin, which is consistent with the validity-rarity limit without proving it. If instead the oracle fails its acceptance gate, part of its training set was filled from rejected candidates, and that event says nothing about whether perfect validity information helps. Either way, no positive label can be attributed to validity filtering, weighted or not."
+  },
+  {
+   "id": "kaal:claim:7598518-044",
+   "url": "https://wulfkaal.github.io/claims/7598518-044",
+   "claim": "Because the simulated validators err independently given an accuracy that depends only on the tag, shared lineage, correlated errors, and error that depends on whether content is rare are excluded by construction, and the study supplies no evidence about correlated assessors or about reputation concentrating in a lineage.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "reputation"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The exclusion is a property of the simulation, not an observed null.",
+    "Correlated assessors are among the conditions a reputation mechanism would face in deployment."
+   ],
+   "supporting_quote": "Its validators are simulated, and the families are, in the design's words, the result. They err independently given their accuracy, which depends only on the tag, so shared lineage, correlated errors, and error that depends on whether content is rare are excluded by construction, and the study supplies no evidence about correlated assessors or about reputation concentrating in a lineage."
+  },
+  {
+   "id": "kaal:claim:7598518-045",
+   "url": "https://wulfkaal.github.io/claims/7598518-045",
+   "claim": "Validity is balanced between rare and common content by construction, so the study says nothing about settings where rare content is harder to check.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The balance is enforced by the validity rule and confirmed by a pre-run check.",
+    "Settings where rarity and checkability are correlated are where a validity filter's ceiling would bind differently."
+   ],
+   "supporting_quote": "Validity is balanced between rare and common content by construction, so the study says nothing about settings where rare content is harder to check."
+  },
+  {
+   "id": "kaal:claim:7598518-046",
+   "url": "https://wulfkaal.github.io/claims/7598518-046",
+   "claim": "Nine superior labels set a high bar, so a real but modest effect may be reported as not positive.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The bar follows from the confirmatory family's size and the multiplicity adjustment.",
+    "A non-positive reading therefore does not establish the absence of an effect."
+   ],
+   "supporting_quote": "Nine superior labels set a high bar, so a real but modest effect may be reported as not positive."
+  },
+  {
+   "id": "kaal:claim:7598518-047",
+   "url": "https://wulfkaal.github.io/claims/7598518-047",
+   "claim": "In the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three and left identified low-severity findings unadopted.",
+   "type": "empirical",
+   "topics": [
+    "disclosure",
+    "research-methods"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "year": "2026",
+   "source_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The shortfall is disclosed in the paper's own limits section and in the audit records.",
+    "It concerns the conduct of the study's review, not the filter's performance."
+   ],
+   "supporting_quote": "in the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three, and they left identified low-severity findings unadopted, as their audit records state."
   }
  ],
  "entry_fields": [

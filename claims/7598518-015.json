@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/7598518-015",
+ "identifier": "kaal:claim:7598518-015",
+ "text": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=7598518",
+  "sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+  "encoding": "https://wulfkaal.com/papers/7598518.pdf"
+ },
+ "keywords": [
+  "research-methods",
+  "ai-and-agents"
+ ],
+ "about": [],
+ "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "condition"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "reported"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "The result is prior work, not a finding of this study.",
+    "What this paper isolates is how to weight several assessors behind a validity filter, not whether verifier selection works."
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "supporting_quote",
+   "value": "The closest prior work is Feng et al. (2025), who show that verifier-selected synthetic data can prevent collapse, with Gaussian-mixture theory and experiments comparing oracle and weak verifiers with self-selection and random selection. The paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established."
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "content_sha256",
+   "value": "d00add2a8ff796573ef01dbe2fdf7ccf27078f30fd77fb0a660ba920ab49e2b3"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  }
+ ]
+}

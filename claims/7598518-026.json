@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/7598518-026",
+ "identifier": "kaal:claim:7598518-026",
+ "text": "The reputation update is an asymmetric multiplicative rule in which reputation is multiplied by one plus alpha when a vote matches the revealed key and by one minus gamma when it does not, with alpha fixed at 0.05, gamma at 0.10, and a floor applied after each update.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=7598518",
+  "sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+  "encoding": "https://wulfkaal.com/papers/7598518.pdf"
+ },
+ "keywords": [
+  "reputation",
+  "research-methods"
+ ],
+ "about": [],
+ "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "design"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "stated"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "The parent paper requires only that gamma exceed alpha; this design fixes both rates.",
+    "Any single weight above one half is capped there and the excess redistributed among the other seated validators."
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "supporting_quote",
+   "value": "The update is equation (3) of the RLRF paper, an asymmetric multiplicative rule. On tag t, reputation updates as ri,t ← ri,t(1 + α) when the vote matches the revealed key and ri,t ← ri,t(1 − γ) when it does not. The RLRF paper requires only (0) γ > α, and this design fixes α = 0. 05 and γ = 0. 10. Each reputation starts at ri,t = 1, and after each update the floor ri,t ≥ 0. 01 is applied."
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "content_sha256",
+   "value": "52aef559780ae880ee08ea4099d5dc58d23642fd0e17d52eb71b65835d5b9693"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/7598518-029",
+ "identifier": "kaal:claim:7598518-029",
+ "text": "Three validator families share a mean accuracy of 0.75 while differing in structure: one is homogeneous at 0.75, one has each validator reliable at 0.90 on two hash-drawn tags and at 0.60 on the other two so that domain-scoped reputation has something to find, and one has five validators at 0.90 and fifteen at 0.70, a competent minority.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=7598518",
+  "sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+  "encoding": "https://wulfkaal.com/papers/7598518.pdf"
+ },
+ "keywords": [
+  "research-methods",
+  "reputation"
+ ],
+ "about": [],
+ "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "design"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "stated"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "The validators are simulated and err independently given their accuracy, which depends only on the tag.",
+    "The families are a property of the design, fixed before any run."
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "supporting_quote",
+   "value": "Family U is homogeneous at 0.75. In family H each validator is reliable at 0.90 on two hash-drawn tags and at 0.60 on the other two, so domain-scoped reputation has something to find. Family Mn has five validators at 0.90 and fifteen at 0.70, a competent minority. The three share a mean accuracy of 0.75."
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "content_sha256",
+   "value": "49a9e1c038043054a3c1370be8a36b60cd640d4f0de50f3e2c58dc5dc4de6631"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": false
+  }
+ ]
+}

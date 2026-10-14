@@ -1,0 +1,62 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Claim",
+ "@id": "https://wulfkaal.github.io/claims/7598518-031",
+ "identifier": "kaal:claim:7598518-031",
+ "text": "A threshold arm that accepts too few candidates fills the shortfall uniformly from rejected candidates, and an arm whose minimum over generations of the seed-mean fill-free share falls below 0.98 in a family has its tests there invalidated.",
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+ "isBasedOn": {
+  "@type": "ScholarlyArticle",
+  "name": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+  "datePublished": "2026",
+  "url": "https://ssrn.com/abstract=7598518",
+  "sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+  "encoding": "https://wulfkaal.com/papers/7598518.pdf"
+ },
+ "keywords": [
+  "research-methods",
+  "consensus-and-security"
+ ],
+ "about": [],
+ "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "claim_type",
+   "value": "design"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "confidence",
+   "value": "stated"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "scope_conditions",
+   "value": [
+    "The gate binds every threshold arm, including the single verifier and the equal-weight pool.",
+    "Validator compute is not equal across arms, so an equal candidate budget does not mean equal assessment cost."
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "supporting_quote",
+   "value": "A threshold arm that accepts too few fills the shortfall uniformly from rejected candidates, and an arm whose minimum over generations of the seed-mean fill-free share, min(accepted, N)/N with N = 2, 000 training rows per generation, falls below amin = 0. 98 in a family has its tests there invalidated."
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "content_sha256",
+   "value": "817cf2da39c2af6ed094b41f67884d7b048a8fe81305a4a9dd58597f10970670"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "is_failure_mode",
+   "value": true
+  }
+ ]
+}

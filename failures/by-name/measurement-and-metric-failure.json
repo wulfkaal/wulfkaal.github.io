@@ -23,6 +23,7 @@
   "Subjective deal evaluation error",
   "Trajectory Estimand Undefined",
   "Unverified Impact Inputs",
+  "Validity Filter Cannot See Rarity",
   "Venture capital signal divergence from market valuation",
   "Venture capital signal not validated by the market",
   "Verification regress",
@@ -63,7 +64,7 @@
   "unquantifiable-social-variables",
   "unstable-recursive-valuation"
  ],
- "count": 62,
+ "count": 63,
  "claims": [
   {
    "id": "kaal:claim:1428387-040",
@@ -849,6 +850,20 @@
    "year": "2026",
    "quote": "In the sweep, the modeled RLHF baseline settles at 67.7% accuracy and RLRF exceeds 0.97, both under parameters the sweep sets. Neither ﬁgure is a published agreement rate, and Part V.B.1 explains why calling 67.7 the Ouyang-Coste bound conﬂates an output of the model with an input to it.",
    "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7598518-022",
+   "url": "https://wulfkaal.github.io/claims/7598518-022",
+   "claim": "A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.",
+   "specific_name": "Validity Filter Cannot See Rarity",
+   "conditions": [
+    "The ceiling holds where rare content is as checkable as common content, which this design enforces by construction.",
+    "The experiment therefore includes an oracle validity filter as a premise rather than as a result."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "A validity filter judges whether an output is correct, not whether it is rare. Where rare content is as checkable as common content, such a filter can change rare composition only through the generator's own error profile. If collapse proceeds by under-sampling rare modes, no validity filter restores them, and a reputation-weighted filter is no exception.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
   }
  ]
 }

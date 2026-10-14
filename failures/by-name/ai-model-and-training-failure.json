@@ -2,10 +2,14 @@
  "failure_mode": "ai-model-and-training-failure",
  "specific_names": [
   "AI Feedback Bias Propagation",
+  "All Filters Worse Than No Filter",
+  "Curation Amplifies Curator Bias",
   "Distribution shift brittleness",
   "Format D Training Untested",
+  "Fragmented Reference Accelerates Tail Loss",
   "GNN adversarial vulnerability",
   "Homogeneous graph assumption",
+  "Imperfect Verifier Centers The Model",
   "No Policy Trained",
   "Overfitting from repeated reuse of the same data set",
   "Plausibility Truth Orthogonality",
@@ -16,6 +20,7 @@
   "Signal Invariance Does Not Establish Policy Invariance",
   "Small Dataset Overfitting",
   "Sparse reward learning failure",
+  "Tail Lost First Under Recursive Training",
   "Training Flywheel Unimplemented",
   "Training Pipeline Remains a Proposal",
   "Training data bias amplification",
@@ -41,7 +46,7 @@
   "training data bias transmission",
   "unexplainable prediction"
  ],
- "count": 39,
+ "count": 44,
  "claims": [
   {
    "id": "kaal:claim:2998033-021",
@@ -557,6 +562,76 @@
    "year": "2026",
    "quote": "A ﬁtted model can learn style correlations absent from . No RRM is trained or tested in this paper, so resistance to reward hacking is not claimed.",
    "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7598518-001",
+   "url": "https://wulfkaal.github.io/claims/7598518-001",
+   "claim": "When intelligence models repeatedly learn from data that earlier intelligence models produced, the rare cases disappear first: the unusual facts, minority patterns and edge cases that make data valuable. This is what model collapse names.",
+   "specific_name": "Tail Lost First Under Recursive Training",
+   "conditions": [
+    "Applies to repeated generations of models trained on earlier models' output.",
+    "The quote is the paper's own statement of the phenomenon it tests against, not a result of this study."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "Intelligence models increasingly learn from data that earlier Intelligence models produced. When that loop repeats over generations, the rare cases disappear first: the unusual facts, minority patterns, and edge cases that make data valuable. This is known as model collapse.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-016",
+   "url": "https://wulfkaal.github.io/claims/7598518-016",
+   "claim": "Yi et al. (2026) report that an imperfect external verifier drives the model toward the verifier's own knowledge center.",
+   "specific_name": "Imperfect Verifier Centers The Model",
+   "conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is a limit on verifier-based selection generally, including the pool under test."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "An imperfect external verifier drives the model toward the verifier's own knowledge center (Yi et al. 2026)",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-017",
+   "url": "https://wulfkaal.github.io/claims/7598518-017",
+   "claim": "Ferbach et al. (2024) report that curation acts as implicit preference optimization that amplifies the curator's biases.",
+   "specific_name": "Curation Amplifies Curator Bias",
+   "conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is the channel the parent reputation program claims reputation can resist."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "Curation acts as implicit preference optimization that amplifies the curator's biases (Ferbach et al. 2024)",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-018",
+   "url": "https://wulfkaal.github.io/claims/7598518-018",
+   "claim": "Qiao et al. (2026) report that verifiers which see only fragmented slices of the reference can accelerate tail loss.",
+   "specific_name": "Fragmented Reference Accelerates Tail Loss",
+   "conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "The pool under test applies one domain-general validity bit, so this is not the failure mode it is exposed to."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "verifiers that see only fragmented slices of the reference can accelerate tail loss (Qiao et al. 2026)",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7598518-042",
+   "url": "https://wulfkaal.github.io/claims/7598518-042",
+   "claim": "The design names a failure pattern in advance: if the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues a registered sentence recording that each had lower capped retention at generation 50 than full replacement, as a registered negative result and not an implementation failure.",
+   "specific_name": "All Filters Worse Than No Filter",
+   "conditions": [
+    "The sentence is available only on the stated pattern of labels in every family.",
+    "Naming the pattern in advance is what distinguishes it from a post hoc explanation of a bad result."
+   ],
+   "source": "Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering",
+   "year": "2026",
+   "quote": "If the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues the registered failure-mode sentence: each had lower capped retention at generation 50 than full replacement. The design named that pattern in advance. It is a registered negative result, not an implementation failure.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
   }
  ]
 }
