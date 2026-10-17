@@ -513,6 +513,14 @@ jobs:
           print("135 unique SSRN records, 135 BibTeX entries, 133 claim-covered works")
           PY
 
+      - name: Every published corpus count must match the live corpus
+        # tools/check_corpus_counts.py derives each figure from its source
+        # (claims/all.jsonl, failures/index.json, papers.json,
+        # positions/all.jsonl, essays/all.jsonl) and checks every tracked
+        # surface that asserts one, with a documented exclusion list for the
+        # numbers that only look stale. It fails the run on any disagreement.
+        run: python3 tools/check_corpus_counts.py
+
       - name: Spot-check that quotes are still verbatim and hashes still bind
         run: python3 verify.py --sample 12 --no-pdf
 
