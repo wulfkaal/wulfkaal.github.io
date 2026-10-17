@@ -114,6 +114,14 @@ jobs:
       - name: Regenerate public position discovery surfaces
         run: python3 tools/build_positions.py
 
+      # Every file under colloquium/attestations/ is a published, hash-bound read
+      # surface, and the sitemap is where a crawler learns it exists. 164 leaves were
+      # backfilled on 2026-08-19 and no row was ever written, so they were invisible
+      # for two months: nothing generated the rows, so nothing could notice. This owns
+      # them now, and tests/test_sitemap_integrity.py fails if they drift again.
+      - name: Reconcile the colloquium sitemap with its attestation leaves
+        run: python3 tools/build_colloquium_sitemap.py
+
       - name: Enforce source-only ownership for compound-growth commits
         if: github.event_name == 'push'
         shell: bash
@@ -153,6 +161,7 @@ jobs:
           python3 tools/build_entities.py --check
           python3 tools/build_essays.py --check
           python3 tools/normalize_claim_discovery.py --check
+          python3 tools/build_colloquium_sitemap.py --check
           python3 tools/check_html_discoverability.py --root .
 
       - name: Derive the published corpus counts from the corpus
@@ -486,13 +495,18 @@ jobs:
           PY
 
       - name: The SSRN roster and its citation projection must remain complete
-        # Every figure below is derived from papers.json and claims/all.jsonl, never pinned.
-        # The step used to hardcode the roster size and the claim-covered count, so the first
-        # legitimate SSRN posting turned a correct tree red and stopped the projections job:
-        # the roster grew 129 to 137 in four months and each posting needed a hand edit here.
+        # The roster size and the claim-covered count are pinned on purpose. Deriving both
+        # from papers.json and claims/all.jsonl made the gate self-referential: a work added
+        # to papers.json and to papers.bib at the same time moved the expected value with the
+        # actual one and passed. The two constants below move only when a posting is
+        # deliberate, and the posting that moves them updates them here. Everything else is
+        # still checked by identity rather than by count.
         run: |
           python3 - <<'PY'
           import json, re, sys
+
+          PINNED_ROSTER = 137
+          PINNED_CLAIM_COVERED = 135
 
           papers = json.load(open("papers.json"))
           works = papers.get("works", [])
@@ -508,6 +522,17 @@ jobs:
           hash_backed = sum(1 for work in works if work.get("sha256"))
 
           problems = []
+          if roster != PINNED_ROSTER:
+              problems.append(
+                  f"the SSRN roster holds {roster} works, not the pinned {PINNED_ROSTER}; "
+                  f"update this gate in the same commit as a deliberate posting"
+              )
+          if len(covered) != PINNED_CLAIM_COVERED:
+              problems.append(
+                  f"claims/all.jsonl cites {len(covered)} distinct works, not the pinned "
+                  f"{PINNED_CLAIM_COVERED}; update this gate in the same commit as a "
+                  f"deliberate change to the claim layer"
+              )
           if papers.get("count") != roster or papers.get("count_with_ssrn_id") != roster:
               problems.append(
                   f"papers.json roster is {papers.get('count')}/{len(works)} and "
