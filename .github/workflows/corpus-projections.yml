@@ -486,31 +486,57 @@ jobs:
           PY
 
       - name: The SSRN roster and its citation projection must remain complete
+        # Every figure below is derived from papers.json and claims/all.jsonl, never pinned.
+        # The step used to hardcode the roster size and the claim-covered count, so the first
+        # legitimate SSRN posting turned a correct tree red and stopped the projections job:
+        # the roster grew 129 to 137 in four months and each posting needed a hand edit here.
         run: |
           python3 - <<'PY'
           import json, re, sys
 
           papers = json.load(open("papers.json"))
           works = papers.get("works", [])
-          ssrn_ids = [w.get("ssrn_id") for w in works]
+          ssrn_ids = [work.get("ssrn_id") for work in works]
+          bib_ids = set(re.findall(r"abstract_id=(\d+)", open("papers.bib").read()))
           bib_entries = re.findall(r"^@\w+\{", open("papers.bib").read(), re.M)
+          covered = {
+              json.loads(line)["source"]["work_id"].split(":", 1)[-1]
+              for line in open("claims/all.jsonl", encoding="utf-8")
+              if line.strip()
+          }
+          roster = len(works)
+          hash_backed = sum(1 for work in works if work.get("sha256"))
 
-          expected = 135
           problems = []
-          if papers.get("count") != expected or len(works) != expected:
-              problems.append(f"papers.json roster is {papers.get('count')}/{len(works)}, expected {expected}")
-          if papers.get("count_with_ssrn_id") != expected:
-              problems.append(f"count_with_ssrn_id is {papers.get('count_with_ssrn_id')}, expected {expected}")
-          if any(not value for value in ssrn_ids) or len(set(ssrn_ids)) != expected:
+          if papers.get("count") != roster or papers.get("count_with_ssrn_id") != roster:
+              problems.append(
+                  f"papers.json roster is {papers.get('count')}/{len(works)} and "
+                  f"count_with_ssrn_id is {papers.get('count_with_ssrn_id')}; both must "
+                  f"equal the {roster} works listed"
+              )
+          if any(not value for value in ssrn_ids) or len(set(ssrn_ids)) != roster:
               problems.append("SSRN identifiers are missing or duplicated")
-          if len(bib_entries) != expected:
-              problems.append(f"papers.bib has {len(bib_entries)} entries, expected {expected}")
-          if papers.get("claim_covered_work_count") != 133:
-              problems.append("claim_covered_work_count must remain explicit at 133 until ingestion expands")
+          if bib_ids != set(ssrn_ids):
+              missing = sorted(set(ssrn_ids) - bib_ids)
+              unknown = sorted(bib_ids - set(ssrn_ids))
+              problems.append(
+                  f"papers.bib does not cover the roster: {len(missing)} missing {missing[:5]}, "
+                  f"{len(unknown)} not in the roster {unknown[:5]}"
+              )
+          if len(bib_entries) != len(bib_ids):
+              problems.append(
+                  f"papers.bib has {len(bib_entries)} entries for {len(bib_ids)} distinct records"
+              )
+          if papers.get("claim_covered_work_count") != len(covered):
+              problems.append(
+                  f"claim_covered_work_count is {papers.get('claim_covered_work_count')} but "
+                  f"claims/all.jsonl cites {len(covered)} distinct works"
+              )
 
           if problems:
               sys.exit("\n".join(problems))
-          print("135 unique SSRN records, 135 BibTeX entries, 133 claim-covered works")
+          print(f"{roster} unique SSRN records, {len(bib_ids)} BibTeX entries, "
+                f"{hash_backed} hash-backed works, {len(covered)} claim-covered works")
           PY
 
       - name: Every published corpus count must match the live corpus

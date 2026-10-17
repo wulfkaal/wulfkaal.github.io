@@ -9,7 +9,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTECTED_SHA256 = "f8edde918465e4373df1e381bc6b6456330cc9c89aea879797973ba145490808"
+# The protected claim corpus is deliberately NOT pinned by hash here. It was, until
+# 2026-10-16, and that pin is what broke the projections job on the first legitimate corpus
+# growth: the job validates these tests BEFORE it commits its output, so a stale pin stopped
+# every derived surface from being regenerated. The invariants the pin existed to protect,
+# completeness and the verbatim supporting_quote surviving re-enrichment, are asserted directly
+# below against claims/all.jsonl, which is the source the index is enriched from.
 ENDPOINTS = {
     "positions_index": "https://wulfkaal.github.io/positions/index.json",
     "positions_graph": "https://wulfkaal.github.io/positions/graph.jsonld",
@@ -26,13 +31,54 @@ class PositionDiscoverabilityTests(unittest.TestCase):
     def setUpClass(cls):
         cls.index = load("positions/index.json")
         cls.records = cls.index["itemListElement"]
+        cls.protected_count = load("claims/index.json")["count"]
 
-    def test_protected_corpus_is_byte_identical_and_complete(self):
-        raw = (ROOT / "claims/index.json").read_bytes()
-        claims = json.loads(raw)
-        self.assertEqual(hashlib.sha256(raw).hexdigest(), PROTECTED_SHA256)
-        self.assertEqual(claims["count"], 5363)
-        self.assertEqual(len(claims["claims"]), 5363)
+    def test_protected_corpus_is_complete_and_enriched(self):
+        # claims/index.json is the surface every downstream projection reads, so this
+        # asserts that it is an exact re-enrichment of claims/all.jsonl, field by field
+        # and id by id. Counting records and checking for nonempty strings, which is what
+        # this test did before, would have passed a fabricated claim id, an edited
+        # citation, or a truncated supporting_quote, because the enrichment is a pure
+        # function of the bulk file and any difference between the two is a defect.
+        index = load("claims/index.json")
+        claims = index["claims"]
+        corpus = {
+            record["id"]: record
+            for record in (
+                json.loads(line)
+                for line in (ROOT / "claims/all.jsonl").read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            )
+        }
+        ids = [claim["id"] for claim in claims]
+        self.assertEqual(len(set(ids)), len(ids), "duplicate claim id in claims/index.json")
+        self.assertEqual(
+            set(ids),
+            set(corpus),
+            "claims/index.json and claims/all.jsonl do not carry the same claim ids",
+        )
+        self.assertEqual(index["count"], len(corpus))
+
+        by_id = {claim["id"]: claim for claim in claims}
+        for claim_id, source in corpus.items():
+            with self.subTest(claim=claim_id):
+                enriched = by_id[claim_id]
+                self.assertEqual(enriched["claim"], source["claim"])
+                self.assertEqual(enriched["citation"], source["citation"])
+                self.assertEqual(enriched["supporting_quote"], source["supporting_quote"])
+                self.assertEqual(enriched["url"], source["canonical_url"])
+                self.assertEqual(enriched["type"], source["claim_type"])
+                self.assertEqual(enriched["topics"], source["topics"])
+                self.assertEqual(enriched["confidence"], source["confidence"])
+                self.assertEqual(enriched["is_failure_mode"], source["is_failure_mode"])
+                self.assertEqual(enriched["source_sha256"], source["source"]["sha256"])
+                self.assertEqual(str(enriched["year"]), str(source["source"]["year"]))
+                # An absent key and an empty list both mean "no scope conditions stated";
+                # the enrichment drops the empty list, so normalize only that case.
+                self.assertEqual(
+                    enriched.get("scope_conditions") or [],
+                    source.get("scope_conditions") or [],
+                )
 
     def test_public_index_and_recent_feed(self):
         self.assertEqual(self.index["numberOfItems"], len(self.records))
@@ -103,22 +149,23 @@ class PositionDiscoverabilityTests(unittest.TestCase):
 
         descriptor = load(".well-known/mcp.json")
         self.assertTrue({"search_positions", "get_position", "positions_on_topic"}.issubset(descriptor["tools"]))
-        self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], 5363)
+        self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], self.protected_count)
         self.assertEqual(descriptor["collections"]["publicPositions"]["count"], len(self.records))
         self.assertFalse(descriptor["collections"]["publicPositions"]["scholarlyClaimLayerEligible"])
 
-        coverage = load("positions/claim-5363-coverage.json")
-        self.assertEqual(coverage["protectedScholarlyClaims"], 5363)
+        coverage_name = f"claim-{self.protected_count}-coverage.json"
+        coverage = load(f"positions/{coverage_name}")
+        self.assertEqual(coverage["protectedScholarlyClaims"], self.protected_count)
         self.assertEqual(coverage["affirmedPositionsMapped"], len(self.records))
         dataset = load("positions/dataset.jsonld")
         downloads = {item["name"] for item in dataset["distribution"]}
-        self.assertIn("claim-5363-coverage.json", downloads)
-        self.assertIn("claim-source-5363-map.jsonl", downloads)
+        self.assertIn(coverage_name, downloads)
+        self.assertIn(f"claim-source-{self.protected_count}-map.jsonl", downloads)
         self.assertNotIn("sitemap-positions-attribution.xml", downloads)
         legacy = load("positions/claim-5033-coverage.json")
         self.assertTrue(legacy["deprecatedAlias"])
-        self.assertEqual(legacy["protectedScholarlyClaims"], 5363)
-        self.assertTrue(legacy["supersededBy"].endswith("claim-5363-coverage.json"))
+        self.assertEqual(legacy["protectedScholarlyClaims"], self.protected_count)
+        self.assertTrue(legacy["supersededBy"].endswith(coverage_name))
 
     def test_every_position_page_has_descriptive_safe_labels(self):
         for row in self.records:

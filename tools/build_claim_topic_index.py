@@ -488,6 +488,14 @@ def sitemap_claim_urls(repo):
 
 def expose_sitemap_claims(html_text, urls):
     """Directly enumerate all sitemap-backed claims from the primary claim hub."""
+    # Enumerate in a fixed order, not in sitemap order. tools/normalize_claim_discovery.py
+    # rewrites sitemap-claims.xml into sorted order and runs AFTER this tool in
+    # corpus-projections.yml, so building the roster from sitemap order made the page depend
+    # on an input that a later step changes. The --check step then compared a roster built
+    # from the old order against a sitemap in the new order, failed, and discarded the very
+    # reordering that would have made the next run agree: a run that could never pass twice.
+    # Sorting here makes the roster a function of the URL set alone.
+    urls = sorted(urls)
     links = "".join(
         f'<li><a href="./{html.escape(url.rsplit("/", 1)[1])}">'
         f'{html.escape(url.rsplit("/", 1)[1])}</a></li>'

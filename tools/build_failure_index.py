@@ -122,11 +122,24 @@ def family_page(fam, entries, works):
     items = "".join(
         f'<li><a href="../claims/{f["id"].split(":")[-1]}.html">{esc(f["name"])}</a>: '
         f'{esc(f["claim"][:150])}</li>' for f in entries)
+    # tools/check_html_discoverability.py requires a parseable JSON-LD block on every
+    # sitemap-backed page. These 58 pages shipped without one, which failed that check and
+    # so blocked the projections job on its validation step.
+    structured = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "url": f"https://wulfkaal.github.io/failures/{fam}.html",
+        "name": f"Failure mode: {fam}",
+        "description": f"{len(entries)} claims on {fam} from the published works of Wulf A. Kaal",
+        "isPartOf": {"@type": "CollectionPage",
+                     "url": "https://wulfkaal.github.io/failures/index.html"},
+    }, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     return (
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<title>Failure mode: {esc(fam)}</title>'
         f'<link rel="canonical" href="https://wulfkaal.github.io/failures/{esc(fam)}.html">'
+        f'<script type="application/ld+json">{structured}</script>'
         f'<meta name="description" content="{len(entries)} claims on {esc(fam)} from the '
         'published works of Wulf A. Kaal">'
         '<link rel="stylesheet" href="../style.css"></head><body><main>'
@@ -144,11 +157,23 @@ def index_page(total, families, counts):
     rows = "".join(
         f'<tr><td><a href="./{fam}.html">{esc(fam.replace("-", " "))}</a></td>'
         f'<td>{counts[fam]}</td></tr>' for fam in families)
+    structured = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "url": "https://wulfkaal.github.io/failures/index.html",
+        "name": "Failure Mode Index, Kaal Corpus",
+        "description": "Structured index of failure modes in decentralized governance, DAOs, "
+                       "reputation systems, and regulation, from the published works of "
+                       "Wulf A. Kaal.",
+        "isPartOf": {"@type": "CollectionPage",
+                     "url": "https://wulfkaal.github.io/claims/index.html"},
+    }, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     return (
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>Failure Mode Index, Kaal Corpus</title>'
         '<link rel="canonical" href="https://wulfkaal.github.io/failures/index.html">'
+        f'<script type="application/ld+json">{structured}</script>'
         '<meta name="description" content="Structured index of failure modes in decentralized '
         'governance, DAOs, reputation systems, and regulation, from the published works of '
         'Wulf A. Kaal."><link rel="stylesheet" href="../style.css"></head><body><main>'

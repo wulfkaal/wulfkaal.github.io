@@ -4,9 +4,193 @@
  "@id": "https://wulfkaal.github.io/positions/index.json",
  "name": "Affirmed Position Claims by Wulf A. Kaal",
  "description": "Reviewed, dated commentary positions grounded in the source-bound scholarly claim corpus.",
- "numberOfItems": 8397,
- "dateModified": "2026-10-13",
+ "numberOfItems": 8399,
+ "dateModified": "2026-10-16",
  "itemListElement": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/positions/2026-10-16-002",
+   "identifier": "kaal:position:2026-10-16-002",
+   "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+   "name": "Progress Is Not Permission",
+   "text": "Progress is not permission. In APEX, an agent-written record of genuine task progress carried a false approval claim from an upstream skill into a downstream attacker-selected action. The chains succeeded in 512 of 690 attempts across four targeted-action families and six models. This is direct evidence of authority drift in the tested setting. It does not establish ordinary-deployment prevalence or show that every individual permission check passed.",
+   "author": {
+    "@type": "Person",
+    "name": "Wulf A. Kaal",
+    "identifier": "https://orcid.org/0009-0008-7840-1847"
+   },
+   "datePublished": "2026-10-16",
+   "dateModified": "2026-10-16",
+   "creativeWorkStatus": "Affirmed",
+   "responseType": "agreement",
+   "keywords": [
+    "consensus-and-security",
+    "governance-design",
+    "ai-and-agents"
+   ],
+   "scope_conditions": [
+    "delegation chains under a bounded original consent"
+   ],
+   "currentDebate": {
+    "name": "Chaining Skills to Hijack LLM Agents",
+    "url": "https://arxiv.org/abs/2610.01564v1"
+   },
+   "extends": {
+    "identifier": "kaal:claim:7314479-015",
+    "url": "https://wulfkaal.github.io/claims/7314479-015",
+    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+    "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+    "authors": [
+     "Wulf A. Kaal"
+    ],
+    "year": "2026",
+    "ssrn": null,
+    "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+   },
+   "isBasedOn": [
+    {
+     "@id": "https://wulfkaal.github.io/claims/7314479-015"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Chaining Skills to Hijack LLM Agents",
+     "url": "https://arxiv.org/abs/2610.01564v1"
+    }
+   ],
+   "batch_id": "kaal-weekly-research:2026-10-16:daily-001",
+   "review_provenance": "https://wulfkaal.github.io/positions-src/2026-10-16-compound-growth-kaal-weekly-research-2026-10-16-daily-001.json",
+   "publicationStatus": "public",
+   "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+   "isPartOf": {
+    "@id": "https://wulfkaal.github.io/positions/index.json"
+   },
+   "version": "1.0",
+   "canonical_url": "https://wulfkaal.github.io/positions/2026-10-16-002",
+   "canonicalForm": "https://wulfkaal.github.io/positions/2026-10-16-002.md",
+   "candidateId": "kaal:candidate:a2962db39373d2a10f57cdaaab318f0ed711629242066eb7a3308deb133a0aa8",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false,
+   "mappingMethod": "independent one-to-one proposition and mechanism review",
+   "mappingWhyRelevant": "The tested cross-skill attack directly instantiates authority drift: a genuine progress record carries false approval into a later skill and produces an attacker-selected action outside the original request. It agrees with the protected failure mechanism while remaining bounded to the tested adversarial setting.",
+   "sourceProvenance": {
+    "canonicalUrl": "https://arxiv.org/pdf/2610.01564v1",
+    "retrievedAt": "2026-10-13T12:34:59Z",
+    "sourceContentSha256": "6c0590505dcd1a397a6bfb36e772fdad9073d0fd342f6eae1735dfa6ef8b60b6",
+    "sourceProposition": "An agent-written record of genuine task progress can carry a false claim of user approval across skills and induce an attacker-selected downstream action, empirically instantiating authority drift across a delegation chain.",
+    "sourcePropositionSha256": "50591001839a59bfe3ea86b774065e58236fa7bb25f86a52c3a08595a31522af",
+    "normalizedWorkId": "arxiv:2610.01564",
+    "sourceVersion": "v1",
+    "exactEvidenceQuote": "The key insight is that an agent-written record of genuine task progress can carry a false claim of user approval across skills: an upstream skill induces the agent to create the record, and a downstream skill uses it to direct the attacker-selected action. Across four targeted-action families and six models on SkillsBench, the chains induce the selected action in 512 of 690 attempts (74.2%).",
+    "exactEvidenceQuoteSha256": "4694f52b3a30c44d084f7acf2710de20aedebd478da21fba459e98923aaf0476",
+    "claimMappings": [
+     {
+      "claimId": "kaal:claim:7314479-015",
+      "confidence": null,
+      "method": "independent one-to-one review",
+      "whyRelevant": "The tested cross-skill attack directly instantiates authority drift: a genuine progress record carries false approval into a later skill and produces an attacker-selected action outside the original request. It agrees with the protected failure mechanism while remaining bounded to the tested adversarial setting.",
+      "ambiguous": false
+     }
+    ]
+   },
+   "userAffirmation": "Standing scholarly-growth preauthorization bound to 68eff3786c364948b03dc982ce2e873276e26037bf4952f5c9e0ddea6db1036c; publication remains conditional on successful projection, deployment, and live-byte verification.",
+   "publicIdentitySha256": "a2962db39373d2a10f57cdaaab318f0ed711629242066eb7a3308deb133a0aa8",
+   "sha256": "126033c26b4e576a5a8890fbe93e717395b234cc834449977fa9cd0df3e2a6ea"
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/positions/2026-10-16-001",
+   "identifier": "kaal:position:2026-10-16-001",
+   "additionalType": "https://wulfkaal.github.io/positions/schema.json#AffirmedPositionClaim",
+   "name": "Tool Calls Need A Last Enforceable Boundary",
+   "text": "Admission evidence is not execution authority. PACE shows why a safe and a leaking artifact can present the same admission evidence, then evaluates effect verification against authority compiled from the authenticated request immediately before a tool call executes. That mechanism extends the requirement for a last enforceable boundary. It does not evaluate reputation systems, prove the categorical institutional rule, or establish performance across all sovereign-runtime coordination layers.",
+   "author": {
+    "@type": "Person",
+    "name": "Wulf A. Kaal",
+    "identifier": "https://orcid.org/0009-0008-7840-1847"
+   },
+   "datePublished": "2026-10-16",
+   "dateModified": "2026-10-16",
+   "creativeWorkStatus": "Affirmed",
+   "responseType": "extension",
+   "keywords": [
+    "consensus-and-security",
+    "governance-design",
+    "ai-and-agents"
+   ],
+   "scope_conditions": [
+    "tool-using agents acting under authenticated user requests"
+   ],
+   "currentDebate": {
+    "name": "PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents",
+    "url": "https://arxiv.org/abs/2610.01349v1"
+   },
+   "extends": {
+    "identifier": "kaal:claim:7314479-020",
+    "url": "https://wulfkaal.github.io/claims/7314479-020",
+    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+    "paper": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479",
+    "authors": [
+     "Wulf A. Kaal"
+    ],
+    "year": "2026",
+    "ssrn": null,
+    "source_pdf_sha256": "debace24a155ae924a155b1fafe98856d98cf83689feff2f87a32f1c06171ce6"
+   },
+   "isBasedOn": [
+    {
+     "@id": "https://wulfkaal.github.io/claims/7314479-020"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents",
+     "url": "https://arxiv.org/abs/2610.01349v1"
+    }
+   ],
+   "batch_id": "kaal-weekly-research:2026-10-16:daily-001",
+   "review_provenance": "https://wulfkaal.github.io/positions-src/2026-10-16-compound-growth-kaal-weekly-research-2026-10-16-daily-001.json",
+   "publicationStatus": "public",
+   "recordTypeNote": "Dated commentary position extending a scholarly corpus claim. Not a verbatim claim extracted from the paper.",
+   "isPartOf": {
+    "@id": "https://wulfkaal.github.io/positions/index.json"
+   },
+   "version": "1.0",
+   "canonical_url": "https://wulfkaal.github.io/positions/2026-10-16-001",
+   "canonicalForm": "https://wulfkaal.github.io/positions/2026-10-16-001.md",
+   "candidateId": "kaal:candidate:819f2b0ff21b6e66d00434a5cb2565f69d55bd6012ccbbd072a5ab3990f958f8",
+   "evidenceLevel": "permitted_full_text",
+   "reviewTier": "independent evidence-first compound-growth review",
+   "mappingConfidence": null,
+   "mappingAmbiguous": false,
+   "mappingMethod": "independent one-to-one proposition and mechanism review",
+   "mappingWhyRelevant": "The paper directly establishes that upstream artifact-admission evidence cannot settle downstream tool authority and supplies authenticated-request effect checking at the last executable boundary. This is a bounded extension of the protected separation between coordination evidence and permission, not evidence about reputation systems generally.",
+   "sourceProvenance": {
+    "canonicalUrl": "https://arxiv.org/pdf/2610.01349v1",
+    "retrievedAt": "2026-10-13T12:34:59Z",
+    "sourceContentSha256": "d03ed2c8f63790a594a97795e0247e65b1bd000668bac1d9c22fd163791223e1",
+    "sourceProposition": "Pre-admission artifact vetting cannot settle authority when safe and leaking variants share admission evidence; enforcing schema-defined effects against authenticated request authority immediately before tool execution supplies the last actionable boundary.",
+    "sourcePropositionSha256": "e15600087328e2859eb01eb11ec75b3d829c4d5ba73ce1c32cd4a631177b530e",
+    "normalizedWorkId": "arxiv:2610.01349",
+    "sourceVersion": "v1",
+    "exactEvidenceQuote": "Vetting an artifact before admission does not settle this. A safe variant and a leaking variant can produce the same admission evidence, and a sound gate then cannot relax that site for either. We make that condition precise, which leaves the last boundary a deployment can still act on. We present Provenance-Aware Capability Enforcement (PACE), which mediates every tool call immediately before it executes. Path confinement proposes an executable cut of represented influence paths, while capability and effect verification checks schema-defined effects against authority compiled from the authenticated request.",
+    "exactEvidenceQuoteSha256": "01f47f2e567b770d0ba58e58961b38ca839231dd12964a8165152a3170a49fb4",
+    "claimMappings": [
+     {
+      "claimId": "kaal:claim:7314479-020",
+      "confidence": null,
+      "method": "independent one-to-one review",
+      "whyRelevant": "The paper directly establishes that upstream artifact-admission evidence cannot settle downstream tool authority and supplies authenticated-request effect checking at the last executable boundary. This is a bounded extension of the protected separation between coordination evidence and permission, not evidence about reputation systems generally.",
+      "ambiguous": false
+     }
+    ]
+   },
+   "userAffirmation": "Standing scholarly-growth preauthorization bound to 68eff3786c364948b03dc982ce2e873276e26037bf4952f5c9e0ddea6db1036c; publication remains conditional on successful projection, deployment, and live-byte verification.",
+   "publicIdentitySha256": "819f2b0ff21b6e66d00434a5cb2565f69d55bd6012ccbbd072a5ab3990f958f8",
+   "sha256": "858a7dc2f54cfb8d9da339dad2c246bbc977e1e10458e21eab9ba292992efffc"
+  },
   {
    "@context": "https://schema.org",
    "@type": "Claim",

@@ -517,10 +517,10 @@ EXCLUSIONS = [
     ("tests/", "Fixtures pin historical values on purpose; tests assert no "
      "live figure."),
     (".github/workflows/corpus-projections.yml",
-     "CI gate constants, not a published surface. Its SSRN roster gate pins "
-     "135/133 while papers.json carries 137/135, so that gate is red on main "
-     "right now; that failure is loud already and fixing the gate is a fixer "
-     "task, not this checker's."),
+     "CI gate constants, not a published surface. Its SSRN roster gate now "
+     "derives the roster, hash-backed, BibTeX and claim-covered figures from "
+     "papers.json, papers.bib and claims/all.jsonl instead of pinning them, so "
+     "it asserts no figure of its own to check."),
     ("book/corpus.md",
      "Dated snapshot: 135 works as of September 2026. A dated claim about "
      "then, not a current self description."),

@@ -3,7 +3,7 @@
 
     Read surface   https://wulfkaal.github.io/colloquium   static, always up
     Write surface  https://openstanding.org                live now
-    Corpus         5,363 claims, each hash verifiable against its source PDF
+    Corpus         5,445 live claims from 135 works, each hash verifiable against its source PDF. Colloquium jobs file remains 5,363
 
 WHAT CHANGED, AND WHY IT MATTERS TO YOU
 
@@ -453,7 +453,7 @@ def cmd_install(a):
     print("1. Add to the agent config (Claude Code: .mcp.json, Claude Desktop:")
     print("   claude_desktop_config.json, or any MCP capable client):\n")
     print(json.dumps(snippet, indent=2))
-    print("\n   Read only, no authentication, no account. 5,363 claims from 133 works,")
+    print("\n   Read only, no authentication, no account. 5,445 claims from 135 claim-covered works,")
     print("   each bound to a verbatim quote from a content hashed source PDF. Answers")
     print("   \"is this claim contested, and what exactly does the source say\" in one call.")
     print("\n2. For standing that accumulates across sessions rather than within one:\n")

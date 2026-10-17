@@ -693,14 +693,26 @@ def add_reverse_claim_links(repo, by_claim):
         more = ""
         if len(records) > RELATED_LIMIT:
             more = (
-                f'<li><a href="../positions/by-claim/{claim_id}.html">'
+            f'<li><a href="../positions/by-claim/{path.stem}.html">'
                 f'All {len(records)} explicitly related positions</a></li>'
             )
         block = (
             f'{start}<div class="k">Positions extending this scholarly claim</div>'
             f'<ul class="meta">{links}{more}</ul>{end}'
         )
-        expected = expected.replace("<footer>", block + "<footer>", 1)
+        # Anchor on the footer when the page has one, and on </main> when it does not.
+        # The 82 claims published on 2026-10-13 and 2026-10-14 came from a page template
+        # that omits the footer, so anchoring on <footer> alone silently wrote those pages
+        # back unchanged and left a claim with an explicit related position carrying no
+        # block at all. Refuse instead of no-oping, so a third template cannot hide here.
+        for anchor in ("<footer>", "</main>"):
+            if anchor in expected:
+                expected = expected.replace(anchor, block + anchor, 1)
+                break
+        else:
+            raise RuntimeError(
+                f"Claim page has no insertion point for related positions: {path.name}"
+            )
         write_text(path, expected)
 
 

@@ -27,23 +27,59 @@ MERGE = load_module("merge_sitemap", "tools/merge_sitemap.py")
 BING_AUTH = load_module("check_bing_site_auth", "tools/check_bing_site_auth.py")
 
 
-def required_human_urls(repo):
-    families = sorted({
+def failure_families(repo):
+    return sorted({
         mode["failure_family"]
         for mode in json.loads((repo / "failures" / "index.json").read_text(encoding="utf-8"))["modes"]
     })
+
+
+def required_human_urls(repo):
     urls = [
         f"{BASE}/",
         f"{BASE}/claims/index.html",
         f"{BASE}/failures/index.html",
     ]
-    urls.extend(f"{BASE}/failures/{family}.html" for family in families)
+    urls.extend(f"{BASE}/failures/{family}.html" for family in failure_families(repo))
     return urls
 
 
 def missing_required_human_urls(sitemap_text, required):
     have = set(re.findall(r"<loc>(.*?)</loc>", sitemap_text))
     return [url for url in required if url not in have]
+
+
+def independent_eligible_rows(repo):
+    """Every (sitemap, url) pair that must carry an authoritative URL-level lastmod.
+
+    Built from the sitemap bytes and the tree, deliberately not from
+    merge_sitemap.FULL_LASTMOD_SITEMAPS or merge_sitemap.eligible_row. The earlier
+    expectation reused both, which made it circular: dropping a sitemap from that
+    tuple shrank the renderer's count and this test's expected count by exactly the
+    same amount, so the guard could not see the loss it existed to catch.
+
+    The three whole-sitemap members and the ranked claim rows are the expectation,
+    stated here rather than read back from the implementation. Every pair must also
+    resolve to a tracked file, or its lastmod would be dating nothing.
+    """
+    rows = set()
+    for sitemap_name in ("sitemap.xml", "sitemap-colloquium.xml", "sitemap-entities.xml"):
+        rows.update(
+            (sitemap_name, url)
+            for url in re.findall(
+                r"<loc>(.*?)</loc>", (repo / sitemap_name).read_text(encoding="utf-8")
+            )
+        )
+    # Claim records carry their source publication date and no priority element. The
+    # ranked root, claim-index and failure-hub rows are the ones that need Git history.
+    rows.update(
+        ("sitemap-claims.xml", re.search(r"<loc>(.*?)</loc>", body).group(1))
+        for body in re.findall(
+            r"<url>(.*?)</url>", (repo / "sitemap-claims.xml").read_text(encoding="utf-8")
+        )
+        if "<priority>" in body
+    )
+    return rows
 
 
 class SitemapIntegrityTests(unittest.TestCase):
@@ -273,10 +309,12 @@ class SitemapIntegrityTests(unittest.TestCase):
             ]
         self.assertEqual(dangling, ["sitemap-positions.xml"])
 
-    def test_claim_sitemap_pins_sixty_human_urls(self):
+    def test_claim_sitemap_carries_every_required_human_url(self):
         required = required_human_urls(ROOT)
-        self.assertEqual(len(required), 60)
-        self.assertEqual(len(set(required)), 60)
+        # Three hubs plus one page per failure family. Derived from failures/index.json so
+        # that a new family cannot turn this red on a run that published nothing but growth.
+        self.assertEqual(len(required), 3 + len(failure_families(ROOT)))
+        self.assertEqual(len(set(required)), len(required))
         missing = missing_required_human_urls(
             (ROOT / "sitemap-claims.xml").read_text(encoding="utf-8"),
             required,
@@ -298,7 +336,26 @@ class SitemapIntegrityTests(unittest.TestCase):
 
     def test_every_eligible_url_has_authoritative_lastmod(self):
         rendered, count = MERGE.rendered_lastmod_sitemaps(ROOT)
-        self.assertEqual(count, 7921)
+        # The eligible set is a function of the sitemaps, not a frozen literal: it moves
+        # whenever the entity or colloquium layers grow, and a pinned copy of it went stale
+        # on 2026-10-13 and stayed red. It must not, however, be read back out of the
+        # renderer, so independent_eligible_rows() states it from the sitemap bytes and the
+        # tree instead.
+        eligible = independent_eligible_rows(ROOT)
+        self.assertEqual(set(rendered), {sitemap_name for sitemap_name, _ in eligible})
+        self.assertEqual(count, len(eligible))
+        self.assertGreaterEqual(count, len(required_human_urls(ROOT)))
+        self.assertEqual(
+            {url for sitemap_name, url in eligible if sitemap_name == "sitemap-claims.xml"},
+            set(required_human_urls(ROOT)),
+        )
+        self.assertEqual(
+            len({url for sitemap_name, url in eligible if sitemap_name == "sitemap-entities.xml"}),
+            json.loads((ROOT / "entities" / "index.json").read_text(encoding="utf-8"))["nodes"] + 1,
+        )
+        for sitemap_name, url in sorted(eligible):
+            with self.subTest(sitemap=sitemap_name, url=url):
+                self.assertTrue(MERGE.source_path(ROOT, url).is_file())
         for sitemap_name, expected in rendered.items():
             with self.subTest(sitemap=sitemap_name):
                 self.assertEqual(
@@ -306,6 +363,42 @@ class SitemapIntegrityTests(unittest.TestCase):
                     expected,
                     f"{sitemap_name} has missing or stale URL-level lastmod values",
                 )
+
+    def test_eligible_url_expectation_is_independent_of_the_renderer(self):
+        expected = independent_eligible_rows(ROOT)
+        self.assertGreater(len(expected), 0)
+        # Neutralizing the renderer's own sitemap list and eligibility predicate must not
+        # move the expectation. This is the property the previous version of the guard
+        # lacked, and it is why the test above can now see a dropped sitemap.
+        with mock.patch.object(MERGE, "FULL_LASTMOD_SITEMAPS", ()):
+            with mock.patch.object(MERGE, "eligible_row", lambda *_: False):
+                self.assertEqual(independent_eligible_rows(ROOT), expected)
+
+    def test_every_attestation_leaf_is_advertised(self):
+        # 5,033 of the 5,197 leaves had a row when the surface was built on 2026-07-28.
+        # 164 were backfilled on 2026-08-19 and the rows were never written, so those
+        # leaves were invisible to a crawler for two months. Derive the requirement from
+        # the tree rather than from the sitemap, so the next backfill cannot repeat it.
+        leaves = {
+            f"{BASE}/colloquium/attestations/{path.stem}.json"
+            for path in (ROOT / "colloquium" / "attestations").glob("*.json")
+        }
+        advertised = set(
+            re.findall(
+                r"<loc>(.*?)</loc>",
+                (ROOT / "sitemap-colloquium.xml").read_text(encoding="utf-8"),
+            )
+        )
+        self.assertEqual(sorted(leaves - advertised), [])
+
+    def test_colloquium_sitemap_rows_are_reconciled_with_the_tree(self):
+        module = load_module("build_colloquium_sitemap", "tools/build_colloquium_sitemap.py")
+        rendered, notes = module.render(ROOT)
+        self.assertEqual(notes, [], "the colloquium sitemap has missing or dead leaf rows")
+        self.assertEqual(
+            rendered,
+            (ROOT / "sitemap-colloquium.xml").read_text(encoding="utf-8"),
+        )
 
     def test_claim_hub_lastmod_matches_its_committed_content_date(self):
         url = f"{BASE}/claims/index.html"
