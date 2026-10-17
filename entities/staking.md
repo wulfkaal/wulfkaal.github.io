@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 15 claims that carry the concept tag `staking`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 17 claims that carry the concept tag `staking`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-15 claims across 12 works, 2017 to 2026.
+17 claims across 13 works, 2017 to 2026.
 
 **2017**
 
@@ -75,6 +75,12 @@ This node is assembled mechanically from the 15 claims that carry the concept ta
 - [6192998-005](https://wulfkaal.github.io/claims/6192998-005) [failure/argued] *(failure mode)* -- Token curated registries create economic security against spam through staking and challenge, but they produce only binary accept or reject outcomes and therefore supply no mechanism for nuanced quality assessment or for attributing collaborative contributions.
   > While this creates economic security against spam, it produces only binary outcomes as in accept or reject heuristics and provides no mechanism for nuanced quality assessment or attribution of collaborative contributions.
   Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998
+- [7598518-008](https://wulfkaal.github.io/claims/7598518-008) [condition/stated] -- The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
+- [7598518-021](https://wulfkaal.github.io/claims/7598518-021) [condition/stated] *(failure mode)* -- The channel the RLRF program claims reputation can resist is the one this study does not open, because its validators are stationary, its stake has no external value, and its weights are fixed before generation 1.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

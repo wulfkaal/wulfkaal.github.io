@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/reputation-update",
+ "identifier": "kaal:entity:reputation-update",
+ "name": "Reputation update",
+ "termCode": "reputation-update",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/reputation-update.md",
+ "sha256": "26a1615adb9c3d4d9e271ceae77ae812784def59edaa13f49782dfc672645386",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2026",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/6655138-027",
+   "identifier": "kaal:claim:6655138-027",
+   "text": "Reputation update functions on each surface must be continuous in the validation pool's resolution outcome, because discontinuities in reputation update destroy continuity of best-response correspondences and preclude application of Brouwer's fixed-point theorem.",
+   "abstract": "The reputation update functions on each surface are continuous in the validation pool's resolution outcome. Discontinuities in reputation update destroy continuity of best-response correspondences and preclude application of Brouwer.",
+   "citation": "Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "architectures relying on Brouwer for equilibrium existence"
+   ],
+   "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-026",
+   "identifier": "kaal:claim:7598518-026",
+   "text": "The reputation update is an asymmetric multiplicative rule in which reputation is multiplied by one plus alpha when a vote matches the revealed key and by one minus gamma when it does not, with alpha fixed at 0.05, gamma at 0.10, and a floor applied after each update.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The parent paper requires only that gamma exceed alpha; this design fixes both rates.",
+    "Any single weight above one half is capped there and the excess redistributed among the other seated validators."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-update'. Derived node: a roster, not an adjudicated definition."
+}

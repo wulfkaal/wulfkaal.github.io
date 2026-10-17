@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 5 claims that carry the concept tag `reputation-weighting`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 6 claims that carry the concept tag `reputation-weighting`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-5 claims across 5 works, 2018 to 2026.
+6 claims across 6 works, 2018 to 2026.
 
 **2018**
 
@@ -36,6 +36,9 @@ This node is assembled mechanically from the 5 claims that carry the concept tag
 - [6655138-003](https://wulfkaal.github.io/claims/6655138-003) [failure/argued] *(failure mode)* -- Because the agent action space in HDCA is closed and workers only select among existing postings, the architecture collapses to the Neoclassical labor market with reputation weighting, the very framework whose expiration the author's companion paper demonstrates.
   > The agent action space is closed: workers select among existing postings. This collapses to the Neoclassical labor market with reputation weighting, which is to say, to the framework whose expiration The Collapse of Scarcity Economics (Kaal 2026b) demonstrates.
   Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138
+- [7598518-022](https://wulfkaal.github.io/claims/7598518-022) [mechanism/argued] *(failure mode)* -- A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

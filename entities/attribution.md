@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 13 claims that carry the concept tag `attribution`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 14 claims that carry the concept tag `attribution`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-13 claims across 5 works, 2021 to 2026.
+14 claims across 6 works, 2021 to 2026.
 
 **2021**
 
@@ -60,6 +60,9 @@ This node is assembled mechanically from the 13 claims that carry the concept ta
 - [6244278-021](https://wulfkaal.github.io/claims/6244278-021) [failure/argued] *(failure mode)* -- Rational agents face a direct financial disincentive to cite prior contributions, because citation transfers economic value away from the citing agent; the mechanism design challenge is therefore to make honest citation the economically rational strategy.
   > rational agents face a direct financial disincentive to cite prior contributions.
   Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278
+- [7598518-041](https://wulfkaal.github.io/claims/7598518-041) [condition/stated] -- A positive reading would not say the weights mattered: the attribution sentence is issued only if the pool's contrast against full replacement and the reputation pool's contrast against the equal-weight pool are both superior in every family including the homogeneous one, the oracle premise and ladder rungs 3 and 4 pass in every family, and the key cap holds.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

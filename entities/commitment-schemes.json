@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/commitment-schemes",
+ "identifier": "kaal:entity:commitment-schemes",
+ "name": "Commitment schemes",
+ "termCode": "commitment-schemes",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/commitment-schemes.md",
+ "sha256": "ecc446645afb012d3c51e6c7e6f24bd3d6540f04bd3e7f85892b95fb6d2cffbe",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5225296-018",
+   "identifier": "kaal:claim:5225296-018",
+   "text": "SPoS binds validator votes irrevocably by requiring commitment via hash preimages that are revealed only after a designated period, driving the probability of successful post-facto vote alteration below 2^-128.",
+   "abstract": "These schemes require validators to commit to votes via hash preimages, revealed only after a designated period, rendering post-facto alterations computationally infeasible with a probability of success below 2^-128",
+   "citation": "Wulf A. Kaal, Cryptographic Foundations and Interdisciplinary Dimensions of the Secure Proof of Stake (SPoS) Conse (2025). SSRN: https://ssrn.com/abstract=5225296",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "asynchronous and partially synchronous network conditions"
+   ],
+   "source_pdf_sha256": "b2fec675d906334ad67e13b2d97261dc31e38061022867eb3f9ceadd95f4878d",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-007",
+   "identifier": "kaal:claim:7598518-007",
+   "text": "The seal is a commitment made visible rather than a lock, because the operator can open the files.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Concerns the sealed outcome store of Section VI.",
+    "The limit is stated by the paper, not inferred from the architecture."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'commitment-schemes'. Derived node: a roster, not an adjudicated definition."
+}

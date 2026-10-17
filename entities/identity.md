@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 6 claims that carry the concept tag `identity`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 10 claims that carry the concept tag `identity`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-6 claims across 6 works, 2019 to 2026.
+10 claims across 7 works, 2019 to 2026.
 
 **2019**
 
@@ -42,6 +42,18 @@ This node is assembled mechanically from the 6 claims that carry the concept tag
 - [6192998-001](https://wulfkaal.github.io/claims/6192998-001) [failure/argued] *(failure mode)* -- Reputation systems that depend on persistent identity collapse in decentralized settings because agents can create new identities at no cost, so a poorly performing agent abandons its account and starts fresh, a practice known as whitewashing.
   > First, the identity problem: Reputation systems built on persistent identity5 collapse when agents can costlessly create new identities. A poorly-performing agent simply abandons their account and starts fresh, a phenomenon known as whitewashing.6
   Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998
+- [7596939-006](https://wulfkaal.github.io/claims/7596939-006) [mechanism/stated] -- Reputation in the underlying system is domain-specific and strictly non-transferable: bound to the holder's identity, earned only through validated work, and incapable of sale, loan or transfer.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-008](https://wulfkaal.github.io/claims/7596939-008) [mechanism/argued] -- Copying an agent's weights confers no economic stake: a copy that does not continue the registered identity inherits no reputation and therefore no salary.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-013](https://wulfkaal.github.io/claims/7596939-013) [design/stated] -- The Article resolves agent identity by legal stipulation rather than metaphysics: the legal subject is the registered record, continued by a recorded learning update within a prescribed granularity or by a recorded continuity transition, and only while the signing key stays within the registered configuration.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-016](https://wulfkaal.github.io/claims/7596939-016) [condition/stated] -- The continuity criteria are offered explicitly as statutory tests rather than as a theory of personal identity.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

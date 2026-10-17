@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/reputation-weighting.md",
- "sha256": "0809f8c67c28e8f7e85b6ce06802e9a2dfe66c3f345ee04af5aa325ba6137af5",
+ "sha256": "8474b0fb4b1305ea8e4fb5453b6231ac1c58c3f866ff5175859ecaff30e5d84e",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,12 +24,12 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 5
+   "value": 6
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 5
+   "value": 6
   },
   {
    "@type": "PropertyValue",
@@ -131,7 +131,25 @@
    ],
    "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-022",
+   "identifier": "kaal:claim:7598518-022",
+   "text": "A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The ceiling holds where rare content is as checkable as common content, which this design enforces by construction.",
+    "The experiment therefore includes an oracle validity filter as a premise rather than as a result."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "5 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-weighting'. Derived node: a roster, not an adjudicated definition."
+ "description": "6 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation-weighting'. Derived node: a roster, not an adjudicated definition."
 }

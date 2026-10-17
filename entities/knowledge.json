@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/knowledge",
+ "identifier": "kaal:entity:knowledge",
+ "name": "Knowledge",
+ "termCode": "knowledge",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/knowledge.md",
+ "sha256": "1677b89b2196539ab704fa08e8fd95c9e6b769563fb3e74e9f8c5d8428498b77",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2021",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3808867-024",
+   "identifier": "kaal:claim:3808867-024",
+   "text": "A single powerful application such as Google already exercises substantial control over human knowledge and thought, and could control societal outcomes by making disparate recommendations to similarly situated users.",
+   "abstract": "For example, a powerful application such as Google has already a lot of control over human knowledge and thought.",
+   "citation": "Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867",
+   "datePublished": "2021",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "dominant internet based applications accumulating societal functions since the early 2010s"
+   ],
+   "source_pdf_sha256": "eeccf6d0587bd278a96ce6ac8ec5003e26d161c245f6c94b4144d84f374802eb",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-016",
+   "identifier": "kaal:claim:7598518-016",
+   "text": "Yi et al. (2026) report that an imperfect external verifier drives the model toward the verifier's own knowledge center.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "reported",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is a limit on verifier-based selection generally, including the pool under test."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'knowledge'. Derived node: a roster, not an adjudicated definition."
+}

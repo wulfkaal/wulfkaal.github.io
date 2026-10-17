@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 30 claims that carry the concept tag `reputation-tokens`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 31 claims that carry the concept tag `reputation-tokens`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-30 claims across 13 works, 2018 to 2025.
+31 claims across 14 works, 2018 to 2026.
 
 **2018**
 
@@ -114,6 +114,12 @@ This node is assembled mechanically from the 30 claims that carry the concept ta
 - [5245185-036](https://wulfkaal.github.io/claims/5245185-036) [definitional/asserted] -- Validation Pools are stipulated as mechanisms in which members stake non transferable reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities, and this staking mechanism carries the paper's decentralized quality control function.
   > Validation Pools are mechanisms in which members stake their reputation tokens to vote on the approval or disapproval of transactions, proposals, or activities.
   Wulf A. Kaal, How can we Best Monitor AI Agents (2025). SSRN: https://ssrn.com/abstract=5245185
+
+**2026**
+
+- [7596939-031](https://wulfkaal.github.io/claims/7596939-031) [condition/stated] -- The allocation theorem is stated without reference to reputation tokens; the reputation system is what makes the agent the winning candidate under it, rather than being assumed by it.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

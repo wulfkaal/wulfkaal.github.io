@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 28 claims that carry the concept tag `prediction`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 30 claims that carry the concept tag `prediction`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-28 claims across 23 works, 2012 to 2025.
+30 claims across 24 works, 2012 to 2026.
 
 **2012**
 
@@ -123,6 +123,15 @@ This node is assembled mechanically from the 28 claims that carry the concept ta
 - [5886442-039](https://wulfkaal.github.io/claims/5886442-039) [predictive/speculative] -- Within a decade the majority of advanced economy value creation will occur in agentic systems whose operational logic violates every foundational assumption of received economic theory.
   > Within a decade, the majority of advanced-economy value creation will occur in agentic systems whose operational logic violates every foundational assumption of received theory.
   Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442
+
+**2026**
+
+- [7596939-020](https://wulfkaal.github.io/claims/7596939-020) [predictive/argued] -- The central prediction is comparative and falsifiable: holding stake, detection and persistence fixed, agents holding their own contest right should keep their records more often than agents whose identical stake is held by a bounded discretionary controller.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-028](https://wulfkaal.github.io/claims/7596939-028) [empirical/reported] *(failure mode)* -- The author identifies the run's most important finding as the condition in which his own predicted contrast disappeared, rather than the condition that supported it.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

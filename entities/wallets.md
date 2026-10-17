@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `wallets`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `wallets`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2021 to 2025.
+3 claims across 3 works, 2021 to 2026.
 
 **2021**
 
@@ -21,6 +21,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [5095633-027](https://wulfkaal.github.io/claims/5095633-027) [failure/argued] *(failure mode)* -- Adoption of decentralized data platforms is blocked by an expertise barrier: prospective contributors must manage tokens, maintain secure wallets, and understand the underlying technology, which deters users unaccustomed to digital assets.
   > adoption is hindered by the user expertise required to navigate blockchain infrastructure. Potential contributors or data consumers are often deterred by the need to manage cryptocurrency tokens, maintain secure digital wallets, and understand the underlying technology.
   Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633
+
+**2026**
+
+- [7596939-033](https://wulfkaal.github.io/claims/7596939-033) [failure/argued] *(failure mode)* -- Giving the agent the trigger relocates the capture problem rather than removing it: where the deployer sets the agent's configuration, capture moves from the controller's wallet to the agent's configuration.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `assumptions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 5 claims that carry the concept tag `assumptions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2014 to 2014.
+5 claims across 3 works, 2014 to 2026.
 
 **2014**
 
@@ -18,6 +18,18 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [2470008-023](https://wulfkaal.github.io/claims/2470008-023) [failure/evidenced] *(failure mode)* -- Advisers take different approaches and make different assumptions when completing Form PF, which the SEC identifies as a further challenge to the usability of the data.
   > Other challenges with Form PF identified by the SEC include the differences in approaches taken by investment advisers in completing Form PF and differences in assumptions made by investment advisers in completing Form PF.
   Wulf A. Kaal, The Systemic Risk of Private Funds after the Dodd-Frank Act (2014). SSRN: https://ssrn.com/abstract=2470008
+
+**2026**
+
+- [7596939-010](https://wulfkaal.github.io/claims/7596939-010) [condition/stated] -- The non-assignability of future salary is an explicit design assumption of this Article rather than a consequence of proportional distribution, and the Article says so.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-019](https://wulfkaal.github.io/claims/7596939-019) [condition/stated] -- Targeted screening of wrongful destruction attempts is unavailable by assumption: wrongfulness cannot be observed without review, so no signal correlated with it can be used to screen.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-035](https://wulfkaal.github.io/claims/7596939-035) [condition/argued] -- Against the hardest rival the Article constructs, a professional representative satisfying the full bundle of Corollary 2's assumptions, direct standing has no structural advantage.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

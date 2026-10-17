@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 6 claims that carry the concept tag `persistence`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 7 claims that carry the concept tag `persistence`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-6 claims across 2 works, 2014 to 2019.
+7 claims across 3 works, 2014 to 2026.
 
 **2014**
 
@@ -33,6 +33,12 @@ This node is assembled mechanically from the 6 claims that carry the concept tag
 - [3405401-036](https://wulfkaal.github.io/claims/3405401-036) [condition/argued] -- A functioning decentralized reputation system requires that counterparties' actions in decentralized commerce endure and become part of a public record: their actions must stick and become part of a meaningful precedence system.
   > This necessitates that counterparties' actions in decentralized commerce endure and become part of a public record. In other words, counterparties' actions need to stick. Their actions have to become part of a precedence system that is meaningful.
   Wulf A. Kaal, Decentralized Commerce – A Primer on Why Decentralized Reputation Verification Systems Are Needed (2019). SSRN: https://ssrn.com/abstract=3405401
+
+**2026**
+
+- [7596939-020](https://wulfkaal.github.io/claims/7596939-020) [predictive/argued] -- The central prediction is comparative and falsifiable: holding stake, detection and persistence fixed, agents holding their own contest right should keep their records more often than agents whose identical stake is held by a bounded discretionary controller.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

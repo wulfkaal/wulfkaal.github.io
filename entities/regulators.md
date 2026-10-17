@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 3 claims that carry the concept tag `regulators`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 4 claims that carry the concept tag `regulators`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-3 claims across 2 works, 2013 to 2024.
+4 claims across 3 works, 2013 to 2026.
 
 **2013**
 
@@ -24,6 +24,12 @@ This node is assembled mechanically from the 3 claims that carry the concept tag
 - [4685567-034](https://wulfkaal.github.io/claims/4685567-034) [mechanism/argued] -- Greenwashing is curtailed in the impact certificate marketplace because any market participant can instantaneously invalidate nominal but not substantive impact stories published by certificate purchasers and by listed projects.
   > Through this transparency any form of nominal but not substantive impact stories published by impact certificate purchasers and impact certificate listing projects can be invalidated instantaneously by any market participant
   Wulf A. Kaal, Impact Investing Innovation - From Impact 1.0 to 3.0 (2024). SSRN: https://ssrn.com/abstract=4685567
+
+**2026**
+
+- [7596939-001](https://wulfkaal.github.io/claims/7596939-001) [design/argued] -- The personhood debate is mis-framed: the operative question is not whether an intelligent agent may hold a legal incident, but when holding it directly beats the best mediated alternative such as a guardian, trustee, insurer or regulator.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

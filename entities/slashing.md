@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 16 claims that carry the concept tag `slashing`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 19 claims that carry the concept tag `slashing`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-16 claims across 10 works, 2018 to 2026.
+19 claims across 12 works, 2018 to 2026.
 
 **2018**
 
@@ -72,6 +72,15 @@ This node is assembled mechanically from the 16 claims that carry the concept ta
 - [6192998-039](https://wulfkaal.github.io/claims/6192998-039) [mechanism/argued] -- Because AI agents can generate unlimited Sybil identities at near zero cost, defense must come from multi agent validation with quality based slashing, which imposes economic penalties scaling with the sophistication needed to produce competitive quality output.
   > Adversarial robustness: AI agents can generate unlimited Sybil identities at near-zero cost. Multi-agent validation with quality-based slashing creates economic penalties that scale with the sophistication required to produce competitive-quality outputs.
   Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998
+- [7596939-029](https://wulfkaal.github.io/claims/7596939-029) [condition/stated] -- The dominance result is explicitly a sufficient condition rather than a characterization: mediation can win where sanctions are large relative to the record's value, review is cheap, or slashing is rare.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-030](https://wulfkaal.github.io/claims/7596939-030) [mechanism/argued] -- Every mediated arrangement faces a structural cost the agent does not: it must carry capital growing with the record's value, or review slashes at a rate growing with their frequency.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7598518-008](https://wulfkaal.github.io/claims/7598518-008) [condition/stated] -- The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

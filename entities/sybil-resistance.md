@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 13 claims that carry the concept tag `sybil-resistance`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 14 claims that carry the concept tag `sybil-resistance`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-13 claims across 8 works, 2018 to 2026.
+14 claims across 9 works, 2018 to 2026.
 
 **2018**
 
@@ -63,6 +63,9 @@ This node is assembled mechanically from the 13 claims that carry the concept ta
 - [6244278-039](https://wulfkaal.github.io/claims/6244278-039) [condition/argued] *(failure mode)* -- The evolutionary arc from consequence to care is not guaranteed: it depends on correct institutional design at each phase, including appropriate slashing parameters, robust Sybil resistance, calibrated reputation portability, and maintained human oversight.
   > This arc is not guaranteed. It depends on correct institutional design at each phase—appropriate slashing parameters, robust Sybil resistance, calibrated reputation portability, and maintained human oversight.
   Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278
+- [7598518-008](https://wulfkaal.github.io/claims/7598518-008) [condition/stated] -- The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

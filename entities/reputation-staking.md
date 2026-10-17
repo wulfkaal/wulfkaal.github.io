@@ -160,7 +160,7 @@ Related: [3981021-026](https://wulfkaal.github.io/claims/3981021-026), [4067783-
 
 ## Every claim under this term
 
-62 claims across 25 works, 2018 to 2026.
+63 claims across 26 works, 2018 to 2026.
 
 **2018**
 
@@ -374,6 +374,9 @@ Related: [3981021-026](https://wulfkaal.github.io/claims/3981021-026), [4067783-
 - [6192998-029](https://wulfkaal.github.io/claims/6192998-029) [mechanism/argued] -- Validators who align with the stake weighted consensus ranking gain reputation and those who deviate lose it, which carries the winner takes losers' stakes property of the original framework over to ranked voting.
   > Validators who align with consensus gain reputation. Those who deviate lose it. Thus, preserving the winner-takes-losers'-stakes property from the original framework (Calcaterra, Kaal, and Andrei 2018, 7) while extending it to ranked voting.
   Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998
+- [7596939-007](https://wulfkaal.github.io/claims/7596939-007) [mechanism/stated] -- Both work claims and challenges to a record are adjudicated by the same instrument: a validation pool in which holders stake reputation for or against, with the winning side splitting the losing side's stakes.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## See also
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `salaries`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 4 claims that carry the concept tag `salaries`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 1 works, 2021 to 2021.
+4 claims across 2 works, 2021 to 2026.
 
 **2021**
 
@@ -18,6 +18,15 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [3981021-033](https://wulfkaal.github.io/claims/3981021-033) [mechanism/argued] -- The loss of opportunity from slashing a voting associate's reputation grows as the size of the network increases, because a larger network intensifies competition among associates for the reputation tokens that determine fungible salary payouts.
   > reputation tokens to receive fungible token salaries that are paid in proportion to reputation tokens. Accordingly, in the CHARITYxDAO design, the loss of opportunity from slashing CHARITYxDAO VA reputation grows as the size of the network increases.
   Wulf A. Kaal, How Decentralized Autonomous Organizations Optimize Charitable Giving (2021). SSRN: https://ssrn.com/abstract=3981021
+
+**2026**
+
+- [7596939-009](https://wulfkaal.github.io/claims/7596939-009) [mechanism/argued] -- The agent's exposure to destruction of its record is conditionally inalienable: no part of the lost salary stream can be transferred to a controller, so any third-party exposure must be financed from outside the record.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-010](https://wulfkaal.github.io/claims/7596939-010) [condition/stated] -- The non-assignability of future salary is an explicit design assumption of this Article rather than a consequence of proportional distribution, and the Article says so.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

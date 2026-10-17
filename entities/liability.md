@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 11 claims that carry the concept tag `liability`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 12 claims that carry the concept tag `liability`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-11 claims across 10 works, 2016 to 2025.
+12 claims across 11 works, 2016 to 2026.
 
 **2016**
 
@@ -60,6 +60,12 @@ This node is assembled mechanically from the 11 claims that carry the concept ta
 - [5886342-036](https://wulfkaal.github.io/claims/5886342-036) [design/asserted] -- Where an external claim is brought against a DAO member for actions taken in good faith on behalf of the DAO and within its mandate, the DAO indemnifies that member out of the treasury, with no indemnification beyond the treasury and none where the member acted with gross negligence, wilful misconduct or bad faith.
   > (3) If an external claim is brought against a DAO Member for actions undertaken in good faith on be-
   Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342
+
+**2026**
+
+- [7596939-015](https://wulfkaal.github.io/claims/7596939-015) [design/stated] -- Continuity transitions are liability-neutral by construction: no transition creates standing or extinguishes a liability, and deployer liability follows every continuing or succeeding record.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

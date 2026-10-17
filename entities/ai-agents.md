@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 8 claims that carry the concept tag `ai-agents`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 9 claims that carry the concept tag `ai-agents`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-8 claims across 3 works, 2024 to 2026.
+9 claims across 4 works, 2024 to 2026.
 
 **2024**
 
@@ -42,6 +42,9 @@ This node is assembled mechanically from the 8 claims that carry the concept tag
 - [6192998-040](https://wulfkaal.github.io/claims/6192998-040) [predictive/argued] *(failure mode)* -- Systems without citation graphs will fail to price foundational contributions correctly, producing market failure through underproduction of foundational work as agent generated knowledge increasingly builds on prior agent generated knowledge.
   > Systems without citation graphs will fail to correctly price foundational contributions, leading to market failure through underproduction of foundational work.
   Wulf A. Kaal, Evolution of Domain-Specific Reputation Systems From Binary Validation to Citation-Weighted Knowledge Attribution (2026). SSRN: https://ssrn.com/abstract=6192998
+- [7596939-001](https://wulfkaal.github.io/claims/7596939-001) [design/argued] -- The personhood debate is mis-framed: the operative question is not whether an intelligent agent may hold a legal incident, but when holding it directly beats the best mediated alternative such as a guardian, trustee, insurer or regulator.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

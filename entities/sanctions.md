@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 3 claims that carry the concept tag `sanctions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 6 claims that carry the concept tag `sanctions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-3 claims across 3 works, 2013 to 2017.
+6 claims across 4 works, 2013 to 2026.
 
 **2013**
 
@@ -27,6 +27,18 @@ This node is assembled mechanically from the 3 claims that carry the concept tag
 - [3071378-037](https://wulfkaal.github.io/claims/3071378-037) [mechanism/argued] -- Reputational penalties for non-performance in a DAO are entirely free from racial implications because token holders are unlikely to even know each other.
   > Crucially, non- performance reputational penalties are entirely free from racial implications as the token holders are unlikely to even know each other.
   Wulf A. Kaal, Blockchain Technology and Race in Corporate America (2017). SSRN: https://ssrn.com/abstract=3071378
+
+**2026**
+
+- [7596939-003](https://wulfkaal.github.io/claims/7596939-003) [mechanism/argued] -- Every controller other than the agent has exposure to the record's destruction only if someone supplies it, as costly capital or as sanction, and for natural persons that supply is bounded.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-029](https://wulfkaal.github.io/claims/7596939-029) [condition/stated] -- The dominance result is explicitly a sufficient condition rather than a characterization: mediation can win where sanctions are large relative to the record's value, review is cheap, or slashing is rare.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-032](https://wulfkaal.github.io/claims/7596939-032) [condition/stated] -- The dual-use result is conditional rather than general: sufficient sanctions, norms, shared collateral, review and repeated success fees all fall outside it, and it governs only the incentive half of protection.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

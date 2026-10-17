@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 9 claims that carry the concept tag `fees`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 10 claims that carry the concept tag `fees`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-9 claims across 5 works, 2016 to 2021.
+10 claims across 6 works, 2016 to 2026.
 
 **2016**
 
@@ -45,6 +45,12 @@ This node is assembled mechanically from the 9 claims that carry the concept tag
 - [3808867-037](https://wulfkaal.github.io/claims/3808867-037) [failure/argued] *(failure mode)* -- High intermediary fees in legacy payment systems make transacting economically viable only at higher transaction volumes, thereby creating barriers to entry that decentralized payment systems do not impose.
   > The fees make it only economically viable for higher volumes of transactions, creating barriers to entry in the process.
   Wulf A. Kaal, How Decentralized Systems Can Upgrade AI (2021). SSRN: https://ssrn.com/abstract=3808867
+
+**2026**
+
+- [7596939-032](https://wulfkaal.github.io/claims/7596939-032) [condition/stated] -- The dual-use result is conditional rather than general: sufficient sanctions, norms, shared collateral, review and repeated success fees all fall outside it, and it governs only the incentive half of protection.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

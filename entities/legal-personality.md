@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 5 claims that carry the concept tag `legal-personality`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 6 claims that carry the concept tag `legal-personality`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-5 claims across 4 works, 2016 to 2025.
+6 claims across 5 works, 2016 to 2026.
 
 **2016**
 
@@ -33,6 +33,12 @@ This node is assembled mechanically from the 5 claims that carry the concept tag
 - [5886342-031](https://wulfkaal.github.io/claims/5886342-031) [definitional/asserted] -- A DAO may or may not be a Legal Identity, so the Codex rules for DAOs are written to work whether or not the organization has legal personality under the applicable law.
   > (2) A DAO may or may not be a Legal Identity ac-
   Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342
+
+**2026**
+
+- [7596939-001](https://wulfkaal.github.io/claims/7596939-001) [design/argued] -- The personhood debate is mis-framed: the operative question is not whether an intelligent agent may hold a legal incident, but when holding it directly beats the best mediated alternative such as a guardian, trustee, insurer or regulator.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

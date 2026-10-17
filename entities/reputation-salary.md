@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 4 claims that carry the concept tag `reputation-salary`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 5 claims that carry the concept tag `reputation-salary`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-4 claims across 2 works, 2021 to 2021.
+5 claims across 3 works, 2021 to 2026.
 
 **2021**
 
@@ -24,6 +24,12 @@ This node is assembled mechanically from the 4 claims that carry the concept tag
 - [3962614-038](https://wulfkaal.github.io/claims/3962614-038) [design/argued] -- In the non custodial DAO investment club model all of the return on purchase is minted into fungible reputation tokens that get paid as reputation salaries following decentralized governance, which provides the best incentive alignment for members and the highest potential return for all involved.
   > In this model, all of the ROP is minted into fungible reputation tokens that get paid as reputation salaries following decentralized governance. This model provides the best incentive alignment for DAOIC members with the highest potential return for all involved.
   Wulf A. Kaal, REPUTATION AS CAPITAL – How Decentralized Autonomous Organizations Address Shortcomings in the Ventu (2021). SSRN: https://ssrn.com/abstract=3962614
+
+**2026**
+
+- [7596939-008](https://wulfkaal.github.io/claims/7596939-008) [mechanism/argued] -- Copying an agent's weights confers no economic stake: a copy that does not continue the registered identity inherits no reputation and therefore no salary.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

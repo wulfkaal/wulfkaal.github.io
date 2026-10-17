@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 11 claims that carry the concept tag `training-data`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 14 claims that carry the concept tag `training-data`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-11 claims across 6 works, 2018 to 2026.
+14 claims across 7 works, 2018 to 2026.
 
 **2018**
 
@@ -54,6 +54,15 @@ This node is assembled mechanically from the 11 claims that carry the concept ta
 - [6607458-017](https://wulfkaal.github.io/claims/6607458-017) [mechanism/argued] -- Computational abundance does not eliminate information asymmetry; it transforms its locus, since traditional informational advantages such as knowledge of market conditions, contract terms, and domain expertise become accessible at negligible cost.
   > Computational abundance does not eliminate information asymmetry, it transforms its locus. Traditional informational advantages, knowledge of market conditions, understanding of contract terms, possession of domain expertise, become accessible at negligible cost.
   Wulf A. Kaal, Computative Economics A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=6607458
+- [7598518-002](https://wulfkaal.github.io/claims/7598518-002) [condition/stated] -- The paper follows on from the author's Reinforcement Learning from Reputation Feedback paper and tests one use of that mechanism, as a filter on training data, and not the mechanism as a whole.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
+- [7598518-027](https://wulfkaal.github.io/claims/7598518-027) [design/stated] -- Reputation is settled once by key, after the generation-0 fit on real data and before generation 1, and no candidate that enters training ever updates a reputation.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
+- [7598518-028](https://wulfkaal.github.io/claims/7598518-028) [design/stated] -- The pool's entire exposure to real data is 192 rows, below the 200 real rows the ten percent arm receives and far below the roughly 1,990 distinct real rows it trains on over the run.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 3 claims that carry the concept tag `correlation`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 4 claims that carry the concept tag `correlation`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-3 claims across 2 works, 2016 to 2017.
+4 claims across 3 works, 2016 to 2026.
 
 **2016**
 
@@ -24,6 +24,12 @@ This node is assembled mechanically from the 3 claims that carry the concept tag
 - [2998033-024](https://wulfkaal.github.io/claims/2998033-024) [mechanism/argued] -- Even though crypto investments can be as volatile as or more volatile than traditional investments, digital currencies may still serve as a hedge against traditional investments because they are not tied to equity market movements.
   > Although crypto investments can to be just as and more volatile than traditional investments, digital currencies might be used to hedge against traditional investments.
   Wulf A. Kaal, Blockchain Innovation for Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2998033
+
+**2026**
+
+- [7598518-044](https://wulfkaal.github.io/claims/7598518-044) [condition/stated] *(failure mode)* -- Because the simulated validators err independently given an accuracy that depends only on the tag, shared lineage, correlated errors, and error that depends on whether content is rare are excluded by construction, and the study supplies no evidence about correlated assessors or about reputation concentrating in a lineage.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

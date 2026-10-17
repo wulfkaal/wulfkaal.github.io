@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `novelty`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `novelty`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 1 works, 2021 to 2021.
+3 claims across 2 works, 2021 to 2026.
 
 1 of them no longer stand as published, per the claim status overlay. Each is flagged in place below and in the register listings above. Route to the superseding claim rather than the first statement.
 
@@ -20,6 +20,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [3782201-036](https://wulfkaal.github.io/claims/3782201-036) [mechanism/argued] -- Middlemen persist rather than being automated away because there are certain junctures in business where novel problems regularly arise whenever circumstances change, requiring creative solutions that people step in to supply, and these persistent junctures become business institutions.
   > There are certain junctures in business where novel problems regularly arise when- ever circumstances change. These problems require creative solutions, and people step in to capitalize. These persistent junctures become business institutions.
   Craig Calcaterra, Wulf A. Kaal, Future of Decentralization (2021). SSRN: https://ssrn.com/abstract=3782201
+
+**2026**
+
+- [7598518-024](https://wulfkaal.github.io/claims/7598518-024) [design/stated] -- No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

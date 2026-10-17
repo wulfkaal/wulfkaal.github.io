@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 4 claims that carry the concept tag `diversity`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 5 claims that carry the concept tag `diversity`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-4 claims across 3 works, 2021 to 2022.
+5 claims across 4 works, 2021 to 2026.
 
 **2021**
 
@@ -27,6 +27,12 @@ This node is assembled mechanically from the 4 claims that carry the concept tag
 - [4067783-040](https://wulfkaal.github.io/claims/4067783-040) [mechanism/argued] -- Flatter markets with more diverse interests and talents are more effective and efficient at truth discovery, including price discovery and the identification of ideal solutions to new problems, and decentralization promotes that diversity by improving member autonomy and freedom.
   > Flatter markets with more diverse interests and talents are more effective and efficient at achieving truth discovery, like price discovery and the identification of ideal solutions to arbitrary new problems that arise.
   Wulf A. Kaal, DAO Fallacies (2022). SSRN: https://ssrn.com/abstract=4067783
+
+**2026**
+
+- [7598518-024](https://wulfkaal.github.io/claims/7598518-024) [design/stated] -- No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 9 claims that carry the concept tag `remedies`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 10 claims that carry the concept tag `remedies`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-9 claims across 8 works, 2004 to 2025.
+10 claims across 9 works, 2004 to 2026.
 
 **2004**
 
@@ -54,6 +54,12 @@ This node is assembled mechanically from the 9 claims that carry the concept tag
 - [5554218-020](https://wulfkaal.github.io/claims/5554218-020) [failure/argued] *(failure mode)* -- Unlike legal systems that balance enforcement against fairness, the binary execution of code offers no mechanism for appeal or mitigation, which limits recourse for aggrieved parties and challenges basic notions of justice.
   > Unlike legal systems, which balance enforcement with fairness, code's binary execution lacks mechanisms for appeal or mitigation, challenging notions of justice.
   Furrer Andreas, Wulf A. Kaal, Universal Digital Law Codex (UDLC) Building the Legal Infrastructure for the Digital Era (2025). SSRN: https://ssrn.com/abstract=5554218
+
+**2026**
+
+- [7598518-015](https://wulfkaal.github.io/claims/7598518-015) [condition/reported] -- Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

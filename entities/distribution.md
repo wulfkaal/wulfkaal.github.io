@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 3 claims that carry the concept tag `distribution`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 4 claims that carry the concept tag `distribution`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-3 claims across 3 works, 2016 to 2026.
+4 claims across 4 works, 2016 to 2026.
 
 **2016**
 
@@ -24,6 +24,9 @@ This node is assembled mechanically from the 3 claims that carry the concept tag
 - [6607458-028](https://wulfkaal.github.io/claims/6607458-028) [mechanism/argued] -- Distribution of economic outcomes under the computative primitive follows the distribution of access to computational infrastructure rather than labor or capital scarcity, because cognitive labor scarcity dissolves where production is computationally substitutable while capital scarcity reconstitutes around compute.
   > Under the computative primitive, cognitive labor scarcity dissolves across the domain where cognitive production is computationally substitutable, and capital scarcity reconstitutes around computational infrastructure.
   Wulf A. Kaal, Computative Economics A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=6607458
+- [7596939-010](https://wulfkaal.github.io/claims/7596939-010) [condition/stated] -- The non-assignability of future salary is an explicit design assumption of this Article rather than a consequence of proportional distribution, and the Article says so.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 14 claims that carry the concept tag `institutions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 15 claims that carry the concept tag `institutions`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-14 claims across 10 works, 2013 to 2025.
+15 claims across 11 works, 2013 to 2026.
 
 **2013**
 
@@ -66,6 +66,12 @@ This node is assembled mechanically from the 14 claims that carry the concept ta
 - [5886342-039](https://wulfkaal.github.io/claims/5886342-039) [design/asserted] -- Amendment authority is centralized: the UDLC Governing Council holds the exclusive authority to amend any Book or provision of the Codex, while proposals may originate from the association bodies, registered legal experts, stakeholders or other authorities.
   > (1) UDLC Governing Council according to holds the exclusive authority to amend any Book or provision
   Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342
+
+**2026**
+
+- [7598518-032](https://wulfkaal.github.io/claims/7598518-032) [condition/stated] *(failure mode)* -- The pool under test omits most of what makes RLRF an institution: it has no economy, no strategy, no adversary, no deliberation, and no reputation dynamics after the single settlement.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

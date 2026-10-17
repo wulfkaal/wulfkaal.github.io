@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/synthetic-data",
+ "identifier": "kaal:entity:synthetic-data",
+ "name": "Synthetic data",
+ "termCode": "synthetic-data",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/synthetic-data.md",
+ "sha256": "5a7f74d5d64ff2a8ffe381f943b46a8881cb0b1a21faf876a71e1ef7121f00b3",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-011",
+   "identifier": "kaal:claim:5095633-011",
+   "text": "As AI-generated content proliferates online it dilutes the diversity and originality of the text pool available for later training, producing performance degradation across successive model generations.",
+   "abstract": "As AI-generated content proliferates online, it dilutes the overall diversity and originality of text available for subsequent training processes, potentially leading to a degradation in model performance over repeated generations.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "repeated training generations drawing on an increasingly synthetic web"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-015",
+   "identifier": "kaal:claim:7598518-015",
+   "text": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "reported",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The result is prior work, not a finding of this study.",
+    "What this paper isolates is how to weight several assessors behind a validity filter, not whether verifier selection works."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'synthetic-data'. Derived node: a roster, not an adjudicated definition."
+}

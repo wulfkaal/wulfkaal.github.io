@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `implementation-failure`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `implementation-failure`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2019 to 2024.
+3 claims across 3 works, 2019 to 2026.
 
 **2019**
 
@@ -21,6 +21,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [4957318-021](https://wulfkaal.github.io/claims/4957318-021) [failure/argued] *(failure mode)* -- The cost of comprehensive legal review deters governments from committing the necessary resources, which prevents legal garbage collection from being applied consistently and effectively.
   > The high costs associated with these processes can deter governments from committing the necessary resources, thereby hindering the consistent and effective application of legal garbage collection initiatives.
   Wulf A. Kaal, The Future of Law - Dynamic Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4957318
+
+**2026**
+
+- [7598518-042](https://wulfkaal.github.io/claims/7598518-042) [design/stated] *(failure mode)* -- The design names a failure pattern in advance: if the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues a registered sentence recording that each had lower capped retention at generation 50 than full replacement, as a registered negative result and not an implementation failure.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

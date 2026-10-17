@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/training-data.md",
- "sha256": "898890f2f7c932aa040042a62e8d274e607f9359c74c509aad669a46331fe9de",
+ "sha256": "7ecd63f5aeb458dc1cb01ea31afbc0956f2cc6abf53a6a3cb7f2583f86650fe3",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,12 +24,12 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 11
+   "value": 14
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 6
+   "value": 7
   },
   {
    "@type": "PropertyValue",
@@ -235,7 +235,61 @@
    "scope_conditions": [],
    "source_pdf_sha256": "75cca35350378eb8904866d068b5d2f3e1504629e6031457ce6c12152a88e3e8",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-002",
+   "identifier": "kaal:claim:7598518-002",
+   "text": "The paper follows on from the author's Reinforcement Learning from Reputation Feedback paper and tests one use of that mechanism, as a filter on training data, and not the mechanism as a whole.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Scope is relative to the author's parent reputation-feedback paper.",
+    "The restriction is the paper's own statement of what it does and does not test."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-027",
+   "identifier": "kaal:claim:7598518-027",
+   "text": "Reputation is settled once by key, after the generation-0 fit on real data and before generation 1, and no candidate that enters training ever updates a reputation.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The design uses only keyed settlement, although the parent rule also covers unkeyed events.",
+    "This removes reputation dynamics during the recursion, so the weights are fixed throughout the run."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-028",
+   "identifier": "kaal:claim:7598518-028",
+   "text": "The pool's entire exposure to real data is 192 rows, below the 200 real rows the ten percent arm receives and far below the roughly 1,990 distinct real rows it trains on over the run.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The keyed record is stratified to teach the pool who judges validity well on which tag, and nothing about where the rare components lie beyond a bounded tag leakage.",
+    "The source's text layer drops an exponent inline, so the quote renders the formulas as \"in one 50 generation\" and \"N(1 - 0. 9 )\". The claim asserts only the three row counts, which the quote states in figures."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "11 claims in the published works of Wulf A. Kaal carry the concept tag 'training-data'. Derived node: a roster, not an adjudicated definition."
+ "description": "14 claims in the published works of Wulf A. Kaal carry the concept tag 'training-data'. Derived node: a roster, not an adjudicated definition."
 }

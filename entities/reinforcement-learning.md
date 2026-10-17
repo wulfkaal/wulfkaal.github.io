@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `reinforcement-learning`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `reinforcement-learning`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 1 works, 2024 to 2024.
+3 claims across 2 works, 2024 to 2026.
 
 **2024**
 
@@ -18,6 +18,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [4855607-014](https://wulfkaal.github.io/claims/4855607-014) [failure/evidenced] *(failure mode)* -- Deep reinforcement learning demands large amounts of training data, which suggests its algorithms differ fundamentally from human learning, and learning without supervision becomes particularly hard when rewards are sparse, as they typically are in sequence generation tasks.
   > Deep RL methods often demand large amounts of training data, suggesting that the algorithms may differ fundamentally from those underlying human learning. Moreover, learning without supervision is particularly hard when the reward is sparse, which is likely to happen for sequence generation tasks.
   Wulf A. Kaal, How AI Models are Optimized Through Web3 Governance (2024). SSRN: https://ssrn.com/abstract=4855607
+
+**2026**
+
+- [7598518-002](https://wulfkaal.github.io/claims/7598518-002) [condition/stated] -- The paper follows on from the author's Reinforcement Learning from Reputation Feedback paper and tests one use of that mechanism, as a filter on training data, and not the mechanism as a whole.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

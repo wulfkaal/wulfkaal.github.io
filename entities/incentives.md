@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 45 claims that carry the concept tag `incentives`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 46 claims that carry the concept tag `incentives`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-45 claims across 33 works, 2010 to 2026.
+46 claims across 34 works, 2010 to 2026.
 
 **2010**
 
@@ -186,6 +186,9 @@ This node is assembled mechanically from the 45 claims that carry the concept ta
 - [6655138-007](https://wulfkaal.github.io/claims/6655138-007) [failure/argued] *(failure mode)* -- An architecture with an action surface but no reward channel implements generation as an unrewarded act, so rational agents will not allocate compute to generation beyond the level their own selection-side activity requires.
   > An architecture that has the action surface but no reward channel implements G as an unrewarded act, and rational agents will not allocate compute to G beyond the level required for their own selection-side activity.
   Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138
+- [7596939-032](https://wulfkaal.github.io/claims/7596939-032) [condition/stated] -- The dual-use result is conditional rather than general: sufficient sanctions, norms, shared collateral, review and repeated success fees all fall outside it, and it governs only the incentive half of protection.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

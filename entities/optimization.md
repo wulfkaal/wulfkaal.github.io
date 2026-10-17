@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 4 claims that carry the concept tag `optimization`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 5 claims that carry the concept tag `optimization`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-4 claims across 3 works, 2013 to 2026.
+5 claims across 4 works, 2013 to 2026.
 
 **2013**
 
@@ -30,6 +30,9 @@ This node is assembled mechanically from the 4 claims that carry the concept tag
 - [6421319-016](https://wulfkaal.github.io/claims/6421319-016) [mechanism/argued] -- Human managers satisfice because further search is cognitively costly, whereas AI agents continue searching until the global optimum is reached because additional computation is essentially free, which removes bounded rationality from the economic substrate.
   > Where human managers satisfice because further search is cognitively costly, AI2AI agents continue searching until the global optimum is reached because additional computation is essentially free.
   Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319
+- [7598518-017](https://wulfkaal.github.io/claims/7598518-017) [mechanism/reported] *(failure mode)* -- Ferbach et al. (2024) report that curation acts as implicit preference optimization that amplifies the curator's biases.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

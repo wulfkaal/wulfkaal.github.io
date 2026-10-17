@@ -1,11 +1,11 @@
 {
  "name": "Kaal Corpus Entity Index",
  "description": "Concept-level nodes over the claim layer. Every claim record carries an `about` array of concept slugs; this index resolves them. A node with status 'adjudicated' carries one ruled definition, its necessary conditions, a first-appearance citation with the basis for the priority call, the registers the term is used in, and its boundary cases. A node with status 'derived' is a mechanical roster of the claims carrying the slug and asserts no definition. Cite the adjudicated definition; for a derived node, cite the underlying claims. Claim status from claims/status.json is carried through: any claim that is superseded, falsified, or narrowed is flagged wherever a node lists it, and `non_current_claims` counts them per node.",
- "nodes": 2818,
+ "nodes": 2859,
  "adjudicated": 1,
- "derived": 2817,
+ "derived": 2858,
  "min_claims_for_node": 2,
- "singletons_note": "4379 concept slugs appear on exactly one claim. They get no node; each resolves to its single claim below.",
+ "singletons_note": "4338 concept slugs appear on exactly one claim. They get no node; each resolves to its single claim below.",
  "claim_layer": "https://wulfkaal.github.io/claims/index.json",
  "failure_layer": "https://wulfkaal.github.io/failures/index.json",
  "entities": [
@@ -172,6 +172,24 @@
    "aliases": []
   },
   {
+   "slug": "reputation",
+   "name": "Reputation",
+   "status": "derived",
+   "claim_count": 97,
+   "work_count": 33,
+   "year_span": [
+    "2009",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation",
+   "json": "https://wulfkaal.github.io/entities/reputation.json",
+   "md": "https://wulfkaal.github.io/entities/reputation.md",
+   "content_sha256": "619cd7091c6b74e0551a010173321ec36433fce4519e278577026803facd5baf",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "contingent-capital",
    "name": "Contingent capital",
    "status": "derived",
@@ -262,24 +280,6 @@
    "aliases": []
   },
   {
-   "slug": "reputation",
-   "name": "Reputation",
-   "status": "derived",
-   "claim_count": 83,
-   "work_count": 31,
-   "year_span": [
-    "2009",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation",
-   "json": "https://wulfkaal.github.io/entities/reputation.json",
-   "md": "https://wulfkaal.github.io/entities/reputation.md",
-   "content_sha256": "fcee648185673d9a65032fc3810c1eb028beaa9cc8cd74e43b675bc413fd612c",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "hedge-funds",
    "name": "Hedge funds",
    "status": "derived",
@@ -352,6 +352,35 @@
    "aliases": []
   },
   {
+   "slug": "reputation-staking",
+   "name": "Reputation staking",
+   "status": "adjudicated",
+   "claim_count": 63,
+   "work_count": 26,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-staking",
+   "json": "https://wulfkaal.github.io/entities/reputation-staking.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-staking.md",
+   "content_sha256": "091040d184fb54767eafcf404bbb8e120c1a657942fdb036215738dbc9b27705",
+   "non_current_claims": 0,
+   "definition": "Placing earned, non-transferable reputation at risk on a decision, where the amount staked both weights influence and can be lost.",
+   "aliases": [
+    "reputation-staking",
+    "rnft-staking",
+    "reputation-based staking",
+    "reputation token staking",
+    "staked reputation",
+    "reputation at stake",
+    "proof-of-reputation",
+    "staked-voting",
+    "weighted-staking",
+    "fifty-fifty-staking"
+   ]
+  },
+  {
    "slug": "dodd-frank-act",
    "name": "Dodd frank act",
    "status": "derived",
@@ -368,35 +397,6 @@
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
-  },
-  {
-   "slug": "reputation-staking",
-   "name": "Reputation staking",
-   "status": "adjudicated",
-   "claim_count": 62,
-   "work_count": 25,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation-staking",
-   "json": "https://wulfkaal.github.io/entities/reputation-staking.json",
-   "md": "https://wulfkaal.github.io/entities/reputation-staking.md",
-   "content_sha256": "d2b284a4a06cf3bd3a6590cbf26c2657d9971dccaa5ae0422b747202b95dc3dc",
-   "non_current_claims": 0,
-   "definition": "Placing earned, non-transferable reputation at risk on a decision, where the amount staked both weights influence and can be lost.",
-   "aliases": [
-    "reputation-staking",
-    "rnft-staking",
-    "reputation-based staking",
-    "reputation token staking",
-    "staked reputation",
-    "reputation at stake",
-    "proof-of-reputation",
-    "staked-voting",
-    "weighted-staking",
-    "fifty-fifty-staking"
-   ]
   },
   {
    "slug": "dao-governance",
@@ -669,6 +669,42 @@
    "aliases": []
   },
   {
+   "slug": "incentives",
+   "name": "Incentives",
+   "status": "derived",
+   "claim_count": 46,
+   "work_count": 34,
+   "year_span": [
+    "2010",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/incentives",
+   "json": "https://wulfkaal.github.io/entities/incentives.json",
+   "md": "https://wulfkaal.github.io/entities/incentives.md",
+   "content_sha256": "9be7a313ac55f58dfb9183557d810b2cf9f8698fbaa32eab54dee8208ed8323c",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "reputation-systems",
+   "name": "Reputation systems",
+   "status": "derived",
+   "claim_count": 46,
+   "work_count": 25,
+   "year_span": [
+    "2017",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-systems",
+   "json": "https://wulfkaal.github.io/entities/reputation-systems.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-systems.md",
+   "content_sha256": "c9e078961ae7ea8d1383657f37f297c4263508dbff02af7e974f84d1f2a1f518",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "rulemaking",
    "name": "Rulemaking",
    "status": "derived",
@@ -700,42 +736,6 @@
    "json": "https://wulfkaal.github.io/entities/corruption.json",
    "md": "https://wulfkaal.github.io/entities/corruption.md",
    "content_sha256": "2e831479665a6d3543356d8eb1b9a94557224d0faeb5aa4316aa73f091efdc40",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "incentives",
-   "name": "Incentives",
-   "status": "derived",
-   "claim_count": 45,
-   "work_count": 33,
-   "year_span": [
-    "2010",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/incentives",
-   "json": "https://wulfkaal.github.io/entities/incentives.json",
-   "md": "https://wulfkaal.github.io/entities/incentives.md",
-   "content_sha256": "ace2555b9dcd9eba14edc632c4b49a2736ada7907bfaf324717ce15f5bc70697",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "reputation-systems",
-   "name": "Reputation systems",
-   "status": "derived",
-   "claim_count": 45,
-   "work_count": 24,
-   "year_span": [
-    "2017",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation-systems",
-   "json": "https://wulfkaal.github.io/entities/reputation-systems.json",
-   "md": "https://wulfkaal.github.io/entities/reputation-systems.md",
-   "content_sha256": "d3bf99f2c924a52ac7825d572d0f150db65f7fb4190157a5ae51f7c7ea29404e",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -867,6 +867,24 @@
    "aliases": []
   },
   {
+   "slug": "compliance",
+   "name": "Compliance",
+   "status": "derived",
+   "claim_count": 39,
+   "work_count": 29,
+   "year_span": [
+    "2010",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/compliance",
+   "json": "https://wulfkaal.github.io/entities/compliance.json",
+   "md": "https://wulfkaal.github.io/entities/compliance.md",
+   "content_sha256": "cfd0b953c9709dce7f8f801deda557407992bed1731a3e9889753e38051a3076",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "decentralized-governance",
    "name": "Decentralized governance",
    "status": "derived",
@@ -934,24 +952,6 @@
    "json": "https://wulfkaal.github.io/entities/barriers-to-entry.json",
    "md": "https://wulfkaal.github.io/entities/barriers-to-entry.md",
    "content_sha256": "67ad15bd194b7e94b1c8c9b55fab3fbe9f276be39b1391f5222dd2682a6675ef",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "compliance",
-   "name": "Compliance",
-   "status": "derived",
-   "claim_count": 37,
-   "work_count": 28,
-   "year_span": [
-    "2010",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/compliance",
-   "json": "https://wulfkaal.github.io/entities/compliance.json",
-   "md": "https://wulfkaal.github.io/entities/compliance.md",
-   "content_sha256": "bf58c59088fa8687d7baa719ae2a9fc990eb257c6813ba58d36f00518585826c",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -1299,6 +1299,24 @@
    "aliases": []
   },
   {
+   "slug": "reputation-tokens",
+   "name": "Reputation tokens",
+   "status": "derived",
+   "claim_count": 31,
+   "work_count": 14,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-tokens",
+   "json": "https://wulfkaal.github.io/entities/reputation-tokens.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-tokens.md",
+   "content_sha256": "0779249051f4d9470df190a58d53f520c05f82dc00b62d9549a081b624bc1127",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "web3",
    "name": "Web3",
    "status": "derived",
@@ -1335,6 +1353,24 @@
    "aliases": []
   },
   {
+   "slug": "prediction",
+   "name": "Prediction",
+   "status": "derived",
+   "claim_count": 30,
+   "work_count": 24,
+   "year_span": [
+    "2012",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/prediction",
+   "json": "https://wulfkaal.github.io/entities/prediction.json",
+   "md": "https://wulfkaal.github.io/entities/prediction.md",
+   "content_sha256": "0f41727a553ddf3c9fd792f6a9fd3b4e96a33ba28b849857f283593cc273200c",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "regulatory-timing",
    "name": "Regulatory timing",
    "status": "derived",
@@ -1348,24 +1384,6 @@
    "json": "https://wulfkaal.github.io/entities/regulatory-timing.json",
    "md": "https://wulfkaal.github.io/entities/regulatory-timing.md",
    "content_sha256": "1697e461d210f4b0d6ec60375adbd715d0bcf3999538840fcdbc9a1349e21583",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "reputation-tokens",
-   "name": "Reputation tokens",
-   "status": "derived",
-   "claim_count": 30,
-   "work_count": 13,
-   "year_span": [
-    "2018",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation-tokens",
-   "json": "https://wulfkaal.github.io/entities/reputation-tokens.json",
-   "md": "https://wulfkaal.github.io/entities/reputation-tokens.md",
-   "content_sha256": "c17b41aa2fc64afe61c137f728d7a2a6afa3899114bf779dbdb45e9e009f4d4d",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -1420,6 +1438,24 @@
    "json": "https://wulfkaal.github.io/entities/stable-rules.json",
    "md": "https://wulfkaal.github.io/entities/stable-rules.md",
    "content_sha256": "a10c42ccf5699c635ddb3bfa3dd35033ca8592dd6f02c62ce13120cf74aca895",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "validation-pool",
+   "name": "Validation pool",
+   "status": "derived",
+   "claim_count": 29,
+   "work_count": 8,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/validation-pool",
+   "json": "https://wulfkaal.github.io/entities/validation-pool.json",
+   "md": "https://wulfkaal.github.io/entities/validation-pool.md",
+   "content_sha256": "1fd677e9ad265c7f5822dd8845df08c4d116736fd6577e2cc76dd5abc9c04e83",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -1515,24 +1551,6 @@
    "aliases": []
   },
   {
-   "slug": "prediction",
-   "name": "Prediction",
-   "status": "derived",
-   "claim_count": 28,
-   "work_count": 23,
-   "year_span": [
-    "2012",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/prediction",
-   "json": "https://wulfkaal.github.io/entities/prediction.json",
-   "md": "https://wulfkaal.github.io/entities/prediction.md",
-   "content_sha256": "3b9570a70df4f8ebc3e295d74a59268a3c5fb0ea279dce6b53aa4e80be7e76c0",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "sec",
    "name": "Sec",
    "status": "derived",
@@ -1546,24 +1564,6 @@
    "json": "https://wulfkaal.github.io/entities/sec.json",
    "md": "https://wulfkaal.github.io/entities/sec.md",
    "content_sha256": "2291458fde9de0b8e43e51a8b2224e9cfe827febf68a76d21fbeacef5e6e3681",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "validation-pool",
-   "name": "Validation pool",
-   "status": "derived",
-   "claim_count": 28,
-   "work_count": 7,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/validation-pool",
-   "json": "https://wulfkaal.github.io/entities/validation-pool.json",
-   "md": "https://wulfkaal.github.io/entities/validation-pool.md",
-   "content_sha256": "d61ec4ba3b3bb3948a6b3ea078fc417acb9679c516a69c100bb0ccb3c1f1fa3c",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -2559,6 +2559,24 @@
    "aliases": []
   },
   {
+   "slug": "failure-mode",
+   "name": "Failure mode",
+   "status": "derived",
+   "claim_count": 19,
+   "work_count": 5,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/failure-mode",
+   "json": "https://wulfkaal.github.io/entities/failure-mode.json",
+   "md": "https://wulfkaal.github.io/entities/failure-mode.md",
+   "content_sha256": "9026bd114c0545e279563e3a82aa9814996c3cdfe7792679d7fb82831c524383",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "form-adv",
    "name": "Form adv",
    "status": "derived",
@@ -2644,6 +2662,24 @@
    "json": "https://wulfkaal.github.io/entities/sec-guidance.json",
    "md": "https://wulfkaal.github.io/entities/sec-guidance.md",
    "content_sha256": "0d2c1d143d768005b107a8658fc83967ba4dd9a9727fcf4b87d0e7b7db5bb7d1",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "slashing",
+   "name": "Slashing",
+   "status": "derived",
+   "claim_count": 19,
+   "work_count": 12,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/slashing",
+   "json": "https://wulfkaal.github.io/entities/slashing.json",
+   "md": "https://wulfkaal.github.io/entities/slashing.md",
+   "content_sha256": "a9a1a93d2fb2f99e307beae06cea672ee7dfa824eb286340ba2cc34dc575798e",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -2955,24 +2991,6 @@
    "aliases": []
   },
   {
-   "slug": "failure-mode",
-   "name": "Failure mode",
-   "status": "derived",
-   "claim_count": 17,
-   "work_count": 3,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/failure-mode",
-   "json": "https://wulfkaal.github.io/entities/failure-mode.json",
-   "md": "https://wulfkaal.github.io/entities/failure-mode.md",
-   "content_sha256": "2ac8b4b847018a0893c14297961e179c8cafda209f14f2213e8181a8bdd855a0",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "federated-learning",
    "name": "Federated learning",
    "status": "derived",
@@ -3117,6 +3135,24 @@
    "aliases": []
   },
   {
+   "slug": "staking",
+   "name": "Staking",
+   "status": "derived",
+   "claim_count": 17,
+   "work_count": 13,
+   "year_span": [
+    "2017",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/staking",
+   "json": "https://wulfkaal.github.io/entities/staking.json",
+   "md": "https://wulfkaal.github.io/entities/staking.md",
+   "content_sha256": "d64c90bc813d05bb9b72edff4c9bcf20ddb715e16e58d3e7dab8657dd574f730",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "tokenization",
    "name": "Tokenization",
    "status": "derived",
@@ -3220,6 +3256,24 @@
    "json": "https://wulfkaal.github.io/entities/decentralized-commerce.json",
    "md": "https://wulfkaal.github.io/entities/decentralized-commerce.md",
    "content_sha256": "9f9fcfae3b7bb543fe160236669c9779a6c2050a404b9f05cfee55a4d82a0488",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "design",
+   "name": "Design",
+   "status": "derived",
+   "claim_count": 16,
+   "work_count": 6,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/design",
+   "json": "https://wulfkaal.github.io/entities/design.json",
+   "md": "https://wulfkaal.github.io/entities/design.md",
+   "content_sha256": "167ad5ec3c316715ea46e089334e6a94602a613b65f78d2499a1a18d5f9ac3b6",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -3423,24 +3477,6 @@
    "aliases": []
   },
   {
-   "slug": "slashing",
-   "name": "Slashing",
-   "status": "derived",
-   "claim_count": 16,
-   "work_count": 10,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/slashing",
-   "json": "https://wulfkaal.github.io/entities/slashing.json",
-   "md": "https://wulfkaal.github.io/entities/slashing.md",
-   "content_sha256": "f8003a2aa57760890f16baba053bcaf60244422ba5b5315bbfbd836421cf6288",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "sybil-attack",
    "name": "Sybil attack",
    "status": "derived",
@@ -3495,6 +3531,24 @@
    "aliases": []
   },
   {
+   "slug": "agents",
+   "name": "Agents",
+   "status": "derived",
+   "claim_count": 15,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/agents",
+   "json": "https://wulfkaal.github.io/entities/agents.json",
+   "md": "https://wulfkaal.github.io/entities/agents.md",
+   "content_sha256": "1c4f2da1c18ac9fa7ff8e98821893781c9f81060c160840d67fe4b8eeed83714",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "business-judgment-rule",
    "name": "Business judgment rule",
    "status": "derived",
@@ -3544,6 +3598,24 @@
    "json": "https://wulfkaal.github.io/entities/experimentation.json",
    "md": "https://wulfkaal.github.io/entities/experimentation.md",
    "content_sha256": "e2182a2960c99d49a649e52133c40f41e1f844b4ae7429482c9bc82ad907d9da",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "institutions",
+   "name": "Institutions",
+   "status": "derived",
+   "claim_count": 15,
+   "work_count": 11,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/institutions",
+   "json": "https://wulfkaal.github.io/entities/institutions.json",
+   "md": "https://wulfkaal.github.io/entities/institutions.md",
+   "content_sha256": "105ac5aa35c682f31b01bc09fb60fdca7b99988edcfd76ab09dcecbbfa76ffc0",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -3747,24 +3819,6 @@
    "aliases": []
   },
   {
-   "slug": "staking",
-   "name": "Staking",
-   "status": "derived",
-   "claim_count": 15,
-   "work_count": 12,
-   "year_span": [
-    "2017",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/staking",
-   "json": "https://wulfkaal.github.io/entities/staking.json",
-   "md": "https://wulfkaal.github.io/entities/staking.md",
-   "content_sha256": "a30720fa5c0673c7bef09e5ca8c01b3ee731fe5ead857513bf7d05486ed41329",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "token-supply",
    "name": "Token supply",
    "status": "derived",
@@ -3796,6 +3850,24 @@
    "json": "https://wulfkaal.github.io/entities/51-percent-attack.json",
    "md": "https://wulfkaal.github.io/entities/51-percent-attack.md",
    "content_sha256": "1468288a83ba7486f4a468eeb6a1afe233ac44ff830f4b264857ab6a6bbc480d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "attribution",
+   "name": "Attribution",
+   "status": "derived",
+   "claim_count": 14,
+   "work_count": 6,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/attribution",
+   "json": "https://wulfkaal.github.io/entities/attribution.json",
+   "md": "https://wulfkaal.github.io/entities/attribution.md",
+   "content_sha256": "dbbc2875185b4d1fa5cb7196365d30b8efa91b82197745e792e42ee1dc874455",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -4071,24 +4143,6 @@
    "aliases": []
   },
   {
-   "slug": "institutions",
-   "name": "Institutions",
-   "status": "derived",
-   "claim_count": 14,
-   "work_count": 10,
-   "year_span": [
-    "2013",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/institutions",
-   "json": "https://wulfkaal.github.io/entities/institutions.json",
-   "md": "https://wulfkaal.github.io/entities/institutions.md",
-   "content_sha256": "e691b8842a3b7de9c38ec5aa8b40bf0ca60d0ef81b31faee68a45880586ff3d4",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "legal-tech",
    "name": "Legal tech",
    "status": "derived",
@@ -4143,6 +4197,42 @@
    "aliases": []
   },
   {
+   "slug": "sybil-resistance",
+   "name": "Sybil resistance",
+   "status": "derived",
+   "claim_count": 14,
+   "work_count": 9,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/sybil-resistance",
+   "json": "https://wulfkaal.github.io/entities/sybil-resistance.json",
+   "md": "https://wulfkaal.github.io/entities/sybil-resistance.md",
+   "content_sha256": "4929d8b6817243f7bfc25b0426e0ac907a593f015dfa9b6dcde9ca9e598a458b",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "training-data",
+   "name": "Training data",
+   "status": "derived",
+   "claim_count": 14,
+   "work_count": 7,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/training-data",
+   "json": "https://wulfkaal.github.io/entities/training-data.json",
+   "md": "https://wulfkaal.github.io/entities/training-data.md",
+   "content_sha256": "7ecd63f5aeb458dc1cb01ea31afbc0956f2cc6abf53a6a3cb7f2583f86650fe3",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "arbitration",
    "name": "Arbitration",
    "status": "derived",
@@ -4156,24 +4246,6 @@
    "json": "https://wulfkaal.github.io/entities/arbitration.json",
    "md": "https://wulfkaal.github.io/entities/arbitration.md",
    "content_sha256": "ed4bc396d6f50fbcd643cdd822d3d8f7d1ed8c8b72c680bc045250550a4f1541",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "attribution",
-   "name": "Attribution",
-   "status": "derived",
-   "claim_count": 13,
-   "work_count": 5,
-   "year_span": [
-    "2021",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/attribution",
-   "json": "https://wulfkaal.github.io/entities/attribution.json",
-   "md": "https://wulfkaal.github.io/entities/attribution.md",
-   "content_sha256": "d1be583b162e824c1b86b205833670b6c0b365fe4cff735659b8dc3c3e6de8eb",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -4228,6 +4300,24 @@
    "json": "https://wulfkaal.github.io/entities/centralized-platforms.json",
    "md": "https://wulfkaal.github.io/entities/centralized-platforms.md",
    "content_sha256": "e24529a04ed325fbcb22f3841fedd653f7edadbd09387bf6add95906d8849d36",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "collateral",
+   "name": "Collateral",
+   "status": "derived",
+   "claim_count": 13,
+   "work_count": 8,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/collateral",
+   "json": "https://wulfkaal.github.io/entities/collateral.json",
+   "md": "https://wulfkaal.github.io/entities/collateral.md",
+   "content_sha256": "dfc8fe64825815a3dafd2fa04cfa6762f5e4a918e44eaca23f7f05ff338bd492",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -4431,6 +4521,24 @@
    "aliases": []
   },
   {
+   "slug": "non-transferability",
+   "name": "Non transferability",
+   "status": "derived",
+   "claim_count": 13,
+   "work_count": 7,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/non-transferability",
+   "json": "https://wulfkaal.github.io/entities/non-transferability.json",
+   "md": "https://wulfkaal.github.io/entities/non-transferability.md",
+   "content_sha256": "2efc3429c689360be137f5000743fcb7fcc6dde04b114d916bd9638400a843bb",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "organizational-design",
    "name": "Organizational design",
    "status": "derived",
@@ -4557,24 +4665,6 @@
    "aliases": []
   },
   {
-   "slug": "sybil-resistance",
-   "name": "Sybil resistance",
-   "status": "derived",
-   "claim_count": 13,
-   "work_count": 8,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/sybil-resistance",
-   "json": "https://wulfkaal.github.io/entities/sybil-resistance.json",
-   "md": "https://wulfkaal.github.io/entities/sybil-resistance.md",
-   "content_sha256": "dd897081effdeadde727247d28f4a17b2da54ce2ca219167e354a0d8258bbaab",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "system-design",
    "name": "System design",
    "status": "derived",
@@ -4678,24 +4768,6 @@
    "json": "https://wulfkaal.github.io/entities/big-data.json",
    "md": "https://wulfkaal.github.io/entities/big-data.md",
    "content_sha256": "654d3a3100402ce77b169ced954c6247c5abed25b9be31d4f18a0a523ecc5468",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "collateral",
-   "name": "Collateral",
-   "status": "derived",
-   "claim_count": 12,
-   "work_count": 7,
-   "year_span": [
-    "2014",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/collateral",
-   "json": "https://wulfkaal.github.io/entities/collateral.json",
-   "md": "https://wulfkaal.github.io/entities/collateral.md",
-   "content_sha256": "56c78905e35f819bac7bf188f5911243c9c4104401750873996fade819020470",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -4876,6 +4948,24 @@
    "json": "https://wulfkaal.github.io/entities/innovation-policy.json",
    "md": "https://wulfkaal.github.io/entities/innovation-policy.md",
    "content_sha256": "d09341a321373f3b0da576ad4f4c5384de7c5e52bc8babc6c5723246c0467742",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "liability",
+   "name": "Liability",
+   "status": "derived",
+   "claim_count": 12,
+   "work_count": 11,
+   "year_span": [
+    "2016",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/liability",
+   "json": "https://wulfkaal.github.io/entities/liability.json",
+   "md": "https://wulfkaal.github.io/entities/liability.md",
+   "content_sha256": "65b2abfbe8d5b2827800faf204f77cf530e721ba52cce32f4291e6e891f5a8b1",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -5313,24 +5403,6 @@
    "aliases": []
   },
   {
-   "slug": "liability",
-   "name": "Liability",
-   "status": "derived",
-   "claim_count": 11,
-   "work_count": 10,
-   "year_span": [
-    "2016",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/liability",
-   "json": "https://wulfkaal.github.io/entities/liability.json",
-   "md": "https://wulfkaal.github.io/entities/liability.md",
-   "content_sha256": "0913317d1afdbea631a3ffe9a136f4bb196b014ca2cbfc7b39c0ee34d60d7963",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "literature-gap",
    "name": "Literature gap",
    "status": "derived",
@@ -5565,24 +5637,6 @@
    "aliases": []
   },
   {
-   "slug": "training-data",
-   "name": "Training data",
-   "status": "derived",
-   "claim_count": 11,
-   "work_count": 6,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/training-data",
-   "json": "https://wulfkaal.github.io/entities/training-data.json",
-   "md": "https://wulfkaal.github.io/entities/training-data.md",
-   "content_sha256": "898890f2f7c932aa040042a62e8d274e607f9359c74c509aad669a46331fe9de",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "adjudication",
    "name": "Adjudication",
    "status": "derived",
@@ -5686,6 +5740,24 @@
    "json": "https://wulfkaal.github.io/entities/coding-for-lawyers.json",
    "md": "https://wulfkaal.github.io/entities/coding-for-lawyers.md",
    "content_sha256": "85a6b7bcbf7574d6056b4d681b9defb90980aaf4fbff575e3cf9f447843acec0",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "collusion",
+   "name": "Collusion",
+   "status": "derived",
+   "claim_count": 10,
+   "work_count": 6,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/collusion",
+   "json": "https://wulfkaal.github.io/entities/collusion.json",
+   "md": "https://wulfkaal.github.io/entities/collusion.md",
+   "content_sha256": "a00670c1e433e43919092e7c82fb420eb5f7a66c093813b8ccce8999833faeeb",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -5871,6 +5943,24 @@
    "aliases": []
   },
   {
+   "slug": "fees",
+   "name": "Fees",
+   "status": "derived",
+   "claim_count": 10,
+   "work_count": 6,
+   "year_span": [
+    "2016",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/fees",
+   "json": "https://wulfkaal.github.io/entities/fees.json",
+   "md": "https://wulfkaal.github.io/entities/fees.md",
+   "content_sha256": "dd3a27759c13d8230ee2faee006b555463be9ae7ce619d16681fdebdbeabdd13",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "fraud",
    "name": "Fraud",
    "status": "derived",
@@ -5956,6 +6046,24 @@
    "json": "https://wulfkaal.github.io/entities/howey-test.json",
    "md": "https://wulfkaal.github.io/entities/howey-test.md",
    "content_sha256": "d39f8c89ac0dba8315014ef25c60fe13c28473b8ed72ea00ab03282c87f09892",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "identity",
+   "name": "Identity",
+   "status": "derived",
+   "claim_count": 10,
+   "work_count": 7,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/identity",
+   "json": "https://wulfkaal.github.io/entities/identity.json",
+   "md": "https://wulfkaal.github.io/entities/identity.md",
+   "content_sha256": "c2be63ab09fe05ea505ccadf7acbaa161206b2a0181f3dec0d998b274b9788ef",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -6141,24 +6249,6 @@
    "aliases": []
   },
   {
-   "slug": "non-transferability",
-   "name": "Non transferability",
-   "status": "derived",
-   "claim_count": 10,
-   "work_count": 6,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/non-transferability",
-   "json": "https://wulfkaal.github.io/entities/non-transferability.json",
-   "md": "https://wulfkaal.github.io/entities/non-transferability.md",
-   "content_sha256": "75312f55a135951d72ea40afbb44697443f173b000c4b41ee94fb72c940c9d3f",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "profit-motive",
    "name": "Profit motive",
    "status": "derived",
@@ -6244,6 +6334,24 @@
    "json": "https://wulfkaal.github.io/entities/relevancy.json",
    "md": "https://wulfkaal.github.io/entities/relevancy.md",
    "content_sha256": "c164e759b4a74c9a16d11d3ebcc9f00e8c69ce6d5caa241e51bdf4d58bf59381",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "remedies",
+   "name": "Remedies",
+   "status": "derived",
+   "claim_count": 10,
+   "work_count": 9,
+   "year_span": [
+    "2004",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/remedies",
+   "json": "https://wulfkaal.github.io/entities/remedies.json",
+   "md": "https://wulfkaal.github.io/entities/remedies.md",
+   "content_sha256": "44df26acef0a13010308b7c591b9a88ffba5b2b297ce495bdfe9c18ead9c73a8",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -6465,6 +6573,24 @@
    "aliases": []
   },
   {
+   "slug": "validators",
+   "name": "Validators",
+   "status": "derived",
+   "claim_count": 10,
+   "work_count": 2,
+   "year_span": [
+    "2026",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/validators",
+   "json": "https://wulfkaal.github.io/entities/validators.json",
+   "md": "https://wulfkaal.github.io/entities/validators.md",
+   "content_sha256": "e33bd794d01f5b94ca6627bb3959f8badb8dddddf803f98d4564ba3223f300d2",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "voting",
    "name": "Voting",
    "status": "derived",
@@ -6478,6 +6604,24 @@
    "json": "https://wulfkaal.github.io/entities/voting.json",
    "md": "https://wulfkaal.github.io/entities/voting.md",
    "content_sha256": "05e5d728d55dcb0687611254f23d6f0fafff1fcc68a3a7271424e3290199801d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "ai-agents",
+   "name": "Ai agents",
+   "status": "derived",
+   "claim_count": 9,
+   "work_count": 4,
+   "year_span": [
+    "2024",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/ai-agents",
+   "json": "https://wulfkaal.github.io/entities/ai-agents.json",
+   "md": "https://wulfkaal.github.io/entities/ai-agents.md",
+   "content_sha256": "bcb2d78959b1db2a3901607ce75f6c386fd10a0d1999a90c31f0e9e715804ced",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -6532,24 +6676,6 @@
    "json": "https://wulfkaal.github.io/entities/collaboration.json",
    "md": "https://wulfkaal.github.io/entities/collaboration.md",
    "content_sha256": "3ce621d343bfb45ce04829203c9067908e1c77a53a3160b38ff6ee0226497970",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "collusion",
-   "name": "Collusion",
-   "status": "derived",
-   "claim_count": 9,
-   "work_count": 5,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/collusion",
-   "json": "https://wulfkaal.github.io/entities/collusion.json",
-   "md": "https://wulfkaal.github.io/entities/collusion.md",
-   "content_sha256": "b4f7de12a4f2e8f269288115f05e3eb621124915018a762832ad8b00695e1bc0",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -6730,24 +6856,6 @@
    "json": "https://wulfkaal.github.io/entities/escrow.json",
    "md": "https://wulfkaal.github.io/entities/escrow.md",
    "content_sha256": "be75084a28ea29c2c8ea67413c929a3d3dfc29fa3f629c23490077718152e0c6",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "fees",
-   "name": "Fees",
-   "status": "derived",
-   "claim_count": 9,
-   "work_count": 5,
-   "year_span": [
-    "2016",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/fees",
-   "json": "https://wulfkaal.github.io/entities/fees.json",
-   "md": "https://wulfkaal.github.io/entities/fees.md",
-   "content_sha256": "9b5aaa9185a96a2cb0d43df152e44accf16db0eba526d6975b105a14a5bd7d46",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -7149,24 +7257,6 @@
    "aliases": []
   },
   {
-   "slug": "remedies",
-   "name": "Remedies",
-   "status": "derived",
-   "claim_count": 9,
-   "work_count": 8,
-   "year_span": [
-    "2004",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/remedies",
-   "json": "https://wulfkaal.github.io/entities/remedies.json",
-   "md": "https://wulfkaal.github.io/entities/remedies.md",
-   "content_sha256": "f9081464473fb2d6a5bd7ed1f863f90993f67f24521d78cb68ccc9dec67c721a",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "reputation-as-capital",
    "name": "Reputation as capital",
    "status": "derived",
@@ -7504,24 +7594,6 @@
    "json": "https://wulfkaal.github.io/entities/adviser-registration.json",
    "md": "https://wulfkaal.github.io/entities/adviser-registration.md",
    "content_sha256": "7d0b330d8a71e5ec6226a3884673e489ce0b3b6c6ec8e59b643b62f015b9d9d4",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "ai-agents",
-   "name": "Ai agents",
-   "status": "derived",
-   "claim_count": 8,
-   "work_count": 3,
-   "year_span": [
-    "2024",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/ai-agents",
-   "json": "https://wulfkaal.github.io/entities/ai-agents.json",
-   "md": "https://wulfkaal.github.io/entities/ai-agents.md",
-   "content_sha256": "7c2ca522b9489cf5f38c4aab5672746f7a952b26fe6050f87bb8eefd9b213d43",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -8715,6 +8787,24 @@
    "aliases": []
   },
   {
+   "slug": "audit",
+   "name": "Audit",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 4,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/audit",
+   "json": "https://wulfkaal.github.io/entities/audit.json",
+   "md": "https://wulfkaal.github.io/entities/audit.md",
+   "content_sha256": "d1360d7f1a53437e9aff2ad16b057f8f9196c166b6e479e2523455d6e0940990",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "bailouts",
    "name": "Bailouts",
    "status": "derived",
@@ -9543,6 +9633,24 @@
    "aliases": []
   },
   {
+   "slug": "model-collapse",
+   "name": "Model collapse",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/model-collapse",
+   "json": "https://wulfkaal.github.io/entities/model-collapse.json",
+   "md": "https://wulfkaal.github.io/entities/model-collapse.md",
+   "content_sha256": "289ef837025c78aa9b867e8b8f87560d113e530ffbeb0c144bb2b675fb2066e8",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "monopoly",
    "name": "Monopoly",
    "status": "derived",
@@ -9615,6 +9723,24 @@
    "aliases": []
   },
   {
+   "slug": "peer-review",
+   "name": "Peer review",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 6,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/peer-review",
+   "json": "https://wulfkaal.github.io/entities/peer-review.json",
+   "md": "https://wulfkaal.github.io/entities/peer-review.md",
+   "content_sha256": "8a3790126f5130ed4eaafe343ab51fd1bf62416a749d9dc92e8587a642dd58ef",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "per-transaction-fees",
    "name": "Per transaction fees",
    "status": "derived",
@@ -9628,6 +9754,24 @@
    "json": "https://wulfkaal.github.io/entities/per-transaction-fees.json",
    "md": "https://wulfkaal.github.io/entities/per-transaction-fees.md",
    "content_sha256": "53046106877cca2999c77ef049722fdb065037c829005ba417bcae279953c923",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "persistence",
+   "name": "Persistence",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 3,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/persistence",
+   "json": "https://wulfkaal.github.io/entities/persistence.json",
+   "md": "https://wulfkaal.github.io/entities/persistence.md",
+   "content_sha256": "c791f75bb94cda788ea37754edb682ade7052e8b9f2359ecf81fa91d98dbc82c",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -9867,6 +10011,24 @@
    "aliases": []
   },
   {
+   "slug": "retention",
+   "name": "Retention",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 3,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/retention",
+   "json": "https://wulfkaal.github.io/entities/retention.json",
+   "md": "https://wulfkaal.github.io/entities/retention.md",
+   "content_sha256": "fe83a612deec19bf6b66fa0dd902e0865785356ba51682d0fe816d81a1ba941c",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "risk-management",
    "name": "Risk management",
    "status": "derived",
@@ -10011,6 +10173,24 @@
    "aliases": []
   },
   {
+   "slug": "standing",
+   "name": "Standing",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 2,
+   "year_span": [
+    "2017",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/standing",
+   "json": "https://wulfkaal.github.io/entities/standing.json",
+   "md": "https://wulfkaal.github.io/entities/standing.md",
+   "content_sha256": "b1b0f893734eeb1260f34f35b467e89f2909d2f81ca179777300db9ff8e9d10e",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "strategic-response",
    "name": "Strategic response",
    "status": "derived",
@@ -10101,6 +10281,24 @@
    "aliases": []
   },
   {
+   "slug": "uncertainty",
+   "name": "Uncertainty",
+   "status": "derived",
+   "claim_count": 7,
+   "work_count": 6,
+   "year_span": [
+    "2012",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/uncertainty",
+   "json": "https://wulfkaal.github.io/entities/uncertainty.json",
+   "md": "https://wulfkaal.github.io/entities/uncertainty.md",
+   "content_sha256": "f4e7a998b577629eb460a2cd2971b5081ef1d65d98b5d779667de0ba1fdb0212",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "values",
    "name": "Values",
    "status": "derived",
@@ -10155,6 +10353,24 @@
    "aliases": []
   },
   {
+   "slug": "allocation",
+   "name": "Allocation",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 3,
+   "year_span": [
+    "2022",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/allocation",
+   "json": "https://wulfkaal.github.io/entities/allocation.json",
+   "md": "https://wulfkaal.github.io/entities/allocation.md",
+   "content_sha256": "4be24ec492ba73589d5890247b8449cdb0a041333461af9243f147cbba65ea6c",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "antitrust",
    "name": "Antitrust",
    "status": "derived",
@@ -10168,6 +10384,24 @@
    "json": "https://wulfkaal.github.io/entities/antitrust.json",
    "md": "https://wulfkaal.github.io/entities/antitrust.md",
    "content_sha256": "0193a75ed74c283222f41356a4e039179376a06a36fb266e95862eafd7fb3bc6",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "architecture",
+   "name": "Architecture",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 4,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/architecture",
+   "json": "https://wulfkaal.github.io/entities/architecture.json",
+   "md": "https://wulfkaal.github.io/entities/architecture.md",
+   "content_sha256": "2977518564d0312dea74db150282002c2236640ccd4d54091a55f20ebc71b366",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -11037,24 +11271,6 @@
    "aliases": []
   },
   {
-   "slug": "identity",
-   "name": "Identity",
-   "status": "derived",
-   "claim_count": 6,
-   "work_count": 6,
-   "year_span": [
-    "2019",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/identity",
-   "json": "https://wulfkaal.github.io/entities/identity.json",
-   "md": "https://wulfkaal.github.io/entities/identity.md",
-   "content_sha256": "ac3e5b346a42b86f40f826a3eb5764c8eaecbae8faf62ada781ad6597d866d82",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "impact-1-0",
    "name": "Impact 1 0",
    "status": "derived",
@@ -11253,6 +11469,24 @@
    "aliases": []
   },
   {
+   "slug": "legal-personality",
+   "name": "Legal personality",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 5,
+   "year_span": [
+    "2016",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/legal-personality",
+   "json": "https://wulfkaal.github.io/entities/legal-personality.json",
+   "md": "https://wulfkaal.github.io/entities/legal-personality.md",
+   "content_sha256": "2f94237c73fff7b32bc5ad27fb64d17764db234db874799a3797c43e1c6d021a",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "lendingrobot",
    "name": "Lendingrobot",
    "status": "derived",
@@ -11415,6 +11649,24 @@
    "aliases": []
   },
   {
+   "slug": "mechanism",
+   "name": "Mechanism",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 4,
+   "year_span": [
+    "2015",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/mechanism",
+   "json": "https://wulfkaal.github.io/entities/mechanism.json",
+   "md": "https://wulfkaal.github.io/entities/mechanism.md",
+   "content_sha256": "b04f14ed898699d7a518079e9f5c7ddcb08015789fe07958fe68b84c0c211610",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "minority-protection",
    "name": "Minority protection",
    "status": "derived",
@@ -11536,24 +11788,6 @@
    "json": "https://wulfkaal.github.io/entities/peg-defense.json",
    "md": "https://wulfkaal.github.io/entities/peg-defense.md",
    "content_sha256": "d77bd669960657b11b6e88ad0ed73653912f62c40c94c29629a9ad337150b711",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "persistence",
-   "name": "Persistence",
-   "status": "derived",
-   "claim_count": 6,
-   "work_count": 2,
-   "year_span": [
-    "2014",
-    "2019"
-   ],
-   "url": "https://wulfkaal.github.io/entities/persistence",
-   "json": "https://wulfkaal.github.io/entities/persistence.json",
-   "md": "https://wulfkaal.github.io/entities/persistence.md",
-   "content_sha256": "212f3d4d6f79d4cb5fe7e8acf8835d664b2142e39dc0a3eca2f15d6a1a96f7b0",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -11829,6 +12063,24 @@
    "aliases": []
   },
   {
+   "slug": "reputation-weighting",
+   "name": "Reputation weighting",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 6,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-weighting",
+   "json": "https://wulfkaal.github.io/entities/reputation-weighting.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-weighting.md",
+   "content_sha256": "8474b0fb4b1305ea8e4fb5453b6231ac1c58c3f866ff5175859ecaff30e5d84e",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "returns-to-scale",
    "name": "Returns to scale",
    "status": "derived",
@@ -11842,6 +12094,24 @@
    "json": "https://wulfkaal.github.io/entities/returns-to-scale.json",
    "md": "https://wulfkaal.github.io/entities/returns-to-scale.md",
    "content_sha256": "10b2d3935c82f8a5e662c1ef32a01556e8545e40168593f7c922ee256f9b9c65",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "review",
+   "name": "Review",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/review",
+   "json": "https://wulfkaal.github.io/entities/review.json",
+   "md": "https://wulfkaal.github.io/entities/review.md",
+   "content_sha256": "c8014a0d284f2c7bcbdd5876132bc26f253e84327f52a7c782e133776040d8d3",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -11878,6 +12148,24 @@
    "json": "https://wulfkaal.github.io/entities/rule-506c.json",
    "md": "https://wulfkaal.github.io/entities/rule-506c.md",
    "content_sha256": "0e16c636ab735bb6ce2007df2cd286889743cded7a35bee32cff69763768c69d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "sanctions",
+   "name": "Sanctions",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 4,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/sanctions",
+   "json": "https://wulfkaal.github.io/entities/sanctions.json",
+   "md": "https://wulfkaal.github.io/entities/sanctions.md",
+   "content_sha256": "8bcb7bc74821b99ac686af61be66e083a78f5c288300a845a4450d9bca06fd6e",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -11991,6 +12279,24 @@
    "aliases": []
   },
   {
+   "slug": "thresholds",
+   "name": "Thresholds",
+   "status": "derived",
+   "claim_count": 6,
+   "work_count": 2,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/thresholds",
+   "json": "https://wulfkaal.github.io/entities/thresholds.json",
+   "md": "https://wulfkaal.github.io/entities/thresholds.md",
+   "content_sha256": "97bd139afa0313803eb9c3f4f4470e8a14d0efa4de5c3258b3838f2b00998eeb",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "tokens",
    "name": "Tokens",
    "status": "derived",
@@ -12040,24 +12346,6 @@
    "json": "https://wulfkaal.github.io/entities/trial-and-error-rulemaking.json",
    "md": "https://wulfkaal.github.io/entities/trial-and-error-rulemaking.md",
    "content_sha256": "8e5c962aa29e3728a10a5758f2afa3bf899501076cd498844d7a1b831112d51e",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "uncertainty",
-   "name": "Uncertainty",
-   "status": "derived",
-   "claim_count": 6,
-   "work_count": 5,
-   "year_span": [
-    "2012",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/uncertainty",
-   "json": "https://wulfkaal.github.io/entities/uncertainty.json",
-   "md": "https://wulfkaal.github.io/entities/uncertainty.md",
-   "content_sha256": "2055dbaba8c8ad517887f86712c87bbe1103bf8f1483df3f9122dc024f7c5110",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -12279,24 +12567,6 @@
    "aliases": []
   },
   {
-   "slug": "architecture",
-   "name": "Architecture",
-   "status": "derived",
-   "claim_count": 5,
-   "work_count": 3,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/architecture",
-   "json": "https://wulfkaal.github.io/entities/architecture.json",
-   "md": "https://wulfkaal.github.io/entities/architecture.md",
-   "content_sha256": "2558df0e6fc68feeb106210c8f537e324ea263502076415558eb7191226c8a6a",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "asset-management",
    "name": "Asset management",
    "status": "derived",
@@ -12315,19 +12585,19 @@
    "aliases": []
   },
   {
-   "slug": "audit",
-   "name": "Audit",
+   "slug": "assumptions",
+   "name": "Assumptions",
    "status": "derived",
    "claim_count": 5,
    "work_count": 3,
    "year_span": [
-    "2019",
-    "2021"
+    "2014",
+    "2026"
    ],
-   "url": "https://wulfkaal.github.io/entities/audit",
-   "json": "https://wulfkaal.github.io/entities/audit.json",
-   "md": "https://wulfkaal.github.io/entities/audit.md",
-   "content_sha256": "c1d302fb18f1e148b7d81f916613aa0d31b27681068c20ccbc4974da45709a35",
+   "url": "https://wulfkaal.github.io/entities/assumptions",
+   "json": "https://wulfkaal.github.io/entities/assumptions.json",
+   "md": "https://wulfkaal.github.io/entities/assumptions.md",
+   "content_sha256": "7bd15010b1d762bb0e60f0114fc8eb25db0cb4121ce1ae542ec0a706c7a3e2ac",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -12999,24 +13269,6 @@
    "aliases": []
   },
   {
-   "slug": "design",
-   "name": "Design",
-   "status": "derived",
-   "claim_count": 5,
-   "work_count": 4,
-   "year_span": [
-    "2019",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/design",
-   "json": "https://wulfkaal.github.io/entities/design.json",
-   "md": "https://wulfkaal.github.io/entities/design.md",
-   "content_sha256": "aba382d8651800e16017e2f25a5415a259823c89f034ee0c4208c8b710fbc19f",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "digital-property",
    "name": "Digital property",
    "status": "derived",
@@ -13066,6 +13318,24 @@
    "json": "https://wulfkaal.github.io/entities/distressed-debt.json",
    "md": "https://wulfkaal.github.io/entities/distressed-debt.md",
    "content_sha256": "807c353e0e48f4bc52daa5f7d1fc7b62d448b9421f6c163e7972d83f55489a25",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "diversity",
+   "name": "Diversity",
+   "status": "derived",
+   "claim_count": 5,
+   "work_count": 4,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/diversity",
+   "json": "https://wulfkaal.github.io/entities/diversity.json",
+   "md": "https://wulfkaal.github.io/entities/diversity.md",
+   "content_sha256": "02f054ac4b28e42a6f994ea5da113a5d5a29a6ca9c60060c74a819e7f553893c",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -13881,24 +14151,6 @@
    "aliases": []
   },
   {
-   "slug": "legal-personality",
-   "name": "Legal personality",
-   "status": "derived",
-   "claim_count": 5,
-   "work_count": 4,
-   "year_span": [
-    "2016",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/legal-personality",
-   "json": "https://wulfkaal.github.io/entities/legal-personality.json",
-   "md": "https://wulfkaal.github.io/entities/legal-personality.md",
-   "content_sha256": "95889d08b34a28162201849439bca76e5d38b46827218d710b9a05df20ec3caf",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "legal-risk",
    "name": "Legal risk",
    "status": "derived",
@@ -13948,6 +14200,24 @@
    "json": "https://wulfkaal.github.io/entities/limited-liability.json",
    "md": "https://wulfkaal.github.io/entities/limited-liability.md",
    "content_sha256": "f667835575e328796deb7333f23a870cfe031b2708167467ca7b094357d8d3c1",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "limits",
+   "name": "Limits",
+   "status": "derived",
+   "claim_count": 5,
+   "work_count": 5,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/limits",
+   "json": "https://wulfkaal.github.io/entities/limits.json",
+   "md": "https://wulfkaal.github.io/entities/limits.md",
+   "content_sha256": "14835866ba846f047e75be00be9a6972e88afcbf5f2e3018bc7a5e7062e3a9e8",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -14133,6 +14403,24 @@
    "aliases": []
   },
   {
+   "slug": "optimization",
+   "name": "Optimization",
+   "status": "derived",
+   "claim_count": 5,
+   "work_count": 4,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/optimization",
+   "json": "https://wulfkaal.github.io/entities/optimization.json",
+   "md": "https://wulfkaal.github.io/entities/optimization.md",
+   "content_sha256": "ed17d709ffc305f4e0a9a0c4d2ef203df99e90b20d7e2d055b7393cf710fbc69",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "overcollateralization",
    "name": "Overcollateralization",
    "status": "derived",
@@ -14218,24 +14506,6 @@
    "json": "https://wulfkaal.github.io/entities/participation-incentives.json",
    "md": "https://wulfkaal.github.io/entities/participation-incentives.md",
    "content_sha256": "e3726f8d5816d007b5f81a84e9c6b71a468dab3a27ca328deea90a232f01f6aa",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "peer-review",
-   "name": "Peer review",
-   "status": "derived",
-   "claim_count": 5,
-   "work_count": 5,
-   "year_span": [
-    "2021",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/peer-review",
-   "json": "https://wulfkaal.github.io/entities/peer-review.json",
-   "md": "https://wulfkaal.github.io/entities/peer-review.md",
-   "content_sha256": "579f808663dd2db995207f5fd85084cd3c57c13ef489f6e6df8cf29b0cbb39a3",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -14601,6 +14871,24 @@
    "aliases": []
   },
   {
+   "slug": "reputation-salary",
+   "name": "Reputation salary",
+   "status": "derived",
+   "claim_count": 5,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-salary",
+   "json": "https://wulfkaal.github.io/entities/reputation-salary.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-salary.md",
+   "content_sha256": "cabf0e3f103aa0340c44b8506824ba1679e689501ab9fc9f9ab2fb258f4c4d87",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "reputation-weighted-salary",
    "name": "Reputation weighted salary",
    "status": "derived",
@@ -14614,24 +14902,6 @@
    "json": "https://wulfkaal.github.io/entities/reputation-weighted-salary.json",
    "md": "https://wulfkaal.github.io/entities/reputation-weighted-salary.md",
    "content_sha256": "266aba45b632b5b6ca45d5edd96be45166ab137b1fa6a10baf3a1c08012f1aac",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "reputation-weighting",
-   "name": "Reputation weighting",
-   "status": "derived",
-   "claim_count": 5,
-   "work_count": 5,
-   "year_span": [
-    "2018",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation-weighting",
-   "json": "https://wulfkaal.github.io/entities/reputation-weighting.json",
-   "md": "https://wulfkaal.github.io/entities/reputation-weighting.md",
-   "content_sha256": "0809f8c67c28e8f7e85b6ce06802e9a2dfe66c3f345ee04af5aa325ba6137af5",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -14740,6 +15010,24 @@
    "json": "https://wulfkaal.github.io/entities/scope-limitation.json",
    "md": "https://wulfkaal.github.io/entities/scope-limitation.md",
    "content_sha256": "9663a6726b4e6a243337b260e816e77ddd57f4a6e0070c5ece2c62660894e9e0",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "screening",
+   "name": "Screening",
+   "status": "derived",
+   "claim_count": 5,
+   "work_count": 5,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/screening",
+   "json": "https://wulfkaal.github.io/entities/screening.json",
+   "md": "https://wulfkaal.github.io/entities/screening.md",
+   "content_sha256": "611c6a3d2669e0189ed675c6bfd6a424ff8d8c6a5de3b1ac2df19e7a73e7a999",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -15897,6 +16185,24 @@
    "aliases": []
   },
   {
+   "slug": "caps",
+   "name": "Caps",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 2,
+   "year_span": [
+    "2020",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/caps",
+   "json": "https://wulfkaal.github.io/entities/caps.json",
+   "md": "https://wulfkaal.github.io/entities/caps.md",
+   "content_sha256": "25e2e82cb9d951d4a8f4df9e209251addb31c8f00e7eee3c8889f973369b58d6",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "cdo",
    "name": "Cdo",
    "status": "derived",
@@ -16072,6 +16378,24 @@
    "json": "https://wulfkaal.github.io/entities/coasean-singularity.json",
    "md": "https://wulfkaal.github.io/entities/coasean-singularity.md",
    "content_sha256": "ad43299f17707ca0132ba2bc8dd91f4962aa304152aeafe36ef9b6b2ddeac3e3",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "code",
+   "name": "Code",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 3,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/code",
+   "json": "https://wulfkaal.github.io/entities/code.json",
+   "md": "https://wulfkaal.github.io/entities/code.md",
+   "content_sha256": "77a83732eeffb5b37324ed1a04ff7448b96490b1892f28754b2e9b676c227262",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -16324,6 +16648,24 @@
    "json": "https://wulfkaal.github.io/entities/concentration.json",
    "md": "https://wulfkaal.github.io/entities/concentration.md",
    "content_sha256": "5bb00317709cc19c15c284ee2d40eb6eeb7d4ec8ebc8b53bb881901803b410f2",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "correlation",
+   "name": "Correlation",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 3,
+   "year_span": [
+    "2016",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/correlation",
+   "json": "https://wulfkaal.github.io/entities/correlation.json",
+   "md": "https://wulfkaal.github.io/entities/correlation.md",
+   "content_sha256": "853cf43c588eaff208b208e26028242c8adb6965baa081dc373e4871f0026e05",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -16815,19 +17157,19 @@
    "aliases": []
   },
   {
-   "slug": "diversity",
-   "name": "Diversity",
+   "slug": "distribution",
+   "name": "Distribution",
    "status": "derived",
    "claim_count": 4,
-   "work_count": 3,
+   "work_count": 4,
    "year_span": [
-    "2021",
-    "2022"
+    "2016",
+    "2026"
    ],
-   "url": "https://wulfkaal.github.io/entities/diversity",
-   "json": "https://wulfkaal.github.io/entities/diversity.json",
-   "md": "https://wulfkaal.github.io/entities/diversity.md",
-   "content_sha256": "0672832ce124b37d0ffec36e49a19cd05d7fe336da9ed6073f653d440fc284fa",
+   "url": "https://wulfkaal.github.io/entities/distribution",
+   "json": "https://wulfkaal.github.io/entities/distribution.json",
+   "md": "https://wulfkaal.github.io/entities/distribution.md",
+   "content_sha256": "9506f9a289e191b1e99530d3277ccbfe5f1fedfc2fc612cbaeda2b622c6cc077",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -17080,6 +17422,24 @@
    "json": "https://wulfkaal.github.io/entities/exogenous-constraint.json",
    "md": "https://wulfkaal.github.io/entities/exogenous-constraint.md",
    "content_sha256": "553010a05414ecd9916b311a57396fc3f46181d1e50664bc7467e842cd0ad5b0",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "experiment",
+   "name": "Experiment",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/experiment",
+   "json": "https://wulfkaal.github.io/entities/experiment.json",
+   "md": "https://wulfkaal.github.io/entities/experiment.md",
+   "content_sha256": "4c68318ccc4296f0562ebb8087381d4d32961e72234791506ad4380c2b697f83",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -18057,24 +18417,6 @@
    "aliases": []
   },
   {
-   "slug": "mechanism",
-   "name": "Mechanism",
-   "status": "derived",
-   "claim_count": 4,
-   "work_count": 2,
-   "year_span": [
-    "2015",
-    "2016"
-   ],
-   "url": "https://wulfkaal.github.io/entities/mechanism",
-   "json": "https://wulfkaal.github.io/entities/mechanism.json",
-   "md": "https://wulfkaal.github.io/entities/mechanism.md",
-   "content_sha256": "8e41d8f12ccf662bf185a910649aeb7d19aa2848364ae2e5902b4be7f11f7923",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "microsecond-updates",
    "name": "Microsecond updates",
    "status": "derived",
@@ -18394,24 +18736,6 @@
    "json": "https://wulfkaal.github.io/entities/optimal-rules.json",
    "md": "https://wulfkaal.github.io/entities/optimal-rules.md",
    "content_sha256": "fd96d721eedacaddbfee86e0243ddfe90085dfbb9188bfe7278f3e218102508a",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "optimization",
-   "name": "Optimization",
-   "status": "derived",
-   "claim_count": 4,
-   "work_count": 3,
-   "year_span": [
-    "2013",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/optimization",
-   "json": "https://wulfkaal.github.io/entities/optimization.json",
-   "md": "https://wulfkaal.github.io/entities/optimization.md",
-   "content_sha256": "533b8a5f2a2e3fe41beb1263edc5caa52b6475035cd409879bfacc865cda7f0a",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -19101,6 +19425,24 @@
    "aliases": []
   },
   {
+   "slug": "regulators",
+   "name": "Regulators",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 3,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/regulators",
+   "json": "https://wulfkaal.github.io/entities/regulators.json",
+   "md": "https://wulfkaal.github.io/entities/regulators.md",
+   "content_sha256": "d6a57478e7e4363a4c86515a2f737aa7888c0b0d00652257c132489f18a4573e",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "regulatory-adaptation",
    "name": "Regulatory adaptation",
    "status": "derived",
@@ -19335,24 +19677,6 @@
    "aliases": []
   },
   {
-   "slug": "reputation-salary",
-   "name": "Reputation salary",
-   "status": "derived",
-   "claim_count": 4,
-   "work_count": 2,
-   "year_span": [
-    "2021",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reputation-salary",
-   "json": "https://wulfkaal.github.io/entities/reputation-salary.json",
-   "md": "https://wulfkaal.github.io/entities/reputation-salary.md",
-   "content_sha256": "38ca2d0b998f0f0bfe51a441d18646c106c151810da786465005052d39d0daea",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "reputation-value",
    "name": "Reputation value",
    "status": "derived",
@@ -19533,6 +19857,24 @@
    "aliases": []
   },
   {
+   "slug": "salaries",
+   "name": "Salaries",
+   "status": "derived",
+   "claim_count": 4,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/salaries",
+   "json": "https://wulfkaal.github.io/entities/salaries.json",
+   "md": "https://wulfkaal.github.io/entities/salaries.md",
+   "content_sha256": "c8d950dc121c9662ab70b6ab6d67569019189476997fee2b0de376851723684d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "sample-construction",
    "name": "Sample construction",
    "status": "derived",
@@ -19564,24 +19906,6 @@
    "json": "https://wulfkaal.github.io/entities/scienter.json",
    "md": "https://wulfkaal.github.io/entities/scienter.md",
    "content_sha256": "6b66397903aa9ff94a16ea85dbd4fefa808370011765b9ab360907c131c8800c",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "screening",
-   "name": "Screening",
-   "status": "derived",
-   "claim_count": 4,
-   "work_count": 4,
-   "year_span": [
-    "2014",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/screening",
-   "json": "https://wulfkaal.github.io/entities/screening.json",
-   "md": "https://wulfkaal.github.io/entities/screening.md",
-   "content_sha256": "be19b2ef92c6f9591cb8cff509f8ecd5a0fdc7a257e85a72ff1dbeb80809a8d2",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -20199,19 +20523,19 @@
    "aliases": []
   },
   {
-   "slug": "validators",
-   "name": "Validators",
+   "slug": "verifiers",
+   "name": "Verifiers",
    "status": "derived",
    "claim_count": 4,
-   "work_count": 1,
+   "work_count": 2,
    "year_span": [
-    "2026",
+    "2018",
     "2026"
    ],
-   "url": "https://wulfkaal.github.io/entities/validators",
-   "json": "https://wulfkaal.github.io/entities/validators.json",
-   "md": "https://wulfkaal.github.io/entities/validators.md",
-   "content_sha256": "fd9c8f9f9afc68f98aae6820595f5b6e2b6178122fe8a4968e17679dd7f294b1",
+   "url": "https://wulfkaal.github.io/entities/verifiers",
+   "json": "https://wulfkaal.github.io/entities/verifiers.json",
+   "md": "https://wulfkaal.github.io/entities/verifiers.md",
+   "content_sha256": "d2787366d8e04c349c89ee0fd0dadd672ac163cc61efc04392f59e14bdd05ef7",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -20320,6 +20644,24 @@
    "json": "https://wulfkaal.github.io/entities/abuse.json",
    "md": "https://wulfkaal.github.io/entities/abuse.md",
    "content_sha256": "12f4ef6e5baafecebdc56d8a6e281201340a293778631aa5697d53684c7c2222",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "accuracy",
+   "name": "Accuracy",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/accuracy",
+   "json": "https://wulfkaal.github.io/entities/accuracy.json",
+   "md": "https://wulfkaal.github.io/entities/accuracy.md",
+   "content_sha256": "c6d9b81aec5907d8c4db0cba7e26fa7ddfe069ca1d2dfa96114f25929763d2b4",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -20523,24 +20865,6 @@
    "aliases": []
   },
   {
-   "slug": "allocation",
-   "name": "Allocation",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 2,
-   "year_span": [
-    "2022",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/allocation",
-   "json": "https://wulfkaal.github.io/entities/allocation.json",
-   "md": "https://wulfkaal.github.io/entities/allocation.md",
-   "content_sha256": "462d7148195011be565bee84cb8106102ac170a6abb68292a42dae2ac5806f42",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "altruism",
    "name": "Altruism",
    "status": "derived",
@@ -20698,6 +21022,42 @@
    "json": "https://wulfkaal.github.io/entities/audit-firms.json",
    "md": "https://wulfkaal.github.io/entities/audit-firms.md",
    "content_sha256": "4f0be5131555351585baae4fb5394314324260ebfeba389c71b2cec55d201f6a",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "auditing",
+   "name": "Auditing",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2017",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/auditing",
+   "json": "https://wulfkaal.github.io/entities/auditing.json",
+   "md": "https://wulfkaal.github.io/entities/auditing.md",
+   "content_sha256": "ffdb8a0d055ad38621686211d8883459c06a097155a2c521b46a2e9a189e9736",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "authentication",
+   "name": "Authentication",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/authentication",
+   "json": "https://wulfkaal.github.io/entities/authentication.json",
+   "md": "https://wulfkaal.github.io/entities/authentication.md",
+   "content_sha256": "b24ae8fb9167feb9123a75c841f9d1d8b1c4ecf2be356de8f91be9d549427605",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -20883,6 +21243,24 @@
    "aliases": []
   },
   {
+   "slug": "bias-amplification",
+   "name": "Bias amplification",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2024",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/bias-amplification",
+   "json": "https://wulfkaal.github.io/entities/bias-amplification.json",
+   "md": "https://wulfkaal.github.io/entities/bias-amplification.md",
+   "content_sha256": "b61bc4329149ea224c93428a2abdda961822d80adcedb7cf970562e5b9e5a1bf",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "bidding",
    "name": "Bidding",
    "status": "derived",
@@ -21004,6 +21382,24 @@
    "json": "https://wulfkaal.github.io/entities/bottleneck.json",
    "md": "https://wulfkaal.github.io/entities/bottleneck.md",
    "content_sha256": "d1fc1d60e54d3276efbfaf14c49e1ad410b6c7b346d2a957406b828f76c07d0d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "bounties",
+   "name": "Bounties",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/bounties",
+   "json": "https://wulfkaal.github.io/entities/bounties.json",
+   "md": "https://wulfkaal.github.io/entities/bounties.md",
+   "content_sha256": "91a89ba8fbf8ac9b6c9d52953f8cc4136d852809ce0fbd3b03e9a4c77f7063f7",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -22233,24 +22629,6 @@
    "aliases": []
   },
   {
-   "slug": "correlation",
-   "name": "Correlation",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 2,
-   "year_span": [
-    "2016",
-    "2017"
-   ],
-   "url": "https://wulfkaal.github.io/entities/correlation",
-   "json": "https://wulfkaal.github.io/entities/correlation.json",
-   "md": "https://wulfkaal.github.io/entities/correlation.md",
-   "content_sha256": "fe6b51e3373a64298fd3eb5aab480ee31ed55228815838e7bfc07521c9227c7f",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "cost-distribution",
    "name": "Cost distribution",
    "status": "derived",
@@ -22300,6 +22678,24 @@
    "json": "https://wulfkaal.github.io/entities/cost-of-cash.json",
    "md": "https://wulfkaal.github.io/entities/cost-of-cash.md",
    "content_sha256": "c245013093bc9318e0bad0e22627ee21d9f24a4ed2582bed051e3e01dd9d6d7f",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "coverage",
+   "name": "Coverage",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2026",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/coverage",
+   "json": "https://wulfkaal.github.io/entities/coverage.json",
+   "md": "https://wulfkaal.github.io/entities/coverage.md",
+   "content_sha256": "2067a7c6e67aa6bebedda0fb3c632f7b4decbce31ee824fd06807523a8ab9733",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -22480,6 +22876,24 @@
    "json": "https://wulfkaal.github.io/entities/crypto-payments.json",
    "md": "https://wulfkaal.github.io/entities/crypto-payments.md",
    "content_sha256": "5c813d1b2a89b24873340cbbf91fb5a47eebf832fb9b7eb4892da0fbf331ad04",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "cryptographic-attestation",
+   "name": "Cryptographic attestation",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/cryptographic-attestation",
+   "json": "https://wulfkaal.github.io/entities/cryptographic-attestation.json",
+   "md": "https://wulfkaal.github.io/entities/cryptographic-attestation.md",
+   "content_sha256": "44c8137d3817f13fd736cd97b85204eacf48cda3a67c22d369f2f812d89d4d24",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -22755,6 +23169,24 @@
    "aliases": []
   },
   {
+   "slug": "deliberation",
+   "name": "Deliberation",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/deliberation",
+   "json": "https://wulfkaal.github.io/entities/deliberation.json",
+   "md": "https://wulfkaal.github.io/entities/deliberation.md",
+   "content_sha256": "749dd2067b0f105047a1f1696ffac9b13a450bacc5f8ccc24e20731a29b57761",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "democratic-legitimacy",
    "name": "Democratic legitimacy",
    "status": "derived",
@@ -22822,6 +23254,24 @@
    "json": "https://wulfkaal.github.io/entities/design-constraint.json",
    "md": "https://wulfkaal.github.io/entities/design-constraint.md",
    "content_sha256": "42ac864452ff5b000ddfbc2372b6a0836cb25d88c8dd0c5371f144bb6da649b9",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "detection",
+   "name": "Detection",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/detection",
+   "json": "https://wulfkaal.github.io/entities/detection.json",
+   "md": "https://wulfkaal.github.io/entities/detection.md",
+   "content_sha256": "1a3630f039c64aac9decc6a0f10c3dde242608554e8c6fc15421dc9d2b479bb9",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -23025,24 +23475,6 @@
    "aliases": []
   },
   {
-   "slug": "distribution",
-   "name": "Distribution",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 3,
-   "year_span": [
-    "2016",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/distribution",
-   "json": "https://wulfkaal.github.io/entities/distribution.json",
-   "md": "https://wulfkaal.github.io/entities/distribution.md",
-   "content_sha256": "66fc39e7d001063a8b0e771597f43f113ba69b45d26896e40486e354e66d3449",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "dlom",
    "name": "Dlom",
    "status": "derived",
@@ -23056,6 +23488,24 @@
    "json": "https://wulfkaal.github.io/entities/dlom.json",
    "md": "https://wulfkaal.github.io/entities/dlom.md",
    "content_sha256": "f0a30d818ac0c92e828457897fdb695c4cdb95881234b6904f8ddee97849c7b7",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "domain-specific-reputation",
+   "name": "Domain specific reputation",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/domain-specific-reputation",
+   "json": "https://wulfkaal.github.io/entities/domain-specific-reputation.json",
+   "md": "https://wulfkaal.github.io/entities/domain-specific-reputation.md",
+   "content_sha256": "b7df4698dc50f1809383f1e4a71931e2b7ae4e5e876bc843a548c2916aad7780",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -24339,6 +24789,24 @@
    "aliases": []
   },
   {
+   "slug": "hypothesis",
+   "name": "Hypothesis",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/hypothesis",
+   "json": "https://wulfkaal.github.io/entities/hypothesis.json",
+   "md": "https://wulfkaal.github.io/entities/hypothesis.md",
+   "content_sha256": "d9bf955deb20211053288b027b83e41c7ff98bdd2a5f7e2466c883fddda42667",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "ieo",
    "name": "Ieo",
    "status": "derived",
@@ -24370,6 +24838,24 @@
    "json": "https://wulfkaal.github.io/entities/illiquidity.json",
    "md": "https://wulfkaal.github.io/entities/illiquidity.md",
    "content_sha256": "c0bed69bd6aee371bac34d8d69b12856cb4f17caa878196e2101c34b0a34141f",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "implementation-failure",
+   "name": "Implementation failure",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/implementation-failure",
+   "json": "https://wulfkaal.github.io/entities/implementation-failure.json",
+   "md": "https://wulfkaal.github.io/entities/implementation-failure.md",
+   "content_sha256": "ff7ebfe901ccb283e18529c8b2aeedd9c3ebc26565fa561f1c25d3f8f130009f",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -25545,24 +26031,6 @@
    "aliases": []
   },
   {
-   "slug": "limits",
-   "name": "Limits",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 3,
-   "year_span": [
-    "2013",
-    "2022"
-   ],
-   "url": "https://wulfkaal.github.io/entities/limits",
-   "json": "https://wulfkaal.github.io/entities/limits.json",
-   "md": "https://wulfkaal.github.io/entities/limits.md",
-   "content_sha256": "07d782d57b8be2a0b99e0403f04989c92c107d1563bf89e93a0cd5d53974cff5",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "liquid-alternatives",
    "name": "Liquid alternatives",
    "status": "derived",
@@ -25594,6 +26062,24 @@
    "json": "https://wulfkaal.github.io/entities/liquid-staking.json",
    "md": "https://wulfkaal.github.io/entities/liquid-staking.md",
    "content_sha256": "09aac08d5fbc1ed677ccd9fdd81df8b533b2c49034bce9145fcd109cf7733566",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "literature",
+   "name": "Literature",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2015",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/literature",
+   "json": "https://wulfkaal.github.io/entities/literature.json",
+   "md": "https://wulfkaal.github.io/entities/literature.md",
+   "content_sha256": "2db1fbb5d8553e02e89ed15451221ade78e2c15798afd10b268ef7f47cb427e5",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -26193,6 +26679,24 @@
    "aliases": []
   },
   {
+   "slug": "money",
+   "name": "Money",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/money",
+   "json": "https://wulfkaal.github.io/entities/money.json",
+   "md": "https://wulfkaal.github.io/entities/money.md",
+   "content_sha256": "a7d896db38544bdf712554ae8e5d7e38844f031ee8fc38a568e51421986e5d02",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "monitoring-costs",
    "name": "Monitoring costs",
    "status": "derived",
@@ -26391,6 +26895,24 @@
    "aliases": []
   },
   {
+   "slug": "novelty",
+   "name": "Novelty",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/novelty",
+   "json": "https://wulfkaal.github.io/entities/novelty.json",
+   "md": "https://wulfkaal.github.io/entities/novelty.md",
+   "content_sha256": "a19d54136bbc747e022e60f6352685898a96b3e6ff485d74a94b58d677bcfec8",
+   "non_current_claims": 1,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "numeraire",
    "name": "Numeraire",
    "status": "derived",
@@ -26494,6 +27016,24 @@
    "json": "https://wulfkaal.github.io/entities/overhead-institutions.json",
    "md": "https://wulfkaal.github.io/entities/overhead-institutions.md",
    "content_sha256": "d31813ef96e753c66b9921044514ac87796723a359be882bb13a6e0e128c7e09",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "p-values",
+   "name": "P values",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2016",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/p-values",
+   "json": "https://wulfkaal.github.io/entities/p-values.json",
+   "md": "https://wulfkaal.github.io/entities/p-values.md",
+   "content_sha256": "8df8ac0d01586e89bcc4dea8d6c47c5044cdf70de2bd569ba6bef7230406adef",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -27399,24 +27939,6 @@
    "aliases": []
   },
   {
-   "slug": "regulators",
-   "name": "Regulators",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 2,
-   "year_span": [
-    "2013",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/regulators",
-   "json": "https://wulfkaal.github.io/entities/regulators.json",
-   "md": "https://wulfkaal.github.io/entities/regulators.md",
-   "content_sha256": "3de4f9f1b519fca446375e220979aa9b48d2f65d54c5d15cb5662758175428b8",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "regulatory-authority",
    "name": "Regulatory authority",
    "status": "derived",
@@ -27651,6 +28173,24 @@
    "aliases": []
   },
   {
+   "slug": "reinforcement-learning",
+   "name": "Reinforcement learning",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2024",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reinforcement-learning",
+   "json": "https://wulfkaal.github.io/entities/reinforcement-learning.json",
+   "md": "https://wulfkaal.github.io/entities/reinforcement-learning.md",
+   "content_sha256": "7e44a324295180775f3c21bc0ed38dfdb3bba7836b77620c4ca796e3a025d033",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "reliability",
    "name": "Reliability",
    "status": "derived",
@@ -27813,6 +28353,24 @@
    "aliases": []
   },
   {
+   "slug": "resistance",
+   "name": "Resistance",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/resistance",
+   "json": "https://wulfkaal.github.io/entities/resistance.json",
+   "md": "https://wulfkaal.github.io/entities/resistance.md",
+   "content_sha256": "be359b5a1a7008d54de1da5bb2a599d23bbb0903c0bcad98bbef9609ab76b432",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "resolution",
    "name": "Resolution",
    "status": "derived",
@@ -27844,24 +28402,6 @@
    "json": "https://wulfkaal.github.io/entities/resource-allocation.json",
    "md": "https://wulfkaal.github.io/entities/resource-allocation.md",
    "content_sha256": "31c91ce107f21120fcfa4a7055cff4e744ea76f9b9cd729a33c0d86c83b9f8f7",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "retention",
-   "name": "Retention",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 2,
-   "year_span": [
-    "2025",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/retention",
-   "json": "https://wulfkaal.github.io/entities/retention.json",
-   "md": "https://wulfkaal.github.io/entities/retention.md",
-   "content_sha256": "f55458acd1638bd0b0e8460c3131ea98ed6d3e06479559d4ffb66535fcff4776",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -28029,19 +28569,19 @@
    "aliases": []
   },
   {
-   "slug": "sanctions",
-   "name": "Sanctions",
+   "slug": "sampling",
+   "name": "Sampling",
    "status": "derived",
    "claim_count": 3,
    "work_count": 3,
    "year_span": [
-    "2013",
-    "2017"
+    "2014",
+    "2026"
    ],
-   "url": "https://wulfkaal.github.io/entities/sanctions",
-   "json": "https://wulfkaal.github.io/entities/sanctions.json",
-   "md": "https://wulfkaal.github.io/entities/sanctions.md",
-   "content_sha256": "83fdca27cbd14df28938f9e3e0590bc2c52dbceb3bc68d8b9b2076576722ba07",
+   "url": "https://wulfkaal.github.io/entities/sampling",
+   "json": "https://wulfkaal.github.io/entities/sampling.json",
+   "md": "https://wulfkaal.github.io/entities/sampling.md",
+   "content_sha256": "48c347eb7bddc446c82a60dc2be82b189ff38132691a70a20ca5f5da7f2c412b",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -28222,6 +28762,24 @@
    "json": "https://wulfkaal.github.io/entities/securities-class-actions.json",
    "md": "https://wulfkaal.github.io/entities/securities-class-actions.md",
    "content_sha256": "9c44cede6ffaf9b4c8961ffea307e3f10d1688a7e7413e66d846abf48d5547da",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "selection",
+   "name": "Selection",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 2,
+   "year_span": [
+    "2018",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/selection",
+   "json": "https://wulfkaal.github.io/entities/selection.json",
+   "md": "https://wulfkaal.github.io/entities/selection.md",
+   "content_sha256": "29abe81ca3fc17722e96d92548b1f6e5ee6e226e98ea74a46e5d1561893fe8cc",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -28965,24 +29523,6 @@
    "aliases": []
   },
   {
-   "slug": "thresholds",
-   "name": "Thresholds",
-   "status": "derived",
-   "claim_count": 3,
-   "work_count": 1,
-   "year_span": [
-    "2014",
-    "2014"
-   ],
-   "url": "https://wulfkaal.github.io/entities/thresholds",
-   "json": "https://wulfkaal.github.io/entities/thresholds.json",
-   "md": "https://wulfkaal.github.io/entities/thresholds.md",
-   "content_sha256": "bfb912ff5be9a6c0ada16378dc784a7eb92cdc6d349d7c44a66899b3c35cfa70",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "timeliness",
    "name": "Timeliness",
    "status": "derived",
@@ -29554,6 +30094,24 @@
    "json": "https://wulfkaal.github.io/entities/vow-ecosystem.json",
    "md": "https://wulfkaal.github.io/entities/vow-ecosystem.md",
    "content_sha256": "84fe5d58a2a2f8bb3769949565fcfdf2772b4b72b6107d352c9e3a528d1149ff",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "wallets",
+   "name": "Wallets",
+   "status": "derived",
+   "claim_count": 3,
+   "work_count": 3,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/wallets",
+   "json": "https://wulfkaal.github.io/entities/wallets.json",
+   "md": "https://wulfkaal.github.io/entities/wallets.md",
+   "content_sha256": "fc3c10fd77230f4a9bb1e0b375b48ed50c4732467ac9deeb03bea4a2f5c9626e",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -30927,24 +31485,6 @@
    "aliases": []
   },
   {
-   "slug": "assumptions",
-   "name": "Assumptions",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2014",
-    "2014"
-   ],
-   "url": "https://wulfkaal.github.io/entities/assumptions",
-   "json": "https://wulfkaal.github.io/entities/assumptions.json",
-   "md": "https://wulfkaal.github.io/entities/assumptions.md",
-   "content_sha256": "8a7ae9764dd29b2ae71116490cd32b1a896fd1995f1675db854bffaa9bba48b1",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "attack-economics",
    "name": "Attack economics",
    "status": "derived",
@@ -31030,24 +31570,6 @@
    "json": "https://wulfkaal.github.io/entities/aum-thresholds.json",
    "md": "https://wulfkaal.github.io/entities/aum-thresholds.md",
    "content_sha256": "3af028ab2415c70d85d3c0cb06d585f4971f44be67018302fed5a906fefb9390",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "authentication",
-   "name": "Authentication",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2018",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/authentication",
-   "json": "https://wulfkaal.github.io/entities/authentication.json",
-   "md": "https://wulfkaal.github.io/entities/authentication.md",
-   "content_sha256": "c86667926a57a234a9c427da73a87c4230c46d686477b89718b3342411f54b9e",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -31377,6 +31899,42 @@
    "aliases": []
   },
   {
+   "slug": "baseline",
+   "name": "Baseline",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2010",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/baseline",
+   "json": "https://wulfkaal.github.io/entities/baseline.json",
+   "md": "https://wulfkaal.github.io/entities/baseline.md",
+   "content_sha256": "fb2c79b844967b95572fb54f138d00423340fcf99db0a251a582cbff6d5308ff",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "benchmarks",
+   "name": "Benchmarks",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/benchmarks",
+   "json": "https://wulfkaal.github.io/entities/benchmarks.json",
+   "md": "https://wulfkaal.github.io/entities/benchmarks.md",
+   "content_sha256": "86dd9090ad5c5ed1bea5638e6d16da458689bacbb5c2968f4b157b396ac890ae",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "best-efforts-underwriting",
    "name": "Best efforts underwriting",
    "status": "derived",
@@ -31408,24 +31966,6 @@
    "json": "https://wulfkaal.github.io/entities/betting-pool.json",
    "md": "https://wulfkaal.github.io/entities/betting-pool.md",
    "content_sha256": "bf60c239df4371d2c43e7c74c5048f654adfe61899e15c52826dbab8e3fa4989",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "bias-amplification",
-   "name": "Bias amplification",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2024",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/bias-amplification",
-   "json": "https://wulfkaal.github.io/entities/bias-amplification.json",
-   "md": "https://wulfkaal.github.io/entities/bias-amplification.md",
-   "content_sha256": "d87dc24ea25fbb7c98f469dc12a33106e39577898976b76b0f24248f24b03a34",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -31750,6 +32290,24 @@
    "json": "https://wulfkaal.github.io/entities/boundary-behavior.json",
    "md": "https://wulfkaal.github.io/entities/boundary-behavior.md",
    "content_sha256": "98dbc41463caa02aaa53707861b5e31d71005eac2dfa4551d672661f98efbbdd",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "boundary-cases",
+   "name": "Boundary cases",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2022",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/boundary-cases",
+   "json": "https://wulfkaal.github.io/entities/boundary-cases.json",
+   "md": "https://wulfkaal.github.io/entities/boundary-cases.md",
+   "content_sha256": "a41fd75da8c2d3803c660cc55c6f8456af0c542a2e7ee0ae792c4e4f00fa77a6",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -32164,6 +32722,24 @@
    "json": "https://wulfkaal.github.io/entities/capture-resistance.json",
    "md": "https://wulfkaal.github.io/entities/capture-resistance.md",
    "content_sha256": "d45c36c23ccdebbb4fa868b6f468312abe5a3f532fc7f2a4d1159328a326b476",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "capture-risk",
+   "name": "Capture risk",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/capture-risk",
+   "json": "https://wulfkaal.github.io/entities/capture-risk.json",
+   "md": "https://wulfkaal.github.io/entities/capture-risk.md",
+   "content_sha256": "3b843da58de308d13c63efac872b26f369c3d53ff2f8af2a5e214b3905e326c6",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -32943,6 +33519,24 @@
    "aliases": []
   },
   {
+   "slug": "commitment-schemes",
+   "name": "Commitment schemes",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/commitment-schemes",
+   "json": "https://wulfkaal.github.io/entities/commitment-schemes.json",
+   "md": "https://wulfkaal.github.io/entities/commitment-schemes.md",
+   "content_sha256": "ecc446645afb012d3c51e6c7e6f24bd3d6540f04bd3e7f85892b95fb6d2cffbe",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "common-good",
    "name": "Common good",
    "status": "derived",
@@ -33136,6 +33730,24 @@
    "json": "https://wulfkaal.github.io/entities/compliance-failure.json",
    "md": "https://wulfkaal.github.io/entities/compliance-failure.md",
    "content_sha256": "a2708a54b0e8dff8c2a7a305ed6ab5410874b543ef1dddb0cddc1a740fb6686a",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "compliance-incentives",
+   "name": "Compliance incentives",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/compliance-incentives",
+   "json": "https://wulfkaal.github.io/entities/compliance-incentives.json",
+   "md": "https://wulfkaal.github.io/entities/compliance-incentives.md",
+   "content_sha256": "4b6b4441ca4d250fcfdb511d7567b23e0436f53bbb1e29e4c031cc1f89c52b63",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -33951,6 +34563,24 @@
    "aliases": []
   },
   {
+   "slug": "cost-of-compliance",
+   "name": "Cost of compliance",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2014",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/cost-of-compliance",
+   "json": "https://wulfkaal.github.io/entities/cost-of-compliance.json",
+   "md": "https://wulfkaal.github.io/entities/cost-of-compliance.md",
+   "content_sha256": "991e0246585a96dec500b15a9d50755a727cfb258d4370ec3bb4b60b4aac06c7",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "cost-pass-through",
    "name": "Cost pass through",
    "status": "derived",
@@ -33982,6 +34612,24 @@
    "json": "https://wulfkaal.github.io/entities/costly-signaling.json",
    "md": "https://wulfkaal.github.io/entities/costly-signaling.md",
    "content_sha256": "9c32ee754f9665cc3016c9d85920892052a989d083a5496a75adca67fe804d54",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "costs",
+   "name": "Costs",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/costs",
+   "json": "https://wulfkaal.github.io/entities/costs.json",
+   "md": "https://wulfkaal.github.io/entities/costs.md",
+   "content_sha256": "69aeb8b18552cfad6766f7270fff25a583551961bca5e7c1af5515e142052a2d",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -34054,24 +34702,6 @@
    "json": "https://wulfkaal.github.io/entities/counterparty-monitoring.json",
    "md": "https://wulfkaal.github.io/entities/counterparty-monitoring.md",
    "content_sha256": "9a11cd1bd2fb4812227a0e413d81c5f09af54026f1664c38ae1bc73ec8309d79",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "coverage",
-   "name": "Coverage",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2026",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/coverage",
-   "json": "https://wulfkaal.github.io/entities/coverage.json",
-   "md": "https://wulfkaal.github.io/entities/coverage.md",
-   "content_sha256": "1a5fc064e7d65091144c2657a065319c605e67c11f77deeee1374028f96ca46a",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -34347,6 +34977,24 @@
    "aliases": []
   },
   {
+   "slug": "crowding-out",
+   "name": "Crowding out",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/crowding-out",
+   "json": "https://wulfkaal.github.io/entities/crowding-out.json",
+   "md": "https://wulfkaal.github.io/entities/crowding-out.md",
+   "content_sha256": "feccddf0cc64fc0a89fa6f19547831bcc2f7b2c1efd5b19a9230a60b61c27c07",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "crowdwork",
    "name": "Crowdwork",
    "status": "derived",
@@ -34455,24 +35103,6 @@
    "aliases": []
   },
   {
-   "slug": "cryptographic-attestation",
-   "name": "Cryptographic attestation",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2025",
-    "2026"
-   ],
-   "url": "https://wulfkaal.github.io/entities/cryptographic-attestation",
-   "json": "https://wulfkaal.github.io/entities/cryptographic-attestation.json",
-   "md": "https://wulfkaal.github.io/entities/cryptographic-attestation.md",
-   "content_sha256": "3baf32b91e5d35fe2c70afee738db7876640d08c56c78579882d54eba6b9ace4",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "cryptographic-hashing",
    "name": "Cryptographic hashing",
    "status": "derived",
@@ -34558,6 +35188,42 @@
    "json": "https://wulfkaal.github.io/entities/cultural-bias.json",
    "md": "https://wulfkaal.github.io/entities/cultural-bias.md",
    "content_sha256": "dc4bc45d0a35204f14b081add7d7dec63a3b5d9d365c7641e6c7bfe2ed3209c9",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "curation",
+   "name": "Curation",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/curation",
+   "json": "https://wulfkaal.github.io/entities/curation.json",
+   "md": "https://wulfkaal.github.io/entities/curation.md",
+   "content_sha256": "56047a6f56f0a623fd1e09e9aba3e59d6696d43abd42bc363f743ce4ff421220",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "curators",
+   "name": "Curators",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/curators",
+   "json": "https://wulfkaal.github.io/entities/curators.json",
+   "md": "https://wulfkaal.github.io/entities/curators.md",
+   "content_sha256": "4b7fd6e26c94c44e6893fd45f522e9cbc9ca187063bfe4ceee684e84ec8b3262",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -35373,24 +36039,6 @@
    "aliases": []
   },
   {
-   "slug": "deliberation",
-   "name": "Deliberation",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2021",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/deliberation",
-   "json": "https://wulfkaal.github.io/entities/deliberation.json",
-   "md": "https://wulfkaal.github.io/entities/deliberation.md",
-   "content_sha256": "eea07499cf9f1b9e3e1c75beb6f929defb068e029c0179c9a2249b001fe6fa02",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "demand-driven-regulation",
    "name": "Demand driven regulation",
    "status": "derived",
@@ -35566,24 +36214,6 @@
    "json": "https://wulfkaal.github.io/entities/destabilization.json",
    "md": "https://wulfkaal.github.io/entities/destabilization.md",
    "content_sha256": "7abc4311fcc5c9ef184f862999157059360cfb44d2e78abc6a74b13ecab83c7a",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "detection",
-   "name": "Detection",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2013",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/detection",
-   "json": "https://wulfkaal.github.io/entities/detection.json",
-   "md": "https://wulfkaal.github.io/entities/detection.md",
-   "content_sha256": "45de6322fffbb9cdac84ecd5b8dcfa92a538069a636f79fbdb687147598cc505",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -36831,6 +37461,24 @@
    "aliases": []
   },
   {
+   "slug": "entropy",
+   "name": "Entropy",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/entropy",
+   "json": "https://wulfkaal.github.io/entities/entropy.json",
+   "md": "https://wulfkaal.github.io/entities/entropy.md",
+   "content_sha256": "6f9c52c818f0a3008e50d551d4bf06be0358fa661ec0042b4d381740efdb766d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "environment",
    "name": "Environment",
    "status": "derived",
@@ -37042,6 +37690,24 @@
    "json": "https://wulfkaal.github.io/entities/evaluation-validity.json",
    "md": "https://wulfkaal.github.io/entities/evaluation-validity.md",
    "content_sha256": "11fe6460b5ceb84858e7f886a50e32060ae085a3cec6fdd9fde4600b80bf644a",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "evidence",
+   "name": "Evidence",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2017",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/evidence",
+   "json": "https://wulfkaal.github.io/entities/evidence.json",
+   "md": "https://wulfkaal.github.io/entities/evidence.md",
+   "content_sha256": "ac14c16436a35aa659cf58ee4dd6ed84ccd458c491f4d7fe9a854714163a578f",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -38433,6 +39099,24 @@
    "aliases": []
   },
   {
+   "slug": "granularity",
+   "name": "Granularity",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2026",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/granularity",
+   "json": "https://wulfkaal.github.io/entities/granularity.json",
+   "md": "https://wulfkaal.github.io/entities/granularity.md",
+   "content_sha256": "51edb75726d98c2d764fc14f96bb4c0964971b515e1f49ed18ee3d75ba3c09f6",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "graph-theory",
    "name": "Graph theory",
    "status": "derived",
@@ -39130,24 +39814,6 @@
    "json": "https://wulfkaal.github.io/entities/implementation-costs.json",
    "md": "https://wulfkaal.github.io/entities/implementation-costs.md",
    "content_sha256": "927f6cffaae791ef2c0bcfb748b2503fd89e08219494c5b20b0fe5a2ae91bf61",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "implementation-failure",
-   "name": "Implementation failure",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2019",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/implementation-failure",
-   "json": "https://wulfkaal.github.io/entities/implementation-failure.json",
-   "md": "https://wulfkaal.github.io/entities/implementation-failure.md",
-   "content_sha256": "e2594bf8d48c3381043da1efe56c67de5f70759a0639d075098fd82794c4eeba",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -40287,6 +40953,24 @@
    "aliases": []
   },
   {
+   "slug": "judgment-proof",
+   "name": "Judgment proof",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/judgment-proof",
+   "json": "https://wulfkaal.github.io/entities/judgment-proof.json",
+   "md": "https://wulfkaal.github.io/entities/judgment-proof.md",
+   "content_sha256": "cd6b7388eff5b09f833d29f402ec88242c89ac56b12f2ec0f52292ad24bb948f",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "judicial-access",
    "name": "Judicial access",
    "status": "derived",
@@ -40480,6 +41164,24 @@
    "json": "https://wulfkaal.github.io/entities/killer-app.json",
    "md": "https://wulfkaal.github.io/entities/killer-app.md",
    "content_sha256": "6cc11f6678399907c6f9eb1b6c9281adb8bb15114eaed82420f56db70b9c517f",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "knowledge",
+   "name": "Knowledge",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/knowledge",
+   "json": "https://wulfkaal.github.io/entities/knowledge.json",
+   "md": "https://wulfkaal.github.io/entities/knowledge.md",
+   "content_sha256": "1677b89b2196539ab704fa08e8fd95c9e6b769563fb3e74e9f8c5d8428498b77",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -40971,6 +41673,24 @@
    "aliases": []
   },
   {
+   "slug": "legal-identity",
+   "name": "Legal identity",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/legal-identity",
+   "json": "https://wulfkaal.github.io/entities/legal-identity.json",
+   "md": "https://wulfkaal.github.io/entities/legal-identity.md",
+   "content_sha256": "ffad31f9c8d7069b30b018609c82db11950dd1c626748aea482d3a5de632a1b3",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "legal-obsolescence",
    "name": "Legal obsolescence",
    "status": "derived",
@@ -41254,24 +41974,6 @@
    "json": "https://wulfkaal.github.io/entities/liquidity-transformation.json",
    "md": "https://wulfkaal.github.io/entities/liquidity-transformation.md",
    "content_sha256": "c4efa5d5ed76ce27bfc28d89fd2e325574a948ee038d4ef7c00445b624f19614",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "literature",
-   "name": "Literature",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2015",
-    "2019"
-   ],
-   "url": "https://wulfkaal.github.io/entities/literature",
-   "json": "https://wulfkaal.github.io/entities/literature.json",
-   "md": "https://wulfkaal.github.io/entities/literature.md",
-   "content_sha256": "70eb900c5f7beb708698e7f280ba773ec8b727f6c4a2a1ea80d6bfefdb3cc2fc",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -42303,24 +43005,6 @@
    "aliases": []
   },
   {
-   "slug": "money",
-   "name": "Money",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2021",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/money",
-   "json": "https://wulfkaal.github.io/entities/money.json",
-   "md": "https://wulfkaal.github.io/entities/money.md",
-   "content_sha256": "a34448eec4e3786238f5d3ee184dae9b7f76b3acd44643dc47fc08ca8c55488b",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "money-creation",
    "name": "Money creation",
    "status": "derived",
@@ -42825,6 +43509,24 @@
    "aliases": []
   },
   {
+   "slug": "norms",
+   "name": "Norms",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2013",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/norms",
+   "json": "https://wulfkaal.github.io/entities/norms.json",
+   "md": "https://wulfkaal.github.io/entities/norms.md",
+   "content_sha256": "f018d7d1707e134becb1922e14e073150f01adebe30bef860d68a498be45175f",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "notice",
    "name": "Notice",
    "status": "derived",
@@ -42857,24 +43559,6 @@
    "md": "https://wulfkaal.github.io/entities/novel-crisis.md",
    "content_sha256": "15f3ee223367070a5207fb2be8dbd95ffc013959e617906d84674f0974f29cad",
    "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "novelty",
-   "name": "Novelty",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 1,
-   "year_span": [
-    "2021",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/novelty",
-   "json": "https://wulfkaal.github.io/entities/novelty.json",
-   "md": "https://wulfkaal.github.io/entities/novelty.md",
-   "content_sha256": "e4af64c7284efcdeac3d89b82298775a246828931db9258bac0258e91f5257c2",
-   "non_current_claims": 1,
    "definition": "",
    "aliases": []
   },
@@ -43504,6 +44188,24 @@
    "json": "https://wulfkaal.github.io/entities/piecemeal-social-engineering.json",
    "md": "https://wulfkaal.github.io/entities/piecemeal-social-engineering.md",
    "content_sha256": "a365bad1fe659b8d286754254e964356c475240c20e8da1ea60b9aa35f4a67af",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "pilots",
+   "name": "Pilots",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/pilots",
+   "json": "https://wulfkaal.github.io/entities/pilots.json",
+   "md": "https://wulfkaal.github.io/entities/pilots.md",
+   "content_sha256": "09e6c7ab91822c45b3c2009961895766cf25f94fd6fe922f099c64e09c19a2e0",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -44661,6 +45363,24 @@
    "aliases": []
   },
   {
+   "slug": "protocol",
+   "name": "Protocol",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/protocol",
+   "json": "https://wulfkaal.github.io/entities/protocol.json",
+   "md": "https://wulfkaal.github.io/entities/protocol.md",
+   "content_sha256": "405039596fe4e16f9da6edbe3e6131f52660945fb9f2b5bf7d80f7471bdabf1d",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "protocol-change",
    "name": "Protocol change",
    "status": "derived",
@@ -45489,6 +46209,24 @@
    "aliases": []
   },
   {
+   "slug": "registry",
+   "name": "Registry",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2019",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/registry",
+   "json": "https://wulfkaal.github.io/entities/registry.json",
+   "md": "https://wulfkaal.github.io/entities/registry.md",
+   "content_sha256": "bcae76d68463b2d828bd02cd6fcd7d21a6503e04532f2a3c82054a0f90a035bc",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "regression-analysis",
    "name": "Regression analysis",
    "status": "derived",
@@ -45921,24 +46659,6 @@
    "aliases": []
   },
   {
-   "slug": "reinforcement-learning",
-   "name": "Reinforcement learning",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 1,
-   "year_span": [
-    "2024",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/reinforcement-learning",
-   "json": "https://wulfkaal.github.io/entities/reinforcement-learning.json",
-   "md": "https://wulfkaal.github.io/entities/reinforcement-learning.md",
-   "content_sha256": "31c30c1a5beca2179ea2d55b2cf5ad95d05db7942484523d16d4b6d788c5245c",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "renegotiation",
    "name": "Renegotiation",
    "status": "derived",
@@ -46119,6 +46839,24 @@
    "aliases": []
   },
   {
+   "slug": "reputation-feedback",
+   "name": "Reputation feedback",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-feedback",
+   "json": "https://wulfkaal.github.io/entities/reputation-feedback.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-feedback.md",
+   "content_sha256": "80c8bbe5775108440b8e1315ed2d7c2d07efe48fa735337550b6451dc6a85f91",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "reputation-governance",
    "name": "Reputation governance",
    "status": "derived",
@@ -46168,6 +46906,24 @@
    "json": "https://wulfkaal.github.io/entities/reputation-loss.json",
    "md": "https://wulfkaal.github.io/entities/reputation-loss.md",
    "content_sha256": "df8363bb58c5a5f027b744eac57229096e77802e9a3d1a6556aaac2ca2499485",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "reputation-update",
+   "name": "Reputation update",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2026",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/reputation-update",
+   "json": "https://wulfkaal.github.io/entities/reputation-update.json",
+   "md": "https://wulfkaal.github.io/entities/reputation-update.md",
+   "content_sha256": "26a1615adb9c3d4d9e271ceae77ae812784def59edaa13f49782dfc672645386",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -46438,24 +47194,6 @@
    "json": "https://wulfkaal.github.io/entities/reverse-engineering.json",
    "md": "https://wulfkaal.github.io/entities/reverse-engineering.md",
    "content_sha256": "3ad5ee58b9ea1c077043aea9834b7824745fb938323bb984617be474e7067639",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "review",
-   "name": "Review",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 1,
-   "year_span": [
-    "2021",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/review",
-   "json": "https://wulfkaal.github.io/entities/review.json",
-   "md": "https://wulfkaal.github.io/entities/review.md",
-   "content_sha256": "d001a9f37f6ac56037075b283463c27558ecd6e7e2e6847974aecaaa24b913d0",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -47055,24 +47793,6 @@
    "aliases": []
   },
   {
-   "slug": "salaries",
-   "name": "Salaries",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 1,
-   "year_span": [
-    "2021",
-    "2021"
-   ],
-   "url": "https://wulfkaal.github.io/entities/salaries",
-   "json": "https://wulfkaal.github.io/entities/salaries.json",
-   "md": "https://wulfkaal.github.io/entities/salaries.md",
-   "content_sha256": "5946359bafd40a7b19f3d13f2a5b4b6b5859de46354145dee4704ab0f9aff34b",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "sample-composition",
    "name": "Sample composition",
    "status": "derived",
@@ -47086,24 +47806,6 @@
    "json": "https://wulfkaal.github.io/entities/sample-composition.json",
    "md": "https://wulfkaal.github.io/entities/sample-composition.md",
    "content_sha256": "c70bdbbd4ad2ae542bc0a98be3ea2adf10aeb7af7d74e229a369e36e991c7e61",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
-   "slug": "sampling",
-   "name": "Sampling",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2014",
-    "2024"
-   ],
-   "url": "https://wulfkaal.github.io/entities/sampling",
-   "json": "https://wulfkaal.github.io/entities/sampling.json",
-   "md": "https://wulfkaal.github.io/entities/sampling.md",
-   "content_sha256": "63f92013a21b6d5860321594265c96daff66e849126ac16d08d1aaae841f3fcf",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -47860,6 +48562,24 @@
    "json": "https://wulfkaal.github.io/entities/signal-limitations.json",
    "md": "https://wulfkaal.github.io/entities/signal-limitations.md",
    "content_sha256": "11a2567ef959495b6fb349abf4e3fdcf0e214faee2f837d567acf8724837a845",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "signature",
+   "name": "Signature",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/signature",
+   "json": "https://wulfkaal.github.io/entities/signature.json",
+   "md": "https://wulfkaal.github.io/entities/signature.md",
+   "content_sha256": "5788f3239e1ff7997923863f24edaf465c715324f7142ee9c1aa9cfce06bd310",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -48693,6 +49413,24 @@
    "aliases": []
   },
   {
+   "slug": "structure",
+   "name": "Structure",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2021",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/structure",
+   "json": "https://wulfkaal.github.io/entities/structure.json",
+   "md": "https://wulfkaal.github.io/entities/structure.md",
+   "content_sha256": "298fa486f212360d47ab957e1cf59e058abd8e2b9f2e70b6b3dd1280470de345",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
    "slug": "study-limitations",
    "name": "Study limitations",
    "status": "derived",
@@ -48850,6 +49588,24 @@
    "json": "https://wulfkaal.github.io/entities/swiss-law.json",
    "md": "https://wulfkaal.github.io/entities/swiss-law.md",
    "content_sha256": "898558873ccac344bae8a08a164d61637534a6748171152d8b6738077d42926b",
+   "non_current_claims": 0,
+   "definition": "",
+   "aliases": []
+  },
+  {
+   "slug": "synthetic-data",
+   "name": "Synthetic data",
+   "status": "derived",
+   "claim_count": 2,
+   "work_count": 2,
+   "year_span": [
+    "2025",
+    "2026"
+   ],
+   "url": "https://wulfkaal.github.io/entities/synthetic-data",
+   "json": "https://wulfkaal.github.io/entities/synthetic-data.json",
+   "md": "https://wulfkaal.github.io/entities/synthetic-data.md",
+   "content_sha256": "5a7f74d5d64ff2a8ffe381f943b46a8881cb0b1a21faf876a71e1ef7121f00b3",
    "non_current_claims": 0,
    "definition": "",
    "aliases": []
@@ -50529,24 +51285,6 @@
    "aliases": []
   },
   {
-   "slug": "wallets",
-   "name": "Wallets",
-   "status": "derived",
-   "claim_count": 2,
-   "work_count": 2,
-   "year_span": [
-    "2021",
-    "2025"
-   ],
-   "url": "https://wulfkaal.github.io/entities/wallets",
-   "json": "https://wulfkaal.github.io/entities/wallets.json",
-   "md": "https://wulfkaal.github.io/entities/wallets.md",
-   "content_sha256": "b0167f80aa96eb048ff2ec17a1648ee4e2142ee086bd7e4ce6e6b172ab94d31d",
-   "non_current_claims": 0,
-   "definition": "",
-   "aliases": []
-  },
-  {
    "slug": "walrasian-equilibrium",
    "name": "Walrasian equilibrium",
    "status": "derived",
@@ -50883,12 +51621,6 @@
    "name": "Accounting standards",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/4033886-004"
-  },
-  {
-   "slug": "accuracy",
-   "name": "Accuracy",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5541658-005"
   },
   {
    "slug": "acquisition",
@@ -51285,12 +52017,6 @@
    "name": "Agentic systems",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/5886442-039"
-  },
-  {
-   "slug": "agents",
-   "name": "Agents",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5886342-011"
   },
   {
    "slug": "aggregation-failure",
@@ -52109,12 +52835,6 @@
    "claim": "https://wulfkaal.github.io/claims/2998033-019"
   },
   {
-   "slug": "auditing",
-   "name": "Auditing",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2959730-034"
-  },
-  {
    "slug": "auditing-standards",
    "name": "Auditing standards",
    "claim_count": 1,
@@ -52469,12 +53189,6 @@
    "claim": "https://wulfkaal.github.io/claims/2061166-040"
   },
   {
-   "slug": "baseline",
-   "name": "Baseline",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/1664809-024"
-  },
-  {
    "slug": "batch-processing",
    "name": "Batch processing",
    "claim_count": 1,
@@ -52527,12 +53241,6 @@
    "name": "Bench capture",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3125822-030"
-  },
-  {
-   "slug": "benchmarks",
-   "name": "Benchmarks",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5541658-032"
   },
   {
    "slug": "beneficial-ownership",
@@ -52991,12 +53699,6 @@
    "claim": "https://wulfkaal.github.io/claims/5454054-009"
   },
   {
-   "slug": "boundary-cases",
-   "name": "Boundary cases",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/4021599-008"
-  },
-  {
    "slug": "boundary-problem",
    "name": "Boundary problem",
    "claim_count": 1,
@@ -53007,12 +53709,6 @@
    "name": "Bounded feedback",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/6655138-028"
-  },
-  {
-   "slug": "bounties",
-   "name": "Bounties",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5887242-027"
   },
   {
    "slug": "braindao",
@@ -53349,18 +54045,6 @@
    "name": "Capped raises",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3117224-006"
-  },
-  {
-   "slug": "caps",
-   "name": "Caps",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3606663-011"
-  },
-  {
-   "slug": "capture-risk",
-   "name": "Capture risk",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5887242-038"
   },
   {
    "slug": "care",
@@ -54059,12 +54743,6 @@
    "claim": "https://wulfkaal.github.io/claims/2957645-016"
   },
   {
-   "slug": "code",
-   "name": "Code",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3227933-029"
-  },
-  {
    "slug": "code-as-architecture",
    "name": "Code as architecture",
    "claim_count": 1,
@@ -54321,12 +54999,6 @@
    "name": "Commit reveal",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3125827-017"
-  },
-  {
-   "slug": "commitment-schemes",
-   "name": "Commitment schemes",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5225296-018"
   },
   {
    "slug": "committee-governance",
@@ -54645,12 +55317,6 @@
    "name": "Compliance firms",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/2732915-021"
-  },
-  {
-   "slug": "compliance-incentives",
-   "name": "Compliance incentives",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2348463-023"
   },
   {
    "slug": "compliance-infrastructure",
@@ -55529,12 +56195,6 @@
    "claim": "https://wulfkaal.github.io/claims/1428387-010"
   },
   {
-   "slug": "cost-of-compliance",
-   "name": "Cost of compliance",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2486570-030"
-  },
-  {
    "slug": "cost-of-error",
    "name": "Cost of error",
    "claim_count": 1,
@@ -55563,12 +56223,6 @@
    "name": "Costa rica",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3117224-034"
-  },
-  {
-   "slug": "costs",
-   "name": "Costs",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3782198-023"
   },
   {
    "slug": "council-veto",
@@ -56021,12 +56675,6 @@
    "claim": "https://wulfkaal.github.io/claims/2470008-017"
   },
   {
-   "slug": "crowding-out",
-   "name": "Crowding out",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3406323-006"
-  },
-  {
    "slug": "crypto-backed-tokens",
    "name": "Crypto backed tokens",
    "claim_count": 1,
@@ -56145,18 +56793,6 @@
    "name": "Cumulative knowledge",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/6192998-004"
-  },
-  {
-   "slug": "curation",
-   "name": "Curation",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5095633-004"
-  },
-  {
-   "slug": "curators",
-   "name": "Curators",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3441904-015"
   },
   {
    "slug": "currency-tokens",
@@ -57887,12 +58523,6 @@
    "claim": "https://wulfkaal.github.io/claims/6269518-018"
   },
   {
-   "slug": "domain-specific-reputation",
-   "name": "Domain specific reputation",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3782210-020"
-  },
-  {
    "slug": "dominant-shareholders",
    "name": "Dominant shareholders",
    "claim_count": 1,
@@ -58625,12 +59255,6 @@
    "claim": "https://wulfkaal.github.io/claims/5254152-015"
   },
   {
-   "slug": "entropy",
-   "name": "Entropy",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5887242-031"
-  },
-  {
    "slug": "entry-barrier",
    "name": "Entry barrier",
    "claim_count": 1,
@@ -58869,12 +59493,6 @@
    "name": "Event date identification",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/2629451-013"
-  },
-  {
-   "slug": "evidence",
-   "name": "Evidence",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2998033-010"
   },
   {
    "slug": "evidence-based-design",
@@ -59139,12 +59757,6 @@
    "name": "Expected value",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3782214-024"
-  },
-  {
-   "slug": "experiment",
-   "name": "Experiment",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3782198-038"
   },
   {
    "slug": "experimental-rules",
@@ -61091,12 +61703,6 @@
    "claim": "https://wulfkaal.github.io/claims/6192998-022"
   },
   {
-   "slug": "granularity",
-   "name": "Granularity",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/6192998-011"
-  },
-  {
    "slug": "graph-clustering",
    "name": "Graph clustering",
    "claim_count": 1,
@@ -61707,12 +62313,6 @@
    "name": "Hypo",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/5541658-003"
-  },
-  {
-   "slug": "hypothesis",
-   "name": "Hypothesis",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2389423-014"
   },
   {
    "slug": "iaa-obligations",
@@ -63323,12 +63923,6 @@
    "claim": "https://wulfkaal.github.io/claims/3396522-007"
   },
   {
-   "slug": "judgment-proof",
-   "name": "Judgment proof",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3409548-022"
-  },
-  {
    "slug": "judicial-acceptance",
    "name": "Judicial acceptance",
    "claim_count": 1,
@@ -63519,12 +64113,6 @@
    "name": "Klimadao",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/5254152-035"
-  },
-  {
-   "slug": "knowledge",
-   "name": "Knowledge",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3808867-024"
   },
   {
    "slug": "knowledge-aggregation",
@@ -63999,12 +64587,6 @@
    "name": "Legal heritage",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/4957318-023"
-  },
-  {
-   "slug": "legal-identity",
-   "name": "Legal identity",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5886342-012"
   },
   {
    "slug": "legal-informatics",
@@ -65855,12 +66437,6 @@
    "claim": "https://wulfkaal.github.io/claims/3405660-007"
   },
   {
-   "slug": "model-collapse",
-   "name": "Model collapse",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5095633-011"
-  },
-  {
    "slug": "model-criticism",
    "name": "Model criticism",
    "claim_count": 1,
@@ -66851,12 +67427,6 @@
    "claim": "https://wulfkaal.github.io/claims/5554218-019"
   },
   {
-   "slug": "norms",
-   "name": "Norms",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2317580-009"
-  },
-  {
    "slug": "north",
    "name": "North",
    "claim_count": 1,
@@ -67583,12 +68153,6 @@
    "claim": "https://wulfkaal.github.io/claims/3936876-004"
   },
   {
-   "slug": "p-values",
-   "name": "P values",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/2816408-019"
-  },
-  {
    "slug": "pacs",
    "name": "Pacs",
    "claim_count": 1,
@@ -68049,12 +68613,6 @@
    "name": "Pilot fish",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/2348463-035"
-  },
-  {
-   "slug": "pilots",
-   "name": "Pilots",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5454054-038"
   },
   {
    "slug": "plain-english",
@@ -69377,12 +69935,6 @@
    "claim": "https://wulfkaal.github.io/claims/3067615-030"
   },
   {
-   "slug": "protocol",
-   "name": "Protocol",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3782192-012"
-  },
-  {
    "slug": "protocol-adoption",
    "name": "Protocol adoption",
    "claim_count": 1,
@@ -70289,12 +70841,6 @@
    "claim": "https://wulfkaal.github.io/claims/3931933-027"
   },
   {
-   "slug": "registry",
-   "name": "Registry",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3409548-013"
-  },
-  {
    "slug": "reglegaltech",
    "name": "Reglegaltech",
    "claim_count": 1,
@@ -71015,12 +71561,6 @@
    "claim": "https://wulfkaal.github.io/claims/5225296-030"
   },
   {
-   "slug": "reputation-feedback",
-   "name": "Reputation feedback",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3962614-033"
-  },
-  {
    "slug": "reputation-forgery",
    "name": "Reputation forgery",
    "claim_count": 1,
@@ -71121,12 +71661,6 @@
    "name": "Reputation underwriting",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3949098-008"
-  },
-  {
-   "slug": "reputation-update",
-   "name": "Reputation update",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/6655138-027"
   },
   {
    "slug": "reputation-valuation",
@@ -71241,12 +71775,6 @@
    "name": "Residual risk",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3125822-038"
-  },
-  {
-   "slug": "resistance",
-   "name": "Resistance",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3409548-017"
   },
   {
    "slug": "resistance-to-change",
@@ -72593,12 +73121,6 @@
    "claim": "https://wulfkaal.github.io/claims/3808859-009"
   },
   {
-   "slug": "selection",
-   "name": "Selection",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3128900-027"
-  },
-  {
    "slug": "selection-fairness",
    "name": "Selection fairness",
    "claim_count": 1,
@@ -73011,12 +73533,6 @@
    "name": "Signaling failure",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/2097160-023"
-  },
-  {
-   "slug": "signature",
-   "name": "Signature",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5886342-013"
   },
   {
    "slug": "significant-steps",
@@ -73661,12 +74177,6 @@
    "claim": "https://wulfkaal.github.io/claims/2811718-037"
   },
   {
-   "slug": "standing",
-   "name": "Standing",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3017612-016"
-  },
-  {
    "slug": "stare-decisis",
    "name": "Stare decisis",
    "claim_count": 1,
@@ -74015,12 +74525,6 @@
    "claim": "https://wulfkaal.github.io/claims/6244278-034"
   },
   {
-   "slug": "structure",
-   "name": "Structure",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3782191-032"
-  },
-  {
    "slug": "structuring",
    "name": "Structuring",
    "claim_count": 1,
@@ -74277,12 +74781,6 @@
    "name": "Symmetric encumbrance",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3125822-032"
-  },
-  {
-   "slug": "synthetic-data",
-   "name": "Synthetic data",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/5095633-011"
   },
   {
    "slug": "synthetic-stakes",
@@ -76347,12 +76845,6 @@
    "name": "Verified reputation",
    "claim_count": 1,
    "claim": "https://wulfkaal.github.io/claims/3125822-037"
-  },
-  {
-   "slug": "verifiers",
-   "name": "Verifiers",
-   "claim_count": 1,
-   "claim": "https://wulfkaal.github.io/claims/3128900-025"
   },
   {
    "slug": "vermont",

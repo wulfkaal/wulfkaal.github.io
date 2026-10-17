@@ -1,0 +1,176 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/model-collapse",
+ "identifier": "kaal:entity:model-collapse",
+ "name": "Model collapse",
+ "termCode": "model-collapse",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/model-collapse.md",
+ "sha256": "289ef837025c78aa9b867e8b8f87560d113e530ffbeb0c144bb2b675fb2066e8",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 7
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-011",
+   "identifier": "kaal:claim:5095633-011",
+   "text": "As AI-generated content proliferates online it dilutes the diversity and originality of the text pool available for later training, producing performance degradation across successive model generations.",
+   "abstract": "As AI-generated content proliferates online, it dilutes the overall diversity and originality of text available for subsequent training processes, potentially leading to a degradation in model performance over repeated generations.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "repeated training generations drawing on an increasingly synthetic web"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-001",
+   "identifier": "kaal:claim:7598518-001",
+   "text": "When intelligence models repeatedly learn from data that earlier intelligence models produced, the rare cases disappear first: the unusual facts, minority patterns and edge cases that make data valuable. This is what model collapse names.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Applies to repeated generations of models trained on earlier models' output.",
+    "The quote is the paper's own statement of the phenomenon it tests against, not a result of this study."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-008",
+   "identifier": "kaal:claim:7598518-008",
+   "text": "The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The bar is part of the pre-data specification of which sentences each outcome permits.",
+    "Reporting the bar is not itself one of the barred claims."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-013",
+   "identifier": "kaal:claim:7598518-013",
+   "text": "The study runs fixed-size replacement, the protocol on which collapse was first shown, and includes no accumulation arm, so no result it produces bears on whether a filter adds anything once real data accumulates.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "Applies to the replacement regime only.",
+    "The distinction matters because accumulating real and synthetic data keeps error bounded in the settings studied, while replacement collapses."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-014",
+   "identifier": "kaal:claim:7598518-014",
+   "text": "A filter that claims to address collapse must beat real-data retention, not only unfiltered replacement, because retaining ten percent of the original data slows the damage.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The comparator standard follows from published results on real-data retention.",
+    "It sets a requirement on what a filter must show, not a result about any filter."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-015",
+   "identifier": "kaal:claim:7598518-015",
+   "text": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "reported",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The result is prior work, not a finding of this study.",
+    "What this paper isolates is how to weight several assessors behind a validity filter, not whether verifier selection works."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-022",
+   "identifier": "kaal:claim:7598518-022",
+   "text": "A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The ceiling holds where rare content is as checkable as common content, which this design enforces by construction.",
+    "The experiment therefore includes an oracle validity filter as a premise rather than as a result."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "7 claims in the published works of Wulf A. Kaal carry the concept tag 'model-collapse'. Derived node: a roster, not an adjudicated definition."
+}

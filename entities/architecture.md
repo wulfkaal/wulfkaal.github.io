@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 5 claims that carry the concept tag `architecture`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 6 claims that carry the concept tag `architecture`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-5 claims across 3 works, 2018 to 2026.
+6 claims across 4 works, 2018 to 2026.
 
 **2018**
 
@@ -30,6 +30,9 @@ This node is assembled mechanically from the 5 claims that carry the concept tag
 - [6655138-017](https://wulfkaal.github.io/claims/6655138-017) [mechanism/argued] -- The possibility loop is generatively open: each completed cycle leaves the system with a strictly enlarged action space, because a successful proposal adds a job specification, tag, or template that did not previously exist.
   > The possibility loop, in contrast, is generatively open in the sense that each completed cycle leaves the system with a strictly enlarged action space.
   Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138
+- [7598518-005](https://wulfkaal.github.io/claims/7598518-005) [condition/stated] *(failure mode)* -- The architecture shows that the author arranged not to read the outcome early and that specified later adjustments would be detectable, and it does not show that the filter works or prove that the outcome was never read.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

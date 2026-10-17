@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 4 claims that carry the concept tag `screening`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 5 claims that carry the concept tag `screening`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-4 claims across 4 works, 2014 to 2026.
+5 claims across 5 works, 2014 to 2026.
 
 **2014**
 
@@ -33,6 +33,9 @@ This node is assembled mechanically from the 4 claims that carry the concept tag
 - [6421319-020](https://wulfkaal.github.io/claims/6421319-020) [condition/argued] *(failure mode)* -- Costly signaling through degrees, warranties, bonding, and credit scores becomes redundant when direct verification is instantaneous and free, and the Spencian signaling game has no moves left when every agent capability is directly and costlessly observable.
   > When every agent's capability is directly and costlessly observable, the signaling game has no moves to make.
   Wulf A. Kaal, The Collapse of Scarcity Economics (2026). SSRN: https://ssrn.com/abstract=6421319
+- [7596939-019](https://wulfkaal.github.io/claims/7596939-019) [condition/stated] -- Targeted screening of wrongful destruction attempts is unavailable by assumption: wrongfulness cannot be observed without review, so no signal correlated with it can be used to screen.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

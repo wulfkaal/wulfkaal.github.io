@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `authentication`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `authentication`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2018 to 2025.
+3 claims across 3 works, 2018 to 2026.
 
 **2018**
 
@@ -21,6 +21,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [5886342-013](https://wulfkaal.github.io/claims/5886342-013) [definitional/asserted] -- A signature under the Codex is defined functionally as the technical proof of the link between an identifier and a piece of digital information, not as a handwritten or format specific formality.
   > (1) The Signature is the technical proof between the Identifier and any Digital Information.
   Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342
+
+**2026**
+
+- [7596939-017](https://wulfkaal.github.io/claims/7596939-017) [failure/argued] *(failure mode)* -- Continuity determinations can fail in a specific and dangerous way: a false finding of continuity can authorize a different configuration to use the record's valid signing key, producing signals that are authenticated but unauthorized.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

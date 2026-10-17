@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 9 claims that carry the concept tag `collusion`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 10 claims that carry the concept tag `collusion`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-9 claims across 5 works, 2018 to 2026.
+10 claims across 6 works, 2018 to 2026.
 
 **2018**
 
@@ -48,6 +48,9 @@ This node is assembled mechanically from the 9 claims that carry the concept tag
 - [6269518-040](https://wulfkaal.github.io/claims/6269518-040) [failure/argued] *(failure mode)* -- Because the analysis rests on the Nash equilibrium concept, it does not rule out coordinated under-citation among colluding groups; coalition-proof equilibrium analysis is needed to address that possibility.
   > Fourth, the analysis has focused on the Nash equilibrium concept. Coalition-proof equilibrium analysis would address the possibility of coordinated under-citation among groups of colluding agents.
   Wulf A. Kaal, Citation Honesty Mechanisms in Weighted Directed Acyclic Graph Governance (2026). SSRN: https://ssrn.com/abstract=6269518
+- [7598518-008](https://wulfkaal.github.io/claims/7598518-008) [condition/stated] -- The design fixes, before any data, the sentences the paper may write for each outcome and the conditions for each, and it bars claims about staking incentives, slashing, collusion, Sybil resistance, deployed systems, natural web text, frontier-scale models, or a solution to collapse.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

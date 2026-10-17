@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/reputation.md",
- "sha256": "fcee648185673d9a65032fc3810c1eb028beaa9cc8cd74e43b675bc413fd612c",
+ "sha256": "619cd7091c6b74e0551a010173321ec36433fce4519e278577026803facd5baf",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,12 +24,12 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 83
+   "value": 97
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 31
+   "value": 33
   },
   {
    "@type": "PropertyValue",
@@ -1443,7 +1443,256 @@
    ],
    "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-002",
+   "identifier": "kaal:claim:7596939-002",
+   "text": "A non-transferable reputation record gives an agent exposure that requires no capital set aside for the purpose, because the record cannot be pledged, sold or redeployed.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "reputation held as non-transferable domain tokens"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-006",
+   "identifier": "kaal:claim:7596939-006",
+   "text": "Reputation in the underlying system is domain-specific and strictly non-transferable: bound to the holder's identity, earned only through validated work, and incapable of sale, loan or transfer.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Rule 1 of the stake model"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-007",
+   "identifier": "kaal:claim:7596939-007",
+   "text": "Both work claims and challenges to a record are adjudicated by the same instrument: a validation pool in which holders stake reputation for or against, with the winning side splitting the losing side's stakes.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Rule 2 of the stake model"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-008",
+   "identifier": "kaal:claim:7596939-008",
+   "text": "Copying an agent's weights confers no economic stake: a copy that does not continue the registered identity inherits no reputation and therefore no salary.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Rule 1 identity continuity",
+    "Lemma 2"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-020",
+   "identifier": "kaal:claim:7598518-020",
+   "text": "Reputation in this experiment is settled once against a key before training, so the pool is supervised reweighting from a disjoint key, and the paper does not compare it with a key-free latent-variable aggregator.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The concession places the weight inside the established family of reliability-weighted aggregation.",
+    "No comparison with a key-free aggregator is run, so no claim about that comparison is available."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-021",
+   "identifier": "kaal:claim:7598518-021",
+   "text": "The channel the RLRF program claims reputation can resist is the one this study does not open, because its validators are stationary, its stake has no external value, and its weights are fixed before generation 1.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The limit is structural, set by the design, rather than an observed null.",
+    "Goodhart resistance is the property the parent program claims, so this study leaves that claim untested."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-022",
+   "identifier": "kaal:claim:7598518-022",
+   "text": "A validity filter judges whether an output is correct rather than whether it is rare, so where rare content is as checkable as common content such a filter can change rare composition only through the generator's own error profile, and if collapse proceeds by under-sampling rare modes no validity filter restores them, a reputation-weighted filter included.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The ceiling holds where rare content is as checkable as common content, which this design enforces by construction.",
+    "The experiment therefore includes an oracle validity filter as a premise rather than as a result."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-026",
+   "identifier": "kaal:claim:7598518-026",
+   "text": "The reputation update is an asymmetric multiplicative rule in which reputation is multiplied by one plus alpha when a vote matches the revealed key and by one minus gamma when it does not, with alpha fixed at 0.05, gamma at 0.10, and a floor applied after each update.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The parent paper requires only that gamma exceed alpha; this design fixes both rates.",
+    "Any single weight above one half is capped there and the excess redistributed among the other seated validators."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-027",
+   "identifier": "kaal:claim:7598518-027",
+   "text": "Reputation is settled once by key, after the generation-0 fit on real data and before generation 1, and no candidate that enters training ever updates a reputation.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The design uses only keyed settlement, although the parent rule also covers unkeyed events.",
+    "This removes reputation dynamics during the recursion, so the weights are fixed throughout the run."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-029",
+   "identifier": "kaal:claim:7598518-029",
+   "text": "Three validator families share a mean accuracy of 0.75 while differing in structure: one is homogeneous at 0.75, one has each validator reliable at 0.90 on two hash-drawn tags and at 0.60 on the other two so that domain-scoped reputation has something to find, and one has five validators at 0.90 and fifteen at 0.70, a competent minority.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The validators are simulated and err independently given their accuracy, which depends only on the tag.",
+    "The families are a property of the design, fixed before any run."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-032",
+   "identifier": "kaal:claim:7598518-032",
+   "text": "The pool under test omits most of what makes RLRF an institution: it has no economy, no strategy, no adversary, no deliberation, and no reputation dynamics after the single settlement.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The omission is deliberate and stated in the design, not a discovered shortfall.",
+    "It bounds what any result can say about the parent mechanism as a whole."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-041",
+   "identifier": "kaal:claim:7598518-041",
+   "text": "A positive reading would not say the weights mattered: the attribution sentence is issued only if the pool's contrast against full replacement and the reputation pool's contrast against the equal-weight pool are both superior in every family including the homogeneous one, the oracle premise and ladder rungs 3 and 4 pass in every family, and the key cap holds.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The positive reading and the attribution sentence are distinct registered claims with distinct conditions.",
+    "If the reputation contrast is null or negative in any family, the paper may say only that any difference is not attributable to reputation over equal weighting."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-042",
+   "identifier": "kaal:claim:7598518-042",
+   "text": "The design names a failure pattern in advance: if the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues a registered sentence recording that each had lower capped retention at generation 50 than full replacement, as a registered negative result and not an implementation failure.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The sentence is available only on the stated pattern of labels in every family.",
+    "Naming the pattern in advance is what distinguishes it from a post hoc explanation of a bad result."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-044",
+   "identifier": "kaal:claim:7598518-044",
+   "text": "Because the simulated validators err independently given an accuracy that depends only on the tag, shared lineage, correlated errors, and error that depends on whether content is rare are excluded by construction, and the study supplies no evidence about correlated assessors or about reputation concentrating in a lineage.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The exclusion is a property of the simulation, not an observed null.",
+    "Correlated assessors are among the conditions a reputation mechanism would face in deployment."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "83 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation'. Derived node: a roster, not an adjudicated definition."
+ "description": "97 claims in the published works of Wulf A. Kaal carry the concept tag 'reputation'. Derived node: a roster, not an adjudicated definition."
 }

@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/auditing",
+ "identifier": "kaal:entity:auditing",
+ "name": "Auditing",
+ "termCode": "auditing",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/auditing.md",
+ "sha256": "ffdb8a0d055ad38621686211d8883459c06a097155a2c521b46a2e9a189e9736",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 3
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2017",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/2959730-034",
+   "identifier": "kaal:claim:2959730-034",
+   "text": "Increased transparency from blockchain recordkeeping lowers fees by allowing a fund to expend fewer resources on auditing itself.",
+   "abstract": "Other factors that help keep the fee low include the increased transparency that allows LendingRobot to expense fewer resources on auditing the fund.",
+   "citation": "Wulf A. Kaal, Blockchain Applications and Fee Structure Developments in Private Investment Funds (2017). SSRN: https://ssrn.com/abstract=2959730",
+   "datePublished": "2017",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "funds whose holdings are recorded on a verifiable public ledger"
+   ],
+   "source_pdf_sha256": "ebd86972d8817b0c1c80326ae5564476983cedba3f258ff3b2610f156b93fb50",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-004",
+   "identifier": "kaal:claim:7598518-004",
+   "text": "Model engines served as blind auditors of the design, the code and the text, and they are not independent peer review.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The description is the author's own, in the paper's byline footnote.",
+    "Sections IV and VI set out the audit rounds the footnote refers to."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-011",
+   "identifier": "kaal:claim:7598518-011",
+   "text": "The analysis refuses to unseal unless the design hash is accepted, the tree is clean and matches its commit byte for byte, and the code differs from the audited commits only in a named allowlist.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Describes the unseal procedure of Section VI.",
+    "The refusal is a property of the analysis code, which the paper states was audited before any outcome was read."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'auditing'. Derived node: a roster, not an adjudicated definition."
+}

@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/curation",
+ "identifier": "kaal:entity:curation",
+ "name": "Curation",
+ "termCode": "curation",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/curation.md",
+ "sha256": "56047a6f56f0a623fd1e09e9aba3e59d6696d43abd42bc363f743ce4ff421220",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5095633-004",
+   "identifier": "kaal:claim:5095633-004",
+   "text": "The apparent abundance of internet text overstates the usable supply, because much of it fails quality thresholds for model training due to redundancy, noise, or irrelevance.",
+   "abstract": "while the internet contains a vast corpus of textual material, not all content meets quality thresholds suitable for model training, given issues such as redundancy, noise, or irrelevance.",
+   "citation": "Wulf A. Kaal, Artificial Intelligence The Final Frontier (2025). SSRN: https://ssrn.com/abstract=5095633",
+   "datePublished": "2025",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "applies to internet-sourced text used for model training"
+   ],
+   "source_pdf_sha256": "cbb484711f89bcefc9fc6a5730a1ed0a3f764d7999ad9b6f7d8ea05634c26c63",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-017",
+   "identifier": "kaal:claim:7598518-017",
+   "text": "Ferbach et al. (2024) report that curation acts as implicit preference optimization that amplifies the curator's biases.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "reported",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is the channel the parent reputation program claims reputation can resist."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'curation'. Derived node: a roster, not an adjudicated definition."
+}

@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/novelty.md",
- "sha256": "e4af64c7284efcdeac3d89b82298775a246828931db9258bac0258e91f5257c2",
+ "sha256": "a19d54136bbc747e022e60f6352685898a96b3e6ff485d74a94b58d677bcfec8",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,19 +24,19 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 2
+   "value": 3
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 1
+   "value": 2
   },
   {
    "@type": "PropertyValue",
    "name": "year_span",
    "value": [
     "2021",
-    "2021"
+    "2026"
    ]
   },
   {
@@ -82,7 +82,25 @@
    "scope_conditions": [],
    "source_pdf_sha256": "bedf7bcfbb7a9b0112b5848cb0d941b1d41f330dafeee0143a30ff5e8aa53700",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-024",
+   "identifier": "kaal:claim:7598518-024",
+   "text": "No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The oracle alone receives one bit per candidate from the sealed reference, the candidate's true validity verdict.",
+    "Validators do see a tag, whose association with rare membership is bounded by design."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'novelty'. Derived node: a roster, not an adjudicated definition."
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'novelty'. Derived node: a roster, not an adjudicated definition."
 }

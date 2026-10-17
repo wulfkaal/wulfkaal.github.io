@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/coverage.md",
- "sha256": "1a5fc064e7d65091144c2657a065319c605e67c11f77deeee1374028f96ca46a",
+ "sha256": "2067a7c6e67aa6bebedda0fb3c632f7b4decbce31ee824fd06807523a8ab9733",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,12 +24,12 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 2
+   "value": 3
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 2
+   "value": 3
   },
   {
    "@type": "PropertyValue",
@@ -78,7 +78,25 @@
    ],
    "source_pdf_sha256": "52cb210167f06f0c7a2581214b156326216543de80b8394320b629c045c9e214",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-024",
+   "identifier": "kaal:claim:7598518-024",
+   "text": "No validator, filter, or score in the design is asked about rarity, novelty, frequency, diversity, or coverage, and the outcome is computed by an evaluator alone from a sealed reference that no filter reads.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The oracle alone receives one bit per candidate from the sealed reference, the candidate's true validity verdict.",
+    "Validators do see a tag, whose association with rare membership is bounded by design."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'coverage'. Derived node: a roster, not an adjudicated definition."
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'coverage'. Derived node: a roster, not an adjudicated definition."
 }

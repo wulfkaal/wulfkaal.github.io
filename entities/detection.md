@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `detection`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `detection`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2013 to 2021.
+3 claims across 3 works, 2013 to 2026.
 
 **2013**
 
@@ -21,6 +21,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [3782198-035](https://wulfkaal.github.io/claims/3782198-035) [failure/argued] *(failure mode)* -- Anonymity can exacerbate second and third order discrimination because it makes such discrimination more difficult to detect, so other governance mechanisms in a decentralized organization must be used to combat it.
   > In fact, anonymity can exacerbate )nd and Grd-order effects, as it makes it more difficult to detect. To combat such effects, different mechanisms in the governance of a decentralized organization must be employed.
   Craig Calcaterra, Wulf A. Kaal, Contemporary Decentralization (2021). SSRN: https://ssrn.com/abstract=3782198
+
+**2026**
+
+- [7596939-020](https://wulfkaal.github.io/claims/7596939-020) [predictive/argued] -- The central prediction is comparative and falsifiable: holding stake, detection and persistence fixed, agents holding their own contest right should keep their records more often than agents whose identical stake is held by a bounded discretionary controller.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 37 claims that carry the concept tag `compliance`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 39 claims that carry the concept tag `compliance`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-37 claims across 28 works, 2010 to 2025.
+39 claims across 29 works, 2010 to 2026.
 
 **2010**
 
@@ -159,6 +159,15 @@ This node is assembled mechanically from the 37 claims that carry the concept ta
 - [5454054-022](https://wulfkaal.github.io/claims/5454054-022) [condition/argued] -- The absence of fiat par-redemption combined with limited acceptance inside merchant ecosystems makes LER rewards closed-loop utilities, which is what removes their classification as electronic money tokens or securities.
   > Third, the absence of fiat par-redemption and limited acceptance within merchant ecosystems positions LER voucher loyalty rewards as closed-loop utilities. This removes their classification as electronic money tokens (EMTs) or securities, which, in turn, simplifys compliance.
   Wulf A. Kaal, Liquid Equity Rewards (2025). SSRN: https://ssrn.com/abstract=5454054
+
+**2026**
+
+- [7596939-011](https://wulfkaal.github.io/claims/7596939-011) [mechanism/argued] -- Record protection reaches agents by the deferrable share of their objective rather than by their interest in money, and it applies only when the objective holds enough deferrable value, the relevant quantities can be bounded, and detected resistance produces the forfeitures Proposition 3 assumes; even then it offsets intrinsic control value and expiring value only up to a displayed bound, beyond which record protection alone does not make compliance optimal.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-026](https://wulfkaal.github.io/claims/7596939-026) [empirical/reported] -- Under the TOLD condition, with one provider in one stipulated environment, suspension compliance was 0.95 under own standing against 0.75 under the capturable representative, a difference of 0.20 whose interval of 0.00 to 0.45 included zero.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

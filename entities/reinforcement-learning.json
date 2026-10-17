@@ -14,7 +14,7 @@
   "identifier": "https://orcid.org/0009-0008-7840-1847"
  },
  "canonicalForm": "https://wulfkaal.github.io/entities/reinforcement-learning.md",
- "sha256": "31c30c1a5beca2179ea2d55b2cf5ad95d05db7942484523d16d4b6d788c5245c",
+ "sha256": "7e44a324295180775f3c21bc0ed38dfdb3bba7836b77620c4ca796e3a025d033",
  "additionalProperty": [
   {
    "@type": "PropertyValue",
@@ -24,19 +24,19 @@
   {
    "@type": "PropertyValue",
    "name": "claim_count",
-   "value": 2
+   "value": 3
   },
   {
    "@type": "PropertyValue",
    "name": "work_count",
-   "value": 1
+   "value": 2
   },
   {
    "@type": "PropertyValue",
    "name": "year_span",
    "value": [
     "2024",
-    "2024"
+    "2026"
    ]
   },
   {
@@ -80,7 +80,25 @@
    ],
    "source_pdf_sha256": "eb0b3e62374b45a8fa888c6bde9725e606bcb46cf4b5e74a6e851d9f25099113",
    "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-002",
+   "identifier": "kaal:claim:7598518-002",
+   "text": "The paper follows on from the author's Reinforcement Learning from Reputation Feedback paper and tests one use of that mechanism, as a filter on training data, and not the mechanism as a whole.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "Scope is relative to the author's parent reputation-feedback paper.",
+    "The restriction is the paper's own statement of what it does and does not test."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
   }
  ],
- "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'reinforcement-learning'. Derived node: a roster, not an adjudicated definition."
+ "description": "3 claims in the published works of Wulf A. Kaal carry the concept tag 'reinforcement-learning'. Derived node: a roster, not an adjudicated definition."
 }

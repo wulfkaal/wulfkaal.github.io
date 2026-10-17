@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 12 claims that carry the concept tag `collateral`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 13 claims that carry the concept tag `collateral`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-12 claims across 7 works, 2014 to 2025.
+13 claims across 8 works, 2014 to 2026.
 
 **2014**
 
@@ -60,6 +60,12 @@ This node is assembled mechanically from the 12 claims that carry the concept ta
 - [5886342-020](https://wulfkaal.github.io/claims/5886342-020) [definitional/asserted] -- A digital pledge is constructed as a bankruptcy remote preferential right over a digital object, giving the pledgee priority that survives the pledgor's insolvency.
   > (1) A Digital Pledge is a bankruptcy-remote prefer- ential right on a Digital Object.
   Furrer Andreas, Wulf A. Kaal, Stephan D. Meyer, Universal Digital Law Codex (UDLC) (2025). SSRN: https://ssrn.com/abstract=5886342
+
+**2026**
+
+- [7596939-032](https://wulfkaal.github.io/claims/7596939-032) [condition/stated] -- The dual-use result is conditional rather than general: sufficient sanctions, norms, shared collateral, review and repeated success fees all fall outside it, and it governs only the incentive half of protection.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

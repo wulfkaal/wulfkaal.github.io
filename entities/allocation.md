@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 3 claims that carry the concept tag `allocation`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 6 claims that carry the concept tag `allocation`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-3 claims across 2 works, 2022 to 2025.
+6 claims across 3 works, 2022 to 2026.
 
 **2022**
 
@@ -24,6 +24,18 @@ This node is assembled mechanically from the 3 claims that carry the concept tag
 - [5886442-013](https://wulfkaal.github.io/claims/5886442-013) [failure/argued] *(failure mode)* -- Price signals, which neoclassical theory celebrates as the elegant solution to allocation under scarcity, become increasingly irrelevant for the dominant factors of production in the agentic economy.
   > Price signals, which neoclassical theory celebrates as the elegant solution to the allocation problem under scarcity, become increasingly irrelevant for the dominant factors of production.
   Wulf A. Kaal, The AI-to-AI Economy and the Collapse of Anthropocentric Economic Theory (2025). SSRN: https://ssrn.com/abstract=5886442
+
+**2026**
+
+- [7596939-004](https://wulfkaal.github.io/claims/7596939-004) [condition/stated] -- The Article disclaims the moral reading of its own slogan: rights follow stake is a boundary case about allocation, claiming no moral right for any intelligence system, with most of the framework being regulatory permission.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-018](https://wulfkaal.github.io/claims/7596939-018) [design/stated] -- The benchmark against which every allocation is compared is the protection the agent would give itself, which makes the agent's own standing the normative reference rather than one option among many.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-031](https://wulfkaal.github.io/claims/7596939-031) [condition/stated] -- The allocation theorem is stated without reference to reputation tokens; the reputation system is what makes the agent the winning candidate under it, rather than being assumed by it.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

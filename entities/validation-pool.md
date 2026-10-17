@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 28 claims that carry the concept tag `validation-pool`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 29 claims that carry the concept tag `validation-pool`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-28 claims across 7 works, 2018 to 2026.
+29 claims across 8 works, 2018 to 2026.
 
 **2018**
 
@@ -105,6 +105,9 @@ This node is assembled mechanically from the 28 claims that carry the concept ta
 - [6655138-019](https://wulfkaal.github.io/claims/6655138-019) [mechanism/argued] -- The possibility loop generalizes the function Hayek assigned to the price system: where prices aggregate information about scarcity, the validation pool aggregates information about generative quality.
   > The reconciliation is that the possibility loop generalizes the price-system function: where prices aggregate information about scarcity, the validation pool aggregates information about generative quality (Hayek 1945).
   Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138
+- [7596939-007](https://wulfkaal.github.io/claims/7596939-007) [mechanism/stated] -- Both work claims and challenges to a record are adjudicated by the same instrument: a validation pool in which holders stake reputation for or against, with the winning side splitting the losing side's stakes.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

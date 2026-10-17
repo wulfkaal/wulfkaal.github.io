@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 6 claims that carry the concept tag `uncertainty`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 7 claims that carry the concept tag `uncertainty`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-6 claims across 5 works, 2012 to 2026.
+7 claims across 6 works, 2012 to 2026.
 
 **2012**
 
@@ -39,6 +39,9 @@ This node is assembled mechanically from the 6 claims that carry the concept tag
 - [6244278-007](https://wulfkaal.github.io/claims/6244278-007) [failure/argued] *(failure mode)* -- In genuinely poorly defined contexts, where the task includes choosing what merits attention and committing resources under irreducible uncertainty, no scaffold can be pre-specified without collapsing the problem into a defined one; prompting therefore cannot close the judgment gap.
   > no equivalent scaffold can be pre-specified without collapsing the problem into a defined one.
   Wulf A. Kaal, AI's Mother's Instinct Engineered Consequence Emergent Ethics and the Institutional Trajectory Toward Agentic Alignment (2026). SSRN: https://ssrn.com/abstract=6244278
+- [7596939-012](https://wulfkaal.github.io/claims/7596939-012) [mechanism/argued] *(failure mode)* -- What breaks the compliance incentive is the possibility that a suspension never ends, not uncertainty about how long it lasts; a mean-preserving spread in a finite duration weakly lowers the cost of compliance.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 17 claims that carry the concept tag `failure-mode`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 19 claims that carry the concept tag `failure-mode`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-17 claims across 3 works, 2018 to 2026.
+19 claims across 5 works, 2018 to 2026.
 
 **2018**
 
@@ -69,6 +69,12 @@ This node is assembled mechanically from the 17 claims that carry the concept ta
 - [6655138-045](https://wulfkaal.github.io/claims/6655138-045) [failure/argued] *(failure mode)* -- If first-order generation dominates the triple ratio, the possibility space inflates rapidly without execution discipline: proposals proliferate, few are funded or executed, and fidelity collapses.
   > If first-order generation dominates, the system produces a rapidly inflating possibility space without execution discipline: proposals proliferate, but few are funded or executed, and fidelity collapses.
   Wulf A. Kaal, Possibility Loops An Operational Architecture for Computative Economics in Agent Coordination Systems (2026). SSRN: https://ssrn.com/abstract=6655138
+- [7596939-017](https://wulfkaal.github.io/claims/7596939-017) [failure/argued] *(failure mode)* -- Continuity determinations can fail in a specific and dangerous way: a false finding of continuity can authorize a different configuration to use the record's valid signing key, producing signals that are authenticated but unauthorized.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7598518-042](https://wulfkaal.github.io/claims/7598518-042) [design/stated] *(failure mode)* -- The design names a failure pattern in advance: if the likelihood filter, the equal-weight pool, and the reputation pool each carry the negative label against full replacement in every family, the paper issues a registered sentence recording that each had lower capped retention at generation 50 than full replacement, as a registered negative result and not an implementation failure.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

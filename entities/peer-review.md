@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 5 claims that carry the concept tag `peer-review`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 7 claims that carry the concept tag `peer-review`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-5 claims across 5 works, 2021 to 2024.
+7 claims across 6 works, 2021 to 2026.
 
 **2021**
 
@@ -30,6 +30,15 @@ This node is assembled mechanically from the 5 claims that carry the concept tag
 - [4755632-016](https://wulfkaal.github.io/claims/4755632-016) [design/argued] -- Gamification supplies quality control by making workers review and rate each other's contributions for points or recognition, which surfaces and resolves discrepancies through consensus-based voting or peer review rather than through duplicated independent work.
   > Gamification can be utilized to improve data quality through mechanisms like consensus-based voting or peer review. Workers can review and rate each other's contributions, earning points or recognition for accurate and consistent work.
   Wulf A. Kaal, AI Learning - Decentralized Governance to Optimize Human Output Datasets for AI Learning (2024). SSRN: https://ssrn.com/abstract=4755632
+
+**2026**
+
+- [7598518-004](https://wulfkaal.github.io/claims/7598518-004) [condition/stated] *(failure mode)* -- Model engines served as blind auditors of the design, the code and the text, and they are not independent peer review.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
+- [7598518-006](https://wulfkaal.github.io/claims/7598518-006) [condition/stated] *(failure mode)* -- Because the Gaussian outcomes already exist, written before any venue reviewed the design, the paper does not claim untouched Stage 1 status.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 

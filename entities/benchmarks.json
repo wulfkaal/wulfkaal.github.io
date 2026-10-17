@@ -1,0 +1,85 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/benchmarks",
+ "identifier": "kaal:entity:benchmarks",
+ "name": "Benchmarks",
+ "termCode": "benchmarks",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/benchmarks.md",
+ "sha256": "86dd9090ad5c5ed1bea5638e6d16da458689bacbb5c2968f4b157b396ac890ae",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/5541658-032",
+   "identifier": "kaal:claim:5541658-032",
+   "text": "Benchmark results for legal LLMs may overstate capability because of data contamination: if a model saw a benchmark's ground truth answers during training, its measured performance reflects memorization rather than genuine generalization.",
+   "abstract": "If a model has already seen a benchmark's ground-truth answers during training, its performance may reflect memorization rather than genuine generalization, making it hard to assess its ability on truly unseen tasks.",
+   "citation": "Wulf A. Kaal, Morgan A. Gray, The Evolving Role of Artificial Intelligence in Law (2025). SSRN: https://ssrn.com/abstract=5541658",
+   "datePublished": "2025",
+   "claim_type": "failure",
+   "confidence": "evidenced",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "closed source LLMs evaluated on public benchmarks"
+   ],
+   "source_pdf_sha256": "e543a2d698fcd522d4d02e034cc9ee1344d0015d2c824b40b9e05ab7c0728c60",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-018",
+   "identifier": "kaal:claim:7596939-018",
+   "text": "The benchmark against which every allocation is compared is the protection the agent would give itself, which makes the agent's own standing the normative reference rather than one option among many.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "design",
+   "confidence": "stated",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "the protection standard of Part VI.A"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'benchmarks'. Derived node: a roster, not an adjudicated definition."
+}

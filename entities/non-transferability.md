@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 10 claims that carry the concept tag `non-transferability`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 13 claims that carry the concept tag `non-transferability`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-10 claims across 6 works, 2018 to 2026.
+13 claims across 7 works, 2018 to 2026.
 
 **2018**
 
@@ -48,6 +48,15 @@ This node is assembled mechanically from the 10 claims that carry the concept ta
 - [6607458-034](https://wulfkaal.github.io/claims/6607458-034) [design/argued] -- Reputation infrastructure adequate to computative exchange requires four elements: verification against stated objectives, a tamper-resistant accessible record, a mapping from verifications to a predictive reputation score, and a non-transferability constraint, which distributed-ledger systems satisfy by construction.
   > The infrastructure requirements are four: a verification mechanism against stated objectives; a tamper-resistant accessible record of verifications; a mapping from verifications to a reputation score predictive of future performance; and a non-transferability constraint.
   Wulf A. Kaal, Computative Economics A Framework for Economic Analysis under Computational Abundance (2026). SSRN: https://ssrn.com/abstract=6607458
+- [7596939-002](https://wulfkaal.github.io/claims/7596939-002) [mechanism/argued] -- A non-transferable reputation record gives an agent exposure that requires no capital set aside for the purpose, because the record cannot be pledged, sold or redeployed.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-006](https://wulfkaal.github.io/claims/7596939-006) [mechanism/stated] -- Reputation in the underlying system is domain-specific and strictly non-transferable: bound to the holder's identity, earned only through validated work, and incapable of sale, loan or transfer.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
+- [7596939-009](https://wulfkaal.github.io/claims/7596939-009) [mechanism/argued] -- The agent's exposure to destruction of its record is conditionally inalienable: no part of the lost salary stream can be transferred to a controller, so any third-party exposure must be financed from outside the record.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

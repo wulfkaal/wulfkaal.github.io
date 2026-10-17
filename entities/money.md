@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 2 claims that carry the concept tag `money`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 3 claims that carry the concept tag `money`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-2 claims across 2 works, 2021 to 2024.
+3 claims across 3 works, 2021 to 2026.
 
 **2021**
 
@@ -21,6 +21,12 @@ This node is assembled mechanically from the 2 claims that carry the concept tag
 - [4900878-015](https://wulfkaal.github.io/claims/4900878-015) [condition/argued] -- Against the objection that the correspondence principle should make quantum effects vanish at macro scales, the paper holds that quantum properties scale up through designed technologies such as money and so affect the economy as a whole.
   > proponents of quantum economics maintain that quantum properties can scale up through designed technologies like money, affecting the economy as a whole
   Wulf A. Kaal, Quantum Economy and Tokenomics (2024). SSRN: https://ssrn.com/abstract=4900878
+
+**2026**
+
+- [7596939-011](https://wulfkaal.github.io/claims/7596939-011) [mechanism/argued] -- Record protection reaches agents by the deferrable share of their objective rather than by their interest in money, and it applies only when the objective holds enough deferrable value, the relevant quantities can be bounded, and detected resistance produces the forfeitures Proposition 3 assumes; even then it offsets intrinsic control value and expiring value only up to a displayed bound, beyond which record protection alone does not make compliance optimal.
+  > Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.
+  Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939
 
 ## Verify
 

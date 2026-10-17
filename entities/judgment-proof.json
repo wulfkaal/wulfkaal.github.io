@@ -1,0 +1,86 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/judgment-proof",
+ "identifier": "kaal:entity:judgment-proof",
+ "name": "Judgment proof",
+ "termCode": "judgment-proof",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/judgment-proof.md",
+ "sha256": "cd6b7388eff5b09f833d29f402ec88242c89ac56b12f2ec0f52292ad24bb948f",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2019",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3409548-022",
+   "identifier": "kaal:claim:3409548-022",
+   "text": "Managers of funds that exist entirely in cyberspace cannot assume they are judgment proof; the practical consequence of operating across a global node network is exposure to more regulation, not less.",
+   "abstract": "However, managers cannot assume that they are judgment-proof.",
+   "citation": "Kaal, Financial Technology and Hedge Funds (2019). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409548",
+   "datePublished": "2019",
+   "claim_type": "condition",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "funds operating through digital currencies and smart contracts without a domicile"
+   ],
+   "source_pdf_sha256": "74227ab2656b06bfe4a29c942fc2ba26df9f476917e0a9f85ec038b8c3402c40",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7596939-034",
+   "identifier": "kaal:claim:7596939-034",
+   "text": "Direct standing fails completely against a judgment-proof deployer that can alter its agent cheaply and undetected, failing as surely as a bribable guardian.",
+   "abstract": "Should intelligent agents have legal rights? This Article sets that question aside and asks a smaller one that matters more in practice. An intelligent agent that earns a reputation record has something to lose.",
+   "citation": "Wulf A. Kaal, Should an Intelligent Agent Have Legal Rights? (2026). SSRN: https://ssrn.com/abstract=7596939",
+   "datePublished": "2026",
+   "claim_type": "failure",
+   "confidence": "argued",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "judgment-proof deployer",
+    "cheap undetected alteration"
+   ],
+   "source_pdf_sha256": "aa3ba2287a9f0fa2529e1c92bd6c509cdc4697fafe2de73d11877c44e592f39c",
+   "status": "current"
+  }
+ ],
+ "description": "2 claims in the published works of Wulf A. Kaal carry the concept tag 'judgment-proof'. Derived node: a roster, not an adjudicated definition."
+}

@@ -21,7 +21,9 @@
  "keywords": [
   "research-methods"
  ],
- "about": [],
+ "about": [
+  "design"
+ ],
  "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
  "additionalProperty": [
   {
@@ -50,12 +52,25 @@
   {
    "@type": "PropertyValue",
    "name": "content_sha256",
-   "value": "72de0761734dfbf87b39b9be748583c5e6ae610e892af04e7ae79d822dc2f42f"
+   "value": "3fb03e158ba56d2fc067ffbd36fe68a437234ccd1fa416a3e6d9b71253e01964"
   },
   {
    "@type": "PropertyValue",
    "name": "is_failure_mode",
    "value": false
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "edges",
+   "value": [
+    {
+     "rel": "restates",
+     "to": "https://wulfkaal.github.io/claims/7596939-023",
+     "to_id": "kaal:claim:7596939-023",
+     "similarity": 0.391,
+     "measure": "idf_overlap_v1"
+    }
+   ]
   }
  ]
 }

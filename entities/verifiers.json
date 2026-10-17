@@ -1,0 +1,122 @@
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTerm",
+ "@id": "https://wulfkaal.github.io/entities/verifiers",
+ "identifier": "kaal:entity:verifiers",
+ "name": "Verifiers",
+ "termCode": "verifiers",
+ "inDefinedTermSet": {
+  "@id": "https://wulfkaal.github.io/entities/index.json"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Wulf A. Kaal",
+  "identifier": "https://orcid.org/0009-0008-7840-1847"
+ },
+ "canonicalForm": "https://wulfkaal.github.io/entities/verifiers.md",
+ "sha256": "d2787366d8e04c349c89ee0fd0dadd672ac163cc61efc04392f59e14bdd05ef7",
+ "additionalProperty": [
+  {
+   "@type": "PropertyValue",
+   "name": "status",
+   "value": "derived"
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "claim_count",
+   "value": 4
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "work_count",
+   "value": 2
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "year_span",
+   "value": [
+    "2018",
+    "2026"
+   ]
+  },
+  {
+   "@type": "PropertyValue",
+   "name": "non_current_claims",
+   "value": 0
+  }
+ ],
+ "subjectOf": [
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/3128900-025",
+   "identifier": "kaal:claim:3128900-025",
+   "text": "Verifiers stake proportionally smaller amounts of reputation tokens than workers, because their higher reputation scores make them less likely to be malicious actors.",
+   "abstract": "Similarly, verifiers stake (a proportionally smaller) amount of reputation tokens because verifiers have a higher reputation score and are therefore less likely to be malicious actors.",
+   "citation": "Wulf A. Kaal, Decentralized Mechanical Turk Through Verified Reputation (2018). SSRN: https://ssrn.com/abstract=3128900",
+   "datePublished": "2018",
+   "claim_type": "mechanism",
+   "confidence": "argued",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "verifiers with higher reputation scores than the workers they verify"
+   ],
+   "source_pdf_sha256": "381d72e85d976e2af852e8ec3bba87bc6a05ccb3349a2c3dd6f9e64de96ab4b0",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-015",
+   "identifier": "kaal:claim:7598518-015",
+   "text": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "condition",
+   "confidence": "reported",
+   "is_failure_mode": false,
+   "scope_conditions": [
+    "The result is prior work, not a finding of this study.",
+    "What this paper isolates is how to weight several assessors behind a validity filter, not whether verifier selection works."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-016",
+   "identifier": "kaal:claim:7598518-016",
+   "text": "Yi et al. (2026) report that an imperfect external verifier drives the model toward the verifier's own knowledge center.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "reported",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "It is a limit on verifier-based selection generally, including the pool under test."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  },
+  {
+   "@type": "Claim",
+   "@id": "https://wulfkaal.github.io/claims/7598518-018",
+   "identifier": "kaal:claim:7598518-018",
+   "text": "Qiao et al. (2026) report that verifiers which see only fragmented slices of the reference can accelerate tail loss.",
+   "abstract": "Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.",
+   "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518",
+   "datePublished": "2026",
+   "claim_type": "mechanism",
+   "confidence": "reported",
+   "is_failure_mode": true,
+   "scope_conditions": [
+    "The finding is prior work cited by the paper and is not measured in this study.",
+    "The pool under test applies one domain-general validity bit, so this is not the failure mode it is exposed to."
+   ],
+   "source_pdf_sha256": "cd22d148b2b55c2e27f087dcaa61cdf44ad7022b400b355c31a9cd7e43a31749",
+   "status": "current"
+  }
+ ],
+ "description": "4 claims in the published works of Wulf A. Kaal carry the concept tag 'verifiers'. Derived node: a roster, not an adjudicated definition."
+}

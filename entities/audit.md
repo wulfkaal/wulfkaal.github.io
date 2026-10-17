@@ -4,11 +4,11 @@
 
 **Status.** derived
 
-This node is assembled mechanically from the 5 claims that carry the concept tag `audit`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
+This node is assembled mechanically from the 7 claims that carry the concept tag `audit`. It is a roster of what the corpus says under this term. It is **not** an adjudicated definition: no single statement here has been ruled canonical, and no first-appearance call has been made. Read the claims and judge for yourself.
 
 ## Every claim under this term
 
-5 claims across 3 works, 2019 to 2021.
+7 claims across 4 works, 2019 to 2026.
 
 **2019**
 
@@ -30,6 +30,15 @@ This node is assembled mechanically from the 5 claims that carry the concept tag
 - [3936876-032](https://wulfkaal.github.io/claims/3936876-032) [empirical/evidenced] *(failure mode)* -- Externally led auditing of digital asset reserves among custodial service providers is declining, falling 24 percentage points relative to the 2018 sample.
   > The report noted this is a 24-percentage point decline compared to their 2018 sample.
   Wulf A. Kaal, Hayley Howe, Custody of Digital Assets (2021). SSRN: https://ssrn.com/abstract=3936876
+
+**2026**
+
+- [7598518-036](https://wulfkaal.github.io/claims/7598518-036) [mechanism/stated] -- The design binds in one file, frozen by hash only after twenty-two rounds of blind audit by two model engines, and every harness and analysis step refuses to run against a design whose hash differs.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
+- [7598518-047](https://wulfkaal.github.io/claims/7598518-047) [empirical/stated] *(failure mode)* -- In the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three and left identified low-severity findings unadopted.
+  > Intelligence models increasingly learn from data that earlier Intelligence models produced, and when that loop repeats the rare cases disappear first. This paper preregisters a test of whether a reputation-weighted validator pool, filtering the training data of a recursive replacement loop, keeps those rare cases alive. The outcomes remain sealed until a replication of the original model-collapse result succeeds.
+  Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518
 
 ## Verify
 
