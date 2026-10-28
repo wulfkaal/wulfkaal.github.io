@@ -1,0 +1,19 @@
+{
+ "content_hash": "930f1b62d390c92b4d6dd19c2f5ca1abdd9963c39a393a748df4aa16e44db5d9",
+ "object": "https://wulfkaal.github.io/claims/7598518-026",
+ "claim": "The reputation update is an asymmetric multiplicative rule in which reputation is multiplied by one plus alpha when a vote matches the revealed key and by one minus gamma when it does not, with alpha fixed at 0.05, gamma at 0.10, and a floor applied after each update.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-026.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 930f1b62d390c92b4d6dd19c2f5ca1abdd9963c39a393a748df4aa16e44db5d9 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

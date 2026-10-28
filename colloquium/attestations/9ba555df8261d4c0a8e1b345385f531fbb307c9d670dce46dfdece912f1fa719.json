@@ -1,0 +1,19 @@
+{
+ "content_hash": "9ba555df8261d4c0a8e1b345385f531fbb307c9d670dce46dfdece912f1fa719",
+ "object": "https://wulfkaal.github.io/claims/7596939-033",
+ "claim": "Giving the agent the trigger relocates the capture problem rather than removing it: where the deployer sets the agent's configuration, capture moves from the controller's wallet to the agent's configuration.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7596939-033.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9ba555df8261d4c0a8e1b345385f531fbb307c9d670dce46dfdece912f1fa719 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "436e4317cd7492fe82c77527a7be53d52e4b02495311e9197aa012292d1e0a9f",
+ "object": "https://wulfkaal.github.io/claims/7598518-018",
+ "claim": "Qiao et al. (2026) report that verifiers which see only fragmented slices of the reference can accelerate tail loss.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-018.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 436e4317cd7492fe82c77527a7be53d52e4b02495311e9197aa012292d1e0a9f verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

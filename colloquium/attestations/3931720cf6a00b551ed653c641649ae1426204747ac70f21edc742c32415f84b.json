@@ -1,0 +1,19 @@
+{
+ "content_hash": "3931720cf6a00b551ed653c641649ae1426204747ac70f21edc742c32415f84b",
+ "object": "https://wulfkaal.github.io/claims/7598518-015",
+ "claim": "Feng et al. (2025) show that verifier-selected synthetic data can prevent collapse, and the paper concedes the core of that result: verifier selection is an established remedy, and the oracle ceiling and the Gaussian setting are established.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-015.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 3931720cf6a00b551ed653c641649ae1426204747ac70f21edc742c32415f84b verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

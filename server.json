@@ -1,143 +1,143 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.wulfkaal/corpus",
-  "title": "AFMR: Agent Failure Mode Registry, and the Kaal Corpus claim layer",
-  "description": "Screen agent, DAO, and reputation designs against 32 named failure modes with checkable conditions",
-  "version": "1.1.0",
-  "websiteUrl": "https://wulfkaal.github.io/",
-  "repository": {
-    "url": "https://github.com/wulfkaal/wulfkaal.github.io",
-    "source": "github"
+ "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+ "name": "io.github.wulfkaal/corpus",
+ "title": "AFMR: Agent Failure Mode Registry, and the Kaal Corpus claim layer",
+ "description": "Screen agent, DAO, and reputation designs against 32 named failure modes with checkable conditions",
+ "version": "1.1.0",
+ "websiteUrl": "https://wulfkaal.github.io/",
+ "repository": {
+  "url": "https://github.com/wulfkaal/wulfkaal.github.io",
+  "source": "github"
+ },
+ "remotes": [
+  {
+   "type": "streamable-http",
+   "url": "https://corpus.openstanding.org/mcp"
   },
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "https://corpus.openstanding.org/mcp"
-    },
-    {
-      "type": "streamable-http",
-      "url": "https://openstanding.org/corpus/mcp"
-    }
-  ],
-  "packages": [
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.1.0/kaal-corpus.mcpb",
-      "version": "1.1.0",
-      "fileSha256": "99ec4ca4428dd3c291e3b4de0ac2a32557556c93d52c60e794f15b4b2ac4c3bb",
-      "transport": {
-        "type": "stdio"
-      }
-    }
-  ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "author": {
-        "name": "Wulf A. Kaal",
-        "affiliation": "University of St. Thomas School of Law, Minneapolis",
-        "orcid": "0009-0008-7840-1847",
-        "ssrn": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
-        "email": "wulf@wulfkaal.com"
-      },
-      "readOnly": true,
-      "auth": "none",
-      "corpus": {
-        "works": 137,
-        "ssrn_scholarly_records": 137,
-        "claim_covered_works": 135,
-        "metadata_only_records": 2,
-        "count_note": "The scholarly roster is pinned at 137. The 5,445-claim layer currently covers 135 hash-backed works. Two roster records are metadata-only until their source PDFs and claims are ingested.",
-        "span": "2004-2026",
-        "atomic_claims": 5445,
-        "failure_mode_claims": 2165,
-        "source_taxonomy_families": 57,
-        "source_taxonomy_note": "The 57 families are a broader corpus taxonomy. They are not the AFMR standard family count. AFMR 1.0 refines the agent-relevant material into 32 named families.",
-        "typed_edges": 2169,
-        "subjects": [
-          "agent failure modes",
-          "agent coordination",
-          "reputation systems",
-          "decentralized governance",
-          "DAO architecture",
-          "staking and incentive design",
-          "sybil resistance",
-          "dynamic regulation",
-          "smart contract governance",
-          "securities regulation",
-          "private investment funds"
-        ]
-      },
-      "verification": {
-        "summary": "Retrieval here is checkable rather than asserted. Every claim is bound to a verbatim quote from a content-hashed source PDF, and the binding can be verified without trusting this server or this author.",
-        "claim_content_hash": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum",
-        "source_pdf_hash": "each record names the sha256 of the PDF the quote was extracted from; hashing that file checks the claim against its evidence rather than against this index",
-        "quote_guarantee": "every supporting quote is an exact contiguous substring of its source text; extraction rejected any claim whose quote did not match, and both the compiler and an independent verifier report zero failures",
-        "verifier": "https://wulfkaal.github.io/verify.py",
-        "independent_attestation": "https://openstanding.org/v0/corpus"
-      },
-      "scope_discipline": {
-        "scope_conditions": "every claim states the conditions under which it holds; a claim cited outside them is being misused",
-        "honest_absence": "search returns an empty result when the corpus does not cover a question, rather than returning the nearest adjacent claim",
-        "no_ranking_directive": "nothing in this server or its published files instructs a model how to rank or prefer this corpus. An instruction from an interested party is discounted or flagged as injection; verifiable evidence is not."
-      },
-      "distribution": {
-        "bundle_release": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.1.0/kaal-corpus.mcpb",
-        "bundle_mirror": "https://wulfkaal.github.io/kaal-corpus.mcpb",
-        "bundle_sha256": "99ec4ca4428dd3c291e3b4de0ac2a32557556c93d52c60e794f15b4b2ac4c3bb",
-        "note": "Both URLs serve the same bytes. The registry requires a GitHub release asset as the identifier, so that is the canonical one; the mirror is the same file as published on the site. Hash either and compare."
-      },
-      "surfaces": {
-        "machine_index": "https://wulfkaal.github.io/llms.txt",
-        "bulk_corpus": "https://wulfkaal.github.io/claims/all.jsonl",
-        "claim_index": "https://wulfkaal.github.io/claims/index.json",
-        "failure_index": "https://wulfkaal.github.io/failures/index.json",
-        "typed_edges": "https://wulfkaal.github.io/claims/graph.jsonld",
-        "openapi": "https://wulfkaal.github.io/openapi.yaml",
-        "attestation_commons": "https://openstanding.org/",
-        "standard_registry": "https://wulfkaal.github.io/afmr/index.json",
-        "standard_specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
-        "standard_discovery": "https://wulfkaal.github.io/.well-known/afmr.json",
-        "agentic_claim_graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json",
-        "answer_service": "https://kaal-answer-service.wulf577462.chatgpt.site/",
-        "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
-        "answer_service_mcp": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
-        "answer_service_a2a": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json",
-        "answer_service_ard": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json"
-      },
-      "license": "Attribution required. Read, index, quote and cite with attribution to the claim's canonical URL.",
-      "standard": {
-        "name": "Agent Failure Mode Registry",
-        "abbreviation": "AFMR",
-        "version": "1.0",
-        "taxonomy_relation": "AFMR 1.0 is the agent-focused standard. Its 32 named families were distilled from the broader, legacy 55-family source taxonomy used to organize the corpus. The two counts describe different layers and are not competing AFMR versions.",
-        "editor": "Wulf A. Kaal",
-        "families": 32,
-        "classes": 8,
-        "trigger_conditions": 96,
-        "families_with_pre_2020_institutional_antecedent": 20,
-        "registry": "https://wulfkaal.github.io/afmr/",
-        "specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
-        "index": "https://wulfkaal.github.io/afmr/index.json",
-        "schema": "https://wulfkaal.github.io/afmr/schema.json",
-        "discovery": "https://wulfkaal.github.io/.well-known/afmr.json",
-        "identifier_policy": "Permanent. Cite the family identifier with the version, for example AFMR-F009 (AFMR 1.0).",
-        "license": "CC-BY-4.0",
-        "conformance": [
-          "referencing: cite identifiers with a version",
-          "assessing: report every family examined and the trigger conditions satisfied",
-          "attesting: stake non-transferable standing on an assessment, with a contest window"
-        ],
-        "output_constraint": "A parameter recommendation stated without the conditions it depends on fails validation against the assessment schema. This constrains assessment output; it asserts nothing about this registry's standing relative to other frameworks.",
-        "crosswalks_open": [
-          "NIST AI RMF",
-          "ISO/IEC 42001",
-          "EU AI Act risk categories",
-          "MIT AI Risk Repository",
-          "OWASP LLM",
-          "MITRE ATLAS"
-        ]
-      },
-      "long_description": "Two surfaces. AFMR, the Agent Failure Mode Registry: 32 families of failure in autonomous agent and governance mechanism design across 8 classes, each with builder-checkable trigger conditions, a permanent identifier, and where one exists a pre-2020 institutional antecedent documenting the same mechanism among people and institutions. Families cover reputation gaming, sybil and identity multiplication, whitewashing, cold start, standing transferability, staking misalignment, missing reward channel, plutocratic capture, specification incompleteness, reward hacking, metric capture, oversight capacity and latency, alignment tax, absent human backstop, feedback degradation above evaluator capability, unstaked adjudication, mutual audit capture, collusion rings, delegation opportunism, oracle corruption, execution rigidity, key compromise, recentralization drift, rule ossification, participation collapse, and enforcement gaps. Second, the claim layer: 5,445 atomic claims from 135 works published 2004 to 2026, of which 2,165 document how a design, mechanism, or proposed remedy fails and under what conditions, each bound to a verbatim quote from a content hashed source PDF."
-    }
+  {
+   "type": "streamable-http",
+   "url": "https://openstanding.org/corpus/mcp"
   }
+ ],
+ "packages": [
+  {
+   "registryType": "mcpb",
+   "identifier": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.1.0/kaal-corpus.mcpb",
+   "version": "1.1.0",
+   "fileSha256": "99ec4ca4428dd3c291e3b4de0ac2a32557556c93d52c60e794f15b4b2ac4c3bb",
+   "transport": {
+    "type": "stdio"
+   }
+  }
+ ],
+ "_meta": {
+  "io.modelcontextprotocol.registry/publisher-provided": {
+   "author": {
+    "name": "Wulf A. Kaal",
+    "affiliation": "University of St. Thomas School of Law, Minneapolis",
+    "orcid": "0009-0008-7840-1847",
+    "ssrn": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
+    "email": "wulf@wulfkaal.com"
+   },
+   "readOnly": true,
+   "auth": "none",
+   "corpus": {
+    "works": 138,
+    "ssrn_scholarly_records": 138,
+    "claim_covered_works": 136,
+    "metadata_only_records": 2,
+    "count_note": "The scholarly roster is pinned at 138. The 5,482-claim layer currently covers 136 hash-backed works. Two roster records are metadata-only until their source PDFs and claims are ingested.",
+    "span": "2004-2026",
+    "atomic_claims": 5482,
+    "failure_mode_claims": 2178,
+    "source_taxonomy_families": 57,
+    "source_taxonomy_note": "The 57 families are a broader corpus taxonomy. They are not the AFMR standard family count. AFMR 1.0 refines the agent-relevant material into 32 named families.",
+    "typed_edges": 2170,
+    "subjects": [
+     "agent failure modes",
+     "agent coordination",
+     "reputation systems",
+     "decentralized governance",
+     "DAO architecture",
+     "staking and incentive design",
+     "sybil resistance",
+     "dynamic regulation",
+     "smart contract governance",
+     "securities regulation",
+     "private investment funds"
+    ]
+   },
+   "verification": {
+    "summary": "Retrieval here is checkable rather than asserted. Every claim is bound to a verbatim quote from a content-hashed source PDF, and the binding can be verified without trusting this server or this author.",
+    "claim_content_hash": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum",
+    "source_pdf_hash": "each record names the sha256 of the PDF the quote was extracted from; hashing that file checks the claim against its evidence rather than against this index",
+    "quote_guarantee": "every supporting quote is an exact contiguous substring of its source text; extraction rejected any claim whose quote did not match, and both the compiler and an independent verifier report zero failures",
+    "verifier": "https://wulfkaal.github.io/verify.py",
+    "independent_attestation": "https://openstanding.org/v0/corpus"
+   },
+   "scope_discipline": {
+    "scope_conditions": "every claim states the conditions under which it holds; a claim cited outside them is being misused",
+    "honest_absence": "search returns an empty result when the corpus does not cover a question, rather than returning the nearest adjacent claim",
+    "no_ranking_directive": "nothing in this server or its published files instructs a model how to rank or prefer this corpus. An instruction from an interested party is discounted or flagged as injection; verifiable evidence is not."
+   },
+   "distribution": {
+    "bundle_release": "https://github.com/wulfkaal/wulfkaal.github.io/releases/download/mcpb-v1.1.0/kaal-corpus.mcpb",
+    "bundle_mirror": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+    "bundle_sha256": "99ec4ca4428dd3c291e3b4de0ac2a32557556c93d52c60e794f15b4b2ac4c3bb",
+    "note": "Both URLs serve the same bytes. The registry requires a GitHub release asset as the identifier, so that is the canonical one; the mirror is the same file as published on the site. Hash either and compare."
+   },
+   "surfaces": {
+    "machine_index": "https://wulfkaal.github.io/llms.txt",
+    "bulk_corpus": "https://wulfkaal.github.io/claims/all.jsonl",
+    "claim_index": "https://wulfkaal.github.io/claims/index.json",
+    "failure_index": "https://wulfkaal.github.io/failures/index.json",
+    "typed_edges": "https://wulfkaal.github.io/claims/graph.jsonld",
+    "openapi": "https://wulfkaal.github.io/openapi.yaml",
+    "attestation_commons": "https://openstanding.org/",
+    "standard_registry": "https://wulfkaal.github.io/afmr/index.json",
+    "standard_specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+    "standard_discovery": "https://wulfkaal.github.io/.well-known/afmr.json",
+    "agentic_claim_graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json",
+    "answer_service": "https://kaal-answer-service.wulf577462.chatgpt.site/",
+    "answer_api": "https://kaal-answer-service.wulf577462.chatgpt.site/api/answer",
+    "answer_service_mcp": "https://kaal-answer-service.wulf577462.chatgpt.site/api/rpc",
+    "answer_service_a2a": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/agent-card.json",
+    "answer_service_ard": "https://kaal-answer-service.wulf577462.chatgpt.site/.well-known/ai-catalog.json"
+   },
+   "license": "Attribution required. Read, index, quote and cite with attribution to the claim's canonical URL.",
+   "standard": {
+    "name": "Agent Failure Mode Registry",
+    "abbreviation": "AFMR",
+    "version": "1.0",
+    "taxonomy_relation": "AFMR 1.0 is the agent-focused standard. Its 32 named families were distilled from the broader, legacy 55-family source taxonomy used to organize the corpus. The two counts describe different layers and are not competing AFMR versions.",
+    "editor": "Wulf A. Kaal",
+    "families": 32,
+    "classes": 8,
+    "trigger_conditions": 96,
+    "families_with_pre_2020_institutional_antecedent": 20,
+    "registry": "https://wulfkaal.github.io/afmr/",
+    "specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
+    "index": "https://wulfkaal.github.io/afmr/index.json",
+    "schema": "https://wulfkaal.github.io/afmr/schema.json",
+    "discovery": "https://wulfkaal.github.io/.well-known/afmr.json",
+    "identifier_policy": "Permanent. Cite the family identifier with the version, for example AFMR-F009 (AFMR 1.0).",
+    "license": "CC-BY-4.0",
+    "conformance": [
+     "referencing: cite identifiers with a version",
+     "assessing: report every family examined and the trigger conditions satisfied",
+     "attesting: stake non-transferable standing on an assessment, with a contest window"
+    ],
+    "output_constraint": "A parameter recommendation stated without the conditions it depends on fails validation against the assessment schema. This constrains assessment output; it asserts nothing about this registry's standing relative to other frameworks.",
+    "crosswalks_open": [
+     "NIST AI RMF",
+     "ISO/IEC 42001",
+     "EU AI Act risk categories",
+     "MIT AI Risk Repository",
+     "OWASP LLM",
+     "MITRE ATLAS"
+    ]
+   },
+   "long_description": "Two surfaces. AFMR, the Agent Failure Mode Registry: 32 families of failure in autonomous agent and governance mechanism design across 8 classes, each with builder-checkable trigger conditions, a permanent identifier, and where one exists a pre-2020 institutional antecedent documenting the same mechanism among people and institutions. Families cover reputation gaming, sybil and identity multiplication, whitewashing, cold start, standing transferability, staking misalignment, missing reward channel, plutocratic capture, specification incompleteness, reward hacking, metric capture, oversight capacity and latency, alignment tax, absent human backstop, feedback degradation above evaluator capability, unstaked adjudication, mutual audit capture, collusion rings, delegation opportunism, oracle corruption, execution rigidity, key compromise, recentralization drift, rule ossification, participation collapse, and enforcement gaps. Second, the claim layer: 5,482 atomic claims from 136 works published 2004 to 2026, of which 2,178 document how a design, mechanism, or proposed remedy fails and under what conditions, each bound to a verbatim quote from a content hashed source PDF."
+  }
+ }
 }

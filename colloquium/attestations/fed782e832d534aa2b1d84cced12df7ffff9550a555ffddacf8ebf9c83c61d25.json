@@ -1,0 +1,19 @@
+{
+ "content_hash": "fed782e832d534aa2b1d84cced12df7ffff9550a555ffddacf8ebf9c83c61d25",
+ "object": "https://wulfkaal.github.io/claims/7456999-031",
+ "claim": "For each prompt and candidate output, RLRF selects a validation pool by verifiable random function from agents holding relevant expertise tags.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7456999-031.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fed782e832d534aa2b1d84cced12df7ffff9550a555ffddacf8ebf9c83c61d25 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

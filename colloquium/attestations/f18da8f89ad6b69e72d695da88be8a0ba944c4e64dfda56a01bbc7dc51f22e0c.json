@@ -1,0 +1,19 @@
+{
+ "content_hash": "f18da8f89ad6b69e72d695da88be8a0ba944c4e64dfda56a01bbc7dc51f22e0c",
+ "object": "https://wulfkaal.github.io/claims/7598518-016",
+ "claim": "Yi et al. (2026) report that an imperfect external verifier drives the model toward the verifier's own knowledge center.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-016.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f18da8f89ad6b69e72d695da88be8a0ba944c4e64dfda56a01bbc7dc51f22e0c verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "67313b38bdbd1b2c773d506b3b42ae440cdf8ca8b37cb7aa28d84541a462f2de",
+ "object": "https://wulfkaal.github.io/claims/7598518-025",
+ "claim": "A candidate is accepted when its weighted valid share exceeds the threshold of one half, and a candidate within a tenth of that threshold is contested, receives four more validators, and is bound by the recomputed share.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-025.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 67313b38bdbd1b2c773d506b3b42ae440cdf8ca8b37cb7aa28d84541a462f2de verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

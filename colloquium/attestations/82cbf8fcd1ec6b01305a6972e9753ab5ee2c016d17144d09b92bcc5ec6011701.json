@@ -1,0 +1,19 @@
+{
+ "content_hash": "82cbf8fcd1ec6b01305a6972e9753ab5ee2c016d17144d09b92bcc5ec6011701",
+ "object": "https://wulfkaal.github.io/claims/7598518-030",
+ "claim": "A coin-flip family is a negative control, because a coin-flip pool knows nothing about validity, and if it meets the registered leak criterion or fails its acceptance rule, both substrates lose confirmatory status.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-030.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 82cbf8fcd1ec6b01305a6972e9753ab5ee2c016d17144d09b92bcc5ec6011701 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

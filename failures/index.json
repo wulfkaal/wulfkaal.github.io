@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2165,
+ "count": 2178,
  "families": 57,
- "distinct_specific_names": 2132,
+ "distinct_specific_names": 2145,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -25,6 +25,26 @@
     "Centralized market for decentralization services"
    ],
    "example": "As blockchain use grows, node operation will eventually require special equipment affordable only by large corporations in the existing legal infrastructure, creating the possibility of dangerous centralization and a threat to anonymity."
+  },
+  {
+   "failure_family": "research-design-limitation",
+   "count": 105,
+   "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
+   "specific_names": [
+    "A Closer Test Is Not A Whole Test",
+    "Ablation In The Filter Not In Training",
+    "Added Transcript Information Unproved",
+    "Anonymity versus descriptive depth tradeoff",
+    "Arrow Analogy Overreach",
+    "Biomimicry Experimentation Deficit",
+    "Causal Primitive Attribution Not Established",
+    "Coin Flip Effect Voids Confirmatory Status",
+    "Comparator Ceiling Blocks Any Positive",
+    "Conjecture Withdrawn",
+    "Cost offset inference in tension with fee practice",
+    "Could Have Caused Is Not Did Cause"
+   ],
+   "example": "State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds."
   },
   {
    "failure_family": "regulatory-lag",
@@ -65,26 +85,6 @@
     "Revision treadmill"
    ],
    "example": "Morrison's transactional test could prove relatively short lived because it is rooted in geography while an increasing number of securities transactions defy geographical boundaries."
-  },
-  {
-   "failure_family": "research-design-limitation",
-   "count": 95,
-   "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
-   "specific_names": [
-    "Added Transcript Information Unproved",
-    "Anonymity versus descriptive depth tradeoff",
-    "Arrow Analogy Overreach",
-    "Biomimicry Experimentation Deficit",
-    "Causal Primitive Attribution Not Established",
-    "Coin Flip Effect Voids Confirmatory Status",
-    "Comparator Ceiling Blocks Any Positive",
-    "Conjecture Withdrawn",
-    "Cost offset inference in tension with fee practice",
-    "DSGE Friction Obsolescence",
-    "Demand Side Descriptive Failure",
-    "Demonstration Mistaken For Field Evidence"
-   ],
-   "example": "State Blue Sky investment adviser registration exemptions are not by themselves sufficient to explain retailization or to justify the absence of data on it; they only indicate theoretically how previously unqualified investors could gain access to hedge funds."
   },
   {
    "failure_family": "enforcement-gap",
@@ -267,6 +267,26 @@
    "example": "European lawyers may advise clients to incorporate at home simply because those lawyers do not want to deal with the courts and lawyers of another Member State, which suppresses cross border incorporation independently of statute quality."
   },
   {
+   "failure_family": "data-quality-and-comparability",
+   "count": 46,
+   "url": "https://wulfkaal.github.io/failures/by-name/data-quality-and-comparability.json",
+   "specific_names": [
+    "Acknowledged data gaps",
+    "Deal flow data unavailability",
+    "Defect to use matching reveals assessment risk",
+    "Defective inputs to stage one screen",
+    "Error propagation from filer uncertainty to regulator conclusions",
+    "Error propagation from filings to designation",
+    "Estimates and assumptions substitute for measurement",
+    "Filer error anomalies",
+    "Finding 4 Lacks Supporting Values",
+    "Fisher Comparison Lacks Common Observation Model",
+    "Human error in manual fee calculation",
+    "Inaccurate regulatory data undermines systemic risk assessment"
+   ],
+   "example": "The SEC has not standardized the disclosures required in Form PF, and there is evidence that Form PF requirements rest on an inconsistent use of industry terms, which can in turn produce inconsistent and contradictory data reporting."
+  },
+  {
    "failure_family": "definitional-ambiguity",
    "count": 45,
    "url": "https://wulfkaal.github.io/failures/by-name/definitional-ambiguity.json",
@@ -305,26 +325,6 @@
     "Missing Requester Interfaces"
    ],
    "example": "Arbitration of corporate governance disputes has not emerged in the United States because arbitration is at best the next best alternative to Delaware, and a second place finish does not justify the investment needed to design a workable arbitration framework."
-  },
-  {
-   "failure_family": "data-quality-and-comparability",
-   "count": 44,
-   "url": "https://wulfkaal.github.io/failures/by-name/data-quality-and-comparability.json",
-   "specific_names": [
-    "Acknowledged data gaps",
-    "Deal flow data unavailability",
-    "Defect to use matching reveals assessment risk",
-    "Defective inputs to stage one screen",
-    "Error propagation from filer uncertainty to regulator conclusions",
-    "Error propagation from filings to designation",
-    "Estimates and assumptions substitute for measurement",
-    "Filer error anomalies",
-    "Finding 4 Lacks Supporting Values",
-    "Fisher Comparison Lacks Common Observation Model",
-    "Human error in manual fee calculation",
-    "Inaccurate regulatory data undermines systemic risk assessment"
-   ],
-   "example": "The SEC has not standardized the disclosures required in Form PF, and there is evidence that Form PF requirements rest on an inconsistent use of industry terms, which can in turn produce inconsistent and contradictory data reporting."
   },
   {
    "failure_family": "ai-model-and-training-failure",
@@ -1068,13 +1068,14 @@
   },
   {
    "failure_family": "provenance-and-audit-integrity",
-   "count": 11,
+   "count": 12,
    "url": "https://wulfkaal.github.io/failures/by-name/provenance-and-audit-integrity.json",
    "specific_names": [
     "Append-Only Without Tamper Evidence",
     "Architecture Cannot Prove Outcome Unread",
     "Attribution Failure Dissolves Responsibility",
     "Audit Short Of Verdicts And Findings Unadopted",
+    "Auditors May Share Failure Modes",
     "Custody Without Account",
     "Seal Is A Commitment Not A Lock",
     "Silent Truncation Reports Clean History",
@@ -31616,6 +31617,195 @@
    ],
    "topics": [
     "disclosure",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-001",
+   "url": "https://wulfkaal.github.io/claims/7665358-001",
+   "family": "research-design-limitation",
+   "name": "Published Collapse Result Did Not Reproduce",
+   "claim": "A replication of the published language-model protocol served as the gate for reading any outcome, and the published collapse result did not reproduce under the frozen rule.",
+   "conditions": [
+    "The gate is the paper's own precondition for reading any other substrate."
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-002",
+   "url": "https://wulfkaal.github.io/claims/7665358-002",
+   "family": "research-design-limitation",
+   "name": "Missed Gate Leaves No Filter Result",
+   "claim": "Substrate G is not read, its outcomes stay sealed, substrate F is blocked as well, and the paper reports no filter result.",
+   "conditions": [
+    "The consequence is the one the frozen design specified for a missed gate.",
+    "No statement about the filter's performance follows from it."
+   ],
+   "topics": [
+    "research-methods",
+    "disclosure"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-006",
+   "url": "https://wulfkaal.github.io/claims/7665358-006",
+   "family": "research-design-limitation",
+   "name": "Scoping Governs The Judge Not The Judgment",
+   "claim": "What domain scoping can govern is whose judgment of the domain-general validity bit counts, not what the bit says.",
+   "conditions": [
+    "Concerns the validator pool as this study configures it.",
+    "Limits what any domain-scoped weighting could change in this design."
+   ],
+   "topics": [
+    "reputation",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-008",
+   "url": "https://wulfkaal.github.io/claims/7665358-008",
+   "family": "research-design-limitation",
+   "name": "Ablation In The Filter Not In Training",
+   "claim": "The design's pool supplies no reward signal and trains no policy, and its equal-weight contrast ablates the weights inside a data filter rather than inside policy training, so it does not supply the ablation the parent paper asks for.",
+   "conditions": [
+    "Concerns the scope of this design relative to the parent paper's named prior comparison.",
+    "The ablation this design performs is not the ablation the parent paper asks for."
+   ],
+   "topics": [
+    "research-methods",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-009",
+   "url": "https://wulfkaal.github.io/claims/7665358-009",
+   "family": "research-design-limitation",
+   "name": "Staked Round Omitted So Stake Untested",
+   "claim": "The study runs no Full Vote, the staked and slashable second round of the parent protocol, and its single keyed update is not a stake settlement.",
+   "conditions": [
+    "Concerns which elements of the parent protocol this study omits.",
+    "No claim about staking or slashing follows from a design that runs neither."
+   ],
+   "topics": [
+    "reputation",
+    "risk-and-incentives",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-010",
+   "url": "https://wulfkaal.github.io/claims/7665358-010",
+   "family": "research-design-limitation",
+   "name": "Unequal Validator Budgets Across Arms",
+   "claim": "The pool seats five validators per candidate and nine when a candidate is contested, while the single verifier seats one.",
+   "conditions": [
+    "Concerns the arms as the frozen design specifies them."
+   ],
+   "topics": [
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-016",
+   "url": "https://wulfkaal.github.io/claims/7665358-016",
+   "family": "provenance-and-audit-integrity",
+   "name": "Auditors May Share Failure Modes",
+   "claim": "The model engines that audited the study may share failure modes with each other and with the author's tools.",
+   "conditions": [
+    "The limit is the paper's own, stated where it declines the label of peer review."
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-024",
+   "url": "https://wulfkaal.github.io/claims/7665358-024",
+   "family": "research-design-limitation",
+   "name": "Failed Replication Does Not Locate Its Cause",
+   "claim": "The study would not be in a position to say whether the implementation, those choices, or the published result accounts for the missed gate.",
+   "conditions": [
+    "The choices meant are those the design fixed where the published methods left them open."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-025",
+   "url": "https://wulfkaal.github.io/claims/7665358-025",
+   "family": "research-design-limitation",
+   "name": "Narrow Hypothesis Left Unexamined",
+   "claim": "On this outcome the study examines nothing about the filter, and the narrow hypothesis remains unexamined.",
+   "conditions": [
+    "Concerns the outcome the study reached, a missed replication gate."
+   ],
+   "topics": [
+    "research-methods",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-027",
+   "url": "https://wulfkaal.github.io/claims/7665358-027",
+   "family": "data-quality-and-comparability",
+   "name": "Unequal Epoch Budget Between Arms",
+   "claim": "The published protocol itself specifies twice as many epochs for the ten percent setting, and one confirming audit notes that the published study reported only minor degradation under that split.",
+   "conditions": [
+    "Reports what the published protocol specifies and what a confirming audit observed about it."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-028",
+   "url": "https://wulfkaal.github.io/claims/7665358-028",
+   "family": "data-quality-and-comparability",
+   "name": "Three Choices Can Reverse The Comparison",
+   "claim": "One confirming audit finds that three choices can reverse the comparison between full replacement and the ten percent arm: retained real data was added to a full synthetic set while the public code keeps the original size and replaces the other rows with continuations, later generations were scored at their final epoch while generation 0 was scored at its best validation epoch, and the design fixed the learning rate schedule where the published methods left it open.",
+   "conditions": [
+    "Reports what one confirming audit identified, not what the paper concludes."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "open-source-and-code"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-029",
+   "url": "https://wulfkaal.github.io/claims/7665358-029",
+   "family": "research-design-limitation",
+   "name": "Could Have Caused Is Not Did Cause",
+   "claim": "Neither the post-result review nor the audits established that those choices caused the miss, and the review licenses no claim about the filter and does not alter the Section VII reading.",
+   "conditions": [
+    "Concerns the evidential standing of the post-result review.",
+    "Identifying a choice that could reverse a comparison is not evidence that it did."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7665358-034",
+   "url": "https://wulfkaal.github.io/claims/7665358-034",
+   "family": "research-design-limitation",
+   "name": "A Closer Test Is Not A Whole Test",
+   "claim": "Such a follow-on would still omit economic stake and deliberation, so it would test the parent mechanism only closer to its published form and not as a whole.",
+   "conditions": [
+    "Concerns the suggested follow-on's own limits."
+   ],
+   "topics": [
+    "reputation",
     "research-methods"
    ]
   }

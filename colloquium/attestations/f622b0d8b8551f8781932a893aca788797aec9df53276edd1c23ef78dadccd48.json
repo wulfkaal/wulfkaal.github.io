@@ -1,0 +1,19 @@
+{
+ "content_hash": "f622b0d8b8551f8781932a893aca788797aec9df53276edd1c23ef78dadccd48",
+ "object": "https://wulfkaal.github.io/claims/7596939-014",
+ "claim": "Cryptographic attestation is evidentiary rather than dispositive of the continuity relation, so a valid signature does not by itself establish that the signing system is the registered subject.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7596939-014.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f622b0d8b8551f8781932a893aca788797aec9df53276edd1c23ef78dadccd48 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

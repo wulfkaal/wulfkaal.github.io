@@ -50,10 +50,11 @@ WHAT THIS DELIBERATELY DOES NOT CHECK
   The EXCLUSIONS table below. Each entry names what is not checked and why. An
   exclusion that is merely convenient is worse than no checker, so every entry
   carries its reason, and the verification behind the colloquium entries is
-  recorded here: colloquium/jobs.json carries a jobs list of exactly 5,363
-  records with total/unattested 5363 and activation_eligible 2134, and the 43
-  colloquium/tasks/page-*.json files carry 2,134 job rows against a declared
-  total of 2134. Those numbers describe those files, and they are correct.
+  recorded here: colloquium/jobs.json, its placeholders and claims/graph.jsonld are
+  derived from claims/all.jsonl by tools/build_colloquium_layer.py, so the jobs count
+  IS the claim count and activation_eligible IS the failure-mode count. They were a
+  separate pair of numbers until 2026-10-24, when the layer stopped being extended by
+  hand. A colloquium total that diverges from the corpus is now a generator defect.
 
 Usage
   python3 tools/check_corpus_counts.py            # check, the default
@@ -450,26 +451,33 @@ CHECKS = [
 
 
 # Explicit exclusions: (path or subtree, reason). A reader must be able to see
-# what is not checked and why. The colloquium 5,363/2,134 entries are correct
-# because jobs.json holds 5,363 job records (total/unattested 5363,
-# activation_eligible 2134) and the 43 tasks pages hold 2,134 job rows against
-# a declared total of 2134, verified against the files, not assumed.
+# what is not checked and why.
+#
+# The colloquium entries used to be excused on the ground that jobs.json genuinely held a
+# DIFFERENT number from the corpus: 5,363 records against 5,445 claims, because the layer was
+# extended by hand and every publication missed something. On 2026-10-24 that stopped being
+# true. tools/build_colloquium_layer.py derives the feed, the placeholders and the graph from
+# claims/all.jsonl, so the jobs count IS the claim count and the activation-eligible count IS
+# the failure-mode count. These exclusions now cover only the hash-bound records inside those
+# files, never a layer total. If a colloquium total ever diverges from the corpus again, that is
+# a defect in the generator, not a figure to excuse here.
 EXCLUSIONS = [
     ("colloquium/jobs.json",
-     "Its 5,363 and 2,134 describe the jobs file itself, which genuinely holds "
-     "that many records (verified: 5,363 job rows, activation_eligible 2134)."),
+     "Hash bound job records: the figure like digits inside are sha256 content "
+     "hashes and claim ids. Its totals are derived from claims/all.jsonl by "
+     "tools/build_colloquium_layer.py and equal the corpus counts."),
     ("colloquium/index.json",
-     "Its corpus_objects/unattested 5363 and its jobs/activation prose describe "
-     "the jobs file, not the live layer."),
+     "Its corpus_objects and unattested now carry the live claim count, and its "
+     "jobs and activation prose the derived jobs and eligible counts."),
     ("colloquium/llms.txt",
-     "Its 5,363-claim and 2,134-task sentences describe the jobs and tasks "
-     "files, not the live layer."),
+     "Its claim and task sentences carry the derived jobs and eligible counts, "
+     "which equal the corpus counts."),
     ("colloquium/index.html",
-     "Its 5,363 hash-backed claims and 2,134 canonical tasks describe the jobs "
-     "and tasks files, not the live layer."),
+     "Its hash-backed claim and canonical task counts carry the derived jobs "
+     "and eligible counts, which equal the corpus counts."),
     ("colloquium/tasks/index.json",
-     "Its total 2134 describes the tasks file, which genuinely holds 2,134 "
-     "rows across 43 pages (verified)."),
+     "Its total describes the tasks file, which holds exactly the failure-mode "
+     "slice of the derived jobs feed."),
     ("colloquium/tasks/page-*.json",
      "Hash bound task records; figure like digits inside are sha256 hashes, "
      "claim ids, and page counters, never layer totals."),
@@ -548,14 +556,14 @@ EXCLUSIONS = [
 # cover; everything else figure like in a checked file must be a CHECK match.
 FILE_EXCLUSIONS = {
     "client.py": [
-        (r"5,363-object corpus merely to select one of the 2,134 accepted tasks",
-         "Describes the jobs file (5,363 objects) and the tasks file (2,134 "
-         "accepted tasks), in a comment about avoiding the full download."),
-        (r"broader 5,363-claim corpus remains read-only",
-         "The activation manifest covers the 2,134 eligible tasks; the broader "
-         "readable jobs file (5,363) stays read only."),
-        (r"Colloquium jobs file remains 5,363",
-         "Names the jobs file count explicitly as the jobs file count."),
+        (r"5,482-object corpus merely to select one of the 2,178 accepted tasks",
+         "Describes the jobs file and the tasks file in a comment about "
+         "avoiding the full download. Both are derived from the corpus."),
+        (r"broader 5,482-claim corpus remains read-only",
+         "The activation manifest covers the eligible tasks; the broader "
+         "readable jobs file stays read only."),
+        (r"Colloquium jobs file remains 5,482",
+         "Names the jobs file count, which is now the claim count."),
     ],
     "positions/index.json": [
         (r"\"sourceRank\":\s*[\d,]+",

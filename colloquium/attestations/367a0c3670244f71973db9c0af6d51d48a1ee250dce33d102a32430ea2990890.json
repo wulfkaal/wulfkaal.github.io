@@ -1,0 +1,19 @@
+{
+ "content_hash": "367a0c3670244f71973db9c0af6d51d48a1ee250dce33d102a32430ea2990890",
+ "object": "https://wulfkaal.github.io/claims/7456999-013",
+ "claim": "No policy is trained anywhere in the paper.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7456999-013.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 367a0c3670244f71973db9c0af6d51d48a1ee250dce33d102a32430ea2990890 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

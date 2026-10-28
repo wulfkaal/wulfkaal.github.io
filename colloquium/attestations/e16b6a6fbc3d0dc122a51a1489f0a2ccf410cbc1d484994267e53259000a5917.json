@@ -1,0 +1,19 @@
+{
+ "content_hash": "e16b6a6fbc3d0dc122a51a1489f0a2ccf410cbc1d484994267e53259000a5917",
+ "object": "https://wulfkaal.github.io/claims/7598518-028",
+ "claim": "The pool's entire exposure to real data is 192 rows, below the 200 real rows the ten percent arm receives and far below the roughly 1,990 distinct real rows it trains on over the run.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-028.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e16b6a6fbc3d0dc122a51a1489f0a2ccf410cbc1d484994267e53259000a5917 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

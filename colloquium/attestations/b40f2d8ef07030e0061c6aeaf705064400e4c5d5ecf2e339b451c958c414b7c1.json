@@ -1,0 +1,19 @@
+{
+ "content_hash": "b40f2d8ef07030e0061c6aeaf705064400e4c5d5ecf2e339b451c958c414b7c1",
+ "object": "https://wulfkaal.github.io/claims/7665358-017",
+ "claim": "The analysis scans for any module that could shadow its libraries before loading one, and reads the audited commits it trusts from a local file outside version control where no commit can move them.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7665358-017.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest b40f2d8ef07030e0061c6aeaf705064400e4c5d5ecf2e339b451c958c414b7c1 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

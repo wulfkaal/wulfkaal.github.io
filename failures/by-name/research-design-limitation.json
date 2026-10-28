@@ -1,6 +1,8 @@
 {
  "failure_mode": "research-design-limitation",
  "specific_names": [
+  "A Closer Test Is Not A Whole Test",
+  "Ablation In The Filter Not In Training",
   "Added Transcript Information Unproved",
   "Anonymity versus descriptive depth tradeoff",
   "Arrow Analogy Overreach",
@@ -10,6 +12,7 @@
   "Comparator Ceiling Blocks Any Positive",
   "Conjecture Withdrawn",
   "Cost offset inference in tension with fee practice",
+  "Could Have Caused Is Not Did Cause",
   "DSGE Friction Obsolescence",
   "Demand Side Descriptive Failure",
   "Demonstration Mistaken For Field Evidence",
@@ -17,6 +20,7 @@
   "Efficiency Conjecture Incoherent",
   "Equilibrium Trajectory Separation Open",
   "Evidence Free Token Design",
+  "Failed Replication Does Not Locate Its Cause",
   "Fill From Rejects Invalidates Tests",
   "Fisher Information Dominance Unproved",
   "Format D Increment Untested",
@@ -28,9 +32,11 @@
   "Low explanatory power of linear specification",
   "Marshallian Cross Dissolution",
   "Measured Cohort Omits Mechanism",
+  "Missed Gate Leaves No Filter Result",
   "Missing Normative Apparatus",
   "Missing generation side",
   "Model Audit Is Not Peer Review",
+  "Narrow Hypothesis Left Unexamined",
   "Nashian idealization",
   "Nearest Mechanism Comparison Missing",
   "Neoclassical collapse",
@@ -44,8 +50,10 @@
   "Price Signal Insufficiency",
   "Price-Cost Severance",
   "Proximate Consumption Assumption Failure",
+  "Published Collapse Result Did Not Reproduce",
   "RLRF Equilibrium Conditions Unverified",
   "Repeated Game Preconditions Unestablished",
+  "Scoping Governs The Judge Not The Judgment",
   "Selector Does Not Test Mechanism",
   "Short observation window",
   "Simulation Is Not Validation",
@@ -53,10 +61,12 @@
   "Spot contract blindness to relational elements",
   "Stability Statistics Do Not Test Trajectory Separation",
   "Stage 1 Status Forfeited By Prior Outcomes",
+  "Staked Round Omitted So Stake Untested",
   "Subfield Foundation Collapse",
   "Surface aggregation breaks continuity",
   "Transcript Informativeness Unproved",
   "Unallocatable compute",
+  "Unequal Validator Budgets Across Arms",
   "Unimprovable generation",
   "Welfare Theorem Breakdown",
   "absent real-world deployment evidence",
@@ -95,7 +105,7 @@
   "validator assessment assumption",
   "volatility assumption mismatch"
  ],
- "count": 95,
+ "count": 105,
  "claims": [
   {
    "id": "kaal:claim:1428387-019",
@@ -1325,6 +1335,141 @@
    "year": "2026",
    "quote": "Nine superior labels set a high bar, so a real but modest effect may be reported as not positive.",
    "citation": "Wulf A. Kaal, Can Reputation Prevent Model Collapse? A Preregistered Test of Reputation-Weighted Data Filtering (2026). SSRN: https://ssrn.com/abstract=7598518"
+  },
+  {
+   "id": "kaal:claim:7665358-001",
+   "url": "https://wulfkaal.github.io/claims/7665358-001",
+   "claim": "A replication of the published language-model protocol served as the gate for reading any outcome, and the published collapse result did not reproduce under the frozen rule.",
+   "specific_name": "Published Collapse Result Did Not Reproduce",
+   "conditions": [
+    "The gate is the paper's own precondition for reading any other substrate."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "A replication of the published language-model protocol served as the gate for reading any outcome. The published collapse result did not reproduce under the frozen rule. The replication failed.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-002",
+   "url": "https://wulfkaal.github.io/claims/7665358-002",
+   "claim": "Substrate G is not read, its outcomes stay sealed, substrate F is blocked as well, and the paper reports no filter result.",
+   "specific_name": "Missed Gate Leaves No Filter Result",
+   "conditions": [
+    "The consequence is the one the frozen design specified for a missed gate.",
+    "No statement about the filter's performance follows from it."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "Substrate G is not read, its outcomes stay sealed, substrate F is blocked as well, and the paper reports no filter result.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-006",
+   "url": "https://wulfkaal.github.io/claims/7665358-006",
+   "claim": "What domain scoping can govern is whose judgment of the domain-general validity bit counts, not what the bit says.",
+   "specific_name": "Scoping Governs The Judge Not The Judgment",
+   "conditions": [
+    "Concerns the validator pool as this study configures it.",
+    "Limits what any domain-scoped weighting could change in this design."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "one domain-general validity bit, so what domain scoping can govern is whose judgment of that bit counts, not what the bit says.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-008",
+   "url": "https://wulfkaal.github.io/claims/7665358-008",
+   "claim": "The design's pool supplies no reward signal and trains no policy, and its equal-weight contrast ablates the weights inside a data filter rather than inside policy training, so it does not supply the ablation the parent paper asks for.",
+   "specific_name": "Ablation In The Filter Not In Training",
+   "conditions": [
+    "Concerns the scope of this design relative to the parent paper's named prior comparison.",
+    "The ablation this design performs is not the ablation the parent paper asks for."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "The present design is not that comparison. Its pool supplies no reward signal and trains no policy, and its equal-weight contrast ablates the weights inside a data filter rather than inside policy training, so it does not supply the ablation that paper asks for.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-009",
+   "url": "https://wulfkaal.github.io/claims/7665358-009",
+   "claim": "The study runs no Full Vote, the staked and slashable second round of the parent protocol, and its single keyed update is not a stake settlement.",
+   "specific_name": "Staked Round Omitted So Stake Untested",
+   "conditions": [
+    "Concerns which elements of the parent protocol this study omits.",
+    "No claim about staking or slashing follows from a design that runs neither."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "It also runs no Full Vote, the staked and slashable second round of the RLRF protocol, and its single keyed update is not a stake settlement.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-010",
+   "url": "https://wulfkaal.github.io/claims/7665358-010",
+   "claim": "The pool seats five validators per candidate and nine when a candidate is contested, while the single verifier seats one.",
+   "specific_name": "Unequal Validator Budgets Across Arms",
+   "conditions": [
+    "Concerns the arms as the frozen design specifies them."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "the pool seats five validators per candidate, nine when contested, and the single verifier one.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-024",
+   "url": "https://wulfkaal.github.io/claims/7665358-024",
+   "claim": "The study would not be in a position to say whether the implementation, those choices, or the published result accounts for the missed gate.",
+   "specific_name": "Failed Replication Does Not Locate Its Cause",
+   "conditions": [
+    "The choices meant are those the design fixed where the published methods left them open."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "The study would not be in a position to say whether the implementation, those choices, or the published result accounts for the miss.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-025",
+   "url": "https://wulfkaal.github.io/claims/7665358-025",
+   "claim": "On this outcome the study examines nothing about the filter, and the narrow hypothesis remains unexamined.",
+   "specific_name": "Narrow Hypothesis Left Unexamined",
+   "conditions": [
+    "Concerns the outcome the study reached, a missed replication gate."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "On this outcome the study examines nothing about the filter, and the narrow hypothesis remains unexamined.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-029",
+   "url": "https://wulfkaal.github.io/claims/7665358-029",
+   "claim": "Neither the post-result review nor the audits established that those choices caused the miss, and the review licenses no claim about the filter and does not alter the Section VII reading.",
+   "specific_name": "Could Have Caused Is Not Did Cause",
+   "conditions": [
+    "Concerns the evidential standing of the post-result review.",
+    "Identifying a choice that could reverse a comparison is not evidence that it did."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "Neither the review nor the audits established that these choices caused the miss. The review licenses no claim about the filter and does not alter the Section VII reading.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-034",
+   "url": "https://wulfkaal.github.io/claims/7665358-034",
+   "claim": "Such a follow-on would still omit economic stake and deliberation, so it would test the parent mechanism only closer to its published form and not as a whole.",
+   "specific_name": "A Closer Test Is Not A Whole Test",
+   "conditions": [
+    "Concerns the suggested follow-on's own limits."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "Such a study would still omit economic stake and deliberation, and so would test the parent mechanism only closer to its published form, not as a whole.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
   }
  ]
 }

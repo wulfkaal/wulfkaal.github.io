@@ -1,0 +1,19 @@
+{
+ "content_hash": "741355812ab85dc817764c3e61c492eb2a3fd6332c1afbf28a3eab2e775fa19c",
+ "object": "https://wulfkaal.github.io/claims/6819121-010",
+ "claim": "A contributor's reputation in the framework is the cumulative reference-weighted score of past contributions, with each reference revaluing prior contributions in light of present consensus.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/6819121-010.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 741355812ab85dc817764c3e61c492eb2a3fd6332c1afbf28a3eab2e775fa19c verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

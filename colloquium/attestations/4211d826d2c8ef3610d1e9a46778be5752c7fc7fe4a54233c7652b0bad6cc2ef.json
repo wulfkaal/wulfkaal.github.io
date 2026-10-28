@@ -1,0 +1,19 @@
+{
+ "content_hash": "4211d826d2c8ef3610d1e9a46778be5752c7fc7fe4a54233c7652b0bad6cc2ef",
+ "object": "https://wulfkaal.github.io/claims/7665358-002",
+ "claim": "Substrate G is not read, its outcomes stay sealed, substrate F is blocked as well, and the paper reports no filter result.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7665358-002.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 4211d826d2c8ef3610d1e9a46778be5752c7fc7fe4a54233c7652b0bad6cc2ef verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

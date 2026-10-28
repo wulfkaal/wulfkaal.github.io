@@ -1,0 +1,19 @@
+{
+ "content_hash": "44d45638e13c7897545f8f51a0b6096fb8955d396c6b6c89b9c115ea55a985b1",
+ "object": "https://wulfkaal.github.io/claims/7665358-019",
+ "claim": "Under full replacement the five-run mean test perplexity rose from 42.22 at generation 0 to 98.26 at generation 9, a rise of 56.04.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7665358-019.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 44d45638e13c7897545f8f51a0b6096fb8955d396c6b6c89b9c115ea55a985b1 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

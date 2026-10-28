@@ -9,11 +9,11 @@ ORCID [0009-0008-7840-1847](https://orcid.org/0009-0008-7840-1847) · [SSRN auth
 
 | | |
 |---|---|
-| Published works | 135 |
-| Atomic claims | 5445 |
-| Failure-mode claims | 2165 |
+| Published works | 136 |
+| Atomic claims | 5482 |
+| Failure-mode claims | 2178 |
 | Failure families | 57 |
-| Typed edges between claims | 2169 |
+| Typed edges between claims | 2170 |
 | Publication span | 2004 to 2026 |
 
 **Verification.** Every supporting quote is checked against its source PDF after normalization: whitespace collapsed, typographic punctuation folded to ASCII, ligatures expanded. Wording and word order are unchanged, but quotes are NOT byte-identical to raw pdftotext output, so apply the same normalization to both sides before comparing. An independent audit of all 5,145 claims against the 127 local source PDFs located 4,974 (96.7%). Every source PDF hash matched. 171 quotes were not located, of which 37 belong to a scanned work with no text layer that no text method can verify.

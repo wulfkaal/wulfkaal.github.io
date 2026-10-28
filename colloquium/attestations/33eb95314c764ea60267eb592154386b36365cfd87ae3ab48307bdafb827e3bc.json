@@ -1,0 +1,19 @@
+{
+ "content_hash": "33eb95314c764ea60267eb592154386b36365cfd87ae3ab48307bdafb827e3bc",
+ "object": "https://wulfkaal.github.io/claims/7598518-012",
+ "claim": "The results section is written in advance as a reporting shell that fixes the order of reporting, with every number left empty until the frozen analysis fills it.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 33eb95314c764ea60267eb592154386b36365cfd87ae3ab48307bdafb827e3bc verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

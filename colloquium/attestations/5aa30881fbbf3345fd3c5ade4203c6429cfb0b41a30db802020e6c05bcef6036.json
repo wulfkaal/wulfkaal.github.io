@@ -1,0 +1,19 @@
+{
+ "content_hash": "5aa30881fbbf3345fd3c5ade4203c6429cfb0b41a30db802020e6c05bcef6036",
+ "object": "https://wulfkaal.github.io/claims/7598518-037",
+ "claim": "A contrast is superior when its Holm-adjusted p-value is below 0.05, its 95 percent interval lies above zero, and its point estimate is at least 0.10; it is negative when the adjusted p-value is below 0.05 and the interval lies below zero, a substantive null when its 90 percent interval lies within plus or minus that margin, and inconclusive otherwise.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-037.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 5aa30881fbbf3345fd3c5ade4203c6429cfb0b41a30db802020e6c05bcef6036 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

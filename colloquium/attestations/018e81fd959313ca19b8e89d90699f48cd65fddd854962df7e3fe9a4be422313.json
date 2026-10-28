@@ -1,0 +1,19 @@
+{
+ "content_hash": "018e81fd959313ca19b8e89d90699f48cd65fddd854962df7e3fe9a4be422313",
+ "object": "https://wulfkaal.github.io/claims/7598518-011",
+ "claim": "The analysis refuses to unseal unless the design hash is accepted, the tree is clean and matches its commit byte for byte, and the code differs from the audited commits only in a named allowlist.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-011.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 018e81fd959313ca19b8e89d90699f48cd65fddd854962df7e3fe9a4be422313 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

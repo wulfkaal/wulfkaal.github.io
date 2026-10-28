@@ -1,0 +1,19 @@
+{
+ "content_hash": "dd96b5f99e69a56d0118fd419ee241f6d2db1c9ef12ea2ce68f6c1416d8a2fe7",
+ "object": "https://wulfkaal.github.io/claims/7598518-047",
+ "claim": "In the final audit rounds of the last three sections of the working draft, one audit family's command-line engines returned no verdict because their usage balance was exhausted, so those rounds hold two passing verdicts rather than three and left identified low-severity findings unadopted.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-047.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest dd96b5f99e69a56d0118fd419ee241f6d2db1c9ef12ea2ce68f6c1416d8a2fe7 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

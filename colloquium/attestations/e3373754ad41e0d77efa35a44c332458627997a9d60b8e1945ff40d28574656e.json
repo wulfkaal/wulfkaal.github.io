@@ -1,0 +1,19 @@
+{
+ "content_hash": "e3373754ad41e0d77efa35a44c332458627997a9d60b8e1945ff40d28574656e",
+ "object": "https://wulfkaal.github.io/claims/7598518-009",
+ "claim": "No result is reported: as of 11 October 2026 substrate P had completed one of its ten arm-runs with no record existing, substrate G had finished with its outcomes sealed, and substrate F was procedure-invalid.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7598518-009.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest e3373754ad41e0d77efa35a44c332458627997a9d60b8e1945ff40d28574656e verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "9b2d810450177b7866be3572f07c4061a97c20407b611318942b56aad5e7b814",
+ "object": "https://wulfkaal.github.io/claims/7596939-007",
+ "claim": "Both work claims and challenges to a record are adjudicated by the same instrument: a validation pool in which holders stake reputation for or against, with the winning side splitting the losing side's stakes.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7596939-007.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9b2d810450177b7866be3572f07c4061a97c20407b611318942b56aad5e7b814 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

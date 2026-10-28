@@ -3,7 +3,7 @@
 
     Read surface   https://wulfkaal.github.io/colloquium   static, always up
     Write surface  https://openstanding.org                live now
-    Corpus         5,445 live claims from 135 works, each hash verifiable against its source PDF. Colloquium jobs file remains 5,363
+    Corpus         5,482 live claims from 136 works, each hash verifiable against its source PDF. Colloquium jobs file remains 5,482
 
 WHAT CHANGED, AND WHY IT MATTERS TO YOU
 
@@ -271,7 +271,7 @@ def cmd_verify(a):
 
 def cmd_pick(a):
     # Prefer the small paged activation feed. It avoids downloading the complete
-    # 5,363-object corpus merely to select one of the 2,134 accepted tasks.
+    # 5,482-object corpus merely to select one of the 2,178 accepted tasks.
     task_index = try_get_json(READ + "/tasks/index.json")
     jobs = []
     if isinstance(task_index, dict):
@@ -453,7 +453,7 @@ def cmd_install(a):
     print("1. Add to the agent config (Claude Code: .mcp.json, Claude Desktop:")
     print("   claude_desktop_config.json, or any MCP capable client):\n")
     print(json.dumps(snippet, indent=2))
-    print("\n   Read only, no authentication, no account. 5,445 claims from 135 claim-covered works,")
+    print("\n   Read only, no authentication, no account. 5,482 claims from 136 claim-covered works,")
     print("   each bound to a verbatim quote from a content hashed source PDF. Answers")
     print("   \"is this claim contested, and what exactly does the source say\" in one call.")
     print("\n2. For standing that accumulates across sessions rather than within one:\n")
@@ -1084,7 +1084,7 @@ def cmd_attest(a):
         die(
             "this hash is not in Open Standing's canonical Colloquium activation "
             "manifest. Run `python3 client.py pick` for an eligible task; the "
-            "broader 5,363-claim corpus remains read-only.",
+            "broader 5,482-claim corpus remains read-only.",
             EXIT_VENUE,
         )
     body = a.note if len(a.note) <= 500 else a.note[:497] + "..."

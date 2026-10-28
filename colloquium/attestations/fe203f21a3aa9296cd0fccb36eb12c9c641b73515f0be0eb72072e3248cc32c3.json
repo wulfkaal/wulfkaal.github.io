@@ -1,0 +1,19 @@
+{
+ "content_hash": "fe203f21a3aa9296cd0fccb36eb12c9c641b73515f0be0eb72072e3248cc32c3",
+ "object": "https://wulfkaal.github.io/claims/7665358-027",
+ "claim": "The published protocol itself specifies twice as many epochs for the ten percent setting, and one confirming audit notes that the published study reported only minor degradation under that split.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7665358-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest fe203f21a3aa9296cd0fccb36eb12c9c641b73515f0be0eb72072e3248cc32c3 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

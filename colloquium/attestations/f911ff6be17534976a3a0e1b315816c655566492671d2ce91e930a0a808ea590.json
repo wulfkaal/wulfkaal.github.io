@@ -1,0 +1,19 @@
+{
+ "content_hash": "f911ff6be17534976a3a0e1b315816c655566492671d2ce91e930a0a808ea590",
+ "object": "https://wulfkaal.github.io/claims/7456999-074",
+ "claim": "Experiment T did not show that consensus-weighted selection outperformed equal weighting because the +0.0017 difference had a ninety-five percent interval from -0.0051 to +0.0085.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7456999-074.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f911ff6be17534976a3a0e1b315816c655566492671d2ce91e930a0a808ea590 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

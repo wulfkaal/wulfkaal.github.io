@@ -1,0 +1,19 @@
+{
+ "content_hash": "9f91c56fcd6387d8097ba8907b953fb22d04372144cb0354cddeab9f2494dd10",
+ "object": "https://wulfkaal.github.io/claims/7456999-039",
+ "claim": "Round 1 is a zero-slashing cheap-talk round that elicits private information without economic commitment.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7456999-039.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 9f91c56fcd6387d8097ba8907b953fb22d04372144cb0354cddeab9f2494dd10 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -24,8 +24,10 @@
   "Reliance concentrated on weakest data",
   "Remedies insufficient to restore confidence",
   "Reporting issues affect assessment",
+  "Three Choices Can Reverse The Comparison",
   "Unanswerable disclosure items",
   "Undeterminable counterparty exposure data",
+  "Unequal Epoch Budget Between Arms",
   "Unobtainable counterparty exposure data",
   "Unparsed Replies Reverse Estimate",
   "Upstream data error propagates to risk assessment",
@@ -46,7 +48,7 @@
   "stale filed disclosure data",
   "unreliable systemic risk data"
  ],
- "count": 44,
+ "count": 46,
  "claims": [
   {
    "id": "kaal:claim:2348463-007",
@@ -626,6 +628,32 @@
    "year": "2026",
    "quote": "Recovering previously unparsed assessor replies reversed the magnitude estimate to -0.0017. Its 95% interval from -0.0102 to +0.0068 still contained zero. The attribution result remained below the 95th percentile at the 61.3rd percentile.",
    "citation": "Wulf A. Kaal, Reinforcement Learning from Reputation Feedback (2026). SSRN: https://ssrn.com/abstract=7456999"
+  },
+  {
+   "id": "kaal:claim:7665358-027",
+   "url": "https://wulfkaal.github.io/claims/7665358-027",
+   "claim": "The published protocol itself specifies twice as many epochs for the ten percent setting, and one confirming audit notes that the published study reported only minor degradation under that split.",
+   "specific_name": "Unequal Epoch Budget Between Arms",
+   "conditions": [
+    "Reports what the published protocol specifies and what a confirming audit observed about it."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "The published protocol itself specifies twice as many epochs for the ten percent setting, and one confirming audit notes that the published study reported only minor degradation under that split.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
+  },
+  {
+   "id": "kaal:claim:7665358-028",
+   "url": "https://wulfkaal.github.io/claims/7665358-028",
+   "claim": "One confirming audit finds that three choices can reverse the comparison between full replacement and the ten percent arm: retained real data was added to a full synthetic set while the public code keeps the original size and replaces the other rows with continuations, later generations were scored at their final epoch while generation 0 was scored at its best validation epoch, and the design fixed the learning rate schedule where the published methods left it open.",
+   "specific_name": "Three Choices Can Reverse The Comparison",
+   "conditions": [
+    "Reports what one confirming audit identified, not what the paper concludes."
+   ],
+   "source": "",
+   "year": "2026",
+   "quote": "One confirming audit finds that three choices can reverse the comparison between full replacement and the ten percent arm: retained real data was added to a full synthetic set, while the public code keeps the original size and replaces the other rows with continuations, later generations were scored at their final epoch while generation 0 was scored at its best validation epoch, and the design fixed the learning rate schedule where the published methods left it open.",
+   "citation": "Wulf A. Kaal, Selected Experience: A Preregistered Test of Reputation as a Data Filter Under Recursive Training (2026). SSRN: https://ssrn.com/abstract=7665358"
   }
  ]
 }
