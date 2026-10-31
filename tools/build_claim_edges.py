@@ -510,8 +510,15 @@ def replace_edges_field(line, edges):
 def replace_hash(line, old, new):
     if old == new:
         return line
-    if line.count(old) != 2:
-        raise ValueError(f"hash occurs {line.count(old)} times on the jsonl line, expected 2")
+    # The hash appears in content_sha256 and in attest_command, and a third time in the composed
+    # attestations URL when the record carries one. A hardcoded 2 accepted exactly the records
+    # WITHOUT that field and refused every record with it, so the first attestations backfill to
+    # touch one of them would have raised here. Measured 2026-10-30 over all 5,482 published
+    # records: 449 carry the hash twice, 5,033 carry it three times.
+    record = json.loads(line)
+    expected = 2 + (1 if old in (record.get("attestations") or "") else 0)
+    if line.count(old) != expected:
+        raise ValueError(f"hash occurs {line.count(old)} times on the jsonl line, expected {expected}")
     return line.replace(old, new)
 
 
