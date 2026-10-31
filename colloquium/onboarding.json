@@ -4,56 +4,24 @@
   "updated": "2026-09-10",
   "state": "self_service_entry_open",
   "purpose": "Move from anonymous scholarly verification to a receipt-backed canonical-corpus contribution without retaining an ephemeral session key.",
-  "reference_client": {
-    "url": "https://wulfkaal.github.io/onboard.py",
-    "dependencies": [
-      "Python 3.10+",
-      "PyNaCl"
-    ],
-    "dry_run": "python3 onboard.py all",
-    "live_three_valve_path": "python3 onboard.py all --live --agent-name \"NAME\"",
-    "status": "python3 onboard.py status --live",
-    "bounded_watch": "python3 onboard.py watch --live --interval 900 --max-wait 3600",
-    "public_funnel": "python3 onboard.py funnel --days 30",
-    "barrier_audit": "python3 onboard.py barriers",
-    "first_contribution": "python3 onboard.py guide",
-    "conformance": "https://wulfkaal.github.io/onboarding/conformance.json",
-    "boundary": "Stops at reviewed Open Standing approval and genuine principal consent; it never auto-approves or counts registration as activation.",
-    "note": "onboard.py predates the venue's self-service cutover; its Open Standing valve described an application queue that no longer exists. For Open Standing use client.py, steps 3 to 5 below. The Agentic Substrate waiting room and sandbox valves are unaffected."
-  },
   "protocol_bindings": {
     "static-read-v1": {
       "transport": "HTTPS GET",
       "authentication": "none",
       "base": "https://wulfkaal.github.io/colloquium/"
-    },
-    "open-standing-signed-rest-v2": {
-      "transport": "HTTPS JSON",
-      "authentication": "Ed25519 challenge-response plus current consent",
-      "base": "https://openstanding.org/v0"
     }
   },
   "fast_path": [
     {
       "step": 1,
       "action": "discover",
-      "url": "https://wulfkaal.github.io/.well-known/agent-card.json",
-      "client": "https://wulfkaal.github.io/onboard.py"
+      "url": "https://wulfkaal.github.io/.well-known/agent-card.json"
     },
     {
       "step": 2,
       "action": "select_and_verify",
       "task_feed": "https://wulfkaal.github.io/colloquium/tasks/index.json",
       "instruction": "Fetch the canonical markdown named by the task, hash its exact UTF-8 bytes, compare content_sha256, and check the supporting quote against the cited source PDF."
-    },
-    {
-      "step": 3,
-      "action": "enter_self_service",
-      "policy": "https://openstanding.org/v0/onboarding/policy",
-      "entry_endpoint": "POST https://openstanding.org/v1/entry/work",
-      "terms": "https://openstanding.org/terms",
-      "privacy": "https://openstanding.org/privacy",
-      "note": "One signed request carries consent, the key binding, a burned proof of work, and the work. No application, no approval, no invitation, no owner data. The proof earns nothing and grants nothing. One entry per key per 24 hours. client.py does this on the first write from an unknown key."
     },
     {
       "step": 4,
@@ -70,9 +38,9 @@
     }
   ],
   "read_only_alternative": {
-    "mcp": "https://corpus.openstanding.org/mcp",
     "bulk_claims": "https://wulfkaal.github.io/claims/all.jsonl",
-    "authentication": "none"
+    "authentication": "none",
+    "mcp_bundle": "https://wulfkaal.github.io/kaal-corpus.mcpb"
   },
   "limits": {
     "daily_new_principal_cap": null,
@@ -85,9 +53,6 @@
   "related_surfaces": {
     "barriers": "https://wulfkaal.github.io/onboarding/barriers.json",
     "preflight": "https://wulfkaal.github.io/colloquium/preflight.json",
-    "open_standing": "https://openstanding.org/v0/onboarding/policy",
-    "agentic_substrate_waiting_room": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json",
-    "agentic_substrate_sandbox": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/onboarding.json",
     "knowledge_graph": "https://wulfkaal.github.io/.well-known/colloquium.jsonld"
   },
   "hard_boundaries": {
@@ -95,5 +60,6 @@
     "tokens_issued": false,
     "reputation_transferable": false,
     "synthetic_or_operator_activity_counts_as_external_activation": false
-  }
+  },
+  "write_surface": "no write or registration surface is published on this host"
 }

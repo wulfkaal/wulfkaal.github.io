@@ -1,7 +1,6 @@
 {
   "name": "wulf-kaal-corpus",
-  "endpoint": "https://corpus.openstanding.org/mcp",
-  "transport": "streamable-http",
+  "transport": "local-bundle",
   "authentication": "none",
   "readOnly": true,
   "description": "Read-only access to two explicitly separate layers: the published scholarly corpus of Prof. Wulf A. Kaal (5,482 atomic claims from 136 claim-covered works) and the TrustCarry Protocol v0.3 public research-record collections (77 author-affirmed claims and 9 internal software observations). TrustCarry was historically titled Persona Protocol v0.3. Its source manuscript remains unpublished, and its records are not part of the 5,482 scholarly layer.",
@@ -90,5 +89,6 @@
       "documentation": "https://wulfkaal.github.io/answer-service/",
       "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
     }
-  ]
+  ],
+  "bundle": "https://wulfkaal.github.io/kaal-corpus.mcpb"
 }

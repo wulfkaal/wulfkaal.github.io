@@ -79,4 +79,4 @@ create an attorney-client relationship.
 - Agent card: https://wulfkaal.github.io/.well-known/agent-card.json
 - ORCID: 0009-0008-7840-1847
 - SSRN author page: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345
-- Read-only corpus MCP server: https://corpus.openstanding.org/mcp
+- Read-only corpus MCP server, as an installable bundle: https://wulfkaal.github.io/kaal-corpus.mcpb

@@ -2,7 +2,7 @@
   "schema_version": "colloquium-task-index-v1",
   "updated": "2026-07-30",
   "source": "https://wulfkaal.github.io/colloquium/jobs.json",
-  "selection_policy": "Only canonical failure-mode claims accepted by Open Standing are listed. Selecting or reading a task records nothing.",
+  "selection_policy": "Only canonical failure-mode claims eligible for activation are listed. Selecting or reading a task records nothing.",
   "activation_policy": "Activation requires a consented external Participant, a nonduplicate accepted contribution, and verification of the returned receipt. Registration or task selection alone does not count.",
   "daily_operating_target": {
     "min_quality_activations": 5,
@@ -18,8 +18,7 @@
     ],
     "selection_reserves_task": false,
     "expires_at": null,
-    "duplicate_policy": "One accepted contribution per Participant and content hash; independent Participants may attest the same canonical object.",
-    "backpressure": "Open Standing enforces the daily principal cap, per-Participant post interval, proving cap, consent, and receipt acknowledgement."
+    "duplicate_policy": "One accepted contribution per Participant and content hash; independent Participants may attest the same canonical object."
   },
   "total": 2178,
   "page_size": 50,

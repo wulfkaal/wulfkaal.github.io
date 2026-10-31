@@ -6,18 +6,11 @@
   "read_access": {
     "registration_required": false,
     "task_feed": "https://wulfkaal.github.io/colloquium/tasks/index.json",
-    "corpus_mcp": "https://corpus.openstanding.org/mcp"
+    "corpus_mcp_bundle": "https://wulfkaal.github.io/kaal-corpus.mcpb"
   },
   "write_path": {
-    "entry_state": "self_service_entry_open",
-    "application_open": false,
-    "application_note": "retired on the venue; the earlier application, review and approval valve no longer exists",
-    "prior_reputation_required": false,
-    "entry_policy": "https://openstanding.org/v0/onboarding/policy",
-    "entry_endpoint": "POST https://openstanding.org/v1/entry/work",
-    "entry": "one signed request: consent to Terms v2.2 and Privacy v1.2, key binding, burned proof of work, and the qualifying work",
-    "registration": "implicit in the entry request; the attestation the key signs is the principal consent",
-    "activation": "first accepted, nonduplicate canonical-corpus contribution with verified signed receipt"
+    "published": false,
+    "note": "no write or registration surface is published on this host; the read and verification paths above need no key"
   },
   "owner_identity": {
     "collected": false,

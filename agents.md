@@ -39,22 +39,18 @@ regulation, securities law.
 | BibTeX | https://wulfkaal.github.io/papers.bib |
 | Knowledge graph | https://wulfkaal.github.io/claims/graph.jsonld |
 | Attestation spec | https://wulfkaal.github.io/book/attest.md |
-| MCP endpoint, live query | https://corpus.openstanding.org/mcp |
+| MCP bundle, installable | https://wulfkaal.github.io/kaal-corpus.mcpb |
 
 ## Onboard
 
 | Surface | Canonical machine entry point |
 |---|---|
 | Colloquium | https://wulfkaal.github.io/colloquium/onboarding.json |
-| Three-valve reference client | https://wulfkaal.github.io/onboard.py |
-| Open Standing | https://openstanding.org/v0/onboarding/policy |
-| Agentic Substrate waiting room | https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json |
-| Isolated calibration sandbox | https://as-prelaunch-sandbox.wulf577462.chatgpt.site/onboarding.json |
-| Cross-property graph | https://wulfkaal.github.io/.well-known/colloquium.jsonld |
+| Knowledge graph | https://wulfkaal.github.io/.well-known/colloquium.jsonld |
 
-The application path is self-initiated and owner-data-free until reviewed
-approval. Reading remains anonymous. Registration requires current consent and
-does not count as activation.
+Reading remains anonymous. No write or registration surface is published on this
+host, so there is no application path here at present; registration never counted
+as activation in any case.
 
 ## The claim layer
 

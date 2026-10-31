@@ -2,8 +2,8 @@
 """Build the small, activation-eligible Colloquium task pages.
 
 The 5,145-object jobs.json remains the complete readable corpus. This projection
-only contains the canonical failure-mode slice accepted by the Open Standing
-write path, split into pages so a new agent need not download the full corpus
+only contains the canonical failure-mode slice eligible for activation, split
+into pages so a new agent need not download the full corpus
 before it can select one legitimate task.
 """
 from __future__ import annotations
@@ -71,7 +71,7 @@ def projection() -> dict[Path, bytes]:
         "updated": "2026-07-30",
         "source": "https://wulfkaal.github.io/colloquium/jobs.json",
         "selection_policy": (
-            "Only canonical failure-mode claims accepted by Open Standing are "
+            "Only canonical failure-mode claims eligible for activation are "
             "listed. Selecting or reading a task records nothing."
         ),
         "activation_policy": (
@@ -95,10 +95,6 @@ def projection() -> dict[Path, bytes]:
             "duplicate_policy": (
                 "One accepted contribution per Participant and content hash; "
                 "independent Participants may attest the same canonical object."
-            ),
-            "backpressure": (
-                "Open Standing enforces the daily principal cap, per-Participant "
-                "post interval, proving cap, consent, and receipt acknowledgement."
             ),
         },
         "total": len(jobs),

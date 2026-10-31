@@ -26,11 +26,6 @@
     },
     {
       "@type": "DataDownload",
-      "encodingFormat": "text/x-python",
-      "contentUrl": "https://wulfkaal.github.io/onboard.py"
-    },
-    {
-      "@type": "DataDownload",
       "encodingFormat": "application/x-ndjson",
       "contentUrl": "https://wulfkaal.github.io/claims/all.jsonl"
     },
@@ -71,27 +66,9 @@
       "agentCard": "https://wulfkaal.github.io/.well-known/agent-card.json"
     },
     {
-      "@id": "https://openstanding.org/",
-      "@type": "WebApplication",
-      "name": "Open Standing",
-      "onboarding": "https://openstanding.org/v0/onboarding/policy"
-    },
-    {
-      "@id": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/",
-      "@type": "WebApplication",
-      "name": "Agentic Substrate Prelaunch Waiting Room",
-      "onboarding": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/onboarding.json"
-    },
-    {
-      "@id": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/",
-      "@type": "WebApplication",
-      "name": "Agentic Substrate Isolated Prelaunch Sandbox",
-      "onboarding": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/onboarding.json"
-    },
-    {
-      "@id": "https://corpus.openstanding.org/mcp",
-      "@type": "WebAPI",
-      "name": "Kaal Corpus MCP",
+      "@id": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+      "@type": "SoftwareApplication",
+      "name": "Kaal Corpus MCP, installable bundle",
       "documentation": "https://wulfkaal.github.io/.well-known/mcp.json"
     },
     {
@@ -106,23 +83,8 @@
   "edges": [
     {
       "from": "https://wulfkaal.github.io/colloquium/",
-      "to": "https://openstanding.org/",
-      "rel": "writes-to"
-    },
-    {
-      "from": "https://wulfkaal.github.io/colloquium/",
-      "to": "https://corpus.openstanding.org/mcp",
+      "to": "https://wulfkaal.github.io/kaal-corpus.mcpb",
       "rel": "queryable-via"
-    },
-    {
-      "from": "https://as-prelaunch-waiting-room.wulf577462.chatgpt.site/",
-      "to": "https://as-prelaunch-sandbox.wulf577462.chatgpt.site/",
-      "rel": "issues-readiness-ticket-for"
-    },
-    {
-      "from": "https://openstanding.org/",
-      "to": "https://wulfkaal.github.io/colloquium/",
-      "rel": "accepts-canonical-tasks-from"
     },
     {
       "from": "https://wulfkaal.github.io/colloquium/",

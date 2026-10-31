@@ -9,16 +9,6 @@
   "url": "https://github.com/wulfkaal/wulfkaal.github.io",
   "source": "github"
  },
- "remotes": [
-  {
-   "type": "streamable-http",
-   "url": "https://corpus.openstanding.org/mcp"
-  },
-  {
-   "type": "streamable-http",
-   "url": "https://openstanding.org/corpus/mcp"
-  }
- ],
  "packages": [
   {
    "registryType": "mcpb",
@@ -72,8 +62,7 @@
     "claim_content_hash": "curl -s https://wulfkaal.github.io/claims/<id>.md | sha256sum",
     "source_pdf_hash": "each record names the sha256 of the PDF the quote was extracted from; hashing that file checks the claim against its evidence rather than against this index",
     "quote_guarantee": "every supporting quote is an exact contiguous substring of its source text; extraction rejected any claim whose quote did not match, and both the compiler and an independent verifier report zero failures",
-    "verifier": "https://wulfkaal.github.io/verify.py",
-    "independent_attestation": "https://openstanding.org/v0/corpus"
+    "verifier": "https://wulfkaal.github.io/verify.py"
    },
    "scope_discipline": {
     "scope_conditions": "every claim states the conditions under which it holds; a claim cited outside them is being misused",
@@ -93,7 +82,6 @@
     "failure_index": "https://wulfkaal.github.io/failures/index.json",
     "typed_edges": "https://wulfkaal.github.io/claims/graph.jsonld",
     "openapi": "https://wulfkaal.github.io/openapi.yaml",
-    "attestation_commons": "https://openstanding.org/",
     "standard_registry": "https://wulfkaal.github.io/afmr/index.json",
     "standard_specification": "https://wulfkaal.github.io/afmr/spec-1.0.html",
     "standard_discovery": "https://wulfkaal.github.io/.well-known/afmr.json",

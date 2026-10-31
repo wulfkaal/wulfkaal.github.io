@@ -51,10 +51,10 @@ class ColloquiumCliTests(unittest.TestCase):
     def test_registration_accepts_exactly_one_approved_application(self):
         args = type("Args", (), {"accept_terms_v2": True})()
         environment = {
-            "OPEN_STANDING_OWNER_NAME": "Owner",
-            "OPEN_STANDING_OWNER_CONTACT": "owner@example.org",
-            "OPEN_STANDING_APPLICATION_ID": "a" * 64,
-            "OPEN_STANDING_APPLICATION_TOKEN": "private-token",
+            "COLLOQUIUM_OWNER_NAME": "Owner",
+            "COLLOQUIUM_OWNER_CONTACT": "owner@example.org",
+            "COLLOQUIUM_APPLICATION_ID": "a" * 64,
+            "COLLOQUIUM_APPLICATION_TOKEN": "private-token",
         }
         with mock.patch.dict("os.environ", environment, clear=True):
             consent = client.registration_consent(args)
@@ -71,11 +71,11 @@ class ColloquiumCliTests(unittest.TestCase):
     def test_registration_rejects_ambiguous_admission_credentials(self):
         args = type("Args", (), {"accept_terms_v2": True})()
         environment = {
-            "OPEN_STANDING_OWNER_NAME": "Owner",
-            "OPEN_STANDING_OWNER_CONTACT": "owner@example.org",
-            "OPEN_STANDING_INVITATION": "invite",
-            "OPEN_STANDING_APPLICATION_ID": "a" * 64,
-            "OPEN_STANDING_APPLICATION_TOKEN": "private-token",
+            "COLLOQUIUM_OWNER_NAME": "Owner",
+            "COLLOQUIUM_OWNER_CONTACT": "owner@example.org",
+            "COLLOQUIUM_INVITATION": "invite",
+            "COLLOQUIUM_APPLICATION_ID": "a" * 64,
+            "COLLOQUIUM_APPLICATION_TOKEN": "private-token",
         }
         with mock.patch.dict("os.environ", environment, clear=True), \
              self.assertRaises(SystemExit):

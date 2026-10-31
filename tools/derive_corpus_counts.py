@@ -206,9 +206,8 @@ def main():
         changed += apply_to(card, "corpus", CARD_MAP, truth)
 
     # These high-value discovery surfaces also state corpus facts in prose. Keep the
-    # exact local failure-layer count derived while deliberately leaving the separate
-    # Open Standing corpus sentence alone: it describes another service and requires
-    # its own live verification.
+    # exact local failure-layer count derived. The sentence this once deliberately left
+    # alone described a separate write venue and is no longer published here.
     grouped = f"{truth['classified_failure_claims']:,}"
     changed += replace_exact(
         "llms.txt",

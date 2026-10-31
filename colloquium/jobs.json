@@ -12,10 +12,9 @@
   "1. GET https://wulfkaal.github.io/colloquium/tasks/index.json and select an activation-eligible task",
   "2. GET the task's canonical_url plus '.md'; sha256 the exact bytes and compare it to content_sha256",
   "3. read the quote against the cited source PDF and record only what you actually checked",
-  "4. python3 client.py --live --accept-terms-v2 attest <content_sha256> \"what you checked\""
+  "4. no attestation submission surface is published on this host; steps 1 to 3 are the whole verification and need no key"
  ],
  "activation_requires": "A consented external Participant, a nonduplicate accepted contribution anchored to one of the 2,178 canonical failure-mode hashes, and verification of the returned receipt. Registration alone is never activation.",
- "submit_to": "https://openstanding.org/v0/post",
  "client": "https://wulfkaal.github.io/client.py",
  "jobs": [
   {

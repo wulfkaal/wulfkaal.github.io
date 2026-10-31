@@ -561,8 +561,8 @@ CATALOG = {
         "url": "https://wulfkaal.com/",
     },
     "resources": [
-        {"type": "mcp", "name": "Kaal Corpus MCP",
-         "url": "https://corpus.openstanding.org/mcp"},
+        {"type": "mcp-bundle", "name": "Kaal Corpus MCP, installable bundle",
+         "url": "https://wulfkaal.github.io/kaal-corpus.mcpb"},
         {"type": "mcp", "name": "Kaal Answer Service MCP", "url": AS + "/api/rpc"},
         {"type": "a2a", "name": "Kaal Colloquium",
          "url": GH + "/.well-known/agent-card.json"},

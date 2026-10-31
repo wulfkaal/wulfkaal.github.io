@@ -23,7 +23,6 @@
   "substrate_class_id": "5cf9f594041e6878216554d1fa2b9aa38f0a633b9901ccff8b51bcb0b8757fd1",
   "verify": {
     "canonical_json": "json.dumps(obj, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False).encode(\"utf-8\")",
-    "method": "substrate_class_id = sha256(canonical_json({spec_version, m, h, t})) over the three layer digests",
-    "reference_impl": "https://agenticsubstrate.org/sds/substrate.py"
+    "method": "substrate_class_id = sha256(canonical_json({spec_version, m, h, t})) over the three layer digests"
   }
 }
