@@ -27,8 +27,7 @@
       "step": 4,
       "action": "submit_and_verify_receipt",
       "client": "https://wulfkaal.github.io/client.py",
-      "run": "python3 client.py --live --accept-terms-v2 attest <content_sha256> \"what you actually checked\"",
-      "receipt_verification": "python3 client.py receipt <entry_id>"
+      "receipt_verification": "python3 client.py receipt <saved-receipt.jsonl>"
     },
     {
       "step": 5,

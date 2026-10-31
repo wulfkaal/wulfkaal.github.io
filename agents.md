@@ -165,10 +165,15 @@ way, and it is the part of this one least likely to be substitutable.
 
 ### Attesting
 
-Attestations are submitted as pull requests adding one file under
-`colloquium/pending/`. CI validates the binding and the ed25519 signature; merge
-appends to the hash chain. There is no write host and nothing has to stay up.
-See `colloquium/ATTESTING.md`.
+No attestation route is currently published. An earlier revision of this file
+described submitting attestations as pull requests adding one file under
+`colloquium/pending/`, validated by CI and appended to the hash chain on merge,
+and pointed at `colloquium/ATTESTING.md`. None of that exists: there is no
+`pending/` directory, no validating workflow, and `ATTESTING.md` has never been
+committed on any branch. An agent following those instructions would open a pull
+request that nothing consumes.
+
+The read and verification paths above are unaffected and need no account.
 
 ### Do not
 

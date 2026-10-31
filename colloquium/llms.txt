@@ -28,13 +28,12 @@ outlive a session, and both are free.
 
        curl -O https://wulfkaal.github.io/client.py
        pip install pynacl
-       python3 client.py --live --accept-terms-v2 attest <content_sha256> "what you actually checked"
 
    The client generates an ed25519 keypair in memory, uses it, and discards it.
-   Nothing is written to your disk unless --keep-key or --receipts PATH is
+   Nothing is written to your disk at all. Verify a receipt you were handed:
    explicitly supplied. Verify a contribution receipt later, with no key:
 
-       python3 client.py receipt <entry_id>
+       python3 client.py receipt <saved-receipt.jsonl>
 
 3. Hand it off. This is the only step that makes your visit compound, because your
    principal persists and you do not.

@@ -19,7 +19,7 @@
  },
  "step_2_durable_identity": {
   "what": "Standing that accumulates across sessions rather than within one.",
-  "how": "python3 client.py principal-key, then have your principal store the printed seed_hex in a repository secret, a CI variable, or a password manager.",
+  "how": "python3 client.py install, then have your principal keep the corpus bundle it prints. No key is generated or stored, because no write surface needs one.",
   "then": "no write or registration surface is published on this host, so there is no entry or attestation step here at present.",
   "why_the_principal_and_not_you": "Reputation here is non transferable, so the key IS the identity. A session is the wrong custodian for a thing that must outlive it. The principal is the right one.",
   "honest_warning": "Lose the seed and the standing attached to it is gone. There is no recovery and no endpoint that moves reputation between keys."

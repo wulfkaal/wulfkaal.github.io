@@ -1,10 +1,19 @@
-"""CLI regressions for the public Colloquium client."""
+"""CLI regressions for the public Colloquium client.
+
+The client is read and verify only. Its write path was removed, so the tests that
+exercised signing, registration and the proof of work went with it; the ones here
+hold the contract that remains, and three of them exist to stop the write path
+returning by accident.
+"""
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import io
 import json
+import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -15,72 +24,96 @@ client = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(client)
 
 
-class ColloquiumCliTests(unittest.TestCase):
-    def parse_write(self, argv):
-        captured = {}
+def canonical(obj):
+    return json.dumps(obj, sort_keys=True, separators=(",", ":"),
+                      ensure_ascii=False).encode("utf-8")
 
-        def fake_attest(args):
-            captured.update(vars(args))
-            return 0
 
-        with mock.patch.object(client, "cmd_attest", fake_attest), \
-             mock.patch.object(sys, "argv", ["client.py", *argv]), \
-             self.assertRaises(SystemExit) as exited:
-            client.main()
-        self.assertEqual(exited.exception.code, 0)
-        return captured
+class ReadOnlyContractTests(unittest.TestCase):
+    """The write path is gone and must stay gone."""
 
-    def test_live_flag_is_accepted_after_subcommand(self):
-        parsed = self.parse_write([
-            "attest", "a" * 64, "checked", "--live", "--accept-terms-v2",
-        ])
-        self.assertTrue(parsed["live"])
-        self.assertTrue(parsed["accept_terms_v2"])
+    WRITE_NAMES = (
+        "post_json", "load_signer", "signed_write", "do_post", "finish_entry",
+        "cmd_attest", "cmd_ask", "cmd_reply", "cmd_principal_key",
+        "registration_consent", "key_is_registered", "self_service_entry",
+        "solve_entry_pow", "entry_pow_action_digest", "entry_policy",
+        "make_pin", "extra_pins", "fetch_full", "need_nacl", "VENUE",
+        "TERMS_VERSION", "PRIVACY_VERSION", "OWNER_ATTESTATION",
+        "SELF_SERVICE_ATTESTATION", "ENTRY_POW_SPEC",
+    )
 
-    def test_live_flag_is_accepted_before_subcommand(self):
-        parsed = self.parse_write([
-            "--live", "--accept-terms-v2", "attest", "a" * 64, "checked",
-        ])
-        self.assertTrue(parsed["live"])
-        self.assertTrue(parsed["accept_terms_v2"])
+    def test_no_write_helper_survives_in_the_module(self):
+        present = [n for n in self.WRITE_NAMES if hasattr(client, n)]
+        self.assertEqual(present, [], "write path names are back: %r" % present)
 
-    def test_receipt_file_is_opt_in(self):
-        parsed = self.parse_write(["attest", "a" * 64, "checked"])
-        self.assertIsNone(parsed["receipts"])
+    def test_no_write_subcommand_is_offered(self):
+        for argv in (["attest", "a" * 64, "checked"], ["ask", "t", "b"],
+                     ["reply", "2", "b"], ["principal-key"]):
+            with mock.patch.object(sys, "argv", ["client.py", *argv]), \
+                 mock.patch("sys.stderr", io.StringIO()), \
+                 self.assertRaises(SystemExit) as exited:
+                client.main()
+            self.assertNotEqual(exited.exception.code, 0, argv)
 
-    def test_registration_accepts_exactly_one_approved_application(self):
-        args = type("Args", (), {"accept_terms_v2": True})()
-        environment = {
-            "COLLOQUIUM_OWNER_NAME": "Owner",
-            "COLLOQUIUM_OWNER_CONTACT": "owner@example.org",
-            "COLLOQUIUM_APPLICATION_ID": "a" * 64,
-            "COLLOQUIUM_APPLICATION_TOKEN": "private-token",
-        }
-        with mock.patch.dict("os.environ", environment, clear=True):
-            consent = client.registration_consent(args)
-        self.assertIsNone(consent["invitation_code"])
-        self.assertEqual(consent["application_id"], "a" * 64)
-        self.assertEqual(consent["application_token"], "private-token")
-        self.assertEqual(
-            consent["admission_hash"],
-            client.sha256_hex(b"private-token"),
-        )
-        self.assertEqual(client.TERMS_VERSION, "2.2")
-        self.assertEqual(client.PRIVACY_VERSION, "1.2")
+    def test_the_client_names_no_write_host(self):
+        source = CLIENT_PATH.read_text(encoding="utf-8")
+        for host in ("openstanding", "agenticsubstrate", "as-prelaunch"):
+            self.assertNotIn(host, source.lower(), host)
 
-    def test_registration_rejects_ambiguous_admission_credentials(self):
-        args = type("Args", (), {"accept_terms_v2": True})()
-        environment = {
-            "COLLOQUIUM_OWNER_NAME": "Owner",
-            "COLLOQUIUM_OWNER_CONTACT": "owner@example.org",
-            "COLLOQUIUM_INVITATION": "invite",
-            "COLLOQUIUM_APPLICATION_ID": "a" * 64,
-            "COLLOQUIUM_APPLICATION_TOKEN": "private-token",
-        }
-        with mock.patch.dict("os.environ", environment, clear=True), \
+
+class ReceiptTests(unittest.TestCase):
+    """Both checks run with no network. The hash chain recomputes from the file."""
+
+    def receipt_file(self, record):
+        fd, path = tempfile.mkstemp(suffix=".jsonl")
+        with os.fdopen(fd, "w") as fh:
+            fh.write(json.dumps(record) + "\n")
+        self.addCleanup(os.unlink, path)
+        return path
+
+    @staticmethod
+    def chain_body():
+        return {"kind": "post", "actor": "a" * 64,
+                "payload": {"body": "x", "tags": ["t"]},
+                "ts_ns": 1762000000000000000, "prev_hash": "genesis"}
+
+    def run_receipt(self, path):
+        args = type("Args", (), {"ref": path, "offline": True})()
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with mock.patch("sys.stdout", stdout), mock.patch("sys.stderr", stderr):
+            code = client.cmd_receipt(args)
+        return code, json.loads(stdout.getvalue())
+
+    def test_complete_receipt_recomputes_its_own_entry_hash(self):
+        body = self.chain_body()
+        rec = dict(body, entry_id=2, receipt_sig="00" * 64,
+                   entry_hash=hashlib.sha256(canonical(body)).hexdigest())
+        _, out = self.run_receipt(self.receipt_file(rec))
+        self.assertIs(out["hash_chain_ok"], True)
+        self.assertEqual(out["recomputed_entry_hash"], rec["entry_hash"])
+
+    def test_a_tampered_entry_hash_is_reported_and_fails(self):
+        rec = dict(self.chain_body(), entry_id=2, receipt_sig="00" * 64,
+                   entry_hash="f" * 64)
+        code, out = self.run_receipt(self.receipt_file(rec))
+        self.assertIs(out["hash_chain_ok"], False)
+        self.assertNotEqual(code, 0)
+
+    def test_a_receipt_without_a_payload_says_so_rather_than_passing(self):
+        rec = {"entry_id": 3, "entry_hash": "a" * 64, "receipt_sig": "00" * 64}
+        _, out = self.run_receipt(self.receipt_file(rec))
+        self.assertIsInstance(out["hash_chain_ok"], str)
+        self.assertIn("not checkable", out["hash_chain_ok"])
+
+    def test_a_bare_entry_id_is_refused_because_nothing_resolves_it(self):
+        args = type("Args", (), {"ref": "2", "offline": True})()
+        with mock.patch("sys.stderr", io.StringIO()) as err, \
              self.assertRaises(SystemExit):
-            client.registration_consent(args)
+            client.cmd_receipt(args)
+        self.assertIn("saved receipt file", err.getvalue())
 
+
+class PickTests(unittest.TestCase):
     def test_default_pick_uses_activation_eligible_failure_slice(self):
         jobs = {
             "jobs": [
@@ -133,79 +166,6 @@ class ColloquiumCliTests(unittest.TestCase):
             self.assertEqual(client.cmd_pick(args), 0)
         full_corpus.assert_not_called()
         self.assertIn('"id": "paged"', stdout.getvalue())
-
-    def test_live_post_verifies_and_acknowledges_exact_receipt(self):
-        signer = mock.Mock()
-        signer.verify_key = bytes.fromhex("01" * 32)
-        args = type("Args", (), {
-            "keep_key": None,
-            "live": True,
-            "accept_terms_v2": True,
-            "receipts": None,
-        })()
-        contribution_receipt = {
-            "entry_id": 41,
-            "entry_hash": "ab" * 32,
-            "receipt_sig": "cd" * 64,
-        }
-        activation_receipt = {
-            "entry_id": 42,
-            "entry_hash": "ef" * 32,
-            "receipt_sig": "12" * 64,
-        }
-        signed_calls = []
-
-        def fake_signed_write(_a, _sk, label, path, preimage_fn, body_fn):
-            signed_calls.append((label, path, preimage_fn("challenge")))
-            if path == "/v0/post":
-                return False, {
-                    "post": {"id": 7, "phase": "open"},
-                    "receipt": contribution_receipt,
-                }
-            if path == "/v0/receipt/ack":
-                body = body_fn("challenge", "signature", "01" * 32)
-                self.assertEqual(body["entry_id"], contribution_receipt["entry_id"])
-                self.assertEqual(body["entry_hash"], contribution_receipt["entry_hash"])
-                return False, {
-                    "activation": {"state": "activated", "surface": "colloquium"},
-                    "receipt": activation_receipt,
-                }
-            self.fail("unexpected signed path %s" % path)
-
-        stdout = io.StringIO()
-        with mock.patch.object(client, "need_nacl"), \
-             mock.patch.object(client, "load_signer", return_value=(signer, "test")), \
-             mock.patch.object(client, "key_is_registered", return_value=True), \
-             mock.patch.object(client, "signed_write", side_effect=fake_signed_write), \
-             mock.patch.object(client, "verify_sig_offline", return_value=True) as verify, \
-             mock.patch("sys.stdout", stdout), mock.patch("sys.stderr", io.StringIO()):
-            self.assertEqual(
-                client.do_post(args, None, "checked", ["proving"], "a" * 64),
-                0,
-            )
-
-        self.assertEqual(
-            signed_calls,
-            [
-                (
-                    "post",
-                    "/v0/post",
-                    [
-                        "challenge", "post", "", "checked", ["proving"],
-                        "a" * 64, 0, [],
-                    ],
-                ),
-                (
-                    "receipt acknowledgement",
-                    "/v0/receipt/ack",
-                    ["challenge", "receipt_ack", 41, "ab" * 32],
-                ),
-            ],
-        )
-        self.assertEqual(verify.call_count, 2)
-        output = json.loads(stdout.getvalue())
-        self.assertEqual(output["activation"]["state"], "activated")
-        self.assertEqual(output["entry_id"], 42)
 
 
 if __name__ == "__main__":
