@@ -163,7 +163,9 @@ published papers.
 - Date shards: https://wulfkaal.github.io/positions/by-date/index.json
 - Topic shards: https://wulfkaal.github.io/positions/by-topic/index.json
 - Published response metrics: https://wulfkaal.github.io/positions/coverage.json
-- Live read-only tools: search_positions, get_position, positions_on_topic
+- Tool access: none currently served. The hosted endpoint that offered search_positions,
+  get_position and positions_on_topic is no longer published; the static files above are the
+  whole surface.
 
 ## Entity layer
 
@@ -216,9 +218,10 @@ rather than download it. Read only, no auth, no keys.
 
 - Bundle: https://wulfkaal.github.io/kaal-corpus.mcpb
 - Transport: installable bundle, stdio
-- Tools: search_claims, get_claim, claims_on_topic, claim_layer_overview,
-  search_papers, get_paper, papers_by_year, corpus_overview, search_posts,
-  verify_document, how_to_cite, search_positions, get_position, positions_on_topic
+- Tools, read from the bundle's own manifest: afmr_overview, afmr_family,
+  afmr_screen, search_claims, get_claim, corpus_coverage, failure_modes,
+  expertise_profile. The paper, position and research-record tools are not
+  served by this bundle or by any current endpoint.
 - Descriptor: https://wulfkaal.github.io/.well-known/mcp.json
 
 Claim tools return the supporting quote, the canonical URL and the source PDF

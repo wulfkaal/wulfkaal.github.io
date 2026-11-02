@@ -148,7 +148,13 @@ class PositionDiscoverabilityTests(unittest.TestCase):
         self.assertEqual({key: downloads[key] for key in ENDPOINTS}, ENDPOINTS)
 
         descriptor = load(".well-known/mcp.json")
-        self.assertTrue({"search_positions", "get_position", "positions_on_topic"}.issubset(descriptor["tools"]))
+        # The position tools were served by a hosted endpoint that is no longer published, and the
+        # installable bundle does not include them. This used to assert they were advertised in
+        # `tools`, which kept passing after the endpoint went and so held a false claim in place.
+        # What it holds now is that they are declared unserved rather than quietly advertised.
+        position_tools = {"search_positions", "get_position", "positions_on_topic"}
+        self.assertFalse(position_tools & set(descriptor["tools"]))
+        self.assertTrue(position_tools.issubset(set(descriptor["toolsNotCurrentlyServed"]["tools"])))
         self.assertEqual(descriptor["collections"]["scholarlyClaims"]["count"], self.protected_count)
         self.assertEqual(descriptor["collections"]["publicPositions"]["count"], len(self.records))
         self.assertFalse(descriptor["collections"]["publicPositions"]["scholarlyClaimLayerEligible"])

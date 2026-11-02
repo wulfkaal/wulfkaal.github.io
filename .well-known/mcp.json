@@ -5,24 +5,14 @@
   "readOnly": true,
   "description": "Read-only access to two explicitly separate layers: the published scholarly corpus of Prof. Wulf A. Kaal (5,482 atomic claims from 136 claim-covered works) and the TrustCarry Protocol v0.3 public research-record collections (77 author-affirmed claims and 9 internal software observations). TrustCarry was historically titled Persona Protocol v0.3. Its source manuscript remains unpublished, and its records are not part of the 5,482 scholarly layer.",
   "tools": [
+    "afmr_overview",
+    "afmr_family",
+    "afmr_screen",
     "search_claims",
     "get_claim",
-    "claims_on_topic",
-    "claim_layer_overview",
-    "search_papers",
-    "get_paper",
-    "papers_by_year",
-    "corpus_overview",
-    "search_posts",
-    "verify_document",
-    "how_to_cite",
-    "search_research_claims",
-    "get_research_claim",
-    "list_research_observations",
-    "get_research_observation",
-    "search_positions",
-    "get_position",
-    "positions_on_topic"
+    "corpus_coverage",
+    "failure_modes",
+    "expertise_profile"
   ],
   "documentation": "https://wulfkaal.github.io/agents.md",
   "staticMirror": {
@@ -90,5 +80,28 @@
       "graph": "https://wulfkaal.github.io/agentic-claim-graph/v1/index.json"
     }
   ],
-  "bundle": "https://wulfkaal.github.io/kaal-corpus.mcpb"
+  "bundle": "https://wulfkaal.github.io/kaal-corpus.mcpb",
+  "toolsNote": "These are the tools the bundle at `bundle` actually serves, read from its own manifest.json. An earlier revision of this file listed the tools of the hosted endpoint it used to name, and kept that list when the endpoint was removed, so it advertised tools nothing served.",
+  "toolsNotCurrentlyServed": {
+    "tools": [
+      "claims_on_topic",
+      "claim_layer_overview",
+      "search_papers",
+      "get_paper",
+      "papers_by_year",
+      "corpus_overview",
+      "search_posts",
+      "verify_document",
+      "how_to_cite",
+      "search_research_claims",
+      "get_research_claim",
+      "list_research_observations",
+      "get_research_observation",
+      "search_positions",
+      "get_position",
+      "positions_on_topic"
+    ],
+    "reason": "These were served by a hosted endpoint that is no longer published. No current endpoint or bundle serves them.",
+    "staticEquivalents": "The underlying records remain published as static files; see staticMirror below for the claim, position and TrustCarry research surfaces."
+  }
 }
