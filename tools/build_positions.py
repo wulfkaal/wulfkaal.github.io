@@ -6,6 +6,7 @@ import hashlib
 import html
 import json
 import re
+import zipfile
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
@@ -716,7 +717,100 @@ def add_reverse_claim_links(repo, by_claim):
         write_text(path, expected)
 
 
-def update_discovery_surfaces(repo, lastmod, records):
+def bundle_tool_sets(repo):
+    """The tools the bundle actually serves, and the ones mcp.json declares it does not.
+
+    `.well-known/mcp.json` documents this contract itself, in toolsNote: "These are the tools the
+    bundle at `bundle` actually serves, read from its own manifest.json." It records why, too: an
+    earlier revision kept the hosted endpoint's tool list after that endpoint was removed, and so
+    advertised tools nothing served.
+
+    Nothing read the bundle. The list was maintained by hand and this generator appended three
+    position tools to it on every run, which is how the false claim came back after the commit that
+    removed it. Deriving the list closes the shape rather than the instance: a tool the bundle does
+    not serve cannot be advertised, and one it does serve cannot go missing, whichever name it is.
+    """
+    mcp = json.loads((repo / ".well-known" / "mcp.json").read_text(encoding="utf-8"))
+    bundle_url = mcp.get("bundle")
+    if not isinstance(bundle_url, str) or not bundle_url:
+        raise RuntimeError("mcp.json names no bundle, so the tools it serves cannot be derived from one")
+    bundle_path = repo / bundle_url.rsplit("/", 1)[-1]
+    if not bundle_path.is_file():
+        raise RuntimeError(
+            f"mcp.json names the bundle {bundle_url}, which this repository does not carry as"
+            f" {bundle_path.name}, so the tools it serves cannot be read"
+        )
+    # Every way this can fail to read the bundle ends as a RuntimeError naming the file, because the
+    # refusal an operator sees should say which artifact could not be read. A bundle that exists but
+    # is not a zip raised BadZipFile, and a manifest that is not JSON raised JSONDecodeError, and
+    # neither said what the build was trying to do.
+    try:
+        with zipfile.ZipFile(bundle_path) as archive:
+            manifests = [name for name in archive.namelist() if name == "manifest.json" or name.endswith("/manifest.json")]
+            if len(manifests) != 1:
+                raise RuntimeError(
+                    f"{bundle_path.name} carries {len(manifests)} manifest.json entries, so which one"
+                    " declares its tools is ambiguous"
+                )
+            manifest = json.loads(archive.read(manifests[0]))
+    except RuntimeError:
+        raise
+    except Exception as error:
+        raise RuntimeError(
+            f"{bundle_path.name} could not be read as a bundle carrying one manifest.json"
+            f" ({type(error).__name__}), so the tools it serves cannot be derived"
+        ) from error
+    if not isinstance(manifest, dict):
+        raise RuntimeError(
+            f"{bundle_path.name} manifest.json is {type(manifest).__name__}, not an object, so the"
+            " tools it declares cannot be read"
+        )
+    declared = manifest.get("tools")
+    if not isinstance(declared, list) or not declared:
+        raise RuntimeError(f"{bundle_path.name} manifest.json declares no tools list, so the served set cannot be derived")
+    served = []
+    for entry in declared:
+        name = entry.get("name") if isinstance(entry, dict) else entry
+        # `not name` admitted a name of spaces, which would be advertised as a tool whose name is
+        # blank. strip() is the check, and the name is kept as declared.
+        if not isinstance(name, str) or not name.strip():
+            raise RuntimeError(f"{bundle_path.name} manifest.json carries a tool with no name")
+        served.append(name)
+    # Duplicates survived every set based check downstream, including the overlap test and the
+    # project's own test, while the written list would have carried the same tool twice.
+    if len(set(served)) != len(served):
+        repeated = sorted({name for name in served if served.count(name) > 1})
+        raise RuntimeError(f"{bundle_path.name} manifest.json declares the same tool more than once: " + ", ".join(repeated))
+    # isinstance rather than `or {}`: a truthy non dict here, a list for instance, made the old
+    # expression yield that list and .get raise AttributeError, so the build blocked with the wrong
+    # error and no explanation of what was wrong with the file.
+    container = mcp.get("toolsNotCurrentlyServed")
+    unserved = container.get("tools") if isinstance(container, dict) else None
+    # Non empty, and every entry a non empty string. An empty list passed the previous isinstance
+    # check while declaring nothing at all, which made this function's own refusal contract false:
+    # it claimed to refuse a descriptor that declares nothing unserved and did not.
+    if not isinstance(unserved, list) or not unserved or any(not isinstance(name, str) or not name.strip() for name in unserved):
+        raise RuntimeError(
+            "mcp.json carries no usable toolsNotCurrentlyServed.tools list, which must be a non empty"
+            " list of tool names, so a tool the bundle does not serve can be neither advertised nor"
+            " explained"
+        )
+    both = sorted(set(served) & set(unserved))
+    if both:
+        raise RuntimeError("mcp.json both serves and disclaims: " + ", ".join(both))
+    # What is deliberately NOT checked, so the next reader does not mistake it for an oversight. A
+    # name that appears in neither list is not a claim: the descriptor advertises what the bundle
+    # serves and explains what a removed endpoint used to serve, and a name in neither is simply not
+    # a tool of this server. An audit proposed requiring the unserved list to equal a pinned set.
+    # That is declined on purpose: the pin would be a second hand maintained list, which is the
+    # thing deriving the served set removed, and there is no record here of what was once served
+    # from which a non arbitrary completeness rule could be built. The three names the retired
+    # endpoint served are pinned where the evidence for them lives, in
+    # tests/test_position_discoverability.py, which requires them present in this list.
+    return served, unserved
+
+
+def update_discovery_surfaces(repo, lastmod, records, served_tools):
     position_count = len(records)
     public_count = sum(record["publicationStatus"] == "public" for record in records)
     private_compiled_count = sum(record["publicationStatus"] == "private_compiled" for record in records)
@@ -775,9 +869,21 @@ def update_discovery_surfaces(repo, lastmod, records):
     )
     if replaced != 1:
         raise RuntimeError("Expected one scholarly-layer count in MCP description")
-    for tool in ("search_positions", "get_position", "positions_on_topic"):
-        if tool not in mcp["tools"]:
-            mcp["tools"].append(tool)
+    # The served list is the bundle's, in the bundle's order, so this file is a function of what
+    # is actually installable rather than of whatever the last editor believed. This block used to
+    # APPEND search_positions, get_position and positions_on_topic on every run, which undid the
+    # commit that had removed them, failed the validation step, skipped the push, and left nothing
+    # new on the live site. They are absent from this list because the bundle does not serve them,
+    # not because they are named here, which is the difference between closing a shape and closing
+    # one instance of it: an audit pointed out that a fourth name nothing serves would have passed
+    # the by-name version, and it would.
+    #
+    # served_tools arrives as a parameter. bundle_tool_sets derived it at the top of main, before
+    # anything was written, and it is what refuses a descriptor that both serves and disclaims the
+    # same tool, that declares nothing unserved, or that names a bundle this repository does not
+    # carry. This function does not validate it again: one read of one fact, because two reads of it
+    # are how the descriptor and the generator came to disagree in the first place.
+    mcp["tools"] = list(served_tools)
     mcp["staticMirror"].update({
         "publicPositionsIndex": endpoints["positions_index"],
         "publicPositionsGraph": endpoints["positions_graph"],
@@ -950,6 +1056,12 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     CHECK = args.check
+    # Before anything is written, including the positions directory below. An earlier version
+    # validated at the top of update_discovery_surfaces, which is after main has already written the
+    # position pages, their indexes, the topic shards and the reverse claim links, so a refusal left
+    # those on disk while the commit message claimed it left no half written tree. Here there is
+    # nothing on disk to leave.
+    served_tools, _unserved_tools = bundle_tool_sets(args.repo)
     src_dir = args.repo / "positions-src"
     out_dir = args.repo / "positions"
     if not CHECK:
@@ -1018,7 +1130,7 @@ def main():
     lastmod = index["dateModified"]
     by_claim = build_shards(out_dir, records, lastmod)
     add_reverse_claim_links(args.repo, by_claim)
-    update_discovery_surfaces(args.repo, lastmod, records)
+    update_discovery_surfaces(args.repo, lastmod, records, served_tools)
     update_attribution_surfaces(args.repo, records)
 
     if CHECK:
