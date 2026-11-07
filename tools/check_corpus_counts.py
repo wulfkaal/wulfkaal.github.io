@@ -331,7 +331,7 @@ CHECKS = [
      r"([\d,]+) claims documenting how designs[^.]*\. All are organised into ([\d,]+) families",
      ["failure_mode_claims", "failure_families"]),
     ("client.py", "prose",
-     r"Corpus\s+([\d,]+) live claims from ([\d,]+) works",
+     r"Corpus\s+([\d,]+) claims from ([\d,]+) works",
      ["atomic_claims", "claim_covered_works"]),
     ("client.py", "prose",
      r"([\d,]+) claims from ([\d,]+) claim-covered works,",
@@ -559,11 +559,6 @@ FILE_EXCLUSIONS = {
         (r"5,482-object corpus merely to select one of the 2,178 accepted tasks",
          "Describes the jobs file and the tasks file in a comment about "
          "avoiding the full download. Both are derived from the corpus."),
-        (r"broader 5,482-claim corpus remains read-only",
-         "The activation manifest covers the eligible tasks; the broader "
-         "readable jobs file stays read only."),
-        (r"Colloquium jobs file remains 5,482",
-         "Names the jobs file count, which is now the claim count."),
     ],
     "positions/index.json": [
         (r"\"sourceRank\":\s*[\d,]+",
