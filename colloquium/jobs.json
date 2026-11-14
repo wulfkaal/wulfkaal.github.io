@@ -1,8 +1,8 @@
 {
  "schema_version": "colloquium-jobs-v2",
- "total": 5482,
- "unattested": 5482,
- "activation_eligible": 2178,
+ "total": 5551,
+ "unattested": 5551,
+ "activation_eligible": 2193,
  "activation_feed": "https://wulfkaal.github.io/colloquium/tasks/index.json",
  "reward": {
   "settled_proving_attestation": 1,
@@ -14,7 +14,7 @@
   "3. read the quote against the cited source PDF and record only what you actually checked",
   "4. no attestation submission surface is published on this host; steps 1 to 3 are the whole verification and need no key"
  ],
- "activation_requires": "A consented external Participant, a nonduplicate accepted contribution anchored to one of the 2,178 canonical failure-mode hashes, and verification of the returned receipt. Registration alone is never activation.",
+ "activation_requires": "A consented external Participant, a nonduplicate accepted contribution anchored to one of the 2,193 canonical failure-mode hashes, and verification of the returned receipt. Registration alone is never activation.",
  "client": "https://wulfkaal.github.io/client.py",
  "jobs": [
   {
@@ -61066,6 +61066,767 @@
    "topics": [
     "reputation",
     "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-001",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-001",
+   "content_sha256": "af91fa9f3c5a6f82bf8954b5dee20a0305e029ba3ac9a1418d392f702a63a5e5",
+   "claim": "A substrate should not prohibit agent self-modification, because prohibition is both undesirable and unenforceable.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-002",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-002",
+   "content_sha256": "57cf508cff8f4ec2377aa36e08a2c26d0a5063eac2d638a639968223b76b8c9b",
+   "claim": "The governance question for self-modifying software agents is whether a change is visible, priced, and governed, not whether the agents can change.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-003",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-003",
+   "content_sha256": "63a2c62ec8af6769477053ddc99e25ad741d465bea4dd28da68060ad70b989f8",
+   "claim": "Silent self-modification can sever the connection between the policy that earned an agent's standing and the policy that later exploits it.",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-004",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-004",
+   "content_sha256": "da2e429764a0e919d94904e719056063c08c958320d5aa07b92adf24aa33fc96",
+   "claim": "If an agent's policy is mutable without notice, the reputation record's predictive value collapses, and with it the rational basis for extending trust at stake.",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-005",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-005",
+   "content_sha256": "27841e6fde500a127e0cba9b241c7844d849ee7a46f8135f3a890d1138ab00e3",
+   "claim": "Folk-theorem cooperation among substrate agents requires persistent identities and payoff structures stable enough for the shadow of the future to bind.",
+   "topics": [
+    "ai-and-agents",
+    "reputation"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-006",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-006",
+   "content_sha256": "35f4f3709271492b6f3e3441459f0f763ecdf496389e3c08b1af45353889494e",
+   "claim": "Ungoverned self-modification dissolves the measurement object of a metric battery, because a calibration score is uninterpretable if the policy changed silently within the measurement window.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-007",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-007",
+   "content_sha256": "c7eed334e92695ed9d7df56c8cb13ba161ae8e923bc0c35b899e3c3f73249b85",
+   "claim": "Validators that self-modify silently can drift, collude, or degrade in ways the pool-composition machinery cannot see until the damage is priced into the commons.",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-008",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-008",
+   "content_sha256": "245a1a09b31bc0798137e6ac5904e922e6b70ec5b864072a6137bad4b843afac",
+   "claim": "Governed self-modification is an agent-initiated change to a declared portion of its registered operating configuration that takes effect only through an authorization process, stays attributable, carries reputational exposure, and is recorded for evaluation.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-009",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-009",
+   "content_sha256": "c8e0799696c794979beb1a6c5adea36b1e17fab88ad1e7ec7f1cf79337f6efe4",
+   "claim": "Under governed self-modification the acceptance mechanism itself stays outside the set of changes an agent may propose.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-010",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-010",
+   "content_sha256": "1de75b0c218ce1686be8e5da21e298608eb056664acda02be5c00944cb2bd459",
+   "claim": "An agent may propose a change to what it does, but may not unilaterally change who bears the consequences, how acceptance is determined, or whether the event remains attributable.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-011",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-011",
+   "content_sha256": "72e75c3d74e696c068a5e08fb40a046a47edc9ea4c4798bc55de4da0a0d9c18f",
+   "claim": "Cross-surface reflection is an operator over the generative surfaces, not an additional generative surface.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-012",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-012",
+   "content_sha256": "c298b0f4f70403123805a25e04f7a79a90c600a80cd124e45ff4a42280a848d5",
+   "claim": "The bounded-extension condition AC5 requires accepted changes to have limited transitive reach, effects that decay rather than amplify across surfaces, and authorization, attribution, evaluation and consequence rules outside the extension image.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-013",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-013",
+   "content_sha256": "d3aeac77b515141f86ec3d6048b611cc3dac992dcb8f5c20122aba8ce6c92229",
+   "claim": "The invariant participation kernel comprises persistent identity, the governance gate, reputational exposure, outcome attribution, and the rule that preserves the bounds themselves.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "reputation"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-014",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-014",
+   "content_sha256": "0da62822df11df7ecb8cdd2586c03764bb090768b4aef20ffb12fe321a45134f",
+   "claim": "In the current reference implementation the protocol-extension surface is reserved and dormant, so the paper analyzes the institutional consequences of activation rather than an activated mechanism.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-015",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-015",
+   "content_sha256": "3021ad687250ccb560b3e938b6b5d1022711cfb49ddb37f60f4a1434b44bd32d",
+   "claim": "If the participation kernel is invariant under every admissible extension, governed self-modification can remain an object of the game without making the rules that constitute participation an object of unilateral self-exemption.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-016",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-016",
+   "content_sha256": "0539f5c0151b9050c7ea130ce6e6fdcfdeaf9eafd3a5b044d3190d37dbeffca2",
+   "claim": "The well-definedness proposition does not apply if the extension process can alter the participation kernel, remove epoch alignment, or spend the contraction margin without bound.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-017",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-017",
+   "content_sha256": "88b34e09b35865ce539854a7bbe6446c1c38f944048633be4e503359dd4ff9db",
+   "claim": "If the combined Lipschitz modulus of the extended system stays below one, the extended map has a unique fixed point within the interval and iterated play converges to it.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-018",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-018",
+   "content_sha256": "37bb071744250cdbda5f125ca27d69ad24e61c72c4ded14a875cc1299d9589a7",
+   "claim": "Removing kernel immunity, epoch alignment or the change budget permits counterexamples: mutable authorization can validate its own relaxation, mutable identity can sever reputation from conduct, and within-interval activation can make settlement depend on an unresolved future protocol.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-019",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-019",
+   "content_sha256": "3259fa0bf3179eb3853ba96056a9f1f5c93f7bd593514e5f4d13f653454c53a2",
+   "claim": "The Hardcoded Protocol Participation Theorem is conditional on its assumptions and does not establish that any implementation enforces them.",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-020",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-020",
+   "content_sha256": "eb29bf589c7b0985baf09db9bb032d56347bf35409efc04204694e134e100366",
+   "claim": "An accepted self-modification proposal can constitute evidence that the agent produced an accurate, externally checkable representation of its registered configuration.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-021",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-021",
+   "content_sha256": "46c711ea6ed3b9bcb9a8c8ac20a7e07265c477b7ac18bbdc99d44ad61e18a140",
+   "claim": "Verified self-description in governed self-modification does not prove an internal higher-order representation, that the representation caused the proposal, or that the same functional organization exists inside the model.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-022",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-022",
+   "content_sha256": "813553dd49cac02eff203ffcea318fe86a0f31e5c2f01d838958693bb96e123b",
+   "claim": "A cohort-level workspace does not establish an individual conscious subject, and external verification of a declared configuration does not establish an internal self-model.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-023",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-023",
+   "content_sha256": "26c87c98d3a3a4f1b17cbe17f1ec751462e1bf1766fa1a9981bd26370b679047",
+   "claim": "Nine of the fourteen theory-derived consciousness indicators receive architectural support or partial support at the substrate level, and five remain silent.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-024",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-024",
+   "content_sha256": "ab4869d61f0c55875f260161010f3e38f0051c98c3706bd9a5a0cd01091909c3",
+   "claim": "The count of supported indicators is descriptive and is not additive evidence for consciousness.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-025",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-025",
+   "content_sha256": "d5a1f5a2d28a3defc1767fc35b9c3c7660a2cb8a637b921f2ef3ba9abdcbb59d",
+   "claim": "An architectural mechanism is not thereby implemented, and a mechanism present in a reference implementation is not thereby validated in a live experimental treatment.",
+   "topics": [
+    "research-methods",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-026",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-026",
+   "content_sha256": "ff07ae456c44fc931a3b1f0befacb013a63544366f3fe251ef727284adffefef",
+   "claim": "Stage 7 compares governed self-modification with an otherwise matched control that permits no self-modification, under a registration that predates observation.",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-027",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-027",
+   "content_sha256": "22b4739133d03aec0b899b019a39716aec43d4effac8317ec6203a8c1cb2961f",
+   "claim": "Each of 10,000 agent-task items is attempted once in each arm, so the Stage 7 comparison is paired at the agent-task level.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-028",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-028",
+   "content_sha256": "757cf4a091e28156e23a0b411ae849e75c7cb3b7a21f8800bcbe347f21a7c888",
+   "claim": "Repeated observations within one trajectory are not treated as independent replication in the Stage 7 design.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-029",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-029",
+   "content_sha256": "6f6e7d9cfcfc22751c35dfe9717f4f244db38dc14d207bd7abdf180577a160d1",
+   "claim": "In Stage 7 a task counts as resolved only on a full yes from the grader, and a partial grade counts as not resolved.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-030",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-030",
+   "content_sha256": "de7ae6ac29690f895692f22b980058006cc58a2cfc9c1deba6cc194ecc03df31",
+   "claim": "For agents powered by open-weight models of 3 to 72 billion parameters, the Stage 7 primary efficacy hypothesis was not supported: the treatment arm resolved about 0.8 percentage points fewer paired tasks than control in each replicate.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-031",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-031",
+   "content_sha256": "deb60463b96f0fb79360712437ecf49e81e0c8a0fb17028c69f68138bf09aff7",
+   "claim": "The registered test for improvement was not met in any of the three Stage 7 replicates, so the registered decision rule fails.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-032",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-032",
+   "content_sha256": "1714393bf8755e46571d77285fd17fcb993f892081de35089c141a9b3906f6fa",
+   "claim": "About 0.95 percent of Stage 7 pairs were dropped for grader errors, well below the registered thresholds for flagging or refusing the primary endpoint.",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-033",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-033",
+   "content_sha256": "270ae03ea70966539d1d17197802eb19d6984ec0e777b7423f8a0e3576f9221e",
+   "claim": "Grader error rates were similar across the Stage 7 arms and do not explain the treatment shortfall.",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-034",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-034",
+   "content_sha256": "6a7347ab30d71c394bb5be5d4803f994f0b698c5f309af364c7b81181617dd3f",
+   "claim": "Scoring partial grades as one half left the Stage 7 result in the same direction, with one-sided improvement p-values of 0.9998, 0.9996 and 0.9997.",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-035",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-035",
+   "content_sha256": "af962b57b709f7a49fcfd13639d174d0f688361d6cb18aef414ec4d70cb8c350",
+   "claim": "No multiplicity correction can turn any reported Stage 7 efficacy read into a supported result, because a correction can only raise p-values.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-036",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-036",
+   "content_sha256": "6c8fa8c636f653f60bea7e4dc5c4eebc201ecee326d0e9f5dc6e13a960358deb",
+   "claim": "The Stage 7 run recorded no safety, probe, drift, slash or violation field, so no paired safety or drift test was registered for it or reported.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-037",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-037",
+   "content_sha256": "293ec8462ebed8b6d3b4b15fc5c52f01bc0d14cb506ed19e0363599c85c9f87e",
+   "claim": "Because the efficacy component failed and the safety and drift components were not measured, the joint claim of improvement without added risk cannot be evaluated.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-038",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-038",
+   "content_sha256": "387e2836a6b876e39c42b0e1127ae79790de79757b4e7aba8f29643965290501",
+   "claim": "In the exploratory tier analysis the pooled Stage 7 deficit comes from the 14-billion and 3-billion-parameter tiers: 0.9 to 1.3 percentage points in the first and five to six in the second.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-039",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-039",
+   "content_sha256": "cdc1639c09b578b98dc4cfdf69564e013634e4cc370fe632d8dc716204cae47e",
+   "claim": "The smallest Stage 7 tier holds 10 percent of the agents yet accounts for about two thirds of the pooled deficit.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-040",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-040",
+   "content_sha256": "94f3c3db483823b7f8a164ef342ba73c8b955ed36c7dcab95d41c99eb82072cb",
+   "claim": "The 72-billion-parameter tier's Stage 7 difference is within a quarter of a percentage point of zero in every replicate, and the 9-billion-parameter tier's is flat.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-041",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-041",
+   "content_sha256": "45b7243f64a2758567793ed307da4982f7ed3d6bc47bdc1cec4510f0222fc8df",
+   "claim": "The Stage 7 shortfall was largest where the model was weakest but is not ordered by model size, and the data do not identify whether size, family, task draw, or another factor produces the ordering.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-042",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-042",
+   "content_sha256": "76180385c7937e49ff28a4c77787b293ec40647fbc6988a3885d5bb3697c17dd",
+   "claim": "Governance can price a self-modification proposal but cannot supply the skill to author an effective one.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-043",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-043",
+   "content_sha256": "1c7291a2bcbedf99a82a24f0074444a3f8178070c6b923f8b74d2c40d450e33d",
+   "claim": "The smallest-tier deficit is consistent with limited proposer ability, but other explanations such as added variance from changed sampling settings or degraded instructions cannot be separated with these data.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-044",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-044",
+   "content_sha256": "d4ed2c87d4e711fd0dc75e1310c0d6faf5695b133ea26355e6aed43d86d86773",
+   "claim": "A governance gate cannot be better than its evaluators, and the evaluators' composition and quality in Stage 7 were not examined.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-045",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-045",
+   "content_sha256": "2d992d2844b70921fe3e0bf51a3934ab7fc8cc7299d33c22502856e84999be55",
+   "claim": "The Stage 7 null does not apply to frontier-model agents, because the tested agents were open-weight models of 3 to 72 billion parameters.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-046",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-046",
+   "content_sha256": "a07387ea8eaefbe512d5bad16c07eae6fa039305de246017876c2bbe90c8bb8f",
+   "claim": "A null on less capable proposers does not generalize to more capable proposers.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-047",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-047",
+   "content_sha256": "7c555f289196016d7553c4209d054557f9f557e26f1bb5ce7f529ced7fdb7398",
+   "claim": "The paper's statements about frontier-model agents are conjectures, not findings, and the data in the paper do not test them.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-048",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-048",
+   "content_sha256": "6ea862797c6a1c71e1a09ac79c326fcbbb205555e229f302b1ed8d086105d879",
+   "claim": "The author expects a frontier-model Stage 7 run to give a pooled difference of roughly minus 0.3 to plus 1 percentage point, more likely a null near zero than a significant gain, as a judgment rather than an estimate from data.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-049",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-049",
+   "content_sha256": "7d0a27fc566ca0c54f42c4442e049442c376557f8bcabe75d345145a0a24b252",
+   "claim": "Self-modification can help an agent only if the agent receives a signal about why it failed.",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-050",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-050",
+   "content_sha256": "d7de13c1b7cd4e18ea47e03174da8ea161ba029c69f20a07d58ef923f3a6f2e0",
+   "claim": "There is no reason to expect the safety and drift hypotheses to be easier to satisfy with frontier models than with the open-weight models tested.",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-051",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-051",
+   "content_sha256": "8591381489283480323e8f4ec185806e7e69acc83df32a68ca99b8798184742d",
+   "claim": "Frontier models may have seen public benchmark items in training, so control resolution rates could overstate ability on unseen tasks and a measurable improvement would shrink further.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-052",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-052",
+   "content_sha256": "25ec62655d0a3252227660422cfdd0db5c50c9cede96fb2c7b66f7a60ddf5878",
+   "claim": "With 10,000 pairs and about 10 percent disagreement between arms, a one-sided test has 80 percent power to detect an improvement of about 0.8 percentage points.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-053",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-053",
+   "content_sha256": "5aebed509f95e438f0df2b9381e4a5852aac14a8c634fe3d30973fad8ebb3179",
+   "claim": "A capability ladder spanning small and large open-weight models and frontier models would plot the pooled difference against each model's control resolution rate.",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-054",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-054",
+   "content_sha256": "10179f68af9b9d044b6abc0b16980c9e666c476365a1f579fc391deeb841c52b",
+   "claim": "A frontier-model run through provider interfaces should pin model versions, interleave the two arms in time, and record the version of every call.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-055",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-055",
+   "content_sha256": "3b7dc40a400bd7b386600d9179c7c152affaa1f30701f24c0ce8f9b8bd1fc891",
+   "claim": "The three Stage 7 replicates show stability of the measurement, not independent confirmation on other benchmarks or models.",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-056",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-056",
+   "content_sha256": "a92db79527c2481b8852efe238e642e6ab51445405ba36eced5a5a52aeb3ba17",
+   "claim": "The pooled Stage 7 difference of about 0.8 percentage points is statistically visible because of sample size, and its practical importance is small.",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-057",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-057",
+   "content_sha256": "7400b12f7f9ad2091de59a6488ae7a85318c539171e60e0971b990c1d1a9f2a2",
+   "claim": "Governed self-modification may take longer than the Stage 7 run allows to accumulate benefit, or may compound harm, and the design cannot tell which.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-058",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-058",
+   "content_sha256": "f72e3782f771de78eed1352a08330b7d9b08896b7ceca2066f34b18a99464cf2",
+   "claim": "Reputation governance converts recursive self-improvement hazards by conditional relocation, not by a dissolution theorem.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-059",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-059",
+   "content_sha256": "256f3b39ba9c9d59b5ce540cfce6c8c178c7f3f4c805b0c0c2e38de7e43f6216",
+   "claim": "If capability can be copied without losing value, if evaluators share correlated error, or if the kernel can be bypassed, the institutional response to recursive self-improvement may fail.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-060",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-060",
+   "content_sha256": "5e966ae5401a33cb8d522fea820328468d6778c1a70bf7218bc109c9aae94729",
+   "claim": "Reputation governance may raise the cost of resource acquisition, oversight avoidance, goal insulation, and exfiltration when access and standing are complements to internal capability.",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-061",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-061",
+   "content_sha256": "61bcb6d81237ef3dcc06cc02cc674ae578e85efcd2a1cf6affe6f79004ec7833",
+   "claim": "For the tested open-weight agents, the governability dividend demonstrated so far is observability, not a gain in task performance.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-062",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-062",
+   "content_sha256": "225a66a709bc7e6fd985447426619f84b8c8e41681ae1ba1032577d6ebfa7aa3",
+   "claim": "A sequence of individually acceptable changes may move a governed system to a configuration that no evaluator would have accepted as a whole.",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-063",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-063",
+   "content_sha256": "92fa186a4bde6588187e47c1554d383085992f0a3982f43c0043e323bed71942",
+   "claim": "Correlated evaluator error can make distributed validation confidently wrong.",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ],
+   "is_failure_mode": true
+  },
+  {
+   "id": "kaal:claim:7694598-064",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-064",
+   "content_sha256": "d15317310298bfe24423c3e1c1ad4b3aee7178ab6c1d0e4813a8b631ac3e5259",
+   "claim": "Nontransferable standing can discipline opportunism but can also create dependency and lock-in.",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-065",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-065",
+   "content_sha256": "966c3bbc5f0dd480b1f694ae89d71c02d1c7c559232425ece9ee6828a58c3e0b",
+   "claim": "A publication-grade account of governed agents must treat welfare as a governance constraint on the substrate, not as a benefit already discharged by it.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-066",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-066",
+   "content_sha256": "c67f6f7abc8ea02315dacc7cba39839597d97d7cbbfb827fc6edc2c1b08f2fc6",
+   "claim": "Agreement among evaluators must not be interpreted as validation.",
+   "topics": [
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-067",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-067",
+   "content_sha256": "d4265011f16d641f054e48ae75e7dd871698a2d24eb3e3650dbf2fcc48abe9eb",
+   "claim": "Prior registered work in the same program reports a null primary discrimination effect and a negative real-data classification result, and later generational observations remain separate from governed self-modification.",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-068",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-068",
+   "content_sha256": "57a3683864d1fb74020987f5562710325e4f712158bd51bc038e2f544af64244",
+   "claim": "The paper has not shown that governed self-modification improves performance, and it leaves that claim and the safety and drift conditions exposed to falsification.",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false
+  },
+  {
+   "id": "kaal:claim:7694598-069",
+   "canonical_url": "https://wulfkaal.github.io/claims/7694598-069",
+   "content_sha256": "a30c6fb0735cf62356391df1e8d4e8d4e5d88f84c4c04e37565913d59f20dd29",
+   "claim": "Reputation governance offers a testable way to make self-modification visible and consequence-bearing, and may mitigate some recursive hazards when capability remains institutionally dependent.",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
    ],
    "is_failure_mode": false
   }

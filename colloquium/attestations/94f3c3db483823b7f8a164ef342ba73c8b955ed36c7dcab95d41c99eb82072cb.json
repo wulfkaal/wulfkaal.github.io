@@ -1,0 +1,19 @@
+{
+ "content_hash": "94f3c3db483823b7f8a164ef342ba73c8b955ed36c7dcab95d41c99eb82072cb",
+ "object": "https://wulfkaal.github.io/claims/7694598-040",
+ "claim": "The 72-billion-parameter tier's Stage 7 difference is within a quarter of a percentage point of zero in every replicate, and the 9-billion-parameter tier's is flat.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7694598-040.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 94f3c3db483823b7f8a164ef342ba73c8b955ed36c7dcab95d41c99eb82072cb verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

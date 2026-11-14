@@ -1,0 +1,19 @@
+{
+ "content_hash": "22b4739133d03aec0b899b019a39716aec43d4effac8317ec6203a8c1cb2961f",
+ "object": "https://wulfkaal.github.io/claims/7694598-027",
+ "claim": "Each of 10,000 agent-task items is attempted once in each arm, so the Stage 7 comparison is paired at the agent-task level.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7694598-027.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 22b4739133d03aec0b899b019a39716aec43d4effac8317ec6203a8c1cb2961f verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

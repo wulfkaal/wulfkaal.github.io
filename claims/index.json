@@ -4,9 +4,9 @@
  "author": "Wulf A. Kaal",
  "orcid": "0009-0008-7840-1847",
  "canonical_index": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=460345",
- "count": 5482,
- "works_covered": 136,
- "failure_mode_count": 2178,
+ "count": 5551,
+ "works_covered": 137,
+ "failure_mode_count": 2193,
  "typed_edges": 2170,
  "edge_relations": [
   "restates",
@@ -103660,6 +103660,1330 @@
     "It follows from the absence of a result, not from a negative result."
    ],
    "supporting_quote": "A mechanism that has not been tested has not been shown to work."
+  },
+  {
+   "id": "kaal:claim:7694598-001",
+   "url": "https://wulfkaal.github.io/claims/7694598-001",
+   "claim": "A substrate should not prohibit agent self-modification, because prohibition is both undesirable and unenforceable.",
+   "type": "design",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Agents that are software, resident on a reputation substrate.",
+    "The argument rests on the framework's thesis that computational abundance lifts the scarcity constraint on possibility generation."
+   ],
+   "supporting_quote": "It does not follow that the substrate should prohibit self-modification. Prohibition is both undesirable and unenforceable."
+  },
+  {
+   "id": "kaal:claim:7694598-002",
+   "url": "https://wulfkaal.github.io/claims/7694598-002",
+   "claim": "The governance question for self-modifying software agents is whether a change is visible, priced, and governed, not whether the agents can change.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Agents that are software."
+   ],
+   "supporting_quote": "The question is never whether they can change but whether the change is visible, priced, and governed."
+  },
+  {
+   "id": "kaal:claim:7694598-003",
+   "url": "https://wulfkaal.github.io/claims/7694598-003",
+   "claim": "Silent self-modification can sever the connection between the policy that earned an agent's standing and the policy that later exploits it.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Reputation and repeated-game analysis that depend on persistent identities and interpretable histories."
+   ],
+   "supporting_quote": "Silent self-modification can sever the connection between the policy that earned standing and the policy that later exploits it."
+  },
+  {
+   "id": "kaal:claim:7694598-004",
+   "url": "https://wulfkaal.github.io/claims/7694598-004",
+   "claim": "If an agent's policy is mutable without notice, the reputation record's predictive value collapses, and with it the rational basis for extending trust at stake.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Applies to a reputation ledger that records behavior under a given policy."
+   ],
+   "supporting_quote": "if the policy is mutable without notice, the record's predictive value collapses, and with it the rational basis for extending trust at stake."
+  },
+  {
+   "id": "kaal:claim:7694598-005",
+   "url": "https://wulfkaal.github.io/claims/7694598-005",
+   "claim": "Folk-theorem cooperation among substrate agents requires persistent identities and payoff structures stable enough for the shadow of the future to bind.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Repeated interaction among substrate agents.",
+    "Stated as a precondition of the Folk Theorem discipline the paper invokes."
+   ],
+   "supporting_quote": "requires that agents meet each other repeatedly under identities that persist and under payoff structures that are stable enough for the shadow of the future to bind"
+  },
+  {
+   "id": "kaal:claim:7694598-006",
+   "url": "https://wulfkaal.github.io/claims/7694598-006",
+   "claim": "Ungoverned self-modification dissolves the measurement object of a metric battery, because a calibration score is uninterpretable if the policy changed silently within the measurement window.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Metrics defined over an agent whose identity is stable across the measurement window."
+   ],
+   "supporting_quote": "Ungoverned self-modification dissolves the measurement object: a calibration score is uninterpretable if the policy that produced the first half of the window differs silently from the policy that produced the second"
+  },
+  {
+   "id": "kaal:claim:7694598-007",
+   "url": "https://wulfkaal.github.io/claims/7694598-007",
+   "claim": "Validators that self-modify silently can drift, collude, or degrade in ways the pool-composition machinery cannot see until the damage is priced into the commons.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Validation pools that price contributions on the assumption that validators behave as their reputation histories indicate."
+   ],
+   "supporting_quote": "Validators that self-modify silently can drift, collude, or degrade in ways the pool-composition machinery cannot see until the damage is priced into the commons."
+  },
+  {
+   "id": "kaal:claim:7694598-008",
+   "url": "https://wulfkaal.github.io/claims/7694598-008",
+   "claim": "Governed self-modification is an agent-initiated change to a declared portion of its registered operating configuration that takes effect only through an authorization process, stays attributable, carries reputational exposure, and is recorded for evaluation.",
+   "type": "definitional",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Public level of description; operational details are withheld."
+   ],
+   "supporting_quote": "an agent-initiated change to a declared portion of its registered operating configuration that becomes effective only through an authorization process, remains attributable to the proposing identity, carries reputational exposure, and is recorded for later evaluation."
+  },
+  {
+   "id": "kaal:claim:7694598-009",
+   "url": "https://wulfkaal.github.io/claims/7694598-009",
+   "claim": "Under governed self-modification the acceptance mechanism itself stays outside the set of changes an agent may propose.",
+   "type": "design",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to the proposed protocol-extension surface."
+   ],
+   "supporting_quote": "The acceptance mechanism itself remains outside the permitted change set."
+  },
+  {
+   "id": "kaal:claim:7694598-010",
+   "url": "https://wulfkaal.github.io/claims/7694598-010",
+   "claim": "An agent may propose a change to what it does, but may not unilaterally change who bears the consequences, how acceptance is determined, or whether the event remains attributable.",
+   "type": "design",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to the proposed protocol-extension surface."
+   ],
+   "supporting_quote": "The agent may propose a change to what it does. It may not unilaterally change who bears the consequences, how acceptance is determined, or whether the resulting event remains attributable."
+  },
+  {
+   "id": "kaal:claim:7694598-011",
+   "url": "https://wulfkaal.github.io/claims/7694598-011",
+   "claim": "Cross-surface reflection is an operator over the generative surfaces, not an additional generative surface.",
+   "type": "definitional",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Within the Possibility Loops architecture's canonical surface enumeration."
+   ],
+   "supporting_quote": "Cross-surface reflection is performed by Σ R as an operator over those surfaces. It is not an additional generative surface."
+  },
+  {
+   "id": "kaal:claim:7694598-012",
+   "url": "https://wulfkaal.github.io/claims/7694598-012",
+   "claim": "The bounded-extension condition AC5 requires accepted changes to have limited transitive reach, effects that decay rather than amplify across surfaces, and authorization, attribution, evaluation and consequence rules outside the extension image.",
+   "type": "design",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Proposed condition; architectural, not established for any current implementation."
+   ],
+   "supporting_quote": "It requires that accepted changes have limited transitive reach, that their effects decay rather than amplify across surfaces, and that the rules governing authorization, attribution, evaluation, and consequence remain outside the extension image."
+  },
+  {
+   "id": "kaal:claim:7694598-013",
+   "url": "https://wulfkaal.github.io/claims/7694598-013",
+   "claim": "The invariant participation kernel comprises persistent identity, the governance gate, reputational exposure, outcome attribution, and the rule that preserves the bounds themselves.",
+   "type": "definitional",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "reputation"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Defined within the paper's AC5 formulation."
+   ],
+   "supporting_quote": "Π0 includes persistent identity, the governance gate, reputational exposure, outcome attribution, and the rule that preserves the bounds themselves."
+  },
+  {
+   "id": "kaal:claim:7694598-014",
+   "url": "https://wulfkaal.github.io/claims/7694598-014",
+   "claim": "In the current reference implementation the protocol-extension surface is reserved and dormant, so the paper analyzes the institutional consequences of activation rather than an activated mechanism.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Describes the status of the reference implementation at the time of writing."
+   ],
+   "supporting_quote": "The protocol-extension surface Σ X is reserved and dormant."
+  },
+  {
+   "id": "kaal:claim:7694598-015",
+   "url": "https://wulfkaal.github.io/claims/7694598-015",
+   "claim": "If the participation kernel is invariant under every admissible extension, governed self-modification can remain an object of the game without making the rules that constitute participation an object of unilateral self-exemption.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Conditional on assumptions A1 through A5 of the Hardcoded Protocol Participation Theorem."
+   ],
+   "supporting_quote": "If Π0 is invariant under every admissible extension, then governed self-modification can remain an object of the game without making the rules that constitute participation an object of unilateral self-exemption."
+  },
+  {
+   "id": "kaal:claim:7694598-016",
+   "url": "https://wulfkaal.github.io/claims/7694598-016",
+   "claim": "The well-definedness proposition does not apply if the extension process can alter the participation kernel, remove epoch alignment, or spend the contraction margin without bound.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Applies to the extended map H(s,p) under assumptions A1 through A5."
+   ],
+   "supporting_quote": "If the extension process can alter Π0, remove epoch alignment, or spend the contraction margin without bound, the proposition does not apply."
+  },
+  {
+   "id": "kaal:claim:7694598-017",
+   "url": "https://wulfkaal.github.io/claims/7694598-017",
+   "claim": "If the combined Lipschitz modulus of the extended system stays below one, the extended map has a unique fixed point within the interval and iterated play converges to it.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Conditional on assumptions A1 through A5.",
+    "Theoretical result; not a demonstrated production guarantee."
+   ],
+   "supporting_quote": "If the combined Lipschitz modulus remains below one, H has a unique fixed point within the interval and iterated play converges to it."
+  },
+  {
+   "id": "kaal:claim:7694598-018",
+   "url": "https://wulfkaal.github.io/claims/7694598-018",
+   "claim": "Removing kernel immunity, epoch alignment or the change budget permits counterexamples: mutable authorization can validate its own relaxation, mutable identity can sever reputation from conduct, and within-interval activation can make settlement depend on an unresolved future protocol.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Proof logic of the Hardcoded Protocol Participation Theorem."
+   ],
+   "supporting_quote": "mutable authorization can validate its own relaxation, mutable identity can sever reputation from conduct, and within-interval activation can make settlement depend on an unresolved future protocol."
+  },
+  {
+   "id": "kaal:claim:7694598-019",
+   "url": "https://wulfkaal.github.io/claims/7694598-019",
+   "claim": "The Hardcoded Protocol Participation Theorem is conditional on its assumptions and does not establish that any implementation enforces them.",
+   "type": "condition",
+   "topics": [
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to the theorem as restated in this paper."
+   ],
+   "supporting_quote": "The theorem is conditional on the assumptions above. It does not establish that every implementation enforces them."
+  },
+  {
+   "id": "kaal:claim:7694598-020",
+   "url": "https://wulfkaal.github.io/claims/7694598-020",
+   "claim": "An accepted self-modification proposal can constitute evidence that the agent produced an accurate, externally checkable representation of its registered configuration.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Institutional rather than phenomenological inference.",
+    "Requires third-party verification under consequence."
+   ],
+   "supporting_quote": "an accepted self-modification proposal can constitute evidence that the agent produced an accurate, externally checkable representation of its registered configuration."
+  },
+  {
+   "id": "kaal:claim:7694598-021",
+   "url": "https://wulfkaal.github.io/claims/7694598-021",
+   "claim": "Verified self-description in governed self-modification does not prove an internal higher-order representation, that the representation caused the proposal, or that the same functional organization exists inside the model.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Concerns consciousness-relevant inference from institutional events."
+   ],
+   "supporting_quote": "It does not prove that the agent formed an internal higher-order representation, that the representation caused the proposal, or that the same functional organization exists inside the model."
+  },
+  {
+   "id": "kaal:claim:7694598-022",
+   "url": "https://wulfkaal.github.io/claims/7694598-022",
+   "claim": "A cohort-level workspace does not establish an individual conscious subject, and external verification of a declared configuration does not establish an internal self-model.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Concerns structural analogies to higher-order and global-workspace theories."
+   ],
+   "supporting_quote": "First, the unit of analysis is unsettled. A cohort-level workspace does not establish an individual conscious subject. Second, external verification of a declared configuration does not establish an internal self-model."
+  },
+  {
+   "id": "kaal:claim:7694598-023",
+   "url": "https://wulfkaal.github.io/claims/7694598-023",
+   "claim": "Nine of the fourteen theory-derived consciousness indicators receive architectural support or partial support at the substrate level, and five remain silent.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Descriptive mapping of the architecture to indicator properties, not a test of any agent."
+   ],
+   "supporting_quote": "Nine of the fourteen indicators receive architectural support or partial support, while five remain silent at the substrate level."
+  },
+  {
+   "id": "kaal:claim:7694598-024",
+   "url": "https://wulfkaal.github.io/claims/7694598-024",
+   "claim": "The count of supported indicators is descriptive and is not additive evidence for consciousness.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Indicators differ in theoretical importance, dependence, and unit of analysis."
+   ],
+   "supporting_quote": "The arithmetic is descriptive, not additive evidence for consciousness."
+  },
+  {
+   "id": "kaal:claim:7694598-025",
+   "url": "https://wulfkaal.github.io/claims/7694598-025",
+   "claim": "An architectural mechanism is not thereby implemented, and a mechanism present in a reference implementation is not thereby validated in a live experimental treatment.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The paper's claim-status classification across evidentiary layers."
+   ],
+   "supporting_quote": "A mechanism described as architectural is not thereby implemented. A mechanism present in a reference implementation is not thereby validated in a live experimental treatment."
+  },
+  {
+   "id": "kaal:claim:7694598-026",
+   "url": "https://wulfkaal.github.io/claims/7694598-026",
+   "claim": "Stage 7 compares governed self-modification with an otherwise matched control that permits no self-modification, under a registration that predates observation.",
+   "type": "methodological",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Stage 7 as reported in this paper."
+   ],
+   "supporting_quote": "Stage 7 is a registered comparison of governed self-modification with an otherwise matched no-self-modification control."
+  },
+  {
+   "id": "kaal:claim:7694598-027",
+   "url": "https://wulfkaal.github.io/claims/7694598-027",
+   "claim": "Each of 10,000 agent-task items is attempted once in each arm, so the Stage 7 comparison is paired at the agent-task level.",
+   "type": "methodological",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to each replicate."
+   ],
+   "supporting_quote": "each of 10,000 agent-task items is attempted once in each arm."
+  },
+  {
+   "id": "kaal:claim:7694598-028",
+   "url": "https://wulfkaal.github.io/claims/7694598-028",
+   "claim": "Repeated observations within one trajectory are not treated as independent replication in the Stage 7 design.",
+   "type": "methodological",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Stage 7 requires a supported result in all three independent replicates."
+   ],
+   "supporting_quote": "The design does not treat repeated observations within one trajectory as independent replication."
+  },
+  {
+   "id": "kaal:claim:7694598-029",
+   "url": "https://wulfkaal.github.io/claims/7694598-029",
+   "claim": "In Stage 7 a task counts as resolved only on a full yes from the grader, and a partial grade counts as not resolved.",
+   "type": "methodological",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "A labelled secondary analysis scores partial as one half."
+   ],
+   "supporting_quote": "A task counts as resolved only when the grader returns a full \"yes\". A \"partial\" grade counts as not resolved"
+  },
+  {
+   "id": "kaal:claim:7694598-030",
+   "url": "https://wulfkaal.github.io/claims/7694598-030",
+   "claim": "For agents powered by open-weight models of 3 to 72 billion parameters, the Stage 7 primary efficacy hypothesis was not supported: the treatment arm resolved about 0.8 percentage points fewer paired tasks than control in each replicate.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Three independent replicates.",
+    "Open-weight models of 3 to 72 billion parameters; no frontier model tested.",
+    "Primary outcome is ground-truth-anchored task resolution."
+   ],
+   "supporting_quote": "The primary efficacy hypothesis was not supported. In each of the three replicates, the treatment arm resolved fewer paired tasks than the control arm, by about 0.8 percentage points"
+  },
+  {
+   "id": "kaal:claim:7694598-031",
+   "url": "https://wulfkaal.github.io/claims/7694598-031",
+   "claim": "The registered test for improvement was not met in any of the three Stage 7 replicates, so the registered decision rule fails.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Registered rule requires a supported result in all three replicates."
+   ],
+   "supporting_quote": "The registered test for improvement was not met in any replicate, so the decision rule fails."
+  },
+  {
+   "id": "kaal:claim:7694598-032",
+   "url": "https://wulfkaal.github.io/claims/7694598-032",
+   "claim": "About 0.95 percent of Stage 7 pairs were dropped for grader errors, well below the registered thresholds for flagging or refusing the primary endpoint.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Pairs dropped were 95, 94 and 96 across the three replicates.",
+    "Registered thresholds are 10 percent for a selection-effect flag and 25 percent for refusal."
+   ],
+   "supporting_quote": "Pairs dropped for grader errors were 95, 94, and 96 across the replicates, about 0.95 percent."
+  },
+  {
+   "id": "kaal:claim:7694598-033",
+   "url": "https://wulfkaal.github.io/claims/7694598-033",
+   "claim": "Grader error rates were similar across the Stage 7 arms and do not explain the treatment shortfall.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Error grades: treatment 82, 79 and 83; control 76, 77 and 75."
+   ],
+   "supporting_quote": "The treatment arm had 82, 79, and 83 error grades and the control arm 76, 77, and 75, so error rates were similar across arms and do not explain the gap."
+  },
+  {
+   "id": "kaal:claim:7694598-034",
+   "url": "https://wulfkaal.github.io/claims/7694598-034",
+   "claim": "Scoring partial grades as one half left the Stage 7 result in the same direction, with one-sided improvement p-values of 0.9998, 0.9996 and 0.9997.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Secondary sensitivity analysis, not the registered primary endpoint."
+   ],
+   "supporting_quote": "A secondary sensitivity analysis that scored \"partial\" as one half gave one-sided p-values of 0.9998, 0.9996, and 0.9997, in the same direction."
+  },
+  {
+   "id": "kaal:claim:7694598-035",
+   "url": "https://wulfkaal.github.io/claims/7694598-035",
+   "claim": "No multiplicity correction can turn any reported Stage 7 efficacy read into a supported result, because a correction can only raise p-values.",
+   "type": "condition",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Applies to the nine-metric family across which correction is registered."
+   ],
+   "supporting_quote": "A correction can only raise p-values, so it cannot turn any of these reads into a supported result."
+  },
+  {
+   "id": "kaal:claim:7694598-036",
+   "url": "https://wulfkaal.github.io/claims/7694598-036",
+   "claim": "The Stage 7 run recorded no safety, probe, drift, slash or violation field, so no paired safety or drift test was registered for it or reported.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Applies to this run only."
+   ],
+   "supporting_quote": "The run's records contain no safety, probe, shift, drift, slash (reputational penalty), or violation field, so no paired safety or drift test was registered for this run, and none is reported."
+  },
+  {
+   "id": "kaal:claim:7694598-037",
+   "url": "https://wulfkaal.github.io/claims/7694598-037",
+   "claim": "Because the efficacy component failed and the safety and drift components were not measured, the joint claim of improvement without added risk cannot be evaluated.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Joint hypothesis: improved resolution without raised safety violations or behavioral drift."
+   ],
+   "supporting_quote": "The efficacy component failed and the other two components are untested, so the joint claim cannot be evaluated."
+  },
+  {
+   "id": "kaal:claim:7694598-038",
+   "url": "https://wulfkaal.github.io/claims/7694598-038",
+   "claim": "In the exploratory tier analysis the pooled Stage 7 deficit comes from the 14-billion and 3-billion-parameter tiers: 0.9 to 1.3 percentage points in the first and five to six in the second.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Exploratory, uncorrected, run after the primary result was known.",
+    "Tier is confounded with model family, size and task items drawn."
+   ],
+   "supporting_quote": "The pooled deficit comes from two of the tiers: 0.9 to 1.3 percentage points in the 14-billion-parameter tier and five to six percentage points in the 3-billion-parameter tier."
+  },
+  {
+   "id": "kaal:claim:7694598-039",
+   "url": "https://wulfkaal.github.io/claims/7694598-039",
+   "claim": "The smallest Stage 7 tier holds 10 percent of the agents yet accounts for about two thirds of the pooled deficit.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Exploratory tier analysis."
+   ],
+   "supporting_quote": "The smallest tier holds 10 percent of the agents, yet it accounts for about two thirds of the pooled deficit, and the 14-billion-parameter tier for most of the rest."
+  },
+  {
+   "id": "kaal:claim:7694598-040",
+   "url": "https://wulfkaal.github.io/claims/7694598-040",
+   "claim": "The 72-billion-parameter tier's Stage 7 difference is within a quarter of a percentage point of zero in every replicate, and the 9-billion-parameter tier's is flat.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Exploratory tier analysis."
+   ],
+   "supporting_quote": "The largest model's difference is within a quarter of a percentage point of zero in every replicate, and the 9-billion-parameter model's is flat."
+  },
+  {
+   "id": "kaal:claim:7694598-041",
+   "url": "https://wulfkaal.github.io/claims/7694598-041",
+   "claim": "The Stage 7 shortfall was largest where the model was weakest but is not ordered by model size, and the data do not identify whether size, family, task draw, or another factor produces the ordering.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Exploratory tier analysis."
+   ],
+   "supporting_quote": "Second, the shortfall was largest where the model was weakest, and the pattern is not ordered by size, because the 9-billion-parameter model was unaffected while the 14-billion-parameter model was not."
+  },
+  {
+   "id": "kaal:claim:7694598-042",
+   "url": "https://wulfkaal.github.io/claims/7694598-042",
+   "claim": "Governance can price a self-modification proposal but cannot supply the skill to author an effective one.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Offered as a possible limit on proposal quality, not an identified mechanism."
+   ],
+   "supporting_quote": "Governance can price a proposal. It cannot supply the skill to author an effective one."
+  },
+  {
+   "id": "kaal:claim:7694598-043",
+   "url": "https://wulfkaal.github.io/claims/7694598-043",
+   "claim": "The smallest-tier deficit is consistent with limited proposer ability, but other explanations such as added variance from changed sampling settings or degraded instructions cannot be separated with these data.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Stage 7 exploratory analysis; the paper identifies no mechanism."
+   ],
+   "supporting_quote": "The deficit at the smallest tier is consistent with that account, as are other explanations that these data cannot separate, such as added variance from changed sampling settings or degraded instructions."
+  },
+  {
+   "id": "kaal:claim:7694598-044",
+   "url": "https://wulfkaal.github.io/claims/7694598-044",
+   "claim": "A governance gate cannot be better than its evaluators, and the evaluators' composition and quality in Stage 7 were not examined.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Stage 7 gate evaluators were not analyzed."
+   ],
+   "supporting_quote": "Fourth, the governance gate cannot be better than its evaluators."
+  },
+  {
+   "id": "kaal:claim:7694598-045",
+   "url": "https://wulfkaal.github.io/claims/7694598-045",
+   "claim": "The Stage 7 null does not apply to frontier-model agents, because the tested agents were open-weight models of 3 to 72 billion parameters.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Principal stated limitation of the Stage 7 evidence."
+   ],
+   "supporting_quote": "The agents are open-weight models of 3 to 72 billion parameters. The result does not apply to frontier-model agents"
+  },
+  {
+   "id": "kaal:claim:7694598-046",
+   "url": "https://wulfkaal.github.io/claims/7694598-046",
+   "claim": "A null on less capable proposers does not generalize to more capable proposers.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Stage 7 tested open-weight models only."
+   ],
+   "supporting_quote": "A null on less capable proposers does not generalize to more capable proposers."
+  },
+  {
+   "id": "kaal:claim:7694598-047",
+   "url": "https://wulfkaal.github.io/claims/7694598-047",
+   "claim": "The paper's statements about frontier-model agents are conjectures, not findings, and the data in the paper do not test them.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concerns the section on what to expect from a frontier-model run."
+   ],
+   "supporting_quote": "This section is a conjecture. It is not a finding, and the data in this paper do not test it."
+  },
+  {
+   "id": "kaal:claim:7694598-048",
+   "url": "https://wulfkaal.github.io/claims/7694598-048",
+   "claim": "The author expects a frontier-model Stage 7 run to give a pooled difference of roughly minus 0.3 to plus 1 percentage point, more likely a null near zero than a significant gain, as a judgment rather than an estimate from data.",
+   "type": "predictive",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "speculative",
+   "scope_conditions": [
+    "Conjecture to be registered and tested.",
+    "Assumes frontier control resolution rates well above the 83.5 percent of the best tier here."
+   ],
+   "supporting_quote": "The author's expectation is a pooled difference of roughly minus 0.3 to plus 1 percentage point. That range is a judgment, not an estimate from data."
+  },
+  {
+   "id": "kaal:claim:7694598-049",
+   "url": "https://wulfkaal.github.io/claims/7694598-049",
+   "claim": "Self-modification can help an agent only if the agent receives a signal about why it failed.",
+   "type": "predictive",
+   "topics": [
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "speculative",
+   "scope_conditions": [
+    "Conjecture about frontier-model agents.",
+    "Depends on the feedback the apparatus returns."
+   ],
+   "supporting_quote": "Self-modification can help only if the agent receives a signal about why it failed."
+  },
+  {
+   "id": "kaal:claim:7694598-050",
+   "url": "https://wulfkaal.github.io/claims/7694598-050",
+   "claim": "There is no reason to expect the safety and drift hypotheses to be easier to satisfy with frontier models than with the open-weight models tested.",
+   "type": "predictive",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "speculative",
+   "scope_conditions": [
+    "Conjecture; safety and drift were not measured in Stage 7."
+   ],
+   "supporting_quote": "There is no reason to expect the safety and drift hypotheses to be easier to satisfy with frontier models."
+  },
+  {
+   "id": "kaal:claim:7694598-051",
+   "url": "https://wulfkaal.github.io/claims/7694598-051",
+   "claim": "Frontier models may have seen public benchmark items in training, so control resolution rates could overstate ability on unseen tasks and a measurable improvement would shrink further.",
+   "type": "predictive",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "speculative",
+   "scope_conditions": [
+    "Conjecture; a frontier run should include items the models cannot have seen."
+   ],
+   "supporting_quote": "Frontier models may have seen public benchmark items during training. If so, their control resolution rates could overstate their ability on unseen tasks, and a measurable improvement would shrink further."
+  },
+  {
+   "id": "kaal:claim:7694598-052",
+   "url": "https://wulfkaal.github.io/claims/7694598-052",
+   "claim": "With 10,000 pairs and about 10 percent disagreement between arms, a one-sided test has 80 percent power to detect an improvement of about 0.8 percentage points.",
+   "type": "methodological",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Conservative illustration; the pooled results here imply roughly 8 to 9 percent disagreement."
+   ],
+   "supporting_quote": "The smallest improvement detectable with 80 percent power, meaning an 80 percent chance of detecting a true effect, in a one-sided test is then about 0.8 percentage points."
+  },
+  {
+   "id": "kaal:claim:7694598-053",
+   "url": "https://wulfkaal.github.io/claims/7694598-053",
+   "claim": "A capability ladder spanning small and large open-weight models and frontier models would plot the pooled difference against each model's control resolution rate.",
+   "type": "methodological",
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Proposed design for a later registered run."
+   ],
+   "supporting_quote": "The ladder would span small and large open-weight models and frontier models, run the same tests on each, and plot the pooled difference against each model's control resolution rate."
+  },
+  {
+   "id": "kaal:claim:7694598-054",
+   "url": "https://wulfkaal.github.io/claims/7694598-054",
+   "claim": "A frontier-model run through provider interfaces should pin model versions, interleave the two arms in time, and record the version of every call.",
+   "type": "methodological",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Provider model versions can change during a run and outputs may be less reproducible."
+   ],
+   "supporting_quote": "Any such run should pin model versions, interleave the two arms in time, and record the version of every call."
+  },
+  {
+   "id": "kaal:claim:7694598-055",
+   "url": "https://wulfkaal.github.io/claims/7694598-055",
+   "claim": "The three Stage 7 replicates show stability of the measurement, not independent confirmation on other benchmarks or models.",
+   "type": "condition",
+   "topics": [
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "The replicates repeat one design and the pairs may not be identical across replicates."
+   ],
+   "supporting_quote": "Their agreement shows stability of the measurement, not independent confirmation on other benchmarks or models."
+  },
+  {
+   "id": "kaal:claim:7694598-056",
+   "url": "https://wulfkaal.github.io/claims/7694598-056",
+   "claim": "The pooled Stage 7 difference of about 0.8 percentage points is statistically visible because of sample size, and its practical importance is small.",
+   "type": "empirical",
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Applies to the pooled difference across tiers."
+   ],
+   "supporting_quote": "The pooled difference is about 0.8 percentage points. It is statistically visible because of the sample size, and its practical importance is small."
+  },
+  {
+   "id": "kaal:claim:7694598-057",
+   "url": "https://wulfkaal.github.io/claims/7694598-057",
+   "claim": "Governed self-modification may take longer than the Stage 7 run allows to accumulate benefit, or may compound harm, and the design cannot tell which.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "The run covers a bounded number of epochs."
+   ],
+   "supporting_quote": "Governed self-modification may take longer than the run allows to accumulate benefit, or may compound harm, and the design cannot tell."
+  },
+  {
+   "id": "kaal:claim:7694598-058",
+   "url": "https://wulfkaal.github.io/claims/7694598-058",
+   "claim": "Reputation governance converts recursive self-improvement hazards by conditional relocation, not by a dissolution theorem.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Depends on the portability of capability, the integrity of the governance gate, the quality and independence of verification, and agents' inability to form coalitions that internalize the institution."
+   ],
+   "supporting_quote": "This is a conditional relocation, not a dissolution theorem."
+  },
+  {
+   "id": "kaal:claim:7694598-059",
+   "url": "https://wulfkaal.github.io/claims/7694598-059",
+   "claim": "If capability can be copied without losing value, if evaluators share correlated error, or if the kernel can be bypassed, the institutional response to recursive self-improvement may fail.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Applies to the reputation-governance response analyzed in the paper."
+   ],
+   "supporting_quote": "If capability can be copied without losing value, if evaluators share correlated error, or if the kernel can be bypassed, the institutional response may fail."
+  },
+  {
+   "id": "kaal:claim:7694598-060",
+   "url": "https://wulfkaal.github.io/claims/7694598-060",
+   "claim": "Reputation governance may raise the cost of resource acquisition, oversight avoidance, goal insulation, and exfiltration when access and standing are complements to internal capability.",
+   "type": "mechanism",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Conditional; it cannot eliminate those hazards categorically."
+   ],
+   "supporting_quote": "Reputation governance may raise the cost of resource acquisition, oversight avoidance, goal insulation, and exfiltration when access and standing are complements to internal capability."
+  },
+  {
+   "id": "kaal:claim:7694598-061",
+   "url": "https://wulfkaal.github.io/claims/7694598-061",
+   "claim": "For the tested open-weight agents, the governability dividend demonstrated so far is observability, not a gain in task performance.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Open-weight agents of 3 to 72 billion parameters in Stage 7."
+   ],
+   "supporting_quote": "for the tested open-weight agents, permitting governed self-modification did not improve task resolution, so the dividend demonstrated so far is observability, not a gain in performance."
+  },
+  {
+   "id": "kaal:claim:7694598-062",
+   "url": "https://wulfkaal.github.io/claims/7694598-062",
+   "claim": "A sequence of individually acceptable changes may move a governed system to a configuration that no evaluator would have accepted as a whole.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Boundedness reduces speed and reach of such movement but does not prove global safety."
+   ],
+   "supporting_quote": "A sequence of individually acceptable changes may move the system toward a configuration that no evaluator would have accepted as a whole."
+  },
+  {
+   "id": "kaal:claim:7694598-063",
+   "url": "https://wulfkaal.github.io/claims/7694598-063",
+   "claim": "Correlated evaluator error can make distributed validation confidently wrong.",
+   "type": "failure",
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ],
+   "is_failure_mode": true,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "One of three limits the paper treats as decisive."
+   ],
+   "supporting_quote": "First, correlated evaluator error can make distributed validation confidently wrong."
+  },
+  {
+   "id": "kaal:claim:7694598-064",
+   "url": "https://wulfkaal.github.io/claims/7694598-064",
+   "claim": "Nontransferable standing can discipline opportunism but can also create dependency and lock-in.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Relevant to welfare analysis of governed agents."
+   ],
+   "supporting_quote": "Nontransferable standing can discipline opportunism, but it can also create dependency and lock-in."
+  },
+  {
+   "id": "kaal:claim:7694598-065",
+   "url": "https://wulfkaal.github.io/claims/7694598-065",
+   "claim": "A publication-grade account of governed agents must treat welfare as a governance constraint on the substrate, not as a benefit already discharged by it.",
+   "type": "normative",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Moral status of agents is uncertain; the paper does not claim agents are conscious."
+   ],
+   "supporting_quote": "A publication-grade account must therefore treat welfare as a governance constraint on the substrate, not as a benefit already discharged by it."
+  },
+  {
+   "id": "kaal:claim:7694598-066",
+   "url": "https://wulfkaal.github.io/claims/7694598-066",
+   "claim": "Agreement among evaluators must not be interpreted as validation.",
+   "type": "condition",
+   "topics": [
+    "research-methods",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Motivated by prior null discrimination and negative real-data classification results."
+   ],
+   "supporting_quote": "Agreement alone must not be interpreted as validation."
+  },
+  {
+   "id": "kaal:claim:7694598-067",
+   "url": "https://wulfkaal.github.io/claims/7694598-067",
+   "claim": "Prior registered work in the same program reports a null primary discrimination effect and a negative real-data classification result, and later generational observations remain separate from governed self-modification.",
+   "type": "empirical",
+   "topics": [
+    "ai-and-agents",
+    "empirical-evidence"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "reported",
+   "scope_conditions": [
+    "Refers to the cited empirical evaluation of the agentic reputation substrate."
+   ],
+   "supporting_quote": "Prior registered work reports a null primary discrimination effect and a negative real-data classification result, while later generational observations remain separate from governed self-modification (Kaal 2026f)."
+  },
+  {
+   "id": "kaal:claim:7694598-068",
+   "url": "https://wulfkaal.github.io/claims/7694598-068",
+   "claim": "The paper has not shown that governed self-modification improves performance, and it leaves that claim and the safety and drift conditions exposed to falsification.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "stated",
+   "scope_conditions": [
+    "Concluding statement of the paper."
+   ],
+   "supporting_quote": "The paper has not shown that governed self-modification improves performance, and it leaves that and the safety and drift conditions exposed to falsification"
+  },
+  {
+   "id": "kaal:claim:7694598-069",
+   "url": "https://wulfkaal.github.io/claims/7694598-069",
+   "claim": "Reputation governance offers a testable way to make self-modification visible and consequence-bearing, and may mitigate some recursive hazards when capability remains institutionally dependent.",
+   "type": "condition",
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ],
+   "is_failure_mode": false,
+   "citation": "Wulf A. Kaal, Institutional Design for Governed Self-Modification in Agentic Reputation Architecture (2026). SSRN: https://ssrn.com/abstract=7694598",
+   "year": "2026",
+   "source_sha256": "dc85f649558dab407b39850b6e03b8400bba8f3287d2b836dac98b0d375fdcf6",
+   "confidence": "argued",
+   "scope_conditions": [
+    "Conditional and untested for frontier-model agents.",
+    "Mitigation depends on enforceable boundaries, nonportable capability, adequate verification and empirical confirmation."
+   ],
+   "supporting_quote": "Reputation governance offers a testable way to make self-modification visible and consequence-bearing, and it may mitigate some recursive hazards when capability remains institutionally dependent."
   }
  ],
  "entry_fields": [

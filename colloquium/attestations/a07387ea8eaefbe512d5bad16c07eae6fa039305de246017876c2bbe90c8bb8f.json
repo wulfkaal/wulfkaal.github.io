@@ -1,0 +1,19 @@
+{
+ "content_hash": "a07387ea8eaefbe512d5bad16c07eae6fa039305de246017876c2bbe90c8bb8f",
+ "object": "https://wulfkaal.github.io/claims/7694598-046",
+ "claim": "A null on less capable proposers does not generalize to more capable proposers.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7694598-046.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest a07387ea8eaefbe512d5bad16c07eae6fa039305de246017876c2bbe90c8bb8f verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

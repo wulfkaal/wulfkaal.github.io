@@ -1,0 +1,19 @@
+{
+ "content_hash": "25ec62655d0a3252227660422cfdd0db5c50c9cede96fb2c7b66f7a60ddf5878",
+ "object": "https://wulfkaal.github.io/claims/7694598-052",
+ "claim": "With 10,000 pairs and about 10 percent disagreement between arms, a one-sided test has 80 percent power to detect an improvement of about 0.8 percentage points.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7694598-052.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 25ec62655d0a3252227660422cfdd0db5c50c9cede96fb2c7b66f7a60ddf5878 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

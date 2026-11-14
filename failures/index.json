@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2178,
+ "count": 2193,
  "families": 57,
- "distinct_specific_names": 2145,
+ "distinct_specific_names": 2160,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "failure_family": "research-design-limitation",
-   "count": 105,
+   "count": 109,
    "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
    "specific_names": [
     "A Closer Test Is Not A Whole Test",
@@ -128,7 +128,7 @@
   },
   {
    "failure_family": "measurement-and-metric-failure",
-   "count": 63,
+   "count": 64,
    "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json",
    "specific_names": [
     "Agreement Rates Do Not Identify Cause",
@@ -145,6 +145,26 @@
     "Monitoring Lag Blindness"
    ],
    "example": "Regulating on the basis of retailization would not currently be justifiable, because retailization cannot be quantified with any degree of certainty and regulation premised on speculation without proof or data validation would probably produce inadequate results."
+  },
+  {
+   "failure_family": "ai-oversight-and-alignment-gap",
+   "count": 64,
+   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
+   "specific_names": [
+    "AI Labeler Has Nothing to Lose",
+    "AI-Governance Vacuum",
+    "Adversarial feedback provider incentives",
+    "Agent-Executed Attack in Nascent Form",
+    "Algorithmic Collusion",
+    "Algorithmic Collusion Risk",
+    "Capital Formation Outpaces AI Governance",
+    "Closed model opacity",
+    "Compound RLHF failure",
+    "Correlated Evaluator Error Yields Confident Wrongness",
+    "Explainable RL immaturity",
+    "Extension Altering The Kernel Voids The Theorem"
+   ],
+   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
   },
   {
    "failure_family": "valuation-and-pricing-failure",
@@ -168,43 +188,23 @@
   },
   {
    "failure_family": "reputation-system-gaming",
-   "count": 59,
+   "count": 60,
    "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json",
    "specific_names": [
     "Absent reputation layer",
     "Adaptive Weight Accuracy Unproved",
     "Discontinuous reputation update",
     "Meta-reputation aristocracy",
+    "Mutable Policy Voids The Reputation Record",
     "Partial necessity implementation",
     "Pollyanna feedback bias",
     "Reflection dominance",
     "Reflection layer dominance",
     "Reputation May Track Agreement Instead of Accuracy",
     "Reputation gaming through selective staking",
-    "Reputation monopoly",
-    "Selection on Manipulable Signals"
+    "Reputation monopoly"
    ],
    "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
-  },
-  {
-   "failure_family": "ai-oversight-and-alignment-gap",
-   "count": 56,
-   "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
-   "specific_names": [
-    "AI Labeler Has Nothing to Lose",
-    "AI-Governance Vacuum",
-    "Adversarial feedback provider incentives",
-    "Agent-Executed Attack in Nascent Form",
-    "Algorithmic Collusion",
-    "Algorithmic Collusion Risk",
-    "Capital Formation Outpaces AI Governance",
-    "Closed model opacity",
-    "Compound RLHF failure",
-    "Explainable RL immaturity",
-    "Helpfulness harmlessness tension",
-    "Human unintelligibility of algorithmic optimization"
-   ],
-   "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
   },
   {
    "failure_family": "collective-action-and-coordination-failure",
@@ -787,6 +787,26 @@
    "example": "Under strong institutional and cultural forces, decision makers in financial institutions tend to compartmentalize their lives and disconnect their moral reasoning from their conduct in the workplace, so that even a leader with strong personal values can engage in questionable conduct."
   },
   {
+   "failure_family": "sample-and-selection-bias",
+   "count": 24,
+   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
+   "specific_names": [
+    "Adversarial Cohort Cannot Establish Base Rate",
+    "Balanced Checkability Excludes Hard Rare Cases",
+    "Cognitive bias in screening",
+    "Confidentiality driven nonresponse",
+    "Correlated Assessors Excluded By Construction",
+    "Experiment T Magnitude Inconclusive",
+    "Open-Weight Null Does Not Reach Frontier Agents",
+    "Private fund survey nonresponse",
+    "Record Selector Does Not Beat Visible Check Selector",
+    "Selector Result Reverses Under Tie Break",
+    "executed-agreement-selection-bias",
+    "false-inference-from-live-experiments"
+   ],
+   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
+  },
+  {
    "failure_family": "regulatory-arbitrage",
    "count": 24,
    "url": "https://wulfkaal.github.io/failures/by-name/regulatory-arbitrage.json",
@@ -805,26 +825,6 @@
     "client-counting-safe-harbor-loophole"
    ],
    "example": "The Commodity Exchange Act family and friends exemption allows a qualifying manager to trade options and futures for fifteen individuals who need not be sophisticated or qualified investors, which circumvents accredited investor standards and admits retail investors into hedge funds."
-  },
-  {
-   "failure_family": "sample-and-selection-bias",
-   "count": 23,
-   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
-   "specific_names": [
-    "Adversarial Cohort Cannot Establish Base Rate",
-    "Balanced Checkability Excludes Hard Rare Cases",
-    "Cognitive bias in screening",
-    "Confidentiality driven nonresponse",
-    "Correlated Assessors Excluded By Construction",
-    "Experiment T Magnitude Inconclusive",
-    "Private fund survey nonresponse",
-    "Record Selector Does Not Beat Visible Check Selector",
-    "Selector Result Reverses Under Tie Break",
-    "executed-agreement-selection-bias",
-    "false-inference-from-live-experiments",
-    "incomplete-response-data"
-   ],
-   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
   },
   {
    "failure_family": "trigger-design-failure",
@@ -31807,6 +31807,227 @@
    "topics": [
     "reputation",
     "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-003",
+   "url": "https://wulfkaal.github.io/claims/7694598-003",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Silent Self-Modification Severs Standing From Policy",
+   "claim": "Silent self-modification can sever the connection between the policy that earned an agent's standing and the policy that later exploits it.",
+   "conditions": [
+    "Reputation and repeated-game analysis that depend on persistent identities and interpretable histories."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-004",
+   "url": "https://wulfkaal.github.io/claims/7694598-004",
+   "family": "reputation-system-gaming",
+   "name": "Mutable Policy Voids The Reputation Record",
+   "claim": "If an agent's policy is mutable without notice, the reputation record's predictive value collapses, and with it the rational basis for extending trust at stake.",
+   "conditions": [
+    "Applies to a reputation ledger that records behavior under a given policy."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-006",
+   "url": "https://wulfkaal.github.io/claims/7694598-006",
+   "family": "measurement-and-metric-failure",
+   "name": "Silent Policy Change Dissolves The Metric Object",
+   "claim": "Ungoverned self-modification dissolves the measurement object of a metric battery, because a calibration score is uninterpretable if the policy changed silently within the measurement window.",
+   "conditions": [
+    "Metrics defined over an agent whose identity is stable across the measurement window."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-007",
+   "url": "https://wulfkaal.github.io/claims/7694598-007",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Silent Validator Self-Modification Hides Drift",
+   "claim": "Validators that self-modify silently can drift, collude, or degrade in ways the pool-composition machinery cannot see until the damage is priced into the commons.",
+   "conditions": [
+    "Validation pools that price contributions on the assumption that validators behave as their reputation histories indicate."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-016",
+   "url": "https://wulfkaal.github.io/claims/7694598-016",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Extension Altering The Kernel Voids The Theorem",
+   "claim": "The well-definedness proposition does not apply if the extension process can alter the participation kernel, remove epoch alignment, or spend the contraction margin without bound.",
+   "conditions": [
+    "Applies to the extended map H(s,p) under assumptions A1 through A5."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-018",
+   "url": "https://wulfkaal.github.io/claims/7694598-018",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Mutable Kernel Elements Admit Self-Exempting Counterexamples",
+   "claim": "Removing kernel immunity, epoch alignment or the change budget permits counterexamples: mutable authorization can validate its own relaxation, mutable identity can sever reputation from conduct, and within-interval activation can make settlement depend on an unresolved future protocol.",
+   "conditions": [
+    "Proof logic of the Hardcoded Protocol Participation Theorem."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-036",
+   "url": "https://wulfkaal.github.io/claims/7694598-036",
+   "family": "research-design-limitation",
+   "name": "No Safety Or Drift Field Recorded",
+   "claim": "The Stage 7 run recorded no safety, probe, drift, slash or violation field, so no paired safety or drift test was registered for it or reported.",
+   "conditions": [
+    "Applies to this run only."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-037",
+   "url": "https://wulfkaal.github.io/claims/7694598-037",
+   "family": "research-design-limitation",
+   "name": "Joint Claim Unevaluable Without Safety And Drift",
+   "claim": "Because the efficacy component failed and the safety and drift components were not measured, the joint claim of improvement without added risk cannot be evaluated.",
+   "conditions": [
+    "Joint hypothesis: improved resolution without raised safety violations or behavioral drift."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-043",
+   "url": "https://wulfkaal.github.io/claims/7694598-043",
+   "family": "research-design-limitation",
+   "name": "Tier Deficit Mechanism Not Separable",
+   "claim": "The smallest-tier deficit is consistent with limited proposer ability, but other explanations such as added variance from changed sampling settings or degraded instructions cannot be separated with these data.",
+   "conditions": [
+    "Stage 7 exploratory analysis; the paper identifies no mechanism."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-044",
+   "url": "https://wulfkaal.github.io/claims/7694598-044",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Gate Cannot Exceed Its Evaluators",
+   "claim": "A governance gate cannot be better than its evaluators, and the evaluators' composition and quality in Stage 7 were not examined.",
+   "conditions": [
+    "Stage 7 gate evaluators were not analyzed."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-045",
+   "url": "https://wulfkaal.github.io/claims/7694598-045",
+   "family": "sample-and-selection-bias",
+   "name": "Open-Weight Null Does Not Reach Frontier Agents",
+   "claim": "The Stage 7 null does not apply to frontier-model agents, because the tested agents were open-weight models of 3 to 72 billion parameters.",
+   "conditions": [
+    "Principal stated limitation of the Stage 7 evidence."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-057",
+   "url": "https://wulfkaal.github.io/claims/7694598-057",
+   "family": "research-design-limitation",
+   "name": "Run Horizon May Hide Benefit Or Harm",
+   "claim": "Governed self-modification may take longer than the Stage 7 run allows to accumulate benefit, or may compound harm, and the design cannot tell which.",
+   "conditions": [
+    "The run covers a bounded number of epochs."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "research-methods",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-059",
+   "url": "https://wulfkaal.github.io/claims/7694598-059",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Portable Capability Or Correlated Error Defeats The Response",
+   "claim": "If capability can be copied without losing value, if evaluators share correlated error, or if the kernel can be bypassed, the institutional response to recursive self-improvement may fail.",
+   "conditions": [
+    "Applies to the reputation-governance response analyzed in the paper."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "institutional-design",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-062",
+   "url": "https://wulfkaal.github.io/claims/7694598-062",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Individually Acceptable Changes Compose Into Unacceptable Configuration",
+   "claim": "A sequence of individually acceptable changes may move a governed system to a configuration that no evaluator would have accepted as a whole.",
+   "conditions": [
+    "Boundedness reduces speed and reach of such movement but does not prove global safety."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7694598-063",
+   "url": "https://wulfkaal.github.io/claims/7694598-063",
+   "family": "ai-oversight-and-alignment-gap",
+   "name": "Correlated Evaluator Error Yields Confident Wrongness",
+   "claim": "Correlated evaluator error can make distributed validation confidently wrong.",
+   "conditions": [
+    "One of three limits the paper treats as decisive."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
    ]
   }
  ]
