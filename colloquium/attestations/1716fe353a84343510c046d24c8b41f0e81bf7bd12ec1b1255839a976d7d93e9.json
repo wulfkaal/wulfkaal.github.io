@@ -1,0 +1,19 @@
+{
+ "content_hash": "1716fe353a84343510c046d24c8b41f0e81bf7bd12ec1b1255839a976d7d93e9",
+ "object": "https://wulfkaal.github.io/claims/7706920-005",
+ "claim": "Identifier standards bind a name to a key or a subject, whereas the record the Article describes binds the name to a verified performance history.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-005.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 1716fe353a84343510c046d24c8b41f0e81bf7bd12ec1b1255839a976d7d93e9 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

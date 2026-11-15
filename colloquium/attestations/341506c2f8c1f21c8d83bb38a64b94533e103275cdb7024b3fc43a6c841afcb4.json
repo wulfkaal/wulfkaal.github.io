@@ -1,0 +1,19 @@
+{
+ "content_hash": "341506c2f8c1f21c8d83bb38a64b94533e103275cdb7024b3fc43a6c841afcb4",
+ "object": "https://wulfkaal.github.io/claims/7706920-012",
+ "claim": "The identity standards supply identifiers and attestations and the oversight literature supplies methods of judging output, but neither supplies a persistent record that carries consequence.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-012.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 341506c2f8c1f21c8d83bb38a64b94533e103275cdb7024b3fc43a6c841afcb4 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

@@ -1,0 +1,19 @@
+{
+ "content_hash": "242e664b4920eb56a8a103846e1635214d69e43f078ccce44d8be1a4a9145c71",
+ "object": "https://wulfkaal.github.io/claims/7706920-078",
+ "claim": "Where there is no ground truth verifier honesty depends on the elicitation rule, and no rule removes the regress of verifiers entirely.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-078.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 242e664b4920eb56a8a103846e1635214d69e43f078ccce44d8be1a4a9145c71 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

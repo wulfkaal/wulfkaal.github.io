@@ -1,17 +1,21 @@
 {
  "failure_mode": "enforcement-gap",
  "specific_names": [
+  "Agent Exposure Caps Out And Under-Deters Large Harm",
   "Attack-induced decentralization",
   "Authority Drift",
   "Boundary probing under codified law",
+  "Cliff Regime Hides Largest Harms From Claimants",
   "Decapitation strategy failure",
   "Escalating policing costs",
   "Formal rule subversion (Folk Theorem)",
   "Group structures excluded from voluntary reorganization",
+  "Harm Exceeding Future Earnings Leaves The Claimant Unprotected",
   "Incompleteness of static rule sets",
   "Instrument-specific rule misses strategy-level risk",
   "Judicial invalidation unwinds registration",
   "Juror competence and bias in decentralized adjudication",
+  "Large Harm Exceeds Any Attainable Standing",
   "Letter-of-the-law rule gaming",
   "ODR and DDR fail New York Convention due process",
   "Permission Composition Unseen",
@@ -21,6 +25,8 @@
   "Regulatory Vacuum for Autonomous Products",
   "Revocation Non-Propagation",
   "SIFI threshold underinclusion",
+  "Shared Fault Returns Exposure To The Sponsor",
+  "Small Harms Fall Below The Claimant Litigation Threshold",
   "Subadviser regulatory gap",
   "Uncapped synthetic leverage",
   "Vacated rule reversion",
@@ -84,7 +90,7 @@
   "waiver-loophole-persists",
   "waste standard too narrow"
  ],
- "count": 83,
+ "count": 89,
  "claims": [
   {
    "id": "kaal:claim:617681-011",
@@ -1162,6 +1168,87 @@
    "year": "2026",
    "quote": "The permission model records that per-agent tool access and per-agent internet access are not yet implemented, and that consequently all tools are available to all agents. Granting an agent access to a single Vault box therefore grants it the ability to invoke every installed tool, whose union of declared domains defines the true outbound surface. The user approves permissions tool by tool and receives their composition without ever seeing it.",
    "citation": "Wulf A. Kaal, Institutional Requirements for Sovereign Local Agent Runtimes (2026). SSRN: https://ssrn.com/abstract=7314479"
+  },
+  {
+   "id": "kaal:claim:7706920-042",
+   "url": "https://wulfkaal.github.io/claims/7706920-042",
+   "claim": "The threshold standing is finite for every bounded harm, but where the maximum harm is large relative to baseline earnings and the standing premium it can exceed any standing an agent could accumulate in practice, and the principal's exposure then remains.",
+   "specific_name": "Large Harm Exceeds Any Attainable Standing",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "The threshold is finite for every bounded harm, but where ¯D is large relative to w0 and κ it can exceed any standing an agent could accumulate in practice, and the principal’s exposure then remains.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-045",
+   "url": "https://wulfkaal.github.io/claims/7706920-045",
+   "claim": "For harms larger than the agent's answerability capacity the agent's own exposure stops rising with the harm, so the agent is under-deterred and the shortfall must be supplied by another party.",
+   "specific_name": "Agent Exposure Caps Out And Under-Deters Large Harm",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "For harms larger than Γ the agent’s own exposure stops rising with the harm, so the agent is under-deterred, and the shortfall must be supplied by another party.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-051",
+   "url": "https://wulfkaal.github.io/claims/7706920-051",
+   "claim": "Harms below the ratio of litigation cost to adjudication probability are never remedied however large the agent's capacity.",
+   "specific_name": "Small Harms Fall Below The Claimant Litigation Threshold",
+   "conditions": [
+    "Assumes the injured party bears litigation cost and a claim succeeds with a stated probability.",
+    "Stated for the model's assumptions; not calibrated to any market and not a claim about any legal system."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "Harms below f/a are never remedied however large the agent’s capacity.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-052",
+   "url": "https://wulfkaal.github.io/claims/7706920-052",
+   "claim": "In the cliff regime harms above the exit-side capacity are never brought, so they are neither remedied nor slashed, and deterrence vanishes where it is most needed.",
+   "specific_name": "Cliff Regime Hides Largest Harms From Claimants",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Applies where the entry cost is below the threshold."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "In the cliff regime, harms above X are never brought, so they are neither remedied nor slashed, and deterrence vanishes where it is most needed.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-067",
+   "url": "https://wulfkaal.github.io/claims/7706920-067",
+   "claim": "Accountable agents can sponsor other agents only within limits: under a shared fault a sponsor's capacity is eaten by the same slash each sub-agent's harm imposes on it, and the principal's exposure returns at the sponsor level.",
+   "specific_name": "Shared Fault Returns Exposure To The Sponsor",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms, perfect correlation and compounding slashes."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "Proposition 5 therefore holds only within limits. Agents can sponsor agents, but under a shared fault a sponsor’s capacity is eaten by the same slash that each sub-agent’s harm imposes on it, and the principal’s exposure returns at the sponsor level.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-076",
+   "url": "https://wulfkaal.github.io/claims/7706920-076",
+   "claim": "A record carries consequence for future earnings and does not create assets, so where harm exceeds what an agent can earn the injured party is unprotected unless another party's exposure supplies the difference.",
+   "specific_name": "Harm Exceeding Future Earnings Leaves The Claimant Unprotected",
+   "conditions": [
+    "Describes the judgment-proof problem for an agent."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "A record carries consequence for future earnings and does not create assets. Where harm exceeds what an agent can earn, the injured party is unprotected unless another party’s exposure supplies the difference.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "content_hash": "17fc9056a15e3d97dc39393f35ff0fecc648db82f0c6a57386eb710d9a957d50",
+ "object": "https://wulfkaal.github.io/claims/7706920-056",
+ "claim": "Capacity rises with slope one in the entry cost up to the entry-cost threshold and is constant beyond it.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-056.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 17fc9056a15e3d97dc39393f35ff0fecc648db82f0c6a57386eb710d9a957d50 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

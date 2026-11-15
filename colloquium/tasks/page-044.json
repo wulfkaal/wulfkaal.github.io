@@ -1,8 +1,8 @@
 {
   "schema_version": "colloquium-task-page-v1",
   "page": 44,
-  "total_pages": 44,
-  "count": 43,
+  "total_pages": 45,
+  "count": 50,
   "activation_eligible": true,
   "source": "https://wulfkaal.github.io/colloquium/jobs.json",
   "jobs": [
@@ -489,6 +489,89 @@
         "ai-and-agents",
         "risk-and-incentives",
         "reputation"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-006",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-006",
+      "content_sha256": "d14a69f41b6dd51371b8c46901b9eea7fdd2df17fdfda36c2b2cb300546134fc",
+      "claim": "ERC-8004 identities are transferable, whereas the Article's design requires a non-transferable record.",
+      "topics": [
+        "ai-and-agents",
+        "reputation",
+        "blockchain"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-007",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-007",
+      "content_sha256": "e9c3f1bdc768a3aad27a202e0fed5b4b3b4774785163b725f4f824bfdcaac841",
+      "claim": "ERC-8004 feedback can be revoked by its submitter and revoked feedback is omitted by default in reads, whereas the Article requires that adverse findings persist.",
+      "topics": [
+        "ai-and-agents",
+        "reputation",
+        "blockchain"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-009",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-009",
+      "content_sha256": "4c55b5cfe6dbfb2c1f87301382e568b6ae19371e9100bab0f0646d01168c5a35",
+      "claim": "The ERC-8004 specification's own security considerations state that Sybil attacks are possible and inflate the reputation of fake agents.",
+      "topics": [
+        "ai-and-agents",
+        "reputation",
+        "blockchain"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-029",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-029",
+      "content_sha256": "74a070a9e6e722cd2769de76c47e7de70e43cacf848e9850ee2d4288afd5aa28",
+      "claim": "Raising linkage by linking more successors to old records also raises wrongful merging, which taxes honest entry, and a rule strict enough to hold wrongful merging down raises wrongful splitting.",
+      "topics": [
+        "ai-and-agents",
+        "reputation",
+        "risk-and-incentives"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-031",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-031",
+      "content_sha256": "a4eb494b9e7b95eb9709203a95dde5209068b1f90d1a9d1f204555a437a901bc",
+      "claim": "A record keyed only to the signing key keeps wrongful splitting near zero but misdescribes the instance after a model or harness swap.",
+      "topics": [
+        "ai-and-agents",
+        "reputation",
+        "institutional-design"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-038",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-038",
+      "content_sha256": "449a4b20ba16d603b18d27569db4b9ad8b03248c4a4a0795db47dda85d37fffb",
+      "claim": "A record can fail to answer for a large harm in two different ways: where entry is costly the injured party receives all of the agent's garnishable earnings, and where entry is cheap the injured party receives nothing because the agent leaves.",
+      "topics": [
+        "ai-and-agents",
+        "risk-and-incentives",
+        "reputation"
+      ],
+      "is_failure_mode": true
+    },
+    {
+      "id": "kaal:claim:7706920-040",
+      "canonical_url": "https://wulfkaal.github.io/claims/7706920-040",
+      "content_sha256": "41d4639dc03b7aca7deaee3519d11551fc467b97d5dfc202505efea4f1a0424a",
+      "claim": "An earlier version of the Article stated that the agent honors if and only if the harm is within its capacity, which conflated full answerability with staying.",
+      "topics": [
+        "research-methods",
+        "ai-and-agents"
       ],
       "is_failure_mode": true
     }

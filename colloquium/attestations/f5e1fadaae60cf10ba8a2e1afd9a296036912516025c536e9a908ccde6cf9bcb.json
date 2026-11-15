@@ -1,0 +1,19 @@
+{
+ "content_hash": "f5e1fadaae60cf10ba8a2e1afd9a296036912516025c536e9a908ccde6cf9bcb",
+ "object": "https://wulfkaal.github.io/claims/7706920-091",
+ "claim": "The Article's novelty search ran 12 queries against OpenAlex and arXiv, returned 301 records and 251 unique records, and 33 addressed four or more of the components, with screening and reading done by the author's AI assistant and not by independent reviewers.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-091.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest f5e1fadaae60cf10ba8a2e1afd9a296036912516025c536e9a908ccde6cf9bcb verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

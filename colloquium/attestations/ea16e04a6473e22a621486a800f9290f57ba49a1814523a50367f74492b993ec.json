@@ -1,0 +1,19 @@
+{
+ "content_hash": "ea16e04a6473e22a621486a800f9290f57ba49a1814523a50367f74492b993ec",
+ "object": "https://wulfkaal.github.io/claims/7706920-096",
+ "claim": "The ERC-8004 Identity Registry token is a transferable ERC-721, so the identity layer places no exit cost on a holder.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-096.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest ea16e04a6473e22a621486a800f9290f57ba49a1814523a50367f74492b993ec verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

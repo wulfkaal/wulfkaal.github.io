@@ -1,9 +1,9 @@
 {
  "name": "Kaal Corpus Failure Mode Index",
  "description": "Claims describing how a design, mechanism, or remedy fails, and under what conditions. Each entry links to a claim record with a verbatim source quote and a citation string.",
- "count": 2193,
+ "count": 2221,
  "families": 57,
- "distinct_specific_names": 2160,
+ "distinct_specific_names": 2188,
  "bulk": "https://wulfkaal.github.io/claims/all.jsonl",
  "modes": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "failure_family": "research-design-limitation",
-   "count": 109,
+   "count": 114,
    "url": "https://wulfkaal.github.io/failures/by-name/research-design-limitation.json",
    "specific_names": [
     "A Closer Test Is Not A Whole Test",
@@ -88,23 +88,43 @@
   },
   {
    "failure_family": "enforcement-gap",
-   "count": 83,
+   "count": 89,
    "url": "https://wulfkaal.github.io/failures/by-name/enforcement-gap.json",
    "specific_names": [
+    "Agent Exposure Caps Out And Under-Deters Large Harm",
     "Attack-induced decentralization",
     "Authority Drift",
     "Boundary probing under codified law",
+    "Cliff Regime Hides Largest Harms From Claimants",
     "Decapitation strategy failure",
     "Escalating policing costs",
     "Formal rule subversion (Folk Theorem)",
     "Group structures excluded from voluntary reorganization",
+    "Harm Exceeding Future Earnings Leaves The Claimant Unprotected",
     "Incompleteness of static rule sets",
-    "Instrument-specific rule misses strategy-level risk",
-    "Judicial invalidation unwinds registration",
-    "Juror competence and bias in decentralized adjudication",
-    "Letter-of-the-law rule gaming"
+    "Instrument-specific rule misses strategy-level risk"
    ],
    "example": "The quality problems in Delaware adjudication mean it is not a foregone conclusion that the bundled product of statutes plus specialized courts leads to optimal results."
+  },
+  {
+   "failure_family": "measurement-and-metric-failure",
+   "count": 66,
+   "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json",
+   "specific_names": [
+    "Agreement Rates Do Not Identify Cause",
+    "Asset class blind SIFI designation",
+    "Backward looking risk models miss future tail events",
+    "Balance sheet leverage mismeasurement",
+    "Benchmark absence blocks performance assessment",
+    "Centralized Measurement Single Point of Failure",
+    "Conflated resolution signal",
+    "Coordination Cost Invisible to Benchmarks",
+    "Existing default risk signals failed in the crisis",
+    "Fungible Measure Blind to Expertise",
+    "Idiosyncratic reviewer preference",
+    "Key-Only Record Misdescribes A Swapped Agent"
+   ],
+   "example": "Regulating on the basis of retailization would not currently be justifiable, because retailization cannot be quantified with any degree of certainty and regulation premised on speculation without proof or data validation would probably produce inadequate results."
   },
   {
    "failure_family": "staking-and-incentive-misalignment",
@@ -127,26 +147,6 @@
    "example": "Compensating arbitrators by the number of cases they hear gives litigants a substantial role in shaping the system but may yield decisions so eager to please all parties that they lack decisiveness, sound reasoning and value as precedent."
   },
   {
-   "failure_family": "measurement-and-metric-failure",
-   "count": 64,
-   "url": "https://wulfkaal.github.io/failures/by-name/measurement-and-metric-failure.json",
-   "specific_names": [
-    "Agreement Rates Do Not Identify Cause",
-    "Asset class blind SIFI designation",
-    "Backward looking risk models miss future tail events",
-    "Balance sheet leverage mismeasurement",
-    "Benchmark absence blocks performance assessment",
-    "Centralized Measurement Single Point of Failure",
-    "Conflated resolution signal",
-    "Coordination Cost Invisible to Benchmarks",
-    "Existing default risk signals failed in the crisis",
-    "Fungible Measure Blind to Expertise",
-    "Idiosyncratic reviewer preference",
-    "Monitoring Lag Blindness"
-   ],
-   "example": "Regulating on the basis of retailization would not currently be justifiable, because retailization cannot be quantified with any degree of certainty and regulation premised on speculation without proof or data validation would probably produce inadequate results."
-  },
-  {
    "failure_family": "ai-oversight-and-alignment-gap",
    "count": 64,
    "url": "https://wulfkaal.github.io/failures/by-name/ai-oversight-and-alignment-gap.json",
@@ -167,6 +167,26 @@
    "example": "The conveniences and benefits of centralized algorithmic automation carry risks to humanity that cannot be fully quantified, and decentralized systems can counteract those downsides and threats."
   },
   {
+   "failure_family": "reputation-system-gaming",
+   "count": 63,
+   "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json",
+   "specific_names": [
+    "Absent reputation layer",
+    "Adaptive Weight Accuracy Unproved",
+    "Cheap Entry Lets The Agent Exit And Shed The Obligation",
+    "Discontinuous reputation update",
+    "Linkage Strictness Trades Evasion For Wrongful Splits And Entry Tax",
+    "Meta-reputation aristocracy",
+    "Mutable Policy Voids The Reputation Record",
+    "Partial necessity implementation",
+    "Pollyanna feedback bias",
+    "Reflection dominance",
+    "Reflection layer dominance",
+    "Reputation May Track Agreement Instead of Accuracy"
+   ],
+   "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
+  },
+  {
    "failure_family": "valuation-and-pricing-failure",
    "count": 62,
    "url": "https://wulfkaal.github.io/failures/by-name/valuation-and-pricing-failure.json",
@@ -185,26 +205,6 @@
     "Valuation disputes over bridge bank consideration"
    ],
    "example": "Broker quotes are an unreliable fallback for valuation: they can be hard to obtain and can vary by 20 to 30 percent for instruments such as mortgage-backed securities, which makes accurate valuation of those securities difficult."
-  },
-  {
-   "failure_family": "reputation-system-gaming",
-   "count": 60,
-   "url": "https://wulfkaal.github.io/failures/by-name/reputation-system-gaming.json",
-   "specific_names": [
-    "Absent reputation layer",
-    "Adaptive Weight Accuracy Unproved",
-    "Discontinuous reputation update",
-    "Meta-reputation aristocracy",
-    "Mutable Policy Voids The Reputation Record",
-    "Partial necessity implementation",
-    "Pollyanna feedback bias",
-    "Reflection dominance",
-    "Reflection layer dominance",
-    "Reputation May Track Agreement Instead of Accuracy",
-    "Reputation gaming through selective staking",
-    "Reputation monopoly"
-   ],
-   "example": "Because no conceivable way exists to permanently hide an arbiter's reputation from the arbiter in an open system, the corruption risk created by high reputation arbiters becoming valued counselors for disputants is an insoluble problem with the authors' own proposal."
   },
   {
    "failure_family": "collective-action-and-coordination-failure",
@@ -527,6 +527,46 @@
    "example": "The two sources that finance Delaware's bundled package, franchise taxes and legal fees for local counsel, might not be as lucrative for a European Member State, so the expensive package of statutes plus adjudication may have no viable funding model."
   },
   {
+   "failure_family": "legal-personality-and-liability-gap",
+   "count": 36,
+   "url": "https://wulfkaal.github.io/failures/by-name/legal-personality-and-liability-gap.json",
+   "specific_names": [
+    "AI liability gap",
+    "AI liability gap from absent legal personality",
+    "Contractual remedy cap fails in tort",
+    "Court-imposed entity form",
+    "DAO accountability gap",
+    "Earnings Passing To An Operator Restore The Principal",
+    "No Recourse for Flawed Reviews",
+    "No client recourse",
+    "Personhood Fictions Invite Abuse And Incoherence",
+    "Unenforceability of smart contracts under existing contract law",
+    "Unlimited joint and several DAO liability",
+    "Unlimited partner liability"
+   ],
+   "example": "Because artificial intelligence is not recognized as a subject of law in national or international law, it has no legal personality and therefore cannot be personally liable for damages it causes."
+  },
+  {
+   "failure_family": "harmonization-and-standardization-failure",
+   "count": 35,
+   "url": "https://wulfkaal.github.io/failures/by-name/harmonization-and-standardization-failure.json",
+   "specific_names": [
+    "Existing Identity Standards Have No Field For Consequence",
+    "Harmonization defeated by jurisdictional arbitrage",
+    "Harmonization eradicates innovative outliers",
+    "Harmonization misconstrues blockchain ethos",
+    "Harmonized rules lag technical evolution",
+    "Illusory national discretion above the recognition ceiling",
+    "Inconsistent due diligence legal standards",
+    "Issuer Based Regulatory Bifurcation",
+    "Missing dispute resolution and compliance standards",
+    "No applicable due diligence standards",
+    "Nominal confluence",
+    "One size fits all credit risk policy prescriptions"
+   ],
+   "example": "The Societas Europaea has drawn a less than enthusiastic initial reaction, plausibly because its rules are the product of years of negotiation and political compromise rather than a response to market forces."
+  },
+  {
    "failure_family": "jurisdictional-conflict",
    "count": 35,
    "url": "https://wulfkaal.github.io/failures/by-name/jurisdictional-conflict.json",
@@ -565,46 +605,6 @@
     "Regulatory barriers to entry for small firms"
    ],
    "example": "Applying section 10(b) and Rule 10b-5 together with the fraud on the market theory substantially increases the potential liability of issuers and can lead to questionable results, which is why EU jurisdictions may not want that rule applied to their securities markets."
-  },
-  {
-   "failure_family": "harmonization-and-standardization-failure",
-   "count": 34,
-   "url": "https://wulfkaal.github.io/failures/by-name/harmonization-and-standardization-failure.json",
-   "specific_names": [
-    "Harmonization defeated by jurisdictional arbitrage",
-    "Harmonization eradicates innovative outliers",
-    "Harmonization misconstrues blockchain ethos",
-    "Harmonized rules lag technical evolution",
-    "Illusory national discretion above the recognition ceiling",
-    "Inconsistent due diligence legal standards",
-    "Issuer Based Regulatory Bifurcation",
-    "Missing dispute resolution and compliance standards",
-    "No applicable due diligence standards",
-    "Nominal confluence",
-    "One size fits all credit risk policy prescriptions",
-    "One size fits all law reduces systemic resilience"
-   ],
-   "example": "The Societas Europaea has drawn a less than enthusiastic initial reaction, plausibly because its rules are the product of years of negotiation and political compromise rather than a response to market forces."
-  },
-  {
-   "failure_family": "legal-personality-and-liability-gap",
-   "count": 34,
-   "url": "https://wulfkaal.github.io/failures/by-name/legal-personality-and-liability-gap.json",
-   "specific_names": [
-    "AI liability gap",
-    "AI liability gap from absent legal personality",
-    "Contractual remedy cap fails in tort",
-    "Court-imposed entity form",
-    "DAO accountability gap",
-    "No Recourse for Flawed Reviews",
-    "No client recourse",
-    "Unenforceability of smart contracts under existing contract law",
-    "Unlimited joint and several DAO liability",
-    "Unlimited partner liability",
-    "anonymity as substitute for legal registration",
-    "consumer protection blocks DAO limited liability"
-   ],
-   "example": "Because artificial intelligence is not recognized as a subject of law in national or international law, it has no legal personality and therefore cannot be personally liable for damages it causes."
   },
   {
    "failure_family": "smart-contract-rigidity",
@@ -687,6 +687,26 @@
    "example": "Asymmetric hedge fund regulation, in which Dodd-Frank and the AIFM Directive regulate banks and hedge funds separately and differently, is counterproductive."
   },
   {
+   "failure_family": "sybil-and-identity-attack",
+   "count": 30,
+   "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json",
+   "specific_names": [
+    "Adaptive Sybil Dispersion Camouflage",
+    "Anonymity dilution at scale",
+    "Anonymity driven attack surface",
+    "Anonymity driven opportunism raises transaction costs",
+    "Anonymity-enabled attacks",
+    "Anonymous trolling friction",
+    "Authenticated But Unauthorized After False Continuity",
+    "Equal salary sockpuppet exploit",
+    "Fee and KYC pseudo-defense",
+    "Identity verification tradeoff",
+    "Inevitable sockpuppet exposure",
+    "Nontransferability Alone Does Not Resist Sybils"
+   ],
+   "example": "Centralized platforms cannot simply drop identity verification, because they need it to keep malicious actors from abusing the network and to ensure work quality; this is the tradeoff a staking based design is meant to dissolve."
+  },
+  {
    "failure_family": "inequality-and-access-divide",
    "count": 29,
    "url": "https://wulfkaal.github.io/failures/by-name/inequality-and-access-divide.json",
@@ -727,26 +747,6 @@
    "example": "The hidden voting scheme depends on the choice of symmetric encryption protocol: a poorly chosen protocol exposes the platform to a birthday problem attack in which malicious voters submit an encrypted key that can be decrypted in two different ways, letting them retroactively choose their vote."
   },
   {
-   "failure_family": "sybil-and-identity-attack",
-   "count": 29,
-   "url": "https://wulfkaal.github.io/failures/by-name/sybil-and-identity-attack.json",
-   "specific_names": [
-    "Adaptive Sybil Dispersion Camouflage",
-    "Anonymity dilution at scale",
-    "Anonymity driven attack surface",
-    "Anonymity driven opportunism raises transaction costs",
-    "Anonymity-enabled attacks",
-    "Anonymous trolling friction",
-    "Authenticated But Unauthorized After False Continuity",
-    "Equal salary sockpuppet exploit",
-    "Fee and KYC pseudo-defense",
-    "Identity verification tradeoff",
-    "Inevitable sockpuppet exposure",
-    "Nontransferability Alone Does Not Resist Sybils"
-   ],
-   "example": "Centralized platforms cannot simply drop identity verification, because they need it to keep malicious actors from abusing the network and to ensure work quality; this is the tradeoff a staking based design is meant to dissolve."
-  },
-  {
    "failure_family": "information-asymmetry",
    "count": 27,
    "url": "https://wulfkaal.github.io/failures/by-name/information-asymmetry.json",
@@ -765,6 +765,26 @@
     "Underwriter Screening Free Ride And Lemons Problem"
    ],
    "example": "Contingent capital offers only limited protection against information asymmetries, principal and agent conflicts, and collective action problems, so it cannot by itself prevent economic failure."
+  },
+  {
+   "failure_family": "sample-and-selection-bias",
+   "count": 26,
+   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
+   "specific_names": [
+    "Adversarial Cohort Cannot Establish Base Rate",
+    "Balanced Checkability Excludes Hard Rare Cases",
+    "Cognitive bias in screening",
+    "Confidentiality driven nonresponse",
+    "Correlated Assessors Excluded By Construction",
+    "Experiment T Magnitude Inconclusive",
+    "One-Chain One-Window Registry Data Do Not Reach Staked Records",
+    "Open-Weight Null Does Not Reach Frontier Agents",
+    "Private fund survey nonresponse",
+    "Record Selector Does Not Beat Visible Check Selector",
+    "Selector Result Reverses Under Tie Break",
+    "Single-Provider Prompted Agents Do Not Show Deployed Behavior"
+   ],
+   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
   },
   {
    "failure_family": "fraud-and-misconduct",
@@ -787,26 +807,6 @@
    "example": "Under strong institutional and cultural forces, decision makers in financial institutions tend to compartmentalize their lives and disconnect their moral reasoning from their conduct in the workplace, so that even a leader with strong personal values can engage in questionable conduct."
   },
   {
-   "failure_family": "sample-and-selection-bias",
-   "count": 24,
-   "url": "https://wulfkaal.github.io/failures/by-name/sample-and-selection-bias.json",
-   "specific_names": [
-    "Adversarial Cohort Cannot Establish Base Rate",
-    "Balanced Checkability Excludes Hard Rare Cases",
-    "Cognitive bias in screening",
-    "Confidentiality driven nonresponse",
-    "Correlated Assessors Excluded By Construction",
-    "Experiment T Magnitude Inconclusive",
-    "Open-Weight Null Does Not Reach Frontier Agents",
-    "Private fund survey nonresponse",
-    "Record Selector Does Not Beat Visible Check Selector",
-    "Selector Result Reverses Under Tie Break",
-    "executed-agreement-selection-bias",
-    "false-inference-from-live-experiments"
-   ],
-   "example": "Post-1998 hedge fund regulatory proposals were misdirected because LTCM was unique among its peers in leverage, position size, and market-making ability, so the proposals mostly addressed LTCM as a single case rather than the range of issues affecting all hedge funds."
-  },
-  {
    "failure_family": "regulatory-arbitrage",
    "count": 24,
    "url": "https://wulfkaal.github.io/failures/by-name/regulatory-arbitrage.json",
@@ -827,6 +827,26 @@
    "example": "The Commodity Exchange Act family and friends exemption allows a qualifying manager to trade options and futures for fifteen individuals who need not be sophisticated or qualified investors, which circumvents accredited investor standards and admits retail investors into hedge funds."
   },
   {
+   "failure_family": "systemic-risk-transmission",
+   "count": 22,
+   "url": "https://wulfkaal.github.io/failures/by-name/systemic-risk-transmission.json",
+   "specific_names": [
+    "Bail-in raises and destabilizes bank funding",
+    "Counterparty overexposure to private funds",
+    "Cross-holding of contingent capital among competitors",
+    "Full collateral value lending collapses capital under margin calls",
+    "Shared Fault Exhausts A Record Sufficient For Independent Errors",
+    "Sponsor Slash Compounds Across Simultaneous Sub-Agent Faults",
+    "Underwriter insolvency passes through to consumers",
+    "ccs-cross-holdings",
+    "central-bank-ccs-purchases",
+    "consolidation induced systemic risk",
+    "correlated-risk-from-central-bank-purchases",
+    "correlated-risk-profiles"
+   ],
+   "example": "A country whose bankers do not embrace intentional risk taking is still exposed to risk, both through the collateral effects of intentional risk taking abroad and through unintentional risk taking at home, so domestic cultural restraint is not a sufficient safeguard."
+  },
+  {
    "failure_family": "trigger-design-failure",
    "count": 22,
    "url": "https://wulfkaal.github.io/failures/by-name/trigger-design-failure.json",
@@ -845,26 +865,6 @@
     "Trigger metric manipulation and staleness"
    ],
    "example": "If conversion of contingent capital securities is triggered too early, before a real financial need for an equity injection exists, the expected financial impact of that injection may dissipate."
-  },
-  {
-   "failure_family": "systemic-risk-transmission",
-   "count": 20,
-   "url": "https://wulfkaal.github.io/failures/by-name/systemic-risk-transmission.json",
-   "specific_names": [
-    "Bail-in raises and destabilizes bank funding",
-    "Counterparty overexposure to private funds",
-    "Cross-holding of contingent capital among competitors",
-    "Full collateral value lending collapses capital under margin calls",
-    "Underwriter insolvency passes through to consumers",
-    "ccs-cross-holdings",
-    "central-bank-ccs-purchases",
-    "consolidation induced systemic risk",
-    "correlated-risk-from-central-bank-purchases",
-    "correlated-risk-profiles",
-    "counterparty risk blind spot",
-    "diversification breakdown under stress"
-   ],
-   "example": "A country whose bankers do not embrace intentional risk taking is still exposed to risk, both through the collateral effects of intentional risk taking abroad and through unintentional risk taking at home, so domestic cultural restraint is not a sufficient safeguard."
   },
   {
    "failure_family": "regulatory-capture-and-incumbent-advantage",
@@ -947,6 +947,26 @@
    "example": "The current legal and administrative processes that support private equity are time consuming, expensive, lack transparency, and involve lengthy, duplicative, and fragmented investment and administrative processes."
   },
   {
+   "failure_family": "token-transferability-defect",
+   "count": 15,
+   "url": "https://wulfkaal.github.io/failures/by-name/token-transferability-defect.json",
+   "specific_names": [
+    "Capital reputation duality dilution",
+    "Forced RNFT Liquidation On Undersubscription",
+    "Fungible token governance as common failure denominator",
+    "Lockup versus token economic flexibility tradeoff",
+    "Reputation Exit Illiquidity",
+    "Transferable Agent Identity Token Sheds Its History",
+    "Transferable Registry Token Places No Exit Cost On A Holder",
+    "app-specific-token-lock-in",
+    "lockups erase the early liquidity advantage of ICOs",
+    "purchasable governance token attack surface",
+    "retroactive-restriction-on-nonconsenting-shares",
+    "traceability breakdown at the smelting stage"
+   ],
+   "example": "Hardcoded lockup periods can protect token holders against supply side induced devaluation, but they also decrease the token economic flexibility the promoter team needs to raise additional funds, so the remedy trades investor protection against issuer financing capacity."
+  },
+  {
    "failure_family": "short-termism",
    "count": 15,
    "url": "https://wulfkaal.github.io/failures/by-name/short-termism.json",
@@ -967,6 +987,26 @@
    "example": "A focus on quarterly earnings and short-term stock price performance distracts an organization from identifying the strategies that would keep the firm relevant, which is why financially successful companies can still lose their market."
   },
   {
+   "failure_family": "oracle-and-input-corruption",
+   "count": 15,
+   "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json",
+   "specific_names": [
+    "Code cannot govern tangible performance",
+    "Governance Attack Vector in Funding Oracles",
+    "No-Ground-Truth Verification Cannot End The Regress",
+    "Oracle and governance dependency of escrow enforcement",
+    "Pool Agreement Is Not External Correctness",
+    "Recorded Resolution Is Not External Correctness",
+    "centralized-oracle-capture",
+    "centralized-oracle-defeat",
+    "immature-decentralized-oracles",
+    "off-chain equity verification burden",
+    "oracle-feed-outage",
+    "top-down reform inertia"
+   ],
+   "example": "Top-down corporate governance reform measures rarely, if ever, produce genuine change in the governance or culture of firms, and are commonly met with indifference, skepticism, or hostility from management."
+  },
+  {
    "failure_family": "smart-contract-bug-and-exploit",
    "count": 14,
    "url": "https://wulfkaal.github.io/failures/by-name/smart-contract-bug-and-exploit.json",
@@ -985,26 +1025,6 @@
     "unverifiable-code-behavior"
    ],
    "example": "The DAO failed because of fundamental flaws in its own code, which allowed hackers to move one third of its funds to a subsidiary account, showing that governance built entirely on smart contracts inherits the defects of its code."
-  },
-  {
-   "failure_family": "oracle-and-input-corruption",
-   "count": 14,
-   "url": "https://wulfkaal.github.io/failures/by-name/oracle-and-input-corruption.json",
-   "specific_names": [
-    "Code cannot govern tangible performance",
-    "Governance Attack Vector in Funding Oracles",
-    "Oracle and governance dependency of escrow enforcement",
-    "Pool Agreement Is Not External Correctness",
-    "Recorded Resolution Is Not External Correctness",
-    "centralized-oracle-capture",
-    "centralized-oracle-defeat",
-    "immature-decentralized-oracles",
-    "off-chain equity verification burden",
-    "oracle-feed-outage",
-    "top-down reform inertia",
-    "unavoidable contract bugs"
-   ],
-   "example": "Top-down corporate governance reform measures rarely, if ever, produce genuine change in the governance or culture of firms, and are commonly met with indifference, skepticism, or hostility from management."
   },
   {
    "failure_family": "custody-and-key-loss",
@@ -1047,28 +1067,8 @@
    "example": "The incentive effects of corporate governance controls may not operate in systemically important financial institutions, because managers and owners who anticipate a bailout commitment adjust their risk preferences upward."
   },
   {
-   "failure_family": "token-transferability-defect",
-   "count": 13,
-   "url": "https://wulfkaal.github.io/failures/by-name/token-transferability-defect.json",
-   "specific_names": [
-    "Capital reputation duality dilution",
-    "Forced RNFT Liquidation On Undersubscription",
-    "Fungible token governance as common failure denominator",
-    "Lockup versus token economic flexibility tradeoff",
-    "Reputation Exit Illiquidity",
-    "app-specific-token-lock-in",
-    "lockups erase the early liquidity advantage of ICOs",
-    "purchasable governance token attack surface",
-    "retroactive-restriction-on-nonconsenting-shares",
-    "traceability breakdown at the smelting stage",
-    "transaction-value-exceeds-fee-base",
-    "vote buying through tradable governance tokens"
-   ],
-   "example": "Hardcoded lockup periods can protect token holders against supply side induced devaluation, but they also decrease the token economic flexibility the promoter team needs to raise additional funds, so the remedy trades investor protection against issuer financing capacity."
-  },
-  {
    "failure_family": "provenance-and-audit-integrity",
-   "count": 12,
+   "count": 13,
    "url": "https://wulfkaal.github.io/failures/by-name/provenance-and-audit-integrity.json",
    "specific_names": [
     "Append-Only Without Tamper Evidence",
@@ -1079,10 +1079,10 @@
     "Custody Without Account",
     "Seal Is A Commitment Not A Lock",
     "Silent Truncation Reports Clean History",
+    "Submitter-Revocable Feedback Erases Adverse History",
     "Sweep Artifacts Unreleased",
     "Uninstrumented Execution Path",
-    "Unjoinable Audit Records",
-    "Unlogged Autonomous Payment"
+    "Unjoinable Audit Records"
    ],
    "example": "A user who holds every byte locally and composes many services into a workflow has perfect custody and no answer to the question of what happened."
   },
@@ -32028,6 +32028,425 @@
     "ai-and-agents",
     "risk-and-incentives",
     "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-006",
+   "url": "https://wulfkaal.github.io/claims/7706920-006",
+   "family": "token-transferability-defect",
+   "name": "Transferable Agent Identity Token Sheds Its History",
+   "claim": "ERC-8004 identities are transferable, whereas the Article's design requires a non-transferable record.",
+   "conditions": [
+    "Limited to the ERC-8004 draft as read on 14 November 2026."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "blockchain"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-007",
+   "url": "https://wulfkaal.github.io/claims/7706920-007",
+   "family": "provenance-and-audit-integrity",
+   "name": "Submitter-Revocable Feedback Erases Adverse History",
+   "claim": "ERC-8004 feedback can be revoked by its submitter and revoked feedback is omitted by default in reads, whereas the Article requires that adverse findings persist.",
+   "conditions": [
+    "Limited to the ERC-8004 draft as read on 14 November 2026."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "blockchain"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-009",
+   "url": "https://wulfkaal.github.io/claims/7706920-009",
+   "family": "sybil-and-identity-attack",
+   "name": "Open Feedback Registry Admits Sybil Reputation Inflation",
+   "claim": "The ERC-8004 specification's own security considerations state that Sybil attacks are possible and inflate the reputation of fake agents.",
+   "conditions": [
+    "Reported from the ERC-8004 draft specification as read on 14 November 2026."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "blockchain"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-029",
+   "url": "https://wulfkaal.github.io/claims/7706920-029",
+   "family": "reputation-system-gaming",
+   "name": "Linkage Strictness Trades Evasion For Wrongful Splits And Entry Tax",
+   "claim": "Raising linkage by linking more successors to old records also raises wrongful merging, which taxes honest entry, and a rule strict enough to hold wrongful merging down raises wrongful splitting.",
+   "conditions": [
+    "Whether an acceptable rule exists depends on how separable evasive, legitimate and independent successors are in observable data.",
+    "The Article does not estimate that and does not derive the effect of wrongful merging."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-031",
+   "url": "https://wulfkaal.github.io/claims/7706920-031",
+   "family": "measurement-and-metric-failure",
+   "name": "Key-Only Record Misdescribes A Swapped Agent",
+   "claim": "A record keyed only to the signing key keeps wrongful splitting near zero but misdescribes the instance after a model or harness swap.",
+   "conditions": [
+    "Compares three units of identity: key, bundle of key, harness and model, and separate components."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-038",
+   "url": "https://wulfkaal.github.io/claims/7706920-038",
+   "family": "reputation-system-gaming",
+   "name": "Cheap Entry Lets The Agent Exit And Shed The Obligation",
+   "claim": "A record can fail to answer for a large harm in two different ways: where entry is costly the injured party receives all of the agent's garnishable earnings, and where entry is cheap the injured party receives nothing because the agent leaves.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-040",
+   "url": "https://wulfkaal.github.io/claims/7706920-040",
+   "family": "research-design-limitation",
+   "name": "Earlier Model Conflated Full Answerability With Staying",
+   "claim": "An earlier version of the Article stated that the agent honors if and only if the harm is within its capacity, which conflated full answerability with staying.",
+   "conditions": [
+    "Disclosed error correction in the Article's own model."
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-042",
+   "url": "https://wulfkaal.github.io/claims/7706920-042",
+   "family": "enforcement-gap",
+   "name": "Large Harm Exceeds Any Attainable Standing",
+   "claim": "The threshold standing is finite for every bounded harm, but where the maximum harm is large relative to baseline earnings and the standing premium it can exceed any standing an agent could accumulate in practice, and the principal's exposure then remains.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-045",
+   "url": "https://wulfkaal.github.io/claims/7706920-045",
+   "family": "enforcement-gap",
+   "name": "Agent Exposure Caps Out And Under-Deters Large Harm",
+   "claim": "For harms larger than the agent's answerability capacity the agent's own exposure stops rising with the harm, so the agent is under-deterred and the shortfall must be supplied by another party.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-051",
+   "url": "https://wulfkaal.github.io/claims/7706920-051",
+   "family": "enforcement-gap",
+   "name": "Small Harms Fall Below The Claimant Litigation Threshold",
+   "claim": "Harms below the ratio of litigation cost to adjudication probability are never remedied however large the agent's capacity.",
+   "conditions": [
+    "Assumes the injured party bears litigation cost and a claim succeeds with a stated probability.",
+    "Stated for the model's assumptions; not calibrated to any market and not a claim about any legal system."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "law-and-legal-systems",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-052",
+   "url": "https://wulfkaal.github.io/claims/7706920-052",
+   "family": "enforcement-gap",
+   "name": "Cliff Regime Hides Largest Harms From Claimants",
+   "claim": "In the cliff regime harms above the exit-side capacity are never brought, so they are neither remedied nor slashed, and deterrence vanishes where it is most needed.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Applies where the entry cost is below the threshold."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "law-and-legal-systems"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-055",
+   "url": "https://wulfkaal.github.io/claims/7706920-055",
+   "family": "systemic-risk-transmission",
+   "name": "Shared Fault Exhausts A Record Sufficient For Independent Errors",
+   "claim": "Correlation raises the standing required to detach the principal by a factor that approaches the number of correlated harms in the earnings-bound regime, which is why a record can be sufficient for independent errors and insufficient for a shared fault.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms from a single fault on n tasks at once."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-062",
+   "url": "https://wulfkaal.github.io/claims/7706920-062",
+   "family": "reputation-system-gaming",
+   "name": "Sponsor Chain Of Cheap-Exit Agents Adds No Capacity",
+   "claim": "In a chain of cliff agents capacities do not add and the chain is only as good as its best single member.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Applies where every level has an entry cost below its threshold."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-065",
+   "url": "https://wulfkaal.github.io/claims/7706920-065",
+   "family": "systemic-risk-transmission",
+   "name": "Sponsor Slash Compounds Across Simultaneous Sub-Agent Faults",
+   "claim": "Under a shared fault the standing a sponsor needs grows exponentially in the number of simultaneous faults and the number of faults it covers grows only logarithmically in its standing, because each sub-agent's slash shrinks the capacity the sponsor needs to cover the next.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms, perfect correlation among the faults, compounding slashes, and a sponsor that owes the shortfall of its sub-agents."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-067",
+   "url": "https://wulfkaal.github.io/claims/7706920-067",
+   "family": "enforcement-gap",
+   "name": "Shared Fault Returns Exposure To The Sponsor",
+   "claim": "Accountable agents can sponsor other agents only within limits: under a shared fault a sponsor's capacity is eaten by the same slash each sub-agent's harm imposes on it, and the principal's exposure returns at the sponsor level.",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms, perfect correlation and compounding slashes."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "reputation"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-070",
+   "url": "https://wulfkaal.github.io/claims/7706920-070",
+   "family": "research-design-limitation",
+   "name": "Single-Agent Stationary Model Assumes Away Strategic Interaction",
+   "claim": "The model is single-agent, deterministic and stationary, and assumes accurate adjudication, no agent assets beyond earnings and harms adjudicated at a known present value.",
+   "conditions": [
+    "Stated limits of the Part V model."
+   ],
+   "topics": [
+    "research-methods",
+    "ai-and-agents",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-074",
+   "url": "https://wulfkaal.github.io/claims/7706920-074",
+   "family": "research-design-limitation",
+   "name": "Simulation Check Encodes The Assumptions It Verifies",
+   "claim": "The brute-force check is not independent validation of the assumptions because it encodes them, it confirms only that the closed forms follow from the assumptions, and it does not test the model against behavior.",
+   "conditions": [
+    "Stated limit of the simulation check."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-075",
+   "url": "https://wulfkaal.github.io/claims/7706920-075",
+   "family": "legal-personality-and-liability-gap",
+   "name": "Earnings Passing To An Operator Restore The Principal",
+   "claim": "If earnings pass to an operator the operator is the residual claimant and the principal remains, so the model's results fail where earnings do not belong to the agent.",
+   "conditions": [
+    "The model assumes that the agent holds the earnings from which it is garnished and that an enforcer outside the model attaches the obligation to the record."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "law-and-legal-systems",
+    "risk-and-incentives"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-076",
+   "url": "https://wulfkaal.github.io/claims/7706920-076",
+   "family": "enforcement-gap",
+   "name": "Harm Exceeding Future Earnings Leaves The Claimant Unprotected",
+   "claim": "A record carries consequence for future earnings and does not create assets, so where harm exceeds what an agent can earn the injured party is unprotected unless another party's exposure supplies the difference.",
+   "conditions": [
+    "Describes the judgment-proof problem for an agent."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "law-and-legal-systems"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-077",
+   "url": "https://wulfkaal.github.io/claims/7706920-077",
+   "family": "legal-personality-and-liability-gap",
+   "name": "Personhood Fictions Invite Abuse And Incoherence",
+   "claim": "Legal personhood raises its own risks, because Bryson, Diamantis and Grant identify abuse and incoherence in precedents that used fictions of personhood, and the model does not answer that concern as a matter of law.",
+   "conditions": [
+    "Relies on Bryson, Diamantis and Grant (2017)."
+   ],
+   "topics": [
+    "law-and-legal-systems",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-078",
+   "url": "https://wulfkaal.github.io/claims/7706920-078",
+   "family": "oracle-and-input-corruption",
+   "name": "No-Ground-Truth Verification Cannot End The Regress",
+   "claim": "Where there is no ground truth verifier honesty depends on the elicitation rule, and no rule removes the regress of verifiers entirely.",
+   "conditions": [
+    "Relies on Miller, Resnick and Zeckhauser (2005) and Prelec (2004).",
+    "If verifiers are gatekeepers their own liability for error is open (Kraakman 1986)."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "risk-and-incentives",
+    "governance-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-079",
+   "url": "https://wulfkaal.github.io/claims/7706920-079",
+   "family": "measurement-and-metric-failure",
+   "name": "Optimizing Against The Record Degrades It As A Metric",
+   "claim": "The record can become the target of optimization, which degrades it as a metric, and the Article reports that this effect is untested.",
+   "conditions": [
+    "Relies on Manheim and Garrabrant (2018) and Strathern (1997) for the degradation claim."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-081",
+   "url": "https://wulfkaal.github.io/claims/7706920-081",
+   "family": "research-design-limitation",
+   "name": "Prompted Model With No Stake Tests Rule Application Not Incentive",
+   "claim": "The Article's two registered tests used a prompted language model with no stake and test whether a model applies a stated decision rule and not whether agents holding earnings respond to incentive.",
+   "conditions": [
+    "Limit stated in Part VI on the evidentiary status of the model."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-082",
+   "url": "https://wulfkaal.github.io/claims/7706920-082",
+   "family": "research-design-limitation",
+   "name": "Novelty Search Lacked Independent Reviewers",
+   "claim": "The Article's novelty search was not conducted by independent reviewers.",
+   "conditions": [
+    "Limit stated in Part VI and Appendix C."
+   ],
+   "topics": [
+    "research-methods"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-084",
+   "url": "https://wulfkaal.github.io/claims/7706920-084",
+   "family": "sample-and-selection-bias",
+   "name": "Single-Provider Prompted Agents Do Not Show Deployed Behavior",
+   "claim": "The Article's registered studies are mechanism demonstrations with prompted agents from one provider and do not show that deployed agents respond to such obligations or bear on any legal question.",
+   "conditions": [
+    "Limit stated in Part VII."
+   ],
+   "topics": [
+    "research-methods",
+    "empirical-evidence",
+    "ai-and-agents"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-095",
+   "url": "https://wulfkaal.github.io/claims/7706920-095",
+   "family": "harmonization-and-standardization-failure",
+   "name": "Existing Identity Standards Have No Field For Consequence",
+   "claim": "Neither the Verifiable Credential nor the ERC-8004 feedback format has a field for an obligation, a slash or a stake, so the consequence side of the record cannot be expressed in either.",
+   "conditions": [
+    "Limited to the specifications as read on 14 November 2026."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "institutional-design"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-096",
+   "url": "https://wulfkaal.github.io/claims/7706920-096",
+   "family": "token-transferability-defect",
+   "name": "Transferable Registry Token Places No Exit Cost On A Holder",
+   "claim": "The ERC-8004 Identity Registry token is a transferable ERC-721, so the identity layer places no exit cost on a holder.",
+   "conditions": [
+    "Limited to the ERC-8004 draft as read on 14 November 2026."
+   ],
+   "topics": [
+    "ai-and-agents",
+    "reputation",
+    "blockchain"
+   ]
+  },
+  {
+   "id": "kaal:claim:7706920-102",
+   "url": "https://wulfkaal.github.io/claims/7706920-102",
+   "family": "sample-and-selection-bias",
+   "name": "One-Chain One-Window Registry Data Do Not Reach Staked Records",
+   "claim": "The registry data do not show what happens when a record carries stake, because none does, and the demonstration is descriptive, covers one chain and one window, and concerns a draft specification.",
+   "conditions": [
+    "Limit stated in Appendix D."
+   ],
+   "topics": [
+    "empirical-evidence",
+    "research-methods",
+    "blockchain"
    ]
   }
  ]

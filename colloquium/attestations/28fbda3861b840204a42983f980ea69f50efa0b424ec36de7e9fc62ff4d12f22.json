@@ -1,0 +1,19 @@
+{
+ "content_hash": "28fbda3861b840204a42983f980ea69f50efa0b424ec36de7e9fc62ff4d12f22",
+ "object": "https://wulfkaal.github.io/claims/7706920-041",
+ "claim": "The specification error in the model was found when a registered test failed on its third hypothesis, and Result 1 is the corrected rule.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-041.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 28fbda3861b840204a42983f980ea69f50efa0b424ec36de7e9fc62ff4d12f22 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

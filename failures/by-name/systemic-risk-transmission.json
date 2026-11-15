@@ -5,6 +5,8 @@
   "Counterparty overexposure to private funds",
   "Cross-holding of contingent capital among competitors",
   "Full collateral value lending collapses capital under margin calls",
+  "Shared Fault Exhausts A Record Sufficient For Independent Errors",
+  "Sponsor Slash Compounds Across Simultaneous Sub-Agent Faults",
   "Underwriter insolvency passes through to consumers",
   "ccs-cross-holdings",
   "central-bank-ccs-purchases",
@@ -22,7 +24,7 @@
   "standalone-contingent-capital-insufficiency",
   "write-down-concentration-effect"
  ],
- "count": 20,
+ "count": 22,
  "claims": [
   {
    "id": "kaal:claim:1558614-011",
@@ -287,6 +289,34 @@
    "year": "2020",
    "quote": "Some indicia suggest that cyber security incidents contribute to the volatility of the digital asset market as consumers withdraw instantaneously their assets from an exchange that has been affected by a cyber security incident, among other reasons for this relationship.",
    "citation": "Kaal, Digital Asset Market Evolution (2020). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606663"
+  },
+  {
+   "id": "kaal:claim:7706920-055",
+   "url": "https://wulfkaal.github.io/claims/7706920-055",
+   "claim": "Correlation raises the standing required to detach the principal by a factor that approaches the number of correlated harms in the earnings-bound regime, which is why a record can be sufficient for independent errors and insufficient for a shared fault.",
+   "specific_name": "Shared Fault Exhausts A Record Sufficient For Independent Errors",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms from a single fault on n tasks at once."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "Correlation raises the standing required to detach the principal by a factor that approaches n in the earnings-bound regime, which is why a record can be suﬀicient for independent errors and insuﬀicient for a shared fault.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
+  },
+  {
+   "id": "kaal:claim:7706920-065",
+   "url": "https://wulfkaal.github.io/claims/7706920-065",
+   "claim": "Under a shared fault the standing a sponsor needs grows exponentially in the number of simultaneous faults and the number of faults it covers grows only logarithmically in its standing, because each sub-agent's slash shrinks the capacity the sponsor needs to cover the next.",
+   "specific_name": "Sponsor Slash Compounds Across Simultaneous Sub-Agent Faults",
+   "conditions": [
+    "Conditional on the single-agent, deterministic, stationary model of Part V.A, with an agent whose only assets are its earnings and its record.",
+    "Assumes equal harms, perfect correlation among the faults, compounding slashes, and a sponsor that owes the shortfall of its sub-agents."
+   ],
+   "source": "Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy",
+   "year": "2026",
+   "quote": "The standing required grows exponentially in the number of simultaneous faults, and the number of faults covered grows only logarithmically in standing. The reason is that the slash imposed by each sub-agent’s harm shrinks the capacity that the sponsor needs to cover the next.",
+   "citation": "Wulf A. Kaal, Verification as Identity: Accountability, Personhood and the Scarcity of Verification in the Agent Economy (2026). SSRN: https://ssrn.com/abstract=7706920"
   }
  ]
 }

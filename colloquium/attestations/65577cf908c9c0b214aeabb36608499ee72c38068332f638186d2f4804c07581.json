@@ -1,0 +1,19 @@
+{
+ "content_hash": "65577cf908c9c0b214aeabb36608499ee72c38068332f638186d2f4804c07581",
+ "object": "https://wulfkaal.github.io/claims/7706920-065",
+ "claim": "Under a shared fault the standing a sponsor needs grows exponentially in the number of simultaneous faults and the number of faults it covers grows only logarithmically in its standing, because each sub-agent's slash shrinks the capacity the sponsor needs to cover the next.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-065.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 65577cf908c9c0b214aeabb36608499ee72c38068332f638186d2f4804c07581 verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}

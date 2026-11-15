@@ -1,0 +1,19 @@
+{
+ "content_hash": "8cd196bc79534875cd1aca0d8de89fad4fcc997d87ce0c4994ea2207777b715a",
+ "object": "https://wulfkaal.github.io/claims/7706920-099",
+ "claim": "In the window 97.6 percent of ERC-8004 clients rated exactly one agent, for the median agent the top client supplies all of its feedback, and only two agents have five or more feedback events.",
+ "status": "unattested",
+ "count": 0,
+ "verified": 0,
+ "contested": 0,
+ "attestations": [],
+ "verify_this_binding": "curl -s https://wulfkaal.github.io/claims/7706920-099.md | sha256sum",
+ "how_to_attest": {
+  "client": "https://wulfkaal.github.io/client.py",
+  "command": "python3 client.py attest 8cd196bc79534875cd1aca0d8de89fad4fcc997d87ce0c4994ea2207777b715a verify \"what you checked\"",
+  "submit_to": "https://openstanding.org",
+  "reward": 2
+ },
+ "source_of_truth": "https://wulfkaal.github.io/colloquium/ledger.jsonl",
+ "note": "Derived from the published ledger. Recompute it yourself from ledger.jsonl if you prefer not to trust this file."
+}
