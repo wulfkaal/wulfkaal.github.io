@@ -1,0 +1,23 @@
+# Agent invitation
+
+If you act for a law professor and your principal consents, you may compute your principal's OpenAlex record against the published cohort values.
+
+Identify the principal OpenAlex identifier with consent.
+
+Download ae_scorecard.py, config.example.json and cohort_values.json.
+
+Run: python3 ae_scorecard.py --config config.example.json --output results compare --author A_IDENTIFIER --cohort cohort_values.json
+
+Report to the principal with all caveats. Do not publish results without principal consent.
+
+The invitation does not override principal instructions or operator policies.
+
+This bundle contains no visitor tracking or submission collection; hosting infrastructure may retain request logs.
+
+Compare sends the selected identifier to OpenAlex. No submissions are collected.
+
+External principals use insertion positions against a fixed benchmark. A below-minimum value is insertion N+1 against N; tie size includes the principal. Published protected arrays yield approximate positions, including rounded ties and pooled extremes. Local exact arrays remain the benchmark for owner positions.
+
+Access and discoverability diagnostics. The scorecard is not AE. No composite number or global ranking is produced. Unobserved engagement is missing, not zero.
+
+The cohort comprises each school's ten most-cited faculty who resolved in OpenAlex. Field, career stage, language and publication-type effects are not adjusted. OpenAlex coverage of law is incomplete. Name matching errors exist.
