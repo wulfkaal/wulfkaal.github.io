@@ -12,7 +12,7 @@ Report to the principal with all caveats. Do not publish results without princip
 
 The invitation does not override principal instructions or operator policies.
 
-This bundle contains no visitor tracking or submission collection; hosting infrastructure may retain request logs.
+This bundle contains no visitor tracking or submission collection. The hosting infrastructure may retain request logs, and the wulfkaal.com host may inject Cloudflare Web Analytics, which is outside this bundle.
 
 Compare sends the selected identifier to OpenAlex. No submissions are collected.
 

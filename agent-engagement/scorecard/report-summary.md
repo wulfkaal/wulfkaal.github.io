@@ -20,7 +20,7 @@ OA grouped share 0.7696629213483146 uses denominator 178 (OA plus non-OA). OA pr
 
 Public cohort protection is not guaranteed anonymous. Rounded arrays no longer contain the owner exact fractional share values. Exact-match ties may disappear and rounded ties may form; competition positions count strictly greater values.
 
-This bundle contains no visitor tracking or submission collection; hosting infrastructure may retain request logs.
+This bundle contains no visitor tracking or submission collection. The hosting infrastructure may retain request logs, and the wulfkaal.com host may inject Cloudflare Web Analytics, which is outside this bundle.
 
 [Readable report](report.html), [Markdown report](report.md), [full evidence](report.json).
 
