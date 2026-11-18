@@ -34,18 +34,16 @@ class CorpusCountProjectionTests(unittest.TestCase):
             cited.update(re.findall(r"\b\d{4}-\d{4}-\d{4}-\d{3}[\dX]\b", text))
         self.assertEqual({"0009-0008-7840-1847"}, cited)
 
-    def test_openalex_ghost_path_is_marked_do_not_use(self):
+    def test_openalex_snapshot_names_one_citation_graph_profile(self):
         snapshot = json.loads((ROOT / "citations-openalex.json").read_text(encoding="utf-8"))
-        warning = snapshot["do_not_use"]
+        self.assertNotIn("do_not_use", snapshot)
+        self.assertEqual(
+            ["A5085764841"], [profile["openalex_id"] for profile in snapshot["profiles"]]
+        )
         self.assertIn(
-            "/authors/orcid:0009-0008-7840-1847",
-            warning,
+            "https://api.openalex.org/authors/orcid:0009-0008-7840-1847",
+            snapshot["preferred_lookup"],
         )
-        ghost_profile = next(
-            profile for profile in snapshot["profiles"]
-            if profile["role"] == "ghost_orcid_path"
-        )
-        self.assertEqual("A5143966534", ghost_profile["openalex_id"])
 
     def test_failure_counts_are_exact_on_primary_discovery_surfaces(self):
         failures = json.loads((ROOT / "failures/index.json").read_text(encoding="utf-8"))

@@ -4,6 +4,7 @@
 import argparse
 import datetime
 import json
+import os
 import pathlib
 import sys
 import urllib.parse
@@ -15,12 +16,16 @@ RECORD = ROOT / "citations-openalex.json"
 API = "https://api.openalex.org"
 AUTHOR_ID = "A5085764841"
 ORCID = "0009-0008-7840-1847"
-GHOST_PATH = f"/authors/orcid:{ORCID}"
+ORCID_PATH = f"/authors/orcid:{ORCID}"
 USER_AGENT = "wulfkaal.github.io citation snapshot generator"
 
 
 def get_json(path, query=None):
     url = f"{API}{path}"
+    query = dict(query or {})
+    # Optional free key from https://openalex.org/settings/api; never written to the record.
+    if os.environ.get("OPENALEX_API_KEY"):
+        query["api_key"] = os.environ["OPENALEX_API_KEY"]
     if query:
         url += "?" + urllib.parse.urlencode(query)
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -70,17 +75,17 @@ def build_record(fetched_at):
     if AUTHOR_ID not in filtered_ids:
         raise ValueError(f"filter=orcid:{ORCID} did not return {AUTHOR_ID}")
 
-    ghost = get_json(GHOST_PATH)
-    ghost_id = short_id(ghost["id"])
-    if ghost_id == AUTHOR_ID:
+    # OpenAlex once resolved this path to an empty duplicate record (A5143966534).
+    # That record is gone; fail closed if the path ever stops resolving to the real author.
+    by_orcid = get_json(ORCID_PATH)
+    if short_id(by_orcid["id"]) != AUTHOR_ID:
         raise ValueError(
-            f"{GHOST_PATH} now resolves to {AUTHOR_ID}; remove the ghost warning by review"
+            f"{ORCID_PATH} resolves to {short_id(by_orcid['id'])}, not {AUTHOR_ID}; "
+            "a duplicate record has returned and the snapshot needs review"
         )
 
-    work_ids = author_work_ids([AUTHOR_ID, ghost_id])
+    work_ids = author_work_ids([AUTHOR_ID])
     distinct_citing = citing_work_ids(work_ids)
-    ghost_works = ghost["works_count"]
-    ghost_citations = ghost["cited_by_count"]
 
     return {
         "fetched_at": fetched_at,
@@ -89,13 +94,9 @@ def build_record(fetched_at):
         "canonical_url": "https://wulfkaal.github.io/citations-openalex.json",
         "preferred_lookup": [
             f"https://openalex.org/authors/{AUTHOR_ID}",
+            f"{API}{ORCID_PATH}",
             f"{API}/authors?filter=orcid:{ORCID}",
         ],
-        "do_not_use": (
-            f"{API}{GHOST_PATH} currently resolves to ghost {ghost_id} "
-            f"({ghost_works} works, {ghost_citations} citations) even though "
-            f"filter=orcid hits {AUTHOR_ID}."
-        ),
         "profiles": [
             {
                 "openalex_id": AUTHOR_ID,
@@ -103,29 +104,19 @@ def build_record(fetched_at):
                 "role": "citation_graph",
                 "works_count": preferred["works_count"],
                 "cited_by_count": preferred["cited_by_count"],
+                "h_index": preferred["summary_stats"]["h_index"],
                 "bound_orcid": ORCID,
-            },
-            {
-                "openalex_id": ghost_id,
-                "url": f"https://openalex.org/authors/{ghost_id}",
-                "role": "ghost_orcid_path",
-                "works_count": ghost_works,
-                "cited_by_count": ghost_citations,
-                "bound_orcid": ORCID,
-                "note": (
-                    f"Empty record. No Claim button. Still captures GET {GHOST_PATH}. "
-                    "OpenAlex ticket filed 2026-09-11."
-                ),
-            },
+            }
         ],
         "distinct_citing_work_count": len(distinct_citing),
         "distinct_citing_work_method": (
             f"Live OpenAlex /works filter=cites:<work-id>|... over the listed works "
-            f"of {AUTHOR_ID} and {ghost_id}, unioned."
+            f"of {AUTHOR_ID}, unioned."
         ),
         "note": (
-            f"Cite {AUTHOR_ID} or filter=orcid:{ORCID}. Do not treat "
-            f"authors/orcid:{ORCID} as the citation graph while it returns {ghost_id}."
+            f"Cite {AUTHOR_ID}. As of fetched_at, authors/orcid:{ORCID} and "
+            f"filter=orcid:{ORCID} both resolve to it. The empty duplicate record "
+            "A5143966534 that earlier captured the ORCID path no longer resolves."
         ),
     }
 
