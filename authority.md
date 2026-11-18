@@ -12,13 +12,13 @@ This is an evidence index, not a ranking assertion. Each topic block reports wha
 
 | Topic | Claims | Works | Span | Failure modes |
 |---|---|---|---|---|
-| AI agent coordination and autonomous agent governance | 393 | 71 | 2009 to 2026 | 152 |
-| Reputation systems, staked and non transferable reputation, validation | 518 | 91 | 2009 to 2026 | 138 |
+| AI agent coordination and autonomous agent governance | 631 | 77 | 2009 to 2026 | 254 |
+| Reputation systems, staked and non transferable reputation, validation | 621 | 97 | 2009 to 2026 | 175 |
 | Decentralized autonomous organization architecture | 403 | 59 | 2017 to 2026 | 162 |
-| Governance mechanism design, voting, deliberation | 814 | 101 | 2004 to 2026 | 332 |
-| Decentralization theory, recentralization dynamics | 636 | 91 | 2013 to 2026 | 258 |
-| Dynamic regulation and regulatory lag | 291 | 51 | 2009 to 2026 | 97 |
-| Consensus protocols, sybil resistance, attack surfaces | 441 | 79 | 2010 to 2026 | 201 |
+| Governance mechanism design, voting, deliberation | 827 | 103 | 2004 to 2026 | 337 |
+| Decentralization theory, recentralization dynamics | 637 | 92 | 2013 to 2026 | 259 |
+| Dynamic regulation and regulatory lag | 292 | 52 | 2009 to 2026 | 98 |
+| Consensus protocols, sybil resistance, attack surfaces | 458 | 83 | 2010 to 2026 | 210 |
 | Smart contract design limits and enforceability | 226 | 62 | 2017 to 2026 | 95 |
 
 ## Bulk access
